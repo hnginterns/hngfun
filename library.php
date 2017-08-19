@@ -36,7 +36,7 @@
         overflow: auto;
       }
 
-      li:hover {
+      a:hover {
         background: #eee;
         cursor: pointer;
       }
