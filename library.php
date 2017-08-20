@@ -67,9 +67,18 @@
           text-align: center; 
           margin-top: 12%;
       }
+      .space{
+          height: 200px;
+      }
   </style>
 </head>
 <body>  
+  
+  <div>
+    <p class="space"></p>
+    <p class="space"></p>
+    <p class="space"></p>
+  </div>
 
   <div class="all">
     <ul class="list">
