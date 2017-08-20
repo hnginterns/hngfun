@@ -47,7 +47,7 @@
 			<div class="team4-card-footer">
 				<div class="team4-footer-separate">
 					
-						<span class="dot">&#9679;</span> All team
+						<span class="dot">&#9679;</span> All Teams
 					
 				</div>
 				<div class="team4-footer-separate">
@@ -72,7 +72,7 @@
 			<div class="team4-card-footer">
 				<div class="team4-footer-separate">
 					
-						<span class="dot">&#9679;</span> All team
+						<span class="dot">&#9679;</span> All Teams
 					
 				</div>
 				<div class="team4-footer-separate">
@@ -97,7 +97,7 @@
 			<div class="team4-card-footer">
 				<div class="team4-footer-separate">
 					
-						<span class="dot">&#9679;</span> All Team
+						<span class="dot">&#9679;</span> All Teams
 					
 				</div>
 				<div class="team4-footer-separate">
@@ -147,7 +147,7 @@
 			<div class="team4-card-footer">
 				<div class="team4-footer-separate">
 					
-						<span class="dot">&#9679;</span> All team
+						<span class="dot">&#9679;</span> All Teams
 					
 				</div>
 				<div class="team4-footer-separate">
@@ -172,7 +172,7 @@
 			<div class="team4-card-footer">
 				<div class="team4-footer-separate">
 					
-						<span class="dot">&#9679;</span> All team
+						<span class="dot">&#9679;</span> All Teams
 					
 				</div>
 				<div class="team4-footer-separate">
@@ -197,7 +197,7 @@
 			<div class="team4-card-footer">
 				<div class="team4-footer-separate">
 					
-						<span class="dot">&#9679;</span> All Team
+						<span class="dot">&#9679;</span> All Teams
 					
 				</div>
 				<div class="team4-footer-separate">
