@@ -9,38 +9,44 @@
   <style>
     * {margin: 0; padding: 0;}
 
-      .all {
+      .library-all {
         margin: 20px;
       }
 
-      .list {
+      .library-list {
         list-style-type: none;
         width: 500px;
       }
 
-      h3 {
+
+
+      .library-list h3 {
         font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
       }
 
-      li img {
+      /*li img {
         float: left;
         margin: 0 15px 0 0;
+      }*/
+
+      /*li p {
+        font: 200 16px/1.5 Georgia, Times New Roman, serif;
+      }*/
+
+      .library-list p {
+        font: 200 16px/1.5 Georgia, Times New Roman, serif;
       }
 
-      li p {
-        font: 200 12px/1.5 Georgia, Times New Roman, serif;
-      }
-
-      li {
+      .library-list li {
         padding: 10px;
         overflow: auto;
       }
 
-      a:hover {
-        background: #eee;
+      .library-list a:hover {
+        text-decoration: underline;
         cursor: pointer;
       }
-      input[type=text] {
+      .library-input[type=text] {
           width: 50%;
           box-sizing: border-box;
           border: 2px solid #ccc;
@@ -55,22 +61,22 @@
           transition: width 0.4s ease-in-out;
       }
 
-      input[type=text]:focus {
+      .library-input[type=text]:focus {
           width: 55%;
       }
-      .imas{
+      .library-img{
           height:42px;
           width:42px;
       }
-      .inputss{
+      .library-input{
           opacity: 1;
           text-align: center; 
           margin-top: 12%;
       }
-      .space{
+      .library-img-space{
           height: 100px;
       }
-      #search{
+      #library-search{
           text-align: center;
       }
   </style>
@@ -78,19 +84,19 @@
 <body>  
 
   <div>
-    <p class="space"></p>
+    <p class="library-img-space"></p>
   </div>
 
   <div>
-    <form id="search">
-      <input class="inputss" type="text" name="search" placeholder="Search..">
+    <form id="library-search">
+      <input class="library-input" type="text" name="search" placeholder="Search..">
     </form>
   </div>
 
-  <div class="all">
-    <ul class="list">
+  <div class="library-all">
+    <ul class="library-list">
       <li>
-        <img class="imas" src="images/library/gitbash.png">
+        <img class="library-img" src="images/library/gitbash.png">
         <h3>Git Tutorials</h3>
           <p><a href="https://backlogtool.com/git-guide/en/stepup/stepup1_1.html" target="_blank">-Git's beginner guide for dummies</a></p>
           <p><a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank">-Udacity's free course on How to use git and github</a></p>
@@ -104,7 +110,7 @@
       </li>
         
       <li>
-        <img class="imas" src="images/library/github.png">
+        <img class="library-img" src="images/library/github.png">
         <h3>Github Tutorials</h3>
           <p><a href="http://opensourcerer.diy.org/" target="_blank">-Open Sourcerer : Takes you from your first repo to your first pull request</a></p>
           <p><a href="https://help.github.com/">-Github's own tutorial</a></p>
@@ -118,7 +124,7 @@
       </li>
 
       <li>
-        <img class="imas" src="images/library/mysq.png">
+        <img class="library-img" src="images/library/mysq.png">
         <h3>MySQL Tutorials</h3>
           <p><a href="https://www.w3schools.com/SQL/deFault.asp" target="_blank">- W3Schools SQL Tutorial</a></p>
           <p><a href="https://www.tutorialrepublic.com/sql-tutorial/" target="_blank">- Tutorial Republic SQL Tutorial</a></p>
@@ -130,7 +136,7 @@
       </li>
 
       <li>
-        <img class="imas" src="images/library/php.jpg">
+        <img class="library-img" src="images/library/php.jpg">
         <h3>PHP Tutorials</h3>
           <p><a href="https://www.w3schools.com/php/default.asp" target="_blank">- W3Schools PHP Tutorial</a></p>
           <p><a href="http://php.net/manual/en/index.php" target="_blank">- PHP Documention in a simple manual format</a></p>

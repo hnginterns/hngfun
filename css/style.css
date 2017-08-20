@@ -1136,9 +1136,10 @@ div.body{
 	width: 20%;
 }
 
-/*team 10 style*/
+/* Project Page CSS by Team 10
+===============================*/
 
-.all {
+/*.all {
   margin-left: 14%;
   margin-right: 10%;
   margin-top: 1%;
@@ -1150,7 +1151,6 @@ div.body{
     margin: auto;
     padding: 5px;
     font-weight: bold;
-    /*text-align: center;*/
 }
 
 h3 {
@@ -1159,7 +1159,6 @@ h3 {
 
 li img {
   float: left;
-  /*margin: 0 15px 0 0;*/
 }
 
 li p {
@@ -1172,7 +1171,7 @@ li {
 }
 
 a:hover {
-  background: #eee;
+  text-decoration: underline;
   cursor: pointer;
 }  
 .imas{
@@ -1203,7 +1202,7 @@ input[type=text] {
 input[type=text]:focus {
     width: 75%;
 }
-
+*/
 .headd {
     
 }
@@ -1213,3 +1212,6 @@ input[type=text]:focus {
     padding-bottom: 100px;
     background-image: url(images\banner-images\banner-image-1.jpg);
 }
+
+/* Project Page CSS by Team 10 ends
+====================================*/
