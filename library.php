@@ -107,9 +107,9 @@
       <li>
         <img class="imas" src="images/library/mysq.png">
         <h3>mysql Tutorials</h3>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></p>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="https://www.tutorialspoint.com/ms_sql_server/" target="_blank">- MS SQL Server Tutorial </a></p>
+          <p><a href="https://www.w3schools.com/SQL/deFault.asp" target="_blank">- W3Schools SQL Tutorial</a></p>
+          <p><a href="http://www.dotnettricks.com/learn/sqlserver" target="_blank">- DotNet SQL Server Tutorial - For Beginners & Professionals</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
