@@ -70,6 +70,9 @@
       .space{
           height: 200px;
       }
+      #search{
+          text-align: center;
+      }
   </style>
 </head>
 <body>  
@@ -140,9 +143,11 @@
     </ul>
   </div>
 
-  <form class="">
-     <input class="inputss" type="text" name="search" placeholder="Search..">
-  </form>
+  <div>
+    <form id="search">
+      <input class="inputss" type="text" name="search" placeholder="Search..">
+    </form>
+  </div>
 
 </body>
 </html>
