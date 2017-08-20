@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- TITLE -->
+        <title>My Profile Card</title>
+        <!-- FONT -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="profile">
+          <img src= "images/profile.jpg">
+          <div class="details">
+            <h2>Ukauwa David<br><span>Web Designer</span></h2>
+            <p>My Name is Ukauwa David, a software Engineer from Lagos state.
+              I build web applications with incredible designs.
+              My major tools are PHP,Laravel,CSS3 and Bootstrap.</p>
+              <ul>
+                <li><a href="twitter.com/ukauwa_david"><i class="fa fa-twitter" aria-hidden="true"></i></a><li>
+                <li><a href="hnginterns.slack.com/messages/@dukauwa"><i class="fa fa-slack" aria-hidden="true"></i></a><li>
+                <li><a href="github.com/dukauwa"><i class="fa fa-github" aria-hidden="true"></i></a><li>
+                </ul>
+        </div>
+    </body>
+
+    <!-- STYLE -->
+    <style>
+          body
+          {
+              margin: 0;
+              padding: 0;
+              background-image:url("images/sierra.jpg");
+              background-size:cover;
+              /*background: #e6ff61;*/
+              font-family:cursive;
+          }
+          .profile
+          {
+              position: absolute;
+              top: 50%;
+              left: 50% ;
+              transform: translate(-50%,-50%);
+              width: 300px;
+              height:450px;
+              background: #fff;
+              box-sizing: border-box;
+              border-radius: 10px;
+              /*overflow: hidden;*/
+              box-shadow: 0 20px 20px rgba(0,0,0,.7);
+          }
+          .profile img
+          {
+            width:100%;
+            height:75%;
+            border-radius: 50%;
+          }
+
+          .details
+          {
+            height: 50%;
+            width: 100%;
+            background: #fff;
+            position: bottom;
+            bottom:0;
+            text-align: center;
+            padding: 20px;
+            box-sizing:border-box;
+            transition: .5s;
+          }
+          .details h2
+          {
+            margin: 0;
+            padding: 0;
+            color: #607d8b;
+            font-size: 18px;
+            text-transform: uppercase;
+          }
+          .details h2 span
+          {
+            font-size: 14px;
+            color: #ccc;
+          }
+          .details p
+          {
+            margin: 0;
+            padding: 10px 0 0;
+            font-size: 14px;
+            color: #aaa;
+          }
+          .details ul
+          {
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          .details ul li
+          {
+            list-style: none;
+            font-size: 20px;
+            width: 33.3%;
+
+          }
+          .fa
+          {
+              color: #000000;
+          }
+    </style>
+
+</html>

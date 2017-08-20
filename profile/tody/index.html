@@ -13,41 +13,42 @@
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       background-color: rgba(31, 205, 205, 0.76);
       height: 100%;
+      width: 100%;
+      box-sizing: content-box;
     }
 
     body {
       padding: 0;
       margin: 0;
+      display: flex;
+	  justify-content: center;
+	  align-items: center;
     }
 
     .main {
-      width: 80%;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 10px;
+      flex-wrap: wrap-reverse;
+      width: 100%;
     }
 
     .tody-img {
       width: 250px;
-      height: auto;
+      height: 247px;
+      padding: 10px;
     }
 
     .tody-img img {
       border-radius: 5%;
+      height: 100%;
       width: 100%;
-      margin-right: auto;
-      margin-left: auto;
       border: 5px solid white;
     }
 
     .info {
-      width: 600px;
       text-align: center;
+      padding: 30px;      
     }
 
     .social {
@@ -86,7 +87,7 @@
       <h1>Hey there! I'm Tolu Yussuff</h1>
       <p> Software developer | Student | Learner </p>
       <p>Constantly learning...</p>
-      <div> Stage 1 Task --> <a href="https://github.com/to-dy/hng-getting-started" id="link">https://github.com/to-dy/hng-getting-started</a> </div>
+      <div> Stage 1 Task --> <a href="https://github.com/to-dy/hng-getting-started" id="link"><i class="fa fa-link"> GitHub</i></a> </div>
       <div class="social">
         <ul>
           <li><a href="https://www.linkedin.com/in/toluyussuff" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
@@ -98,6 +99,7 @@
         </ul>
       </div>
     </div>
+
     <div class="tody-img"> <img src="tody1.jpg" alt="A picture of Tolu"> </div>
   </section>
 </body>
