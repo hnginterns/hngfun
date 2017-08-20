@@ -16,7 +16,7 @@
 }
 
 .team4-card {
-    width: 366px;
+    width: 340px;
     height: 300px;
     background: #FFFFFF;
     border-radius: 5px;
@@ -33,14 +33,14 @@
 }
 
 .team4-card-photo {
-    width: 366px;
+    width: 340px;
     height: 148px;
     background-position: center center;
 }
 
 
 .team4-card-info{ 
-    width: 366px;
+    width: 340px;
     height: 118px;
     padding: 0 20px;
 }
