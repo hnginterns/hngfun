@@ -68,7 +68,7 @@
           margin-top: 12%;
       }
       .space{
-          height: 120px;
+          height: 100px;
       }
       #search{
           text-align: center;
