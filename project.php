@@ -14,7 +14,7 @@
 
 <div class="p-card-container">
 		<div class="p-card">
-			<div class="p-card-photo"><img src="https://www.w3schools.com/css/img_fjords.jpg" alt=""></div>
+			<div class="p-card-photo"><img src="https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" alt=""></div>
 			<div class="p-card-info">
 				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
 				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
@@ -39,7 +39,7 @@
 		</div>
 
 		<div class="p-card">
-			<div class="p-card-photo"><img src="https://www.w3schools.com/css/img_fjords.jpg" alt=""></div>
+			<div class="p-card-photo"><img src="https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" alt=""></div>
 			<div class="p-card-info">
 				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
 				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
@@ -64,7 +64,7 @@
 		</div>
 
 		<div class="p-card">
-			<div class="p-card-photo"><img src="https://www.w3schools.com/css/img_fjords.jpg" alt=""></div>
+			<div class="p-card-photo"><img src="https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" alt=""></div>
 			<div class="p-card-info">
 				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
 				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
@@ -89,7 +89,7 @@
 		</div>
 
 		<div class="p-card">
-			<div class="p-card-photo"><img src="https://www.w3schools.com/css/img_fjords.jpg" alt=""></div>
+			<div class="p-card-photo"><img src="https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" alt=""></div>
 			<div class="p-card-info">
 				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
 				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
@@ -114,7 +114,7 @@
 		</div>
 
 		<div class="p-card">
-			<div class="p-card-photo"><img src="https://www.w3schools.com/css/img_fjords.jpg" alt=""></div>
+			<div class="p-card-photo"><img src="https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" alt=""></div>
 			<div class="p-card-info">
 				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
 				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
@@ -139,7 +139,7 @@
 		</div>
 
 		<div class="p-card">
-			<div class="p-card-photo"><img src="https://www.w3schools.com/css/img_fjords.jpg" alt=""></div>
+			<div class="p-card-photo"><img src="https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" alt=""></div>
 			<div class="p-card-info">
 				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
 				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
@@ -164,7 +164,7 @@
 		</div>
 
 		<div class="p-card">
-			<div class="p-card-photo"><img src="https://www.w3schools.com/css/img_fjords.jpg" alt=""></div>
+			<div class="p-card-photo"><img src="https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" alt=""></div>
 			<div class="p-card-info">
 				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
 				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
@@ -189,7 +189,7 @@
 		</div>
 
 		<div class="p-card">
-			<div class="p-card-photo"><img src="https://www.w3schools.com/css/img_fjords.jpg" alt=""></div>
+			<div class="p-card-photo"><img src="https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" alt=""></div>
 			<div class="p-card-info">
 				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
 				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
