@@ -68,7 +68,7 @@
           margin-top: 12%;
       }
       .space{
-          height: 200px;
+          height: 100px;
       }
       #search{
           text-align: center;
@@ -78,8 +78,6 @@
 <body>  
 
   <div>
-    <p class="space"></p>
-    <p class="space"></p>
     <p class="space"></p>
   </div>
 
