@@ -44,7 +44,7 @@
                                 <a href="#">Participants</a>
                             </li>
                             <li>
-                                <a href="#">Projects</a>
+                                <a href="project.php">Projects</a>
                             </li>
                             <li>
                                 <a href="contact.php">Contact Us</a>
