@@ -41,6 +41,9 @@
                                 <a href="about.php">About</a>
                             </li>
                             <li>
+                                <a href="news.php">News</a>
+                            </li>
+                            <li>
                                 <a href="#">Participants</a>
                             </li>
                             <li>
