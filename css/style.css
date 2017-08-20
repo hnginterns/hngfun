@@ -62,7 +62,6 @@
 }
 
 .p-card-title {
-    font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -72,7 +71,6 @@
 
 .p-card-description {
     width: 318px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -114,7 +112,6 @@
 
 .team-name {
     /*padding: 0 0 0 15px;*/
-    font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
