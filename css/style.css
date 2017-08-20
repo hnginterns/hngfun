@@ -990,3 +990,81 @@ div.body{
 .footer-distributed .footer-right{
 	width: 20%;
 }
+
+/*team 10 style*/
+
+.all {
+  margin-left: 14%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+.list {
+  font-size:x-large;
+    margin-top: 80px;
+    margin: auto;
+    padding: 5px;
+    font-weight: bold;
+    /*text-align: center;*/
+}
+
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+li img {
+  float: left;
+  /*margin: 0 15px 0 0;*/
+}
+
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
+
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}  
+.imas{
+    height:42px;
+    width:42px;
+}
+.inputss{
+    opacity: 1;
+    text-align: center; 
+    margin-top: 1%;
+}
+input[type=text] {
+    width: 70%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    text-align: center;
+}
+
+input[type=text]:focus {
+    width: 75%;
+}
+
+.headd {
+    
+}
+
+#header-content.row {
+    padding-top: 170px;
+    padding-bottom: 100px;
+    background-image: url(images\banner-images\banner-image-1.jpg);
+}
