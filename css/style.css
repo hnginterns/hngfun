@@ -1,3 +1,112 @@
+/* Single Project Page CSS by Team 5
+===============================*/
+
+.project-title-h3{
+    font-size:x-large;
+    margin-top: 80px;
+    margin: auto;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#project-header-hr {
+    border-bottom: 1.5px solid #DDC580;
+    opacity: 0.7;
+    width: 25%;
+    text-align: left;
+}
+
+div#team-member1 {
+    text-align: right;
+}
+
+div#team-member2 {
+    text-align: left;
+}
+
+.team-members {
+    width: 50%;
+    float: left;
+    padding: 0px 30px;
+}
+
+a.view-profile-project {
+    font-size: 10px;
+}
+
+h4#team-description {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.team-members li {
+    line-height: 30px;
+    font-style: italic;
+    list-style-type: none;
+}
+
+.project-right-container {
+  background: #fff !important;
+  padding: 0px 60px !important;
+  float: left;
+  height: 100vh !important;
+}
+
+#project-content.row {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.project-page-header {
+    font-size: 40px !important;
+    font-weight: 600 !important;
+    background: #fff;
+    padding: 30px;
+}
+
+#project-title-h3 {
+    font-size: 22px;
+    padding: 30px 0px 0px 0px;
+}
+
+#project-description-header {
+  font-size: 22px;
+  padding: 30px 0px 10px 0px;
+}
+
+h3#team-header {
+    font-size: 20px;
+    font-style: italic;
+}
+
+h4.project-description {
+    padding: 0px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .team-members {
+      width: 100% !important;
+      float: left;
+      padding: 0px;
+  }
+
+  div#team-member1 {
+      text-align: left;
+      margin: 20px 0px;
+  }
+
+}
+
+/* Single Project Page CSS by Team 5 ends
+===============================*/
+
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -532,8 +641,6 @@ h6 {
 }
 
 
-
-
 /* =Media Queries for Nav
 ===============================*/
 @media all and (max-width: 1024px) {
@@ -771,13 +878,13 @@ h6 {
 .center {
     text-align: center;
 }
-.divider-h { 
-    
+.divider-h {
+
     margin-left: 100px;
     margin-right: 100px;
     border-bottom: 1px solid red;
     background: #DDC580;
-   
+
 }
 .header-text{
     border-bottom: 4px solid #DDC580;
@@ -796,14 +903,14 @@ h6 {
      margin: auto;
      padding: 5px;
      font-weight: bold;
-     
+
 }
 
    div.margin{
        margin-top: 80px;
    }
-    
-    
+
+
 .section-1-body{
     font-size:x-large;
     width: 60vw;
@@ -811,7 +918,75 @@ h6 {
      margin: auto;
      color: #A29A9A;
      font-size: 15px;
-}    
+}
 div.body{
     margin-top: 5px;
+}
+.footer-distributed{
+	background-color: #424242;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+/* Footer left */
+.footer-distributed .footer-left{
+	width: 40%;
+}
+.footer-distributed h3{
+	color:  #ffffff;
+	margin: 0;
+}
+.footer-distributed h3 span{
+	color:  #ffffff;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+	width: 35%;
+}
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+	width: 20%;
 }
