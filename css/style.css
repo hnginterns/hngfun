@@ -1059,12 +1059,12 @@ input[type=text]:focus {
     width: 75%;
 }
 
-.headd {
-    
-}
-
-#header-content.row {
+#header-content{
     padding-top: 170px;
     padding-bottom: 100px;
     background-image: url(images\banner-images\banner-image-1.jpg);
+}
+
+.content{
+    content:url(images\banner-images\banner-image-1.jpg);
 }
