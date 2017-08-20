@@ -1213,3 +1213,78 @@ input[type=text]:focus {
     padding-bottom: 100px;
     background-image: url(images\banner-images\banner-image-1.jpg);
 }
+
+
+/* News Page CSS by Team 8 
+===============================*/
+
+.newsSectionOne{
+	width: 30%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+
+.newsSectionOne figure{
+	background-color: black;
+	overflow: hidden;
+}
+
+.newsSectionOne img{
+	width: 100%;
+	opacity: 0.7;
+	transform: scale(1.05);
+	cursor: pointer;
+	transition: opacity 1s;
+}
+
+.newsSectionOne img:hover{
+	opacity: 1;
+}
+
+.label,
+.tag{
+	position: absolute;
+	color: #E5E1E1;
+}
+
+.tag{
+	width: auto;
+	height: auto;
+	top: 78%;
+	padding: 2px;
+	margin-left: 1px;
+	background-color:#AC070A;
+}
+
+.label{
+	
+	top: 86%;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.3);
+	line-height: 100%;
+}
+
+#tag1{
+	top: 71.5%;
+}
+
+#label1{
+	top: 82.3%;
+}
+
+#image1{
+	width: 35%;
+}
+
+#image2{
+	width: 34%;
+}
+
+#tag2{
+	top: 78%;
+}
+
+#label2{
+	top: 88%;
+}
