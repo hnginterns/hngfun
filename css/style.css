@@ -1,26 +1,57 @@
 /* Single Project Page CSS by Team 5
 ===============================*/
-.project-left-container {
-    background: #fff !important;
-    border-right: 2px solid #fcfcfc;
-    width: 25% !important;
-    padding: 0px 30px !important;
+
+.project-title-h3{
+    font-size:x-large;
+    margin-top: 80px;
+    margin: auto;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#project-header-hr {
+    border-bottom: 1.5px solid #DDC580;
+    opacity: 0.7;
+    width: 25%;
+    text-align: left;
+}
+
+div#team-member1 {
+    text-align: right;
+}
+
+div#team-member2 {
+    text-align: left;
+}
+
+.team-members {
+    width: 50%;
     float: left;
-    height: 100vh !important;
+    padding: 0px 30px;
+}
+
+a.view-profile-project {
+    font-size: 10px;
+}
+
+h4#team-description {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.team-members li {
+    line-height: 30px;
+    font-style: italic;
+    list-style-type: none;
 }
 
 .project-right-container {
   background: #fff !important;
-  width: 75% !important;
-  padding: 0px 30px !important;
+  padding: 0px 60px !important;
   float: left;
   height: 100vh !important;
-}
-
-li.team-members-li {
-    list-style-type: none;
-    font-size: 12px;
-    font-weight: 500;
 }
 
 #project-content.row {
@@ -35,30 +66,6 @@ li.team-members-li {
     padding: 30px;
 }
 
-hr.team-member-hr {
-    opacity: 0.1;
-    margin: 20px 0px;
-}
-
-p.team-members-p.clearfix {
-    margin: 0px !important;
-}
-
-#team-members-h4 {
-    margin: 20px 0px 50px 0px;
-}
-
-img.team-member-img {
-    max-width: 50% !important;
-    float: left;
-    margin-right: 5px;
-}
-
-img.project-img {
-    height: auto;
-    max-width: 100% !important;
-}
-
 #project-title-h3 {
     font-size: 22px;
     padding: 30px 0px 0px 0px;
@@ -66,14 +73,34 @@ img.project-img {
 
 #project-description-header {
   font-size: 22px;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px 10px 0px;
 }
 
-p.project-description {
+h3#team-header {
+    font-size: 20px;
+    font-style: italic;
+}
+
+h4.project-description {
     padding: 0px;
     line-height: 30px;
     font-size: 16px;
     text-align: justify;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .team-members {
+      width: 100% !important;
+      float: left;
+      padding: 0px;
+  }
+
+  div#team-member1 {
+      text-align: left;
+      margin: 20px 0px;
+  }
+
 }
 
 /* Single Project Page CSS by Team 5 ends
@@ -847,4 +874,51 @@ h6 {
         height: 432px !important;
     }
 
+}
+.center {
+    text-align: center;
+}
+.divider-h {
+
+    margin-left: 100px;
+    margin-right: 100px;
+    border-bottom: 1px solid red;
+    background: #DDC580;
+
+}
+.header-text{
+    border-bottom: 4px solid #DDC580;
+    font-size:xx-large;
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+.section-1{
+    border-bottom: 1.5px solid #DDC580;
+    font-size:x-large;
+    width: 35vw;
+    margin-top: 80px;
+    text-align: center;
+     margin: auto;
+     padding: 5px;
+     font-weight: bold;
+
+}
+
+   div.margin{
+       margin-top: 80px;
+   }
+
+
+.section-1-body{
+    font-size:x-large;
+    width: 60vw;
+    text-align: center;
+     margin: auto;
+     color: #A29A9A;
+     font-size: 15px;
+}
+div.body{
+    margin-top: 5px;
 }
