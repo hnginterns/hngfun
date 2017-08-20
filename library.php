@@ -79,7 +79,6 @@
 
   <div>
     <p class="space"></p>
-    <p class="space"></p>
   </div>
 
   <div>
