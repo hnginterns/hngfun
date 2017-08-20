@@ -692,7 +692,7 @@
 
     </div>
        <!--  Each Participants ends here  -->
-<<<<<<< HEAD
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -710,8 +710,8 @@
                         <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
-                </div>
-=======
+                </div
+                
   <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -734,7 +734,7 @@
                    </a>
 
 >>>>>>> baf63a8cf80f63d87aeafbf672f761b5676110bc
-            </div>
+            </div>z
 
         </div>
 
