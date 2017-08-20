@@ -596,6 +596,29 @@
 
             </div>
 
+            
+            <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/894886569563303937/SDDv2YBT_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <!--Profile Link-->
+                    <a href="https://hng.fun/profile/kosychike.html">
+                    <!--Profile name-->
+                        <h3 class="p-card-title">Chike Ononye</h3>
+                    </a>
+                    <!--Email-->
+                    <p class="p-card-description">kosyononye@gmail.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <!--Team-->
+                        <h3 class="p-card-title"> Team 1 </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         </div>
 
 
@@ -751,6 +774,36 @@
 
     </div>
     
+
+</div>
+					    
+					       
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+
+
+            <a href="http://hng.fun/profile/dolapobabs.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Babatunde Adedolapo</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">dolapob@gmail.com</p>
+            <!--Email-->
+        </div>
+
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team 3 </h3>
+                <!--Team-->
+            </a>
+
+
+
+        </div>
+
+    </div>
 
 </div>
 <?php  include "footer.php" ?>
