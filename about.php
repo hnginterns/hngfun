@@ -20,6 +20,13 @@
         <div class="section-1-body"> Internship is for 500 interns - The Hotels.ng Software Developers Internship Programme To last for 4 months starting from the end of September 2017.
             The internship is targeted at young Nigerians in Akwa Ibom who want to be software developers and contribute to the growth of technology in Nigeria.</div>
 
+
+
+	<div class="section-1 margin"> Join Us </div> 
+          <div class="section-1-body"> Join the team of our future world class developers.</br>
+	   <button class="button">JOIN TEAM</button>
+          </div>
+
             </div>
     </div>
 <?php include ('footer.php'); ?>
