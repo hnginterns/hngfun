@@ -106,8 +106,10 @@
 
       <li>
         <img class="imas" src="images/library/mysq.png">
-        <h3>mysql Tutorials</h3>
+        <h3>MySQL Tutorials</h3>
           <p><a href="https://www.w3schools.com/SQL/deFault.asp" target="_blank">- W3Schools SQL Tutorial</a></p>
+          <p><a href="https://www.tutorialrepublic.com/sql-tutorial/" target="_blank">- Tutorial Republic SQL Tutorial</a></p>
+          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
@@ -120,9 +122,9 @@
           <p><a href="https://www.w3schools.com/php/default.asp" target="_blank">- W3Schools PHP Tutorial</a></p>
           <p><a href="http://php.net/manual/en/index.php" target="_blank">- PHP Documention in a simple manual format</a></p>
           <p><a href="http://php.net/manual/en/tutorial.php" target="_blank">- A simple PHP tutorial</a></p>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="https://www.tutorialspoint.com/php/" target="_blank">- Tutorials Point PHP Tutorial.</a></p>
+          <p><a href="https://www.codecademy.com/learn/php" target="_blank">- Codecademy PHP Tutorial</a></p>
+          <p><a href="https://www.tutorialrepublic.com/php-tutorial/" target="_blank">- Tutorial Republic PHP Tutorial</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
       </li>
 
