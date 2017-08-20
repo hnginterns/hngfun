@@ -41,9 +41,6 @@
                                 <a href="about.php">About</a>
                             </li>
                             <li>
-                                <a href="news.php">News</a>
-                            </li>
-                            <li>
                                 <a href="#">Participants</a>
                             </li>
                             <li>
@@ -56,7 +53,7 @@
                                 <a href="#">Past Internship</a>
                             </li>
                             <li>
-                                <a href="#">News</a>
+                                <a href="news.php">News</a>
                             </li>
                             <li>
                                 <a href="#">Supporters</a>
