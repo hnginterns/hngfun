@@ -76,11 +76,17 @@
   </style>
 </head>
 <body>  
-  
+
   <div>
     <p class="space"></p>
     <p class="space"></p>
     <p class="space"></p>
+  </div>
+
+  <div>
+    <form id="search">
+      <input class="inputss" type="text" name="search" placeholder="Search..">
+    </form>
   </div>
 
   <div class="all">
@@ -141,12 +147,6 @@
       
       
     </ul>
-  </div>
-
-  <div>
-    <form id="search">
-      <input class="inputss" type="text" name="search" placeholder="Search..">
-    </form>
   </div>
 
 </body>
