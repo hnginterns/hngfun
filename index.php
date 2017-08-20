@@ -50,6 +50,7 @@
             }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -62,6 +63,8 @@
 
 =======
 >>>>>>> 46b15f448872d2fc8c74343392d2563c93113ff5
+=======
+>>>>>>> 0ad180f826552bfe7b18f2af1569a09c61d5a4da
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -75,9 +78,13 @@
                 </div>
                 <p>Would be available soon along with the footer and header</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 <p>Please Don't Override someone's work, pull before you push - Team1</p>
 >>>>>>> 46b15f448872d2fc8c74343392d2563c93113ff5
+=======
+                <p>Please Don't Override someone's work, pull before you push - Team1</p>
+>>>>>>> 0ad180f826552bfe7b18f2af1569a09c61d5a4da
             </div>
         </div>
     </body>
