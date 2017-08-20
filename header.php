@@ -59,7 +59,7 @@
                                 <a href="#">Supporters</a>
                             </li>
                             <li>
-                                <a href="#">Library</a>
+                                <a href="library.php">Library</a>
                             </li>
                         </ul>
                     </nav>
