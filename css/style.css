@@ -36,11 +36,7 @@
     width: 366px;
     height: 148px;
 }
-.p-card-photo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px 5px 0px 0px;
-}
+
 
 .p-card-info{ 
     width: 366px;
