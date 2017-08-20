@@ -9,6 +9,7 @@
 <html>
     <head>
         <title>HNG.Fun</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <style>
             html, body{height: 100%;}
@@ -53,7 +54,7 @@
                 <p align="justify"> I am Agbola Tobi a Website and Mobile Applications Developer. I have been writing code for over 6 years and i have worked on various websites and mobiles applications </p>
                 <p align="justify">I Graduated with a Bachelor of Science in Computer Information System from Babcock university.</p><p align="justify">Wanna know anything else about me? Do hit me up using my slack username</p>
                 <button class="btn-primary">
-                 <a class="button-link" href="https://github.com/agbolatobi/hotelstest"> First Intern Project</a>
+                 <a class="button-link" href="https://github.com/agbolatobi/hotelstest"><i class="fa fa-github" aria-hidden="true"></i> My First Intern Project</a>
                 </button></div>
                 <div class="tag"</div>
             </div>
