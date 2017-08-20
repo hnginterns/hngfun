@@ -5,7 +5,7 @@
     <div class="col-38">
 
         <div class="section-heading">
-            <h1>Project Page</h1>
+            <h1>Single Project Page</h1>
         </div>
 
 
