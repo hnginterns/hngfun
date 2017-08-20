@@ -107,9 +107,7 @@
       <li>
         <img class="imas" src="images/library/mysq.png">
         <h3>mysql Tutorials</h3>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></p>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="https://www.w3schools.com/SQL/deFault.asp" target="_blank">- W3Schools SQL Tutorial</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
