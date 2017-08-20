@@ -1,0 +1,21 @@
+body {
+	background-color: #95989A;
+}
+
+h1 {
+	font-family: cursive;
+	text-align: center;
+}
+
+#picture {
+	width: 50px;
+	margin-left: 250px;
+}
+
+h3 {
+	font-family: cursive;
+}
+
+#handles {
+	text-align: center;
+}
