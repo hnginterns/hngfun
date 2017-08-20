@@ -12,20 +12,20 @@
 </div>
 
 
-<div class="p-card-container">
-		<div class="p-card">
-			<div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-			<div class="p-card-info">
-				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
-				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
+<div class="team4-card-container">
+		<div class="team4-card">
+			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team4-card-info">
+				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<p class="team4-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
 			</div>
-			<div class="p-card-footer">
-				<div class="p-footer-separate">
+			<div class="team4-card-footer">
+				<div class="team4-footer-separate">
 					
 						<span class="dot">&#9679; </span> All Teams
 					
 				</div>
-				<div class="p-footer-separate">
+				<div class="team4-footer-separate">
 					
 						<span class="dot2">&#9679; </span> PHP &nbsp; &nbsp;
 					
@@ -38,19 +38,19 @@
 			</div>
 		</div>
 
-		<div class="p-card">
-			<div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-			<div class="p-card-info">
-				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
-				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
+		<div class="team4-card">
+			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team4-card-info">
+				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<p class="team4-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
 			</div>
-			<div class="p-card-footer">
-				<div class="p-footer-separate">
+			<div class="team4-card-footer">
+				<div class="team4-footer-separate">
 					
 						<span class="dot">&#9679;</span> All team
 					
 				</div>
-				<div class="p-footer-separate">
+				<div class="team4-footer-separate">
 					
 						<span class="dot2">&#9679;</span> PHP &nbsp; &nbsp;
 					
@@ -63,19 +63,19 @@
 			</div>
 		</div>
 
-		<div class="p-card">
-			<div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-			<div class="p-card-info">
-				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
-				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
+		<div class="team4-card">
+			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team4-card-info">
+				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<p class="team4-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
 			</div>
-			<div class="p-card-footer">
-				<div class="p-footer-separate">
+			<div class="team4-card-footer">
+				<div class="team4-footer-separate">
 					
 						<span class="dot">&#9679;</span> All team
 					
 				</div>
-				<div class="p-footer-separate">
+				<div class="team4-footer-separate">
 					
 						<span class="dot2">&#9679;</span> PHP &nbsp; &nbsp;
 					
@@ -88,19 +88,19 @@
 			</div>
 		</div>
 
-		<div class="p-card">
-			<div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-			<div class="p-card-info">
-				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
-				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
+		<div class="team4-card">
+			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team4-card-info">
+				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<p class="team4-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
 			</div>
-			<div class="p-card-footer">
-				<div class="p-footer-separate">
+			<div class="team4-card-footer">
+				<div class="team4-footer-separate">
 					
 						<span class="dot">&#9679;</span> All Team
 					
 				</div>
-				<div class="p-footer-separate">
+				<div class="team4-footer-separate">
 					
 						<span class="dot2">&#9679;</span> PHP &nbsp; &nbsp;
 					
@@ -113,19 +113,19 @@
 			</div>
 		</div>
 
-		<div class="p-card">
-			<div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-			<div class="p-card-info">
-				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
-				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
+		<div class="team4-card">
+			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team4-card-info">
+				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<p class="team4-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
 			</div>
-			<div class="p-card-footer">
-				<div class="p-footer-separate">
+			<div class="team4-card-footer">
+				<div class="team4-footer-separate">
 					
 						<span class="dot">&#9679; </span> All Teams
 					
 				</div>
-				<div class="p-footer-separate">
+				<div class="team4-footer-separate">
 					
 						<span class="dot2">&#9679; </span> PHP &nbsp; &nbsp;
 					
@@ -138,19 +138,19 @@
 			</div>
 		</div>
 
-		<div class="p-card">
-			<div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-			<div class="p-card-info">
-				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
-				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
+		<div class="team4-card">
+			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team4-card-info">
+				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<p class="team4-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
 			</div>
-			<div class="p-card-footer">
-				<div class="p-footer-separate">
+			<div class="team4-card-footer">
+				<div class="team4-footer-separate">
 					
 						<span class="dot">&#9679;</span> All team
 					
 				</div>
-				<div class="p-footer-separate">
+				<div class="team4-footer-separate">
 					
 						<span class="dot2">&#9679;</span> PHP &nbsp; &nbsp;
 					
@@ -163,19 +163,19 @@
 			</div>
 		</div>
 
-		<div class="p-card">
-			<div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-			<div class="p-card-info">
-				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
-				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
+		<div class="team4-card">
+			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team4-card-info">
+				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<p class="team4-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
 			</div>
-			<div class="p-card-footer">
-				<div class="p-footer-separate">
+			<div class="team4-card-footer">
+				<div class="team4-footer-separate">
 					
 						<span class="dot">&#9679;</span> All team
 					
 				</div>
-				<div class="p-footer-separate">
+				<div class="team4-footer-separate">
 					
 						<span class="dot2">&#9679;</span> PHP &nbsp; &nbsp;
 					
@@ -188,19 +188,19 @@
 			</div>
 		</div>
 
-		<div class="p-card">
-			<div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-			<div class="p-card-info">
-				<a href="#"><h3 class="p-card-title">Build Hng.fun website</h3></a>
-				<p class="p-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
+		<div class="team4-card">
+			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team4-card-info">
+				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<p class="team4-card-description">Brief description of the project goes here. Brief brief yes description of the project goes here...</p>
 			</div>
-			<div class="p-card-footer">
-				<div class="p-footer-separate">
+			<div class="team4-card-footer">
+				<div class="team4-footer-separate">
 					
 						<span class="dot">&#9679;</span> All Team
 					
 				</div>
-				<div class="p-footer-separate">
+				<div class="team4-footer-separate">
 					
 						<span class="dot2">&#9679;</span> PHP &nbsp; &nbsp;
 					
