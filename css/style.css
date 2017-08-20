@@ -6,11 +6,11 @@
     
 
     display: flex;
+    .max-width: 700px;
     width: 100%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    align-content: center;
     flex-wrap: wrap;
 
 }
@@ -1068,72 +1068,72 @@ div.body{
     margin-top: 5px;
 }
 .footer-distributed{
-    background-color: #424242;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
+	background-color: #424242;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
 
-    padding: 55px 50px;
-    margin-top: 80px;
+	padding: 55px 50px;
+	margin-top: 80px;
 }
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
-    display: inline-block;
-    vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 }
 /* Footer left */
 .footer-distributed .footer-left{
-    width: 40%;
+	width: 40%;
 }
 .footer-distributed h3{
-    color:  #ffffff;
-    margin: 0;
+	color:  #ffffff;
+	margin: 0;
 }
 .footer-distributed h3 span{
-    color:  #ffffff;
+	color:  #ffffff;
 }
 /* Footer Center */
 .footer-distributed .footer-center{
-    width: 35%;
+	width: 35%;
 }
 .footer-distributed .footer-center i{
-    background-color:  #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
 }
 .footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
+	font-size: 17px;
+	line-height: 38px;
 }
 .footer-distributed .footer-center p{
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin:0;
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
 }
 .footer-distributed .footer-center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
 }
 .footer-distributed .footer-center p a{
-    color:  #5383d3;
-    text-decoration: none;;
+	color:  #5383d3;
+	text-decoration: none;;
 }
 /* Footer Right */
 .footer-distributed .footer-right{
-    width: 20%;
+	width: 20%;
 }
 
 /*team 10 style*/
