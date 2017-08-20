@@ -70,9 +70,6 @@
   </style>
 </head>
 <body>  
-  <form class="">
-     <input class="inputss" type="text" name="search" placeholder="Search..">
-  </form>
 
   <div class="all">
     <ul class="list">
@@ -96,7 +93,7 @@
           <p><a href="http://opensourcerer.diy.org/" target="_blank">-Open Sourcerer : Takes you from your first repo to your first pull request</a></p>
           <p><a href="https://help.github.com/">-Github's own tutorial</a></p>
           <p><a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/" target="_blank">-Adding a project to Github with Command Line</a></p>
-          <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="https://help.github.com/articles/fetching-a-remote/" target="_blank">-Working with other people's repositories</a></p>
           <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
@@ -110,7 +107,7 @@
           <p><a href="https://www.w3schools.com/SQL/deFault.asp" target="_blank">- W3Schools SQL Tutorial</a></p>
           <p><a href="https://www.tutorialrepublic.com/sql-tutorial/" target="_blank">- Tutorial Republic SQL Tutorial</a></p>
           <p><a href="https://www.tutorialspoint.com/mysql/index.htm" target="_blank">- Tutorials Point MySQL Tutorial</a></p>
-          <p><a href="https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial" target="_blank">- A Basic MySQL Tutorial.</a></p>
+          <p><a href="https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial" target="_blank">- A Basic MySQL Tutorial</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
           <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
@@ -133,6 +130,10 @@
       
     </ul>
   </div>
+
+  <form class="">
+     <input class="inputss" type="text" name="search" placeholder="Search..">
+  </form>
 
 </body>
 </html>
