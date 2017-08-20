@@ -45,7 +45,7 @@
         .col-m-12 {width: 100%;}
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 600px) {
         /* For desktop: */
         .col-1 {width: 8.33%;}
         .col-2 {width: 16.66%;}
@@ -154,8 +154,8 @@
     .image-container-image {
       position: relative;
       margin: 5px;
-      height: 400px;
-      width: 400px;
+      width: 100%;
+      height: 100%;
     }
 
     .about {
@@ -178,27 +178,11 @@
         transition: all .35s ease-in-out 0.3s;
     }
 
-    .image-container-image .middle-btn {
-      opacity: 0;
-      position: absolute;
-      padding:100px;
-      top: 50%;
-      left: 50%; 
-      -webkit-transition: all .35s ease-in-out 0.3s;
-      transition: all .35s ease-in-out 0.3s;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%)
-    }
-
     .image-container-image:hover .image {
         opacity: 0.3;
         -webkit-transform: translate(-10px, -10px);
         transform: translate(-10px, -10px);
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }
-
-    .image-container-image:hover .middle-btn {
-      opacity: 1;
     }   
 
   </style>
