@@ -733,12 +733,12 @@
                         <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
-                </div
+                </div>
                 
   <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
-               <div class="p-card-photo" style="background-image: url(https://s3.postimg.org/ss3h5exf7/12274735_1230649710285633_2189770792182668981_n.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+               <div class="p-card-photo" style="background-image: url(https://s3.postimg.org/ss3h5exf7/12274735_1230649710285633_2189770792182668981_n.jpg);background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                <div class="p-card-info">
                    <a href="http://hng.fun/profile/paulayuk.html">
                        <!--Profile Link-->
@@ -756,19 +756,15 @@
                        <!--Team-->
                    </a>
 
->>>>>>> baf63a8cf80f63d87aeafbf672f761b5676110bc
-            </div>z
+
+            </div>
 
         </div>
 
-<<<<<<< HEAD
-
-=======
     </div>
        <!--  Each Participants ends here  -->
 					       
-					       
->>>>>>> baf63a8cf80f63d87aeafbf672f761b5676110bc
+					    
         <!--  Paste above this and leave a few lines so the next person can see this -->
 
 
