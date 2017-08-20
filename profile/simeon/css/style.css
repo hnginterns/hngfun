@@ -1,0 +1,94 @@
+/* stylesheet was adapted for the project, some rules might be overkill */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Rubik", Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #7B2131;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #F8033A;
+  cursor: pointer;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 154px;
+  height: 154px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.logo {
+  font-size: 2em;
+  color: #E57373;
+  font-family: 'Homemade Apple', cursive;
+  text-align: center;
+}
+
+.menu-item {
+  width: 100%;
+  text-align: center;
+}
+
+ul.menu-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+ul.menu-item li {
+  list-style-type: none;
+  margin-right: 10px;
+}
+
+ul.menu-item li:last-of-type {
+  margin-right: 0px;
+}
+
+.short-bio {
+  text-align: center;
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.short-bio p {
+  font-size: 1.4em;
+}
+
+@media only screen and (min-width: 601px) {
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+  .menu {
+    width: 50%;
+  }
+}
