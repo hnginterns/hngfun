@@ -1,4 +1,5 @@
 <?php include ('header.php'); ?>
+<link rel="stylesheet" href="css/style.css">
 <div id="header-content" class="row clearfix">
     <div class="col-38">
         <div class="section-heading">
