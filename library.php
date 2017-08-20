@@ -6,7 +6,7 @@
 <head>
     <title>Library</title>
 
-  <style>
+  <!-- <style>
     * {margin: 0; padding: 0;}
 
       .all {
@@ -67,7 +67,7 @@
           text-align: center; 
           margin-top: 12%;
       }
-  </style>
+  </style> -->
 </head>
 <body>  
   <form class="">
