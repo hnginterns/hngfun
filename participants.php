@@ -70,7 +70,7 @@
                 <div class="p-card-info">
 
 
-                    <a href="http://hng.fun/profile/jekayode.html">
+                    <a href="http://hng.fun/profile/bosunski.html">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Olatunbosun Gabriel</h3>
                         <!--Profile Name-->
