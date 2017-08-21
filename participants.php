@@ -95,13 +95,8 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -129,13 +124,8 @@
                         <h3 class="p-card-title"> Team 9 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -163,13 +153,8 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -194,13 +179,8 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -224,13 +204,8 @@
                         <h3 class="p-card-title"> Team 4 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -249,9 +224,7 @@
                         <h3 class="p-card-title"> Team 4 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -270,9 +243,7 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
         <div class="p-card">
@@ -290,9 +261,7 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -312,9 +281,7 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -333,10 +300,8 @@
                     <a href="#">
                         <h3 class="p-card-title"> Team 3 </h3>
                     </a>
-                </div>
-
+               </div>
             </div>
-
         </div>
 
 
@@ -401,15 +366,11 @@
                         <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
- <div class="p-card">
+	    
+       <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/861305946479493120/PsPxNeDd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -424,9 +385,7 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
         <div class="p-card">
             <div class="v-center">
@@ -443,9 +402,7 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
         <div class="p-card">
@@ -468,13 +425,8 @@
                         <h3 class="p-card-title"> Team 5 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -493,9 +445,7 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -519,11 +469,7 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
 	    </div>
 
@@ -594,13 +540,8 @@
                         <h3 class="p-card-title"> Team 8 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -624,13 +565,8 @@
                         <h3 class="p-card-title"> Team 8 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -654,13 +590,8 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
 	    </div>
             
             <div class="p-card">
@@ -683,13 +614,8 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
   
 
@@ -714,13 +640,8 @@
                         <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
         <div class="p-card">
@@ -743,13 +664,8 @@
                         <h3 class="p-card-title"> Team 1 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
                 <div class="p-card">
                     <div class="v-center">
@@ -771,14 +687,10 @@
                                 <h3 class="p-card-title"> Team 6 </h3>
                                 <!--Team-->
                             </a>
-
-
-
                         </div>
-
                     </div>
-
                 </div>
+	    
     <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -799,11 +711,8 @@
                        <h3 class="p-card-title"> Team 9 </h3>
                        <!--Team-->
                    </a>
-
             </div>
-
         </div>
-
     </div>
        <!--  Each Participants ends here  -->
 	
@@ -828,7 +737,8 @@
 	      </div>
 	  </div>
 	    
-	<!--   Participant ends here  -->    
+	<!--   Participant ends here  -->
+	    
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -846,7 +756,7 @@
                         <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
-                </div>
+              </div>
 	</div>
     </div>
 
@@ -872,10 +782,9 @@
                    </a>
 
             </div>
-
         </div>
-
     </div>
+	    
        <!--  Each Participants ends here  -->
 	<div class="p-card">
             <div class="v-center">
@@ -897,17 +806,13 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
+	    
         <!--  Each Participants ends here  -->
-        <!--  Paste above this and leave a few lines so the next person can see this -->
-
+        
+	    <!--  Paste above this and leave a few lines so the next person can see this -->
 
        <!--  Each Participant starts here  -->
               <div class="p-card">
@@ -954,13 +859,8 @@
                 <h3 class="p-card-title"> Team 3 </h3>
                 <!--Team-->
             </a>
-
-
-
         </div>
-
     </div>
-
 </div>
         <div class="p-card">
             <div class="v-center">
@@ -982,6 +882,7 @@
                 </div>
             </div>
         </div>
+	    
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1002,12 +903,7 @@
                 <h3 class="p-card-title"> Team 6 </h3>
                 <!--Team-->
             </a>
-
-
-
         </div>
-
     </div>
-
 </div>
 <?php  include "footer.php" ?>
