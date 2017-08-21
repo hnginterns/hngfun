@@ -876,4 +876,36 @@
     </div>
 
 </div>
+
+
+       
+
+
+
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos1-1.fna.fbcdn.net/v/t1.0-9/19430119_10207233462114696_2762007678831481972_n.jpg?oh=65fd73274def3af4a2c4da3615ba6067&oe=5A1E23F7); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/aniekan.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Grace Essien</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">hayley.essien94@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 6 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 <?php  include "footer.php" ?>
