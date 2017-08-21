@@ -6,42 +6,42 @@
 
         <div class="section-heading">
             <h1>Recent</h1>
-			
+
 			<div class="container">
-            
+
 				<div class="newsSectionOne">
-				
+
 					<figure>
                         <img src="images/team8/photoOne.jpg" alt="Hotels.ng image">
                     </figure>
-					
+
 					<p class="tag">#TECH</p>
-					
+
 					<p class="label">
-						The Hotels.ng internship has begun! join their slack community to participate.
+						The Hotels.ng internship has begun! join their slack community to participate. And get to know more.
 					</p>
-					
+
 				</div>
-				
+
 				<div class="newsSectionOne" id="image1">
 					<figure>
                         <img src="images/team8/photoTwo.jpg" alt="Hotels.ng image" >
                     </figure>
-					
+
 					<p class="tag" id="tag1">#POLITICS</p>
-					
+
 					<p class="label" id="label1">
 						The president is back!! The vice presidents and all citizens of Nigeria welcome him back.
 					</p>
 				</div>
-				
+
 				<div class="newsSectionOne" id="image2">
 					<figure>
                         <img src="images/team8/photoThree.jpg" alt="Hotels.ng image" >
                     </figure>
-					
+
 					<p class="tag" id="tag2">#BUSINESS</p>
-					
+
 					<p class="label" id="label2">
 						Kachikwu: Nigeria to become exporter of refined fuel.
 					</p>
@@ -73,5 +73,5 @@
 
 </div><!--End of Row-->
 </header>
-    
+
 <?php  include 'footer.php';?>

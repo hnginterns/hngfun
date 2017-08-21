@@ -248,6 +248,59 @@ h4.project-description {
 
 }
 
+ /* Three columns side by side edited by @godfredakpan under Team 5 */
+.column {
+    float: left;
+    width: 70.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+} 
+
 /* Single Project Page CSS by Team 5 ends
 ===============================*/
 
@@ -275,9 +328,12 @@ p {
     line-height: 25px;
 }
 
-.row img {
+.roww img {
     height: auto;
     max-width: 100%;
+    position: relative; 
+    width: 100%; /* for IE 6 */
+    height: 40%;
 }
 
 a {
@@ -645,6 +701,10 @@ h6 {
 
 .section-heading {
     padding: 0 0 15px 0;
+    position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
 }
 
 .section-subtitle {
@@ -974,7 +1034,7 @@ h6 {
 
     #wrapper {
         margin:0;
-        padding:0;
+        padding:0
     }
 
     .page-border {
@@ -1140,56 +1200,53 @@ div.body{
 ===============================*/
 
 .library-all {
-    margin: 20px;
-    margin-left: 14%;
-    margin-right: 10%;
-    margin-top: 1%;
+  margin-left: 14%;
+  margin-right: 10%;
+  margin-top: 1%;
 }
 
 .library-list {
-    list-style-type: none;
-    width: 500px;
-    font-size:x-large;
+  font-size:x-large;
     margin-top: 80px;
     margin: auto;
     padding: 5px;
     font-weight: bold;
 }
+
 .library-list h3 {
-    font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
 }
 
-.library-img {
-    float: left;
-    margin: 0 15px 0 0;
+.library-list li img {
+  float: left;
+  margin: 0 15px 0 0;
 }
 
-.library-list p {
-    font: 200 14px/1.5 Georgia, Times New Roman, serif;
+.library-list li p {
+  font: 200 15px/1.5 Georgia, Times New Roman, serif;
+  color: black;
 }
 
 .library-list li {
-        padding: 10px;
-        overflow: auto;
-      }
-
-.library-list a:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    color:#000000;
+  padding: 10px;
+  overflow: auto;
 }
 
-.library-img{
+.library-list li:hover {
+  background: #eee;
+  cursor: pointer;
+}  
+.library-imas{
     height:42px;
     width:42px;
 }
-.library-input{
-    opacity: 1;
+.inputss{
+    opacity: 10;
     text-align: center; 
-    margin-top: 12%;
+    margin-top: 0px;
 }
-.library-input[type=text] {
-    width: 50%;
+.project-title-h3 input[type=text] {
+    width: 70%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -1201,27 +1258,55 @@ div.body{
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-}
-
-.library-input[type=text]:focus {
-    width: 55%;
-}
-
-.library-img-space{
-    height: 100px;
-}
-#library-search{
     text-align: center;
 }
 
-/*.headd {
-    
+.project-title-h3 input[type=text]:focus {
+    width: 75%;
 }
-*/
-#header-content.row {
-    padding-top: 170px;
-    padding-bottom: 100px;
-    background-image: url(images\banner-images\banner-image-1.jpg);
+
+#library-header-content{
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+
+.section-heading h1 span { 
+   color: white; 
+   font: bold 30px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+#library-body-content.row {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.library-back-to-top {
+background: none;
+margin: 0;
+/*position: fixed;*/
+bottom: 0;
+right: 0;
+width: 70px;
+height: 70px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #00BFFF;
+background-color: #00BFFF;
+ 
+}
+ 
+  
+ 
+.library-back-to-top i {
+ 
+  font-size: 60px;
+ 
 }
 
 /* Library Page CSS by Team 10 ends
@@ -1309,3 +1394,54 @@ div.body{
 
 /* Past Internships Page CSS by Team 7 ends
 ===============================*/
+.row {
+    margin-top: 15px;
+    width:100%;
+    height:50%;
+}
+.row div {
+    width:50%;
+    height:100%;
+    float:left;
+}
+.image{
+    height: 200px;
+
+}
+
+.name-text{
+    font-size:x-large;
+    margin-top: 60px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #333333;
+
+}
+.name-post-text{
+    font-size:large;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    color: #333333;
+     
+}
+.name-body-text{
+    font-size:small;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    color: #4F4F4F;
+     
+}
+.linkedin{
+    align-self: left;
+    height: 30px;
+    width: 30px;
+    margin-top: 3px;
+    margin-left: 20px;
+    
+}

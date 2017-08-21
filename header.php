@@ -35,7 +35,7 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="/">Home</a>
                             </li>
                             <li>
                                 <a href="about.php">About</a>
@@ -53,10 +53,7 @@
                                 <a href="contact.php">Contact Us</a>
                             </li>
                             <li>
-                                <a href="#">Past Internship</a>
-                            </li>
-                            <li>
-                                <a href="#">News</a>
+                                <a href="past_internships.php">Past Internship</a>
                             </li>
                             <li>
                                 <a href="#">Supporters</a>
@@ -74,4 +71,3 @@
             </div>
         </div>
     </header>
-    

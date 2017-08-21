@@ -13,20 +13,19 @@
 
 </div><!--End of Row-->
 </header>
-<div class="center">
-
-    <div class="section-1 margin"  >We are on a mission of developing world class software Engineers</div>
-    <div class="body">
-        <div class="section-1-body"> Internship is for 500 interns - The Hotels.ng Software Developers Internship Programme To last for 4 months starting from the end of September 2017.
-            The internship is targeted at young Nigerians in Akwa Ibom who want to be software developers and contribute to the growth of technology in Nigeria.</div>
 
 
-
-	<div class="section-1 margin"> Join Us </div> 
-          <div class="section-1-body"> Join the team of our future world class developers.</br>
-	   <button class="button">JOIN TEAM</button>
-          </div>
-
+            <div class="row">
+                <div class="image"><img src="images/markessien.png" alt=""></div>
+                <div class="text">
+                    <div class="name-text">Mark Essien</div>
+                    <div class="name-post-text">CEO/Founder</div>
+                    <div class="name-body-text">I'm Mark Essien, born and grew up in the small town of Ikot Ekpene, Akwa Ibom State, Nigeria.
+I did my primary school at Monika Kindergarten, and my secondary school at Federal Government, Ikot Ekpene. As you can tell, very much a small town upbringing.
+After that, I moved to Germany to attend University. It was an interesting experience, but after many years in Germany, I decided that I prefer to live in Nigeria.</div>
+<div class="linkedin"><img src="images/linkedin.png" height="36" width="36" alt="" align="left"></div>            
+</div>
+                     
             </div>
     </div>
 <?php include ('footer.php'); ?>
