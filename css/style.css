@@ -1643,6 +1643,28 @@
             }
             /* Past Internships Page CSS by Team 7 starts
 ===============================*/
+            .navigation{
+             border-color: red;
+              background-color:grey;
+              height:100%;
+              width: 20%;
+
+            }
+            .homediv{
+                background: url(images/tm7.jpg);
+                         height:150px;
+            }
+            .ttedit{
+                
+                width: 80%;
+                border: 5px solid white;
+                padding: 10px;
+                margin: 25px;
+                align-content: center;
+                position: absolute;
+                text-align: center;
+
+
             /* Past Internships Page CSS by Team 7 ends
 ===============================*/
             
