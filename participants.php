@@ -1,4 +1,4 @@
-﻿<?php  include "header.php" ?>
+<?php  include "header.php" ?>
 
 <div id="banner-content" class="row clearfix">
 
@@ -215,6 +215,30 @@
             </div>
 
         </div>
+        
+            
+        
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/6526607?v=4&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/mathemandy.html">
+                        <h3 class="p-card-title">Andy Eshiet</h3>
+                    </a>
+                    <p class="p-card-description">andyeshiet@gmail.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        
+        
 
         <div class="p-card">
             <div class="v-center">
