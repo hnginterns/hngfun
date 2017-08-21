@@ -597,34 +597,7 @@
             </div>
 
             
-            <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/894886569563303937/SDDv2YBT_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <!--Profile Link-->
-                    <a href="https://hng.fun/profile/kosychike.html">
-                    <!--Profile name-->
-                        <h3 class="p-card-title">Chike Ononye</h3>
-                    </a>
-                    <!--Email-->
-                    <p class="p-card-description">kosyononye@gmail.com</p>
-                </div>
-
-                <div class="p-team">
-                    <a href="#">
-                        <!--Team-->
-                        <h3 class="p-card-title"> Team 1 </h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        </div>
-
-
-
-
-
+  
 
         <div class="p-card">
             <div class="v-center">
