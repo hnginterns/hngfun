@@ -188,3 +188,4 @@
 <a href="#top" class="library-back-to-top" style="display: inline;">
   <i class="fa fa-arrow-circle-up"></i>
 </a>
+<?php include ('footer.php'); ?>
