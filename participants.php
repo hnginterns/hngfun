@@ -76,8 +76,7 @@
                 <div class="p-team">
                     <a href="#">
                         <h3 class="p-card-title"> Team 3 </h3>
-                    </a>
-                </div>
+                    </a></div>
 
             </div>
 
