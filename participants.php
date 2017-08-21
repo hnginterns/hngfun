@@ -6,7 +6,7 @@
         <h1>Participants</h1>
         <div class="line"></div>
     </div>
-
+    <h3 style="color: red; text-align: center"> Please dont edit this page yet, we are still working on it</h3>
     <table class="participants__table ">
         <thead>
             <tr>
@@ -17,8 +17,8 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
+                <td><img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1503153956/IMG_20170119_174852_589_qsoqaz.jpg ">Oreoluwa Ojo</td>
+                <td><a href="./profile/ogbeniore.html ">@ogbeniore</a></td>
             </tr>
         </tbody>
     </table>
