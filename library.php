@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <div id="library-header-content" class="roww clearfix">
-  <div class="img"> </div>
+  <img src="images\banner-images\monkey_code_banner.jpg" alt="lin">
   <div class="col-38">
       <div class="section-heading">
           <h1><span>Hng interns Library</span></h1>
@@ -23,7 +23,8 @@
   <div class="content-holder" class="clearfix">
     </br>
     </br>
-
+  <div class="library-title-h3"  >
+    
     <input id="tab1-library" type="radio" name="tabs-library" checked>
     <label for="tab1-library">HTML</label>
     
@@ -35,6 +36,7 @@
     
     <input id="tab4-library" type="radio" name="tabs-library">
     <label for="tab4-library">HNG.Fun Tutorials</label>
+</div>
     
     <section id="content1">
       <div class="library-all">
