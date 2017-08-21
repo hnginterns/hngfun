@@ -390,6 +390,34 @@
         </div>
 
 
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://3.bp.blogspot.com/-PiUY7625XM4/WP4AciXXW6I/AAAAAAAABX8/C04iRDTrGaMrspUkrYMzh7X53VjGhkF7gCEw/s1600/emem.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/emembrownson.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Emem Brownson</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">brownjee001@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
 
 
 
