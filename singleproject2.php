@@ -42,15 +42,15 @@
        <div class="row">
   <div class="column">
     <div class="card">
-      <img src="images/profile pic.jpg" alt="Team member" style="width:100%">
+      <img src="profile/godfred.jpg" alt="Godfred" style="width:100%">
       <div class="container">
         <h3>Team member</h3>
-        <p class="title">Name</p>
-		<p class="title">Git hub username</p>
-		<p class="title">Slack username</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>My email@gmail.com</p>
-        <a class="view-profile-project" href="profile/.html">View Profile</a>
+        <p class="title">Godfred</p>
+		<p class="title">Git Hub=godfredakpan</p>
+		<p class="title">Slack=godfredakpan</p>
+        <p>Iam a Programmer, from Akwa Ibom State</p>
+        <p>godfredakpan@gmail.com</p>
+        <a class="view-profile-project" href="profile/godfredakpan.html">View Profile</a>
       
       </div>
     </div>
