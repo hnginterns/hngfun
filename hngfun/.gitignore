@@ -1,0 +1,5 @@
+#Ignore PHPStorm file
+*.idea
+.vscode/
+.DS_Store
+.idea/
