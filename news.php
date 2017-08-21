@@ -18,7 +18,7 @@
 					<p class="tag">#TECH</p>
 
 					<p class="label">
-						The Hotels.ng internship has begun! join their slack community to participate.
+						The Hotels.ng internship has begun! join their slack community to participate. And get to know more.
 					</p>
 
 				</div>
