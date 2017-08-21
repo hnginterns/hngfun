@@ -34,6 +34,13 @@ include "header.php";
   input[type=submit] {
     background-color: #26acd9;
   }
+
+  input[type=submit]:hover {
+    color: white;
+    border: .5px solid #ccc;
+    cursor: pointer;
+  }
+
   textarea {
     font-family: inherit;
     resize: none;
@@ -48,6 +55,25 @@ include "header.php";
 
   p > span {
     margin-right: 10px;
+  }
+
+  .map iframe {
+    width: 100%;
+    height: 100%:
+  }
+  @media only screen and (max-width:1024px) {
+    .contact {
+      width: 90%;
+    }
+    .contact section {
+      width: 45%;
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    .contact section {
+      width: 95%;
+    }
   }
 
 </style>
@@ -68,9 +94,7 @@ include "header.php";
       <span><i class="fa fa-2x fa-github"></i></span>
     </div>
   <div class="map">
-    <iframe
-    width="400"
-    height="250"
+    <iframe height="250"
     frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary" allowfullscreen>
   </iframe>
@@ -91,5 +115,5 @@ include "header.php";
 
 
 <?php 
-//include "footer.php"; 
+include "footer.php"; 
 ?>
