@@ -15,6 +15,7 @@
 
 }
 
+
 .team4-card {
     width: 340px;
     height: 300px;
@@ -1154,7 +1155,15 @@ div.body{
     margin: auto;
     padding: 5px;
     font-weight: bold;
+
 }
+
+.back-to-top:active + .library-all {
+    overflow: scroll;
+    height:100vh;
+    /* #team 10 back to top button style */
+}
+
 .library-list h3 {
     font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
 }
@@ -1186,7 +1195,7 @@ div.body{
 .library-input{
     opacity: 1;
     text-align: center; 
-    margin-top: 12%;
+    margin-top: 5px;
 }
 .library-input[type=text] {
     width: 50%;
@@ -1301,6 +1310,9 @@ div.body{
 #label2{
 	top: 88%;
 }
+
+
+
 
 /* Past Internships Page CSS by Team 7 starts
 ===============================*/

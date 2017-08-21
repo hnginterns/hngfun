@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <title>Library</title>
 
   <!-- <style>
@@ -14,8 +15,11 @@
 <body>  
 
   <div>
-    <p class="library-img-space"></p>
+  <a name="top"><a> <!--anchor for back to top button -->
+    <p class="library-img-space"></p> 
+    <h4 align="center">Welcome to hng.fun Library. You can find comprehensive tutorials for HTML, CSS, GIT and PHP in the sections below<h4>
   </div>
+
 
   <div>
     <form id="library-search">
@@ -24,6 +28,7 @@
   </div>
 
   <div class="library-all">
+   
     <ul class="library-list">
       <li>
         <img class="library-img" src="images/library/gitbash.png">
@@ -83,5 +88,6 @@
     </ul>
   </div>
 
+<a href="#top">Back to Top</a>
 </body>
 </html>
