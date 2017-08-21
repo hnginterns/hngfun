@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +57,14 @@
 			font-family: 'Oswald', sans-serif;
 		}
 
-		footer {
+
+
+		.footer_container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
 			padding: 5px;
 			background-color: #BCB49E;
 			height: 30px;
@@ -66,18 +73,150 @@
 			font-size: 28px;
 		}
 
-		.footer_container {
-			display: flex;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			width: 400px;
-					margin-left: 500px;
-				}
-
 		a {
 			color: black;
 		}
+
+		@media only screen 
+			and (min-device-width : 320px) 
+			and (max-device-width : 480px) {
+			/* Styles */
+			body {
+				background-color: #FCFFCC;
+				height: 100%;
+				width: 320px;
+			}
+
+			header {
+				margin-bottom: 30px;
+				height: 20px;
+				width: 310px;
+			}
+
+			.container {
+				width: 300px;
+				display: flex;
+				margin-left: 0;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-content: center;
+			}
+
+			.about {
+				width: 280px;
+			}
+
+			.photo {
+				margin-left: 0;
+				width: 280px;
+				border-radius: 30px;
+			}
+			img {
+				width: 250px;
+				height: 300px;
+				border-radius: 30px;
+			}
+
+			.footer_container {
+				width: 320px;
+				height: 30px;
+			}
+		}
+
+		@media only screen 
+			and (min-device-width : 768px) 
+			and (max-device-width : 1024px) {
+				body {
+				background-color: #FCFFCC;
+				height: 100%;
+				width: 748px;
+			}
+
+			header {
+				margin-bottom: 30px;
+				height: 20px;
+				width: 748px;
+			}
+
+			.container {
+				width: 680px;
+				display: flex;
+				margin-left: 0;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-content: space-around;
+			}
+
+			.about {
+				width: 660px;
+			}
+
+			.photo {
+				margin-left: 0;
+				width: 660px;
+				border-radius: 30px;
+			}
+			img {
+				width: 400px;
+				height: 300px;
+				border-radius: 30px;
+			}
+
+			.footer_container {
+				width: 680px;
+				height: 30px;
+			}
+		}
+		@media only screen 
+			and (min-device-width : 768px) 
+			and (max-device-width : 1024px) 
+			and (orientation : portrait) {
+				body {
+				background-color: #FCFFCC;
+				height: 100%;
+				width: 988px;
+			}
+
+			header {
+				margin-bottom: 30px;
+				height: 20px;
+				width: 980px;
+			}
+
+			.container {
+				width: 955px;
+				display: flex;
+				margin-left: 0;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-content: space-around;
+			}
+
+			.about {
+				width: 890px;
+			}
+
+			.photo {
+				margin-left: 0;
+				width: 890px;
+				border-radius: 30px;
+			}
+			img {
+				width: 400px;
+				height: 300px;
+				border-radius: 30px;
+			}
+
+			.footer_container {
+				width: 990px;
+				height: 30px;
+			}
+			}
+
+
 
 </style>
 	<title>HNG Profile Page</title>
@@ -85,6 +224,9 @@
 <body>
 	<header> <em><h1>HNG profile page</em></h1></header>
 	<div class="container">
+		<div class="photo">
+			<img src="http://i.imgur.com/rydLCog.jpg" alt="personal photo">
+		</div>
 		<div class="about">
 			<label for="name"><strong>Name:</strong></label>
 			<p>Timi Omoyeni</p> <br>
@@ -99,9 +241,6 @@
 				you can find a link to my stage one repo <a href="https://github.com/Timibadass/hng_internship_repo_1" target="_blank">here</a>
 			</p>
 
-		</div>
-		<div class="photo">
-			<img src="http://i.imgur.com/rydLCog.jpg" alt="personal photo">
 		</div>
 	</div>
 </body>
