@@ -1445,3 +1445,34 @@ background-color: #00BFFF;
     margin-left: 20px;
     
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 60px;
+    
+}
+p.ex {
+    padding: -0.9cm;
+    font-weight: lighter;
+    font-size: 17px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+p.thick {
+    font-weight: bold;
+    font-size: 150%;
+    color: #333333;
+}
+p.light{
+    color: #4F4F4F;
+    font-size:small;
+    font-weight: lighter;
+
+}
