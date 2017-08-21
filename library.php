@@ -83,34 +83,6 @@
       </div>
   </div>
 </div>
-<a href="#top" class="back-to-top" style="display: inline;">
+<a href="#top" class="library-back-to-top" style="display: inline;">
   <i class="fa fa-arrow-circle-up"></i>
 </a>
-<style>
- 
-.back-to-top {
-background: none;
-margin: 0;
-/*position: fixed;*/
-bottom: 0;
-right: 0;
-width: 70px;
-height: 70px;
-z-index: 100;
-display: none;
-text-decoration: none;
-color: #00BFFF;
-background-color: #00BFFF;
- 
-}
- 
-  
- 
-.back-to-top i {
- 
-  font-size: 60px;
- 
-}
- 
-</style>
-

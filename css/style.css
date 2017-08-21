@@ -1231,6 +1231,30 @@ div.body{
     padding-bottom: 2px;
 }
 
+.library-back-to-top {
+background: none;
+margin: 0;
+/*position: fixed;*/
+bottom: 0;
+right: 0;
+width: 70px;
+height: 70px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #00BFFF;
+background-color: #00BFFF;
+ 
+}
+ 
+  
+ 
+.library-back-to-top i {
+ 
+  font-size: 60px;
+ 
+}
+
 /* Library Page CSS by Team 10 ends
 ====================================*/
 
