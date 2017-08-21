@@ -11,7 +11,7 @@
 
 <div class="team4-card-container">
 
-<div style="height: 100px; width: 100%; margin-top: 150px;">
+<div style="height: 50px; width: 100%; margin-top: 150px;">
 <center>
 
 <h2 style=""><b>All Ongoing Project(s)</b></h2>
