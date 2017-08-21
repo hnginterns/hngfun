@@ -3919,14 +3919,14 @@ padding-top: 45px !important;
             .library-back-to-top i {
                 font-size: 60px;
             }*/
-            .roww img {
+            /*.roww img {
                 height: auto;
                 max-width: 100%;
                 position: relative;
                 width: 100%;
-                /* for IE 6 */
+                
                 height: 40%;
-            }
+            }*/
             /* about page CSS by Team 2 ends
 >>>>>>> 17efe165bf7baee7d933eaa5503ef7ad5fd20052
 ====================================*/
@@ -3946,8 +3946,8 @@ padding-top: 45px !important;
                 border-top-style: hidden;
                 border-bottom-style: hidden;
             }
-            /* Library Page CSS by Team 10 ends
-====================================*/
+
+
             /* News Page CSS by Team 8
 ===============================*/
             #recentDiv {
@@ -4970,6 +4970,7 @@ padding-top: 45px !important;
 
 .library-list {
     list-style-type: none;
+    text-align: center;
     width: 500px;
     font-size:x-large;
     margin-top: 80px;
