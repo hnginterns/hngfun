@@ -897,6 +897,35 @@
               </div>
               <!--  Each Participants ends here  -->
 
+<<<<<<< HEAD
+               
+               
+               <!--  Each Participant starts here  -->
+              <div class="p-card">
+                  <div class="v-center">
+                      <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/894886569563303937/SDDv2YBT_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                      <div class="p-card-info">
+                          <a href="http://hng.fun/profile/kosychike.html">
+                              <!--Profile Link-->
+                              <h3 class="p-card-title">Chike Ononye</h3>
+                              <!--Profile Name-->
+                          </a>
+                          <p class="p-card-description">kosyononye@gmail.com</p>
+                          <!--Email-->
+                      </div>
+                      <div class="p-team">
+                          <a href="#">
+                              <h3 class="p-card-title"> Team 1 </h3>
+                              <!--Team-->
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <!--  Each Participants ends here  -->
+
+</div>
+=======
+>>>>>>> be5ec6794070c70652981f7fcaa7f8fc086849c4
 					    
 					       
 <div class="p-card">
@@ -948,6 +977,8 @@
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
 
+<<<<<<< HEAD
+=======
 
             <a href="http://hng.fun/profile/simeon">
                 <!--Profile Link-->
@@ -956,6 +987,7 @@
             </a>
             <p class="p-card-description">adegbolasimeon@gmail.com</p>
             <!--Email-->
+>>>>>>> be5ec6794070c70652981f7fcaa7f8fc086849c4
         </div>
 
         <div class="p-team">
