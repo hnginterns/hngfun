@@ -143,6 +143,13 @@
                                    text-align: left;
                                    justify-content: flex-start;
                                }
+
+                               .team4-card:hover{
+                                    box-shadow: 2px 2px 5px gray;
+                                    -webkit-box-shadow: 2px 2px 5px gray;
+                                    -moz-box-shadow: 2px 2px 5px gray;
+                                    -o-box-shadow: 2px 2px 5px gray;
+                                }
                                
                                .team4-card-photo {
                                    width: 340px;
