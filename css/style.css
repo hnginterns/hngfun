@@ -4619,7 +4619,6 @@ padding-top: 45px !important;
 
  .team8-card {
      width: 100%;
-     height: relative;
      background: #FFFFFF;
      border-radius: 5px;
      background-color: #fcf9f9;
@@ -4643,13 +4642,11 @@ padding-top: 45px !important;
 
  .team8-card-photo {
      width: 100%;
-     height: relative;
      background-position: center center;
  }
 
  .team8-card-info {
      width: 100%;
-     height: relative;
      padding: 0 20px;
  }
 
@@ -4678,7 +4675,7 @@ padding-top: 45px !important;
      color: #534C4C;
  }
 
- .team4-card-footer {
+ .team8-card-footer {
      display: flex;
      justify-content: space-between;
      padding-left: 20px;

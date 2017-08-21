@@ -95,13 +95,8 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -129,13 +124,8 @@
                         <h3 class="p-card-title"> Team 9 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -163,13 +153,8 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -194,13 +179,8 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -224,13 +204,8 @@
                         <h3 class="p-card-title"> Team 4 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -249,9 +224,7 @@
                         <h3 class="p-card-title"> Team 4 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -270,9 +243,7 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
         <div class="p-card">
@@ -290,9 +261,7 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -312,9 +281,7 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -334,9 +301,7 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -401,18 +366,17 @@
                         <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
-        <div class="p-card">
 
+
+
+
+
+        <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/861305946479493120/PsPxNeDd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -427,9 +391,7 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
         <div class="p-card">
@@ -447,9 +409,7 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
         <div class="p-card">
@@ -472,13 +432,8 @@
                         <h3 class="p-card-title"> Team 5 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -497,9 +452,7 @@
                         <h3 class="p-card-title"> Team 3 </h3>
                     </a>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -523,11 +476,7 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
         </div>
 
@@ -598,13 +547,8 @@
                         <h3 class="p-card-title"> Team 8 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -628,13 +572,8 @@
                         <h3 class="p-card-title"> Team 8 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -658,18 +597,15 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
+
         </div>
 
 
 
-
         <div class="p-card">
+
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.cdninstagram.com/t51.2885-19/s150x150/17075777_1409128825798368_1636514859128455168_a.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -713,13 +649,8 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -744,13 +675,8 @@
                         <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
         <div class="p-card">
@@ -773,13 +699,8 @@
                         <h3 class="p-card-title"> Team 1 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
 
 
@@ -828,8 +749,6 @@
                         <!--Team-->
                     </a>
 
-
-
                 </div>
 
             </div>
@@ -846,25 +765,19 @@
                         <!--Profile Name-->
                     </a>
                     <p class="p-card-description">
-                        <span>dapon</span>extras<span>pp&#64;gm</span>ail.com
+
                     </p>
                     <!--Email-->
                 </div>
+
                 <div class="p-team">
                     <a href="#">
-                        <h3 class="p-card-title"> Team 9 </h3>
+                        <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-        <!--  Each Participants ends here  -->
-
-
-        <!--  Each Participants ends here  -->
 
         <!--  Each Participant starts here  -->
         <div class="p-card">
@@ -877,7 +790,7 @@
                         <!--Profile Name-->
                     </a>
                     <p class="p-card-description">
-                        <span>dapon</span>extras<span>pp&#64;gm</span>ail.com
+
                     </p>
                     <!--Email-->
                 </div>
@@ -886,9 +799,17 @@
                         <h3 class="p-card-title"> Team 9 </h3>
                         <!--Team-->
                     </a>
+
                 </div>
             </div>
         </div>
+        <!--  Each Participants ends here  -->
+
+
+        <!--  Each Participants ends here  -->
+
+        <!--  Each Participant starts here  -->
+
         <!--  Participant starts here  -->
 
         <div class="p-card">
@@ -934,7 +855,30 @@
         </div>
         <!--   Participant ends here  -->
 
+        <!--  Each Participants ends here  -->
 
+
+        <!--  Participant starts here  -->
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557); 
+				 background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/jhosuer.html">
+                        <h3 class="p-card-title">Joshua Jumbo</h3>
+                    </a>
+                    <p class="p-card-description">jumbojoshua91@gmail.com</p>
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--   Participant ends here  -->
 
         <div class="p-card">
             <div class="v-center">
@@ -953,6 +897,7 @@
                         <h3 class="p-card-title"> Team 6 </h3>
                         <!--Team-->
                     </a>
+
                 </div>
             </div>
         </div>
@@ -980,10 +925,14 @@
 
                 </div>
 
-
             </div>
-
         </div>
+
+
+
+
+
+        <!--  Each Participants ends here  -->
         <!--  Each Participants ends here  -->
         <div class="p-card">
             <div class="v-center">
@@ -1005,17 +954,13 @@
                         <h3 class="p-card-title"> Team 2 </h3>
                         <!--Team-->
                     </a>
-
-
-
                 </div>
-
             </div>
-
         </div>
-        <!--  Each Participants ends here  -->
-        <!--  Paste above this and leave a few lines so the next person can see this -->
 
+        <!--  Each Participants ends here  -->
+
+        <!--  Paste above this and leave a few lines so the next person can see this -->
 
         <!--  Each Participant starts here  -->
         <div class="p-card">
@@ -1091,6 +1036,56 @@
                 </div>
             </div>
         </div>
+
+        <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/30381435?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/trojan">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Michael Okoh</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">michael@okoh.co.uk</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 1 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
+
+
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/dolapobabs.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Babatunde Adedolapo</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">dolapob@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.flos1-1.fna.fbcdn.net/v/t1.0-9/19430119_10207233462114696_2762007678831481972_n.jpg?oh=65fd73274def3af4a2c4da3615ba6067&oe=5A1E23F7); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1112,6 +1107,31 @@
             </div>
         </div>
 
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="#">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title"></h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description"></p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+
+
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 6 </h3>
+                        <!--Team-->
+                    </a>
+
+                </div>
+            </div>
+        </div>
 
         <div class="p-card">
             <div class="v-center">
@@ -1150,7 +1170,9 @@
 
 
         <!--  Paste above this and leave a few lines so the next person can see this -->
-    </div>
 
+
+
+    </div>
 </div>
 <?php  include "footer.php" ?>
