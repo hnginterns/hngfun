@@ -313,10 +313,6 @@
         </div>
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/dYFenOU.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>

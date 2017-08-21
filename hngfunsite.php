@@ -131,7 +131,7 @@ h4.project-description {
 
   div#team5project-content {
     background-color: #fcfcfc;
-    margin-bottom: 1200px;
+    margin-bottom: 0px;
   }
 
   div#team-member1 {
