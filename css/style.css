@@ -1394,3 +1394,54 @@ background-color: #00BFFF;
 
 /* Past Internships Page CSS by Team 7 ends
 ===============================*/
+.row {
+    margin-top: 15px;
+    width:100%;
+    height:50%;
+}
+.row div {
+    width:50%;
+    height:100%;
+    float:left;
+}
+.image{
+    height: 200px;
+
+}
+
+.name-text{
+    font-size:x-large;
+    margin-top: 60px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #333333;
+
+}
+.name-post-text{
+    font-size:large;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    color: #333333;
+     
+}
+.name-body-text{
+    font-size:small;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    color: #4F4F4F;
+     
+}
+.linkedin{
+    align-self: left;
+    height: 30px;
+    width: 30px;
+    margin-top: 3px;
+    margin-left: 20px;
+    
+}
