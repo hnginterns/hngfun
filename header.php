@@ -7,8 +7,8 @@
 
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Favicon-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,7 +22,7 @@
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="participants">
 
 <div id="wrapper">
     <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
@@ -41,13 +41,17 @@
                                 <a href="about.php">About</a>
                             </li>
                             <li>
+<<<<<<< HEAD
                                 <a href="#">Participants</a>
+=======
+                                <a href="participants.php">Participants</a>
+>>>>>>> e4de11f762346424c26a8fd34685c093c0d9bee1
                             </li>
                             <li>
-                                <a href="project.php">Projects</a>
+                                <a href="#">Projects</a>
                             </li>
                             <li>
-                                <a href="contact.php">Contact Us</a>
+                                <a href="#">Contact Us</a>
                             </li>
                             <li>
                                 <a href="#">Past Internship</a>
@@ -59,7 +63,7 @@
                                 <a href="#">Supporters</a>
                             </li>
                             <li>
-                                <a href="library.php">Library</a>
+                                <a href="#">Library</a>
                             </li>
                         </ul>
                     </nav>
@@ -70,5 +74,3 @@
                 </div>
             </div>
         </div>
-    </header>
-    
