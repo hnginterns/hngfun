@@ -85,12 +85,12 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/plushdeveloper/image/upload/v1503153956/IMG_20170119_174852_589_qsoqaz.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="#">
-                        <h3 class="p-card-title">Emmanuel Joseph</h3>
+                    <a href="./profile/ogbeniore.html">
+                        <h3 class="p-card-title">Ojo Oreoluwa</h3>
                     </a>
-                    <p class="p-card-description">jekayode@live.com</p>
+                    <p class="p-card-description">oreeboy@gmail.com</p>
                 </div>
 
                 <div class="p-team">
