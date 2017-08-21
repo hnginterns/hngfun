@@ -6,6 +6,19 @@
 
         <div class="section-heading">
             <h1>Recent</h1>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        </div>
+        <div>
+        	<ul class="fa-ul">
+			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
+			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
+			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
+			</ul>
+        </div>
+=======
+=======
+>>>>>>> edf38927daa3674dc32ab9c14fc0be46a284a612
 			
 			<div class="container">
             
@@ -55,6 +68,10 @@
 			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
 			</ul>
         </div>
+<<<<<<< HEAD
+>>>>>>> 22d766b0e9a795d77633619c9b97c92437b2efe3
+=======
+>>>>>>> edf38927daa3674dc32ab9c14fc0be46a284a612
     </div>
 
     <div class="col-38">
