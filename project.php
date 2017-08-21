@@ -1,7 +1,12 @@
 <?php include ('header.php'); ?>
 
 
-
+<style type="text/css">
+	body{
+		background-image: none !important;
+		background-color: #f2f2f2;
+	}
+</style>
 
 
 <div class="team4-card-container">
