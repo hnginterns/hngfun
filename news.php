@@ -1,6 +1,6 @@
 <?php  include ('header.php');?>
 <div id="banner-content" class="row clearfix">
-	<h1 style ="margin-left:13px"><i class="fa fa-newspaper-o" style="font-size:48px;"></i>NEWS FEED</h1>
+	<h1 style ="margin-left:25px"><i class="fa fa-newspaper-o" style="font-size:48px;"></i>NEWS FEED</h1>
 </div>
 
 	<div class = "team8-card-container">
@@ -19,9 +19,9 @@
 				</p>
 			</div>
 			<div class="team8-card-footer">
-				<div class="team8-footer-right">
+				<h6 class="team8-footer-right">
 					<span class="dot3">&#9679; </span> 29 Aug, 17 &nbsp; &nbsp;
-				</div>	
+				</h6>	
 			</div>
 		</div>
 		
