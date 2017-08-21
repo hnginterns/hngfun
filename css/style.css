@@ -359,12 +359,10 @@ figure {
 }
 
 #wrapper {
-    margin:0 15px;
-    padding: 15px 0;
+    margin:0 0;
+    padding: 0 0;
     position: relative;
 }
-
-
 *:focus {
     outline: none;
 }
@@ -1268,6 +1266,7 @@ div.body{
 #library-header-content{
     padding-top: 100px;
     padding-bottom: 10px;
+	width:100%;
 }
 
 
@@ -1289,6 +1288,7 @@ div.body{
 background: none;
 margin: 0;
 /*position: fixed;*/
+position:fixed;
 bottom: 0;
 right: 0;
 width: 70px;
@@ -1296,8 +1296,9 @@ height: 70px;
 z-index: 100;
 display: none;
 text-decoration: none;
-color: #00BFFF;
+color: #FFFFFF;
 background-color: #00BFFF;
+padding:10px;
  
 }
  

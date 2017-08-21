@@ -3,14 +3,13 @@
 <link rel="stylesheet" href="css/style.css">
 
 <div id="library-header-content" class="roww clearfix">
-  <img src="images\banner-images\monkey_code_banner.jpg" alt="lin">
+  <img src="images/banner-images/banner_edit.fw.png" alt="lin">
   <div class="col-38">
       <div class="section-heading">
           <h1><span>Hng interns Library</span></h1>
       </div>
   </div>
 </div>
-
 
 <div id="library-body-content" class="row clearfix" style="background-color:#fcfcfc;">
       
@@ -82,7 +81,9 @@
         </ul>
       </div>
   </div>
-</div>
+  </div>
+
 <a href="#top" class="library-back-to-top" style="display: inline;">
   <i class="fa fa-arrow-circle-up"></i>
 </a>
+<?php include ('footer.php'); ?>
