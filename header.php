@@ -4,7 +4,14 @@
 <head lang="en">
     <meta charset="UTF-8">
 
-    <title>HNG</title>
+    <title><?php 
+    if (isset($pageTitle)) {
+        echo "HNG Interns - ".$pageTitle;
+    } else {
+        echo "HNG Interns";
+    }
+    ?>
+    </title>
 
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -80,7 +87,7 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="library.php">
                                     <img src="img/library.png" width="30">
                                 </a>
                             </li>
