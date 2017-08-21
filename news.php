@@ -6,55 +6,42 @@
 
         <div class="section-heading">
             <h1>Recent</h1>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        </div>
-        <div>
-        	<ul class="fa-ul">
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			</ul>
-        </div>
-=======
-=======
->>>>>>> edf38927daa3674dc32ab9c14fc0be46a284a612
-			
+
 			<div class="container">
-            
+
 				<div class="newsSectionOne">
-				
+
 					<figure>
                         <img src="images/team8/photoOne.jpg" alt="Hotels.ng image">
                     </figure>
-					
+
 					<p class="tag">#TECH</p>
-					
+
 					<p class="label">
 						The Hotels.ng internship has begun! join their slack community to participate.
 					</p>
-					
+
 				</div>
-				
+
 				<div class="newsSectionOne" id="image1">
 					<figure>
                         <img src="images/team8/photoTwo.jpg" alt="Hotels.ng image" >
                     </figure>
-					
+
 					<p class="tag" id="tag1">#POLITICS</p>
-					
+
 					<p class="label" id="label1">
 						The president is back!! The vice presidents and all citizens of Nigeria welcome him back.
 					</p>
 				</div>
-				
+
 				<div class="newsSectionOne" id="image2">
 					<figure>
                         <img src="images/team8/photoThree.jpg" alt="Hotels.ng image" >
                     </figure>
-					
+
 					<p class="tag" id="tag2">#BUSINESS</p>
-					
+
 					<p class="label" id="label2">
 						Kachikwu: Nigeria to become exporter of refined fuel.
 					</p>
@@ -68,10 +55,6 @@
 			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
 			</ul>
         </div>
-<<<<<<< HEAD
->>>>>>> 22d766b0e9a795d77633619c9b97c92437b2efe3
-=======
->>>>>>> edf38927daa3674dc32ab9c14fc0be46a284a612
     </div>
 
     <div class="col-38">
@@ -90,5 +73,5 @@
 
 </div><!--End of Row-->
 </header>
-    
+
 <?php  include 'footer.php';?>
