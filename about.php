@@ -12,12 +12,9 @@
     </div>
 
 </div><!--End of Row-->
-<<<<<<< HEAD
 </header>
-                   <center> <img src="images/group.png" height=150px width=150px>
-                        <h1>Leadership</h1>
-                   </center>
-=======
+                  
+
 </header>   
     <div>
         <table>
@@ -31,7 +28,9 @@
         </table>
 
 </div>
->>>>>>> 58b60b80999d471facdee2de2fa7a0c68df37e85
+ <center> <img src="images/group.png" height=150px width=150px>
+                        <h1>Leadership</h1>
+                   </center>
 
             <div class="row">
                 <div class="image"><img src="images/markessien.png" alt=""></div>
