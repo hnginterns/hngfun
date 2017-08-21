@@ -19,10 +19,11 @@ div#project-content {
   background: #fff !important;
 }
 #team5banner-content-h1 {
-  font-size: 52px !important;
+  font-size: 41px !important;
   line-height: 60px;
   font-weight: 600;
   color: #111;
+  padding: 0px 25px;
 }
 #project-header-hr {
   border-bottom: 1.5px solid #DDC580;
@@ -124,7 +125,7 @@ h4.project-description {
   }
 
   i.fa.fa-tasks {
-    font-size: 16px !important;
+    font-size: 9px !important;
     margin-right: 10px;
   }
 
@@ -193,7 +194,7 @@ h4.project-description {
 
 <!-- team5banner-content starts -->
 <div id="team5banner-content" class="row clearfix">
-	<h1 id="team5banner-content-h1"><i class="fa fa-tasks" style="font-size:48px;"></i>Single Project Page</h1>
+	<h1 id="team5banner-content-h1"><i class="fa fa-tasks"></i>Single Project Page</h1>
 </div>
 <!-- team5banner-content ends -->
 
