@@ -7,11 +7,10 @@
 		<center>
 		<!-- first news article -->
 		<div class="team8-card">
-			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">
 				<h2 class="team8-card-title">Hotels NG announces internship</h2>
 			</div>	
-				<div class="team8-card-photo"><img src = "https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg" style="width:100%"></div>
+			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
 				<p class="team8-card-description">Hotels NG CEO, Mark Essien took to his twitter page to announce the 2nd internship program for the year,
 				this announcement came as a result of the current ASUU strike. Mark urged young Nigerian undergraduates to see this as an opportunity 
