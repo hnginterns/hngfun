@@ -738,7 +738,32 @@
 
     </div>
        <!--  Each Participants ends here  -->
-
+	
+	
+	 <!--  Participant starts here  -->
+	    
+	<div class="p-card">
+	    <div class="v-center">
+		<div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557); 
+				 background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+		<div class="p-card-info">
+			<a href="http://hng.fun/profile/jhosuer.html">
+				<h3 class="p-card-title">Joshua Jumbo</h3>
+			</a>
+			<p class="p-card-description">jumbojoshua91@gmail.com</p>
+		</div>
+		<div class="p-team">
+			<a href="#">
+				<h3 class="p-card-title"> Team 2 </h3>
+			</a>
+		</div>
+	      </div>
+	  </div>
+	    
+	<!--   Participant ends here  -->
+	    
+	    
+	    
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
