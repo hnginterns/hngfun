@@ -879,7 +879,7 @@
                   <div class="v-center">
                       <div class="p-card-photo" style="background-image: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANpAAAAJDdlMzFiOWM4LTE0ZDEtNGE5Ny1iMGUxLTAwODJiMTlkYjc4Yw.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                       <div class="p-card-info">
-                          <a href="http://hng.fun/profile/rogue.kvng.html">
+                          <a href="http://hng.fun/profile/eniwokecornelius.html">
                               <!--Profile Link-->
                               <h3 class="p-card-title">Eniwoke Cornelius</h3>
                               <!--Profile Name-->
@@ -922,8 +922,6 @@
               <!--  Each Participants ends here  -->
 
 
-
-<<<<<<< HEAD
                
                
                <!--  Each Participant starts here  -->
@@ -950,8 +948,7 @@
               <!--  Each Participants ends here  -->
 
 </div>
-=======
->>>>>>> be5ec6794070c70652981f7fcaa7f8fc086849c4
+
 					    
 					       
 <div class="p-card">
@@ -1003,8 +1000,7 @@
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
 
-<<<<<<< HEAD
-=======
+
 
             <a href="http://hng.fun/profile/simeon">
                 <!--Profile Link-->
@@ -1013,7 +1009,6 @@
             </a>
             <p class="p-card-description">adegbolasimeon@gmail.com</p>
             <!--Email-->
->>>>>>> be5ec6794070c70652981f7fcaa7f8fc086849c4
         </div>
 
         <div class="p-team">
