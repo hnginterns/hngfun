@@ -64,8 +64,8 @@ After that, I moved to Germany to attend University. It was an interesting exper
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3964.1000594701727!2d3.3791138!3d6.5090174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ddabc4518c15d14!2sHotels.ng!5e0!3m2!1sen!2sng!4v1503315969626" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 </div>
-<div class="contact-address">
-    <table class="table" cellpadding="100px">
+<div >
+    <table >
         <tr>
             <th class="country">Nigeria<p class="address">No. 3, Birrel Avenue, off <br>Herbert Macaulay Way, <br>Sabo, Yaba, Lagos.</p></th>
             <th class="country">Kenya<p class="address">No. 3, Birrel Avenue, off<br> Herbert Macaulay Way, <br>Sabo, Yaba, Lagos.</p></th>
