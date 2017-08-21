@@ -26,55 +26,6 @@
 </head>
 
 <body >
-
-    <div id="wrapper">
-        <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-            <div id="header" class="nav-collapse">
-                <div class="row clearfix">
-                    <div class="col-1">
-                        <div id="logo">
-                            <h3>hng.fun</h3>
-                        </div>
-                        <nav id="nav-main">
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about.php">About</a>
-                                </li>
-                                <li>
-                                    <a href="participants.php">Participants</a>
-                                </li>
-                                <li>
-                                    <a href="projects.php">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Past Internship</a>
-                                </li>
-                                <li>
-                                    <a href="news.php">News</a>
-                                </li>
-                                <li>
-                                    <a href="#">Supporters</a>
-                                </li>
-                                <li>
-                                    <a href="#">Library</a>
-                                </li>
-                            </ul>
-                        </nav>
-
-
-                        <div id="nav-trigger"><span></span></div>
-                        <nav id="nav-mobile"></nav>
-
-                    </div>
-                </div>
-            </div>
-
     <header class="team1-header">
         <img src="hnglogo.png" alt="" class="team1-comp-logo">
         <div class="team1-links">
