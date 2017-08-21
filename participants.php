@@ -24,7 +24,28 @@
         <!--  Each Participant starts here  -->
 
 
-
+ <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/899666444060942341/uKTEUbcF_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/tella26.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">TELLA Babatunde</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">tellababatunde@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
 
 
         <div class="p-card">
@@ -261,6 +282,10 @@
         </div>
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/dYFenOU.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -328,6 +353,35 @@
                     <a href="#">
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAXRAAAAJGQ5OWE3ZjQ3LTRjMGUtNDY2Ni1hMTliLWYxMDNkMGRlNjIyNw.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/profchydon.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Nkwocha Chidi</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">profchydon@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 5 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
                 </div>
 
             </div>
@@ -489,6 +543,45 @@
             </div>
 
         </div>
+	    
+	    
+	    
+	    
+	    
+	    
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://www.easywebsolutionz.com/images/essien-saviour.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/emembrownson.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Essien Saviour</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">eazywebcontact@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 6 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+	    
+	    
+	    
+	    
+	    
 
 
 
