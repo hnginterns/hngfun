@@ -37,20 +37,20 @@
 	  
 	  <div class="team-members" id="team-member1">
 
-            <center><h4 id="team-header">Front-End Members</h4>
+            <center><h4 id="team-header">Front-End Members</h4><p>
 
        <div class="row">
   <div class="column">
     <div class="card">
-      <img src="images/profile pic.jpg" alt="Team member" style="width:100%">
+      <img src="profile/image/godfred.jpg" alt="" style="width:100%">
       <div class="container">
         <h3>Team member</h3>
-        <p class="title">Name</p>
-		<p class="title">Git hub username</p>
-		<p class="title">Slack username</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>My email@gmail.com</p>
-        <a class="view-profile-project" href="profile/.html">View Profile</a>
+        <p class="title">Godfred</p>
+		<p class="title">Git Hub=godfredakpan</p>
+		<p class="title">Slack=godfredakpan</p>
+        <p>Iam a Programmer, from Akwa Ibom State</p>
+        <p>godfredakpan@gmail.com</p>
+        <a class="view-profile-project" href="profile/godfredakpan.html">View Profile</a>
       
       </div>
     </div>
@@ -77,7 +77,7 @@
       <div class="row">
   <div class="column">
     <div class="card">
-      <img src="images/profile pic.jpg" alt="Team member" style="width:100%">
+      <img src="images/profile pic.jpg" alt="Team member" style="width:30%">
       <div class="container">
         <h3>Team member</h3>
         <p class="title">Name</p>
