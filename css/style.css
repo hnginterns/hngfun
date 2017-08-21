@@ -4956,20 +4956,21 @@ padding-top: 45px !important;
 
 .library-all {
     margin: 20px;
-    margin-left: 14%;
-    margin-right: 10%;
+    margin-left: 14% !important;
+    margin-right: 10% !important;
     margin-top: 1%;
+    align: center;
 }
 
 .library-list {
     list-style-type: none;
-    text-align: center;
     width: 500px;
     font-size:x-large;
     margin-top: 80px;
     margin: auto;
     padding: 5px;
     font-weight: bold;
+    align: center;
 }
 .library-list h3 {
     font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
@@ -4978,6 +4979,7 @@ padding-top: 45px !important;
 .library-img {
     float: left;
     margin: 0 15px 0 0;
+    size: 50px;
 }
 
 .library-list p {
@@ -5023,9 +5025,9 @@ padding-top: 45px !important;
     width: 55%;
 }
 
-.library-img-space{
+/*.library-img-space{
     height: 100px;
-}
+}*/
 #library-search{
     text-align: center;
 }
@@ -5042,9 +5044,4 @@ padding-top: 45px !important;
 
 /* Library Page CSS by Team 10 ends
 ====================================*/
-||||||| merged common ancestors
-                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
-=======
-                
->>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
->>>>>>> ff09b7977d43f691f8994a9bd5591d37c7c0758a
+

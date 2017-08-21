@@ -32,80 +32,17 @@ div#project-content {
   text-align: left;
 }
 
-/* TEAM MEMBER CARDS STYLE BEGINS */
-
-#team5-body {
-    text-align: center;
+div#team-member1 {
+  text-align: right;
 }
-
-#top-container {
-    padding: 40px;
+div#team-member2 {
+  text-align: left;
 }
-
-.team-member-cards {
-    display: flex;
-    flex-direction: row;
-    align-content: center; 
-    justify-content: space-around;
-     flex-wrap: wrap; 
-      /* width: 80%;   */
-    /* flex-basis: 25%; */
+.team-members {
+  width: 50%;
+  float: left;
+  padding: 0px 30px;
 }
-
-.flex-item {
-      box-shadow: 0 5px 7px 1px rgba(0, 0, 0, 0.14), 0 1px 7px 1px rgba(0, 0, 0, 0.12), 0 2px 2px -1px rgba(0, 0, 0, 0.2);  
-    border-radius: 15px;
-    background: grey;
-    margin: 15px;
-}
-
-.flex-item img {
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;    
-}
-
-.details {
-    padding: 10px 4px 10px 4px;
-    margin: 0px;
-    text-align: left;
-}
-
-.details > span:first-of-type {
-    color: white;
-    font-size: 15px;
-    letter-spacing: 0.05em;
-    margin-right: 60px; 
-}
-
-.details a {
-     display: inline !important;
-}
-
-.details .fa-slack {
-    color: #e01563 !important;
-}
-
-.details .fa-github {
-    color: #4078c0 !important;
-}
-
-.details .fa-user {
-    color: #000000 !important;
-}
-
-.member-icon {
-    font-size: 17px !important;
-    padding: 0px 0px 0px 5px;  
-}
-
-.team-heading {
-    text-align: center !important;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin: 50px 0px 50px 0px;
-}
-
-/* TEAM MEMBERS CARDS STYLE ENDS */
 a.view-profile-project {
   font-size: 10px;
 }
@@ -115,11 +52,25 @@ h4#team-description {
   text-align: center;
   margin-bottom: 30px;
 }
+.team-members li {
+  line-height: 30px;
+  font-style: italic;
+  list-style-type: none;
+}
 .project-right-container {
   background: #fff !important;
   padding: 0px 60px 60px 60px !important;
   float: left;
   height: auto !important;
+}
+.card img {
+  max-height: 90px;
+}
+.card p {
+  line-height: 12px;
+  font-size: 14.5px;
+  font-style: italic;
+  text-align: left;
 }
 #project-content.row {
   padding-top: 100px;
@@ -188,6 +139,47 @@ h4.project-description {
     margin: 20px 0px;
   }
 }
+/* Three columns side by side edited by @godfredakpan under Team 5 */
+
+.column {
+  float: left;
+  width: 25% !important;
+  margin-bottom: 30px;
+  padding: 0px 10px;
+}
+.card .container {
+  padding: 0px 5px;
+}
+/* Display the columns below each other instead of side by side on small screens */
+@media (max-width: 768px) {
+  .column {
+    width: 100% !important;
+    display: block;
+  }
+  .card img {
+    max-height: 100px;
+  }
+  .card p {
+    line-height: 22px;
+    font-size: 14.5px;
+    font-style: italic;
+    text-align: left;
+  }
+}
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .title {
   color: grey;
 }
@@ -219,7 +211,7 @@ h4.project-description {
 <div id="team5project-content" class="row clearfix" style="background-color:#fcfcfc;">
 
     <!-- project-right-container starts -->
-    <!-- <div class="project-right-container"> -->
+    <div class="project-right-container">
 
       <!-- project-header starts -->
       <div id="project-header">
@@ -255,170 +247,228 @@ h4.project-description {
       </div>
       <!--  content-holder ends -->
 
-      <!-- RESPONSIVE TEAM CARDS BEGIN -->
 
-      <div id="top-container">
-    <h3 class="team-heading"> Front-end Team Members</h3>
-        <div class="team-member-cards">
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
-                </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
-                </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
-                </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
-                </div>
-            </div>
-         </div> 
-         <div class="team-member-cards">     
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
-                </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
-                </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
-                </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
-                </div>
-            </div>
-         </div> 
+      <!-- team starts -->
+      <div id="team">
 
-        <h3 class="team-heading"> Back-end Team Members</h3>
+        <h4 id="team-description">Team Members</h4>
 
-          <div class="team-member-cards">  
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
+        <!-- team-member1 starts -->
+        <div class="team-members" id="team-member1">
+
+              <div class="row">
+
+                <div class="column">
+                  <div class="card">
+                    <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                    <div class="container">
+                      <p class="title">Name goes here</p>
+
+                      <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
+
+                <div class="column">
+                  <div class="card">
+                    <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                    <div class="container">
+                      <p class="title">Name goes here</p>
+
+                      <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
+
+                <div class="column">
+                  <div class="card">
+                    <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                    <div class="container">
+                      <p class="title">Name goes here</p>
+
+                      <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
+
+                <div class="column">
+                  <div class="card">
+                    <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                    <div class="container">
+                      <p class="title">Name goes here</p>
+
+                      <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                    </div>
+                  </div>
                 </div>
-            </div>
-          </div>  
-          <div class="team-member-cards">      
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
+
+                <div class="column">
+                  <div class="card">
+                    <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                    <div class="container">
+                      <p class="title">Name goes here</p>
+
+                      <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
+
+                <div class="column">
+                  <div class="card">
+                    <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                    <div class="container">
+                      <p class="title">Name goes here</p>
+
+                      <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
+
+                <div class="column">
+                  <div class="card">
+                    <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                    <div class="container">
+                      <p class="title">Name goes here</p>
+
+                      <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="team-cards flex-item">
-                <img src="http://image.ibb.co/nNoDhQ/no_avatar.jpg" alt="Front-end member picture" width="250" height="200">
-                <div class="details">
-                    <span>member name</span> 
-                    <a href="http://hnginterns.slack.com"><span class="fa fa-slack member-icon"></span></a>
-                    <a href="http://www.github.com"><span class="fa fa-github member-icon"></span></a>  
-                    <a href="http://hng.fun/profile/"><span class="fa fa-user member-icon"></span></a>                                      
+
+                <div class="column">
+                  <div class="card">
+                    <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                    <div class="container">
+                      <p class="title">Name goes here</p>
+
+                      <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                    </div>
+                  </div>
                 </div>
+
+              </div>
+
+          </div>
+          <!-- team-member1 ends -->
+
+          <!-- team-member2 starts -->
+          <div class="team-members" id="team-member2">
+
+            <div class="row">
+
+              <div class="column">
+                <div class="card">
+                  <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                  <div class="container">
+                    <p class="title">Name goes here</p>
+
+                    <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                  <div class="container">
+                    <p class="title">Name goes here</p>
+
+                    <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                  <div class="container">
+                    <p class="title">Name goes here</p>
+
+                    <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                  <div class="container">
+                    <p class="title">Name goes here</p>
+
+                    <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                  <div class="container">
+                    <p class="title">Name goes here</p>
+
+                    <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                  <div class="container">
+                    <p class="title">Name goes here</p>
+
+                    <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                  <div class="container">
+                    <p class="title">Name goes here</p>
+
+                    <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="card">
+                  <img src="http://placehold.it/200x150?text=No+Image" alt="" style="width:100%">
+                  <div class="container">
+                    <p class="title">Name goes here</p>
+
+                    <a class="view-profile-project" href="profile/.html">View Profile</a>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
-         </div> 
+
+          </div>
+          <!-- team-member2 ends -->
+
+      </div>
+      <!-- team ends -->
+
     </div>
-
-    <!-- RESPONSIVE TEAM CARDS ENDS -->
-
-    <!-- </div> -->
     <!-- project-right-container ends -->
 
 </div>
