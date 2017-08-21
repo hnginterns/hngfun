@@ -219,7 +219,7 @@ h4.project-description {
 <div id="team5project-content" class="row clearfix" style="background-color:#fcfcfc;">
 
     <!-- project-right-container starts -->
-    <div class="project-right-container">
+    <!-- <div class="project-right-container"> -->
 
       <!-- project-header starts -->
       <div id="project-header">
@@ -418,7 +418,7 @@ h4.project-description {
 
     <!-- RESPONSIVE TEAM CARDS ENDS -->
 
-    </div>
+    <!-- </div> -->
     <!-- project-right-container ends -->
 
 </div>
