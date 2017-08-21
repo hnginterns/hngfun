@@ -4959,6 +4959,7 @@ padding-top: 45px !important;
     margin-left: 14% !important;
     margin-right: 10% !important;
     margin-top: 1%;
+    align: center;
 }
 
 .library-list {
@@ -4969,6 +4970,7 @@ padding-top: 45px !important;
     margin: auto;
     padding: 5px;
     font-weight: bold;
+    align: center;
 }
 .library-list h3 {
     font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
@@ -4977,6 +4979,7 @@ padding-top: 45px !important;
 .library-img {
     float: left;
     margin: 0 15px 0 0;
+    size: 50px;
 }
 
 .library-list p {

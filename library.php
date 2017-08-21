@@ -19,7 +19,7 @@
 
 <!-- <div id="library-body-content" class="row clearfix" style="background-color:#fcfcfc;"> -->
 
-<div>
+  <div>
     <form id="library-search">
       <input class="library-input" type="text" name="search" placeholder="Search..">
     </form>
