@@ -222,6 +222,26 @@
 
         </div>
 
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/d281829f39); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="#">
+                        <h3 class="p-card-title">Kay Sagoe</h3>
+                    </a>
+                    <p class="p-card-description">ksagoe@gmail.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
 
 
 
