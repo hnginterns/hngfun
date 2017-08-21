@@ -56,7 +56,7 @@
     </head>
     <body>
       <script>
-        alert("please dont forget to pull before you push </br> header, footer and homepage coming soon");
+        alert("please dont forget to pull before you push. Header, footer and homepage coming soon");
       </script>
         <div class="flex-center position-ref full-height">
             <div class="content">
