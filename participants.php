@@ -255,6 +255,7 @@
                         </a>
                     </div>
                 </div>
+            </div>
 
 
         <div class="p-card">
@@ -286,7 +287,7 @@
 
         </div>
 
-            </div>
+            
     
         
         <div class="p-card">
