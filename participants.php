@@ -121,7 +121,7 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/3c01bcb49f); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/8acb616934); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/peterperez">
                         <h3 class="p-card-title">Peter Peregbakumo</h3>
