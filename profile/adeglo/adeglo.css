@@ -1,0 +1,23 @@
+body{
+    background-color: #c4c4c4;
+}
+img{
+    float: left;
+}
+div{
+    width: 490px;
+    height: 460px;
+    background-color: #ffffff;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(3, 101, 30, 0.83);
+    text-align: center;
+    
+}
+#hey{
+    padding-top: 50px;
+}
