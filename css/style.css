@@ -1,3 +1,148 @@
+/* Project Page CSS by Team 4
+===============================*/
+
+
+.team4-card-container {
+    
+
+    display: flex;
+    max-width: 1500px;
+    .width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.team4-card {
+    width: 340px;
+    height: 300px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    background-color: #fcf9f9;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+    margin: 10px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.team4-card-photo {
+    width: 340px;
+    height: 148px;
+    background-position: center center;
+}
+
+
+.team4-card-info{ 
+    width: 340px;
+    height: 118px;
+    padding: 0 20px;
+}
+
+.team4-card-info h3{
+    margin: 0;
+}
+
+.team4-card-info a{
+    text-decoration: none;
+    margin: 0;
+}
+
+.team4-card-info p{
+    margin: 0;
+}
+
+.team4-card-title {
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    color: #000;
+}
+
+.team4-card-description {
+    width: 318px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+
+    color: #534C4C;
+}
+
+.team4-card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    height: 10px;
+    font-size: 13px;
+}
+
+.team4-footer-separate{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.team4-footer-left{
+    /*float: left;*/
+}
+
+.team-name {
+    margin-left: 35px;
+}
+
+.team4-footer-right {
+    float: right;
+    display: flex;
+    flex-direction : row;
+}
+
+
+.team-name {
+    /*padding: 0 0 0 15px;*/
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 14px;
+    /*position: absolute;*/
+
+    height: 18px;
+    top: 288px;
+}
+
+.dot {
+     
+    
+    color: #FFBA08;
+    margin-right: 5px;
+    
+}
+
+.dot2 {
+    color: #29CB00;
+    margin-right: 5px;
+}
+
+.dot3 {
+    color: #FF0000;
+    margin-right: 5px;
+}
+
+
+/* Project Page CSS by Team 4 ends
+===============================*/
+
+
+
 /* Single Project Page CSS by Team 5
 ===============================*/
 
@@ -835,7 +980,7 @@ h6 {
 
     #wrapper {
         margin:0;
-        padding:0;
+        padding:0
     }
 
     .page-border {
@@ -997,46 +1142,46 @@ div.body{
 	width: 20%;
 }
 
-/*team 10 style*/
+/* Library Page CSS by Team 10
+===============================*/
 
-.all {
+.library-all {
   margin-left: 14%;
   margin-right: 10%;
   margin-top: 1%;
 }
 
-.list {
+.library-list {
   font-size:x-large;
     margin-top: 80px;
     margin: auto;
     padding: 5px;
     font-weight: bold;
-    /*text-align: center;*/
 }
 
-h3 {
+.library-list h3 {
   font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
 }
 
-li img {
+.library-list li img {
   float: left;
-  /*margin: 0 15px 0 0;*/
+  margin: 0 15px 0 0;
 }
 
-li p {
-  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+.library-list li p {
+  font: 200 15px/1.5 Georgia, Times New Roman, serif;
 }
 
-li {
+.library-list li {
   padding: 10px;
   overflow: auto;
 }
 
-li:hover {
+.library-list li:hover {
   background: #eee;
   cursor: pointer;
 }  
-.imas{
+.library-imas{
     height:42px;
     width:42px;
 }
@@ -1045,7 +1190,7 @@ li:hover {
     text-align: center; 
     margin-top: 0px;
 }
-input[type=text] {
+.project-title-h3 input[type=text] {
     width: 70%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -1061,22 +1206,17 @@ input[type=text] {
     text-align: center;
 }
 
-input[type=text]:focus {
+.project-title-h3 input[type=text]:focus {
     width: 75%;
 }
 
-#header-content{
+#library-header-content{
     padding-top: 100px;
     padding-bottom: 10px;
 }
 
-.header-shadow{
-    background-image: url(images\banner-images\monkey_code_banner.jpg);
-    width:40px;
-    height:30px;
-}
 
-h1 span { 
+.section-heading h1 span { 
    color: white; 
    font: bold 30px/45px Helvetica, Sans-Serif; 
    letter-spacing: -1px;  
@@ -1085,7 +1225,93 @@ h1 span {
    padding: 10px;
 }
 
-#body-content.row {
+#library-body-content.row {
     padding-top: 2px;
     padding-bottom: 2px;
 }
+
+/* Library Page CSS by Team 10 ends
+====================================*/
+
+
+/* News Page CSS by Team 8 
+===============================*/
+
+.newsSectionOne{
+	width: 30%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+}
+
+.newsSectionOne figure{
+	background-color: black;
+	overflow: hidden;
+}
+
+.newsSectionOne img{
+	width: 100%;
+	opacity: 0.7;
+	transform: scale(1.05);
+	cursor: pointer;
+	transition: opacity 1s;
+}
+
+.newsSectionOne img:hover{
+	opacity: 1;
+}
+
+.label,
+.tag{
+	position: absolute;
+	color: #E5E1E1;
+}
+
+.tag{
+	width: auto;
+	height: auto;
+	top: 78%;
+	padding: 2px;
+	margin-left: 1px;
+	background-color:#AC070A;
+}
+
+.label{
+	
+	top: 86%;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.3);
+	line-height: 100%;
+}
+
+#tag1{
+	top: 71.5%;
+}
+
+#label1{
+	top: 82.3%;
+}
+
+#image1{
+	width: 35%;
+}
+
+#image2{
+	width: 34%;
+}
+
+#tag2{
+	top: 78%;
+}
+
+#label2{
+	top: 88%;
+}
+
+/* Past Internships Page CSS by Team 7 starts
+===============================*/
+
+
+
+/* Past Internships Page CSS by Team 7 ends
+===============================*/
