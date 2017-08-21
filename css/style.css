@@ -253,7 +253,7 @@
             .team4-card-container {
                 display: flex;
                 max-width: 1500px;
-                .width: 100%;
+                width: 100%;
                 margin: 0 auto;
                 justify-content: center;
                 align-items: center;
@@ -1602,6 +1602,204 @@
                            /* Library Page CSS by Team 10
 >>>>>>> a8485a7c6f95720f22be7a8a61dc02e78abf1068
 ===============================*/
+<<<<<<< HEAD
+
+            
+            *, *:before, *:after {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            
+            section {
+                display: none;
+                padding: 20px 0 0;
+                border-top: 1px solid #ddd;
+            }
+            
+            
+            #tab1-library {
+                display: none;
+            }
+            
+            #tab2-library {
+                display: none;
+            }
+            
+            #tab3-library {
+                display: none;
+            }
+            
+            #tab4-library {
+                display: none;
+            }
+            label {
+                display: inline-block;
+                margin: 0 0 -1px;
+                padding: 15px 25px;
+                font-weight: 600;
+                text-align: center;
+                color: #bbb;
+                border: 1px solid transparent;
+            }
+            
+            label:before {
+                font-family: fontawesome;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+            
+            
+            
+            label:hover {
+                color: #888;
+                cursor: pointer;
+            }
+            
+            input:checked + label {
+                color: #555;
+                border: 1px solid #ddd;
+                border-top: 2px solid orange;
+                border-bottom: 1px solid #fff;
+            }
+            
+            #tab1-library:checked ~ #content1,
+            #tab2-library:checked ~ #content2,
+            #tab3-library:checked ~ #content3,
+            #tab4-library:checked ~ #content4 {
+                display: block;
+            }
+            
+  
+  
+            .library-all {
+                margin-left: 14%;
+                margin-right: 10%;
+                margin-top: 1%;
+            }
+            
+            .library-list {
+                font-size: x-large;
+                margin-top: 80px;
+                margin: auto;
+                padding: 5px;
+                font-weight: bold;
+            }
+            
+            .library-list h3 {
+                font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+            }
+            
+            .library-list li img {
+                float: left;
+                margin: 0 15px 0 0;
+            }
+            
+            .library-list li p {
+                font: 200 15px/1.5 Georgia, Times New Roman, serif;
+                color: black;
+            }
+            
+            .library-list li {
+                padding: 10px;
+                overflow: auto;
+            }
+            
+            .library-list li:hover {
+                background: #eee;
+                cursor: pointer;
+            }
+            
+            .library-imas {
+                height: 42px;
+                width: 42px;
+            }
+            
+            .inputss {
+                opacity: 10;
+                text-align: center;
+                margin-top: 0px;
+            }
+            
+            .library-title-h3 {
+                font-size: x-large;
+                margin-top: 80px;
+                margin: auto;
+                padding: 5px;
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            .library-title-h3 input[type=text] {
+                width: 70%;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+                text-align: center;
+            }
+            
+            .library-title-h3 input[type=text]:focus {
+                width: 75%;
+            }
+            
+            #library-header-content {
+                padding-top: 100px;
+                padding-bottom: 10px;
+            }
+            
+            .section-heading h1 span {
+                color: white;
+                font: bold 30px/45px Helvetica, Sans-Serif;
+                letter-spacing: -1px;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+            }
+            
+            #library-body-content.row {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            
+            .library-back-to-top {
+                background: none;
+                margin: 0;
+                /*position: fixed;*/
+                bottom: 0;
+                right: 0;
+                width: 70px;
+                height: 70px;
+                z-index: 100;
+                display: none;
+                text-decoration: none;
+                color: #00BFFF;
+                background-color: #00BFFF;
+            }
+            
+            .library-back-to-top i {
+                font-size: 60px;
+            }
+            
+            .roww img {
+                height: auto;
+                max-width: 100%;
+                position: relative;
+                width: 100%;
+                /* for IE 6 */
+                height: 40%;
+            }
+
+          /* about page CSS by Team 2 ends
+=======
                            .library-all {
                                margin-left: 14%;
                                margin-right: 10%;
@@ -1712,6 +1910,7 @@
                                height: 40%;
                            }
                            /* about page CSS by Team 2 ends
+>>>>>>> 661a26a09ea061c719da81fdb693aa4aa7253a87
 ====================================*/
                            /* News Page CSS by Team 2 
 ===============================*/
