@@ -1420,6 +1420,18 @@ padding:10px;
     color: #333333;
 
 }
+.section-text{
+    font-size:x-large;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+
+
+}
+.section-leader{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .name-post-text{
     font-size:large;
     margin-top: 5px;
@@ -1438,6 +1450,15 @@ padding:10px;
     color: #4F4F4F;
      
 }
+.section-body-text{
+    font-size:large;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    color: #4F4F4F;
+    font-weight: lighter;
+     
+}
 .linkedin{
     align-self: left;
     height: 30px;
@@ -1453,7 +1474,10 @@ padding:10px;
     text-align: 
     center;padding-bottom: 20px;
 }
-
+.section-1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 table {
     border-collapse: collapse;
     width: 100%;
