@@ -1,23 +1,21 @@
 <?php include ('header.php'); ?>
 <link rel="stylesheet" href="css/style.css">
-<div id="header-content" class="row clearfix" style="background-image: url(images\banner-images\monkey_code_banner.jpg);">
-    <div class="col-38">
-        <div class="section-heading">
-            <h1>Our Library</h1>
-        </div>
-    </div>
+<div id="header-content" class="roww clearfix">
+  <img src="images\banner-images\monkey_code_banner.jpg" alt="lin">
+  <div class="col-38">
+      <div class="section-heading">
+          <h1><span>Hng interns Library</span></h1>
+      </div>
+  </div>
 </div>
 
-<div id="project-content" class="row clearfix" style="background-color:#fcfcfc;">
 
-    <div class="project-right-container">
-
-      <div id="project-header">
-        <div class="project-title-h3"  >
-          <form class="">
-             <input class="inputss" type="text" name="search" placeholder="Search..">
-          </form>
-        </div>
+<div id="body-content" class="row clearfix" style="background-color:#fcfcfc;">
+      
+      <div class="project-title-h3"  >
+        <form class="">
+           <input class="inputss" type="text" name="search" placeholder="Search..">
+        </form>
       </div>
 
       <div class="content-holder" class="clearfix">
@@ -49,6 +47,5 @@
             </ul>
           </div>
       </div>
-    </div>
 </div>
 
