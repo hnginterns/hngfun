@@ -298,7 +298,6 @@
                     </a>
                     <p class="p-card-description">nsikakthompson73@gmail.com</p>
                 </div>
->>>>>>> 1d5e648641ef7bf3c293d64a63b77e7617d342bc
 
                 <div class="p-team">
                     <a href="#">
