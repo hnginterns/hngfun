@@ -4092,20 +4092,13 @@ padding-top: 45px !important;
      background-color: #fcf9f9;
      border: 1px solid #CADBE0;
      margin: 10px;
-	 margin-bottom: 20px;
+	 margin-bottom: 30px;
      display: flex;
      justify-content: center;
      flex-direction: column;
      text-align: left;
      justify-content: flex-start;
  }
-
- .team8-card:hover{
-      box-shadow: 2px 2px 5px gray;
-      -webkit-box-shadow: 2px 2px 5px gray;
-      -moz-box-shadow: 2px 2px 5px gray;
-      -o-box-shadow: 2px 2px 5px gray;
-  }
 
  .team8-card-photo {
      width: 100%;
@@ -4115,7 +4108,7 @@ padding-top: 45px !important;
 
  .team8-card-info {
      width: 100%;
-     padding: 0 20px;
+     padding: 15px 20px;
  }
 
  .team8-card-info h3 {
