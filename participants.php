@@ -1,7 +1,7 @@
 
 <?php require_once('header.php'); ?>
-
-  <div id=" banner-content " class=" row clearfix">
+<body class="participants">
+    
     <div class="participants__header">
         <h1>Participants</h1>
         <div class="line"></div>
@@ -17,87 +17,12 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
-            </tr>
-            <tr>
-                <td><img src="https://bootdey.com/img/Content/avatar/avatar1.png ">Oreoluwa Ojo</td>
+                <td><img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1503153956/IMG_20170119_174852_589_qsoqaz.jpg ">Oreoluwa Ojo</td>
                 <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
             </tr>
         </tbody>
     </table>
   </div>
 
-<?php require_once('footer.php'); ?>
+    
+</body>
