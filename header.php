@@ -26,10 +26,6 @@
 
 <body class="participants">
 
-
-
-
-
     <div id="wrapper">
         <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
             <div id="header" class="nav-collapse">
