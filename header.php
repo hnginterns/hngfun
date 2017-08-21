@@ -41,7 +41,7 @@
                                 <a href="about.php">About</a>
                             </li>
                             <li>
-                                <a href="#">Participants</a>
+                                <a href="participants.php">Participants</a>
                             </li>
                             <li>
                                 <a href="#">Projects</a>
