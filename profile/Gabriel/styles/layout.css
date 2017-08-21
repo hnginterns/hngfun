@@ -1,4 +1,4 @@
-html{overflow-y:scroll;}
+html{overflow-y:scroll;} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
 
 body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#919191; background-color:#232323;}
 
@@ -28,13 +28,13 @@ q:before{content:'“ '; font-size:26px;}
 q:after{content:' „'; font-size:26px; line-height:0;}
 
 
+
 div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
 .row1, .row1 a{color:#C0BAB6; background-color:#333333;}
 .row2{color:#979797; background-color:#FFFFFF;}
 .row2 a{color:#FF9900; background-color:#FFFFFF;}
 .row3, .row3 a{color:#919191; background-color:#232323;}
-
 
 
 #header, #container, #footer{display:block; width:960px; margin:0 auto;}
@@ -83,12 +83,10 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #header nav li a:hover{color:#FF9900; background-color:#232323;}
 
 
-
 #container{padding:30px 0;}
 #container section{display:block; width:100%; margin:0 0 50px 0; padding:0;}
 #container .last{margin:0;}
 #container .more{text-align:right;}
-
 
 
 #container #slider{}
@@ -98,6 +96,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #container #slider figure figcaption a{color:#FF9900; background-color:#DEDEDE;}
 #container #slider figure h2{font-size:42px; font-weight:normal; font-style:italic; text-transform:none;}
 #container #slider figure footer{}
+
 
 
 #container #homepage{display:block; width:100%; line-height:1.6em;}
