@@ -38,131 +38,131 @@
                 -webkit-transition:.5s;
                 transition: .5s;
                 background-color: #322f30;
-            }
-            .fa-twitter:hover {
-                background-color: #00aced;
-            }
+              }
+              .fa-twitter:hover {
+                  background-color: #00aced;
+              }
 
-            .fa-slack {
-              padding:10px 12px;
-              -o-transition:.5s;
-              -ms-transition:.5s;
-              -moz-transition:.5s;
-              -webkit-transition:.5s;
-              transition: .5s;
-              background-color: #322f30;
-            }
+              .fa-slack {
+                padding:10px 12px;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+                transition: .5s;
+                background-color: #322f30;
+              }
 
-            .fa-slack:hover {
-                background-color: #00aced;
-            }
+              .fa-slack:hover {
+                  background-color: #00aced;
+              }
 
-            .fa-github {
-              padding:10px 12px;
-              -o-transition:.5s;
-              -ms-transition:.5s;
-              -moz-transition:.5s;
-              -webkit-transition:.5s;
-              transition: .5s;
-              background-color: #322f30;
-            }
+              .fa-github {
+                padding:10px 12px;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+                transition: .5s;
+                background-color: #322f30;
+              }
 
-            .fa-github:hover {
-                background-color: #00aced;
-            }
+              .fa-github:hover {
+                  background-color: #00aced;
+              }
 
-            .fa-instagram {
-              padding:10px 12px;
-              -o-transition:.5s;
-              -ms-transition:.5s;
-              -moz-transition:.5s;
-              -webkit-transition:.5s;
-              transition: .5s;
-              background-color: #322f30;
-            }
+              .fa-instagram {
+                padding:10px 12px;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+                transition: .5s;
+                background-color: #322f30;
+              }
 
-            .fa-instagram:hover {
-                background-color: #00aced;
-            }
+              .fa-instagram:hover {
+                  background-color: #00aced;
+              }
 
-            .fa-link {
-              padding:10px 12px;
-              -o-transition:.5s;
-              -ms-transition:.5s;
-              -moz-transition:.5s;
-              -webkit-transition:.5s;
-              transition: .5s;
-              background-color: #322f30;
-            }
+              .fa-link {
+                padding:10px 12px;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+                transition: .5s;
+                background-color: #322f30;
+              }
 
-            .fa-link:hover {
-                background-color: #00aced;
-            }
+              .fa-link:hover {
+                  background-color: #00aced;
+              }
 
-            .fa-envelope {
-              padding:10px 12px;
-              -o-transition:.5s;
-              -ms-transition:.5s;
-              -moz-transition:.5s;
-              -webkit-transition:.5s;
-              transition: .5s;
-              background-color: #322f30;
-            }
+              .fa-envelope {
+                padding:10px 12px;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+                transition: .5s;
+                background-color: #322f30;
+              }
 
-            .fa-envelope:hover {
-                background-color: #00aced;
-            }
+              .fa-envelope:hover {
+                  background-color: #00aced;
+              }
 
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+              html, body {
+                  background-color: #fff;
+                  color: #636b6f;
+                  font-family: 'Raleway', sans-serif;
+                  font-weight: 100;
+                  height: 100vh;
+                  margin: 0;
+              }
 
-            .full-height {
-                height: 100vh;
-            }
+              .full-height {
+                  height: 100vh;
+              }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+              .flex-center {
+                  align-items: center;
+                  display: flex;
+                  justify-content: center;
+              }
 
-            .position-ref {
-                position: relative;
-            }
+              .position-ref {
+                  position: relative;
+              }
 
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
+              .top-right {
+                  position: absolute;
+                  right: 10px;
+                  top: 18px;
+              }
 
-            .content {
-                text-align: center;
-            }
+              .content {
+                  text-align: center;
+              }
 
-            .title {
-                font-size: 84px;
-            }
+              .title {
+                  font-size: 84px;
+              }
 
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
+              .can > div {
+                  color: #636b6f;
+                  padding: 0 25px;
+                  font-size: 12px;
+                  font-weight: 600;
+                  letter-spacing: .1rem;
+                  text-decoration: none;
+                  text-transform: uppercase;
+              }
 
-            .m-b-md {
-                margin-bottom: 30px;
-            }
+              .m-b-md {
+                  margin-bottom: 30px;
+              }
         </style>
     </head>
     <body>
@@ -180,19 +180,7 @@
                 <p>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</p>
             </div>
         </div>
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        &nbsp;
-        <div>
+        <div class="can">
         <ul class="social-icons">
             <li><a href="https://github.com/ichtrojan" class="social-icon"> <i class="fa fa-github"></i></a></li>
             <li><a href="https://hnginterns.slack.com/messages/@trojan" class="social-icon"> <i class="fa fa-slack"></i></a></li>
