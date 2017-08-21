@@ -189,7 +189,7 @@
                 <p><a href="https://github.com/ichtrojan/HNG-Internship">Here is the link to my Stage 1 Project</a><p>
 
                 <h3>Work</h3>
-                <p>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</p>
+                <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh<b></p>
             </div>
         </div>
     </body>
