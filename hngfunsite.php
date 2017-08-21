@@ -151,10 +151,19 @@ h4.project-description {
   padding: 0px 5px;
 }
 /* Display the columns below each other instead of side by side on small screens */
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .column {
-    width: 100%;
+    width: 100% !important;
     display: block;
+  }
+  .card img {
+    max-height: 100px;
+  }
+  .card p {
+    line-height: 22px;
+    font-size: 14.5px;
+    font-style: italic;
+    text-align: left;
   }
 }
 /* Add some shadows to create a card effect */
