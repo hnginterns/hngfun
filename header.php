@@ -4,7 +4,14 @@
 <head lang="en">
     <meta charset="UTF-8">
 
-    <title>HNG</title>
+    <title><?php 
+    if (isset($pageTitle)) {
+        echo "HNG Interns - ".$pageTitle;
+    } else {
+        echo "HNG Interns";
+    }
+    ?>
+    </title>
 
     <meta name="keywords" content="">
     <meta name="description" content="">
