@@ -9,7 +9,7 @@
                                .p-card-container {
                                    display: flex;
                                    max-width: 1500px;
-                                   .width: 100%;
+                                   width: 100%;
                                    margin: 0 auto;
                                    justify-content: center;
                                    align-items: center;
@@ -19,7 +19,7 @@
                                .v-center {
                                    display: flex;
                                    max-width: 700px;
-                                   .height: 100vh;
+                                   height: 100vh;
                                    margin: 0 auto;
                                    justify-content: center;
                                    align-items: center;
@@ -121,7 +121,7 @@
                                .team4-card-container {
                                    display: flex;
                                    max-width: 1500px;
-                                   .width: 100%;
+                                   width: 100%;
                                    margin: 0 auto;
                                    justify-content: center;
                                    align-items: center;
@@ -339,8 +339,8 @@
             }
             
             .team4-footer-left {
-                /*float: left;*/
-                           }
+                /*float: left; }*/
+                           
                            .team-name {
                                margin-left: 35px;
                            }
@@ -1358,7 +1358,7 @@
                                    margin-right: 0;
                                }
                                
-                               =======.footer-distributed {
+                               .footer-distributed {
                                    background-color: #424242;
                                    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
                                    box-sizing: border-box;
@@ -1894,13 +1894,13 @@
                                z-index: 100;
                                display: none;
                                text-decoration: none;
-                               color: #00BFFF;
-                               background-color: #00BFFF;
+                             color: #00BFFF;
+                               background-color: #00BFFF; 
                            }
                            .library-back-to-top i {
                                font-size: 60px;
                            }
-                           .roww div {
+                           .roww .img {
                                height: auto;
                                max-width: 100%;
                                position: relative;
@@ -2051,9 +2051,8 @@
                                position: absolute;
                                text-align: center;
                                /* Past Internships Page CSS by Team 7 ends
-===============================*/
-                               
-                               <<<<<<< HEAD <<<<<<< HEAD .row {
+===============================*/}
+                              .row {
                                    margin-top: 15px;
                                    width: 100%;
                                    height: 50%;
