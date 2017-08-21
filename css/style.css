@@ -1156,10 +1156,10 @@ div.body{
     font-weight: bold;
 }
 .library-list h3 {
-    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+    font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
 }
 
-library-img {
+.library-img {
     float: left;
     margin: 0 15px 0 0;
 }
@@ -1169,7 +1169,7 @@ library-img {
 }
 
 .library-list li {
-        /*padding: 10px;*/
+        padding: 10px;
         overflow: auto;
       }
 
