@@ -1,7 +1,8 @@
-<!DOCTYPE HTML>
 <?php 
 include "header.php"; 
 ?>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <style>
   @import url('https://fonts.googleapis.com/css?family=Lato');
 
