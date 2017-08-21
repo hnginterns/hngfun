@@ -1139,25 +1139,21 @@ div.body{
 /* Library Page CSS by Team 10
 ===============================*/
 
-/*.all {
-  margin-left: 14%;
-  margin-right: 10%;
-  margin-top: 1%;
-}*/
 .library-all {
     margin: 20px;
+    margin-left: 14%;
+    margin-right: 10%;
+    margin-top: 1%;
 }
 
-/*.list {
-  font-size:x-large;
+.library-list {
+    list-style-type: none;
+    width: 500px;
+    font-size:x-large;
     margin-top: 80px;
     margin: auto;
     padding: 5px;
     font-weight: bold;
-}*/
-.library-list {
-    list-style-type: none;
-    width: 500px;
 }
 .library-list h3 {
     font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
@@ -1169,11 +1165,11 @@ library-img {
 }
 
 .library-list p {
-    font: 200 16px/1.5 Georgia, Times New Roman, serif;
+    font: 200 14px/1.5 Georgia, Times New Roman, serif;
 }
 
 .library-list li {
-        padding: 10px;
+        /*padding: 10px;*/
         overflow: auto;
       }
 
