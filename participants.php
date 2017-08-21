@@ -579,12 +579,6 @@
 	    
 	    
 
-
-
-        <!--  Paste above this and leave a few lines so the next person can see this -->
-
-
-    </div>
     <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -595,7 +589,9 @@
                        <h3 class="p-card-title">Nweze Prosper</h3>
                        <!--Profile Name-->
                    </a>
-                   <p class="p-card-description"><span>dapon</span>extras<span>pp&#64;gm</span>ail.com</p>
+                   <p class="p-card-description">
+                       <span>dapon</span>extras<span>pp&#64;gm</span>ail.com
+                   </p>
                    <!--Email-->
                </div>
                <div class="p-team">
@@ -604,12 +600,18 @@
                        <!--Team-->
                    </a>
 
-              </div>
+            </div>
 
-          </div>
+        </div>
 
-      </div>
+    </div>
        <!--  Each Participants ends here  -->
+
+        <!--  Paste above this and leave a few lines so the next person can see this -->
+
+
+    </div>
+    
 
 </div>
 <?php  include "footer.php" ?>
