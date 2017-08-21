@@ -67,9 +67,9 @@ After that, I moved to Germany to attend University. It was an interesting exper
    <div>
         <table>
             <tr>
-                <th>Founded in<p class="thick">2016</p><p class="light">Hng internship was founded in 2016 to develop world class developer in Nigeria</p></th>
-                <th>Track spend <p class="thick">$13 million+</p><p class="light"> They eventually get placed into companies that are looking for software developers.</p></th>
-                 <th>Trained Developer <p class="thick">5000+</p><p class="light">We get people who are interested in technology and simulate a working environment </p></th>
+                <th>Nigeria<p class="thick">No. 3, Birrel Avenue, off</p><p class="light">Herbert Macaulay Way,Sabo, Yaba, Lagos.a</p></th>
+                <th>Kenya <p class="thick">$13 million+</p><p class="light"> They eventually get placed into companies that are looking for software developers.</p></th>
+                 <th>South Africa <p class="thick">5000+</p><p class="light">We get people who are interested in technology and simulate a working environment </p></th>
             </tr>
  
   
