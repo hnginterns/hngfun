@@ -667,9 +667,43 @@
                 </div>
 
             </div>
+<<<<<<< HEAD
+
+
+=======
 	 </div>
+>>>>>>> origin/master
             
+            <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.cdninstagram.com/t51.2885-19/s150x150/17075777_1409128825798368_1636514859128455168_a.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/princessdee">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Damilola Omoyiwola</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">damomos123@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
   
+
 
         <div class="p-card">
             <div class="v-center">
