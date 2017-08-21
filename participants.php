@@ -1060,8 +1060,7 @@
         <div class="p-card-photo" style="background-image: url(https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/17626667_1304703359605988_8550045173239731599_n.jpg?oh=71d5449bed8089446acb4620e3e5425d&oe=5A25E345); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
 
-
-            <a href="http://hng.fun/profile/shalomjohn">
+            <a href="http://hng.fun/profile/shalomjohn.html">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Shalom John</h3>
                 <!--Profile Name-->
