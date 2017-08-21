@@ -31,7 +31,7 @@
                 <div class="p-card-info">
 
 
-                    <a href="http://hng.fun/profile/jekayode.html">
+                    <a href="http://hng.fun/profile/jekayode">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Emmanuel Joseph</h3>
                         <!--Profile Name-->
