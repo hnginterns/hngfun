@@ -1,12 +1,4 @@
-/*
-HTML 5 Template Name: Basic 86
-File: Layout CSS
-Author: OS Templates
-Author URI: http://www.os-templates.com/
-Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
-*/
-
-html{overflow-y:scroll;} /* Forces a scrollbar when the viewport is larger than the websites content - CSS3 */
+html{overflow-y:scroll;}
 
 body{margin:0; padding:0; font-size:13px; font-family:Georgia, "Times New Roman", Times, serif; color:#919191; background-color:#232323;}
 
@@ -27,7 +19,7 @@ img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
 .imgl{float:left; margin:0 15px 15px 0; clear:left;}
 .imgr{float:right; margin:0 0 15px 15px; clear:right;}
 
-/*----------------------------------------------HTML 5 Overrides-------------------------------------*/
+
 
 address, article, aside, figcaption, figure, footer, header, nav, section{display:block; margin:0; padding:0;}
 
@@ -35,7 +27,6 @@ q{display:block; padding:0 10px 8px 10px; color:#979797; background-color:#ECECE
 q:before{content:'“ '; font-size:26px;}
 q:after{content:' „'; font-size:26px; line-height:0;}
 
-/* ----------------------------------------------Wrapper-------------------------------------*/
 
 div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 
@@ -44,7 +35,7 @@ div.wrapper{display:block; width:100%; margin:0; padding:0; text-align:left;}
 .row2 a{color:#FF9900; background-color:#FFFFFF;}
 .row3, .row3 a{color:#919191; background-color:#232323;}
 
-/*----------------------------------------------Generalise-------------------------------------*/
+
 
 #header, #container, #footer{display:block; width:960px; margin:0 auto;}
 
@@ -75,7 +66,7 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 
 .lastbox{margin-right:0;}
 
-/*----------------------------------------------Header-------------------------------------*/
+
 
 #header{padding:20px 0;}
 
@@ -91,14 +82,14 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #header nav li a{color:#C0BAB6; background-color:#232323;}
 #header nav li a:hover{color:#FF9900; background-color:#232323;}
 
-/*----------------------------------------------Content Area-------------------------------------*/
+
 
 #container{padding:30px 0;}
 #container section{display:block; width:100%; margin:0 0 50px 0; padding:0;}
 #container .last{margin:0;}
 #container .more{text-align:right;}
 
-/* ------Slider-----*/
+
 
 #container #slider{}
 #container #slider figure{}
@@ -108,7 +99,6 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #container #slider figure h2{font-size:42px; font-weight:normal; font-style:italic; text-transform:none;}
 #container #slider figure footer{}
 
-/* ------Main Content-----*/
 
 #container #homepage{display:block; width:100%; line-height:1.6em;}
 
@@ -127,7 +117,6 @@ input, textarea, select{font-size:12px; font-family:Georgia,"Times New Roman",Ti
 #container #homepage #latest article figure h2{font-size:14px;}
 #container #homepage #latest article figure footer{}
 
-/*----------------------------------------------Footer-------------------------------------*/
 
 #footer{padding:20px 0;}
 #footer p{margin:0; padding:0;}
