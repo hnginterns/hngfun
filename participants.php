@@ -146,6 +146,37 @@
         </div>
 
 
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/TAaP38Y.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/rexorioko/rexorioko.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Rex Orioko</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">rexorioko@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/majiyd_profile/statics/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -236,9 +267,9 @@
             </div>
 
         </div>
-        
-            
-        
+
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/6526607?v=4&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -258,8 +289,8 @@
             </div>
 
         </div>
-        
-        
+
+
 
         <div class="p-card">
             <div class="v-center">
@@ -336,9 +367,9 @@
 
         </div>
 
-            
-    
-        
+
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/hngfun/image/upload/v1503323008/nsikakthompson_frztsd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -454,7 +485,7 @@
             </div>
         </div>
 
-		
+
 		 <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dmz79kgf0/image/upload/v1503167599/File_000_atsuop.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -484,7 +515,7 @@
 
         </div>
 
-		
+
 		<div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -513,7 +544,7 @@
             </div>
 
         </div>
-		
+
 
         <div class="p-card">
             <div class="v-center">
@@ -543,12 +574,12 @@
             </div>
 
         </div>
-	    
-	    
-	    
-	    
-	    
-	    
+
+
+
+
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://www.easywebsolutionz.com/images/essien-saviour.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -577,11 +608,11 @@
             </div>
 
         </div>
-	    
-	    
-	    
-	    
-	    
+
+
+
+
+
 
 
 
