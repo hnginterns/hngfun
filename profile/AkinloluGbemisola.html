@@ -1,71 +1,42 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <style media="screen">
+    <title>Akinlolu Gbemisola's Profile</title>
+    <style>
         body {
-            font-family: 'Slabo 27px', sans-serif;
-            background: #f3f3a3;
-            /* background-image: url(..Desktop/bl.jpg); */
-        }
-        
-        .Overview {
-            box-shadow: 0 4px 8px 0 rgba(41, 4, 156, 0.92);
-            max-width: 50vw;
-            margin: auto;
-            text-align: center;
-            padding-bottom: 20px;
+            margin: 0;
+            padding: 0;
         }
         
         .container {
-            padding: 0 16px;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        
+        .box {
+            position: relative;
+            width: 50%;
+            height: 100vh;
+        }
+        
+        #left {
+            background-color: orchid;
+            position: fixed;
+            text-align: center;
+        }
+        
+        #right {
+            background-color: #0ff;
+            float: right;
+            padding-left: 10px;
         }
         
         .title {
             color: olivedrab;
             font-size: 18px;
-        }
-        
-        .fa {
-            color: black;
-            font-size: 18px;
-        }
-        
-        button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-            font-size: 18px;
-        }
-        
-        a {
-            text-decoration: none;
-            font-size: 22px;
-            color: olivedrab;
-        }
-        
-        button:hover,
-        a:hover {
-            opacity: 0.7;
-        }
-        
-        .line {
-            max-width: 600px;
-            margin-bottom: -20px;
-            margin-top: -10px;
-            border: 0;
-            height: 1px;
-            background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-            background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-            background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-            background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
         }
         
         #bi {
@@ -76,46 +47,49 @@
             margin-left: 13vw;
             max-width: 20vw;
             text-align: center;
+            word-wrap: break-word;
         }
         
         h1 {
             margin-bottom: -15px;
             color: olivedrab;
         }
+        
+        img {
+            height: 400px;
+            width: 500px;
+            border: 2px solid olive;
+            border-radius: 58px;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <title>Akinlolu Gbemisola | Profile</title>
 </head>
 
 <body>
-    <div>
-        <div class="Overview">
-            <img src="https://ca.slack-edge.com/T3QLSP8HM-U6QBQ879C-1132012f9abf-1024" alt="Akinlolu Gbemisola John" style="width:100%">
-            <div class="container">
-                <h1>Akinlolu Gbemisola John</h1>
-                <p class="title" style="margin-bottom:-15px;">
-                    <span class="fa fa-slack"></span> Slack: @akinlolugbemisola
-                </p>
-                <p class="title">
-                    <span class="fa fa-github"></span> <a href="https://github.com/G-oracle/HNG-Test.git" target="_blank" style="color:indigo"> Stage 1</a>
-                </p>
-            </div>
-            <!-- <hr class="line"> -->
-            <div class="container">
-
-                <h1 id="bi">My Biography</h1>
-
-                <p>
-                    Gbemisola was born in Agege in Lagos State on August 7th 1992 into a Christain Family. He graduated from Alimosho Grammar School, Alimosho, Lagos. He's currently studying Computer Science in Federal University of Agriculture, Abeokuta. Gbemisola is very
-                    passionate about technology and its various applications, thereby devloping interest in Website Development and Networking . Gbemisola is currently a Beginner in Website Development and an intermediate Network Engineer. He is aspiring
-                    to be a renowed Developer while expanding his knowledge in Networking too.
-
-                </p>
-            </div>
+    <div class="container">
+        <div class="box" id="left">
+            <h2>My Profile</h2>
+            <img src="https://ca.slack-edge.com/T3QLSP8HM-U6QBQ879C-1132012f9abf-1024" alt="Akinlolu Gbemisola John">
+            <br>
+            <span class="fa fa-slack"></span> Slack: @akinlolugbemisola
+            </p>
+            <p class="title">
+                <span class="fa fa-github"></span> <a href="https://github.com/G-oracle/HNG-Test.git" target="_blank" style="color:indigo"> Stage 1</a>
+            </p>
 
         </div>
-    </div>
+        <div class="box" id="right">
+            <h1 id="bi">My Biography</h1>
+
+            <p>
+                Gbemisola was born in Agege in Lagos State on August 7th 1992 into a Christain Family. He graduated from Alimosho Grammar School, Alimosho, Lagos. He's currently studying Computer Science in Federal University of Agriculture, Abeokuta. Gbemisola is very
+                passionate about technology and its various applications, thereby devloping interest in Website Development and Networking . Gbemisola is currently a Beginner in Website Development and an intermediate Network Engineer. He is aspiring
+                to be a renowed Developer while expanding his knowledge in Networking too.
+
+            </p>
+        </div>
+
 </body>
 
 </html>
