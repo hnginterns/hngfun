@@ -1245,7 +1245,16 @@ div.body{
     text-align: center; 
     margin-top: 0px;
 }
-.project-title-h3 input[type=text] {
+
+.library-title-h3{
+    font-size:x-large;
+    margin-top: 80px;
+    margin: auto;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.library-title-h3 input[type=text] {
     width: 70%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -1261,7 +1270,7 @@ div.body{
     text-align: center;
 }
 
-.project-title-h3 input[type=text]:focus {
+.library-title-h3 input[type=text]:focus {
     width: 75%;
 }
 

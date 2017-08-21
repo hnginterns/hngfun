@@ -14,7 +14,7 @@
 
 <div id="library-body-content" class="row clearfix" style="background-color:#fcfcfc;">
       
-  <div class="project-title-h3"  >
+  <div class="library-title-h3"  >
     <form class="">
        <input class="inputss" type="text" name="search" placeholder="Search..">
     </form>
