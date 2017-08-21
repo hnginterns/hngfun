@@ -1110,7 +1110,7 @@
             <<<<<<< HEAD
             /* TEAM # PARTICIPANTS CSS RULES */
             
-            body.participants {
+            #participants {
                 background-image: url(http://res.cloudinary.com/plushdeveloper/image/upload/v1503323039/Web_1920_1_paozy1.png);
                 background-attachment: fixed;
                 background-repeat: no-repeat;
@@ -1131,7 +1131,7 @@
             
             .participants__header {
                 width: 80%;
-                padding-top: 50px;
+                padding-top: 150px;
                 padding-bottom: 70px;
             }
             
@@ -1148,6 +1148,8 @@
             .participants__table>thead>tr>td {
                 padding-left: 1em;
                 padding-top: 0.5em;
+                padding-right: 0;
+                padding-bottom: 0;
             }
             
             .participants__table>tbody>tr>td {
