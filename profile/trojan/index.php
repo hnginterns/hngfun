@@ -173,7 +173,7 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-              <img src="image/okoh.jpg" height="200px" class = "dp">
+              <img src="http://res.cloudinary.com/ichtrojan/image/upload/v1503355424/cha_tcsuue.jpg" height="200px" class = "dp">
                 <div class="title m-b-md">
                     Michael Okoh
                 </div>
