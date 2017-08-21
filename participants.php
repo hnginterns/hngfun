@@ -179,8 +179,27 @@
 
         </div>
 
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/899666444060942341/uKTEUbcF_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/rexorioko/rexorioko.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Rex Orioko</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">rexorioko@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
 
-        
 
 
 
