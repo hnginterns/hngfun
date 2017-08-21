@@ -139,7 +139,7 @@ h4.project-description {
   }
 }
 /* Three columns side by side edited by @godfredakpan under Team 5 */
-/* Three columns side by side edited by @godfredakpan under Team 5 */
+
 .column {
   float: left;
   width: 25% !important;

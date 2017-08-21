@@ -26,50 +26,66 @@
 
 <body >
 
-    <div id="wrapper">
-        <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-            <div id="header" class="nav-collapse">
-                <div class="row clearfix">
-                    <div class="col-1">
-                        <div id="logo">
-                            <h3>hng.fun</h3>
-                        </div>
-                        <nav id="nav-main">
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about.php">About</a>
-                                </li>
-                                <li>
-                                    <a href="participants.php">Participants</a>
-                                </li>
-                                <li>
-                                    <a href="projects.php">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Past Internship</a>
-                                </li>
-                                <li>
-                                    <a href="#">News</a>
-                                </li>
-                                <li>
-                                    <a href="#">Supporters</a>
-                                </li>
-                                <li>
-                                    <a href="#">Library</a>
-                                </li>
-                            </ul>
-                        </nav>
+<div class="landing-page__nav">
+                <div class="container">
 
-
-                        <div id="nav-trigger"><span></span></div>
-                        <nav id="nav-mobile"></nav>
-
+                    <!-- Logo -->
+                    <div class="landing-page__nav--left">
+                        <a href="http://hng.fun" class="global-nav__logo">
+                            <img src="img/hnglogo.png" width="100" alt="hotels ng Internship logo">
+                        </a>
                     </div>
+
+                    <!-- right nav menu -->
+                    <nav class="landing-page__nav--right">                      
+                        <ul class="landing-page__menu">
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="index.html">
+                                    <img src="img/home.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#services">
+                                    <img src="img/about.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#products">
+                                    <img src="img/participants.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#partners">
+                                    <img src="img/projects.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#contact">
+                                    <img src="img/contact us.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#contact">
+                                    <img src="img/pastinternship.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#contact">
+                                    <img src="img/news.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#contact">
+                                    <img src="img/supporters.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#contact">
+                                    <img src="img/library.png" width="30">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="clear"></div>
                 </div>
             </div>
