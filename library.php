@@ -9,7 +9,9 @@
   <img src="images/banner-images/banner_edit.fw.png" alt="lin">
   <div class="col-38">
       <div class="section-heading">
-          <h1><span>Hng Interns Library</span></h1>
+
+          <h1><span>HNG Interns' Library</span></h1>
+
       </div>
   </div>
 </div>
@@ -17,11 +19,11 @@
 
 <!-- <div id="library-body-content" class="row clearfix" style="background-color:#fcfcfc;"> -->
 
-<div>
+<!-- <div>
     <form id="library-search">
       <input class="library-input" type="text" name="search" placeholder="Search..">
     </form>
-  </div>
+  </div> -->
 
   <div class="library-all">
     <ul class="library-list">
