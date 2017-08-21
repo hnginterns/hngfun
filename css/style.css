@@ -26,11 +26,16 @@
                 text-align: left;
                 justify-content: flex-start;
             }
+
+            .team4-card:hover{
+                box-shadow: 2px 2px 5px gray;
+            }
             
             .team4-card-photo {
                 width: 340px;
                 height: 148px;
                 background-position: center center;
+                border-radius: 5px 5px 0px 0px;
             }
             
             .team4-card-info {
