@@ -1,5 +1,4 @@
 
-<?php require_once('header.php'); ?>
 <body class="participants">
     
     <div class="participants__header">
