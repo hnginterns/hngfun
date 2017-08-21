@@ -121,6 +121,27 @@
 
         <div class="p-card">
             <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/3c01bcb49f); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/peterperez">
+                        <h3 class="p-card-title">Peter Peregbakumo</h3>
+                    </a>
+                    <p class="p-card-description">perezpeter32@gmail.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 4 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="p-card">
+            <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/holumiede.html">
