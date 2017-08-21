@@ -99,5 +99,3 @@
         </tbody>
     </table>
   </div>
-
-<?php require_once('footer.php'); ?>
