@@ -22,6 +22,33 @@
             -->
 
         <!--  Each Participant starts here  -->
+	    
+	    
+	     
+ <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
+); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="https://github.com/hnginterns/hngfun/tree/master/profile/timicodes">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Tejumola David Timmy</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">timi@tarrotmall.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
+
 
 
  <!--  Each Participant starts here  -->
@@ -605,17 +632,39 @@
 
         </div>
 
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345831/hng-profile/20160518_073958_3_kkaiu3.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/richyafro.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Richard Umoffia</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">richyafro@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 1 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
 
 
 
 
 
-
-
-        <!--  Paste above this and leave a few lines so the next person can see this -->
-
-
-    </div>
     <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -626,7 +675,9 @@
                        <h3 class="p-card-title">Nweze Prosper</h3>
                        <!--Profile Name-->
                    </a>
-                   <p class="p-card-description"><span>dapon</span>extras<span>pp&#64;gm</span>ail.com</p>
+                   <p class="p-card-description">
+                       <span>dapon</span>extras<span>pp&#64;gm</span>ail.com
+                   </p>
                    <!--Email-->
                </div>
                <div class="p-team">
@@ -635,12 +686,46 @@
                        <!--Team-->
                    </a>
 
-              </div>
+            </div>
 
-          </div>
+        </div>
 
-      </div>
+    </div>
        <!--  Each Participants ends here  -->
+  <!--  Each Participant starts here  -->
+    <div class="p-card">
+           <div class="v-center">
+               <div class="p-card-photo" style="background-image: url(https://s3.postimg.org/ss3h5exf7/12274735_1230649710285633_2189770792182668981_n.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+               <div class="p-card-info">
+                   <a href="http://hng.fun/profile/paulayuk.html">
+                       <!--Profile Link-->
+                       <h3 class="p-card-title">Paul Ayuk</h3>
+                       <!--Profile Name-->
+                   </a>
+                   <p class="p-card-description">
+                       ayukpaul1@gmail.com
+                   </p>
+                   <!--Email-->
+               </div>
+               <div class="p-team">
+                   <a href="#">
+                       <h3 class="p-card-title"> Team 1 </h3>
+                       <!--Team-->
+                   </a>
+
+            </div>
+
+        </div>
+
+    </div>
+       <!--  Each Participants ends here  -->
+					       
+					       
+        <!--  Paste above this and leave a few lines so the next person can see this -->
+
+
+    </div>
+    
 
 </div>
 <?php  include "footer.php" ?>
