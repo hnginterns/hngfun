@@ -4,7 +4,7 @@
             .team4-card-container {
                 display: flex;
                 max-width: 1500px;
-                .width: 100%;
+                width: 100%;
                 margin: 0 auto;
                 justify-content: center;
                 align-items: center;
@@ -1442,7 +1442,76 @@
             /* Library Page CSS by Team 10
 >>>>>>> a8485a7c6f95720f22be7a8a61dc02e78abf1068
 ===============================*/
+
             
+            *, *:before, *:after {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            
+            section {
+                display: none;
+                padding: 20px 0 0;
+                border-top: 1px solid #ddd;
+            }
+            
+            
+            #tab1-library {
+                display: none;
+            }
+            
+            #tab2-library {
+                display: none;
+            }
+            
+            #tab3-library {
+                display: none;
+            }
+            
+            #tab4-library {
+                display: none;
+            }
+            label {
+                display: inline-block;
+                margin: 0 0 -1px;
+                padding: 15px 25px;
+                font-weight: 600;
+                text-align: center;
+                color: #bbb;
+                border: 1px solid transparent;
+            }
+            
+            label:before {
+                font-family: fontawesome;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+            
+            
+            
+            label:hover {
+                color: #888;
+                cursor: pointer;
+            }
+            
+            input:checked + label {
+                color: #555;
+                border: 1px solid #ddd;
+                border-top: 2px solid orange;
+                border-bottom: 1px solid #fff;
+            }
+            
+            #tab1-library:checked ~ #content1,
+            #tab2-library:checked ~ #content2,
+            #tab3-library:checked ~ #content3,
+            #tab4-library:checked ~ #content4 {
+                display: block;
+            }
+            
+  
+  
             .library-all {
                 margin-left: 14%;
                 margin-right: 10%;
