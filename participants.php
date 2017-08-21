@@ -36,7 +36,7 @@
                 <div class="p-card-info">
 
 
-                    <a href="http://hng.fun/profile/jekayode">
+                    <a href="http://hng.fun/profile/jekayode.html">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Emmanuel Joseph</h3>
                         <!--Profile Name-->
@@ -67,7 +67,7 @@
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://hng.fun/profile/holumiede">
+                    <a href="http://hng.fun/profile/holumiede.html">
                         <h3 class="p-card-title">Osideinde Oluwadara</h3>
                     </a>
                     <p class="p-card-description">osideindeo@gmail.com</p>
@@ -76,7 +76,8 @@
                 <div class="p-team">
                     <a href="#">
                         <h3 class="p-card-title"> Team 3 </h3>
-                    </a></div>
+                    </a>
+                </div>
 
             </div>
 
@@ -123,48 +124,7 @@
         </div>
 
 
-        <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="#">
-                        <h3 class="p-card-title">Emmanuel Joseph</h3>
-                    </a>
-                    <p class="p-card-description">jekayode@live.com</p>
-                </div>
-
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 3 </h3>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-        <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg);  "></div>
-                <div class="p-card-info">
-                    <a href="#">
-                        <h3 class="p-card-title">Emmanuel Joseph</h3>
-                    </a>
-                    <p class="p-card-description">jekayode@live.com</p>
-                </div>
-
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 3 </h3>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
+        
 
 
 
