@@ -309,7 +309,7 @@
 
         </div>
 
-<<<<<<< HEAD
+
 		<!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -332,7 +332,7 @@
             </div>
         </div>
         <!--  Each Participants ends here  -->
-=======
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/d281829f39); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -376,8 +376,6 @@
                         <h3 class="p-card-title"> Team 2</h3>
                         <!--Team-->
                     </a>
-
->>>>>>> 0decd8cd7ed2e80244e425e9a3eb18e7a0f04764
 
 
 
