@@ -22,19 +22,7 @@
             -->
 
         <!--  Each Participant starts here  -->
-<<<<<<< HEAD
-=======
 
->>>>>>> 2e96ba444b284316e9a26f3421d24d7e08ffd6a4
-	    
- 
-
-	    
-<<<<<<< HEAD
-	     
-=======
-	   
->>>>>>> 2e96ba444b284316e9a26f3421d24d7e08ffd6a4
  <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -946,11 +934,6 @@
                   </div>
               </div>
               <!--  Each Participants ends here  -->
-
-</div>
-
-					    
-					       
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -994,14 +977,11 @@
                 </div>
             </div>
         </div>
-	    
+        
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-
-
-
             <a href="http://hng.fun/profile/simeon">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Simeon Adegbola</h3>
@@ -1019,4 +999,8 @@
         </div>
     </div>
 </div>
+
+
+</div>					    
+					       
 <?php  include "footer.php" ?>
