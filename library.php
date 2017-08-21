@@ -1,8 +1,9 @@
 <a name="top"></a>
 <!--
 <?php include ('header.php'); ?>
-<link rel="stylesheet" href="css/style.css">
 -->
+<link rel="stylesheet" href="css/style.css">
+
 
 <div id="library-header-content" class="roww clearfix">
   <img src="images\banner-images\monkey_code_banner.jpg" alt="lin">
