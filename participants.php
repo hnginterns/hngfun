@@ -215,9 +215,9 @@
             </div>
 
         </div>
-        
-            
-        
+
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/6526607?v=4&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -237,8 +237,8 @@
             </div>
 
         </div>
-        
-        
+
+
 
         <div class="p-card">
             <div class="v-center">
@@ -311,9 +311,9 @@
 
         </div>
 
-            
-    
-        
+
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/hngfun/image/upload/v1503323008/nsikakthompson_frztsd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -423,14 +423,14 @@
             </div>
         </div>
 
-		
+
 		 <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dmz79kgf0/image/upload/v1503167599/File_000_atsuop.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
 
 
-                    <a href="http://hng.fun/profile/lateefog">
+                    <a href="http://hng.fun/profile/lateefog.html">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Ogunbadejo Lateef</h3>
                         <!--Profile Name-->
@@ -482,6 +482,37 @@
             </div>
 
         </div>
+
+
+
+                <div class="p-card">
+                    <div class="v-center">
+                        <div class="p-card-photo" style="background-image: url(http://i.imgur.com/xpED2gj.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                        <div class="p-card-info">
+
+
+                            <a href="http://hng.fun/profile/pepps01.html">
+                                <!--Profile Link-->
+                                <h3 class="p-card-title">Pepple Sunny</h3>
+                                <!--Profile Name-->
+                            </a>
+                            <p class="p-card-description">slpepple01@gmail.com</p>
+                            <!--Email-->
+                        </div>
+
+                        <div class="p-team">
+                            <a href="#">
+                                <h3 class="p-card-title"> Team 6 </h3>
+                                <!--Team-->
+                            </a>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
 
 
 
