@@ -80,7 +80,7 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="library.php">
                                     <img src="img/library.png" width="30">
                                 </a>
                             </li>
