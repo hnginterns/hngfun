@@ -22,36 +22,18 @@
             -->
 
         <!--  Each Participant starts here  -->
+<<<<<<< HEAD
+=======
 
+>>>>>>> 2e96ba444b284316e9a26f3421d24d7e08ffd6a4
 	    
- <!--  Each Participant starts here  -->
- <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
-); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="http://hng.fun/profile/teegoldz.html">
-                        <!--Profile Link-->
-                        <h3 class="p-card-title">okunniga Tosin</h3>
-                        <!--Profile Name-->
-                    </a>
-                    <p class="p-card-description">Okunnigatosin@gmail.com</p>
-                    <!--Email-->
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 8 </h3>
-                        <!--Team-->
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--  Each Participants ends here  -->
+ 
 
 	    
 <<<<<<< HEAD
 	     
 =======
+<<<<<<< HEAD
 
     <div class="p-card">
         <div class="v-center">
@@ -83,6 +65,10 @@
 =======
 	   
 >>>>>>> be5ec6794070c70652981f7fcaa7f8fc086849c4
+=======
+	   
+>>>>>>> 2e96ba444b284316e9a26f3421d24d7e08ffd6a4
+>>>>>>> ee3c65d521f092c12ba39ea6d302733855c3e93a
  <!--  Each Participant starts here  -->
 >>>>>>> ee31c0ae61bbd4b9de755acfb3e7c8a5fbceef8e
         <div class="p-card">
@@ -342,6 +328,32 @@
                 </div>
             </div>
         </div>
+
+
+        <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
+); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/teegoldz.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">okunniga Tosin</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">Okunnigatosin@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 8 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
+        
 
 
 

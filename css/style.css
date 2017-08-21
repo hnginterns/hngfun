@@ -4241,20 +4241,21 @@ padding-top: 45px !important;
             .library-back-to-top i {
                 font-size: 60px;
             }*/
-            .roww img {
+            /*.roww img {
                 height: auto;
                 max-width: 100%;
                 position: relative;
                 width: 100%;
-                /* for IE 6 */
+                
                 height: 40%;
-            }
+            }*/
             /* about page CSS by Team 2 ends
 >>>>>>> ee31c0ae61bbd4b9de755acfb3e7c8a5fbceef8e
 >>>>>>> 17efe165bf7baee7d933eaa5503ef7ad5fd20052
 ====================================*/
                          /* News Page CSS by Team 2
 ===============================*/
+<<<<<<< HEAD
                          .contact-address .country {
                              font-size: 24px;
                              color: #333333;
@@ -4272,6 +4273,25 @@ padding-top: 45px !important;
                          /* Library Page CSS by Team 10 ends
 ====================================*/
                          /* News Page CSS by Team 8
+=======
+            .contact-address .country {
+                font-size: 24px;
+                color: #333333;
+                font-weight: bold;
+            }
+            .contact-address .address {
+                font-size: 16px;
+                color: #4F4F4F;
+                font-weight: lighter;
+            }
+            .contact-address .table {
+                border-top-style: hidden;
+                border-bottom-style: hidden;
+            }
+
+
+            /* News Page CSS by Team 8
+>>>>>>> ee3c65d521f092c12ba39ea6d302733855c3e93a
 ===============================*/
                          #recentDiv {
                              position: relative;
@@ -5652,6 +5672,7 @@ padding-top: 45px !important;
 
 .library-list {
     list-style-type: none;
+    text-align: center;
     width: 500px;
     font-size:x-large;
     margin-top: 80px;
