@@ -147,7 +147,7 @@
               }
 
               .title {
-                  font-size: 84px;
+                  font-size: 50px;
               }
 
               ul {
@@ -163,12 +163,17 @@
               .m-b-md {
                   margin-bottom: 30px;
               }
+
+              .dp {
+                border-radius: 45%;
+                height: 200px  ;
+              }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-              <img src="image/okoh.jpg" height="200px">
+              <img src="image/okoh.jpg" height="200px" class = "dp">
                 <div class="title m-b-md">
                     Michael Okoh
                 </div>
