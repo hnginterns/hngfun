@@ -6,7 +6,7 @@
 
     <div class="p-card-container">
         <div class="v-center">
-            <input type="text" id="search" placeholder="Enter Participant name to search" name="search">
+            <input style="margin-top: 40px;" type="text" id="search" placeholder="Enter Participant name to search" name="search">
         </div>
     </div>
 
