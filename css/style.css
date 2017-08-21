@@ -376,7 +376,7 @@
  /*                */
  /*                */
  /******************/
- 
+
  .p-card-container {
      display: flex;
      max-width: 1500px;
@@ -386,7 +386,7 @@
      align-items: center;
      flex-wrap: wrap;
  }
- 
+
  .v-center {
      display: flex;
      max-width: 700px;
@@ -395,12 +395,12 @@
      justify-content: center;
      align-items: center;
  }
- 
+
  .v-center input {
      padding: 10px;
      width: 400px;
  }
- 
+
  .p-card {
      width: 366px;
      border-radius: 4px;
@@ -416,20 +416,20 @@
      justify-content: flex-start;
      box-sizing: border-box;
  }
- 
+
  .p-card-photo {
      width: 60px;
      height: 60px;
      border-radius: 50%;
  }
- 
+
  .p-card-info {
      width: 170px;
      height: 50px;
      padding-left: 20px;
      padding-right: 20px;
  }
- 
+
  .p-card-info h3 {
      margin: 0;
      color: #26A6D1;
@@ -437,28 +437,28 @@
      font-size: 12px;
      margin-bottom: -10px;
  }
- 
+
  .p-card-info a {
      text-decoration: none;
  }
- 
+
  .p-team {
      justify-content: flex-end;
  }
- 
+
  .p-team a {
      text-decoration: none;
  }
- 
+
  .p-team a h3 {
      font-size: 16px;
  }
- 
+
  .p-card-info p {
      margin: 0;
      margin-top: 5px;
  }
- 
+
  .p-card-title {
      font-style: normal;
      font-weight: bold;
@@ -466,7 +466,7 @@
      font-size: 20px;
      color: #000;
  }
- 
+
  .p-card-description {
      width: 108px;
      font-style: normal;
@@ -475,7 +475,7 @@
      font-size: 14px;
      color: #534C4C;
  }
- 
+
  #search {
      background-image: url('/css/searchicon.png');
      background-position: 10px 12px;
@@ -486,10 +486,10 @@
      border: 1px solid #ddd;
      margin-bottom: 12px;
  }
- 
+
  /* Project Page CSS by Team 4
 ===============================*/
- 
+
  .team4-card-container {
      display: flex;
      max-width: 1500px;
@@ -499,7 +499,7 @@
      align-items: center;
      flex-wrap: wrap;
  }
- 
+
  .team4-card {
      width: 340px;
      height: 300px;
@@ -522,32 +522,32 @@
       -moz-box-shadow: 2px 2px 5px gray;
       -o-box-shadow: 2px 2px 5px gray;
   }
- 
+
  .team4-card-photo {
      width: 334px;
      height: 148px;
      background-position: center center;
  }
- 
+
  .team4-card-info {
      width: 340px;
      height: 118px;
      padding: 0 20px;
  }
- 
+
  .team4-card-info h3 {
      margin: 0;
  }
- 
+
  .team4-card-info a {
      text-decoration: none;
      margin: 0;
  }
- 
+
  .team4-card-info p {
      margin: 0;
  }
- 
+
  .team4-card-title {
      font-style: normal;
      font-weight: bold;
@@ -555,7 +555,7 @@
      font-size: 20px;
      color: #000;
  }
- 
+
  .team4-card-description {
      width: 318px;
      font-style: normal;
@@ -564,7 +564,7 @@
      font-size: 14px;
      color: #534C4C;
  }
- 
+
  .team4-card-footer {
      display: flex;
      justify-content: space-between;
@@ -574,26 +574,26 @@
      height: 10px;
      font-size: 13px;
  }
- 
+
  .team4-footer-separate {
      display: flex;
      justify-content: space-between;
  }
- 
+
  .team4-footer-left {
      /*float: left;*/
  }
- 
+
  .team-name {
      margin-left: 35px;
  }
- 
+
  .team4-footer-right {
      float: right;
      display: flex;
      flex-direction: row;
  }
- 
+
  .team-name {
      /*padding: 0 0 0 15px;*/
      font-style: normal;
@@ -604,17 +604,17 @@
      height: 18px;
      top: 288px;
  }
- 
+
  .dot {
      color: #FFBA08;
      margin-right: 5px;
  }
- 
+
  .dot2 {
      color: #29CB00;
      margin-right: 5px;
  }
- 
+
  .dot3 {
      color: #FF0000;
      margin-right: 5px;
@@ -724,13 +724,13 @@ justify-content: space-between;
 }
 .team-name {
  /*padding: 0 0 0 15px;*/
- 
+
  font-style: normal;
  font-weight: 300;
  line-height: normal;
  font-size: 14px;
  /*position: absolute;*/
- 
+
  height: 18px;
  top: 288px;
 }
@@ -753,191 +753,21 @@ justify-content: space-between;
 
 ===============================*/
 <<<<<<< HEAD
+
                              /* Single Project Page CSS by Team 5
 ===============================*/
-                             .project-title-h3 {
-                               font-size: x-large;
-                               margin-top: 80px;
-                               margin: auto;
-                               padding: 5px;
-                               font-weight: bold;
-                               text-align: center;
-                             }
-                             #team5banner-content.row {
-                               padding-top: 70px;
-                             }
-                             div#project-content {
-                               background: #fff !important;
-                             }
-                             #team5banner-content-h1 {
-                               font-size: 52px !important;
-                               line-height: 60px;
-                               font-weight: 600;
-                               color: #111;
-                             }
-                             #project-header-hr {
-                               border-bottom: 1.5px solid #DDC580;
-                               opacity: 0.7;
-                               width: 25%;
-                               text-align: left;
-                             }
-                             div#team-member1 {
-                               text-align: right;
-                             }
-                             div#team-member2 {
-                               text-align: left;
-                             }
-                             .team-members {
-                               width: 50%;
-                               float: left;
-                               padding: 0px 30px;
-                             }
-                             a.view-profile-project {
-                               font-size: 10px;
-                             }
-                             h4#team-description {
-                               font-size: 22px;
-                               font-weight: 700;
-                               text-align: center;
-                               margin-bottom: 30px;
-                             }
-                             .team-members li {
-                               line-height: 30px;
-                               font-style: italic;
-                               list-style-type: none;
-                             }
-                             .project-right-container {
-                               background: #fff !important;
-                               padding: 0px 60px 60px 60px !important;
-                               float: left;
-                               height: auto !important;
-                             }
-                             .card img {
-                               max-height: 90px;
-                             }
-                             .card p {
-                               line-height: 12px;
-                               font-size: 14.5px;
-                               font-style: italic;
-                               text-align: left;
-                             }
-                             #project-content.row {
-                               padding-top: 100px;
-                               padding-bottom: 100px;
-                             }
-                             .project-page-header {
-                               font-size: 40px !important;
-                               font-weight: 600 !important;
-                               background: #fff;
-                               padding: 30px;
-                             }
-                             #project-title-h3 {
-                               font-size: 22px;
-                               padding: 30px 0px 0px 0px;
-                             }
-                             #project-description-header {
-                               font-size: 22px;
-                               padding: 30px 0px 10px 0px;
-                             }
-                             h3#team-header {
-                               font-size: 20px;
-                               font-style: italic;
-                             }
-                             h4.project-description {
-                               padding: 0px;
-                               line-height: 30px;
-                               font-size: 16px;
-                               text-align: justify;
-                               margin-bottom: 50px;
-                             }
-                             @media (max-width: 768px) {
-                               .team-members {
-                                 width: 100% !important;
-                                 float: left;
-                                 padding: 0px;
-                               }
 
-                               .project-right-container {
-                                 padding: 0px 30px !important;
-                               }
+/* Three columns side by side edited by @godfredakpan under Team 5 */
+.column {
+  float: left;
+  width: 25% !important;
+  margin-bottom: 30px;
+  padding: 0px 10px;
+}
 
-                               .team-members li {
-                                 line-height: 22px;
-                                 font-style: italic;
-                                 list-style-type: none;
-                                 font-size: 12px;
-                               }
-
-                               h1#team5banner-content-h1 {
-                                 font-size: 18px !important;
-                                 margin-top: 40px;
-                               }
-
-                               i.fa.fa-tasks {
-                                 font-size: 16px !important;
-                                 margin-right: 10px;
-                               }
-
-                               div#team5project-content {
-                                 background-color: #fcfcfc;
-                                 margin-bottom: 1200px;
-                               }
-
-                               div#team-member1 {
-                                 text-align: left;
-                                 margin: 20px 0px;
-                               }
-                             }
-                             /* Three columns side by side edited by @godfredakpan under Team 5 */
-                             .column {
-                               float: left;
-                               width: 25%;
-                               margin-bottom: 30px;
-                               padding: 0px 10px;
-                             }
-                             .card .container {
-                               padding: 0px 5px;
-                             }
-                             /* Display the columns below each other instead of side by side on small screens */
-                             @media (max-width: 650px) {
-                               .column {
-                                 width: 100%;
-                                 display: block;
-                               }
-                             }
-                             /* Add some shadows to create a card effect */
-                             .card {
-                               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                             }
-                             /* Some left and right padding inside the container */
-                             .container {
-                               padding: 0 16px;
-                             }
-                             /* Clear floats */
-                             .container::after, .row::after {
-                               content: "";
-                               clear: both;
-                               display: table;
-                             }
-                             .title {
-                               color: grey;
-                             }
-                             .button {
-                               border: none;
-                               outline: 0;
-                               display: inline-block;
-                               padding: 8px;
-                               color: white;
-                               background-color: #000;
-                               text-align: center;
-                               cursor: pointer;
-                               width: 100%;
-                             }
-                             .button:hover {
-                               background-color: #555;
-                             }
-                             /* Single Project Page CSS by Team 5 ends
+/* Single Project Page CSS by Team 5 ends
 ===============================*/
+
                              *, *:before, *:after {
                                -webkit-box-sizing: border-box;
                                -moz-box-sizing: border-box;
@@ -1861,7 +1691,7 @@ h4.project-description {
      float: left;
      padding: 0px;
  }
- 
+
  div#team-member1 {
      text-align: left;
      margin: 20px 0px;
@@ -2302,12 +2132,12 @@ h6 {
      right: 10px;
      left: 85%;
  }
- 
+
  .featherlight-previous {
      left: 10px;
      right: 85%;
  }
- 
+
  .featherlight-next span,
  .featherlight-previous span {
      margin-top: -30px;
@@ -2373,19 +2203,19 @@ h6 {
  #nav-trigger {
      display: block;
  }
- 
+
  nav#nav-main {
      display: none;
  }
- 
+
  nav#nav-mobile {
      display: block;
  }
- 
+
  nav#nav-mobile li {
      display: block;
  }
- 
+
  #header aside {
      display: none;
  }
@@ -2397,17 +2227,17 @@ h6 {
      margin: 0;
      padding: 0;
  }
- 
+
  .page-border,
  #scrollUp,
  #scrollUp:before {
      display: none;
  }
- 
+
  .row {
      padding: 15px !important;
  }
- 
+
  .col-1,
  .col-2,
  .col-3,
@@ -2428,7 +2258,7 @@ h6 {
  .row {
      width: 100%;
  }
- 
+
  .col-1,
  .col-2,
  .col-3,
@@ -2450,50 +2280,50 @@ h6 {
      padding-left: 0;
  }
  /*-----------------Header Elements-----------------*/
- 
+
  #header .row {
      padding: 0 15px !important;
  }
- 
+
  #header.nav-solid [class*="col-"] {
      padding: 0;
  }
  /*Logo*/
- 
+
  #logo h2 {
      padding: 0;
  }
- 
+
  #header ul.social-icons {
      margin-top: 0;
  }
- 
+
  #banner-content.row {
      padding-top: 85px !important;
  }
  /*-----------------Sections-----------------*/
  /* Call to Action*/
- 
+
  .call-to-action {
      padding-bottom: 25px;
  }
  /* Footer */
- 
+
  #landing-footer #copyright {
      float: left;
      width: 50%;
  }
  /*-----------------Typography-----------------*/
- 
+
  h1 {
      font-size: 38px;
  }
- 
+
  #banner h1 {
      font-size: 48px;
  }
  /* Hide Elements */
- 
+
  a#scrollUp {
      display: none !important;
  }
@@ -2505,17 +2335,17 @@ h6 {
      margin: 0;
      padding: 0;
  }
- 
+
  .page-border,
  #scrollUp,
  #scrollUp:before {
      display: none;
  }
- 
+
  .row {
      padding: 15px 0 !important;
  }
- 
+
  .col-1,
  .col-2,
  .col-5,
@@ -2529,7 +2359,7 @@ h6 {
  .row {
      width: 100%;
  }
- 
+
  .col-3,
  .col-4,
  .col-6,
@@ -2539,11 +2369,11 @@ h6 {
      width: 50%;
  }
  /*-----------------Header Elements-----------------*/
- 
+
  #header .row {
      padding: 0 !important;
  }
- 
+
  #header aside {
      display: inline-block;
      position: absolute;
@@ -2552,21 +2382,21 @@ h6 {
      padding-top: 3px;
      padding-right: 5px;
  }
- 
+
  #header.nav-solid aside {
      top: 20px;
  }
- 
+
  #header aside ul {
      margin-top: 0 !important;
      padding-top: 6px;
  }
- 
+
  #banner-content.row {
      padding-top: 85px !important;
  }
  /*Navigation*/
- 
+
  nav#nav-mobile ul {
      margin-left: -40px;
      margin-right: -40px;
@@ -2575,19 +2405,19 @@ h6 {
  }
  /*-----------------Sections-----------------*/
  /* Video */
- 
+
  .slvj-lightbox iframe,
  .slvj-lightbox object,
  .slvj-lightbox embed {
      height: 370px !important;
  }
  /* Footer */
- 
+
  #landing-footer #copyright {
      float: left;
      width: 50%;
  }
- 
+
  #landing-footer .social-icons {
      float: right;
      width: 50%;
@@ -2600,16 +2430,16 @@ h6 {
      margin: 0;
      padding: 0
  }
- 
+
  .page-border {
      display: none;
  }
- 
+
  .big-padding-top {
      padding-top: 45px !important;
  }
  /*-----------------Header Elements-----------------*/
- 
+
  #header aside {
      display: inline-block;
      position: absolute;
@@ -2618,17 +2448,17 @@ h6 {
      padding-top: 3px;
      padding-right: 5px;
  }
- 
+
  #header.nav-solid aside {
      top: 20px;
  }
- 
+
  #header aside ul {
      margin-top: 0 !important;
      padding-top: 6px;
  }
  /*Navigation*/
- 
+
  nav#nav-mobile ul {
      margin-left: -40px;
      margin-right: -40px;
@@ -2637,7 +2467,7 @@ h6 {
  }
  /*-----------------Sections-----------------*/
  /* Video */
- 
+
  .slvj-lightbox iframe,
  .slvj-lightbox object,
  .slvj-lightbox embed {
@@ -2761,7 +2591,7 @@ div.line {
      width: 100%;
      margin-right: 0;
  }
- 
+
  .footer-distributed {
      background-color: #424242;
      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -2772,7 +2602,7 @@ div.line {
      padding: 55px 50px;
      margin-top: 80px;
  }
- 
+
  .footer-distributed .footer-left,
  .footer-distributed .footer-center,
  .footer-distributed .footer-right {
@@ -2780,25 +2610,25 @@ div.line {
      vertical-align: top;
  }
  /* Footer left */
- 
+
  .footer-distributed .footer-left {
      width: 40%;
  }
- 
+
  .footer-distributed h3 {
      color: #ffffff;
      margin: 0;
  }
- 
+
  .footer-distributed h3 span {
      color: #ffffff;
  }
  /* Footer Center */
- 
+
  .footer-distributed .footer-center {
      width: 35%;
  }
- 
+
  .footer-distributed .footer-center i {
      background-color: #33383b;
      color: #ffffff;
@@ -2811,33 +2641,33 @@ div.line {
      margin: 10px 15px;
      vertical-align: middle;
  }
- 
+
  .footer-distributed .footer-center i.fa-envelope {
      font-size: 17px;
      line-height: 38px;
  }
- 
+
  .footer-distributed .footer-center p {
      display: inline-block;
      color: #ffffff;
      vertical-align: middle;
      margin: 0;
  }
- 
+
  .footer-distributed .footer-center p span {
      display: block;
      font-weight: normal;
      font-size: 14px;
      line-height: 2;
  }
- 
+
  .footer-distributed .footer-center p a {
      color: #5383d3;
      text-decoration: none;
      ;
  }
  /* Footer Right */
- 
+
  .footer-distributed .footer-right {
      width: 20%;
  }
@@ -3374,7 +3204,7 @@ padding-top: 45px !important;
                                }
 =======
 /*-----------------Header Elements-----------------*/
- 
+
  #header aside {
      display: inline-block;
      position: absolute;
@@ -3383,17 +3213,17 @@ padding-top: 45px !important;
      padding-top: 3px;
      padding-right: 5px;
  }
- 
+
  #header.nav-solid aside {
      top: 20px;
  }
- 
+
  #header aside ul {
      margin-top: 0 !important;
      padding-top: 6px;
  }
  /*Navigation*/
- 
+
  nav#nav-mobile ul {
      margin-left: -40px;
      margin-right: -40px;
@@ -3402,7 +3232,7 @@ padding-top: 45px !important;
  }
  /*-----------------Sections-----------------*/
  /* Video */
- 
+
  .slvj-lightbox iframe,
  .slvj-lightbox object,
  .slvj-lightbox embed {
@@ -3607,7 +3437,7 @@ div.body {
  background: none;
  margin: 0;
  /*position: fixed;*/
- 
+
  bottom: 0;
  right: 0;
  width: 70px;
@@ -3627,12 +3457,12 @@ div.body {
  position: relative;
  width: 100%;
  /* for IE 6 */
- 
+
  height: 40%;
 }
 /* about page CSS by Team 2 ends
 ====================================*/
-/* News Page CSS by Team 2 
+/* News Page CSS by Team 2
 ===============================*/
 .contact-address .country {
  font-size: 24px;
@@ -3650,7 +3480,7 @@ div.body {
 }
 /* Library Page CSS by Team 10 ends
 ====================================*/
-/* News Page CSS by Team 8 
+/* News Page CSS by Team 8
 ===============================*/
 #recentDiv {
  position: relative;
@@ -3773,23 +3603,23 @@ div.body {
 }
  /* Past Internships Page CSS by Team 7 ends
 ===============================*/
- 
+
  .row {
      margin-top: 15px;
      width: 100%;
      height: 50%;
  }
- 
+
  .row div {
      width: 50%;
      height: 100%;
      float: left;
  }
- 
+
  .image {
      height: 200px;
  }
- 
+
  .name-text {
      font-size: x-large;
      margin-top: 60px;
@@ -3799,19 +3629,19 @@ div.body {
      font-weight: bold;
      color: #333333;
  }
- 
+
  .section-text {
      font-size: x-large;
      text-align: center;
      font-weight: bold;
      color: #333333;
  }
- 
+
  .section-leader {
      margin-top: 50px;
      margin-bottom: 50px;
  }
- 
+
  .name-post-text {
      font-size: large;
      margin-top: 5px;
@@ -3820,7 +3650,7 @@ div.body {
      text-align: left;
      color: #333333;
  }
- 
+
  .name-body-text {
      font-size: small;
      margin-top: 10px;
@@ -3829,7 +3659,7 @@ div.body {
      text-align: left;
      color: #4F4F4F;
  }
- 
+
  .section-body-text {
      font-size: large;
      margin: auto;
@@ -3838,7 +3668,7 @@ div.body {
      color: #4F4F4F;
      font-weight: lighter;
  }
- 
+
  .linkedin {
      align-self: left;
      height: 30px;
@@ -3846,47 +3676,47 @@ div.body {
      margin-top: 3px;
      margin-left: 20px;
  }
- 
+
  #team-2-section-1 {
      max-width: 50vw;
      margin: auto;
      text-align: center;
      padding-bottom: 20px;
  }
- 
+
  .section-1 {
      margin-top: 50px;
      margin-bottom: 50px;
  }
- 
+
  table {
      border-collapse: collapse;
      width: 100%;
  }
- 
+
  td,
  th {
      border: 1px solid #dddddd;
      text-align: left;
      padding: 60px;
  }
- 
+
  p.ex {
      padding: -0.9cm;
      font-weight: lighter;
      font-size: 17px;
  }
- 
+
  tr:nth-child(even) {
      background-color: #dddddd;
  }
- 
+
  p.thick {
      font-weight: bold;
      font-size: 150%;
      color: #333333;
  }
- 
+
  p.light {
      color: #4F4F4F;
      font-size: small;

@@ -201,7 +201,7 @@
         </div>
 
 
-        
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw44BhHjka-ySW9YsGhiD40sWcISHEihLl0X40-7NLT83honDEA); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -216,6 +216,35 @@
                     <a href="#">
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAXRAAAAJGQ5OWE3ZjQ3LTRjMGUtNDY2Ni1hMTliLWYxMDNkMGRlNjIyNw.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/profchydon.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Nkwocha Chidi</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">profchydon@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 5 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
                 </div>
 
             </div>
