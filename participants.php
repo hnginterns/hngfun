@@ -25,6 +25,8 @@
 
 
 
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/899666444060942341/uKTEUbcF_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -43,6 +45,40 @@
                 <div class="p-team">
                     <a href="#">
                         <h3 class="p-card-title"> Team 3 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--  Each Participants ends here  -->
+
+
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/jQznRbs.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/ify.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Ify Okoh</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">odibest1893@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 9 </h3>
                         <!--Team-->
                     </a>
 
@@ -267,6 +303,26 @@
                 <div class="p-team">
                     <a href="#">
                         <h3 class="p-card-title"> Team 2 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/d281829f39); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="#">
+                        <h3 class="p-card-title">Kay Sagoe</h3>
+                    </a>
+                    <p class="p-card-description">ksagoe@gmail.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
                     </a>
                 </div>
 
