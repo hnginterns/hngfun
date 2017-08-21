@@ -2,17 +2,18 @@
 
 
 
-<div style="height: 100px; width: 100%;">
+
+
+<div class="team4-card-container">
+
+<div style="height: 100px; width: 100%; margin-top: 100px;">
 <center>
 
-<h1 style="margin-top: 100px;">All Ongoing Projects</h1>
+<h2 style=""><b>All Ongoing Projects</b></h2>
 
 </center>
 
 </div>
-
-
-<div class="team4-card-container">
 		<div class="team4-card">
 			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team4-card-info">
