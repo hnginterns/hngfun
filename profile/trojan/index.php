@@ -150,7 +150,7 @@
                   font-size: 84px;
               }
 
-              .can > div {
+              ul {
                   color: #636b6f;
                   padding: 0 25px;
                   font-size: 12px;
@@ -180,15 +180,15 @@
                 <p>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</p>
             </div>
         </div>
-        <div class="can">
-        <ul class="social-icons">
-            <li><a href="https://github.com/ichtrojan" class="social-icon"> <i class="fa fa-github"></i></a></li>
-            <li><a href="https://hnginterns.slack.com/messages/@trojan" class="social-icon"> <i class="fa fa-slack"></i></a></li>
-            <li><a href="mailto:michael@okoh.co.uk" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
-            <li><a href="https://www.instagram.com/ichtrojan" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-            <li><a href="http://okoh.co.uk" class="social-icon"> <i class="fa fa-link"></i></a></li>
-            <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li><br>
-        </ul>
-        <div>
     </body>
+    <footer>
+    <ul class="social-icons">
+        <li><a href="https://github.com/ichtrojan" class="social-icon"> <i class="fa fa-github"></i></a></li>
+        <li><a href="https://hnginterns.slack.com/messages/@trojan" class="social-icon"> <i class="fa fa-slack"></i></a></li>
+        <li><a href="mailto:michael@okoh.co.uk" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
+        <li><a href="https://www.instagram.com/ichtrojan" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        <li><a href="http://okoh.co.uk" class="social-icon"> <i class="fa fa-link"></i></a></li>
+        <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li><br>
+    </ul>
+    <footer>
 </html>
