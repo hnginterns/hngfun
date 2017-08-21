@@ -401,8 +401,9 @@
                         <h3 class="p-card-title"> Team 2</h3>
                         <!--Team-->
                     </a>
-
-
+                </div>
+            </div>
+        </div>
 
         <div class="p-card">
             <div class="v-center">
