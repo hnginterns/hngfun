@@ -1139,52 +1139,57 @@ div.body{
 /* Library Page CSS by Team 10
 ===============================*/
 
-/*.all {
-  margin-left: 14%;
-  margin-right: 10%;
-  margin-top: 1%;
+.library-all {
+    margin: 20px;
+    margin-left: 14%;
+    margin-right: 10%;
+    margin-top: 1%;
 }
 
-.list {
-  font-size:x-large;
+.library-list {
+    list-style-type: none;
+    width: 500px;
+    font-size:x-large;
     margin-top: 80px;
     margin: auto;
     padding: 5px;
     font-weight: bold;
 }
-
-h3 {
-  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+.library-list h3 {
+    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
 }
 
-li img {
-  float: left;
+library-img {
+    float: left;
+    margin: 0 15px 0 0;
 }
 
-li p {
-  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+.library-list p {
+    font: 200 14px/1.5 Georgia, Times New Roman, serif;
 }
 
-li {
-  padding: 10px;
-  overflow: auto;
+.library-list li {
+        /*padding: 10px;*/
+        overflow: auto;
+      }
+
+.library-list a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color:#000000;
 }
 
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}  
-.imas{
+.library-img{
     height:42px;
     width:42px;
 }
-.inputss{
+.library-input{
     opacity: 1;
     text-align: center; 
-    margin-top: 1%;
+    margin-top: 12%;
 }
-input[type=text] {
-    width: 70%;
+.library-input[type=text] {
+    width: 50%;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -1196,13 +1201,19 @@ input[type=text] {
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+}
+
+.library-input[type=text]:focus {
+    width: 55%;
+}
+
+.library-img-space{
+    height: 100px;
+}
+#library-search{
     text-align: center;
 }
 
-input[type=text]:focus {
-    width: 75%;
-}
-*/
 /*.headd {
     
 }
