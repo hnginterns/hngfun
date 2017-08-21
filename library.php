@@ -9,7 +9,7 @@
   <img src="images\banner-images\monkey_code_banner.jpg" alt="lin">
   <div class="col-38">
       <div class="section-heading">
-          <h1><span>Hng interns Library</span></h1>
+          <h1><span>HNG Interns' Library</span></h1>
       </div>
   </div>
 </div>
