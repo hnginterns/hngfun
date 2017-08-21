@@ -2916,7 +2916,7 @@ padding-top: 45px !important;
             /* Library Page CSS by Team 10
 >>>>>>> a8485a7c6f95720f22be7a8a61dc02e78abf1068
 ===============================*/
-            .library-all {
+            /*.library-all {
                 margin-left: 14%;
                 margin-right: 10%;
                 margin-top: 1%;
@@ -3001,7 +3001,6 @@ padding-top: 45px !important;
             .library-back-to-top {
                 background: none;
                 margin: 0;
-                /*position: fixed;*/
                 bottom: 0;
                 right: 0;
                 width: 70px;
@@ -3020,9 +3019,8 @@ padding-top: 45px !important;
                 max-width: 100%;
                 position: relative;
                 width: 100%;
-                /* for IE 6 */
                 height: 40%;
-            }
+            }*/
             /* about page CSS by Team 2 ends
 ====================================*/
             /* News Page CSS by Team 2
@@ -3674,7 +3672,7 @@ padding-top: 45px !important;
             /* Library Page CSS by Team 10
 >>>>>>> a8485a7c6f95720f22be7a8a61dc02e78abf1068
 ===============================*/
-            <<<<<<< HEAD .library-all {
+           /* <<<<<<< HEAD .library-all {
                 margin-left: 14%;
                 margin-right: 10%;
                 margin-top: 1%;
@@ -3759,7 +3757,7 @@ padding-top: 45px !important;
             .library-back-to-top {
                 <<<<<<< HEAD background: none;
                 margin: 0;
-                /*position: fixed;*/
+                /*position: fixed;
                 bottom: 0;
                 right: 0;
                 width: 70px;
@@ -3771,7 +3769,7 @@ padding-top: 45px !important;
                 background-color: #00BFFF;
                 =======background: none;
                 margin: 0;
-                /*position: fixed;*/
+                
                 bottom: 0;
                 right: 0;
                 width: 70px;
@@ -3791,17 +3789,17 @@ padding-top: 45px !important;
                 max-width: 100%;
                 position: relative;
                 width: 100%;
-                /* for IE 6 */
+                
                 height: 40%;
                 =======.roww img {
                     height: auto;
                     max-width: 100%;
                     position: relative;
                     width: 100%;
-                    /* for IE 6 */
+                    
                     height: 40%;
                     >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
-                }
+                }*/
                 /* about page CSS by Team 2 ends
 =======
                            .library-all {
@@ -3890,7 +3888,7 @@ padding-top: 45px !important;
                                background: none;
                                margin: 0;
                                /*position: fixed;*/
-                bottom: 0;
+                /*bottom: 0;
                 right: 0;
                 width: 70px;
                 height: 70px;
@@ -3902,7 +3900,7 @@ padding-top: 45px !important;
             }
             .library-back-to-top i {
                 font-size: 60px;
-            }
+            }*/
             .roww img {
                 height: auto;
                 max-width: 100%;
@@ -4394,3 +4392,94 @@ padding-top: 45px !important;
                     font-weight: lighter;
                 }
                 >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+
+/* Library Page CSS by Team 10
+===============================*/
+
+.library-all {
+    margin: 20px;
+    margin-left: 14%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.library-list {
+    list-style-type: none;
+    width: 500px;
+    font-size:x-large;
+    margin-top: 80px;
+    margin: auto;
+    padding: 5px;
+    font-weight: bold;
+}
+.library-list h3 {
+    font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.library-img {
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.library-list p {
+    font: 200 14px/1.5 Georgia, Times New Roman, serif;
+}
+
+.library-list li {
+        padding: 10px;
+        overflow: auto;
+      }
+
+.library-list a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color:#000000;
+}
+
+.library-img{
+    height:42px;
+    width:42px;
+}
+.library-input{
+    opacity: 1;
+    text-align: center; 
+    margin-top: 12%;
+}
+.library-input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.library-input[type=text]:focus {
+    width: 55%;
+}
+
+.library-img-space{
+    height: 100px;
+}
+#library-search{
+    text-align: center;
+}
+
+/*.headd {
+    
+}
+*/
+#header-content.row {
+    padding-top: 170px;
+    padding-bottom: 100px;
+    background-image: url(images\banner-images\banner-image-1.jpg);
+}
+
+/* Library Page CSS by Team 10 ends
+====================================*/
