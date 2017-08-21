@@ -1,8 +1,8 @@
 <?php include('header.php'); ?>
 
-<html>
+
 <head>
-	 <link rel = "stylesheet" href = "style.css" type = "text/css">
+	 <link rel = "stylesheet" href = "style.css" type = "text/css"></head>
 	 <body>
 <div class = "homediv"><div class = "ttedit"> <h1 id = "home">PAST INTERNSHIPS AND PROJECTS </h1></div> </div><hr>
 <div class = "navigation">
