@@ -11,10 +11,10 @@
 
 <div class="team4-card-container">
 
-<div style="height: 100px; width: 100%; margin-top: 100px;">
+<div style="height: 100px; width: 100%; margin-top: 150px;">
 <center>
 
-<h2 style=""><b>All Ongoing Projects</b></h2>
+<h2 style=""><b>All Ongoing Project(s)</b></h2>
 
 </center>
 
