@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+
 <html>
 <head>
     <title>HNG Internship | Home</title>
@@ -7,7 +8,7 @@
 <body>
     <main>
         <header class="landing-page">
-            <div class="landing-page__nav">
+           <div class="landing-page__nav">
                 <div class="container">
 
                     <!-- Logo -->
@@ -70,7 +71,7 @@
 
                     <div class="clear"></div>
                 </div>
-            </div>
+            </div> 
         </header>
 
 
@@ -111,6 +112,7 @@
             </div>
             <div class="clear"></div>
 
+
             <div class="footer-widget">
                 <div class="grid">
                     <div class="grid__col grid__col_12">
@@ -130,7 +132,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+        
         </footer>
 
     </main>
