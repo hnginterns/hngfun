@@ -1419,6 +1419,18 @@ background-color: #00BFFF;
     color: #333333;
 
 }
+.section-text{
+    font-size:x-large;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+
+
+}
+.section-leader{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .name-post-text{
     font-size:large;
     margin-top: 5px;

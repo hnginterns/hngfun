@@ -28,9 +28,12 @@
         </table>
 
 </div>
- <center> <img src="images/group.png" height=150px width=150px>
-                        <h1>Leadership</h1>
-                   </center>
+ <div class="section-leader">
+    <center> <img src="images/group.png" height=120px width=120px>
+            <div class="section-text">Leadership</div>
+    </center>
+     
+</div>
 
             <div class="row">
                 <div class="image"><img src="images/markessien.png" alt=""></div>
