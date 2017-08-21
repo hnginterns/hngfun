@@ -41,11 +41,7 @@
                                 <a href="about.php">About</a>
                             </li>
                             <li>
-<<<<<<< HEAD
-                                <a href="#">Participants</a>
-=======
                                 <a href="participants.php">Participants</a>
->>>>>>> e4de11f762346424c26a8fd34685c093c0d9bee1
                             </li>
                             <li>
                                 <a href="#">Projects</a>
