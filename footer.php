@@ -3,15 +3,15 @@
 
                 <div class="grid">
                     <div class="grid__col grid__col--6">
-                        
-                        <h4 class="footer__contact">Contact Us</h4> 
+
+                        <h4 class="footer__contact">Contact Us</h4>
                         <p>No 3, Birrel Avenue, Off Herbert Macaulay
                         way, Sabo, Yaba Lagos</p>
                         <p>For Bookings - 0700 880 8800</p>
                         <p>email: reservations@hotels.ng</p>
-                        <p>Website: <a href="https://hotels.ng">HotelsNG</a></p>
+                        <p>Website: <a href="https://hotels.ng">hotels.ng</a></p>
                     </div>
-                    
+
                     <div class="grid__col grid__col--6">
                         <form method="">
                             <div class="grid">
@@ -26,7 +26,7 @@
                                 <div class="grid__col grid__col--12">
                                     <textarea rows="5" name="message" placeholder="type your message here"></textarea>
                                 </div>
-                            </div>   
+                            </div>
                         </form>
                     </div>
                 </div>
