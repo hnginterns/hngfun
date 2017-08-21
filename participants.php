@@ -309,6 +309,30 @@
 
         </div>
 
+<<<<<<< HEAD
+		<!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/tobilight.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Agunloye Oluwatobiloba Light</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">jgetitdonefast@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 8 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
+=======
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/d281829f39); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -353,6 +377,7 @@
                         <!--Team-->
                     </a>
 
+>>>>>>> 0decd8cd7ed2e80244e425e9a3eb18e7a0f04764
 
 
 
