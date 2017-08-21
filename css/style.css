@@ -9,7 +9,7 @@
  .p-card-container {
      display: flex;
      max-width: 1500px;
-     .width: 100%;
+     width: 100%;
      margin: 0 auto;
      justify-content: center;
      align-items: center;
@@ -19,7 +19,7 @@
  .v-center {
      display: flex;
      max-width: 700px;
-     .height: 100vh;
+     height: 100vh;
      margin: 0 auto;
      justify-content: center;
      align-items: center;
@@ -122,7 +122,7 @@
  .team4-card-container {
      display: flex;
      max-width: 1500px;
-     .width: 100%;
+     width: 100%;
      margin: 0 auto;
      justify-content: center;
      align-items: center;
@@ -341,7 +341,8 @@ justify-content: space-between;
 
 .team4-footer-left {
 /*float: left;*/
-}
+/* } */
+
 .team-name {
  margin-left: 35px;
 }
@@ -467,7 +468,7 @@ h4.project-description {
 /* Three columns side by side edited by @godfredakpan under Team 5 */
 .column {
  float: left;
- width: 600%;
+ width: 60%;
  margin-bottom: 16px;
  padding: 0 8px;
 }
@@ -1359,7 +1360,7 @@ div.line {
      margin-right: 0;
  }
  
- =======.footer-distributed {
+ .footer-distributed {
      background-color: #424242;
      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
      box-sizing: border-box;
@@ -1852,10 +1853,11 @@ div.body {
  align-content: center;
  position: absolute;
  text-align: center;
+}
  /* Past Internships Page CSS by Team 7 ends
 ===============================*/
  
- <<<<<<< HEAD <<<<<<< HEAD .row {
+ .row {
      margin-top: 15px;
      width: 100%;
      height: 50%;
@@ -1973,3 +1975,174 @@ div.body {
      font-size: small;
      font-weight: lighter;
  }
+
+/*---team2---footer--*/
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 10px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 25%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #ffffff;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  #ffffff;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 36%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #ffffff;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #fffffff;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 70%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
