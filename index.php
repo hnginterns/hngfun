@@ -3,6 +3,8 @@
 <html>
 <head>
     <title>HNG Internship | Home</title>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -42,7 +44,7 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="contact.php">
                                     <img src="img/contact us.png" width="30">
                                 </a>
                             </li>
