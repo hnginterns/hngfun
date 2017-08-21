@@ -42,7 +42,7 @@
        <div class="row">
   <div class="column">
     <div class="card">
-      <img src="profile/godfred.jpg" alt="Godfred" style="width:100%">
+      <img src="profile/image/godfred.jpg" alt="Godfred" style="width:100%">
       <div class="container">
         <h3>Team member</h3>
         <p class="title">Godfred</p>
