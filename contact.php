@@ -1,7 +1,8 @@
-<!DOCTYPE HTML>
 <?php 
 include "header.php"; 
 ?>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <style>
   @import url('https://fonts.googleapis.com/css?family=Lato');
 
@@ -77,7 +78,7 @@ include "header.php";
   }
 
 </style>
-<main class="m-container" style="margin-top: 80px">
+<main class="m-container">
   <div class="underlay"></div>
   <h2 style="font-family: 'Lato', sans-serif">GET IN TOUCH</h2>
   <section class="contact">
