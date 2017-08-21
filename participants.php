@@ -22,7 +22,6 @@
             -->
 
         <!--  Each Participant starts here  -->
-<<<<<<< HEAD
 	    
  <!--  Each Participant starts here  -->
  <div class="p-card">
@@ -50,11 +49,6 @@
 
 	    
 	     
-=======
-
-
-
->>>>>>> 1d4bd61ab9659a59d9e6c5ee6e1fb4b8a36b41f0
  <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
