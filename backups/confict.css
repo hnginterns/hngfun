@@ -251,7 +251,7 @@ h4.project-description {
  /* Three columns side by side edited by @godfredakpan under Team 5 */
 .column {
     float: left;
-    width: 33.3%;
+    width: 70.3%;
     margin-bottom: 16px;
     padding: 0 8px;
 }
@@ -328,7 +328,13 @@ p {
     line-height: 25px;
 }
 
-
+.roww img {
+    height: auto;
+    max-width: 100%;
+    position: relative; 
+    width: 100%; /* for IE 6 */
+    height: 40%;
+}
 
 a {
     text-decoration: none;
@@ -353,12 +359,10 @@ figure {
 }
 
 #wrapper {
-    margin:0 15px;
-    padding: 15px 0;
+    margin:0 0;
+    padding: 0 0;
     position: relative;
 }
-
-
 *:focus {
     outline: none;
 }
@@ -1121,172 +1125,73 @@ h6 {
 div.body{
     margin-top: 5px;
 }
-<<<<<<< HEAD
-
-
-/* TEAM # PARTICIPANTS CSS RULES */
-
-body.participants {
-    background-image: url(http://res.cloudinary.com/plushdeveloper/image/upload/v1503323039/Web_1920_1_paozy1.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: black;
-}
-
-.participants__header,
-.participants__table {
-    margin-left: 20%;
-    width: 60%;
-    margin-right: 20%;
-}
-
-.participants__table {
-    background-color: white;
-    margin-bottom: 30px;
-}
-
-.participants__header {
-    width: 80%;
-    padding-top: 50px;
-    padding-bottom: 70px;
-}
-
-.participants__header>h1 {
-    font-size: 50px;
-    text-align: left;
-}
-
-.participants__table>thead {
-    background-color: white;
-    font-size: 35px;
-}
-
-.participants__table>thead>tr>td {
-    padding-left: 1em;
-    padding-top: 0.5em;
-}
-
-.participants__table>tbody>tr>td {
-    padding-left: 0.6em;
-    background-color: #f6f6f6;
-    padding: 0.3em;
-    font-size: 25px;
-}
-
-.participants__table>tbody>tr>td>a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.participants__table>tbody>tr>td>img {
-    max-width: 30px !important;
-    padding-right: 0.3em;
-}
-
-.participants__table>tbody>tr:nth-child(even)>td {
-    background-color: #ffffff;
-}
-
-
-/*** Just a little fun, its hng.fun anyway ***/
-
-.participants__table>tbody>tr:hover {
-    box-shadow: 0px 0px 10px #000000;
-    z-index: 1.2;
-    transition: all 100ms ease-in;
-    transform: scale(1.05);
-}
-
-div.line {
-    margin-bottom: -60px;
-    border: 3px solid black;
-    width: 75%;
-}
-
-
-/*************************/
-
-
-/**Table Responsiveness**/
-
-
-/************************/
-
-@media (max-width: 425px) {
-    .participants__header,
-    .participants__table {
-        margin-left: 0;
-        width: 100%;
-        margin-right: 0;
-    }
-=======
 .footer-distributed{
-    background-color: #424242;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
+	background-color: #424242;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
 
-    padding: 55px 50px;
-    margin-top: 80px;
+	padding: 55px 50px;
+	margin-top: 80px;
 }
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
 .footer-distributed .footer-right{
-    display: inline-block;
-    vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 }
 /* Footer left */
 .footer-distributed .footer-left{
-    width: 40%;
+	width: 40%;
 }
 .footer-distributed h3{
-    color:  #ffffff;
-    margin: 0;
+	color:  #ffffff;
+	margin: 0;
 }
 .footer-distributed h3 span{
-    color:  #ffffff;
+	color:  #ffffff;
 }
 /* Footer Center */
 .footer-distributed .footer-center{
-    width: 35%;
+	width: 35%;
 }
 .footer-distributed .footer-center i{
-    background-color:  #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
 }
 .footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
+	font-size: 17px;
+	line-height: 38px;
 }
 .footer-distributed .footer-center p{
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin:0;
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
 }
 .footer-distributed .footer-center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
 }
 .footer-distributed .footer-center p a{
-    color:  #5383d3;
-    text-decoration: none;;
+	color:  #5383d3;
+	text-decoration: none;;
 }
 /* Footer Right */
 .footer-distributed .footer-right{
-    width: 20%;
+	width: 20%;
 }
 
 /* Library Page CSS by Team 10
@@ -1370,6 +1275,7 @@ div.line {
 #library-header-content{
     padding-top: 100px;
     padding-bottom: 10px;
+	width:100%;
 }
 
 
@@ -1391,6 +1297,7 @@ div.line {
 background: none;
 margin: 0;
 /*position: fixed;*/
+position:fixed;
 bottom: 0;
 right: 0;
 width: 70px;
@@ -1398,8 +1305,9 @@ height: 70px;
 z-index: 100;
 display: none;
 text-decoration: none;
-color: #00BFFF;
+color: #FFFFFF;
 background-color: #00BFFF;
+padding:10px;
  
 }
  
@@ -1411,90 +1319,83 @@ background-color: #00BFFF;
  
 }
 
-.roww img {
-    height: auto;
-    max-width: 100%;
-    position: relative; 
-    width: 100%; /* for IE 6 */
-    height: 40%;
-}
-
 /* Library Page CSS by Team 10 ends
 ====================================*/
+
 
 
 /* News Page CSS by Team 8 
 ===============================*/
 
 .newsSectionOne{
-    width: 30%;
-    height: auto;
-    position: relative;
-    display: inline-block;
+	width: 30%;
+	height: auto;
+	position: relative;
+	display: inline-block;
 }
 
 .newsSectionOne figure{
-    background-color: black;
-    overflow: hidden;
+	background-color: black;
+	overflow: hidden;
 }
 
 .newsSectionOne img{
-    width: 100%;
-    opacity: 0.7;
-    transform: scale(1.05);
-    cursor: pointer;
-    transition: opacity 1s;
+	width: 100%;
+	opacity: 0.7;
+	transform: scale(1.05);
+	cursor: pointer;
+	transition: opacity 1s;
 }
 
 .newsSectionOne img:hover{
-    opacity: 1;
+	opacity: 1;
 }
 
 .label,
 .tag{
-    position: absolute;
-    color: #E5E1E1;
+	position: absolute;
+	color: #E5E1E1;
 }
 
 .tag{
-    width: auto;
-    height: auto;
-    top: 78%;
-    padding: 2px;
-    margin-left: 1px;
-    background-color:#AC070A;
+	width: auto;
+	height: auto;
+	top: 78%;
+	padding: 2px;
+	margin-left: 1px;
+	background-color:#AC070A;
 }
 
 .label{
-    
-    top: 86%;
-    padding: 5px;
-    background-color: rgba(0,0,0,0.3);
-    line-height: 100%;
+	
+	top: 86%;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.3);
+	line-height: 100%;
 }
 
 #tag1{
-    top: 71.5%;
+	top: 71.5%;
 }
 
 #label1{
-    top: 82.3%;
+	top: 82.3%;
 }
 
 #image1{
-    width: 35%;
+	width: 35%;
 }
 
 #image2{
-    width: 34%;
+	width: 34%;
 }
 
 #tag2{
-    top: 78%;
+	top: 78%;
 }
 
 #label2{
-    top: 88%;
+	top: 88%;
 }
 
 /* Past Internships Page CSS by Team 7 starts
@@ -1504,7 +1405,6 @@ background-color: #00BFFF;
 
 /* Past Internships Page CSS by Team 7 ends
 ===============================*/
-<<<<<<< HEAD
 .row {
     margin-top: 15px;
     width:100%;
@@ -1617,7 +1517,4 @@ p.light{
     font-size:small;
     font-weight: lighter;
 
->>>>>>> 2f0c0ea3fadcc723f6fedf6cb9ffb2cc267af23e
 }
-=======
->>>>>>> 0582ae02dfac1186b0c9eb3db3b476e1e72d7097
