@@ -115,6 +115,7 @@
      border: 1px solid #ddd;
      margin-bottom: 12px;
  }
+ 
  /* Project Page CSS by Team 4
 ===============================*/
  
@@ -467,7 +468,7 @@ h4.project-description {
 /* Three columns side by side edited by @godfredakpan under Team 5 */
 .column {
  float: left;
- width: 33.3%;
+ width: 60%;
  margin-bottom: 16px;
  padding: 0 8px;
 }

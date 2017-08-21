@@ -43,7 +43,13 @@
             <li>
               <img class="library-imas" src="images/library/mysq.png">
               <h3>mysql</h3>
-              <p>Intro to Mysql for web designers, Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <p>
+                SQL is one of the most important inventions in the software engineering world, 
+                equally important to the invention of the Internet.
+                Most of the Web applications today store their data in Relational Databases 
+                and SQL is the ubiquitous language that is used to do this.
+                No wonder its important to us that you have a basic knowledge of it. 
+              </p>
             </li>
           </a>
           <a href="https://backlogtool.com/git-guide/en/stepup/stepup1_1.html" target="_blank">
