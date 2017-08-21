@@ -954,14 +954,11 @@
                   </div>
               </div>
               <!--  Each Participants ends here  -->
-<<<<<<< HEAD
 
 </div>
 
 					    
-					       
-=======
->>>>>>> b1e14470573242454825f5a78105b488e9d46bc6
+			
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1010,12 +1007,6 @@
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> b1e14470573242454825f5a78105b488e9d46bc6
             <a href="http://hng.fun/profile/simeon">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Simeon Adegbola</h3>
@@ -1028,6 +1019,30 @@
         <div class="p-team">
             <a href="#">
                 <h3 class="p-card-title"> Team 6 </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/17626667_1304703359605988_8550045173239731599_n.jpg?oh=71d5449bed8089446acb4620e3e5425d&oe=5A25E345); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+
+
+            <a href="http://hng.fun/profile/shalomjohn">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Shalom John</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">johnprince58@gmail.com</p>
+            <!--Email-->
+        </div>
+
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team 10 </h3>
                 <!--Team-->
             </a>
         </div>
