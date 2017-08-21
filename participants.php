@@ -1,11 +1,11 @@
 
-<body class="participants">
-    
+<?php require_once('header.php'); ?>
+</header>
+  <div class="participants">
     <div class="participants__header">
         <h1>Participants</h1>
         <div class="line"></div>
     </div>
-
     <table class="participants__table ">
         <thead>
             <tr>
@@ -17,11 +17,8 @@
         <tbody>
             <tr>
                 <td><img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1503153956/IMG_20170119_174852_589_qsoqaz.jpg ">Oreoluwa Ojo</td>
-                <td><a href="http://hng.fun/ogbeniore ">@ogbeniore</a></td>
+                <td><a href="./profile/ogbeniore.html ">@ogbeniore</a></td>
             </tr>
         </tbody>
     </table>
-  </div>
-
-    
-</body>
+</div>
