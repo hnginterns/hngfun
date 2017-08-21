@@ -20,7 +20,7 @@ ob_start();
 <style type="text/css">
 	body{
 		background-image: none !important;
-		background-color: #f2f2f2;
+		background-color: #fff;
 	}
 </style>
 
