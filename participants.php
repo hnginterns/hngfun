@@ -201,8 +201,26 @@
         </div>
 
 
+        
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw44BhHjka-ySW9YsGhiD40sWcISHEihLl0X40-7NLT83honDEA); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="#">
+                        <h3 class="p-card-title">Nsikak Thompson</h3>
+                    </a>
+                    <p class="p-card-description">nsikakthompson73@gmail.com</p>
+                </div>
 
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                    </a>
+                </div>
 
+            </div>
+
+        </div>
 
 
 
