@@ -1567,6 +1567,27 @@
                 /* for IE 6 */
                 height: 40%;
             }
+
+          /* about page CSS by Team 2 ends
+====================================*/
+         /* News Page CSS by Team 2 
+===============================*/
+
+.contact-address .country {
+   font-size: 24px;
+   color: #333333;
+   font-weight: bold;
+}
+
+.contact-address .address {
+   font-size: 16px;
+   color: #4F4F4F;
+   font-weight: lighter;
+}
+.contact-address .table {
+   border-top-style: hidden;
+   border-bottom-style: hidden;
+}
             /* Library Page CSS by Team 10 ends
 ====================================*/
             /* News Page CSS by Team 8 
@@ -1697,6 +1718,28 @@
             }
             /* Past Internships Page CSS by Team 7 starts
 ===============================*/
+            .navigation{
+             border-color: red;
+              background-color:grey;
+              height:100%;
+              width: 20%;
+
+            }
+            .homediv{
+                background: url(images/tm7.jpg);
+                         height:150px;
+            }
+            .ttedit{
+                
+                width: 80%;
+                border: 5px solid white;
+                padding: 10px;
+                margin: 25px;
+                align-content: center;
+                position: absolute;
+                text-align: center;
+
+
             /* Past Internships Page CSS by Team 7 ends
 ===============================*/
             
