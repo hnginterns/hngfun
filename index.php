@@ -1,3 +1,3 @@
 <?php include('header.php'); ?>
 
-<?php includ('footer.php); ?>
+<?php include('footer.php'); ?>
