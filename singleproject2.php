@@ -42,7 +42,7 @@
        <div class="row">
   <div class="column">
     <div class="card">
-      <img src="profile/godfred.jpg" alt="Godfred" style="width:100%">
+      <img src="profile/image/godfred.jpg" alt="" style="width:100%">
       <div class="container">
         <h3>Team member</h3>
         <p class="title">Godfred</p>
@@ -77,7 +77,7 @@
       <div class="row">
   <div class="column">
     <div class="card">
-      <img src="images/profile pic.jpg" alt="Team member" style="width:100%">
+      <img src="images/profile pic.jpg" alt="Team member" style="width:30%">
       <div class="container">
         <h3>Team member</h3>
         <p class="title">Name</p>
@@ -148,7 +148,7 @@
 <p>
         <div class="team-members" id="team-member2">
 
-            <center><h4 id="team-header">Back End Members</h4><p>
+            <center><h4 id="team-header">Back End Members</h4><p><p>
 
             <div class="column">
     <div class="card">
