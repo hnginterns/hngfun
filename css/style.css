@@ -1446,6 +1446,13 @@ background-color: #00BFFF;
     
 }
 
+#team-2-section-1{
+    max-width: 50vw; 
+    margin: auto; 
+    text-align: 
+    center;padding-bottom: 20px;
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
