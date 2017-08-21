@@ -24,7 +24,28 @@
         <!--  Each Participant starts here  -->
 
 
-
+ <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/30381435?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/tella26.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">TELLA Babatunde</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">tellababatunde@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
 
 
         <div class="p-card">
@@ -334,29 +355,35 @@
 
         </div>
 
-
-		<!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAXRAAAAJGQ5OWE3ZjQ3LTRjMGUtNDY2Ni1hMTliLWYxMDNkMGRlNjIyNw.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://hng.fun/profile/tobilight.html">
+
+
+                    <a href="http://hng.fun/profile/profchydon.html">
                         <!--Profile Link-->
-                        <h3 class="p-card-title">Agunloye Oluwatobiloba Light</h3>
+                        <h3 class="p-card-title">Nkwocha Chidi</h3>
                         <!--Profile Name-->
                     </a>
-                    <p class="p-card-description">jgetitdonefast@gmail.com</p>
+                    <p class="p-card-description">profchydon@gmail.com</p>
                     <!--Email-->
                 </div>
+
                 <div class="p-team">
                     <a href="#">
-                        <h3 class="p-card-title"> Team 8 </h3>
+                        <h3 class="p-card-title"> Team 5 </h3>
                         <!--Team-->
                     </a>
+
+
+
                 </div>
+
             </div>
+
         </div>
-        <!--  Each Participants ends here  -->
+
 
         <div class="p-card">
             <div class="v-center">
@@ -401,8 +428,9 @@
                         <h3 class="p-card-title"> Team 2</h3>
                         <!--Team-->
                     </a>
-
-
+                </div>
+            </div>
+        </div>
 
         <div class="p-card">
             <div class="v-center">
@@ -452,6 +480,36 @@
 
         </div>
 
+		
+		<div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/tobilight">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Agunloye Oluwatobiloba Light</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">jgetitdonefast@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 8 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+		
 
         <div class="p-card">
             <div class="v-center">
@@ -481,6 +539,45 @@
             </div>
 
         </div>
+	    
+	    
+	    
+	    
+	    
+	    
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://www.easywebsolutionz.com/images/essien-saviour.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/emembrownson.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Essien Saviour</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">eazywebcontact@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 6 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+	    
+	    
+	    
+	    
+	    
 
 
 
@@ -488,6 +585,31 @@
 
 
     </div>
+    <!--  Each Participant starts here  -->
+    <div class="p-card">
+           <div class="v-center">
+               <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/12105518?v=4&amp;s=75); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+               <div class="p-card-info">
+                   <a href="http://hng.fun/profile/prosperoking">
+                       <!--Profile Link-->
+                       <h3 class="p-card-title">Nweze Prosper</h3>
+                       <!--Profile Name-->
+                   </a>
+                   <p class="p-card-description"><span>dapon</span>extras<span>pp&#64;gm</span>ail.com</p>
+                   <!--Email-->
+               </div>
+               <div class="p-team">
+                   <a href="#">
+                       <h3 class="p-card-title"> Team 9 </h3>
+                       <!--Team-->
+                   </a>
+
+              </div>
+
+          </div>
+
+      </div>
+       <!--  Each Participants ends here  -->
 
 </div>
 <?php  include "footer.php" ?>
