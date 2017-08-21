@@ -42,7 +42,7 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="contact.php">
                                     <img src="img/contact us.png" width="30">
                                 </a>
                             </li>
