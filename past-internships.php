@@ -1,4 +1,7 @@
-<?php include('header.php'); ?>
+<?php 
+$pageTitle = "Past Internships";
+include('header.php'); 
+?>
 
 </div> <!--end wrapper class in header.php -->
 
