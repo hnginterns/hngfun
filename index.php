@@ -1,3 +1,6 @@
+<?php
+	//include('header.php');
+?> 
 <!doctype html>
 <html>
     <head>
@@ -49,6 +52,21 @@
                 font-size: 84px;
             }
 
+<<<<<<< HEAD
+
+            .links > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+
+=======
+>>>>>>> 5a963299fabeb40d2113f94e1282ddecfb30f06b
             .m-b-md {
                 margin-bottom: 30px;
             }
@@ -64,7 +82,13 @@
                     Front Page
                 </div>
                 <p>Would be available soon along with the footer and header</p>
+<<<<<<< HEAD
+
                 <p>Please Don't Override someone's work, pull before you push - Team1</p>
+
+=======
+                <p>Please Don't Override someone's work, pull before you push - Team1</p>
+>>>>>>> 5a963299fabeb40d2113f94e1282ddecfb30f06b
             </div>
         </div>
     </body>

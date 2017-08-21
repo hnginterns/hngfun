@@ -1581,11 +1581,8 @@
                            .library-back-to-top i {
                                font-size: 60px;
                            }
-<<<<<<< HEAD
-                           .roww .img {
-=======
+
                            .roww img {
->>>>>>> 71890b26a80d3d8b3b37c4f8bcd6d4d0738fed22
                                height: auto;
                                max-width: 100%;
                                position: relative;
