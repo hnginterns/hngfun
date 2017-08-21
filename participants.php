@@ -359,6 +359,26 @@
                     </div>
                 </div>
             </div>
+	    
+	    <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/nseetim.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Nse-Abasi Etim</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">etimnseabasi@gmail.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 10 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
         <div class="p-card">
@@ -593,8 +613,6 @@
 
 
                 </div>
-		    </div>
-
 
             </div>
 
@@ -690,7 +708,10 @@
 
     </div>
        <!--  Each Participants ends here  -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1d4bd61ab9659a59d9e6c5ee6e1fb4b8a36b41f0
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -709,8 +730,6 @@
                         <!--Team-->
                     </a>
                 </div>
-		    </div>
-    </div>
 
   <!--  Each Participant starts here  -->
     <div class="p-card">
@@ -732,14 +751,17 @@
                        <h3 class="p-card-title"> Team 1 </h3>
                        <!--Team-->
                    </a>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1d4bd61ab9659a59d9e6c5ee6e1fb4b8a36b41f0
             </div>
 
         </div>
 
     </div>
        <!--  Each Participants ends here  -->
-
+<<<<<<< HEAD
 		
 
 <!--  Each Participant starts here  -->
@@ -761,14 +783,20 @@
                      <!--Team-->
                  </a>                </div>            </div>        </div>
      <!--  Each Participants ends here  -->
+
+
+
+
 			       
 					       
+=======
 
 
+>>>>>>> 1d4bd61ab9659a59d9e6c5ee6e1fb4b8a36b41f0
+        <!--  Paste above this and leave a few lines so the next person can see this -->
 
 
-
- 
+    </div>
 
 
        <!--  Each Participant starts here  -->
@@ -794,6 +822,7 @@
               </div>
               <!--  Each Participants ends here  -->
 
+</div>
 					    
 					       
 <div class="p-card">
@@ -824,9 +853,4 @@
     </div>
 
 </div>
-
-
-        <!--  Paste above this and leave a few lines so the next person can see this -->
-	
-	
 <?php  include "footer.php" ?>
