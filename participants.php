@@ -53,6 +53,42 @@
             </div>
 
         </div>
+
+
+        <!--  Each Participants ends here  -->
+
+
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/TAaP38Y.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/jekayode.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Olatunbosun Gabriel</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">bosunski@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/majiyd_profile/statics/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -82,9 +118,6 @@
 
         </div>
 
-
-
-        <!--  Each Participants ends here  -->
 
         <div class="p-card">
             <div class="v-center">
@@ -128,10 +161,10 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw44BhHjka-ySW9YsGhiD40sWcISHEihLl0X40-7NLT83honDEA); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="#">
-                        <h3 class="p-card-title">Emmanuel Joseph</h3>
+                        <h3 class="p-card-title">Abdulsamad Aliyu</h3>
                     </a>
                     <p class="p-card-description">jekayode@live.com</p>
                 </div>
