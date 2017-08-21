@@ -291,7 +291,7 @@
         
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw44BhHjka-ySW9YsGhiD40sWcISHEihLl0X40-7NLT83honDEA); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/hngfun/image/upload/v1503323008/nsikakthompson_frztsd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/nsikakthompson.html">
                         <h3 class="p-card-title">Nsikak Thompson</h3>
