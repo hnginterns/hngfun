@@ -4070,7 +4070,6 @@ padding-top: 45px !important;
 
  .team8-card {
      width: 100%;
-     height: relative;
      background: #FFFFFF;
      border-radius: 5px;
      background-color: #fcf9f9;
@@ -4094,13 +4093,11 @@ padding-top: 45px !important;
 
  .team8-card-photo {
      width: 100%;
-     height: relative;
      background-position: center center;
  }
 
  .team8-card-info {
      width: 100%;
-     height: relative;
      padding: 0 20px;
  }
 
@@ -4457,7 +4454,10 @@ padding-top: 45px !important;
 	}
 
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
  .row {
        margin-top: 15px;
        width: 100%;
@@ -4576,6 +4576,8 @@ padding-top: 45px !important;
        font-size: small;
        font-weight: lighter;
    }
+<<<<<<< HEAD
+=======
    
             .navigation {
                 border-color: red;
@@ -4937,3 +4939,4 @@ padding-top: 45px !important;
                     font-weight: lighter;
                 }
                 
+>>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
