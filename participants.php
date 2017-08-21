@@ -409,9 +409,6 @@
             </div>
 
         </div>
-
-<<<<<<< HEAD
-=======
  <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/861305946479493120/PsPxNeDd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -431,10 +428,6 @@
             </div>
 
         </div>
->>>>>>> b12bc0d8db05e4d170554383a98cee026da681f1
-
-
-
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/hngfun/image/upload/v1503323008/nsikakthompson_frztsd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -667,12 +660,8 @@
                 </div>
 
             </div>
-<<<<<<< HEAD
 
-
-=======
-	 </div>
->>>>>>> origin/master
+	    </div>
             
             <div class="p-card">
             <div class="v-center">
@@ -762,10 +751,6 @@
             </div>
 
         </div>
-
-
-
-<<<<<<< HEAD
                 <div class="p-card">
                     <div class="v-center">
                         <div class="p-card-photo" style="background-image: url(http://i.imgur.com/xpED2gj.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -794,12 +779,6 @@
                     </div>
 
                 </div>
-
-
-
-=======
-
-
     <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -849,10 +828,7 @@
 	      </div>
 	  </div>
 	    
-	<!--   Participant ends here  -->
-	    
-	    
-	    
+	<!--   Participant ends here  -->    
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -901,8 +877,6 @@
 
     </div>
        <!--  Each Participants ends here  -->
-
-
 	<div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -931,19 +905,8 @@
             </div>
 
         </div>
-
-
         <!--  Each Participants ends here  -->
-
-
-
-        
-	
->>>>>>> b12bc0d8db05e4d170554383a98cee026da681f1
         <!--  Paste above this and leave a few lines so the next person can see this -->
-
-
-
 
 
        <!--  Each Participant starts here  -->
@@ -999,14 +962,6 @@
     </div>
 
 </div>
-<<<<<<< HEAD
-
-
-       
-
-
-
-
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.flos1-1.fna.fbcdn.net/v/t1.0-9/19430119_10207233462114696_2762007678831481972_n.jpg?oh=65fd73274def3af4a2c4da3615ba6067&oe=5A1E23F7); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1027,12 +982,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-=======
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1061,5 +1010,4 @@
     </div>
 
 </div>
->>>>>>> 8fcd3b11e7a4a8036fdb7732d711b4f1b16e3bc9
 <?php  include "footer.php" ?>
