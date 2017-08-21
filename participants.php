@@ -715,7 +715,7 @@
 
     </div>
        <!--  Each Participants ends here  -->
-<<<<<<< HEAD
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -734,7 +734,7 @@
                         <!--Team-->
                     </a>
                 </div>
-=======
+
   <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -756,19 +756,39 @@
                        <!--Team-->
                    </a>
 
->>>>>>> baf63a8cf80f63d87aeafbf672f761b5676110bc
             </div>
 
         </div>
 
-<<<<<<< HEAD
-
-=======
     </div>
        <!--  Each Participants ends here  -->
+		
+
+<!--  Each Participant starts here  -->
+     <div class="p-card">
+         <div class="v-center">
+             <div class="p-card-photo" style="background-image: url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-1/p160x160/14657334_1259677607387062_8116538770825805178_n.jpg?oh=fd7eeb04eb8940e886b79c5b6354e74b&oe=5A277060); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+             <div class="p-card-info">
+                 <a href="http://hng.fun/profile/idee.html">
+                     <!--Profile Link-->
+                     <h3 class="p-card-title">Idorenyin Obong</h3>
+                     <!--Profile Name-->
+                 </a>
+                 <p class="p-card-description">idee4ril@gmail.com</p>
+                 <!--Email-->
+             </div>
+             <div class="p-team">
+                 <a href="#">
+                     <h3 class="p-card-title"> Team 2 </h3>
+                     <!--Team-->
+                 </a>                </div>            </div>        </div>
+     <!--  Each Participants ends here  -->
+
+
+
+
+			       
 					       
-					       
->>>>>>> baf63a8cf80f63d87aeafbf672f761b5676110bc
         <!--  Paste above this and leave a few lines so the next person can see this -->
 
 
