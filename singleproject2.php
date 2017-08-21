@@ -37,7 +37,7 @@
 	  
 	  <div class="team-members" id="team-member1">
 
-            <center><h4 id="team-header">Front-End Members</h4>
+            <center><h4 id="team-header">Front-End Members</h4><p>
 
        <div class="row">
   <div class="column">
@@ -148,7 +148,7 @@
 <p>
         <div class="team-members" id="team-member2">
 
-            <center><h4 id="team-header">Back End Members</h4><p><p>
+            <center><h4 id="team-header">Back End Members</h4><p>
 
             <div class="column">
     <div class="card">
