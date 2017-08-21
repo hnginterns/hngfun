@@ -55,7 +55,7 @@
                                     <a href="#">Past Internship</a>
                                 </li>
                                 <li>
-                                    <a href="#">News</a>
+                                    <a href="news.php">News</a>
                                 </li>
                                 <li>
                                     <a href="#">Supporters</a>
