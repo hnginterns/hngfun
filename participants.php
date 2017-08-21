@@ -1,24 +1,181 @@
+<?php  include "header.php" ?>
 
-<?php require_once('header.php'); ?>
-</header>
-  <div class="participants">
-    <div class="participants__header">
-        <h1>Participants</h1>
-        <div class="line"></div>
+<div id="banner-content" class="row clearfix">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <div class="p-card-container">
+        <div class="v-center">
+            <input type="text" id="search" placeholder="Enter Participant name to search" name="search">
+        </div>
     </div>
-    <table class="participants__table ">
-        <thead>
-            <tr>
-                <td><i class="fa fa-user" aria-hidden="true">
-                    </i>Name</td>
-                <td><i class="fa fa-globe" aria-hidden="true"></i>Profile</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="https://res.cloudinary.com/plushdeveloper/image/upload/v1503153956/IMG_20170119_174852_589_qsoqaz.jpg ">Oreoluwa Ojo</td>
-                <td><a href="./profile/ogbeniore.html ">@ogbeniore</a></td>
-            </tr>
-        </tbody>
-    </table>
+
+    <div class="p-card-container">
+
+
+        <!--
+              GUIDELINES FOR ADDING DETAILS TO PARTICIPANTS TABLE(Please read the comments)
+              - Copy the codes in the code block below (Dont include the code block)
+              - Only change where you see a comment and paste at the end of the code(Above the comment)
+              - Make sure you do not modify information of other participants
+              - Pull the repo, before pushing it, inorder to prevent conflicts
+            -->
+
+
+
+
+
+
+        <!--  Each Participant starts here  -->
+
+
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/jekayode">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Emmanuel Joseph</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">jekayode@live.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!--  Each Participants ends here  -->
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/holumiede">
+                        <h3 class="p-card-title">Osideinde Oluwadara</h3>
+                    </a>
+                    <p class="p-card-description">osideindeo@gmail.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="#">
+                        <h3 class="p-card-title">Emmanuel Joseph</h3>
+                    </a>
+                    <p class="p-card-description">jekayode@live.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="#">
+                        <h3 class="p-card-title">Emmanuel Joseph</h3>
+                    </a>
+                    <p class="p-card-description">jekayode@live.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="#">
+                        <h3 class="p-card-title">Emmanuel Joseph</h3>
+                    </a>
+                    <p class="p-card-description">jekayode@live.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg);  "></div>
+                <div class="p-card-info">
+                    <a href="#">
+                        <h3 class="p-card-title">Emmanuel Joseph</h3>
+                    </a>
+                    <p class="p-card-description">jekayode@live.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <!--  Paste above this and leave a few lines so the next person can see this -->
+
+
+    </div>
+
 </div>
+<?php  include "footer.php" ?>
