@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <div id="library-header-content" class="roww clearfix">
-  <div > </div>
+  <div class="img"> </div>
   <div class="col-38">
       <div class="section-heading">
           <h1><span>Hng interns Library</span></h1>
