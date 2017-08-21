@@ -64,15 +64,20 @@
         }
         
         @media (max-width: 600px) {
+            body {
+                overflow-y: scroll;
+                background-color: #2a4086;
+            }
             .right-half {
                 width: 100%;
-                height: 50%;
-                bottom: 0;
             }
             .left-half {
+                margin-left: -3em;
                 top: 0;
                 width: 100%;
-                height: 50%;
+                position: relative;
+                align-items: center;
+                overflow-x: hidden;
             }
         }
         
@@ -129,7 +134,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Oreoluwa Ojo | OgbeniOre</title>
-    <script src="https://use.fontawesome.com/1dbde377a5.js"></script>
 </head>
 
 <body>
@@ -156,14 +160,14 @@
                 </div>
                 <div class="about">
                     <p>I am a web developer based in nigeria.
-                        <br>I am studying computer science student in FUNAAB
-                        <br>I write HTML, CSS, JavaScript and Angular.
+                        <br>I am studying computer science in FUNAAB
+                        <br>I write HTML, CSS, JavaScript anda little bit of Angular.
                         <br>Here is the <a class="link" href="http:github.com/OreoluwaOjo/HNG-Test">Link</a> to my first task as an intern at Hotels.ng</p>
                 </div>
             </article>
         </div>
         </div>
-
+        <script src="https://use.fontawesome.com/1dbde377a5.js"></script>
 </body>
 
 </html>
