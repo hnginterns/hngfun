@@ -431,6 +431,7 @@
                 </div>
             </div>
         </div>
+		
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/hngfun/image/upload/v1503323008/nsikakthompson_frztsd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -928,6 +929,30 @@
                   </div>
               </div>
               <!--  Each Participants ends here  -->
+			  
+			   <!--  Each Participant starts here  -->
+              <div class="p-card">
+                  <div class="v-center">
+                      <div class="p-card-photo" style="background-image: url("https://scontent-lhr.xx.fbcdn.net/v/t1.0-9/20258075_1444248888996582_3279836029610382524_n.jpg?_nc_eui2=v1%3AAeHuo-QUwz6Xl8YebNe2YHTfDLLvTPP6_YChkFolX053JChp0KKMOjGKDIpomde8TDfnHs_8shQXta2qBdLk5C67BRY4VYeQdnaiAclCrEwUMA&oh=4827801f2f37aa36d8280d553e7e38ed&oe=5A19ACE0"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                      <div class="p-card-info">
+                          <a href="http://hng.fun/profile/rogue.kvng.html">
+                              <!--Profile Link-->
+                              <h3 class="p-card-title">Joseph Bassey</h3>
+                              <!--Profile Name-->
+                          </a>
+                          <p class="p-card-description">joseph.mbassey2@gmail.com</p>
+                          <!--Email-->
+                      </div>
+                      <div class="p-team">
+                          <a href="#">
+                              <h3 class="p-card-title"> Team 5 </h3>
+                              <!--Team-->
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <!--  Each Participants ends here  -->
+			  
 
 
                
