@@ -6,80 +6,10 @@
 <head>
     <title>Library</title>
 
-  <style>
+  <!-- <style>
     * {margin: 0; padding: 0;}
-
-      .library-all {
-        margin: 20px;
-      }
-
-      .library-list {
-        list-style-type: none;
-        width: 500px;
-      }
-
-
-
-      .library-list h3 {
-        font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
-      }
-
-      /*li img {
-        float: left;
-        margin: 0 15px 0 0;
-      }*/
-
-      /*li p {
-        font: 200 16px/1.5 Georgia, Times New Roman, serif;
-      }*/
-
-      .library-list p {
-        font: 200 16px/1.5 Georgia, Times New Roman, serif;
-      }
-
-      .library-list li {
-        padding: 10px;
-        overflow: auto;
-      }
-
-      .library-list a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-      }
-      .library-input[type=text] {
-          width: 50%;
-          box-sizing: border-box;
-          border: 2px solid #ccc;
-          border-radius: 4px;
-          font-size: 16px;
-          background-color: white;
-          background-image: url('searchicon.png');
-          background-position: 10px 10px; 
-          background-repeat: no-repeat;
-          padding: 12px 20px 12px 40px;
-          -webkit-transition: width 0.4s ease-in-out;
-          transition: width 0.4s ease-in-out;
-      }
-
-      .library-input[type=text]:focus {
-          width: 55%;
-      }
-      .library-img{
-          height:42px;
-          width:42px;
-      }
-      .library-input{
-          opacity: 1;
-          text-align: center; 
-          margin-top: 12%;
-      }
-      .library-img-space{
-          height: 100px;
-      }
-      #library-search{
-          text-align: center;
-      }
-  </style>
+  </style> -->
+  
 </head>
 <body>  
 
@@ -98,12 +28,12 @@
       <li>
         <img class="library-img" src="images/library/gitbash.png">
         <h3>Git Tutorials</h3>
-          <p><a href="https://backlogtool.com/git-guide/en/stepup/stepup1_1.html" target="_blank">-Git's beginner guide for dummies</a></p>
-          <p><a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank">-Udacity's free course on How to use git and github</a></p>
-          <p><a href="https://git-scm.com/docs/gittutorial" target="_blank">-Git's own tutorial/documentation</a></p>
-          <p><a href="http://gitimmersion.com/" target="_blank">-Git Immersion</a></p>
-          <p><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_blank">-Git magic : Online book that takes you from beginner to pro.</a></p>
-          <p><a href="https://www.webdesignerdepot.com/2009/03/intro-to-git-for-web-designers/" target="_blank">-Intro to git for web designers</a></p>
+          <p><a href="https://backlogtool.com/git-guide/en/stepup/stepup1_1.html" target="_blank">- Git's beginner guide for dummies</a></p>
+          <p><a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank">- Udacity's free course on How to use git and github</a></p>
+          <p><a href="https://git-scm.com/docs/gittutorial" target="_blank">- Git's own tutorial/documentation</a></p>
+          <p><a href="http://gitimmersion.com/" target="_blank">- Git Immersion</a></p>
+          <p><a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_blank">- Git magic : Online book that takes you from beginner to pro.</a></p>
+          <p><a href="https://www.webdesignerdepot.com/2009/03/intro-to-git-for-web-designers/" target="_blank">- Intro to git for web designers</a></p>
           <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></p>
           <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></p>
           <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></p>
@@ -112,15 +42,15 @@
       <li>
         <img class="library-img" src="images/library/github.png">
         <h3>Github Tutorials</h3>
-          <p><a href="http://opensourcerer.diy.org/" target="_blank">-Open Sourcerer : Takes you from your first repo to your first pull request</a></p>
-          <p><a href="https://help.github.com/">-Github's own tutorial</a></p>
-          <p><a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/" target="_blank">-Adding a project to Github with Command Line</a></p>
+          <p><a href="http://opensourcerer.diy.org/" target="_blank">- Open Sourcerer : Takes you from your first repo to your first pull request</a></p>
+          <p><a href="https://help.github.com/">- Github's own tutorial</a></p>
+          <p><a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/" target="_blank">- Adding a project to Github with Command Line</a></p>
           <p><a href="https://help.github.com/articles/fetching-a-remote/" target="_blank">-Working with other people's repositories</a></p>
-          <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-          <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-          <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-          <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
-          <p><a href="" target="_blank">-Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
+          <p><a href="" target="_blank">- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></p>
       </li>
 
       <li>
