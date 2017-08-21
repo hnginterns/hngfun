@@ -239,7 +239,7 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/899666444060942341/uKTEUbcF_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/dYFenOU.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
                         <a href="http://hng.fun/profile/daniella.html">
                             <!--Profile Link-->
@@ -291,14 +291,13 @@
         
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw44BhHjka-ySW9YsGhiD40sWcISHEihLl0X40-7NLT83honDEA); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/hngfun/image/upload/v1503323008/nsikakthompson_frztsd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/nsikakthompson.html">
                         <h3 class="p-card-title">Nsikak Thompson</h3>
                     </a>
                     <p class="p-card-description">nsikakthompson73@gmail.com</p>
                 </div>
->>>>>>> 1d5e648641ef7bf3c293d64a63b77e7617d342bc
 
                 <div class="p-team">
                     <a href="#">
@@ -333,7 +332,40 @@
 
 
 
+	 <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://nicesale.com.ng/adigunhammedola.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
 
+
+                    <a href="http://hng.fun/profile/adigunhammedolalekan">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Adigun Hammed Olalekan</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">adigunadunfe@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+<<<<<<< HEAD
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2</h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+=======
+
+
+
+>>>>>>> 71890b26a80d3d8b3b37c4f8bcd6d4d0738fed22
         <!--  Paste above this and leave a few lines so the next person can see this -->
 
 

@@ -40,7 +40,8 @@
                                    padding: 10px;
                                    display: flex;
                                    justify-content: center;
-                                   flex-direction: row;
+                                   flex-direction: 
+                                     ;
                                    text-align: left;
                                    justify-content: flex-start;
                                    box-sizing: border-box;
@@ -1702,13 +1703,16 @@
                            .library-back-to-top i {
                                font-size: 60px;
                            }
+<<<<<<< HEAD
                            .roww .img {
+=======
+                           .roww img {
+>>>>>>> 71890b26a80d3d8b3b37c4f8bcd6d4d0738fed22
                                height: auto;
                                max-width: 100%;
                                position: relative;
                                width: 100%;
                                /* for IE 6 */
-                               
                                height: 40%;
                            }
                            /* about page CSS by Team 2 ends
