@@ -53,7 +53,7 @@
                             <div class="name-body-text">I am Mark Essien, born and grew up in the small town of Ikot Ekpene, Akwa Ibom State, Nigeria.
     I did my primary school at Monika Kindergarten, and my secondary school at Federal Government College, Ikot Ekpene. As you can tell, very much a small town upbringing.
     After that, I moved to Germany to attend University. It was an interesting experience, but after many years in Germany, I decided that I prefer to live in Nigeria.</div>
-                            <div class="linkedin"><img src="http://res.cloudinary.com/hngfun/image/upload/v1503323006/linkedin_lquvqx.png" height="36" width="36" alt="" align="left"></div>            
+                            <div class="linkedin"><a href="https://ng.linkedin.com/in/markessien" target="_blank"><img src="http://res.cloudinary.com/hngfun/image/upload/v1503323006/linkedin_lquvqx.png" height="36" width="36" alt="" align="left"></a></div>            
                             </div>
 
                     </div>

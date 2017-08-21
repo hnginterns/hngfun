@@ -985,8 +985,6 @@
               </div>
               <!--  Each Participants ends here  -->
 
-</div>
-
 					    
 			
 <div class="p-card">
