@@ -954,27 +954,6 @@
                 </div>
             </div>
         </div>
-	    <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
-); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="https://github.com/hnginterns/hngfun/tree/master/profile/timicodes">
-                    http://hng.fun/profile/ememobong_akpanekpo.html
-                        <h3 class="p-card-title">Ememobong Akpanekpo</h3>
-                        
-                    </a>
-                    <p class="p-card-description">emayoung95@gmail.com</p>
-                    
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 6 </h3>
-                        
-                    </a>
-                </div>
-            </div>
-        </div>
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -998,5 +977,27 @@
         </div>
     </div>
 </div>
+
+<div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
+); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/ememobong_akpanekpo.html">
+                    
+                        <h3 class="p-card-title">Ememobong Akpanekpo</h3>
+                        
+                    </a>
+                    <p class="p-card-description">emayoung95@gmail.com</p>
+                    
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 6 </h3>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
 
 <?php  include "footer.php" ?>
