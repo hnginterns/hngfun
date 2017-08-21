@@ -680,7 +680,7 @@
                 <div class="p-card-info">
 
 
-                    <a href="http://hng.fun/profile/princessdee">
+                    <a href="http://hng.fun/profile/princessdee.html">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Damilola Omoyiwola</h3>
                         <!--Profile Name-->
