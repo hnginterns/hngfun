@@ -1,4 +1,4 @@
-<?php  include "header.php" ?>
+﻿<?php  include "header.php" ?>
 
 <div id="banner-content" class="row clearfix">
 
@@ -201,16 +201,69 @@
         </div>
 
 
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/899666444060942341/uKTEUbcF_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/daniella.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Daniella Mato</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">dmpire2@gmail.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 10 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+
+<<<<<<< HEAD
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/12042876_1052428558114186_1777675972793875780_n.jpg?_nc_eui2=v1%3AAeGAmf_Cy4z6PszN4lzDm7G_gENN9PL4Z9UmaSD4lUUxOkFEZISNDF0xiUuihStcur78EPEpatwoqHs_UKJgjEESqpS1UiLXUi2uhupKLzHv0w&oh=3d69de2b708de78b50f706b63048dfae&oe=5A133AC5); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/Gabriel">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Gabriel Umoh</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">gmaumoh@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 6 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+=======
+            </div>
+    
         
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDw44BhHjka-ySW9YsGhiD40sWcISHEihLl0X40-7NLT83honDEA); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="#">
+                    <a href="http://hng.fun/profile/nsikakthompson.html">
                         <h3 class="p-card-title">Nsikak Thompson</h3>
                     </a>
                     <p class="p-card-description">nsikakthompson73@gmail.com</p>
                 </div>
+>>>>>>> 1d5e648641ef7bf3c293d64a63b77e7617d342bc
 
                 <div class="p-team">
                     <a href="#">
