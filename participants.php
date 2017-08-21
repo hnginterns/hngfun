@@ -359,6 +359,26 @@
                     </div>
                 </div>
             </div>
+	    
+	    <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/nseetim.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Nse-Abasi Etim</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">etimnseabasi@gmail.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 10 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
         <div class="p-card">
