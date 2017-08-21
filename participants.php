@@ -1,12 +1,11 @@
 
 <?php require_once('header.php'); ?>
-
-  <div id=" participants">
+</header>
+  <div class="participants">
     <div class="participants__header">
         <h1>Participants</h1>
         <div class="line"></div>
     </div>
-    <h3 style="color: red; text-align: center"> Please dont edit this page yet, we are still working on it</h3>
     <table class="participants__table ">
         <thead>
             <tr>
@@ -22,4 +21,4 @@
             </tr>
         </tbody>
     </table>
-  </div>
+</div>
