@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes" />
+        <title>Profile</title>
+        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+        <script src="https://use.fontawesome.com/0b7956cb33.js"></script>
+	<style type="text/css">
+    	@import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
+		html, body {
+ 		height: 100%;
+  		margin: 0;
+  		font-family: 'arial', serif !important;
+  		overflow-x: hidden;
+		}
+		.container{
+  		min-height:100%;
+  		min-width:100%;
+  		background-color:#000000;
+  		display:flex;
+		}
+		.container2{
+  		background: #808080;
+    	margin: 10px;
+    	min-height: 100%;
+    	min-width: 100%;
+		}
+		.left1{
+    	background: url('https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/16681646_1263674723725886_3249389777281568213_n.jpg?oh=8e916840484be65726588e247c6a4473&oe=5A2C13A6') center center;
+   		background-size: cover;
+    	height: 100%;
+    	width: 50%;
+    	float:right;
+		}
+		.right1{
+    	height: 100%;
+    	width: 50%;
+    	float: right;
+		}
+		.right1>h3{
+   		text-align: center;
+    	color: #3c3c3c;
+    	padding: 0 15px;
+		}
+		.right1>.bio{
+   		padding-top: 20px;
+    	text-align: center;
+    	padding: 15px;
+    	color: #c0c0c0;
+		}
+		.clearfix{
+    	clear: both;
+		}
+		ul{
+   		padding: 15px;
+		}
+		ul, li{
+    	text-align: center;
+    	list-style-type: none;
+    	color: #4c4c4c;
+		}
+		@media (min-width: 480px){
+    	html, body{
+        overflow: hidden !important;
+    }
+    .right1>h3{
+        padding-top: 15%;
+    }
+}
+@media (max-width: 399px){
+    .left1{
+        height: 120vh
+    }
+}
+    </style>
+ 	
+    </head>
+    
+    <body>
+		<div class="container">
+			<div class="container2">
+				<div class="left1"></div>
+				<div class="right1">
+					<h3>Ijaware Tiwaloluwa</h3>
+					<p class="bio">
+								   Front-end Developer in Nigeria.<br>
+
+						I code in HTML, CSS.<br>
+					 <a href="mailto:ijawaretiwaloluwa@gmail.com">hello@tiwalolu</a>
+					</p>
+					
+						<ul>
+							<li>
+								<i class="fa fa-slack fa-2x"></i><br>
+								@tiwaloluu
+							</li>
+							<li style="padding-top: 25px;">
+								<i class="fa fa-link fa-2x"></i><br>
+								<a href="https://github.com/tiwalolu/getting-started-h2-2017" target="_blank">Stage-1-Link</a>
+							</li>
+						</ul>
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+    </body>
+</html>
