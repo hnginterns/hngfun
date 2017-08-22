@@ -991,7 +991,6 @@
 </div>
 
 <div class="p-card">
-<<<<<<< HEAD
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url('https://ca.slack-edge.com/T3QLSP8HM-U6QUTQT2T-6ffc54e0834d-512'); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
@@ -1018,8 +1017,9 @@
 
     </div>
 
-=======
-            <div class="v-center">
+<div class="p-card">         
+         
+  <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/aizAwig.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/bogadeji">
@@ -1039,6 +1039,5 @@
             </div>
         </div>
 
->>>>>>> 326d961044304f65eceaa24007e94bfb1a8d7dc2
 </div>
 <?php  include "footer.php" ?>
