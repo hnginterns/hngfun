@@ -52,48 +52,49 @@ include('header.php');
     <h4 id="v1">HNG Internship 1.0</h4>
     <p>
         It was indeed a great success. Mark Esssien born and raised in Ikot
-Ekpene, founder of hotels.ng along with Neo the CTO of the company
-came up with an idea of an internship program for software developers
-and put out a tweet. So many people applied, more than hundreds. He
-was convinced that people wanted to learn software development and
-so he went ahead with the plan. Well they decided they would pay but
-how were the going to do this? It was indeed a tough decision. They
-came up with an idea that it was going to be a remote internship,
-anybody could join but only those who deliver features in the course of
-the internship would get paid and they went on with the plan.
-Assignments were given stage by stage which includes;
-<ul>
-<li>Setup git and pull and push some code which left only 80 people in
-the program. </li>
-<li>Write a bit of code (front-end mostly) and push to the repository and
-only 30 people were left</li>
-</ul>
-</p>
-<p>There and then, the internship started in earnest. The Interns were
-given tasks, and each week they had to deliver whatever they were
-given. Those who delivered got paid while those who did not didn’t get
-paid following the plan.
-As weeks passed, people started leaving slowly reasons being that
-some could not meet up, and some because other things got in their
-way. But the determined ones still persisted all the way through to the
-end. 15 interns finished successfully. They did all their best just to
-complete it even when the circumstances became tougher.</p>
+        Ekpene, founder of hotels.ng along with Neo the CTO of the company
+        came up with an idea of an internship program for software developers
+        and put out a tweet. So many people applied, more than hundreds. He
+        was convinced that people wanted to learn software development and
+        so he went ahead with the plan. Well they decided they would pay but
+        how were the going to do this? It was indeed a tough decision. They
+        came up with an idea that it was going to be a remote internship,
+        anybody could join but only those who deliver features in the course of
+        the internship would get paid and they went on with the plan.
+        Assignments were given stage by stage which includes;
+    </p>
+    <ul>
+        <li>Setup git and pull and push some code which left only 80 people in the program. </li>
+        <li>Write a bit of code (front-end mostly) and push to the repository and only 30 people were left</li>
+    </ul>
 
-<p>Finally they built 4 products for HNG which includes - Spots.ng (a listing
-of places in Nigeria), Raven (an internal email sending tool), Locations
-API (an API for Nigerian addressing system), and a yet to be released
-(Hotels.ng for Businesses). </p>
+    <p>There and then, the internship started in earnest. The Interns were
+        given tasks, and each week they had to deliver whatever they were
+        given. Those who delivered got paid while those who did not didn’t get
+        paid following the plan.
+        As weeks passed, people started leaving slowly reasons being that
+        some could not meet up, and some because other things got in their
+        way. But the determined ones still persisted all the way through to the
+        end. 15 interns finished successfully. They did all their best just to
+        complete it even when the circumstances became tougher.
+    </p>
 
-<p>Three people were hired- Stephen Afam-Osmene (who started
-university at 14), Gideon Onwuka (a quiet guy who hardly said anything,
-but always was first in completing the tasks), and Fisayo Afoloyan (one
-of the few guys that was as good on the front-end as on the backend.
-It was really indeed a great success. They were picked up, they trained
-themselves and now they making the world a better place.
-Due to the success of HNG 1.0, HNG 2.0 has been setup to develop
-more people in software. Remember, it is still a remote internship and
-everyone is welcome. Anticipate powerfully and watch out for this
-year’s great software developers….you don’t want to be left out.
+    <p>Finally they built 4 products for HNG which includes - Spots.ng (a listing
+        of places in Nigeria), Raven (an internal email sending tool), Locations
+        API (an API for Nigerian addressing system), and a yet to be released
+        (Hotels.ng for Businesses).
+    </p>
+
+    <p>Three people were hired- Stephen Afam-Osmene (who started
+        university at 14), Gideon Onwuka (a quiet guy who hardly said anything,
+        but always was first in completing the tasks), and Fisayo Afoloyan (one
+        of the few guys that was as good on the front-end as on the backend.
+        It was really indeed a great success. They were picked up, they trained
+        themselves and now they making the world a better place.
+        Due to the success of HNG 1.0, HNG 2.0 has been setup to develop
+        more people in software. Remember, it is still a remote internship and
+        everyone is welcome. Anticipate powerfully and watch out for this
+        year’s great software developers….you don’t want to be left out.
     </p>
 </div>
 
@@ -101,32 +102,31 @@ year’s great software developers….you don’t want to be left out.
     <h4 id="v2">HNG Internship 2.0</h4>
     <p>
         It was indeed a great success. Mark Esssien born and raised in Ikot
-Ekpene, founder of hotels.ng along with Neo the CTO of the company
-came up with an idea of an internship program for software developers
-and put out a tweet. So many people applied, more than hundreds. He
-was convinced that people wanted to learn software development and
-so he went ahead with the plan. Well they decided they would pay but
-how were the going to do this? It was indeed a tough decision. They
-came up with an idea that it was going to be a remote internship,
-anybody could join but only those who deliver features in the course of
-the internship would get paid and they went on with the plan.
-Assignments were given stage by stage which includes;
-<ul>
-<li>Setup git and pull and push some code which left only 80 people in
-the program. </li>
-<li>Write a bit of code (front-end mostly) and push to the repository and
-only 30 people were left</li>
-</ul>
+        Ekpene, founder of hotels.ng along with Neo the CTO of the company
+        came up with an idea of an internship program for software developers
+        and put out a tweet. So many people applied, more than hundreds. He
+        was convinced that people wanted to learn software development and
+        so he went ahead with the plan. Well they decided they would pay but
+        how were the going to do this? It was indeed a tough decision. They
+        came up with an idea that it was going to be a remote internship,
+        anybody could join but only those who deliver features in the course of
+        the internship would get paid and they went on with the plan.
+        Assignments were given stage by stage which includes;
+    </p>
+    <ul>
+        <li>Setup git and pull and push some code which left only 80 people in the program. </li>
+        <li>Write a bit of code (front-end mostly) and push to the repository and only 30 people were left</li>
+    </ul>
 </p>
-<p>There and then, the internship started in earnest. The Interns were
-given tasks, and each week they had to deliver whatever they were
-given. Those who delivered got paid while those who did not didn’t get
-paid following the plan.
-As weeks passed, people started leaving slowly reasons being that
-some could not meet up, and some because other things got in their
-way. But the determined ones still persisted all the way through to the
-end. 15 interns finished successfully. They did all their best just to
-complete it even when the circumstances became tougher.</p>
+    <p>There and then, the internship started in earnest. The Interns were
+    given tasks, and each week they had to deliver whatever they were
+    given. Those who delivered got paid while those who did not didn’t get
+    paid following the plan.
+    As weeks passed, people started leaving slowly reasons being that
+    some could not meet up, and some because other things got in their
+    way. But the determined ones still persisted all the way through to the
+    end. 15 interns finished successfully. They did all their best just to
+    complete it even when the circumstances became tougher.</p>
 
 <p>Finally they built 4 products for HNG which includes - Spots.ng (a listing
 of places in Nigeria), Raven (an internal email sending tool), Locations

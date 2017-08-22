@@ -3,29 +3,29 @@
 	<h1><i class="fa fa-newspaper-o" style="font-size:48px;"></i>NEWS FEED</h1>
 </div>
 
-	<div class = "team8-card-container">
+	<div class = "team8-card-container" style="margin: 40px;">
 		<center>
 		<!-- first news article -->
 		<div class="team8-card">
 			<div class="team8-card-info">
-				<h2 class="team8-card-title">Hotels NG announces internship</h2>
+				<h2 class="team8-card-title">Team 2 & Team 3 are eligible for stage 2</h2>
 			</div>	
 			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
-				<p class="team8-card-content">Hotels NG CEO, Mark Essien took to his twitter page to announce the 2nd internship program for the year,
-				this announcement came as a result of the current ASUU strike. Mark urged young Nigerian undergraduates to see this as an opportunity 
-				and make use of this time develop themselves with technical skills.<br>
-				The internship program has over 1000+ applicants and still counting.
+				<p class="team8-card-content">Hotels NG CEO, Mark Essien announced on the slack page thread name(#General).<br>
+                Team 3 project was particpants page.this page contains all participants who are undergoing remote internship in hotels ng.having their names, emails and images being displayed. And a search area to search a participant.<br>
+                Team 2  project was about page which consists of mission & vision statement of Hotelsng remote internship, info about the CEO of hotels ng and history of Hotelsng internship.<br>
+                All members of each group are to submit their work  for review at the <bold>#review</bold> thread of hng slack group 
+
 				</p>
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 21 Aug, 17 &nbsp; &nbsp;
+					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
 				</h6>	
 			</div>
 		</div>
-		
-		<!-- second news article -->
+
 		<div class="team8-card">
 			<div class="team8-card-info">
 				<h2 class="team8-card-title">HNG internship projects</h2>
@@ -52,6 +52,27 @@
 				</h6>	
 			</div>
 		</div>
+		
+		<!-- second news article -->
+		<div class="team8-card">
+			<div class="team8-card-info">
+				<h2 class="team8-card-title">Hotels NG announces internship</h2>
+			</div>	
+			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team8-card-info">	
+				<p class="team8-card-content">Hotels NG CEO, Mark Essien took to his twitter page to announce the 2nd internship program for the year,
+				this announcement came as a result of the current ASUU strike. Mark urged young Nigerian undergraduates to see this as an opportunity 
+				and make use of this time develop themselves with technical skills.<br>
+				The internship program has over 1000+ applicants and still counting.
+				</p>
+			</div>
+			<div class="team8-card-footer">
+				<h6 class="team8-footer-right">
+					<span class="dot3">&#9679; </span> 21 Aug, 17 &nbsp; &nbsp;
+				</h6>	
+			</div>
+		</div>
+		
 		
 		<!-- third news article -->
 		
