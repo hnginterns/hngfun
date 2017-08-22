@@ -68,7 +68,7 @@
         <!--  Each Participants ends here  -->
 
         <!--  Each Participant starts here  -->
-<<<<<<< HEAD
+
               <div class="p-card">
                    <div class="v-center">
                        <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/28959886?v=4&s=400
@@ -447,7 +447,7 @@
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/g2IDvh4.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-<<<<<<< HEAD
+
                     <div class="p-card-info">
                         <a href="http://hng.fun/profile/ninte.html">
                             <!--Profile Link-->
@@ -858,7 +858,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
+
                 <div class="p-card">
                     <div class="v-center">
                         <div class="p-card-photo" style="background-image: url(http://i.imgur.com/xpED2gj.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
