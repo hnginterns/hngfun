@@ -333,6 +333,48 @@ a {
 
 
     </style>
+    <style>
+input[type=text], select, textarea {
+    width: 20%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    resize: vertical;
+    
+        }
+        input[type=email] {
+    width: 20%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 8px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    
+    padding: 10px;
+}
+</style>
 
 </head>
 
@@ -368,9 +410,31 @@ a {
           </h2>
       
         </div>
+            
       
   </div>
-
+                
   </div></div>
+    
+
+<div class="container">
+  <form action="">
+   
+     <p> <h2>Contact Form</h2></p>
+    <input type="text" id="fname" name="firstname" placeholder="Your firstname.."><br>
+
+    
+   <p> <input type="text" id="lname" name="lastname" placeholder="Your lastname.."></p><br>
+    
+    
+    <p><input type="email" id="email" name="email" placeholder="email is required" /required></p><br>
+  
+
+  
+   <p> <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea></p>
+
+   <p> <input type="submit" value="Submit"> </p>
+  </form>
+</div>
      </body>
         </html>

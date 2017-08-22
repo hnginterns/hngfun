@@ -17,6 +17,11 @@ include "header.php";
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .contact section {
+    width: 40%;
     width: 95%;
     margin: 30px 0 10px;
   }
@@ -47,7 +52,7 @@ include "header.php";
   }
 
   input[type=submit]:hover {
-    background: white;
+    color: white;
     border: .5px solid #ccc;
     cursor: pointer;
   }
@@ -148,11 +153,14 @@ include "header.php";
 
 </style>
 <main class="m-container">
-<iframe src=https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary"" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  
   <div class="underlay"></div>
   <h2 style="font-family: 'Lato', sans-serif" class="underlined">GET IN TOUCH</h2>
   <section class="contact">
+  <section class="contact-info">
+    <div>
+      <p><span><i class="fa fa-map-marker"></i></span><span>1, Intern Ave, Hotel NG</span></p>
+      <p><span><i class="fa fa-phone"></i></span><span>+234-hng-interns</span></p>
+      <p><span><i class="fa fa-mobile"></i></span><span>+234-alt-number</span></p>
   <section class="contact-form" >
     <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" >
     <!-- php code checks against html injection -->
@@ -170,64 +178,29 @@ include "header.php";
       <p class = "subheading-text"><span><i class="fa fa-phone"></i></span><span>+234-700-880-8800</span></p>
       <p class = "subheading-text"><span><i class="fa fa-envelope-o"></i></span><span>internship@hotels.ng</span></p>
     </div>
-    <div class="social-links" >
-      <span > <a href="https://web.facebook.com/hotelsng/?ref=br_rs"><i class="fa fa-2x fa-facebook"></i></a></span>
-      <span><a href="https://twitter.com/hotelsng"><i class="fa fa-2x fa-twitter"></i></a></span>
-      <span><a href="https://hnginterns.slack.com"><i class="fa fa-2x fa-slack"></i></a></span>
-      <span><a href="https://github.com/hnginterns/hngfun"><i class="fa fa-2x fa-github"></i></a></span>
+    <div class="social-links">
+      <span><i class="fa fa-2x fa-facebook"></i></span>
+      <span><i class="fa fa-2x fa-twitter"></i></span>
+      <span><i class="fa fa-2x fa-slack"></i></span>
+      <span><i class="fa fa-2x fa-github"></i></span>
     </div>
-  
+  <div class="map">
+    <iframe height="250"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary" allowfullscreen>
+  </iframe>
+</div>
   </section>
-  
+  <section class="contact-form">
+    <form>
+    <h4>Leave us a message</h4>
+    <input type="text" placeholder="Name" required/><br>
+    <input type="email" placeholder="Email" required/><br>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required></textarea><br>
+    <input type="submit"/>
+    </form>
   </section>
-<?php 
-
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-  //checks if it's a post request from the form
-  if(isset($_POST["name"])){
-    $filename = $_POST["name"];
-  }
-if(isset($filename)){ 
-
-$name = test_input($_POST["name"]);
-$email = test_input($_POST["email"]);
-$message = test_input($_POST["message"]);
-
-$from = 'Hotelsng Intern Contact Form'; 
-$to = 'emayoung95@gmail.com'; // email address to be replaced
-$subject = 'Message from Contact Form ';
- 
-$body = "From: $name\n E-Mail: $email\n Message:\n $message";
-
-$mail=mail ($to, $subject, $body, $from);
-
-
-if ($mail) {
-  //sends the mail to the $to address, this should be changed to hotels.ng address
-    $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-    echo "<script type=\"text/javascript\">".
-        "alert('Message Sent Successfully');".
-        "</script>";
-  
-}
-else {
-    $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-    echo "<script type=\"text/javascript\">".
-        "alert('Message Not Sent');".
-        "</script>";
-  }
-}
-}
-
-function test_input($data) {
-  //tests the data to make sure we are free from javascript attacks
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
- ?>
-  
+  </section>
 </main>
 
 
