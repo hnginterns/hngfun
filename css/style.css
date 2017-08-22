@@ -982,7 +982,7 @@ input:checked + label {
   display: none;
   text-decoration: none;
   color: #00BFFF;
-  background-color: #00BFFF;
+  /*background-color: #00BFFF;*/
    
   }
    
