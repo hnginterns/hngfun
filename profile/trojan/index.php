@@ -189,9 +189,9 @@
                     <li><a href="http://okoh.co.uk" class="social-icon"> <i class="fa fa-link"></i></a></li>
                     <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
                 </ul>
-              
-                <p>My Name is Michael Okoh, a Software Engineer from Lagos State</br>
-                I build Standard Web Applications with top Notch Design. My Major tools are <b>PHP, Laravel & Bootstrap.</b></br>
+
+                <p>My Name is Michael Okoh, a Software Engineer from Lagos State
+                I build Standard Web Applications with top Notch Design. My Major tools are <b>PHP, Laravel & Bootstrap.</b>
                 I also Use <b>C++, Java, Swift and Python</b> where needed.
                 </p>
 
