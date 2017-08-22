@@ -5,7 +5,7 @@ include('header.php');
 
 </div> <!--end wrapper class in header.php -->
 
-<div class="clear-fix past-internships-container">
+<div class="row clear-fix past-internships-container">
     <div class="column">
         <div>
             <a href="#v3">
@@ -44,7 +44,7 @@ include('header.php');
         </div>
     </div>
 </div>
-<div class="internship-detail">
+<div class="row internship-detail">
     <h4 id="v1">HNG Internship 1.0</h4>
     <p>
         It was indeed a great success. Mark Esssien born and raised in Ikot
@@ -93,7 +93,7 @@ year’s great software developers….you don’t want to be left out.
     </p>
 </div>
 
-<div class="internship-detail">
+<div class="row internship-detail">
     <h4 id="v2">HNG Internship 2.0</h4>
     <p>
         It was indeed a great success. Mark Esssien born and raised in Ikot
@@ -142,7 +142,7 @@ year’s great software developers….you don’t want to be left out.
     </p>
 </div>
 
-<div class="internship-detail">
+<div class="row internship-detail">
     <h4 id="v3">HNG Internship 3.0</h4>
     <p>
         It was indeed a great success. Mark Esssien born and raised in Ikot
