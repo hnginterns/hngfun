@@ -187,8 +187,9 @@
                     <li><a href="mailto:michael@okoh.co.uk" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
                     <li><a href="https://www.instagram.com/ichtrojan" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
                     <li><a href="http://okoh.co.uk" class="social-icon"> <i class="fa fa-link"></i></a></li>
-                    <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li><br></br>
+                    <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
                 </ul>
+              </br>
                 <p>My Name is Michael Okoh, a Software Engineer from Lagos State<br>
                 I build Standard Web Applications with top Notch Design. My Major tools are <b>PHP, Laravel & Bootstrap.</b></br>
                 I also Use <b>C++, Java, Swift and Python</b> where needed.
