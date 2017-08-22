@@ -4611,6 +4611,7 @@ include('header.php');
             </div>
 
         </div>
+    </div>
  	<!-- Thadeus' profile -->
 
         <div class="p-card">
@@ -4640,8 +4641,6 @@ include('header.php');
 
         <!--  Each Participants ends here  -->
 
-
-    </div>
    <!--  Each Participants ends here  -->
 
 	    <div class="p-card">
