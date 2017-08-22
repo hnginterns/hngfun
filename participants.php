@@ -1902,7 +1902,26 @@
                 </div>
             </div>
         </div>
-
+        <div class="p-card">
+                  <div class="v-center">
+                      <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/894886569563303937/SDDv2YBT_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                      <div class="p-card-info">
+                          <a href="http://hng.fun/profile/akunne.html">
+                              <!--Profile Link-->
+                              <h3 class="p-card-title">Akunne Obinna </h3>
+                              <!--Profile Name-->
+                          </a>
+                          <p class="p-card-description">akunneobinna@gmail.com</p>
+                          <!--Email-->
+                      </div>
+                      <div class="p-team">
+                          <a href="#">
+                              <h3 class="p-card-title"> Team 1 </h3>
+                              <!--Team-->
+                          </a>
+                      </div>
+                  </div>
+              </div>
             <div class="p-card" id="tody">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://github.com/to-dy/test/blob/master/exImg/tody1.jpg?raw=true); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
