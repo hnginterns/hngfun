@@ -6283,6 +6283,29 @@ include('header.php');
     </div>
     <!--  Each Participants ends here  -->
 
+    <!--  Each Participant starts here  -->
+    <div class="p-card">
+        <div class="v-center">
+            <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/26293878?v=4&u=c8f4ec102fda331da7c707630ecfcee486dc9621&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="http://hng.fun/profile/emeecodes">
+                    <!--Profile Link-->
+                    <h3 class="p-card-title">Emmanuel Promise Ozibo</h3>
+                    <!--Profile Name-->
+                </a>
+                <p class="p-card-description">emmanuel020forreal@gmail.com</p>
+                <!--Email-->
+            </div>
+            <div class="p-team">
+                <a href="#">
+                    <h3 class="p-card-title"> Team 2 </h3>
+                    <!--Team-->
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  Each Participants ends here  -->
+
 <<<<<<< HEAD
 <<<<<<< HEAD
 
