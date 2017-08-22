@@ -1344,15 +1344,7 @@ include('header.php');
             </a>
         </div>
         <!--  Participant starts here  -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-	    
-=======
 
->>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
-=======
-	    
->>>>>>> 4f0cc06ec7b76f4570d56765e938da9d8981a2b2
         <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -2091,18 +2083,7 @@ include('header.php');
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-   
-<!--  Each Participant starts here  -->
-=======
-    </div>
-</div>
->>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
-=======
-   
-<!--  Each Participant starts here  -->
->>>>>>> 4f0cc06ec7b76f4570d56765e938da9d8981a2b2
+
     <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/E2WmeiH.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -2178,13 +2159,7 @@ include('header.php');
 
     </div>
    <!--  Each Participants ends here  -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
-=======
->>>>>>> 4f0cc06ec7b76f4570d56765e938da9d8981a2b2
         <!--  Each Participant starts here  -->
 
         <div class="p-card">
@@ -4603,15 +4578,13 @@ include('header.php');
          <a href="#">
            <h3 class="p-card-title"> Team 4 </h3>
            <!--Team-->
-<<<<<<< HEAD
+
          </a>        
 	</div>      
 </div>    
 </div>
    <!-- Each Participants ends here -->
-=======
-         </a>        </div>      </div>    </div>
-	    
+
 	        <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -4636,10 +4609,7 @@ include('header.php');
             </div>
 
         </div>
->>>>>>> f4f59a35ca10ed1354199c02de1504dd1131946d
-
-<<<<<<< HEAD
-	<!-- Thadeus' profile -->
+ 	<!-- Thadeus' profile -->
 
         <div class="p-card">
             <div class="v-center">
@@ -4668,10 +4638,10 @@ include('header.php');
 
         <!--  Each Participants ends here  -->
 
-=======
+
     </div>
    <!--  Each Participants ends here  -->
->>>>>>> a7792b5ae3ead07d487f7d83dd500c032b79877d
+
 	    <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/22813358?v=4); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -4692,8 +4662,6 @@ include('header.php');
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
 		
 	    <div class="p-card">
             <div class="v-center">
@@ -4737,8 +4705,6 @@ include('header.php');
             </div>
         </div>
         <!--  Each Participants ends here  -->
-=======
->>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
-=======
->>>>>>> f4f59a35ca10ed1354199c02de1504dd1131946d
+
+
 <?php include "footer.php"?>
