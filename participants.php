@@ -3820,9 +3820,6 @@ div class="p-card">
                 </a>
         </div>     
     </div>
-</div>
-
-
 
 
 
