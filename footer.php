@@ -36,7 +36,7 @@
             <div class="footer-widget">
                 <div class="grid">
                     <div class="grid__col grid__col_12">
-                        <ul class="footer-widget__icons">
+                        <ul class="footer-widget__icons" style="text-align:center margin-right:10px;">
                             <li>
                                 <a href=""><img src="img/icons/android.png" width="20"></a>
                             </li>
