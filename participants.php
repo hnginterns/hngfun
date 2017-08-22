@@ -94,8 +94,6 @@ include('header.php');
 
 <div id="banner-content" class="row clearfix">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <div class="p-card-container">
         <div class="v-center">
             <input style="margin-top: 40px;" type="text" id="search" placeholder="Enter Participant name to search" name="search">
@@ -4705,4 +4703,5 @@ include('header.php');
         <!--  Each Participants ends here  -->
 
 
+</div>
 <?php include "footer.php"?>
