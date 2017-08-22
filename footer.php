@@ -45,21 +45,18 @@
 
                     <div class="grid__col grid__col_12">
                         <ul class="footer-widget__icons">
-                             <li>
-
-                                <a href="https://web.facebook.com/hotelsng"><img src="img/icons/facebook.png" width="20"></a>
-                            </li>
-                               <li>
-                                <a href="https://twitter.com/hotelsng"><img src="img/icons/twitter.png" width="20"></a>
+                            <li>
+                                <a href=""><img src="img/icons/android.png" class="footer_icons_android"></a>
                             </li>
                             <li>
-                                <a href=""><img src="img/icons/android.png" width="20"></a>
+                                <a href=""><img src="img/icons/facebook.png" class="footer_icons"></a>
                             </li>
-                           
                             <li>
-                                <a href=""><img src="img/icons/ios.png" width="20"></a>
+                                <a href=""><img src="img/icons/ios.png" class="footer_icons"></a>
                             </li>
-                         
+                            <li>
+                                <a href=""><img src="img/icons/twitter.png" class="footer_icons"></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
