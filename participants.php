@@ -1894,35 +1894,7 @@
                 </div>
             </div>
         </div>
-
-
->>>>>>> 1abb39c914f7568f078d982fef8f1698fc8e4462
-    </div>
-</div>
-<?php include "footer.php"?>
-=======
-<?php include "header.php"?>
-
-<div id="banner-content" class="row clearfix">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <div class="p-card-container">
-        <div class="v-center">
-            <input style="margin-top: 40px;" type="text" id="search" placeholder="Enter Participant name to search" name="search">
-        </div>
-    </div>
-
-    <div class="p-card-container">
-
-
-        <!--
-              GUIDELINES FOR ADDING DETAILS TO PARTICIPANTS TABLE(Please read the comments)
-              - Copy the codes in the code block below (Dont include the code block)
-              - Only change where you see a comment and paste at the end of the code(Above the comment)
-              - Make sure you do not modify information of other participants
-              - Pull the repo, before pushing it, inorder to prevent conflicts
-            -->
+   
 <!--  Each Participant starts here  -->
     <div class="p-card">
             <div class="v-center">
@@ -1949,11 +1921,8 @@
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
                <div class="p-card-info">
-<<<<<<< HEAD
                    <a href="http://hng.fun/profile/stephenjude.html">
-=======
                    <a href="http://hng.fun/profile/stephenjude/index.html">
->>>>>>> 6f6be9cd1f88548fef68023e2a7cce6d580b6a45
                        <!--Profile Link-->
                        <h3 class="p-card-title">Stephen Jude</h3>
                        <!--Profile Name-->
@@ -1976,10 +1945,6 @@
     </div>
    <!--  Each Participants ends here  -->
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
     <div class="p-card">
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
@@ -2006,11 +1971,6 @@
 
     </div>
    <!--  Each Participants ends here  -->
-
-
-
->>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
->>>>>>> 65dc2a16e592022727524d225983c5067d11cfc7
         <!--  Each Participant starts here  -->
 
         <div class="p-card">
