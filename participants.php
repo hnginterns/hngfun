@@ -21,6 +21,36 @@
               - Pull the repo, before pushing it, inorder to prevent conflicts
             -->
 <!--  Each Participant starts here  -->
+<div class="p-card">
+           <div class="v-center">
+               <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+               <div class="p-card-info">
+                   <a href="http://hng.fun/profile/ndubuisi.html">
+                       <!--Profile Link-->
+                       <h3 class="p-card-title">Onyemenam Ndubuisi</h3>
+                       <!--Profile Name-->
+                   </a>
+                   <p class="p-card-description">
+                       onyemenamndu@gmail.com
+                   </p>
+                   <!--Email-->
+               </div>
+               <div class="p-team">
+                   <a href="#">
+                       <h3 class="p-card-title"> Team 10 </h3>
+                       <!--Team-->
+                   </a>
+
+            </div>
+
+        </div>
+
+</div>
+<!--  Each Participants ends here  -->
+        
+        <!--  Each Participant starts here  -->
+
+
     <div class="p-card">
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
