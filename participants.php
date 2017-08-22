@@ -376,6 +376,31 @@
 
         <div class="p-card">
             <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/19400025_1678825485480605_5935130796102213218_n.jpg?_nc_eui2=v1%3AAeFizTefy6fRYrXkFIvq56vQUainzBQqUq9S9F_wbsm9lC4cL-HhpsU98WTDkA_qSpRZktUXr8mIs6HcPIrDoi4MxJWPRwBiHhcPDXjXtnsO7A&oh=e6743ad4a0e11a6e39568f27d41e2cd1&oe=5A380267); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/chiqokereke.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Chinanu Okereke</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">chiqokereke@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 4 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="p-card">
+            <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/dYFenOU.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/daniella.html">
