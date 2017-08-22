@@ -115,27 +115,6 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/Sj5rshV.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="http://hng.fun/profile/debowale1.html">
-                        <!--Profile Link-->
-                        <h3 class="p-card-title">Adeshina Ibrahim</h3>
-                        <!--Profile Name-->
-                    </a>
-                    <p class="p-card-description">debowale01@gmail.com</p>
-                    <!--Email-->
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 1 </h3>
-                        <!--Team-->
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="p-card">
-            <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://s20.postimg.org/bleryh20t/35w_Afqcf_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/johnotu.html">
@@ -1793,6 +1772,29 @@
             </div>
         </div>
         <!--  Each Participants ends here  -->
+	    
+	     <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(""); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/auztincodes.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Okorie Ugochukwu</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">austinugo200@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 1 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
 
 
         <!--  Each Participant starts here  -->
@@ -2416,7 +2418,7 @@
             </div>
         </div>
 
-        
+        !--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6PCU4RLL-4cfabf1b27eb-1024); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
