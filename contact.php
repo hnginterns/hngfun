@@ -125,7 +125,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   //checks if it's a post request from the form
   if(isset($_POST["name"])){
     $filename = $_POST["name"];
-}
+  }
 if(isset($filename)){ 
 
 $name = test_input($_POST["name"]);
@@ -138,13 +138,18 @@ $subject = 'Message from Contact Form ';
  
 $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
-if (mail ($to, $subject, $body, $from)) {
+$mail=mail ($to, $subject, $body, $from);
+
+
+if ($mail) {
   //sends the mail to the $to address, this should be changed to hotels.ng address
     $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
     echo "<script type=\"text/javascript\">".
         "alert('Message Sent Successfully');".
         "</script>";
-  } else {
+  
+}
+else {
     $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
     echo "<script type=\"text/javascript\">".
         "alert('Message Not Sent');".
