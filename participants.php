@@ -4370,23 +4370,11 @@
          <a href="#">
            <h3 class="p-card-title"> Team 4 </h3>
            <!--Team-->
-         </a>        </div>      </div>    </div>
+         </a>        
+	</div>      
+</div>    
+</div>
    <!-- Each Participants ends here -->
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-
-
-
->>>>>>> ea50a25a4e0ea8fd6562e6682edd9d4b1c4abb5b
-=======
-
-
-
-
-
->>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
 
 	    <div class="p-card">
             <div class="v-center">
