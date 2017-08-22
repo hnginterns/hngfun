@@ -1,0 +1,99 @@
+.header-section{
+  width: 100%;
+  height: 400px;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("me2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-main{
+  width: 100%;
+  height: 2000px;
+  margin: 0;
+}
+body{
+  font-family: helvetica;
+  margin: 0 auto;
+}
+.navbar{
+  color: white;
+  position: absolute;
+  margin: 0 auto;
+  width: 80%;
+  height: 100px;
+  margin-left: 50px;
+}
+li{
+  list-style-type: none;
+  display: inline;
+}
+li a{
+  color: white;
+  text-decoration: none;
+}
+.left-items{
+  float: left;
+}
+.right-items{
+  float: right;
+  margin-top: 40px;
+}
+.right-items li{
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.main-section{
+  width: 100%;
+  position: absolute;
+  margin-top: -170px;
+  height: 300px;
+}
+.body-container{
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+.card-section{
+  float: left;
+  width: 300px;
+  height: 800px;
+  margin:0 auto;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -3px #333;
+  border-radius: 2px;
+}
+.works-section{
+  float:right;
+  width: 850px;
+  height: 600px;
+  margin-top: 200px;
+  box-shadow: 0px 0px 10px -3px #333;
+  border-radius: 2px;
+}
+.image-section{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.name{
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+}
+.standard-header{
+  font-weight: lighter;
+  font-size: 27px;
+  margin-left: 10px;
+  color: #333;
+}
+.paragraph-text{
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 10px;
+  color: #666;
+}

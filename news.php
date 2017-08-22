@@ -17,8 +17,9 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
-				</h6>	
+					<span class="dot3">&#9679; </span><i class="fa fa-calendar" aria-hidden="true"></i> 22 Aug, 17 &nbsp; &nbsp;  &nbsp;  &nbsp;<i class="fa fa-user" aria-hidden="true"></i> Team 8 &nbsp; &nbsp; 
+					<i class="fa fa-comments" aria-hidden="true"> 35 Comments</i>
+				</h6>
 			</div>
 		</div>
 
@@ -37,7 +38,8 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
+					<span class="dot3">&#9679; </span><i class="fa fa-calendar" aria-hidden="true"></i> 22 Aug, 17 &nbsp; &nbsp;  &nbsp;  &nbsp;<i class="fa fa-user" aria-hidden="true"></i> Team 8 &nbsp; &nbsp;
+					<i class="fa fa-comments" aria-hidden="true"> 45 Comments</i>
 				</h6>	
 			</div>
 		</div>
@@ -64,7 +66,8 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
+					<span class="dot3">&#9679; </span><i class="fa fa-calendar" aria-hidden="true"></i> 22 Aug, 17 &nbsp; &nbsp;  &nbsp;  &nbsp;<i class="fa fa-user" aria-hidden="true"></i> Team 8 &nbsp; &nbsp;
+					<i class="fa fa-comments" aria-hidden="true"> 101 Comments</i>
 				</h6>	
 			</div>
 		</div>
@@ -84,7 +87,8 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 21 Aug, 17 &nbsp; &nbsp;
+					<span class="dot3">&#9679; </span><i class="fa fa-calendar" aria-hidden="true"></i> 21 Aug, 17 &nbsp; &nbsp;  &nbsp;  &nbsp;<i class="fa fa-user" aria-hidden="true"></i> Team 8 &nbsp; &nbsp;
+					<i class="fa fa-comments" aria-hidden="true"> 500 Comments</i>
 				</h6>	
 			</div>
 		</div>
