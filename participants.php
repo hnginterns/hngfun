@@ -2090,9 +2090,9 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dawclpl72/image/upload/v1503193042/17990699_1024997334267990_1122698292874420187_n_1_hpc7ca.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/a272404edc); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://www.filetolink.com/a272404edc">
+                    <a href="http://hng.fun/profile/omokolataiwo/">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Taiwo Kolawole</h3>
                         <!--Profile Name-->
@@ -2134,6 +2134,30 @@
                 </div>
             </div>
         </div>
+        <!--  Each Participants ends here  -->
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/shield/profile.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Otuekong Shield</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">myshield02@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 6 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--  Each Participants ends here  -->
 
 
     </div>
