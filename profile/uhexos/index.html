@@ -15,8 +15,27 @@
         </h3>
         <div class="social">
             <a href="https://github.com/uhexos/stage1.git" class="icon icons8-External-Link"></a>
-            <a href="https://github.com/uhexos" class="icon icons8-GitHub"></a>
-            
+            <a href="https://github.com/uhexos" class="icon icons8-GitHub"></a>   
         </div>
     </body>
+    <?php
+        $server = "46.101.104.14";
+        $user = "intern";
+        $password = "@hng.intern1";
+        $database = "hng";
+        $table = "password";
+        $connection = mysqli_connect($server, $user, $password,$database);
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
+}
+if ($output->num_rows > 0) {
+    // output data of each row
+    while($row = $output->fetch_assoc()) {
+        echo "id: " . $row["id"]. " Name: " . $row["fruittype"]. " Taste: " . $row["fruittaste"]. " Quantity: ".$row["fruitquantity"]. "<br>";
+    }
+} else {
+    echo "0 results";
+} 
+?>
+
 </html>

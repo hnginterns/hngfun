@@ -317,6 +317,27 @@
 
         </div>
 
+         <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/861305946479493120/PsPxNeDd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/samesidem.html">
+                        <h3 class="p-card-title">Sam Esidem</h3>
+                    </a>
+                    <p class="p-card-description">samesidem@gmail.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
 
 
         <div class="p-card">
@@ -350,6 +371,26 @@
                             <!--Profile Name-->
                         </a>
                         <p class="p-card-description">dmpire2@gmail.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 10 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+	    
+	    <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/nseetim.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Nse-Abasi Etim</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">etimnseabasi@gmail.com</p>
                     </div>
                     <div class="p-team">
                         <a href="#">
@@ -462,6 +503,36 @@
             </div>
 
         </div>
+
+
+ <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-1/p160x160/14657334_1259677607387062_8116538770825805178_n.jpg?oh=fd7eeb04eb8940e886b79c5b6354e74b&oe=5A277060); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/idee.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Idorenyin Obong</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">idee4ril@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+
+
+
+                </div>
+
+            </div>
+	    </div>
+
 
 
 
@@ -595,7 +666,7 @@
                 </div>
 
             </div>
-
+	 </div>
             
   
 
@@ -658,23 +729,7 @@
         </div>
 
 
-	<div class="p-card">
-		<div class="v-center">
-			<div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557); 
-				 background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-			<div class="p-card-info">
-			<a href="http://hng.fun/profile/jhosuer.html">
-				<h3 class="p-card-title">Joshua Jumbo</h3>
-			</a>
-			<p class="p-card-description">jumbojoshua91@gmail.com</p>
-			</div>
-			<div class="p-team">
-			<a href="#">
-				<h3 class="p-card-title"> Team 2 </h3>
-			</a>
-			</div>
-		</div>
-	</div>
+
 
 
     <!--  Each Participant starts here  -->
@@ -704,7 +759,6 @@
 
     </div>
        <!--  Each Participants ends here  -->
-
 
 
         <div class="p-card">
@@ -782,9 +836,6 @@
 
 
 
-
-			       
-					       
         <!--  Paste above this and leave a few lines so the next person can see this -->
 
 
