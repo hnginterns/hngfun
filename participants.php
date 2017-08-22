@@ -21,36 +21,6 @@
               - Pull the repo, before pushing it, inorder to prevent conflicts
             -->
 <!--  Each Participant starts here  -->
-<div class="p-card">
-           <div class="v-center">
-               <div class="p-card-photo" style="background-image: url('http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
-               <div class="p-card-info">
-                   <a href="http://hng.fun/profile/ndubuisi.html">
-                       <!--Profile Link-->
-                       <h3 class="p-card-title">Onyemenam Ndubuisi</h3>
-                       <!--Profile Name-->
-                   </a>
-                   <p class="p-card-description">
-                       onyemenamndu@gmail.com
-                   </p>
-                   <!--Email-->
-               </div>
-               <div class="p-team">
-                   <a href="#">
-                       <h3 class="p-card-title"> Team 10 </h3>
-                       <!--Team-->
-                   </a>
-
-            </div>
-
-        </div>
-
-</div>
-<!--  Each Participants ends here  -->
-        
-        <!--  Each Participant starts here  -->
-
-
     <div class="p-card">
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
@@ -474,6 +444,38 @@
                 </div>
             </div>
         </div>
+
+
+        <!--  Each Participants ends here  -->
+
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6QBQ879C-1132012f9abf-1024); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/AkinloluGbemisola">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Akinlolu Gbemisola</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">akinlolugbemisola@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 3 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  Each Participants ends here  -->
+
 
 
 
@@ -2343,31 +2345,6 @@
                 </div>
             </div>
         </div>
-		
-		 <!--  Each Participant starts here  -->
-		<div class="p-card">
-			<div class="v-center">
-				<div class="p-card-photo" style="background-image: url(https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/19642700_889129831235503_1943970847228754113_n.jpg?oh=46bab93a071ea158c537b30dfb9283ed&oe=5A2D29E6); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-				<div class="p-card-info">
-
-					<a href="http://hng.fun/profile/jamesjay4199">
-						<!--Profile Link-->
-						<h3 class="p-card-title">James John James</h3>
-						<!--Profile Name-->
-					</a>
-					<p class="p-card-description">jamesjay4199@gmail.com</p>
-					<!--Email-->
-				</div>
-
-				<div class="p-team">
-					<a href="#">
-						<h3 class="p-card-title"> Team 6 </h3>
-						<!--Team-->
-					</a>
-				</div>
-			</div>
-		</div>
-		<!--  Each Participants ends here  -->
 
             
 <div class="p-card">
