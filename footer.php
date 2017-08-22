@@ -47,10 +47,10 @@
                         <ul class="footer-widget__icons">
                              <li>
 
-                                <a href=""><img src="img/icons/facebook.png" width="20"></a>
+                                <a href="https://web.facebook.com/hotelsng"><img src="img/icons/facebook.png" width="20"></a>
                             </li>
                                <li>
-                                <a href=""><img src="img/icons/twitter.png" width="20"></a>
+                                <a href="https://twitter.com/hotelsng"><img src="img/icons/twitter.png" width="20"></a>
                             </li>
                             <li>
                                 <a href=""><img src="img/icons/android.png" width="20"></a>
