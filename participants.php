@@ -47,6 +47,29 @@
         </div>
         <!--  Each Participants ends here  -->
 
+        <!--  Each Participant starts here  -->
+              <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/28959886?v=4&s=400
+        ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="profile/kole_ibrahim/kole_ibrahim.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Kole-Ibrahim AbdulQudus</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">femi.highsky@gmail.cm</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> Team 2 </h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+              </div>
+              <!--  Each Participants ends here  -->
 
 
  <!--  Each Participant starts here  -->
@@ -306,7 +329,7 @@
             </div>
         </div>
         <!--  Each Participants ends here  -->
-        
+
 
 
 
@@ -368,7 +391,7 @@
                     </div>
                 </div>
             </div>
-	    
+
 	    <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -413,7 +436,7 @@
                 </div>
             </div>
         </div>
-	    
+
        <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/861305946479493120/PsPxNeDd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -637,7 +660,7 @@
                 </div>
             </div>
 	    </div>
-            
+
             <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.cdninstagram.com/t51.2885-19/s150x150/17075777_1409128825798368_1636514859128455168_a.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -661,7 +684,7 @@
                 </div>
             </div>
         </div>
-  
+
 
 
         <div class="p-card">
@@ -734,7 +757,7 @@
                         </div>
                     </div>
                 </div>
-	    
+
     <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -759,13 +782,13 @@
         </div>
     </div>
        <!--  Each Participants ends here  -->
-	
-	
+
+
 	 <!--  Participant starts here  -->
-	    
+
 	<div class="p-card">
 	    <div class="v-center">
-		<div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557); 
+		<div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557);
 				 background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
 		<div class="p-card-info">
 			<a href="http://hng.fun/profile/jhosuer.html">
@@ -780,9 +803,9 @@
 		</div>
 	      </div>
 	  </div>
-	    
+
 	<!--   Participant ends here  -->
-	    
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -828,7 +851,7 @@
             </div>
         </div>
     </div>
-	    
+
        <!--  Each Participants ends here  -->
 	<div class="p-card">
             <div class="v-center">
@@ -853,9 +876,9 @@
                 </div>
             </div>
         </div>
-	    
+
         <!--  Each Participants ends here  -->
-        
+
 	    <!--  Paste above this and leave a few lines so the next person can see this -->
 
        <!--  Each Participant starts here  -->
@@ -880,8 +903,8 @@
                   </div>
               </div>
               <!--  Each Participants ends here  -->
-	    
-	    
+
+
 <!--  Each Participant starts here  -->
               <div class="p-card">
                   <div class="v-center">
@@ -930,8 +953,8 @@
               <!--  Each Participants ends here  -->
 
 
-               
-               
+
+
                <!--  Each Participant starts here  -->
               <div class="p-card">
                   <div class="v-center">
@@ -958,8 +981,8 @@
 
 </div>
 
-					    
-					       
+
+
 =======
 >>>>>>> b1e14470573242454825f5a78105b488e9d46bc6
 <div class="p-card">
@@ -1005,7 +1028,7 @@
                 </div>
             </div>
         </div>
-        
+
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1035,6 +1058,6 @@
 </div>
 
 
-</div>					    
-					       
+</div>
+
 <?php  include "footer.php" ?>
