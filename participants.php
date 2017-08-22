@@ -20,7 +20,7 @@
               - Make sure you do not modify information of other participants
               - Pull the repo, before pushing it, inorder to prevent conflicts
             -->
-	    
+
  <!--  Each Participant starts here  -->
  <div class="p-card">
             <div class="v-center">
@@ -45,7 +45,7 @@
         </div>
         <!--  Each Participants ends here  -->
 
-	   
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
@@ -150,6 +150,30 @@
 
 
         <!--  Each Participants ends here  -->
+
+        <!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(../images/zee_img.JPG); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/zee.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Gafar Azeez</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">azegaf@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> Team 4 </h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
+
 
 
         <div class="p-card">
@@ -385,7 +409,7 @@
                     </div>
                 </div>
             </div>
-	    
+
 	    <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -430,7 +454,7 @@
                 </div>
             </div>
         </div>
-	    
+
        <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/861305946479493120/PsPxNeDd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -654,7 +678,7 @@
                 </div>
             </div>
 	    </div>
-            
+
             <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.cdninstagram.com/t51.2885-19/s150x150/17075777_1409128825798368_1636514859128455168_a.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -678,7 +702,7 @@
                 </div>
             </div>
         </div>
-  
+
 
 
         <div class="p-card">
@@ -751,7 +775,7 @@
                         </div>
                     </div>
                 </div>
-	    
+
     <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -776,13 +800,13 @@
         </div>
     </div>
        <!--  Each Participants ends here  -->
-	
-	
+
+
 	 <!--  Participant starts here  -->
-	    
+
 	<div class="p-card">
 	    <div class="v-center">
-		<div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557); 
+		<div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557);
 				 background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
 		<div class="p-card-info">
 			<a href="http://hng.fun/profile/jhosuer.html">
@@ -797,9 +821,9 @@
 		</div>
 	      </div>
 	  </div>
-	    
+
 	<!--   Participant ends here  -->
-	    
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -845,7 +869,7 @@
             </div>
         </div>
     </div>
-	    
+
        <!--  Each Participants ends here  -->
 	<div class="p-card">
             <div class="v-center">
@@ -870,9 +894,9 @@
                 </div>
             </div>
         </div>
-	    
+
         <!--  Each Participants ends here  -->
-        
+
 	    <!--  Paste above this and leave a few lines so the next person can see this -->
 
        <!--  Each Participant starts here  -->
@@ -897,8 +921,8 @@
                   </div>
               </div>
               <!--  Each Participants ends here  -->
-	    
-	    
+
+
 	    <!--  Each Participant starts here  -->
               <div class="p-card">
                   <div class="v-center">
@@ -948,8 +972,8 @@
 </div>
 <!--  Each Participants ends here  -->
 
-					    
-					       
+
+
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -993,7 +1017,7 @@
                 </div>
             </div>
         </div>
-	    
+
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1228,13 +1252,13 @@
         </div>
 
         <!--  Each Participants ends here  -->
-        
-        
+
+
         <!--  Participant starts here  -->
-	    
+
 	<div class="p-card">
 	    <div class="v-center">
-		<div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg); 
+		<div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg);
 				 background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
 		<div class="p-card-info">
 			<a href="http://hng.fun/profile/jsmyth.html">
@@ -1249,9 +1273,9 @@
 		</div>
 	      </div>
 	  </div>
-	    
+
 	<!--   Participant ends here  -->
-	
+
 
 
         <!--  Each Participant starts here  -->
@@ -1823,7 +1847,7 @@
                 </div>
             </div>
         </div>
-	    
+
     <div class="p-card">
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
@@ -1850,7 +1874,7 @@
 
     </div>
    <!--  Each Participants ends here  -->
-	    
+
         <!--  Each Participant starts here  -->
 
         <div class="p-card">
@@ -2455,7 +2479,7 @@
                 </div>
             </div>
         </div>
-        
+
 
         <div class="p-card">
             <div class="v-center">
@@ -2659,7 +2683,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/teejay/image/upload/v1503393694/tunji_vqbldh.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -2757,9 +2781,9 @@
                 </div>
             </div>
         </div>
-        
-        
-        
+
+
+
 
          <div class="p-card">
             <div class="v-center">
@@ -2782,8 +2806,8 @@
             </div>
         </div>
 
-        
-        
+
+
         <div class="p-card">
 
             <div class="v-center">
@@ -2880,7 +2904,7 @@
                         </div>
                     </div>
                 </div>
-                
+
     <div class="p-card">
         <div class="v-center">
             <div class="p-card-photo" style="background-image: url('https://ca.slack-edge.com/T3QLSP8HM-U6QUTQT2T-6ffc54e0834d-512'); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -2948,7 +2972,7 @@
           </div>
       </div>
 
-    
+
 
         <div class="p-card">
             <div class="v-center">
@@ -3107,7 +3131,7 @@
                   </div>
               </div>
               <!--  Each Participants ends here  -->
-              
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20799115_1464147813673356_6018227297707964205_n.jpg?oh=15616b771983c0b56484f9334cc2663e&oe=5A31ECCE); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -3131,7 +3155,7 @@
                 </div>
             </div>
         </div>
-              
+
 
 
 
@@ -3188,7 +3212,7 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557); 
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557);
                  background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/jhosuer.html">
@@ -3234,7 +3258,7 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557); 
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/15726563_1602744799741089_7874891167110176521_n.jpg?_nc_eui2=v1%3AAeGjgHkyfA8TlzGoJijUu7eLx6w-aTJcdrhcCHndC0dSlkgVdzVtkAhYJ2cnRk8V97LGw6PwzKKqcJU8UyL_MKROvIqjJJMi8J5IEdEC0mDkUw&oh=d476efae2b6e618acbc7f482e92a58e4&oe=5A1A5557);
                  background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/jhosuer.html">
@@ -3477,13 +3501,13 @@
         </div>
 
         <!--  Each Participants ends here  -->
-        
-        
+
+
         <!--  Participant starts here  -->
-        
+
     <div class="p-card">
         <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg); 
+        <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg);
                  background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
             <a href="http://hng.fun/profile/jsmyth.html">
@@ -3498,9 +3522,9 @@
         </div>
           </div>
       </div>
-        
+
     <!--   Participant ends here  -->
-    
+
 
 
         <!--  Each Participant starts here  -->
@@ -3549,7 +3573,7 @@
             </div>
         </div>
         <!--  Each Participants ends here  -->
-	    
+
 	     <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -3964,10 +3988,10 @@
         </div>
 
 
-        
 
-      
-            
+
+
+
     <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/24799435?v=4&u=0077181484ccb57df65a5c32ed0856893da23618&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -4150,7 +4174,7 @@
         </div>
 
         <!--  Each Participants ends here  -->
-           
+
            <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/tobiagbola/tobiagbola.fw.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -4199,7 +4223,7 @@
 
     </div>
    <!--  Each Participants ends here  -->
-	    
+
 	    <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
@@ -4248,9 +4272,9 @@
                 </div>
             </div>
   <!--  Each Participants ends here  -->
-	    
-	    
-	    
+
+
+
 	    <!-- Each Participant starts here -->
    <div class="p-card">
      <div class="v-center">
@@ -4270,18 +4294,18 @@
            <!--Team-->
          </a>        </div>      </div>    </div>
    <!-- Each Participants ends here -->
-	    
-	    
-	    
-	    
 
-            
+
+
+
+
+
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-        <div class="p-card-info">  
+        <div class="p-card-info">
 
-       
+
         </div>
 
 
