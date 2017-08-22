@@ -465,24 +465,6 @@
                 </div>
             </div>
 
-	    <div class="p-card">
-
-                <div class="p-card-info">
-                    <a href="http://hng.fun/profile/ninte.html">
-                        <!--Profile Link-->
-                        <h3 class="p-card-title">Usheninte Dangana</h3>
-                        <!--Profile Name-->
-                    </a>
-                    <p class="p-card-description">jrandangana@gmail.com</p>
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 10 </h3>
-                        <!--Team-->
-                    </a>
-                </div>
-            </div>
-        </div>
 
         <div class="p-card">
 
