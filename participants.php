@@ -4641,8 +4641,6 @@ include('header.php');
 
         <!--  Each Participants ends here  -->
 
-
-    </div>
    <!--  Each Participants ends here  -->
 
 	    <div class="p-card">
