@@ -1184,6 +1184,29 @@
         </div>
     </div>
 </div>
+
+<div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://s28.postimg.org/3xj032znh/intern.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/vnwonah.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Nwonah Vincent</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">talk2vinciii@hotmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 10</h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.flos1-1.fna.fbcdn.net/v/t1.0-9/19430119_10207233462114696_2762007678831481972_n.jpg?oh=65fd73274def3af4a2c4da3615ba6067&oe=5A1E23F7); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -3615,7 +3638,7 @@
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dmz79kgf0/image/upload/v1503167599/File_000_atsuop.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/lilbrizzeey/me.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
 
                     <a href="http://hng.fun/profile/lilbrizzeey">
@@ -4521,8 +4544,40 @@
         </div>
 >>>>>>> f4f59a35ca10ed1354199c02de1504dd1131946d
 
+<<<<<<< HEAD
+	<!-- Thadeus' profile -->
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/thadeus/files/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/thadeus/thadeus.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Ajayi Thadeus</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">ainojie@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 1 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  Each Participants ends here  -->
+
+=======
     </div>
    <!--  Each Participants ends here  -->
+>>>>>>> a7792b5ae3ead07d487f7d83dd500c032b79877d
 	    <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/22813358?v=4); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
