@@ -4466,13 +4466,6 @@
                 </div>
             </div>
         </div>
->>>>>>> 65dc2a16e592022727524d225983c5067d11cfc7
-
-
-
-
-
-
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -4487,4 +4480,3 @@
 
 
 <?php include "footer.php"?>
->>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
