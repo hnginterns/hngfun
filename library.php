@@ -8,23 +8,21 @@
 
   <h1 name="libraryheadertext">Hng.Fun Library</h1>
 </br>
+
 <main name="libraryMain" id="libraryMain">
-
-<input id="tab1" type="radio" name="tabs" checked>
-<label for="tab1">HTML/CSS</label>
   
-<input id="tab2" type="radio" name="tabs">
-<label for="tab2">PHP/SQL</label>
-  
-<input id="tab3" type="radio" name="tabs">
-<label for="tab3">GIT/GitHub</label>
-  
-<input id="tab4" type="radio" name="tabs">
-<label for="tab4">Internship Tasks</label>
-
-  
-
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">HTML/CSS</label>
     
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">PHP/SQL</label>
+    
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">GIT/GITHUB</label>
+    
+  <input id="tab4" type="radio" name="tabs">
+  <label for="tab4">Internship Tasks</label>
+
   <section id="content1">
   <div class="library-all">
     <ul class="library-list">
@@ -94,7 +92,6 @@
   
   </ul>
 </div>
-
 </section>
 
 <section id="content3">
@@ -126,10 +123,10 @@
   </a>
 </ul>
 </div>
-
 </section>
     
 <section id="content4">
+<div class="library-all">
 <div class="library-all">
 <ul class="library-list">
   <a href="https://medium.com/hng-internship/first-steps-for-the-internship-8157b26f4c26" target="_blank">
@@ -151,7 +148,6 @@
 </div>
 
 </section>  
-
 
     
 </main id="libraryMain">

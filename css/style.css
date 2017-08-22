@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6, div, ul, p, input {
 .landing-page__nav--right {
   float: right;
   margin: 15px 20px 0 0;
+  
 }
 
 .global-nav__logo {
@@ -72,6 +73,8 @@ h1, h2, h3, h4, h5, h6, div, ul, p, input {
   height: inherit;
   display: block;
   padding: 5px 10px;
+font-family:tahoma;
+  color:#000;
 }
 
 .footer {
