@@ -1,4 +1,4 @@
-    <?php include ('header.php'); ?>
+       <?php include ('header.php'); ?>
     <div id="banner-content" class="row clearfix">
         <div class="col-38">
 
@@ -21,18 +21,7 @@
     </div>
 </div>
  
-    <div>
-        <table>
-            <tr>
-                <th>Founded in<p class="thick">2016</p><p class="light">Hng internship was founded in 2016 to develop world class developer in Nigeria</p></th>
-                <th>Track spend <p class="thick">$13 million+</p><p class="light"> They eventually get placed into companies that are looking for software developers.</p></th>
-                 <th>Trained Developer <p class="thick">5000+</p><p class="light">We get people who are interested in technology and simulate a working environment </p></th>
-            </tr>
- 
-  
-        </table>
-
-        <div>
+         <div>
             <table>
                 <tr>
                     <th>Founded in<p class="thick">2016</p><p class="light">Hng internship was founded in 2016 to develop world class developers in Nigeria.</p></th>
@@ -69,10 +58,7 @@
     <div class="contact-address">
         <table class="table" cellpadding="100px" style="margin: auto;">
             <tr>
-                <th align="left" class="country">Nigeria</th>
-            </tr>
-            <tr>
-                <td><p class="address">No. 3, Birrel Avenue,<br> off Herbert Macaulay Way,<br> Sabo, Yaba, Lagos.</p></td>
+                <td><p class="address"><p>Nigeria</p>No. 3, Birrel Avenue,<br> off Herbert Macaulay Way,<br> Sabo, Yaba, Lagos.</p></td>
             </tr>
         </table>
     </div>
