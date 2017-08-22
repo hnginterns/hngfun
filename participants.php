@@ -25,6 +25,27 @@
 
         <div class="p-card">
             <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dawclpl72/image/upload/v1503193042/17990699_1024997334267990_1122698292874420187_n_1_hpc7ca.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/keswardpromise.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Somto Promise</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">keswardpromise@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 8 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://image.ibb.co/b1H445/pic.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/devayo">
