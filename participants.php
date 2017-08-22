@@ -348,6 +348,26 @@
                     </div>
                 </div>
             </div>
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/g2IDvh4.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/ninte.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Usheninte Dangana</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">jrandangana@gmail.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 10 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
 	    
 	    <div class="p-card">
             <div class="v-center">
@@ -964,6 +984,11 @@
                   </div>
               </div>
               <!--  Each Participants ends here  -->
+
+</div>
+
+					    
+			
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1024,6 +1049,30 @@
         <div class="p-team">
             <a href="#">
                 <h3 class="p-card-title"> Team 6 </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/17626667_1304703359605988_8550045173239731599_n.jpg?oh=71d5449bed8089446acb4620e3e5425d&oe=5A25E345); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+
+
+            <a href="http://hng.fun/profile/shalomjohn">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Shalom John</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">johnprince58@gmail.com</p>
+            <!--Email-->
+        </div>
+
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team 10 </h3>
                 <!--Team-->
             </a>
         </div>
