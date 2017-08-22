@@ -8,7 +8,23 @@
 		<!-- first news article -->
 		<div class="team8-card">
 			<div class="team8-card-info">
-				<h2 class="team8-card-title">Team 2 & Team 3 are eligible for stage 2</h2>
+				<h2 class="team8-card-title">Hotelsng Dream Team</h2>
+			</div>	
+			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
+			<div class="team8-card-info">	
+				<p class="team8-card-content">Wondering what is this team about.The Dream team is a team formed across all members from all hng interns teams.<br> The term dream team is a basketball squad of the USA who won the Olympic gold medal with the best record.the team were all-stars but worked together to achieve their aim.<br>  HNG interns DREAM TEAM was formed by submitting participants who contributed well in the stage 1 team project. The team will start internship earlier before September 1st. For now, the dream team has been formed. Their task for today 22/8/17 is to help people finding difficulties especially beginners.
+				</p>
+			</div>
+			<div class="team8-card-footer">
+				<h6 class="team8-footer-right">
+					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
+				</h6>	
+			</div>
+		</div>
+
+		<div class="team8-card">
+			<div class="team8-card-info">
+				<h2 class="team8-card-title">Team 2 & Team 3 are eligible for stage 2 Task</h2>
 			</div>	
 			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
