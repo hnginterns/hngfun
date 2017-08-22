@@ -173,7 +173,7 @@
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-              <img src="http://res.cloudinary.com/ichtrojan/image/upload/v1503355424/cha_tcsuue.jpg" height="200px" class = "dp">
+              <img src="http://res.cloudinary.com/ichtrojan/image/upload/v1503355424/cha_tcsuue.jpg" height="200px" class = "dp" alt="Profile Picture">
                 <div class="title m-b-md">
                     Michael Okoh
                 </div>
@@ -183,10 +183,10 @@
                     <li><a href="mailto:michael@okoh.co.uk" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
                     <li><a href="https://www.instagram.com/ichtrojan" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
                     <li><a href="http://okoh.co.uk" class="social-icon"> <i class="fa fa-link"></i></a></li>
-                    <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li><br>
+                    <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li></br>
                 </ul>
                 <p>My Name is Michael Okoh, a Software Engineer from Lagos State<br>
-                I build Standard Web Applications with top Notch Design. My Major tools are <b>PHP, Laravel & Bootstrap.</b><br>
+                I build Standard Web Applications with top Notch Design. My Major tools are <b>PHP, Laravel & Bootstrap.</b></br>
                 I also Use <b>C++, Java, Swift and Python</b> where needed.
                 </p>
 
@@ -194,7 +194,7 @@
                 <p><a href="https://github.com/ichtrojan/HNG-Internship">Here is the link to my Stage 1 Project</a><p>
 
                 <h3>Work</h3>
-                <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh<b></p>
+                <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</b></p>
             </div>
         </div>
     </body>
