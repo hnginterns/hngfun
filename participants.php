@@ -1278,6 +1278,32 @@
               </div>
               <!--  Each Participants ends here  -->
 
+<div class="p-card">
+           <div class="v-center">
+               <div class="p-card-photo" style="background-image: url('https://avatars0.githubusercontent.com/eephie'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+               <div class="p-card-info">
+                   <a href="http://hng.fun/profile/ifychinke.html">
+                       <!--Profile Link-->
+                       <h3 class="p-card-title">Chinke Ifeyinwa</h3>
+                       <!--Profile Name-->
+                   </a>
+                   <p class="p-card-description">
+                       chinkeifeyinwa@gmail.com
+                   </p>
+                   <!--Email-->
+               </div>
+               <div class="p-team">
+                   <a href="#">
+                       <h3 class="p-card-title"> Team 1 </h3>
+                       <!--Team-->
+                   </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
 
 <!--  Each Participant starts here  -->
               <div class="p-card">
@@ -1792,7 +1818,30 @@
         </div>
         <!--  Each Participants ends here  -->
 
+		<!--  Each Participant starts here  -->
+		<div class="p-card">
+			<div class="v-center">
+				<div class="p-card-photo" style="background-image: url(https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/19642700_889129831235503_1943970847228754113_n.jpg?oh=46bab93a071ea158c537b30dfb9283ed&oe=5A2D29E6); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+				<div class="p-card-info">
 
+					<a href="http://hng.fun/profile/jamesjay4199">
+						<!--Profile Link-->
+						<h3 class="p-card-title">James John James</h3>
+						<!--Profile Name-->
+					</a>
+					<p class="p-card-description">jamesjay4199@gmail.com</p>
+					<!--Email-->
+				</div>
+
+				<div class="p-team">
+					<a href="#">
+						<h3 class="p-card-title"> Team 6 </h3>
+						<!--Team-->
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--  Each Participants ends here  -->
 
 
         <!--  Each Participant starts here  -->
