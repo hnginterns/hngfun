@@ -1,4 +1,4 @@
-<?php  include "header.php" ?>
+<?php include "header.php"?>
 
 <div id="banner-content" class="row clearfix">
 
@@ -158,7 +158,7 @@
                        <div class="p-card-info">
                            <a href="http://hng.fun/profile/zee.html">
                                <!--Profile Link-->
-                               <h3 class="p-card-title">Gafar Azeez</h3>
+                               <h3 class="p-card-title">Gafar Azeez Oluwafemi</h3>
                                <!--Profile Name-->
                            </a>
                            <p class="p-card-description">azegaf@gmail.com</p>
@@ -1829,9 +1829,9 @@
 >>>>>>> 1abb39c914f7568f078d982fef8f1698fc8e4462
     </div>
 </div>
-<?php  include "footer.php" ?>
+<?php include "footer.php"?>
 =======
-<?php  include "header.php" ?>
+<?php include "header.php"?>
 
 <div id="banner-content" class="row clearfix">
 
@@ -1902,6 +1902,41 @@
     </div>
    <!--  Each Participants ends here  -->
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    <div class="p-card">
+           <div class="v-center">
+               <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+               <div class="p-card-info">
+                   <a href="http://hng.fun/profile/oriechinedu.html">
+                       <!--Profile Link-->
+                       <h3 class="p-card-title">ORIE CHINEDU EMMANUEL</h3>
+                       <!--Profile Name-->
+                   </a>
+                   <p class="p-card-description">
+                       oriechinedu@gmail.com
+                   </p>
+                   <!--Email-->
+               </div>
+               <div class="p-team">
+                   <a href="#">
+                       <h3 class="p-card-title"> Team 8 </h3>
+                       <!--Team-->
+                   </a>
+
+            </div>
+
+        </div>
+
+    </div>
+   <!--  Each Participants ends here  -->
+
+
+
+>>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
+>>>>>>> 65dc2a16e592022727524d225983c5067d11cfc7
         <!--  Each Participant starts here  -->
 
         <div class="p-card">
@@ -4323,11 +4358,41 @@
    <!-- Each Participants ends here -->
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 
 
 
 
 >>>>>>> ea50a25a4e0ea8fd6562e6682edd9d4b1c4abb5b
+=======
+
+
+
+
+
+>>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
+
+	    <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/22813358?v=4); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/samasi.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Benson Samasi</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">bensonsamasi@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 5 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+>>>>>>> 65dc2a16e592022727524d225983c5067d11cfc7
 
 
 
@@ -4347,5 +4412,5 @@
 </div>
 
 
-<?php  include "footer.php" ?>
+<?php include "footer.php"?>
 >>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
