@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sunny's Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="author" content="Sunny Pepple">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+        <style type="text/css">
+          body{
+  margin: auto;
+  padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+h2,h3,p{
+  text-align: center;
+  color: #00aeff;
+}
+p{
+  color:black !important;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.container{
+  border: 1px solid #00aeff;
+  border-radius: 8px; 
+  text-align: center;
+  max-width: 350px;
+  
+}
+
+@media screen and (min-width:400px){
+  .container{
+    text-align: center;
+    margin: auto;
+    max-width: 350px;
+  }
+}
+/*Image Area*/
+.image-container{
+  
+}
+img{
+  border-radius: 5px;
+  width: 100%;
+  height: 400px;
+  display: block;
+  margin: auto
+    
+}
+/*Bio area*/
+.bio-container{
+  padding: 0px 5px 0px 5px;
+}
+
+/*Stage area*/
+.stage-container{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  
+}
+button{
+  background-color:#00aeff;
+  color: white;
+  font-family: 'Lato',serif; 
+  font-weight: bolder;
+  padding: 15px 80px;
+  border:none;
+  border-radius: 5px;
+}
+
+/*links rea*/
+.link-container{
+  border: 1px solid #00aeff;
+   }
+
+.link-container{
+  background-color: lightgrey;
+}
+
+ul li {
+    display: inline-block;
+    list-style-type: none;
+    float:center;
+}
+
+li>a{
+  margin-right: 25px;
+}
+a>i.space{
+  color: #00aeff;
+}
+a>i.space:link
+{
+  color: #00aeff; 
+}
+a>i.space:visited{
+  color: green;
+}
+
+a>i.space:hover{
+  color: grey;
+}
+.up{
+  margin-top: -15px;
+}
+        </style>
+
+</head>
+<body>
+
+      <h3>My Profile</h3>
+
+      <div class="container">
+          <div class="image-container">
+            <img src="http://i.imgur.com/xpED2gj.jpg">
+            <h3>Sunny Pepple</h3>
+            <p class ="up">Slack Username:<span style="font-weight:bolder;"> @pepps01</span></p>
+
+          </div>
+
+          <div class="bio-container">
+              <h3 id="bio">Bio</h3>
+              <p class="up">From a Petroleum Engineering background, taught myself some code now I am here. Travel and exploration are my hobbies.</p>
+
+          </div>
+
+          <div class="stage-container">
+              <a href="https://github.com/pepps01/hng-task" target="_blank">
+               <button id="stage"> #Stage 1</button>
+              </a>
+          </div>
+
+          <div class="link-container">
+            <ul>
+                <li>
+                  <a href="https://github.com/pepps01" target="_blank">
+                      <i class="fa fa-github fa-2x space"></i>
+                  </a>
+                      
+                </li>
+                <li>
+                     <a href="https://hnginterns.slack.com/messages/@pepps01/convo/C3QLSPBNK-1503058750.000001/" target="_blank">
+                        <i class="fa fa-slack fa-2x space" aria-hidden="true"></i>
+                     </a>
+                  
+                </li>
+                <li>
+                  
+                    <a href="https://plus.google.com/u/0/116139093389935357491" target="_blank">
+                      <i class="fa fa-google-plus fa-2x space"></i>
+                    </a>
+                </li>
+
+                  <li>
+                    <a href="mailto:slpepple01@gmail.com" title="Message me?" target="_blank">
+                      <i class="fa fa-envelope fa-2x space"></i>
+                    </a>
+                  </li>
+            </ul>
+          </div>
+      </div>
+</body>
+</html>

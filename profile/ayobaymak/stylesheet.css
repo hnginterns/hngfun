@@ -3,14 +3,14 @@ padding: 0px;
 width: 100%;
 height: 100%;
 margin: auto;
-font-family: Arial;
+font-family: pristina;
 }
 
 
 #header{
 width: 100%;
-height: 120px;
-background: #202020;
+height: 80px;
+background: rgba(211,189,129,0.69);
 text-align: center;
 }
 
@@ -29,7 +29,8 @@ height: 300px;
 height: 40px;
 border-top: 1px solid gray;
 text-align: center;
-font-size: 14px;
+font-size: 25px;
+    font-family: pristina;
 }
 
 #wrapper #main img{
