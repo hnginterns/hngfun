@@ -438,6 +438,27 @@
                 </div>
             </div>
         </div>
+	    
+	     <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/19657311_10207581697620951_5131316902298210800_n.jpg?_nc_eui2=v1%3AAeG4KAKPT9bGPt8_3xXOGiWcQ7ApMq8d6t5wmjzOHjCWgGtEMnNEvNig16dNxw-xI6NzEGzf9yO7wyZU45nuHcRStY2xcx14XuWjzK5ZAPQQLA&oh=c62456c91afa77493b27c5af42dee7b7&oe=5A1C5382" alt="Femi_Odejide); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/itz_jf.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Femi Odejide</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">odejidefemi@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 7 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
 
 
 
