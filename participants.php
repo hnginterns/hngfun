@@ -203,7 +203,7 @@ include('header.php');
         
  <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/28753220?v=4&u=a7b6ef189b8b5a577e22db6437c9a7860c6b1faf&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/teegoldz.html">
                         <!--Profile Link-->
@@ -4659,6 +4659,29 @@ include('header.php');
 
         <!--  Each Participants ends here  -->
 
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url("http://www.filetolink.com/2bb31cbb1f"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+    <div class="p-card-info">
+        <a href="http://hng.fun/profile/controltam.html">
+            <!--Profile Link-->
+            <h3 class="p-card-title">Trust Akpobome</h3>
+            <!--Profile Name-->
+        </a>
+        <p class="p-card-description">controltam90@gmail.com</p>
+        <!--Email-->
+    </div>
+    <div class="p-team">
+        <a href="#">
+            <h3 class="p-card-title"> Team 4 </h3>
+            <!--Team-->
+        </a>
+    </div>
+</div>
+</div>
+<!--  Each Participants ends here  -->
+
    <!--  Each Participants ends here  -->
 
 	    <div class="p-card">
@@ -4725,6 +4748,20 @@ include('header.php');
         </div>
         <!--  Each Participants ends here  -->
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
+=======
+>>>>>>> f4f59a35ca10ed1354199c02de1504dd1131946d
+=======
 
 </div>
+>>>>>>> 1a379ac368bf5c74a49b149dd11e10b055d593e8
+=======
+
+</div>
+>>>>>>> 8cf8c9f41eb73982ad5fe662ab0faf6a91321537
 <?php include "footer.php"?>
