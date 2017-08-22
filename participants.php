@@ -22,21 +22,22 @@
             -->
 
  <!--  Each Participant starts here  -->
-<div class="p-card">
+	    
+	    <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/E2WmeiH.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/iyfe/displayPicture.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://hng.fun/profile/tonychuks7.html">
+                    <a href="http://hng.fun/profile/iyfe">
                         <!--Profile Link-->
-                        <h3 class="p-card-title">Anothony Nwaizuzu</h3>
+                        <h3 class="p-card-title">Ifunanya Ukachukwu</h3>
                         <!--Profile Name-->
                     </a>
-                    <p class="p-card-description">tonychuks7@gmail.com</p>
+                    <p class="p-card-description">icukachuk@gmail.com</p>
                     <!--Email-->
                 </div>
                 <div class="p-team">
                     <a href="#">
-                        <h3 class="p-card-title"> Team 9 </h3>
+                        <h3 class="p-card-title"> Team 7 </h3>
                         <!--Team-->
                     </a>
                 </div>
@@ -45,8 +46,7 @@
 	    
  <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
-); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/teegoldz.html">
                         <!--Profile Link-->
@@ -1136,20 +1136,7 @@
                 <!--Team-->
             </a>
         </div>
-<<<<<<< HEAD
-=======
-
-
         <!--  Participant starts here  -->
-
-
-
-
-
-
-
-
-
 
         <!--  Each Participant starts here  -->
         <div class="p-card">
@@ -1185,11 +1172,6 @@
                         <h3 class="p-card-title">Joshua Jumbo</h3>
                     </a>
                     <p class="p-card-description">jumbojoshua91@gmail.com</p>
-
-
-<<<<<<< HEAD
-=======
-
                 </div>
                 <div class="p-team">
                     <a href="#">
@@ -1894,36 +1876,8 @@
                 </div>
             </div>
         </div>
-
-
->>>>>>> 1abb39c914f7568f078d982fef8f1698fc8e4462
     </div>
 </div>
-<?php include "footer.php"?>
-=======
-<?php include "header.php"?>
-
-<div id="banner-content" class="row clearfix">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <div class="p-card-container">
-        <div class="v-center">
-            <input style="margin-top: 40px;" type="text" id="search" placeholder="Enter Participant name to search" name="search">
-        </div>
-    </div>
-
-    <div class="p-card-container">
-
-
-        <!--
-              GUIDELINES FOR ADDING DETAILS TO PARTICIPANTS TABLE(Please read the comments)
-              - Copy the codes in the code block below (Dont include the code block)
-              - Only change where you see a comment and paste at the end of the code(Above the comment)
-              - Make sure you do not modify information of other participants
-              - Pull the repo, before pushing it, inorder to prevent conflicts
-            -->
-<!--  Each Participant starts here  -->
     <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/E2WmeiH.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1949,11 +1903,8 @@
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
                <div class="p-card-info">
-<<<<<<< HEAD
                    <a href="http://hng.fun/profile/stephenjude.html">
-=======
                    <a href="http://hng.fun/profile/stephenjude/index.html">
->>>>>>> 6f6be9cd1f88548fef68023e2a7cce6d580b6a45
                        <!--Profile Link-->
                        <h3 class="p-card-title">Stephen Jude</h3>
                        <!--Profile Name-->
@@ -1976,10 +1927,6 @@
     </div>
    <!--  Each Participants ends here  -->
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
     <div class="p-card">
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
@@ -2007,10 +1954,6 @@
     </div>
    <!--  Each Participants ends here  -->
 
-
-
->>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
->>>>>>> 65dc2a16e592022727524d225983c5067d11cfc7
         <!--  Each Participant starts here  -->
 
         <div class="p-card">
@@ -4430,21 +4373,6 @@
            <!--Team-->
          </a>        </div>      </div>    </div>
    <!-- Each Participants ends here -->
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-
-
-
->>>>>>> ea50a25a4e0ea8fd6562e6682edd9d4b1c4abb5b
-=======
-
-
-
-
-
->>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
 
 	    <div class="p-card">
             <div class="v-center">
@@ -4466,13 +4394,6 @@
                 </div>
             </div>
         </div>
->>>>>>> 65dc2a16e592022727524d225983c5067d11cfc7
-
-
-
-
-
-
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -4487,4 +4408,3 @@
 
 
 <?php include "footer.php"?>
->>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
