@@ -38,6 +38,27 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     }
+
+    .input-box {
+            height: 28px;
+            border: 2px solid #4e4b4b;
+            border-radius: 20px;
+            width: 33%;
+            padding: 0 10px;
+            font-size: 13px;
+            font-weight: 500;
+            background: purple;
+            color: white;
+        }
+        
+        .input-box:focus {
+            border: 2px solid purple;
+            outline: none;
+        }
+        
+        .input-holder {
+            margin: 20px 0;
+        }
     
     
     </style>
@@ -63,13 +84,15 @@
         <div id="contact">
             <h3>Contact me</h3>
                 <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                    Name:<br>
-                    <input type="text" name="name"><br>
-                    E-mail:<br>
-                    <input type="text" name="mail"><br>
-                    Comment:<br>
-                    
-                <textarea name="user-message" id="" cols="30" rows="10" placeholder="Your message here" class="user-message"></textarea>>
+                    <div class="input-holder">
+                        <input type="text" placeholder="Full Name" name="user-name" class="input-box">
+                    </div>
+                    <div class="input-holder">
+                        <input type="email" placeholder=" Email" name="user-email" class="input-box">
+                    </div>
+                    <div class="input-holder">
+                        <textarea name="user-message" id="" cols="30" rows="10" placeholder="Write your message here" class="user-message"></textarea>
+                    </div> 
                 </form>
 
         </div>
