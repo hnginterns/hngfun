@@ -91,7 +91,7 @@
                    </div>
               </div>
               <!--  Each Participants ends here  -->
-=======
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/17626667_1304703359605988_8550045173239731599_n.jpg?oh=71d5449bed8089446acb4620e3e5425d&oe=5A25E345); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -116,7 +116,7 @@
         </div>
         <!--  Each Participants ends here  -->
 
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
+
 
 
         <!--  Each Participant starts here  -->
@@ -466,7 +466,7 @@
             </div>
 
 	    <div class="p-card">
-=======
+
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/ninte.html">
                         <!--Profile Link-->
@@ -486,7 +486,7 @@
 
         <div class="p-card">
 
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
+
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -531,12 +531,10 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-       <div class="p-card">
-=======
+
 
         <div class="p-card">
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
+
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/861305946479493120/PsPxNeDd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -759,19 +757,11 @@
                     </a>
                 </div>
             </div>
-<<<<<<< HEAD
-	    </div>
-
-            <div class="p-card">
-=======
-
         </div>
 
 
 
         <div class="p-card">
-
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.cdninstagram.com/t51.2885-19/s150x150/17075777_1409128825798368_1636514859128455168_a.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -941,7 +931,7 @@
 
 	<!--   Participant ends here  -->
 
-=======
+
 
 
         <div class="p-card">
@@ -967,7 +957,7 @@
         <!--  Each Participants ends here  -->
 
 
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/xpED2gj.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -995,15 +985,12 @@
             </div>
 
         </div>
-<<<<<<< HEAD
-    </div>
 
        <!--  Each Participants ends here  -->
-	<div class="p-card">
-=======
+
         <!-- Each Participant starts here -->
         <div class="p-card">
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
+
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/12105518?v=4&amp;s=75); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -1026,7 +1013,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
+
 
         <!--  Each Participants ends here  -->
 
@@ -1128,19 +1115,11 @@
                   </div>
               </div>
               <!--  Each Participants ends here  -->
-<<<<<<< HEAD
-
-</div>
 
 
 
-=======
->>>>>>> b1e14470573242454825f5a78105b488e9d46bc6
-<div class="p-card">
-    <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-        <div class="p-card-info">
-=======
+
+
 
         <!--  Each Participant starts here  -->
         <div class="p-card">
@@ -1153,7 +1132,7 @@
                         <!--Profile Name-->
                     </a>
                     <p class="p-card-description">
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
+
 
                     </p>
                     <!--Email-->
@@ -1209,17 +1188,7 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
 
-<div class="p-card">
-    <div class="v-center">
-        <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-        <div class="p-card-info">
-<<<<<<< HEAD
-
-=======
-        <!--   Participant ends here  -->
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
 
         <!--  Each Participants ends here  -->
 
@@ -1245,10 +1214,6 @@
 
         <!--   Participant ends here  -->
 
-<<<<<<< HEAD
-</div>
-
-=======
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/uhexos/assets/img/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1508,7 +1473,7 @@
         <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(" https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANpAAAAJDdlMzFiOWM4LTE0ZDEtNGE5Ny1iMGUxLTAwODJiMTlkYjc4Yw.jpg "); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(" https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANpAAAAJDdlMzFiOWM4LTE0ZDEtNGE5Ny1iMGUxLTAwODJiMTlkYjc4Yw.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/eniwokecornelius.html">
                         <!--Profile Link-->
@@ -1904,7 +1869,7 @@
         </div>
         <div class="p-card">
                   <div class="v-center">
-                      <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/894886569563303937/SDDv2YBT_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                      <div class="p-card-photo" style="background-image: url(https://i.imgur.com/rOUUAxc.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
                       <div class="p-card-info">
                           <a href="http://hng.fun/profile/akunne.html">
                               <!--Profile Link-->
@@ -1945,5 +1910,5 @@
 
     </div>
 </div>
->>>>>>> 489be1aee085c91e565423d047b7e2c710928be8
+
 <?php  include "footer.php" ?>
