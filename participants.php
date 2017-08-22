@@ -46,7 +46,7 @@
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
                <div class="p-card-info">
-                   <a href="http://hng.fun/profile/paulayuk.html">
+                   <a href="http://hng.fun/profile/stephenjude.html">
                        <!--Profile Link-->
                        <h3 class="p-card-title">Stephen Jude</h3>
                        <!--Profile Name-->
