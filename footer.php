@@ -35,9 +35,18 @@
             <div class="clear"></div>
             <div class="footer-widget">
                 <div class="grid">
+
+                    <div class="grid__col grid__col_12" >
+                        <ul class="footer-widget__icons" style="text-align:center; padding-right:20px;" >
+                            <li>
+                                <a href=""><img src="img/icons/android.png" width="20"></a>
+                            </li>
+                            <li>
+
                     <div class="grid__col grid__col_12">
                         <ul class="footer-widget__icons">
                              <li>
+
                                 <a href=""><img src="img/icons/facebook.png" width="20"></a>
                             </li>
                                <li>
