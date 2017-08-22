@@ -55,20 +55,26 @@ li a{
 .body-container{
   width: 80%;
   margin: 0 auto;
-  height: auto;
+  height: 900px;
 }
 .card-section{
   float: left;
-  width: 300px;
+  width: 25%;
   height: 800px;
   margin:0 auto;
   overflow: hidden;
   box-shadow: 0px 0px 15px -3px #333;
   border-radius: 2px;
 }
+.text-section{
+  width: 100%;
+  height: 100%;
+  overflow:auto;
+}
 .works-section{
+  overflow: scroll;
   float:right;
-  width: 850px;
+  width: 73%;
   height: 600px;
   margin-top: 200px;
   box-shadow: 0px 0px 10px -3px #333;
@@ -76,7 +82,6 @@ li a{
 }
 .image-section{
   width: 100%;
-  height: 300px;
   overflow: hidden;
 }
 .name{
