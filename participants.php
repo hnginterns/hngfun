@@ -110,7 +110,6 @@
         <!--  Each Participants ends here  -->
 
         <!--  Each Participant starts here  -->
-<<<<<<< HEAD
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/17626667_1304703359605988_8550045173239731599_n.jpg?oh=71d5449bed8089446acb4620e3e5425d&oe=5A25E345); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -134,7 +133,6 @@
     </div>
 </div>
 <!--  Each Participants ends here  -->
-=======
 
               <div class="p-card">
                    <div class="v-center">
@@ -182,7 +180,6 @@
             </div>
         </div>
         <!--  Each Participants ends here  -->
->>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
 
 
 
