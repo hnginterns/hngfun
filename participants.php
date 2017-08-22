@@ -2050,6 +2050,28 @@
         </div>
 
         <!--  Each Participants ends here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/31125005?v=4&u=7b7332e7d6f7e29d8c952920f9c62ff34271d346&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/willade">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">William Adetunji</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">williamadetunji@yahoo.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 7 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--  Each Participants ends here  -->
 
 
 
