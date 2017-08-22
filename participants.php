@@ -1136,21 +1136,8 @@
                 <!--Team-->
             </a>
         </div>
-<<<<<<< HEAD
-=======
-
-
         <!--  Participant starts here  -->
-
-
-
-
-
-
-
-
-
-
+	    
         <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -1185,11 +1172,6 @@
                         <h3 class="p-card-title">Joshua Jumbo</h3>
                     </a>
                     <p class="p-card-description">jumbojoshua91@gmail.com</p>
-
-
-<<<<<<< HEAD
-=======
-
                 </div>
                 <div class="p-team">
                     <a href="#">
