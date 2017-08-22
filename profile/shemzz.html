@@ -214,22 +214,24 @@
 	<!--contact form -->
 	<div class="container">
   <h2>Send Me a Message</h2>
-  <form action="/action_page.php">
+  <form method="GET" action="http://hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=myemail@gmail.com">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" placeholder="Enter name" name="name">
     </div>
-    <div class="form-group">
+    <div style="display: inline;">
+    <div class="form-group col">
       <label for="email">Email:</label>
       <input type="email" class="form-control" placeholder="Enter your Email" name="email">
     </div>
-    <div class="form-group">
+    <div class="form-group col">
       <label for="phone">Phone Number:</label>
       <input type="txt" class="form-control" placeholder="Enter your Phone Number" name="phone">
     </div>
+    </div>
     <div class="form-group">
       <label for="message">Message:</label>
-      <input type="textarea" class="form-control" placeholder="Enter your Message" name="message">
+      <textarea class="form-control" rows="5" name="message"></textarea>
     </div>
     <button type="submit" class="btn btn-default">Send</button>
   </form>
