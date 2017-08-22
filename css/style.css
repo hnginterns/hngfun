@@ -817,6 +817,115 @@ input:checked + label {
         /* Project Page CSS by Team 4
 >>>>>>> c6c6c4247ad8de0f22b224fb0740709cb6a5d606
 =======
+<<<<<<< HEAD
+=======
+ /******************/
+        /*                */
+        /*                */
+        /*    Team 3      */
+        /*                */
+        /*                */
+        /******************/
+        
+        .p-card-container {
+            display: flex;
+            max-width: 1500px;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .v-center {
+            display: flex;
+            max-width: 700px;
+            /*height: 100vh;*/
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .v-center input {
+            padding: 10px;
+            width: 400px;
+        }
+        
+        .p-card {
+            width: 366px;
+            border-radius: 4px;
+            background-color: #FFFCFC;
+            border-radius: 5px;
+            border: 3px solid #CADBE0;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            text-align: left;
+            justify-content: flex-start;
+            box-sizing: border-box;
+        }
+        
+        .p-card-photo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        
+        .p-card-info {
+            width: 170px;
+            height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .p-card-info h3 {
+            margin: 0;
+            color: #26A6D1;
+            color: #26A6D1;
+            font-size: 12px;
+            margin-bottom: -10px;
+        }
+        
+        .p-card-info a {
+            text-decoration: none;
+        }
+        
+        .p-team {
+            justify-content: flex-end;
+        }
+        
+        .p-team a {
+            text-decoration: none;
+        }
+        
+        .p-team a h3 {
+            font-size: 16px;
+        }
+        
+        .p-card-info p {
+            margin: 0;
+            margin-top: 5px;
+        }
+        
+        .p-card-title {
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            font-size: 20px;
+            color: #000;
+        }
+        
+        .p-card-description {
+            width: 108px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            font-size: 14px;
+            color: #534C4C;
+        }
+>>>>>>> 8d044463c59f9ffa290bc78142952fa0c9666071
         
         /* Project Page CSS by Team 4
 ===============================*/
@@ -9251,5 +9360,112 @@ padding-top: 45px !important;
                     font-size: small;
                     font-weight: lighter;
                 }
+<<<<<<< HEAD
                 >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
 >>>>>>> 1bf9659270a29e8e015eec0656c1f0e8d7070593
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+
+/* Library Page CSS by Team 10
+===============================*/
+
+.library-all {
+    margin: 20px;
+    margin-left: 14%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+.library-list {
+    list-style-type: none;
+    text-align: center;
+    width: 500px;
+    font-size:x-large;
+    margin-top: 80px;
+    margin: auto;
+    padding: 5px;
+    font-weight: bold;
+}
+.library-list h3 {
+    font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.library-img {
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+.library-list p {
+    font: 200 14px/1.5 Georgia, Times New Roman, serif;
+}
+
+.library-list li {
+        padding: 10px;
+        overflow: auto;
+      }
+
+.library-list a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color:#000000;
+}
+
+/*.library-img{
+    height:42px;
+    width:42px;
+}*/
+.library-input{
+    opacity: 1;
+    text-align: center; 
+    margin-top: 12%;
+}
+.library-input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.library-input[type=text]:focus {
+    width: 55%;
+}
+
+.library-img-space{
+    height: 100px;
+}
+#library-search{
+    text-align: center;
+}
+
+/*.headd {
+    
+}
+*/
+#header-content.row {
+    padding-top: 170px;
+    padding-bottom: 100px;
+    background-image: url(images\banner-images\banner-image-1.jpg);
+}
+
+/* Library Page CSS by Team 10 ends
+====================================*/
+||||||| merged common ancestors
+                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+=======
+                
+>>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
+>>>>>>> ff09b7977d43f691f8994a9bd5591d37c7c0758a
+=======
+                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+>>>>>>> 40d025aa2fff7efb2107647b9ed71d8fcd540b63
+>>>>>>> 8d044463c59f9ffa290bc78142952fa0c9666071
