@@ -2038,7 +2038,7 @@
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://alabamustapha.files.wordpress.com/2017/08/me.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://hng.fun/profile/alabamustapha.html">
+                    <a href="http://hng.fun/profile/alabamustapha.php">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Alaba Mustapha O.</h3>
                         <!--Profile Name-->
