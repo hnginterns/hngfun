@@ -171,10 +171,12 @@
         
         .footer-widget__icons {
             list-style: none;
+            text-align:center;
         }
         
         .footer-widget__icons li {
             float: left;
+            margin-right:15px;
         }
 
 
