@@ -11,13 +11,14 @@ include "header.php";
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
   }
   .contact {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 95%;
-    margin: 10px 0;
+    margin: 30px 0 10px;
   }
 
   .contact section {
@@ -28,6 +29,7 @@ include "header.php";
   }
 
   .subheading-text{
+    font-size: 1.5em;
     padding:10px;
   }
 
@@ -107,6 +109,16 @@ include "header.php";
     width: 100%;
     height: 100%:
   }
+
+  .underlined::after {
+    background: none repeat scroll 0 0 #0080ff;
+    bottom: -5px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 100%;
+  }
   @media only screen and (max-width:1024px) {
     .contact {
       width: 90%;
@@ -120,10 +132,17 @@ include "header.php";
     .contact section {
       width: 95%;
     }
+    .contact section:last-of-type {
+      margin-top: 20px;
+    }
 
     .social-links {
     padding-top: 20px;
     padding-left: 20px;
+    }
+
+    .subheading-text{
+    font-size: 1.2em;
     }
   }
 
@@ -132,7 +151,7 @@ include "header.php";
 <iframe src=https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary"" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   
   <div class="underlay"></div>
-  <h2 style="font-family: 'Lato', sans-serif">GET IN TOUCH</h2>
+  <h2 style="font-family: 'Lato', sans-serif" class="underlined">GET IN TOUCH</h2>
   <section class="contact">
   <section class="contact-form" >
     <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" >
