@@ -3,8 +3,6 @@ $pageTitle = "Participants";
 include('header.php');
 ?>
 
-</div> <!--end wrapper class in header.php -->
-
 <style type="text/css" xmlns:http="http://www.w3.org/1999/xhtml" xmlns:http="http://www.w3.org/1999/xhtml"
        xmlns:http="http://www.w3.org/1999/xhtml" xmlns:http="http://www.w3.org/1999/xhtml"
        xmlns:http="http://www.w3.org/1999/xhtml">
@@ -4229,7 +4227,7 @@ include('header.php');
                           </a>
                       </div>
                   </div>
-              </div>
+        </div>
 
               <div class="p-card">
             <div class="v-center">
