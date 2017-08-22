@@ -1771,7 +1771,7 @@
 	     <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url("https://pbs.twimg.com/media/DHybTrJXkAcZZuB.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url("https://avatars1.githubusercontent.com/u/24903349?v=4&s=460"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/auztincodes.html">
                         <!--Profile Link-->
