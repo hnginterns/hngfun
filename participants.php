@@ -2395,7 +2395,7 @@
             </div>
         </div>
 
-        !--  Each Participant starts here  -->
+        
     <div class="p-card">
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6PCU4RLL-4cfabf1b27eb-1024); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
