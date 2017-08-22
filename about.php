@@ -65,30 +65,8 @@
                             </div>
 
                     </div>
-=======
-</div>
- <div class="section-leader">
-    <center> <img src="http://res.cloudinary.com/hngfun/image/upload/v1503323007/group_ctikye.png" height=120px width=120px>
-            <div class="section-text">Leadership</div>
-    </center>
-     
 </div>
 
-            <div class="row">
-                <div class="image"><img src="http://res.cloudinary.com/hngfun/image/upload/v1503323014/markessien_lg3ey0.png" alt=""></div>
-                    <div class="text">
-                        <div class="name-text">Mark Essien</div>
-                        <div class="name-post-text">CEO/Founder</div>
-                        <div class="name-body-text">I'm Mark Essien, born and grew up in the small town of Ikot Ekpene, Akwa Ibom State, Nigeria.
-I did my primary school at Monika Kindergarten, and my secondary school at Federal Government, Ikot Ekpene. As you can tell, very much a small town upbringing.
-After that, I moved to Germany to attend University. It was an interesting experience, but after many years in Germany, I decided that I prefer to live in Nigeria.</div>
-                        <div class="linkedin"><img src="http://res.cloudinary.com/hngfun/image/upload/v1503323006/linkedin_lquvqx.png" height="36" width="36" alt="" align="left"></div>            
-                        </div>
-                     
->>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
-                </div>
-            </div>
- 
     <div class="contact-address">
         <table class="table" cellpadding="100px" style="margin: auto;">
             <tr>
