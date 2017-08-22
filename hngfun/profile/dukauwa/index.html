@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- TITLE -->
+        <title>My Profile Card</title>
+    </head>
+    <body>
+        <div class="profile">
+          <img src= "images/profile2.jpg">
+          <div class="details">
+            <h2>Ukauwa David<br><span>Web Designer</span></h2>
+            <p>My Name is Ukauwa David, a software Engineer from Lagos state.
+              I build web applications with incredible designs.
+              My major tools are PHP,Laravel,CSS3 and Bootstrap.</p>
+
+              <div> <h3><a href= "http://github.com/dukauwa/hng-stage1" style="color: #fff" style="text-decoration:none"> Stage 1 repo</a></div>
+
+              <ul class="social-icons">
+
+                  <li><a href="https://github.com/dukauwa" class="social-icons"><i class="fa fa-github" aria-hidden="true"></i> </a></li>
+                  <li><a href="https://hnginterns.slack.com/messages/@dukauwa" class="social-icons"> <i class="fa fa-slack" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/ukauwa_david" class="social-icons"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li><br>
+              </ul>
+            </div>
+        </div>
+    </body>
+
+    <!-- STYLE -->
+    <style>
+
+              @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+              .social-icon
+               {
+                  color: #fff;
+              }
+              ul.social-icons {
+                  margin-top: 10px;
+                  align-items: center;
+              }
+              .social-icons li {
+                  vertical-align: top;
+                  display: inline;
+                  height: 100px;
+
+
+              }
+              .social-icons a {
+                  color: #322f30;
+                  text-decoration: none;
+                  }
+
+            .fa-twitter {
+                padding:10px 12px;
+                -o-transition:.5s;
+                -ms-transition:.5s;
+                -moz-transition:.5s;
+                -webkit-transition:.5s;
+                transition: .5s;
+                background-color: #ffffff;
+
+            }
+            .fa-twitter:hover {
+                background-color: #00aced;
+                border-radius: 50%;
+            }
+
+            .fa-slack {
+              padding:10px 12px;
+              -o-transition:.5s;
+              -ms-transition:.5s;
+              -moz-transition:.5s;
+              -webkit-transition:.5s;
+              transition: .5s;
+              background-color: #ffffff;
+            }
+
+            .fa-slack:hover {
+                background-color: #03bb85;
+                border-radius: 50%;
+            }
+
+            .fa-github {
+              padding:10px 12px;
+              -o-transition:.5s;
+              -ms-transition:.5s;
+              -moz-transition:.5s;
+              -webkit-transition:.5s;
+              transition: .5s;
+              background-color: #ffffff;
+            }
+
+            .fa-github:hover {
+                background-color: #c161ce;
+                border-radius: 50%;
+            }
+
+          body
+          {
+              margin: 0;
+              padding: 0;
+              background: #03bb85;
+              font-family:arial	#D3D3D3;
+            }
+          .profile
+          {
+              position: absolute;
+              top: 50%;
+              left: 50% ;
+              transform: translate(-50%,-50%);
+              width: 300px;
+              height:500px;
+              background: #fff;
+              box-sizing: border-box;
+              border-radius: 10px;
+              box-shadow: 0 20px 20px rgba(0,0,0,.5);
+          }
+          .profile img
+          {
+            position:relative;
+            left: 20% ;
+            width:40;
+            height:40%;
+            border-radius: 50%;
+
+          }
+          .details
+          {
+            height: 50%;
+            width: 100%;
+            background: #fff;
+            position: bottom;
+            bottom:0;
+            text-align: center;
+            padding: 20px;
+            box-sizing:border-box;
+            transition: .5s;
+          }
+          .details h2
+          {
+            margin: 0;
+            padding: 0;
+            color: #607d8b;
+            font-size: 18px;
+            text-transform: uppercase;
+          }
+          .details h2 span
+          {
+            font-size: 14px;
+            color: #ccc;
+          }
+          .details p
+          {
+            margin: 0;
+            padding: 10px 0 0;
+            font-size: 14px;
+            color: #aaa;
+          }
+          .details ul
+          {
+            margin: 0;
+            padding: 0;
+            display: flex;
+          }
+          .details ul li
+          {
+            list-style: none;
+            font-size: 20px;
+            width: 33.3%;
+
+          }
+          h3
+          {
+            background:#00bcd4;
+            color:#fff;
+            padding: 8px 20px;
+            border-radius: 25px;
+            display: -webkit-inline-box;
+          }
+    </style>
+
+</html>

@@ -3919,14 +3919,14 @@ padding-top: 45px !important;
             .library-back-to-top i {
                 font-size: 60px;
             }*/
-            .roww img {
+            /*.roww img {
                 height: auto;
                 max-width: 100%;
                 position: relative;
                 width: 100%;
-                /* for IE 6 */
+                
                 height: 40%;
-            }
+            }*/
             /* about page CSS by Team 2 ends
 >>>>>>> 17efe165bf7baee7d933eaa5503ef7ad5fd20052
 ====================================*/
@@ -3946,8 +3946,8 @@ padding-top: 45px !important;
                 border-top-style: hidden;
                 border-bottom-style: hidden;
             }
-            /* Library Page CSS by Team 10 ends
-====================================*/
+
+
             /* News Page CSS by Team 8
 ===============================*/
             #recentDiv {
@@ -4092,20 +4092,13 @@ padding-top: 45px !important;
      background-color: #fcf9f9;
      border: 1px solid #CADBE0;
      margin: 10px;
-	 margin-bottom: 20px;
+	 margin-bottom: 30px;
      display: flex;
      justify-content: center;
      flex-direction: column;
      text-align: left;
      justify-content: flex-start;
  }
-
- .team8-card:hover{
-      box-shadow: 2px 2px 5px gray;
-      -webkit-box-shadow: 2px 2px 5px gray;
-      -moz-box-shadow: 2px 2px 5px gray;
-      -o-box-shadow: 2px 2px 5px gray;
-  }
 
  .team8-card-photo {
      width: 100%;
@@ -4115,7 +4108,7 @@ padding-top: 45px !important;
 
  .team8-card-info {
      width: 100%;
-     padding: 0 20px;
+     padding: 15px 20px;
  }
 
  .team8-card-info h3 {
@@ -4963,8 +4956,8 @@ padding-top: 45px !important;
 
 .library-all {
     margin: 20px;
-    margin-left: 14%;
-    margin-right: 10%;
+    margin-left: 14% !important;
+    margin-right: 10% !important;
     margin-top: 1%;
 }
 
@@ -5029,9 +5022,9 @@ padding-top: 45px !important;
     width: 55%;
 }
 
-.library-img-space{
+/*.library-img-space{
     height: 100px;
-}
+}*/
 #library-search{
     text-align: center;
 }
@@ -5048,9 +5041,4 @@ padding-top: 45px !important;
 
 /* Library Page CSS by Team 10 ends
 ====================================*/
-||||||| merged common ancestors
-                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
-=======
-                
->>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
->>>>>>> ff09b7977d43f691f8994a9bd5591d37c7c0758a
+
