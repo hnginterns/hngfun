@@ -6295,6 +6295,7 @@ include('header.php');
                 </a>
                 <p class="p-card-description">emmanuel020forreal@gmail.com</p>
                 <!--Email-->
+				
             </div>
             <div class="p-team">
                 <a href="#">
