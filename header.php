@@ -7,8 +7,8 @@
 
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Favicon-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -35,31 +35,31 @@
                     <nav id="nav-main">
                         <ul>
                             <li>
-                                <a href="/">Home</a>
+                                <a href="#">Home</a>
                             </li>
                             <li>
                                 <a href="about.php">About</a>
                             </li>
                             <li>
-                                <a href="news.php">News</a>
-                            </li>
-                            <li>
                                 <a href="#">Participants</a>
                             </li>
                             <li>
-                                <a href="project.php">Projects</a>
+                                <a href="#">Projects</a>
                             </li>
                             <li>
-                                <a href="contact.php">Contact Us</a>
+                                <a href="#">Contact Us</a>
                             </li>
                             <li>
-                                <a href="past_internships.php">Past Internship</a>
+                                <a href="#">Past Internship</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
                             </li>
                             <li>
                                 <a href="#">Supporters</a>
                             </li>
                             <li>
-                                <a href="library.php">Library</a>
+                                <a href="#">Library</a>
                             </li>
                         </ul>
                     </nav>
@@ -70,4 +70,3 @@
                 </div>
             </div>
         </div>
-    </header>

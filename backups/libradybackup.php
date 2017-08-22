@@ -12,7 +12,7 @@
 </div>
 
 
-<div class="library-body-content" class="row clearfix" style="background-color:#fcfcfc;">
+<div id="library-body-content" class="row clearfix" style="background-color:#fcfcfc;">
       
   <div class="library-title-h3"  >
     <form class="">
@@ -86,31 +86,3 @@
 <a href="#top" class="library-back-to-top" style="display: inline;">
   <i class="fa fa-arrow-circle-up"></i>
 </a>
-<style>
- 
-.library-back-to-top {
-background: none;
-margin: 0;
-/*position: fixed;*/
-bottom: 0;
-right: 0;
-width: 70px;
-height: 70px;
-z-index: 100;
-display: none;
-text-decoration: none;
-color: #00BFFF;
-background-color: #00BFFF;
- 
-}
- 
-  
- 
-.library-back-to-top i {
- 
-  font-size: 60px;
- 
-}
- 
-</style>
-
