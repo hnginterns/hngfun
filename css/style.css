@@ -5888,7 +5888,7 @@ justify-content: space-between;
                              border-radius: 2px;
                              background-color: #fcf9f9;
                              border: 1px solid #CADBE0;
-                             margin: 10px;
+                             margin: 10px !important;
                              margin-bottom: 30px;
                              display: flex;
                              justify-content: center;
