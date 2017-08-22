@@ -1382,10 +1382,6 @@
                     </a>
                     <p class="p-card-description">jumbojoshua91@gmail.com</p>
 
-
-<<<<<<< HEAD
-=======
-
                 </div>
                 <div class="p-team">
                     <a href="#">
@@ -2091,6 +2087,30 @@
 
         <!--  Each Participants ends here  -->
 
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/a272404edc); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/omokolataiwo/">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Taiwo Kolawole</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">omokolataiwo@yandex.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 4 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--  Each Participants ends here  -->
+
 	<div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/16681646_1263674723725886_3249389777281568213_n.jpg?oh=8e916840484be65726588e247c6a4473&oe=5A2C13A6); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -2142,6 +2162,6 @@
 
     </div>
 </div>
->>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
+
 
 <?php  include "footer.php" ?>

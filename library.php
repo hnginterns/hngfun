@@ -10,15 +10,6 @@
 </br>
 <main name="libraryMain" id="libraryMain">
 
-<<<<<<< HEAD
-<div class="library-body-content" class="row clearfix" style="background-color:#fcfcfc;">
-      
-  <div class="library-title-h3"  >
-    <form class="">
-       <input class="inputss" type="text" name="search" placeholder="Search..">
-    </form>
-  </div>
-=======
 <input id="tab1" type="radio" name="tabs" checked>
 <label for="tab1">HTML/CSS</label>
   
@@ -30,7 +21,6 @@
   
 <input id="tab4" type="radio" name="tabs">
 <label for="tab4">Internship Tasks</label>
->>>>>>> 971bf31092894dc00997122bb31e6a6ea3acb029
 
   
 
@@ -166,38 +156,7 @@
     
 </main id="libraryMain">
 
-<a href="#top" class="library-back-to-top" style="display: inline;" onclick="scrollToTop();return false">
+<a href="#top" class="library-back-to-top" style="display: inline;">
   <i class="fa fa-arrow-circle-up"></i>
 </a>
-<<<<<<< HEAD
-<style>
- 
-.library-back-to-top {
-background: none;
-margin: 0;
-/*position: fixed;*/
-bottom: 0;
-right: 0;
-width: 70px;
-height: 70px;
-z-index: 100;
-display: none;
-text-decoration: none;
-color: #00BFFF;
-background-color: #00BFFF;
- 
-}
- 
-  
- 
-.library-back-to-top i {
- 
-  font-size: 60px;
- 
-}
- 
-</style>
-
-=======
 <?php include ('footer.php'); ?>
->>>>>>> 971bf31092894dc00997122bb31e6a6ea3acb029
