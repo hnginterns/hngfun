@@ -163,7 +163,7 @@
                     </div>
                     <div class="contact">
                         <h2>Contact Me</h2>
-                        <form action="" method="post">
+                        <form action="./profile/kay_s.php" method="post">
                             <input type="hidden" name="processing" value=true />
                             <input type="text" class="textbox subject" name="subject" placeholder="Subject" /> 
                             <textarea class="textbox body" name="body" placeholder="Message"></textarea>
