@@ -1,0 +1,44 @@
+.imgs{
+	border: 0px solid #ddd;
+    border-radius: 50px;
+    padding: 5px;
+    width: 150px;
+    display: block;
+    margin: auto;
+    
+ }  
+#divx{ background-color: yellow;
+
+
+}
+body{
+	background: url(https://images.pond5.com/computer-code-programm-digital-background-footage-011008844_prevstill.jpeg);
+	color: yellow;
+
+}
+.profilename{
+	text-align: center;
+	text-decoration-color: underline;
+	text-decoration-color: yellow;
+}
+.profilename{
+	margin: auto;
+	height: 150px;
+	width: 50px;
+	text-align: center;
+}
+#about{
+	height:auto;
+	width: 600px;
+	
+	margin:auto;
+
+}
+.aboutdiv{
+	font-family: "serif", "times"
+	font-size: 40px;
+;
+}
+.name{
+	text-align: center;
+}
