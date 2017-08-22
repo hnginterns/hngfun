@@ -398,6 +398,93 @@ input:checked + label {
   ====================================*/
   
   
+  /* CSS for Team 8
+===============================*/
+                         .team8-card-container {
+                             display: flex;
+                             max-width: 1500px;
+                             width: 100%;
+                             margin: 0 auto;
+                             justify-content: center;
+                             align-items: center;
+                             flex-wrap: wrap;
+                         }
+                         .team8-card {
+                             width: 75%;
+                             background: #FFFFFF;
+                             border-radius: 2px;
+                             background-color: #fcf9f9;
+                             border: 1px solid #CADBE0;
+                             margin: 10px !important;
+                             margin-bottom: 30px;
+                             display: flex;
+                             justify-content: center;
+                             flex-direction: column;
+                             text-align: left;
+                             justify-content: flex-start;
+                         }
+                         .team8-card-photo {
+                             width: 100%;
+                             height: 400px;
+                             background-position: center center;
+                         }
+                         .team8-card-info {
+                             width: 100%;
+                             padding: 15px 20px;
+                         }
+                         .team8-card-info h3 {
+                             margin: 0;
+                         }
+                         .team8-card-info p {
+                             margin: 0;
+                         }
+                         .team8-card-title {
+                             font-style: normal;
+                             font-weight: bold;
+                             line-height: normal;
+                             font-size: 20px;
+                             color: #000;
+                         }
+                         .team8-card-description {
+                             width: 100%;
+                             font-style: normal;
+                             font-weight: 300;
+                             line-height: normal;
+                             font-size: 14px;
+                             color: #534C4C;
+                         }
+                         .team8-card-footer {
+                             display: flex;
+                             justify-content: space-between;
+                             padding-left: 20px;
+                             padding-right: 20px;
+                             margin-bottom: 20px;
+                             height: 10px;
+                             font-size: 13px;
+                         }
+                         .team8-footer-separate {
+                             display: flex;
+                             justify-content: space-between;
+                         }
+                         .team8-footer-right {
+                             float: right;
+                             display: flex;
+                             flex-direction: row;
+                         }
+                         .dot {
+                             color: #FFBA08;
+                             margin-right: 5px;
+                         }
+                         .dot2 {
+                             color: #29CB00;
+                             margin-right: 5px;
+                         }
+                         .dot3 {
+                             color: #FF0000;
+                             margin-right: 5px;
+                         }
+                         /* Team 8 CSS ends here
+===============================*/
 
 
 
@@ -6266,93 +6353,7 @@ justify-content: space-between;
 }   
    /* Past Internships Page CSS by Team 7 ends
 ===============================*/
-/* CSS for Team 8
-===============================*/
-.team8-card-container {
-    display: flex;
-    max-width: 1500px;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.team8-card {
-    width: 75%;
-    background: #FFFFFF;
-    border-radius: 2px;
-    background-color: #fcf9f9;
-    border: 1px solid #CADBE0;
-    margin: 10px !important;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-    justify-content: flex-start;
-}
-.team8-card-photo {
-    width: 100%;
-    height: 400px;
-    background-position: center center;
-}
-.team8-card-info {
-    width: 100%;
-    padding: 15px 20px;
-}
-.team8-card-info h3 {
-    margin: 0;
-}
-.team8-card-info p {
-    margin: 0;
-}
-.team8-card-title {
-    font-style: normal;
-    font-weight: bold;
-    line-height: normal;
-    font-size: 20px;
-    color: #000;
-}
-.team8-card-description {
-    width: 100%;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 14px;
-    color: #534C4C;
-}
-.team8-card-footer {
-	display: flex;
-	justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    height: 10px;
-    font-size: 13px;
-}
-.team8-footer-separate {
-    display: flex;
-    justify-content: space-between;
-}
-.team8-footer-right {
-    float: right;
-    display: flex;
-    flex-direction: row;
-}
-.dot {
-    color: #FFBA08;
-    margin-right: 5px;
-}
-.dot2 {
-    color: #29CB00;
-    margin-right: 5px;
-}
-.dot3 {
-    color: #FF0000;
-    margin-right: 5px;
-}
-/* Team 8 CSS ends here
-===============================*/
+
 <<<<<<< HEAD
 
  .row {
