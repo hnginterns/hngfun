@@ -1,11 +1,17 @@
-
 <!DOCTYPE html>
 <html>
 
 <head lang="en">
     <meta charset="UTF-8">
 
-    <title>HNG</title>
+    <title><?php 
+    if (isset($pageTitle)) {
+        echo "HNG Interns - ".$pageTitle;
+    } else {
+        echo "HNG Interns";
+    }
+    ?>
+    </title>
 
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -27,66 +33,66 @@
 
 <body >
 
-    <div id="wrapper">
-        <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-            <div id="header" class="nav-collapse">
-                <div class="row clearfix">
-                    <div class="col-1">
-                        <div id="logo">
-                            <h3>hng.fun</h3>
-                        </div>
-                        <nav id="nav-main">
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about.php">About</a>
-                                </li>
-                                <li>
-                                    <a href="participants.php">Participants</a>
-                                </li>
-                                <li>
-                                    <a href="projects.php">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Past Internship</a>
-                                </li>
-                                <li>
-                                    <a href="news.php">News</a>
-                                </li>
-                                <li>
-                                    <a href="#">Supporters</a>
-                                </li>
-                                <li>
-                                    <a href="#">Library</a>
-                                </li>
-                            </ul>
-                        </nav>
+<div class="landing-page__nav">
+                <div class="container">
 
-
-                        <div id="nav-trigger"><span></span></div>
-                        <nav id="nav-mobile"></nav>
-
+                    <!-- Logo -->
+                    <div class="landing-page__nav--left">
+                        <a href="http://hng.fun" class="global-nav__logo">
+                            <img src="img/hnglogo.png" width="100" alt="hotels ng Internship logo">
+                        </a>
                     </div>
+
+                    <!-- right nav menu -->
+                    <nav class="landing-page__nav--right">
+                        <ul class="landing-page__menu">
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="index.php">
+                                    <img src="img/home.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="about.php">
+                                    <img src="img/about.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="participants.php">
+                                    <img src="img/participants.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="projects.php">
+                                    <img src="img/projects.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="contact.php">
+                                    <img src="img/contact us.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="past-internships.php">
+                                    <img src="img/pastinternship.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="news.php">
+                                    <img src="img/news.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="#contact">
+                                    <img src="img/supporters.png" width="30">
+                                </a>
+                            </li>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="library.php">
+                                    <img src="img/library.png" width="30">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="clear"></div>
                 </div>
             </div>
-
-    <header class="team1-header">
-        <img src="hnglogo.png" alt="" class="team1-comp-logo">
-        <div class="team1-links">
-            <a href="" class="team1-icon"><img src="icon set/home.png" alt=""></a>
-            <a href="" class="team1-icon"><img src="icon set/about.png" alt=""></a>
-            <a href="" class="team1-icon"><img src="icon set/participants.png" alt=""></a>
-            <a href="" class="team1-icon"><img src="icon set/projects.png" alt=""></a>
-            <a href="" class="team1-icon"><img src="icon set/contact us.png" alt=""></a>
-            <a href="" class="team1-icon"><img src="icon set/past internship.png" alt=""></a>
-            <a href="" class="team1-icon"><img src="icon set/supporters.png" alt=""></a>
-            <a href="" class="team1-icon"><img src="icon set/library.png" alt=""></a>
-            <a href="" class="team1-icon"><img src="icon set/news.png" alt=""></a>
-        </div>
-    </header>
-
