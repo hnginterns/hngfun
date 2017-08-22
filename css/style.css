@@ -262,6 +262,16 @@ textarea {
        justify-content: flex-end;
    }
 
+<<<<<<< HEAD
+#wrapper {
+    margin:0 0;
+    padding: 0 0;
+    position: relative;
+}
+*:focus {
+    outline: none;
+}
+=======
    .p-team a {
        text-decoration: none;
    }
@@ -274,6 +284,7 @@ textarea {
        margin: 0;
        margin-top: 5px;
    }
+>>>>>>> 971bf31092894dc00997122bb31e6a6ea3acb029
 
    .p-card-title {
        font-style: normal;
@@ -5888,7 +5899,7 @@ justify-content: space-between;
                              border-radius: 2px;
                              background-color: #fcf9f9;
                              border: 1px solid #CADBE0;
-                             margin: 10px;
+                             margin: 10px !important;
                              margin-bottom: 30px;
                              display: flex;
                              justify-content: center;
@@ -6834,8 +6845,22 @@ justify-content: space-between;
     text-align: center; 
     margin-top: 12%;
 }
+<<<<<<< HEAD
+
+.library-title-h3{
+    font-size:x-large;
+    margin-top: 80px;
+    margin: auto;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.library-title-h3 input[type=text] {
+    width: 70%;
+=======
 .library-input[type=text] {
     width: 50%;
+>>>>>>> 971bf31092894dc00997122bb31e6a6ea3acb029
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -6847,17 +6872,242 @@ justify-content: space-between;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+<<<<<<< HEAD
+    text-align: center;
+}
+
+.library-title-h3 input[type=text]:focus {
+    width: 75%;
+}
+
+#library-header-content{
+    padding-top: 100px;
+    padding-bottom: 10px;
+	width:100%;
+}
+
+
+.section-heading h1 span { 
+   color: white; 
+   font: bold 30px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+
+#library-body-content.row {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.library-back-to-top {
+background: none;
+margin: 0;
+/*position: fixed;*/
+position:fixed;
+bottom: 0;
+right: 0;
+width: 70px;
+height: 70px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #FFFFFF;
+background-color: #00BFFF;
+padding:10px;
+ 
+}
+ 
+  
+ 
+.library-back-to-top i {
+ 
+  font-size: 60px;
+ 
+}
+
+/* Library Page CSS by Team 10 ends
+====================================*/
+
+
+
+/* News Page CSS by Team 8 
+===============================*/
+
+.newsSectionOne{
+	width: 30%;
+	height: auto;
+	position: relative;
+	display: inline-block;
+=======
+>>>>>>> 971bf31092894dc00997122bb31e6a6ea3acb029
 }
 
 .library-input[type=text]:focus {
     width: 55%;
 }
 
+<<<<<<< HEAD
+.newsSectionOne img{
+	width: 100%;
+	opacity: 0.7;
+	transform: scale(1.05);
+	cursor: pointer;
+	transition: opacity 1s;
+}
+
+.newsSectionOne img:hover{
+	opacity: 1;
+}
+
+.label,
+.tag{
+	position: absolute;
+	color: #E5E1E1;
+}
+
+.tag{
+	width: auto;
+	height: auto;
+	top: 78%;
+	padding: 2px;
+	margin-left: 1px;
+	background-color:#AC070A;
+}
+
+.label{
+	
+	top: 86%;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.3);
+	line-height: 100%;
+}
+
+#tag1{
+	top: 71.5%;
+}
+
+#label1{
+	top: 82.3%;
+}
+
+#image1{
+	width: 35%;
+}
+
+#image2{
+	width: 34%;
+}
+
+#tag2{
+	top: 78%;
+}
+
+#label2{
+	top: 88%;
+}
+
+/* Past Internships Page CSS by Team 7 starts
+===============================*/
+
+
+
+/* Past Internships Page CSS by Team 7 ends
+===============================*/
+.row {
+    margin-top: 15px;
+    width:100%;
+    height:50%;
+}
+.row div {
+    width:50%;
+    height:100%;
+    float:left;
+}
+.image{
+    height: 200px;
+
+}
+
+.name-text{
+    font-size:x-large;
+    margin-top: 60px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    font-weight: bold;
+    color: #333333;
+
+}
+.section-text{
+    font-size:x-large;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+
+
+}
+.section-leader{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.name-post-text{
+    font-size:large;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    color: #333333;
+     
+}
+.name-body-text{
+    font-size:small;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    text-align: left;
+    color: #4F4F4F;
+     
+}
+.section-body-text{
+    font-size:large;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    color: #4F4F4F;
+    font-weight: lighter;
+     
+}
+.linkedin{
+    align-self: left;
+    height: 30px;
+    width: 30px;
+    margin-top: 3px;
+    margin-left: 20px;
+    
+}
+
+#team-2-section-1{
+    max-width: 50vw; 
+    margin: auto; 
+    text-align: 
+    center;padding-bottom: 20px;
+}
+.section-1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+=======
 /*.library-img-space{
     height: 100px;
 }*/
 #library-search{
     text-align: center;
+>>>>>>> 971bf31092894dc00997122bb31e6a6ea3acb029
 }
 
 /*.headd {

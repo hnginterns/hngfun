@@ -110,7 +110,6 @@
         <!--  Each Participants ends here  -->
 
         <!--  Each Participant starts here  -->
-<<<<<<< HEAD
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/17626667_1304703359605988_8550045173239731599_n.jpg?oh=71d5449bed8089446acb4620e3e5425d&oe=5A25E345); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -134,7 +133,6 @@
     </div>
 </div>
 <!--  Each Participants ends here  -->
-=======
 
               <div class="p-card">
                    <div class="v-center">
@@ -182,7 +180,6 @@
             </div>
         </div>
         <!--  Each Participants ends here  -->
->>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
 
 
 
@@ -601,11 +598,8 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
 		
-=======
 
->>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/hngfun/image/upload/v1503323008/nsikakthompson_frztsd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1216,16 +1210,13 @@
               </div>
               <!--  Each Participants ends here  -->
 
-<<<<<<< HEAD
 					    
 			
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-=======
 
->>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
 
 
 
@@ -2076,6 +2067,30 @@
         </div>
 
         <!--  Each Participants ends here  -->
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/31125005?v=4&u=7b7332e7d6f7e29d8c952920f9c62ff34271d346&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/willade">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">William Adetunji</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">williamadetunji@yahoo.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 7 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--  Each Participants ends here  -->
+
 	<div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/16681646_1263674723725886_3249389777281568213_n.jpg?oh=8e916840484be65726588e247c6a4473&oe=5A2C13A6); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
