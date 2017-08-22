@@ -14,10 +14,10 @@
 <label for="tab1">HTML/CSS</label>
   
 <input id="tab2" type="radio" name="tabs">
-<label for="tab2">PHP</label>
+<label for="tab2">PHP/SQL</label>
   
 <input id="tab3" type="radio" name="tabs">
-<label for="tab3">GIT</label>
+<label for="tab3">GIT/GitHub</label>
   
 <input id="tab4" type="radio" name="tabs">
 <label for="tab4">Hng.Fun Tasks</label>
@@ -69,18 +69,26 @@
 <div class="library-all">
 <ul class="library-list">
   
-  <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank"> 
+  <a href="http://www.tutorialspoint.com/php/" target="_blank"> 
     <li>
-      <img class="library-imas" src="images/library/gitbash.png">
-      <h3>Git tutorials on udacity</h3>
-      <p>Udacity's free course on How to use git and github, This course, built with input from GitHub, will introduce the basics of using version control by focusing on a particular version control system called Git and a collaboration platform called GitHub.</p>
+      <img class="library-imas" src="https://seeklogo.com/images/P/php-logo-ADE513E748-seeklogo.com.jpg">
+      <h3>PHP for Begginners</h3>
+      <p>The PHP Hypertext Preprocessor (PHP) is a programming language that allows web developers to create dynamic content that interacts with databases. PHP is basically used for developing web based software applications. This tutorial helps you to build your base with PHP.</p>
     </li> 
   </a>
-  <a href="https://git-scm.com/docs/gittutorial" target="_blank">             
+  <a href="http://www.tutorialspoint.com/sql/" target="_blank">             
     <li>
-        <img class="library-imas" src="images/library/gitbash.png">
-        <h3>Git Documentation</h3>
-        <p>Git's own tutorial/documentation, This tutorial explains how to import a new project into Git, make changes to it, and share changes with other developers.</p>
+        <img class="library-imas" src="https://2.bp.blogspot.com/-XWkqWiWDqhY/WETGmyDqVoI/AAAAAAAAAN8/AoeZ6a9E-QcWMpB2B0xY8tr8zjW5cavSQCPcB/s720-c/export45png.png">
+        <h3>SQL Tutorial</h3>
+        <p>SQL is a database computer language designed for the retrieval and management of data in a relational database. SQL stands for Structured Query Language. This tutorial will give you a quick start to SQL. It covers most of the topics required for a basic understanding of SQL and to get a feel of how it works.</p>
+      </li>
+    </a>
+
+    <a href="http://www.mysqltutorial.org/basic-mysql-tutorial.aspx" target="_blank">             
+    <li>
+        <img class="library-imas" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png">
+        <h3>MySQL Tutorial</h3>
+        <p>This basic MySQL tutorial explains some of the basic SQL statements. If this is the first time you have used a relational database management system, this tutorial gives you everything you need to know to work with MySQL such as querying data, updating data, managing databases, and creating tables.</p>
       </li>
     </a>
   

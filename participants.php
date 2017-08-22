@@ -1528,7 +1528,30 @@
         </div>
 
         <!--  Each Participants ends here  -->
-
+        
+        
+        <!--  Participant starts here  -->
+	    
+	<div class="p-card">
+	    <div class="v-center">
+		<div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg); 
+				 background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+		<div class="p-card-info">
+			<a href="http://hng.fun/profile/jsmyth.html">
+				<h3 class="p-card-title">Joe-smith Essang</h3>
+			</a>
+			<p class="p-card-description">joesmithessang@gmail.com</p>
+		</div>
+		<div class="p-team">
+			<a href="#">
+				<h3 class="p-card-title"> Team 2 </h3>
+			</a>
+		</div>
+	      </div>
+	  </div>
+	    
+	<!--   Participant ends here  -->
+	
 
 
         <!--  Each Participant starts here  -->
@@ -2027,7 +2050,29 @@
         </div>
 
         <!--  Each Participants ends here  -->
+	<div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/16681646_1263674723725886_3249389777281568213_n.jpg?oh=8e916840484be65726588e247c6a4473&oe=5A2C13A6); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
 
+
+                    <a href="http://hng.fun/profile/tiwaloluu.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Ijaware Tiwaloluwa</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">ijawaretiwaloluwa@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 1 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
 
 
     </div>
