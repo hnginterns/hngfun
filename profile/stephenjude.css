@@ -1,0 +1,47 @@
+ @import url('https://fonts.googleapis.com/css?family=Roboto:200');
+
+ body{
+    background: white;
+ }  
+
+ .main-container{
+    margin:0 auto;
+    width: 350px;
+    background: #fff;
+ } 
+
+ .image-col{
+    margin: 10px auto;
+ }
+
+ .description-col{
+    width: 340px;
+    font-family: Roboto;
+ }
+
+ .description-col p{
+    font-size: 15px;
+    font-family: Roboto;
+ }
+
+ .github-button{
+    border: 2px solid #555;
+    border-radius: 5px;
+    background: #555;
+    padding: 10px;
+    width: 320px;
+    cursor: pointer;
+ }
+
+  .github-button a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+ .profile-image{
+    width: 250px;
+    border: 1px solid #555;
+    border-radius: 150px;
+ }
