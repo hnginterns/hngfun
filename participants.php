@@ -2092,7 +2092,7 @@
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/a272404edc); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://www.filetolink.com/a272404edc">
+                    <a href="http://hng.fun/profile/omokolataiwo/">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Taiwo Kolawole</h3>
                         <!--Profile Name-->
