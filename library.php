@@ -8,12 +8,21 @@
 
   <h1 name="libraryheadertext">Hng.Fun Library</h1>
 </br>
+<main name="libraryMain" id="libraryMain">
 
-  <div>
-    <form id="library-search">
-      <input class="library-input" type="text" name="search" placeholder="Search..">
-    </form>
-  </div>
+<input id="tab1" type="radio" name="tabs" checked>
+<label for="tab1">HTML/CSS</label>
+  
+<input id="tab2" type="radio" name="tabs">
+<label for="tab2">PHP</label>
+  
+<input id="tab3" type="radio" name="tabs">
+<label for="tab3">GIT</label>
+  
+<input id="tab4" type="radio" name="tabs">
+<label for="tab4">Hng.Fun Tasks</label>
+
+  
 
     
   <section id="content1">
