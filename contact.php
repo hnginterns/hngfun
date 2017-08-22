@@ -43,7 +43,7 @@ include "header.php";
     background-color: #eaeaea;
   }
   input[type=submit] {
-    background-color: #26acd9;
+    background-color: #d2b356;
   }
 
   input[type=submit]:hover {
@@ -111,7 +111,7 @@ include "header.php";
   }
 
   .underlined::after {
-    background: none repeat scroll 0 0 #0080ff;
+    background: none repeat scroll 0 0 #d2b356;
     bottom: -5px;
     content: "";
     display: block;
