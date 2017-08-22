@@ -1139,28 +1139,29 @@
               </div>
               <!--  Each Participants ends here  -->
 			  
-			   <!--  Each Participant starts here  -->
-              <div class="p-card">
-                  <div class="v-center">
-                      <div class="p-card-photo" style="background-image: url("https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/20799115_1464147813673356_6018227297707964205_n.jpg?oh=15616b771983c0b56484f9334cc2663e&oe=5A31ECCE"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                      <div class="p-card-info">
-                          <a href="http://hng.fun/profile/jonesky.html">
-                              <!--Profile Link-->
-                              <h3 class="p-card-title">Joseph Bassey</h3>
-                              <!--Profile Name-->
-                          </a>
-                          <p class="p-card-description">joseph.mbassey2@gmail.com</p>
-                          <!--Email-->
-                      </div>
-                      <div class="p-team">
-                          <a href="#">
-                              <h3 class="p-card-title"> Team 5 </h3>
-                              <!--Team-->
-                          </a>
-                      </div>
-                  </div>
-              </div>
-              <!--  Each Participants ends here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20799115_1464147813673356_6018227297707964205_n.jpg?oh=15616b771983c0b56484f9334cc2663e&oe=5A31ECCE); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/jonesky.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Joseph Michael Bassey</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">joseph.mbassey2@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 5 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
 			  
 
 
