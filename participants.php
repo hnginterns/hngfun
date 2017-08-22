@@ -667,12 +667,9 @@
                 </div>
 
             </div>
-<<<<<<< HEAD
 
-
-=======
 	 </div>
->>>>>>> origin/master
+
             
             <div class="p-card">
             <div class="v-center">
@@ -765,7 +762,7 @@
 
 
 
-<<<<<<< HEAD
+
                 <div class="p-card">
                     <div class="v-center">
                         <div class="p-card-photo" style="background-image: url(http://i.imgur.com/xpED2gj.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
