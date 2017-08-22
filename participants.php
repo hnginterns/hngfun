@@ -1850,7 +1850,28 @@
                     </a>
                 </div>
             </div>
-        </div>	
+        </div>
+
+    <div class="p-card">
+        <div class="v-center">
+            <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/22713293?v=4&u=b34b8416e286d7d1313581a15c68617728b351fd&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="http://hng.fun/profile/fred">
+                    <!--Profile Link-->
+                    <h3 class="p-card-title">Fredrick Mgbeoma</h3>
+                    <!--Profile Name-->
+                </a>
+                <p class="p-card-description">fmgbeoma@yahoo.com</p>
+                <!--Email-->
+            </div>
+            <div class="p-team">
+                <a href="#">
+                    <h3 class="p-card-title"> Team 7 </h3>
+                    <!--Team-->
+                </a>
+            </div>
+        </div>
+    </div>
 
     </div>
 </div>
