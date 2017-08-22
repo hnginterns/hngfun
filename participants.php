@@ -839,7 +839,7 @@
                    <a href="#">
                        <h3 class="p-card-title"> Team 8 </h3>
                        <!--Team-->
-                   </a><
+                   </a>
 
             </div>
 
@@ -847,7 +847,7 @@
 
     </div>
    <!--  Each Participants ends here  -->  
-   
+
   <!--  Each Participant starts here  -->
     <div class="p-card">
            <div class="v-center">
