@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+  include "header.php";
 ?>
     <!DOCTYPE html>
 <html lang="en">
@@ -11,10 +11,8 @@ include "header.php";
     <title>Supporters</title>
 </head>
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
-<link href="app.css" rel="stylesheet">
-
   
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="css/app.css">
 
 <body>
     <div class="sponsor-welcome">
@@ -71,14 +69,17 @@ include "header.php";
     <section class="section sponsor-plans">
 <div class="header">
     <h3>Sponsorship as been lot more easier</h3>
-    <p>Suit YourSelf, blah blah blah blah blah blah blah blah blah bla</p>
+    <p>Enjoy unrivalled analysis of the issues that lie behind the headlines
+
+Choose your subscription to The HNG
+or renew an existing subscription</p>
 </div>
 <div class="container1">
         <div class="support-plan bronze">
         <h3>bronze</h3>
 <ul>
-<li>Text Once One one</li>
-<li>Text Two Text Two </li>
+<li>BASIC</li>
+<li>Weekly print edition</li>
 </ul>  
         <a href="#"class="button">support now</a>
     </div>
@@ -87,9 +88,8 @@ include "header.php";
 
         <h3>sliver</h3>
         <ul>
-            <li>Text Once One one</li>
-            <li>Text Two Text Two </li>
-            <li>Text Two Text Two </li>
+            <li>PREMIUM</li>
+            <li>Digital edition </li>
         </ul>
         <a href="#" class="button">support now</a>
     </div>
@@ -98,8 +98,8 @@ include "header.php";
 
         <h3>Gold</h3>
         <ul>
-            <li>Text Once One one</li>
-            <li>Text Two Text Two </li>
+            <li>PREMIUM+</li>
+            <li>Digital edition</li>
         </ul>
         <a href="#" class="button">support now</a>
     </div>
@@ -179,5 +179,6 @@ include "header.php";
 
         
 </div>
+<?php include ('footer.php'); ?>
 </body>
 </html>
