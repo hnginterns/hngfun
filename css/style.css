@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6, div, ul, p, input {
 .landing-page__nav--right {
   float: right;
   margin: 15px 20px 0 0;
+  font-family:'tahoma';
 }
 
 .global-nav__logo {
