@@ -4,6 +4,10 @@ include('header.php');
 ?>
 
 </div> <!--end wrapper class in header.php -->
+<div id = "background">
+<div id = "transbox"><center> <p><h1 id = "fnt">PAST INTERNSHIP & PROJECTS</h1></p></center>
+</div>
+</div>
 
 <div class="clear-fix past-internships-container">
     <div class="column">
@@ -191,6 +195,27 @@ year’s great software developers….you don’t want to be left out.
     </p>
 </div>
 <style type="text/css">
+    #background {
+    background: transparent url(https://internship.hotels.ng/interns2.jpg) no-repeat fixed 50% 0px / cover;
+    box-shadow: inset 0 0 0 100px rgba(0,0,255,0.3);
+    border: 1px solid black;
+    height:auto;
+    }
+
+    #transbox {
+    margin: 30px;
+    border: 5px solid white;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    }
+
+    #transbox p {
+    margin: 0%;
+    font-weight: bold;
+    color: #000000;
+    }
+    #fnt{
+        color:white;
+    }
     .column > div {
         margin: 12px;
         height: auto;
