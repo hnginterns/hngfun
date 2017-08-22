@@ -43,6 +43,7 @@
                         </a>
                     </div>
 
+
                     <!-- right nav menu -->
                     <nav class="landing-page__nav--right">
                         <ul class="landing-page__menu">
@@ -56,6 +57,7 @@
                                     <img src="img/about.png" width="30">
                                 </a>
                             </li>
+
                             <li class="landing-page__item">
                                 <a class="landing-page__item--links" href="participants.php">
                                     <img src="img/participants.png" width="30">
@@ -90,6 +92,7 @@
                                 <a class="landing-page__item--links" href="library.php">
                                     <img src="img/library.png" width="30">
                                 </a>
+
                             </li>
                         </ul>
                     </nav>

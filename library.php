@@ -365,7 +365,12 @@
 </div>
 </div> -->
 
+<<<<<<< HEAD
 <a href="#top" class="library-back-to-top" style="display: inline; font-size:36px; position:fixed; bottom:0; right:2;">
   <i class="fa fa-arrow-circle-up fa-lg"></i>
+=======
+<a href="#top" class="library-back-to-top" style="display: inline;">
+  <i class="fa fa-arrow-circle-up"></i>
+>>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
 </a>
 <?php include ('footer.php'); ?>
