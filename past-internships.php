@@ -196,7 +196,7 @@ year’s great software developers….you don’t want to be left out.
 </div>
 <style type="text/css">
     #background {
-    background: transparent url(https://internship.hotels.ng/interns2.jpg) no-repeat fixed 50% 0px / cover;
+    background: transparent url(https://internship.hotels.ng/interns2.jpg) no-repeat  50% 0px / cover;
     box-shadow: inset 0 0 0 100px rgba(0,0,255,0.3);
     border: 1px solid black;
     height:auto;
