@@ -820,6 +820,33 @@
               </div>
 	</div>
     </div>
+	    <!--  Each Participant starts here  -->
+    <div class="p-card">
+           <div class="v-center">
+               <div class="p-card-photo" style="background-image: url(http://goldshare.org/IMG_20170805_155852.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+               <div class="p-card-info">
+                   <a href="http://hng.fun/profile/franko4don.html">
+                       <!--Profile Link-->
+                       <h3 class="p-card-title">Nwanze Franklin</h3>
+                       <!--Profile Name-->
+                   </a>
+                   <p class="p-card-description">
+                       franko4don@gmail.com
+                   </p>
+                   <!--Email-->
+               </div>
+               <div class="p-team">
+                   <a href="#">
+                       <h3 class="p-card-title"> Team 8 </h3>
+                       <!--Team-->
+                   </a>
+
+            </div>
+
+        </div>
+
+    </div>
+   <!--  Each Participants ends here  -->  
 
   <!--  Each Participant starts here  -->
     <div class="p-card">
@@ -1851,6 +1878,38 @@
     </div>
    <!--  Each Participants ends here  -->
 
+<<<<<<< HEAD
+=======
+    <div class="p-card">
+           <div class="v-center">
+               <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
+               <div class="p-card-info">
+                   <a href="http://hng.fun/profile/oriechinedu.html">
+                       <!--Profile Link-->
+                       <h3 class="p-card-title">ORIE CHINEDU EMMANUEL</h3>
+                       <!--Profile Name-->
+                   </a>
+                   <p class="p-card-description">
+                       oriechinedu@gmail.com
+                   </p>
+                   <!--Email-->
+               </div>
+               <div class="p-team">
+                   <a href="#">
+                       <h3 class="p-card-title"> Team 8 </h3>
+                       <!--Team-->
+                   </a>
+
+            </div>
+
+        </div>
+
+    </div>
+   <!--  Each Participants ends here  -->
+   
+
+	    
+>>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
         <!--  Each Participant starts here  -->
 
         <div class="p-card">
@@ -4270,6 +4329,14 @@
            <!--Team-->
          </a>        </div>      </div>    </div>
    <!-- Each Participants ends here -->
+<<<<<<< HEAD
+=======
+  
+	    
+ 
+	    
+	    
+>>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
 
 	    <div class="p-card">
             <div class="v-center">
