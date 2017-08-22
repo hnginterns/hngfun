@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gabriel |Profile</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+    	body {
+    font-family: 'Open Sans', sans-serif; 
+    /**background: url("https://image.ibb.co/b1U6HQ/blurred_background_3.jpg")**/;
+    background-size: cover;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around; 
+    justify-content: center;
+    margin: 0px;
+    padding: 4%;
+    /* overflow: hidden; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around; 
+    justify-content: center; 
+    width: 70%;
+    height: 70%; 
+}
+
+#profile {
+         background: #89dbec; 
+}
+
+.flex-item {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    height: 50%;
+    background: #f5f5f5;
+    margin: 4%;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+#bio-text {
+    text-align: justify !important;
+    padding: 15px;
+    font-size: 14px;
+}
+
+#footer{
+	background: #89dbec;
+}
+
+img {
+    width: 100%;  
+    height: auto;  
+    max-height: 300px;
+    margin: 0px;
+}
+
+.heading,
+.card-footer {
+    /* background: #5c6bc0;   */
+    background: #303f9f;
+    padding: 1px;  
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.heading {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+    text-transform: uppercase;
+}
+
+ .card-footer {
+    margin: 5px !important;
+} 
+
+.card-footer p,
+.card-footer a {
+    display: inline;
+     padding: 15px 0px 15px 0px; 
+     color: white;
+     margin: 4px;
+}
+
+.card-footer a:hover {
+    cursor: pointer;
+}
+
+.card-footer > p:hover {
+    cursor: default;
+}
+
+.icons {
+    transition: all 1s; 
+    font-size: 30px !important;
+    color: white;
+    margin: 40px 10px 10px 10px;
+} 
+
+.icons:hover {
+     font-size: 35px !important; 
+}
+
+.fa-instagram:hover {
+      color: #e95950;
+}
+
+.fa-twitter:hover {
+    color: #00aced;
+}
+
+.fa-envelope:hover {
+    color: #fbbc05;
+}
+
+.fa-github:hover {
+    color: #4078c0;
+}
+
+.fa-slack:hover {
+    color: #e01563;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    body {
+        padding: 1%;
+    }
+
+    .container {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        padding: 0px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .flex-item {
+        width: 70%;
+        height: 100%;
+    }
+
+    img {
+        max-height: 400px;        
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-item" id="profile">
+            <div class="heading">
+                <p>Intern Profile</p>
+            </div>
+            <div>
+                <img src="https://avatars1.githubusercontent.com/u/15092312?v=4&u=458089c297b835b9aff89a5a0ace94b61b8fa321&s=400" alt="profile picture" width="400" height="400">   
+            </div>
+            <div class="card-footer">
+                <a href="https://github.com/gabby4hi/getting-started-h2-2017"><span class="fa fa-external-link"><p id="stage1"> Stage 1 task</p></span></a>
+                <p id="slack-username"><span class="fa fa-slack"> Slack: </span> @gabby4hi</p> 
+            </div>
+        </div>
+        <div class="flex-item">
+            <div id="bio">
+                <div class="heading">
+                    <p>About me</p>
+                </div>
+                
+                  <h3>A developer with passion for coding and hard work, always love learning new things about techs</h3>  
+              
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        
+        <a href="https://twitter.com/gabby4hi"><span class="fa fa-twitter icons"></span></a>
+        
+        <a href="https://github.com/gabby4hi"><span class="fa fa-github icons"></span></a>
+        <a href="mailto:gabrieljames85@gmail.com"><span class="fa fa-envelope icons"></span></a>        
+    </div>
+</body>
+</html>

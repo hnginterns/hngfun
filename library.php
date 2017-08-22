@@ -8,6 +8,7 @@
 
   <h1 name="libraryheadertext">Hng.Fun Library</h1>
 </br>
+<<<<<<< HEAD
 <main name="libraryMain" id="libraryMain">
 
 <input id="tab1" type="radio" name="tabs" checked>
@@ -21,10 +22,23 @@
   
 <input id="tab4" type="radio" name="tabs">
 <label for="tab4">Hng.Fun Tasks</label>
+=======
+>>>>>>> 0c5f0ef88f1b00ff0a0420af3bb36ef0fe456e13
 
+<main name="libraryMain" id="libraryMain">
   
-
+  <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">HTML/CSS</label>
     
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">PHP/SQL</label>
+    
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">GIT/GITHUB</label>
+    
+  <input id="tab4" type="radio" name="tabs">
+  <label for="tab4">Internship Tasks</label>
+
   <section id="content1">
   <div class="library-all">
     <ul class="library-list">
@@ -77,6 +91,7 @@
     </li> 
   </a>
   <a href="http://www.tutorialspoint.com/sql/" target="_blank">             
+<<<<<<< HEAD
     <li>
         <img class="library-imas" src="https://2.bp.blogspot.com/-XWkqWiWDqhY/WETGmyDqVoI/AAAAAAAAAN8/AoeZ6a9E-QcWMpB2B0xY8tr8zjW5cavSQCPcB/s720-c/export45png.png">
         <h3>SQL Tutorial</h3>
@@ -86,6 +101,17 @@
 
     <a href="http://www.mysqltutorial.org/basic-mysql-tutorial.aspx" target="_blank">             
     <li>
+=======
+    <li>
+        <img class="library-imas" src="https://2.bp.blogspot.com/-XWkqWiWDqhY/WETGmyDqVoI/AAAAAAAAAN8/AoeZ6a9E-QcWMpB2B0xY8tr8zjW5cavSQCPcB/s720-c/export45png.png">
+        <h3>SQL Tutorial</h3>
+        <p>SQL is a database computer language designed for the retrieval and management of data in a relational database. SQL stands for Structured Query Language. This tutorial will give you a quick start to SQL. It covers most of the topics required for a basic understanding of SQL and to get a feel of how it works.</p>
+      </li>
+    </a>
+
+    <a href="http://www.mysqltutorial.org/basic-mysql-tutorial.aspx" target="_blank">             
+    <li>
+>>>>>>> 0c5f0ef88f1b00ff0a0420af3bb36ef0fe456e13
         <img class="library-imas" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png">
         <h3>MySQL Tutorial</h3>
         <p>This basic MySQL tutorial explains some of the basic SQL statements. If this is the first time you have used a relational database management system, this tutorial gives you everything you need to know to work with MySQL such as querying data, updating data, managing databases, and creating tables.</p>
@@ -94,7 +120,6 @@
   
   </ul>
 </div>
-
 </section>
 
 <section id="content3">
@@ -114,7 +139,7 @@
       <h3>Git Magic book</h3>
       <p>Git magic : Online book that takes you from beginner to pro, This tutorial is a great way to approach Git: newbies can ignore its inner workings and view Git as a gizmo that can amaze friends and infuriate enemies with its wondrous abilities. <br />
 
-Rather than go into details, we provide rough instructions for particular effects. After repeated use, gradually you will understand how each trick works, and how to tailor the recipes for your needs.</p>
+      Rather than go into details, we provide rough instructions for particular effects. After repeated use, gradually you will understand how each trick works, and how to tailor the recipes for your needs.</p>
     </li>
   </a>
   <a href="https://www.webdesignerdepot.com/2009/03/intro-to-git-for-web-designers/" target="_blank">
@@ -126,79 +151,36 @@ Rather than go into details, we provide rough instructions for particular effect
   </a>
 </ul>
 </div>
-
 </section>
     
 <section id="content4">
 <div class="library-all">
+<div class="library-all">
 <ul class="library-list">
-  <a href="https://www.tutorialspoint.com/mysql/" target="_blank">
+  <a href="https://medium.com/hng-internship/first-steps-for-the-internship-8157b26f4c26" target="_blank">
     <li>
-      <img class="library-imas" src="images/library/mysq.png">
-      <h3>mysql</h3>
-      <p>SQL is one of the most important inventions in the software engineering world, equally important to the invention of the Internet. Most of the Web applications today store their data in Relational Databases and SQL is the ubiquitous language that is used to do this. No wonder its important to us that you have a basic knowledge of it.</p>
+      <img class="library-imas" src="https://s3.amazonaws.com/tourofutah-rails/stages/ordinal_imgs/000/000/001/original/15-TOU-4174-Stage-Number-Options-1_b1_jak.png?1449527286">
+      <h3>HNG Internship: Stage 1</h3>
+      <p>HNG Internship Stage 1 Tasks. Complete these tasks before proceeding to stage 2</p>
     </li>
   </a>
-  <a href="https://backlogtool.com/git-guide/en/stepup/stepup1_1.html" target="_blank">
+  <a href="https://medium.com/hng-internship/step-2-794e79442c89" target="_blank">
     <li>
-      <img class="library-imas" src="images/library/gitbash.png">
-      <h3>Git tutorials</h3>
-      <p>Welcome to Git Beginner's Guide for Dummies. Here, we'll teach you to master version control using Git. There are three sections in this guide. If you are completely new to Git this is the tutorial for you.</p>
+      <img class="library-imas" src="https://s3.amazonaws.com/tourofutah-rails/stages/ordinal_imgs/000/000/002/original/15-TOU-4174-Stage-Number-Options-2_b1_jak.png?1449527609">
+      <h3>HNG Internship: Stage 2</h3>
+      <p>HNG Internship Stage 2 Tasks. Complete these tasks with a team. You can choose from Ten teams to complete this stage with</p>
     </li>
   </a>
-  <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" target="_blank"> 
-    <li>
-      <img class="library-imas" src="images/library/gitbash.png">
-      <h3>Git tutorials on udacity</h3>
-      <p>Udacity's free course on How to use git and github, This course, built with input from GitHub, will introduce the basics of using version control by focusing on a particular version control system called Git and a collaboration platform called GitHub.</p>
-    </li> 
-  </a>
-  <a href="https://git-scm.com/docs/gittutorial" target="_blank">             
-    <li>
-      <img class="library-imas" src="images/library/gitbash.png">
-      <h3>Git Documentation</h3>
-      <p>Git's own tutorial/documentation, This tutorial explains how to import a new project into Git, make changes to it, and share changes with other developers.</p>
-    </li>
-  </a>
-  <a href="https://www.codeschool.com/courses/mastering-github" target="_blank">
-    <li>
-      <img class="library-imas" src="images/library/github.png">
-      <h3>Github</h3>
-      <p>Learn advanced tips, tricks, and proven best practices for collaborating more effectively with GitHub.</p>
-    </li>
-  </a>
-  <a href="http://gitimmersion.com/" target="_blank">
-    <li>
-      <img class="library-imas" src="images/library/gitbash.png">
-      <h3>Git Immersion</h3>
-      <p>Git Immersion Is A Guided Tour That Walks Through The Fundamentals Of Git, Inspired By The Premise That To Know A Thing Is To Do It.</p>
-    </li> 
-  </a>
-  <a href="http://www-cs-students.stanford.edu/~blynn/gitmagic/" target="_blank">
-    <li>
-      <img class="library-imas" src="images/library/gitbash.png">
-      <h3>Git Magic book</h3>
-      <p>Git magic : Online book that takes you from beginner to pro, This tutorial is a great way to approach Git: newbies can ignore its inner workings and view Git as a gizmo that can amaze friends and infuriate enemies with its wondrous abilities. <br />
-Rather than go into details, we provide rough instructions for particular effects. After repeated use, gradually you will understand how each trick works, and how to tailor the recipes for your needs.</p>
-    </li>
-  </a>
-  <a href="https://www.webdesignerdepot.com/2009/03/intro-to-git-for-web-designers/" target="_blank">
-    <li>
-      <img class="library-imas" src="images/library/gitbash.png">
-      <h3>Intro to Git</h3>
-      <p>Intro to git for web designers, This article is a review of Git, an excellent version control system.</p>
-    </li>
-  </a>
+  
 </ul>
 </div>
 
 </section>  
 
-
     
 </main id="libraryMain">
 
-<a href="#top" class="library-back-to-top" style="display: inline;" onclick="scrollToTop();return false">
+<a href="#top" class="library-back-to-top" style="display: inline;">
   <i class="fa fa-arrow-circle-up"></i>
 </a>
 <?php include ('footer.php'); ?>
