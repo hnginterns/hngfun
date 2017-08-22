@@ -1,4 +1,4 @@
-       <?php include ('header.php'); ?>
+ <?php include ('header.php'); ?>
     <div id="banner-content" class="row clearfix">
         <div class="col-38">
 
@@ -9,9 +9,9 @@
     </div>
 <!--End of Row-->
     <div class="section-1">
-        <div id="team-2-section-1">
+       <center> <div id="team-2-section-1">
             <img src="http://res.cloudinary.com/komsic/image/upload/v1503308825/Group_53_elr2ke.png" width="120px" height="120px"> <b
-
+</center>
       <div class="section-text"> Our Mission</div>
         <div class="section-body-text"> We get people who are ready to work in an enviroment where they
             have to tackle real work issues. With minimal guidance, instinct kicks in and the best ones 
