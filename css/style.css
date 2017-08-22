@@ -609,10 +609,7 @@ textarea {
        margin-bottom: 12px;
    }
    /* Project Page CSS by Team 4
-=======
-                <<<<<<< HEAD
-=======
-                             /******************/
+                  /******************/
                              /*                */
                              /*                */
                              /*    Team 3      */
@@ -1677,10 +1674,8 @@ input:checked + label {
             color: #FF0000;
             margin-right: 5px;
         }
-        /* Project Page CSS by Team 4 ends
->>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
-=======
-<<<<<<< HEAD
+        /* Project Page CSS by Team 4 ends */
+
 
 .team4-card-container {
 display: flex;
@@ -1728,7 +1723,6 @@ padding: 0 20px;
 .team4-card-info h3 {
 margin: 0;
 }
-<<<<<<< HEAD
 
 .team4-card-info a {
 text-decoration: none;
@@ -1817,7 +1811,6 @@ justify-content: space-between;
 
 ===============================*/
         
-        <<<<<<< HEAD
         /* Single Project Page CSS by Team 5
 ===============================*/
         /* Three columns side by side edited by @godfredakpan under Team 5 */
@@ -2929,7 +2922,7 @@ justify-content: space-between;
                 margin-bottom: 50px;
             }
             @media (max-width: 768px) {
-                <<<<<<< HEAD .team-members {
+            .team-members {
                     width: 100% !important;
                     float: left;
                     padding: 0px;
@@ -3378,7 +3371,7 @@ justify-content: space-between;
             }
             /* handling phones and small screens */
             @media only screen and (max-width: 1024px) {
-                <<<<<<< HEAD .featherlight-next,
+             .featherlight-next,
                 .featherlight-previous {
                     top: 10px;
                     right: 10px;
@@ -3431,7 +3424,7 @@ justify-content: space-between;
             }
             /* Scroll Up */
             #scrollUp {
-                <<<<<<< HEAD bottom: 15px;
+            bottom: 15px;
                 right: 30px;
                 width: 70px;
                 height: 80px;
@@ -4492,7 +4485,7 @@ justify-content: space-between;
                 
 
 /*-----------------Header Elements-----------------*/
-                <<<<<<< HEAD #header aside {
+               #header aside {
                     display: inline-block;
                     position: absolute;
                     top: 40px;
@@ -4793,9 +4786,7 @@ justify-content: space-between;
 ====================================*/
             /* News Page CSS by Team 8
 ===============================*/
-<<<<<<< HEAD
-<<<<<<< HEAD
-                         <<<<<<< HEAD .row {
+ .row {
                              margin-top: 15px;
                              width: 100%;
                              height: 50%;
@@ -5035,7 +5026,7 @@ justify-content: space-between;
                                  margin-left: 0;
                              }
                          }
-                         >>>>>>>3b868d589c2027fb19cb3f71e81ba9453ca7678d=======<<<<<<< HEAD <<<<<<< HEAD .row {
+                 .row {
                              margin-top: 15px;
                              width: 100%;
                              height: 50%;
@@ -5158,7 +5149,7 @@ justify-content: space-between;
                          /* Past Internships Page CSS by Team 7 ends
 ===============================*/
                          
-                         <<<<<<< HEAD .row {
+                       .row {
                              margin-top: 15px;
                              width: 100%;
                              height: 50%;
@@ -5518,9 +5509,7 @@ justify-content: space-between;
                              position: absolute;
                              text-align: center;
                              /* Past Internships Page CSS by Team 7 ends
-||||||| merged common ancestors
-<<<<<<< HEAD
-                         <<<<<<< HEAD .row {
+ .row {
                              margin-top: 15px;
                              width: 100%;
                              height: 50%;
@@ -5760,7 +5749,7 @@ justify-content: space-between;
                                  margin-left: 0;
                              }
                          }
-                         >>>>>>>3b868d589c2027fb19cb3f71e81ba9453ca7678d=======<<<<<<< HEAD <<<<<<< HEAD .row {
+                        .row {
                              margin-top: 15px;
                              width: 100%;
                              height: 50%;
@@ -5969,7 +5958,7 @@ justify-content: space-between;
                          }
                          /* Team 8 CSS ends here
 ===============================*/
-                         <<<<<<< HEAD .row {
+                         .row {
                              margin-top: 15px;
                              width: 100%;
                              height: 50%;
@@ -6451,7 +6440,7 @@ justify-content: space-between;
                 text-align: center;
                 /* Past Internships Page CSS by Team 7 ends
 ===============================*/
-                <<<<<<< HEAD .row {
+              .row {
                     margin-top: 15px;
                     width: 100%;
                     height: 50%;
@@ -6689,7 +6678,7 @@ justify-content: space-between;
                         margin-left: 0;
                     }
                 }
-                >>>>>>>3b868d589c2027fb19cb3f71e81ba9453ca7678d=======<<<<<<< HEAD <<<<<<< HEAD .row {
+                .row {
                     margin-top: 15px;
                     width: 100%;
                     height: 50%;
@@ -6790,10 +6779,6 @@ justify-content: space-between;
                     font-size: small;
                     font-weight: lighter;
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
-
 /* Library Page CSS by Team 10
 ===============================*/
 
@@ -6885,9 +6870,4 @@ justify-content: space-between;
     background-image: url(images\banner-images\banner-image-1.jpg);
 }
 
-/* Library Page CSS by Team 10 ends
-====================================*/
-
-=======
-                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
->>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
+/* Library Page CSS by Team 10 ends */
