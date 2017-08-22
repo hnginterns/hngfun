@@ -1,3 +1,38 @@
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+
+    $subject = $_POST['subject'];
+    $to  = 'bosunski@gmail.com';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $uri");
+
+    }
+  }
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -123,7 +158,7 @@
 <body>
   <div>
     <div class="card">
-      <img src="http://i.imgur.com/TAaP38Y.jpg" alt="John" style="width:100%">
+      <img src="http://i.imgur.com/TAaP38Y.jpg" alt="Olatunbosun Gabriel" style="width:100%">
       <div class="container">
         <h1>Olatunbosun Gabriel</h1>
         <p class="title" style="margin-bottom:-15px;">
@@ -149,25 +184,24 @@
       <hr class="line">
       <div class="container">
 
-        <?php
-          if($_SERVER['REQUEST_METHOD'] != 'POST') {
-
-          } else {
-            $subject = $_POST['name'];
-            $to  = 'bosunski@gmail.com';
-            $body = $_POST['message'];
-
-            $url = "'/sendmail.php?to?$to&body=$body&subject=$subject&password=$password";
-          }
-         ?>
         <h1>Contact Me</h1>
-
+        <?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+        <?php endif; ?>
         <form class="bosunski_form" action="" method="POST">
-          <label for="name" class="bosunski-label">Subject</label>
-          <input id="name" type="text" name="name" placeholder="Your Name" required>
+          <label for="subject" class="bosunski-label">Subject</label>
+          <input id="subject" type="text" name="subject" placeholder="Subject" required>
 
           <label for="message" class="bosunski-label">Your Message</label>
-          <textarea id="message" name="message" rows="8" cols="50" placeholder="Your Message"></textarea>
+          <textarea id="message" name="message" rows="8" cols="50" placeholder="Your Message" required></textarea>
 
           <button type="submit" name="submit" id="bosunski-submit"> Send Message</buuton>
         </form>
