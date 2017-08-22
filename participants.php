@@ -4611,6 +4611,7 @@ include('header.php');
             </div>
 
         </div>
+    </div>
  	<!-- Thadeus' profile -->
 
         <div class="p-card">
