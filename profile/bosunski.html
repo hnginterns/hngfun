@@ -5,7 +5,7 @@
   <style media="screen">
   body {
     font-family: 'Slabo 27px', serif;
-    backgroud: #f6f6f6;
+    background: #f6f6f6;
   }
 
   .card {
@@ -64,6 +64,57 @@
     margin-bottom: -15px;
   }
 
+  .bosunski-label {
+    display: block;
+    margin-top:20px;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  form {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  input, textarea {
+    width: 380px;
+    height: 27px;
+    background: #efefef;
+    border: 0.5px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #3a3a3a;
+  }
+
+  textarea {
+    height: 213px;
+  }
+
+  input:focus, textarea:focus {
+    border: 1px solid  #97d6eb;
+  }
+
+  #bosunski-submit {
+    width: 127px;
+    height: 37px;
+    border: none;
+    background-color: #3c3c3c;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  #bosunski-submit:hover {
+    opacity: .9;
+  }
+
+  @@media query {
+
+  }
+
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
@@ -95,7 +146,23 @@
           He also runs weekly Bible  studies currently in school, where he brings people together to share Jesus!
         </p>
       </div>
+      <hr class="line">
+      <div class="container">
+        <h1>Contact Me</h1>
 
+        <form class="bosunski_form" action="index.html" method="post">
+          <label for="name" class="bosunski-label">Your name</label>
+          <input id="name" type="text" name="name" placeholder="Your Name" required>
+
+          <label for="email" class="bosunski-label">Your Email</label>
+          <input id="email" type="email" name="email" placeholder="Your Email" required>
+
+          <label for="message" class="bosunski-label">Your Message</label>
+          <textarea id="message" name="message" rows="8" cols="50" placeholder="Your Message"></textarea>
+
+          <button type="submit" name="submit" id="bosunski-submit"> Send Message</buuton>
+        </form>
+      </div>
     </div>
   </div>
 </body>
