@@ -68,6 +68,32 @@
             </div>
         </div>
         <!--  Each Participants ends here  -->
+	    
+	    
+	    
+ <!--  Each Participant starts here  -->
+ <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/UrkycNV.jpg
+); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/raypex.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Ray Okaah</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">raypex2@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="https://github.com/hnginterns/hng-team2android-stage2">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
  <!--  Each Participant starts here  -->
   <div class="p-card">
          <div class="v-center">
