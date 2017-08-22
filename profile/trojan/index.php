@@ -168,12 +168,16 @@
                 border-radius: 45%;
                 height: 200px  ;
               }
+
+              .git {
+                height: 100px;
+              }
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-              <img src="http://res.cloudinary.com/ichtrojan/image/upload/v1503355424/cha_tcsuue.jpg" height="50%" class = "dp" alt="Profile Picture">
+              <img src="http://res.cloudinary.com/ichtrojan/image/upload/v1503355424/cha_tcsuue.jpg" class = "dp" alt="Profile Picture">
                 <div class="title m-b-md">
                     Michael Okoh
                 </div>
@@ -190,7 +194,7 @@
                 I also Use <b>C++, Java, Swift and Python</b> where needed.
                 </p>
 
-                <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="50%" alt="github logo">
+                <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Logo" class="git">
                 <p><a href="https://github.com/ichtrojan/HNG-Internship">Here is the link to my Stage 1 Project</a><p>
 
                 <h3>Work</h3>
