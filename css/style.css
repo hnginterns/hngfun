@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+                <<<<<<< HEAD
+=======
 
   /***************
   *****Team 1*****
@@ -920,6 +923,7 @@ textarea {
 >>>>>>> 54f0d15f1aeec8c0ca0ede24d1d0b5841587b7e0
 =======
 >>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
+>>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
         /*
   Team 1
    */
@@ -1097,226 +1101,6 @@ textarea {
         .footer-widget__icons li {
             float: left;
         }
-
-
-/* ---------------------- TEAM 10 CSS -------------------------*/
-/*-------------------------------------------------------------*/
-
-#libraryBanner {
-    top: 0px;
-    left:0px;
-    right: 0px;
-    width:100%;
-    height: 300px;
-}
-
-
-
-h1 {
-  padding: 50px 0;
-  font-weight: 400;
-  text-align: center;
-}
-
-
-#libraryMain {
-  min-width: 320px;
-  max-width: 800px;
-  padding: 50px;
-  margin: 0 auto;
-  background: #fff;
-}
-
-#content1 {
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #ddd;
-}
-
-#content2 {
-    display: none;
-    padding: 20px 0 0;
-    border-top: 1px solid #ddd;
-  }
-
-  #content3 {
-    display: none;
-    padding: 20px 0 0;
-    border-top: 1px solid #ddd;
-  }
-
-  #content4 {
-    display: none;
-    padding: 20px 0 0;
-    border-top: 1px solid #ddd;
-  }
-  
-  
-  
-#tab4 {
-  display: none;
-}
-
-#tab1 {
-    display: none;
-  }
-
-  #tab2 {
-    display: none;
-  }
-
-  #tab3 {
-    display: none;
-  }
-  
-  
-  
-label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #bbb;
-  border: 1px solid transparent;
-}
-
-
-
-input:checked + label {
-  color: #555;
-  border: 1px solid #ddd;
-  border-top: 2px solid orange;
-  border-bottom: 1px solid #fff;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
-  display: block;
-}
-
-
-.library-all {
-    margin-left: 14%;
-    margin-right: 10%;
-    margin-top: 1%;
-  }
-  
-  .library-list {
-    font-size:x-large;
-      margin-top: 80px;
-      margin: auto;
-      padding: 5px;
-      font-weight: bold;
-  }
-  
-  .library-list h3 {
-    font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
-  }
-  
-  .library-list li img {
-    float: left;
-    margin: 0 15px 0 0;
-  }
-  
-  .library-list li p {
-    font: 200 15px/1.5 Georgia, Times New Roman, serif;
-    color: black;
-  }
-  
-  .library-list li {
-    padding: 10px;
-    overflow: auto;
-  }
-  
-  .library-list li:hover {
-    background: #eee;
-    cursor: pointer;
-  }  
-  .library-imas{
-      height:42px;
-      width:42px;
-  }
-  .inputss{
-      opacity: 10;
-      text-align: center; 
-      margin-top: 0px;
-  }
-  .project-title-h3 input[type=text] {
-      width: 70%;
-      box-sizing: border-box;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-      font-size: 16px;
-      background-color: white;
-      background-image: url('searchicon.png');
-      background-position: 10px 10px; 
-      background-repeat: no-repeat;
-      padding: 12px 20px 12px 40px;
-      -webkit-transition: width 0.4s ease-in-out;
-      transition: width 0.4s ease-in-out;
-      text-align: center;
-  }
-  
-  .project-title-h3 input[type=text]:focus {
-      width: 75%;
-  }
-  
-  #library-header-content{
-      padding-top: 100px;
-      padding-bottom: 10px;
-  }
-  
-  
-  .section-heading h1 span { 
-     color: white; 
-     font: bold 30px/45px Helvetica, Sans-Serif; 
-     letter-spacing: -1px;  
-     background: rgb(0, 0, 0);
-     background: rgba(0, 0, 0, 0.7);
-     padding: 10px;
-  }
-  
-  #library-body-content.row {
-      padding-top: 2px;
-      padding-bottom: 2px;
-  }
-  
-  .library-back-to-top {
-  background: none;
-  margin: 0;
-  /*position: fixed;*/
-  bottom: 0;
-  right: 0;
-  width: 70px;
-  height: 70px;
-  z-index: 100;
-  display: none;
-  text-decoration: none;
-  color: #00BFFF;
-  background-color: #00BFFF;
-   
-  }
-   
-    
-   
-  .library-back-to-top i {
-   
-    font-size: 60px;
-   
-  }
-  
-  /* Library Page CSS by Team 10 ends
-  ====================================*/
-  
-  
-
-
-
-
-
         /******************/
         /*                */
         /*                */
@@ -1684,8 +1468,10 @@ input:checked + label {
             color: #FF0000;
             margin-right: 5px;
         }
-        /* Project Page CSS by Team 4 ends */
-
+        /* Project Page CSS by Team 4 ends
+>>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
+=======
+<<<<<<< HEAD
 
 .team4-card-container {
 display: flex;
@@ -1733,6 +1519,7 @@ padding: 0 20px;
 .team4-card-info h3 {
 margin: 0;
 }
+<<<<<<< HEAD
 
 .team4-card-info a {
 text-decoration: none;
@@ -1821,6 +1608,7 @@ justify-content: space-between;
 
 ===============================*/
         
+        <<<<<<< HEAD
         /* Single Project Page CSS by Team 5
 ===============================*/
         /* Three columns side by side edited by @godfredakpan under Team 5 */
@@ -2932,7 +2720,7 @@ justify-content: space-between;
                 margin-bottom: 50px;
             }
             @media (max-width: 768px) {
-            .team-members {
+                <<<<<<< HEAD .team-members {
                     width: 100% !important;
                     float: left;
                     padding: 0px;
@@ -3381,7 +3169,7 @@ justify-content: space-between;
             }
             /* handling phones and small screens */
             @media only screen and (max-width: 1024px) {
-             .featherlight-next,
+                <<<<<<< HEAD .featherlight-next,
                 .featherlight-previous {
                     top: 10px;
                     right: 10px;
@@ -3434,7 +3222,7 @@ justify-content: space-between;
             }
             /* Scroll Up */
             #scrollUp {
-            bottom: 15px;
+                <<<<<<< HEAD bottom: 15px;
                 right: 30px;
                 width: 70px;
                 height: 80px;
@@ -3889,7 +3677,26 @@ justify-content: space-between;
                 /* Footer Right */
                 .footer-distributed .footer-right {
                     width: 20%;
-              
+                }
+                /* Library Page CSS by Team 10
+>>>>>>> 3b868d589c2027fb19cb3f71e81ba9453ca7678d
+=======
+@media (min-width: 768px) and (max-width: 1024px) {
+
+#wrapper {
+margin:0;
+padding:0
+}
+
+.page-border {
+display:none;
+}
+
+.big-padding-top {
+padding-top: 45px !important;
+}
+
+<<<<<<< HEAD
     /*-----------------Header Elements-----------------*/
                 #header aside {
                     display: inline-block;
@@ -4030,7 +3837,114 @@ justify-content: space-between;
             .footer-distributed .footer-right {
                 width: 20%;
             }
-           
+            /* Library Page CSS by Team 10
+>>>>>>> a8485a7c6f95720f22be7a8a61dc02e78abf1068
+===============================*/
+            /*.library-all {
+                margin-left: 14%;
+                margin-right: 10%;
+                margin-top: 1%;
+            }
+            .library-list {
+                font-size: x-large;
+                margin-top: 80px;
+                margin: auto;
+                padding: 5px;
+                font-weight: bold;
+            }
+            .library-list h3 {
+                font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+            }
+            .library-list li img {
+                float: left;
+                margin: 0 15px 0 0;
+            }
+            .library-list li p {
+                font: 200 15px/1.5 Georgia, Times New Roman, serif;
+                color: black;
+            }
+            .library-list li {
+                padding: 10px;
+                overflow: auto;
+            }
+            .library-list li:hover {
+                background: #eee;
+                cursor: pointer;
+            }
+            .library-imas {
+                height: 42px;
+                width: 42px;
+            }
+            .inputss {
+                opacity: 10;
+                text-align: center;
+                margin-top: 0px;
+            }
+            .library-title-h3 {
+                font-size: x-large;
+                margin-top: 80px;
+                margin: auto;
+                padding: 5px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .library-title-h3 input[type=text] {
+                width: 70%;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+                text-align: center;
+            }
+            .library-title-h3 input[type=text]:focus {
+                width: 75%;
+            }
+            #library-header-content {
+                padding-top: 100px;
+                padding-bottom: 10px;
+            }
+            .section-heading h1 span {
+                color: white;
+                font: bold 30px/45px Helvetica, Sans-Serif;
+                letter-spacing: -1px;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+            }
+            #library-body-content.row {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            .library-back-to-top {
+                background: none;
+                margin: 0;
+                bottom: 0;
+                right: 0;
+                width: 70px;
+                height: 70px;
+                z-index: 100;
+                display: none;
+                text-decoration: none;
+                color: #00BFFF;
+                background-color: #00BFFF;
+            }
+            .library-back-to-top i {
+                font-size: 60px;
+            }
+            .roww img {
+                height: auto;
+                max-width: 100%;
+                position: relative;
+                width: 100%;
+                height: 40%;
+            }*/
             /* about page CSS by Team 2 ends
 ====================================*/
             /* News Page CSS by Team 2
@@ -4492,10 +4406,25 @@ justify-content: space-between;
                 .footer-distributed .footer-right {
                     width: 20%;
                 }
-                
+                /* Library Page CSS by Team 10
+=======
+@media (min-width: 768px) and (max-width: 1024px) {
+
+#wrapper {
+margin:0;
+padding:0
+}
+
+.page-border {
+display:none;
+}
+
+.big-padding-top {
+padding-top: 45px !important;
+}
 
 /*-----------------Header Elements-----------------*/
-               #header aside {
+                <<<<<<< HEAD #header aside {
                     display: inline-block;
                     position: absolute;
                     top: 40px;
@@ -4553,7 +4482,7 @@ justify-content: space-between;
                 .slvj-lightbox embed {
                     height: 432px !important;
                 }
-                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+                
             }
             .center {
                 text-align: center;
@@ -4664,7 +4593,155 @@ justify-content: space-between;
             .footer-distributed .footer-right {
                 width: 20%;
             }
-           
+            /* Library Page CSS by Team 10
+>>>>>>> a8485a7c6f95720f22be7a8a61dc02e78abf1068
+===============================*/
+           /* <<<<<<< HEAD .library-all {
+                margin-left: 14%;
+                margin-right: 10%;
+                margin-top: 1%;
+            }
+            .library-list {
+                font-size: x-large;
+                margin-top: 80px;
+                margin: auto;
+                padding: 5px;
+                font-weight: bold;
+            }
+            .library-list h3 {
+                font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+            }
+            .library-list li img {
+                float: left;
+                margin: 0 15px 0 0;
+            }
+            .library-list li p {
+                font: 200 15px/1.5 Georgia, Times New Roman, serif;
+                color: black;
+            }
+            .library-list li {
+                padding: 10px;
+                overflow: auto;
+            }
+            .library-list li:hover {
+                background: #eee;
+                cursor: pointer;
+            }
+            .library-imas {
+                height: 42px;
+                width: 42px;
+            }
+            .inputss {
+                opacity: 10;
+                text-align: center;
+                margin-top: 0px;
+            }
+            .library-title-h3 {
+                font-size: x-large;
+                margin-top: 80px;
+                margin: auto;
+                padding: 5px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .library-title-h3 input[type=text] {
+                width: 70%;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                font-size: 16px;
+                background-color: white;
+                background-image: url('searchicon.png');
+                background-position: 10px 10px;
+                background-repeat: no-repeat;
+                padding: 12px 20px 12px 40px;
+                -webkit-transition: width 0.4s ease-in-out;
+                transition: width 0.4s ease-in-out;
+                text-align: center;
+            }
+            .library-title-h3 input[type=text]:focus {
+                width: 75%;
+            }
+            #library-header-content {
+                padding-top: 100px;
+                padding-bottom: 10px;
+            }
+            .section-heading h1 span {
+                color: white;
+                font: bold 30px/45px Helvetica, Sans-Serif;
+                letter-spacing: -1px;
+                background: rgb(0, 0, 0);
+                background: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+            }
+            #library-body-content.row {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+            .library-back-to-top {
+                background: none;
+                margin: 0;
+                /*position: fixed;
+                bottom: 0;
+                right: 0;
+                width: 70px;
+                height: 70px;
+                z-index: 100;
+                display: none;
+                text-decoration: none;
+                color: #00BFFF;
+                background-color: #00BFFF;
+                background: none;
+                margin: 0;
+                
+                bottom: 0;
+                right: 0;
+                width: 70px;
+                height: 70px;
+                z-index: 100;
+                display: none;
+                text-decoration: none;
+                color: #00BFFF;
+                background-color: #00BFFF;
+                
+            }
+            .library-back-to-top i {
+                font-size: 60px;
+            }
+            .roww .img {
+                height: auto;
+                max-width: 100%;
+                position: relative;
+                width: 100%;
+<<<<<<< HEAD
+                
+                height: 40%;
+                =======.roww img {
+||||||| merged common ancestors
+                /* for IE 6 */
+                height: 40%;
+                =======.roww img {
+=======
+                /* for IE 6 */
+                height: 40%;}
+                .roww img {
+>>>>>>> ff09b7977d43f691f8994a9bd5591d37c7c0758a
+                    height: auto;
+                    max-width: 100%;
+                    position: relative;
+                    width: 100%;
+                    
+                    height: 40%;
+<<<<<<< HEAD
+                    >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+                }*/
+||||||| merged common ancestors
+                    >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+                }
+=======
+                    
+                }
+>>>>>>> ff09b7977d43f691f8994a9bd5591d37c7c0758a
                 /* about page CSS by Team 2 ends
 =======
                            .library-all {
@@ -4753,7 +4830,7 @@ justify-content: space-between;
                                background: none;
                                margin: 0;
                                /*position: fixed;*/
-                bottom: 0;
+                /*bottom: 0;
                 right: 0;
                 width: 70px;
                 height: 70px;
@@ -4765,7 +4842,7 @@ justify-content: space-between;
             }
             .library-back-to-top i {
                 font-size: 60px;
-            }
+            }*/
             .roww img {
                 height: auto;
                 max-width: 100%;
@@ -4793,9 +4870,12 @@ justify-content: space-between;
                 border-top-style: hidden;
                 border-bottom-style: hidden;
             }
+            /* Library Page CSS by Team 10 ends
 ====================================*/
             /* News Page CSS by Team 8
 ===============================*/
+<<<<<<< HEAD
+=======
  .row {
                              margin-top: 15px;
                              width: 100%;
@@ -6329,6 +6409,7 @@ justify-content: space-between;
                              text-align: center;
                              /* Past Internships Page CSS by Team 7 ends
 =======
+>>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
             #recentDiv {
                 position: relative;
                 top: 0;
@@ -6428,8 +6509,553 @@ justify-content: space-between;
                 top: 91.5%;
             }
             /* Past Internships Page CSS by Team 7 starts
->>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
 ===============================*/
+
+.navigation {
+   border-color: red;
+   background-color: grey;
+   height: 100%;
+   width: 20%;
+}
+.homediv {
+   background: url(images/tm7.jpg);
+   height: 150px;
+}
+.ttedit {
+   width: 80%;
+   border: 5px solid white;
+   padding: 10px;
+   margin: 25px;
+   align-content: center;
+   position: absolute;
+   text-align: center;
+}   
+   /* Past Internships Page CSS by Team 7 ends
+===============================*/
+/* CSS for Team 8
+===============================*/
+
+ .team8-card-container {
+     display: flex;
+	 max-width: 1500px;
+     width: 100%;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+ .team8-card {
+     width: 75%;
+     background: #FFFFFF;
+     border-radius: 2px;
+     background-color: #fcf9f9;
+     border: 1px solid #CADBE0;
+     margin: 10px;
+	 margin-bottom: 20px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     text-align: left;
+     justify-content: flex-start;
+ }
+
+ .team8-card:hover{
+      box-shadow: 2px 2px 5px gray;
+      -webkit-box-shadow: 2px 2px 5px gray;
+      -moz-box-shadow: 2px 2px 5px gray;
+      -o-box-shadow: 2px 2px 5px gray;
+  }
+
+ .team8-card-photo {
+     width: 100%;
+	 height: 400px;
+     background-position: center center;
+ }
+
+ .team8-card-info {
+     width: 100%;
+     padding: 0 20px;
+ }
+
+ .team8-card-info h3 {
+     margin: 0;
+ }
+
+ .team8-card-info p {
+     margin: 0;
+ }
+
+ .team8-card-title {
+     font-style: normal;
+     font-weight: bold;
+     line-height: normal;
+     font-size: 20px;
+     color: #000;
+ }
+
+ .team8-card-description {
+     width: 100%;
+     font-style: normal;
+     font-weight: 300;
+     line-height: normal;
+     font-size: 14px;
+     color: #534C4C;
+ }
+
+ .team8-card-footer {
+     display: flex;
+     justify-content: space-between;
+     padding-left: 20px;
+     padding-right: 20px;
+     margin-bottom: 20px;
+     height: 10px;
+     font-size: 13px;
+ }
+
+ .team8-footer-separate {
+     display: flex;
+     justify-content: space-between;
+ }
+  
+ .team8-footer-right {
+     float: right;
+     display: flex;
+     flex-direction: row;
+ }
+
+ .dot {
+     color: #FFBA08;
+     margin-right: 5px;
+ }
+
+ .dot2 {
+     color: #29CB00;
+     margin-right: 5px;
+ }
+
+ .dot3 {
+     color: #FF0000;
+     margin-right: 5px;
+ }
+ 
+ /* Team 8 CSS ends here
+===============================*/
+<<<<<<< HEAD
+
+ .row {
+     margin-top: 15px;
+     width: 100%;
+     height: 50%;
+ }
+
+ .row div {
+     width: 50%;
+     height: 100%;
+     float: left;
+ }
+
+ .image {
+     height: 200px;
+ }
+
+ .name-text {
+     font-size: x-large;
+     margin-top: 60px;
+     margin-left: 20px;
+     padding: 5px;
+     text-align: left;
+     font-weight: bold;
+     color: #333333;
+ }
+
+ .section-text {
+     font-size: x-large;
+     text-align: center;
+     font-weight: bold;
+     color: #333333;
+ }
+
+ .section-leader {
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+
+ .name-post-text {
+     font-size: large;
+     margin-top: 5px;
+     margin-left: 20px;
+     padding: 5px;
+     text-align: left;
+     color: #333333;
+ }
+
+ .name-body-text {
+     font-size: small;
+     margin-top: 10px;
+     margin-left: 20px;
+     padding: 5px;
+     text-align: left;
+     color: #4F4F4F;
+ }
+
+ .section-body-text {
+     font-size: large;
+     margin: auto;
+     padding: 5px;
+     text-align: center;
+     color: #4F4F4F;
+     font-weight: lighter;
+ }
+
+ .linkedin {
+     align-self: left;
+     height: 30px;
+     width: 30px;
+     margin-top: 3px;
+     margin-left: 20px;
+ }
+
+ #team-2-section-1 {
+     max-width: 50vw;
+     margin: auto;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+
+ .section-1 {
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+
+ table {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ td,
+ th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 60px;
+ }
+
+ p.ex {
+     padding: -0.9cm;
+     font-weight: lighter;
+     font-size: 17px;
+ }
+
+ tr:nth-child(even) {
+     background-color: #dddddd;
+ }
+
+ p.thick {
+     font-weight: bold;
+     font-size: 150%;
+     color: #333333;
+ }
+
+ p.light {
+     color: #4F4F4F;
+     font-size: small;
+     font-weight: lighter;
+ }
+
+/*---team2---footer--*/
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 10px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 25%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #ffffff;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  #ffffff;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 36%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #ffffff;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #fffffff;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 70%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
+ .row {
+       margin-top: 15px;
+       width: 100%;
+       height: 50%;
+   }
+   
+   .row div {
+       width: 50%;
+       height: 100%;
+       float: left;
+   }
+   
+   .image {
+       height: 200px;
+   }
+   
+   .name-text {
+       font-size: x-large;
+       margin-top: 60px;
+       margin-left: 20px;
+       padding: 5px;
+       text-align: left;
+       font-weight: bold;
+       color: #333333;
+   }
+   
+   .section-text {
+       font-size: x-large;
+       text-align: center;
+       font-weight: bold;
+       color: #333333;
+   }
+   
+   .section-leader {
+       margin-top: 50px;
+       margin-bottom: 50px;
+   }
+   
+   .name-post-text {
+       font-size: large;
+       margin-top: 5px;
+       margin-left: 20px;
+       padding: 5px;
+       text-align: left;
+       color: #333333;
+   }
+   
+   .name-body-text {
+       font-size: small;
+       margin-top: 10px;
+       margin-left: 20px;
+       padding: 5px;
+       text-align: left;
+       color: #4F4F4F;
+   }
+   
+   .section-body-text {
+       font-size: large;
+       margin: auto;
+       padding: 5px;
+       text-align: center;
+       color: #4F4F4F;
+       font-weight: lighter;
+   }
+   
+   .linkedin {
+       align-self: left;
+       height: 30px;
+       width: 30px;
+       margin-top: 3px;
+       margin-left: 20px;
+   }
+   
+   #team-2-section-1 {
+       max-width: 50vw;
+       margin: auto;
+       text-align: center;
+       padding-bottom: 20px;
+   }
+   
+   .section-1 {
+       margin-top: 50px;
+       margin-bottom: 50px;
+   }
+   
+   table {
+       border-collapse: collapse;
+       width: 100%;
+   }
+   
+   td,
+   th {
+       border: 1px solid #dddddd;
+       text-align: left;
+       padding: 60px;
+   }
+   
+   p.ex {
+       padding: -0.9cm;
+       font-weight: lighter;
+       font-size: 17px;
+   }
+   
+   tr:nth-child(even) {
+       background-color: #dddddd;
+   }
+   
+   p.thick {
+       font-weight: bold;
+       font-size: 150%;
+       color: #333333;
+   }
+   
+   p.light {
+       color: #4F4F4F;
+       font-size: small;
+       font-weight: lighter;
+   }
+<<<<<<< HEAD
+=======
+   
             .navigation {
                 border-color: red;
                 background-color: grey;
@@ -6450,7 +7076,7 @@ justify-content: space-between;
                 text-align: center;
                 /* Past Internships Page CSS by Team 7 ends
 ===============================*/
-              .row {
+                <<<<<<< HEAD .row {
                     margin-top: 15px;
                     width: 100%;
                     height: 50%;
@@ -6789,15 +7415,17 @@ justify-content: space-between;
                     font-size: small;
                     font-weight: lighter;
                 }
+<<<<<<< HEAD
+                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+
 /* Library Page CSS by Team 10
 ===============================*/
 
 .library-all {
     margin: 20px;
-    margin-left: 14% !important;
-    margin-right: 10% !important;
+    margin-left: 14%;
+    margin-right: 10%;
     margin-top: 1%;
-    align: center;
 }
 
 .library-list {
@@ -6808,7 +7436,6 @@ justify-content: space-between;
     margin: auto;
     padding: 5px;
     font-weight: bold;
-    align: center;
 }
 .library-list h3 {
     font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
@@ -6817,7 +7444,6 @@ justify-content: space-between;
 .library-img {
     float: left;
     margin: 0 15px 0 0;
-    size: 50px;
 }
 
 .library-list p {
@@ -6835,10 +7461,10 @@ justify-content: space-between;
     color:#000000;
 }
 
-/*.library-img{
+.library-img{
     height:42px;
     width:42px;
-}*/
+}
 .library-input{
     opacity: 1;
     text-align: center; 
@@ -6947,6 +7573,9 @@ padding:10px;
     width: 55%;
 }
 
+<<<<<<< HEAD
+.library-img-space{
+=======
 <<<<<<< HEAD
 .newsSectionOne img{
 	width: 100%;
@@ -7102,8 +7731,9 @@ table {
     width: 100%;
 =======
 /*.library-img-space{
+>>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
     height: 100px;
-}*/
+}
 #library-search{
     text-align: center;
 >>>>>>> 971bf31092894dc00997122bb31e6a6ea3acb029
@@ -7119,4 +7749,11 @@ table {
     background-image: url(images\banner-images\banner-image-1.jpg);
 }
 
-/* Library Page CSS by Team 10 ends */
+/* Library Page CSS by Team 10 ends
+====================================*/
+||||||| merged common ancestors
+                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+=======
+                
+>>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
+>>>>>>> ff09b7977d43f691f8994a9bd5591d37c7c0758a
