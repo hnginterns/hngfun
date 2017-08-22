@@ -923,6 +923,12 @@ h1 {
   border-top: 1px solid #ddd;
 }
 
+#content5 {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+  }
+
 #content2 {
     display: none;
     padding: 20px 0 0;
@@ -958,6 +964,10 @@ h1 {
   #tab3 {
     display: none;
   }
+
+  #tab5 {
+      display:none;
+  }
   
   
   
@@ -983,7 +993,8 @@ input:checked + label {
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+#tab4:checked ~ #content4
+#tab5:checked ~ #content5, {
   display: block;
 }
 

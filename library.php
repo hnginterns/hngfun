@@ -1,16 +1,6 @@
 <a name="top"></a>
 <?php include ('header.php'); ?>
 <link rel="stylesheet" href="css/style.css">
-<script type="text/javascript">
-var timeOut;
-function scrollToTop() {
-	if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-		window.scrollBy(0,-50);
-		timeOut=setTimeout('scrollToTop()',30);
-	}
-	else clearTimeout(timeOut);
-}
-</script>
 
   <div id="libraryHeader" name="libraryHeader">
         <img id="libraryBanner" name="libraryBanner" src="https://fvtelibrary.com/img/images/temp/slider1_img.jpg" alt="e library image" />
@@ -36,26 +26,38 @@ function scrollToTop() {
   <section id="content1">
   <div class="library-all">
     <ul class="library-list">
-      <a href="https://www.tutorialspoint.com/mysql/" target="_blank">
+      <a href="http://www.tutorialspoint.com/html/" target="_blank">
         <li>
-          <img class="library-imas" src="images/library/mysq.png">
-          <h3>mysql</h3>
+          <img class="library-imas" src="https://image.freepik.com/free-icon/html-file-with-code-symbol_318-45756.jpg">
+          <h3>HTML</h3>
           <p>
-            SQL is one of the most important inventions in the software engineering world, 
-            equally important to the invention of the Internet.
-            Most of the Web applications today store their data in Relational Databases 
-            and SQL is the ubiquitous language that is used to do this.
-            No wonder its important to us that you have a basic knowledge of it. 
+          HTML stands for Hyper Text Markup Language, which is the most widely used language on Web to develop web pages. 
+          HTML was created by Berners-Lee in late 1991 but "HTML 2.0" was the first standard HTML specification which was 
+          published in 1995. HTML 4.01 was a major version of HTML and it was published in late 1999. Though HTML 4.01 version is 
+          widely used but currently we are having HTML-5 version which is an extension to HTML 4.01, and this version was published in 2012.
           </p>
         </li>
       </a>
-      <a href="https://backlogtool.com/git-guide/en/stepup/stepup1_1.html" target="_blank">
+      <a href="https://www.w3schools.com/html/default.asp" target="_blank">
         <li>
-          <img class="library-imas" src="images/library/gitbash.png">
-          <h3>Git tutorials</h3>
-          <p>Welcome to Git Beginner's Guide for Dummies. Here, we'll teach you to master version control using Git. There are three sections in this guide. If you are completely new to Git this is the tutorial for you.</p>
+          <img class="library-imas" src="http://blog.computercompany.net/wp-content/uploads/2014/07/HTML5logo.png">
+          <h3>HTML 5</h3>
+          <p> The language for building web pages </p></br>
+          <p>With HTML you can create your own Web site.
+            This tutorial teaches you everything about HTML 5.
+              HTML is easy to learn - You will enjoy it.</p>
         </li>
-      
+      </a>
+      <a href="https://mva.microsoft.com/en-us/training-courses/html5-css3-fundamentals-development-for-absolute-beginners-14207?l=Y4COscFfB_7500115888" target="_blank">
+        <li>
+          <img class="library-imas" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/2000px-CSS3_and_HTML5_logos_and_wordmarks.svg.png">
+          <h3>HTML 5 AND CSS 3</h3>
+          <p> HTML5 And CSS3 Fundamentals: Development for Absolute Beginners from Microsoft Virtual Academy </p></br>
+          <p>Want to learn HTML5 and CSS3? Over the course of 21 episodes, our friend Bob Tabor, from DevU.com, teaches you the fundamentals of HTML5 AND CSS3 programming. Tune in to learn CSS3 styles, concepts about webpages, and HTML5 features. 
+          
+         Explore HTML5 and get CSS3 training that includes web principles, writing code, and much more! Each concept is broken into its own video so you can search for and focus on the information you need to learn HTML5 and CSS3. This is a video series </p>
+        </li>
+      </a>
     </ul>
   </div>
 
