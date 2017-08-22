@@ -1,12 +1,13 @@
 <?php  include ('header.php');?>
 <div id="banner-content" class="row clearfix">
-	<h1><i class="fa fa-newspaper-o" style="font-size:48px;"></i>NEWS FEED</h1>
+	<h1 style ="margin-left:13px"><i class="fa fa-newspaper-o" style="font-size:48px;"></i>NEWS FEED</h1>
 </div>
 
 	<div class = "team8-card-container" style="margin: 40px;">
 		<center>
 		<!-- first news article -->
 		<div class="team8-card">
+			
 			<div class="team8-card-info">
 				<h2 class="team8-card-title">Hotelsng Dream Team</h2>
 			</div>	
@@ -22,7 +23,9 @@
 				</h6>
 			</div>
 		</div>
-
+		
+		<!-- second news article -->
+		
 		<div class="team8-card">
 			<div class="team8-card-info">
 				<h2 class="team8-card-title">Team 2 & Team 3 Are Eligible For Stage 2 Task</h2>
@@ -96,6 +99,7 @@
 		
 		<!-- third news article -->
 		
+
 		</center>	
 	</div>
 		
