@@ -171,14 +171,16 @@
         
         .footer-widget__icons {
             list-style: none;
+            text-align:center;
         }
         
         .footer-widget__icons li {
             float: left;
+            margin-right:15px;
         }
 
 
-/* ---------------------- TEAM 10 CSS -------------------------*/
+/* ---------------------- TEAM 10 ALT CSS -------------------------*/
 /*-------------------------------------------------------------*/
 
 #libraryBanner {
@@ -390,6 +392,8 @@ input:checked + label {
   /* Library Page CSS by Team 10 ends
   ====================================*/
   
+  
+
   
 
 
@@ -5147,6 +5151,7 @@ justify-content: space-between;
                     font-weight: lighter;
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
 
 /* Library Page CSS by Team 10
@@ -5246,3 +5251,6 @@ justify-content: space-between;
                 
 >>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
 >>>>>>> ff09b7977d43f691f8994a9bd5591d37c7c0758a
+=======
+                >>>>>>>06395eba80930f38ee2f82f771b5f48e922cbc3b
+>>>>>>> 40d025aa2fff7efb2107647b9ed71d8fcd540b63
