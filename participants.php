@@ -46,6 +46,27 @@
 
         <div class="p-card">
             <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://s20.postimg.org/bleryh20t/35w_Afqcf_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/johnotu">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">John Otu</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">johnne01@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 7 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
 ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -1872,6 +1893,33 @@
             </div>
         </div>
     </div>
+
+        <!--  Each Participant starts here  -->
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://raw.githubusercontent.com/MofopeOjosh/hngintern-1/master/mofopeojosh.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/mofopeojosh">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Mofope Ojosh</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">mofopet@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 4 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--  Each Participants ends here  -->
+
+
 
     </div>
 </div>

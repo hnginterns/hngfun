@@ -1,16 +1,6 @@
 <a name="top"></a>
 <?php include ('header.php'); ?>
 <link rel="stylesheet" href="css/style.css">
-<script type="text/javascript">
-var timeOut;
-function scrollToTop() {
-	if (document.body.scrollTop!=0 || document.documentElement.scrollTop!=0){
-		window.scrollBy(0,-50);
-		timeOut=setTimeout('scrollToTop()',30);
-	}
-	else clearTimeout(timeOut);
-}
-</script>
 
   <div id="libraryHeader" name="libraryHeader">
         <img id="libraryBanner" name="libraryBanner" src="https://fvtelibrary.com/img/images/temp/slider1_img.jpg" alt="e library image" />
