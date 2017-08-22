@@ -21,7 +21,7 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 21 Aug, 17 &nbsp; &nbsp;
+					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
 				</h6>	
 			</div>
 		</div>
