@@ -9,6 +9,13 @@
   <h1 name="libraryheadertext">Hng.Fun Library</h1>
 </br>
 
+<<<<<<< HEAD
+  <div>
+    <form id="library-search">
+      <input class="library-input" type="text" name="search" placeholder="Search..">
+    </form>
+  </div>
+=======
 <main name="libraryMain" id="libraryMain">
   
   <input id="tab1" type="radio" name="tabs" checked>
@@ -22,6 +29,7 @@
     
   <input id="tab4" type="radio" name="tabs">
   <label for="tab4">Hng.Fun Tasks</label>
+>>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
 
     
   <section id="content1">
