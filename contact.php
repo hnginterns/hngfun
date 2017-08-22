@@ -17,14 +17,14 @@ include "header.php";
     justify-content: space-between;
     flex-wrap: wrap;
     width: 95%;
-    margin-bottom: 10%;
+    margin: 10px 0;
   }
 
   .contact section {
     width: 45%;
   }
   .title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .subheading-text{
@@ -55,9 +55,46 @@ include "header.php";
     resize: none;
   }
 
+  .social-links {
+    padding-top: 50px;
+    padding-left: 50px;
+  }
   .social-links span {
     margin-right: 30px;
   }
+
+  .fa-facebook {
+    color: #0054a8;
+  }
+
+  .fa-facebook:hover {
+    color: #004080;
+  }
+
+  .fa-twitter {
+    color: #00d2d2;
+  }
+
+  .fa-twitter:hover {
+    color: #009f9f
+  }
+
+  .fa-slack {
+    color: #510051;
+  }
+
+  .fa-slack:hover {
+    color: #3e003e;
+  }
+
+  .fa-github {
+    color: #141414;
+  }
+
+  .fa-github:hover {
+    color: #191919;
+  }
+
   .map {
     margin-top: 15px;
   }
@@ -83,6 +120,11 @@ include "header.php";
     .contact section {
       width: 95%;
     }
+
+    .social-links {
+    padding-top: 20px;
+    padding-left: 20px;
+    }
   }
 
 </style>
@@ -98,7 +140,7 @@ include "header.php";
     <p class = "title" >WE CARE ABOUT YOUR FEEDBACK</p>
     <input type="text" placeholder="Name" name="name" required/><br>
     <input type="email" placeholder="Email" name="email" required/><br>
-    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" name = "message" required></textarea><br>
+    <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message here" name = "message" required></textarea><br>
     <input type="submit"/>
     </form>
   </section>
@@ -107,7 +149,7 @@ include "header.php";
       <p class= "title">OFFICE ADDRESS</hp>
       <p class = "subheading-text"><span><i class="fa fa-map-marker"></i></span><span>No 3, Birrel Avenue, Off Herbert Macaulay way, Sabo, Yaba Lagos</span></p>
       <p class = "subheading-text"><span><i class="fa fa-phone"></i></span><span>+234-700-880-8800</span></p>
-      <p class = "subheading-text">e-mail: internship@hotels.ng</p>
+      <p class = "subheading-text"><span><i class="fa fa-envelope-o"></i></span><span>internship@hotels.ng</span></p>
     </div>
     <div class="social-links" >
       <span > <a href="https://web.facebook.com/hotelsng/?ref=br_rs"><i class="fa fa-2x fa-facebook"></i></a></span>
