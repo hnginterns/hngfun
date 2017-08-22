@@ -24,7 +24,7 @@
 
 		<div class="team8-card">
 			<div class="team8-card-info">
-				<h2 class="team8-card-title">Team 2 & Team 3 are eligible for stage 2 Task</h2>
+				<h2 class="team8-card-title">Team 2 & Team 3 Are Eligible For Stage 2 Task</h2>
 			</div>	
 			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
@@ -44,7 +44,7 @@
 
 		<div class="team8-card">
 			<div class="team8-card-info">
-				<h2 class="team8-card-title">HNG internship projects</h2>
+				<h2 class="team8-card-title">HNG Internship Projects</h2>
 			</div>	
 			<div class="team8-card-photo" style="background-image: url(http://res.cloudinary.com/dmz79kgf0/image/upload/v1503357350/screen_mmcwcd.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
@@ -72,7 +72,7 @@
 		<!-- second news article -->
 		<div class="team8-card">
 			<div class="team8-card-info">
-				<h2 class="team8-card-title">Hotels NG announces internship</h2>
+				<h2 class="team8-card-title">Hotels NG Announces Remote Internship</h2>
 			</div>	
 			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
