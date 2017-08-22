@@ -12,16 +12,17 @@
 <main name="libraryMain" id="libraryMain">
   
   <input id="tab1" type="radio" name="tabs" checked>
-  <label for="tab1">HTML</label>
+  <label for="tab1">HTML/CSS</label>
     
   <input id="tab2" type="radio" name="tabs">
-  <label for="tab2">CSS</label>
+  <label for="tab2">PHP/SQL</label>
     
   <input id="tab3" type="radio" name="tabs">
-  <label for="tab3">PHP</label>
+  <label for="tab3">GIT/GitHub</label>
     
   <input id="tab4" type="radio" name="tabs">
-  <label for="tab4">GIT</label>
+  <label for="tab4">Hng.Fun Tasks</label>
+
     
   <section id="content1">
   <div class="library-all">
@@ -183,6 +184,8 @@ Rather than go into details, we provide rough instructions for particular effect
 </div>
 
 </section>  
+
+
     
 </main id="libraryMain">
 

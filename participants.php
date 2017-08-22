@@ -69,7 +69,7 @@
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://s20.postimg.org/bleryh20t/35w_Afqcf_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://hng.fun/profile/johnotu">
+                    <a href="http://hng.fun/profile/johnotu.html">
                         <!--Profile Link-->
                         <h3 class="p-card-title">John Otu</h3>
                         <!--Profile Name-->
