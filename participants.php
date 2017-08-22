@@ -21,11 +21,7 @@
               - Pull the repo, before pushing it, inorder to prevent conflicts
             -->
 
- <!--  Each Participant starts here  -->
-<div class="p-card">
-           
-        </div>
-	    
+ <!--  Each Participant starts here  -->	    
  <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
