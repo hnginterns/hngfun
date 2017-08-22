@@ -22,6 +22,27 @@
             -->
 
  <!--  Each Participant starts here  -->
+<div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/E2WmeiH.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/tonychuks7.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Anothony Nwaizuzu</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">tonychuks7@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 9 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+	    
  <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
