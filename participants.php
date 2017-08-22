@@ -410,8 +410,7 @@
 
         </div>
 
-<<<<<<< HEAD
-=======
+
  <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/861305946479493120/PsPxNeDd.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -431,7 +430,7 @@
             </div>
 
         </div>
->>>>>>> b12bc0d8db05e4d170554383a98cee026da681f1
+
 
 
 
@@ -994,8 +993,6 @@
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url('https://ca.slack-edge.com/T3QLSP8HM-U6QUTQT2T-6ffc54e0834d-512'); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-
-
             <a href="http://hng.fun/profile/akindolietayo.html">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Akindolie Oluwatayo</h3>
@@ -1004,21 +1001,16 @@
             <p class="p-card-description">akindolietayo@gmail.com</p>
             <!--Email-->
         </div>
-
         <div class="p-team">
             <a href="#">
                 <h3 class="p-card-title"> Team 4</h3>
                 <!--Team-->
             </a>
-
-
-
-        </div>
-
+         </div>
     </div>
+</div>
 
-<div class="p-card">         
-         
+<div class="p-card">              
   <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/aizAwig.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -1036,8 +1028,7 @@
                         <!--Team-->
                     </a>
                 </div>
-            </div>
-        </div>
-
+    </div>
 </div>
+
 <?php  include "footer.php" ?>
