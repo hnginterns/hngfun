@@ -1,0 +1,49 @@
+body {
+    background-color: darkgrey;
+    font-family: ", Georgia, Serif";
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+img {
+    margin: 30px 30px 30px 500px;
+    border: 7px solid red;
+    border-radius: 20px;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+ul {
+    text-align: center;
+    color: black;
+}
+
+li {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+}
+
+div.me {
+    text-align: left;
+}
+
+div.trust {
+    text-align: right;
+}
+
+
+}

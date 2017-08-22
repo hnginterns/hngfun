@@ -1,5 +1,3 @@
-
-
 <html>
 <head>
     <title>HNG Internship | Home</title>
@@ -13,7 +11,7 @@
            <div class="landing-page__nav">
                 <div class="container">
 
-                    <!-- Logo -->
+                     <!-- Logo -->
                     <div class="landing-page__nav--left">
                         <a href="http://hng.fun" class="global-nav__logo">
                             <img src="img/hnglogo.png" width="100" alt="hotels ng Internship logo">
@@ -21,25 +19,25 @@
                     </div>
 
                     <!-- right nav menu -->
-                    <nav class="landing-page__nav--right">                      
+                    <nav class="landing-page__nav--right">
                         <ul class="landing-page__menu">
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="index.html">
+                                <a class="landing-page__item--links" href="index.php">
                                     <img src="img/home.png" width="30">
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#services">
+                                <a class="landing-page__item--links" href="about.php">
                                     <img src="img/about.png" width="30">
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#products">
+                                <a class="landing-page__item--links" href="participants.php">
                                     <img src="img/participants.png" width="30">
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#partners">
+                                <a class="landing-page__item--links" href="projects.php">
                                     <img src="img/projects.png" width="30">
                                 </a>
                             </li>
@@ -49,12 +47,12 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="past_internships.php">
                                     <img src="img/pastinternship.png" width="30">
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="news.php">
                                     <img src="img/news.png" width="30">
                                 </a>
                             </li>
@@ -64,12 +62,13 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="library.php">
                                     <img src="img/library.png" width="30">
                                 </a>
                             </li>
                         </ul>
                     </nav>
+
 
                     <div class="clear"></div>
                 </div>
@@ -77,6 +76,7 @@
         </header>
 
 
+<<<<<<< HEAD
 
         <footer class="footer">
             <div class="container">
@@ -140,3 +140,6 @@
     </main>
 </body>
 </html>
+=======
+<?php include('footer.php'); ?>
+>>>>>>> 54f0d15f1aeec8c0ca0ede24d1d0b5841587b7e0
