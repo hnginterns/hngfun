@@ -1137,7 +1137,11 @@
             </a>
         </div>
         <!--  Participant starts here  -->
+<<<<<<< HEAD
 	    
+=======
+
+>>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
         <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -1876,8 +1880,13 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
    
 <!--  Each Participant starts here  -->
+=======
+    </div>
+</div>
+>>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
     <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/E2WmeiH.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1953,6 +1962,10 @@
 
     </div>
    <!--  Each Participants ends here  -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
         <!--  Each Participant starts here  -->
 
         <div class="p-card">
@@ -4396,6 +4409,7 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
 		
 	    <div class="p-card">
             <div class="v-center">
@@ -4417,17 +4431,6 @@
                 </div>
             </div>
         </div>
-<div class="p-card">
-    <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-        <div class="p-card-info">
-
-
-        </div>
-
-
-    </div>
-</div>
-
-
+=======
+>>>>>>> 07157f3e241921ca0b838f0ebbf220f04927efb6
 <?php include "footer.php"?>
