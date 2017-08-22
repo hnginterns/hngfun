@@ -1,12 +1,13 @@
 <?php  include ('header.php');?>
 <div id="banner-content" class="row clearfix">
-	<h1><i class="fa fa-newspaper-o" style="font-size:48px;"></i>NEWS FEED</h1>
+	<h1 style ="margin-left:13px"><i class="fa fa-newspaper-o" style="font-size:48px;"></i>NEWS FEED</h1>
 </div>
 
 	<div class = "team8-card-container" style="margin: 40px;">
 		<center>
 		<!-- first news article -->
 		<div class="team8-card">
+			
 			<div class="team8-card-info">
 				<h2 class="team8-card-title">Hotelsng Dream Team</h2>
 			</div>	
@@ -17,14 +18,17 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
-				</h6>	
+					<span class="dot3">&#9679; </span><i class="fa fa-calendar" aria-hidden="true"></i> 22 Aug, 17 &nbsp; &nbsp;  &nbsp;  &nbsp;<i class="fa fa-user" aria-hidden="true"></i> Team 8 &nbsp; &nbsp; 
+					<i class="fa fa-comments" aria-hidden="true"> 35 Comments</i>
+				</h6>
 			</div>
 		</div>
-
+		
+		<!-- second news article -->
+		
 		<div class="team8-card">
 			<div class="team8-card-info">
-				<h2 class="team8-card-title">Team 2 & Team 3 are eligible for stage 2 Task</h2>
+				<h2 class="team8-card-title">Team 2 & Team 3 Are Eligible For Stage 2 Task</h2>
 			</div>	
 			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
@@ -37,14 +41,15 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
+					<span class="dot3">&#9679; </span><i class="fa fa-calendar" aria-hidden="true"></i> 22 Aug, 17 &nbsp; &nbsp;  &nbsp;  &nbsp;<i class="fa fa-user" aria-hidden="true"></i> Team 8 &nbsp; &nbsp;
+					<i class="fa fa-comments" aria-hidden="true"> 45 Comments</i>
 				</h6>	
 			</div>
 		</div>
 
 		<div class="team8-card">
 			<div class="team8-card-info">
-				<h2 class="team8-card-title">HNG internship projects</h2>
+				<h2 class="team8-card-title">HNG Internship Projects</h2>
 			</div>	
 			<div class="team8-card-photo" style="background-image: url(http://res.cloudinary.com/dmz79kgf0/image/upload/v1503357350/screen_mmcwcd.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
@@ -64,7 +69,8 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 22 Aug, 17 &nbsp; &nbsp;
+					<span class="dot3">&#9679; </span><i class="fa fa-calendar" aria-hidden="true"></i> 22 Aug, 17 &nbsp; &nbsp;  &nbsp;  &nbsp;<i class="fa fa-user" aria-hidden="true"></i> Team 8 &nbsp; &nbsp;
+					<i class="fa fa-comments" aria-hidden="true"> 101 Comments</i>
 				</h6>	
 			</div>
 		</div>
@@ -72,7 +78,7 @@
 		<!-- second news article -->
 		<div class="team8-card">
 			<div class="team8-card-info">
-				<h2 class="team8-card-title">Hotels NG announces internship</h2>
+				<h2 class="team8-card-title">Hotels NG Announces Remote Internship</h2>
 			</div>	
 			<div class="team8-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team8-card-info">	
@@ -84,7 +90,8 @@
 			</div>
 			<div class="team8-card-footer">
 				<h6 class="team8-footer-right">
-					<span class="dot3">&#9679; </span> 21 Aug, 17 &nbsp; &nbsp;
+					<span class="dot3">&#9679; </span><i class="fa fa-calendar" aria-hidden="true"></i> 21 Aug, 17 &nbsp; &nbsp;  &nbsp;  &nbsp;<i class="fa fa-user" aria-hidden="true"></i> Team 8 &nbsp; &nbsp;
+					<i class="fa fa-comments" aria-hidden="true"> 500 Comments</i>
 				</h6>	
 			</div>
 		</div>
@@ -92,6 +99,7 @@
 		
 		<!-- third news article -->
 		
+
 		</center>	
 	</div>
 		

@@ -74,7 +74,7 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="past-internships-2.php">
+                                <a class="landing-page__item--links" href="past_internships.php">
                                     <img src="img/pastinternship.png" width="30">
                                 </a>
                             </li>
