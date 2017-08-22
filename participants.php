@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php  include "header.php" ?>
 
 <div id="banner-content" class="row clearfix">
@@ -21,9 +20,6 @@
               - Make sure you do not modify information of other participants
               - Pull the repo, before pushing it, inorder to prevent conflicts
             -->
-
-        <!--  Each Participant starts here  -->
-<<<<<<< HEAD
 	    
  <!--  Each Participant starts here  -->
  <div class="p-card">
@@ -49,14 +45,7 @@
         </div>
         <!--  Each Participants ends here  -->
 
-	    
-	     
-=======
-
-
-
->>>>>>> 1d4bd61ab9659a59d9e6c5ee6e1fb4b8a36b41f0
- <!--  Each Participant starts here  -->
+	   
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
@@ -163,7 +152,6 @@
         <!--  Each Participants ends here  -->
 
 
-
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/TAaP38Y.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -182,6 +170,30 @@
                 <div class="p-team">
                     <a href="#">
                         <h3 class="p-card-title"> Team 3 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/Sj5rshV.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/debowale1.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Adeshina Ibrahim</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">debowale01@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 1 </h3>
                         <!--Team-->
                     </a>
                 </div>
