@@ -4,7 +4,14 @@
 <head lang="en">
     <meta charset="UTF-8">
 
-    <title>HNG</title>
+    <title><?php 
+    if (isset($pageTitle)) {
+        echo "HNG Interns - ".$pageTitle;
+    } else {
+        echo "HNG Interns";
+    }
+    ?>
+    </title>
 
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -37,25 +44,25 @@
                     </div>
 
                     <!-- right nav menu -->
-                    <nav class="landing-page__nav--right">                      
+                    <nav class="landing-page__nav--right">
                         <ul class="landing-page__menu">
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="index.html">
+                                <a class="landing-page__item--links" href="index.php">
                                     <img src="img/home.png" width="30">
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#services">
+                                <a class="landing-page__item--links" href="about.php">
                                     <img src="img/about.png" width="30">
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#products">
+                                <a class="landing-page__item--links" href="participants.php">
                                     <img src="img/participants.png" width="30">
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#partners">
+                                <a class="landing-page__item--links" href="projects.php">
                                     <img src="img/projects.png" width="30">
                                 </a>
                             </li>
@@ -65,12 +72,12 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="past_internships.php">
                                     <img src="img/pastinternship.png" width="30">
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="news.php">
                                     <img src="img/news.png" width="30">
                                 </a>
                             </li>
@@ -80,7 +87,7 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="library.php">
                                     <img src="img/library.png" width="30">
                                 </a>
                             </li>
