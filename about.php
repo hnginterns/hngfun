@@ -65,4 +65,3 @@ After that, I moved to Germany to attend University. It was an interesting exper
         </table>
     </div>
 <?php include ('footer.php'); ?>
-    <?php include ('footer.
