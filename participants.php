@@ -810,22 +810,12 @@
             </div>
         </div>
 
-<<<<<<< HEAD
         
-        
-        
-        
-        
-        
-=======
         <div class="p-card">
 
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://scontent.cdninstagram.com/t51.2885-19/s150x150/17075777_1409128825798368_1636514859128455168_a.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
->>>>>>> a2e29e7aaa9b1947e3db2a3e6c8d23a7d85e69ea
-
-
                     <a href="http://hng.fun/profile/princessdee">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Damilola Omoyiwola</h3>
