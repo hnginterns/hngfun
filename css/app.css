@@ -14,7 +14,7 @@ height:auto;
 
 .sponsor-welcome {
     height: 100vh;
-    background: linear-gradient( 105.96deg, rgba(113, 199, 225, 0.84) 36.34%, rgba(244, 122, 126, 0.84) 98.13%), url("img/hnginterns.jpeg") no-repeat top center red;
+    background: linear-gradient( 105.96deg, rgba(113, 199, 225, 0.84) 36.34%, rgba(244, 122, 126, 0.84) 98.13%), url("../img/hnginterns.jpeg") no-repeat top center red;
     background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
