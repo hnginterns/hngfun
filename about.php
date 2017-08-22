@@ -32,7 +32,6 @@
   
         </table>
 
-<<<<<<< HEAD
         <div>
             <table>
                 <tr>
