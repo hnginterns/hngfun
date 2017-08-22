@@ -788,7 +788,7 @@
                 <div class="p-card-info">
 
 
-                    <a href="http://hng.fun/profile/tobilight">
+                    <a href="http://hng.fun/profile/adetunjisalako">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Salako Adetunji Abdulhaq</h3>
                         <!--Profile Name-->
