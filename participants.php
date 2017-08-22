@@ -1234,18 +1234,7 @@
               </div>
               <!--  Each Participants ends here  -->
 
-					    
-			
-<div class="p-card">
-    <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-        <div class="p-card-info">
-
-
-
-
-
-        <!--  Each Participant starts here  -->
+			<!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/12105518?v=4&amp;s=75); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1534,8 +1523,6 @@
 
             </div>
         </div>
-
-
 
 
 
@@ -1835,29 +1822,9 @@
                 </div>
             </div>
         </div>
-        <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
-); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="http://hng.fun/profile/ememobong_akpanekpo.html">
 
-                        <h3 class="p-card-title">Ememobong Akpanekpo</h3>
 
-                    </a>
-                    <p class="p-card-description">emayoung95@gmail.com</p>
-
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 6 </h3>
-
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="p-card">
+          <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -2004,7 +1971,30 @@
                       </div>
                   </div>
               </div>
-            <div class="p-card" id="tody">
+
+              <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
+); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/ememobong_akpanekpo.html">
+
+                        <h3 class="p-card-title">Ememobong Akpanekpo</h3>
+
+                    </a>
+                    <p class="p-card-description">emayoung95@gmail.com</p>
+
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 6 </h3>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-card" id="tody">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://github.com/to-dy/test/blob/master/exImg/tody1.jpg?raw=true); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -2024,6 +2014,12 @@
                 </div>
             </div>
         </div>
+
+
+        
+
+      
+            
 	<div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/24799435?v=4&u=0077181484ccb57df65a5c32ed0856893da23618&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -2158,12 +2154,13 @@
                     </a>
                 </div>
             </div>
-        </div>
+            </div>
+
         <!--  Each Participants ends here  -->
 
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://github.com/hnginterns/hngfun/blob/master/profile/shield/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/shield/profile.html">
                         <!--Profile Link-->
@@ -2183,6 +2180,15 @@
         </div>
 
         <!--  Each Participants ends here  -->
+
+			
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">  
+
+       
+        </div>
 
 
     </div>
