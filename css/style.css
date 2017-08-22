@@ -985,6 +985,9 @@ input:checked + label {
   /*background-color: #00BFFF;*/
    
   }
+  .library-back-to-top:hover { 
+    color:#82D3E0;
+}
    
     
    
