@@ -1834,6 +1834,23 @@
                 </div>
             </div>
         </div>
+	<div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/24799435?v=4&u=0077181484ccb57df65a5c32ed0856893da23618&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/okwujoscelyn.html">
+                        <h3 class="p-card-title">Okwu Joscelyn</h3>
+                    </a>
+                    <p class="p-card-description">ojk564@gmail.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 1 </h3>
+                    </a>
+                </div>
+            </div>
+        </div>	
 
     </div>
 </div>
