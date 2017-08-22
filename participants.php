@@ -44,6 +44,27 @@
             </div>
         </div>
 
+         <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://alabamustapha.files.wordpress.com/2017/08/me.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/alabamustapha.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Alaba Mustapha O.</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">alabamustapha@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 1 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://image.ibb.co/b1H445/pic.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
