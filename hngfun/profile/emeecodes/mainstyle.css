@@ -1,0 +1,29 @@
+
+	body{
+		background-color : #37474F 
+	}
+	
+	h2{
+		color : #ffffff;
+		font-family : cursive;
+	}
+	h3{
+		color : #ffffff;
+		font-family : monospace;
+		font-size : 30px
+	}
+	a{
+		alignment-baseline: central;
+		color: #ffffff;
+	}
+	table{
+		color: #ffffff;
+		font-family: cursive;
+	}
+	h4{
+		color: #ffffff;
+		font-family: cursive;
+	}
+	p{
+		color: #ffffff
+	}

@@ -17,8 +17,8 @@
 
              <div class="section-text"> Our Mission</div>
 
-            <div class="section-body-text"> We get people who are intrested in technology and simulate a working enviroment where they
-                have to tackle real work issues. With minimal guidance, instinct kicks in and the best ones 
+            <div class="section-body-text"> We get people who are interested in technology and simulate a work environment where they
+                have to tackle and work on real work issues. With minimal guidance, instinct kicks in and the best ones 
                 come out of the lot and start the second phase of the internship where the tasks get
                 increasingly harder.</div>
 
@@ -28,9 +28,9 @@
         <div>
             <table>
                 <tr>
-                    <th>Founded in<p class="thick">2016</p><p class="light">Hng internship was founded in 2016 to develop world class developer in Nigeria</p></th>
-                    <th>Track spend <p class="thick">$13 million+</p><p class="light"> They eventually get placed into companies that are looking for software developers.</p></th>
-                     <th>Trained Developer <p class="thick">5000+</p><p class="light">We get people who are interested in technology and simulate a working environment </p></th>
+                    <th>Founded in<p class="thick">2016</p><p class="light">Hng internship was founded in 2016 to develop world class developers in Nigeria.</p></th>
+                    <th>Track spend <p class="thick">$13 million+</p><p class="light"> They eventually get placed into companies searching for software developers.</p></th>
+                     <th>Trained Developer <p class="thick">5000+</p><p class="light">We get people who are interested in technology and simulate a work environment.</p></th>
                 </tr>
 
 
@@ -50,10 +50,10 @@
                         <div class="text">
                             <div class="name-text">Mark Essien</div>
                             <div class="name-post-text">CEO/Founder</div>
-                            <div class="name-body-text">I'm Mark Essien, born and grew up in the small town of Ikot Ekpene, Akwa Ibom State, Nigeria.
-    I did my primary school at Monika Kindergarten, and my secondary school at Federal Government, Ikot Ekpene. As you can tell, very much a small town upbringing.
+                            <div class="name-body-text">I am Mark Essien, born and grew up in the small town of Ikot Ekpene, Akwa Ibom State, Nigeria.
+    I did my primary school at Monika Kindergarten, and my secondary school at Federal Government College, Ikot Ekpene. As you can tell, very much a small town upbringing.
     After that, I moved to Germany to attend University. It was an interesting experience, but after many years in Germany, I decided that I prefer to live in Nigeria.</div>
-                            <div class="linkedin"><img src="http://res.cloudinary.com/hngfun/image/upload/v1503323006/linkedin_lquvqx.png" height="36" width="36" alt="" align="left"></div>            
+                            <div class="linkedin"><a href="https://ng.linkedin.com/in/markessien" target="_blank"><img src="http://res.cloudinary.com/hngfun/image/upload/v1503323006/linkedin_lquvqx.png" height="36" width="36" alt="" align="left"></a></div>            
                             </div>
 
                     </div>
