@@ -3,8 +3,6 @@ $pageTitle = "Participants";
 include('header.php');
 ?>
 
-</div> <!--end wrapper class in header.php -->
-
 <style type="text/css" xmlns:http="http://www.w3.org/1999/xhtml" xmlns:http="http://www.w3.org/1999/xhtml"
        xmlns:http="http://www.w3.org/1999/xhtml" xmlns:http="http://www.w3.org/1999/xhtml"
        xmlns:http="http://www.w3.org/1999/xhtml">
@@ -95,8 +93,6 @@ include('header.php');
 </div>
 
 <div id="banner-content" class="row clearfix">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <div class="p-card-container">
         <div class="v-center">
@@ -4229,12 +4225,11 @@ include('header.php');
                           </a>
                       </div>
                   </div>
-              </div>
+        </div>
 
               <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460
-); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/7896429?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/ememobong_akpanekpo.html">
 
@@ -4685,7 +4680,7 @@ include('header.php');
             </div>
         </div>
 <!--  Each Participant starts here  -->
- <div class="p-card">
+        <div class="pcard">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/20032269?v=4&u=7f280c930a24fd8e45877e3a4a78181e04acd426&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -4708,4 +4703,5 @@ include('header.php');
         <!--  Each Participants ends here  -->
 
 
+</div>
 <?php include "footer.php"?>
