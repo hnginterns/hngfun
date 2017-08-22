@@ -1,56 +1,181 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Alejandro</title>
-<style>
-	.image{
-		width:200px;
-		height:200px;
-		border-radius:20%;
-		margin-top:50px;
+    <title>Alejandro</title>
+    <style type="text/css">
+    	/* Layout */
+		body {
+		    font:normal 12px/1.6em Arial, Helvetica, sans-serif;
+			color:#2a3845;
+			margin:0;
+			padding:0;
+			background:#FFFFFF;
 		}
-	.container{
-		width:auto;
-		height:auto;
-		background-color:#DFDFDF;
-	}
-	h1{
-		margin-top:50px;
-		text-align:center;
-	}
-	h3{
-		text-align:center;
-		margin-top:-30px;
-	}
-	p{
-		text-align:center;
-	}
-</style>
-</head>
-	
-<body>
 
-	<div class="container">
-		<center><img class="image" src="https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg" alt="avatar" /></center>
-		<h1>Francis Benson<br/>
-		<h3>(alejandro)</h3></h1><hr />
-		<p>
-			<strong>About:</strong> I'm Francis Benson. An android developer and system analyst<br/>
-			currently a 500L student studying computer engineering at the university of uyo.<br/>
-		</p>
-		<p>
-			<strong>Proficiencies:</strong> I have worked with c++, java, python, c#, xamarin, html/css/bootstrap and recently php.<br/>
-			<strong>Favourite quote:</strong> The greatest enermy of knowledge is not ignorance but the illusion of knowledge. <span style="color:#996633">-Stephen Hawkings</span><br/> 
-		</p><hr />
-		<p><strong>Contact me</strong><br/>
-			Slack Username: @alejandro
-			<br /><span>
-				<a href="https://twitter.com/Sir_frankben" target="_blank">Twitter</a>
-				<a href="https://github.com/ECFK75C8" target="_blank">Github</a>
-				<a href="https://github.com/ECFK75C8/HNG_STAGE1_TEST" target="_blank">Stage1</a>
-			</span>
-		</p><br />
+		p {
+			margin:0;
+			padding:0;
+		}
+
+		#wrapper {
+			margin:16px auto;
+			width:632px;
+			border-left:1px solid #f0e9eb;
+			border-right:1px solid #f0e9eb;
+		}
+
+		#quote{
+			margin-bottom: 16px;
+		}
+
+		#main-content {
+			margin:0 auto;
+		}
+
+		#main-image {
+			text-align:left;
+			padding:10px 25px;
+		}
+
+		#left-column {
+			width:300px;
+			padding:0 30px 30px;
+			float:left;
+		}
+
+		#right-column {
+			width:270px;
+			float:right;
+		}
+
+		.sidebar {
+			width:218px;
+			margin:0 auto;
+			padding:10px 25px;
+			background: no-repeat top;
+		}
+
+		/* Global Styling */
+
+		a:visited, a:link {
+			color:#a43b55;
+			text-decoration:underline;
+			background:none;
+		}
+
+		a:hover {
+			color:#a43b55;
+			text-decoration:none;
+			background:none;
+		}
+
+		h1 {
+			color:#7a2e40;
+			margin:0 0 10px;
+			padding-bottom:10px;
+			font:normal 17px Georgia, serif;
+			border-bottom:1px solid #efece7;
+		}
+
+		h2 {
+			color:#7a2e40;
+			margin:20px 0 10px;
+			padding-bottom:10px;
+			font:normal 17px Georgia, serif;
+			border-bottom:1px solid #efece7;
+		}
+
+		h3 {
+			color:#7a2e40;
+			margin:10px 0;
+			padding-bottom:10px;
+			font:bold 14px Arial, Helvetica, sans-serif;
+			border-bottom:1px solid #efece7;
+		}
+
+		ul {
+			padding:0;
+			margin:0 0 0 17px;
+			list-style:square url('http://img525.imageshack.us/img525/1890/bulletr.gif');
+		}
+
+		.box {
+			background:#f7f7f7;
+			border:1px solid #f0e9eb;
+			padding:15px;
+		}
+
+		#logo {
+			margin-bottom:20px;
+			font:normal 18px Georgia, serif;
+			color:#fa7393;
+		}
+	 </style>
+</head>
+<body>
+<div id="wrapper">
+	
+	<div id="main-content">
+		<div id="left-column">
+			<div id="logo">
+				Welcome to Francis Benson's Profile
+			</div>
+			<div id="quote"><p>
+				<h2>Favourite quote:</h2>
+				<em>The greatest enermy of knowledge is not ignorance but the illusion of knowledge</em>
+				<span style="color:#996633">-Stephen Hawkings</span><br/>
+			</p></div>
+			<div class="box">
+        		<h1>Languages/Libraries</h1>
+        		<p>I have worked with: </p>
+				<ul style="margin-top:10px;">
+					<li>C++</li>
+					<li>Java</li>
+					<li>Python</li>
+					<li>html/css/bootstrap</li>
+					<li>php</li>
+				</ul>
+			</div>
+		
+		<div class="box">
+				<h2>Contact me</h2>
+				<form  action="" method="POST" enctype="multipart/form-data">
+					<input type="hidden" name="action" value="submit">
+					Your name:<br>
+					<input name="name" type="text" value="" size="30"/><br>
+					Your email:<br>
+					<input name="email" type="text" value="" size="30"/><br>
+					Your message:<br>
+					<textarea name="message" rows="7" cols="30"></textarea><br>
+					<input type="submit" value="Send email"/>
+				</form>
+			</div>
+		</div>
+		<div id="right-column">
+			<div id="main-image"><img src="https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg" width="180" height="188" /></div>
+			<div class="sidebar">
+				<h3>About Me</h3>
+				<p>
+					My name is Francis Benson. A 500L student studying computer engineering
+					at the University of Uyo, Akwaibom State, Nigeria. Also currently interning with
+					<a href="https://hotels.ng" target="_blank"><strong>hotels.ng</strong></a>
+				</p>
+				<h3>Find Me Elsewhere</h3>
+				<div class="box">
+					<ul>
+						<li><a href="https://facebook.com/Alejandro.elSantos" target="_blank">Facebook</a></li>
+						<li><a href="https://twitter.com/Sir_frankben" target="_blank">Twitter</a></li>
+						<li><a href="https://linkedin.com/in/francis-benson-a4238579" target="_blank">LinkedIn</a></li>
+						<li><a href="https://github.com/ECFK75C8" target="_blank">Github</a></li>
+					</ul>
+				</div>
+				<h3>Hotels.ng Task</h3>
+				<p class="box"><a href="https://github.com/ECFK75C8/HNG_STAGE1_TEST" target="_blank">Stage1</a></p>
+			</div>
+		</div>
 	</div>
+	
+</div>
+
 </body>
 </html>
