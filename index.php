@@ -57,7 +57,7 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="supporters.php">
                                     <img src="img/supporters.png" width="30">
                                 </a>
                             </li>

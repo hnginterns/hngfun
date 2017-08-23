@@ -112,7 +112,7 @@ include "header.php";
 
   .map iframe {
     width: 100%;
-    height: 100%:
+    height: 100%;
   }
 
   .underlined::after {
@@ -155,8 +155,7 @@ include "header.php";
 <main class="m-container">
   <div class="underlay"></div>
   <h2 style="font-family: 'Lato', sans-serif" class="underlined">GET IN TOUCH</h2>
-  <section class="contact">
-  <section class="contact-info">
+  <section class="contact-info contact">
     <div>
       <p><span><i class="fa fa-map-marker"></i></span><span>1, Intern Ave, Hotel NG</span></p>
       <p><span><i class="fa fa-phone"></i></span><span>+234-hng-interns</span></p>
@@ -185,22 +184,9 @@ include "header.php";
       <span><i class="fa fa-2x fa-github"></i></span>
     </div>
   <div class="map">
-    <iframe height="250"
-    frameborder="0" style="border:0"
+    <iframe height="250" width="90%" height="350" frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary" allowfullscreen>
   </iframe>
-</div>
-  </section>
-  <section class="contact-form">
-    <form>
-    <h4>Leave us a message</h4>
-    <input type="text" placeholder="Name" required/><br>
-    <input type="email" placeholder="Email" required/><br>
-    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required></textarea><br>
-    <input type="submit"/>
-    </form>
-  </section>
-  </section>
 </main>
 
 
