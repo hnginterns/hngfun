@@ -1,5 +1,5 @@
 <?php
-include: "https://github.com/hnginterns/hngfun/database_file.php";
+include: "https://github.com/hnginterns/hngfun/config_file.php";
 ?>
 
 <html><head>
