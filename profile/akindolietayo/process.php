@@ -1,7 +1,5 @@
 <?php
 ob_start();
-$send = $_GET['submit'];
-if (isset($send)){
   if($_SERVER['REQUEST_METHOD'] == 'GET') {
     
 
@@ -36,6 +34,5 @@ if (isset($send)){
 
     }
   }
-}
 ob_end_flush();
  ?>
