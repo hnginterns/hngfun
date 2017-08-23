@@ -327,7 +327,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             </ul>
           </blockquote>
         <?php endif; ?>
-        <form class="godfredakpan_form" action="" method="POST">
+        <form class="godfredakpan_form" action="sendmail.php" method="POST">
           <label for="subject" class="godfredakpan-label">Subject</label>
           <input id="subject" type="text" name="subject" placeholder="Subject" required>
 
