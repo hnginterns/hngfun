@@ -1,13 +1,31 @@
 <?php
-   //if "email" variable is filled out then send email
-   if(isset($_GET['submit'])){
-       //Email information
-       $to = "kosyononye@gmail.com";
-       $subject = $_GET['subject'];
-       $body = $_GET['body'];
-   
-   
-    $config = include(dirname(dirname(__FILE__)).'/config.php');
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+    $error = [];
+    
+    $subject = $_POST['Subject'];
+    
+    $to = $_POST['to'];
+    
+    $body = $_GET['Message'];
+    
+    if($body == '' || $body == ' ') {
+    
+    $error[] = 'Message cannot be empty.';
+    
+    }
+    
+    if($Subject == '' || $Subject == ' ') {
+    
+    $error[] = 'Subject cannot be empty.';
+    
+    }
+    
+    if(empty($error)) {
+    $admin_email = 'xyluz@ymail.com';
+    
+    $config = include('../../sendmail.php');
     
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     
@@ -19,13 +37,13 @@
     
     $password = $data['password'];
     
+    $url = "hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
     
+    header("location: $url");
     
-    header("location:http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+    }
     
-    
-   }
-    
+    }
 ?>
 
 <!DOCTYPE html>
@@ -104,7 +122,7 @@
         </div>
     </div>
 
-    
+    <footer>
     <!-- 
     <div class="form-area">
         <input type="hidden" name="to" value="kosyononye@gmail.com">
@@ -121,11 +139,11 @@
         <input type="submit" value="SEND">
       </div>
       -->
-      <footer>
-        <form class="formsubmit" action="" method="GET" name="contact_area">
+
+        <form class="formsubmit" action="/sendmail.php" method="GET">
         <input type="hidden" name="to" value="kosyononye@gmail.com">
 
-            <p>Name<br />
+            <p>Your name<br />
                 <input name="name" type="text" size="30" /></p>
                 
             <p>Email<br />
