@@ -160,6 +160,8 @@
                             </li>
                             <li class="social-googleplus">
                                 <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
+				    <a href="https://github.com/godfredakpan" target="_blank">
+					    <i class="fa fa-github"></i><span>Github</span></a>
 				    
 			    </li>
                         </ul>
@@ -318,7 +320,7 @@
                                             </div>
                                         </div>
                                         <!-- End Accordion -->
-										<p><p><h1>Contact Me</h1>
+										<center><p><p><h1>Contact Me</h1>
       <div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
