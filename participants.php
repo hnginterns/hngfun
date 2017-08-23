@@ -6133,6 +6133,33 @@ include('header.php');
         </div>
 
         <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://s3.postimg.org/ss3h5exf7/12274735_1230649710285633_2189770792182668981_n.jpg" ); background-size: cover; background-repeat: no-repeat; background-position: center center;></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile//ndusunday/index.php">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Ndu Sunday</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">
+                        ndusunday@gmail.com
+                    </p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 9 </h3>
+                        <!--Team-->
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+        <!--   Participant ends here  -->
+
+        <!--  Each Participant starts here  -->
         <div class="pcard">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/20032269?v=4&u=7f280c930a24fd8e45877e3a4a78181e04acd426&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -6155,8 +6182,7 @@ include('header.php');
         </div>
         <!--  Each Participants ends here  -->
 
-
-    </div>
+        </div>
     <!-- Thadeus' profile -->
 
 
