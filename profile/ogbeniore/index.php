@@ -1,6 +1,4 @@
 <?php
-$send = $_POST['submit'];
-if (isset($send)){
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     
 
@@ -35,7 +33,6 @@ if (isset($send)){
 
     }
   }
-}
  ?>
 
 <!DOCTYPE html>
@@ -291,10 +288,21 @@ if (isset($send)){
                         <br>Here is the <a class="link" href="http://github.com/OreoluwaOjo/HNG-Test">Link</a> to my first task as an intern at Hotels.ng</p>
                 </div>
                 <p class="slack contact">Contact me</p>
+                <?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+        <?php endif; ?>
 
                 <div id="form-main">
                     <div id="form-div">
-                        <form class="form" id="form1" action="" method "POST" >
+                        <form class="form" id="form1" action="" method= "POST" >
 
                             <p class="name">
                                 <input name="subject" type="text" class="feedback-input" placeholder="Subject" id="name"  required=""/>
