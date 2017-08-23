@@ -1,16 +1,14 @@
 <?php
 
-    $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
 
     $subject = $_POST['subject'];
     $to  = 'fmgbeoma@yahoo.com';
-    $body = $_POST['body'];
+    $body = $_POST['message'];
 
     if($body == '' || $body == ' ') {
-        $error[] = 'Body cannot be empty.';
+        $error[] = 'Message cannot be empty.';
     }
 
 
@@ -20,6 +18,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if(empty($error)) {
 
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -33,7 +32,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -95,7 +93,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div>
                 <label for="message">
                     <p>Message</p>
-                    <textarea name="body" id="body" cols="30" rows="10" class="form-input" required></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" class="form-input" required></textarea>
                 </label>
             </div>
             <br>
