@@ -11,6 +11,10 @@
     $server = $config['host'];
     $con = mysqli_connect($server,$config['username'],$config['pass']);
 
+    if (!$con) {
+      die("Connection failed: ".mysqli_connect_error());
+  }
+
     $sql = 'SELECT * FROM password LIMIT 1';
 
     if($result = mysqli_query($con, $sql)) {
