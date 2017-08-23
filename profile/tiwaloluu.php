@@ -140,7 +140,7 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-		       <footer>
+		    
 					<form action="" method="GET" class="contact_form">
 						  <div class="row uniform 50%">
 	 					  	   <h2>Contact Me</h2>
@@ -153,7 +153,7 @@
 							  <li><input type="reset" value="reset" id="reset" name="reset"></li>
 						  </ul>
 					</form>
-	           </footer>
+	          
 			 </div>
 
 		</div>
