@@ -1,4 +1,5 @@
 <?php
+$database = new Database;
 $password = $database->fetchPassword();
 // if($_SERVER['REQUEST_METHOD'] == 'GET'){
 //     $database = new Database;
