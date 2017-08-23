@@ -108,6 +108,32 @@ include('header.php');
 
 		    <!--  Each Participant starts here  -->
 		    <div class="p-card">
+
+            <div class="v-center">
+            <div class="p-card-photo" style="background-image: url(https://hng.fun/profile/danolez1/profile.JPG); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="http://hng.fun/profile/danolez1">
+                <!--Profile Link-->
+
+                <!--Profile Name-->
+                <h3 class="p-card-title">Fatunmbi Daniel</h3>
+                </a>
+                <p class="p-card-description">
+                <!--Email-->
+                danolez1fatuns@yahoo.com</p>
+                
+            </div>
+            <div class="p-team">
+                <a href="#"><!--Team-->
+                <h3 class="p-card-title"> Team 3 </h3>
+                
+                </a>
+            </div>
+            </div>
+        </div>
+
+
+            <div class="p-card">
 			<div class="v-center">
 			    <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dr7qeat3t/image/upload/v1503196109/josh_2_gkeaf7.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
 			    <div class="p-card-info">
