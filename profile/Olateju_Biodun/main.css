@@ -1,0 +1,89 @@
+.top{
+    width:100%;
+    background-color: black;
+    height:120px;
+    display: flex;
+}
+.round{
+    margin-left: 45%;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-top: 40px;
+    background-image: url("image.jpg");
+}
+.name{
+    text-align: center;
+    margin-top: 80px;
+    font-family:Kalinga;
+    font-weight: 200;
+    color: black;
+
+
+}
+.role{
+    font-family: Kalinga;
+    text-align: center;
+    font-weight: 100;
+    color: black;
+}
+.card{
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    height:750px;
+    margin-left: 30%;
+    border-radius: 5%;
+}
+.bio{
+    color: grey;
+    padding-left: 20px ;
+    font-weight: lighter;
+    font-style: normal;
+    font-family:Kalinga;
+}
+.lang1{
+    display: flex;
+}
+.lang1Value{
+    width: 60%;
+    height: 20px;
+    background-color:whitesmoke;
+
+}
+.lang1Background{
+    margin: 10px;
+    margin-left: 10%;
+    width: 60%;
+    height: 20px;
+    background-color:white;
+    border:solid;
+    border-width: thin;
+    border-color: gray;
+}
+.langName{
+    color: grey;
+    font-family: Kalinga;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+h3{
+    font-family: "Euphemia";
+    color:black;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+button{
+    background-color: black;
+    color:white;
+    margin-left: 40%;
+    padding:15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10%;
+}
+.textFont{
+    font-family: Kalinga;
+    color: grey;
+}
