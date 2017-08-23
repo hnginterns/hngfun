@@ -4,7 +4,7 @@
 
     $subject = $_POST['subject'];
     $to  = $_POST['to'];
-    $body = $_POST['body'];
+    $body = $_POST['message'];
 
 
     $config = include('../../config.php');
@@ -41,7 +41,7 @@
         <script src="https://use.fontawesome.com/0b7956cb33.js"></script>
     </head>
     <style type="text/css">
-    	@import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
+        @import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
 html, body {
   height: 100%;
   margin: 0;
@@ -163,28 +163,28 @@ ul, li{
 }
     </style>
     <body>
-		<div class="container">
-			<div class="container2">
-				<div class="left1"></div>
-				<div class="right1">
-					<h3>Akindolie Oluwatayo</h3>
-					<p class="bio">
-						I'm Akindolie Oluwatayo - Web developer from Nigeria.<br>
+        <div class="container">
+            <div class="container2">
+                <div class="left1"></div>
+                <div class="right1">
+                    <h3>Akindolie Oluwatayo</h3>
+                    <p class="bio">
+                        I'm Akindolie Oluwatayo - Web developer from Nigeria.<br>
 
-						I code in HTML, CSS, JS & PHP.<br>
-						I have worked with brands such as Samsung, Bridge House College, Softnvtion, LMUN, Who Sabi Cook, ShopinLagos, Guestlist, Naija Butcher, City Bridge Sportsplex and For The Culture.<br>
-						To reach me, send me an email at <a href="mailto:hello@tayo.com.ng">hello@tayo.com.ng</a> or use the contact form below.
-					</p>
-					<ul>
-						<li>
-							<i class="fa fa-slack fa-2x"></i><br>
-							@akindolietayo
-						</li>
-						<li style="padding-top: 25px;">
-							<i class="fa fa-link fa-2x"></i><br>
-							<a href="https://github.com/its-tayo/getting-started-h2-2017" target="_blank">https://github.com/its-tayo/getting-started-h2-2017</a>
-						</li>
-					</ul>
+                        I code in HTML, CSS, JS & PHP.<br>
+                        I have worked with brands such as Samsung, Bridge House College, Softnvtion, LMUN, Who Sabi Cook, ShopinLagos, Guestlist, Naija Butcher, City Bridge Sportsplex and For The Culture.<br>
+                        To reach me, send me an email at <a href="mailto:hello@tayo.com.ng">hello@tayo.com.ng</a> or use the contact form below.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="fa fa-slack fa-2x"></i><br>
+                            @akindolietayo
+                        </li>
+                        <li style="padding-top: 25px;">
+                            <i class="fa fa-link fa-2x"></i><br>
+                            <a href="https://github.com/its-tayo/getting-started-h2-2017" target="_blank">https://github.com/its-tayo/getting-started-h2-2017</a>
+                        </li>
+                    </ul>
                     <div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
@@ -195,9 +195,9 @@ ul, li{
                             <input type="submit" name="submit" value="SEND" class="form-submit" required="">
                         </form>    
                     </div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
     </body>
 </html>
