@@ -163,12 +163,12 @@
                     </div>
                     <div class="contact">
                         <h2>Contact Me</h2>
-                        <form action="./profile/kay_s.php" method="post">
+                        <form action="./kay_s.php" method="post">
                             <input type="hidden" name="processing" value=true />
                             <input type="text" class="textbox subject" name="subject" placeholder="Subject" /> 
                             <textarea class="textbox body" name="body" placeholder="Message"></textarea>
                             <input type="submit" value="Send" />
-                            <? if($processing) : ?>
+                            <? if($_POST['processing']) : ?>
                                 <p>The Subject or Body field has not been entered</p>
                             <? endif; ?>
                         </form>
