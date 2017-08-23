@@ -43,11 +43,12 @@ footer p {
 
 main {
     display: flex;   
-    margin-bottom: 30px;
+    margin-bottom: auto;
 }
 
 main aside {
     margin-right: 40px;
+    padding-top: 10px;
 }
 
 main aside p {
@@ -120,6 +121,19 @@ a .fa-github-square:hover {
     list-style-type: lower-roman;
 }
 
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    border-radius: 1%;
+    border: 1px solid #e5e5e5;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+hr{
+    border: 1px solid #e3e3e3;
+}
 
 @media screen and (max-width: 768px) {
     main {

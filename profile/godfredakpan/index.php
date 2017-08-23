@@ -319,7 +319,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- End Accordion -->
+                                        <!-- End Accordion --><br> 
+				<div class="row">
+                            <div class="col-12-md">
+                                <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/importedpics/7.png" alt="image6"> .</p>
+                            </div>
+                        </div>
 										<center><p><p><h1>Contact Me</h1>
       <div class="form-container">
                         <form action=" " method="POST">

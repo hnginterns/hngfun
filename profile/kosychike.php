@@ -99,7 +99,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <img class="img" src="https://pbs.twimg.com/media/DGtGqu5XcAA5J3-.jpg" />
 
         <h1>Chike Ononye</h1>
-        <p>Hello, I'm Chike Ononye, graduated sixth form(Alevel) August, 2017. Junior Front End Devloper and Designer.LANGUAGE(S), FRAMEWORK(S) AND LIBRARIE(S): HTML/CSS, Bootstrap, JavaScript, jQuery , AdobeXD(design)</p>
+        <p>Hello, I'm Chike Ononye, graduated sixth form(Alevel) August, 2017. Junior Front End Devloper and Designer.LANGUAGE(S), FRAMEWORK(S) AND LIBRARIE(S): HTML/CSS, Bootstrap, JavaScript, jQuery , particlesJS, AdobeXD(design)</p>
 
         <div id="links">
             <a id="slack" href="https://hnginterns.slack.com">
