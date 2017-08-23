@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Contains all configurations
  *
