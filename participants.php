@@ -237,7 +237,31 @@ include('header.php');
                             </div>
                         </div>
                     </div>
-                    <!--  Each Participants ends here  -->
+                    <!--  Each Participants ends here  --> 
+		
+		
+		<!--  Each Participant starts here  -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/DREW-certified.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/DREW-certified.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Andrew Ugbechie</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">andrewugbechie@gmail.com</p>
+                        <!--Email-->
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 5 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  Each Participants ends here  -->
 
 
                     <div class="p-card">
@@ -1750,7 +1774,7 @@ include('header.php');
                 <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(https://image.ibb.co/eYOe6k/olumide.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
-                        <a href="http://hng.fun/profile/holumiede.html">
+                        <a href="http://hng.fun/profile/holumiede.php">
                             <h3 class="p-card-title">Osideinde Oluwadara</h3>
                         </a>
                         <p class="p-card-description">osideindeo@gmail.com</p>
@@ -2451,7 +2475,7 @@ include('header.php');
                     <div class="p-card-info">
 
 
-                        <a href="http://hng.fun/profile/alejandro.php">
+                        <a href="http://hng.fun/profile/alejandro.html">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Francis Benson</h3>
                             <!--Profile Name-->
@@ -2838,7 +2862,7 @@ include('header.php');
                     <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
 
-                        <a href="http://hng.fun/profile/alejandro.php">
+                        <a href="http://hng.fun/profile/alejandro.html">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Francis Benson</h3>
                             <!--Profile Name-->
@@ -5138,7 +5162,7 @@ include('header.php');
                 <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
 
-                    <a href="http://hng.fun/profile/alejandro.php">
+                    <a href="http://hng.fun/profile/alejandro.html">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Francis Benson</h3>
                         <!--Profile Name-->
