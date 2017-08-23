@@ -58,7 +58,7 @@
        *
        */
       if($sent_password != $password)
-        $error[] = 'Invalid password sent';
+        $error[] = 'You have sent an invalid password, please try again.';
 
       if(!empty($error)) {
         /**
@@ -92,7 +92,7 @@
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
-           $error[] = 'Email Sending failed';
+           $error[] = 'Message sending failed';
          } else {
            /**
             * Mail has been sent successfully
@@ -101,7 +101,7 @@
             * or we can just tell them that its successful here
             */
 
-           $success = 'Mail Sent Successfuly!';
+           $success = 'Message sent Successfuly!';
          }
 
       }
@@ -131,21 +131,56 @@
        */
     }
   }
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HNG INTERN | Mail Participant</title>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <style media="screen">
+      body {
+        background-color: #e5e5e5;
+        font-family: 'Slabo 27px', serif;
+      }
+      blockquote {
+        margin: 0 auto;
+        text-align: left;
+        padding: 5px;
+        background: #fff;
+        max-width: 500px;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body style="background-color">
 
 
-/**
- * After everything we check if there is error or if everything was successfull
- */
-  if(!empty($error)) {
-    /**
-     * The error is not empty, we loop through and display the content
-     */
+      <?php
+      /**
+       * After everything we check if there is error or if everything was successfull
+       */
+        if(!empty($error)) {
+          /**
+           * The error is not empty, we loop through and display the content
+           */
+          echo '<blockquote style="border-left:15px solid red;">';
+          echo "<ul style='list-style:none;'>";
+          foreach ($error as $key => $value) {
+            echo "<li>$value</li><br/>";
+          }
+          echo '</ul>';
+        } else {
+          $referer = $_SERVER['HTTP_REFERER'];
+          echo '<blockquote style="border-left:15px solid green;">';
+          echo '<h1>'.$success.'</h1>';
+          echo '<p>Click <a href="'.$referer.'">here</a> to go back.</p>';
+        }
 
-    foreach ($error as $key => $value) {
-      echo "<li>$value</li><br/>";
-    }
-  } else {
-    $referer = $_SERVER['HTTP_REFERER'];
-    echo $success;
-    echo 'Click <a href="'.$referer.'">here</a> to go back';
-  }
+      ?>
+    </blockquote>
+
+  </body>
+</html>
