@@ -6092,6 +6092,16 @@ textarea {
                           }
                           /* Past Internships Page CSS by Team 7 ends
 ===============================*/
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+.library-all {
+    margin: 20px;
+    margin-left: 14% !important;
+    margin-right: 10% !important;
+    margin-top: 1%;
+    align: center;
+=======
                           /* CSS for Team 8
 ===============================*/
                           .team8-card-container {
@@ -7076,6 +7086,7 @@ textarea {
     opacity: 1;
     text-align: center; 
     margin-top: 12%;
+>>>>>>> dd23294c721a15967170766ecb064e0580e23cda
 }
 <<<<<<< HEAD
 
@@ -7163,6 +7174,479 @@ padding:10px;
 ====================================*/
 
 
+<<<<<<< HEAD
+/*.library-img{
+=======
+                             
+                             .row {
+                                 margin-top: 15px;
+                                 width: 100%;
+                                 height: 50%;
+                             }
+                             
+                             .row div {
+                                 width: 50%;
+                                 height: 100%;
+                                 float: left;
+                             }
+                             
+                             .image {
+                                 height: 200px;
+                             }
+                             
+                             .name-text {
+                                 font-size: x-large;
+                                 margin-top: 60px;
+                                 margin-left: 20px;
+                                 padding: 5px;
+                                 text-align: left;
+                                 font-weight: bold;
+                                 color: #333333;
+                             }
+                             
+                             .section-text {
+                                 font-size: x-large;
+                                 text-align: center;
+                                 font-weight: bold;
+                                 color: #333333;
+                             }
+                             
+                             .section-leader {
+                                 margin-top: 50px;
+                                 margin-bottom: 50px;
+                             }
+                             
+                             .name-post-text {
+                                 font-size: large;
+                                 margin-top: 5px;
+                                 margin-left: 20px;
+                                 padding: 5px;
+                                 text-align: left;
+                                 color: #333333;
+                             }
+                             
+                             .name-body-text {
+                                 font-size: small;
+                                 margin-top: 10px;
+                                 margin-left: 20px;
+                                 padding: 5px;
+                                 text-align: left;
+                                 color: #4F4F4F;
+                             }
+                             
+                             .section-body-text {
+                                 font-size: large;
+                                 margin: auto;
+                                 padding: 5px;
+                                 text-align: center;
+                                 color: #4F4F4F;
+                                 font-weight: lighter;
+                             }
+                             
+                             .linkedin {
+                                 align-self: left;
+                                 height: 30px;
+                                 width: 30px;
+                                 margin-top: 3px;
+                                 margin-left: 20px;
+                             }
+                             
+                             #team-2-section-1 {
+                                 max-width: 50vw;
+                                 margin: auto;
+                                 text-align: center;
+                                 padding-bottom: 20px;
+                             }
+                             
+                             .section-1 {
+                                 margin-top: 50px;
+                                 margin-bottom: 50px;
+                             }
+                             
+                             table {
+                                 border-collapse: collapse;
+                                 width: 100%;
+                             }
+                             
+                             td,
+                             th {
+                                 border: 1px solid #dddddd;
+                                 text-align: left;
+                                 padding: 60px;
+                             }
+                             
+                             p.ex {
+                                 padding: -0.9cm;
+                                 font-weight: lighter;
+                                 font-size: 17px;
+                             }
+                             
+                             tr:nth-child(even) {
+                                 background-color: #dddddd;
+                             }
+                             
+                             p.thick {
+                                 font-weight: bold;
+                                 font-size: 150%;
+                                 color: #333333;
+                             }
+                             
+                             p.light {
+                                 color: #4F4F4F;
+                                 font-size: small;
+                                 font-weight: lighter;
+                             }
+                             /*---team2---footer--*/
+                             
+                             .footer-distributed {
+                                 background-color: #292c2f;
+                                 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+                                 box-sizing: border-box;
+                                 width: 100%;
+                                 text-align: left;
+                                 font: bold 10px sans-serif;
+                                 padding: 55px 50px;
+                                 margin-top: 80px;
+                             }
+                             
+                             .footer-distributed .footer-left,
+                             .footer-distributed .footer-center,
+                             .footer-distributed .footer-right {
+                                 display: inline-block;
+                                 vertical-align: top;
+                             }
+                             /* Footer left */
+                             
+                             .footer-distributed .footer-left {
+                                 width: 25%;
+                             }
+                             /* The company logo */
+                             
+                             .footer-distributed h3 {
+                                 color: #ffffff;
+                                 font: normal 36px 'Cookie', cursive;
+                                 margin: 0;
+                             }
+                             
+                             .footer-distributed h3 span {
+                                 color: #ffffff;
+                             }
+                             /* Footer links */
+                             
+                             .footer-distributed .footer-links {
+                                 color: #ffffff;
+                                 margin: 20px 0 12px;
+                                 padding: 0;
+                             }
+                             
+                             .footer-distributed .footer-links a {
+                                 display: inline-block;
+                                 line-height: 1.8;
+                                 text-decoration: none;
+                                 color: #ffffff;
+                             }
+                             
+                             .footer-distributed .footer-company-name {
+                                 color: #ffffff;
+                                 font-size: 14px;
+                                 font-weight: normal;
+                                 margin: 0;
+                             }
+                             /* Footer Center */
+                             
+                             .footer-distributed .footer-center {
+                                 width: 36%;
+                             }
+                             
+                             .footer-distributed .footer-center i {
+                                 background-color: #33383b;
+                                 color: #ffffff;
+                                 font-size: 25px;
+                                 width: 38px;
+                                 height: 38px;
+                                 border-radius: 50%;
+                                 text-align: center;
+                                 line-height: 42px;
+                                 margin: 10px 15px;
+                                 vertical-align: middle;
+                             }
+                             
+                             .footer-distributed .footer-center i.fa-envelope {
+                                 font-size: 17px;
+                                 line-height: 38px;
+                             }
+                             
+                             .footer-distributed .footer-center p {
+                                 display: inline-block;
+                                 color: #ffffff;
+                                 vertical-align: middle;
+                                 margin: 0;
+                             }
+                             
+                             .footer-distributed .footer-center p span {
+                                 display: block;
+                                 font-weight: normal;
+                                 font-size: 14px;
+                                 line-height: 2;
+                             }
+                             
+                             .footer-distributed .footer-center p a {
+                                 color: #ffffff;
+                                 text-decoration: none;
+                                 ;
+                             }
+                             /* Footer Right */
+                             
+                             .footer-distributed .footer-right {
+                                 width: 20%;
+                             }
+                             
+                             .footer-distributed .footer-company-about {
+                                 line-height: 20px;
+                                 color: #ffffff;
+                                 font-size: 13px;
+                                 font-weight: normal;
+                                 margin: 0;
+                             }
+                             
+                             .footer-distributed .footer-company-about span {
+                                 display: block;
+                                 color: #ffffff;
+                                 font-size: 14px;
+                                 font-weight: bold;
+                                 margin-bottom: 20px;
+                             }
+                             
+                             .footer-distributed .footer-icons {
+                                 margin-top: 25px;
+                             }
+                             
+                             .footer-distributed .footer-icons a {
+                                 display: inline-block;
+                                 width: 35px;
+                                 height: 35px;
+                                 cursor: pointer;
+                                 background-color: #fffffff;
+                                 border-radius: 2px;
+                                 font-size: 20px;
+                                 color: #ffffff;
+                                 text-align: center;
+                                 line-height: 35px;
+                                 margin-right: 3px;
+                                 margin-bottom: 5px;
+                             }
+                             /* If you don't want the footer to be responsive, remove these media queries */
+                             
+                             @media (max-width: 880px) {
+                                 .footer-distributed {
+                                     font: bold 14px sans-serif;
+                                 }
+                                 .footer-distributed .footer-left,
+                                 .footer-distributed .footer-center,
+                                 .footer-distributed .footer-right {
+                                     display: block;
+                                     width: 70%;
+                                     margin-bottom: 40px;
+                                     text-align: center;
+                                 }
+                                 .footer-distributed .footer-center i {
+                                     margin-left: 0;
+                                 }
+                             }
+                             
+                             .row {
+                                 margin-top: 15px;
+                                 width: 100%;
+                                 height: 50%;
+                             }
+                             
+                             .row div {
+                                 width: 50%;
+                                 height: 100%;
+                                 float: left;
+                             }
+                             
+                             .image {
+                                 height: 200px;
+                             }
+                             
+                             .name-text {
+                                 font-size: x-large;
+                                 margin-top: 60px;
+                                 margin-left: 20px;
+                                 padding: 5px;
+                                 text-align: left;
+                                 font-weight: bold;
+                                 color: #333333;
+                             }
+                             
+                             .section-text {
+                                 font-size: x-large;
+                                 text-align: center;
+                                 font-weight: bold;
+                                 color: #333333;
+                             }
+                             
+                             .section-leader {
+                                 margin-top: 50px;
+                                 margin-bottom: 50px;
+                             }
+                             
+                             .name-post-text {
+                                 font-size: large;
+                                 margin-top: 5px;
+                                 margin-left: 20px;
+                                 padding: 5px;
+                                 text-align: left;
+                                 color: #333333;
+                             }
+                             
+                             .name-body-text {
+                                 font-size: small;
+                                 margin-top: 10px;
+                                 margin-left: 20px;
+                                 padding: 5px;
+                                 text-align: left;
+                                 color: #4F4F4F;
+                             }
+                             
+                             .section-body-text {
+                                 font-size: large;
+                                 margin: auto;
+                                 padding: 5px;
+                                 text-align: center;
+                                 color: #4F4F4F;
+                                 font-weight: lighter;
+                             }
+                             
+                             .linkedin {
+                                 align-self: left;
+                                 height: 30px;
+                                 width: 30px;
+                                 margin-top: 3px;
+                                 margin-left: 20px;
+                             }
+                             
+                             #team-2-section-1 {
+                                 max-width: 50vw;
+                                 margin: auto;
+                                 text-align: center;
+                                 padding-bottom: 20px;
+                             }
+                             
+                             .section-1 {
+                                 margin-top: 50px;
+                                 margin-bottom: 50px;
+                             }
+                             
+                             table {
+                                 border-collapse: collapse;
+                                 width: 100%;
+                             }
+                             
+                             td,
+                             th {
+                                 border: 1px solid #dddddd;
+                                 text-align: left;
+                                 padding: 60px;
+                             }
+                             
+                             p.ex {
+                                 padding: -0.9cm;
+                                 font-weight: lighter;
+                                 font-size: 17px;
+                             }
+                             
+                             tr:nth-child(even) {
+                                 background-color: #dddddd;
+                             }
+                             
+                             p.thick {
+                                 font-weight: bold;
+                                 font-size: 150%;
+                                 color: #333333;
+                             }
+                             
+                             p.light {
+                                 color: #4F4F4F;
+                                 font-size: small;
+                                 font-weight: lighter;
+                             }
+                             /* Library Page CSS by Team 10
+===============================*/
+                             
+                             .library-all {
+                                 margin: 20px;
+                                 margin-left: 14% !important;
+                                 margin-right: 10% !important;
+                                 margin-top: 1%;
+                             }
+                             
+                             .library-list {
+                                 list-style-type: none;
+                                 width: 500px;
+                                 font-size: x-large;
+                                 margin-top: 80px;
+                                 margin: auto;
+                                 padding: 5px;
+                                 font-weight: bold;
+                             }
+                             
+                             .library-list h3 {
+                                 font: bold 22px/1.5 Helvetica, Verdana, sans-serif;
+                             }
+                             
+                             .library-img {
+                                 float: left;
+                                 margin: 0 15px 0 0;
+                             }
+                             
+                             .library-list p {
+                                 font: 200 14px/1.5 Georgia, Times New Roman, serif;
+                             }
+                             
+                             .library-list li {
+                                 padding: 10px;
+                                 overflow: auto;
+                             }
+                             
+                             .library-list a:hover {
+                                 text-decoration: underline;
+                                 cursor: pointer;
+                                 color: #000000;
+                             }
+                             /*.library-img{
+>>>>>>> eb450ff8a8e44b79a4ba2c8336980264140f3fd7
+    height:42px;
+    width:42px;
+}*/
+                             
+                             .library-input {
+                                 opacity: 1;
+                                 text-align: center;
+                                 margin-top: 12%;
+                             }
+                             
+                             .library-input[type=text] {
+                                 width: 50%;
+                                 box-sizing: border-box;
+                                 border: 2px solid #ccc;
+                                 border-radius: 4px;
+                                 font-size: 16px;
+                                 background-color: white;
+                                 background-image: url('searchicon.png');
+                                 background-position: 10px 10px;
+                                 background-repeat: no-repeat;
+                                 padding: 12px 20px 12px 40px;
+                                 -webkit-transition: width 0.4s ease-in-out;
+                                 transition: width 0.4s ease-in-out;
+                             }
+                             
+                             .library-input[type=text]:focus {
+                                 width: 55%;
+                             }
+                             /*.library-img-space{
+=======
 
 /* News Page CSS by Team 8 
 ===============================*/
@@ -7335,6 +7819,7 @@ table {
     width: 100%;
 =======
 /*.library-img-space{
+>>>>>>> dd23294c721a15967170766ecb064e0580e23cda
     height: 100px;
 }*/
 #library-search{

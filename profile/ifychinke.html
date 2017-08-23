@@ -36,8 +36,45 @@
 
     body{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       
 
     }
+
+    .user-message {
+            border: 2px solid #4e4b4b;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 20px;
+            width: 33%;
+            background: purple;
+            color: white;
+        }
+        
+        .user-message:focus {
+            border: 2px solid purple;
+            outline: none;
+        }
+
+    .input-box {
+            height: 28px;
+            border: 2px solid #4e4b4b;
+            border-radius: 20px;
+            width: 33%;
+            padding: 0 10px;
+            font-size: 13px;
+            font-weight: 500;
+            background: purple;
+            color: white;
+        }
+        
+        .input-box:focus {
+            border: 2px solid purple;
+            outline: none;
+        }
+        
+        .input-holder {
+            margin: 20px 0;
+        }
     
     
     </style>
@@ -47,7 +84,7 @@
 <body>
     
     <div id="rcorners2">
-        <img class="img-circle" src="https://avatars0.githubusercontent.com/eephie" title="Chinke Ifeyinwa Ruth"  alt="Chinke Ifeyinwa Ruth" > 
+        <img class="img-circle" src="http://res.cloudinary.com/dro4p9dl3/image/upload/c_scale,w_238/v1503441509/eephie_waf1ci.jpg" title="Chinke Ifeyinwa Ruth"  alt="Chinke Ifeyinwa Ruth" > 
         
         <h1>Chinke Ifeyinwa Ruth</h1>
 
@@ -63,14 +100,15 @@
         <div id="contact">
             <h3>Contact me</h3>
                 <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                    Name:<br>
-                    <input type="text" name="name"><br>
-                    E-mail:<br>
-                    <input type="text" name="mail"><br>
-                    Comment:<br>
-                    <input type="text" name="comment" size="50"><br><br>
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Reset">
+                    <div class="input-holder">
+                        <input type="text" placeholder="Full Name" name="user-name" class="input-box">
+                    </div>
+                    <div class="input-holder">
+                        <input type="email" placeholder=" Email" name="user-email" class="input-box">
+                    </div>
+                    <div class="input-holder">
+                        <textarea name="user-message" id="" cols="30" rows="10" placeholder="Write your message here" class="user-message"></textarea>
+                    </div> 
                 </form>
 
         </div>
