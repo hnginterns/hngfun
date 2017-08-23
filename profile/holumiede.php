@@ -1,42 +1,21 @@
 <?php
-<<<<<<< HEAD
-    / if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-=======
     //if "email" variable is filled out, send email
-      if (isset($_REQUEST['to']))  {
-          
-          
->>>>>>> parent of 93d3cf9... contact
+      if (isset($_REQUEST['email']))  {
       
       //Email information
-      $subject = $_GET['subject'];
-    $to  = 'osideindeo@gmail.com';
-    $body = $_GET['message'];
+      $to = "osideindeo@gmail.com";
+      $subject = $_REQUEST['subject'];
+      $body = $_REQUEST['body'];
           
+          $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dbd = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $db = new PDO($dbd, $config['username'], $config['pass']);
           
-           if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
-
-
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
-    }
-
+         $query = $db->query('SELECT * FROM password LIMIT 1 ');
+          $data = $query->fetch();
+          $password = $data['pasword'];
           
-     $config = include(dirname(dirname(__FILE__)).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-      header("location: $uri");
-
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
         }
             
           ?>
@@ -233,15 +212,14 @@
 
 
 
-                <form method="get" action="/sendmail.php" name="contact_form">
+                <form method="GET" action="/sendmail.php" name="contact_form">
 
                     <div class="row uniform 50%">
 
                         <h2>Contact Me</h2>
-                        <div class=""><input type="text" name="subject" id="name" placeholder="Subject" /></div>
-                        <!--                        <div class=""><input type="email" name="to" id="email" placeholder="Email" />-->
-
-                        <div class=""><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                        <div class=""><input type="text" name="subject" id="name" placeholder="Name" /></div>
+<!--                        <div class=""><input type="email" name="email" id="email" placeholder="Email" /></div>-->
+                        <div class=""><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
 
                     </div>
 
