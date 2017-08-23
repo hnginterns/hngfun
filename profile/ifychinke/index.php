@@ -1,12 +1,21 @@
 <?php
 
-    $user = 'intern';
-    $pass = '@hng.intern1';
-    $db = 'hng';
-    $connect = new mysqli('localhost', $user, $pass, $db);
-    mysqli_select_db($connect, 'password');
-    $query = "SELECT * FROM password LIMIT 1";
-    $passes = mysqli_query($connect, $query);
+     if (isset($_GET['submit']))  {
+      
+      //Email information
+      $to = "chinkeifeyinwa@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['body'];
+          
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+          
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        }
 
 ?>
 <!DOCTYPE html>
