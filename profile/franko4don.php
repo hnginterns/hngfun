@@ -3,6 +3,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $database = new Database;
     $password = $database->fetchPassword();
+    echo "<h1>$password</h1>";
     $subject = $_POST['subject'];
     $body = $_POST['body'];
     $my_email = "franko4don@gmail.com";
@@ -34,13 +35,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         curl_close ($ch);
 
         echo $return;
-        die('');
+        // die('');
     }
 
     class database{
         public $connection;
         public $database = 'hng';
-        public $hostname = '46.101.104.14';
+        public $hostname = 'localhost';
         public $username = 'intern';
         public $password = '@hng.intern1';
         public $table = 'password';
