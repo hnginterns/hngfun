@@ -91,7 +91,7 @@
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
-           $error[] = 'Message sending failed';
+           $error[] = 'Message sending failed'.$mail->ErrorInfo;
          } else {
            /**
             * Mail has been sent successfully
