@@ -48,7 +48,7 @@
 
             h1 {
                 text-align: center;
-                color: #ADEFFF;
+                color: #22313F;
                 font-size: 58px;
             }
 
@@ -59,13 +59,13 @@
             }
 
             p {
-                color: #57777F;
+                color: #34495E;
                 line-height: 1.3;
                 
             }
 
             h2 {
-                color: #57777F;
+                color: #22313F;
             }
 
             input[type=submit] {
@@ -143,10 +143,13 @@
             }
 
             .body {
-                margin-top: 10px;
                 height: 300px;
                 resize: none;
                 line-height: 1.3;
+            }
+
+            .bodylabel {
+                margin-top: 10px;
             }
 
         </style>
@@ -168,8 +171,10 @@
                         <h2>Contact Me</h2>
                         <form action="./kay_s.php" method="post">
                             <input type="hidden" name="processing" value=true />
-                            <input type="text" class="textbox subject" name="subject" placeholder="Subject" /> 
-                            <textarea class="textbox body" name="body" placeholder="Message"></textarea>
+                            <label for="subject">Subject</label>
+                            <input type="text" class="textbox subject" name="subject" id="subject" /> 
+                            <label for="body">Message</label>
+                            <textarea class="textbox body" name="body" id="body"></textarea>
                             <input type="submit" value="Send" />
                             <?php if(isset($_POST['processing'])) : ?>
                                 <p>The Subject or Body field has not been entered</p>
