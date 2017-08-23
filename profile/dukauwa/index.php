@@ -1,35 +1,29 @@
-<!doctype html>
 <?php
 
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-    $subject = $_POST['subject'];
-    $to  = 'dukauwa.du@gmail.com';
-    $body = $_POST['message'];
+    $config = include('../../config.php');
+    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = new PDO($dsn, $config['username'], $config['pass']);
 
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
 
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
-    }
+    if (isset($_GET['sendmessage'])) {
 
-    if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      header("location: $uri");
+        $subject = "Hello";
+        $password = htmlentities(strip_tags(trim($password)));
+        $body = htmlentities(strip_tags(trim($_GET['body'])));
+        $to = "dukauwa.du@gmail.com";
+
+        $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+
+        header("Location: " . $location);
 
     }
-
-  }
 
  ?>
+<!doctype html>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -287,12 +281,13 @@
                   <li><a href="https://twitter.com/ukauwa_david" class="social-icons"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 
               </ul>
-                  <form class="form">
+                  <form class="form" action="" method="GET">
+
                     <h4>CONTACT ME</h4>
-                    <p type="Name:"><input placeholder="Write your name here.."></input></p>
-                    <p type="Email:"><input placeholder="Let me know how to contact you back.."></input></p>
-                    <p type="Message:"><input placeholder="What would you like to tell me.."></input></p>
-                    <button>Send Message</button>
+                    <p type="Name:"><input type="text"  name="name" placeholder="Write your name here.."></input></p>
+                    <p type="Email:"><input type="email" name="email" placeholder="Let me know how to contact you back.."></input></p>
+                    <p type="Message:"><input name="body" rows="10" cols="10" placeholder="What would you like to tell me.."></input></p>
+                    <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
                     <div>
                       <span class="fa fa-phone"></span>09024095111
                       <span class="fa fa-envelope-o"></span> dukauwa.du@gmail.com
@@ -301,6 +296,7 @@
             </div>
 
         </div>
+
     </body>
     <!--end html  -->
 
