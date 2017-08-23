@@ -1,27 +1,27 @@
-  <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
     $to  = 'godfredakpan@gmail.com';
     $body = $_POST['message'];
     if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
+        $error[] = 'Message cannot be empty.';
     }
     if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
+        $error[] = 'Subject cannot be empty.';
     }
     if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['localhost'].';dbname='.$config['hng'];
-      $con = new PDO($dsn, $config['intern'], $config['@hng.intern1']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['@hng.intern1'];
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      header("location: $http://hng.fun/sendmail.php?@hng.intern1=spamblocker&subject=Hello&body=Thank you for messaging&to=godfredakpan@gmail.com");
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
     }
-  }
- ?>
+}
+?>
 <!-- === BEGIN HEADER === -->
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
@@ -226,7 +226,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <p>My Name is Godfred Archer, i am from Akwa Ibom State, Nigeria, <p>i studied computer science at IMFI Academy, with a degree of competence 
+                                        <p>My Name is Godfred Akpan, i am from Akwa Ibom State, Nigeria, <p>i studied computer science at IMFI Academy, with a degree of competence 
 										in Web Design and Programming. <p>iam currently studying at the University of Uyo, expecting to graduate by next year which is 2018.
 										<p>
                                            My Inspiration is God, i believe with him and a computer you can do all things.</p><p>
@@ -315,7 +315,7 @@
                                             </div>
                                         </div>
                                         <!-- End Accordion -->
-										<h1>Contact Me</h1>
+										<p>>p><h1>Contact Me</h1>
         <?php if(isset($error) && !empty($error)): ?>
           <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
             <ul style='list-style:none;'>
