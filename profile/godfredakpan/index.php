@@ -28,49 +28,103 @@
 <html lang="en">
     <!--<![endif]-->
     <head>
-	<style type="text/css">
-        @import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
-
-.form-input, .form-submit{
-    outline: none;
-}
-.form-textarea{
-    height: 150px !important;
-}
-.form-submit{
-    background: #00ad3f;
-    border: 2px solid #00ad3f;
-    color: white;
-    font-weight: 900;
-    padding: 7px;
-    cursor: pointer;
-}
-::-webkit-input-placeholder{
-    font-family: 'Droid Serif', serif !important;
-    color: #4c4c4c;
-}
-input, textarea{
-    font-family: 'Droid Serif', serif !important;
-    color: #4c4c4c;
-}
-ul{
-    padding: 15px;
-}
-ul, li{
+	<style media="screen">
+  body {
+    font-family: 'Slabo 27px', serif;
+    background: #f6f6f6;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
     text-align: center;
-    list-style-type: none;
-    color: #4c4c4c;
-}
-@media (min-width: 480px){
-    html, body{
-        overflow-x: hidden !important;
-    }
-    .right1>h3{
-        padding-top: 5%;
-    }
-
-}
-    </style>
+    padding-bottom: 20px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  .line {
+    max-width: 400px;
+    margin-bottom: -20px;
+    margin-top: -10px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  }
+  h1 {
+    margin-bottom: -15px;
+  }
+  .bosunski-label {
+    display: block;
+    margin-top:20px;
+    text-align: left;
+    font-weight: 400;
+  }
+  form {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  input, textarea {
+    width: 380px;
+    height: 27px;
+    background: #efefef;
+    border: 0.5px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #3a3a3a;
+  }
+  textarea {
+    height: 213px;
+  }
+  input:focus, textarea:focus {
+    border: 1px solid  #97d6eb;
+  }
+  #bosunski-submit {
+    width: 127px;
+    height: 37px;
+    border: none;
+    background-color: #3c3c3c;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #bosunski-submit:hover {
+    opacity: .9;
+  }
+  @@media query {
+  }
+  </style>
+   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px">
         <title>Welcome|Godfred Akpan|</title>
@@ -82,16 +136,16 @@ ul, li{
         <!-- Favicon -->
         <link href="favicon.ico" rel="shortcut icon">
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
-        <!-- godfred akpan CSS -->
-        <href="assets/css/animate.css" rel="stylesheet">
-        <href="assets/css/font-awesome.css" rel="stylesheet">
-        <href="assets/css/nexus.css" rel="stylesheet">
-        <href="assets/css/responsive.css" rel="stylesheet">
-        <href="assets/css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/nexus.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
         <!-- Google Fonts-->
-        <href="http://fonts.googleapis.com/css?family=Open Sans:300,400" />
-        <href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans:300,400" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400" />
     </head>
     <body>
         <div id="body_bg">
@@ -106,8 +160,7 @@ ul, li{
                             </li>
                             <li class="social-googleplus">
                                 <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
-				    <i class="fa fa-slack fa-2x"></i><br>
-					@godfredakpan
+				    
 			    <li class="social-googleplus">
                                 <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
                             </li><br><br><br><br><br><br>
@@ -156,9 +209,7 @@ ul, li{
                                             <li>
                                                 <a href="#">
                                                     <i class="fa-lg fa-border fa-linkedin"></i>
-							</a>
-							<a href=""<i class="fa fa-slack fa-2x"></i><br>
-							@godfredakpan
+							
                                                 </a>
                                             </li>
                                             <li>
