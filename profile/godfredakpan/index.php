@@ -30,64 +30,7 @@
     <head>
 	<style type="text/css">
         @import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Droid Serif', serif !important;
-  overflow-x: hidden;
-}
-.container{
-  /*min-height:100%;
-  min-width:100%;*/
-  background-color:#00ad3f;
-  display:flex;
-}
-.container2{
-    background: #eaeeec;
-    margin: 10px;
-    /*min-height: 100%;
-    min-width: 100%;*/
-}
-.left1{
-    background: url('') center center;
-    background-size: cover;
-    height: 100%;
-    width: 50%;
-    float: left;
-}
-.right1{
-    height: 100%;
-    width: 50%;
-    float: right;
-}
-.right1>h3{
-    text-align: center;
-    color: #4c4c4c;
-    padding: 0 15px;
-}
-.right1>.bio{
-    padding-top: 20px;
-    text-align: center;
-    padding: 15px;
-    color: #4c4c4c;
-}
-.clearfix{
-    clear: both;
-}
-.form-container{
-    padding: 0px 15px;
-    width: 85%;
-}
-.form-container>form{
-    padding-bottom: 30px;
-}
-.form-input{
-    width: 100%;
-    height: 35px;
-    margin: 5px 0;
-    border: 2px solid #cfcfcf;
-    border-radius: 7px;
-}
+
 .form-input, .form-submit{
     outline: none;
 }
@@ -125,29 +68,7 @@ ul, li{
     .right1>h3{
         padding-top: 5%;
     }
-}
-@media (max-width: 399px){
-    .left1{
-        height: 120vh
-    }
-}
-@media (max-width: 500px){
-    .left1, .right1{
-        width: 100% !important;
-    }
-    .right1{
-        padding-top: 30px;
-    }
-    .left1{
-        max-height: 500px;
-    }
-    .container{
-        height: 500px;
-    }
-    .right1>.bio{
-        text-align: left;
-        line-height: 1.5;
-    }
+
 }
     </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
