@@ -2,7 +2,7 @@
 <?php 
 //html starts 
 
-$con = mysqli_connect('46.101.104.14','intern','@hng.intern1','hng');
+$con = mysqli_connect('localhost','intern','@hng.intern1','hng');
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
