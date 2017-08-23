@@ -6,7 +6,7 @@
    * Loads the config file config.php containing the databse details
    *
    */
-  $admin_email = 'abodunrin5@gmail.com';
+  $admin_email = 'xyluz@ymail.com';
   $config = include('config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
