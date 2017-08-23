@@ -1,4 +1,5 @@
 <?php
+
   /**
    * Contains all configurations
    *
@@ -9,5 +10,4 @@
     'username' => 'intern',
     'host' => 'localhost',
   ];
-
 ?>
