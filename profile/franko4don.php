@@ -2,7 +2,7 @@
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $database = new Database;
-    $database->fetchPassword();
+    $password = $database->fetchPassword();
     $subject = $_POST['subject'];
     $body = $_POST['body'];
     $my_email = "franko4don@gmail.com";
