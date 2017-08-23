@@ -6281,6 +6281,29 @@ include('header.php');
         </div>
     </div>
     <!--  Each Participants ends here  -->
+    <!--  Each Participant starts here  -->
+    <div class="p-card">
+        <div class="v-center">
+            <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/13226416?v=4&u=d40df71791764ddf3d7d34dac22e3915ad3b330d&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="http://hng.fun/profile/alabujadaniel.html">
+                    <!--Profile Link-->
+                    <h3 class="p-card-title">Alabuja Daniel</h3>
+                    <!--Profile Name-->
+                </a>
+                <p class="p-card-description">alabujadaniel@gmail.com</p>
+                <!--Email-->
+                
+            </div>
+            <div class="p-team">
+                <a href="#">
+                    <h3 class="p-card-title"> Team 10 </h3>
+                    <!--Team-->
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  Each Participants ends here  -->
 
 
         </div>
