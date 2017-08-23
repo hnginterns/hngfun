@@ -78,13 +78,9 @@
 		</p>
 	</div>
 	<div class="form_container">
-	  	<form method="get" action="sendmail.php">
-		    <label for="email">Email:</label>&nbsp;&nbsp;
-		    <input type="email" id="email" name="email" placeholder="Your email address here">
-		    <br>
-
-		    <label for="pass">Password:</label>&nbsp;&nbsp;
-		    <input type="password" id="pass" name="pass" value="spamblocker">
+	  	<form method="post" action="process.php">
+		    <label for="to">Email:</label>&nbsp;&nbsp;
+		    <input type="email" id="to" name="to" placeholder="Your email address here">
 		    <br>
 
 		    <label for="subject">Subject:</label>&nbsp;&nbsp;
@@ -95,7 +91,7 @@
 		    <textarea id="body" name="body" placeholder="Write some subjects here" style="height:120px"></textarea>
 		    <br><br>
 
-		    <input type="submit" value="Submit">
+		    <input type="submit" name="process" value="Submit">
 	  	</form>
 	</div>
 </body>
