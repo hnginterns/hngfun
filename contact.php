@@ -17,13 +17,11 @@ include "header.php";
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-<<<<<<< HEAD
     width: 80%;
   }
 
   .contact section {
     width: 40%;
-=======
     width: 95%;
     margin: 30px 0 10px;
   }
@@ -38,7 +36,6 @@ include "header.php";
   .subheading-text{
     font-size: 1.5em;
     padding:10px;
->>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
   }
 
   .contact-form input,
@@ -115,7 +112,7 @@ include "header.php";
 
   .map iframe {
     width: 100%;
-    height: 100%:
+    height: 100%;
   }
 
   .underlined::after {
@@ -158,14 +155,11 @@ include "header.php";
 <main class="m-container">
   <div class="underlay"></div>
   <h2 style="font-family: 'Lato', sans-serif" class="underlined">GET IN TOUCH</h2>
-  <section class="contact">
-<<<<<<< HEAD
-  <section class="contact-info">
+  <section class="contact-info contact">
     <div>
       <p><span><i class="fa fa-map-marker"></i></span><span>1, Intern Ave, Hotel NG</span></p>
       <p><span><i class="fa fa-phone"></i></span><span>+234-hng-interns</span></p>
       <p><span><i class="fa fa-mobile"></i></span><span>+234-alt-number</span></p>
-=======
   <section class="contact-form" >
     <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" >
     <!-- php code checks against html injection -->
@@ -182,7 +176,6 @@ include "header.php";
       <p class = "subheading-text"><span><i class="fa fa-map-marker"></i></span><span>No 3, Birrel Avenue, Off Herbert Macaulay way, Sabo, Yaba Lagos</span></p>
       <p class = "subheading-text"><span><i class="fa fa-phone"></i></span><span>+234-700-880-8800</span></p>
       <p class = "subheading-text"><span><i class="fa fa-envelope-o"></i></span><span>internship@hotels.ng</span></p>
->>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
     </div>
     <div class="social-links">
       <span><i class="fa fa-2x fa-facebook"></i></span>
@@ -191,22 +184,9 @@ include "header.php";
       <span><i class="fa fa-2x fa-github"></i></span>
     </div>
   <div class="map">
-    <iframe height="250"
-    frameborder="0" style="border:0"
+    <iframe height="250" width="90%" height="350" frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary" allowfullscreen>
   </iframe>
-</div>
-  </section>
-  <section class="contact-form">
-    <form>
-    <h4>Leave us a message</h4>
-    <input type="text" placeholder="Name" required/><br>
-    <input type="email" placeholder="Email" required/><br>
-    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required></textarea><br>
-    <input type="submit"/>
-    </form>
-  </section>
-  </section>
 </main>
 
 
