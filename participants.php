@@ -245,7 +245,7 @@ include('header.php');
                 <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/DREW-certified.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
-                        <a href="http://http://hng.fun/profile/DREW-certified.html">
+                        <a href="http://hng.fun/profile/DREW-certified.html">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Andrew Ugbechie</h3>
                             <!--Profile Name-->
