@@ -6,7 +6,7 @@
    */
   return [
     'dbname' => 'hng',
-    'pass' => '',
-    'username' => 'root',
+    'pass' => '@hng.intern1',
+    'username' => 'intern',
     'host' => 'localhost',
   ];
