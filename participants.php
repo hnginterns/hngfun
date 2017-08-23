@@ -6713,14 +6713,8 @@ include('header.php');
         </div>
     </div>
     <!--  Each Participants ends here  -->
-
-
-    
-    </div>
-    </div>
-
-    <!--  Each Participants ends here  -->
-             <!--  Each Participant starts here  -->
+   
+          <!--  Each Participant starts here  -->
 
                                 <div class="p-card">
                                 <div class="v-center">
@@ -6733,7 +6727,7 @@ include('header.php');
                                         </a>
                                         <p class="p-card-description">femiojo24@gmail.com</p>
                                     </div>
-                                    <div class="p-team">
+                                    <div class="p-team"
                                         <a href="#">
                                             <h3 class="p-card-title"> Team 10 </h3>
                                             <!--Team-->
