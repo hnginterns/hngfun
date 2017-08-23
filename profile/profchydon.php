@@ -1,12 +1,21 @@
 <?php
 
-    if (isset($_POST['sendmessage'])) {
+    $config = include('../config.php');
+    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = new PDO($dsn, $config['username'], $config['pass']);
 
-        $location = 'sendmail.php';
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
+
+    if (isset($_GET['sendmessage'])) {
+
         $subject = "Hello";
-        $password = "spamblocker";
+        $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "profchydon@gmail.com";
+
+        $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
 
         header("Location: " . $location);
 
@@ -19,96 +28,11 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/chidi.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <title>Nkwocha Chidi</title>
 </head>
-
-<style media="screen">
-  * {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Roboto Slab', serif;
-  }
-
-  body {
-    background-color: #000000;
-  }
-
-  a.repo {
-    text-decoration: none;
-  }
-
-  .mainbio h4 {
-    line-height: 25px;
-    text-align: justify;
-    margin-bottom: 35px;
-  }
-
-  img.profileImage {
-    width: 90%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-
-  .MainContaner {
-    margin: 0% 20%;
-    background: white;
-    padding: 5% 10%;
-    height: auto !important;
-  }
-
-  .form-group {
-    margin: 0% 20%;
-    background: #000;
-    padding: 30px 60px;
-    height: auto !important;
-  }
-
-  h3.contactme {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fff;
-    font-size: 25px;
-  }
-
-  button.sendmessage {
-    padding: 10px;
-    background: #fff;
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  textarea {
-    resize: none;
-    width: 100%;
-    margin: 10px 0px;
-    font-size: 14px;
-    padding: 4px;
-  }
-
-  input[type="email"] {
-    width: 100%;
-    margin: 10px 0px;
-    font-size: 14px;
-    padding: 4px;
-  }
-
-  input[type="text"] {
-    width: 100%;
-    margin: 10px 0px;
-    font-size: 14px;
-    padding: 4px;
-  }
-
-  .Details {
-    text-align: center;
-    line-height: 25px;
-    margin-bottom: 25px;
-  }
-
-</style>
 
 <body>
 
