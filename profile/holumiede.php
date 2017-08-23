@@ -3,9 +3,9 @@
       if (isset($_REQUEST['email']))  {
       
       //Email information
-      $admin_email = "osideindeo@gmail.com";
-      $subject = "New Contact Request";
-      $message = $_REQUEST['message'];
+      $to = "osideindeo@gmail.com";
+      $subject = $_REQUEST['subject'];
+      $body = $_REQUEST['body'];
           
           $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dbd = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -15,7 +15,7 @@
           $data = $query->fetch();
           $password = $data['pasword'];
           
-            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$admin_email");
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
         }
             
           ?>
@@ -217,9 +217,9 @@
                     <div class="row uniform 50%">
 
                         <h2>Contact Me</h2>
-                        <div class=""><input type="text" name="name" id="name" placeholder="Name" /></div>
-                        <div class=""><input type="email" name="email" id="email" placeholder="Email" /></div>
-                        <div class=""><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                        <div class=""><input type="text" name="subject" id="name" placeholder="Name" /></div>
+<!--                        <div class=""><input type="email" name="email" id="email" placeholder="Email" /></div>-->
+                        <div class=""><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
 
                     </div>
 
