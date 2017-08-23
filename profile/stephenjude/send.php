@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Send mail to stephen</title>
+</head>
+<style type="text/css">
+	div{
+		margin: 10px auto;
+	}
+</style>
+<body>
+	<div><p>Please wait will the system sends mail to Stephen Jude</p></div>
+</body>
+</html>
 <?php
 	if(isset($_POST['submitBtn'])){
 
