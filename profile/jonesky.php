@@ -1,7 +1,7 @@
 <?php
-/*    $admin_email = 'xyluz@ymail.com';
-*/  
-  $config = include('../../config.php');
+    $admin_email = 'xyluz@ymail.com';
+  
+  $config = include('../config.php');
 
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
@@ -13,15 +13,14 @@
     if (isset($_GET['send'])) {
         $subject = $_GET['subject'];
         $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
+        $body = htmlentities(strip_tags(trim($_GET['message'])));
         $to = "Joseph.mbassey2@gmail.com";
         $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
         header("Location: " .$location);
     }
 
 ?> 
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" />
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 <title>Joseph Profile Page</title>
@@ -445,6 +444,7 @@ h1 {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Profile Joseph Bassey" />
 
+
 <!-- web font -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css' />
 <link href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
@@ -475,12 +475,10 @@ h1 {
 
             </div>
             <h3>Contact Me</h3>
-            </ul>
-          </blockquote>
-            <div class="contact-wthree">
+           <div class="contact-wthree">
                 <form action="" method="GET">
                     <div class="contact-w3left w3-agile">
-                        <input type="text" name="name" placeholder="Enter Yourname" required /> 
+                        <input type="text" name="name" placeholder="Name" required /> 
                         <input type="text" class="email" name="subject" placeholder="Email Subject" required="email" />
                     </div>
                     <div class="contact-w3right">
@@ -492,6 +490,11 @@ h1 {
             </div>  
         </div>  
     </div>  
-    <!-- //main -->    
+    <!-- //main -->
+
+
+
+
+    
 </body>
 </html>
