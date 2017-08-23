@@ -118,7 +118,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  #bosunski-submit:hover {
+  #godfred-submit:hover {
     opacity: .9;
   }
   @@media query {
@@ -161,9 +161,7 @@
                             <li class="social-googleplus">
                                 <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
 				    
-			    <li class="social-googleplus">
-                                <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
-                            </li>
+			    </li>
                         </ul>
                         <!-- End Header Social Icons -->
                     </div>
@@ -189,7 +187,7 @@
                         <!-- Slogan -->
                         <p class="site-slogan">WELCOME TO MY PROFILE PAGE</p>
                         <!-- End Slogan -->
-                        <br><br><br>
+                        
                     </div>
                     <div class="container">
                         <!-- === END HEADER === -->
@@ -240,20 +238,20 @@
                                 </div>
                                 <hr class="margin-bottom-40">
                                 <div class="row">
-                                    <div class="col-md-6">
+					<div class="col-md-6"></div>
                                         <!-- My Skills -->
                                         <h3 class="margin-bottom-10">My Skills</h3>
                                         <h3 class="progress-label">Graphic Design
                                             <span class="pull-right">92%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+					<div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
                                             </div>
                                         </div>
                                         <h3 class="progress-label">Marketing
                                             <span class="pull-right">82%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+				    <div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
                                             </div>
                                         </div>
@@ -267,17 +265,17 @@
                                         <h3 class="progress-label">Programming
                                             <span class="pull-right">78%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+					<div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
                                             </div>
                                         </div>
                                         <!-- End My Skills -->
                                     </div>
-                                    <div class="col-md-6">
+					<div class="col-md-6"></div>
                                         <!-- Accordion -->
                                         <div id="accordion" class="panel-group">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+						<div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-One" data-parent="#accordion" data-toggle="collapse">
                                                             Trust Worthy
@@ -286,12 +284,12 @@
                                                 </div>
                                                 <div id="collapse-One" class="accordion-body collapse in">
                                                     <div class="panel-body">
-                                                        <p>Iam too discipline to be inconsistence, so will not jeopardize my
+                                                        <p>Iam too disciplined to be inconsistence, so i will not jeopardize my
 														career in doing what will not give me credit. at the very end.</div>
                                                 </div>
                                             </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                            <div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-Two" data-parent="#accordion" data-toggle="collapse">
                                                             Hard Working
@@ -305,8 +303,8 @@
 														100% Satisfaction to my clients.</div>
                                                 </div>
                                             </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                            <div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-Three" data-parent="#accordion" data-toggle="collapse">
                                                             Deligence
@@ -351,18 +349,17 @@
 						</div>
                     <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/7.png" alt="godfredakpan"> .</p>
                             	</div>
-                        	</div>
+                        	
                         <!-- End Portfolio Footer Text --> 
 		    <!-- === BEGIN FOOTER === -->
-                    		</div>
+                    		
 					<div id="base" class="container padding-vert-30">
-				</div>
-                        		<div class="row">
-				</div>
+				
+                        	
 			  		<div class="container padding-vert-30">
-			        </div>
+			        
                 	  		<div class="row">
-				</div>
+				
                     			<div id="copyright">
 				</div>
                       <p>[C]2017 Godfred Akpan||</p>
