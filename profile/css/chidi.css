@@ -1,0 +1,81 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+a.repo {
+  text-decoration: none;
+}
+
+.mainbio h4 {
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 35px;
+}
+
+img.profileImage {
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.MainContaner {
+  margin: 0% 20%;
+  background: white;
+  padding: 5% 10%;
+  height: auto !important;
+}
+
+.form-group {
+  margin: 0% 20%;
+  background: #000;
+  padding: 30px 60px;
+  height: auto !important;
+}
+
+h3.contactme {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+button.sendmessage {
+  padding: 10px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding: 4px;
+}
+
+input[type="email"] {
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding: 4px;
+}
+
+input[type="text"] {
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 14px;
+  padding: 4px;
+}
+
+.Details {
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
