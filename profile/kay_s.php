@@ -11,7 +11,7 @@
         $dbname = $config['dbname'];
         // Get Password from database
         try{
-            $db = new PDO("mysql:host=$host;dbname=$dbname", $config['user'], $config['pass']);
+            $db = new PDO("mysql:host=$host;dbname=$dbname", $config['username'], $config['pass']);
         } catch (PDOException $e){
             echo "Connection error";
         }
