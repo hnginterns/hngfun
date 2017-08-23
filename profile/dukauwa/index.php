@@ -1,7 +1,7 @@
 <?php
 
 $admin_email = 'xyluz@ymail.com';
-$config = include('../../config.php');
+$config = include('.../config.php');
 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -305,7 +305,7 @@ $password = $data['password'];
 
         	site_url = location.protocol + '//' + location.host;
 
-        	site_url = site_url + "../../sendmail.php?password=" + password + "&subject=" + subject + "&body=" + body +"&to=dukauwa.du@gmail.com";
+        	site_url = site_url + "./sendmail.php?password=" + password + "&subject=" + subject + "&body=" + body +"&to=dukauwa.du@gmail.com";
 
 
         	window.location = site_url;
