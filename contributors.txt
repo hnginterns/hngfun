@@ -194,3 +194,4 @@
 (192) Liasu Hassan Temitope, (slack: hilyas, github: Hilyas68)
 (193) Imo Joseph Okon, (slack: rhodimosokon, github: Rhodinet)
 (194) Shotola Hammed Oluwole, (slack: Shotolahammed01, github: Hammed01)
+(195) Osuji Chukwuamaka Benjamin, (slack: osujichukwuamaka, github: Chukwuamaka)
