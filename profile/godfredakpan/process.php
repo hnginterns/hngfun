@@ -6,7 +6,7 @@ if (isset($send)){
     
     $error = [];
     $subject = $_GET['subject'];
-    $to  = 'akindolietayo@gmail.com';
+    $to  = 'godfredakpan@gmail.com';
     $body = $_GET['message'];
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
