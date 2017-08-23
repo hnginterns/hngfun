@@ -13,6 +13,9 @@
 <?php include ('header.php'); ?>
 
 <div id="content">
+        <div>
+            <h1>Latest News</h1>
+        </div>
 </div>
 
 <?php include('footer.php'); ?>
