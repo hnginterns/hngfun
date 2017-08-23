@@ -6425,6 +6425,8 @@ include('header.php');
                             </div>
                         </div>
                         <!--  Each Participants ends here  -->
+						
+						<!-- Each participant starts here -->
                 <div class="p-card">
                             <div class="v-center">
                                 <div class="p-card-photo" style="background-image: url(https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/68974_10152436318932507_4812031675029555855_n.jpg?oh=8fbedbcfe40fd0b090fc154f0e3758c2&oe=5A187A17); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -6446,8 +6448,6 @@ include('header.php');
                             </div>
                         </div>
                         <!--  Each Participants ends here  -->
-
-
 
 <div class="p-card">
     <div class="v-center">
@@ -6489,6 +6489,72 @@ include('header.php');
         </div>
     </div>
     <!--  Each Participants ends here  -->
+	
+	<!-- Each participant starts here -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(http://bit.ly/2vbGpkH; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/handsome9ice.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Keresifon Ekpo</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">keresifon.ekpo@gmail.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 9 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Each participant ends here -->
+
+<!-- Each participant starts here -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/imani/image/upload/v1503333886/Hm02qoRY_n9k714.jpg; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/imani.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Tolu Faith</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">bee_moi@zoho.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 3 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Each participant ends here -->
+		    
+	<!-- Each participant starts here -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(https://preview.ibb.co/iemRnQ/17818821_137576633442881_8017641658780745728_n.jpg; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/peter.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Peter Abu-Ekpeshie</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">peterogh94@gmail.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 10 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Each participant ends here -->
 
 
 

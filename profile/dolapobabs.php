@@ -1,3 +1,30 @@
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'dolapob@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+    }
+  }
+ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -186,18 +213,14 @@ input[type=submit]:hover {
         <br>
         <h3>Contact Me</h3>
         <div class="container">
-                <form  id="form" action="">
-              
-                  <label for="fname">Full Name     </label>
-                  <input type="text" id="fname" name="fullname" placeholder="Your Full name.." required="">
-
-                  <label for="lname">Email  </label>
-                  <input type="text" id="email" name="email" placeholder="Enter a valid email" required=""  >
+                <form  id="form" method="POST" action="">
               
                   <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something here.." style="height:200px"></textarea>
+                  <textarea id="subject" name="subject" placeholder="Enter Subject.." style="height:30px"></textarea>
+                  <label for="subject">Message</label>
+                  <textarea id="message" name="message" placeholder="Write something here.." style="height:200px"></textarea>
               
-                  <input type="submit" value="Submit">
+                  <input type="submit" id="submit" value="send">
                   <input type="reset" value="Reset" id="reset" name="reset" />
               
                 </form>
