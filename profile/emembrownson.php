@@ -1,5 +1,11 @@
 <?php
-    
+  $config = include('../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $con = new PDO($dsn, $config['username'], $config['pass']);
+
+  $exe = $con->query('SELECT * FROM password LIMIT 1');
+  $data = $exe->fetch();
+  $password = $data['password'];
 
 ?>
 <!DOCTYPE html>
@@ -20,12 +26,12 @@
     <div class="main-nav">
         <ul class="nav">
           <li class="name">Emem Brownson</li>
-          <li><a href="#index" id="link-home">Home</a></li>
+          <li><a href="#home" id="link-home">Home</a></li>
           <li><a href="#contact" id="link-contact">Contact</a></li>
         </ul>
     </div>
 
-    <div id="index">
+    <div id="home">
       <header>
         <img src='http://res.cloudinary.com/dfe42zn7e/image/upload/v1503490589/home_v7qbyw.jpg' class="profile-image">
         <h1 class="tag name">Hello, I’m Emem Brownson.</h1>
@@ -48,25 +54,21 @@
       </header>
 
       <div class="container">
-        <form action="/action_page.php">
-
-          <div>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-          </div>
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <form action="../sendmail.php" method="get">
 
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email address.." required>
+          <input type="email" id="email" name="to" placeholder="Your email address.." required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Your last name.." required>
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea id="message" name="body" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="hidden" name="password" value="<?= $password; ?>" />
 
           <input type="submit" value="Send">
           
-
         </form>
       </div>
     </div>
@@ -89,10 +91,10 @@
 
         $('#link-home').click(function() {
           $('#contact').hide();
-          $('#index').show();
+          $('#home').show();
         });
         $('#link-contact').click(function() {
-          $('#index').hide();
+          $('#home').hide();
           $('#contact').show();
         });
       });
