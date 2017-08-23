@@ -3,26 +3,26 @@
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $subject = $_POST['subject'];
+    $name = $_POST['name'];
     $to  = 'michael@okoh.co.uk';
-    $body = $_POST['message'];
+    $message = $_POST['message'];
 
-    if($body == '' || $body == ' ') {
+    if($message == '' || $message == ' ') {
       $error[] = 'Message cannot be empty.';
     }
 
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
+    if($name == '' || $name == ' ') {
+      $error[] = 'name cannot be empty.';
     }
 
     if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $config = include(dirname(dirname(dirname(__FILE__))).'../../config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
       header("location: $uri");
 
     }
@@ -231,7 +231,7 @@
                 <h3>Work</h3>
                 <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</b></p>
 
-                <form class="cd-form floating-labels" method="POST" action="index.php">
+                <form class="cd-form floating-labels" method="POST" action="">
               		<fieldset>
               			<div class="icon">
               				<label class="cd-label" for="cd-name">Name</label>
