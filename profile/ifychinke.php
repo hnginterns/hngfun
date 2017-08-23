@@ -1,4 +1,5 @@
 <?php
+
     $user = 'intern';
     $pass = '@hng.intern1';
     $db = 'hng';
@@ -8,7 +9,6 @@
     $passes = mysqli_query($connect, $query);
 
 ?>
-
 <!DOCTYPE html>
 <html lang           = "en">
 <head>
@@ -19,6 +19,7 @@
     
 
     <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
 
     <style type      = "text/css">
         #rcorners2 {
