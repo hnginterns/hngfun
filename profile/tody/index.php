@@ -1,3 +1,8 @@
+<?php
+
+  include(sendmail.php);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -243,7 +248,7 @@
     </div>
 
 
-    <form class="contact-form" action="hng.fun/sendmail.php" method="post">
+    <form class="contact-form" action="hng.fun/sendmail.php" method="get">
       <div class="form-title">Contact Me</div>
       <div class="form-area">
 
