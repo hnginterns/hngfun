@@ -218,7 +218,8 @@
 
                         <h2>Contact Me</h2>
                         <div class=""><input type="text" name="subject" id="name" placeholder="Name" /></div>
-<!--                        <div class=""><input type="email" name="email" id="email" placeholder="Email" /></div>-->
+                        <!--                        <div class=""><input type="email" name="email" id="email" placeholder="Email" />
+                       </div>-->
                         <div class=""><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
 
                     </div>
