@@ -1,6 +1,22 @@
-<!doctype html>
-<html lang = "en">
-  <head>
+ 
+<?php 
+//html starts 
+
+$con = mysqli_connect('46.101.104.14','intern','@hng.intern1','hng');
+if (mysqli_connect_errno())
+{
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+//sql query
+$result = mysqli_query($con, "SELECT password from password limit 1");
+$channel_info = mysqli_fetch_row($result);
+$password = $channel_info[0];
+
+print <<< eot
+ <!doctype html>
+   <html lang = "en">
+     <head>
     <meta charset = "utf-8">
     <title>Bio|Ndubuisi Onyemenam</title>
     <style type="text/css" rel = "stylesheet" >
@@ -9,7 +25,7 @@
               font-family: Verdana, Helvetica, Arial, sans-serif;
               line-height: 1.6em;
               padding-left:20%;
-              background-color:black;
+              background-color:white;
 
          }
 
@@ -32,8 +48,9 @@
 
     </style>
   </head>
-  <body>
-    <p>
+     <body>
+
+     <p>
        <img id = "image"src="http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg" width="250" height="200">
     </p>
     <h1>Onyemenam Ndubuisi</h1>
@@ -52,8 +69,12 @@
       <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
     </p>
+     <form method = "post" action = "hng.fun/sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com" id = "login_form">
+       <textarea></textarea>
+       <button   type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
+     </form>
+     </span>
+     </body>
+eot;
 
-  </body>
-</html>
-
-
+?>
