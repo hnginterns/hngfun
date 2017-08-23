@@ -1,5 +1,9 @@
 <?php
+$send = $_POST['submit'];
+if (isset($send)){
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+
     $error = [];
 
     $subject = $_POST['subject'];
@@ -25,12 +29,13 @@
       $data = $exe->fetch();
       $password = $data['password'];
 
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      $uri = "../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
       header("location: $uri");
 
     }
   }
+}
  ?>
 <!DOCTYPE html>
     <head>
@@ -112,6 +117,7 @@ html, body {
     color: white;
     font-weight: 900;
     padding: 7px;
+    cursor: pointer;
 }
 ::-webkit-input-placeholder{
     font-family: 'Droid Serif', serif !important;

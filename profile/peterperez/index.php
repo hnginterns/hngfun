@@ -1,3 +1,41 @@
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+
+    $subject = $_POST['subject'];
+    $to  = 'perezpeter32@gmail.com';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $uri");
+
+    }
+  }
+ ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,7 +113,7 @@
             font-size: 14px;
         }
         
-        .about a {
+        .about a, .seperate2 {
             margin-top: 20px;
             color: #10a357;
             font-size: 14px;
@@ -100,6 +138,10 @@
             display: flex;
             justify-content: space-between;
         }
+
+        .separate p:hover{
+            cursor: pointer;
+        }
         
         .socials a {
             padding-left: 5px;
@@ -111,6 +153,43 @@
         
         .socials span {
             display: none;
+        }
+
+
+        #cnt{
+            display: none;
+            width: 480px;
+        }
+
+        #cnt input, #cnt textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: 0px;
+        }
+
+        #cnt textarea{
+            height: 100px;
+            text-align: left;
+        }
+
+        #cnt #submitt{
+            background-color: #10a357;
+            color: #fff;
+        }
+
+        #ram{
+            display: none;
+        }
+
+        .inps{
+            .display: flex;
+            .justify-content: space-between;
+        }
+
+        .inps input{
+            .flex-basis: 49%;
         }
         
         @media only screen and (max-width: 768px) {
@@ -139,6 +218,15 @@
                 margin: 0 auto;
             }
         }
+
+        @media only screen and (max-width: 500px) {
+            /* For mobile phones: */
+
+            #cnt{
+                width: 100%;
+            }
+            
+        }
     </style>
 
 </head>
@@ -161,9 +249,46 @@
             </div>
 
             <div class="about">
+
+
+                <div id="abt">
                 <h3>About Me</h3>
                 <p style="opacity: 0.9">I am technology-driven and have the love for computer programs. I am an expert in Back-end Web Development (PHP, Laravel) and Front-end (HTML, CSS, JavaScript). I am also proficient in Java (Swing, JavaFX, Android), C and MIPS. I have
                     always wanted to impart my society with my technological know-how. In light of that, I am currently studying Computer Science at Lancaster University, Ghana. I am proudly Nigerian. Feel free to contact me.</p>
+
+                    </div>
+
+
+                 <div id="cnt">
+                <h3>Contact Me</h3>
+
+<?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+        <?php endif; ?>
+
+
+
+                <form method="post" action="">
+                <div class="inps">
+                <input type="text" name="subject" placeholder="Enter Subject" required>
+                </div>
+                
+                <textarea name="message" placeholder="Enter Message here" required></textarea>
+
+                <input type="submit" id="submitt" value="send">
+
+                </form>
+
+                    </div>
+
 
                 <div class="footer-wrapper">
                     <div class="separate">
@@ -178,6 +303,50 @@
                         <a href="http://facebook.com/peter.pere.33" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
 
                     </div>
+                </div>
+
+                <div class="footer-wrapper">
+                    <div class="separate" style="margin-top: 10px;">
+                        <p onclick="displayForm()" id="smn">
+                            <i class="fa fa-envelope"></i> Send me a message NOW!
+
+                            </p>
+
+                            <p onclick="displayAbout()" id="ram">
+                            <i class="fa fa-info"></i> Read about me
+
+                            </p>
+
+                            <script type="text/javascript">
+                                function displayForm(){
+                                    var messageBox = document.getElementById('cnt');
+                                    var aboutBox = document.getElementById('abt');
+                                    var smn = document.getElementById('smn');
+                                    var ram = document.getElementById('ram');
+                                    if(messageBox.style.display = "none"){
+                                        aboutBox.style.display = "none";
+                                        smn.style.display = "none";
+                                        messageBox.style.display = "block";
+                                        ram.style.display = "block";
+                                    }
+                                }
+
+                                function displayAbout(){
+                                    var messageBox = document.getElementById('cnt');
+                                    var aboutBox = document.getElementById('abt');
+                                    var smn = document.getElementById('smn');
+                                    var ram = document.getElementById('ram');
+                                    if(aboutBox.style.display = "none"){
+                                        messageBox.style.display = "none";
+                                        ram.style.display = "none";
+                                        aboutBox.style.display = "block";
+                                        smn.style.display = "block";
+                                    }
+                                }
+                            </script>
+                    </div>
+
+                    
                 </div>
 
             </div>
