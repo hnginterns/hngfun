@@ -132,19 +132,12 @@
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" name="name">
     </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="phone">Phone Number:</label>
-      <input type="text" class="form-control" id="phone" name="phone">
-    </div>
+    
     <div class="form-group">
       <label for="message">Message:</label>
       <textarea class="form-control" rows="5" id="message" name="message"></textarea>
     </div>
-    <button style="margin: 0px auto;" name="submit" type="submit" class="btn btn-default">Send</button>
+    <button style="margin: 0px auto;" type="submit" class="btn btn-default">Send</button>
   </form>
 
 
