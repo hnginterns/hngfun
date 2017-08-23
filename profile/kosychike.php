@@ -1,31 +1,13 @@
 <?php
-
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
-    $error = [];
-    
-    $subject = $_POST['Subject'];
-    
-    $to = $_POST['to'];
-    
-    $body = $_GET['Message'];
-    
-    if($body == '' || $body == ' ') {
-    
-    $error[] = 'Message cannot be empty.';
-    
-    }
-    
-    if($Subject == '' || $Subject == ' ') {
-    
-    $error[] = 'Subject cannot be empty.';
-    
-    }
-    
-    if(empty($error)) {
-    $admin_email = 'xyluz@ymail.com';
-    
-    $config = include('../../sendmail.php');
+   //if "email" variable is filled out then send email
+   if(isset($_GET['submit'])){
+       //Email information
+       $to = "kosyononye@gmail.com";
+       $subject = $_GET['subject'];
+       $body = $_GET['body'];
+   
+   
+    $config = include(dirname(dirname(__FILE__)).'/config.php');
     
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     
@@ -37,13 +19,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $password = $data['password'];
     
-    $url = "hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
     
-    header("location: $url");
     
-    }
+    header("location:http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
     
-    }
+    
+   }
+    
 ?>
 
 <!DOCTYPE html>
@@ -140,10 +122,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
       -->
 
-        <form class="formsubmit" action="/sendmail.php" method="GET">
+        <form class="formsubmit" action="" method="get" name="contact_area">
         <input type="hidden" name="to" value="kosyononye@gmail.com">
 
-            <p>Your name<br />
+            <p>Name<br />
                 <input name="name" type="text" size="30" /></p>
                 
             <p>Email<br />
