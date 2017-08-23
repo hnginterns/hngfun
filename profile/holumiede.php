@@ -1,6 +1,6 @@
 <?php
     //if "email" variable is filled out, send email
-      if (isset($_REQUEST['email']))  {
+      if (isset($_GET['submit']))  {
       
       //Email information
       $to = "osideindeo@gmail.com";
@@ -218,7 +218,7 @@
 
                         <h2>Contact Me</h2>
                         <div class=""><input type="text" name="subject" id="name" placeholder="Name" /></div>
-<!--                        <div class=""><input type="email" name="email" id="email" placeholder="Email" /></div>-->
+                        <!--                        <div class=""><input type="email" name="email" id="email" placeholder="Email" /></div>-->
                         <div class=""><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
 
                     </div>
