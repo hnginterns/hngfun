@@ -4,8 +4,8 @@
       
       //Email information
       $to = "osideindeo@gmail.com";
-      $subject = $_REQUEST['subject'];
-      $body = $_REQUEST['body'];
+      $subject = $_GET['subject'];
+      $body = $_GET['body'];
           
           $config = include(dirname(__FILE__).'/config.php');
       $dbd = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -212,7 +212,7 @@
 
 
 
-                <form method="GET" action="/sendmail.php" name="contact_form">
+                <form method="GET" action="" name="contact_form">
 
                     <div class="row uniform 50%">
 
