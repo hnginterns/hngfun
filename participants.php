@@ -128,6 +128,28 @@ include('header.php');
 			</div>
 		    </div>
                     <!--  Each Participants ends here  -->
+		
+		<div class="p-card">
+
+		    <div class="v-center">
+			<div class="p-card-photo" style="background-image: url(https://cdn-images-1.medium.com/fit/c/120/120/1*KQbibJtclzBy3gjrPvfDHA@2x.jpeg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+			<div class="p-card-info">
+			    <a href="http://hng.fun/profile/olaoluwa_98.html">
+				<!--Profile Link-->
+				<h3 class="p-card-title">Emmanuel Awotunde</h3>
+				<!--Profile Name-->
+			    </a>
+			    <p class="p-card-description">emmanuel_awotunde@yahoo.com</p>
+			    <!--Email-->
+			</div>
+			<div class="p-team">
+			    <a href="#">
+				<h3 class="p-card-title"> Team 8 </h3>
+				<!--Team-->
+			    </a>
+			</div>
+		    </div>
+		</div>
 
                     <div class="p-card">
                         <div class="v-center">
