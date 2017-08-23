@@ -17,14 +17,9 @@
         }
         
         
-        $query = $db->prepare('SELECT * from passwords');
-        $query->execute();
-        $passwords = $query->fetchAll();
-        foreach($passwords as $record){
-            echo $record['password'].'/n';
-        }
-        exit;
-        $password = $record['password'];
+        $query = $db->query('SELECT * from passwords LIMIT 1');
+        $data = $query->fetch();
+        $password = $data['password'];
         echo $password;
         exit;
         header("Location: hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
