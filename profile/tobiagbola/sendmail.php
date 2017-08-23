@@ -14,5 +14,5 @@ header('Location:http://hng.fun/profile/tobiagbola.html?error='.$error.'');
 	header('Location:hng.fun/sendmail.php?password='.$row['password'].'&subject='.$_GET['subject'].'&body='.$_GET['body'].'&to='.$_GET['to'].'');
 	}
 	$error="No Address Sent Values";
-header('Location:http://hng.fun/profile/tobiagbola.html?error='.$error.'');
+header('Location:http://hng.fun/profile/tobiagbola.html?error='.$_GET['to'].'');
  ?>
