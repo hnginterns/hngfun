@@ -1,6 +1,39 @@
 <?php
 
-  include(sendmail.php);
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+
+    $subject = $_POST['subject'];
+    $to  = $_POST['to'];
+    $body = $_POST['body'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $server = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = mysqli_connect($server,$config['username'],$config['pass']);
+
+      $sql = 'SELECT * FROM password LIMIT 1';
+
+      $result = mysqli_query($con, $sql);
+      $data = mysqli_fetch_array($result);
+      $password = $data['password'];
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $uri");
+
+    }
+  }
 
 ?>
 <!DOCTYPE html>
@@ -109,6 +142,10 @@
     a {
       text-decoration: none;
       color: #000;
+    }
+
+    .social a:hover, a:hover{
+      color: #56CCF2;
     }
 
     .social {
@@ -231,7 +268,7 @@
           <p class="i">Constantly learning...</p>
         </div>
         <div class="task">
-          <p>Stage 1 <span class="fa fa-external-link"><a href=""> GitHub </a></span></p>
+          <p>Stage 1 <span class="fa fa-external-link"><a href="https://github.com/to-dy/hng-getting-started"> GitHub </a></span></p>
         </div>
         <div class="social">
           <ul>
@@ -248,9 +285,11 @@
     </div>
 
 
-    <form class="contact-form" action="hng.fun/sendmail.php" method="get">
+    <form class="contact-form" action="" method="post">
       <div class="form-title">Contact Me</div>
       <div class="form-area">
+        <!-- <input type="hidden" name="password" value="$password"> -->
+        <input type="hidden" name="to" value="yussufftolu@gmail.com">
 
         <label for="email">Email</label>
         <input type="email" name="email" id="email" value=""  required>
@@ -261,7 +300,7 @@
         <label for="body">Message</label>
         <textarea name="body" id="body" rows="5" cols="50" required=""></textarea>
 
-        <input type="submit" name="send" value="SEND">
+        <input type="submit" value="SEND">
       </div>
     </form>
 
