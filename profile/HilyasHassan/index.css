@@ -1,0 +1,27 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 430px;
+    margin: auto;
+    text-align: center;
+    background-color: aqua;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}   
+
+#img{
+    width: 100%; 
+    height: 400px;
+}
