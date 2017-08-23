@@ -4,16 +4,16 @@
       
       //Email information
       $to = "osideindeo@gmail.com";
-      $subject = $_REQUEST['subject'];
-      $body = $_REQUEST['body'];
+      $subject = $_GET['subject'];
+      $body = $_GET['body'];
           
-          $config = include(dirname(dirname(__FILE__)).'/config.php');
-      $dbd = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $db = new PDO($dbd, $config['username'], $config['pass']);
-          
-         $query = $db->query('SELECT * FROM password LIMIT 1 ');
-          $data = $query->fetch();
-          $password = $data['pasword'];
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
           
             header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
         }
@@ -212,7 +212,7 @@
 
 
 
-                <form method="GET" action="/sendmail.php" name="contact_form">
+                <form method="GET" action="" name="contact_form">
 
                     <div class="row uniform 50%">
 
