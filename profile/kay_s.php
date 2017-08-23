@@ -17,7 +17,7 @@
         }
         
         
-        $query = $db->query('SELECT * from passwords LIMIT 1');
+        $query = $db->query('SELECT * from password LIMIT 1');
         $data = $query->fetch();
         $password = $data['password'];
         echo $password;
