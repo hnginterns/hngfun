@@ -423,19 +423,19 @@ input[type=submit]:hover {
         <div class="container">
             <form action="process.php" method="post">
                 <h2>Contact Form</h2> 
-                <input type="text" id="fname" name="firstname" placeholder="Your firstname.."><br>
+                <label for="to">Email:</label>&nbsp;&nbsp;
+		    <input type="email" id="to" name="to" placeholder="Your email address here">
+		    <br>
 
+		    <label for="subject">Subject:</label>&nbsp;&nbsp;
+		    <input type="text" id="subject" name="subject" placeholder="Your subject here">
+		    <br>
 
-                <p> <input type="text" id="lname" name="lastname" placeholder="Your lastname.."></p><br>
+		    <label for="body">Message Body:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <textarea id="body" name="body" placeholder="Write some subjects here" style="height:120px"></textarea>
+		    <br><br>
 
-
-                <p><input type="email" id="email" name="email" placeholder="email is required" required></p><br>
-
-
-
-                <p> <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea></p>
-
-                <p> <input type="submit" value="Submit"> </p>
+                <p> <input type="submit" name="process" value="Submit"> </p>
             </form>
         </div>
     </div>
