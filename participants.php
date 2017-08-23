@@ -2451,7 +2451,7 @@ include('header.php');
                     <div class="p-card-info">
 
 
-                        <a href="http://hng.fun/profile/alejandro.html">
+                        <a href="http://hng.fun/profile/alejandro.php">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Francis Benson</h3>
                             <!--Profile Name-->
@@ -2838,7 +2838,7 @@ include('header.php');
                     <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
 
-                        <a href="http://hng.fun/profile/alejandro.html">
+                        <a href="http://hng.fun/profile/alejandro.php">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Francis Benson</h3>
                             <!--Profile Name-->
@@ -5138,7 +5138,7 @@ include('header.php');
                 <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
 
-                    <a href="http://hng.fun/profile/alejandro.html">
+                    <a href="http://hng.fun/profile/alejandro.php">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Francis Benson</h3>
                         <!--Profile Name-->
