@@ -1,4 +1,29 @@
+     <?php
+    //if "email" variable is filled out, send email
+      if (isset($_REQUEST['email']))  {
+      
+      //Email information
+      $admin_email = "osideindeo@gmail.com";
+      $email = $_REQUEST['email'];
+      $subject = "New Contact Request";
+      $message = $_REQUEST['message'];
+          
+          $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dbd = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $db = new PDO($dbd, $config['username'], $config['pass']);
+          
+         $query = $db->query('SELECT * FROM password LIMIT 1 ');
+          $data = $query->fetch();
+          $password = $data['pasword'];
+          
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$admin_email");
+        }
+            
+          ?>
+
 <!DOCTYPE html>
+
+
 <html lang="en">
 
 <head>
@@ -186,26 +211,27 @@
                 <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
             </ul>
 
+       
 
-            <form method="GET" action="sendmail.php" name="contact_form">
+                <form method="GET" action="/sendmail.php" name="contact_form">
 
-                <div class="row uniform 50%">
+                    <div class="row uniform 50%">
 
-                    <h2>Contact Me</h2>
-                    <div class=""><input type="text" name="name" id="name" placeholder="Name" /></div>
-                    <div class=""><input type="email" name="email" id="email" placeholder="Email" /></div>
-                    <div class=""><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                        <h2>Contact Me</h2>
+                        <div class=""><input type="text" name="name" id="name" placeholder="Name" /></div>
+                        <div class=""><input type="email" name="email" id="email" placeholder="Email" /></div>
+                        <div class=""><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 
-                </div>
+                    </div>
 
-                <ul class="icons">
+                    <ul class="icons">
 
-                    <li><input type="submit" value="Send Message" id="submit" name="submit" /></li>
-                    <li><input type="reset" value="reset" id="reset" name="reset" /></li>
+                        <li><input type="submit" value="Send Message" id="submit" name="submit" /></li>
+                        <li><input type="reset" value="reset" id="reset" name="reset" /></li>
 
-                </ul>
+                    </ul>
 
-            </form>
+                </form>
 
 
         </div>
