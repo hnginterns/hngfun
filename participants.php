@@ -14,33 +14,33 @@ include('header.php');
             justify-content: space-around;
             -webkit-justify-content: space-around;
         }
-        
+
         .team7-card-container div {
             flex: 1 1 320px;
             -webkit-flex: 1 1 320px;
             margin: 10px;
         }
-        
+
         .team7-card-container div:nth-of-type(1n+2) {
             /*margin: 10px;*/
         }
-        
+
         .team7-div {
             border: 1px solid rgba(213, 213, 215, 0.92);
             border-radius: 2px;
             padding: 5px;
             background-color: #f7f7f7;
         }
-        
+
         .team7-card-bg {
             background-position: center center;
             width: auto;
             height: 200px;
             background-size: cover;
         }
-        
+
         @media (max-width: 768px) {}
-        
+
         .team7-heading {
             text-align: center;
             /*margin: 10px;*/
@@ -48,12 +48,12 @@ include('header.php');
             box-shadow: inset 0 0 0 100px rgba(0, 0, 255, 0.3);
             height: auto;
         }
-        
+
         .team7-heading h1 {
             font-weight: 600 !important;
             color: #fff;
         }
-        
+
         .team7-readmore {
             border: 2px solid;
             width: 20px;
@@ -64,20 +64,20 @@ include('header.php');
             padding: 10px;
             text-decoration: none;
         }
-        
+
         .team7-body-container {
             margin: 10px 40px;
             padding: 20px;
         }
-        
+
         .team7-body-container h2 {
             font-weight: 700;
         }
-        
+
         .team7-snippet {
             padding: 10px;
         }
-        
+
         .team7-read-full {
             font-size: 16px;
         }
@@ -179,7 +179,7 @@ include('header.php');
                             </div>
                         </div>
                     </div>
-			
+
 		    <div class="p-card">
 
                         <div class="v-center">
@@ -504,7 +504,7 @@ include('header.php');
                                 <div class="p-card-info">
 
 
-                                    <a href="http://hng.fun/profile/bosunski.html">
+                                    <a href="http://hng.fun/profile/bosunski">
                                         <!--Profile Link-->
                                         <h3 class="p-card-title">Olatunbosun Gabriel</h3>
                                         <!--Profile Name-->
@@ -1763,7 +1763,7 @@ include('header.php');
         <!--  Participant starts here  -->
         <<<<<<< HEAD <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg); 
+                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg);
 =======
 
 	<div class=" p-card ">
@@ -2598,8 +2598,8 @@ include('header.php');
 
 <<<<<<< HEAD
 <<<<<<< HEAD
-					    
-			
+
+
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -2659,7 +2659,7 @@ include('header.php');
                     <div class="p-card-info">
 
 
-                        <a href="http://hng.fun/profile/bosunski.html">
+                        <a href="http://hng.fun/profile/bosunski">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Olatunbosun Gabriel</h3>
                             <!--Profile Name-->
@@ -2730,7 +2730,7 @@ include('header.php');
 <<<<<<< HEAD
         </div>
 <<<<<<< HEAD
-        
+
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -2835,13 +2835,13 @@ include('header.php');
 
 <<<<<<< HEAD
 
-        
 
 
 
-        
 
-		       
+
+
+
 =======
             <div class="p-card">
                 <div class="v-center">
@@ -4415,13 +4415,13 @@ include('header.php');
 
 <<<<<<< HEAD
         <!--  Each Participants ends here  -->
-        
-        
+
+
         <!--  Participant starts here  -->
-	    
+
 	<div class="p-card">
 	    <div class="v-center">
-		<div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg); 
+		<div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg);
 				 background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
 		<div class="p-card-info">
 			<a href="http://hng.fun/profile/jsmyth.html">
@@ -4436,9 +4436,9 @@ include('header.php');
 		</div>
 	      </div>
 	  </div>
-	    
+
 	<!--   Participant ends here  -->
-	
+
 =======
 
             <div class="p-card">
@@ -5042,7 +5042,7 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            
+
             <div class="p-card">
                 <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/31213866?v=4&u=c66db4d8d0eb14ff46f4f579ef8a938d6bb4a291&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
