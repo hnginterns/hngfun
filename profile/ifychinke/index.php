@@ -1,4 +1,5 @@
 <?php
+
     $user = 'intern';
     $pass = '@hng.intern1';
     $db = 'hng';
@@ -8,7 +9,6 @@
     $passes = mysqli_query($connect, $query);
 
 ?>
-
 <!DOCTYPE html>
 <html lang           = "en">
 <head>
@@ -19,6 +19,7 @@
     
 
     <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
 
     <style type      = "text/css">
         #rcorners2 {
@@ -128,20 +129,21 @@
           <a class="links" href="https://github.com/eephie/HNG-Internship"><i class="fa fa-github"></i> #Stage1</a>
         </div>
 
-        <div id="contact">
-            <h3>Contact me</h3>
-                <form action="/sendmail.php" method="GET" style="margin-bottom: 20px;">
-            <div class="input-holder">
-                <input type="text" placeholder="Your Name" name="subject" class="input-box" required>
-            </div>
-            <div class="input-holder">
-                <input type="email" placeholder="Your Email" name="to" class="input-box" required>
-            </div>
+        
+         <main class="profile-body" id="contact-area">
+            <h3>Contact Me</h3>
+            <form action="/sendmail.php" method="GET" style="margin-bottom: 20px;">
+                <div class="input-holder">
+                    <input type="text" placeholder="Full Name" name="subject" class="input-box" required>
+                </div>
+                <div class="input-holder">
+                    <input type="email" placeholder=" Email" name="to" class="input-box" required>
+                </div>
              <div class="hide">
                     <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>
                 </div> 
             <div class="input-holder">
-                <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Your message here" class="user-message" required></textarea>
+                <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Type your message here" class="user-message" required></textarea>
             </div>
             <div>
                 <button type="submit" class="submit-button">
@@ -149,8 +151,9 @@
                 </button>
             </div>
         </form>
+    </main>
 
-        </div>
+        
     
     </div>
 
