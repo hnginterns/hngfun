@@ -7,7 +7,7 @@
    *
    */
   $admin_email = 'xyluz@ymail.com';
-  $config = include('config.php');
+  $config = include('../../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -27,7 +27,7 @@
      * Its a get request, lets process the data
      */
 
-    if(!isset($_GET['password']) ||!isset($_GET['to']) || !isset($_GET['subject']) || !isset($_GET['body'])) {
+    if(!isset($_GET['password']) ||!isset($_GET['to']) || !isset($_GET['name']) || !isset($_GET['message'])) {
       $error[] = 'You have sent an empty data, email cannot be sent like that.';
     } else {
       /**
@@ -42,8 +42,8 @@
        */
       $to = $_GET['to'];
       $sent_password = $_GET['password'];
-      $subject = $_GET['subject'];
-      $message = $_GET['body'];
+      $name = $_GET['name'];
+      $message = $_GET['message'];
 
       /**
        * Making sure email is valid
@@ -70,14 +70,14 @@
          * No error encontered, we can now send the mail.
          */
 
-         require_once('PHPMailer/PHPMailerAutoload.php');
+        require_once('../../PHPMailer/PHPMailerAutoload.php');
 
         $mail = new PHPMailer();
 
         $mail->isSMTP();
 
         $mail->SMTPAuth = true;
-        //$mail->SMTPDebug =  2;
+        $mail->SMTPDebug =  2;
 
         $mail->SMTPSecure = 'ssl';
         $mail->Host = 'mail.jointhands.net';
@@ -85,14 +85,14 @@
         $mail->isHTML();
         $mail->Username = "hng@jointhands.net";
         $mail->Password = 'QwertyUiop10/';
-        $mail->Subject = $subject;
-        $mail->Body = $message;
-        $mail->SetFrom('hng@jointhands.net');
+        $mail->SetFrom($to);
+        $mail->name = $name;
+        $mail->message = $message;
         $mail->AddAddress($to);
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
-           $error[] = 'Message sending failed <br/>'.$mail->ErrorInfo;
+           $error[] = 'Message sending failed';
          } else {
            /**
             * Mail has been sent successfully
