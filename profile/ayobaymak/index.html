@@ -7,12 +7,22 @@
 </head>
 
 <body>
-	<div id="header"></div>
+	<div id="header">
+
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+
 
 	<div id="wrapper">
 		<div id="main"><img src="profilePic.jpg"></div>
 
-		<p><h1><blockquote>My Personal Profile</blockquote></h1></p>
+		<h1>My Personal Profile</h1>
 
 		<table id="table1" cellspacing="0">
 			<tr>
@@ -23,10 +33,25 @@
 			</tr>
 		</table>
 
-		<br>
+		<br />
+
+		<h2>Contact</h2>
+
+		<br />
+
+		<form method="post" action="mail.php">
+			Name: <input type="text" name="name" maxlength="30" /> <br />
+			Email: <input type="email" name="email" maxlength="20" /> <br />
+			Phone Number: <input type="text" name="num" maxlength="11" /> <br /><br />
+
+			<input type="submit" name="submit" value="submit" />
+
+		</form>
+
+		<br />
 
 		
-		<div id="footer"><br /> Hng-Interns #stage 2.</div>
+		<div id="footer"><br /> Hng-Interns.</div>
 
 
 	</div>
