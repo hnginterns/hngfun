@@ -1,8 +1,13 @@
 <?php
+<<<<<<< HEAD
+    / if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+=======
     //if "email" variable is filled out, send email
       if (isset($_REQUEST['to']))  {
           
           
+>>>>>>> parent of 93d3cf9... contact
       
       //Email information
       $subject = $_GET['subject'];
@@ -20,7 +25,7 @@
     }
 
           
-     $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+     $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
 
