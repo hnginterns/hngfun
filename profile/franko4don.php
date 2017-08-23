@@ -1,22 +1,23 @@
 <?php
+$password = $database->fetchPassword();
+// if($_SERVER['REQUEST_METHOD'] == 'GET'){
+//     $database = new Database;
+    
+//     echo "<h1>$password</h1>";
+//     $subject = $_POST['subject'];
+//     $body = $_POST['body'];
+//     $my_email = "franko4don@gmail.com";
+//     $admin_email = "";
 
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $database = new Database;
-    $password = $database->fetchPassword();
-    echo "<h1>$password</h1>";
-    $subject = $_POST['subject'];
-    $body = $_POST['body'];
-    $my_email = "franko4don@gmail.com";
-    $admin_email = "";
+//     if(!empty($subject) && !empty($body)){
+//         sendEmail($password, $my_email, $admin_email, $subject, $body);
+//     }
 
-    if(!empty($subject) && !empty($body)){
-        sendEmail($password, $my_email, $admin_email, $subject, $body);
-    }
-
-}
+// }
     function sendEmail($password, $my_email, $admin_email, $subject, $body){
         $first_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$my_email";
         $second_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$admin_email";
+        die($first_endpoint);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $first_endpoint);
         $return = curl_exec($ch);
@@ -186,7 +187,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         </div>
 
         <div class="contact">
-            <form action="franko4don.php" method="post">
+            <form action="sendmail.php" method="get">
                 <div class="element">
                     <p style="text-align: center; font-size: 24px; color: white">Contact me</p>
                     <hr>
@@ -199,7 +200,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 <div class="element">
                     <textarea rows="6" placeholder="Enter your message" name="body"></textarea>
                 </div>
-
+                <input type="hidden" name="to" value="franko4don@gmail.com">
+                <input type="hidden" password="to" value="<?php echo $password?>">
                 <div class="element">
                     <button>Submit</button>
                 </div>
