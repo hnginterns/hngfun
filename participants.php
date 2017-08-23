@@ -1527,7 +1527,7 @@ include('header.php');
                     <div class="p-card-info">
 
 
-                        <a href="http://hng.fun/profile/bosunski.html">
+                        <a href="http://hng.fun/profile/bosunski">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Olatunbosun Gabriel</h3>
                             <!--Profile Name-->
@@ -2785,7 +2785,7 @@ include('header.php');
             <!--  Participant starts here  -->
             <div class="p-card">
                 <div class="v-center">
-                    <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg); 
+                    <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg);
 
 	<div class=" p-card ">
 	    <div class="v-center ">
@@ -3688,7 +3688,7 @@ include('header.php');
                         <!--Email-->
                     </div>
 =======
-                    <a href="http://hng.fun/profile/bosunski.html">
+                    <a href="http://hng.fun/profile/bosunski">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Olatunbosun Gabriel</h3>
                         <!--Profile Name-->
