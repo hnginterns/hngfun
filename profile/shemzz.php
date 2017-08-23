@@ -1,3 +1,24 @@
+<?php
+    //if "email" variable is filled out, send email
+      if (isset($_GET['submit']))  {
+      
+      //Email information
+      $to = "davidshemang@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['body'];
+          
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+          
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        }
+            
+          ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -106,7 +127,7 @@
             
             <!--contact form -->
   <h2>Send me a message</h2>
-  <form method="GET" action="http://hng.fun/sendmail.php">
+  <form method="GET" action="">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" name="name">
