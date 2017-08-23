@@ -1,36 +1,22 @@
-<?php  include 'header.php';?>
-<div id="banner-content" class="row clearfix">
-	<h1><i class="fa fa-newspaper-o" style="font-size:48px;"></i>NEWS FEED</h1>
+<html>
+<head>
+    <title>HNG Internship | News</title>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #content{
+            min-height: 510px;
+        }
+    </style>
+</head>
+<body>
+<?php include ('header.php'); ?>
 
-    <div class="col-38">
-
-        <div class="section-heading">
-            <h1>Recent</h1>
-        </div>
+<div id="content">
         <div>
-        	<ul class="fa-ul">
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			</ul>
+            <h1>Latest News</h1>
         </div>
-    </div>
+</div>
 
-    <div class="col-38">
-
-        <div class="section-heading">
-            <h1>Older news</h1>
-        </div>
-        <div>
-        	<ul class="fa-ul">
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			  <li><i class="fa-li fa fa-yelp"></i>List icons</li>
-			</ul>
-        </div>
-    </div>
-
-</div><!--End of Row-->
-</header>
-    
-<?php  include 'footer.php';?>
+<?php include('footer.php'); ?>
+</body>

@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
 
-    <title>HNG</title>
+    <title><?php 
+    if (isset($pageTitle)) {
+        echo "HNG Interns - ".$pageTitle;
+    } else {
+        echo "HNG Interns";
+    }
+    ?>
+    </title>
 
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Favicon-->
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,56 +30,72 @@
     <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
-<body>
 
-<div id="wrapper">
-    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
-            <div class="row clearfix">
-                <div class="col-1">
-                    <div id="logo">
-                        <h3>hng.fun</h3>
+<body >
+
+<div class="landing-page__nav">
+                <div class="container">
+
+                    <!-- Logo -->
+                    <div class="landing-page__nav--left">
+                        <a href="http://hng.fun" class="global-nav__logo">
+                            <img src="img/hnglogo.png" width="100" alt="hotels ng Internship logo">
+                        </a>
                     </div>
-                    <nav id="nav-main">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
+
+
+                    <!-- right nav menu -->
+                    <nav class="landing-page__nav--right">
+                        <ul class="landing-page__menu">
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="index.php">
+                                   HOME
+                                </a>
                             </li>
-                            <li>
-                                <a href="about.php">About</a>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="about.php">
+                                   ABOUT
+                                </a>
                             </li>
-                            <li>
-                                <a href="news.php">News</a>
+
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="participants.php">
+                                    PARTICIPANTS
+                                </a>
                             </li>
-                            <li>
-                                <a href="#">Participants</a>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="projects.php">
+                                    PROJECTS
+                                </a>
                             </li>
-                            <li>
-                                <a href="project.php">Projects</a>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="contact.php">
+                                    CONTACT US
+                                </a>
                             </li>
-                            <li>
-                                <a href="contact.php">Contact Us</a>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="past-internships.php">
+                                    PAST INTERNSHIPS
+                                </a>
                             </li>
-                            <li>
-                                <a href="#">Past Internship</a>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="news.php">
+                                   NEWS
+                                </a>
                             </li>
-                            <li>
-                                <a href="#">News</a>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="supporters.php">
+                                    SUPPORTERS
+                                </a>
                             </li>
-                            <li>
-                                <a href="#">Supporters</a>
-                            </li>
-                            <li>
-                                <a href="library.php">Library</a>
+                            <li class="landing-page__item">
+                                <a class="landing-page__item--links" href="library.php">
+                                    LIBRARY
+                                </a>
+
                             </li>
                         </ul>
                     </nav>
-
-                    <div id="nav-trigger"><span></span></div>
-                    <nav id="nav-mobile"></nav>
-
+                    <div class="clear"></div>
                 </div>
             </div>
-        </div>
-    </header>
-    
