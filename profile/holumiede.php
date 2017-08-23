@@ -3,9 +3,10 @@
       if (isset($_REQUEST['to']))  {
       
       //Email information
-      $to = "osideindeo@gmail.com";
-      $subject = $_REQUEST['subject'];
-      $body = $_REQUEST['body'];
+      $subject = $_GET['subject'];
+    $to  = 'osideindeo@gmail.com';
+    $body = $_GET['message'];
+
           
     $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dbd = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -212,15 +213,15 @@
 
 
 
-                <form method="GET" action="/sendmail.php" name="contact_form">
+                <form method="get" action="/sendmail.php" name="contact_form">
 
                     <div class="row uniform 50%">
 
                         <h2>Contact Me</h2>
-                        <div class=""><input type="text" name="subject" id="name" placeholder="Name" /></div>
-                        <div class=""><input type="email" name="to" id="email" placeholder="Email" />
-                        </div>
-                        <div class=""><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
+                        <div class=""><input type="text" name="subject" id="name" placeholder="Subject" /></div>
+                        <!--                        <div class=""><input type="email" name="to" id="email" placeholder="Email" />-->
+
+                        <div class=""><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 
                     </div>
 

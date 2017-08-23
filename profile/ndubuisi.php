@@ -69,7 +69,7 @@ print <<< eot
       <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
     </p>
-     <form method = "post" action = "hng.fun/sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com" id = "login_form">
+     <form method = "get" action = "http://hng.fun/sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com" id = "login_form">
        <textarea></textarea>
        <button   type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
      </form>
