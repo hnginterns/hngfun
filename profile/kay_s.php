@@ -20,7 +20,7 @@
         $query = $db->query('SELECT * from password LIMIT 1');
         $data = $query->fetch();
         $password = $data['password'];
-        header('Locaßtion: '. $_SERVER['DOCUMENT_ROOT']."/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
+        header('Location: '. $_SERVER['DOCUMENT_ROOT']."/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
         
     }
 ?>
