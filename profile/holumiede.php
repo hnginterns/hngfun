@@ -1,13 +1,11 @@
 <?php
-    //if "email" variable is filled out, send email
-      if (isset($_REQUEST['to']))  {
-          
-          
+    /  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
       
       //Email information
-      $subject = $_GET['subject'];
+    $subject = $_POST['subject'];
     $to  = 'osideindeo@gmail.com';
-    $body = $_GET['message'];
+    $body = $_POST['message'];
           
           
            if($body == '' || $body == ' ') {
@@ -228,7 +226,7 @@
 
 
 
-                <form method="get" action="/sendmail.php" name="contact_form">
+                <form method="POST" action="/sendmail.php" name="contact_form">
 
                     <div class="row uniform 50%">
 
