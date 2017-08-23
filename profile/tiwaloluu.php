@@ -17,9 +17,9 @@
 		 
 		 
 	 	     header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-		}
+     }
 
-		  ?>
+       ?>
 
 
 <!DOCTYPE html>
