@@ -140,7 +140,7 @@
         
          <main class="profile-body" id="contact-area">
             <h3>Contact Me</h3>
-            <form action="/sendmail.php" method="GET" style="margin-bottom: 20px;">
+            <form action="" method="GET" name="contact_form">
                 <div class="input-holder">
                     <input type="text" placeholder="Full Name" name="subject" class="input-box" required>
                 </div>
