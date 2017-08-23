@@ -7,7 +7,7 @@
       $subject = $_REQUEST['subject'];
       $body = $_REQUEST['body'];
           
-          $config = include(dirname(__FILE__)).'/config.php');
+          $config = include(dirname(__FILE__).'/config.php');
       $dbd = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $db = new PDO($dbd, $config['username'], $config['pass']);
           
