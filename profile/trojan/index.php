@@ -3,9 +3,9 @@
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $name = $_GET['name'];
+    $name = $_POST['name'];
     $to  = 'ordrizzy@gmail.com';
-    $message = $_GET['message'];
+    $message = $_POST['message'];
 
     if($message == '' || $message == ' ') {
       $error[] = 'Message cannot be empty.';
@@ -231,17 +231,9 @@
                 <h3>Work</h3>
                 <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</b></p>
 
-                <form class="cd-form floating-labels" method="GET" action="sendmail.php">
+                <form class="cd-form floating-labels" method="GET" action="/sendmail.php">
               		<fieldset>
-                    <div class="error-message">
-                      <p>
-                        <?php
-                            foreach ($error as $key => $value) {
-                                echo "<li>$value</li>";
-                              }
-                          ?>
-                      </p>
-                    </div>
+
 
               			<div class="icon">
               				<label class="cd-label" for="cd-name">Name</label>
