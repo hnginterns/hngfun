@@ -6,6 +6,6 @@ $result = $conn->query($sql); // runs query and stores values
 if ($result->num_rows > 0) { //if any results are returned 
     // stores output data 
     $row = $result->fetch_assoc();
-	echo $row;
+	echo print_r($row);
 	}
  ?>
