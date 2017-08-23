@@ -104,7 +104,7 @@
         </div>
     </div>
 
-    <footer>
+    
     <!-- 
     <div class="form-area">
         <input type="hidden" name="to" value="kosyononye@gmail.com">
@@ -121,8 +121,8 @@
         <input type="submit" value="SEND">
       </div>
       -->
-
-        <form class="formsubmit" action="" method="get" name="contact_area">
+      <footer>
+        <form class="formsubmit" action="" method="GET" name="contact_area">
         <input type="hidden" name="to" value="kosyononye@gmail.com">
 
             <p>Name<br />
