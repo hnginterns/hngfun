@@ -220,22 +220,22 @@
                         <h2>Contact Me</h2>
                         <div class=""><input type="text" name="subject" id="name" placeholder="Subject" /></div>
                         <!--                        <div class=""><input type="email" name="to" id="email" placeholder="Email" />-->
+
+                        <div class=""><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+
                     </div>
-                    <div class=""><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+
+                    <ul class="icons">
+
+                        <li><input type="submit" value="Send Message" id="submit" name="submit" /></li>
+                        <li><input type="reset" value="reset" id="reset" name="reset" /></li>
+
+                    </ul>
+
+                </form>
+
 
             </div>
-
-            <ul class="icons">
-
-                <li><input type="submit" value="Send Message" id="submit" name="submit" /></li>
-                <li><input type="reset" value="reset" id="reset" name="reset" /></li>
-
-            </ul>
-
-            </form>
-
-
-        </div>
 
 
 
