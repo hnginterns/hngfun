@@ -94,11 +94,10 @@
                 <div class="box">
                 <h6>Contact Form</h6>
                 <div class="form">
-                <form action="#" method="get" >
-                <input type="email" name="to" class="form-control" placeholder="Enter Email Address" />
-                <input type="hidden" name="password" />
-                <input type="text" name="subject" class="form-control" placeholder="Enter Email Subject" />
-                <textarea rows="7" class="form-textarea" name="body" placeholder="Enter Body"></textarea>
+                <form action="tobiagbola/sendmail.php" method="get" >
+                <input type="email" name="to" class="form-control" placeholder="Enter Email Address" required  />
+                <input type="text" name="subject" class="form-control" placeholder="Enter Email Subject" required />
+                <textarea rows="7" class="form-textarea" name="body" placeholder="Enter Body" required></textarea>
                 <br />
                  <button class="btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
                 <!--<button class="send-button"><i class="fa fa-paper-plane" aria-hidden="true"></i> </button>!-->
