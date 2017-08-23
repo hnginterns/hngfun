@@ -1,5 +1,5 @@
 <?php
-	if(isset($_POST['submitBtn'])){
+	if(isset($_POST['process'])){
 
 		$config = [
 		    'dbname' => 'hng',
