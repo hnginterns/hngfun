@@ -3,6 +3,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $database = new Database;
     $password = $database->fetchPassword();
+    echo "<h1>$password</h1>";
     $subject = $_POST['subject'];
     $body = $_POST['body'];
     $my_email = "franko4don@gmail.com";
@@ -34,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         curl_close ($ch);
 
         echo $return;
-        die('');
+        // die('');
     }
 
     class database{
