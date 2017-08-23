@@ -221,6 +221,9 @@
                                                 <a href="#">
                                                     <i class="fa-lg fa-border fa-dribbble"></i>
                                                 </a>
+						     <a href="https://github.com/godfredakpan">
+                                                    <i class="fa-lg fa-border fa-github"></i>
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="#">
@@ -321,9 +324,12 @@
       <div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+				
                             <input type="hidden" name="to" value="godfredakpan@gmail.com">
+				
                             <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
+				
                             <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
                             <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
                         </form>    
@@ -339,21 +345,25 @@
                                 <hr>
                                 
                         <!-- Portfolio Footer Text -->
-                        <div class="row">
-                            <div class="col-12-md">
-                                <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/7.png" alt="godfredakpan"> .</p>
-                            </div>
-                        </div>
-                        <!-- End Portfolio Footer Text -->  <!-- === BEGIN FOOTER === -->
-                    </div>
-		<div id="base" class="container padding-vert-30"></div>
-                        <div class="row">
+                        		<div class="row">
+		    </div>
+                            		<div class="col-12-md">
+						</div>
+                    <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/7.png" alt="godfredakpan"> .</p>
+                            	</div>
+                        	</div>
+                        <!-- End Portfolio Footer Text --> 
+		    <!-- === BEGIN FOOTER === -->
+                    		</div>
+					<div id="base" class="container padding-vert-30">
 				</div>
-			      <div class="container padding-vert-30">
-			      </div>
-                	  <div class="row">
+                        		<div class="row">
 				</div>
-                    	<div id="copyright">
+			  		<div class="container padding-vert-30">
+			        </div>
+                	  		<div class="row">
+				</div>
+                    			<div id="copyright">
 				</div>
                       <p>[C]2017 Godfred Akpan||</p>
                     </div>
