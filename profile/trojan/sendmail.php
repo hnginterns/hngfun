@@ -7,7 +7,7 @@
    *
    */
   $admin_email = 'xyluz@ymail.com';
-  $config = include('config.php');
+  $config = include('../../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
 
