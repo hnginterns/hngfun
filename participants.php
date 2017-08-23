@@ -1760,7 +1760,7 @@ include('header.php');
                 <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(https://image.ibb.co/eYOe6k/olumide.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
-                        <a href="http://hng.fun/profile/holumiede.html">
+                        <a href="http://hng.fun/profile/holumiede.php">
                             <h3 class="p-card-title">Osideinde Oluwadara</h3>
                         </a>
                         <p class="p-card-description">osideindeo@gmail.com</p>
