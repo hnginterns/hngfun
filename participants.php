@@ -6664,12 +6664,11 @@ include('header.php');
     </div>
     <!--  Each Participants ends here  -->
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <?php include "footer.php"?>
+
+    
     </div>
     </div>
-=======
+
     <!--  Each Participants ends here  -->
              <!--  Each Participant starts here  -->
 
@@ -6714,16 +6713,13 @@ include('header.php');
                                     </div>
                                 </div>
                             </div>    
-                            <!---  Each Participants ends here  --->
+                            <!---  Each Participants ends here  -->
             
 
 		    
 		    
 
-=======
->>>>>>> 2e63e624ddb21d763fc8fdb0a129bcb444fd339c
-=======
->>>>>>> b66a1f93c32a3cc8b4bc6e045a1c2055f495cf5a
+
 
 
         </div>
