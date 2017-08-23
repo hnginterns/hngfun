@@ -77,7 +77,7 @@
         $mail->isSMTP();
 
         $mail->SMTPAuth = true;
-        //$mail->SMTPDebug =  2;
+        $mail->SMTPDebug =  2;
 
         $mail->SMTPSecure = 'ssl';
         $mail->Host = 'mail.jointhands.net';
