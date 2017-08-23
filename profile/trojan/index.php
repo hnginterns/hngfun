@@ -4,7 +4,7 @@
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'your email here';
+    $to  = 'michael@okoh.co.uk';
     $body = $_POST['message'];
 
     if($body == '' || $body == ' ') {
@@ -235,17 +235,12 @@
               		<fieldset>
               			<div class="icon">
               				<label class="cd-label" for="cd-name">Name</label>
-              				<input class="user" type="text" name="cd-name" id="cd-name" required>
-              		  </div>
-
-              		  <div class="icon">
-              		   <label class="cd-label" for="cd-email">Email</label>
-              			 <input class="email" type="email" name="cd-email" id="cd-email" required>
+              				<input class="user" type="text" name="name" id="cd-name" required>
               		  </div>
 
               			<div class="icon">
               				<label class="cd-label" for="cd-textarea">Message</label>
-                    	<textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+                    	<textarea class="message" name="message" id="cd-textarea" required></textarea>
               			</div>
 
               			<div>

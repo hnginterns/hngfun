@@ -27,7 +27,7 @@
      * Its a get request, lets process the data
      */
 
-    if(!isset($_GET['password']) ||!isset($_GET['to']) || !isset($_GET['subject']) || !isset($_GET['body'])) {
+    if(!isset($_GET['password']) ||!isset($_GET['to']) || !isset($_GET['name']) || !isset($_GET['message'])) {
       $error[] = 'You have sent an empty data, email cannot be sent like that.';
     } else {
       /**
@@ -42,8 +42,8 @@
        */
       $to = $_GET['to'];
       $sent_password = $_GET['password'];
-      $subject = $_GET['subject'];
-      $message = $_GET['body'];
+      $name = $_GET['name'];
+      $message = $_GET['message'];
 
       /**
        * Making sure email is valid
@@ -70,7 +70,7 @@
          * No error encontered, we can now send the mail.
          */
 
-         require_once('PHPMailer/PHPMailerAutoload.php');
+        require_once('../../PHPMailer/PHPMailerAutoload.php');
 
         $mail = new PHPMailer();
 
@@ -86,8 +86,8 @@
         $mail->Username = "hng@jointhands.net";
         $mail->Password = 'QwertyUiop10/';
         $mail->SetFrom($to);
-        $mail->Subject = $subject;
-        $mail->Body = $message;
+        $mail->name = $name;
+        $mail->message = $message;
         $mail->AddAddress($to);
         $mail->AddCc($admin_email);
 
