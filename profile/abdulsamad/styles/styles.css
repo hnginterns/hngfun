@@ -155,7 +155,7 @@ li a{
 .bottom-row-input{
   width: 100%;
   height: 150px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .clear{
@@ -170,7 +170,16 @@ li a{
   color: white;
 }
 .button-row-input{
-  width: 100%;
+  width: 200px;
   height: 50px;
-  background: yellow;
+  margin: 0 auto;
+}
+.button{
+  margin: 0 auto;
+  height: 100%;
+  width: 150px;
+  font-size: 20px;
+  border: 0;
+  background: #5DFAD7;
+  cursor:pointer;
 }
