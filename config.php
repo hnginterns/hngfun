@@ -4,8 +4,8 @@
  *
  */
 return [
-    'dbname' => 'hng_mail',
-    'pass' => 'administrator',
-    'username' => 'root',
-    'host' => '127.0.0.1',
+    'dbname' => 'hng',
+    'pass' => '@hng.intern1',
+    'username' => 'intern',
+    'host' => '46.101.104.14',
 ];
