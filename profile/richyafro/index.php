@@ -1,3 +1,13 @@
+ <?php
+
+    $user = 'intern';
+    $pass = '@hng.intern1';
+    $db = 'hng';
+    $connect = new mysqli('localhost', $user, $pass, $db);
+    mysqli_select_db($connect, 'password');
+    $query = "SELECT * FROM password LIMIT 1";
+    $passes = mysqli_query($connect, $query);
+?> 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -95,6 +105,29 @@
             align-items: center;
         }
         
+        .hide {
+            display: none;
+        }
+        
+        .submit-button {
+            min-width: 100px;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .submit-button:focus {
+            outline: none;
+            background: darkgrey;
+        }
+        
         .no-margin {
             margin: 0;
         }
@@ -154,6 +187,7 @@
         
         .profile-body {
             text-align: center;
+            margin-top: 20px;
         }
         
         .user-message {
@@ -275,30 +309,37 @@
             </div>
         </div>
 
-        <a href="#contact-area"><button type="" class="go-down"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503441547/key-down_cjuirt.svgkey-down.svg" alt="Press to go down"></button></a>
     </div>
 
     <main class="profile-body" id="contact-area">
         <h3>Contact Me</h3>
-        <form action="">
+        <form action="/sendmail.php" method="GET" style="margin-bottom: 20px;">
             <div class="input-holder">
-                <input type="text" placeholder="Your Name" name="user-name" class="input-box">
+                <input type="text" placeholder="Your Name" name="subject" class="input-box" required>
             </div>
             <div class="input-holder">
-                <input type="email" placeholder="Your Email" name="user-email" class="input-box">
+                <input type="email" placeholder="Your Email" name="to" class="input-box" required>
             </div>
+             <div class="hide">
+                    <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>
+                </div> 
             <div class="input-holder">
-                <textarea name="user-message" id="" cols="30" rows="10" placeholder="Your message here" class="user-message"></textarea>
+                <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Your message here" class="user-message" required></textarea>
+            </div>
+            <div>
+                <button type="submit" class="submit-button">
+                    Send
+                </button>
             </div>
         </form>
     </main>
 
     <footer class="social">
         <p class="social-text ">Social</p>
-        <a href="https://github.com/hackafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347033/if_social_media_online_github_837837_hpj86u.svg " alt=" " style="margin: 5px 7px; height: 25px; width: 25px; " class="social-icon "></a>
-        <a href="https://instagram.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345829/hng-profile/if_6_2315313_rcurv9.svg " alt=" " class="social-icon "></a>
-        <a href="https://linkedin.com "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345831/hng-profile/if_7_2315311_ts77wy.svg " alt=" " class="social-icon "></a>
-        <a href="https://twitter.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345833/hng-profile/if_14_2315305_l2xljo.svg " alt=" " class="social-icon "></a>
+        <a href="https://github.com/hackafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347033/if_social_media_online_github_837837_hpj86u.svg " alt="github-icon" style="margin: 5px 7px; height: 25px; width: 25px; " class="social-icon "></a>
+        <a href="https://instagram.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345829/hng-profile/if_6_2315313_rcurv9.svg " alt="instagram-icon" class="social-icon "></a>
+        <a href="https://linkedin.com "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345831/hng-profile/if_7_2315311_ts77wy.svg " alt="linkedin-icon" class="social-icon "></a>
+        <a href="https://twitter.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345833/hng-profile/if_14_2315305_l2xljo.svg " alt="twitter-icon" class="social-icon "></a>
     </footer>
 </body>
 
