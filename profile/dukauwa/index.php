@@ -1,7 +1,7 @@
 
 <?php
 
-    $config = include('../config.php');
+    $config = include('.../config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -16,7 +16,7 @@
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "dukauwa.du@gmail.com";
 
-        $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+        $location = ".../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
 
         header("Location: " . $location);
 
