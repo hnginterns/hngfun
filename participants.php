@@ -6664,6 +6664,66 @@ include('header.php');
     </div>
     <!--  Each Participants ends here  -->
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <?php include "footer.php"?>
+    </div>
+    </div>
+=======
+    <!--  Each Participants ends here  -->
+             <!--  Each Participant starts here  -->
+
+                                <div class="p-card">
+                                <div class="v-center">
+                                    <div class="p-card-photo" style="background-image: url(http://i.imgur.com/OavH6EV.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                    <div class="p-card-info">
+                                        <a href="http://hng.fun/profile/mrfojo.html">
+                                            <!--Profile Link-->
+                                            <h3 class="p-card-title">Femi Ojo</h3>
+                                            <!--Profile Name-->
+                                        </a>
+                                        <p class="p-card-description">femiojo24@gmail.com</p>
+                                    </div>
+                                    <div class="p-team">
+                                        <a href="#">
+                                            <h3 class="p-card-title"> Team 10 </h3>
+                                            <!--Team-->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>    
+                            <!---  Each Participants ends here  --->
+                <!--  Each Participant starts here  -->
+
+                <div class="p-card">
+                                <div class="v-center">
+                                    <div class="p-card-photo" style="background-image: url(http://i.imgur.com/LdQpWp2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                    <div class="p-card-info">
+                                        <a href="http://hng.fun/profile/jeni">
+                                            <!--Profile Link-->
+                                            <h3 class="p-card-title">Olibie Chidera</h3>
+                                            <!--Profile Name-->
+                                        </a>
+                                        <p class="p-card-description">jenniferolibie@gmail.com</p>
+                                    </div>
+                                    <div class="p-team">
+                                        <a href="#">
+                                            <h3 class="p-card-title"> Team 1 </h3>
+                                            <!--Team-->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>    
+                            <!---  Each Participants ends here  --->
+            
+
+		    
+		    
+
+=======
+>>>>>>> 2e63e624ddb21d763fc8fdb0a129bcb444fd339c
+=======
+>>>>>>> b66a1f93c32a3cc8b4bc6e045a1c2055f495cf5a
 
 
         </div>
