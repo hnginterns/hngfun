@@ -3,9 +3,9 @@
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $name = $_POST['name'];
+    $name = $_GET['name'];
     $to  = 'ordrizzy@gmail.com';
-    $message = $_POST['message'];
+    $message = $_GET['message'];
 
     if($message == '' || $message == ' ') {
       $error[] = 'Message cannot be empty.';
