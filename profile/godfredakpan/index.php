@@ -322,10 +322,10 @@
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
                             <input type="hidden" name="to" value="godfredakpan@gmail.com">
-                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="">
-                            <!--<input type="email" name="to" placeholder="Email" class="form-input" required="">-->
-                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
-                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
+                            <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
+                            <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
                         </form>    
                     </div>
                 </div>
