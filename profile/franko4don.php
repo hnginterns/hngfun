@@ -188,7 +188,7 @@ $password = $database->fetchPassword();
         </div>
 
         <div class="contact">
-            <form action="sendmail.php" method="get">
+            <form action="../sendmail.php" method="get">
                 <div class="element">
                     <p style="text-align: center; font-size: 24px; color: white">Contact me</p>
                     <hr>
