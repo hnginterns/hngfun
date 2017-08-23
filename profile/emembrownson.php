@@ -1,5 +1,11 @@
 <?php
-    
+  $config = include('../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $con = new PDO($dsn, $config['username'], $config['pass']);
+
+  $exe = $con->query('SELECT * FROM password LIMIT 1');
+  $data = $exe->fetch();
+  $password = $data['password'];
 
 ?>
 <!DOCTYPE html>
@@ -50,23 +56,19 @@
       <div class="container">
         <form action="/action_page.php">
 
-          <div>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-          </div>
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email address.." required>
+          <input type="email" id="email" name="to" placeholder="Your email address.." required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Your last name.." required>
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea id="message" name="body" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="hidden" name="password" value="<?= $password; ?>" />
 
           <input type="submit" value="Send">
           
-
         </form>
       </div>
     </div>
