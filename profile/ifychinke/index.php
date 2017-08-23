@@ -1,5 +1,6 @@
 <?php
 
+
      if (isset($_GET['submit']))  {
       
       //Email information
@@ -30,7 +31,7 @@
     <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
 
-    <style type      = "text/css">
+    <style type = "text/css">
         #rcorners2 {
     border-radius:     25px;
     border:            2px solid purple;
@@ -140,7 +141,7 @@
         
          <main class="profile-body" id="contact-area">
             <h3>Contact Me</h3>
-            <form action="" method="GET" name="contact_form">
+            <form action="" method="GET" >
                 <div class="input-holder">
                     <input type="text" placeholder="Full Name" name="subject" class="input-box" required>
                 </div>
