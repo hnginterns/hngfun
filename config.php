@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
   /**
    * Contains all configurations
@@ -14,3 +15,15 @@
     'mail_host' => 'smtp.gmail.com',
     'mail_port' => '456',
   ];
+=======
+/**
+ * Contains all configurations
+ *
+ */
+return [
+    'dbname' => 'hng',
+    'pass' => '@hng.intern1',
+    'username' => 'intern',
+    'host' => '46.101.104.14',
+];
+>>>>>>> dd23294c721a15967170766ecb064e0580e23cda
