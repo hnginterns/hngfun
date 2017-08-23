@@ -7,9 +7,13 @@
     $body = $_POST['body'];
 
 
-    $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-    $server = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $config = include('../../config.php');
+    $server = $config['host'];
     $con = mysqli_connect($server,$config['username'],$config['pass']);
+
+    if (!$con) {
+      die("Connection failed: ".mysqli_connect_error());
+  }
 
     $sql = 'SELECT * FROM password LIMIT 1';
 
@@ -18,7 +22,7 @@
       $password = $data['password'];
     } else {
         $password = "#";
-    } 
+    }
 
 
     $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";

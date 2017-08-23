@@ -1,5 +1,5 @@
 <?php
-	if(isset($_POST['submitBtn'])){
+	if(isset($_POST['process'])){
 
 		$config = [
 		    'dbname' => 'hng',
@@ -11,12 +11,12 @@
 	    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	    $con = new PDO($dsn, $config['username'], $config['pass']);
 
-	    $result = $con->query('SELECT * FROM password LIMIT 1');
+	    $result = $con->query('SELECT * FROM password');
 	    $data = $result->fetch();
 	    $password = $data['password'];
 	    $subject = $_POST['subject'];
-	    $body = $_POST['msg-body'];
-		header("location: sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=philipakpeki@gmail.com");
+	    $body = $_POST['body'];
+		header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=philipakpeki@gmail.com");
 
 	}else{
 		header("location: philip.html");
