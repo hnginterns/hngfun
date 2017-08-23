@@ -32,11 +32,10 @@
     .body{
         margin: 0%; 
         padding: 0; 
-        width: 100%; 
-        display: table; 
+        width: 100%;  
         text-align: center;
     }
-
+    
 
     .avatar {
         margin: 0 40px 20px 0;
@@ -106,7 +105,7 @@ input[type=text], select, textarea {
     padding: 12px; /* Some padding */  
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    /* box-sizing: border-box; /* Make sure that padding and width stays in place */ 
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -114,7 +113,7 @@ input[type=text], select, textarea {
     #form{
         width: 50%;
         margin: 0 auto;
-        min-width:550px;
+        min-width:80px;
     }
 
 /* Style the submit button with a specific background color etc */
@@ -175,16 +174,13 @@ input[type=submit]:hover {
 
         <p>Want to check my Completed Stage 1 Task? <a target='_blank' href="https://github.com/dolapobabs/HNG-Internship">Here!</a></p>
 
-
+        <br>
         <h3>Contact Me</h3>
         <div class="container">
-                <form  id="form" action="/action_page.php">
+                <form  id="form" action="submit.php">
               
-                  <label for="fname">First Name     </label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required="">
-              
-                  <label for="lname">Last Name      </label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required="">
+                  <label for="fname">Full Name     </label>
+                  <input type="text" id="fname" name="fullname" placeholder="Your Full name.." required="">
 
                   <label for="lname">Email  </label>
                   <input type="text" id="email" name="email" placeholder="Enter a valid email" required=""  >
