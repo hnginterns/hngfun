@@ -18,6 +18,8 @@ img{margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;
 .imgholder, .imgl, .imgr{padding:4px; border:1px solid #D6D6D6; text-align:center;}
 .imgl{float:left; margin:0 15px 15px 0; clear:left;}
 .imgr{float:right; margin:0 0 15px 15px; clear:right;}
+.form_container{float:left;width: 300px; margin: auto; background-color: #f2f2f2; padding: 12px; opacity: 0.9;}
+input[type=text], input[type=email], textarea {width: 75%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-top: 4px; margin-bottom: 4px;}
 
 
 

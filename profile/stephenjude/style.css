@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:200');
+
+ body{
+    margin: 0;
+    padding: 10px;
+    background-image: url('https://s27.postimg.org/whfiw4w0z/Amazing-_Background-_Picture-_For-_Website.jpg');
+    font-family: roboto;
+    color: #555;
+ }  
+
+ a{
+    text-decoration: none;
+    color: #555;
+ }
+
+
+
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */
+ @media only screen and (min-width : 480px) {}
+
+ /* Small Devices, Tablets */
+ @media only screen and (min-width : 768px) {}
+
+ /* Medium Devices, Desktops */
+ @media only screen and (min-width : 992px) {}
+
+ /* Small Large Devices, Wide Screens */
+ @media only screen and (min-width : 1024px) {
+
+ }
+
+ /* Large Devices, Wide Screens */
+ @media only screen and (min-width : 1200px) {}
+
+ .divider{    
+    width: 95%; 
+    padding: 0;
+    margin: 0 auto;
+    position: relative; 
+    float: left;  
+    border-bottom: 1px solid #666;
+ }
+
+
+ .main-container{
+    margin:0 auto;
+    width: 60%;
+    background: #E9E8ED;
+    overflow: auto;
+    padding: 10px;
+ } 
+
+ .main-container div{
+    padding: 10px;
+ }
+
+ .image-col{
+    width: 12%;
+    padding:10px 0px; 
+    float: left;
+ }
+
+ .description-col{
+    position: relative; 
+    float: left;
+    width: 40%;
+    font-family: Roboto;
+ }
+
+ .description-col p{
+    font-size: 15px;
+    font-family: Roboto;
+ }
+
+ .social-col{
+    width: 40%;
+    position: relative; 
+    float: left;
+    padding:10px;
+    padding-left: 40px;
+ }
+
+ .social-col ul li{
+    list-style-type: none;
+    padding-bottom: 15px;
+ }
+
+ .github-button{
+    border: 2px solid #555;
+    border-radius: 5px;
+    background: #555;
+    padding: 10px;
+    cursor: pointer;
+ }
+
+  .github-button a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+ }
+
+ .profile-image{
+    margin: 40px 0;
+    border: 1px solid #555;
+    border-radius: 150px;
+    width: 100px;   
+}
+
+.contact-form input, .contact-form textarea{
+    font-size: 15px;
+    font-family: roboto;
+
+}
+
+.contact-form .form-input{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    padding: 10px;
+    position: relative;
+    float: left;
+    width: 500px;
+    margin: 10px 0px;
+}
+
+.contact-form .sub-btn{
+    border: 1px solid #666;
+    border-radius: 4px;
+    background: #666;
+    padding: 10px;
+    position: relative;
+    float: left;
+    color: #fff;
+    width: 100px;
+    margin-left:30px;
+    margin-top: 120px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact-form .sub-btn:hover{
+    background: #555;
+}
