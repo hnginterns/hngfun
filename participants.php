@@ -128,6 +128,26 @@ include('header.php');
 			</div>
 		    </div>
                     <!--  Each Participants ends here  -->
+					 <div class="p-card">
+			<div class="v-center">
+			    <div class="p-card-photo" style="background-image: url(https://scontent-lhr3-1.cdninstagram.com/t51.2885-15/e35/14592022_632162846965673_6489739989922873344_n.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+			    <div class="p-card-info">
+				<a href="http://hng.fun/profile/solar.html">
+				    <!--Profile Link-->
+				    <h3 class="p-card-title">Okanlaw0n</h3>
+				    <!--Profile Name-->
+				</a>
+				<p class="p-card-description">okanlawonemmanuel41@gmail.com</p>
+				<!--Email-->
+			    </div>
+			    <div class="p-team">
+				<a href="#">
+				    <h3 class="p-card-title"> Team 9 </h3>
+				    <!--Team-->
+				</a>
+			    </div>
+			</div>
+		    </div>
 		
 		<div class="p-card">
 
