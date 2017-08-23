@@ -868,6 +868,28 @@ include('header.php');
                             </div>
                             <!-- Each participant ends here -->
 
+                            <!-- Each participant starts here -->
+                            <div class="p-card">
+                                <div class="v-center">
+                                    <div class="p-card-photo" style="background-image: url(http://i.imgur.com/2CShSEG.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                    <div class="p-card-info">
+                                        <a href="http://hng.fun/profile/markwoitz/">
+                                            <!--Profile Link-->
+                                            <h3 class="p-card-title">Ikechukwu Nwakanma</h3>
+                                            <!--Profile Name-->
+                                        </a>
+                                        <p class="p-card-description">icnwakanma@gmail.com</p>
+                                    </div>
+                                    <div class="p-team">
+                                        <a href="#">
+                                            <h3 class="p-card-title"> Team-motivation </h3>
+                                            <!--Team-->
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Each participant ends here -->
+
                             <div class="p-card">
                                 <div class="v-center">
                                     <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
