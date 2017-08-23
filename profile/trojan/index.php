@@ -4,7 +4,7 @@
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $name = $_POST['name'];
-    $to  = 'michael@okoh.co.uk';
+    $to  = 'ordrizzy@gmail.com';
     $message = $_POST['message'];
 
     if($message == '' || $message == ' ') {
@@ -233,6 +233,16 @@
 
                 <form class="cd-form floating-labels" method="POST" action="">
               		<fieldset>
+                    <div class="error-message">
+                      <p>
+                        <?php
+                            foreach ($error as $key => $value) {
+                                echo "<li>$value</li>";
+                              }
+                          ?>
+                      </p>
+                    </div>
+
               			<div class="icon">
               				<label class="cd-label" for="cd-name">Name</label>
               				<input class="user" type="text" name="name" id="cd-name" required>

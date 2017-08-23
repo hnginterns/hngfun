@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $send = $_POST['submit'];
 if (isset($send)){
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -21,7 +22,7 @@ if (isset($send)){
 
     if(empty($error)) {
 
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $config = include('config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -29,13 +30,14 @@ if (isset($send)){
       $data = $exe->fetch();
       $password = $data['password'];
 
-      $uri = "../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      $uri = "sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
-      header("location: $uri");
+      header("Location: $uri");
 
     }
   }
 }
+ob_end_flush();
  ?>
 <!DOCTYPE html>
     <head>
