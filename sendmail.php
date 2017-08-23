@@ -59,7 +59,6 @@
        */
       if($sent_password != $password)
         $error[] = 'You have sent an invalid password, please try again.';
-		echo $password;
 
       if(!empty($error)) {
         /**
@@ -78,7 +77,7 @@
         $mail->isSMTP();
 
         $mail->SMTPAuth = true;
-        //$mail->SMTPDebug =  2;
+        $mail->SMTPDebug =  2;
 
         $mail->SMTPSecure = 'ssl';
         $mail->Host = 'mail.jointhands.net';
@@ -87,7 +86,6 @@
         $mail->Username = "hng@jointhands.net";
         $mail->Password = 'QwertyUiop10/';
 
-        $mail->SetFrom($to);
 
         $mail->Subject = $subject;
         $mail->Body = $message;
