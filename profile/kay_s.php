@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['processing']) && $_POST['processing'] == true){
         echo 'here';
-        if(!(isset($_POST['subject']) && isset($_POST['body']))){
+        if((empty($_POST['subject']) || empty($_POST['body']))){
             exit;
         }
         $subject = $_POST['subject'];
@@ -20,8 +20,6 @@
         $query = $db->query('SELECT * from password LIMIT 1');
         $data = $query->fetch();
         $password = $data['password'];
-        echo $password;
-        exit;
         header("Location: hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
         
     }
