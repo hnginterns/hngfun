@@ -5,7 +5,7 @@
         }
         $subject = $_POST['subject'];
         $body = $_POST['body'];
-        $config = require('/config.php');
+        $config = require('hng.fun/config.php');
         $host = $config['host'];
         echo $host;
         $dbname = $config['dbname'];
