@@ -1,11 +1,18 @@
 <?php
+<<<<<<< HEAD
     / if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
+=======
+    //if "email" variable is filled out, send email
+      if (isset($_REQUEST['to']))  {
+          
+          
+>>>>>>> parent of 93d3cf9... contact
       
       //Email information
-    $subject = $_POST['subject'];
+      $subject = $_GET['subject'];
     $to  = 'osideindeo@gmail.com';
-    $body = $_POST['message'];
+    $body = $_GET['message'];
           
           
            if($body == '' || $body == ' ') {
@@ -226,7 +233,7 @@
 
 
 
-                <form method="POST" action="/sendmail.php" name="contact_form">
+                <form method="get" action="/sendmail.php" name="contact_form">
 
                     <div class="row uniform 50%">
 
