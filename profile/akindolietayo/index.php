@@ -29,7 +29,7 @@ if (isset($send)){
       $data = $exe->fetch();
       $password = $data['password'];
 
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      $uri = "../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
       header("location: $uri");
 
@@ -117,6 +117,7 @@ html, body {
     color: white;
     font-weight: 900;
     padding: 7px;
+    cursor: pointer;
 }
 ::-webkit-input-placeholder{
     font-family: 'Droid Serif', serif !important;
