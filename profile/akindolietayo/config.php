@@ -1,4 +1,4 @@
-lo<?php
+<?php
 
   /**
    * Contains all configurations
