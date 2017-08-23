@@ -11,6 +11,8 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+      	<link rel="stylesheet" href="css/style.css">
         <style>
               @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
               .social-icon {
@@ -123,7 +125,7 @@
               }
 
               .full-height {
-                  height: 100vh;
+                  /*height: 100vh;*/
               }
 
               .flex-center {
@@ -168,12 +170,17 @@
                 border-radius: 45%;
                 height: 200px  ;
               }
+
+              .git {
+                height: 100px;
+              }
+
         </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
-              <img src="http://res.cloudinary.com/ichtrojan/image/upload/v1503355424/cha_tcsuue.jpg" height="200px" class = "dp">
+              <img src="http://res.cloudinary.com/ichtrojan/image/upload/v1503355424/cha_tcsuue.jpg" class = "dp" alt="Profile Picture">
                 <div class="title m-b-md">
                     Michael Okoh
                 </div>
@@ -183,18 +190,42 @@
                     <li><a href="mailto:michael@okoh.co.uk" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
                     <li><a href="https://www.instagram.com/ichtrojan" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
                     <li><a href="http://okoh.co.uk" class="social-icon"> <i class="fa fa-link"></i></a></li>
-                    <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li><br>
+                    <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
                 </ul>
-                <p>My Name is Michael Okoh, a Software Engineer from Lagos State<br>
-                I build Standard Web Applications with top Notch Design. My Major tools are <b>PHP, Laravel & Bootstrap.</b><br>
-                I also Use <b>C++, Java, Swift and Python</b> where needed.
-                </p>
+                &nbsp;
+                <p>My Name is Michael Okoh, a Software Engineer from Lagos State<p>
+                <p>I build Standard Web Applications with top Notch Design. My Major tools are <b>PHP, Laravel & Bootstrap.</b></p>
+                <p>I also Use <b>C++, Java, Swift and Python</b> where needed.</p>
 
-                <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px">
+                <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Logo" class="git">
                 <p><a href="https://github.com/ichtrojan/HNG-Internship">Here is the link to my Stage 1 Project</a><p>
-
+                &nbsp;
                 <h3>Work</h3>
-                <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh<b></p>
+                <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</b></p>
+
+                <form class="cd-form floating-labels">
+              		<fieldset>
+              			<div class="icon">
+              				<label class="cd-label" for="cd-name">Name</label>
+              				<input class="user" type="text" name="cd-name" id="cd-name" required>
+              		  </div>
+
+              		  <div class="icon">
+              		   <label class="cd-label" for="cd-email">Email</label>
+              			 <input class="email" type="email" name="cd-email" id="cd-email" required>
+              		  </div>
+
+              			<div class="icon">
+              				<label class="cd-label" for="cd-textarea">Message</label>
+                    	<textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+              			</div>
+
+              			<div>
+              		   <input type="submit" value="Send Message">
+              		  </div>
+              		</fieldset>
+              	</form>
+
             </div>
         </div>
     </body>
