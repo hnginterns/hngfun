@@ -49,7 +49,7 @@
                         <ul class="landing-page__menu">
                             <li class="landing-page__item">
                                 <a class="landing-page__item--links" href="index.php">
-                                    <img src="img/home.png" width="30">
+                                   Home
                                 </a>
                             </li>
                             <li class="landing-page__item">
