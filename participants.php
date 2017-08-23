@@ -2771,7 +2771,6 @@ include('header.php');
 				    <h3 class="p-card-title"> Team 2 </h3>
 				</a>
 			    </div>
-			 </div>
 		    </div>
             </div>
             <!-- Participant ends here -->
