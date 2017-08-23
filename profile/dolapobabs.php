@@ -186,7 +186,7 @@ input[type=submit]:hover {
         <br>
         <h3>Contact Me</h3>
         <div class="container">
-                <form  id="form" action="hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=dolapob@gmail.com">
+                <form  id="form" action="">
               
                   <label for="fname">Full Name     </label>
                   <input type="text" id="fname" name="fullname" placeholder="Your Full name.." required="">
