@@ -1,0 +1,185 @@
+.header-section{
+  width: 100%;
+  height: 400px;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("me2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-main{
+  width: 100%;
+  margin: 0;
+}
+body{
+  font-family: helvetica;
+  margin: 0 auto;
+}
+.navbar{
+  color: white;
+  position: absolute;
+  margin: 0 auto;
+  width: 80%;
+  height: 100px;
+  margin-left: 50px;
+}
+li{
+  list-style-type: none;
+  display: inline;
+}
+li a{
+  color: white;
+  text-decoration: none;
+}
+.left-items{
+  float: left;
+}
+.right-items{
+  float: right;
+  margin-top: 40px;
+}
+.right-items li{
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.main-section{
+  width: 100%;
+  position: absolute;
+  margin-top: -170px;
+  height: 300px;
+}
+.body-container{
+  width: 80%;
+  margin: 0 auto;
+  height: 900px;
+}
+.card-section{
+  float: left;
+  width: 25%;
+  height: 800px;
+  margin:0 auto;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -3px #333;
+  border-radius: 2px;
+}
+.text-section{
+  width: 100%;
+  height: 100%;
+  overflow:auto;
+}
+.works-section{
+  overflow: scroll;
+  float:right;
+  width: 73%;
+  height: 600px;
+  margin-top: 200px;
+  box-shadow: 0px 0px 10px -3px #333;
+  border-radius: 2px;
+}
+.image-section{
+  width: 100%;
+  overflow: hidden;
+}
+.name{
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+}
+.standard-header{
+  font-weight: lighter;
+  font-size: 27px;
+  margin-left: 10px;
+  color: #333;
+}
+.paragraph-text{
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 10px;
+  color: #666;
+}
+.profile-img{
+  width: 100%;
+}
+.footer-section{
+  width: 100%;
+  height: 400px;
+  background-image: url("lambo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  margin-top: 700px;
+  background-size: 2000px;
+  background-repeat: no-repeat;
+}
+.footer-section-header{
+  text-align: center;
+}
+.footer-section-header h1{
+  color: #eee;
+  font-size: 45px;
+  font-weight: 400;
+  position: relative;
+  padding-top: 15px;
+}
+.form-section{
+  width: 90%;
+  margin: 0 auto;
+}
+.top-row-input{
+  width: 100%;
+}
+.email-input{
+  width: 49%;
+  float: left;
+}
+.email-input input, .name-input input{
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  border: 0;
+  background: rgba(100, 100, 100, 0.7);
+  font-size: 20px;
+  color: white;
+}
+.email-input, input::-webkit-input-placeholder{
+  color: rgba(140, 140, 140, 1);
+  font-size: 20px;
+}
+.name-input{
+  width: 49%;
+  float: right;
+}
+.bottom-row-input{
+  width: 100%;
+  height: 150px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.clear{
+  clear: both;
+}
+.message{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: rgba(100, 100, 100, 0.7);
+  font-size: 20px;
+  color: white;
+}
+.button-row-input{
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+}
+.button{
+  margin: 0 auto;
+  height: 100%;
+  width: 150px;
+  font-size: 20px;
+  border: 0;
+  background: #5DFAD7;
+  cursor:pointer;
+}

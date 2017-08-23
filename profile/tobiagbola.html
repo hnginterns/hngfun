@@ -41,6 +41,40 @@
 	}
 	.button-link{color: #fff;
 	text-decoration:none;}
+	.form-control{
+		width:60%;
+		padding:1%;
+		margin-bottom:1%;
+		color:#666;
+		font-weight:600;
+		font-size:24px;
+		font-family: 'Lato', sans-serif;
+		}
+	.form{
+		margin-top:-76px;
+		}
+		.form-textarea{
+				width:60%;
+				height:100%;
+				border-radius: 6px;
+		padding:1%;
+		margin-bottom:1%;
+		color:#666;
+		font-weight:600;
+		font-size:24px;
+		line-height:none;
+		font-family: 'Lato', sans-serif;
+			}
+			.send-button{
+				border-color:#337ab7;
+				background-color:#337ab7;
+				padding:1%;
+				width:60%;
+				color:#FFF;
+				font-weight:600;
+		        font-size:24px;
+				font-family: 'Lato', sans-serif;
+				}
         </style>
     </head>
     <body>
@@ -57,6 +91,19 @@
                  <a class="button-link" href="https://github.com/agbolatobi/hotelstest"><i class="fa fa-github" aria-hidden="true"></i> My First Intern Project</a>
                 </button></div>
                 <div class="tag"</div>
+                <div class="box">
+                <h6>Contact Form</h6>
+                <div class="form">
+                <form action="tobiagbola/sendmail.php" method="get" >
+                <input type="email" name="to" class="form-control" placeholder="Enter Email Address" required  />
+                <input type="text" name="subject" class="form-control" placeholder="Enter Email Subject" required />
+                <textarea rows="7" class="form-textarea" name="body" placeholder="Enter Body" required></textarea>
+                <br />
+                 <button class="btn-primary"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+                <!--<button class="send-button"><i class="fa fa-paper-plane" aria-hidden="true"></i> </button>!-->
+                </form>
+                </div>
+                </div>
             </div>
         </div>
     </body>

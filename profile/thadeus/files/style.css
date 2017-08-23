@@ -1,0 +1,20 @@
+html {
+	padding: 5px;
+}
+
+#rcorners1 {
+    border-radius: 50%;
+	border: 10px;
+}
+
+.top_margin {
+	margin-top: 20px;	
+}
+
+.container {
+	background: #5e35b1;
+}
+
+.text {
+	color: #ffea00;
+}
