@@ -85,7 +85,7 @@
         $mail->isHTML();
         $mail->Username = "hng@jointhands.net";
         $mail->Password = 'QwertyUiop10/';
-        $mail->SetFrom('contact@hng.fun');
+        $mail->SetFrom($to);
         $mail->Subject = $subject;
         $mail->Body = $message;
         $mail->AddAddress($to);
