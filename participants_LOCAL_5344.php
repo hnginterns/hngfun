@@ -6118,15 +6118,14 @@ include('header.php');
                     <p class="p-card-description">victor.nwauwa93@gmail.com</p>
                     <!--Email-->
                 </div>
-                <div class="p-team">
+            </div>
+		<div class="p-team">
                             <a href="#">
                                 <h3 class="p-card-title"> Team 8 </h3>
                                 <!--Team-->
                             </a>
                         </div>
                     </div>
-            </div>
-		
 
             <div class="p-card">
                 <div class="v-center">
@@ -6665,7 +6664,6 @@ include('header.php');
     </div>
     <!--  Each Participants ends here  -->
 
-<<<<<<< HEAD
      <!--  Each Participant starts here  -->
     <div class="p-card">
         <div class="v-center">
@@ -6693,13 +6691,9 @@ include('header.php');
 <<<<<<< HEAD
 <<<<<<< HEAD
     <?php include "footer.php"?>
+    </div>
+    </div>
 =======
-
-    
->>>>>>> 4a7b9636325e759b6abd3700a28c9d938c9d8b4a
-    </div>
-    </div>
-
     <!--  Each Participants ends here  -->
              <!--  Each Participant starts here  -->
 
@@ -6744,13 +6738,16 @@ include('header.php');
                                     </div>
                                 </div>
                             </div>    
-                            <!---  Each Participants ends here  -->
+                            <!---  Each Participants ends here  --->
             
 
 		    
 		    
 
-
+=======
+>>>>>>> 2e63e624ddb21d763fc8fdb0a129bcb444fd339c
+=======
+>>>>>>> b66a1f93c32a3cc8b4bc6e045a1c2055f495cf5a
 
 
         </div>
