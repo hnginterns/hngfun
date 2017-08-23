@@ -1,6 +1,6 @@
 <?php
     echo $_POST['processing'];
-    if($_POST['processing']){
+    if(isset($_POST['processing']) && $_POST['processing'] == true){
         if(!(isset($_POST['subject']) && isset($_POST['body']))){
             exit;
         }
@@ -169,7 +169,7 @@
                             <input type="text" class="textbox subject" name="subject" placeholder="Subject" /> 
                             <textarea class="textbox body" name="body" placeholder="Message"></textarea>
                             <input type="submit" value="Send" />
-                            <? if($_POST['processing']) : ?>
+                            <? if(isset($_POST['processing'])) : ?>
                                 <p>The Subject or Body field has not been entered</p>
                             <? endif; ?>
                         </form>
