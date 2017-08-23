@@ -246,7 +246,7 @@ $password = $data['password'];
 		        			<textarea id="message" rows="10" cols="10" placeholder="Enter Your Message Here"></textarea>
 		        		</div>
 
-	        			<button id="contact-form-button" onclick="submitForm(e)"><i class="fa fa-send"></i>Send</button>
+	        			<button id="contact-form-button" onclick="submitForm(event)"><i class="fa fa-send"></i>Send</button>
 		        	</form>
 		        </section>
 
@@ -275,9 +275,9 @@ $password = $data['password'];
 
 <script type="text/javascript">
 	
-function submitForm(e){
+function submitForm(event){
 
-	e.preventDefault();
+	event.preventDefault();
 
 
 	name = document.getElementById('name').value;
@@ -287,7 +287,7 @@ function submitForm(e){
 	password 	= document.getElementById("password").value;
 
 
-	body = ("From: " + email + "( " + name + " )" + "\nMessage: \n " + message);
+	body = "From: " + email + "( " + name + " )" + "\nMessage: \n " + message;
 
 	site_url = location.protocol + '//' + location.host;
 
