@@ -6533,6 +6533,29 @@ include('header.php');
                 </div>
             </div>
             <!-- Each participant ends here -->
+		    
+	<!-- Each participant starts here -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(https://preview.ibb.co/iemRnQ/17818821_137576633442881_8017641658780745728_n.jpg; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/peter.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Peter Abu-Ekpeshie</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">peterogh94@gmail.com</p>
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 10 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Each participant ends here -->
+
 
 
         </div>
