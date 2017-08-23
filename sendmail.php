@@ -59,6 +59,7 @@
        */
       if($sent_password != $password)
         $error[] = 'You have sent an invalid password, please try again.';
+		echo $password;
 
       if(!empty($error)) {
         /**
@@ -85,7 +86,7 @@
         $mail->isHTML();
         $mail->Username = "hng@jointhands.net";
         $mail->Password = 'QwertyUiop10/';
-        $mail->SetFrom('hng@jointhands.net');
+        $mail->SetFrom('contact@hng.fun');
         $mail->Subject = $subject;
         $mail->Body = $message;
         $mail->AddAddress($to);
@@ -125,7 +126,7 @@
     $id = $data['id']; // the id of the password in the database
     $sql = "UPDATE password SET password = '$new_pass', last_updated=NOW() WHERE id = $id"; // The query
     $exec = $con->query($sql); // Executes the query
-    if($exe && $exe->rowCount() > 0) {
+    if($exec && $exec->rowCount() > 0) {
       /**
        * Password updated
        */
