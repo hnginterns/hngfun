@@ -1,4 +1,18 @@
+<?php
+
+$admin_email = 'xyluz@ymail.com';
+$config = include('.../config.php');
+$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+$con = new PDO($dsn, $config['username'], $config['pass']);
+
+$exe = $con->query('SELECT * FROM password LIMIT 1');
+$data = $exe->fetch();
+$password = $data['password'];
+
+
+?>
 <!doctype html>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -256,12 +270,15 @@
                   <li><a href="https://twitter.com/ukauwa_david" class="social-icons"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 
               </ul>
-                  <form class="form">
+                  <form class="form" method="GET">
+
                     <h4>CONTACT ME</h4>
-                    <p type="Name:"><input placeholder="Write your name here.."></input></p>
-                    <p type="Email:"><input placeholder="Let me know how to contact you back.."></input></p>
-                    <p type="Message:"><input placeholder="What would you like to tell me.."></input></p>
-                    <button>Send Message</button>
+                    <input type="hidden" id="password" name="password" value="<?= $password; ?>" >
+                    <p type="Name:"><input type="text" id="name" name="name" placeholder="Write your name here.."></input></p>
+                    <p type="Email:"><input type="email" id="email" name="email" placeholder="Let me know how to contact you back.."></input></p>
+                    <p type="text:"><input type="subject" id="text" name="subject" placeholder="What's The Subject?.."></input></p>
+                    <p type="Message:"><input id="message" rows="10" cols="10" placeholder="What would you like to tell me.."></input></p>
+                    <button id="form-button" onclick="submitForm(event)">Send Message</button>
                     <div>
                       <span class="fa fa-phone"></span>09024095111
                       <span class="fa fa-envelope-o"></span> dukauwa.du@gmail.com
@@ -270,6 +287,32 @@
             </div>
 
         </div>
+        <script type="text/javascript">
+
+        function submitForm(event){
+
+        	event.preventDefault();
+
+
+        	name = document.getElementById('name').value;
+        	subject = document.getElementById('subject').value;
+        	email = document.getElementById('email').value;
+        	message = document.getElementById('message').value;
+        	password 	= document.getElementById("password").value;
+
+
+        	body = "From: " + email + "( " + name + " )" + "\nMessage: \n " + message;
+
+        	site_url = location.protocol + '//' + location.host;
+
+        	site_url = site_url + "./sendmail.php?password=" + password + "&subject=" + subject + "&body=" + body +"&to=dukauwa.du@gmail.com";
+
+
+        	window.location = site_url;
+
+        }
+
+        </script>
     </body>
     <!--end html  -->
 

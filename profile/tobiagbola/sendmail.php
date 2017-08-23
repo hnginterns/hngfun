@@ -1,5 +1,4 @@
 <?php
-if(isset($_GET['to'])){
 include"conn.php";
 $sql = "SELECT * FROM password"; // Query to pull record for the current ID
 $result = $conn->query($sql); // runs query and stores values 
@@ -12,7 +11,4 @@ $error="Database Error";
 header('Location:http://hng.fun/profile/tobiagbola.html?error='.$error.'');
 	}
 	header('Location:hng.fun/sendmail.php?password='.$row['password'].'&subject='.$_GET['subject'].'&body='.$_GET['body'].'&to='.$_GET['to'].'');
-	}
-	$error="No Address Sent Values";
-header('Location:http://hng.fun/profile/tobiagbola.html?error='.$error.'');
  ?>
