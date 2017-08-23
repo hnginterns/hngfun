@@ -245,7 +245,6 @@ $password = $data['password'];
 
 		url = url + "/sendmail.php?password=" + _token + "&subject=" + subject + "&body=" + body +"&to=alabamustapha@gmail.com";
 
-		alert(url);
 		
 		window.location = url;
 	}
