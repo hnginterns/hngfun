@@ -1,4 +1,35 @@
 <!doctype html>
+<?php
+
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'your email here';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+
+    }
+
+  }
+
+ ?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -7,11 +38,8 @@
 
         <title>Michael Okoh</title>
 
-        <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+        <link rel="stylesheet" href="css/reset.css">
       	<link rel="stylesheet" href="css/style.css">
         <style>
               @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
@@ -174,16 +202,14 @@
               .git {
                 height: 100px;
               }
-
         </style>
     </head>
+
     <body>
         <div class="flex-center position-ref full-height">
             <div class="content">
               <img src="http://res.cloudinary.com/ichtrojan/image/upload/v1503355424/cha_tcsuue.jpg" class = "dp" alt="Profile Picture">
-                <div class="title m-b-md">
-                    Michael Okoh
-                </div>
+                <div class="title m-b-md">Michael Okoh</div>
                 <ul class="social-icons">
                     <li><a href="https://github.com/ichtrojan" class="social-icon"> <i class="fa fa-github"></i></a></li>
                     <li><a href="https://hnginterns.slack.com/messages/@trojan" class="social-icon"> <i class="fa fa-slack"></i></a></li>
@@ -193,6 +219,7 @@
                     <li><a href="https://twitter.com/ichtrojan" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
                 </ul>
                 &nbsp;
+
                 <p>My Name is Michael Okoh, a Software Engineer from Lagos State<p>
                 <p>I build Standard Web Applications with top Notch Design. My Major tools are <b>PHP, Laravel & Bootstrap.</b></p>
                 <p>I also Use <b>C++, Java, Swift and Python</b> where needed.</p>
@@ -200,10 +227,11 @@
                 <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Logo" class="git">
                 <p><a href="https://github.com/ichtrojan/HNG-Internship">Here is the link to my Stage 1 Project</a><p>
                 &nbsp;
+
                 <h3>Work</h3>
                 <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</b></p>
 
-                <form class="cd-form floating-labels">
+                <form class="cd-form floating-labels" method="POST" action="index.php">
               		<fieldset>
               			<div class="icon">
               				<label class="cd-label" for="cd-name">Name</label>
