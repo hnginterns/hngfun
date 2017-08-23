@@ -1,4 +1,5 @@
 <?php
+    echo $_POST['processing'];
     if($_POST['processing']){
         if(!(isset($_POST['subject']) && isset($_POST['body']))){
             exit;
