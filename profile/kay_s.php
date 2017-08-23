@@ -1,11 +1,12 @@
 <?php
     if(isset($_POST['processing']) && $_POST['processing'] == true){
+        echo 'here';
         if(!(isset($_POST['subject']) && isset($_POST['body']))){
             exit;
         }
         $subject = $_POST['subject'];
         $body = $_POST['body'];
-        $config = require('hng.fun/config.php');
+        $config = require($_SERVER['DOCUMENT_ROOT'] . '/config.php');
         $host = $config['host'];
         echo $host;
         $dbname = $config['dbname'];
