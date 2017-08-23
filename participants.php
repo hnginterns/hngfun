@@ -3342,7 +3342,6 @@ include('header.php');
                 </div>
 
             </div>
-        </div>
 
         <!--  Each Participants ends here  -->
 
@@ -6243,6 +6242,5 @@ include('header.php');
 
 
         </div>
-    </div>
 <?php include "footer.php"?>
 
