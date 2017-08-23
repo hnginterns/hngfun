@@ -118,7 +118,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  #bosunski-submit:hover {
+  #godfred-submit:hover {
     opacity: .9;
   }
   @@media query {
@@ -126,13 +126,13 @@
   </style>
    
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Slabo+27px">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px">
         <title>Welcome|Godfred Akpan|</title>
         <!-- Meta -->
        
         <meta name="description" content="">
         <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <!-- Favicon -->
         <link href="favicon.ico" rel="shortcut icon">
         <!-- Bootstrap Core CSS -->
@@ -144,8 +144,8 @@
         <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/custom.css">
         <!-- Google Fonts-->
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans:300,400" />
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans:300,400"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400"/>
     </head>
     <body>
         <div id="body_bg">
@@ -161,9 +161,7 @@
                             <li class="social-googleplus">
                                 <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
 				    
-			    <li class="social-googleplus">
-                                <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
-                            </li><br><br><br><br><br><br>
+			    </li>
                         </ul>
                         <!-- End Header Social Icons -->
                     </div>
@@ -189,14 +187,14 @@
                         <!-- Slogan -->
                         <p class="site-slogan">WELCOME TO MY PROFILE PAGE</p>
                         <!-- End Slogan -->
-                        <br><br><br>
+                        
                     </div>
                     <div class="container">
                         <!-- === END HEADER === -->
                         <!-- === BEGIN CONTENT === -->
                         <div class="row margin-vert-30">
                             <div class="col-md-12">
-                                <h2></h2>
+                                
                                 <div class="row">
                                     <div class="col-md-5">
                                          <img src="assets/img/11.jpg" alt="Godfred Akpan">
@@ -221,6 +219,9 @@
                                                 <a href="#">
                                                     <i class="fa-lg fa-border fa-dribbble"></i>
                                                 </a>
+						     <a href="https://github.com/godfredakpan">
+                                                    <i class="fa-lg fa-border fa-github"></i>
+                                                </a>
                                             </li>
                                             <li>
                                                 <a href="#">
@@ -237,20 +238,20 @@
                                 </div>
                                 <hr class="margin-bottom-40">
                                 <div class="row">
-                                    <div class="col-md-6">
+					<div class="col-md-6"></div>
                                         <!-- My Skills -->
                                         <h3 class="margin-bottom-10">My Skills</h3>
                                         <h3 class="progress-label">Graphic Design
                                             <span class="pull-right">92%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+					<div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
                                             </div>
                                         </div>
                                         <h3 class="progress-label">Marketing
                                             <span class="pull-right">82%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+				    <div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
                                             </div>
                                         </div>
@@ -264,17 +265,17 @@
                                         <h3 class="progress-label">Programming
                                             <span class="pull-right">78%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+					<div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
                                             </div>
                                         </div>
                                         <!-- End My Skills -->
                                     </div>
-                                    <div class="col-md-6">
+					<div class="col-md-6"></div>
                                         <!-- Accordion -->
                                         <div id="accordion" class="panel-group">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+						<div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-One" data-parent="#accordion" data-toggle="collapse">
                                                             Trust Worthy
@@ -283,12 +284,12 @@
                                                 </div>
                                                 <div id="collapse-One" class="accordion-body collapse in">
                                                     <div class="panel-body">
-                                                        <p>Iam too discipline to be inconsistence, so will not jeopardize my
+                                                        <p>Iam too disciplined to be inconsistence, so i will not jeopardize my
 														career in doing what will not give me credit. at the very end.</div>
                                                 </div>
                                             </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                            <div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-Two" data-parent="#accordion" data-toggle="collapse">
                                                             Hard Working
@@ -302,8 +303,8 @@
 														100% Satisfaction to my clients.</div>
                                                 </div>
                                             </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                            <div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-Three" data-parent="#accordion" data-toggle="collapse">
                                                             Deligence
@@ -321,11 +322,14 @@
       <div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+				
                             <input type="hidden" name="to" value="godfredakpan@gmail.com">
-                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="">
-                            <!--<input type="email" name="to" placeholder="Email" class="form-input" required="">-->
-                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
-                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+				
+                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
+                            <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
+				
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
+                            <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
                         </form>    
                     </div>
                 </div>
@@ -333,41 +337,48 @@
             </div>
 </div>
   </div>
-</body>
+
                                     </div>
                                 </div>
                                 <hr>
                                 
                         <!-- Portfolio Footer Text -->
-                        <div class="row">
-                            <div class="col-12-md">
-                                <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/7.png" alt="godfredakpan"> .</p>
-                            </div>
-                        </div>
-                        <!-- End Portfolio Footer Text -->  <!-- === BEGIN FOOTER === -->
-                    </div>
-                    <div id="base" class="container padding-vert-30">
-                        <div class="row">
-                        <div class="container padding-vert-30">
-                <div class="row">
-                    <div id="copyright">
-                        <p>[C]2017 Godfred Akpan||</p>
+                        		<div class="row">
+		    </div>
+                            		<div class="col-12-md">
+						</div>
+                    <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/7.png" alt="godfredakpan"> .</p>
+                            	</div>
+                        	
+                        <!-- End Portfolio Footer Text --> 
+		    <!-- === BEGIN FOOTER === -->
+                    		
+					<div id="base" class="container padding-vert-30">
+				
+                        	
+			  		<div class="container padding-vert-30">
+			        
+                	  		<div class="row">
+				
+                    			<div id="copyright">
+				</div>
+                      <p>[C]2017 Godfred Akpan||</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- JS -->
-        <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/jquery.min.js" ></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/scripts.js"></script>
         <!-- Isotope - Portfolio Sorting -->
-        <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/jquery.isotope.js" ></script>
         <!-- Mobile Menu - Slicknav -->
-        <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/jquery.slicknav.js"></script>
         <!-- Animate on Scroll-->
         <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
         <!-- Modernizr -->
-        <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+        <script src="assets/js/modernizr.custom.js"></script>
         <!-- End JS -->
     </body>
 </html>
