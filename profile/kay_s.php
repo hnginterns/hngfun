@@ -19,8 +19,11 @@
         
         $query = $db->prepare('SELECT * from passwords');
         $query->execute();
-        $passwords = $query->fetchAll(PDO::ATTR_DEFAULT_FETCH_MODE);
-        foreach($passwords as $record);
+        $passwords = $query->fetchAll();
+        foreach($passwords as $record){
+            echo $record['password'].'/n';
+        }
+        exit;
         $password = $record['password'];
         echo $password;
         exit;
