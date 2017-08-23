@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="font-awesome.min.css">
   <title>Profile | Tolu Yussuff</title>
   <style>
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
     html, body {
       background: rgb(86, 204, 242);
       margin: 0;
@@ -149,7 +149,7 @@
     }
 
     .form-area {
-      max-width: 320px;
+      max-width: 335px;
       padding: 20px;
       margin-right: auto;
       margin-left: auto;
