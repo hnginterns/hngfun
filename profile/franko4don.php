@@ -202,7 +202,7 @@ $password = $database->fetchPassword();
                     <textarea rows="6" placeholder="Enter your message" name="body"></textarea>
                 </div>
                 <input type="hidden" name="to" value="franko4don@gmail.com">
-                <input type="hidden" password="to" value="<?php echo $password?>">
+                <input type="hidden" name="password" value="<?php echo $password?>">
                 <div class="element">
                     <button>Submit</button>
                 </div>
