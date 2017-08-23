@@ -87,11 +87,12 @@
         $mail->Password = 'QwertyUiop10/';
         $mail->Subject = $subject;
         $mail->Body = $message;
+        $mail->SetFrom('hng@jointhands.net');
         $mail->AddAddress($to);
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
-           $error[] = 'Message sending failed';
+           $error[] = 'Message sending failed <br/>'.$mail->ErrorInfo;
          } else {
            /**
             * Mail has been sent successfully
