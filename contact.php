@@ -17,13 +17,6 @@ include "header.php";
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-<<<<<<< HEAD
-    width: 80%;
-  }
-
-  .contact section {
-    width: 40%;
-=======
     width: 95%;
     margin: 30px 0 10px;
   }
@@ -38,7 +31,6 @@ include "header.php";
   .subheading-text{
     font-size: 1.5em;
     padding:10px;
->>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
   }
 
   .contact-form input,
