@@ -15,7 +15,7 @@
 <?php
 	if(isset($_POST['submitBtn'])){
 
-		$config = include('config.php');
+		$config = include('../stephenjude/config.php');
 	    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	    $con = new PDO($dsn, $config['username'], $config['pass']);
 
