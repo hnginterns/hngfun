@@ -22,8 +22,8 @@
 			.wrap {
 			
 				width: 80%;
-				min-height: 120px;
-				padding-bottom: 30px;
+				min-height: 150px;
+				padding-bottom: 200px;
 				margin: 0px auto;
 				background-color: #256EFF;
 				
@@ -50,7 +50,7 @@
 				width: 300px;
 				height: 366px;
 				padding: 10px;
-				border: 1px solid #ccc;
+				border: 1px solid #333;
 				transition: opacity 0.5s;
 			}
 				
@@ -68,6 +68,44 @@
 				color: #333;
 				text-align: center;
 				padding: 10px;
+			}
+			.form {
+			
+				width: 400px;
+				height: 200px;
+				padding: 50px;
+				padding-bottom: 150px;
+				background-color: rgba(51,51,51,0.5);
+				margin: 0px auto;
+				position: relative;
+				top: 80px;
+			}
+			input[type="text"] {
+			
+				width: 400px;
+				height: 60px;
+				padding-left: 10px;
+				border-radius: 10px;
+				box-shadow: 0px 0px 5px #ccc;
+			}
+			textarea {
+			
+				border-radius: 5px;
+				padding-left: 10px;
+			}
+			.form button {
+			
+				width: 400px;
+				height: 60px;
+				background-color: #333;
+				color: #ccc;
+				border-color: #333;
+				border-radius: 5px;
+				transition: background-color 0.5s;
+			}
+			.form button:hover {
+				
+				background-color: transparent;
 			}
 			footer {
 			
@@ -90,9 +128,19 @@
 					Web Developer | Mobile Developer | Digital Marketer | Techpreneur | God-Lover
 				</h3>
 			</div>
+			<div class="form">
+				<form method="POST" action="">
+				
+					<input type="text" placeholder="Full Name" id="fullname">
+					<br><br>
+					<textarea rows="10" cols="54" placeholder="Message" id="message"></textarea>
+					<br><br>
+					<button id="button">Send</button>
+				</form>
+			</div>
 		</div>
 		<footer>
-			&copy; Copyright 2017 &nbsp;&nbsp;&nbsp;
+			&copy; Copyright <?php echo Date('Y'); ?> &nbsp;&nbsp;&nbsp;
 					<a href="https://github.com/jhosuer"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 					<a href="https://hnginterns.slack.com/team/jhosuar"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a>
 					<a href="https://github.com/jhosuer"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
