@@ -6282,6 +6282,29 @@ include('header.php');
         </div>
     </div>
     <!--  Each Participants ends here  -->
+	
+	<!--  Each Participant starts here  -->
+    <div class="p-card">
+        <div class="v-center">
+            <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/22803885?v=4&u=0edf7779f1a9d2b202a38df71757a27f3f1a2ab0&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="http://hng.fun/profile/caesar">
+                    <!--Profile Link-->
+                    <h3 class="p-card-title">Omojola Samson</h3>
+                    <!--Profile Name-->
+                </a>
+                <p class="p-card-description">omojolasamsonade@gmail.com</p>
+                <!--Email-->
+            </div>
+            <div class="p-team">
+                <a href="#">
+                    <h3 class="p-card-title"> Team 9 </h3>
+                    <!--Team-->
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  Each Participants ends here  -->
                 
     <!--  Each Participant starts here  -->
         <div class="p-card">
