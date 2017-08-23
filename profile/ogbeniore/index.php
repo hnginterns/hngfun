@@ -1,3 +1,43 @@
+<?php
+$send = $_POST['submit'];
+if (isset($send)){
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+
+    $error = [];
+
+    $subject = $_POST['subject'];
+    $to  = 'oreeboy@gmail.com';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $uri");
+
+    }
+  }
+}
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -254,23 +294,23 @@
 
                 <div id="form-main">
                     <div id="form-div">
-                        <form class="form" id="form1">
+                        <form class="form" id="form1" action="" method "POST" >
 
                             <p class="name">
-                                <input name="name" type="text" class="feedback-input" placeholder="Name" id="name" />
+                                <input name="subject" type="text" class="feedback-input" placeholder="Subject" id="name"  required=""/>
                             </p>
 
-                            <p class="email">
+                            <!-- <p class="email">
                                 <input name="email" type="text" class="feedback-input" id="email" placeholder="Email" />
-                            </p>
+                            </p> -->
 
                             <p class="text">
-                                <textarea name="text" class="feedback-input" id="message" placeholder="Message"></textarea>
+                                <textarea name="message" class="feedback-input" id="message" placeholder="Message" required=""></textarea>
                             </p>
 
 
                             <div class="submit">
-                                <input type="submit" value="SEND" id="button" />
+                                <input type="submit" value="SEND" id="button" name="submit" required="" />
                             </div>
                         </form>
                     </div>
