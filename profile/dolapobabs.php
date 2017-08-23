@@ -125,6 +125,15 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
@@ -177,7 +186,7 @@ input[type=submit]:hover {
         <br>
         <h3>Contact Me</h3>
         <div class="container">
-                <form  id="form" action="submit.php">
+                <form  id="form" action="">
               
                   <label for="fname">Full Name     </label>
                   <input type="text" id="fname" name="fullname" placeholder="Your Full name.." required="">
@@ -189,6 +198,7 @@ input[type=submit]:hover {
                   <textarea id="subject" name="subject" placeholder="Write something here.." style="height:200px"></textarea>
               
                   <input type="submit" value="Submit">
+                  <input type="reset" value="Reset" id="reset" name="reset" />
               
                 </form>
               </div>

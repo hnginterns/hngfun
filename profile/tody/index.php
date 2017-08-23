@@ -1,38 +1,30 @@
 <?php
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
 
     $subject = $_POST['subject'];
     $to  = $_POST['to'];
     $body = $_POST['body'];
 
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
 
+    $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+    $server = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = mysqli_connect($server,$config['username'],$config['pass']);
 
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
-    }
+    $sql = 'SELECT * FROM password LIMIT 1';
 
-    if(empty($error)) {
-
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $server = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = mysqli_connect($server,$config['username'],$config['pass']);
-
-      $sql = 'SELECT * FROM password LIMIT 1';
-
-      $result = mysqli_query($con, $sql);
+    if($result = mysqli_query($con, $sql)) {
       $data = mysqli_fetch_array($result);
       $password = $data['password'];
+    } else {
+        $password = "#";
+    } 
 
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
-      header("location: $uri");
+    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
-    }
+    header("location: $uri");
+
   }
 
 ?>
