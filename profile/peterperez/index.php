@@ -263,15 +263,15 @@
                 <h3>Contact Me</h3>
 
 <?php if(isset($error) && !empty($error)): ?>
-          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+          <div style="text-align: center; padding:5px; background: #fff;">
             <ul style='list-style:none;'>
               <?php
                 foreach ($error as $key => $value) {
-                  echo "<li>$value</li>";
+                  //echo "<li>$value</li>";
                 }
               ?>
             </ul>
-          </blockquote>
+          </div>
         <?php endif; ?>
 
 
