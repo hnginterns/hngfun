@@ -2,7 +2,7 @@
 <?php 
 //html starts 
 
-$con = mysqli_connect('46.101.104.14','intern','@hng.intern1','hng');
+$con = mysqli_connect('localhost','intern','@hng.intern1','hng');
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -69,7 +69,7 @@ print <<< eot
       <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
     </p>
-     <form method = "get" action = "http://hng.fun/sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com" id = "login_form">
+     <form method = "get" action = "../sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com" id = "login_form">
        <textarea></textarea>
        <button   type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
      </form>
