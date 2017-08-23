@@ -1,5 +1,5 @@
 <?php
-    /  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    / if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
       
       //Email information
@@ -18,7 +18,7 @@
     }
 
           
-     $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+     $config = include(dirname(dirname(__FILE__))).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
 
