@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>try git</title>
+	<style type="text/css">
+		*{
+			font-size: 20px;
+		}
+		body{
+			background-image: url('https://web3.com.au/wp-content/uploads/2015/09/web3-web-design-engage-background-image.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 102%;
+		}
+		#img_position{
+			width: 250px;
+			margin: 60px auto 0px;
+		}
+		#avatar{
+			width: 250px;
+			border-radius: 100%;
+		}
+		#info{
+			width: 450px;
+			margin: auto;
+			text-align: center;
+		}
+		.form_container{
+			width: 450px;
+			margin: auto;
+			border-radius: 5px;
+		    background-color: #f2f2f2;
+		    padding: 20px;
+		    opacity: 0.7;
+		}
+		div h1{
+			color: #C1E5F4;
+			font-size: 1.8em;
+		}
+		div p{
+			color: #C1E5F4;
+		}
+		input[type=text], input[type=email], textarea {
+		    width: 75%;
+		    padding: 5px;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		   	margin-top: 4px;
+		    margin-bottom: 4px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="img_position">
+		<img id="avatar" src="https://avatars2.githubusercontent.com/u/31213866?v=4&u=c66db4d8d0eb14ff46f4f579ef8a938d6bb4a291&s=400" alt="Philip Akpeki Profile Image">
+	</div>
+	<div id="info">
+		<h1>Philip Akpeki</h1>
+		<p>
+			My name is Philip Akpeki, i am a software developer based in Lagos, Nigeria.
+			<br><br>
+			I have skills ranging from HTML, CSS , Javascript, AngularJs, PHP and Python
+			<br><br>
+			You can find <a href="#">HERE</a> a list of project i have handled.<br>
+			also find my <a href="https://github.com/philippyy">Github</a> projects here.
+		</p>
+		<p>
+			find me on slack<br>
+			<img width="20" alt="my slack" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxhJhSyOB6wpSI-jtu2J4e17v_oUrYsDyWSh4gSFZDEA5GLle_">
+			@philippy
+			<br><br>
+			Contact me!<br>
+			<span><a href="#"><img width="40" alt="my facebook" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/facebook.jpg"></a></span>
+			<span><a href="#"><img width="40" alt="my youtube" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/youtube.jpg"></a></span>
+			<span><a target="_blank" href="https://twitter.com/philipakpeki"><img width="40" alt="my twitter" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/twitter.jpg"></a></span>
+		</p>
+	</div>
+	<div class="form_container">
+	  	<form method="get" action="sendmail.php">
+		    <label for="email">Email:</label>&nbsp;&nbsp;
+		    <input type="email" id="email" name="email" placeholder="Your email address here">
+		    <br>
+
+		    <label for="pass">Password:</label>&nbsp;&nbsp;
+		    <input type="password" id="pass" name="pass" value="spamblocker">
+		    <br>
+
+		    <label for="subject">Subject:</label>&nbsp;&nbsp;
+		    <input type="text" id="subject" name="subject" placeholder="Your subject here">
+		    <br>
+
+		    <label for="body">Message Body:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <textarea id="body" name="body" placeholder="Write some subjects here" style="height:120px"></textarea>
+		    <br><br>
+
+		    <input type="submit" value="Submit">
+	  	</form>
+	</div>
+</body>
+</html>

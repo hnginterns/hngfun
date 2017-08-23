@@ -15,13 +15,17 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
-  color: #7B2131;
+  color: #E57373;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #F8033A;
+  color: #7B2131;
   cursor: pointer;
+}
+
+textarea {
+  resize: none;
 }
 
 .avatar {
@@ -81,6 +85,45 @@ ul.menu-item li:last-of-type {
 
 .short-bio p {
   font-size: 1.4em;
+}
+
+.contact {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 600px;
+}
+
+input:not([type="submit"]),
+textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-width: 0px 0px .5px 0px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 2px;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #E57373;
+  outline: none;
+}
+
+input[type=submit] {
+  padding: 10px;
+  margin: 15px 0 20px 0;
+  border: .5px solid #ccc;
+  border-radius: 5px;
+  background-color: #E57373;
+  font-family: inherit;
+  width: 80px;
+}
+
+input[type=submit]:hover {
+  color: white;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 601px) {

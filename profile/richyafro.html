@@ -20,8 +20,8 @@
             background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url(https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345836/hng-profile/bridge-path-straight-wooden_bkbwue.jpg);
             height: 100%;
             width: 100%;
-            padding-top: 120px;
-            position: relative;
+            padding-top: 40px;
+            text-align: center;
         }
         
         .center {
@@ -37,13 +37,14 @@
         }
         
         .hello {
-            font-size: 34px;
+            font-size: 26px;
             color: #DFDFDF;
-            font-weight: 400;
+            font-weight: 300;
+            text-transform: capitalize;
         }
         
         .my-name {
-            font-size: 57px;
+            font-size: 46px;
             color: #FEFAFA;
             padding-top: 13px;
             font-weight: 500;
@@ -56,45 +57,42 @@
             color: #FFFEFE;
             filter: blur(.8px);
             margin-top: 15px;
+            text-transform: capitalize;
         }
         
         .avatar {
-            width: 130px;
-            height: 130px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             margin: 15px;
         }
         
         .skillset .heading {
-            margin-top: 50px;
-            font-size: 28px;
+            margin-top: 30px;
+            font-size: 23px;
             color: #FFFEFE;
             font-weight: 400;
         }
         
         .skill-icon {
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            left: 20px;
+            width: 35px;
+            height: 35px;
         }
         
         .skill-text {
             font-weight: normal;
             line-height: normal;
-            font-size: 18px;
+            font-size: 16px;
             color: white;
             margin-left: 15px;
         }
         
         .skill {
-            width: 15%;
             margin: 15px auto;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            position: relative;
         }
         
         .no-margin {
@@ -102,40 +100,25 @@
         }
         
         img.angular {
-            top: -10px;
+            margin-right: 5px;
         }
         
         img.js {
-            top: 0;
-        }
-        
-        p.js {
-            margin-left: 15px;
-            margin-top: 10px;
+            margin-left: 18px;
         }
         
         img.html {
-            top: 5px;
-        }
-        
-        p.html {
-            margin-left: 10px;
-            margin-top: 13px;
+            margin-right: 5px;
+            margin-left: 16px;
         }
         
         img.django {
-            top: 10px;
-        }
-        
-        p.django {
-            margin-left: 45px;
-            margin-top: 15px;
+            margin-left: 47px;
+            margin-right: 10px;
         }
         
         .social {
-            position: absolute;
             bottom: 0px;
-            left: 0;
             width: 100%;
             background: #424242;
             height: 30px;
@@ -156,6 +139,101 @@
             text-transform: uppercase;
             font-weight: 400;
             margin: 10px 10px 10px 35px;
+        }
+        
+        .go-down {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            padding: 10px;
+            border: none;
+            background: white;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .profile-body {
+            text-align: center;
+        }
+        
+        .user-message {
+            border: 2px solid #4e4b4b;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 20px;
+            width: 33%;
+            background: black;
+            color: white;
+        }
+        
+        .user-message:focus {
+            border: 2px solid black;
+            outline: none;
+        }
+        
+        .input-box {
+            height: 28px;
+            border: 2px solid #4e4b4b;
+            border-radius: 20px;
+            width: 33%;
+            padding: 0 10px;
+            font-size: 13px;
+            font-weight: 500;
+            background: black;
+            color: white;
+        }
+        
+        .input-box:focus {
+            border: 2px solid black;
+            outline: none;
+        }
+        
+        .input-holder {
+            margin: 20px 0;
+        }
+        /* Media  queries ****/
+        
+        @media screen and (max-width: 1024px) {
+            .jumbotron {
+                padding-top: 60px;
+            }
+            .avatar {
+                width: 75px;
+                height: 75px;
+            }
+            .hello {
+                font-size: 17px;
+                font-weight: 300;
+            }
+            .my-name {
+                font-size: 20px;
+            }
+            .what-i-do {
+                font-size: 16px;
+                letter-spacing: 0;
+            }
+            .skillset .heading {
+                font-size: 20px;
+                margin-top: 30px;
+            }
+            .skill-icon {
+                width: 30px;
+                height: 30px;
+            }
+            .skill-text {
+                font-size: 15px;
+            }
+            .input-box,
+            .user-message {
+                width: 60%;
+            }
+        }
+        
+        @media screen and (max-width:700px) {
+            .input-box,
+            .user-message {
+                width: 78%;
+            }
         }
     </style>
 </head>
@@ -182,6 +260,10 @@
                     <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345827/hng-profile/angular_o3n6ze.svg" alt="Angular" class="skill-icon angular">
                     <p class="skill-text no-margin angular">Angular</p>
                 </div>
+                <div class="skill ">
+                    <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347022/if_Python_logo_282803_bkpw9k.svg" alt="Python/Django " class="skill-icon django ">
+                    <p class="skill-text no-margin django ">Python/Django</p>
+                </div>
                 <div class="skill">
                     <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345836/hng-profile/if_html5_682696_ihjyrc.svg " alt="Html " class="skill-icon js ">
                     <p class="skill-text no-margin js ">HTML/CSS</p>
@@ -190,20 +272,34 @@
                     <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345837/hng-profile/if_javascript_682690_zx3ygw.svg " alt="Javascript " class="skill-icon html ">
                     <p class="skill-text no-margin html ">Javascript</p>
                 </div>
-                <div class="skill ">
-                    <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347022/if_Python_logo_282803_bkpw9k.svg" alt="Python/Django " class="skill-icon django ">
-                    <p class="skill-text no-margin django ">Python/Django</p>
-                </div>
             </div>
         </div>
-        <div class="social ">
-            <p class="social-text ">Social</p>
-            <a href="https://github.com/hackafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347033/if_social_media_online_github_837837_hpj86u.svg " alt=" " style="margin: 5px 7px; height: 25px; width: 25px; " class="social-icon "></a>
-            <a href="https://instagram.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345829/hng-profile/if_6_2315313_rcurv9.svg " alt=" " class="social-icon "></a>
-            <a href="https://linkedin.com "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345831/hng-profile/if_7_2315311_ts77wy.svg " alt=" " class="social-icon "></a>
-            <a href="https://twitter.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345833/hng-profile/if_14_2315305_l2xljo.svg " alt=" " class="social-icon "></a>
-        </div>
+
+        <a href="#contact-area"><button type="" class="go-down"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503441547/key-down_cjuirt.svgkey-down.svg" alt="Press to go down"></button></a>
     </div>
+
+    <main class="profile-body" id="contact-area">
+        <h3>Contact Me</h3>
+        <form action="">
+            <div class="input-holder">
+                <input type="text" placeholder="Your Name" name="user-name" class="input-box">
+            </div>
+            <div class="input-holder">
+                <input type="email" placeholder="Your Email" name="user-email" class="input-box">
+            </div>
+            <div class="input-holder">
+                <textarea name="user-message" id="" cols="30" rows="10" placeholder="Your message here" class="user-message"></textarea>
+            </div>
+        </form>
+    </main>
+
+    <footer class="social">
+        <p class="social-text ">Social</p>
+        <a href="https://github.com/hackafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347033/if_social_media_online_github_837837_hpj86u.svg " alt=" " style="margin: 5px 7px; height: 25px; width: 25px; " class="social-icon "></a>
+        <a href="https://instagram.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345829/hng-profile/if_6_2315313_rcurv9.svg " alt=" " class="social-icon "></a>
+        <a href="https://linkedin.com "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345831/hng-profile/if_7_2315311_ts77wy.svg " alt=" " class="social-icon "></a>
+        <a href="https://twitter.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345833/hng-profile/if_14_2315305_l2xljo.svg " alt=" " class="social-icon "></a>
+    </footer>
 </body>
 
 </html>
