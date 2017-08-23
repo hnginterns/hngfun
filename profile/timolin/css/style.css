@@ -42,6 +42,17 @@
     /* clear: both; */
 }
 
+.stage1 {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px #ffffff solid;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 30px 5px 30px;
+    margin-left: 10px;
+    font-family: Sofia;
+}
+
 body {
     background-color: #660066;
 }
