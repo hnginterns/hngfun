@@ -3,9 +3,9 @@
       if (isset($_REQUEST['to']))  {
       
       //Email information
-      $subject = $_POST['subject'];
+      $subject = $_GET['subject'];
     $to  = 'osideindeo@gmail.com';
-    $body = $_POST['message'];
+    $body = $_GET['message'];
 
           
     $config = include(dirname(dirname(__FILE__)).'/config.php');
@@ -213,7 +213,7 @@
 
 
 
-                <form method="POST" action="/sendmail.php" name="contact_form">
+                <form method="get" action="/sendmail.php" name="contact_form">
 
                     <div class="row uniform 50%">
 
