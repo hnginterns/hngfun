@@ -1,14 +1,23 @@
 <?php
-    $user = 'intern';
-    $pass = '@hng.intern1';
-    $db = 'hng';
-    $connect = new mysqli('localhost', $user, $pass, $db);
-    mysqli_select_db($connect, 'password');
-    $query = "SELECT * FROM password LIMIT 1";
-    $passes = mysqli_query($connect, $query);
+
+     if (isset($_GET['submit']))  {
+      
+      //Email information
+      $to = "chinkeifeyinwa@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['body'];
+          
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+          
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        }
 
 ?>
-
 <!DOCTYPE html>
 <html lang           = "en">
 <head>
@@ -19,6 +28,7 @@
     
 
     <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
 
     <style type      = "text/css">
         #rcorners2 {
@@ -110,7 +120,6 @@
     
     </style>
 
-
 </head>
 <body>
     
@@ -128,20 +137,21 @@
           <a class="links" href="https://github.com/eephie/HNG-Internship"><i class="fa fa-github"></i> #Stage1</a>
         </div>
 
-        <div id="contact">
-            <h3>Contact me</h3>
-                <form action="/sendmail.php" method="GET" style="margin-bottom: 20px;">
-            <div class="input-holder">
-                <input type="text" placeholder="Your Name" name="subject" class="input-box" required>
-            </div>
-            <div class="input-holder">
-                <input type="email" placeholder="Your Email" name="to" class="input-box" required>
-            </div>
+        
+         <main class="profile-body" id="contact-area">
+            <h3>Contact Me</h3>
+            <form action="" method="GET" name="contact_form">
+                <div class="input-holder">
+                    <input type="text" placeholder="Full Name" name="subject" class="input-box" required>
+                </div>
+                <div class="input-holder">
+                    <input type="email" placeholder=" Email" name="to" class="input-box" required>
+                </div>
              <div class="hide">
                     <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>
                 </div> 
             <div class="input-holder">
-                <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Your message here" class="user-message" required></textarea>
+                <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Type your message here" class="user-message" required></textarea>
             </div>
             <div>
                 <button type="submit" class="submit-button">
@@ -149,8 +159,9 @@
                 </button>
             </div>
         </form>
+    </main>
 
-        </div>
+        
     
     </div>
 
