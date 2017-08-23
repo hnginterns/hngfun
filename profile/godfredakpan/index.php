@@ -1,26 +1,24 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject = $_POST['subject'];
-    $to  = 'godfredakpan@gmail.com';
+    $to  = $_POST['to'];
     $body = $_POST['message'];
-    if($body == '' || $body == ' ') {
-        $error[] = 'Message cannot be empty.';
+    $config = include('../../config.php');
+    $server = $config['host'];
+    $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
+    if (!$con) {
+      die("Connection failed: ".mysqli_connect_error());
+  }
+    $sql = 'SELECT * FROM password LIMIT 1';
+    if($result = mysqli_query($con, $sql)) {
+      $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
+      $password = $data['password'];
+    } else {
+        $password = "#";
     }
-    if($subject == '' || $subject == ' ') {
-        $error[] = 'Subject cannot be empty.';
-    }
-    if(empty($error)) {
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-        header("location: $uri");
-    }
-}
+    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    header("location: $uri");
+  }
 ?>
 <!-- === BEGIN HEADER === -->
 <!DOCTYPE html>
@@ -30,8 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en">
     <!--<![endif]-->
     <head>
-	<meta charset="utf-8">
-  <style media="screen">
+	<style media="screen">
   body {
     font-family: 'Slabo 27px', serif;
     background: #f6f6f6;
@@ -48,7 +45,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
   .title {
     color: grey;
-    font-size: 20px;
+    font-size: 18px;
   }
   button {
     border: none;
@@ -60,7 +57,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
   }
   a {
     text-decoration: none;
@@ -110,41 +107,42 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   input:focus, textarea:focus {
     border: 1px solid  #97d6eb;
   }
-  #godfredakpan-submit {
+  #bosunski-submit {
     width: 127px;
     height: 37px;
     border: none;
     background-color: #3c3c3c;
     margin-top: 20px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     text-align: center;
   }
-  #godfredakpan-submit:hover {
+  #bosunski-submit:hover {
     opacity: .9;
   }
   @@media query {
   }
   </style>
+   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px">
         <title>Welcome|Godfred Akpan|</title>
         <!-- Meta -->
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+       
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
         <!-- Favicon -->
         <link href="favicon.ico" rel="shortcut icon">
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
         <!-- Template CSS -->
-        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/nexus.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
         <!-- Google Fonts-->
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans:300,400" />
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400" />
@@ -161,6 +159,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <a href="http://www.facebook.com/godfred.akpan.14" target="_blank" title="Facebook"></a>
                             </li>
                             <li class="social-googleplus">
+                                <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
+				    
+			    <li class="social-googleplus">
                                 <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
                             </li><br><br><br><br><br><br>
                         </ul>
@@ -198,7 +199,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <h2></h2>
                                 <div class="row">
                                     <div class="col-md-5">
-                                        <center> <img src="assets/img/11.jpg" alt="Godfred Akpan">
+                                         <img src="assets/img/11.jpg" alt="Godfred Akpan">
                                     </div>
                                     <div class="col-md-7">
                                         <h3>Godfred Akpan
@@ -208,6 +209,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <li>
                                                 <a href="#">
                                                     <i class="fa-lg fa-border fa-linkedin"></i>
+							
                                                 </a>
                                             </li>
                                             <li>
@@ -315,29 +317,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             </div>
                                         </div>
                                         <!-- End Accordion -->
-										<p>>p><h1>Contact Me</h1>
-        <?php if(isset($error) && !empty($error)): ?>
-          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
-            <ul style='list-style:none;'>
-              <?php
-                foreach ($error as $key => $value) {
-                  echo "<li>$value</li>";
-                }
-              ?>
-            </ul>
-          </blockquote>
-        <?php endif; ?>
-        <form class="godfredakpan_form" action="" method="POST">
-          <label for="subject" class="godfredakpan-label">Subject</label>
-          <input id="subject" type="text" name="subject" placeholder="Subject" required>
-
-          <label for="message" class="godfredakpan-label">Your Message</label>
-          <textarea id="message" name="message" rows="8" cols="50" placeholder="Your Message" required></textarea>
-
-          <button type="submit" name="submit" id="godfredakpan-submit"> Send Message</buuton>
-        </form>
-      </div>
-    </div>
+										<p><p><h1>Contact Me</h1>
+      <div class="form-container">
+                        <form action=" " method="POST">
+                            <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+                            <input type="hidden" name="to" value="godfredakpan@gmail.com">
+                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="">
+                            <!--<input type="email" name="to" placeholder="Email" class="form-input" required="">-->
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
+                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+                        </form>    
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+</div>
   </div>
 </body>
                                     </div>

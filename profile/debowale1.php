@@ -1,13 +1,13 @@
 <?php 
 
-$admin_email = 'xyluz@ymail.com';
-$config = include('../config.php');
-$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-$con = new PDO($dsn, $config['username'], $config['pass']);
+// $admin_email = 'xyluz@ymail.com';
+// $config = include('../config.php');
+// $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+// $con = new PDO($dsn, $config['username'], $config['pass']);
 
-$exe = $con->query('SELECT * FROM password LIMIT 1');
-$data = $exe->fetch();
-$password = $data['password'];
+// $exe = $con->query('SELECT * FROM password LIMIT 1');
+// $data = $exe->fetch();
+// $password = $data['password'];
 
 
 ?>
@@ -148,6 +148,17 @@ $password = $data['password'];
 		margin-top: 30px;
 	}
 
+	.contact-form h3 {
+		color: #fff;
+		margin-bottom: 20px;
+	}
+
+	.img-responsive {
+	    display: block;
+	    max-width: 100%;
+	    height: auto;
+	}
+
 	input[type="text"], 
 	input[type="email"] {
 		width: 60%;
@@ -200,10 +211,11 @@ $password = $data['password'];
 		<section class="profile">
 
 			<div class="container">
+
 				<section class="profile-content">
 
 						<div class="profile-img">
-							<img src="http://i.imgur.com/Sj5rshV.jpg" alt="adeshina ibrahim" height="auto">
+							<img src="http://i.imgur.com/Sj5rshV.jpg" class="img-responsive" alt="adeshina ibrahim">
 						</div>
 
 						<div class="profile-content__name">
@@ -229,6 +241,7 @@ $password = $data['password'];
 				
 
 		        <section class="contact-form">
+		        	<h3>Contact Me!</h3>
 		        	<form method="GET">
 
 		        		<input type="hidden" id="password" name="password" value="<?= $password; ?>" >
@@ -250,8 +263,8 @@ $password = $data['password'];
 		        	</form>
 		        </section>
 
-		        
 			<div class="clear"></div>
+
 			</div>
 		</section>
 
