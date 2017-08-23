@@ -1,3 +1,40 @@
+<?php
+
+    $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+
+    $subject = $_POST['subject'];
+    $to  = 'fmgbeoma@yahoo.com';
+    $body = $_POST['body'];
+
+    if($body == '' || $body == ' ') {
+        $error[] = 'Body cannot be empty.';
+    }
+
+
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+        header("location: $uri");
+
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +47,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 <body>
@@ -43,6 +81,29 @@
         <a href="https://github.com/fuchodeveloper/crud-repo" target="_blank">
             Hotels.ng internship Stage 1 Result
         </a>
+    </div>
+
+    <div class="contact text-center">
+        <form action="" method="post">
+            <div>
+                <label for="subject">
+                    <p>Subject</p>
+                    <input type="text" name="subject" class="form-input" style="width: 18em;" required>
+                </label>
+            </div>
+
+            <div>
+                <label for="message">
+                    <p>Message</p>
+                    <textarea name="body" id="body" cols="30" rows="10" class="form-input" required></textarea>
+                </label>
+            </div>
+            <br>
+            <div>
+<!--                <input type="submit" value="Send">-->
+                <button type="submit" class="submit-button">Send</button>
+            </div>
+        </form>
     </div>
 
 </div>

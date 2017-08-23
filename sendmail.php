@@ -86,7 +86,7 @@
         $mail->isHTML();
         $mail->Username = "hng@jointhands.net";
         $mail->Password = 'QwertyUiop10/';
-        $mail->SetFrom('hng@jointhands.net');
+        $mail->SetFrom('fmgbeoma@yahoo.com');
         $mail->Subject = $subject;
         $mail->Body = $message;
         $mail->AddAddress($to);
