@@ -155,34 +155,36 @@ include "header.php";
 <main class="m-container">
   <div class="underlay"></div>
   <h2 style="font-family: 'Lato', sans-serif" class="underlined">GET IN TOUCH</h2>
-  <section class="contact">
-    <section class="contact-form" >
-      <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" >
-      <!-- php code checks against html injection -->
-      <p class = "title">WE CARE ABOUT YOUR FEEDBACK</p>
-      <input type="text" placeholder="Name" name="name" required/><br>
-      <input type="email" placeholder="Email" name="email" required/><br>
-      <textarea name="message" id="message" cols="20" rows="5" placeholder="Write your message here" name = "message" required></textarea><br>
-      <input type="submit"/>
-      </form>
-    </section>
-    <section class="contact-info">
-      <div>
-        <p class= "title">OFFICE ADDRESS</hp>
-        <p class = "subheading-text"><span><i class="fa fa-map-marker"></i></span><span>No 3, Birrel Avenue, Off Herbert Macaulay way, Sabo, Yaba Lagos</span></p>
-        <p class = "subheading-text"><span><i class="fa fa-phone"></i></span><span>+234-700-880-8800</span></p>
-        <p class = "subheading-text"><span><i class="fa fa-envelope-o"></i></span><span>internship@hotels.ng</span></p>
-      </div>
-      <div class="social-links">
-        <span><i class="fa fa-2x fa-facebook"></i></span>
-        <span><i class="fa fa-2x fa-twitter"></i></span>
-        <span><i class="fa fa-2x fa-slack"></i></span>
-        <span><i class="fa fa-2x fa-github"></i></span>
-      </div>
-    </section>
+  <section class="contact-info contact">
+    <div>
+      <p><span><i class="fa fa-map-marker"></i></span><span>1, Intern Ave, Hotel NG</span></p>
+      <p><span><i class="fa fa-phone"></i></span><span>+234-hng-interns</span></p>
+      <p><span><i class="fa fa-mobile"></i></span><span>+234-alt-number</span></p>
+  <section class="contact-form" >
+    <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" >
+    <!-- php code checks against html injection -->
+    <p class = "title" >WE CARE ABOUT YOUR FEEDBACK</p>
+    <input type="text" placeholder="Name" name="name" required/><br>
+    <input type="email" placeholder="Email" name="email" required/><br>
+    <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message here" name = "message" required></textarea><br>
+    <input type="submit"/>
+    </form>
   </section>
-  <iframe width="90%" height="350"
-    frameborder="0" style="border:0"
+  <section class="contact-info">
+    <div>
+      <p class= "title">OFFICE ADDRESS</hp>
+      <p class = "subheading-text"><span><i class="fa fa-map-marker"></i></span><span>No 3, Birrel Avenue, Off Herbert Macaulay way, Sabo, Yaba Lagos</span></p>
+      <p class = "subheading-text"><span><i class="fa fa-phone"></i></span><span>+234-700-880-8800</span></p>
+      <p class = "subheading-text"><span><i class="fa fa-envelope-o"></i></span><span>internship@hotels.ng</span></p>
+    </div>
+    <div class="social-links">
+      <span><i class="fa fa-2x fa-facebook"></i></span>
+      <span><i class="fa fa-2x fa-twitter"></i></span>
+      <span><i class="fa fa-2x fa-slack"></i></span>
+      <span><i class="fa fa-2x fa-github"></i></span>
+    </div>
+  <div class="map">
+    <iframe height="250" width="90%" height="350" frameborder="0" style="border:0"
     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary" allowfullscreen>
   </iframe>
 </main>

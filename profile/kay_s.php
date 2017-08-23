@@ -1,23 +1,26 @@
 <?php
-    if($_POST['processing']){
-        if(!(isset($_POST['subject']) && isset($_POST['body']))){
+    if(isset($_POST['processing']) && $_POST['processing'] == true){
+        echo 'here';
+        if((empty($_POST['subject']) || empty($_POST['body']))){
             exit;
         }
         $subject = $_POST['subject'];
         $body = $_POST['body'];
-        $config = require('./config.php');
+        $config = require($_SERVER['DOCUMENT_ROOT'] . '/config.php');
         $host = $config['host'];
         $dbname = $config['dbname'];
         // Get Password from database
-        $db = new PDO("mysql:host=$host;dbname=$dbname", $config['user'], $config['pass']);
-        $query = $db->prepare('SELECT * from passwords');
-        $query->execute();
-        $passwords = $query->fetchAll(PDO::ATTR_DEFAULT_FETCH_MODE);
-        foreach($passwords as $record);
-        $password = $record['password'];
-        echo $password;
-        exit;
-        header("Location: hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
+        try{
+            $db = new PDO("mysql:host=$host;dbname=$dbname", $config['username'], $config['pass']);
+        } catch (PDOException $e){
+            echo "Connection error";
+        }
+        
+        
+        $query = $db->query('SELECT * from password LIMIT 1');
+        $data = $query->fetch();
+        $password = $data['password'];
+        header("Location: ".$_SERVER['HTTP_HOST']."/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
         
     }
 ?>
@@ -163,14 +166,14 @@
                     </div>
                     <div class="contact">
                         <h2>Contact Me</h2>
-                        <form action="./profile/kay_s.php" method="post">
+                        <form action="./kay_s.php" method="post">
                             <input type="hidden" name="processing" value=true />
                             <input type="text" class="textbox subject" name="subject" placeholder="Subject" /> 
                             <textarea class="textbox body" name="body" placeholder="Message"></textarea>
                             <input type="submit" value="Send" />
-                            <? if($processing) : ?>
+                            <?php if(isset($_POST['processing'])) : ?>
                                 <p>The Subject or Body field has not been entered</p>
-                            <? endif; ?>
+                            <?php endif; ?>
                         </form>
                     </div>
                     
