@@ -8,10 +8,15 @@
         $body = $_POST['body'];
         $config = require($_SERVER['DOCUMENT_ROOT'] . '/config.php');
         $host = $config['host'];
-        echo $host;
         $dbname = $config['dbname'];
         // Get Password from database
-        $db = new PDO("mysql:host=$host;dbname=$dbname", $config['user'], $config['pass']);
+        try{
+            $db = new PDO("mysql:host=$host;dbname=$dbname", $config['user'], $config['pass']);
+        } catch (PDOException $e){
+            echo "Connection error";
+        }
+        
+        
         $query = $db->prepare('SELECT * from passwords');
         $query->execute();
         $passwords = $query->fetchAll(PDO::ATTR_DEFAULT_FETCH_MODE);
