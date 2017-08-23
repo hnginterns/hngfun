@@ -1,4 +1,37 @@
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
 
+    $subject = $_POST['subject'];
+    $to  = 'jekayode@live.com';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Please enter the message';
+    }
+
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Please enter the subject.';
+    }
+
+    if(empty($error)) {
+
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $uri");
+
+    }
+  }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +61,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+       <div class="collapse navbar-collapse " id="navbarsExampleDefault">
         <ul class=" nav navbar-nav mr-auto navbar-right">
           <li class="nav-item active">
             <a class="nav-link" href="http://hng.fun/profile/jekayode/">Home <span class="sr-only">(current)</span></a>
@@ -63,14 +96,62 @@
         <p>
         	<i class="fa fa-slack" aria-hidden="true"></i> <a href="https://hnginterns.slack.com">@jekayode</a>   |  <i class="fa fa-github" aria-hidden="true"> </i> <a href="https://github.com/jekayode" target="_blank">@jekayode</a>  | <a href="https://github.com/jekayode/hnl-internship" target="_blank">#Stage1 Output</a> | <a href="https://github.com/jekayode/hngprofile" target="_blank">Github Repo for this Page</a>
         </p>
-			
-		<p>
-        	My name is Emmanuel. I am comfortable with HTML, CSS, JS, PHP (and Laravel). I currently reside in Ilorin, Kwara State.
-        </p>
+			<hr>
 
-        <p>
-        	This profile page was create as part of Stage 2 of the Hotels.ng Developer Internship Project. 
-        </p>
+		    
+<div class="container">
+  <div class="row">
+      <div class="col-md-10 ">
+        <div class="well well-sm">
+
+
+        <?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+        <?php endif; ?>
+
+          <form class="form-horizontal" action="" method="post">
+          <fieldset>
+            <legend class="text-center">Contact Me</legend>
+    
+            <!-- Name input-->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="subject">Subject</label>
+              <div class="col-md-9">
+                <input id="subject" name="subject" type="text" placeholder="Subject" class="form-control">
+              </div>
+            </div>
+    
+            <!-- Message body -->
+            <div class="form-group">
+              <label class="col-md-3 control-label" for="message">Your message</label>
+              <div class="col-md-9">
+                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+              </div>
+            </div>
+    
+            <!-- Form actions -->
+            <div class="form-group">
+              <div class="col-md-12 text-right">
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
 
 
         </div>
