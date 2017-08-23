@@ -107,7 +107,7 @@ include('header.php');
             -->
 
 		    <!--  Each Participant starts here  -->
-		    <div class="p-card">
+		  <div class="p-card">
 
             <div class="v-center">
             <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/danolez1/profile.JPG); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -237,7 +237,31 @@ include('header.php');
                             </div>
                         </div>
                     </div>
-                    <!--  Each Participants ends here  -->
+                    <!--  Each Participants ends here  --> 
+		
+		
+		<!--  Each Participant starts here  -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/DREW-certified.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/DREW-certified.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Andrew Ugbechie</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">andrewugbechie@gmail.com</p>
+                        <!--Email-->
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 5 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  Each Participants ends here  -->
 
 
                     <div class="p-card">
@@ -401,8 +425,7 @@ include('header.php');
                         <!--  Each Participant starts here  -->
                         <div class="p-card">
                             <div class="v-center">
-                                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/UrkycNV.jpg
-); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/UrkycNV.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                                 <div class="p-card-info">
                                     <a href="http://hng.fun/profile/raypex.html">
                                         <!--Profile Link-->
@@ -490,8 +513,6 @@ include('header.php');
                             </div>
                         </div>
                         <!--  Each Participants ends here  -->
-
-
                         <div class="p-card">
                             <div class="v-center">
                                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/899666444060942341/uKTEUbcF_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -518,9 +539,6 @@ include('header.php');
 
 
                         <!--  Each Participants ends here  -->
-
-
-
                         <div class="p-card">
                             <div class="v-center">
                                 <div class="p-card-photo" style="background-image: url(http://i.imgur.com/jQznRbs.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -544,8 +562,6 @@ include('header.php');
                                 </div>
                             </div>
                         </div>
-
-
                         <!--  Each Participants ends here  -->
 
                         <!--  Each Participant starts here  -->
@@ -570,8 +586,6 @@ include('header.php');
                             </div>
                         </div>
                         <!--  Each Participants ends here  -->
-
-
 
                         <div class="p-card">
                             <div class="v-center">
@@ -1760,7 +1774,7 @@ include('header.php');
                 <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(https://image.ibb.co/eYOe6k/olumide.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
-                        <a href="http://hng.fun/profile/holumiede.html">
+                        <a href="http://hng.fun/profile/holumiede.php">
                             <h3 class="p-card-title">Osideinde Oluwadara</h3>
                         </a>
                         <p class="p-card-description">osideindeo@gmail.com</p>
