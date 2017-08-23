@@ -110,7 +110,11 @@ include('header.php');
 		    <div class="p-card">
 
             <div class="v-center">
+<<<<<<< HEAD
             <div class="p-card-photo" style="background-image: url(profile/danolez1/profile.JPG); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+=======
+            <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/danolez1/profile.JPG); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+>>>>>>> e0fa1e7cc55841ada294cbf485e8cdebcd563369
             <div class="p-card-info">
                 <a href="http://hng.fun/profile/danolez1">
                 <!--Profile Link-->

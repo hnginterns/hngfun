@@ -59,6 +59,7 @@
        */
       if($sent_password != $password)
         $error[] = 'You have sent an invalid password, please try again.';
+		echo $password;
 
       if(!empty($error)) {
         /**
