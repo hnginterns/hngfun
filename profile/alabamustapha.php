@@ -8,6 +8,8 @@ $exe = $con->query('SELECT * FROM password LIMIT 1');
 $data = $exe->fetch();
 $password = $data['password'];
 
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -210,7 +212,7 @@ $password = $data['password'];
 					<input id="contact-subject" class="form-input" type="text" name="subject" placeholder="Why are you sending this mail" required>
 					<input type="hidden" name="password" value="<?php echo $password; ?>" id="_token">
 					<textarea id="contact-body" class="form-input" name="body" placeholder="message content" rows="25"></textarea>
-					<button id="contact-form-submit" type="submit" class="form-input" onclick="submitForm()"><i class="fa fa-send"></i> Send</button>
+					<button id="contact-form-submit" type="submit" class="form-input" onclick="submitForm(event)"><i class="fa fa-send"></i> Send</button>
 				</form>
 			</div>
 
@@ -224,7 +226,10 @@ $password = $data['password'];
 	
 	
 
-	function submitForm(){
+	function submitForm(event){
+		
+		event.preventDefault();
+
 		name 	= document.getElementById("contact-name").value;
 		email 	= document.getElementById("contact-email").value;
 		subject = document.getElementById("contact-subject").value;
@@ -232,12 +237,16 @@ $password = $data['password'];
 		_token 	= document.getElementById("_token").value;
 		
 
-		//alert("From: " + email + "( " + name + " )" + "\nMessage: " + body);
+		body = ("From: " + email + "( " + name + " )" + "\nMessage: " + body);
 
 		url = location.protocol + '//' + location.host;
 
-		url = url + "/hngfun/sendmail.php?password=" + _token + "&subject=" + subject + "&body=" + body +"&to=alabamustapha@gmail.com"
 
+
+		url = url + "/sendmail.php?password=" + _token + "&subject=" + subject + "&body=" + body +"&to=alabamustapha@gmail.com";
+
+		alert(url);
+		
 		window.location = url;
 	}
 
