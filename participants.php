@@ -6351,6 +6351,29 @@ include('header.php');
         </div>
     </div>
     <!--  Each Participants ends here  -->
+		    <!--  Each Participant starts here  -->
+    <div class="p-card">
+        <div class="v-center">
+            <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/20817997?v=4&u=e6754af043eaac57a75625df32e8845a64d00dc3&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="http://hng.fun/profile/kayode.html">
+                    <!--Profile Link-->
+                    <h3 class="p-card-title">Kayode Emmanuel</h3>
+                    <!--Profile Name-->
+                </a>
+                <p class="p-card-description">ekayode700@gmail.com</p>
+                <!--Email-->
+				
+            </div>
+            <div class="p-team">
+                <a href="#">
+                    <h3 class="p-card-title"> Team 6 </h3>
+                    <!--Team-->
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  Each Participants ends here  -->
 
 <<<<<<< HEAD
 <<<<<<< HEAD
