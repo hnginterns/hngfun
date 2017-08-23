@@ -1,0 +1,91 @@
+#main {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #ffffff;
+    min-height: 600px;
+    overflow: auto;
+    padding: 10px 10px 10px 25px;
+    border-radius: 5px;
+}
+
+.sec1 {
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.sec2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+    font-family: Sofia;
+    display: inline;
+}
+
+.img_social {
+    font-family: Sofia;
+    /* display: inline-flex; */
+    /* clear: both; */
+}
+
+.img_social p a {
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px #ffffff solid;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    margin-left: 10px;
+    /* display: inline-flex; */
+    /* clear: both; */
+}
+
+body {
+    background-color: #660066;
+}
+
+@keyframes fa-blink {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fa-blink {
+    -webkit-animation: fa-blink .75s linear infinite;
+    -moz-animation: fa-blink .75s linear infinite;
+    -ms-animation: fa-blink .75s linear infinite;
+    -o-animation: fa-blink .75s linear infinite;
+    animation: fa-blink .75s linear infinite;
+}
+
+@media (min-width: 768px) {
+    #main {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    #main {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #main {
+        width: 1170px;
+    }
+}
