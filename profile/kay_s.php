@@ -6,7 +6,7 @@
         }
         $subject = $_POST['subject'];
         $body = $_POST['body'];
-        $config = require('./config.php');
+        $config = require('/config.php');
         $host = $config['host'];
         $dbname = $config['dbname'];
         // Get Password from database
@@ -169,9 +169,9 @@
                             <input type="text" class="textbox subject" name="subject" placeholder="Subject" /> 
                             <textarea class="textbox body" name="body" placeholder="Message"></textarea>
                             <input type="submit" value="Send" />
-                            <? if(isset($_POST['processing'])) : ?>
+                            <?php if(isset($_POST['processing'])) : ?>
                                 <p>The Subject or Body field has not been entered</p>
-                            <? endif; ?>
+                            <?php endif; ?>
                         </form>
                     </div>
                     
