@@ -54,7 +54,7 @@
       </header>
 
       <div class="container">
-        <form action="/action_page.php" method="get">
+        <form action="../sendmail.php" method="get">
 
           <label for="email">Email</label>
           <input type="email" id="email" name="to" placeholder="Your email address.." required>
