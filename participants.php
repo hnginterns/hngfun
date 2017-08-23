@@ -6664,6 +6664,30 @@ include('header.php');
     </div>
     <!--  Each Participants ends here  -->
 
+     <!--  Each Participant starts here  -->
+    <div class="p-card">
+        <div class="v-center">
+            <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/5815d5ac44); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="http://http://hng.fun/profile/iamseyiajayi/index.html">
+                    <!--Profile Link-->
+                    <h3 class="p-card-title">Ajayi Seyi</h3>
+                    <!--Profile Name-->
+                </a>
+                <p class="p-card-description">iamseyiajayi@gmail.com</p>
+                <!--Email-->
+                
+            </div>
+            <div class="p-team">
+                <a href="#">
+                    <h3 class="p-card-title">No team yet</h3>
+                    <!--Team-->
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  Each Participants ends here  -->
+
 <<<<<<< HEAD
 <<<<<<< HEAD
     <?php include "footer.php"?>
