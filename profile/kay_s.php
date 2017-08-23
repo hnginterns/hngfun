@@ -1,13 +1,13 @@
 <?php
-    echo $_POST['processing'];
     if(isset($_POST['processing']) && $_POST['processing'] == true){
         if(!(isset($_POST['subject']) && isset($_POST['body']))){
             exit;
         }
         $subject = $_POST['subject'];
         $body = $_POST['body'];
-        $config = require('/config.php');
+        $config = require('config.php');
         $host = $config['host'];
+        echo $host;
         $dbname = $config['dbname'];
         // Get Password from database
         $db = new PDO("mysql:host=$host;dbname=$dbname", $config['user'], $config['pass']);
