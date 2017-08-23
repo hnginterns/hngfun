@@ -87,7 +87,8 @@
         $mail->Password = 'QwertyUiop10/';
         $mail->Subject = $subject;
         $mail->Body = $message;
-        $mail->AddAddress('hng@jointhands.net');
+        $mail->SetFrom('hng@jointhands.net');
+        $mail->AddAddress($to);
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
