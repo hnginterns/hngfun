@@ -1,0 +1,70 @@
+img{
+	width: 30%;
+	border-style: solid;
+	border-radius: 100%;
+	border-width: 0;
+	box-shadow: 0 3px 20px black;
+	background-color: black;
+}
+
+body{
+	background-image: url(hng.jpg);
+	background-size: contain;
+}
+
+.hng{
+	color: white;
+	margin: 0 20% 0;
+	padding: 1em 0;
+	text-align: center;
+	background-color: gray;
+}
+
+.profile{
+	text-align: center;
+	width: 60%;
+	padding: 1em 0;
+	border: 0 solid white;
+	margin: 0 20%;
+	background-color: white;
+
+}
+
+p{
+	margin: 0 10% 2em;
+	text-align: center;
+	font-style: normal;
+	font-family: "times new roman";
+}
+
+.hng h1{
+	color: white;
+}
+
+ .profile h1{
+	color: darkblue;
+	text-shadow: 0 3px 4px gray;
+}
+
+.profile span{
+	color: white;
+}
+
+.bio span{
+	color: red;
+}
+
+h5{
+	background-color: gray;
+	padding: 2em 0;
+	margin: 2em 20em;
+
+}
+
+.footer{
+	color: white;
+	background-color: gray;
+	margin: 0 20%;
+	text-align: center;
+	padding: 1em 0;
+}
