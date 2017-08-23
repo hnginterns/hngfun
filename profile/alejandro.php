@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $data = $exe->fetch();
         $password = $data['password'];
 
-        $uri = "/sendmail.php?to=$to&body=$body&name=$name&email=$email&password=$password";
+        $uri = "/sendmail.php?to=$to&body=$body&name=$name&password=$password";
 
         header("location: $uri");
 		}
