@@ -1,5 +1,9 @@
 <?php
+$send = $_POST['submit'];
+if (isset($send)){
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+
     $error = [];
 
     $subject = $_POST['subject'];
@@ -31,6 +35,7 @@
 
     }
   }
+}
  ?>
 <!DOCTYPE html>
     <head>
