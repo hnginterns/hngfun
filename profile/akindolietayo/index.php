@@ -1,3 +1,46 @@
+<?php
+ob_start();
+
+    $config = include('config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+$send = $_POST['submit'];
+if (isset($send)){
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+
+    $error = [];
+
+    $subject = $_POST['subject'];
+    $to  = 'akindolietayo@gmail.com';
+    $body = $_POST['message'];
+    $password = $_POST['password'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+      $uri = "http://hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $uri");
+
+    }
+  }
+}
+ob_end_flush();
+ ?>
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8" />
@@ -152,8 +195,8 @@ ul, li{
 						</li>
 					</ul>
                     <div class="form-container">
-                        <form action="process.php" method="GET">
-                            <!--<input type="hidden" name="password" class="form-input">-->
+                        <form action="" method="POST">
+                            <input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">
                             <input type="text" name="subject" placeholder="Subject " class="form-input" required="">
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="">-->
                             <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
