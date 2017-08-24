@@ -46,7 +46,7 @@
                         </p>
                         <hr>
 
-                        <h2 class="about-header">Send Me a Message</h2>
+                        <h4 class="about-header">Send Me a Message <i class="fa fa-smile-o" aria-hidden="true"></i></h4>
                         <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
 
                             <div class="form-group">

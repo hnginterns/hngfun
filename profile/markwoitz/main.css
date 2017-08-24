@@ -151,6 +151,11 @@ input[type=submit] {
     width: 70%;
 }
 
+.fa-smile-o {
+    color: #ceb602;
+    font-size: 20px;
+}
+
 hr{
     border: 1px solid #e3e3e3;
 }
