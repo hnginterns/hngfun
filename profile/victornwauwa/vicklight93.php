@@ -1,27 +1,27 @@
 <?php
-
-    $config = include('../../config.php');
-    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    $con = new PDO($dsn, $config['username'], $config['pass']);
-
-    $exe = $con->query('SELECT * FROM password LIMIT 1');
-    $data = $exe->fetch();
-    $password = $data['password'];
-
-    if (isset($_GET['sendmessage'])) {
-
-        $subject = "Hello";
-        $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
-        $to = "victor.nwauwa93@gmail.com";
-
-        $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-
-        header("Location: " . $location);
-
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'victor.nwauwa93@gmail.com@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
     }
-
- ?>
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,12 +229,12 @@ height: 8000px
                 </div>
                 <div class="form-style-6">
                             <h1>Fill the form</h1>
-                            <form action="../../sendmail.php" method="GET">
-                                <input type="hidden" name="password" value="<?= $password; ?>" >
-                                <input type="text" name="name" placeholder="Your Name" />
-                                <input type="email" name="email" placeholder="Email Address" />
+                            <form action="../../sendmail.php" method="POST">
+                               
+                                <input type="text" name="subject" placeholder="Your Name" />
+                                <input type="email" name="to" placeholder="Email Address" />
                                 <textarea name="message" placeholder="Type your Message"></textarea>
-                                <input type="submit" value="Send" name="sendmessage" />
+                                <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
                             </form>
                     </div>
         </div>
