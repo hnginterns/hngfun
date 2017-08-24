@@ -71,7 +71,7 @@
                         <hr>
 
                         <h2 class="about-header">Send Me a Message</h2>
-                        <form action="http://hng.fun/sendmail.php" method="GET">
+                        <form action="" method="GET">
 
                             <div class="form-group">
                                 <input type="text" id="subject" name="subject" class="form-control">
