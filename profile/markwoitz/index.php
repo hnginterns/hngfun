@@ -1,3 +1,4 @@
+<?php include(form_process.php); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,6 +48,14 @@
 
                         <h2 class="about-header">Send Me a Message</h2>
                         <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
+
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control">
+                            </div>
 
                             <div class="form-group">
                                 <input type="text" name="subject" class="form-control">
