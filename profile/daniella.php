@@ -4,7 +4,7 @@
 
     $subject = $_POST['subject'];
     $to  = 'dmpire2@gmail.com';
-    $body = $_POST['message'];
+    $body = $_POST['body'];
 
     if($body == '' || $body == ' ') {
       $error[] = "Don't be shy. Write me a message";
