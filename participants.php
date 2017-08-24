@@ -6192,7 +6192,7 @@ include('header.php');
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://github.com/hnginterns/hngfun/blob/master/profile/shield/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://hng.fun/profile/shield/profile.html">
+                    <a href="http://hng.fun/profile/shield/index.php">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Otuekong Shield</h3>
                         <!--Profile Name-->
@@ -6202,7 +6202,7 @@ include('header.php');
                 </div>
                 <div class="p-team">
                     <a href="#">
-                        <h3 class="p-card-title"> Team 6 </h3>
+                      <h3 class="p-card-title"> Team 6 &AMP; Team_watt </h3>
                         <!--Team-->
                     </a>
                 </div>
