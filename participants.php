@@ -5621,7 +5621,7 @@ include('header.php');
         <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(" https://avatars3.githubusercontent.com/u/24903349?v=4&u=99e547814677b11ee2d1e25c1f9e85191960ddb9&s=400
+                <div class="p-card-photo" style="background-image: url(" http://res.cloudinary.com/auztin/image/upload/v1503444301/auztin_v2yd3c.png
                     "); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/auztincodes.html">
