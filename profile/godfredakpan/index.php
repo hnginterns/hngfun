@@ -1,26 +1,24 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject = $_POST['subject'];
-    $to  = 'godfredakpan@gmail.com';
+    $to  = $_POST['to'];
     $body = $_POST['message'];
-    if($body == '' || $body == ' ') {
-        $error[] = 'Message cannot be empty.';
+    $config = include('../../config.php');
+    $server = $config['host'];
+    $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
+    if (!$con) {
+      die("Connection failed: ".mysqli_connect_error());
+  }
+    $sql = 'SELECT * FROM password LIMIT 1';
+    if($result = mysqli_query($con, $sql)) {
+      $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
+      $password = $data['password'];
+    } else {
+        $password = "#";
     }
-    if($subject == '' || $subject == ' ') {
-        $error[] = 'Subject cannot be empty.';
-    }
-    if(empty($error)) {
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-        header("location: $uri");
-    }
-}
+    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    header("location: $uri");
+  }
 ?>
 <!-- === BEGIN HEADER === -->
 <!DOCTYPE html>
@@ -30,8 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en">
     <!--<![endif]-->
     <head>
-	<meta charset="utf-8">
-  <style media="screen">
+	<style media="screen">
   body {
     font-family: 'Slabo 27px', serif;
     background: #f6f6f6;
@@ -48,7 +45,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
   .title {
     color: grey;
-    font-size: 20px;
+    font-size: 18px;
   }
   button {
     border: none;
@@ -60,7 +57,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
   }
   a {
     text-decoration: none;
@@ -110,44 +107,45 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   input:focus, textarea:focus {
     border: 1px solid  #97d6eb;
   }
-  #godfredakpan-submit {
+  #bosunski-submit {
     width: 127px;
     height: 37px;
     border: none;
     background-color: #3c3c3c;
     margin-top: 20px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     text-align: center;
   }
-  #godfredakpan-submit:hover {
+  #godfred-submit:hover {
     opacity: .9;
   }
   @@media query {
   }
   </style>
+   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Slabo+27px">
         <title>Welcome|Godfred Akpan|</title>
         <!-- Meta -->
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+       
         <meta name="description" content="">
         <meta name="author" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <!-- Favicon -->
         <link href="favicon.ico" rel="shortcut icon">
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
         <!-- Template CSS -->
-        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <link rel="stylesheet" href="assets/css/nexus.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
         <!-- Google Fonts-->
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans:300,400" />
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400" />
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open Sans:300,400"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400"/>
     </head>
     <body>
         <div id="body_bg">
@@ -162,7 +160,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </li>
                             <li class="social-googleplus">
                                 <a href="http://www.google.com/godfredakpan" target="_blank" title="GooglePlus"></a>
-                            </li><br><br><br><br><br><br>
+				    <a href="https://github.com/godfredakpan" target="_blank">
+					    <i class="fa fa-github"></i><span>Github</span></a>
+				    
+			    </li>
                         </ul>
                         <!-- End Header Social Icons -->
                     </div>
@@ -188,17 +189,17 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <!-- Slogan -->
                         <p class="site-slogan">WELCOME TO MY PROFILE PAGE</p>
                         <!-- End Slogan -->
-                        <br><br><br>
+                        
                     </div>
                     <div class="container">
                         <!-- === END HEADER === -->
                         <!-- === BEGIN CONTENT === -->
                         <div class="row margin-vert-30">
                             <div class="col-md-12">
-                                <h2></h2>
+                                
                                 <div class="row">
                                     <div class="col-md-5">
-                                        <center> <img src="assets/img/11.jpg" alt="Godfred Akpan">
+                                         <img src="assets/img/11.jpg" alt="Godfred Akpan">
                                     </div>
                                     <div class="col-md-7">
                                         <h3>Godfred Akpan
@@ -208,6 +209,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <li>
                                                 <a href="#">
                                                     <i class="fa-lg fa-border fa-linkedin"></i>
+							
                                                 </a>
                                             </li>
                                             <li>
@@ -218,6 +220,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                             <li>
                                                 <a href="#">
                                                     <i class="fa-lg fa-border fa-dribbble"></i>
+                                                </a>
+						     <a href="https://github.com/godfredakpan">
+                                                    <i class="fa-lg fa-border fa-github"></i>
                                                 </a>
                                             </li>
                                             <li>
@@ -235,20 +240,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 </div>
                                 <hr class="margin-bottom-40">
                                 <div class="row">
-                                    <div class="col-md-6">
+					<div class="col-md-6"></div>
                                         <!-- My Skills -->
                                         <h3 class="margin-bottom-10">My Skills</h3>
                                         <h3 class="progress-label">Graphic Design
                                             <span class="pull-right">92%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+					<div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
                                             </div>
                                         </div>
                                         <h3 class="progress-label">Marketing
                                             <span class="pull-right">82%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+				    <div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
                                             </div>
                                         </div>
@@ -262,17 +267,17 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                         <h3 class="progress-label">Programming
                                             <span class="pull-right">78%</span>
                                         </h3>
-                                        <div class="progress progress-sm">
+					<div class="progress progress-sm"></div>
                                             <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
                                             </div>
                                         </div>
                                         <!-- End My Skills -->
                                     </div>
-                                    <div class="col-md-6">
+					<div class="col-md-6"></div>
                                         <!-- Accordion -->
                                         <div id="accordion" class="panel-group">
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+						<div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-One" data-parent="#accordion" data-toggle="collapse">
                                                             Trust Worthy
@@ -281,12 +286,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                 </div>
                                                 <div id="collapse-One" class="accordion-body collapse in">
                                                     <div class="panel-body">
-                                                        <p>Iam too discipline to be inconsistence, so will not jeopardize my
+                                                        <p>Iam too disciplined to be inconsistence, so i will not jeopardize my
 														career in doing what will not give me credit. at the very end.</div>
                                                 </div>
                                             </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                            <div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-Two" data-parent="#accordion" data-toggle="collapse">
                                                             Hard Working
@@ -300,8 +305,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 														100% Satisfaction to my clients.</div>
                                                 </div>
                                             </div>
-                                            <div class="panel panel-default">
-                                                <div class="panel-heading">
+                                            <div class="panel panel-default"></div>
+                                                <div class="panel-heading"></div>
                                                     <h4 class="panel-title">
                                                         <a class="accordion-toggle" href="#collapse-Three" data-parent="#accordion" data-toggle="collapse">
                                                             Deligence
@@ -314,66 +319,73 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- End Accordion -->
-										<p>>p><h1>Contact Me</h1>
-        <?php if(isset($error) && !empty($error)): ?>
-          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
-            <ul style='list-style:none;'>
-              <?php
-                foreach ($error as $key => $value) {
-                  echo "<li>$value</li>";
-                }
-              ?>
-            </ul>
-          </blockquote>
-        <?php endif; ?>
-        <form class="godfredakpan_form" action="" method="POST">
-          <label for="subject" class="godfredakpan-label">Subject</label>
-          <input id="subject" type="text" name="subject" placeholder="Subject" required>
-
-          <label for="message" class="godfredakpan-label">Your Message</label>
-          <textarea id="message" name="message" rows="8" cols="50" placeholder="Your Message" required></textarea>
-
-          <button type="submit" name="submit" id="godfredakpan-submit"> Send Message</buuton>
-        </form>
-      </div>
-    </div>
+                                        <!-- End Accordion --><br> 
+				<div class="row">
+                            <div class="col-12-md">
+                                <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/importedpics/7.png" alt="image6"> .</p>
+                            </div>
+                        </div>
+										<center><p><p><h1>Contact Me</h1>
+      <div class="form-container">
+                        <form action=" " method="POST">
+                            <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+				
+                            <input type="hidden" name="to" value="godfredakpan@gmail.com">
+				
+                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
+                            <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
+				
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
+                            <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
+                        </form>    
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+</div>
   </div>
-</body>
+
                                     </div>
                                 </div>
                                 <hr>
                                 
                         <!-- Portfolio Footer Text -->
-                        <div class="row">
-                            <div class="col-12-md">
-                                <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/7.png" alt="godfredakpan"> .</p>
-                            </div>
-                        </div>
-                        <!-- End Portfolio Footer Text -->  <!-- === BEGIN FOOTER === -->
-                    </div>
-                    <div id="base" class="container padding-vert-30">
-                        <div class="row">
-                        <div class="container padding-vert-30">
-                <div class="row">
-                    <div id="copyright">
-                        <p>[C]2017 Godfred Akpan||</p>
+                        		<div class="row">
+		    </div>
+                            		<div class="col-12-md">
+						</div>
+                    <p class="text-center padding-bottom-30" style="max-width:690px; margin:0 auto;"><img src="assets/img/7.png" alt="godfredakpan"> .</p>
+                            	</div>
+                        	
+                        <!-- End Portfolio Footer Text --> 
+		    <!-- === BEGIN FOOTER === -->
+                    		
+					<div id="base" class="container padding-vert-30">
+				
+                        	
+			  		<div class="container padding-vert-30">
+			        
+                	  		<div class="row">
+				
+                    			<div id="copyright">
+				</div>
+                      <p>[C]2017 Godfred Akpan||</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- JS -->
-        <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/jquery.min.js" ></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/scripts.js"></script>
         <!-- Isotope - Portfolio Sorting -->
-        <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/jquery.isotope.js" ></script>
         <!-- Mobile Menu - Slicknav -->
-        <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/jquery.slicknav.js"></script>
         <!-- Animate on Scroll-->
         <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
         <!-- Modernizr -->
-        <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+        <script src="assets/js/modernizr.custom.js"></script>
         <!-- End JS -->
     </body>
 </html>
