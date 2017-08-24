@@ -6,12 +6,12 @@
     $to  = 'icnwakanma@gmail.com';
     $body = $_POST['message'];
     
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
+    if(empty($subject)) {
+      $error[] = 'Subject cannot be empty.';
     }
 
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
+    if(empty($body)) {
+      $error[] = 'Message cannot be empty.';
     
     }
     
