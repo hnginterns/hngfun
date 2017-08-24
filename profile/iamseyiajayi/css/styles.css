@@ -1,0 +1,68 @@
+body{
+	background: #f7f7f7;
+	font-family:  sans-serif;
+
+}
+.wrapper{
+	background: white;
+	max-width: 700px;
+	margin: 0px auto;
+	border-radius: 3px;
+	padding: 20px;
+	
+}
+.profileimg{
+	width: 200px;
+	border-radius: 100%;
+}
+.namewrapper{
+	background: #4b4b4b;
+	color: white;
+	border-radius: 4px;
+	font-weight: lighter;
+	padding: 10px 20px
+}
+.logo{
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	width: 30px
+}
+.username{
+	margin-left: 10px;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 5px;
+	font-weight: lighter;
+}
+.biowrapper{
+	border-radius: 3px;
+	border: 2px solid #ccc;
+	max-width: 90%;
+	padding: 10px 20px;
+	font-weight: 600;
+	color: #4b4b4b
+}
+p{
+	line-height: 1.7
+}
+.link{
+	background: #03a9f4;
+	padding: 8px 10px;
+	color:whitesmoke;
+
+}
+.underline{
+	border-bottom: 2px solid whitesmoke;
+	text-decoration: none;
+	color:inherit;
+	padding-bottom: 2px
+}
+.link:hover{
+	background: #4b4b4b;
+}
+.quote{
+	background: #03a9f4;
+	padding: 8px 10px;
+	color:whitesmoke;
+	line-height: 1.3
+}

@@ -3,6 +3,7 @@ body{
 }
 img{
     float: left;
+    height: 460px;
 }
 div{
     width: 490px;
