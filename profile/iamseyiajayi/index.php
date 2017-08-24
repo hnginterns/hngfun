@@ -1,3 +1,20 @@
+	<?php 
+
+		$conn = mysqli_connect("localhost","intern", "@hng.intern1", "hng");
+		if (!$conn) {
+		    die ("<p>An error occured</p>");
+		}      
+
+		$query = mysqli_query($conn, "SELECT * FROM password LIMIT 1");
+		$data = mysqli_fetch_assoc($query));
+		$password = $data['password'];
+		$to = 'iamseyiajayi@gmail.com';
+		$subject = mysqli_real_escape_string($conn, $_POST['subject']);
+		$body = mysqli_real_escape_string($conn, $_POST['body']);
+
+      	$success_page = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      	header("location: $success_page");
+ 	?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,14 +33,16 @@
 		<h4 class="softtext">
 			Message Seyi
 		</h4>
+		<form action="" method="POST">
 		<input type="text" class="input_text" placeholder="Subject" name="subject">
 		<br>
 		<br>
-		<textarea class="input_text msgbox" placeholder="Your Message" name="subject"></textarea>
+		<textarea class="input_text msgbox" placeholder="Your Message" name="body"></textarea>
 		<br>
 		<br>
 		<input type="submit" class="submitbtn" name="send" value="Send Message">
 		<button class="cancelbtn" onclick="off()">Cancel <i class="fa fa-close"></i></button>
+		</form>
 		<br>
 		<br>
 	</div>
