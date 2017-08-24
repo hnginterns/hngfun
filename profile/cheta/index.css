@@ -31,7 +31,7 @@ header{
     top:550px;
     left:550px
 }
-#otherNames{
+.otherNames{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: #0f222f;

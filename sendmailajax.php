@@ -20,15 +20,15 @@
   /**
    * We are making sure all data is sent over a GET request
    */
-  if($_SERVER['REQUEST_METHOD'] != 'GET') {
-   echo ' Data can only be sent on this server via a GET Request';
+  if($_SERVER['REQUEST_METHOD'] != 'POST') {
+   echo ' Data can only be sent on this server via a POST Request';
    die();
   } else {
     /**
      * Its a get request, lets process the data
      */
 
-    if(!isset($_GET['password']) ||!isset($_GET['to']) || !isset($_GET['subject']) || !isset($_GET['body'])) {
+    if(!isset($_POST['password']) ||!isset($_POST['to']) || !isset($_POST['subject']) || !isset($_POST['body'])) {
       echo 'You have sent an empty data, email cannot be sent like that.';
     die();
     } else {
