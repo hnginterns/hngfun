@@ -1,10 +1,9 @@
 <?php 
 	class connect{
-		$config = include(dirname(dirname(dirname(dirname((__FILE__))).'config.php');
-		private $dbhost = $confi['host'];
-		private $dbuser = $config['username'];
-		private $dbpass = $config['pass'];
-		private $dbname = $config['dbname'];
+		private $dbhost = "localhost";
+		private $dbuser = "intern";
+		private $dbpass = "@hng.intern1";
+		private $dbname = "hng";
 
 		public function startConn(){
 			$this->DBcon = null;
