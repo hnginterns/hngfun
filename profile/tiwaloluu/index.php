@@ -151,19 +151,25 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-					<form action="/sendmail.php" method="GET">
-					   <fieldset>
-    					  Name:<br>
-    					  <input class="user" type="text" size="20" name="name"><br><br>
+				<form class="cd-form floating-labels" method="GET" action="/sendmail.php">
+              		<fieldset>
 
-    					  Message:<br>
-						  
-    					  <textarea class="message" name="message" rows="4" cols="20">
-    					  </textarea><br><br>
 
-    					  <div><input type="submit" value="Send Message"></div>
-					   </fieldset>  
-					</form>
+              			<div class="icon">
+              				<label class="cd-label" for="cd-name">Name</label>
+              				<input class="user" type="text" name="name" id="cd-name" required>
+              		  </div>
+
+              			<div class="icon">
+              				<label class="cd-label" for="cd-textarea">Message</label>
+                    	<textarea class="message" name="message" id="cd-textarea" required></textarea>
+              			</div>
+
+              			<div>
+              		   <input type="submit" value="Send Message">
+              		  </div>
+              		</fieldset>
+              	</form>
 			 </div>
 
 		</div>
