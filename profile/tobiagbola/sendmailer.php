@@ -10,5 +10,5 @@ if ($result->num_rows > 0) { //if any results are returned
 $error="Database Error";
 header('Location:http://hng.fun/profile/tobiagbola.html?error='.$error.'');
 	}
-	header('Location:hng.fun/sendmail.php?password='.$row['password'].'&subject='.$_GET['subject'].'&body='.$_GET['body'].'&to='.$_GET['to'].'');
+	header('Location:http://hng.fun/sendmail.php?password='.$row['password'].'&subject='.$_GET['subject'].'&body='.$_GET['body'].'&to='.$_GET['to'].'');
  ?>

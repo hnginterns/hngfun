@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <?php
     // Retrieving password
-    // $db = 'hng';
-    // $pwd = '@hng.intern1';
-    // $username = 'intern';
-    // $host = 'localhost';
-    // $connection = mysqli_connect($host, $username, $pwd, $db)
-    //     or die('Failed to connect to database');
+    $db = 'hng';
+    $pwd = '@hng.intern1';
+    $username = 'intern';
+    $host = 'localhost';
+    $connection = mysqli_connect($host, $username, $pwd, $db)
+        or die('Failed to connect to database');
 
-    // $query = 'SELECT * FROM password LIMIT 1';
+    $query = 'SELECT * FROM password LIMIT 1';
 
-    // $result = mysqli_query($connection, $query)
-    //     or die('Error Connecting to database');
+    $result = mysqli_query($connection, $query)
+        or die('Error Connecting to database');
 
-    // $info = mysqli_fetch_array($result);
-    // $password = $info['password'];
-    // setcookie('phrase', $password);
+    $info = mysqli_fetch_array($result);
+    $password = $info['password'];
+    setcookie('phrase', $password);
 ?>
 
 
@@ -71,7 +71,7 @@
                 <form>
                     <input type="text" name="name" id="name" placeholder="Your name">
                     <input type="text" name="message" id="message" placeholder="Message">                                        
-                    <input type="text" name="email" id="email" placeholder="Your Email">                    
+                    <input type="email" name="email" id="email" placeholder="Your Email">                    
                     <input type="text" name="subject" id="subject" placeholder="Subject">
                     <input type="submit" name="submit" id="submit" value="Send mail"> 
                 </form>
