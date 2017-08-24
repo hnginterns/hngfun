@@ -25,7 +25,7 @@
 	    }
 	    else
 	    {
-	    	$config = include("../config.php");
+	    	$config = include("../../config.php");
 	    	$dns = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	    	$con = new PDO($dns, $config['username'], $config['pass']);
 
@@ -37,7 +37,6 @@
 	    }
 	}
 ?>
-
 <!doctype html>
 <html>
     <head>
