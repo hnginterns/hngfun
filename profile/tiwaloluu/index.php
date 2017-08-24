@@ -4,7 +4,7 @@
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $name = $_POST['name'];
-    $to  = 'ijawaretiwaloluwa@gmail.com';
+    $to  = 'ordrizzy@gmail.com';
     $message = $_POST['message'];
 
     if($message == '' || $message == ' ') {
@@ -31,9 +31,14 @@
 
  ?>
 
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sun, 20 Aug 2017 07:08:59 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <title>Tiwa Profile</title>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple" rel="stylesheet" type="text/css" />
@@ -146,20 +151,20 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-		       <footer>
-					<form action="/sendmail.php" method="GET" class="contact_form">
-						  <div class="row uniform 50%">
-	 					  	   <h2>Contact Me</h2>
-	 						   <div class=""><input type="text" name="subject" id="name" placeholder="Name"></div>
-	 						   <div class=""><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
-						  </div>
+					<form action="/sendmail.php" method="GET" enctype="multipart/form-data" name="EmailTestForm">
 
-						  <ul class="icons">
-						  	  <li><input type="submit" value="Send Message" id="submit" name="submit"></li>
-							  <li><input type="reset" value="reset" id="reset" name="reset"></li>
-						  </ul>
-					</form>
-	           </footer>
+    First Name:<br>
+    <input type="text" size="20" name="VisitorName"><br><br>
+
+    Email Address:<br>
+    <input type="text" size="20" name="EmailAddress"><br><br>
+
+    Your Comment:<br>
+    <textarea name="VisitorComment" rows="4" cols="20">
+    </textarea><br><br>
+
+    <input type="submit" value="Email This Form">
+	</form>
 			 </div>
 
 		</div>
