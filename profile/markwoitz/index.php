@@ -50,10 +50,10 @@
                         <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
 
                             <div class="form-group">
-                                <input type="text" name="subject" class="form-control">
+                                <input type="text" name="subject" placeholder="Enter Subject">
                             </div>
                             <div class="form-group">
-                                <textarea name="message" class="form-control" rows="7"></textarea>
+                                <textarea name="message" class="form-control" rows="7" placeholder="Enter Message"></textarea>
                             </div>
                             <input type="submit" id="submitt" value="send">
                         </form>
