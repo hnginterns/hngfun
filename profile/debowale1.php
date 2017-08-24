@@ -292,20 +292,15 @@ function submitForm(event){
 
 	event.preventDefault();
 
-
 	name = document.getElementById('name').value;
 	subject = document.getElementById('subject').value;
 	email = document.getElementById('email').value;
 	message = document.getElementById('message').value;
 	password 	= document.getElementById("password").value;
 
-
 	body = "From: " + email + "( " + name + " )" + "\nMessage: \n " + message;
-
 	site_url = location.protocol + '//' + location.host;
-
 	site_url = site_url + "/sendmail.php?password=" + password + "&subject=" + subject + "&body=" + body +"&to=debowale01@gmail.com";
-
 
 	window.location = site_url;
 
