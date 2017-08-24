@@ -25,7 +25,8 @@ function submitform(e, sender) {
     var subject = getIdValue('subject');
     var message = getIdValue('message');
     var password = getIdValue('password');
-    var vars = "message=" + message + "&subject=" + subject +"&password = ".password;
+    var to = "okanlawonemmanuel41@gmail.com"
+    var vars = "message=" + message + "&subject=" + subject + "&password = ".password+"&to = ".to;
     var msg = document.getElementById("alert");
 
 
