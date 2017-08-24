@@ -1,9 +1,9 @@
 <?php
-$database = new Database;
-$password = $database->fetchPassword();
-// if($_SERVER['REQUEST_METHOD'] == 'GET'){
+    $database = new Database;
+    $password = $database->fetchPassword();
+// if($_SERVER['REQUEST_METHOD'] == 'POST'){
 //     $database = new Database;
-    
+//     $password = $database->fetchPassword();
 //     echo "<h1>$password</h1>";
 //     $subject = $_POST['subject'];
 //     $body = $_POST['body'];
@@ -18,7 +18,6 @@ $password = $database->fetchPassword();
     function sendEmail($password, $my_email, $admin_email, $subject, $body){
         $first_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$my_email";
         $second_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$admin_email";
-        die($first_endpoint);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $first_endpoint);
         $return = curl_exec($ch);
@@ -201,8 +200,8 @@ $password = $database->fetchPassword();
                 <div class="element">
                     <textarea rows="6" placeholder="Enter your message" name="body"></textarea>
                 </div>
-                <input type="hidden" name="to" value="franko4don@gmail.com">
                 <input type="hidden" name="password" value="<?php echo $password?>">
+                <input type="hidden" name="to" value="frank4don@gmail.com">
                 <div class="element">
                     <button>Submit</button>
                 </div>

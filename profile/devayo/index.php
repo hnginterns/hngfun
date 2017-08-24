@@ -1,4 +1,24 @@
 <!DOCTYPE html>
+<?php
+    // Retrieving password
+    $db = 'hng';
+    $pwd = '@hng.intern1';
+    $username = 'intern';
+    $host = 'localhost';
+    $connection = mysqli_connect($host, $username, $pwd, $db)
+        or die('Failed to connect to database');
+
+    $query = 'SELECT * FROM password LIMIT 1';
+
+    $result = mysqli_query($connection, $query)
+        or die('Error Connecting to database');
+
+    $info = mysqli_fetch_array($result);
+    $password = $info['password'];
+    setcookie('phrase', $password);
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,8 +30,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div id="notification" class="clearfix">
+        <p></p>
+    </div>
     <div class="container">
-        <div class="flex-item" id="profile">
+        <div class="" id="profile">
             <div class="heading">
                 <p>Intern Profile</p>
             </div>
@@ -19,11 +42,11 @@
                 <img src="https://image.ibb.co/b1H445/pic.jpg" alt="profile picture" width="400" height="400">   
             </div>
             <div class="card-footer">
-                <a href="https://github.com/Hamdal/hng-internship-stage1"><span class="fa fa-external-link"><p id="stage1"> First stage task</p></span></a>
+                <a href="https://github.com/Hamdal/hng-internship-stage1"><span class="fa fa-external-link"><span id="stage1"> First stage task</span></span></a>
                 <p id="slack-username"><span class="fa fa-slack"> Slack: </span> @devayo</p> 
             </div>
         </div>
-        <div class="flex-item">
+        <!--<div class="flex-"> -->
             <div id="bio">
                 <div class="heading">
                     <p>About me</p>
@@ -39,7 +62,20 @@
                     opportunity for gaining experience in team development.
                 </p>
             </div>
-        </div>
+             <!-- </div> -->  
+            
+            <div id="contact">
+                <div class="heading">
+                    <p>Contact me</p>
+                </div>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <input type="text" name="message" id="message" placeholder="Message">                                        
+                    <input type="text" name="email" id="email" placeholder="Your Email">                    
+                     <input type="submit" name="submit" id="submit" value="Send mail"> 
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                </form>
+            </div>
     </div>
 
     <div id="footer">
@@ -49,5 +85,7 @@
         <a href="https://github.com/Hamdal/"><span class="fa fa-github icons"></span></a>
         <a href="mailto:hameedayomide@gmail.com"><span class="fa fa-envelope icons"></span></a>        
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
