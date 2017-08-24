@@ -21,14 +21,16 @@ window.onload = function() {
 
     function notifier(message, styleClass) {
         notification.children[0].innerText = message;
-            notification.children[0].classList.add(styleClass);
-            notification.setAttribute('style', 'top: -3%;');
+        notification.children[0].classList.add(styleClass);
+        notification.setAttribute('style', 'top: -3%;');
 
-            setTimeout(() => {
-                notification.setAttribute('style', 'top: -20%;');    
-            // notification.children[0].classList.remove(styleClass);                
-            }, 4000);
-            // notification.children[0].innerText = '';     
+        setTimeout(() => {
+            notification.setAttribute('style', 'top: -20%;');    
+        }, 4000);
+        setTimeout(() => {
+            notification.children[0].classList.remove(styleClass);                
+            notification.children[0].innerText = '';     
+        }, 8000);
     }
 
     function colorFields() {
@@ -82,15 +84,21 @@ window.onload = function() {
             var pwd = getCookie('phrase');
 
             var xhr = new XMLHttpRequest();
-            var requestUrl = 'http://hng.fun/sendmail.php?password=' + pwd + '&subject=' + subject.value + '&body=' + message.value + '&to=hameedayomide@gmail.com'; 
+            // var requestUrl = 'http://hng.fun/sendmail.php?password=' + pwd + '&subject=' + subject.value + '&body=' + message.value + '&to=hameedayomide@gmail.com'; 
             // xhr.open('GET', `http://hng.fun/sendmail.php?password=${pwd}&subject=${subject.value}&body=${message.value}&to=hameedayomide@gmail.com`);
+            var requestUrl = 'http://hng.fun/profile/devayo/mailer.php?subject=' + subject.value + '&message=' + message.value; 
             xhr.open('GET', requestUrl);
             xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
             xhr.onload = function(e) {
                 if (xhr.status === 200) {
-                    console.log(e.target.response.message);
+                    console.log(e.target.response);
 
                     notifier('Your message was sent successfully, Thank you.', 'success-banner');
+
+                    // Clearing input fields
+                    for (field of allFields) {
+                        field.value = '';
+                    }
                 } else {
                     notifier('something went wrong, reload the page and try again', 'error-banner');
                 }

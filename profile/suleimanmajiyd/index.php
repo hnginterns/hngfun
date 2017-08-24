@@ -1,10 +1,3 @@
-<?php
-
-	$connect = new  mysqli_connect('localhost', 'intern', '@hng.intern1', 'hng');
-	mysqli_select_db($connect, 'password');
-	$query = "SELECT * FROM password LIMIT 1";
-	$passes = mysqli_query($connect, $query);
-?>
 
 <!DOCTYPE html>
 <html>
