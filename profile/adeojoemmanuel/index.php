@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Adeojo Emmanuel</title>
-<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"> -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -38,7 +37,7 @@
 	<div class="service-section" id="service">
 		<div class="container">
 			<div class="service-grids">
-				<a href="https://github.com/adeojoemmanuel/HNG-Internship">
+				<a href="https://github.com/adeojoemmanuel/HNG-Internship" target="_blank">
 					<div class="col-md-4 service-grid">
 						<img src="images/icons/github.png" class="icon">
 						<h4>Hng Task 1</h4>
@@ -46,7 +45,7 @@
 						<p>Simple fetch from database using php and php reverse text algorighm</p>
 					</div>
 				</a>
-				<a href="https://hng.fun/profile/adeojoemmanuel">
+				<a href="https://hng.fun/profile/adeojoemmanuel" target="_blank">
 					<div class="col-md-4 service-grid">
 						<img src="images/icons/github.png" class="icon">
 						<h4>Hng profile</h4>
@@ -54,7 +53,7 @@
 						<p>HNG profile </p>
 					</div>
 				</a>
-				<a href="https://hng.fun/library.php">
+				<a href="https://hng.fun/library.php" target="_blank">
 					<div class="col-md-4 service-grid">
 						<img src="images/icons/github.png" class="icon">
 						<h4>HNG team task</h4>
@@ -94,7 +93,7 @@
 			<div class="container">
 				<h3>contact us</h3>
 				<div class="contact-details">
-					<form>
+					<form method="POst" action="php-handler/mail.php">
 						<div class="col-md-6 contact-left">
 							 <input type="text" class="text" value="Name *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name *';}">
 							 <input type="text" class="text" value="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email *';}">
