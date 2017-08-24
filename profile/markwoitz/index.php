@@ -79,7 +79,7 @@
                             <div class="form-group">
                                 <textarea id="body" name="body" class="form-control" rows="7"></textarea>
                             </div>
-                            <button type="submit">Send</button>
+                            <input type="submit" id="submitt" value="send">
                         </form>
                 </div>
             </main>
