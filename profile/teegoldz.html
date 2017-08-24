@@ -156,20 +156,20 @@
   
   
          <div class="container3">  
-    <form id="contactME" action="hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=Okunnigatosin@gmail.com" method="POST">
+    <form id="contactME" action="teegoldz.php" method="post">
       <h2>Contact Me</h2>
       <h4>Shoot me a mail, and get a reply within 24 hours!</h4>
       <fieldset>
-        <input placeholder="Your name" type="text" tabindex="1" required="" autofocus="">
+        <input placeholder="Your name" type="text" tabindex="1" id="to" name="to" required="" autofocus="">
       </fieldset>
       <fieldset>
-        <input placeholder="Your Email Address" type="email" tabindex="2" required="">
+        <input placeholder="Your Email Address" type="email" id="subject" name="subject" tabindex="2" required="">
       </fieldset>
       <fieldset>
         <input placeholder="Your Phone Number" type="tel" tabindex="3" required="">
       </fieldset>
       <fieldset>
-        <textarea placeholder="Type your Message Here...." tabindex="5" required=""></textarea>
+        <textarea placeholder="Type your Message Here...." tabindex="5" id="body" name="body" required=""></textarea>
       </fieldset>
       <fieldset>
         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
