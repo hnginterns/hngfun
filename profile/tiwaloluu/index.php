@@ -151,14 +151,14 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-					<form action="/sendmail.php" method="GET" class="floating-labels" name="EmailTestForm">
+					<form action="/sendmail.php" method="GET">
 					   <fieldset>
     					  Name:<br>
-    					  <input class="user" type="text" size="20" name="Name"><br><br>
+    					  <input class="user" type="text" size="20" name="name"><br><br>
 
     					  Message:<br>
 						  
-    					  <textarea class="Message" name="Message" rows="4" cols="20">
+    					  <textarea class="message" name="message" rows="4" cols="20">
     					  </textarea><br><br>
 
     					  <div><input type="submit" value="Send Message"></div>
