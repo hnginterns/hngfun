@@ -1,5 +1,3 @@
-
-
 <?php
 $host = "localhost";
 $username = "intern";
