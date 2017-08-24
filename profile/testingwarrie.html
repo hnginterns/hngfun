@@ -86,17 +86,7 @@ include "header.php";
   }
 
 </style>
-<?php
-echo "entered php";
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-  //checks if it's a post request from the form
-  echo "post is true";
-  if(isset($_GET["name"])){
-    $filename = $_POST["name"];
-    echo "name $filename";
-}
-}
-?>
+
 <main class="m-container"> 
   <div class="underlay"></div>
   <h2 style="font-family: 'Lato', sans-serif">GET IN TOUCH</h2>
@@ -128,7 +118,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   </section>
   
   </section>
-
+<?php
+echo "entered php";
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+  //checks if it's a post request from the form
+  echo "post is true";
+  if(isset($_POST["name"])){
+    $filename = $_POST["name"];
+    echo "name $filename";
+}
+}
+?>
   
 </main>
 
