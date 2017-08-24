@@ -4,7 +4,7 @@
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $name = $_POST['name'];
-    $to  = 'ordrizzy@gmail.com';
+    $to  = 'ijawaretiwaloluwa@gmail.com';
     $message = $_POST['message'];
 
     if($message == '' || $message == ' ') {
@@ -22,7 +22,7 @@
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
+      $uri = "http://hng.fun/sendmail.php?to=$admin_email&body=$body&subject=$subject&password=$password";
       header("location: $uri");
 
     }
@@ -153,7 +153,7 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-					<form action="/sendmail.php" method="GET" class="floating-labels" name="EmailTestForm">
+					<form action="" method="GET" class="floating-labels" name="EmailTestForm">
 					   <fieldset>
     					  Name:<br>
     					  <input class="user" type="text" size="20" name="Name"><br><br>

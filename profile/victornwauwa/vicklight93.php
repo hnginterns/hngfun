@@ -234,7 +234,7 @@ height: 8000px
                                 <input type="text" name="name" placeholder="Your Name" />
                                 <input type="email" name="email" placeholder="Email Address" />
                                 <textarea name="message" placeholder="Type your Message"></textarea>
-                                <input type="submit" value="Send" name="sendmessage" />
+                                <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
                             </form>
                     </div>
         </div>
