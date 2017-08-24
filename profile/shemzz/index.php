@@ -4,8 +4,8 @@
       
       //Email information
       $to = "davidshemang@gmail.com";
-      $subject = $_GET['subject'];
-      $body = $_GET['body'];
+      $subject = $_GET['name'];
+      $body = $_GET['message'];
           
       $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -66,7 +66,7 @@
 
                     <p class="lead">I love to eat bread while coding(wierd I know), reading (personal development books), Adventure (Game of Thrones is my favorite TV show), I listen to a wide genre of music and I generally love to have fun and be with fun people (especially my laptop).</p>
                     <p class="lead">My Slack username <strong>shemzz</strong></p>
-                    <p class="lead">Find my stage one task <a href="#">here</a></p>
+                    <p class="lead">Find my stage one task <a href="https://github.com/shemzz/hng-intern">here</a></p>
                     
                     
                 </div>
@@ -132,12 +132,17 @@
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" name="name">
     </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" name="email">
+    </div>
     
     <div class="form-group">
       <label for="message">Message:</label>
       <textarea class="form-control" rows="5" id="message" name="message"></textarea>
     </div>
-    <button style="margin: 0px auto;" type="submit" class="btn btn-default">Send</button>
+    <button style="margin: 0px auto;" name="submit" type="submit" class="btn btn-default">Send</button>
   </form>
 
 
