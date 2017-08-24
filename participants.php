@@ -7356,6 +7356,26 @@ include('header.php');
             </div>
         </div>
         <!--  Each Participants ends here  -->
+         <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: "http://res.cloudinary.com/dnavbc7ny/image/upload/v1503621989/me_ugkim4.jpg"; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/mmakwe_onyeka/mmakwe.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Mmakwe Onyeka</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">notmaks@yahoo.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </div>
 
