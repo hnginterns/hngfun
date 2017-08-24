@@ -6,12 +6,12 @@
   defined('DB_NAME') ? null : define("DB_NAME", "hng");
   
 //setup connection to server
-  //$connection = new PDO('mysql:host='.SERVER_IP.';dbname='.DB_NAME.','. DB_USER, DB_PASS);
+  $connection = new PDO('mysql:host='.SERVER_IP.';dbname='.DB_NAME.','. DB_USER, DB_PASS);
   
-  //$result = $connection->query('SELECT * FROM password LIMIT 1');
-  //$row = $result->fetch(PDO::FETCH_ASSOC);
+  $result = $connection->query('SELECT * FROM password LIMIT 1');
+  $row = $result->fetch(PDO::FETCH_ASSOC);
   
-  //$password = $row['password'];
+  $password = $row['password'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,7 +50,7 @@
           <form id="contact" class="contactus" action="https://github.com/hnginterns/hngfun/blob/master/sendmail.php" method="get" enctype="application/x-www-form-urlencoded">
             <label for="email"><strong>Your Email</strong></label>
               <p><input type="text" name="to" id="email" class="send_mail" spellcheck="false" autocorrect="off"></p>
-              <input type="hidden" name="password" value="<?php //echo "$password"; ?>">
+              <input type="hidden" name="password" value="<?php echo $password; ?>">
             <label for="subject"><strong>Message Title</strong></label>
               <p><input type="text" name="subject" id="subject" class="msg_sub"></p>
             <label for="email"><strong>Message</strong></label>
