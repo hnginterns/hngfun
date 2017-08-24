@@ -3,11 +3,15 @@
 class Connection 
 {
 
-    public static function make()
+    public static function make($config)
     {
         try{
             
-                    return new PDO('mysql:host=localhost;dbname=hng', 'intern', '@hng.intern1');
+                    return new PDO(
+                        $config['host'].';dbname='.$config['dbname'],
+                        $config['username'],
+                        $config['pass']                    
+                        );
                 
                 } catch (PDOException $e) {
             
