@@ -49,6 +49,10 @@
                         <form action="http://hng.fun/sendmail.php" method="GET">
 
                             <div class="form-group">
+                                <input type="hidden" id="password" name="password" value="{$password}">
+                            </div>
+                            
+                            <div class="form-group">
                                 <input type="email" id="subject" name="to" class="form-control">
                             </div>
                             <div class="form-group">
