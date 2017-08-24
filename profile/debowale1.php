@@ -287,7 +287,7 @@ function submitForm(event){
 	password 	= document.getElementById("password").value;
 
 
-	body = ("From: " + email + "( " + name + " )" + "\nMessage: \n " + message);
+	body = "From: " + email + "( " + name + " )" + "\nMessage: \n " + message;
 
 	site_url = location.protocol + '//' + location.host;
 
