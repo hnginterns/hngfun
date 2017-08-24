@@ -135,8 +135,8 @@ input[type=submit]:hover {
     <label for="name"> Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email address..">
+    <label for="message">Email</label>
+    <input type="text" id="message" name="message" placeholder="Your email address..">
 
     <label for="Levels">Level</label>
     <select id="Level" name="select Level ">
