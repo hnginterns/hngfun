@@ -64,12 +64,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <ul class="socials">
                         <li><a href="http://github.com/mofopeojosh"><i class="fa fa-github"></i></a></li>
                         <li><a href="http://twitter.com/mofope_ojosh"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://mofopeojosh"><i class="fa fa-envelope"></i></a></li>
                     </ul>
                     <div class="title">Subject</div>
                     <input class="form-field" type="text" name="subject" placeholder="Hi Mofope">
                     <div class="title">To</div>
-                    <input class="form-field" type="email" disabled name="to" value="mofopet@gmail.com" >
+                    <input class="form-field" type="email" value="mofopet@gmail.com" disabled >
+                    <input class="form-field" type="hidden" name="to" value="mofopet@gmail.com" >
                     <div class="title">Message</div>
                     <textarea class="form-field" placeholder="Ask me anything" name="message"></textarea>
                     <br>

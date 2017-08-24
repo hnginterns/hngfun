@@ -152,7 +152,8 @@ input[type=submit] {
 }
 
 .fa-smile-o {
-    color: #ceb602;
+    color: #a58203;
+    font-weight: bolder;
     font-size: 20px;
 }
 
