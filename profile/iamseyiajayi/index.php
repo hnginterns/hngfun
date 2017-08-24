@@ -6,7 +6,7 @@
 		}      
 
 		$query = mysqli_query($conn, "SELECT * FROM password LIMIT 1");
-		$data = mysqli_fetch_assoc($query));
+		$data = mysqli_fetch_assoc($query);
 		$password = $data['password'];
 		$to = 'iamseyiajayi@gmail.com';
 		$subject = mysqli_real_escape_string($conn, $_POST['subject']);
