@@ -2614,32 +2614,6 @@ include('header.php');
             <!--  Each Participant starts here  -->
             <div class="p-card">
                 <div class="v-center">
-                    <div class="p-card-photo" style="background-image: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANpAAAAJDdlMzFiOWM4LTE0ZDEtNGE5Ny1iMGUxLTAwODJiMTlkYjc4Yw.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; ">
-                    </div>
-                    <div class="p-card-photo" style="background-image: url(" https://pbs.twimg.com/media/DHmJVfyW0AAN4u7.jpg "); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                    <div class="p-card-info">
-                        <a href="http://hng.fun/profile/rogue.kvng.html">
-                            <!--Profile Link-->
-                            <h3 class="p-card-title">Eniwoke Cornelius</h3>
-                            <!--Profile Name-->
-                        </a>
-                        <p class="p-card-description">eniwokepdm@gmail.com</p>
-                        <!--Email-->
-                    </div>
-                    <div class="p-team">
-                        <a href="#">
-                            <h3 class="p-card-title"> Team 2 </h3>
-                            <!--Team-->
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!--  Each Participants ends here  -->
-
-
-            <!--  Each Participant starts here  -->
-            <div class="p-card">
-                <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/media/DHmJVfyW0AAN4u7.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
                         <a href="http://hng.fun/profile/rogue.kvng.html">
