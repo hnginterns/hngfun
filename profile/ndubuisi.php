@@ -72,15 +72,12 @@ print <<< eot
       <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
     </p>
-<<<<<<< HEAD
+
      <form method = "get" action = "#" id = "login_form">
 
        <input type = "text" placeholder = "Enter you your email address here">
        <textarea name ="text" placeholder = "Enter your message"></textarea>
-=======
-     <form method = "get" action = "http://hng.fun/sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com" id = "login_form">
-       <textarea></textarea>
->>>>>>> origin/master
+
        <button   type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
      </form>
      </span>
