@@ -3,17 +3,24 @@
     $error = [];
     
     $subject = $_POST['subject'];
+    $from = $_POST['email'];
     $to  = 'icnwakanma@gmail.com';
     $body = $_POST['message'];
     
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
-
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
     
-    }
+      if (empty($_POST["subject"])) {
+        $title_error = "A subject is required";
+      } else {
+        $title = test_input($_POST["subject"]);
+       }
+      }
+    
+      if (empty($_POST["message"])) {
+        $message = "";
+      } else {
+        $message = test_input($_POST["message"]);
+      }
+    
     
     if(empty($error)) {
 
@@ -26,5 +33,5 @@
       $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       header("location: $uri");
     }
-  }
+  
  ?>
