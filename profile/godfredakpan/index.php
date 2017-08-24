@@ -148,7 +148,7 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400"/>
     </head>
     <body>
-        <div id="body_bg">
+        <div id="body_bg"></div>
             <div id="container_header" class="container">
                 <div id="header" class="row">
                     <div class="col-md-12 margin-top-15">
@@ -170,11 +170,13 @@
                     <div class="clear"></div>
                 </div>
             </div>
-            <div class="primary-container-group">
+            <div class="primary-container-group"></div>
                 <!-- Background -->
                 <div class="primary-container-background">
                     <div class="primary-container"></div>
-                    <div class="clearfix"></div>
+                    <div class="clearfix">
+					</div>
+					</div>
                 </div>
                 <!--End Background -->
                 <div class="primary-container">
@@ -192,6 +194,7 @@
                         
                     </div>
                     <div class="container">
+					</div>
                         <!-- === END HEADER === -->
                         <!-- === BEGIN CONTENT === -->
                         <div class="row margin-vert-30">
@@ -361,6 +364,7 @@
 		    <!-- === BEGIN FOOTER === -->
                     		
 					<div id="base" class="container padding-vert-30">
+					</div>
 				
                         	
 			  		<div class="container padding-vert-30">
