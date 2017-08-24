@@ -21,14 +21,16 @@
    * We are making sure all data is sent over a GET request
    */
   if($_SERVER['REQUEST_METHOD'] != 'GET') {
-    $error[] = ' Data can only be sent on this server via a GET Request';
+   echo ' Data can only be sent on this server via a GET Request';
+   die();
   } else {
     /**
      * Its a get request, lets process the data
      */
 
     if(!isset($_GET['password']) ||!isset($_GET['to']) || !isset($_GET['subject']) || !isset($_GET['body'])) {
-      $error[] = 'You have sent an empty data, email cannot be sent like that.';
+      echo 'You have sent an empty data, email cannot be sent like that.';
+    die();
     } else {
       /**
        * Everything we need to send the email is ready, but we need to do some verification
@@ -60,18 +62,11 @@
       if($sent_password != $password)
         $error[] = 'You have sent an invalid password, please try again.';
 
-        if(count($error) > 0){
-    $error = implode("<br>",$error);
-
-    //you can style the span in your view
-return "<div class = 'ajax-error'>".$error."</div>";
-
-}
-
       if(!empty($error)) {
-        /**
-         * echo the errors out
-         */
+          
+          $error = implode("<br>",$error);
+echo "<span class = 'error'>".$error."</span>";
+die();
 
       } else {
         /**
@@ -100,8 +95,9 @@ return "<div class = 'ajax-error'>".$error."</div>";
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
-           $error[] = 'Message sending failed <br/>'.$mail->ErrorInfo;
-         } else {
+          echo 'Message sending failed <br/>'.$mail->ErrorInfo;
+         die();
+        } else {
            /**
             * Mail has been sent successfully
             *
@@ -109,7 +105,8 @@ return "<div class = 'ajax-error'>".$error."</div>";
             * or we can just tell them that its successful here
             */
 
-        return   $success = 'Message sent Successfuly!';
+          echo 'Message sent Successfuly!';
+          die();
          }
 
       }
@@ -141,54 +138,3 @@ return "<div class = 'ajax-error'>".$error."</div>";
   }
 ?>
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>HNG INTERN | Mail Participant</title>
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-
-    <style media="screen">
-      body {
-        background-color: #e5e5e5;
-        font-family: 'Slabo 27px', serif;
-      }
-      blockquote {
-        margin: 0 auto;
-        text-align: left;
-        padding: 5px;
-        background: #fff;
-        max-width: 500px;
-        margin-top: 100px;
-      }
-    </style>
-  </head>
-  <body style="background-color">
-
-
-      <?php
-      /**
-       * After everything we check if there is error or if everything was successfull
-       */
-        if(!empty($error)) {
-          /**
-           * The error is not empty, we loop through and display the content
-           */
-          echo '<blockquote style="border-left:15px solid red;">';
-          echo "<ul style='list-style:none;'>";
-          foreach ($error as $key => $value) {
-            echo "<li>$value</li><br/>";
-          }
-          echo '</ul>';
-        } else {
-          $referer = $_SERVER['HTTP_REFERER'];
-          echo '<blockquote style="border-left:15px solid green;">';
-          echo '<h1>'.$success.'</h1>';
-          echo '<p>Click <a href="'.$referer.'">here</a> to go back.</p>';
-        }
-
-      ?>
-    </blockquote>
-
-  </body>
-</html>
