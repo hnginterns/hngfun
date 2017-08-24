@@ -27,7 +27,7 @@
 			 	background:#fff;
 			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
 			 	background-size: cover;
-			    height: auto;
+			    height: 100%;
 			    width: 100%;
 			    margin: 0;
 
