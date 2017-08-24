@@ -10,6 +10,11 @@
 		$body = mysqli_real_escape_string($conn, $_POST['body']);
 		if (isset($_POST['send'])) {
 			if ($body == '' || $subject == '') {
+			?>
+			<script>
+				alert('You cant leave the subject and body of the message empty");
+			</script>
+			<?php
 			}else{
 		      	$success_page = "/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
 		      	header("location: $success_page");
@@ -42,8 +47,8 @@
 		<br>
 		<br>
 		<input type="submit" class="submitbtn" name="send" value="Send Message">
-		<button class="cancelbtn" onclick="off()">Cancel <i class="fa fa-close"></i></button>
 		</form>
+		<button class="cancelbtn" onclick="off()">Cancel <i class="fa fa-close"></i></button>
 		<br>
 		<br>
 	</div>
