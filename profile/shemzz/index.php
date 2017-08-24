@@ -165,7 +165,7 @@
                        
                 <a style="margin: 0 10px;" href="#contact">Contact</a>           
                 </p>
-                <p style="margin: 0 auto;" class="copyright text-muted small">Copyright &copy; 2017  Shemang David J.</p>
+                <p style="margin: 0 auto;" class="copyright text-muted small">Copyright &copy; 2017  Shemang David Joshua</p>
                 
             </div>
         </div>
