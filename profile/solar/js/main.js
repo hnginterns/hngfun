@@ -23,10 +23,10 @@ function submitform(e, sender) {
     e.preventDefault();
 
     var subject = getIdValue('subject');
-    var message = getIdValue('message');
+    var body = getIdValue('message');
     var password = getIdValue('password');
     var to = "okanlawonemmanuel41@gmail.com"
-    var vars = "message=" + message + "&subject=" + subject + "&password = ".password+"&to = ".to;
+    var vars = "body=" + message + "&subject=" + subject + "&password = ".password+"&to = ".to;
     var msg = document.getElementById("alert");
 
 
