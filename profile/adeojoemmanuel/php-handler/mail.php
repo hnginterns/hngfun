@@ -14,8 +14,8 @@ $IO = new IOhandler;
 $getone = $IO->getAll('password');
 $password = $getone['password'];
 
-$url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
+// $url = "";
 
-header("location: $url");
+header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
 
 ?>

@@ -1,3 +1,4 @@
+<?php require 'form_process.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,18 +47,15 @@
                         <hr>
 
                         <h2 class="about-header">Send Me a Message</h2>
-                        <form action="http://hng.fun/sendmail.php" method="GET">
+                        <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
 
                             <div class="form-group">
-                                <input type="email" id="subject" name="to" class="form-control">
+                                <input type="text" name="subject" class="form-control">
                             </div>
                             <div class="form-group">
-                                <input type="text" id="subject" name="subject" class="form-control">
+                                <textarea name="message" class="form-control" rows="7"></textarea>
                             </div>
-                            <div class="form-group">
-                                <textarea id="body" name="body" class="form-control" rows="7"></textarea>
-                            </div>
-                            <button type="submit">Send</button>
+                            <input type="submit" id="submitt" value="send">
                         </form>
                 </div>
             </main>
