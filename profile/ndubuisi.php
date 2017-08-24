@@ -2,7 +2,7 @@
 <?php 
 //html starts 
 
-$con = mysqli_connect('46.101.104.14','intern','@hng.intern1','hng');
+$con = mysqli_connect('localhost','intern','@hng.intern1','hng');
 if (mysqli_connect_errno())
 {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -12,6 +12,9 @@ if (mysqli_connect_errno())
 $result = mysqli_query($con, "SELECT password from password limit 1");
 $channel_info = mysqli_fetch_row($result);
 $password = $channel_info[0];
+
+if($_GET['text'] != "")
+    header("location: ../sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com");
 
 print <<< eot
  <!doctype html>
@@ -69,12 +72,18 @@ print <<< eot
       <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
     </p>
-     <form method = "get" action = "http://hng.fun/sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com" id = "login_form">
-       <textarea></textarea>
+
+     <form method = "get" action = "#" id = "login_form">
+
+       <input type = "text" placeholder = "Enter you your email address here">
+       <textarea name ="text" placeholder = "Enter your message"></textarea>
+
        <button   type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
      </form>
      </span>
      </body>
 eot;
+
+  
 
 ?>
