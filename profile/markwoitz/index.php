@@ -1,16 +1,22 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
+    
     $subject = $_POST['subject'];
     $to  = 'icnwakanma@gmail.com';
     $body = $_POST['message'];
+    
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
+
     if($subject == '' || $subject == ' ') {
       $error[] = 'Subject cannot be empty.';
+    
     }
+    
     if(empty($error)) {
+
       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
@@ -71,7 +77,7 @@
                         <hr>
 
                         <h2 class="about-header">Send Me a Message</h2>
-                        <form action="" method="post">
+                        <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
 
                             <div class="form-group">
                                 <input type="text" name="subject" class="form-control">
