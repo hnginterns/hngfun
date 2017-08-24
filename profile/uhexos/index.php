@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $name = test_input($_GET["name"]);
     $email = test_input($_GET["email"]);
     $subject = test_input($_GET['subject']);
-    $message = test_input($_GET["website"]);
+    $message = test_input($_GET["message"]);
   }
 function submitter(){
     return 'http://hng.fun/sendmail.php?password=$pass_key&subject=$subject&body=$message&to=$email';
