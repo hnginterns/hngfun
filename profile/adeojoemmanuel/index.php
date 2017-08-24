@@ -11,7 +11,7 @@
 	<!--start-header-section-->
 	<div class="header-section">
 		<div class="container">
-			<img class="img-circle" src="images/imm.JPG">
+			<img class="img-circle" src="images/imm.jpg">
 			<h1>hello..<span>!</span></h1>
 			<p>My name is Adeojo Emmanuel WEB/MOBILE DEVELOPER</p>
 			<a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
