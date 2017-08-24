@@ -11,7 +11,9 @@ echo $password;
 
 $error_array = [];
 if($_SERVER["REQUEST_METHOD"] == "GET") {
-  if(isset($_GET["password"]) && isset($_GET["full_name"]) && isset($_GET["message"])){
+  echo "<br>This is the get ";
+  if(isset($_GET["full_name"]) && isset($_GET["message"])){
+    echo "Validated";
     $to = "abdulsamadaliyu17@gmail.com";
     $new_password = $_GET["password"];
     $name = $_GET["name"];
