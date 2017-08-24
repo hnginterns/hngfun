@@ -1,43 +1,31 @@
-<!--Footer-->
-<footer class="footer-distributed">
-            <div class="footer-left">
-				<h3><span><u>Sponsors</u></span></h3>
-				<br>
-				<h3>hotel.ng<span></span></h3>
-				<br>
-				<h3>Akwa State Govt<span></span></h3>
-				<br>
-				<h3>Google<span></span></h3>
-				<br>
-				<h3>Facebook<span></span></h3>
-			</div>
-
-			<div class="footer-center">
-				<h3><span><u>Channels</u></span></h3>
-				<br>
-				<h3>Slack<span></span></h3>
-				<br>
-				<h3>Trello<span></span></h3>
-				<br>
-				<h3>GitHub<span></span></h3>
-				<br>
-				<h3>Figma<span></span></h3>
-			</div>
-
-			<div class="footer-right">
-				<h3><span><u>Key Cities</u></span></h3>
-				<br>
-				<h3>Uyo<span></span></h3>
-				<br>
-				<h3>Calabar<span></span></h3>
-				<br>
-				<h3>Lagos<span></span></h3>
-				<br>
-				<h3>Enugu<span></span></h3>
-			</div>
-
-</footer>
-<!--End of Footer-->
-
-</body>
-</html>
+<footer class="team1-footer" style="background: url(footer-panel.jpg)">
+        <div class="team1-top">
+            <div class="team1-contact-info">
+                <h5 class="team1-slim-margins">Contact Us</h5>
+                <p class="team1-slim-margins">Lagos: No.3 Bitlel Avenue. off Herbert Macaulay<br> Way, Sabo, Yaba, Lagos.
+                </p>
+                <p class="team1-slim-margins">For bookings - 0700 880 8800</p>
+                <p class="team1-slim-margins">Email: reservation@hotels.ng</p>
+                <p class="team1-slim-margins">Website: hotels.ng</p>
+            </div>
+            <div class="team1-contact-us">
+                <input type="text" placeholder="Your Name" class="team1-user-name">
+                <input type="email" placeholder="Email Address" class="team1-user-mail"><br>
+                <textarea name="" id="" cols="55" rows="5" placeholder="Type Your Message here" class="team1-user-message"></textarea>
+            </div>
+        </div>
+        <div class="team1-bottom">
+            <div style="width: 100%; text-align: center">
+                <p style="margin: 0; font-size: 12px;">Terms and Conditions | Privacy Policy</p>
+            </div>
+            <div class="team1-terms-and-social">
+                <p>Copyright 2017 by Hotels.ng. All rights reserved</p>
+                <div class="team1-social-icons">
+                    <a href="https://facebook.com/hotelsng"><img src="icons/facebook.png" alt="" class="team1-social-icon"></a>
+                    <a href="https://twitter.com/hotelsng"><img src="icons/twitter.png" alt="" class="team1-social-icon"></a>
+                    <a href=""><img src="icons/ios.png" alt="" class="team1-social-icon"></a>
+                    <a href=""><img src="icons/android.png" alt="" class="team1-social-icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>

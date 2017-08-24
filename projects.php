@@ -20,7 +20,7 @@ ob_start();
 <style type="text/css">
 	body{
 		background-image: none !important;
-		background-color: #f2f2f2;
+		background-color: #fff;
 	}
 </style>
 
@@ -38,7 +38,7 @@ ob_start();
 		<div class="team4-card">
 			<div class="team4-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/836907288921276416/ahoX6Eke.jpg); background-size: cover; background-repeat: no-repeat;"></div>
 			<div class="team4-card-info">
-				<a href="#"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
+				<a href="http://hng.fun/singleproject.php"><h3 class="team4-card-title">Build Hng.fun website</h3></a>
 				<p class="team4-card-description">All teams/groups are to work on specific parts of the website for the Hotels.ng remote internship program.</p>
 			</div>
 			<div class="team4-card-footer">
