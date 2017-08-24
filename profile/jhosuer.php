@@ -1,37 +1,41 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-
+	
     $fullname = $_POST['fullname'];
     $to  = 'jumbojoshua91@gmail.com';
     $body = $_POST['message'];
 
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
-
-
-    if($fullname == '' || $fullname == ' ') {
-      $error[] = 'Name cannot be empty.';
-    }
-
-    if(empty($error)) {
-
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $sn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($sn, $config['username'], $config['pass']);
-
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$fullname&password=$password";
-
-      header("location: $uri");
-
-    }
+	if (isset($_POST['fullname'], $_POST['message'])) {
+		
+		$fields = [
+			'name' => $_POST['fullname'],
+			'message' => $_POST['message']
+		
+		];
+		
+		foreach($fields as $field => $data) {
+			
+			if(empty($data)) {
+				$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+				$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+				$con = new PDO($dsn, $config['username'], $config['pass']);
+				$exe = $con->query('SELECT * FROM password LIMIT 1');
+				$data = $exe->fetch();
+				$password = $data['password'];
+				$uri = "/sendmail.php?to=$to&body=$body&subject=$fullname&password=$password";
+				header("location: $uri");
+			}
+			
+		}
+		
+	} else {
+		
+		$error[] = 'something is not right.';
+	}
+ 
   }
- ?>
+ ?> 
 
 <!DOCTYPE html>
 <html>
@@ -180,17 +184,13 @@
 				</h3>
 			</div>
 			<div class="form">
+				<?php if(!empty($error)): ?>
+				<div class="panel">
 				
-				<?php if(isset($error) && !empty($error)): ?>
-          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
-            <ul style='list-style:none;'>
-              <?php
-                foreach ($error as $key => $value) {
-                  echo "<li>$value</li>";
-                }
-              ?>
-            </ul>
-          </blockquote>
+					<!-- Errors goes Here! --> 
+					<ul><li><?php echo implode('</li><li>', $error); ?></li></ul>
+				</div>
+				<?php endif; ?>
 				
 				<form method="POST" action="">
 				
