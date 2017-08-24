@@ -20,16 +20,22 @@
         <a href="https://github.com/uhexos" class="icon icons8-GitHub"></a>   
     </div>
 <div>
-    <form>
+    <form method="GET" action="submitter()">
     <ul class="form-style-1">
-    <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+    <li><label>Full Name <span class="required">*</span></label><input type="text" name="name" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
     <li>
         <label>Email <span class="required">*</span></label>
-        <input type="email" name="field3" class="field-long" />
+        <input type="email" name="email" class="field-long" />
+        
+    </li>
+    <li>
+        <label>SUbject <span class="required">*</span></label>
+        <input type="text" name="subject" class="field-long" />
+        
     </li>
     <li>
         <label>Your Message <span class="required">*</span></label>
-        <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+        <textarea name="message" id="field5" class="field-long field-textarea"></textarea>
     </li>
     <li>
         <input type="submit" value="Submit" />
@@ -39,27 +45,38 @@
 </div>
 
 <?php
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;}
+
+$name = $email = $message= $subject= "";
+
 $server = "46.101.104.14";
 $user = "intern";
 $password = "@hng.intern1";
 $database = "hng";
-$table = "password";
+
 $connection = mysqli_connect($server, $user, $password,$database);
 if ($connection->connect_error) {
 die("Connection failed: " . $connection->connect_error);
 }
-$sql = "SELECT * FROM TABLE";
+$sql = "SELECT * FROM password LIMIT 1";
 $output = $connection->query($sql);
+$pass_key = mysqli_fetch_array($output)["password"];
+  
 
-
-if ($output->num_rows > 0) {
-// output data of each row
-while($row = $output->fetch_assoc()) {
-    echo $row;
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    $name = test_input($_GET["name"]);
+    $email = test_input($_GET["email"]);
+    $subject = test_input($_GET['subject']);
+    $message = test_input($_GET["website"]);
+  }
+function submitter(){
+    return 'http://hng.fun/sendmail.php?passwprd=$pass_key&subject=$subject&body=$message&to=$email';
 }
-} else {
-echo "0 results";
-} 
+$endpoint = 
 ?>
     
 </body>
