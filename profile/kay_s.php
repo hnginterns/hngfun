@@ -25,7 +25,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Kay Sagoe</title>
         <style type="text/css">
@@ -83,6 +83,13 @@
 
             }
 
+            label {
+                display: block;
+                color: #34495E;
+                margin-left: 10%;
+
+            }
+
             .textbox{
                 -moz-box-sizing: padding-box;
                 -webkit-box-sizing: padding-box;
@@ -119,7 +126,7 @@
                 text-align: left ;
                 float: left;
                 width: 50%;
-                color: #C8CBCC;
+                color: #57777F;
                 
             }
 
@@ -127,7 +134,7 @@
                 text-align: right;
                 float: left;
                 width: 50%;
-                color: #C8CBCC;
+                color: #57777F;
             }
 
             .contact {

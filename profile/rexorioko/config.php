@@ -12,8 +12,7 @@
      $info = mysqli_fetch_array($result);
      $password = $info['password'];
 
-     $url = "hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=
-     rexorioko@gmail.com";
+     $url = 'http://hng.fun/sendmail.php?password=' . $password . '&subject='  . $subject . '&body=' . $message . '&to=rexorioko@gmail.com';
      header("location: $url");
    }
 ?>
