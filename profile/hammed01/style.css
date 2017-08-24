@@ -22,10 +22,11 @@ width:540px;
 margin: 5px auto;
 border-bottom: solid red 3px;
 }
+
 .small-pics  {
     border-radius:100px;
     display:block; 
-    width:120px; 
+    width:160px; 
     height:120px;
 }
 .align-top{
