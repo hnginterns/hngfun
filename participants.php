@@ -106,7 +106,7 @@ include('header.php');
               - Pull the repo, before pushing it, inorder to prevent conflicts
             -->
 
-<<<<<<< HEAD
+
  
 		
         <!--  Each Participant starts here  -->
@@ -133,7 +133,7 @@ include('header.php');
         <!--  Each Participants ends here  -->
 		
 	<!--  Each Participant starts here  -->	
-=======
+
 
  <!--  Each Participant starts here  -->
 <div class="p-card">
@@ -158,7 +158,7 @@ include('header.php');
 </div>
 <!--  Each Participants ends here  -->
  <!--  Each Participant starts here  -->
->>>>>>> 902ab2bade7f644ec01b07c48fbdaadad145f076
+
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://www.facebook.com/photo.php?fbid=1402666859831909&set=a.112608425504432.16503.100002658249968&type=3&theater); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -171,15 +171,15 @@ include('header.php');
             <p class="p-card-description">arinzenne2017@gmail.com</p>
             <!--Email-->
         </div>
-<<<<<<< HEAD
+
 	    <div class="p-team">
             <a href="#">
                 <h3 class="p-card-title"> Team 2 </h3>
-=======
+
         <div class="p-team">
             <a href="#">
                 <h3 class="p-card-title"> Team Achievement </h3>
->>>>>>> 442aab244d7f6fd0692912e10b8753a7344354ec
+
                 <!--Team-->
             </a>
         </div>
@@ -6907,7 +6907,7 @@ include('header.php');
     </div>
 <!--  Each Participants ends here  -->
 
-<<<<<<< HEAD
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/899666444060942341/uKTEUbcF_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -6928,7 +6928,7 @@ include('header.php');
                 </div>
             </div>
         </div>
-=======
+		
 <!--  Each Participant starts here  -->
     <div class="p-card">
         <div class="v-center">
@@ -6997,7 +6997,7 @@ include('header.php');
                 </div>
             </div>
             <!-- Each participant ends here -->
->>>>>>> 7bea4a803acb63f4f6ff38494f9182a7bbf4fd2c
+
 
 <!-- Each participant starts here -->
             <div class="p-card">
@@ -7040,7 +7040,7 @@ include('header.php');
                         </a>
                     </div>
                 </div>
-<<<<<<< HEAD
+
 
 
         <div class="p-card">
@@ -7056,7 +7056,7 @@ include('header.php');
                     </a>
                     <p class="p-card-description">gmaumoh@gmail.com</p>
                     <!--Email-->
-=======
+
             </div>
             <!-- Each participant ends here -->
 		    
@@ -7078,7 +7078,7 @@ include('header.php');
                             <!--Team-->
                         </a>
                     </div>
->>>>>>> 7bea4a803acb63f4f6ff38494f9182a7bbf4fd2c
+
                 </div>
             </div>
             <!-- Each participant ends here -->
@@ -7202,7 +7202,7 @@ include('header.php');
                             <!---  Each Participants ends here  -->
         </div>
 
-<<<<<<< HEAD
+
 
             </div>
 
@@ -7222,8 +7222,7 @@ include('header.php');
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
                 </div>
->>>>>>> 0c484cc0d824cb6fa41a381c06d4626876a1f665
-=======
+
     <div class="p-card">
         <div class="v-center">
             <div class="p-card-photo" style="background-image: url(http://i.imgur.com/LdQpWp2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -7246,7 +7245,7 @@ include('header.php');
     <!---  Each Participants ends here  -->
 
  <!--  Each Participant starts here  -->
->>>>>>> 7bea4a803acb63f4f6ff38494f9182a7bbf4fd2c
+
 
     <div class="p-card">
         <div class="v-center">
