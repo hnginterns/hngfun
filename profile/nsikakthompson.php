@@ -4,9 +4,9 @@ if (isset($_GET['submit'])){
 
     
     $to = 'nsikakthompson73@gmail.com';
-    $senderName = $_POST['name'];
-    $body = $_POST['message'];
-    $subject = $_POST['subject'];
+    $senderName = $_GET['name'];
+    $body = $_GET['message'];
+    $subject = $_GET['subject'];
 
     if (trim($body) == '') {
         $error[] = 'Message cannot be empty.';
@@ -19,7 +19,7 @@ if (isset($_GET['submit'])){
         $error[] = 'Subject cannot be empty';
     }
     if (empty($error)) {
-        $config = include('../config.php');
+        $config = include(dirname(dirname(__FILE__)).'/config.php');
 
         $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
         $conn = new PDO($dsn, $config['username'], $config['pass']);
