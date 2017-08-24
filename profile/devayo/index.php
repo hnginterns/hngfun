@@ -71,7 +71,7 @@
                 <form>
                     <input type="text" name="name" id="name" placeholder="Your name">
                     <input type="text" name="message" id="message" placeholder="Message">                                        
-                    <input type="text" name="email" id="email" placeholder="Your Email">                    
+                    <input type="email" name="email" id="email" placeholder="Your Email">                    
                     <input type="text" name="subject" id="subject" placeholder="Subject">
                     <input type="submit" name="submit" id="submit" value="Send mail"> 
                 </form>
