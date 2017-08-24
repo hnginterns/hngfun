@@ -66,7 +66,7 @@
 
                     <p class="lead">I love to eat bread while coding(wierd I know), reading (personal development books), Adventure (Game of Thrones is my favorite TV show), I listen to a wide genre of music and I generally love to have fun and be with fun people (especially my laptop).</p>
                     <p class="lead">My Slack username <strong>shemzz</strong></p>
-                    <p class="lead">Find my stage one task <a href="#">here</a></p>
+                    <p class="lead">Find my stage one task <a href="https://github.com/shemzz/hng-intern">here</a></p>
                     
                     
                 </div>
