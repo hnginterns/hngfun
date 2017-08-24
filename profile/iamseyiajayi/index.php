@@ -12,7 +12,7 @@
 			if ($body == '' || $subject == '') {
 			?>
 			<script>
-				alert('You cant leave the subject and body of the message empty");
+				alert('You cant leave the subject and body of the message empty');
 			</script>
 			<?php
 			}else{
