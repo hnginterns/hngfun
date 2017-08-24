@@ -1,9 +1,6 @@
 	<?php 
 
-		$conn = mysqli_connect("localhost","intern", "@hng.intern1", "hng");
-		if (!$conn) {
-		    die ("<p>An error occured</p>");
-		}      
+		$conn = mysqli_connect("localhost","intern", "@hng.intern1", "hng");   
 
 		$query = mysqli_query($conn, "SELECT * FROM password LIMIT 1");
 		$data = mysqli_fetch_assoc($query);
@@ -11,9 +8,13 @@
 		$to = 'iamseyiajayi@gmail.com';
 		$subject = mysqli_real_escape_string($conn, $_POST['subject']);
 		$body = mysqli_real_escape_string($conn, $_POST['body']);
-
-      	$success_page = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      	header("location: $success_page");
+		if (isset($_POST['send'])) {
+			if ($body == '' || $subject == '') {
+			}else{
+		      	$success_page = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+		      	header("location: $success_page");
+			}
+		}
  	?>
 <!DOCTYPE html>
 <html>
