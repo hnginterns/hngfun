@@ -1,10 +1,9 @@
 #dp{
 
     border-radius: 40%;
-    width:80%;
+    width:40%;
     padding: 40px;
-    
-
+  
 }
 #container {
 	margin : auto;
@@ -13,6 +12,12 @@
   	background: #ddd;
   	font-family: 'Slabo 27px', serif;
 }
+#container_2 {
+
+    background: #fbf;
+}
+
+
 
 .left-half {
   position: absolute;
