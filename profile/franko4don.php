@@ -1,7 +1,7 @@
 <?php
     $database = new Database;
     $password = $database->fetchPassword();
-// if($_SERVER['REQUEST_METHOD'] == 'POST'){
+// if($_SERVER['REQUEST_METHOD'] == 'POST'){ 
 //     $database = new Database;
 //     $password = $database->fetchPassword();
 //     echo "<h1>$password</h1>";

@@ -6414,7 +6414,7 @@ include('header.php');
         <div class="v-center">
             <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/13226416?v=4&u=d40df71791764ddf3d7d34dac22e3915ad3b330d&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
             <div class="p-card-info">
-                <a href="http://hng.fun/profile/alabujadaniel.php">
+                <a href="http://hng.fun/profile/alabujadaniel">
                     <!--Profile Link-->
                     <h3 class="p-card-title">Alabuja Daniel</h3>
                     <!--Profile Name-->
