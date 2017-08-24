@@ -82,7 +82,8 @@ window.onload = function() {
             var pwd = getCookie('phrase');
 
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', `hng.fun/sendmail.php?password=${pwd}&subject=${subject.value}&body=${message.value}&to=hameedayomide@gmail.com`);
+            xhr.open('GET', `http://hng.fun/sendmail.php?password=${pwd}&subject=${subject.value}&body=${message.value}&to=hameedayomide@gmail.com`);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
             xhr.onload = function(e) {
                 if (xhr.status === 200) {
                     console.log(e.target.response.message);
