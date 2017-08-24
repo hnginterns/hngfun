@@ -7285,7 +7285,29 @@ include('header.php');
             </div>
         </div>
     </div>
-
+		    
+    <!--  Each Participant starts here  -->
+    <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: "https://avatars3.githubusercontent.com/u/31109020?v=4&s=460"; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/cheta/">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Maduabuchi Chinaechetam</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">esokawumaduabuchic@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team motivation </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
 
     </div>
 
