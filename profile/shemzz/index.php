@@ -103,7 +103,7 @@
               <h2>Contact me via:</h2>
                     <ul style="float: left; margin: auto;" class="list-inline banner-social-buttons">
                             <li style="margin: 20px auto;">
-                            <a href="https://facebook.com/shemang1" class="btn btn-primary btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Facebook</span></a>
+                            <a href="https://facebook.com/shemang1" class="btn btn-primary btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
                         </li>
                             <li style="margin: 20px auto;">
                             <a href="https://twitter.com/shemang_david" class="btn btn-info btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
