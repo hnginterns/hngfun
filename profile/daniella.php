@@ -159,7 +159,7 @@
       </div>
 
       <div class="form">
-        <form action="" method="POST">
+        <form action="daniella.php" method="POST">
           <fieldset>
               <legend>Email Me!</legend>
               
