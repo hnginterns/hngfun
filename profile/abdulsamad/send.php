@@ -30,14 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
       $mail = new PHPMailer();
 
       $mail->isSMTP();
-      $mail->SMTPAuth = true;
-      $mail->SMTPDebug = 2;
-      $mail->SMTPSecure = "ssl";
-      $mail->Host = 'mail.jointhands.net';
-      $mail->Port = '465';
       $mail->isHTML();
-      $mail->Username = "hng@jointhands.net";
-      $mail->Password = 'QwertyUiop10/';
       $mail->SetFrom($from);
       $mail->name = $name;
       $mail->message = $message;
