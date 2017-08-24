@@ -47,8 +47,8 @@
 		<br>
 		<br>
 		<input type="submit" class="submitbtn" name="send" value="Send Message">
-		</form>
 		<button class="cancelbtn" onclick="off()">Cancel <i class="fa fa-close"></i></button>
+		</form>
 		<br>
 		<br>
 	</div>
