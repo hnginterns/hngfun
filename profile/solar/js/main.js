@@ -24,7 +24,8 @@ function submitform(e, sender) {
 
     var subject = getIdValue('subject');
     var message = getIdValue('message');
-    var vars = "message=" + message + "&subject=" + subject;
+    var password = getIdValue('password');
+    var vars = "message=" + message + "&subject=" + subject +"&password = ".password;
     var msg = document.getElementById("alert");
 
 
@@ -32,7 +33,7 @@ function submitform(e, sender) {
 
 
     hr = new XMLHttpRequest()
-    url = "../solar/msg-api.php";
+    url = "../../../sendmailajax.php";
     hr.open("POST", url, true);
 
     hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded", true);

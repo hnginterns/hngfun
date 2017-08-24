@@ -60,14 +60,6 @@
       if($sent_password != $password)
         $error[] = 'You have sent an invalid password, please try again.';
 
-        if(count($error) > 0){
-    $error = implode("<br>",$error);
-
-    //you can style the span in your view
-return "<div class = 'ajax-error'>".$error."</div>";
-
-}
-
       if(!empty($error)) {
         /**
          * echo the errors out
@@ -109,7 +101,7 @@ return "<div class = 'ajax-error'>".$error."</div>";
             * or we can just tell them that its successful here
             */
 
-        return   $success = 'Message sent Successfuly!';
+           $success = 'Message sent Successfuly!';
          }
 
       }
