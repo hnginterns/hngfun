@@ -28,11 +28,38 @@
      * Its a get request, lets process the data
      */
 
-    if(!isset($_POST['password']) ||!isset($_POST['to']) || !isset($_POST['subject']) || !isset($_POST['body'])) {
-      echo 'You have sent an empty data, email cannot be sent like that.';
-    die();
-    } else {
-      /**
+    $error = [];
+
+    $to  = 'okalawonemmanuel41@gmail.com';
+    if(isset($_POST['body'])){
+   
+        $body = $_POST['body'];
+   
+         if($body == '' || $body == ' ') {
+        $error[] = 'body cannot be empty.';
+             }
+
+}
+
+    
+ 
+  if(isset( $_POST['subject'])){
+  $subject = $_POST['subject'];
+
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    } 
+}
+
+if(count($error) > 0){
+    $error = implode("<br>",$error);
+echo "<span class = 'error'>".$error."</span>";
+die();
+} else 
+{
+    
+/*
+   
        * Everything we need to send the email is ready, but we need to do some verification
        * We need to makke sure the email is valid.
        */
