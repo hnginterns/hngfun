@@ -64,7 +64,7 @@
         <form action="" method="post" enctype="text/plain">
 
 				<?php if(isset($error) && !empty($error)): ?>
-          <div style="text-align: center; padding:5px; background: #fff;">
+          <div style="text-align: center; padding:5px; background: red;">
             <ul style='list-style:none;'>
               <?php
                 foreach ($error as $key => $value) {
@@ -79,7 +79,7 @@
 
 					<div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="subject">
+          <input type="text" id="name" name="name">
           </div>
       <div>
         <label for="msg">Message:</label>
