@@ -67,7 +67,7 @@
               <textarea class = "message" placeholder="Enter your message here" name = "message"></textarea>
             </div>
             <div class = "button-row-input">
-              <button class = "button">Send</button>
+              <button name = "submit" class = "button">Send</button>
             </div>
           </form>
         </div>

@@ -162,9 +162,10 @@
           <fieldset>
               <legend>Email Me!</legend>
               
-                  <label>To :   </label><input name="to" id="to" type="hidden"><br>
-                  <label>From : </label><input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail"> <br>
-                 <label>Subject :</label><input name="subject" id="subject" class="dannys-input" value="Hello"><br>
+                  <label>To :   </label><input name="to" id="to" class="dannys-input" value="dmpire2@gmail.com" required><br>
+                  <label>cc :   </label><input  class="dannys-input"><br>
+                  <label>From : </label><input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail" required> <br>
+                 <label>Subject :</label><input name="subject" id="subject" class="dannys-input" value="Hello" required><br>
                   <label>Body: </label><br>
                 <textarea id="body" name="body" cols="50" rows="5" value="Hello" required></textarea>
               <br>
