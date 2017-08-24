@@ -1,0 +1,201 @@
+
+body{
+  padding: 0px;
+  margin: 0px;
+  display: block;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("statics/bl.jpg");
+  background-attachment: fixed;
+  font-family: monospace;
+  font-size: 16pt;
+  color: white;
+
+}
+.main-content{
+  width: 60%;
+  padding-bottom: 50px;
+  background-color: #111;
+  position: absolute;
+  top:80px;
+  left:20%;
+  -webkit-box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.return{
+  padding: 10px;
+  width: 100%;
+  background-color: #ccc;
+  /*border-top: 5px solid blue;*/
+  border-bottom: 5px solid gold;
+  font-family: monospace;
+  font-size: 16pt;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 20;
+  -webkit-box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.return > a{
+  display: inline-block;
+  border-color: pink;
+  text-decoration: none;
+  color: black;
+}
+.return > a:hover{
+  text-decoration: underline;
+}
+.passport{
+  width: 200px;;
+  height:200px;
+  background-image: url("./statics/profile.jpg");
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  position:relative;
+  left:calc(50% - 100px);
+	left:-moz-calc(50% - 100px);
+	left:-webkit-calc(50% - 100px);
+  border-radius: 50%;
+}
+.writing-area{
+  width: 70%;
+  min-height: 400px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 40px;
+  position: relative;
+  left:14%;
+}
+.send > a{
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+
+}
+span{
+  padding: 4px;
+  background-color: #12d125;
+  border: 2px solid black;
+  font-family: calibri ;
+}
+span:hover{
+  background-color: green;
+  color: white;
+}
+.footer{
+  width: 100%;
+  height: 80px;
+  background-color: #111;
+  position: relative;
+  color: #333;
+  text-align: center;
+  top: 1600px;
+  padding-top: 30px;
+  font-size: 14pt;
+  font-family: calibri;
+  -webkit-box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+@media screen and (max-width: 700px){
+  .main-content{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+
+  }
+
+
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 950px){
+  .main-content{
+    width: 70%;
+    position: absolute;
+    left: 15%;
+  }
+}
+@media screen and (max-width: 480px){
+  .footer{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    top: 1600px;
+    padding-top: 30px;
+  }
+  .send > a{
+    font-size: 14pt;
+  }
+
+}
+form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  font-size: 14pt;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input, textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* To give the same size to all text fields */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* To harmonize the look & feel of text field border */
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+.button {
+  /* To position the buttons to the same position of the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: .5em;
+  background-color: green;
+  padding: 0.5em;
+}
+button:hover{
+  background-color: lightgreen;
+}
