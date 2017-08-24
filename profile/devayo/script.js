@@ -75,13 +75,13 @@ window.onload = function() {
         if (validationLevels.indexOf(false) == -1) {
             colorFields();
             // Send email
-            var getCookie = function (name) {
-                var value = "; " + document.cookie;
-                var parts = value.split("; " + name + "=");
-                if (parts.length == 2) return parts.pop().split(";").shift();
-            };
+            // var getCookie = function (name) {
+            //     var value = "; " + document.cookie;
+            //     var parts = value.split("; " + name + "=");
+            //     if (parts.length == 2) return parts.pop().split(";").shift();
+            // };
 
-            var pwd = getCookie('phrase');
+            // var pwd = getCookie('phrase');
 
             var xhr = new XMLHttpRequest();
             // var requestUrl = 'http://hng.fun/sendmail.php?password=' + pwd + '&subject=' + subject.value + '&body=' + message.value + '&to=hameedayomide@gmail.com'; 
