@@ -18,6 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
     $name = $_GET["name"];
     $message = $_GET["message"];
     $from = $_GET["email"];
+    $subject = "Mail from abdulsamad aliyu's contact form";
 
 
     if(!filter_var($to, FILTER_VALIDATE_EMAIL)){
@@ -25,23 +26,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
     }
 
     if(empty($error_array)){
-      require_once("../../PHPMailerAutoload.php");
-
-      $mail = new PHPMailer();
-
-      $mail->isSMTP();
-      $mail->isHTML();
-      $mail->SetFrom($from);
-      $mail->name = $name;
-      $mail->message = $message;
-      $mail->AddAddress($to);
-      $mail->AddCc($admin_email);
-      if($mail->send()){
-        echo 'success';
-      }
-      else{
-        echo 'failure';
-      }
+      header("location: http://hng.fun/sendmail.php?password=$password=&subject=$subject&body=$message&to=$to");
     }
     else{
       foreach ($error_array as $error) {
