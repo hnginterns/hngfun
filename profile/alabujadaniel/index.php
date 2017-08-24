@@ -145,7 +145,7 @@
                     <h3>Speak to Me</h3>
                 </div>
                 <div class="contact-form">
-                    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                    <form method="post" action="">
                         <div class="">
                             <input class="" type="text" name="subject" placeholder="Enter the Subject" required>
                         </div>
