@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>Profile Page</title>
 		<meta charset="utf-8">
 	    <meta name="view port" content="width=device-width,initial-scale=1.0">
+	     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	    <style type="text/css">
 	    	html{
-			    height: 100%;
+			    height: auto;
 			    width: 100%;
 			}
 
 			body{
 			 	background:#fff;
+			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
+			 	background-size: cover;
 			    height: auto;
 			    width: 100%;
 			    margin: 0;
@@ -30,79 +33,133 @@
 				text-align: center;
 				color: #fff;
 			}
-			.text h1{
-				color:#6699ff;
-				font-family: 'AvantGarde bk bt';
-				font-size: 50px;
-				text-shadow: 2px 2px grey;
+			 .text h1{
+				color:#fff;
+				font-family:'century' ;
+				font-size: 40px !important;
+				
 			}
-			.text h2{
-				font-family: 'century gothic';
-				font-size: 23px;
-				text-shadow: 1px 1px grey;
-				color: #6699ff;
-			}
+			
 			.bio{
-				background-color: #6666cc;
-				opacity: 0.6;
+			
+				
 				margin-top: 50px;
+				width: 50%;
+				margin-left: 25%;
+			}
+			hr {
+				width: 100px;
+				margin-bottom: 20px;
 			}
 			.bio h3{
 				font-family: 'Courier New';
 				font-size: 25px;
 				margin-top: 30px;
 				padding-top: 20px;
+				color: #fff;
 			}
 			.bio p{
-				padding-top: -800px;
-				font-family: 'Courier New';
+				color: #fff;
+				margin-top: -45px;
+				padding-top: -900px;
+				font-family: 'Century';
 				padding-left: 80px;
 				padding-right: 80px;
 				text-align: center;
 			}
-			/* button .gitlink{
-				margin-bottom: 20px;
-				text-decoration: none;
-				background-color:#6699ff !important;
-
-			}*/
 			 a:link {
-				background-color:#6699ff !important;
-				color: blue;
+			
+				color: #DAA520;
 				font-size: 20px;
 				text-decoration: none;
 			}
-			.tex{
-				color:#6699ff; 
-				font-size: 25px;
+			a:hover{
+				color: #FFFACD
 			}
-			.icon{
-				width:30px;
-				height: 30px;
-				margin-top: 20px;
+			a:visited{
+				color: #DAA520;
 			}
+			.icons{
+				font-weight: bold
+			}
+			.contact{
+				width: 50%;
+				margin-left: 25%;
+				text-align: center;
+				border-style: solid;
+				border-color: #FFFACD;
+				border-radius: 10px;
+				margin-bottom: 10px;
+			}
+			.cont{
+				color: #fff;
+				font-size: 20px;
+			}
+			 .grids{
+				width: 30%;
+				min-height: 10%;
+				margin-bottom: 15px;
+			}
+		.textsarea{
+			width: 60%;
+			margin-bottom: 10px;
+		}
+
 	    </style>   
 	</head>
 
 	<body>
 			<div class=" img_pos">
-				<img src="https://avatars3.githubusercontent.com/u/24903349?v=4&u=99e547814677b11ee2d1e25c1f9e85191960ddb9&s=400" class="imgs" alt="profile_pic">
+				<img src="http://res.cloudinary.com/auztin/image/upload/v1503444301/auztin_v2yd3c.png" class="imgs" alt="profile_pic">
 			</div>
 		
 			<div class="text">
-				<h1>OKORIE UGOCHUKWU AUGUSTINE</h1>
-				<a  href="https://github.com/auztincodes/secondrepo" >
-					Stage 1 Project</a><br>
-				<p class="tex">Slack_id :@Auztin</p>
-				<div class="bio">
-					<h3>Biography</h3>
-					<p>Hi, My name is Okorie Ugochukwu from Enugu State.
-					I am 24 years old, A graduate of Computer science from the University of Nigeria. A software developer who is very passionate about technology.
-					In my leisure time, I play games, watch movies, read books, or listen to motivational podcasts.
+					<h1>OKORIE UGOCHUKWU AUGUSTINE</h1>
+					<hr class="line">
 					
+					<div class="bio">
+	
+	 					<p>Hi, My name is Okorie Ugochukwu from Enugu State.
+						I am 24 years old, A graduate of Computer science from the University of Nigeria. A software developer who is very passionate about technology.
+						In my leisure time, I play games, watch movies, read books, or listen to motivational podcasts.
+						
+						</p>
+						
+					</div>
+				<div class="icons">
+					<p><a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i>Auztin</a>&nbsp;
+					<a class="links" href="https://github.com/auztincodes/secondrepo"><i class="fa fa-github"></i>Stage-1 Repo</a>&nbsp;
+					<a class="links" href="https://twitter.com/OkorieAustin"><i class="fa fa-twitter"></i>OkorieAustin</a>
+
 					</p>
-					
 				</div>
+			</div>
+
+			<div class="contact">
+                
+                    <div class="cont">
+
+                        <h4 class="footer__contact">Contact Form</h4>
+                        
+					</div>
+				 <div class="grid_col">
+                        <form method="post">
+                            <div class="form">
+                                <div class="grid_1">
+                                    <input class="grids" type="text" name="name" placeholder="Your Name">
+                              
+                                    <input class="grids" type="email" name="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="form">
+                                <div class="grid_3">
+                                    <textarea class="textsarea" rows="5" name="message" placeholder="type your message here"></textarea><br>
+                                    <input type="submit" name="send" value="SEND">
+                                </div>
+                            </div>
+                        </form>
+				</div>
+
 			</div>
 
 	</body> 
