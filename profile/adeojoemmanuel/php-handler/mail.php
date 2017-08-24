@@ -26,6 +26,6 @@ if (!$error) {
 
 // $url = "";
 
-header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
+// header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
 
 ?>
