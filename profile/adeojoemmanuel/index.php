@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>Adeojo Emmanuel</title>
-<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"> -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -94,7 +93,7 @@
 			<div class="container">
 				<h3>contact us</h3>
 				<div class="contact-details">
-					<form>
+					<form method="POst" action="php-handler/mail.php">
 						<div class="col-md-6 contact-left">
 							 <input type="text" class="text" value="Name *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name *';}">
 							 <input type="text" class="text" value="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email *';}">
