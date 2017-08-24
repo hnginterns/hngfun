@@ -1,3 +1,25 @@
+<?php
+    if (isset($_GET['sendmessage'])) {
+
+        $config = include('../../config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+
+        $subject = "HEY THERE";
+        $password = htmlentities(strip_tags(trim($password)));
+        $body = htmlentities(strip_tags(trim($_GET['body'])));
+        $to = "awotunde.emmanuel@gmail.com";
+
+        $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+
+        header("Location: " . $location);
+
+    }
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,9 +88,9 @@
     }
 
     .header {
-        background-color: #9933cc;
+        background-color: #65c5c5;
         color: #ffffff;
-        padding: 15px;
+        padding: 5px;
     }
 
     .menu ul {
@@ -117,7 +139,7 @@
         font-size: 16px;
         transition: background-color .35s ease-in-out , box-shadow .35s ease-in-out;
         -webkit-transition: background-color .35s ease-in-out , box-shadow .35s ease-in-out;
-      
+
     }
     .button:hover {
       background-color: cadetblue;
@@ -143,7 +165,7 @@
       color: bisque;
     }
     div.pagination a:hover{
-      -webkit-transform: translateX(5px);  
+      -webkit-transform: translateX(5px);
     }
 
     ::selection {
@@ -162,8 +184,8 @@
       margin: 5px;
       height: 100%;
       width: 100%;
-      font-size: 2em;
-      color: #9933cc;
+      font-size: 1.5em;
+      color: #65c5c5;
     }
 
     .image-container-image .image {
@@ -172,7 +194,7 @@
         backface-visibility: hidden;
         border: 1px solid #ddd;
         border-radius: 4px;
-        padding: 5px;    
+        padding: 5px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 3px 3px 4px 0px rgba(0,0,0,0.24);
         -webkit-transition: all .35s ease-in-out 0.3s;
         transition: all .35s ease-in-out 0.3s;
@@ -183,7 +205,76 @@
         -webkit-transform: translate(-10px, -10px);
         transform: translate(-10px, -10px);
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-    }   
+    }
+
+    textarea
+    {
+      color: #489797;
+      font: normal normal bold 15px/50px arial, sans-serif;
+      border: none;
+      margin-top: 5%;
+      border-bottom: 4px solid aqua;
+      -webkit-transition: all .35s ease-in-out .5s;
+      transition: all .35s ease-in-out .5s;
+    }
+
+    input{
+        width: 80%;
+        color: #489797;
+        font: normal normal bold 15px/50px arial, sans-serif;
+        border: none;
+        border-bottom: 2px solid aqua;
+        -webkit-transition: all .35s ease-in-out .5s;
+        transition: all .35s ease-in-out .5s;
+    }
+
+    .contact{
+      margin-top: 5%;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .contact-title{
+      margin: 0px;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #rgba(107, 156, 156, 0.5);
+    opacity: 0.5;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #rgba(107, 156, 156, 0.5);
+       opacity: 0.5;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #rgba(107, 156, 156, 0.5);
+       opacity: 0.5;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    #rgba(107, 156, 156, 0.5);
+       opacity: 0.5;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color:    #rgba(107, 156, 156, 0.5);
+       opacity: 0.5;
+    }
+
+    input:placeholder {
+
+    }
+
+    input:focus {
+        width: 100%;
+        border-bottom: 6px solid aqua;
+    }
+
+    input:invalid {
+        border-left: 2px solid red;
+    }
+
+    input:valid {
+        border-bottom: 1px solid aqua;
+    }
 
   </style>
 
@@ -191,8 +282,7 @@
 </head>
 <body>
 <div class="header">
-  <h1>Emmanuel Awotunde</h1>  
-  <p style="font-size: 1em">@olaoluwa_98 <i class="fa fa-slack"></i><br>@olaoluwa-98 <i class="fa fa-github"></i></p>
+  <h1>Emmanuel Awotunde (<span  style="font-size: 0.8em">@olaoluwa_98 <i class="fa fa-slack"></i>, @olaoluwa-98 <i class="fa fa-github"></i></span>)</h1>
   <ul class="social">
         <li><a href="mailto:awotunde.emmanuel1@gmail.com" title="Message me?" target="_blank"><i class="fa fa-envelope"></i></a></li>
         <li><a href="https://twitter.com/olaoluwa_98" title="@olaoluwa_98" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -202,22 +292,26 @@
         <li><a href="https://www.facebook.com/awotunde.emmanuel" title="@awotunde.emmanuel" target="_blank"><i class="fa fa-facebook"></i></a></li>
   </ul>
 </div>
-  
+
   <div class="row">
     <div class="col-4 col-m-12">
       <div class="image-container-image">
         <img class="image" src="https://cdn-images-1.medium.com/fit/c/120/120/1*KQbibJtclzBy3gjrPvfDHA@2x.jpeg">
-        <div class="middle-btn">    
-          <p class="button">Emmanuel Awotunde</p>
-        </div>
       </div>
     </div>
-    
+
   <div class="col-6 col-m-12">
     <div class="about">
         I'm Emmanuel Awotunde. I am a software developer from Kwara state. I use web technologies to build web applications to solve problems.
         I love simplicity.<br>
-        <span style="font-weight: bold;">Here is my stage one solution <br><a style="text-decoration: underline;color: #9933cc" href="https://github.com/olaoluwa-98/HNG-internship"><i style="color: #9933cc" class="fa fa-github"></i> HNG-internship</a></span>
+        <span style="font-weight: bold;">Here is my stage one solution <br><a style="text-decoration: underline;color: #65c5c5" href="https://github.com/olaoluwa-98/HNG-internship"><i style="color: #65c5c5" class="fa fa-github"></i> HNG-internship</a></span>
+
+          <form class="contact" action="http://hng.fun/profile/olaoluwa_98/index.php" method="get">
+            <p class="contact-title">Send Me a Mail</p>
+            <input type="text" name="subject" placeholder="subject" value="">
+            <textarea rows="3" cols="60" name="body" placeholder="type your message here" value=""></textarea><br>
+            <button type="submit" name="sendmessage" class="button">Send Mail</button>
+          </form>
     </div>
   </div>
   <div class="col-2 col-m-12"></div>
