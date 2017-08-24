@@ -7311,9 +7311,7 @@ include('header.php');
 
     </div>
 
-<<<<<<< HEAD
 </div>
-<?php  include "footer.php" ?
-=======
+
+
 <?php include "footer.php"; ?>
->>>>>>> 7bea4a803acb63f4f6ff38494f9182a7bbf4fd2c
