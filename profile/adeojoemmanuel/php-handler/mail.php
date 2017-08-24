@@ -8,7 +8,7 @@ $subject = mysql_escape_string($_POST['subject']);
 $email = mysql_escape_string($_POST['email']);
 $phone = mysql_escape_string($_POST['phone']);
 $message = mysql_escape_string($_POST['message']);
-$to = "ordrizzy@gmail.com";
+$to = "emmanuel.adeojo@yahoo.com";
 
 $IO = new IOhandler;
 $getone = $IO->getAll('password');
