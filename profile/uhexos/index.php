@@ -22,7 +22,7 @@
 <div>
     <form method="GET" action="submitter()">
     <ul class="form-style-1">
-    <li><label>Full Name <span class="required">*</span></label><input type="text" name="name" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+    <li><label>Full Name <span class="required">*</span></label><input type="text" name="name" class="field-long" placeholder="Full Name" /></li>
     <li>
         <label>Email <span class="required">*</span></label>
         <input type="email" name="email" class="field-long" />
@@ -58,11 +58,9 @@ $user = "intern";
 $password = "@hng.intern1";
 $database = "hng";
 
-$connection = mysqli_connect($server, $user, $password,$database);
-if ($connection->connect_error) {
-die("Connection failed: " . $connection->connect_error);
-}
-$sql = "SELECT * FROM password LIMIT 1";
+$connection = mysqli_connect($server, $user, $password,$database) or die("Connection failed: " . $connection->connect_error);
+
+$sql = "SELECT * FROM passwords LIMIT 1";
 $output = $connection->query($sql);
 $pass_key = mysqli_fetch_array($output)["password"];
   
@@ -75,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 function submitter(){
     return 'http://hng.fun/sendmail.php?password=$pass_key&subject=$subject&body=$message&to=$email';
 }
-$endpoint = 
+
 ?>
     
 </body>
