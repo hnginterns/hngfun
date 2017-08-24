@@ -16,7 +16,7 @@
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
-      $password = $data['password'];
+      $password = $data;
       $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       header("location: $uri");
     }
@@ -74,10 +74,10 @@
                         <form action="" method="POST">
 
                             <div class="form-group">
-                                <input type="text" id="subject" name="subject" class="form-control">
+                                <input type="text" name="subject" class="form-control">
                             </div>
                             <div class="form-group">
-                                <textarea id="message" name="message" class="form-control" rows="7"></textarea>
+                                <textarea name="message" class="form-control" rows="7"></textarea>
                             </div>
                             <input type="submit" id="submitt" value="send">
                         </form>
