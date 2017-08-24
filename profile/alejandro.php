@@ -4,7 +4,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $name = $_POST['name'];
     $to  = 'francisbnsn14@yahoo.com';
-	$email = $_POST['email'];
+	$subject = $_POST['subject'];
     $body = $_POST['message'];
 
     if($body == '' || $body == ' ') {
@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $data = $exe->fetch();
         $password = $data['password'];
 
-        $uri = "/sendmail.php?to=$to&body=$body&name=$name&password=$password";
+        $uri = "/sendmail.php?to=$to&body=$body&name=$name&subject=$subject&password=$password";
 
         header("location: $uri");
 		}
@@ -179,12 +179,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="box">
                 <h2>Contact me</h2>
                 <form  action="" method="POST" enctype="multipart/form-data">
-					<input type="hidden" name="action" value="submit">
-                    <input name="name" type="text" placeholder="Name" value="" size="30"/><br>
+                    <input name="name" type="text" placeholder="Name" size="30" required/><br>
                     <br/>
-                    <input name="email" type="text" placeholder="Email"value="" size="30"/><br>
+                    <input name="subject" type="text" placeholder="subject" size="30" required/><br>
                     <br/>
-                    <textarea name="message" placeholder="Write Message" rows="7" cols="30"></textarea><br>
+                    <textarea name="message" placeholder="Write Message" rows="7" cols="30" required></textarea><br>
                     <input type="submit" value="Send email"/>
                 </form>
             </div>

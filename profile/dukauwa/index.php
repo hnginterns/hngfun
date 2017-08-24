@@ -284,7 +284,6 @@
                   <form class="form" action="" method="GET">
 
                     <h4>CONTACT ME</h4>
-                    <input type="hidden" name="password" value="<?= $password; ?>" >
                     <p type="Name:"><input type="text"  name="name" placeholder="Write your name here.."></input></p>
                     <p type="Email:"><input type="email" name="email" placeholder="Let me know how to contact you back.."></input></p>
                     <p type="Message:"><input name="body" rows="10" cols="10" placeholder="What would you like to tell me.."></input></p>
