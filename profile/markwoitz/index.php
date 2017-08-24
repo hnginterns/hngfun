@@ -21,7 +21,7 @@
                 </aside>
                 
                 <div class="primary">
-                    <h2 class="about-header">About Me</h2>
+                    <h3 class="about-header">About Me</h3>
                         <p>
                             I love making things work on computer. A graduate of Computer Science from the unique University of Port Harcourt,
                             a strong advocate of Jollof Rice. Proficient in PHP & Mysql, HTML, CSS, Javascript. 
@@ -37,7 +37,7 @@
                             </div>
                         </p>
 
-                        <h2 class="about-header">HNG TASKS</h2>
+                        <h3 class="about-header">HNG TASKS</h3>
                         <p>
                             <ol class="task-list">
                                 <li><a href="https://github.com/icnwakanma/hng-intern-stage1">Stage 1</a></li>
@@ -46,7 +46,7 @@
                         </p>
                         <hr>
 
-                        <h4 class="about-header">Send Me a Message <i class="fa fa-smile-o" aria-hidden="true"></i></h4>
+                        <h3 class="about-header">Send Me a Message<i class="fa fa-smile-o" aria-hidden="true"></i></h3>
                         <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
 
                             <div class="form-group">
