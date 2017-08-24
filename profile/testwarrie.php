@@ -16,6 +16,6 @@
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=emayoung95@gmail.com");
 	
     }else{
-        header("location: index.html");
+        header("location: testingwarrie.html");
     }
 ?>
