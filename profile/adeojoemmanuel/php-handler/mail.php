@@ -11,13 +11,13 @@ $message = mysql_escape_string($_POST['message']);
 $to = "emmanuel.adeojo@yahoo.com";
 
 $fields = array('subject', 'email', 'phone', 'message');
-	$error = false; 
-	foreach($fields AS $fieldname) { 
-	  if(!isset($_POST[$fieldname]) || empty($_POST[$fieldname])) {
-	    echo 'Field '.$fieldname.' missing!<br />';
-	    $error = true; //Yup there are errors
-	  }
-	}
+$error = false; 
+foreach($fields AS $fieldname) { 
+  if(!isset($_POST[$fieldname]) || empty($_POST[$fieldname])) {
+    echo 'Field '.$fieldname.' missing!<br />';
+    $error = true; //Yup there are errors
+  }
+}
 
 if (!$error) {
 	$getone = $IO->getAll('password');
@@ -26,6 +26,6 @@ if (!$error) {
 
 // $url = "";
 
-header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
+// header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
 
 ?>
