@@ -77,7 +77,7 @@
                                 <input type="text" id="subject" name="subject" class="form-control">
                             </div>
                             <div class="form-group">
-                                <textarea id="body" name="body" class="form-control" rows="7"></textarea>
+                                <textarea id="message" name="message" class="form-control" rows="7"></textarea>
                             </div>
                             <input type="submit" id="submitt" value="send">
                         </form>
