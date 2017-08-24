@@ -53,21 +53,21 @@
           <h1>Get in touch</h1>
         </div>
         <div class = "form-section">
-          <form>
+          <form action = "send.php">
             <div class = "top-row-input">
               <div class = "email-input">
                 <input type = "email" name = "email" placeholder="Enter your email here">
               </div>
               <div class = "name-input">
-                <input type = "text" name = "email" placeholder="Enter your full name here">
+                <input type = "text" name = "full_name" placeholder="Enter your full name here">
               </div>
               <div class = "clear"></div>
             </div>
             <div class = "bottom-row-input">
-              <textarea class = "message" placeholder="Enter your message here"></textarea>
+              <textarea class = "message" placeholder="Enter your message here" name = "message"></textarea>
             </div>
             <div class = "button-row-input">
-              <button class = "button">Send</button>
+              <button name = "submit" class = "button">Send</button>
             </div>
           </form>
         </div>
