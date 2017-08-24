@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
     }
 
     if(empty($error_array)){
-      header("Location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
+      header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
     }
     else{
       foreach ($error_array as $error) {
