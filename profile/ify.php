@@ -13,7 +13,7 @@ if (!$conn) {
 
 
 $query = "SELECT * FROM password";
-mysql_query($query) or die('Error querying database.');
+//mysql_query($query) or die('Error querying database.');
 
 $result = mysql_query($query);
 $row = mysql_fetch_array($result);
