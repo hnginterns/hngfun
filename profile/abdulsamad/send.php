@@ -11,20 +11,17 @@ echo $password;
 
 $error_array = [];
 if($_SERVER["REQUEST_METHOD"] == "GET") {
-  if(isset($_GET["password"]) && isset($_GET["full_name"]) && isset($_GET["message"])){
+  echo "<br>This is the get ";
+  if(isset($_GET["full_name"]) && isset($_GET["message"])){
+    echo "Validated";
     $to = "abdulsamadaliyu17@gmail.com";
-    $new_password = $_GET["password"];
     $name = $_GET["name"];
     $message = $_GET["message"];
-    $from = $_GET["from"];
+    $from = $_GET["email"];
 
 
     if(!filter_var($to, FILTER_VALIDATE_EMAIL)){
       $error_array[] = "Invalid email";
-    }
-
-    if($new_password != $password){
-      $error_array[] = "Invalid password";
     }
 
     if(empty($error_array)){
@@ -33,14 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
       $mail = new PHPMailer();
 
       $mail->isSMTP();
-      $mail->SMTPAuth = true;
-      $mail->SMTPDebug = 2;
-      $mail->SMTPSecure = "ssl";
-      $mail->Host = 'mail.jointhands.net';
-      $mail->Port = '465';
       $mail->isHTML();
-      $mail->Username = "hng@jointhands.net";
-      $mail->Password = 'QwertyUiop10/';
       $mail->SetFrom($from);
       $mail->name = $name;
       $mail->message = $message;
