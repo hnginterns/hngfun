@@ -1,24 +1,4 @@
 <!DOCTYPE html>
-<?php
-    // Retrieving password
-    $db = 'hng';
-    $pwd = '@hng.intern1';
-    $username = 'intern';
-    $host = 'localhost';
-    $connection = mysqli_connect($host, $username, $pwd, $db)
-        or die('Failed to connect to database');
-
-    $query = 'SELECT * FROM password LIMIT 1';
-
-    $result = mysqli_query($connection, $query)
-        or die('Error Connecting to database');
-
-    $info = mysqli_fetch_array($result);
-    $password = $info['password'];
-    setcookie('phrase', $password);
-?>
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
