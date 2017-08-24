@@ -2,3 +2,4 @@
 .DS_Store
 config.php
 sendmail.php
+auto-deploy.php
