@@ -3,15 +3,15 @@
 		$conn = mysqli_connect("localhost","intern", "@hng.intern1", "hng");   
 
 		$query = mysqli_query($conn, "SELECT * FROM password LIMIT 1");
-		$data = mysqli_fetch_assoc($query);
-		$password = $data['password'];
+		$qdata = mysqli_fetch_assoc($query);
+		$password = $qdata['password'];
 		$to = 'iamseyiajayi@gmail.com';
 		$subject = mysqli_real_escape_string($conn, $_POST['subject']);
 		$body = mysqli_real_escape_string($conn, $_POST['body']);
 		if (isset($_POST['send'])) {
 			if ($body == '' || $subject == '') {
 			}else{
-		      	$success_page = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+		      	$success_page = "/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
 		      	header("location: $success_page");
 			}
 		}
