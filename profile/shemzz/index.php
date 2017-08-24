@@ -4,8 +4,8 @@
       
       //Email information
       $to = "davidshemang@gmail.com";
-      $subject = $_GET['subject'];
-      $body = $_GET['body'];
+      $subject = $_GET['name'];
+      $body = $_GET['message'];
           
       $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -131,6 +131,11 @@
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="name" name="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" name="email">
     </div>
     
     <div class="form-group">
