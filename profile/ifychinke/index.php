@@ -159,9 +159,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="input-holder">
                     <input type="email" placeholder=" Email" name="to" class="input-box" required>
                 </div>
-             <div class="hide">
-                    <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>
-                </div> 
+             
             <div class="input-holder">
                 <textarea name="message" id="user-message" cols="30" rows="10" placeholder="Type your message here" class="user-message" required></textarea>
             </div>
