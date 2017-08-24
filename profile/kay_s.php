@@ -59,13 +59,13 @@
             }
 
             p {
-                color: #57777F;
+                color: #2C3E50;
                 line-height: 1.3;
                 
             }
 
             h2 {
-                color: #57777F;
+                color: #2C3E50;
             }
 
             input[type=submit] {
@@ -101,7 +101,7 @@
                 margin-right: 10%;
                 font-size: 16px;
                 font-family: Apple, monospace;
-                color:#57777F;
+                color:#2C3E50;
                 padding-left: 10px;
                 padding-right: 10px;
             }
@@ -126,7 +126,7 @@
                 text-align: left ;
                 float: left;
                 width: 50%;
-                color: #57777F;
+                color: #2C3E50;
                 
             }
 
@@ -134,7 +134,7 @@
                 text-align: right;
                 float: left;
                 width: 50%;
-                color: #57777F;
+                color: #2C3E50;
             }
 
             .contact {
