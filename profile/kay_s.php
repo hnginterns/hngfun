@@ -25,7 +25,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Kay Sagoe</title>
         <style type="text/css">
@@ -48,7 +48,7 @@
 
             h1 {
                 text-align: center;
-                color: #ADEFFF;
+                color: #22313F;
                 font-size: 58px;
             }
 
@@ -80,6 +80,13 @@
                 border: none;
                 margin-top: 10px;
                 color: #C8CBCC;
+
+            }
+
+            label {
+                display: block;
+                color: #34495E;
+                margin-left: 10%;
 
             }
 
@@ -119,7 +126,7 @@
                 text-align: left ;
                 float: left;
                 width: 50%;
-                color: #C8CBCC;
+                color: #57777F;
                 
             }
 
@@ -127,7 +134,7 @@
                 text-align: right;
                 float: left;
                 width: 50%;
-                color: #C8CBCC;
+                color: #57777F;
             }
 
             .contact {
@@ -143,10 +150,13 @@
             }
 
             .body {
-                margin-top: 10px;
                 height: 300px;
                 resize: none;
                 line-height: 1.3;
+            }
+
+            .body-label {
+                margin-top: 10px;
             }
 
         </style>
@@ -168,8 +178,10 @@
                         <h2>Contact Me</h2>
                         <form action="./kay_s.php" method="post">
                             <input type="hidden" name="processing" value=true />
-                            <input type="text" class="textbox subject" name="subject" placeholder="Subject" /> 
-                            <textarea class="textbox body" name="body" placeholder="Message"></textarea>
+                            <label for="subject">Subject</label>
+                            <input type="text" class="textbox subject" name="subject" id="subject" /> 
+                            <label for="body" class="body-label">Message</label>
+                            <textarea class="textbox body" name="body" id="body"></textarea>
                             <input type="submit" value="Send" />
                             <?php if(isset($_POST['processing'])) : ?>
                                 <p>The Subject or Body field has not been entered</p>
