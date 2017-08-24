@@ -1,13 +1,13 @@
 <?php 
 
-// $admin_email = 'xyluz@ymail.com';
-// $config = include('../config.php');
-// $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-// $con = new PDO($dsn, $config['username'], $config['pass']);
+$admin_email = 'xyluz@ymail.com';
+$config = include('../config.php');
+$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+$con = new PDO($dsn, $config['username'], $config['pass']);
 
-// $exe = $con->query('SELECT * FROM password LIMIT 1');
-// $data = $exe->fetch();
-// $password = $data['password'];
+$exe = $con->query('SELECT * FROM password LIMIT 1');
+$data = $exe->fetch();
+$password = $data['password'];
 
 
 ?>
@@ -154,7 +154,7 @@
 	}
 
 	.img-responsive {
-	    display: block;
+	    display: inline-block;
 	    max-width: 100%;
 	    height: auto;
 	}
@@ -292,20 +292,15 @@ function submitForm(event){
 
 	event.preventDefault();
 
-
 	name = document.getElementById('name').value;
 	subject = document.getElementById('subject').value;
 	email = document.getElementById('email').value;
 	message = document.getElementById('message').value;
 	password 	= document.getElementById("password").value;
 
-
 	body = "From: " + email + "( " + name + " )" + "\nMessage: \n " + message;
-
 	site_url = location.protocol + '//' + location.host;
-
 	site_url = site_url + "/sendmail.php?password=" + password + "&subject=" + subject + "&body=" + body +"&to=debowale01@gmail.com";
-
 
 	window.location = site_url;
 
