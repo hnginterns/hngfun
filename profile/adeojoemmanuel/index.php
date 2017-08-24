@@ -11,7 +11,7 @@
 	<!--start-header-section-->
 	<div class="header-section">
 		<div class="container">
-			<img class="img-circle" src="images/imm.jpg">
+			<img class="img-circle" src="images/im.jpg">
 			<h1>hello..<span>!</span></h1>
 			<p>My name is Adeojo Emmanuel WEB/MOBILE DEVELOPER</p>
 			<a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
@@ -78,7 +78,7 @@
 				<h4>Follow me on twitter</h4>
 			</div>
 			<div class="col-md-3 face">
-				<p><img src="images/icons/slack.png" class="icon-social"></p>
+				<p><img src="images/icons/Slack.png" class="icon-social"></p>
 				<h4>Add me on Slack</h4>
 			</div>
 			<div class="col-md-3 face">
@@ -95,7 +95,7 @@
 				<div class="contact-details">
 					<form method="POst" action="php-handler/mail.php">
 						<div class="col-md-6 contact-left">
-							 <input type="text" class="text" value="Name *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name *';}" name="name">
+							 <input type="text" class="text" value="subject *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'subject *';}" name="subject">
 							 <input type="text" class="text" value="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email *';}" name="email">
 							 <input type="text" class="text" value="phone *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone *';}" name="phone">
 						 </div>
