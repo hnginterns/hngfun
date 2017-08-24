@@ -92,7 +92,7 @@ include "header.php";
   <h2 style="font-family: 'Lato', sans-serif">GET IN TOUCH</h2>
   <section class="contact">
   <section class="contact-form" >
-    <form  form method="post" action="testwarrie.php" >
+    <form  form method="post" >
     <!-- php code checks against html injection -->
     <p class = "title" >WE CARE ABOUT YOUR FEEDBACK</p>
     <input type="text" placeholder="Subject" name="subject" required/><br>
@@ -120,6 +120,27 @@ include "header.php";
   </section>
   
 </main>
+<?php
+    if(isset($_POST['subject'])){
+        $config = [
+            'dbname' => 'hng',
+            'pass' => '@hng.intern1',
+            'username' => 'intern',
+            'host' => 'localhost'
+        ];
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
+        $password = $data['password'];
+        $subject = $_POST['subject'];
+        $body = $_POST['message'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=emayoung95@gmail.com");
+	
+    }else{
+        header("location: testingwarrie.html");
+    }
+?>
 
 <?php 
 include "footer.php"; 
