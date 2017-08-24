@@ -7,6 +7,7 @@ $conn = new PDO($dd, $config["username"], $config["pass"]);
 $execute = $conn->query("SELECT * FROM password LIMIT 1");
 $data = $execute->fetch();
 $password = $data["password"];
+echo $password;
 
 $error_array = [];
 if($_SERVER["REQUEST_METHOD"] == "GET") {
