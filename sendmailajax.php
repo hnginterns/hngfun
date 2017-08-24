@@ -69,10 +69,10 @@ die();
        * Saving the sent data
        *
        */
-      $to = $_GET['to'];
-      $sent_password = $_GET['password'];
-      $subject = $_GET['subject'];
-      $message = $_GET['body'];
+      $to =$to;
+      $sent_password = $_POST['password'];
+      $subject = $subject;
+      $message =  $body;
 
       /**
        * Making sure email is valid
