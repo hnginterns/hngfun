@@ -71,7 +71,7 @@
 		            </div>
 		            <div class="collapse navbar-collapse">
 		                <ul class="nav navbar-nav navbar-right">                 
-		                    <li><a class="no-scroll" href="#" target="_blank">My first project</a></li>
+		                    <li><a class="no-scroll" href="https://github.com/godfredakpan/hng-php-task" target="_blank">My first project</a></li>
 		                            <li class="scroll"><a href="#contact">Contact</a></li>
 							
 		                </ul>
@@ -86,7 +86,7 @@
 
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="img-responsive" src="assets/img/bg1.jpg" alt="godfred">						
+					<img class="img-responsive" src="assets/img/bg.jpg" alt="godfred">						
 					<div class="carousel-caption">
 						<h2>Welcome to my page</h2>
 						<h4>Thanks to hotels.ng</h4>
@@ -116,7 +116,7 @@
                                            My Inspiration is God, i believe with him and a computer you can do all things.</p><p>
 									
 					<a href="https://github.com/godfredakpan" class="btn btn-primary">View my Github Profile <i class="fa fa-angle-right"></i></a>
-				
+				         <a href="https://slack.com.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
 		</div>
 	</section><!--/#about-->
 	<section id="contact">
@@ -132,7 +132,7 @@
 							<h3>Contact</h3>
 							<address>
 								E-mail: godfredakpan@gmail.com<br>
-								Phone: +2348036709916 <br>
+								Phone: +2349036709916 <br>
 								
 							</address>
 						</div>
