@@ -7122,6 +7122,26 @@ include('header.php');
         </div>
     </div>
  <!---  Each Participants ends here  -->
+	    
+	     <div class="p-card">
+        <div class="v-center">
+            <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/1d859b25d5); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="http://hng.fun/profile/nsikakjon.html">
+                    <!--Profile Link-->
+                    <h3 class="p-card-title">Nsikak John</h3>
+                    <!--Profile Name-->
+                </a>
+                <p class="p-card-description">nsikak.jon@gmail.com</p>
+            </div>
+            <div class="p-team">
+                <a href="#">
+                    <h3 class="p-card-title"> Team 1</h3>
+                    <!--Team-->
+                </a>
+            </div>
+        </div>
+    </div>
 
 
     </div>

@@ -86,9 +86,8 @@ include "header.php";
   }
 
 </style>
-<main class="m-container">
-<iframe src=https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary"" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  
+
+<main class="m-container"> 
   <div class="underlay"></div>
   <h2 style="font-family: 'Lato', sans-serif">GET IN TOUCH</h2>
   <section class="contact">
@@ -119,7 +118,17 @@ include "header.php";
   </section>
   
   </section>
-
+<?php
+echo "entered php";
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+  //checks if it's a post request from the form
+  echo "post is true";
+  if(isset($_POST["name"])){
+    $filename = $_POST["name"];
+    echo "name $filename";
+}
+}
+?>
   
 </main>
 
