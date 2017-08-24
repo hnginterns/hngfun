@@ -71,7 +71,7 @@
                         <hr>
 
                         <h2 class="about-header">Send Me a Message</h2>
-                        <form action="" method="GET">
+                        <form action="" method="POST">
 
                             <div class="form-group">
                                 <input type="text" id="subject" name="subject" class="form-control">
