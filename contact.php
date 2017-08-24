@@ -163,7 +163,7 @@ include "header.php";
   <section class="contact-form" >
     <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" >
     <!-- php code checks against html injection -->
-    <p class = "title" >WE CARE ABOUT YOUR FEEDBACK!</p>
+    <p class = "title" >WE CARE ABOUT YOUR FEEDBACK</p>
     <input type="text" placeholder="Name" name="name" required/><br>
     <input type="email" placeholder="Email" name="email" required/><br>
     <textarea name="message" id="message" cols="30" rows="5" placeholder="Write your message here" name = "message" required></textarea><br>
@@ -173,7 +173,7 @@ include "header.php";
   <section class="contact-info">
     <div>
       <p class= "title">OFFICE ADDRESS</hp>
-      <p class = "subheading-text"><span><i class="fa fa-map-marker"></i></span><span>No 3, Birrel Avenue, Off Herbert Macaulay way, Sabo, Yaba Lagos, Lagos State</span></p>
+      <p class = "subheading-text"><span><i class="fa fa-map-marker"></i></span><span>No 3, Birrel Avenue, Off Herbert Macaulay way, Sabo, Yaba Lagos</span></p>
       <p class = "subheading-text"><span><i class="fa fa-phone"></i></span><span>+234-700-880-8800</span></p>
       <p class = "subheading-text"><span><i class="fa fa-envelope-o"></i></span><span>internship@hotels.ng</span></p>
     </div>
