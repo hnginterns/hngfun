@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';
     }
-
+ 
 
     if($subject == '' || $subject == ' ') {
         $error[] = 'Subject cannot be empty.';

@@ -1,49 +1,21 @@
 <!DOCTYPE html>
+
 <html>
     <head>
+        <meta charset="utf-8">
         <title>My Profile</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+        
+        <style>
     
-<body>
-    <br/><br/>
-<div class="card">
-
-  <img class="pic" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/68974_10152436318932507_4812031675029555855_n.jpg?oh=8fbedbcfe40fd0b090fc154f0e3758c2&oe=5A187A17" alt="Obi.jpg" style="width:100%">
-    
-  <div class="container">
-    <h1>Obinna Walker</h1>
-      
-    <p class="title">Programmer & Cloud Developer</p>
-    <p>I am adept at quite a plethora of programming and scripting languages like Java, PHP, AngularJS, HTML, CSS and many more. I treat Programming like an artisan that requires  a deft mind where one should be unnecessarily verbose to beffudle the art students.</p>
-    <a href="www.twitter.com"><i class="fa fa-twitter"></i></a> 
-    <a href="#"><i class="fa fa-linkedin"></i></a> 
-    <a href="www.facebook.com"><i class="fa fa-facebook"></i></a> 
-    <p><button onclick="myFunction()">Contact</button></p>
-  </div>
-    <div id="myDIV">
-        Slack: @obiwalker </br>
-        Github: ObieWalker
-    </div>
-    <br/>
-    
-    <p><a href="https://github.com/ObieWalker/phpwork"> Link to Stage One Tasks</a> </p>
-    
-    <br/><br/><br/>
-</div>
-
-</body>
-    
-<style>
-    
-    
-body {
+body{
         
     background: url("http://images.all-free-download.com/images/graphiclarge/clouds_in_sky_background_192377.jpg");
     background-repeat: no-repeat;
     background-size: cover;
         
     }
+    
 .pic{
         
     border-radius: 50px;  
@@ -89,9 +61,86 @@ a {
 button:hover, a:hover {
     opacity: 0.7;
 }
+
+#name{
+     border-radius: 4px;
+    height: 30px;
+            }
+#subject{
+     border-radius: 4px;  
+    height: 30px;
+            }
+#message{
+       border-radius: 5px;         
+            }
+#submit_button{
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+                
+}     
+#submit_button:hover {
+   background-color: #3e8e41;
+            
+}          
+            
+#submit_button:active{
+	background-color: #3e8e41;
+	transform: translateY(4px);
+	
+}
 </style>
+    </head>
     
+<body>
+    <br/><br/>
+<div class="card">
+
+  <img class="pic" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/68974_10152436318932507_4812031675029555855_n.jpg?oh=8fbedbcfe40fd0b090fc154f0e3758c2&oe=5A187A17" alt="Obi.jpg" style="width:100%">
     
+  <div class="container">
+    <h1>Obinna Walker</h1>
+      
+    <p class="title">Programmer & Cloud Developer</p>
+    <p>I am adept at quite a plethora of programming and scripting languages like Java, PHP, AngularJS, HTML, CSS and many more. I treat Programming like an artisan that requires  a deft mind where one should be unnecessarily verbose to beffudle the art students.</p>
+    <a href="www.twitter.com"><i class="fa fa-twitter"></i></a> 
+    <a href="#"><i class="fa fa-linkedin"></i></a> 
+    <a href="www.facebook.com"><i class="fa fa-facebook"></i></a> 
+    <p><button onclick="myFunction()">Contact Info</button></p>
+  </div>
+    <div id="myDIV">
+        Slack: @obiwalker <br/>
+        Github: ObieWalker
+    </div>
+    <br/>
+    
+    <p><a href="https://github.com/ObieWalker/phpwork"> Link to Stage One Tasks</a> </p>
+    
+    <br/><br/>
+    
+    <h1>Contact Form</h1>
+    <form id="contact_form" action="ObinnaWalker.php" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="email"></label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" placeholder="Your Email"/><br />
+	</div>
+	<div class="row">
+		<label for="subject"></label><br />
+		<input id="subject" class="input" name="subject" type="text" value="" size="30" placeholder="Subject"/><br />
+	</div>
+	<div class="row">
+		<label for="message"></label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30" placeholder="Your message"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" name="submit"/>
+</form>		
+    
+    <br/>
+</div>
+
+
     
 <script>
     
@@ -104,5 +153,6 @@ function myFunction() {
     }
 }    
     
-</script>    
+</script> 
+</body>
 </html>

@@ -1,3 +1,37 @@
+<?php
+
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $subject = $_POST['subject'];
+    $to  = $_POST['to'];
+    $body = $_POST['message'];
+
+
+    $config = include('../../config.php');
+    $server = $config['host'];
+    $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
+
+    if (!$con) {
+      die("Connection failed: ".mysqli_connect_error());
+  }
+
+    $sql = 'SELECT * FROM password LIMIT 1';
+
+    if($result = mysqli_query($con, $sql)) {
+      $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
+      $password = $data['password'];
+    } else {
+        $password = "#";
+    }
+
+
+    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+    header("location: $uri");
+
+  }
+
+?>
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8" />
@@ -7,7 +41,7 @@
         <script src="https://use.fontawesome.com/0b7956cb33.js"></script>
     </head>
     <style type="text/css">
-    	@import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
+        @import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
 html, body {
   height: 100%;
   margin: 0;
@@ -129,40 +163,41 @@ ul, li{
 }
     </style>
     <body>
-		<div class="container">
-			<div class="container2">
-				<div class="left1"></div>
-				<div class="right1">
-					<h3>Akindolie Oluwatayo</h3>
-					<p class="bio">
-						I'm Akindolie Oluwatayo - Web developer from Nigeria.<br>
+        <div class="container">
+            <div class="container2">
+                <div class="left1"></div>
+                <div class="right1">
+                    <h3>Akindolie Oluwatayo</h3>
+                    <p class="bio">
+                        I'm Akindolie Oluwatayo - Web developer from Nigeria.<br>
 
-						I code in HTML, CSS, JS & PHP.<br>
-						I have worked with brands such as Samsung, Bridge House College, Softnvtion, LMUN, Who Sabi Cook, ShopinLagos, Guestlist, Naija Butcher, City Bridge Sportsplex and For The Culture.<br>
-						To reach me, send me an email at <a href="mailto:hello@tayo.com.ng">hello@tayo.com.ng</a> or use the contact form below.
-					</p>
-					<ul>
-						<li>
-							<i class="fa fa-slack fa-2x"></i><br>
-							@akindolietayo
-						</li>
-						<li style="padding-top: 25px;">
-							<i class="fa fa-link fa-2x"></i><br>
-							<a href="https://github.com/its-tayo/getting-started-h2-2017" target="_blank">https://github.com/its-tayo/getting-started-h2-2017</a>
-						</li>
-					</ul>
+                        I code in HTML, CSS, JS & PHP.<br>
+                        I have worked with brands such as Samsung, Bridge House College, Softnvtion, LMUN, Who Sabi Cook, ShopinLagos, Guestlist, Naija Butcher, City Bridge Sportsplex and For The Culture.<br>
+                        To reach me, send me an email at <a href="mailto:hello@tayo.com.ng">hello@tayo.com.ng</a> or use the contact form below.
+                    </p>
+                    <ul>
+                        <li>
+                            <i class="fa fa-slack fa-2x"></i><br>
+                            @akindolietayo
+                        </li>
+                        <li style="padding-top: 25px;">
+                            <i class="fa fa-link fa-2x"></i><br>
+                            <a href="https://github.com/its-tayo/getting-started-h2-2017" target="_blank">https://github.com/its-tayo/getting-started-h2-2017</a>
+                        </li>
+                    </ul>
                     <div class="form-container">
-                        <form action="process.php" method="GET">
-                            <!--<input type="hidden" name="password" class="form-input">-->
+                        <form action=" " method="POST">
+                            <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+                            <input type="hidden" name="to" value="akindolietayo@gmail.com">
                             <input type="text" name="subject" placeholder="Subject " class="form-input" required="">
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="">-->
                             <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
                             <input type="submit" name="submit" value="SEND" class="form-submit" required="">
                         </form>    
                     </div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
     </body>
 </html>

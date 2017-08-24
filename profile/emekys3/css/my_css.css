@@ -1,50 +1,97 @@
-html
-{
-	background-color: blue;
+#full_page{
+	background-color: black;
 }
 .mainsection
 {
-	height: 900px;
+	height: 1250px;
 	width: auto;
-    background-color: yellow;
+    background-color: lightgray;
     border: 2px solid;
-    margin: 5em;
-
+    margin: 15em;
+    margin-top: 2em;
 }
 .mainsection p
 {
 	font-style: bold;
 	font-family: "Great Vibes" cursive,sans-serif;
-	fornt-size:20px;
+	font-size:20px;
 	font-weight: normal;
-	color: green;
+	color: black;
 	border: 1px;
 	padding:50px 50px;
+	text-align: justify;
 }
 .mainsection h1
 {
+	line-height: 0px;
 	color:black;
 	font-family: monospace;
+	font-size:30px;
+	font-style: italic;
 }
-.mainsection h3
+#p_mainsection
 {
 	font-family:"Great Vibes", cursive;
-	font-size: 50px;
-	line-height: 50px;
+	font-size:40px;
+	line-height: 2px;
 	font-weight: normal;
 	text-shadow: 0 1px 1px #fff;
+	text-align: center;
+	color:black;
 }
-img
+#img_size
 {
-	width:200px;
-	height:200px;
-	transform: rotate(90deg);
+	width:300px;
+	height:500px;
+	transform: rotate(360deg);
 	display:block;
 	margin:auto;
+	padding:0em;
 }
 #firstsection
 {
 	height:50px;
 	width:auto;
 	text-align: center;
+}
+
+.link{
+	
+    padding-top: 20px;
+    margin-left: 300px;
+	height:100px;
+    width: auto;
+	text-align: center;
+}
+
+a {
+	margin-top: 2em;
+	width: auto;
+	text-align: center;
+	text-decoration: none;
+}
+a:visited{
+	color:green;
+}
+
+a:hover{
+	color:pink;
+}
+
+.img_container{
+    float: left;
+    margin-top: 0px;
+}
+#slack_img{
+    margin-left:350px;
+    border-radius: 25px;
+}
+#twit_img{
+    margin-left: 60px;
+    border-radius: 25px;
+}
+.social_media {
+    text-align: center;
+    padding-top: 2em;
+    font-size: 30px;
 }
