@@ -22,7 +22,7 @@
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "http://hng.fun/sendmail.php?to=$admin_email&body=$body&subject=$subject&password=$password";
+      $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
       header("location: $uri");
 
     }
