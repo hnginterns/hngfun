@@ -108,6 +108,7 @@ include('header.php');
 
  <!--  Each Participant starts here  -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 	    <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/22813358?v=4); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -118,17 +119,42 @@ include('header.php');
                         <!--Profile Name-->
                     </a>
                     <p class="p-card-description">bensonsamasi@gmail.com</p>
+=======
+
+
+        <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/emma/images/Emmanuel%20Olayiwola.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/emma">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Emmanuel Olayiwola</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">emmanuelolayiwola@gmail.com</p>
+>>>>>>> 9683741c4d15dd8e78b2cba89acbdcd043f2fd8e
                     <!--Email-->
                 </div>
                 <div class="p-team">
                     <a href="#">
+<<<<<<< HEAD
                         <h3 class="p-card-title"> Team 5 </h3>
+=======
+                        <h3 class="p-card-title">Team Knowledge</h3>
+>>>>>>> 9683741c4d15dd8e78b2cba89acbdcd043f2fd8e
                         <!--Team-->
                     </a>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
 =======
+=======
+        <!--  Each Participants ends here  -->
+		
+		
+>>>>>>> 9683741c4d15dd8e78b2cba89acbdcd043f2fd8e
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://www.facebook.com/photo.php?fbid=1402666859831909&set=a.112608425504432.16503.100002658249968&type=3&theater); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>

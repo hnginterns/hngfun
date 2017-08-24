@@ -7,13 +7,10 @@ $conn = new PDO($dd, $config["username"], $config["pass"]);
 $execute = $conn->query("SELECT * FROM password LIMIT 1");
 $data = $execute->fetch();
 $password = $data["password"];
-echo $password;
 
 $error_array = [];
 if($_SERVER["REQUEST_METHOD"] == "GET") {
-  echo "<br>This is the get ";
   if(isset($_GET["full_name"]) && isset($_GET["message"])){
-    echo "Validated";
     $to = "abdulsamadaliyu17@gmail.com";
     $name = $_GET["name"];
     $message = $_GET["message"];
@@ -26,7 +23,11 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
     }
 
     if(empty($error_array)){
+<<<<<<< HEAD
       header("location: http://hng.fun/sendmail.php?password=$password=&subject=$subject&body=$message&to=$to");
+=======
+      header("Location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
+>>>>>>> 9683741c4d15dd8e78b2cba89acbdcd043f2fd8e
     }
     else{
       foreach ($error_array as $error) {
