@@ -1,25 +1,11 @@
-
-
 <?php
-$host = "localhost";
-$username = "intern";
-$password = "@hng.intern1";
-$db = "hng";
-// Create connection
-$conn = mysql_connect($host, $username, $password);
-$db =  mysql_select_db($db);
-// Check connection
-if (!$conn) {
-    die("Connection failed");
-}
+$config = include('../config.php');
+$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+$con = new PDO($dsn, $config['username'], $config['pass']);
 
-
-$query = "SELECT * FROM password";
-mysql_query($query) or die('Error querying database.');
-
-$result = mysql_query($query);
-$row = mysql_fetch_array($result);
-$password = $row['1'];
+$exe = $con->query('SELECT * FROM password LIMIT 1');
+$data = $exe->fetch();
+$password = $data['password'];
 
 ?>
 
@@ -31,9 +17,9 @@ $password = $row['1'];
 <style>
 /*profile*/
 .main-content {
-	margin: 50px 50px;  
-	background-color: #f2f2f2; 
-	padding: 20px; 
+  margin: 50px 50px;  
+  background-color: #f2f2f2; 
+  padding: 20px; 
 }
 .main-content img {
    float: left;
@@ -41,7 +27,7 @@ $password = $row['1'];
 }
 
 .drop {
-	float: left;
+  float: left;
    padding: 0 20px 20px 0;
 }
 
@@ -76,7 +62,7 @@ input[type=submit] {
     cursor: pointer;
 }
 .container {
-	margin: 50px 50px;  
+  margin: 50px 50px;  
 
 }
 
@@ -84,7 +70,7 @@ input[type=submit] {
 </head>
 <body>
 
-<h1 style="text-align:center"> My Profile</h1>	
+<h1 style="text-align:center"> My Profile</h1>  
 <div class="main-content">
   
   <img src="http://i.imgur.com/GoB8b5q.jpg" alt="profile pic" />
