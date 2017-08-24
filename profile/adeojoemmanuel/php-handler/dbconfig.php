@@ -1,11 +1,11 @@
 <?php 
 class connect{
     public function __construct(){
-        $config = require_once __DIR__ . '\config.php';
-        $this->dbhost = $config['host'];
-        $this->dbuser = $config['username'];
-        $this->dbpass = $config['pass'];
-        $this->dbname = $config['dbname'];
+        $dbconfig = require_once __DIR__ . '\config.php';
+        $this->dbhost = $dbconfig['host'];
+        $this->dbuser = $dbconfig['username'];
+        $this->dbpass = $dbconfig['pass'];
+        $this->dbname = $dbconfig['dbname'];
     }
 
     private $dbhost ;
