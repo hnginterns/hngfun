@@ -1,12 +1,12 @@
 <?php
 
-	if($_SERVER["REQUEST_METHOD"] == "POST")
+	if($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
 		$name = $_POST['name'];
 		$subject = $_POST['subject'];
-		$to = "alabujadaniel@gmail.com";
+		$to = 'alabujadaniel@gmail.com';
 		$from = $_POST['email'];
-		$message = $_POST['message'];
+		$body = $_POST['body'];
 	    if(empty($subject))
 	    {
 	    	echo "Subject is Empty!!!";
@@ -19,7 +19,7 @@
 	    {
 	    	echo "Email is Empty!!!";
 	    }
-	    elseif (empty($message))
+	    elseif (empty($body))
 	    {
 	    	echo "Message is Empty!!!";
 	    }
@@ -33,7 +33,9 @@
 	    	$data = $execute->fetch();
 	    	$password = $data['password'];
 
-	    	header("location: /sendmail.php?password=$password&to=$to&subject=$subject&name=$name&from=$from&message=$message");
+            $sent_url = "/sendmail.php?to=$to&subject=$subject&name=$name&from=$from&body=$body&password=$password";
+
+	    	header("location: $sent_url");
 	    }
 	}
 ?>
@@ -156,7 +158,7 @@
                             <input class="" type="email" name="email" placeholder="Enter your Email" required>
                         </div>
                         <div class="">
-                            <textarea name="message" rows="7" cols="23" placeholder="Enter you Message" required></textarea>
+                            <textarea name="body" rows="7" cols="23" placeholder="Enter you Message" required></textarea>
                         </div>
 
                         <button type="submit" name="send">Send Message</button>
