@@ -1,5 +1,4 @@
-#Ignore PHPStorm file
-*.idea
-.vscode/
+.idea
 .DS_Store
-.idea/
+config.php
+sendmail.php
