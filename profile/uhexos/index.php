@@ -66,7 +66,6 @@ $sql = "SELECT * FROM password LIMIT 1";
 $output = $connection->query($sql);
 $pass_key = mysqli_fetch_array($output)["password"];
   
-
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $name = test_input($_GET["name"]);
     $email = test_input($_GET["email"]);
