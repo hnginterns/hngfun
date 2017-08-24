@@ -78,8 +78,7 @@
 				margin-top: -45px;
 				padding-top: -900px;
 				font-family: 'Century';
-				padding-left: 80px;
-				padding-right: 80px;
+				
 				text-align: center;
 			}
 			 a:link {
