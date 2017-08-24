@@ -1,4 +1,4 @@
-﻿<?php  include "header.php" ?>
+<?php  include "header.php" ?>
 
 <div id="banner-content" class="row clearfix">
 
@@ -1015,6 +1015,27 @@
                     <div class="p-team">
                         <a href="#">
                             <h3 class="p-card-title"> Team 8 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+           <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/31213866?v=4&u=c66db4d8d0eb14ff46f4f579ef8a938d6bb4a291&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/maxwell4reel.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Nwafor Maxwell Chukwuebuka</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">spencemaxwell4@gmail.com</p>
+                        <!--Email-->
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 1 </h3>
                             <!--Team-->
                         </a>
                     </div>
