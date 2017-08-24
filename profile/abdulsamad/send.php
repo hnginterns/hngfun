@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
     $to = "abdulsamadaliyu17@gmail.com";
     $name = $_GET["name"];
     $message = $_GET["message"];
-    $from = $_GET["from"];
+    $from = $_GET["email"];
 
 
     if(!filter_var($to, FILTER_VALIDATE_EMAIL)){
