@@ -1,7 +1,8 @@
 img{
-	width: 30%;
+	width: 200px;
+	height: 200px;
 	border-style: solid;
-	border-radius: 100%;
+	border-radius: 300px;
 	border-width: 0;
 	box-shadow: 0 3px 20px black;
 	background-color: black;
@@ -9,7 +10,8 @@ img{
 
 body{
 	background-image: url(hng.jpg);
-	background-size: contain;
+	background-size:cover;
+	background-position: center;
 }
 
 .hng{
@@ -32,9 +34,12 @@ body{
 
 p{
 	margin: 0 10% 2em;
-	text-align: center;
+	text-transform: capitalize;
+	text-align: left;
 	font-style: normal;
 	font-family: "times new roman";
+	background-color: gray;
+	padding: 3em 5%;
 }
 
 .hng h1{
@@ -47,17 +52,20 @@ p{
 }
 
 .profile span{
-	color: white;
+	color: brown;
 }
 
 .bio span{
-	color: red;
+	color: white;
+	font-style: italic;
+	font-weight: bold;
 }
 
 h5{
-	background-color: gray;
+	background-color: white;
 	padding: 2em 0;
 	margin: 2em 20em;
+	box-shadow: 3px 3px 30px rgba(0,0,0,0.5);
 
 }
 
