@@ -68,8 +68,7 @@ return 'Message: ' .$e->getMessage();
    
 try {
 
-        $uri = "/sendmasil.php?to=$to&body=$body&subject=$subject&password=$password";
-
+        $uri = "/sendmailajax.php?to=$to&body=$body&subject=$subject&password=$password";
 
 }
 
