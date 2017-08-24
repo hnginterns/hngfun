@@ -142,7 +142,7 @@
       <label for="message">Message:</label>
       <textarea class="form-control" rows="5" id="message" name="message"></textarea>
     </div>
-    <button style="margin: 0px auto;" type="submit" class="btn btn-default">Send</button>
+    <button style="margin: 0px auto;" name="submit" type="submit" class="btn btn-default">Send</button>
   </form>
 
 
