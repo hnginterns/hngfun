@@ -42,6 +42,8 @@
     <title>Tiwa Profile</title>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
 	<!-- Style -->
 	<style>
@@ -140,7 +142,7 @@
   <body>
   		<div class="flex-center position-ref full-height">
 			 <div class="content">
-			     <img style="-moz-opacity:0.4;" src="https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/16681646_1263674723725886_3249389777281568213_n.jpg?oh=8e916840484be65726588e247c6a4473&oe=5A2C13A6" alt="display" height="200"/>
+			     <img src="https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/16681646_1263674723725886_3249389777281568213_n.jpg?oh=8e916840484be65726588e247c6a4473&oe=5A2C13A6" alt="display" height="200"/>
 				 	<div class="title m-b-md shadow-multiple">
 					  Ijaware Tiwaloluwa
 					</div>
@@ -151,20 +153,19 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-					<form action="/sendmail.php" method="GET" enctype="multipart/form-data" name="EmailTestForm">
+					<form action="/sendmail.php" method="GET" class="floating-labels" name="EmailTestForm">
+					   <fieldset>
+    					  Name:<br>
+    					  <input class="user" type="text" size="20" name="Name"><br><br>
 
-    First Name:<br>
-    <input type="text" size="20" name="VisitorName"><br><br>
+    					  Message:<br>
+						  
+    					  <textarea class="Message" name="Message" rows="4" cols="20">
+    					  </textarea><br><br>
 
-    Email Address:<br>
-    <input type="text" size="20" name="EmailAddress"><br><br>
-
-    Your Comment:<br>
-    <textarea name="VisitorComment" rows="4" cols="20">
-    </textarea><br><br>
-
-    <input type="submit" value="Email This Form">
-	</form>
+    					  <div><input type="submit" value="Send Message"></div>
+					   </fieldset>  
+					</form>
 			 </div>
 
 		</div>
