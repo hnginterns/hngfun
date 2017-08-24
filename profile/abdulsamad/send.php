@@ -23,6 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
     }
 
     if(empty($error_array)){
+      $message = urlencode($message);
       header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
     }
     else{
