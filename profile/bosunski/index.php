@@ -198,7 +198,7 @@
         <?php endif; ?>
         <form class="bosunski_form" action="" method="POST">
           <label for="subject" class="bosunski-label">Subject</label>
-          <input id="subject" type="text" name="subject" placeholder="Your Name" required>
+          <input id="subject" type="text" name="subject" placeholder="Subject" required>
 
           <label for="message" class="bosunski-label">Your Message</label>
           <textarea id="message" name="message" rows="8" cols="50" placeholder="Your Message" required></textarea>

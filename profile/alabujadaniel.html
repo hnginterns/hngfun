@@ -48,29 +48,42 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
+            .links > p.name {
+                font-size: 17px;
+            }
 
             .image {
                 margin-bottom: 30px;
             }
             .pic
             {
-            	height: 200px;
-            	width: 200px;
-            	border-radius: 50%;
+            	max-width: 100%;
+                height: auto;
+                border-radius: 2px;
             }
+            /*.flex-center > .contact-form{
+                margin-top: 20px;
+                text-align: center;
+            }*/
+            .flex-center h3{
+                font-size: 20px;
+                font-weight: 500;
+                text-align: center;
+            }
+            
         </style>
-    </head>
+    </head> 
     <body>
         <div class="flex-center position height">
             
 
             <div class="details">
                 <div class="title image">
-                    <img src="image/alabuja.jpg" alt="ALABUJA DANIEL" class="pic" />
+                    <img src="https://avatars3.githubusercontent.com/u/13226416?v=4&u=d40df71791764ddf3d7d34dac22e3915ad3b330d&s=400" alt="ALABUJA DANIEL" class="pic" />
                 </div>
 
                 <div class="links">
-                    <p><strong>Name: </strong>Daniel Alabuja</p>
+                    <p class="name"><strong>Daniel Alabuja</strong></p>
                     <p><strong>Slack Username: </strong> @alatech</p>
                     <p><a href="https://github.com/Alabuja/HNG-Test"><strong>Stage 1 (Github)</strong></a></p>
                     <p class="biography">
@@ -78,6 +91,36 @@
 
                     </p>
                 </div>
+            </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="flex-center position">
+            
+            <div class="details">
+                <div class="header">
+                    <h3>Speak to Me</h3>
+                </div>
+                <div class="contact-form">
+                    <form method="post" action="">
+                        <div class="">
+                            <input class="" type="text" name="subject" placeholder="Enter the Subject" required>
+                        </div>
+
+                        <div class="">
+                            <input class="" type="text" name="name" placeholder="Enter your namea" required>
+                        </div>
+                        <div class="">
+                            <input class="" type="email" name="email" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="">
+                            <textarea name="message" rows="7" cols="23" placeholder="Enter you Message" required></textarea>
+                        </div>
+
+                        <button type="submit" name="send">Send Message</button>
+                    </form>
+                </div>
+                
             </div>
         </div>
     </body>

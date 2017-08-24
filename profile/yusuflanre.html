@@ -389,8 +389,10 @@ input[type=submit]:hover {
 
             <div class="name">Olanrewaju Yusuf
                 <h3>Lagos, Nigeria</h3>
-                <h3> <a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i> Lanrewells </a>
-                </h3>
+             <a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i> Lanrewells </a><br>
+      		<p> <a href="https://twitter.com/lanrewells" target="_blank"><i class="fa fa-twitter dannys-slack-icon"></i>follow on twitter</a></p>
+                     
+               
 
             </div>
 
@@ -419,23 +421,31 @@ input[type=submit]:hover {
 
 
         <div class="container">
-            <form action="yusuflanre.html" method="post">
+            <form action="yusuflanre.php" method="post">
                 <h2>Contact Form</h2> 
-                <input type="text" id="fname" name="firstname" placeholder="Your firstname.."><br>
+                
+                
+              
+                
+                <p><input type="email" id="to" name="email" placeholder="email is required" required></p><br>
+
+                <p> <input type="text" id="subject" name="subject" placeholder="message subject"></p><br>
 
 
-                <p> <input type="text" id="lname" name="lastname" placeholder="Your lastname.."></p><br>
-
-
-                <p><input type="email" id="email" name="email" placeholder="email is required" required></p><br>
 
 
 
-                <p> <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea></p>
+                <p> <textarea id="body" name="body" placeholder="Write something.." style="height:100px"></textarea></p>
 
-                <p> <input type="submit" value="Submit"> </p>
+                
+                
+            
+
+                <p> <input type="submit" name="process" value="Submit"> </p>
             </form>
         </div>
     </div>
+		
+
 </body>
 </html>
