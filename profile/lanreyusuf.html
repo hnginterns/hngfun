@@ -1,0 +1,376 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    
+      @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,400,600);
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  height: 100%;
+  text-align: center;
+  background: url(http://weknowyourdreams.com/images/mountain/mountain-07.jpg) 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Time New Roman", "Helvetica Neue", Helvetica, Verdana, Tahoma, sans-serif;
+  letter-spacing: 2px;
+  line-height: 150%;
+  color: #fff;
+}
+[class*='col-'] {
+  margin-right: 15px;
+}
+[class*='col-']:last-of-type {
+  margin-right: 0;
+}
+    .col-1{
+        width: 100%
+    }
+    
+.col-1-4 {
+  width: 25%;
+}
+.col-1-3 {
+  width: calc(33.33333% - 10px);
+}
+.col-3-4 {
+  width: 75%;
+}
+[class*='col-'] {
+  float: left;
+}
+.content:first-of-type {
+  margin-top: 100px;
+}
+.sheath {
+  width: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(53,53,53, .4)), color-stop(100%, rgba(53,53,53, .6)));
+}
+.content {
+  opacity:0;
+  padding: 1px;
+  width: 100%;
+  margin: 0 auto;
+  background: -webkit-gradient(circle, left top, right top, color-stop(0%, rgba(89,120,145, .5)), color-stop(100%, rgba(141,149,167, .9)));
+    -webkit-animation: dropfade .3s ease-in 1s forwards; /* Safari and Chrome */ 
+       -moz-animation: dropfade .3s ease-in 1s forwards; /* Firefox */
+        -ms-animation: dropfade .3s ease-in 1s forwards; /* Internet Explorer */
+         -o-animation: dropfade .3s ease-in 1s forwards; /* Opera */
+            animation: dropfade .3s ease-in 1s forwards;
+}
+.skills {
+  text-align: right;
+  clear: both;
+}
+.skills p:nth-of-type(odd) {
+  color: white;
+  padding: 0 5px;
+  line-height: 2em;
+  background: #444;
+  display: inline-block;
+}
+.skills p:nth-of-type(even) {
+  font-weight: 600;
+  font-size: .7em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.skills p:last-of-type {
+  margin-bottom: 0;
+}
+.skills .a {
+  float: left;
+  width: 30%;
+}
+.skills .b {
+  float: left;
+  width: calc(70% - 10px);
+  margin-left: 10px;
+  background: rgba(141,149,167,.2);
+}
+
+.time {
+  height: calc(2em);
+  background: rgb(141,149,167);
+}
+.tricks {
+  display: inline-block;
+  padding: 20px;
+  color: #666;
+  opacity: 0;
+  width: 100%;
+  background: rgba(255,255,255,.8);
+  
+}
+.shmall {
+  font-size: .8em;
+  text-transform: uppercase;
+  text-spacing: 100%;
+  line-height: 1.1em;
+}
+.title {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+.stoveBreak {
+  width: 100%;
+  border-bottom: solid 2px;
+  margin: 1em 0;
+}
+.endroit {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 1em;
+}
+.cover {
+  position: absolute;
+  padding-top: 22px;
+  height: 130px;
+  width: calc((60% + 60px)/3 - 30px);
+  opacity: 0;
+  margin-left: 5px;
+  margin-top: -72px;
+  color: #fff !important;
+  background: rgb(141,149,167) !important;
+  border: 10px solid rgb(141,149,167);
+  -webkit-transition: .2s ease-in-out all;
+}
+
+
+.cover:hover:after {
+  left: -20px;
+  top: -20px;
+  border: 2px solid rgb(141,149,167);  
+  height: 150px;
+  width: calc(100% + 41px);
+}
+
+.cover:after {
+  content: '';  
+  left: -10px;
+  top: -10px;
+  position: absolute;   
+  border: 2px solid rgb(141,149,167);  
+  height: 130px;
+  width: calc(100% + 21px);
+  -webkit-transition: all .3s ease-in;
+}
+
+.stove:hover > .cover {
+  opacity: 1;
+  -webkit-transition: .7s ease-in-out all;
+}
+
+h3 {
+  position: relative;
+  font-size: .4em;
+  letter-spacing: 2px;
+  font-weight: 200;
+  top: 25px;
+}
+.dot {
+  padding: 65px 5px 5px 5px;
+  width: 45%;
+  background: rgba(255,255,255,.8);
+  height: 150px;
+  color: rgb(141,149,167);
+  position: relative;
+  margin-bottom: 30px
+}
+.dot.r {
+  width: calc((60% + 60px)*.45);
+  right: calc((100% - (60% + 60px)) / 2);
+  position: absolute;
+  margin-top: -100px
+}
+.dot.l:after {
+  content: '';
+  width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid rgba(255,255,255,.8);
+  right: -10px;
+  top: 10px;
+  position: absolute;   
+}
+.dot.r:after {
+  content: '';
+  width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid rgba(255,255,255,.8);
+  left: -10px;
+  top: 10px;
+  position: absolute;   
+}
+.stove {
+  padding: 65px 5px 5px 5px;
+  opacity: 0;
+  background: rgba(255,255,255,.8);
+  height: 150px;
+  color: rgb(141,149,167);
+  overflow: hidden;
+  -webkit-transition: .5s ease-in-out all;
+}
+
+.stove:hover {
+  color: rgba(0,0,0,0);
+  background: none;
+  cursor: pointer;
+  -webkit-transition: .2s ease-out all;
+}
+
+.stove:nth-of-type(2) {
+  -webkit-animation: fadein .2s ease-in 1.6s forwards;
+       -moz-animation: fadein .2s ease-in 1.6s forwards;
+        -ms-animation: fadein .2s ease-in 1.6s forwards;
+         -o-animation: fadein .2s ease-in 1.6s forwards;
+            animation: fadein .2s ease-in 1.6s forwards;
+}
+.stove:nth-of-type(3) {
+  -webkit-animation: fadein .2s ease-in 1.7s forwards;
+       -moz-animation: fadein .2s ease-in 1.7s forwards;
+        -ms-animation: fadein .2s ease-in 1.7s forwards;
+         -o-animation: fadein .2s ease-in 1.7s forwards;
+            animation: fadein .2s ease-in 1.7s forwards;
+}
+a {
+  color: #fff;
+  font-weight: 500; }
+.head {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+  min-height: 100%;
+}
+.name {
+  font-size: 3em;
+  letter-spacing: 5px;
+  font-weight: 600;
+  text-transform: Uppercase;
+  padding: 50px;
+  margin: 0 auto 5%;
+ 
+}
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  width: calc(60% + 60px);
+  margin: 0 auto 30px;
+}
+
+}
+
+.info {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 35px auto;
+  width: 90%;
+  position: relative;
+  padding: 18px 0;
+  font-size: 1em;
+  border-top: solid 2px ;
+  border-bottom: solid 2px ; }
+
+.me {
+  opacity: 0;
+  height: 160px;
+  width: 160px;
+  border-radius: 80px;
+  margin: 0 auto;
+  background:  url(https://avatars0.githubusercontent.com/u/30234677?v=4&u=7d8aff3bf9318de3eff4ce0764a72dcd15abbb3e&s=400) center; 
+    
+  background-size: cover;
+  margin-top: 0px;
+  position: relative; 
+    -webkit-animation: fadein .5s ease-in .8s forwards;
+       -moz-animation: fadein .5s ease-in .8s forwards;
+        -ms-animation: fadein .5s ease-in .8s forwards;
+         -o-animation: fadein .5s ease-in .8s forwards;
+            animation: fadein .5s ease-in .8s forwards;
+}
+
+.me:after {
+  content: '';  
+  position: absolute;   
+  border-radius: 800px;  
+  
+   -webkit-animation: boop .3s ease-out 1.2s forwards;
+       -moz-animation: boop .3 ease-out 1.2s forwards;
+        -ms-animation: boop .3 ease-out 1.2s forwards;
+         -o-animation: boop .3 ease-out 1.2s forwards;
+            animation: boop .3 ease-out 1.2s forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes dropfade {
+    from { opacity: 0; margin-top: 90px; }
+    to   { opacity: 1; margin-top: 110px; }
+}
+
+@keyframes boop {
+    from {  width: 160px;  
+            height: 160px;  
+            left: -1px; top: -1px; }
+    to   {  width: 180px;  
+            height: 180px;  
+            left: -12px; top: -12px; }
+}
+
+
+    </style>
+
+</head>
+
+<body>
+   
+<div class="sheath">
+<div id="body-wrapper">
+  
+  <div class="name">Olanrewaju Yusuf
+      <h3>Lagos, Nigeria</h3>
+      <h3> <a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i> Lanrewells </a>
+          </h3>
+    
+    
+    </div>
+  
+  <div class="row">    
+      <div class="content">
+        <div class="me"></div>
+        <div class="info">
+          <p>
+            Tending towards becoming a well groomed full stack developer who provides solutions to problems like its nothing...
+          </p>
+        </div>
+      </div> 
+  </div>
+  <div class="row">
+    <div class="col-1">
+      <div >
+          <h2>
+            <a class="title" href="https://github.com/hnginterns/task1"><i class="fa fa-github"></i> Stage 1</a>
+     
+          </h2>
+      
+        </div>
+      
+  </div>
+
+  </div></div>
+     </body>
+        </html>
