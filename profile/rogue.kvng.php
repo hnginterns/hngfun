@@ -1,15 +1,17 @@
-<?php 
-
-$config = include('../config.php');
-$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-$con = new PDO($dsn, $config['username'], $config['pass']);
-
-$exe = $con->query('SELECT * FROM password LIMIT 1');
-$data = $exe->fetch();
-$password = $data['password'];
-
-
-
+<?php
+      if (isset($_GET['send']))  {
+          //Email information here
+      $to = "swissking009@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['message'];    
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        }
 ?>
 <!DOCTYPE html>
 <html>
@@ -145,9 +147,8 @@ $password = $data['password'];
                         
 					</div>
 				 <div class="grid_col">
-                        <form>
-				<input type="hidden" name="_token"value="<?php echo $password; ?>">
-                            <div class="form">
+                        <form action="" method="GET">
+                        	<div class="form">
                                 <div class="grid_1">
                                     <input id="contact-name" class="grids" type="text" name="name" placeholder="Your Name">
                               
@@ -156,42 +157,16 @@ $password = $data['password'];
                                     <input id="contact-subject" class="grids" type="text" name="subject" placeholder="subject">
                                 </div>
                             </div>
+                            
                             <div class="form">
                                 <div class="grid_3">
                                     <textarea id="contact-body" class="textsarea" rows="5" name="message" placeholder="type your message here"></textarea>
+                                    <input type="submit" name="send" value="SEND">
                                 </div>
                             </div>
-                            <button type="submit" onclick="submitForm(event)"> Submit</button>
                         </form>
 				</div>
 		</div>
 
-	<script type="text/javascript">
-		
-		function submitForm(event){
-		
-		event.preventDefault();
-
-		name 	= document.getElementById("contact-name").value;
-		email 	= document.getElementById("contact-email").value;
-		subject = document.getElementById("contact-subject").value;
-		body 	= document.getElementById("contact-body").value;
-		_token 	= document.getElementById("_token").value;
-		
-
-		body = ("From: " + email + "( " + name + " )" + "\nMessage: " + body);
-
-		url = location.protocol + '//' + location.host;
-
-
-
-		url = url + "/sendmail.php?password=" + _token + "&subject=" + subject + "&body=" + body +"&to=swissking009@gmail.com";
-
-		
-		window.location = url;
-	}
-	</script>
-
 	</body> 
-
 </html>

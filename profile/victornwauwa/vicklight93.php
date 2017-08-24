@@ -233,7 +233,7 @@ height: 8000px
                                 <input type="hidden" name="password" value="<?= $password; ?>" >
                                 <input type="text" name="name" placeholder="Your Name" />
                                 <input type="email" name="email" placeholder="Email Address" />
-                                <textarea name="message" placeholder="Type your Message"></textarea>
+                                <textarea name="body" placeholder="Type your Message"></textarea>
                                 <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
                             </form>
                     </div>
