@@ -123,7 +123,7 @@ a .fa-github-square:hover {
 
 
 input[type=text] {
-    width: 50%;
+    width: 70%;
     padding: 12px 20px;
     border-radius: 1%;
     border: 3px solid #325e35;
@@ -132,7 +132,7 @@ input[type=text] {
 }
 
 textarea {
-    width: 50%;
+    width: 70%;
     padding: 12px 20px;
     border-radius: 1%;
     border: 3px solid #325e35;
@@ -148,7 +148,7 @@ input[type=submit] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-    width: 50%;
+    width: 70%;
 }
 
 hr{
