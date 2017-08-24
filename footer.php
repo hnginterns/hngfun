@@ -1,31 +1,60 @@
-<footer class="team1-footer" style="background: url(footer-panel.jpg)">
-        <div class="team1-top">
-            <div class="team1-contact-info">
-                <h5 class="team1-slim-margins">Contact Us</h5>
-                <p class="team1-slim-margins">Lagos: No.3 Bitlel Avenue. off Herbert Macaulay<br> Way, Sabo, Yaba, Lagos.
-                </p>
-                <p class="team1-slim-margins">For bookings - 0700 880 8800</p>
-                <p class="team1-slim-margins">Email: reservation@hotels.ng</p>
-                <p class="team1-slim-margins">Website: hotels.ng</p>
+    <footer class="footer">
+            <div class="container">
+
+                <div class="grid">
+                    <div class="grid__col grid__col--6">
+
+                        <h4 class="footer__contact">Contact Us</h4>
+                        <p>No 3, Birrel Avenue, Off Herbert Macaulay
+                        way, Sabo, Yaba Lagos</p>
+                        <p>For Bookings - 0700 880 8800</p>
+                        <p>email: reservations@hotels.ng</p>
+                        <p>Website: <a href="https://hotels.ng">hotels.ng</a></p>
+                    </div>
+
+                    <div class="grid__col grid__col--6">
+                        <form method="">
+                            <div class="grid">
+                                <div class="grid__col grid__col--6">
+                                    <input type="text" name="name" placeholder="Your Name">
+                                </div>
+                                <div class="grid__col grid__col--6 contact-email">
+                                    <input type="email" name="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="grid__col grid__col--12">
+                                    <textarea rows="5" name="message" placeholder="type your message here"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
-            <div class="team1-contact-us">
-                <input type="text" placeholder="Your Name" class="team1-user-name">
-                <input type="email" placeholder="Email Address" class="team1-user-mail"><br>
-                <textarea name="" id="" cols="55" rows="5" placeholder="Type Your Message here" class="team1-user-message"></textarea>
-            </div>
-        </div>
-        <div class="team1-bottom">
-            <div style="width: 100%; text-align: center">
-                <p style="margin: 0; font-size: 12px;">Terms and Conditions | Privacy Policy</p>
-            </div>
-            <div class="team1-terms-and-social">
-                <p>Copyright 2017 by Hotels.ng. All rights reserved</p>
-                <div class="team1-social-icons">
-                    <a href="https://facebook.com/hotelsng"><img src="icons/facebook.png" alt="" class="team1-social-icon"></a>
-                    <a href="https://twitter.com/hotelsng"><img src="icons/twitter.png" alt="" class="team1-social-icon"></a>
-                    <a href=""><img src="icons/ios.png" alt="" class="team1-social-icon"></a>
-                    <a href=""><img src="icons/android.png" alt="" class="team1-social-icon"></a>
+            <div class="clear"></div>
+            <div class="footer-widget">
+                <div class="grid">
+                    <div class="grid__col grid__col_12">
+                        <ul class="footer-widget__icons">
+                            <li>
+                                <a href=""><img src="img/icons/android.png" width="20"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/icons/facebook.png" width="20"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/icons/ios.png" width="20"></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="img/icons/twitter.png" width="20"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+
+    </main>
+</body>
+</html>

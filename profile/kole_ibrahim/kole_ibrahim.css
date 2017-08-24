@@ -1,0 +1,21 @@
+body{
+   font-size: 30px;
+   background-color: whitesmoke;
+}
+#container{
+   width: 600px;
+}
+b{
+   font-family: monospace;
+}
+nav{
+   display: inline;
+}
+header{
+   text-align: center;
+}
+a{
+text-decoration: none;
+text-transform: capitalize;
+color: purple;
+}

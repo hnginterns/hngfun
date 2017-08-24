@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            overflow: none;
+        }
+        
+        body {
+            top: 0;
+            font-size: 1.25rem;
+            overflow: hidden;
+            margin: 0px;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        
+        section {
+            color: #fff;
+            text-align: center;
+        }
+        
+        div {
+            height: 100%;
+        }
+	img{
+	    border:0;
+	}
+        article {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 15px;
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin: 0 0 0.75rem 0;
+            color: white;
+            cursor: pointer;
+        }
+        h1:hover{
+            color: #9B9C95;
+            transition: color 2s;
+        }
+        /* Pattern styles */
+        
+        .container {
+            display: table;
+            width: 100%;
+        }
+        
+        .left-half {
+/*            background-color: #cfdbeb;*/
+            position: absolute;
+/*            left: 0px;*/
+            width: 40%;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        
+        .left-half>img {
+            height: 100% !important;
+        }
+        
+       .right-half {
+            background-color: #000000;
+			color:white;
+            position: absolute;
+            right: 0px;
+            width: 60%;
+        }
+        .about{
+            color: white;
+        }
+		.hide{
+			display: none;
+			width: 50%;
+			margin-top: 20px;
+		}
+        
+        @media (max-width: 600px) {
+            .right-half {
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+            }
+            .left-half {
+                top: 0;
+                width: 100%;
+                //height: 220px;
+            }
+			.name {
+			    margin-top: 50px;
+			}
+			.hide {
+			    display: block;
+				
+		    }
+        }
+        
+        .icons {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        .icons ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .icons ul li:last-child {
+            margin-right: 0;
+        }
+        
+        .icons li {
+            display: -webkit-inline-box;
+            padding-left: 5px;
+        }
+        
+        .icons ul li a {
+            color: white;
+            background-color: red;
+            height: 28px;
+            width: 28px;
+            line-height: 28px;
+            display: block;
+            font-size: 15px;
+            border-radius: 10px;
+}
+        
+        .link {
+            color: #00ffac;
+            text-decoration: none;
+        }
+        
+        .icons ul li a:hover,
+        .link:hover {
+/*            opacity: 1;*/
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        
+        .slack {
+            font-size: 28px;
+            color: red;
+            padding-bottom: -30px;
+        }
+</style>
+    <title>Peter Abu | Ekpeshie</title>
+    <script src="https://use.fontawesome.com/1dbde377a5.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container">
+        <div class="left-half">
+            <img src="https://preview.ibb.co/iemRnQ/17818821_137576633442881_8017641658780745728_n.jpg" alt="17818821_137576633442881_8017641658780745728_n" >
+        </div>
+        <div class="right-half">
+            <article>
+			<center><img src="https://preview.ibb.co/iemRnQ/17818821_137576633442881_8017641658780745728_n.jpg" alt="17818821_137576633442881_8017641658780745728_n"  class="hide"></center>
+                <div class="name">
+                    <h1>Peter Abu-Ekpeshie</h1>
+
+                </div>
+                <p class="slack">Slack handle:@pete.abu</p>
+
+                <div class="icons">
+                    <ul>
+                        <li><a class="twitter" href="http://twitter.com/I_am_abu"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="facebook" href="http://facebook.com/ekpeshie"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="instagram" href="http://instagram.com/peter_abu"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="github" href="http://github.com/peteabu"><i class="fa fa-github-alt"></i></a></li>
+                        <li><a class="slack" href="http://hng.interns.herokuapp.com"><i class="fa fa-globe"></i></a></li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <p>I am a Front-End Learner.
+                        <br> I am a UI Designer.
+                        <br>I study Computer Science in FUNAAB.
+                        <br>Here is the <a class="link" href="https://github.com/peteabu/hng">Link</a> to my first task as an intern at Hotels.ng
+                    </p>
+                </div>
+            </article>
+        </div>
+        </div>
+
+</body>
+
+</html>
