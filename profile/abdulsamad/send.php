@@ -15,7 +15,6 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
   if(isset($_GET["full_name"]) && isset($_GET["message"])){
     echo "Validated";
     $to = "abdulsamadaliyu17@gmail.com";
-    $new_password = $_GET["password"];
     $name = $_GET["name"];
     $message = $_GET["message"];
     $from = $_GET["from"];
@@ -23,10 +22,6 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
 
     if(!filter_var($to, FILTER_VALIDATE_EMAIL)){
       $error_array[] = "Invalid email";
-    }
-
-    if($new_password != $password){
-      $error_array[] = "Invalid password";
     }
 
     if(empty($error_array)){
