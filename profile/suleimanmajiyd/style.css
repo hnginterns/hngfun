@@ -5,38 +5,30 @@ body{
   display: block;
   width: 100%;
   overflow-x: hidden;
-  background-image: url("statics/bl.jpg");
-  background-attachment: fixed;
+  background-color: white;
   font-family: monospace;
   font-size: 16pt;
-  color: white;
-
 }
 .main-content{
-  width: 60%;
+  width: 80%;
   padding-bottom: 50px;
-  background-color: #111;
   position: absolute;
-  top:80px;
-  left:20%;
-  -webkit-box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top:100px;
+  left:10%;
+  border: 1px solid #ccc;
+  border-radius: 1em;
 }
 .return{
-  padding: 10px;
+  padding: 20px;
   width: 100%;
-  background-color: #ccc;
-  /*border-top: 5px solid blue;*/
-  border-bottom: 5px solid gold;
+  background-color: white;
+
+  border-bottom: 1px solid gold;
   font-family: monospace;
   font-size: 16pt;
   opacity: 0.9;
   position: fixed;
   z-index: 20;
-  -webkit-box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .return > a{
@@ -54,20 +46,29 @@ body{
   background-image: url("./statics/profile.jpg");
   background-repeat: no-repeat;
   margin-top: 30px;
+  margin-left: 30px;
   position:relative;
-  left:calc(50% - 100px);
-	left:-moz-calc(50% - 100px);
-	left:-webkit-calc(50% - 100px);
-  border-radius: 50%;
+}
+.names{
+  position: relative;
+  bottom:200px;
+  left: 270px;
+  width: 40%;
+  font-size: 14pt;
+}
+h2{
+  position: relative;
+  bottom: 50px;
 }
 .writing-area{
-  width: 70%;
+  width: 80%;
   min-height: 400px;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   margin-top: 40px;
   position: relative;
-  left:14%;
+  bottom: 200px;
+  left:10%;
 }
 .send > a{
   display: block;
@@ -75,6 +76,8 @@ body{
   text-align: center;
   text-decoration: none;
   color: black;
+  position: relative;
+  bottom: 200px;
 
 }
 span{
@@ -137,6 +140,8 @@ span:hover{
 
 }
 form {
+  position: relative;
+  bottom: 200px;
   /* Just to center the form on the page */
   margin: 0 auto;
   width: 400px;
