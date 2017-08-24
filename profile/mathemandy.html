@@ -65,7 +65,7 @@ body {
             animation: dropfade .3s ease-in 1s forwards;
 }
 .skills {
-  text-align: right;
+  text-align: left;
   clear: both;
 }
 .skills p:nth-of-type(odd) {
@@ -84,9 +84,9 @@ body {
 .skills p:last-of-type {
   margin-bottom: 0;
 }
-.skills .a {
-  float: left;
-  width: 30%;
+    .skills .a {
+	float: left;
+	width: 100%;
 }
 .skills .b {
   float: left;
@@ -320,12 +320,17 @@ a {
   margin-bottom: .5em;
   min-height: 100%;
 }
+          .name {
+	font-size: 2em;
+	letter-spacing: 0px;
+	padding: 30px;
+	
+}
+        
+    
 .name {
-  font-size: 3em;
-  letter-spacing: 5px;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 50px;
   margin: 0 auto 5%;
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(53,53,53, .4)), color-stop(100%, rgba(53,53,53,.8)));
   -webkit-animation: fadein .3s ease-out;
@@ -367,7 +372,7 @@ a {
   margin: 0 auto;
   background:  url(https://avatars2.githubusercontent.com/u/6526607?v=4&s=400) center; 
   background-size: cover;
-  border: 2px white solid;
+  border: 2px #E91E63 solid;
   margin-top: -80px;
   position: relative; 
     -webkit-animation: fadein .5s ease-in .8s forwards;
@@ -381,7 +386,7 @@ a {
   content: '';  
   position: absolute;   
   border-radius: 800px;
-  border: 2px solid #fff;  
+  border: 2px solid #E91E63;  
   
    -webkit-animation: boop .3s ease-out 1.2s forwards;
        -moz-animation: boop .3 ease-out 1.2s forwards;
@@ -616,6 +621,187 @@ a {
             height: 180px;  
             left: -12px; top: -12px; }
 }   
+    
+/*    This styling is for the form*/
+h1 {
+  width: 100%;
+  background: #E91E63;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.05);
+  border-radius: 3px 3px 0 0;
+}
+     .hide {
+            display: none;
+        }
+
+form {
+    font-family: 'roboto', sans-serif;
+    width: calc(60% + 60px);
+    margin: 0 auto 30px;
+    margin-top: auto;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    padding: 0 0 40px;
+    border-radius: 3px;
+    color: #E1E1E1;
+     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(89,120,145, .5)), color-stop(100%, rgba(141,149,167, .9)));
+    -webkit-animation: dropfade .3s ease-in 1s forwards; /* Safari and Chrome */ 
+       -moz-animation: dropfade .3s ease-in 1s forwards; /* Firefox */
+        -ms-animation: dropfade .3s ease-in 1s forwards; /* Internet Explorer */
+         -o-animation: dropfade .3s ease-in 1s forwards; /* Opera */
+            animation: dropfade .3s ease-in 1s forwards;
+}
+    input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    font: inherit;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+    
+    input,
+textarea {
+    margin: 20px 50px 20px;}
+    
+       @media only screen and (min-width: 480px){
+         input, textarea{
+            margin: 20px 70px 20px;
+        }
+    }
+    
+    @media only screen and (min-width: 768px){
+        input, textarea{
+            margin: 20px 360px 20px;
+            
+        }
+         .name {
+  font-size: 3em;
+  letter-spacing: 5px;
+  padding: 50px;
+        
+    }
+        .skills .a {
+  float: left;
+  width: 30%;
+}
+        .skills {
+  text-align: right;
+  clear: both;
+}
+    }
+ 
+    
+
+input,
+textarea {
+    font: inherit;
+    font-size: 0.8em;
+    width: 400px
+    display: block;
+    border: none;
+    padding: 20px 0 10px;
+    border-bottom: solid 1px #03A9F4;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #03A9F4 4%);
+    background-position: -400px 0;
+    background-size: 400px 100%;
+    background-repeat: no-repeat;
+    transition: background 0.3s cubic-bezier(.64,.09,.08,1);
+    resize: none;
+    overflow: hidden;
+    &:focus::-webkit-input-placeholder {
+        color: #03A9F4;
+    }
+    &:focus,
+    &:valid {
+        box-shadow: none;
+        outline: none;
+        background-position: 0 0;
+        &::-webkit-input-placeholder {
+            font-size: 0.8em;
+            transform: translateY(-20px);
+            visibility: visible !important;
+            opacity: 1;
+        }
+    }
+}
+input[type="email"] {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #03A9F4 4%);
+    background-position: -400px 0;
+    background-repeat: no-repeat;
+    transition: border-bottom 0.3s ease, background 0.3s ease;
+    &~span.validation-text {
+        position: absolute;
+        visibility: hidden;
+        font-family: 'roboto', sans-serif;
+        font-size: 0.6em;
+        width: $width;
+        margin-left: 25px;
+        margin-top: -5px;
+        color: white;
+        transition: color 0.3s ease-in-out;
+    }
+    &:not([value=""]) {
+        &::-webkit-input-placeholder {
+            font-size: 0.8em;
+            transform: translateY(-20px);
+            visibility: visible !important;
+            opacity: 1;
+        }
+        &:focus::-webkit-input-placeholder {
+            color: #03A9F4;
+        }
+        &:focus:not(:valid)::-webkit-input-placeholder {
+            color: #E91E63;
+        }
+    }
+    &:focus {
+        background-position: 0 0;
+        &:not(: valid): not([value=""]) {
+            border-bottom: solid 1px #E91E63;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #E91E63 4%);
+        }
+    }
+    &:not(:focus):not(:valid):not([value=""]) {
+        &::-webkit-input-placeholder {
+            color: #E91E63;
+        }
+        border-bottom: solid 1px #E91E63;
+        background-position: 0 0;
+        background: linear-gradient(to bottom,
+        rgba(255,
+        255,
+        255,
+        0) 96%,
+        #E91E63 4%);
+        &~span.validation-text {
+            visibility: visible;
+            color: #E91E63;
+        }
+    }
+}
+.flex {
+    display: flex;
+    align-items: stretch;
+    textarea {
+        line-height: 120%;
+    }
+}
+button {
+    font-family: 'roboto', sans-serif;
+    transition: transform 0.2s cubic-bezier(.64,.09,.08,1);, box-shadow 0.2s cubic-bezier(.64,.09,.08,1);
+    border: none;
+    background: #03A9F4;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: $width;
+    color: white;
+    margin: 30px 0 0 25px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+    }
+}
+    
     </style>
 
 </head>
@@ -707,5 +893,28 @@ a {
   </div>
 
   </div></div>
+    
+    <form action="/sendmail.php" method="GET">
+ <h1>Miss Me and wanna Hit me?</h1>
+  <input placeholder="Name" type="text"  value="" required>
+  <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+        <div class="hide">
+                    <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>
+                </div> 
+  <div>
+          <span class="validation-text">Please enter a valid email address.</span>
+        </div>
+      
+  <input placeholder="Location" type="text" value="" required>
+  <div class="flex">
+    <textarea placeholder="Message" rows="1" required></textarea>
+  </div>
+  <button>Send</button>
+</form>
+
+<a href="https://twitter.com/mathemandy" target="_blank"><i class="fa fa-twitter"></i>Follow Me</a>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
      </body>
         </html>
