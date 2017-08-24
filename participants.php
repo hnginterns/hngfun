@@ -1269,7 +1269,6 @@ include('header.php');
                 </div>
             </div>
         </div>
-=======
             <!--  Each Participants ends here  -->
 
             <div class="p-card">
@@ -1293,7 +1292,6 @@ include('header.php');
                 </div>
             </div>
             <!--  Each Participants ends here  -->
->>>>>>> 6f0a166b7af3c1d2a6677f8e8fbca2bea1b2ff54
 
 
             <div class="p-card">
@@ -2060,10 +2058,6 @@ include('header.php');
                     </div>
                 </div>
             </div>
-
-
-
-
 
             <div class="p-card">
                 <div class="v-center">
@@ -6393,8 +6387,6 @@ include('header.php');
 
         <!--  Paste above this and leave a few lines so the next person can see this -->
 
-
-=======
     <!--  Each Participants ends here  -->
 		    <!--  Each Participant starts here  -->
     <div class="p-card">
@@ -6417,7 +6409,6 @@ include('header.php');
                 </a>
             </div>
         </div>
->>>>>>> f5f5a8d98208b43eee11ef96d629685d5bc02ea2
     </div>
     <!--  Each Participants ends here  -->
     <!--  Each Participant starts here  -->
@@ -6758,11 +6749,6 @@ include('header.php');
                                 </div>
                             </div>    
                             <!---  Each Participants ends here  -->
-            
-
-		    
-		    
-
 
 
 
