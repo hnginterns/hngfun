@@ -3,7 +3,7 @@
     $error = [];
     $name = $_POST['name'];
     $to  = 'icukachuk@gmail.com';
-    $subject = $_POST['subject']
+    $subject = $_POST['subject'];
     $message = $_POST['message'];
 
     if($message == '' || $message == ' ') {
