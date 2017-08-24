@@ -95,7 +95,7 @@
 				<div class="contact-details">
 					<form method="POst" action="php-handler/mail.php">
 						<div class="col-md-6 contact-left">
-							 <input type="text" class="text" value="Name *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name *';}" name="name">
+							 <input type="text" class="text" value="subject *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'subject *';}" name="subject">
 							 <input type="text" class="text" value="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email *';}" name="email">
 							 <input type="text" class="text" value="phone *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone *';}" name="phone">
 						 </div>
