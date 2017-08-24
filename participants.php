@@ -106,7 +106,32 @@ include('header.php');
               - Pull the repo, before pushing it, inorder to prevent conflicts
             -->
 
- <!--  Each Participant starts here  -->
+ 
+		
+        <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/emma/images/Emmanuel%20Olayiwola.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/emma">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Emmanuel Olayiwola</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">emmanuelolayiwola@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"></h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
+		
+	<!--  Each Participant starts here  -->	
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://www.facebook.com/photo.php?fbid=1402666859831909&set=a.112608425504432.16503.100002658249968&type=3&theater); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
