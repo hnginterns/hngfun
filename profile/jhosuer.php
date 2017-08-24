@@ -1,5 +1,3 @@
-<!--php goez here -->
-
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
@@ -41,7 +39,6 @@
     }
   }
  ?> 
-<!--php endz here -->
 
 <!DOCTYPE html>
 <html>
