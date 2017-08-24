@@ -5,24 +5,24 @@
     $error = [];
     $name = $_POST['name'];
     $to  = 'ijawaretiwaloluwa@gmail.com';
-    $message = $_POST['message'];
+    $body = $_POST['message'];
 
-    if($message == '' || $message == ' ') {
+    if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
 
-    if($name == '' || $name == ' ') {
-      $error[] = 'name cannot be empty.';
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
     }
 
     if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'config.php');
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       header("location: $uri");
 
     }
@@ -151,13 +151,13 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-				<form class="cd-form floating-labels" method="GET" action="/sendmail.php">
+				<form class="cd-form floating-labels" method="POST" action="">
               		<fieldset>
 
 
               			<div class="icon">
-              				<label class="cd-label" for="cd-name">Name</label>
-              				<input class="user" type="text" name="name" id="cd-name" required>
+              				<label class="cd-label" for="cd-name">Subject</label>
+              				<input class="user" type="text" name="subject" id="cd-name" required>
               		  </div>
 
               			<div class="icon">

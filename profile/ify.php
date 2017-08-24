@@ -31,9 +31,9 @@ $password = $row['1'];
 <style>
 /*profile*/
 .main-content {
-	margin: 50px 50px;  
-	background-color: #f2f2f2; 
-	padding: 20px; 
+  margin: 50px 50px;  
+  background-color: #f2f2f2; 
+  padding: 20px; 
 }
 .main-content img {
    float: left;
@@ -41,7 +41,7 @@ $password = $row['1'];
 }
 
 .drop {
-	float: left;
+  float: left;
    padding: 0 20px 20px 0;
 }
 
@@ -76,7 +76,7 @@ input[type=submit] {
     cursor: pointer;
 }
 .container {
-	margin: 50px 50px;  
+  margin: 50px 50px;  
 
 }
 
@@ -84,7 +84,7 @@ input[type=submit] {
 </head>
 <body>
 
-<h1 style="text-align:center"> My Profile</h1>	
+<h1 style="text-align:center"> My Profile</h1>  
 <div class="main-content">
   
   <img src="http://i.imgur.com/GoB8b5q.jpg" alt="profile pic" />
