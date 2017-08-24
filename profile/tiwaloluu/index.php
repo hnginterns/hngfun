@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <?php
 
-	 //if "email" variable is filled out, send mail
-	 if (isset($_GET['submit'])) {
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $name = $_POST['name'];
+    $to  = 'ijawaretiwaloluwa@gmail.com';
+    $message = $_POST['message'];
 
-	 //Email information
-	 $to = "ijawaretiwaloluwa@gmail.com";
-	 $subject = $_GET['subject'];
-	 $body = $_GET['body'];
+    if($message == '' || $message == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
 
-	 $config = include(dirname(dirname(__FILE__)).'/config.php');
-	 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-	 $con = new PDO($dsn, $config[''username], $config['pass']);
+    if($name == '' || $name == ' ') {
+      $error[] = 'name cannot be empty.';
+    }
 
-	 $exe = $con->query('SELECT * FROM password LIMIT 1');
-	 $data = $exe->fetch();
-	 $password = $data['password'];
-	 		   header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-		}
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "http://hng.fun/sendmail.php?to=$admin_email&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
 
-		  ?>
+    }
+
+  }
+
+ ?>
 
 
 <html lang="en">
