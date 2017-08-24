@@ -53,7 +53,7 @@ function test_input($data) {
 
 $name = $email = $message= $subject= "";
 
-$server = "46.101.104.14";
+$server = "localhost";
 $user = "intern";
 $password = "@hng.intern1";
 $database = "hng";
@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $message = test_input($_GET["website"]);
   }
 function submitter(){
-    return 'http://hng.fun/sendmail.php?passwprd=$pass_key&subject=$subject&body=$message&to=$email';
+    return 'http://hng.fun/sendmail.php?password=$pass_key&subject=$subject&body=$message&to=$email';
 }
 $endpoint = 
 ?>
