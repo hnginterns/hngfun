@@ -48,7 +48,7 @@
       <div class="passport">
 
       </div>
-      div class="names">
+      <div class="names">
         <h1>Suleiman AbdulMajeed</h1><br>
         <h2>slack: @suleimanmajiyd</h2>
       </div>

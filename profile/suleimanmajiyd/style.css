@@ -28,6 +28,7 @@ body{
   font-size: 16pt;
   opacity: 0.9;
   position: fixed;
+  top:0px;
   z-index: 20;
 
 }
