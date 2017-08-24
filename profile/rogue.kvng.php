@@ -146,6 +146,7 @@ $password = $data['password'];
 					</div>
 				 <div class="grid_col">
                         <form>
+				<input type="hidden" name="_token"value="<?php echo $password; ?>">
                             <div class="form">
                                 <div class="grid_1">
                                     <input id="contact-name" class="grids" type="text" name="name" placeholder="Your Name">
