@@ -1,31 +1,44 @@
-<?php
-	 //if "email" variable is filled out, send mail
-	 if (isset($_GET['submit'])) {
-
-	 //Email information
-	 $to = "ijawaretiwaloluwa@gmail.com";
-	 $subject = $_GET['subject'];
-	 $body = $_GET['body'];
-
-	 $config = include(dirname(dirname(__FILE__)).'/config.php');
-	 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-	 $con = new PDO($dsn, $config[''username], $config['pass']);
-
-	 $exe = $con->query('SELECT * FROM password LIMIT 1');
-	 $data = $exe->fetch();
-	 $password = $data['password'];
-	 		   header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-		}
-
-		  ?>
-
-
 <!DOCTYPE html>
+<?php
+
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $name = $_POST['name'];
+    $to  = 'ordrizzy@gmail.com';
+    $message = $_POST['message'];
+
+    if($message == '' || $message == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+    if($name == '' || $name == ' ') {
+      $error[] = 'name cannot be empty.';
+    }
+
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
+      header("location: $uri");
+
+    }
+
+  }
+
+ ?>
 
 
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sun, 20 Aug 2017 07:08:59 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <title>Tiwa Profile</title>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple" rel="stylesheet" type="text/css" />
@@ -138,20 +151,20 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-		       <footer>
-					<form action="" method="GET" class="contact_form">
-						  <div class="row uniform 50%">
-	 					  	   <h2>Contact Me</h2>
-	 						   <div class=""><input type="text" name="subject" id="name" placeholder="Name"></div>
-	 						   <div class=""><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
-						  </div>
+					<form action="/sendmail.php" method="GET" enctype="multipart/form-data" name="EmailTestForm">
 
-						  <ul class="icons">
-						  	  <li><input type="submit" value="Send Message" id="submit" name="submit"></li>
-							  <li><input type="reset" value="reset" id="reset" name="reset"></li>
-						  </ul>
-					</form>
-	           </footer>
+    First Name:<br>
+    <input type="text" size="20" name="VisitorName"><br><br>
+
+    Email Address:<br>
+    <input type="text" size="20" name="EmailAddress"><br><br>
+
+    Your Comment:<br>
+    <textarea name="VisitorComment" rows="4" cols="20">
+    </textarea><br><br>
+
+    <input type="submit" value="Email This Form">
+	</form>
 			 </div>
 
 		</div>
