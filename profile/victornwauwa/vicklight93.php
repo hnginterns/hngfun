@@ -8,12 +8,12 @@
     $data = $exe->fetch();
     $password = $data['password'];
 
-    if (isset($_GET['message'])) {
+    if (isset($_GET['sendmessage'])) {
 
         $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
-        $to = "dukauwa.du@gmail.com";
+        $to = "victor.nwauwa93@gmail.com";
 
         $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
 
@@ -234,7 +234,7 @@ height: 8000px
                                 <input type="text" name="name" placeholder="Your Name" />
                                 <input type="email" name="email" placeholder="Email Address" />
                                 <textarea name="message" placeholder="Type your Message"></textarea>
-                                <input type="submit" value="Send" />
+                                <input type="submit" value="Send" name="sendmessage" />
                             </form>
                     </div>
         </div>
