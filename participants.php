@@ -635,8 +635,6 @@ include('header.php');
                             </div>
                         </div>
 
-
-
                         <div class="p-card">
                             <div class="v-center">
                                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/rexorioko/img/IMG_5345.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -1269,7 +1267,6 @@ include('header.php');
                 </div>
             </div>
         </div>
-=======
             <!--  Each Participants ends here  -->
 
             <div class="p-card">
@@ -1293,7 +1290,6 @@ include('header.php');
                 </div>
             </div>
             <!--  Each Participants ends here  -->
->>>>>>> 6f0a166b7af3c1d2a6677f8e8fbca2bea1b2ff54
 
 
             <div class="p-card">
@@ -2060,10 +2056,6 @@ include('header.php');
                     </div>
                 </div>
             </div>
-
-
-
-
 
             <div class="p-card">
                 <div class="v-center">
@@ -6393,8 +6385,6 @@ include('header.php');
 
         <!--  Paste above this and leave a few lines so the next person can see this -->
 
-
-=======
     <!--  Each Participants ends here  -->
 		    <!--  Each Participant starts here  -->
     <div class="p-card">
@@ -6417,7 +6407,6 @@ include('header.php');
                 </a>
             </div>
         </div>
->>>>>>> f5f5a8d98208b43eee11ef96d629685d5bc02ea2
     </div>
     <!--  Each Participants ends here  -->
     <!--  Each Participant starts here  -->
@@ -6425,7 +6414,7 @@ include('header.php');
         <div class="v-center">
             <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/13226416?v=4&u=d40df71791764ddf3d7d34dac22e3915ad3b330d&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
             <div class="p-card-info">
-                <a href="http://hng.fun/profile/alabujadaniel.html">
+                <a href="http://hng.fun/profile/alabujadaniel">
                     <!--Profile Link-->
                     <h3 class="p-card-title">Alabuja Daniel</h3>
                     <!--Profile Name-->
@@ -6758,11 +6747,6 @@ include('header.php');
                                 </div>
                             </div>    
                             <!---  Each Participants ends here  -->
-            
-
-		    
-		    
-
 
 
 

@@ -1,3 +1,43 @@
+<?php
+
+	if($_SERVER["REQUEST_METHOD"] == "POST")
+	{
+		$name = $_POST['name'];
+		$subject = $_POST['subject'];
+		$to = "alabujadaniel@gmail.com";
+		$from = $_POST['email'];
+		$message = $_POST['message'];
+	    if(empty($subject))
+	    {
+	    	echo "Subject is Empty!!!";
+	    }
+	    elseif (empty($name))
+	    {
+	    	echo "Name is Empty!!!";
+	    }
+	    elseif (empty($from)) 
+	    {
+	    	echo "Email is Empty!!!";
+	    }
+	    elseif (empty($message))
+	    {
+	    	echo "Message is Empty!!!";
+	    }
+	    else
+	    {
+	    	$config = include("../config.php");
+	    	$dns = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+	    	$con = new PDO($dns, $config['username'], $config['pass']);
+
+	    	$execute = $con->query('SELECT * FROM password LIMIT 1');
+	    	$data = $execute->fetch();
+	    	$password = $data['password'];
+
+	    	header("location: /sendmail.php?password=$password&to=$to&subject=$subject&name=$name&from=$from&message=$message");
+	    }
+	}
+?>
+
 <!doctype html>
 <html>
     <head>
@@ -61,15 +101,18 @@
                 height: auto;
                 border-radius: 2px;
             }
-            /*.flex-center > .contact-form{
-                margin-top: 20px;
-                text-align: center;
-            }*/
+            
             .flex-center h3{
                 font-size: 20px;
                 font-weight: 500;
                 text-align: center;
             }
+            .contact-form div {
+            	 margin-top: 10px;
+            }
+			button{
+				margin-bottom: 30px;
+			}
             
         </style>
     </head> 
@@ -102,13 +145,12 @@
                     <h3>Speak to Me</h3>
                 </div>
                 <div class="contact-form">
-                    <form method="post" action="">
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
                         <div class="">
                             <input class="" type="text" name="subject" placeholder="Enter the Subject" required>
                         </div>
-
                         <div class="">
-                            <input class="" type="text" name="name" placeholder="Enter your namea" required>
+                            <input class="" type="text" name="name" placeholder="Enter your Name" required>
                         </div>
                         <div class="">
                             <input class="" type="email" name="email" placeholder="Enter your Email" required>
