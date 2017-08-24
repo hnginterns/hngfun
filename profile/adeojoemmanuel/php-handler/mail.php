@@ -3,7 +3,6 @@ function load($class){
 	require  $class .".php";
 }
 load('IOhander');
-load('../../../PHPMailer/class.phpmailer');
 
 $subject = mysql_escape_string($_POST['subject']);
 $email = mysql_escape_string($_POST['email']);
