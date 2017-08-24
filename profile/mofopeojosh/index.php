@@ -64,7 +64,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <ul class="socials">
                         <li><a href="http://github.com/mofopeojosh"><i class="fa fa-github"></i></a></li>
                         <li><a href="http://twitter.com/mofope_ojosh"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://mofopeojosh"><i class="fa fa-envelope"></i></a></li>
                     </ul>
                     <div class="title">Subject</div>
                     <input class="form-field" type="text" name="subject" placeholder="Hi Mofope">
