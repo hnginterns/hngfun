@@ -89,16 +89,16 @@ include "header.php";
 <main class="m-container">
 <?php 
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] == "GET"){
   //checks if it's a post request from the form
-  if(isset($_POST["name"])){
-    $filename = $_POST["name"];
+  if(isset($_GET["name"])){
+    $filename = $_GET["name"];
 }
 if(isset($filename)){ 
 
-$name = test_input($_POST["name"]);
-$email = test_input($_POST["email"]);
-$message = test_input($_POST["message"]);
+$name = test_input($_GET["name"]);
+$email = test_input($_GET["email"]);
+$message = test_input($_GET["message"]);
 
 $from = 'Hotelsng Intern Contact Form'; 
 $to = 'emayoung95@gmail.com'; // email address to be replaced
