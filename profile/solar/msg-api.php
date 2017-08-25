@@ -9,7 +9,7 @@
 function contactmsg () {
     
     if($_SERVER['REQUEST_METHOD'] == 'GET') {
-        return' Data can only be sent on this server via a GET Request';
+        return' Data can only be sent on this server via a POST Request';
          }
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') 
@@ -103,7 +103,7 @@ function contactmsg () {
          * No error encontered, we can now send the mail.
          */
 
-         require_once('PHPMailer/PHPMailerAutoload.php');
+         require_once('../../PHPMailer/PHPMailerAutoload.php');
 
         $mail = new PHPMailer();
 
