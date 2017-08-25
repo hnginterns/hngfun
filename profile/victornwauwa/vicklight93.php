@@ -1,27 +1,18 @@
 <?php
-
-    $config = include('../../config.php');
-    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    $con = new PDO($dsn, $config['username'], $config['pass']);
-
-    $exe = $con->query('SELECT * FROM password LIMIT 1');
-    $data = $exe->fetch();
-    $password = $data['password'];
-
-    if (isset($_GET['message'])) {
-
-        $subject = "Hello";
-        $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
-        $to = "dukauwa.du@gmail.com";
-
-        $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-
-        header("Location: " . $location);
-
-    }
-
- ?>
+      if (isset($_GET['send']))  {
+          //Email information here
+      $to = "victor.nwauwa93@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['message'];    
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,12 +220,19 @@ height: 8000px
                 </div>
                 <div class="form-style-6">
                             <h1>Fill the form</h1>
+<<<<<<< HEAD
                             <form action="../../sendmail.php" method="GET">
                                 <input type="hidden" name="password" value="<?= $password; ?>" >
                                 <input type="text" name="name" placeholder="Your Name" />
                                 <input type="email" name="email" placeholder="Email Address" />
+=======
+                            <form  method="GET" action="">
+                               
+                                <input type="text" name="subject" placeholder="Your Name">
+                                <input type="email" name="to" placeholder="Enter email">
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
                                 <textarea name="message" placeholder="Type your Message"></textarea>
-                                <input type="submit" value="Send" />
+                                <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
                             </form>
                     </div>
         </div>
