@@ -73,7 +73,7 @@
 		                            <li class="scroll"><a href="#contact">Contact</a></li>
 							
 		                </ul>
-		            </div>
+				</div>
 		        </div>
 	        </div>
         </div>                    
