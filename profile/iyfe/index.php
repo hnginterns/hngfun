@@ -1,6 +1,6 @@
 <?php
+   	$admin_email = "xyluz@gmail.com";
   if($_SERVER['REQUEST_METHOD'] == 'GET') {
-  	$admin_email = "xyluz@gmail.com";
     $error = ""; 
     $successMessage = "";
     $name = $_GET['name'];
@@ -12,20 +12,20 @@
   	if (!$email) {
         $error .= "An email address is required.<br>";
     }
-    if (!$content) {
+    if (!$message) {
         $error .= "The content field is required.<br>";
     }
-    if (!$_subject) {
+    if (!$subject) {
         $error .= "The subject is required.<br>";
     }
     if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
         $error .= "The email address is invalid.<br>";
     }
     if ($error != "") {
-        $error = '<div class="alert alert-danger" role="alert"><p>There were error(s) in your form:</p>' . $error . '</div>';
+        $error = '<p>There were error(s) in your form:</p>' . $error;
     }else{
 	    if(empty($error)) {
-	      $config = include(dirname(dirname(dirname(__FILE__))).'config.php');
+	      $config = include('../../config.php');
 	      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	      $con = new PDO($dsn, $config['username'], $config['pass']);
 	      $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -59,7 +59,7 @@
 		<div class="right-half">
 			<div class="form_container">
 				<div class="login-box animated fadeInUp">
-					<form method="GET" action="/sendmail.php">
+					<form method="GET" >
 						<div class="box-header">
 						<h2>Contact Form</h2>
 						</div>

@@ -152,6 +152,7 @@
             margin: 0;
             padding: 00
             display: flex;
+            align-items: center;
           }
           .details ul li
           {
