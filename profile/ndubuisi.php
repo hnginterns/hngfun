@@ -44,7 +44,7 @@ print <<< eot
               line-height: 1.6em;
               padding-left:30%;
 
-              background-color:white;
+              background-color:black;
               width:400px;
                }
 
@@ -58,7 +58,7 @@ print <<< eot
               font-family: Verdana, Helvetica, Arial, sans-serif;
               line-height: 1.6em;
               padding-left:5%;
-              background-color:white;
+              background-color:black;
               width:400px;
 
                  }
@@ -110,22 +110,23 @@ print <<< eot
   </head>
   <body>
     <div>
-       <img id = "image" src="http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg" width="220" height="220">
+       <img id = "image" src="http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg" width="220" height="220" alt = "Ndubuisi Onyemenam">
     </div>
     <h1>Onyemenam Ndubuisi</h1>
     <p class="write_up">
         Am a student of Life. I code. Am looking forward to technopreneurship. Yeah nice meeting you.
     </p>
     <p>
-    <span class = "write_up">Link to<span> <a href="https://github.com/NdubuisiO/HNG1"> Stage 1</a>
-    <p>
+    <span class = "write_up">Link to</span> <a href="https://github.com/NdubuisiO/HNG1"> Stage 1</a>
+    </p>
+     <p>
       <h2>
         Contact
       </h2>
       <h2>
         Slack @prondubuisi
       </h2>
-      <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>>
+      <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
     </p>
      <form method = "get" action = "#" id = "login_form">
@@ -135,7 +136,7 @@ print <<< eot
            <input class ="form_content" type = "text" name="email" placeholder = "Enter your email">
             <textarea class ="form_content" name ="text" placeholder = "$error_message"></textarea>
 
-           <button  class ="form_content"  type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
+           <button  class ="form_content"  type = "submit"  id = "signup_button" >Send me a mail</button>
        </div>
        
      </form>
