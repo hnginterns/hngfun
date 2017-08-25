@@ -1,17 +1,28 @@
 <?php
 
-    $fName = $_POST['fName'];
-    $lName = $_POST['lName'];
-    $email = $_POST['email'];
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-    $to = "rachaeliwelunmor@gmail.com";
+    if(isset($_POST['contact_fName']) && isset($_POST['contact_lName']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
+        $fName = $_POST['fName'];
+        $lName = $_POST['lName'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
 
-    if (mail($to, $subject, $message, "From: ".$fName." ". $lName)) {
-        echo "your message has been sent, i'll get back to you as soon as i can";
-    } else {
-        echo "There was an error sending your mail";
+        if(!empty($fName) && !empty($lName) && !empty($email) && !empty($subject) && !empty($message)){
+            $to = "rachaeliwelunmor@gmail.com";
+            $body = $fName . $lName . "\n\n" . $message;
+            $headers = " From: " .$email;
+
+            if (mail($to, $subject, $body, $headers)) {
+                echo "your message has been sent, i'll get back to you as soon as i can";
+            } else {
+                echo "There was an error sending your mail, please try again later";
+            } 
+        }else{
+            echo "all fields are required";
+        }
     }
+
+
 
 ?>
 
