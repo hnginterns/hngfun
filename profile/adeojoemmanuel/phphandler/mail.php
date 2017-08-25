@@ -4,9 +4,10 @@ function load($class){
 }
 
 load('IOhander');
-// $IO = new IOhandler;
+$IO = new IOhandler;
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
+
 	$fields = array('subject', 'email', 'phone', 'message');
 	$error = false; 
 	foreach($fields AS $fieldname) { 
@@ -15,6 +16,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 	    $error = true; //Yup there are errors
 	  }
 	}
+
 	$subject = mysql_escape_string($_POST['subject']);
 	$email = mysql_escape_string($_POST['email']);
 	$phone = mysql_escape_string($_POST['phone']);
@@ -22,14 +24,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$to = "emmanuel.adeojo@yahoo.com";
 
 	if (!$error) {
-		// $getone = $IO->getAll('password');
-		// $password = $getone['password'];	
+		$datas = $IO->getAll('password');
+		foreach ($datas as $row) {
+			$password = $row['password'];
+		}	
+		
+		$url = "/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
+		header("location: $url");
 	}
 
-	echo $password;
-	$url = "/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
-
-	header("location: $url");
+	
 }else{
 	echo "invalid request";
 }
