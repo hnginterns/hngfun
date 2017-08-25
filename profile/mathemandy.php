@@ -925,18 +925,28 @@ button {
     
     <form action="#" method="POST">
  <h1>Miss Me and wanna Hit me?</h1>
+
+<?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+<?php endif; ?>
+        
   <input placeholder="Name" type="text"  value="" required>
   <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
-        <div class="hide">
-                    <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>
-                </div> 
   <div>
           <span class="validation-text">Please enter a valid email address.</span>
         </div>
       
   <input placeholder="Subject" type="text" name="subject" value="" required>
   <div class="flex">
-    <textarea placeholder="Message" rows="1" required></textarea>
+    <textarea placeholder="Message" name="message" rows="1" required></textarea>
   </div>
   <button>Send</button>
 </form>
