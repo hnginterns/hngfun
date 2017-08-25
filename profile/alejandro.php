@@ -1,38 +1,15 @@
 <?php
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-    $name = $_POST['name'];
-    $to  = 'francisbnsn14@yahoo.com';
-	$subject = $_POST['subject'];
-    $body = $_POST['message'];
+	$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+	$con = new PDO($dsn, $config['username'], $config['pass']);
 
-    if($body == '' || $body == ' ') {
-        $error[] = 'Message cannot be empty.';
-    }
-
-
-    if($name == '' || $name == ' ') {
-        $error[] = 'Enter your name.';
-    }
-
-    if(empty($error)) {
-
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-
-        $uri = "/sendmail.php?to=$to&body=$body&name=$name&subject=$subject&password=$password";
-
-        header("location: $uri");
-		}
-		
-	}
+	$exe = $con->query('SELECT * FROM password LIMIT 1');
+	$data = $exe->fetch();
+	$password = $data['password'];
+	$to = 'francisbnsn14@yahoo.com';
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -178,13 +155,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         <div class="box">
                 <h2>Contact me</h2>
-                <form  action="" method="post">
+                <form  action="../sendmail.php" method="GET">
 					Name:
                     <input name="name" type="text" placeholder="Name" size="30" required/><br>
                     Subject:<br/>
                     <input name="subject" type="text" placeholder="subject" size="30" required/><br>
                     Message:<br/>
                     <textarea name="message" placeholder="Write Message" rows="7" cols="30" required></textarea><br>
+		    <input type="hidden" name="password" value="<?= $password; ?>" />
+		    <input type="hidden" name="to" value="<?= $to; ?>" />
                     <input type="submit" value="Send email"/>
                 </form>
             </div>
