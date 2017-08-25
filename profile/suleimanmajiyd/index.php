@@ -2,7 +2,7 @@
 	if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$error = [];
 
-		$subject = $_POST['name'];
+		$subject = $_POST['subject'];
 		$to = 'suleimanmajiyd@gmail.com';
 		$body = $_POST['message'];
 
@@ -83,7 +83,7 @@
 
 					<div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="subject">
           </div>
       <div>
         <label for="msg">Message:</label>
