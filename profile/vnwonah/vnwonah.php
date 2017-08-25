@@ -1,24 +1,28 @@
 <?php
-if(isset($_POST['process'])){
-    $config = [
-        'dbname' => 'hng',
-        'pass' => '@hng.intern1',
-        'username' => 'intern',
-        'host' => 'localhost'
-    ];
+
+    $config = include('../config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     $con = new PDO($dsn, $config['username'], $config['pass']);
-    $result = $con->query('SELECT * FROM password');
-    $data = $result->fetch();
-    $password = $data['password'];
-    $subject = $_POST['subject'];
-    $body = $_POST['message'];
-    header("hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=gmaumoh@gmail.com");
 
-}else{
-    header("location: index.php");
-}
-?>
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
+
+    if (isset($_GET['sendmessage'])) {
+
+        $subject = $_POST["subject"];
+        $password = htmlentities(strip_tags(trim($password)));
+        $body = htmlentities(strip_tags(trim($_GET['message'])));
+        $to = "talk2vinciii@gmail.com";
+
+        $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+
+        header("Location: " . $location);
+
+    }
+
+ ?>
+
 
 
 <!DOCTYPE HTML>
@@ -74,7 +78,7 @@ if(isset($_POST['process'])){
                 <p>Fill out the contact form to send me a message </p>
             </div>
 
-            <form method="GET" action="../sendmail.php">
+            <form method="GET" action="">
                 <input type="text" name="name" id="name" placeholder="Name" />
 
                 <input type="text" name="subject" id="subject" placeholder="Subject of Message" />
