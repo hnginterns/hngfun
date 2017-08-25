@@ -7,7 +7,7 @@
 	    $to = "adetunjisalako@gmail.com";
 	    $message = $_POST['message'];
 
-	    $dbconfig = include('../../config.php');
+	    $dbconfig = include(dirname(dirname(dirname(__FILE__))).'/config.php');
 	    //$host_ip = "";
 	    $conn = mysqli_connect( $dbconfig['host'], $dbconfig['username'], $dbconfig['pass'],$dbconfig['dbname']) or die ("Could Not Connect Database");
 
@@ -21,13 +21,13 @@
 
 	    $url = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
 	    if (isset($_POST['submit'])&&isset($_POST['message'])&&isset($_POST['subject'])) {
-	    	header("location: ".$url);
+	    	if (!empty($_POST['message']) && !empty($_POST['subject'])) {
+	    		header("location: ".$url);
+	    	}
+	    	
 	    }
 
-	    
-
-    	
-
+	   
 	 }
 
 
