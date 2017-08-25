@@ -1,7 +1,7 @@
 <?php
     $database = new Database;
     $password = $database->fetchPassword();
-// if($_SERVER['REQUEST_METHOD'] == 'POST'){
+// if($_SERVER['REQUEST_METHOD'] == 'POST'){ 
 //     $database = new Database;
 //     $password = $database->fetchPassword();
 //     echo "<h1>$password</h1>";
@@ -70,15 +70,10 @@
 <head>
     <title>Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-
-
-    <!-- CSS styling startst here -->
+      <!-- CSS styling startst here -->
     <style>
         @import 'https://fonts.googleapis.com/css?family=Oswald';
-        @import 'https://fonts.googleapis.com/css?family=Comfortaa';
+            
 
         body {
             background-color: #1e1e1e;
@@ -165,8 +160,13 @@
             text-align: center;
         }
     </style>
+</head>
+
+
 
     <!-- CSS styling ends here -->
+
+<body>
         <div class="profile">
             <center>
                 <div class="profile-image">
@@ -207,6 +207,7 @@
                 </div>
 
             </form>
+        </div>
 </body>
 
 </html>

@@ -3849,6 +3849,7 @@ padding-top: 45px !important;
 <<<<<<< HEAD
                   
                   body {
+                      
                       font-family: Avgarddo, sans-serif;
                       font-size: 16px;
                       font-weight: normal;
@@ -19376,21 +19377,17 @@ table {
     
 }
 */
-<<<<<<< HEAD
+
                                         #header-content.row {
                                             padding-top: 170px;
                                             padding-bottom: 100px;
                                             background-image: url(images\banner-images\banner-image-1.jpg);
                                         }
-=======
+
                                   #header-content.row {
                                       padding-top: 170px;
                                       padding-bottom: 100px;
                                       background-image: url(images\banner-images\banner-image-1.jpg);
                                   }
                                   /* Library Page CSS by Team 10 ends */
-<<<<<<< HEAD
->>>>>>> 5cb70f8d4215f64d7ce7ef3f3f2ecf26d85b979d
-=======
->>>>>>> 6f0a166b7af3c1d2a6677f8e8fbca2bea1b2ff54
->>>>>>> 7e2894d8dde28c86f19cd0c6e7174fabe99b12e5
+

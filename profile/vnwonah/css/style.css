@@ -1,0 +1,209 @@
+﻿body{
+    background:#2d3b36;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.n-profile-bar{
+    width:520px;
+    height:425px;
+    background:#FFF;
+    padding:5px 0 0px 0;
+    border-radius:3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+    margin: 20px auto;
+}
+.n-profile-bar .name{
+    width:520px;
+  
+    border-bottom:1px solid #ebebeb;
+}
+
+
+
+
+.n-profile-bar .name h3{
+    font-size:16px;
+    color:#616161;
+    margin:10px 0 0px 90px;
+    width:320px;
+    text-align:center;
+}
+
+.n-profile-bar .name p{
+    font-size:11px;
+    color:#c1c1c1;
+    margin:0px 0 5px 0px;
+    width:520px;
+    text-align:center;
+}
+
+    .n-profile-bar .name1 {
+        width: 520px;
+    }
+
+
+
+
+        .n-profile-bar .name1 h3 {
+            font-size: 16px;
+            color: white;
+            margin: 10px 0 0px 90px;
+            width: 320px;
+            text-align: center;
+        }
+
+        .n-profile-bar .name1 p {
+            font-size: 11px;
+            color: #c1c1c1;
+            margin: 0px 0 5px 0px;
+            width: 520px;
+            text-align: center;
+        }
+
+
+.n-profile-bar .about{
+    width:520px;
+    height:200px;
+    border-bottom:1px solid #ebebeb;
+    font-size:11px;
+    color:#616161;
+}
+
+.n-profile-bar .about .my{
+    width:258px;
+    height:200px;
+    border-bottom:1px solid #ebebeb;
+    border-right:1px solid #ebebeb;
+    float:left;
+}
+.n-profile-bar .about .my img{
+    float:left;
+    height:180px;
+    width:180px;
+    border-radius:100px;
+    margin:5px 25px 10px 40px;
+}
+    .n-profile-bar .about .job {
+        width: 260px;
+        height: 200px;
+        border-bottom: 1px solid #ebebeb;
+        float: right;
+       
+    }
+
+.n-profile-bar .about .job img{
+    float:left;
+    height:100px;
+    width:100px;
+    border-radius:100px;
+    margin:5px 25px 10px 45px;
+    padding: 10px 10px 10px 10px;
+  
+}
+
+.job p{text-align:center; margin: 60px 15px 0px;
+    font-weight:bold;color:#a7a7a7;
+    
+}
+.my p{color:#a7a7a7;text-align:center;margin:0;
+    font-weight:bold;}
+
+.job p.link{text-align:center;margin:0;font-weight:bold;color:#fa8b49; padding: 20px;}
+.my p.link{text-align:center;margin:0;font-weight:bold;color:#fa8b49;}
+
+a {
+    text-decoration: none;
+}
+
+
+ul li{
+    list-style-type: none;
+    width:520px; 
+    margin:0px;
+
+    color:#2D303C;
+    height:43px;
+}
+
+ul{
+    margin:0;
+    width:520px;
+    font-size:13px;
+    padding:0px 0 0 0px;
+    border-radius:4px;
+}
+.n-contact{margin:0;width:520px;}
+a{color:#a5a3a3;}
+
+.n-contact ul li a{
+    height:30px;
+    width:496px;
+    display:block;
+    padding:12px 0 0 9px;
+    border-bottom:1px solid #ebebeb;
+  
+}
+.n-contact ul li a:link {
+    text-decoration: none;
+}
+    .n-contact ul li a:hover {
+        text-decoration: none;
+        color: #900;
+        width: 496px;
+    }
+
+li.slack{border-left:3px solid #d97aa5;}
+li.fb{border-left:3px solid #3B5998;}
+li.github{border-left:3px solid #f8bc2e;}
+li.twitter{border-left:3px solid #45b0e3}
+
+
+#page-wrap {
+    width: 520px;
+    background: #2d3b36;
+    padding: 20px 20px 20px 20px;
+    margin: 20px auto;
+    min-height: 500px;
+    height: auto !important;
+    height: 500px;
+}
+
+#contact-area {
+    width: 520px;
+    margin-top: 10px;
+    background-color: #2d3b36;
+}
+
+    #contact-area input, #contact-area textarea {
+        padding: 5px;
+        width: 400px;
+        font-family: Helvetica, sans-serif;
+        font-size: 12px;
+        margin: 0px 0px 10px 80px;
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
+    }
+
+#contact-area textarea {
+    height: 90px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+    border: 2px solid #900;
+    font-size: 14px;
+}
+
+#contact-area input.submit-button {
+    width: 100px;
+    float: right;
+}
+
+label {
+    margin-left: 20px;
+    text-align: right;
+    margin-right: 5px;
+    width: 100px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+ 

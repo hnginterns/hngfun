@@ -1,27 +1,27 @@
 <?php
-
-    $config = include('../../config.php');
-    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    $con = new PDO($dsn, $config['username'], $config['pass']);
-
-    $exe = $con->query('SELECT * FROM password LIMIT 1');
-    $data = $exe->fetch();
-    $password = $data['password'];
-
-    if (isset($_GET['message'])) {
-
-        $subject = "Hello";
-        $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
-        $to = "dukauwa.du@gmail.com";
-
-        $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-
-        header("Location: " . $location);
-
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'victor.nwauwa93@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
     }
-
- ?>
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,12 +77,7 @@ height: 8000px
     text-align: center;
 }
 
-}
-.image {
-    max-width: 100%;
-    height: auto;
 
-}
 .text{
     width: 100%;
     height: 100%;
@@ -198,18 +193,18 @@ height: 8000px
 </header>
     <div class="container">
         <div class="con" id="con1">
-                <div class="image">
-                <img src="https://avatars2.githubusercontent.com/u/17924533?v=4&s=400" >
+                <div>
+                <img style="max-height:100%; height:auto; max-width:100%; width:auto;" src="https://avatars2.githubusercontent.com/u/17924533?v=4&s=400" alt="victor's photo">
                 </div>
                 <div class="text">
                 <h3>Nwauwa Victor Ifeanyi</h3>
                     <h3>Important links</h3>
                 <div >
-                    <a href="http://github.com/vicklight"><img id="git" src="http://www.iconsdb.com/icons/preview/black/github-10-xxl.png">vicklight</a>
+                    <a href="http://github.com/vicklight"><img id="git" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" alt="git logo">vicklight</a>
                     <br/>
-                    <a href="https://hnginterns.slack.com/messages/@vicklight93"><img id="slack" src="http://tse3.mm.bing.net/th?id=OIP.Oi4x6PnTrVJ8rL2uGO09EgEsEs&pid=15.1">@vicklight93</a>
+                    <a href="https://hnginterns.slack.com/messages/@vicklight93"><img id="slack" src="http://tse3.mm.bing.net/th?id=OIP.Oi4x6PnTrVJ8rL2uGO09EgEsEs&pid=15.1" alt="slack logo">@vicklight93</a>
                     <br/>
-                    <p><img id="google" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Google_icon.png">victor.nwauwa93@gmail.com</p>
+                    <p><img id="google" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Google_icon.png" alt="google icon">victor.nwauwa93@gmail.com</p>
                     <br/>
                     <p>HNG Interns Stage1 <a href="https://github.com/vicklight/hotels-ng-test" class="button">git repo</a></p>
                 </div>
@@ -230,19 +225,20 @@ height: 8000px
                 <div>
                     <h2>WorkXP</h2>
                     <hr>
-                    <p>Volunteered for the networking unit at my school's ICT Center.where I assisted in setting up the CBT center, web developer at Bithub.</p>
+                    <p>Volunteered for the networking unit at my school's ICT Center.where I assisted in setting up the CBT center, web developer at Bithub, Computer Science President at University of portharcourt. </p>
                 </div>
                 <div class="form-style-6">
                             <h1>Fill the form</h1>
-                            <form action="" method="GET">
-                                <input type="hidden" name="password" value="<?= $password; ?>" >
-                                <input type="text" name="name" placeholder="Your Name" />
-                                <input type="email" name="email" placeholder="Email Address" />
+                            <form  method="POST">
+
+                                <input type="text" name="subject" placeholder="Your Name">
+                                <input type="email" name="to" placeholder="Enter email">
                                 <textarea name="message" placeholder="Type your Message"></textarea>
-                                <input type="submit" value="Send" />
+                                <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
                             </form>
                     </div>
         </div>
     </div>
 </body>
 </html>
+
