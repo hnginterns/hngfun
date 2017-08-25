@@ -9,12 +9,12 @@
 </head>
 <body>
 	<!--start-header-section-->
-	<div class="header-section">
+	<div class="header-section" id="top">
 		<div class="container">
 			<img class="img-circle" src="images/im.jpg">
 			<h1>hello..<span>!</span></h1>
 			<p>My name is Adeojo Emmanuel WEB/MOBILE DEVELOPER</p>
-			<a href="#contact" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+			<a href="#contact" id="toButtom" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
 		</div>
 	</div>
 	<!--end header-section-->
@@ -93,14 +93,14 @@
 			<div class="container">
 				<h3>contact us</h3>
 				<div class="contact-details">
-					<form method="POst" action="php-handler/mail.php">
+					<form name="form" method="POST" action="phphandler/mail.php">
 						<div class="col-md-6 contact-left">
-							 <input type="text" class="text" value="subject *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'subject *';}" name="subject">
-							 <input type="text" class="text" value="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email *';}" name="email">
-							 <input type="text" class="text" value="phone *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone *';}" name="phone">
+							 <input type="text" class="text" placeholder="subject *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="subject" required>
+							 <input type="text" class="text" placeholder="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="email" required>
+							 <input type="text" class="text" placeholder="phone *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="phone" required>
 						 </div>
 						 <div class="col-md-6 contact-right">
-							 <textarea name="message" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message *</textarea>
+							 <textarea name="message" placeholder="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required>Message *</textarea>
 							 <input type="submit" value="Send Message"/>
 						 </div>
 						 <div class="clearfix"> </div>
@@ -114,9 +114,11 @@
 				<div class="footer-top">
 					<p>&copy; 2017 <span>hng.</span> All rights reserved | Design by <a href="http://hng.fun/profile/adeojoemmanuel">adeojo emmanuel</a></p>
 				</div>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span>
+				<a href="#top" id="toTop" style="display: block;"> 
+					<span id="toTopHover" style="opacity: 1;"> </span>
 				</a>
 			</div>
 		</div>
+	<script type="text/javascript" src="myscroll.js"></script>
 </body>
 </html> 
