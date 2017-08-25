@@ -151,6 +151,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+
 }
 input[type=reset] {
     background-color: #4CAF50;
@@ -159,8 +160,6 @@ input[type=reset] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
@@ -193,7 +192,7 @@ input[type=submit]:hover {
         <p>
             I'm a 300 level Computer Science Student of the Federal University of Agriculture, Abeokuta. I'm a Front-End Developer.<br> I'm a lover of anything "techy". I like to try out new things. <br>I believe in Hardwork and consistency..
         </p>
-        <p><img src="https://p4.zdassets.com/hc/theme_assets/138842/200037786/logo.png" height="32" weight="200" alt="Slack logo">  <span class="name">@dolapobabs</span> </p>
+        <p><img src="https://p4.zdassets.com/hc/theme_assets/138842/200037786/logo.png" height="32" breadth="200" alt="Slack logo">  <span class="name">@dolapobabs</span> </p>
         <ul class="social-icons">
             <li><a target='_blank' href="mailto:dolapob@gmail.com" title="Send an email"><i class="fa fa-envelope"></i></a></li>
             <li><a target='_blank' href="https://web.facebook.com/adedolapo.adekunle.5"> <i class="fa fa-facebook"></i></a></li>
@@ -217,8 +216,7 @@ input[type=submit]:hover {
                   <textarea id="message" name="message" placeholder="Write something here.." style="height:200px"></textarea>
               
                   <input type="submit" id="submit" value="SEND">
-                  <pre> ... </pre>
-                  <input type="reset" value="RESET" id="reset" name="reset" />
+                  <input type="reset" class="reset" value="RESET" id="reset" name="reset" />
               
                 </form>
               </div>
@@ -226,7 +224,8 @@ input[type=submit]:hover {
 
     </div>
     <br>
+    <footer>  &copy; Dolapobabs. All Rights Reserved </footer>
 </body>
-<footer>  &copy; Dolapobabs. All Rights Reserved </footer>
+
 
 </html>
