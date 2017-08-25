@@ -75,7 +75,7 @@
 				height: 30px;
 				padding: 10px;
 				text-align: center;
-				color: #333;
+				color: #ccc;
 			}
 			.img {
 				width: 400px;
@@ -101,7 +101,7 @@
 			}
 			h3 {
 				font-size: 16px;
-				color: #333;
+				color: #ccc;
 				text-align: center;
 				padding: 10px;
 			}
