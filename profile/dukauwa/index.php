@@ -284,23 +284,11 @@
                   <form class="form" action="../../sendmail.php" method="GET">
 
                     <h4>CONTACT ME</h4>
-<<<<<<< HEAD
-                    <input type="hidden" name="password" value="<?= $password; ?>" >
-<<<<<<< HEAD
-                    <p type="Name:"><input type="text"  name="name" placeholder="Write your name here.."></input></p>
-                    <p type="Email:"><input type="email" name="email" placeholder="Let me know how to contact you back.."></input></p>
-                    <p type="Message:"><input name="body" placeholder="What would you like to tell me.."></input></p>
-=======
-                    <input type="Name"  name="name" placeholder="Write your name here.."></input>
-                    <input type="Email" name="email" placeholder="Let me know how to contact you back.."></input>
-                    <input name="Message" placeholder="What would you like to tell me.."></input>
->>>>>>> 597996f2108b6e7046e24274081c3d1618c70dc2
-=======
-                    <input type="hidden" name="password" value="<?= $password; ?>" />
+
+                           <input type="hidden" name="password" value="<?= $password; ?>" >
                     <input type="text"  name="name" placeholder="Write your name here.." required>
                     <input type="email" name="email" placeholder="Let me know how to contact you back.." required>
                     <input type="text" name="Message" placeholder="What would you like to tell me.." required>
->>>>>>> e541144a110da1870c8070d490007f1dafa5b049
                     <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
                     <div>
                       <span class="fa fa-phone"></span>09024095111

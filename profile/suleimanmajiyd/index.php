@@ -48,6 +48,10 @@
       <div class="passport">
 
       </div>
+      <div class="names">
+        <h1>Suleiman AbdulMajeed</h1><br>
+        <h2>slack: @suleimanmajiyd</h2>
+      </div>
       <div class="writing-area">
         <p>Hi, my name is Suleiman AbdulMajeed (@suleimanmajiyd), i'm 21, and i'm a programmer and web developer.</p>
         <p>I am proficient in Python, HTML5, CSS3, Javascript and jQuery.</p>

