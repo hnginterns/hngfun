@@ -119,7 +119,7 @@ print <<< eot
     <p>
     <span class = "write_up">Link to</span> <a href="https://github.com/NdubuisiO/HNG1"> Stage 1</a>
     </p>
-     <p>
+     
       <h2>
         Contact
       </h2>
@@ -128,7 +128,7 @@ print <<< eot
       </h2>
       <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
-    </p>
+    
      <form method = "get" action = "#" id = "login_form">
 
        
