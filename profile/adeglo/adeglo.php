@@ -1,3 +1,30 @@
+<?php
+ if($_SERVER[‘REQUEST_METHOD’] == ‘POST’) {
+   $error = [];
+   $subject = $_POST[‘subject’];
+   $to  = ‘glonimi0@gmail.com’;
+   $body = $_POST[‘message’];
+   if($body == ‘’ || $body == ' ‘) {
+     $error[] = ‘Message cannot be empty.‘;
+   }
+   if($subject == ‘’ || $subject == ' ‘) {
+     $error[] = ‘Subject cannot be empty.‘;
+   }
+   if(empty($error)) {
+     $config = include(dirname(dirname(dirname(__FILE__))).‘/config.php’);
+     $dsn = ‘mysql:host=‘.$config[‘host’].‘;dbname=‘.$config[‘dbname’];
+     $con = new PDO($dsn, $config[‘username’], $config[‘pass’]);
+     $exe = $con->query(‘SELECT * FROM password LIMIT 1’);
+     $data = $exe->fetch();
+     $password = $data[‘password’];
+     $uri = “/sendmail.php?to=$to&body=$body&subject=$subject&password=$password”;
+     header(“location: $uri”);
+   }
+ }
+?>
+
+
+
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -22,23 +49,21 @@
             Engineering student of Federal University of Technology, Akure.
             I love cats although I have never owned one;).
         </p>
-        <form action="http://hng.fun/sendmail.php">
+        <form action="">
                 <div >
                     <input id="name" type="text" name="subject" placeholder="Please type your name" />
                 </div>
                 <div >
-                    <textarea id="body" rows="3"  name="body" placeholder="Type your message" ></textarea>
+                    <textarea id="body" rows="3"  name="message" placeholder="Type your message" ></textarea>
                 </div>
                 <div >
-                    <input id="mail" type="email" placeholder="email" />
+                    <input id="mail" type="email" name="email" placeholder="email" />
                 </div>
-                <div><input type="hidden" name = "password" value="@hng.intern1"></div>
-                <div><input type="hidden" name = "to" value="glonimi0@gmail.com"></div>
                 <div>
                     <button type="submit">
                     submit
-                </button>
-            </div>
+                    </button>
+                </div>
     
         </form>
     </div>
