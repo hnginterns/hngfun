@@ -95,12 +95,12 @@
 				<div class="contact-details">
 					<form name="form" method="POST" action="phphandler/mail.php">
 						<div class="col-md-6 contact-left">
-							 <input type="text" class="text" value="subject *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'subject *';}" name="subject">
-							 <input type="text" class="text" value="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email *';}" name="email">
-							 <input type="text" class="text" value="phone *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone *';}" name="phone">
+							 <input type="text" class="text" placeholder="subject *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="subject">
+							 <input type="text" class="text" placeholder="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="email">
+							 <input type="text" class="text" placeholder="phone *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="phone">
 						 </div>
 						 <div class="col-md-6 contact-right">
-							 <textarea name="message" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message *</textarea>
+							 <textarea name="message" placeholder="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">Message *</textarea>
 							 <input type="submit" value="Send Message"/>
 						 </div>
 						 <div class="clearfix"> </div>
