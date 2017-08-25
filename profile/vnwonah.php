@@ -31,7 +31,7 @@
     <style>
         .error {color: #FF0000;}
     </style>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="vnwonah/css/style.css" />
     <title>VNwonah - HNGInterns</title>
 </head>
 <body>
