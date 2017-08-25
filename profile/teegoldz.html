@@ -158,25 +158,43 @@
 
   
   
-         <div class="container3"> 
-    <form action="teegoldz.php" method="post"id="contactME" style="margin-left: auto; margin-right: auto; width: 8em">
-<h2>Contact Me</h2>
-    <div class="form_container">
-        <form method="post" action="email.php">
-            <label for="to">Email:</label>&nbsp;&nbsp;
-            <input type="email" id="to" name="to" placeholder="Your email address here" tabindex="1">
-            <br>
+         <div class="container3">
 
-            <label for="subject">Subject:</label>&nbsp;&nbsp;
-            <input type="text" id="subject" name="subject" placeholder="Your subject here" tabindex="2">
-            <br>
+      <form action="teegoldz.php" method="post" id="contactME" >
+<h3>Contact Me</h3>
+<h4>Shoot me a mail, and get a reply within 24 hours!</h4>
+    
+          <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required="" autofocus="">
+          </fieldset>
+          <fieldset>
+           <input placeholder="Your Phone Number" type="tel"  required="">
+          </fieldset>
+        
+          <fieldset>
+            <input type="email" id="to" name="to" placeholder="Your email address here">
+          </fieldset>
 
-            <label for="body">Message Body:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <textarea id="body" name="body" placeholder="Write some subjects here" tabindex="4""></textarea>
-            <br><br>
 
-            <input type="submit" name="process" id="contact-submit" value="Submit">
+          <fieldset>
+            <input type="text" id="subject" name="subject" placeholder="Your subject here">
+         </fieldset>
+
+          <fieldset>
+           <textarea placeholder="Type your Message Here...." tabindex="5" id="body" name="body" required=""></textarea>
+          </fieldset>
+            
+        
+          <fieldset>
+            <button type="submit" name="process" id="contact-submit" value="Submit">Submit </button>
+          </fieldset>
         </form>
+    
+
+  
+</div>
+<!-- end contact form --> 
+    
     </div>
   
   
