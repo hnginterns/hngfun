@@ -58,6 +58,8 @@ main{
     font-size: 20px;
     color: #0f222f;
     position: absolute;
-    top:660px;;
-    left: 300px;
+    top:660px;
+    padding: 20px 20px;
+    text-align:center;
+    
 }
