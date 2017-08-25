@@ -41,9 +41,10 @@
 <html lang=“en”>
 
 <head>
-    <meta charset=“UTF-8">
-   <title>my profile</title>
+    <meta charset="UTF-8">
+   <title>Adebowale Glory Profile</title>
    <link rel=“stylesheet” href=“adeglo.css” type=“text/css”/>
+
 </head>
 
 <body>
