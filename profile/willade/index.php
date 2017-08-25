@@ -76,6 +76,7 @@
             
             #contact input[type="text"],
             #contact input[type="email"],
+            #contact input[type="subject"],
             
             #contact textarea,
             #contact button[type="submit"] {
@@ -110,6 +111,8 @@
             
             #contact input[type="text"],
             #contact input[type="email"],
+            #contact input[type="subject"],
+            
           
             #contact textarea {
                 width: 100%;
@@ -121,6 +124,7 @@
             
             #contact input[type="text"]:hover,
             #contact input[type="email"]:hover,
+            #contact input[type="subject"]:hover,
             
             #contact textarea:hover {
                 -webkit-transition: border-color 0.3s ease-in-out;
@@ -192,6 +196,9 @@
                 </fieldset>
                 <fieldset>
                     <input id="email" name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input id="subject" name="subject" placeholder="Your Subject" type="subject" tabindex="3" required>
                 </fieldset>
                 <fieldset>
                     <textarea id="message" name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
