@@ -48,6 +48,10 @@
       <div class="passport">
 
       </div>
+      <div class="names">
+        <h1>Suleiman AbdulMajeed</h1><br>
+        <h2>slack: @suleimanmajiyd</h2>
+      </div>
       <div class="writing-area">
         <p>Hi, my name is Suleiman AbdulMajeed (@suleimanmajiyd), i'm 21, and i'm a programmer and web developer.</p>
         <p>I am proficient in Python, HTML5, CSS3, Javascript and jQuery.</p>
@@ -64,7 +68,7 @@
         <form action="" method="post" enctype="text/plain">
 
 				<?php if(isset($error) && !empty($error)): ?>
-          <div style="text-align: center; padding:5px; background: #fff;">
+          <div style="text-align: center; padding:5px; background: red;">
             <ul style='list-style:none;'>
               <?php
                 foreach ($error as $key => $value) {
@@ -79,7 +83,7 @@
 
 					<div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="subject">
+          <input type="text" id="name" name="name">
           </div>
       <div>
         <label for="msg">Message:</label>
