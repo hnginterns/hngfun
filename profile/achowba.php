@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=yes, initial-scale=1.0>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet">
     <!--<link rel="stylesheet" href="assets/css/styles.css">-->
 
     <title>Atauba Prince Mfon (achowba)</title>
@@ -245,7 +244,7 @@
     <div id="profile">
         <div class="profile-img-container">
             <img class="profile-img"
-                 src="https://avatars0.githubusercontent.com/u/20032269?v=4&u=7f280c930a24fd8e45877e3a4a78181e04acd426&s=400">
+                 src="https://avatars0.githubusercontent.com/u/20032269?v=4&u=7f280c930a24fd8e45877e3a4a78181e04acd426&s=400" alt="Atauba Prince Mfon">
             <!--<p class="profile-name">Atauba Prince Mfon</p>-->
         </div>
         <div class="profile-text-container">
@@ -305,14 +304,14 @@
         emailValue = emailField.value;
         subjectValue = emailField.value;
         bodyValue = emailField.value;
-        pwd = pwd.value;
+        pwdValue = pwd.value;
 
         if (nameValue.trim() == "" || emailValue.trim() == "" || subjectValue.trim() == "" || bodyValue.trim() == "") {
             alert("Please fill all input fields! 🙂");
         } else {
             bodyValue = ("From: " + emailValue + " ( " + nameValue + " ) " + "\n" + "\nMessage: " + bodyValue);
             prot_host = location.protocol + '//' + location.host;
-            url = prot_host + "/sendmail.php?password=" + pwd + "&subject=" + subjectValue + "&body=" + bodyValue + "&to=justprince9@gmail.com";
+            url = prot_host + "/sendmail.php?password=" + pwdValue + "&subject=" + subjectValue + "&body=" + bodyValue + "&to=justprince9@gmail.com";
             window.location = url;
         }
     }
