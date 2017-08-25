@@ -2,7 +2,7 @@
 if (isset($_POST['submit'])){
     $error = [];
 
-
+    
     $to = 'nsikakthompson73@gmail.com';
     $senderName = $_POST['name'];
     $body = $_POST['message'];
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])){
         $error[] = 'Subject cannot be empty';
     }
     if (empty($error)) {
-        $config = include __DIR__ . "/../config.php";
+        $config = include('../config.php');
 
         $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
         $conn = new PDO($dsn, $config['username'], $config['pass']);
