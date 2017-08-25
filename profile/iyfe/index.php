@@ -1,12 +1,13 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if($_SERVER['REQUEST_METHOD'] == 'GET') {
+  	$admin_email = "xyluz@gmail.com";
     $error = ""; 
     $successMessage = "";
-    $name = $_POST['name'];
+    $name = $_GET['name'];
     $to  = 'icukachuk@gmail.com';
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-    $email = $_POST["email"];
+    $subject = $_GET['subject'];
+    $message = $_GET['message'];
+    $email = $_GET["email"];
 
   	if (!$email) {
         $error .= "An email address is required.<br>";
@@ -30,8 +31,8 @@
 	      $exe = $con->query('SELECT * FROM password LIMIT 1');
 	      $data = $exe->fetch();
 	      $password = $data['password'];
-	      $uri = "/sendmail.php?to=$to&subject=$subject&message=$message&name=$name&password=$password";
-	      header("location: $uri");
+	      $message = urlencode($message);
+	      header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
 	    }
 	}
   }
@@ -48,7 +49,7 @@
 	<div id = "container_2">
 		<h1>Ifunanya's Profile</h1>
 		<div class="left-half">
-				<img id = "dp" src="iyfe.png">
+				<img id = "dp" alt="Display Picture" src="iyfe.png">
 				<p> Hello, my name is Ifunanya Ukachukwu. I am learning to become a software developer. Before now, my focus has been on HTML, CSS and JavaScript. I am really excited about this internship.  If you like to connect please say hi.
 
 				</p>
@@ -58,7 +59,7 @@
 		<div class="right-half">
 			<div class="form_container">
 				<div class="login-box animated fadeInUp">
-					<form method="POST" action="/sendmail.php">
+					<form method="GET" action="/sendmail.php">
 						<div class="box-header">
 						<h2>Contact Form</h2>
 						</div>
@@ -76,7 +77,7 @@
 						<br/>
 						<label for="message">Message</label>
 						<br/>
-						<textarea id="message"rows="4" cols="50" name="message" form="usrform" placeholder ="Enter text here..."></textarea>
+						<textarea id="message" rows="4" cols="50" name="message" placeholder ="Enter text here..."></textarea>
 						<button type="submit">Send Message</button>						
 					</form>		
 				</div>
