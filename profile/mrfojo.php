@@ -179,7 +179,7 @@
         return;
       }
       console_log("Connected successfully");
-      $sql = "SELECT * FROM test LIMIT 1";
+      $sql = "SELECT * FROM password LIMIT 1";
       $result = $conn->query($sql);
       console_log($result);
       $emailPassword = "";
