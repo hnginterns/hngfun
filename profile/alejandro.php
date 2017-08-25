@@ -178,7 +178,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         <div class="box">
                 <h2>Contact me</h2>
-                <form  action="../sendmail.php" method="POST">
+                <form  action="../sendmail.php" method="GET">
 					Name:
                     <input name="name" type="text" placeholder="Name" size="30" required/><br>
                     Subject:<br/>
