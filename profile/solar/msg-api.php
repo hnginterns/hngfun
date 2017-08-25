@@ -58,10 +58,7 @@ function contactmsg () {
         } 
 }
 
- if(!filter_var($to, FILTER_VALIDATE_EMAIL)) {
-        $error[] = 'Invalid email';
-      }
-
+ 
 
     if(count($error) > 0){
             $error = implode("<br>",$error);
