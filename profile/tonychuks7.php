@@ -14,39 +14,149 @@
         }
 ?>
 <!DOCTYPE html>
-<head>
-   <title>Engineer Turned Web Developer</title>
-   <link rel="stylesheet" href="https://github.com/Naccuddi/hngfun.git/html/styles.css">
-</head>
-<body style="background-color:#b0e0e6 ">
-   <p style="text-align:center;"><h1 style="text-align:center;">Anthony Nwaizuzu</h1>
-   <p style="text-align:center;"><img src ="tony.jpg" alt="tony" width="300" height="300">
-   <p style="text-align:center;"><i>BIOGRAPHY:- I'm Anthony Nwaizuzu - Web developer from Nigeria.</i></p>
-   <p style="text-align:center;"><i>I code in HTML, CSS, JS & PHP.</i></p>
+<html>
+	<head>
+		<title>Engineer Turned Web Developer</title>
+		<meta charset="utf-8">
+	    <meta name="view port" content="width=device-width,initial-scale=1.0">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-   <p style="text-align:center;">Slack username:- @tonychuks7</p>
-   <p style="text-align:center;"><a href="https://github.com/Naccuddi/Hngtonychuks.git">link to #stage1</a>
-   <p style="text-align:center;"><a href="tonychuks7@gmail.com">Reach me via mail</a></p>                   
-   
-<form id="contact_form" action="#" method="GET" >
-    <div class="row">
-        <label for="fname">First Name:</label><br />
-        <input id="fname" class="input" name="fname" type="text" value="" size="30" /><br />
-    </div>
-    <div class="row">
-        <label for="lname">Last Name:</label><br />
-        <input id="lname" class="input" name="lname" type="text" value="" size="30" /><br />
-    </div>
-    <div class="row">
-        <label for="email">Your Email:</label><br />
-        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    </div>
-    <div class="row">
-        <label for="message">Your Message:</label><br />
-        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-    </div>
-    <input id="submit_button" type="submit" value="Send email" />
-</form>		
+	    <style type="text/css">
 
-</body>
+	    	html{
+			    height: auto;
+			    width: 100%;
+			}
+
+			body{
+			 	background:#fff;
+				background-image: url("https://image.ibb.co/k6mXgk/Hd_Dark_Backgrounds_0.jpg");
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			    height: auto;
+			    width: 100%;
+			    margin: 0;
+
+			}
+			.img_pos{
+				margin-left: 43%;
+				margin-top: 3%;
+			}
+
+			.imgs{
+				max-width: : 250px;
+				max-height: 250px;
+				}
+			.text{
+				text-align: center;
+				color: #fff;
+			}
+			.text h1{
+				margin-left: -1%;
+				margin-top: 1%;
+				font-family: 'century gothic';
+				font-size: 60px;
+			}
+			.bio{
+				background-color: #000000;
+				opacity: 0.7;
+				margin-top: -10px;
+			}
+			.bio p{
+				padding-top: -900px;
+				font-family: 'century gothic';
+				padding-left: 80px;
+				padding-right: 80px;
+			}
+			.bio a{
+				color: #fff;
+				font-size: 15px;
+				text-decoration: none;
+			}
+
+			.bio b{
+				color: #484848;
+				font-size: 15px;
+				text-decoration: none;
+			}
+
+			.contact{
+				width: 50%;
+				margin-left: 25%;
+				text-align: center;
+				border-style: ridge;
+				border-color: white;
+				border-radius: 10px;
+				margin-bottom: 10px;
+			}
+			.cont{
+				color: white;
+				font-size: 20px;
+			}
+			 .grids{
+				width: 30%;
+				min-height: 10%;
+				margin-bottom: 15px;
+			}
+		.textsarea{
+			width: 60%;
+			margin-bottom: 10px;
+		}
+
+	    </style>   
+	</head>
+
+	<body>
+			<div class=" img_pos">
+				<img src="https://image.ibb.co/kujqZ5/tony.jpg" class="imgs" alt="profile_pic">
+			</div>
+		
+			<div class="text">
+				<h1>Anthony Nwaizuzu</h1>
+
+				<div class="bio">
+					<p>I'm Anthony Nwaizuzu - Web developer from Nigeria.I code in HTML, CSS, JS & PHP.
+					</p>
+					
+					<p><a class="links" href="https://github.com/Naccuddi/Hngtonychuks.git"><i class="fa fa-github"></i> #Stage-1 </a>&nbsp; </p>
+
+					<p>
+					<a class="links" href="https://hnginterns.slack.com/team/tonychuks7"><i class="fa fa-slack"></i> @tonychuks7 </a>&nbsp;
+       
+          			 <a class="links"> <i class="fa fa-mail"></i> tonychuks7@gmail.com</a>&nbsp;
+          			 </p>
+
+				</div>
+			</div>
+
+		<div class="contact">
+                    <div class="cont">
+
+                        <h4 class="footer__contact">Contact Form</h4>
+                        
+					</div>
+				 <div class="grid_col">
+                        <form action="" method="GET">
+                        	<div class="form">
+                                <div class="grid_1">
+                                    <input id="contact-name" class="grids" type="text" name="name" placeholder="Your Name">
+                              
+                                    <input id="contact-email" class="grids" type="email" name="email" placeholder="Email Address">
+
+                                    <input id="contact-subject" class="grids" type="text" name="subject" placeholder="subject">
+                                </div>
+                            </div>
+                            
+                            <div class="form">
+                                <div class="grid_3">
+                                    <textarea id="contact-body" class="textsarea" rows="5" name="message" placeholder="type your message here"></textarea>
+                                    <input type="submit" name="send" value="SEND">
+                                </div>
+                            </div>
+                        </form>
+				</div>
+		</div>
+
+	</body> 
 </html>

@@ -25,12 +25,12 @@
    die();
   } else {
     /**
-     * Its a get request, lets process the data
+     * Its a post request, lets process the data
      */
 
     $error = [];
 
-    $to  = 'okalawonemmanuel41@gmail.com';
+    $to  = $_POST['to'];
     if(isset($_POST['body'])){
    
         $body = $_POST['body'];
@@ -79,7 +79,7 @@ die();
        *
        */
       if(!filter_var($to, FILTER_VALIDATE_EMAIL)) {
-        $error[] = 'Invalid email';
+        $error[] = 'Invalid email'.$_POST["body"];
       }
 
       /**
@@ -87,7 +87,7 @@ die();
        *
        */
       if($sent_password != $password)
-        $error[] = 'You have sent an invalid password, please try again.';
+        $error[] = 'You have sent an invalid password, please try again.'.$_POST["body"];
 
       if(!empty($error)) {
           
