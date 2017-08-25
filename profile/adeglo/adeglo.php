@@ -56,9 +56,7 @@
                <div >
                    <textarea id=“body” rows=“3"  name=“message” placeholder=“Type your message” ></textarea>
                </div>
-               <div >
-                   <input id=“mail” type=“email” name=“message” placeholder=“email” />
-               </div>
+               
                
                <div>
                    <button type=“submit” name=“submit”>
