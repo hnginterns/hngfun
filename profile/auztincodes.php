@@ -153,7 +153,7 @@
                         
 					</div>
 				 <div class="grid_col">
-                        <form action="" method="GET">
+                        <form action="auztincodes.php" method="GET">
                             <div class="form">
                                 <div class="grid_1">
                                     <input class="grids" type="text" name="name" placeholder="Name">
