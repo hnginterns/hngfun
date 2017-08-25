@@ -101,7 +101,7 @@
               left: 50% ;
               transform: translate(-50%,-50%);
               width: 300px;
-              height:500px;
+              height:650px;
               background: #fff;
               box-sizing: border-box;
               border-radius: 10px;
@@ -152,6 +152,7 @@
             margin: 0;
             padding: 00
             display: flex;
+            align-items: center;
           }
           .details ul li
           {
