@@ -2,7 +2,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to = $_POST['to'];
+    $to = "xeunskate@gmail.com";
     $body = $_POST['message'];
     if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';
