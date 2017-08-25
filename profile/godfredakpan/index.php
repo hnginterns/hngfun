@@ -140,7 +140,7 @@
 					<div class="col-sm-5">
 						<div id="contact-section">
 							<h3>Send a message</h3>
-					    	<font color="blacl"><div class="form-container">
+					    	<div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
 				
@@ -151,7 +151,7 @@
 				
                             <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
                             <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
-                        </form></font>  <br>  
+                        </form>  <br>  
 					    </div>
 					</div>
 				</div>
