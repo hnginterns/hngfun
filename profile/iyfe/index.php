@@ -12,7 +12,7 @@
   	if (!$email) {
         $error .= "An email address is required.<br>";
     }
-    if (!$message {
+    if (!$message) {
         $error .= "The content field is required.<br>";
     }
     if (!$subject) {
