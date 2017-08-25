@@ -108,17 +108,12 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
- <!--  Each Participant starts here  -->
-
- <div class="p-card">
-
-
+ 
 <div class="p-card">
-
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://www.facebook.com/photo.php?fbid=1402666859831909&set=a.112608425504432.16503.100002658249968&type=3&theater); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="http://hng.fun/profile/arinzedroid.html">
+            <a href="http://hng.fun/profile/tonychuks7.html">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Arinze George</h3>
                 <!--Profile Name-->
@@ -126,24 +121,15 @@ include('participants-head.php');
             <p class="p-card-description">arinzenne2017@gmail.com</p>
             <!--Email-->
         </div>
-
-
-
-
-	    <div class="p-team">
-            <a href="#">
-                <h3 class="p-card-title"> Team 2 </h3>
-
         <div class="p-team">
             <a href="#">
-                <h3 class="p-card-title"> Team Achievement </h3>
-
+                <h3 class="p-card-title"> Team 2 </h3>
                 <!--Team-->
             </a>
         </div>
     </div>
 </div>
-<!--  Each Participants ends here  -->
+
 
 <!--  Each Participant starts here  -->
 <div class="p-card">
