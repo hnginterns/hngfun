@@ -229,7 +229,7 @@ height: 8000px
                 </div>
                 <div class="form-style-6">
                             <h1>Fill the form</h1>
-                            <form action="../../sendmail.php" method="POST">
+                            <form  method="POST" action="">
                                
                                 <input type="text" name="subject" placeholder="Your Name" />
                                 <input type="email" name="to" placeholder="Email Address" />
