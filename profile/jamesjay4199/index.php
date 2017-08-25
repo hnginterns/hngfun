@@ -3,7 +3,7 @@
     $error = [];
     $subject = $_POST['subject'];
     $to  = 'jamiejay4199@gmail.com';
-    $body = $_POST['message'];
+    $body = $_POST['body'];
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
