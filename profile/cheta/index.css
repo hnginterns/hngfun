@@ -59,7 +59,6 @@ main{
     color: #0f222f;
     position: absolute;
     top:660px;
-    padding: 20px 20px;
-    text-align:center;
-    
+    left:100px;
+    right: 100px;
 }
