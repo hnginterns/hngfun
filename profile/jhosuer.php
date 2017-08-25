@@ -17,7 +17,7 @@
 
     if(empty($error)) {
 
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $config = include '../config.php';
       $sn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($sn, $config['username'], $config['pass']);
 
@@ -182,16 +182,16 @@
 			<div class="form">
 				
 				<?php if(isset($error) && !empty($error)): ?>
-          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
-            <ul style='list-style:none;'>
-              <?php
-                foreach ($error as $key => $value) {
-                  echo "<li>$value</li>";
-                }
-              ?>
-            </ul>
-          </blockquote>
-				
+				  <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+					<ul style='list-style:none;'>
+					  <?php
+						foreach ($error as $key => $value) {
+						  echo "<li>$value</li>";
+						}
+					  ?>
+					</ul>
+				  </blockquote>
+				<?php endif; ?>
 				<form method="POST" action="" id="form_jhosuer">
 				
 					<input type="text" placeholder="Full Name *" name="fullname" autocomplete="off" required>
