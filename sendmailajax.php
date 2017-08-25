@@ -30,7 +30,7 @@
 
     $error = [];
 
-    $to  = 'okalawonemmanuel41@gmail.com';
+    $to  = $_POST['to'];
     if(isset($_POST['body'])){
    
         $body = $_POST['body'];
