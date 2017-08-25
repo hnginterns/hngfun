@@ -1,37 +1,5 @@
 <!DOCTYPE html>
 <?php
-<<<<<<< HEAD
-
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-    $name = $_POST['name'];
-    $to  = 'ordrizzy@gmail.com';
-    $message = $_POST['message'];
-
-    if($message == '' || $message == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
-
-    if($name == '' || $name == ' ') {
-      $error[] = 'name cannot be empty.';
-    }
-
-    if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
-      header("location: $uri");
-
-    }
-
-  }
-
- ?>
-=======
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
@@ -58,10 +26,10 @@
       header("location: $uri");
 
     }
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
 
   }
- ?>
+  
+?>
 
 <html lang="en">
   <head>
@@ -177,48 +145,33 @@
 				 	<div class="title m-b-md shadow-multiple">
 					  Ijaware Tiwaloluwa
 					</div>
-					<p>My name is Tiwaloluwa Ijaware, I code in<b> HTML & CSS </b></p>
-					<p><a href="https://github.com/tiwalolu/getting-started-h2-2017" target="_blank">Stage-1-Link</a></p>
 					<ul class="social-icons">
 			 	 		<li><a href="https://www.instagram.com/tiwaloluu" class="social-icon"><i class="fa fa-instagram"></i></a></li>
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-<<<<<<< HEAD
-					<form action="/sendmail.php" method="GET" class="floating-labels" name="EmailTestForm">
-					   <fieldset>
-    					  Name:<br>
-    					  <input class="user" type="text" size="20" name="Name"><br><br>
-
-    					  Message:<br>
-						  
-    					  <textarea class="Message" name="Message" rows="4" cols="20">
-    					  </textarea><br><br>
-
-    					  <div><input type="submit" value="Send Message"></div>
-					   </fieldset>  
-					</form>
-=======
-				<form class="cd-form floating-labels" method="POST" action="">
-              		<fieldset>
+					<p>My name is Tiwaloluwa Ijaware, I code in<b> HTML & CSS </b></p>
+					<p><a href="https://github.com/tiwalolu/getting-started-h2-2017" target="_blank">Stage-1-Link</a></p>
+					
+						 <form class="cd-form floating-labels" method="POST">
+              			 	   <fieldset>
 
 
-              			<div class="icon">
-              				<label class="cd-label" for="cd-name">Subject</label>
-              				<input class="user" type="text" name="subject" id="cd-name" required>
-              		  </div>
+              				   <div class="icon">
+              				   		<label class="cd-label" for="cd-name">Subject</label>
+              						<input class="user" type="text" name="subject" id="cd-name" required>
+              		 		   </div>
 
-              			<div class="icon">
-              				<label class="cd-label" for="cd-textarea">Message</label>
-                    	<textarea class="message" name="message" id="cd-textarea" required></textarea>
-              			</div>
+              				   <div class="icon">
+              				   <label class="cd-label" for="cd-textarea">Message</label>
+                    		   <textarea class="message" name="message" id="cd-textarea" required></textarea>
+              				   </div>
 
-              			<div>
-              		   <input type="submit" value="Send Message">
-              		  </div>
-              		</fieldset>
-              	</form>
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
+              				   <div>
+              		   		   <input type="submit" value="Send Message">
+              		  		   </div>
+              				   </fieldset>
+              				   </form>
 			 </div>
 
 		</div>
