@@ -217,7 +217,7 @@ input[type=submit]:hover {
                   <textarea id="message" name="message" placeholder="Write something here.." style="height:200px"></textarea>
               
                   <input type="submit" id="submit" value="SEND">
-                  <br>
+                  <pre> ... </pre>
                   <input type="reset" value="RESET" id="reset" name="reset" />
               
                 </form>
