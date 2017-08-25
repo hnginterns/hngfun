@@ -1,33 +1,32 @@
 <?php 
 
-	 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-
-	 	$subject = $_POST['subject'];
-	    $to = "adetunjisalako@gmail.com";
-	    $message = $_POST['message'];
-
-	    $dbconfig = include('../../config.php');
-	    //$host_ip = "";
-	    $conn = mysqli_connect( $dbconfig['host'], $dbconfig['username'], $dbconfig['pass'],$dbconfig['dbname']) or die ("Could Not Connect Database");
-
-	    $query = $conn->query("SELECT * FROM password");
-	    if ($query) {
-	    	$row = mysqli_fetch_assoc($query);
-	    	$password = $row['password'];
-	    }else {
-	        return false;
-	    }
-
-	    $url = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
+	 if($_SERVER['REQUEST_METHOD'] == 'POST') {	
 	    if (isset($_POST['submit'])&&isset($_POST['message'])&&isset($_POST['subject'])) {
-	    	header("location: ".$url);
+	    	if (!empty($_POST['message']) && !empty($_POST['subject'])) {
+	    		$subject = $_POST['subject'];
+			    $to = "adetunjisalako@gmail.com";
+			    $message = $_POST['message'];
+
+			    $dbconfig = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+			    //$host_ip = "";
+			    $conn = mysqli_connect($dbconfig['host'], $dbconfig['username'], $dbconfig['pass'],$dbconfig['dbname']) or die ("Could Not Connect Database");
+
+			    $query = $conn->query("SELECT * FROM password LIMIT 1");
+			    $result = mysqli_query($conn,$query);
+			    if ($result) {
+			    	$row = mysqli_fetch_assoc($result);
+			    	$password = $row['password'];
+			    }else {
+			        return false;
+			    }
+
+			    $url = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
+	    		header("location: ".$url);
+	    	}
+	    	
 	    }
 
-	    
-
-    	
-
+	   
 	 }
 
 
@@ -81,7 +80,7 @@
 			    <label for="message">Message</label>
 			    <textarea id="message" name="message" placeholder="Write something.." style="height:150px" required=""></textarea>
 
-			    <input type="submit" value="SEND">
+			    <input type="submit" value="submit" name="submit">
 
 			  </form>
 		</div>

@@ -2636,7 +2636,7 @@ include('header.php');
                             <!--Profile Name-->
                         </a>
                         <p class="p-card-description">
-                            <span>dapon</span>extras<span>pp&#64;gm</span>ail.com
+                            daponextras@gmail.com
                         </p>
                         <!--Email-->
                     </div>
@@ -5112,7 +5112,7 @@ include('header.php');
                         <!--Profile Name-->
                     </a>
                     <p class="p-card-description">
-                        <span>dapon</span>extras<span>pp&#64;gm</span>ail.com
+                        daponextraspp@gmail.com
                     </p>
                     <!--Email-->
                 </div>
@@ -7086,6 +7086,7 @@ include('header.php');
                         </a>
                     </div>
                 </div>
+                </div>
 
 
 
@@ -7103,6 +7104,8 @@ include('header.php');
                     <p class="p-card-description">gmaumoh@gmail.com</p>
                     <!--Email-->
 
+            </div>
+            </div>
             </div>
             <!-- Each participant ends here -->
 		    
@@ -7245,12 +7248,7 @@ include('header.php');
                         </div>
                     </div>
                 </div>    
-                            <!---  Each Participants ends here  -->
-        </div>
-
-
-
-            </div>
+     
 
 
         <div class="p-card">
@@ -7267,6 +7265,8 @@ include('header.php');
                     <a href="#">
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
+                </div>
+                </div>
                 </div>
 
     <div class="p-card">
@@ -7412,6 +7412,27 @@ include('header.php');
                         <!--Profile Name-->
                     </a>
                     <p class="p-card-description">notmaks@yahoo.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+<!--  Each Participants ends here  -->
+         <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: "http://res.cloudinary.com/dnavbc7ny/image/upload/v1503621989/me_ugkim4.jpg"; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/rhodinet.htmls">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Imo Okon</h3>
+                        <!--Rhodinet-->
+                    </a>
+                    <p class="p-card-description">imojokon@yahoo.com</p>
                     <!--Email-->
                 </div>
                 <div class="p-team">
