@@ -27,7 +27,7 @@ include('participants-head.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://hng.fun/profile/emma/images/Emmanuel Olayiwola.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="https://hng.fun/profile/emma">
+            <a href="http://hng.fun/profile/emma">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Emmanuel Olayiwola</h3>
                 <!--Profile Name-->
