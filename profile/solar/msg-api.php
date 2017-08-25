@@ -91,7 +91,7 @@ function contactmsg () {
 
         }
    
-    if($sent_password != $password) {
+    if($sent_password == $password) {
         $error[] = 'You have sent an invalid password, please try again.'.$password;
 
         $error = implode("<br>",$error);
