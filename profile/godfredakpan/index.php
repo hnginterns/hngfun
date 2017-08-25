@@ -51,7 +51,7 @@
 					<div class="pull-right social-icons">
 						<a href="https://twitter.com/godfredakpan"><i class="fa fa-twitter"></i></a>
 						<a href="https://facebook.com/godfred.akpan.14"><i class="fa fa-facebook"></i></a>
-						<a href="https://google.com/archer web solution"><i class="fa fa-google-plus"></i></a>
+						<a href="https://google.com/archerwebmaster"><i class="fa fa-google-plus"></i></a>
 						<a href="https://youtube.com/archerwebsolution"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>     
