@@ -220,10 +220,17 @@ height: 8000px
                 </div>
                 <div class="form-style-6">
                             <h1>Fill the form</h1>
+<<<<<<< HEAD
+                            <form action="../../sendmail.php" method="GET">
+                                <input type="hidden" name="password" value="<?= $password; ?>" >
+                                <input type="text" name="name" placeholder="Your Name" />
+                                <input type="email" name="email" placeholder="Email Address" />
+=======
                             <form  method="GET" action="">
                                
                                 <input type="text" name="subject" placeholder="Your Name">
                                 <input type="email" name="to" placeholder="Enter email">
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
                                 <textarea name="message" placeholder="Type your Message"></textarea>
                                 <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
                             </form>

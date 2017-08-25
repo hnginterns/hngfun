@@ -1,4 +1,15 @@
 <?php
+<<<<<<< HEAD
+    //if "email" variable is filled out, send email
+      if (isset($_GET['submit']))  {
+      
+      //Email information
+      $to = "davidshemang@gmail.com";
+      $subject = $_GET['name'];
+      $body = $_GET['message'];
+          
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
+=======
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
@@ -12,6 +23,7 @@
     }
     if(empty($error)) {
       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -122,12 +134,21 @@
       <label for="subject" class="sr-only">Subject:</label>
       <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required>
     </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" name="email">
+    </div>
     
     <div class="form-group">
       <label for="message" class="sr-only">Message:</label>
       <textarea id="message" class="form-control" name="message" rows="6" cols="50" placeholder="Your Message" required></textarea>
     </div>
+<<<<<<< HEAD
+    <button style="margin: 0px auto;" name="submit" type="submit" class="btn btn-default">Send</button>
+=======
     <button name="submit" type="submit" class="btn btn-default">Send</button>
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
   </form>
   <!--/.contact form-->
          </div>
