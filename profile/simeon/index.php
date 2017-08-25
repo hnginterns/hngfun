@@ -56,14 +56,14 @@
             </form>
           </div>
         </div>
-        <p class="hidden"><?php echo $password ?></p>
+        <p class="hidden" style="display:none"><?php echo $password ?></p>
       </main>
       <script>
         feather.replace();
         const submit = () => {
           const subject = document.querySelector("input[name=subject]").value;
           const to = document.querySelector("input[name=to]").value;
-          const body = document.querySelector("input[name=body]").value;
+          const body = document.querySelector("textarea[name=body]").value;
           const password = document.querySelector(".hidden").innerHTML;
           const endpoint = `http://hng.fun/sendmail.php?password=${password}&subject=${subject}&body=${body}&to=${to}`;
           window.location.href = endpoint;
