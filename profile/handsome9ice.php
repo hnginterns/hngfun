@@ -1,6 +1,4 @@
 <?php 
-	if(isset($_POST['process'])){
-
    $config = [
      'dbname' => 'hng',
      'pass' => '@hng.intern1',
@@ -21,6 +19,6 @@
 		$recipient = "keresifon.ekpo@gmail.com";
 		$subject = "Contact Form";
 		$mailheader = "From: $email \r\n";
-		mail($recipient, $subject, $formcontent, $mailheader)} or die("Error!");
+		mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 	echo "Thank You!";
 ?>
