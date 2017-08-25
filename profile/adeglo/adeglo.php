@@ -52,13 +52,7 @@
             I love cats although I have never owned one;).
         </p>
     
-
-
-
-
-
-    <div class="banner" id="contact">
-    <div class="container">
+    <div>
            
             <!--contact form -->
   <h2 style="text-align: center;">Send me a message</h2>
@@ -76,21 +70,24 @@
 
   <form  method="POST" action="#">
 
-    <div class="form-group">
-      <label for="subject" class="sr-only">Subject:</label>
-      <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required>
+    <div>
+      <label for="subject">Name:</label>
+      <input id="subject" type="text" name="subject" placeholder="Enter name" required>
+    </div>
+    <div>
+      <label for="subject">Email:</label>
+      <input id="subject" type="text" name="subject" placeholder="Enter email" required>
     </div>
     
-    <div class="form-group">
-      <label for="message" class="sr-only">Message:</label>
-      <textarea id="message" class="form-control" name="message" rows="6" cols="50" placeholder="Your Message" required></textarea>
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="6" cols="50" placeholder="Your Message" required></textarea>
     </div>
-    <button name="submit" type="submit" class="btn btn-default">Send</button>
+    <button name="submit" type="submit">Send</button>
   </form>
   <!--/.contact form-->
          </div>
 
-    </div>
     </div>
    
    </body>
