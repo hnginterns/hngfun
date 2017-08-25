@@ -45,7 +45,7 @@ function submitform(e, sender) {
         if (hr.readystate == 4 || hr.status == 200) {
             var response = hr.responseText;
             msg.style.display = "block";
-            msg.innerHTML = response;
+            msg.innerHTML = response + " "+password;
         }
 
     }
