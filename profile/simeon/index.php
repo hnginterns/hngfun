@@ -21,7 +21,7 @@
     $username = $config["username"];
     $host = $config["host"];
     $db = mysqli_connect($host, $username, $pass, $dbname) or die('Error connecting to MySQL server.');
-    $query = "SELECT * FROM PASSWORD LIMIT 1";
+    $query = "SELECT * FROM password LIMIT 1";
     mysqli_query($db, $query) or die('Error querying database.');
     $result = mysqli_query($db, $query);
     $password = $result["password"];
