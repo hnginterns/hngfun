@@ -1,0 +1,19 @@
+body{
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	float: center;
+	background-color: lightblue;
+}
+.about-head{
+	font-size: 30px;
+}
+.about-content{
+	color: brown;
+	border: solid;
+}
+a{
+	text-decoration: none;
+	color: brown;
+}
