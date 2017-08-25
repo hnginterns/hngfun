@@ -8,6 +8,9 @@
     margin: 0;
     padding: 0;
 }
+.hd {
+    display: none;
+}
 a:hover, a:active {
     text-decoration: underline;
     color: hsl(174, 100%, 29%);
@@ -53,11 +56,57 @@ img {
 }
 .bio {
     clear: both;
-    margin: 2em auto;
+    margin: 2em auto .85em;
     width: 70%;
-    padding-bottom: 3em;
 }
 .bio p {
     font-size: 1.085em;
     padding-bottom: .65em;
+}
+.contact {
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 3em;
+}
+.contact_form {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+.contact h2 {
+    margin-bottom: 1.15em;
+}
+#contact label strong {
+    display: inline-block;
+    font-size: 1.05em;
+    padding-bottom: .075em;
+}
+.contact_form input[type='text'], .contact_form textarea {
+    font-size: .98em;
+    font-family: sans-serif;
+    line-height: 1.7;
+    padding: .275em;
+    margin-bottom: 1em;
+    width: 100%;
+    border: 1px solid #000;
+    outline: 0;
+}
+.contact_form input[type='text']:active,
+.contact_form input[type='text']:hover,
+.contact_form textarea:active,
+.contact_form textarea:hover {
+    outline: 0;
+    border: 1px solid #c4cfe7;
+}
+#contact button {
+    font-size: 1.2em;
+    line-height: 2;
+    text-align: center;
+    width: 5em;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+#contact button:hover {
+    border: 1px solid #c4cfe7;
+    font-weight: bolder;
 }

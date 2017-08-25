@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <?php
+<<<<<<< HEAD
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $name = $_POST['name'];
-    $to  = 'ijawaretiwaloluwa@gmail.com';
+    $to  = 'ordrizzy@gmail.com';
     $message = $_POST['message'];
 
     if($message == '' || $message == ' ') {
@@ -26,6 +27,38 @@
       header("location: $uri");
 
     }
+
+  }
+
+ ?>
+=======
+
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'ijawaretiwaloluwa@gmail.com';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+
+    }
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
 
   }
  ?>
@@ -151,19 +184,41 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-					<form action="/sendmail.php" method="GET">
+<<<<<<< HEAD
+					<form action="/sendmail.php" method="GET" class="floating-labels" name="EmailTestForm">
 					   <fieldset>
     					  Name:<br>
-    					  <input class="user" type="text" size="20" name="name"><br><br>
+    					  <input class="user" type="text" size="20" name="Name"><br><br>
 
     					  Message:<br>
 						  
-    					  <textarea class="message" name="message" rows="4" cols="20">
+    					  <textarea class="Message" name="Message" rows="4" cols="20">
     					  </textarea><br><br>
 
     					  <div><input type="submit" value="Send Message"></div>
 					   </fieldset>  
 					</form>
+=======
+				<form class="cd-form floating-labels" method="POST" action="">
+              		<fieldset>
+
+
+              			<div class="icon">
+              				<label class="cd-label" for="cd-name">Subject</label>
+              				<input class="user" type="text" name="subject" id="cd-name" required>
+              		  </div>
+
+              			<div class="icon">
+              				<label class="cd-label" for="cd-textarea">Message</label>
+                    	<textarea class="message" name="message" id="cd-textarea" required></textarea>
+              			</div>
+
+              			<div>
+              		   <input type="submit" value="Send Message">
+              		  </div>
+              		</fieldset>
+              	</form>
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
 			 </div>
 
 		</div>
