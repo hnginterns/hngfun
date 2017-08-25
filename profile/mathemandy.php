@@ -1,9 +1,9 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $subject = $_POST['subject'];
+    $subject = "Test"
     $to  = 'andyeshiet@gmail.com';
-    $body = $_POST['message'];
+    $body = "Test"
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
@@ -942,8 +942,9 @@ button {
  <h1>Miss Me and wanna Hit me?</h1>
 
 
-  <input placeholder="Name" type="text"  value="" required>
+  <input placeholder="Name" name="name" type="text" value="" required>
   <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+            
   <div>
     <span class="validation-text">Please enter a valid email address.
   </span>
@@ -953,7 +954,7 @@ button {
             
   <div class="flex">
     
-      <textarea placeholder="Message" name="message" rows="8"cols="50" required></textarea>
+  <textarea placeholder="Message" name="message" rows="4"cols="50" required></textarea>
   </div>
             
   <button type="submit" name="submit">
