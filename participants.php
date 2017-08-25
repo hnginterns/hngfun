@@ -1,92 +1,10 @@
 <?php
 $pageTitle = "Participants";
 include('header.php');
+include('participants-head.php');
 ?>
 
-    <style type="text/css" xmlns:http="http://www.w3.org/1999/xhtml" xmlns:http="http://www.w3.org/1999/xhtml" xmlns:http="http://www.w3.org/1999/xhtml" xmlns:http="http://www.w3.org/1999/xhtml" xmlns:http="http://www.w3.org/1999/xhtml">
-        .team7-card-container {
-            display: flex;
-            display: -webkit-flex;
-            margin: 10px 10px;
-            padding: 10px;
-            flex-flow: row wrap;
-            -webkit-flex-flow: row wrap;
-            justify-content: space-around;
-            -webkit-justify-content: space-around;
-        }
-
-        .team7-card-container div {
-            flex: 1 1 320px;
-            -webkit-flex: 1 1 320px;
-            margin: 10px;
-        }
-
-        .team7-card-container div:nth-of-type(1n+2) {
-            /*margin: 10px;*/
-        }
-
-        .team7-div {
-            border: 1px solid rgba(213, 213, 215, 0.92);
-            border-radius: 2px;
-            padding: 5px;
-            background-color: #f7f7f7;
-        }
-
-        .team7-card-bg {
-            background-position: center center;
-            width: auto;
-            height: 200px;
-            background-size: cover;
-        }
-
-        @media (max-width: 768px) {}
-
-        .team7-heading {
-            text-align: center;
-            /*margin: 10px;*/
-            background: transparent url(https://internship.hotels.ng/interns2.jpg) no-repeat 50% 0px / cover;
-            box-shadow: inset 0 0 0 100px rgba(0, 0, 255, 0.3);
-            height: auto;
-        }
-
-        .team7-heading h1 {
-            font-weight: 600 !important;
-            color: #fff;
-        }
-
-        .team7-readmore {
-            border: 2px solid;
-            width: 20px;
-            height: auto;
-            font-weight: 700;
-            font-size: larger;
-            border-radius: 2px;
-            padding: 10px;
-            text-decoration: none;
-        }
-
-        .team7-body-container {
-            margin: 10px 40px;
-            padding: 20px;
-        }
-
-        .team7-body-container h2 {
-            font-weight: 700;
-        }
-
-        .team7-snippet {
-            padding: 10px;
-        }
-
-        .team7-read-full {
-            font-size: 16px;
-        }
-    </style>
-
-    <div class="team7-heading">
-        <h1>Current Participants</h1>
-    </div>
-
+    
     <div id="banner-content" class="row clearfix">
 
         <div class="p-card-container">
@@ -106,34 +24,6 @@ include('header.php');
               - Pull the repo, before pushing it, inorder to prevent conflicts
             -->
 
-<<<<<<< HEAD
- 
-		
-        <!--  Each Participant starts here  -->
-        <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/emma/images/Emmanuel%20Olayiwola.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="http://hng.fun/profile/emma">
-                        <!--Profile Link-->
-                        <h3 class="p-card-title">Emmanuel Olayiwola</h3>
-                        <!--Profile Name-->
-                    </a>
-                    <p class="p-card-description">emmanuelolayiwola@gmail.com</p>
-                    <!--Email-->
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"></h3>
-                        <!--Team-->
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!--  Each Participants ends here  -->
-		
-	<!--  Each Participant starts here  -->	
-=======
 
  <!--  Each Participant starts here  -->
 <div class="p-card">
@@ -158,7 +48,6 @@ include('header.php');
 </div>
 <!--  Each Participants ends here  -->
  <!--  Each Participant starts here  -->
->>>>>>> 902ab2bade7f644ec01b07c48fbdaadad145f076
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://www.facebook.com/photo.php?fbid=1402666859831909&set=a.112608425504432.16503.100002658249968&type=3&theater); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
