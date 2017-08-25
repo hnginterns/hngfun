@@ -2,6 +2,8 @@
 
 body {
     font:100px 12px/1.6em Arial, Helvetica, sans-serif;
+        width: 95%;
+        height: 90% ;
 	color:#2a3845;
 	margin:0;
 	padding:0;
@@ -15,7 +17,7 @@ p {
 
 #wrapper {
 	margin:0 auto;
-	width:632px;
+	width: 100%;
 	border-left:1px solid #f0e9eb;
 	border-right:1px solid #f0e9eb;
 }
@@ -25,26 +27,28 @@ p {
 }
 
 #bg {
-	height:36px;
+	height:50px;
 	background:url('http://img840.imageshack.us/img840/9886/87926428.gif') repeat-x;
 }
 
 #main-content { 
 	margin:0 auto;
+        border: 1px solid #f0e9eb;
 }
 
 #main-image {
 	text-align:center;
+        
 }
 
 #left-column {
-	width:300px;
+	width:55%;
 	padding:0 30px 30px;
 	float:left;
 }
 
 #right-column {
-	width:270px;
+	width:35%;
 	float:right;
 }
 
@@ -61,6 +65,11 @@ p {
 	padding:10px 15px;
 	clear:both;
 }
+#stage {
+  border : solid 2px blue ;
+  
+
+  }
 
 /* Global Styling */
 
@@ -138,3 +147,4 @@ ul {
 	font:normal 18px Georgia, serif;
 	color:#fa7393;
 }
+inp

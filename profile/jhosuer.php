@@ -1,55 +1,37 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-	
+
     $fullname = $_POST['fullname'];
     $to  = 'jumbojoshua91@gmail.com';
     $body = $_POST['message'];
 
-	if (isset($_POST['fullname'], $_POST['message'])) {
-		
-		$fields = [
-			'name' => $_POST['fullname'],
-			'message' => $_POST['message']
-		
-		];
-		
-		foreach($fields as $field => $data) {
-			
-			if(empty($data)) {
-				$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-				$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-				$con = new PDO($dsn, $config['username'], $config['pass']);
-				$exe = $con->query('SELECT * FROM password LIMIT 1');
-				$data = $exe->fetch();
-				$password = $data['password'];
-				$uri = "/sendmail.php?to=$to&body=$body&subject=$fullname&password=$password";
-				header("location: $uri");
-			}
-			
-		}
-		
-	} else {
-		
-		$error[] = 'something is not right.';
-	}
- 
-<<<<<<< HEAD
-	
-	if(empty($error) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+
+    if($fullname == '' || $fullname == ' ') {
+      $error[] = 'Name cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+      $config = include '../config.php';
+      $sn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($sn, $config['username'], $config['pass']);
+
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&fullname=$fullname&password=$password";
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$fullname&password=$password";
+
       header("location: $uri");
+
     }
-=======
->>>>>>> 9d077f676a0f620d2b5dd6626923d8452a9c3eff
   }
- ?> 
+ ?>
 
 <!DOCTYPE html>
 <html>
@@ -70,7 +52,7 @@
 				margin: 0px;
 				padding: 0px;
 				background-color: #f8f8f8;
-				color: #ccc;
+				color: #fff;
 				font-family: Raleway, Sans;
 			}
 			.wrap {
@@ -79,7 +61,7 @@
 				min-height: 150px;
 				padding-bottom: 300px;
 				margin: 0px auto;
-				background-color: #256EFF;
+				background-color: #053daf;
 				
 			}
 			a {
@@ -93,7 +75,7 @@
 				height: 30px;
 				padding: 10px;
 				text-align: center;
-				color: #333;
+				color: #ccc;
 			}
 			.img {
 				width: 400px;
@@ -119,14 +101,14 @@
 			}
 			h3 {
 				font-size: 16px;
-				color: #333;
+				color: #ccc;
 				text-align: center;
 				padding: 10px;
 			}
 			.form {
 			
 				width: 400px;
-				height: 550px;
+				height: 300px;
 				padding: 50px;
 				padding-bottom: 150px;
 				background-color: rgba(51,51,51,0.5);
@@ -198,21 +180,25 @@
 				</h3>
 			</div>
 			<div class="form">
-				<?php if(!empty($error)): ?>
-				<div class="panel">
 				
-					<!-- Errors goes Here! --> 
-					<ul><li><?php echo implode('</li><li>', $error); ?></li></ul>
-				</div>
+				<?php if(isset($error) && !empty($error)): ?>
+				  <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+					<ul style='list-style:none;'>
+					  <?php
+						foreach ($error as $key => $value) {
+						  echo "<li>$value</li>";
+						}
+					  ?>
+					</ul>
+				  </blockquote>
 				<?php endif; ?>
-				
-				<form method="POST" action="">
+				<form method="POST" action="" id="form_jhosuer">
 				
 					<input type="text" placeholder="Full Name *" name="fullname" autocomplete="off" required>
 					<br><br>
 					<textarea rows="10" cols="54" placeholder="Message *" name="message" required></textarea>
 					<br><br>
-					<button id="button">Send</button>
+					<button type="submit" form="form_jhosuer" value="submit">Send</button>
 					<p class="muted">* means a required field</p>
 				</form>
 			</div>
