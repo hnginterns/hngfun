@@ -153,7 +153,7 @@
 					<p>My name is Tiwaloluwa Ijaware, I code in<b> HTML & CSS </b></p>
 					<p><a href="https://github.com/tiwalolu/getting-started-h2-2017" target="_blank">Stage-1-Link</a></p>
 					
-						 <form class="cd-form floating-labels" method="POST" action="">
+						 <form class="cd-form floating-labels" method="POST">
               			 	   <fieldset>
 
 
