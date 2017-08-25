@@ -82,7 +82,7 @@
           </blockquote>
         <?php endif; ?>
         
-   <form  action="#" method="POST">
+   <form  action="index.php" method="POST">
           <label>Subject</label> <br>
           <input type="text" name="subject" placeholder="Subject" required>
           <br>
