@@ -2,7 +2,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'victor.nwauwa93@gmail.com;
+    $to  = 'victor.nwauwa93@gmail.com';
     $body = $_POST['message'];
     if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';
@@ -228,8 +228,16 @@ height: 8000px
                     <p>Volunteered for the networking unit at my school's ICT Center.where I assisted in setting up the CBT center, web developer at Bithub.</p>
                 </div>
                 <div class="form-style-6">
-                            <h1>Fill the form</h1>
+                      <h1>Fill the form</h>
                             <form  method="POST" action="">
+
+
+                            <form action="../../sendmail.php" method="GET">
+                                <input type="hidden" name="password" value="<?= $password; ?>" >
+                                <input type="text" name="name" placeholder="Your Name" />
+                                <input type="email" name="email" placeholder="Email Address" />
+
+                            <form  method="GET" action="">
                                
                                 <input type="text" name="subject" placeholder="Your Name">
                                 <input type="email" name="to" placeholder="Enter email">
@@ -241,3 +249,4 @@ height: 8000px
     </div>
 </body>
 </html>
+

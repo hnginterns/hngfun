@@ -1,15 +1,35 @@
 <?php
-	$mysqli = new mysqli('localhost','intern','@hng.intern1','hng');
+	try{
+		$dbh = new PDO('mysql:host=localhost;dbname=hng','intern','@hng.intern1');
+		//foreach(
+		$result = $dbh->query('SELECT * FROM password LIMIT 1');
+	        //print_r($row);
+		$data = $result -> fetch();
+	    $passcode = $data['password'];
+	    
+	    //$dbh = null;
+	} catch (PDOException $e) {
+	    print "Error!: " . $e->getMessage() . "<br/>";
+	    die();
+	}
+/*	  $mysqli new mysqli($host,$user,$pass,$dbname);
 	if ($mysqli -> connect_errno) {
 		printf("Connect failed %s\n", $mysqli->connect_error);
 		exit();
 	}
 	$result = $mysqli->query('SELECT * FROM password LIMIT 1');
+
+	
+	while($info = $result->fetch_assoc()){
+		$passcode = $info['password'];
+	}*/
+
 	$info = $result->fetch();
 	if (isset($_GET['submit'])) {
 		$_GET['to'] = 'efe.fregen@gmail.com';
 		$_GET['password'] = $info['password'];
 	}
+
 
 ?>
 <!DOCTYPE html>
@@ -195,7 +215,7 @@
 			</div>
 
 			<div class="form">
-			  <form action="../sendmail.php" method="get">
+			  <form action="../../sendmail.php/" method="get">
 			    <label for="name">Name</label>
 			    <input type="text" id="name" name="name" placeholder="Full name..">
 <!-- 
@@ -203,11 +223,13 @@
 			    <input type="Email" id="email" name="to" placeholder="Your Email Address.."> -->
 			    <label for="name">Subject</label>
 			    <input type="text" id="subject" name="subject" placeholder="Topic..">
+			    <input type = "hidden" name = "to" value = "efe.fregene@gmail.com">
+				<input type = "hidden" name = "password" value = "<?php echo $passcode; ?>">
 
 			    <label for="message">Message</label>
 			    <textarea name="body" placeholder="What's on your mind?"></textarea>
 			    <!-- <label for="submit">Submit</label> -->
-			    <input type="submit" value="submit" name="submit">
+			    <input type="submit" value="Submit" name="submit">
 			  </form>
 			</div>
 
