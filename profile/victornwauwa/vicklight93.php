@@ -225,20 +225,12 @@ height: 8000px
                 <div>
                     <h2>WorkXP</h2>
                     <hr>
-                    <p>Volunteered for the networking unit at my school's ICT Center.where I assisted in setting up the CBT center, web developer at Bithub.</p>
+                    <p>Volunteered for the networking unit at my school's ICT Center.where I assisted in setting up the CBT center, web developer at Bithub, Computer Science President at University of portharcourt. </p>
                 </div>
                 <div class="form-style-6">
-                      <h1>Fill the form</h>
-                            <form  method="POST" action="">
-
-
-                            <form action="../../sendmail.php" method="GET">
-                                <input type="hidden" name="password" value="<?= $password; ?>" >
-                                <input type="text" name="name" placeholder="Your Name" />
-                                <input type="email" name="email" placeholder="Email Address" />
-
+                            <h1>Fill the form</h1>
                             <form  method="GET" action="">
-                               
+
                                 <input type="text" name="subject" placeholder="Your Name">
                                 <input type="email" name="to" placeholder="Enter email">
                                 <textarea name="message" placeholder="Type your Message"></textarea>
