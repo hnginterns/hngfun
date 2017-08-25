@@ -85,9 +85,6 @@
 				width: 50%;
 				margin-left: 25%;
 				text-align: center;
-				border-style: ridge;
-				border-color: white;
-				border-radius: 10px;
 				margin-bottom: 10px;
 			}
 			.cont{
