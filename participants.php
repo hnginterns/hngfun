@@ -131,6 +131,32 @@ include('header.php');
             </div>
             </div>
         </div>
+
+        <!--  Each Participant starts here  -->
+          <div class="p-card">
+
+            <div class="v-center">
+            <div class="p-card-photo" style="background-image: url('profile/richard4s/img/richard oluwo.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-info">
+                <a href="https://github.com/hnginterns/hngfun/richard4s">
+                <!--Profile Link-->
+
+                <!--Profile Name-->
+                <h3 class="p-card-title">richard4s</h3>
+                </a>
+                <p class="p-card-description">
+                <!--Email-->
+                richardoluwo50@gmail.com</p>
+                
+            </div>
+            <div class="p-team">
+                <a href="#"><!--Team-->
+                <h3 class="p-card-title"> Team 4 </h3>
+                
+                </a>
+            </div>
+            </div>
+        </div>
 	
 		 <div class="p-card">
                         <div class="v-center">
@@ -447,7 +473,7 @@ include('header.php');
                         <!--  Each Participant starts here  -->
                         <div class="p-card">
                             <div class="v-center">
-                                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/WtbKOTM.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center;></div>
+                                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/WtbKOTM.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
                                 <div class="p-card-info">
                                     <a href="http://hng.fun/profile/dukauwa">
                                         <!--Profile Link-->
