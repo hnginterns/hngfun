@@ -108,7 +108,7 @@
 			.form {
 			
 				width: 400px;
-				height: 400px;
+				height: 300px;
 				padding: 50px;
 				padding-bottom: 150px;
 				background-color: rgba(51,51,51,0.5);
