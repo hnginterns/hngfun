@@ -39,21 +39,19 @@
 	    <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
+    
     <link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body>
-	<header id="header" role="banner">		
+			
 		<div class="main-nav">
 			<div class="container">
 				<div class="header-top">
 					<div class="pull-right social-icons">
 						<a href="https://twitter.com/godfredakpan"><i class="fa fa-twitter"></i></a>
 						<a href="https://facebook.com/godfred.akpan.14"><i class="fa fa-facebook"></i></a>
-						<a href="https://google.com/archer web solution"><i class="fa fa-google-plus"></i></a>
+						<a href="https://google.com/archerwebmaster"><i class="fa fa-google-plus"></i></a>
 						<a href="https://youtube.com/archerwebsolution"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>     
@@ -79,7 +77,7 @@
 		        </div>
 	        </div>
         </div>                    
-    </header>
+    
     <!--/#header--> 
 
     <section id="home">	
