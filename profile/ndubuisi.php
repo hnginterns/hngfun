@@ -15,7 +15,7 @@ $result = mysqli_query($con, "SELECT password from password limit 1");
 $channel_info = mysqli_fetch_row($result);
 $password = $channel_info[0];
 
-if($_GET['text'] != "" &  filter_input(INPUT_GET,"email",FILTER_VALIDATE_EMAIL))
+if($_GET['text'] != "" )
 {
   $body = $_GET['email']."  ".$_GET['text'];
     header("location: ../sendmail.php?password=$password&subject=Hello&body=$body&to=onyemenamndu@gmail.com");
