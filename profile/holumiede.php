@@ -98,7 +98,7 @@
             }
             
             body {
-                background-image: url("http://savetreessaveearth.com/wp-content/uploads/2015/06/savetreesaveearth-img1.gif");
+                background-image: url("https://cdn.pixabay.com/photo/2013/10/10/18/39/christmas-193728_960_720.jpg");
                 background-repeat: repeat;
                 background-position: right top;
                 margin-right: 200px;

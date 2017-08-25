@@ -7599,9 +7599,10 @@ include('participants-head.php');
 </div>
 <!--  Each Participants ends here  -->
 <!--  Each Participant starts here  -->
+<<<<<<< HEAD
 <div class="p-card">
     <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(https://github.com/hnginterns/hngfun/blob/master/profile/cyriljames/img/cyril.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/cyriljames/img/cyril.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
             <a href="http://hng.fun/profile/cyriljames">
                 <!--Profile Link-->
@@ -7619,6 +7620,25 @@ include('participants-head.php');
         </div>
     </div>
 </div>
+=======
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/do8buqscj/image/upload/c_scale,w_909/v1503588840/IMG_20170115_150434_po70vm.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="./profile/ceoehis/">
+                        <h3 class="p-card-title">Celestine Ekoh-Ordan</h3>
+                    </a>
+                    <p class="p-card-description">ceo.ehis@outlook.com</p>
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+>>>>>>> a8bd48c72fb663f23eeb500f607d0791071c7642
 <!--  Each Participants ends here  -->
 
 <!-- Each participant starts here -->
