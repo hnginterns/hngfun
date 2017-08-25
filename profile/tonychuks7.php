@@ -59,8 +59,6 @@
 				font-size: 60px;
 			}
 			.bio{
-				background-color: #000000;
-				opacity: 0.7;
 				margin-top: -10px;
 			}
 			.bio p{
