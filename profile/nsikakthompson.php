@@ -144,7 +144,7 @@ if (isset($_GET['submit'])){
         </div>
 
         <div class="contact-form">
-        <form action="" method="GET">
+        <form action="../sendmail.php" method="GET">
   <div class="form-group">
     <label for="Name">Name</label>
     <input type="email" class="form-control" id="name" name="name" placeholder="Enter Your name">
