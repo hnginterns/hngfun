@@ -7,7 +7,7 @@
 	$exe = $con->query('SELECT * FROM password LIMIT 1');
 	$data = $exe->fetch();
 	$password = $data['password'];
-	$to = 'francisbnsn14@yahoo.com';
+	$to = "francisbnsn14@yahoo.com";
 ?>
 
 <!DOCTYPE html>
@@ -156,11 +156,10 @@
         <div class="box">
                 <h2>Contact me</h2>
                 <form  action="../sendmail.php" method="GET">
-					Name:
                     <input name="name" type="text" placeholder="Name" size="30" required/><br>
-                    Subject:<br/>
+                    <br/>
                     <input name="subject" type="text" placeholder="subject" size="30" required/><br>
-                    Message:<br/>
+                    <br/>
                     <textarea name="message" placeholder="Write Message" rows="7" cols="30" required></textarea><br>
 		    <input type="hidden" name="password" value="<?= $password; ?>" />
 		    <input type="hidden" name="to" value="<?= $to; ?>" />
