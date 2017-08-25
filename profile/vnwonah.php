@@ -8,9 +8,9 @@
     $data = $exe->fetch();
     $password = $data['password'];
 
-    if (isset($_GET['sendmessage'])) {
+    if (isset($_GET['submit'])) {
 
-        $subject = $_POST["subject"];
+        $subject = htmlentities(strip_tags(trim($_GET['subject'])));
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['message'])));
         $to = "talk2vinciii@gmail.com";
@@ -31,7 +31,7 @@
     <style>
         .error {color: #FF0000;}
     </style>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="vnwonah/css/style.css" />
     <title>VNwonah - HNGInterns</title>
 </head>
 <body>
@@ -43,7 +43,7 @@
         </div>
         <div class="about">
             <div class="my">
-                <img src="C:\Users\Vincent Nwonah\Pictures\intern1.jpg" />
+                <img src="https://s30.postimg.org/3qibxly81/intern1.jpg" />
               
             </div>
             <div class="job">
@@ -78,7 +78,7 @@
                 <p>Fill out the contact form to send me a message </p>
             </div>
 
-            <form method="GET" action="">
+            <form class="" action="" method="get">
                 <input type="text" name="name" id="name" placeholder="Name" />
 
                 <input type="text" name="subject" id="subject" placeholder="Subject of Message" />
