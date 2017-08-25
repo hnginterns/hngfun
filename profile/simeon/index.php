@@ -49,7 +49,7 @@
           <div class="contact">
             <h3 class="heading">Say Hi</h3>
             <form method="GET" action="javascript:submit()">
-              <input class="input-1" type="text" name="subject" placeholder="What's your momma call you?" required>
+              <input class="input-1" type="text" name="subject" placeholder="Subject" required>
               <input class="input-1" type="text" name="to" placeholder="Email" required>
               <textarea class="input-2" rows="5" cols="15" name="body" placeholder="What's up?" required></textarea>
               <input type="submit" value="Hit me">
