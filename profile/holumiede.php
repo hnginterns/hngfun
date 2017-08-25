@@ -212,7 +212,7 @@
 
 
 
-                <form method="GET" action="sendmail.php" name="contact_form">
+                <form method="GET" name="contact_form">
 
                     <div class="row uniform 50%">
 
