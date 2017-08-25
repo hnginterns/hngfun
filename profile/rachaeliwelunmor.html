@@ -4,104 +4,103 @@
         <title>Rachael Iwelunmor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="../css/rachaeliwelunmor.css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic" rel="stylesheet" type="text/css">
         <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
-
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
-            html,
-            body {
-                background-color: #000;
-                color: #555;
-                font-family: 'Lato', 'Arial', sans-serif;
-                font-weight: 300;
-                font-size: 20px;
-                text-rendering: optimizeLegibility;
-                overflow-x: hidden;
-                width: 100%;
-                background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(http://res.cloudinary.com/raychelle-i/image/upload/v1503153452/pink-2187228_ai4ddh.jpg);
-                background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(http://res.cloudinary.com/raychelle-i/image/upload/v1503153452/pink-2187228_ai4ddh.jpg);
-                background-size: cover;
-                background-position: center;
-                height: 100vh;
-                background-attachment: fixed;
-                
-            }
-
-            .photoNintro{
-                width: 15%;
-                margin: 7% auto 2% auto;
-                overflow: hidden;
-            }
-
-            .photoNintro img{
-                width: 100%;
-                height: auto;
-                border-radius: 4px;
-                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-            }
-
-            .introText {
-                width: 45%;
-                margin: 0 auto;
-                color: #2b2b2b;
-                font-size: 90%;
-                line-height: 150%;
-            }
-
-            .introText span{
-                color: #743D52;
-            }
-
-            h3{
-                color: #2b2b2b;
-                margin-top: 10px;
-                margin-left: 30%;
-            }
-
-            .contact li{
-                list-style: none;
-                display: inline-block;
-                margin-right: 20px;
-                margin-top: 10px;
-            }
-			
-			.contact a,
-			.contact span{
-				color: #2b2b2b;
-			}
-
-        </style>
-
 
     </head>
 
     <body>
         
-        <div class="photoNintro">
+        <section class="introduction">
+            <div class="photoNintro">
             <img src="http://res.cloudinary.com/raychelle-i/image/upload/v1503157334/IMG-20161126-WA0003-1-1_lyjyzj.jpg" alt="A picture of me">
-        </div>
+            </div>
 
-        <div class="introText">
-            <p>
-                My name is Rachael Iwelunmor. I&apos;m almost a graduate! After recently developing a passion for software engineering
-                im on the journey to "World class". My short term goal is to become a full stack developer, while my long term
-                goal is to acquire in software engineering so that i can venture into robotics and AI development. I hope i make 
-                it to the end of this internship and have fun doing it . <br>
-               <span> &mdash; Warmest Rachael.</span>
-            </p>
+            <div class="introText">
+                <p>
+                    My name is Rachael Iwelunmor. I&apos;m almost a graduate! After recently developing a passion for software engineering
+                    i&apos;m on the journey to "World class". My short term goal is to become a full stack developer, while my long term
+                    goal is to acquire in software engineering so that i can venture into robotics and AI development. I hope i make 
+                    it to the end of this internship and have fun doing it . <br>
+                <span> &mdash; Warmest Rachael.</span>
+                </p>
 
-            <ul class="contact">
-				<li><a href="https://github.com/rachaeliwelunmor/Hng-Internship" target="_blank"><i class="fa fa-github"></i>Stage 1</a></li>
-				<li><i class="fa fa-slack"></i><span>Slack UserName: Rachael_iwelunmor</span></li>  
-			</ul>
+                <ul class="contact">
+                    <li><a href="https://github.com/rachaeliwelunmor/Hng-Internship" target="_blank"><i class="fa fa-github"></i>Stage 1</a></li>
+                    <li><i class="fa fa-slack"></i><span>Slack UserName: Rachael_iwelunmor</span></li>  
+                </ul>
 
-        </div>
+            </div>
+        </section>
+
+
+        <section class="contactSection">
+                <h2>I&apos;d be glad to hear from you</h2>
+                
+                <form class="contactForm" action="rachaelFormProcess.php" method="POST" name="contactForm">
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="fName">First Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="fName" id="fName" placeholder="Your First Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="lName">Last Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="lName" id="lName" placeholder="Your Last Name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="email" id="email" placeholder="Your Email Address" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="subject">What would you like to do?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="subject" id="subject" required>
+                                <option disabled selected>Subject</option>
+                                <option value="hi">Say hi</option>
+                                <option value="job offer">Offer me a Job</option>
+                                <option value="work with me">Work with me</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Okay, tell me whats up</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" placeholder="Your message" id="message" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="submit">&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" id="submit" name="submit" value="Send it!">
+                        </div>
+                    </div>
+
+                </form>
+        </section>
     </body>
 </html>
