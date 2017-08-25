@@ -1,29 +1,39 @@
-<!doctype html>
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
+
     $subject = $_POST['subject'];
     $to  = 'vhiktordom@gmail.com';
     $body = $_POST['message'];
+
     if($body == '' || $body == ' ') {
-        $error[] = 'Message cannot be empty.';
+      $error[] = 'Message cannot be empty.';
     }
 
+
     if($subject == '' || $subject == ' ') {
-        $error[] = 'Subject cannot be empty.';
+      $error[] = 'Subject cannot be empty.';
     }
+
     if(empty($error)) {
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-        header("location: $uri");
+
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $uri");
+
     }
-}
-?>
+  }
+ ?>
+
+
 <html>
     <head>
         <title>Vhiktor Dominic</title>
@@ -51,7 +61,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <a href="https://github.com/Vhiktordom/getting-started-h2-2017" style="text-decoration:none;color:white">Stage 1 Project</a><br><br>
             <input style="background-color:red;color:white;height:30px;width:150px;" type="button" class="button" onclick="myDetails()" value="A Message for you">
             
-            <form action="" method="GET">
+            <form action="" method="POST">
             <div>
                 <label for="name">
                     <p>Name</p>
