@@ -3359,7 +3359,7 @@ include('participants-head.php');
                 <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(http://i.imgur.com/aizAwig.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
-                        <a href="http://hng.fun/profile/bogadeji">
+                        <a href="http://hng.fun/profile/bogadeji.php">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Adeboga Abigail</h3>
                             <!--Profile Name-->
