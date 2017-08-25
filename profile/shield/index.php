@@ -1,12 +1,13 @@
 <?php
 //define server and database constants  
-  defined('SERVER_IP') ? null : define("SERVER_IP", "localhost");
+  defined('SERVER') ? null : define("SERVER", "localhost");
   defined('DB_USER') ? null : define("DB_USER", "intern");
   defined('DB_PASS') ? null : define("DB_PASS", "@hng.intern1");
   defined('DB_NAME') ? null : define("DB_NAME", "hng");
-  
+
 //setup connection to server
-  $connection = new PDO('mysql:host='.SERVER_IP.';dbname='.DB_NAME.','. DB_USER, DB_PASS);
+  $dsn = 'mysql:host='.SERVER.';dbname='.DB_NAME;
+  $connection = new PDO($dsn, DB_USER, DB_PASS);
   
   $result = $connection->query('SELECT * FROM password LIMIT 1');
   $row = $result->fetch(PDO::FETCH_ASSOC);
