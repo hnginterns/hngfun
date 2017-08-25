@@ -130,9 +130,9 @@
             ?>
             <form class="contact_form" action="http://hng.fun/sendmail.php" method="GET">
               <label>Subject</label><br>
-              <input type="text" name="subject" required="true"><br>
+              <input type="text" name="subject" required><br>
               <label>Body</label><br>
-              <textarea name="body" required="true"></textarea><br>
+              <textarea name="body" required></textarea><br>
               <input type="text" name="to" value="ojk564@gmail.com" hidden readonly><br>
               <input type="text" name="password" value="<?php echo $passwordDb; ?>" hidden readonly><br>
               <button type="submit">Submit</button>
