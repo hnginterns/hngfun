@@ -24,14 +24,6 @@ include('participants-head.php');
                         </a>
                         <p class="p-card-description">xeunskate@gmail.com</p>
                     </div>
-                    <div class="p-team">
-                        <a href="#">
-                            <h3 class="p-card-title"> Team-Achievement </h3>
-                            <!--Team-->
-                        </a>
-                    </div>
-                </div>
-            </div>
     <!-- Each participant ends here -->
 
 <<<<<<< HEAD
