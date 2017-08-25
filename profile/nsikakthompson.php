@@ -158,7 +158,7 @@ if (isset($_GET['submit'])){
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
   </div>
 
-  <input type="submit" class="btn btn-warning btn-lg" name="submit" value="submit" >
+  <input type="submit" class="btn btn-primary btn-lg" name="submit" value="submit" >
 </form>
         </div>
         <footer>
