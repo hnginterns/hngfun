@@ -1,6 +1,122 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+   /******************/
+   /*                */
+   /*                */
+   /*    Team 3      */
+   /*                */
+   /*                */
+   /******************/
+
+   .p-card-container {
+       display: flex;
+       max-width: 1500px;
+       .width: 100%;
+       margin: 0 auto;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+   }
+
+   .v-center {
+       display: flex;
+       max-width: 700px;
+       .height: 100vh;
+       margin: 0 auto;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .v-center input {
+       padding: 10px;
+       width: 400px;
+   }
+
+   .p-card {
+       height: -webkit-fill-available !important;
+       width: 366px;
+       border-radius: 4px;
+       background-color: #FFFCFC;
+       border-radius: 5px;
+       border: 3px solid #CADBE0;
+       margin: 10px;
+       padding: 10px;
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       text-align: left;
+       justify-content: flex-start;
+       box-sizing: border-box;
+   }
+
+   .p-card-photo {
+       width: 60px;
+       height: 60px;
+       border-radius: 50%;
+   }
+
+   .p-card-info {
+       width: 170px;
+       height: 50px;
+       padding-left: 20px;
+       padding-right: 20px;
+   }
+
+   .p-card-info h3 {
+       margin: 0;
+       color: #26A6D1;
+       color: #26A6D1;
+       font-size: 12px;
+       margin-bottom: -10px;
+   }
+
+   .p-card-info a {
+       text-decoration: none;
+   }
+
+   .p-team {
+       justify-content: flex-end;
+   }
+
+   .p-team a {
+       text-decoration: none;
+   }
+
+   .p-team a h3 {
+       font-size: 16px;
+   }
+
+   .p-card-info p {
+       margin: 0;
+       margin-top: 5px;
+   }
+
+   .p-card-title {
+       font-style: normal;
+       font-weight: bold;
+       line-height: normal;
+       font-size: 20px;
+       color: #000;
+   }
+
+   .p-card-description {
+       width: 108px;
+       font-style: normal;
+       font-weight: 300;
+       line-height: normal;
+       font-size: 14px;
+       color: #534C4C;
+   }
+
+   #search {
+       background-image: url('/css/searchicon.png');
+       background-position: 10px 12px;
+       background-repeat: no-repeat;
+       width: 100%;
+       font-size: 16px;
+       padding: 12px 20px 12px 40px;
+       border: 1px solid #ddd;
+       margin-bottom: 12px;
+   }
   /*
   Team 1
    */
