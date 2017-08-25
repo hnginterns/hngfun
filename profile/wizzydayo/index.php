@@ -88,7 +88,7 @@
           <br>
           <br>
           <label>Your Message</label>
-          <textarea name="message" rows="8" cols="50" placeholder="Your Message Here" required></textarea>
+          <textarea name="message" rows="8" cols="30" placeholder="Your Message Here" required></textarea>
 
           <button type="submit" name="submit" color="blue"> Send Message</button>
       </form>
