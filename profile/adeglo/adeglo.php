@@ -26,48 +26,47 @@
 
 
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang=“en”>
 
 <head>
-	<meta charset="UTF-8">
-    <title>my profile</title>
-    <link rel="stylesheet" href="adeglo.css" type="text/css"/>
+    <meta charset=“UTF-8">
+   <title>my profile</title>
+   <link rel=“stylesheet” href=“adeglo.css” type=“text/css”/>
 </head>
 
-<body> 
-    <div>
-        <p id="img">
-            <img src="http://i.imgur.com/NagAUya.jpg"
-             alt="my picture"/>
-        </p>
-        <p id="hey">NAME: ADEBOWALE GLORY</p>
-        <p><a href="https://hnginterns.slack.com/messages/@adeglo">Slack</a></p>
-        <p><a href="https://github.com/mystery1999">github</a></p>
-        <p><a href="https://github.com/mystery1999/Stage-1">Stage1 repo</a></p>  
-        <p>
-            About Me: I’m from Ondo State. I’m  a 200 level, Computer
-            Engineering student of Federal University of Technology, Akure.
-            I love cats although I have never owned one;).
-        </p>
-        <form method="POST" action="#">
-                <div >
-                    <input id="name" type="text" name="subject" placeholder="Please type your name" />
-                </div>
-                <div >
-                    <textarea id="body" rows="3"  name="message" placeholder="Type your message" ></textarea>
-                </div>
-                <div >
-                    <input id="mail" type="email" name="email" placeholder="email" />
-                </div>
-                <div>
-                    <button type="submit" name="submit">
-                    submit
-                    </button>
-                </div>
-    
-        </form>
-    </div>
-    
+<body>
+   <div>
+       <p id=“img”>
+           <img src=“http://i.imgur.com/NagAUya.jpg”
+            alt=“my picture”/>
+       </p>
+       <p id=“hey”>NAME: ADEBOWALE GLORY</p>
+       <p><a href=“https://hnginterns.slack.com/messages/@adeglo”>Slack</a></p>
+       <p><a href=“https://github.com/mystery1999”>github</a></p>
+       <p><a href=“https://github.com/mystery1999/Stage-1">Stage1 repo</a></p>  
+       <p>
+           About Me: I’m from Ondo State. I’m  a 200 level, Computer
+           Engineering student of Federal University of Technology, Akure.
+           I love cats although I have never owned one;).
+       </p>
+       <form action=“#” method=“POST”>
+               <div >
+                   <input id=“name” type=“text” name=“subject” placeholder=“Please type your name” />
+               </div>
+               <div >
+                   <textarea id=“body” rows=“3"  name=“message” placeholder=“Type your message” ></textarea>
+               </div>
+               
+               
+               <div>
+                   <button type=“submit” name=“submit”>
+                   submit
+               </button>
+           </div>
+   
+       </form>
+   </div>
+   
 </body>
 
 </html>
