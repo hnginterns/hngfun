@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$error[] = 'Subject cannot be empty.';}
 	if(empty($error)) {
 
-       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+       $config = include(dirname(dirname(__FILE__))).'/config.php');
 
        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
@@ -94,9 +94,9 @@ h4 {
 
 					<form action="http://hng.fun/profile/xeunskate.php" method="post" enctype="text/plain">
 					Name:<br>
-					<input type="text" name="subject"><br>
+					<input type="text" name="subject" placeholder="Your name..."><br>
 					Message:<br>
-					<input type="text" name="message" size="50"><br><br>
+					<input type="text" name="message" placeholder="Write something.." size="50"><br><br>
 					<input type="submit" value="Send">
 					<input type="reset" value="Reset">
 					</form>
