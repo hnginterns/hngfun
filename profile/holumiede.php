@@ -98,7 +98,7 @@
             }
             
             body {
-                background-image: url("https://cdn.pixabay.com/photo/2014/09/21/14/39/rain-455124_960_720.jpg");
+                background-image: url("https://cdn.pixabay.com/photo/2014/12/12/16/34/hands-565603_960_720.png");
                 background-repeat: repeat;
                 background-position: right top;
                 margin-right: 200px;
