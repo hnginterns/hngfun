@@ -33,35 +33,109 @@
   }
  ?>
 
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <title>Vhiktor Dominic</title>
-        <script type="text/javascript">
-            function myDetails(){
-                    alert("Thanks for Viewing!");
-            }
-        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <meta charset="UTF-8">
+          <script type="text/javascript">
+                  function myDetails()
+                  {
+                      alert("Thanks for Viewing!");
+                  }
+          </script>
+
+          <style type="text/css">
+
+                body, html {
+                  height: 171%;
+                  margin: 0;
+                }
+
+                .bg{
+
+                  background-image: url("me.jpg");
+
+                  height: 100%;
+
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+
+                .card{
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 30.92);
+                  max-width: 300px;
+                  margin: auto;
+                  text-align: center;
+                  font-family: arial;;
+                }
+
+                .container{
+                  padding: 0 16px;
+                }
+
+                .container::after {
+
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+
+                .title{
+                  color: gold;
+                  font-size: 18px;
+
+                }
+
+                button {
+                  border: none;
+                  outline: 0;
+                  display: inline-block;
+                  padding: 8px;
+                  color: white;
+                  background-color: #000;
+                  text-align: center;
+                  cursor: pointer;
+                  width: 100%;
+                  font-size: 18px;
+                }
+
+                a{
+                  text-decoration: none;
+                  font-size: 22px;
+                  color: azure;
+                }
+                button:hover, a:hover {
+                  opacity: 0.7;
+                }
+                h1{
+                  color:azure;
+                }
+                p{
+                  color: azure;
+                }
+          </style>
+
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     </head>
-    <body style="background-color:#563d7c">
-        <center>
-            <img src="vhiktordom.jpg" alt="Vhiktordom" height="300px;" width="20%">
-            <h3 style="font-family:cambria Math;font-size:24px;"> Victor Dominic</h3>
-                <h4 style="font-family:Bookman old style;font-size:20px;">I am Victor Dominic --> An upcoming Web Developer In Nigeria</h4>
-            <h6>------------------------------</h6>
-            <h2 style="font-family:century Schoolbook;color:white">Bio</h2>
-            <h6>------------------------------</h6>
-            <h4 style="color:grey;font-family:Rockwell">I'm Passionate about development, because it's the only avenue for me to transmute my mental pictures into a reality</h4>
-            
-            <h4>Slack Username: @Vhiktordom</h4>
-            <a href="https://github.com/Vhiktordom/getting-started-h2-2017" style="text-decoration:none;color:white">Stage 1 Project</a><br><br>
-            <input style="background-color:red;color:white;height:30px;width:150px;" type="button" class="button" onclick="myDetails()" value="A Message for you">
-            
-            <form action="" method="POST">
+    <body class="bg">
+       
+          <div class="card">
+
+            <img src="vhiktordom.jpg" alt="Victor Dominic" style="width:100%">
+            <div class="container">
+              <h1>Victor Dominic</h1>
+              <p class="title">Web/Mobile Developer</p>
+              <p>I'm just a simple guy, I love transmuting my ideas into reality with the help of a programming Languages.<br> I'm here to get value and hope to leave more better than I came.</p>
+                <div style="margin: 24px 0;">
+                  
+                  <a href="https://github.com/Vhiktordom/getting-started-h2-2017"><i class="fa fa-github"> Stage 1 </i></a><br>
+                  <a href="#"><i class="fa fa-slack"> @Vhiktordom</i></a>
+                </div>
+                 <form action="" method="POST">
             <div>
                 <label for="name">
                     <p>Name</p>
@@ -82,8 +156,7 @@
                 <button type="submit" class="submit-button">Send</button>
             </div>
         </form>
-            
-        </center>
-        
+            </div>
+           </div>
     </body>
 </html> 

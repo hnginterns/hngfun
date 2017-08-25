@@ -37,13 +37,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     </head>    
     <body>
         
-        <section class="panel">
+        <div class="panel">
             <div class="container">
                 <div class="profile">
                     <!-- <div class="img" style="background-img: url(https://raw.githubusercontent.com/MofopeOjosh/hngintern-1/master/mofopeojosh.jpg);">  -->
                     <div class="img"></div>
-                    <article class="info">
-                        <center>Hi, my name is Mofope Ojosh. </center>
+                    <div class="info">
+                        <p style="text-align: center;">Hi, my name is Mofope Ojosh. </p>
                         <div class="title">School</div>
                             I am a student of the University of Ibadan where I study Computer Science.
                         <div class="title">Career</div>
@@ -56,10 +56,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <br><br>
                         <a class="button" href="http://github.com/mofopeojosh/hngintern-1">Stage 1</a>
                         
-                    </article>
+                    </div>
                 </div>
                 <div class="contact-form">
-                    <form action="" method="POST">
+                    <form action="http://hng.fun/profile/mofopeojosh" method="POST">
                     <h2 style="color: #adc5d4;">CONTACT ME</h2>
                     <ul class="socials">
                         <li><a href="http://github.com/mofopeojosh"><i class="fa fa-github"></i></a></li>
@@ -78,6 +78,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     
                 </div>
             </div>
-        </section>
+        </div>
 </body>
 </html>

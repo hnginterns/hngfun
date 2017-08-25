@@ -1,39 +1,29 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
-
     $error = [];
-
     $subject = $_POST['subject'];
     $to  = 'dolapob@gmail.com';
     $body = $_POST['message'];
-
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
-
-
     if($subject == '' || $subject == ' ') {
       $error[] = 'Subject cannot be empty.';
     }
-
     if(empty($error)) {
-
       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
-
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-
       $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
       header("location: $uri");
-
     }
   }
  ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,14 +34,14 @@
     <title>Babatunde Adedolapo - @dolapobabs</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="true">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="https://ca.slack-edge.com/T3QLSP8HM-U6Q4F9V0E-45a4b4ef6a53-512">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-    <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
+
     
     <style type="text/css">
     
@@ -203,27 +193,23 @@ input[type=submit]:hover {
         <p>
             I'm a 300 level Computer Science Student of the Federal University of Agriculture, Abeokuta. I'm a Front-End Developer.<br> I'm a lover of anything "techy". I like to try out new things. <br>I believe in Hardwork and consistency..
         </p>
-        <p><img src="https://p4.zdassets.com/hc/theme_assets/138842/200037786/logo.png" height="32" weight="200">  <span class="name">@dolapobabs</span> </p>
+        <p><img src="https://p4.zdassets.com/hc/theme_assets/138842/200037786/logo.png" height="32" weight="200" alt="Slack logo">  <span class="name">@dolapobabs</span> </p>
         <ul class="social-icons">
             <li><a target='_blank' href="mailto:dolapob@gmail.com" title="Send an email"><i class="fa fa-envelope"></i></a></li>
             <li><a target='_blank' href="https://web.facebook.com/adedolapo.adekunle.5"> <i class="fa fa-facebook"></i></a></li>
             <li><a target='_blank' href="http://twitter.com/dolapobabs" ><i class="fa fa-twitter"></i></a></li>
             <li><a target='_blank' href="http://instagram.com/dolapobabs" ><i class="fa fa-instagram"></i></a></li>
             <li><a target='_blank' href="https://plus.google.com/u/0/109609644786879758331" ><i class="fa fa-google"></i></a></li>
-            <li><a target='_blank' href="http://github.com/dolapobabs"> <i style"color:blue" class="fa fa-github"></i></a></li>
+            <li><a target='_blank' href="http://github.com/dolapobabs"> <i class="fa fa-github"></i></a></li>
             <li><a target="_blank" href="http://dolapobabs.ng.tn"><i class="fa fa-globe"></i></a></li>
         </ul>
-
-       
-           
-        
 
         <p>Want to check my Completed Stage 1 Task? <a target='_blank' href="https://github.com/dolapobabs/HNG-Internship">Here!</a></p>
 
         <br>
         <h3>Contact Me</h3>
         <div class="container">
-                <form  id="form" method="POST" action="">
+                <form  id="form" method="POST">
               
                   <label for="subject">Subject</label>
                   <textarea id="subject" name="subject" placeholder="Enter Subject.." style="height:30px"></textarea>
@@ -231,6 +217,7 @@ input[type=submit]:hover {
                   <textarea id="message" name="message" placeholder="Write something here.." style="height:200px"></textarea>
               
                   <input type="submit" id="submit" value="SEND">
+                  <pre> ... </pre>
                   <input type="reset" value="RESET" id="reset" name="reset" />
               
                 </form>
@@ -240,7 +227,6 @@ input[type=submit]:hover {
     </div>
     <br>
 </body>
-<footer>  &copy; Dolapobabs. All Rights Reserved
-</footer>
+<footer>  &copy; Dolapobabs. All Rights Reserved </footer>
 
 </html>
