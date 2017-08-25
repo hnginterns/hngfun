@@ -25,7 +25,7 @@
         $error = '<div class="alert alert-danger" role="alert"><p>There were error(s) in your form:</p>' . $error . '</div>';
     }else{
 	    if(empty($error)) {
-	      $config = include(dirname(dirname(dirname(__FILE__))).'config.php');
+	      include('../../config.php');
 	      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	      $con = new PDO($dsn, $config['username'], $config['pass']);
 	      $exe = $con->query('SELECT * FROM password LIMIT 1');
