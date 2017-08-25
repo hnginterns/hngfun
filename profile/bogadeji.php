@@ -3,17 +3,20 @@
  
     
 
-if (isset($_GET['send']))  {
-          //Email information here
-      $to = "bogadeji@gmail.com"; 
-      $body = $_GET['message'];    
-     $config = include('config.php');
+
+      $config = include('config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
+      if (isset($_GET['submit']))  {
+          //Email information here
+      $to = "bogadeji@gmail.com"; 
+      $body = $_GET['message'];    
             header("location: ..sendmail.php?password=$password&body=$body&to=$to");
+        }else{
+          echo $error;
         }
        
 
@@ -146,20 +149,21 @@ button[type="submit"] {
       <input type="text" name="name" placeholder="Your Name" required="Enter your name">
      
     </fieldset>
+
     <fieldset>
       <input type="email" name="email" placeholder="Email Address" required="This field cannot be blank">
-      
+    </fieldset>
 
+     <fieldset>
+      <input type="text" name="subject" placeholder="Subject" required="This field cannot be blank">
     </fieldset>
+  
     <fieldset>
-      <input type="text" name="url" class="antispam">
+      <textarea name ="message" rows="6" placeholder="Type your Message Here...." required="This field cannot be blank"></textarea> 
     </fieldset>
+
     <fieldset>
-      <textarea name ="message" rows="6" placeholder="Type your Message Here...." required="This field cannot be blank"></textarea>
-      
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      <button name="submit" type="submit"  >Submit</button>
     </fieldset>
                             
                         </form>
