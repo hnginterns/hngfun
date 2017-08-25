@@ -1722,7 +1722,7 @@ justify-content: space-between;
                                  margin-right: 0;
                                }
 
-                               =======.footer-distributed {
+                               .footer-distributed {
                                  background-color: #424242;
                                  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
                                  box-sizing: border-box;
@@ -1752,8 +1752,8 @@ justify-content: space-between;
                                  color: #ffffff;
                                }
                                /* Footer Center */
-=======
->>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
+
+ 
 
 .team4-card-info a {
 text-decoration: none;
@@ -1915,7 +1915,7 @@ h4.project-description {
    margin-bottom: 50px;
 }
 @media (max-width: 768px) {
-<<<<<<< HEAD
+
  .team-members {
      width: 100% !important;
      float: left;
@@ -1926,7 +1926,7 @@ h4.project-description {
      text-align: left;
      margin: 20px 0px;
  }
-=======
+
    .team-members {
        width: 100% !important;
        float: left;
@@ -1937,7 +1937,7 @@ h4.project-description {
        text-align: left;
        margin: 20px 0px;
    }
->>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
+
 }
 /* Three columns side by side edited by @godfredakpan under Team 5 */
 .column {
@@ -2368,7 +2368,7 @@ h6 {
 }
 /* handling phones and small screens */
 @media only screen and (max-width: 1024px) {
-<<<<<<< HEAD
+
  .featherlight-next,
  .featherlight-previous {
      top: 10px;
@@ -2386,7 +2386,7 @@ h6 {
      margin-top: -30px;
      font-size: 40px;
  }
-=======
+
    .featherlight-next,
    .featherlight-previous {
        top: 10px;
@@ -2404,7 +2404,7 @@ h6 {
        margin-top: -30px;
        font-size: 40px;
    }
->>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
+
 }
 /*------------------------------------------------------------------------------------------*/
 /* 7. Footer */
@@ -3673,7 +3673,7 @@ padding-top: 45px !important;
                         justify-content: flex-end;
                     }
                     
-                    <<<<<<< HEAD #wrapper {
+                    HEAD #wrapper {
                         margin: 0 0;
                         padding: 0 0;
                         position: relative;
@@ -3683,7 +3683,7 @@ padding-top: 45px !important;
                         outline: none;
                     }
                     
-                    =======.p-team a {
+                   .p-team a {
                         text-decoration: none;
                     }
                     
@@ -3696,7 +3696,7 @@ padding-top: 45px !important;
                         margin-top: 5px;
                     }
                     
-                    >>>>>>>971bf31092894dc00997122bb31e6a6ea3acb029 .p-card-title {
+                    .p-card-title {
                         font-style: normal;
                         font-weight: bold;
                         line-height: normal;
@@ -3732,7 +3732,7 @@ padding-top: 45px !important;
                   /*    Team 3      */
                   /*                */
                   /*                */
-                  /******************/
+                  /***************** */
                   
                   .p-card-container {
                       display: flex;
