@@ -194,6 +194,11 @@
 (194) Shotola Hammed Oluwole, (slack: Shotolahammed01, github: Hammed01)
 (195) Osuji Chukwuamaka Benjamin, (slack: osujichukwuamaka, github: Chukwuamaka)
 (196) Chuks N Festus, (slack: chuksfestus, github: chuksFestus)
+<<<<<<< HEAD
+(197) Ogwuru Johnson Onyekachi, (slack: ogwurujohnson , github: ogwurujohnson )
+(198) Ibanga Jude, (slack: judis , github: judeibanga)
+(199) Ogbor Margaret Eneh, (slack: peggylicious, github: peggylicious)
+=======
 (197) Jacob Okoro (slack:jaycobokoro4, github:rheinchester)
 (198) Ogwuru Johnson Onyekachi, (slack: ogwurujohnson , github: ogwurujohnson )
 (199) Ibanga Jude, (slack: judis , github: judeibanga)
@@ -207,4 +212,6 @@
 (206) Nwafor Maxwell Chukwuebuka, (slack: maxwell444, github: maxwell4reel)
 (207) Francis Jude, (Slack: jhude16, Github: jhude16)
 (208) James Cyril Christopher, (slack: fluxy17, github: flexyfluxy)
-
+(209) Jude Ubon Joshua, (slack: ubyjude, github: ubyjude54)
+(210) Isaac Abasifreke Elijah, (slack: izikelijah, github: ElijahAIsaac)
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c

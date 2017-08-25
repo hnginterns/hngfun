@@ -52,7 +52,7 @@
 				margin: 0px;
 				padding: 0px;
 				background-color: #f8f8f8;
-				color: #ccc;
+				color: #fff;
 				font-family: Raleway, Sans;
 			}
 			.wrap {
@@ -61,7 +61,7 @@
 				min-height: 150px;
 				padding-bottom: 300px;
 				margin: 0px auto;
-				background-color: #256EFF;
+				background-color: #053daf;
 				
 			}
 			a {
@@ -75,7 +75,7 @@
 				height: 30px;
 				padding: 10px;
 				text-align: center;
-				color: #333;
+				color: #ccc;
 			}
 			.img {
 				width: 400px;
@@ -101,14 +101,14 @@
 			}
 			h3 {
 				font-size: 16px;
-				color: #333;
+				color: #ccc;
 				text-align: center;
 				padding: 10px;
 			}
 			.form {
 			
 				width: 400px;
-				height: 550px;
+				height: 300px;
 				padding: 50px;
 				padding-bottom: 150px;
 				background-color: rgba(51,51,51,0.5);
