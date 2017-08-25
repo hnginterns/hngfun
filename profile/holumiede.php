@@ -98,7 +98,7 @@
             }
             
             body {
-                background-image: url("https://cdn.pixabay.com/photo/2016/12/15/20/21/background-1909992_960_720.jpg");
+                background-image: url("https://cdn.pixabay.com/photo/2013/10/10/18/39/christmas-193728_960_720.jpg");
                 background-repeat: repeat;
                 background-position: right top;
                 margin-right: 200px;
