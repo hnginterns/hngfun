@@ -19,6 +19,26 @@ window.onload = function(){
         e.currentTarget.setAttribute('tabindex',-1);
         contactContainer.removeAttribute('aria-hidden');
         content.classList.add('contact--open');
+         <?php 
+$config = include('../../config.php');
+$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+try {
+         $con = new PDO($dsn, $config['username'], $config['pass']);
+            }
+//catch exception
+        catch(Exception $e) {
+                echo 'Message: ' .$e->getMessage();
+                die();
+            }
+     if(isset($con)){
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        }else {
+    echo "Error Fetching Data";
+    die();
+        }
+?>
     }
 
     function closeContactForm(e){
