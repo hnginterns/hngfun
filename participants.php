@@ -7522,7 +7522,7 @@ include('participants-head.php');
 	    
 	     <div class="p-card">
         <div class="v-center">
-            <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/1d859b25d5); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+            <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/1d859b25d5); background-size: cover; background-repeat: no-repeat; background-position: center cent"></div>
             <div class="p-card-info">
                 <a href="http://hng.fun/profile/nsikakjon.html">
                     <!--Profile Link-->
@@ -7608,6 +7608,32 @@ include('participants-head.php');
     </div>
 
 </div>
+
+
+<!--  Each Participant starts here  -->
+<div class="p-card">
+
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/ojblaze/happy%20me.jpg);
+         background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/ojblaze/">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Daniel Enoch Ojonimi</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">dynablaze@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title">Team 2</h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
 
 
 <?php include "footer.php"; ?>
