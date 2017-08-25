@@ -149,7 +149,7 @@
                             <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
 				
-                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
                             <input type="submit" name="submit" value="SEND" class="form-submit" required="">
                         </form>  <br>  
 					    </div>
