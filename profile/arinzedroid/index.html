@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
   $config = include('../../config.php');
   $dsn = 'mysqli:host='.$config['host'].';dbname='.$config['dbname'];
@@ -6,6 +7,17 @@
   $data = $exe->fetch();
   $password = $data['password']; 
 ?>
+=======
+<?php 
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+?>
+
+>>>>>>> 80665992c78a7848208f92e6cbbe8f5dd1589818
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,27 +65,7 @@
             </div>
             <div class="contact__me" aria-hidden="true">
                 <button  class="contact__me__close-button" title="Close" aria-label="Close contact form">X</button>
-                <h2>Contact me</h2>
-                <?php 
-$config = include('../../config.php');
-$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-try {
-         $con = new PDO($dsn, $config['username'], $config['pass']);
-            }
-//catch exception
-        catch(Exception $e) {
-                echo 'Message: ' .$e->getMessage();
-                die();
-            }
-     if(isset($con)){
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        }else {
-    echo "Error Fetching Data";
-    die();
-        }
-?>
+                <h2>Contact me</h2>                
                 <form action="../../sendmail.php" method="get">
 
           <label for="email">Email</label>
