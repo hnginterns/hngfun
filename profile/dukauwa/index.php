@@ -37,7 +37,7 @@
               }
               ul.social-icons {
                   margin-top: 10px;
-                  align-items: center;
+                  align-items: flex-start;
               }
               .social-icons li {
                   vertical-align: top;
