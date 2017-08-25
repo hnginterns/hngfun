@@ -232,6 +232,30 @@ include('header.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
+	
+	
+	<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(http://www.soccerclassique.com/wp-content/uploads/2017/06/Emem.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/emiqueena.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Emem Jonah</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">yiungemiqueena@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team 8 </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
 <div class="p-card">
