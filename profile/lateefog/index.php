@@ -4,7 +4,7 @@
 	$password = "@hng.intern1";
 	$dbname = "hng";
 	
-	$conn = new mysqli($servername, $user, $pass, $db);
+	$conn = new mysqli($servername, $username, $password, $dbname);
     mysqli_select_db($conn, 'password');
     $query = "SELECT * FROM password LIMIT 1";
     $result = mysqli_query($connect, $query);
