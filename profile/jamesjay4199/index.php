@@ -1,11 +1,26 @@
 <?php
-	$config = include('../../config.php');
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-  $con = new PDO($dsn, $config['username'], $config['pass']);
-
-  $exe = $con->query('SELECT * FROM password LIMIT 1');
-  $data = $exe->fetch();
-  $password = $data['password'];
+	if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'jamiejay4199@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+    }
+  }
 ?>
 <html>
 	<head>
@@ -34,14 +49,23 @@
 				<span>Meet me on facebook @James John James</span><br>
 				
 			</div>
-			<form action = "../../sendmail.php" id = "contact-form" method = "get" >
+				<?php if(isset($error) && !empty($error)): ?>
+					<blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+						<ul style='list-style:none;'>
+						<?php
+							foreach ($error as $key => $value) {
+							echo "<li>$value</li>";
+							}
+						?>
+						</ul>
+					</blockquote>
+				<?php endif; ?>
+			<form action = "index.php" id = "contact-form" method = "POST" >
 				<fieldset>
 				<legend>Contact Me</legend>
-				<input type = "hidden" name = "to" value ="jamiejay4199@gmail.com">
-				<input type = "hidden" name = "password" value = "<?= $password ?> ">
 				<input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
 				<textarea name = "body" placeholder = "Type your message here" rows ="18" cols = "70" required></textarea><br>
-				<br><input type ="submit" value ="Send Message">
+				<br><input type ="submit" name="submit" value ="Send Message">
 				</fieldset>
 			</form>
 			<aside>
