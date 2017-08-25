@@ -1,85 +1,105 @@
-
-
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-
     $subject = $_POST['subject'];
-    $to  = 'glonimi0@gmail.com';
+    $to  = 'davidshemang@gmail.com';
     $body = $_POST['message'];
-
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
-
-
     if($subject == '' || $subject == ' ') {
       $error[] = 'Subject cannot be empty.';
     }
-
     if(empty($error)) {
-
       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
-
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-
       $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
       header("location: $uri");
-
     }
   }
  ?>
 
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Adebowale Glory | Profile</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="adeglo.css" type="text/css"/>
+  </head>
+  <body>
 
-<!DOCTYPE HTML>
-<html lang=“en”>
+<!-- Page Content -->
 
-<head>
-    <meta charset="UTF-8">
-   <title>Adebowale Glory Profile</title>
-   <link rel=“stylesheet” href=“adeglo.css” type=“text/css”/>
+  <div>
+        <p id="img">
+            <img src="http://i.imgur.com/NagAUya.jpg"
+             alt="my picture"/>
+        </p>
+        <p id="hey">NAME: ADEBOWALE GLORY</p>
+        <p><a href="https://hnginterns.slack.com/messages/@adeglo">Slack</a></p>
+        <p><a href="https://github.com/mystery1999">github</a></p>
+        <p><a href="https://github.com/mystery1999/Stage-1">Stage1 repo</a></p>  
+        <p>
+            About Me: I’m from Ondo State. I’m  a 200 level, Computer
+            Engineering student of Federal University of Technology, Akure.
+            I love cats although I have never owned one;).
+        </p>
+    
 
-</head>
 
-<body>
-   <div>
-       <p id=“img”>
-           <img src=“http://i.imgur.com/NagAUya.jpg”
-            alt=“my picture”/>
-       </p>
-       <p id=“hey”>NAME: ADEBOWALE GLORY</p>
-       <p><a href=“https://hnginterns.slack.com/messages/@adeglo”>Slack</a></p>
-       <p><a href=“https://github.com/mystery1999”>github</a></p>
-       <p><a href=“https://github.com/mystery1999/Stage-1">Stage1 repo</a></p>  
-       <p>
-           About Me: I’m from Ondo State. I’m  a 200 level, Computer
-           Engineering student of Federal University of Technology, Akure.
-           I love cats although I have never owned one;).
-       </p>
-       <form action=“#” method=“POST”>
-               <div >
-                   <input id=“name” type=“text” name=“subject” placeholder=“Please type your name” />
-               </div>
-               <div >
-                   <textarea id=“body” rows=“3"  name=“message” placeholder=“Type your message” ></textarea>
-               </div>
-               
-               
-               <div>
-                   <button type=“submit” name=“submit”>
-                   submit
-               </button>
-           </div>
-   
-       </form>
-   </div>
-   
-</body>
 
+
+
+    <div class="banner" id="contact">
+    <div class="container">
+           
+            <!--contact form -->
+  <h2 style="text-align: center;">Send me a message</h2>
+      <?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+<?php endif; ?>
+
+  <form " method="POST" action="#">
+
+    <div class="form-group">
+      <label for="subject" class="sr-only">Subject:</label>
+      <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="message" class="sr-only">Message:</label>
+      <textarea id="message" class="form-control" name="message" rows="6" cols="50" placeholder="Your Message" required></textarea>
+    </div>
+    <button name="submit" type="submit" class="btn btn-default">Send</button>
+  </form>
+  <!--/.contact form-->
+         </div>
+
+    </div>
+</div
+  
+  
+
+  
+    
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
 </html>
