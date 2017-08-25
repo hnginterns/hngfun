@@ -8,7 +8,7 @@
     $data = $exe->fetch();
     $password = $data['password'];
 
-    if (isset($_GET['sendmessage'])) {
+    if (isset($_GET['submit'])) {
 
         $subject = htmlentities(strip_tags(trim($_GET['subject'])));
         $password = htmlentities(strip_tags(trim($password)));
@@ -78,7 +78,7 @@
                 <p>Fill out the contact form to send me a message </p>
             </div>
 
-            <form method="GET" action="">
+            <form class="" action="" method="get">
                 <input type="text" name="name" id="name" placeholder="Name" />
 
                 <input type="text" name="subject" id="subject" placeholder="Subject of Message" />
