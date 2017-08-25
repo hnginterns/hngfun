@@ -86,78 +86,16 @@ include "header.php";
   }
 
 </style>
-<main class="m-container">
-<?php 
 
-if($_SERVER["REQUEST_METHOD"] == "GET"){
-  //checks if it's a post request from the form
-  if(isset($_GET["name"])){
-    $filename = $_GET["name"];
-}
-if(isset($filename)){ 
-
-$name = test_input($_GET["name"]);
-$email = test_input($_GET["email"]);
-$message = test_input($_GET["message"]);
-
-$from = 'Hotelsng Intern Contact Form'; 
-$to = 'emayoung95@gmail.com'; // email address to be replaced
-$subject = 'Message from Contact Form ';
- 
-$body = "From: $name\n E-Mail: $email\n Message:\n $message";
-
-
-$user_name = "intern";
-$password = "@hng.intern1";
-$database = "hng";
-$server = "46.101.104.14";
-
-$db_handle = mysqli_connect($server, $user_name, $password);
-
-$db_found = mysqli_select_db( $db_handle, $database );
-
-if ($db_found) {
-  $SQL = "SELECT password FROM password";
-  $result = mysqli_query($db_handle, $SQL);
-
-  while ( $db_field = mysqli_fetch_assoc($result) ) {
-    
-    $mail_password = $db_field['password'];
-    $my_email = "emayoung95@gmail.com"
-    // send the mail now
-    hng.fun/sendmail.php?password=$mail_password&subject=$subject&body=$body&to=$my_email
-
-    
-    }
-    mysqli_close($db_handle);
-    
-}else{
-  echo "<script type=\"text/javascript\">".
-  "alert('Database not found error');".
-  "</script>";
-}
-
-}
-}
-
-function test_input($data) {
-  //tests the data to make sure we are free from javascript attacks
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
- ?>
-<iframe src=https://www.google.com/maps/embed/v1/place?key=AIzaSyAtVAvtq9fcVMGq2sOSK0Ok6tiRQT71I2o&q=Ibom+eLibrary"" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-  
+<main class="m-container"> 
   <div class="underlay"></div>
   <h2 style="font-family: 'Lato', sans-serif">GET IN TOUCH</h2>
   <section class="contact">
   <section class="contact-form" >
-    <form  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" >
+    <form  form method="post" action="testwarrie.php" >
     <!-- php code checks against html injection -->
     <p class = "title" >WE CARE ABOUT YOUR FEEDBACK</p>
-    <input type="text" placeholder="Name" name="name" required/><br>
+    <input type="text" placeholder="Subject" name="subject" required/><br>
     <input type="email" placeholder="Email" name="email" required/><br>
     <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" name = "message" required></textarea><br>
     <input type="submit"/>
@@ -180,12 +118,8 @@ function test_input($data) {
   </section>
   
   </section>
-
   
 </main>
-
-
-
 <?php 
 include "footer.php"; 
 ?>
