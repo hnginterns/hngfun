@@ -1,6 +1,6 @@
 <?php 
 
-	$config = include('./config.php');
+	$config = include('../config.php');
 
 	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
