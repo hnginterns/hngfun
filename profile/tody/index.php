@@ -1,38 +1,34 @@
 <?php
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
 
     $subject = $_POST['subject'];
     $to  = $_POST['to'];
     $body = $_POST['body'];
 
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
 
+    $config = include('../../config.php');
+    $server = $config['host'];
+    $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
 
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
-    }
+    if (!$con) {
+      die("Connection failed: ".mysqli_connect_error());
+  }
 
-    if(empty($error)) {
+    $sql = 'SELECT * FROM password LIMIT 1';
 
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $server = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = mysqli_connect($server,$config['username'],$config['pass']);
-
-      $sql = 'SELECT * FROM password LIMIT 1';
-
-      $result = mysqli_query($con, $sql);
-      $data = mysqli_fetch_array($result);
+    if($result = mysqli_query($con, $sql)) {
+      $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
       $password = $data['password'];
-
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-      header("location: $uri");
-
+    } else {
+        $password = "#";
     }
+
+
+    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+    header("location: $uri");
+
   }
 
 ?>
@@ -285,7 +281,7 @@
     </div>
 
 
-    <form class="contact-form" action="" method="post">
+    <form class="contact-form" method="post">
       <div class="form-title">Contact Me</div>
       <div class="form-area">
         <!-- <input type="hidden" name="password" value="$password"> -->

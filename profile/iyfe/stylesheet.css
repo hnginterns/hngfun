@@ -1,8 +1,9 @@
 #dp{
-    border-radius: 50%;
-    width:60%;
-    height: 60%;
 
+    border-radius: 40%;
+    width:40%;
+    padding: 40px;
+  
 }
 #container {
 	margin : auto;
@@ -11,12 +12,119 @@
   	background: #ddd;
   	font-family: 'Slabo 27px', serif;
 }
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration-color: black;
-    box-shadow: 0 0 40px 40px $blue inset, 0 0 0 0 blue;
-    border-color: blue;
-  	padding: 5px;
+#container_2 {
+
+    background: #fbf;
+}
+
+
+
+.left-half {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+
+}
+p{
+  margin:auto;
+  padding: 10px;
+}
+.right-half {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+}
+
+
+
+
+h2 {
+  text-transform: uppercase;
+  color: ddd;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 1.4em;
+  line-height: 2.8em;
+}
+.form_container {
+  margin: 0;
+}
+
+
+.login-box {
+  background-color: ddd;
+  max-width: 340px;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.login-box .box-header {
+  background-color: #665851;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.login-box label {
+  font-weight: 700;
+  font-size: .8em;
+  color: #888;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 2em;
+}
+
+.login-box input {
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: .9em;
+  color: #888;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #665851;
+  transition: 0.5s;
+  color: #665851;
+}
+textarea {
+    width: 70%;
+    height: 150px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    resize: none;
+}
+
+button {
+  margin-top: 0px;
+  border: 0;
+  border-radius: 2px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  background-color: #665851;
+  cursor:pointer;
+  outline: none;
+}
+
+.login-box button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.login-box button:hover {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
 
