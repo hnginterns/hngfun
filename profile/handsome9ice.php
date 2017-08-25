@@ -10,13 +10,11 @@
 
        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
-
-       $result = $con->query('SELECT * FROM password');
-        $data = $result->fetch();
-        $password = $data['password'];
+		
+		$title = $_POST['title'];
         $name = $_POST['name'];
 		$email = $_POST['email'];
-		$dropdown = $_POST['dropdown'];
+		$phone = $_POST['phone'];
 		$message = $_POST['message'];
 		$formcontent="From: $name \n Message: $message";
 		$recipient = "keresifon.ekpo@gmail.com";
