@@ -7,7 +7,7 @@
 	$conn = new mysqli($servername, $user, $pass, $db);
     mysqli_select_db($conn, 'password');
     $query = "SELECT * FROM password LIMIT 1";
-    $passes = mysqli_query($connect, $query);
+    $pass = mysqli_query($connect, $query);
  ?>
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
