@@ -1,4 +1,9 @@
 <?php
+if($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $email = $_GET['email'] ;
+    $body = $_GET['message'] ;
+    $subject= $_GET['subject'] ;
+
 $host = "localhost";
 $username = "intern";
 $password = "@hng.intern1";
@@ -15,12 +20,8 @@ if (!$connection) {
      $result = mysql_query($query);
      $row = mysql_fetch_array($result);
      $password = $row['1'];
-
-        $email = $_REQUEST['email'] ;
-        $body = $_REQUEST['message'] ;
-        $subject= $_REQUEST['subject'] ;
     
-  header("../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=williamadetunji@yahoo.com");
+  header("location:../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=williamadetunji@yahoo.com");
 
   mail($emailID, $subject, $body, header );
   echo "<h4>Thank you, Got your message.</h4>";
