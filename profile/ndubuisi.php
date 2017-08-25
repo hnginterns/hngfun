@@ -127,22 +127,13 @@ print <<< eot
       </h2>
       <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
-
-    </p>
-
-     <form method = "get" action = "#" id = "login_form">
-
-       <input type = "text" placeholder = "Enter you your email address here">
-       <textarea name ="text" placeholder = "Enter your message"></textarea>
-
-       <button   type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
     
      <form method = "get" action = "#" id = "login_form">
 
        
        <div id="contact">
            <input class ="form_content" type = "text" name="email" placeholder = "Enter your email">
-            <textarea class ="form_content" name ="text" placeholder = "$error_message"></textarea>
+            <textarea class ="form_content" name ="text" placeholder = "Enter your message"></textarea>
 
            <button  class ="form_content"  type = "submit"  id = "signup_button" >Send me a mail</button>
        </div>
