@@ -9,7 +9,7 @@
 ?>
 <html>
 	<head>
-		<link href = "new.css" rel ="Stylesheet">
+		<link href = "new.css" rel ="Stylesheet" type = "text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Jamesjay4199 | Profile</title>
 	</head>
