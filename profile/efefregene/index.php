@@ -215,7 +215,7 @@
 			</div>
 
 			<div class="form">
-			  <form action="../sendmail.php" method="get">
+			  <form action="../../sendmail.php/" method="get">
 			    <label for="name">Name</label>
 			    <input type="text" id="name" name="name" placeholder="Full name..">
 <!-- 
@@ -229,7 +229,7 @@
 			    <label for="message">Message</label>
 			    <textarea name="body" placeholder="What's on your mind?"></textarea>
 			    <!-- <label for="submit">Submit</label> -->
-			    <input type="submit" value="submit" name="submit">
+			    <input type="submit" value="Submit" name="submit">
 			  </form>
 			</div>
 
