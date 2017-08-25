@@ -83,7 +83,7 @@ h4 {
 		
 		<h3>FOR MORE INFO SEND ME AN EMAIL:</h3>
 
-					<form action="http://hng.fun/profile/xeunskate.php" method="post" enctype="text/plain">
+					<form action="http://hng.fun/profile/xeunskate.php" method="post" >
 					Name:<br>
 					<input type="text" name="subject" placeholder="Your name..."><br>
 					Message:<br>
