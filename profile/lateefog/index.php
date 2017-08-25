@@ -7,7 +7,7 @@
 	$conn = new mysqli($servername, $username, $password, $dbname);
     mysqli_select_db($conn, 'password');
     $query = "SELECT * FROM password LIMIT 1";
-    $result = mysqli_query($connect, $query);
+    $result = mysqli_query($conn, $query);
 		
  ?>
 <!doctype html>
@@ -180,7 +180,7 @@
 			<input type = "text" name = "subject" placeholder = "your name" required>
 			<input type = "text" name = "your email" placeholder = "email@example.com">
 			<input type = "hidden" name = "to" value = "lateefogunbadejo@yahoo.com">
-			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row[ 'password'];} ?>">
+			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
 			<textarea name = "body" placeholder = "your message here" required></textarea>
 			<input type="submit" name = "submit" value="send">
 		  </form>
