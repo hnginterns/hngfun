@@ -1,6 +1,6 @@
 <?php
 //define server and database constants  
-  defined('SERVER_IP') ? null : define("SERVER_IP", "46.101.104.14");
+  defined('SERVER_IP') ? null : define("SERVER_IP", "localhost");
   defined('DB_USER') ? null : define("DB_USER", "intern");
   defined('DB_PASS') ? null : define("DB_PASS", "@hng.intern1");
   defined('DB_NAME') ? null : define("DB_NAME", "hng");
