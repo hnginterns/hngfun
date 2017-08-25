@@ -18,7 +18,6 @@
 		$message = $_POST['message'];
 		$formcontent="From: $name \n Message: $message";
 		$recipient = "keresifon.ekpo@gmail.com";
-		$subject = "Contact Form";
 		$mailheader = "From: $email \r\n";
 		mail($recipient, $subject, $formcontent, $mailheader)
    }else{
