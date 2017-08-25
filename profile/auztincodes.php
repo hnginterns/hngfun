@@ -21,7 +21,7 @@
 	    <meta name="view port" content="width=device-width,initial-scale=1.0">
 	     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	    <style type="text/css">
-		   	
+	</head>	   	
 			body{
 			 	background:#fff;
 			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
@@ -116,7 +116,6 @@
 		}
 
 	    </style>   
-	</head>
 
 	<body>
 			<div class=" img_pos">
