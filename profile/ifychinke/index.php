@@ -1,12 +1,27 @@
 <?php
 
-    $user = 'intern';
-    $pass = '@hng.intern1';
-    $db = 'hng';
-    $connect = new mysqli('localhost', $user, $pass, $db);
-    mysqli_select_db($connect, 'password');
-    $query = "SELECT * FROM password LIMIT 1";
-    $passes = mysqli_query($connect, $query);
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'chinkeifeyinwa@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
 
 ?>
 <!DOCTYPE html>
@@ -19,9 +34,15 @@
     
 
     <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    
 
-    <style type      = "text/css">
+    <style type = "text/css">
+     @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+
         #rcorners2 {
     border-radius:     25px;
     border:            2px solid purple;
@@ -131,18 +152,16 @@
         
          <main class="profile-body" id="contact-area">
             <h3>Contact Me</h3>
-            <form action="/sendmail.php" method="GET" style="margin-bottom: 20px;">
+            <form class="cd-form floating-labels" method="POST" >
                 <div class="input-holder">
                     <input type="text" placeholder="Full Name" name="subject" class="input-box" required>
                 </div>
                 <div class="input-holder">
                     <input type="email" placeholder=" Email" name="to" class="input-box" required>
                 </div>
-             <div class="hide">
-                    <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>
-                </div> 
+             
             <div class="input-holder">
-                <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Type your message here" class="user-message" required></textarea>
+                <textarea name="message" id="user-message" cols="30" rows="10" placeholder="Type your message here" class="user-message" required></textarea>
             </div>
             <div>
                 <button type="submit" class="submit-button">

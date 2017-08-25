@@ -1,31 +1,13 @@
 <?php
-
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
-    $error = [];
-    
-    $subject = $_POST['Subject'];
-    
-    $to = $_POST['to'];
-    
-    $body = $_GET['Message'];
-    
-    if($body == '' || $body == ' ') {
-    
-    $error[] = 'Message cannot be empty.';
-    
-    }
-    
-    if($Subject == '' || $Subject == ' ') {
-    
-    $error[] = 'Subject cannot be empty.';
-    
-    }
-    
-    if(empty($error)) {
-    $admin_email = 'xyluz@ymail.com';
-    
-    $config = include('../../sendmail.php');
+   //if "email" variable is filled out then send email
+   if(isset($_GET['submit'])){
+       //Email information
+       $to = "xyluz@ymail.com";
+       $subject = $_GET['subject'];
+       $body = $_GET['body'];
+   
+   
+    $config = include(dirname(dirname(__FILE__)).'/config.php');
     
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     
@@ -37,13 +19,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $password = $data['password'];
     
-    $url = "hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
     
-    header("location: $url");
     
-    }
+    header("location:http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
     
-    }
+    
+   }
+    
 ?>
 
 <!DOCTYPE html>
@@ -99,7 +81,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <img class="img" src="https://pbs.twimg.com/media/DGtGqu5XcAA5J3-.jpg" />
 
         <h1>Chike Ononye</h1>
-        <p>Hello, I'm Chike Ononye, graduated sixth form(Alevel) August, 2017. Junior Front End Devloper and Designer.LANGUAGE(S), FRAMEWORK(S) AND LIBRARIE(S): HTML/CSS, Bootstrap, JavaScript, jQuery , AdobeXD(design)</p>
+        <p>Hello, I'm Chike Ononye, graduated sixth form(Alevel) August, 2017. Junior Front End Devloper and Designer.LANGUAGE(S), FRAMEWORK(S) AND LIBRARIE(S): HTML/CSS, Bootstrap, JavaScript, jQuery , particlesJS, AdobeXD(design)</p>
 
         <div id="links">
             <a id="slack" href="https://hnginterns.slack.com">
@@ -122,7 +104,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
 
-    <footer>
+    
     <!-- 
     <div class="form-area">
         <input type="hidden" name="to" value="kosyononye@gmail.com">
@@ -139,11 +121,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="submit" value="SEND">
       </div>
       -->
+      <footer>
+        <form class="formsubmit" action="" method="GET" name="contact_area">
+        <input type="hidden" name="to" value="xyluz@ymail.com">
 
-        <form class="formsubmit" action="/sendmail.php" method="GET">
-        <input type="hidden" name="to" value="kosyononye@gmail.com">
-
-            <p>Your name<br />
+            <p>Name<br />
                 <input name="name" type="text" size="30" /></p>
                 
             <p>Email<br />

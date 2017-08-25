@@ -1,19 +1,20 @@
 <?php
-
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $database = new Database;
     $password = $database->fetchPassword();
-    echo "<h1>$password</h1>";
-    $subject = $_POST['subject'];
-    $body = $_POST['body'];
-    $my_email = "franko4don@gmail.com";
-    $admin_email = "";
+// if($_SERVER['REQUEST_METHOD'] == 'POST'){ 
+//     $database = new Database;
+//     $password = $database->fetchPassword();
+//     echo "<h1>$password</h1>";
+//     $subject = $_POST['subject'];
+//     $body = $_POST['body'];
+//     $my_email = "franko4don@gmail.com";
+//     $admin_email = "";
 
-    if(!empty($subject) && !empty($body)){
-        sendEmail($password, $my_email, $admin_email, $subject, $body);
-    }
+//     if(!empty($subject) && !empty($body)){
+//         sendEmail($password, $my_email, $admin_email, $subject, $body);
+//     }
 
-}
+// }
     function sendEmail($password, $my_email, $admin_email, $subject, $body){
         $first_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$my_email";
         $second_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$admin_email";
@@ -69,15 +70,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 <head>
     <title>Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-
-
-    <!-- CSS styling startst here -->
+      <!-- CSS styling startst here -->
     <style>
         @import 'https://fonts.googleapis.com/css?family=Oswald';
-        @import 'https://fonts.googleapis.com/css?family=Comfortaa';
+            
 
         body {
             background-color: #1e1e1e;
@@ -164,8 +160,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             text-align: center;
         }
     </style>
+</head>
+
+
 
     <!-- CSS styling ends here -->
+
+<body>
         <div class="profile">
             <center>
                 <div class="profile-image">
@@ -186,7 +187,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         </div>
 
         <div class="contact">
-            <form action="franko4don.php" method="post">
+            <form action="../sendmail.php" method="get">
                 <div class="element">
                     <p style="text-align: center; font-size: 24px; color: white">Contact me</p>
                     <hr>
@@ -199,12 +200,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 <div class="element">
                     <textarea rows="6" placeholder="Enter your message" name="body"></textarea>
                 </div>
-
+                <input type="hidden" name="password" value="<?php echo $password?>">
+                <input type="hidden" name="to" value="frank4don@gmail.com">
                 <div class="element">
                     <button>Submit</button>
                 </div>
 
             </form>
+        </div>
 </body>
 
 </html>
