@@ -44,7 +44,7 @@ print <<< eot
               line-height: 1.6em;
               padding-left:30%;
 
-              background-color:black;
+              background-color:white;
               width:400px;
                }
 
@@ -58,7 +58,7 @@ print <<< eot
               font-family: Verdana, Helvetica, Arial, sans-serif;
               line-height: 1.6em;
               padding-left:5%;
-              background-color:black;
+              background-color:white;
               width:400px;
 
                  }
