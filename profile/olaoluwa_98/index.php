@@ -9,7 +9,7 @@
         $data = $exe->fetch();
         $password = $data['password'];
 
-        $subject = htmlentities(strip_tags(trim($_GET['subject']))) || "HEY THERE" ;
+        $subject = htmlentities(strip_tags(trim($_GET['subject'])));
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "awotunde.emmanuel@gmail.com";
