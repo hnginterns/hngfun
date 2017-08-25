@@ -3,21 +3,22 @@
  
     
 
-if (isset($_GET['send']))  {
+
+      if (isset($_GET['submit']))  {
           //Email information here
-      $to = "bogadeji@gmail.com"; 
+      $to = "bogadeji@gmail.com";
+      $subject = $_GET['subject'];
       $body = $_GET['message'];    
-     $config = include('config.php');
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-            header("location: ..sendmail.php?password=$password&body=$body&to=$to");
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
         }
-       
 
- //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=odibest1893@gmail.com";
+ //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=bogadeji@gmail.com";
 
 
 ?>
@@ -32,7 +33,7 @@ if (isset($_GET['send']))  {
 	    img{
     border-radius:50%; 
       display:block;
-      
+      w
       border:1px solid #551A8B;
       margin: auto; 
      }
@@ -139,27 +140,28 @@ button[type="submit"] {
 
   <div class ="contact">
     
-                        <form action="" method="GET">
+                        <form action="bogadeji.php" method="POST">
                         <h3>Contact</h3>
     
     <fieldset>
       <input type="text" name="name" placeholder="Your Name" required="Enter your name">
      
     </fieldset>
+
     <fieldset>
       <input type="email" name="email" placeholder="Email Address" required="This field cannot be blank">
-      
+    </fieldset>
 
+     <fieldset>
+      <input type="text" name="subject" placeholder="Subject" required="This field cannot be blank">
     </fieldset>
+  
     <fieldset>
-      <input type="text" name="url" class="antispam">
+      <textarea name ="message" rows="6" placeholder="Type your Message Here...." required="This field cannot be blank"></textarea> 
     </fieldset>
+
     <fieldset>
-      <textarea name ="message" rows="6" placeholder="Type your Message Here...." required="This field cannot be blank"></textarea>
-      
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      <button name="submit" type="submit"  >Submit</button>
     </fieldset>
                             
                         </form>
