@@ -1,4 +1,4 @@
-<?php
+﻿hp
 $pageTitle = "Participants";
 include('header.php');
 include('participants-head.php');
@@ -46,7 +46,7 @@ include('participants-head.php');
         </div>
     </div>
 </div>
-<!--  Each Participants ends here  -->
+
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">

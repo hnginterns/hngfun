@@ -44,7 +44,7 @@
 </head><!--/head-->
 
 <body>
-	<header id="header" role="banner">		
+			
 		<div class="main-nav">
 			<div class="container">
 				<div class="header-top">
