@@ -77,7 +77,7 @@
 		        </div>
 	        </div>
         </div>                    
-    </header>
+    
     <!--/#header--> 
 
     <section id="home">	
