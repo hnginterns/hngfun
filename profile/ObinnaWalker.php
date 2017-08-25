@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['submit'])){
+    if(isset($_POST['process'])){
 
         $config = [
             'dbname' => 'hng',
@@ -15,10 +15,10 @@
         $data = $result->fetch();
         $password = $data['password'];
         $subject = $_POST['subject'];
-        $message = $_POST['message'];
-        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&message=".$message."&to=obinnawalker@gmail.com");
+        $message = $_POST['body'];
+        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=obinnawalker@gmail.com");
 
     }else{
-        header("location: ObinnaWalker.php");
+        header("location: ObinnaWalker.html");
     }
 ?>
