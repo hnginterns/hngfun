@@ -52,7 +52,7 @@
 				margin: 0px;
 				padding: 0px;
 				background-color: #f8f8f8;
-				color: #ccc;
+				color: #fff;
 				font-family: Raleway, Sans;
 			}
 			.wrap {
@@ -61,7 +61,7 @@
 				min-height: 150px;
 				padding-bottom: 300px;
 				margin: 0px auto;
-				background-color: #08348e;
+				background-color: #053daf;
 				
 			}
 			a {
