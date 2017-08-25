@@ -1157,8 +1157,6 @@
                 <!--Team-->
             </a>
         </div>
-<<<<<<< HEAD
-=======
 
 
         <!--  Participant starts here  -->
@@ -1208,8 +1206,6 @@
                     <p class="p-card-description">jumbojoshua91@gmail.com</p>
 
 
-<<<<<<< HEAD
-=======
 
                 </div>
                 <div class="p-team">
@@ -1970,11 +1966,11 @@
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
                <div class="p-card-info">
-<<<<<<< HEAD
+
                    <a href="http://hng.fun/profile/stephenjude.html">
-=======
+
                    <a href="http://hng.fun/profile/stephenjude/index.html">
->>>>>>> 6f6be9cd1f88548fef68023e2a7cce6d580b6a45
+
                        <!--Profile Link-->
                        <h3 class="p-card-title">Stephen Jude</h3>
                        <!--Profile Name-->
@@ -1997,10 +1993,7 @@
     </div>
    <!--  Each Participants ends here  -->
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
     <div class="p-card">
            <div class="v-center">
                <div class="p-card-photo" style="background-image: url('https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/20842105_1148987211913011_7406302709112086834_n.jpg?oh=229243199555e5fe179ab7294eb8c132&oe=5A36047D'); background-size: cover; background-repeat: no-repeat; background-position: center center;"></div>
@@ -2030,8 +2023,6 @@
 
 
 
->>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
->>>>>>> 65dc2a16e592022727524d225983c5067d11cfc7
         <!--  Each Participant starts here  -->
 
         <div class="p-card">
@@ -4451,21 +4442,7 @@
            <!--Team-->
          </a>        </div>      </div>    </div>
    <!-- Each Participants ends here -->
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
-
-
-
->>>>>>> ea50a25a4e0ea8fd6562e6682edd9d4b1c4abb5b
-=======
-
-
-
-
-
->>>>>>> 219c8b474c35c470cb74c1d9e39c96f98f85edf2
 
 	    <div class="p-card">
             <div class="v-center">
@@ -4487,7 +4464,7 @@
                 </div>
             </div>
         </div>
->>>>>>> 65dc2a16e592022727524d225983c5067d11cfc7
+
 
 
 
@@ -4525,6 +4502,24 @@
     </div>
 </div>
 
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url( ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/aidicrownsworth/aidicrownsworth.html">
+                              <!--Profile Link-->
+                              <h3 class="p-card-title">Aidi Adeyemi K</h3>
+                              <!--Profile Name-->
+                          </a>
+                          <p class="p-card-description">kuburataidi@yahoo.com</p>
+                          <!--Email-->
+
+        </div>
+
+
+    </div>
+</div>
+
 
 <?php include "footer.php"?>
->>>>>>> 0070ba5c7c94fccc95188bcb583ae2331faa5d74
+
