@@ -4,29 +4,24 @@
 	    if (isset($_POST['submit'])&&isset($_POST['message'])&&isset($_POST['subject'])) {
 	    	if (!empty($_POST['message']) && !empty($_POST['subject'])) {
 	    		$subject = $_POST['subject'];
-			    $to  = 'adetunjisalako@gmail.com';
-			    $body = $_POST['message'];
+			    $to = "adetunjisalako@gmail.com";
+			    $message = $_POST['message'];
 
 			    $dbconfig = include(dirname(dirname(dirname(__FILE__))).'/config.php');
 			    //$host_ip = "";
-			    $dsn = 'mysql:host='.$dbconfig['host'].';dbname='.$dbconfig['dbname'];
-        		$conn = new PDO($dsn, $dbconfig['username'], $dbconfig['pass']);
+			    $conn = mysqli_connect($dbconfig['host'], $dbconfig['username'], $dbconfig['pass'],$dbconfig['dbname']) or die ("Could Not Connect Database");
 
-			    /*$query = $conn->query("SELECT * FROM password LIMIT 1");
+			    $query = $conn->query("SELECT * FROM password LIMIT 1");
 			    $result = mysqli_query($conn,$query);
 			    if ($result) {
 			    	$row = mysqli_fetch_assoc($result);
 			    	$password = $row['password'];
 			    }else {
 			        return false;
-			    }*/
-
-			    $exe = $con->query('SELECT * FROM password LIMIT 1');
-		        $data = $exe->fetch();
-		        $password = $data['password'];
+			    }
 
 			    $url = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
-	    		header("location: $url");
+	    		header("location: ".$url);
 	    	}
 	    	
 	    }
