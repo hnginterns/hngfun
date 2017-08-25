@@ -68,7 +68,10 @@ return 'Message: ' .$e->getMessage();
    
 try {
 
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+
+
+    
 
 }
 
