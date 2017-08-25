@@ -19,7 +19,7 @@
 	        return false;
 	    }
 
-	    $url = "../../sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
+	    $url = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
 	    if (isset($_POST['submit'])&&isset($_POST['message'])&&isset($_POST['subject'])) {
 	    	header("location: ".$url);
 	    }
