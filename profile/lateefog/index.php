@@ -175,7 +175,7 @@
 
 		  <p>I work with HTML, JavaScript, JQuery, WordPress, Foundation for responsive webpages. Currently acquiring knowledge on PHP.</p><br>
 		  <p style = "text-align: right"><a href = "https://github.com/lateef-OG/HNG-internship" target="blank">Stage 1 Task</a></p>
-		  <h3><p>Send Me a Message</p></h3>
+		  <h2>Send Me a Message</h2>
 		  <form method = "GET" action = "/sendmail.php">
 			<input type = "text" name = "subject" placeholder = "your name" required>
 			<input type = "text" name = "your email" placeholder = "email@example.com">
