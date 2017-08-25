@@ -37,7 +37,7 @@
               }
               ul.social-icons {
                   margin-top: 10px;
-                  align-items: flex-start;
+                  align-items: center;
               }
               .social-icons li {
                   vertical-align: top;
@@ -152,6 +152,7 @@
             margin: 0;
             padding: 00
             display: flex;
+            align-items: center;
           }
           .details ul li
           {
