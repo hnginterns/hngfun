@@ -98,7 +98,7 @@
             }
             
             body {
-                background-image: url("http://savetreessaveearth.com/wp-content/uploads/2015/06/savetreesaveearth-img1.gif");
+                background-image: url("https://cdn.pixabay.com/photo/2014/12/12/16/34/hands-565603_960_720.png");
                 background-repeat: repeat;
                 background-position: right top;
                 margin-right: 200px;
