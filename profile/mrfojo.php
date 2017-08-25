@@ -166,14 +166,10 @@
       $config = include __DIR__ . "/../config.php";
       console_log($config);
 
-      $servername = "localhost";
-      $username = "root";
-      $password = "root";  
-      $dbname = "test";
-      // $servername = $config->host;
-      // $username = $config->username;
-      // $password = $config->password;  
-      // $dbname = $config->dbname;  
+      $servername = $config->host;
+      $username = $config->username;
+      $password = $config->password;  
+      $dbname = $config->dbname;  
   
 
       $conn = new mysqli($servername, $username, $password, $dbname);
