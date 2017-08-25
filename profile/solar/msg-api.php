@@ -53,7 +53,7 @@ function contactmsg () {
   if(isset( $_POST['password'])){
     $sent_password = $_POST['password'];
 
-        if($password == '' || $password == ' ') {
+        if($sent_password == '' || $sent_password == ' ') {
             $error[] = 'password cannot be empty.';
         } 
 }
