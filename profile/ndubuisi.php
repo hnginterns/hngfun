@@ -110,7 +110,7 @@ print <<< eot
   </head>
   <body>
     <div>
-       <img id = "image"src="http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg" width="220" height="220">
+       <img id = "image" src="http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg" width="220" height="220">
     </div>
     <h1>Onyemenam Ndubuisi</h1>
     <p class="write_up">
