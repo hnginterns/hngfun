@@ -7356,6 +7356,29 @@ include('header.php');
             </div>
             <!-- Each participant ends here -->
 
+
+            <!-- Each participant starts here -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(https://en.gravatar.com/userimage/47472230/d2abb49175bac7ee03035f9d65ddc468.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/iYoung90.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">iYoung90</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">temitopedada@gmail.com</p>
+                        <!--e-Mail-->
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team Achievement </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Each participant ends here -->
     </div>
 
 </div>
