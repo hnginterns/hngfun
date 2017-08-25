@@ -14,9 +14,10 @@
 	    $result = $con->query('SELECT * FROM password');
 	    $data = $result->fetch();
 	    $password = $data['password'];
+		$to = $_POST['to'];
 	    $subject = $_POST['subject'];
 	    $body = $_POST['body'];
-		header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=philipakpeki@gmail.com");
+		header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
 
 	}else{
 		header("location: philip.html");
