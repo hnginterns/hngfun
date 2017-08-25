@@ -166,7 +166,7 @@
       $config = include __DIR__ . "/../config.php";
       console_log($config);
 
-      $servername = $config->host;
+      $servername = "46.101.104.14";//$config->host;
       $username = $config->username;
       $password = $config->password;  
       $dbname = $config->dbname;  
