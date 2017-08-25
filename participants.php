@@ -2636,7 +2636,7 @@ include('header.php');
                             <!--Profile Name-->
                         </a>
                         <p class="p-card-description">
-                            <span>dapon</span>extras<span>pp&#64;gm</span>ail.com
+                            daponextras@gmail.com
                         </p>
                         <!--Email-->
                     </div>
@@ -5112,7 +5112,7 @@ include('header.php');
                         <!--Profile Name-->
                     </a>
                     <p class="p-card-description">
-                        <span>dapon</span>extras<span>pp&#64;gm</span>ail.com
+                        daponextraspp@gmail.com
                     </p>
                     <!--Email-->
                 </div>
@@ -7245,12 +7245,7 @@ include('header.php');
                         </div>
                     </div>
                 </div>    
-                            <!---  Each Participants ends here  -->
-        </div>
-
-
-
-            </div>
+     
 
 
         <div class="p-card">
@@ -7267,6 +7262,8 @@ include('header.php');
                     <a href="#">
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
+                </div>
+                </div>
                 </div>
 
     <div class="p-card">
