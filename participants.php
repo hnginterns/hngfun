@@ -963,7 +963,7 @@ include('participants-head.php');
                                 <div class="v-center">
                                     <div class="p-card-photo" style="background-image: url(http://i.imgur.com/dYFenOU.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                                     <div class="p-card-info">
-                                        <a href="http://hng.fun/profile/daniella.html">
+                                        <a href="http://hng.fun/profile/daniella.php">
                                             <!--Profile Link-->
                                             <h3 class="p-card-title">Daniella Mato</h3>
                                             <!--Profile Name-->
@@ -7473,7 +7473,7 @@ include('participants-head.php');
                     </div>
                     <div class="p-team">
                         <a href="#">
-                            <h3 class="p-card-title"> Team Achievement </h3>
+                            <h3 class="p-card-title"> Team 6 </h3>
                             <!--Team-->
                         </a>
                     </div>
