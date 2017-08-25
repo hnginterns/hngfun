@@ -9,7 +9,7 @@
 function contactmsg () {
     
     if($_SERVER['REQUEST_METHOD'] == 'GET') {
-        return' Data can only be sent on this server via a GET Request';
+        return' Data can only be sent on this server via a POST Request';
          }
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') 
@@ -53,7 +53,7 @@ function contactmsg () {
   if(isset( $_POST['password'])){
     $sent_password = $_POST['password'];
 
-        if($password == '' || $password == ' ') {
+        if($sent_password == '' || $sent_password == ' ') {
             $error[] = 'password cannot be empty.';
         } 
 }
@@ -91,8 +91,8 @@ function contactmsg () {
 
         }
    
-    if($sent_password == $password) {
-        $error[] = 'You have sent an invalid password, please try again.'.$password;
+    if($sent_password != $password) {
+        $error[] = 'You have sent an invalid password, please try again.';
 
         $error = implode("<br>",$error);
     return $error;      
@@ -103,7 +103,7 @@ function contactmsg () {
          * No error encontered, we can now send the mail.
          */
 
-         require_once('PHPMailer/PHPMailerAutoload.php');
+         require_once('../../PHPMailer/PHPMailerAutoload.php');
 
         $mail = new PHPMailer();
 

@@ -15,6 +15,10 @@ $result = mysqli_query($con, "SELECT password from password limit 1");
 $channel_info = mysqli_fetch_row($result);
 $password = $channel_info[0];
 
+<<<<<<< HEAD
+if($_GET['text'] != "")
+    header("location: ../sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com");
+=======
 if($_GET['text'] != "" &  filter_input(INPUT_GET,"email",FILTER_VALIDATE_EMAIL) != "")
 {
   $body = $_GET['email']."  ".$_GET['text'];
@@ -26,6 +30,7 @@ else
 
 
 }
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
 
 print <<< eot
  <!doctype html>
@@ -44,7 +49,7 @@ print <<< eot
               line-height: 1.6em;
               padding-left:30%;
 
-              background-color:white;
+              background-color:black;
               width:400px;
                }
 
@@ -58,7 +63,7 @@ print <<< eot
               font-family: Verdana, Helvetica, Arial, sans-serif;
               line-height: 1.6em;
               padding-left:5%;
-              background-color:white;
+              background-color:black;
               width:400px;
 
                  }
@@ -110,24 +115,35 @@ print <<< eot
   </head>
   <body>
     <div>
-       <img id = "image" src="http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg" width="220" height="220">
+       <img id = "image" src="http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg" width="220" height="220" alt = "Ndubuisi Onyemenam">
     </div>
     <h1>Onyemenam Ndubuisi</h1>
     <p class="write_up">
         Am a student of Life. I code. Am looking forward to technopreneurship. Yeah nice meeting you.
     </p>
     <p>
-    <span class = "write_up">Link to<span> <a href="https://github.com/NdubuisiO/HNG1"> Stage 1</a>
-    <p>
+    <span class = "write_up">Link to</span> <a href="https://github.com/NdubuisiO/HNG1"> Stage 1</a>
+    </p>
+     
       <h2>
         Contact
       </h2>
       <h2>
         Slack @prondubuisi
       </h2>
-      <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>>
+      <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
+<<<<<<< HEAD
     </p>
+
+     <form method = "get" action = "#" id = "login_form">
+
+       <input type = "text" placeholder = "Enter you your email address here">
+       <textarea name ="text" placeholder = "Enter your message"></textarea>
+
+       <button   type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
+=======
+    
      <form method = "get" action = "#" id = "login_form">
 
        
@@ -135,9 +151,10 @@ print <<< eot
            <input class ="form_content" type = "text" name="email" placeholder = "Enter your email">
             <textarea class ="form_content" name ="text" placeholder = "$error_message"></textarea>
 
-           <button  class ="form_content"  type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
+           <button  class ="form_content"  type = "submit"  id = "signup_button" >Send me a mail</button>
        </div>
        
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
      </form>
   </body>
 </html>

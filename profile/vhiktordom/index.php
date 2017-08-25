@@ -1,35 +1,39 @@
 <?php
-
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $name = $_POST['name'];
-    $to  = 'vhiktordom@gmail.com';
-    $message = $_POST['message'];
 
-    if($message == '' || $message == ' ') {
+    $subject = $_POST['subject'];
+    $to  = 'vhiktordom@gmail.com';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
 
-    if($name == '' || $name == ' ') {
-      $error[] = 'name cannot be empty.';
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
     }
 
     if(empty($error)) {
+
       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
+
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
       header("location: $uri");
 
     }
-
   }
-
  ?>
-<!Doctype>
+
+
 <html>
     <head>
         <title>Vhiktor Dominic</title>
@@ -57,11 +61,11 @@
             <a href="https://github.com/Vhiktordom/getting-started-h2-2017" style="text-decoration:none;color:white">Stage 1 Project</a><br><br>
             <input style="background-color:red;color:white;height:30px;width:150px;" type="button" class="button" onclick="myDetails()" value="A Message for you">
             
-            <form action="" method="GET">
+            <form action="" method="POST">
             <div>
                 <label for="name">
                     <p>Name</p>
-                    <input type="text" name="name" class="form-input" style="width: 18em;" required>
+                    <input type="text" name="subject" class="form-input" style="width: 18em;" required>
                 </label>
             </div>
 

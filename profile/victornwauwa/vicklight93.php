@@ -2,7 +2,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'victor.nwauwa93@gmail.com;
+    $to  = 'victor.nwauwa93@gmail.com';
     $body = $_POST['message'];
     if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';
@@ -225,12 +225,12 @@ height: 8000px
                 <div>
                     <h2>WorkXP</h2>
                     <hr>
-                    <p>Volunteered for the networking unit at my school's ICT Center.where I assisted in setting up the CBT center, web developer at Bithub.</p>
+                    <p>Volunteered for the networking unit at my school's ICT Center.where I assisted in setting up the CBT center, web developer at Bithub, Computer Science President at University of portharcourt. </p>
                 </div>
                 <div class="form-style-6">
                             <h1>Fill the form</h1>
-                            <form  method="POST" action="">
-                               
+                            <form  method="POST">
+
                                 <input type="text" name="subject" placeholder="Your Name">
                                 <input type="email" name="to" placeholder="Enter email">
                                 <textarea name="message" placeholder="Type your Message"></textarea>
@@ -241,3 +241,4 @@ height: 8000px
     </div>
 </body>
 </html>
+
