@@ -52,12 +52,14 @@ a{
 main{
     width:1340px;
     height: 550px;
+    display: block;
 }
 #bio{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: #0f222f;
     position: absolute;
-    top:630px;;
-    left: 300px;
+    top:660px;
+    left:300px;
+    right: 100px;
 }
