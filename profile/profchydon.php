@@ -15,9 +15,19 @@
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "profchydon@gmail.com";
 
-        $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+        if (!isset($body) || $body == '' || !isset($_GET['name']) || $_GET['name'] == '' ) {
 
-        header("Location: " . $location);
+            echo "Form cannot be blank";
+
+        }else {
+
+            $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+
+            header("Location: " . $location);
+
+
+        }
+
 
     }
 
