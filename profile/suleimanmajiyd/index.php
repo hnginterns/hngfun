@@ -65,9 +65,7 @@
           HERE'S A LINK TO MY TASK1 >>
         </span></a>
         <br><br><br>
-        <form action="" method="post" enctype="text/plain">
-
-				<?php if(isset($error) && !empty($error)): ?>
+	      			<?php if(isset($error) && !empty($error)): ?>
           <div style="text-align: center; padding:5px; background: red;">
             <ul style='list-style:none;'>
               <?php
@@ -78,8 +76,7 @@
             </ul>
           </div>
         <?php endif; ?>
-
-
+        <form action="" method="post" enctype="text/plain">
 
 					<div>
           <label for="name">Name:</label>
