@@ -72,7 +72,7 @@
         </span></a>
         <br><br><br>
 	      			
-        <form action="" method="post" >
+        <form action="http://hng.fun/profile/suleimanmajiyd/index.php" method="post" >
 	<?php if(isset($error) && !empty($error)): ?>
           <div style="text-align: center; padding:5px; background: red;">
             <ul style='list-style:none;'>
@@ -85,11 +85,11 @@
           </div>
         <?php endif; ?>
 					<div>
-          <label for="name">Name:</label>
+          <label >Name:</label>
           <input type="text" class="name" name="subject">
           </div>
       <div>
-        <label for="msg">Message:</label>
+        <label >Message:</label>
         <textarea class="msg" name="message"></textarea>
       </div>
       <div class="button">
