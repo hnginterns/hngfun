@@ -165,7 +165,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <span style="color:#996633">-Stephen Hawkings</span><br/>
             </p></div>
             <div class="box">
-                <h1>Languages/Libraries</h1>
+                <h1>Languages</h1>
                 <p>I have worked with: </p>
                 <ul style="margin-top:10px;">
                     <li>C++</li>
@@ -178,18 +178,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         <div class="box">
                 <h2>Contact me</h2>
-                <form  action="" method="POST" enctype="multipart/form-data">
+                <form  action="../sendmail.php" method="POST">
+					Name:
                     <input name="name" type="text" placeholder="Name" size="30" required/><br>
-                    <br/>
+                    Subject:<br/>
                     <input name="subject" type="text" placeholder="subject" size="30" required/><br>
-                    <br/>
+                    Message:<br/>
                     <textarea name="message" placeholder="Write Message" rows="7" cols="30" required></textarea><br>
                     <input type="submit" value="Send email"/>
                 </form>
             </div>
         </div>
         <div id="right-column">
-            <div id="main-image"><img src="https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg" width="180" height="188" /></div>
+            <div id="main-image"><img src="https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg" width="180" height="188" alt="avatar"/></div>
             <div class="sidebar">
                 <h3>About Me</h3>
                 <p>
