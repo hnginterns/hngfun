@@ -1,34 +1,49 @@
-<?php
-	 //if "email" variable is filled out, send mail
-	 if (isset($_GET['submit'])) {
-
-	 //Email information
-	 $to = "ijawaretiwaloluwa@gmail.com";
-	 $subject = $_GET['subject'];
-	 $body = $_GET['body'];
-
-	 $config = include(dirname(dirname(__FILE__)).'/config.php');
-	 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-	 $con = new PDO($dsn, $config[''username], $config['pass']);
-
-	 $exe = $con->query('SELECT * FROM password LIMIT 1');
-	 $data = $exe->fetch();
-	 $password = $data['password'];
-	 		   header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-		}
-
-		  ?>
-
-
 <!DOCTYPE html>
+<?php
+
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $name = $_POST['name'];
+    $to  = 'ordrizzy@gmail.com';
+    $message = $_POST['message'];
+
+    if($message == '' || $message == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+    if($name == '' || $name == ' ') {
+      $error[] = 'name cannot be empty.';
+    }
+
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
+      header("location: $uri");
+
+    }
+
+  }
+
+ ?>
 
 
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="Sun, 20 Aug 2017 07:08:59 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <title>Tiwa Profile</title>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
 	<!-- Style -->
 	<style>
@@ -127,7 +142,7 @@
   <body>
   		<div class="flex-center position-ref full-height">
 			 <div class="content">
-			     <img style="-moz-opacity:0.4;" src="https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/16681646_1263674723725886_3249389777281568213_n.jpg?oh=8e916840484be65726588e247c6a4473&oe=5A2C13A6" alt="display" height="200"/>
+			     <img src="https://scontent.flos8-1.fna.fbcdn.net/v/t1.0-9/16681646_1263674723725886_3249389777281568213_n.jpg?oh=8e916840484be65726588e247c6a4473&oe=5A2C13A6" alt="display" height="200"/>
 				 	<div class="title m-b-md shadow-multiple">
 					  Ijaware Tiwaloluwa
 					</div>
@@ -138,20 +153,19 @@
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-		       <footer>
-					<form action="" method="GET" class="contact_form">
-						  <div class="row uniform 50%">
-	 					  	   <h2>Contact Me</h2>
-	 						   <div class=""><input type="text" name="subject" id="name" placeholder="Name"></div>
-	 						   <div class=""><textarea name="body" id="message" placeholder="Message" rows="4"></textarea></div>
-						  </div>
+					<form action="/sendmail.php" method="GET" class="floating-labels" name="EmailTestForm">
+					   <fieldset>
+    					  Name:<br>
+    					  <input class="user" type="text" size="20" name="Name"><br><br>
 
-						  <ul class="icons">
-						  	  <li><input type="submit" value="Send Message" id="submit" name="submit"></li>
-							  <li><input type="reset" value="reset" id="reset" name="reset"></li>
-						  </ul>
+    					  Message:<br>
+						  
+    					  <textarea class="Message" name="Message" rows="4" cols="20">
+    					  </textarea><br><br>
+
+    					  <div><input type="submit" value="Send Message"></div>
+					   </fieldset>  
 					</form>
-	           </footer>
 			 </div>
 
 		</div>
