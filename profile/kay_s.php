@@ -119,7 +119,8 @@
             .profile {
                 margin: auto;
                 border-radius: 50%;
-  
+                width: 300px;
+                height: 300px;
             }
 
             .slack_box {
