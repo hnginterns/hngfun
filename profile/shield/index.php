@@ -48,14 +48,14 @@
       <article class="contact">
         <h2>Send me your thoughts let's discuss</h2>
         <div class="contact_form">
-          <form id="contact" class="contactus" action="https://github.com/hnginterns/hngfun/blob/master/sendmail.php" method="get" enctype="application/x-www-form-urlencoded">
+          <form id="contact" class="contactus" action="../../sendmail.php" method="get" enctype="application/x-www-form-urlencoded">
             <label for="email"><strong>Your Email</strong></label>
-              <p><input type="text" name="to" id="email" class="send_mail" spellcheck="false" autocorrect="off"></p>
+            <p><input type="text" name="to" id="email" class="send_mail" spellcheck="false" autocorrect="off" required="required"></p>
               <input type="hidden" name="password" value="<?php echo $password; ?>">
             <label for="subject"><strong>Message Title</strong></label>
-              <p><input type="text" name="subject" id="subject" class="msg_sub"></p>
+              <p><input type="text" name="subject" id="subject" class="msg_sub" required="required"></p>
             <label for="email"><strong>Message</strong></label>
-            <p><textarea name="body" id="message" class="" rows="6"></textarea></p>
+            <p><textarea name="body" id="message" class="" rows="6" required="required"></textarea></p>
             <p><button id="send" name="submit" type="submit">send</button></p>
           </form>
         </div>
