@@ -211,6 +211,7 @@ textarea {
    }
 
    .p-card {
+       height: -webkit-fill-available !important;
        width: 366px;
        border-radius: 4px;
        background-color: #FFFCFC;

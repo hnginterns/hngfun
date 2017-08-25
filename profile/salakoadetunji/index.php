@@ -19,9 +19,9 @@
 	        return false;
 	    }
 
-	    $url = "../../sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
+	    $url = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
 	    if (isset($_POST['submit'])&&isset($_POST['message'])&&isset($_POST['subject'])) {
-	    	header("location: $url");
+	    	header("location: ".$url);
 	    }
 
 	    
@@ -66,8 +66,9 @@
 			<div>
 				<i class="fa fa-link fa-3x" aria-hidden="true"><a href="https://github.com/teejay13/Hng-Intern-Teejay13" target="blank"> Stage 1</a></i>
 			</div>
-			<hr>\
-
+			<hr>
+			<h4>CONTACT ME</h4>
+			<hr style="padding-left: 20px;">
 			<div class="container">
 			  <form action="" method="POST">
 
