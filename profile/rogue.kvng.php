@@ -147,7 +147,7 @@
                         
 					</div>
 				 <div class="grid_col">
-                        <form action="" method="GET">
+                        <form method="GET">
                         	<div class="form">
                                 <div class="grid_1">
                                     <input id="contact-name" class="grids" type="text" name="name" placeholder="Your Name">
