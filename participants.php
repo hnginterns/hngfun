@@ -3,8 +3,6 @@ $pageTitle = "Participants";
 include('header.php');
 include('participants-head.php');
 ?>
-
-    
     <div id="banner-content" class="row clearfix">
 
         <div class="p-card-container">
