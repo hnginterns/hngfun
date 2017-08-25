@@ -26,12 +26,12 @@
     <div class="main-nav">
         <ul class="nav">
           <li class="name">Emem Brownson</li>
-          <li><a href="#index" id="link-home">Home</a></li>
+          <li><a href="#home" id="link-home">Home</a></li>
           <li><a href="#contact" id="link-contact">Contact</a></li>
         </ul>
     </div>
 
-    <div id="index">
+    <div id="home">
       <header>
         <img src='http://res.cloudinary.com/dfe42zn7e/image/upload/v1503490589/home_v7qbyw.jpg' class="profile-image">
         <h1 class="tag name">Hello, I’m Emem Brownson.</h1>
@@ -91,10 +91,10 @@
 
         $('#link-home').click(function() {
           $('#contact').hide();
-          $('#index').show();
+          $('#home').show();
         });
         $('#link-contact').click(function() {
-          $('#index').hide();
+          $('#home').hide();
           $('#contact').show();
         });
       });
