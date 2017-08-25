@@ -1,5 +1,5 @@
 <?php
-	$config = include('config.php');
+	$config = include('../../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -10,6 +10,7 @@
 <html>
 	<head>
 		<link href = "new.css" rel ="Stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Jamesjay4199 | Profile</title>
 	</head>
 	
@@ -37,7 +38,7 @@
 				<fieldset>
 				<legend>Contact Me</legend>
 				<input type = "hidden" name = "to" value ="jamiejay4199@gmail.com">
-				<input type = "hidden" name = "password" value = "<?php $password ?> ">
+				<input type = "hidden" name = "password" value = "<?= $password ?> ">
 				<input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
 				<textarea name = "body" placeholder = "Type your message here" rows ="18" cols = "70" required></textarea><br>
 				<br><input type ="submit" value ="Send Message">
