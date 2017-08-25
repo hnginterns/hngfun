@@ -150,7 +150,7 @@
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
 				
                             <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
-                            <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
+                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
                         </form>  <br>  
 					    </div>
 					</div>
