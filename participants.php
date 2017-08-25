@@ -26,11 +26,6 @@ include('participants-head.php');
                     </div>
     <!-- Each participant ends here -->
 
-<<<<<<< HEAD
-        
-	<!--  Each Participant starts here  -->
-=======
-<<<<<<< HEAD
  <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
