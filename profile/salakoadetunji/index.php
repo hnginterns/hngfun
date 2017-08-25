@@ -20,7 +20,7 @@
 			        return false;
 			    }
 
-			    $url = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
+			    $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 	    		header("location: ".$url);
 	    	}
 	    	
