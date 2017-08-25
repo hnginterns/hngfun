@@ -18,9 +18,9 @@ if (!$connection) {
 
         $email = $_REQUEST['email'] ;
         $body = $_REQUEST['message'] ;
-        $subject= 'new message'
+        $subject= $_REQUEST['subject'] ;
     
-  header("sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=williamadetunji@yahoo.com");
+  header("../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=williamadetunji@yahoo.com");
 
   mail($emailID, $subject, $body, header );
   echo "<h4>Thank you, Got your message.</h4>";
