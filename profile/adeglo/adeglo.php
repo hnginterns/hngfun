@@ -54,7 +54,7 @@
                    <input id=“name” type=“text” name=“subject” placeholder=“Please type your name” />
                </div>
                <div >
-                   <textarea id=“body” rows=“3"  name=“message” placeholder=“Type your message” ></textarea>
+                   <textarea id=“body” rows=“3" name=“message” placeholder=“Type your message” ></textarea>
                </div>
                
                
