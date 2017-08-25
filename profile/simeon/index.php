@@ -3,11 +3,12 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 />
     <title>Simeon | Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../../css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
   </head>
 

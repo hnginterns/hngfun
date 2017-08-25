@@ -8,6 +8,9 @@
 
        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
+		$result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
+        $password = $data['password'];
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$dropdown = $_POST['dropdown'];

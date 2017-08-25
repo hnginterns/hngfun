@@ -30,7 +30,7 @@ if (isset($_GET['submit'])){
         $row = $query->fetch();
         $password = $row['password'];
 
-        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+        header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
 
     }
 }
@@ -158,7 +158,7 @@ if (isset($_GET['submit'])){
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
   </div>
 
-  <button type="button" class="btn btn-warning btn-lg" name="submit" >Send</button>
+  <input type="submit" class="btn btn-warning btn-lg" name="submit" value="submit" >
 </form>
         </div>
         <footer>
