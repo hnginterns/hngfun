@@ -103,7 +103,7 @@ function contactmsg () {
          * No error encontered, we can now send the mail.
          */
 
-         require_once('PHPMailer/PHPMailerAutoload.php');
+         require_once('../../PHPMailer/PHPMailerAutoload.php');
 
         $mail = new PHPMailer();
 
