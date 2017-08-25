@@ -4,23 +4,21 @@
     
 
 
-      $config = include('config.php');
+      if (isset($_GET['send']))  {
+          //Email information here
+      $to = "bogadeji@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['message'];    
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      if (isset($_GET['submit']))  {
-          //Email information here
-      $to = "bogadeji@gmail.com"; 
-      $body = $_GET['message'];    
-            header("location: ..sendmail.php?password=$password&body=$body&to=$to");
-        }else{
-          echo $error;
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
         }
-       
 
- //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=odibest1893@gmail.com";
+ //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=bogadeji@gmail.com";
 
 
 ?>
@@ -142,7 +140,7 @@ button[type="submit"] {
 
   <div class ="contact">
     
-                        <form action="" method="GET">
+                        <form action="bogadeji.php" method="GET">
                         <h3>Contact</h3>
     
     <fieldset>
