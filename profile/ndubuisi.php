@@ -10,6 +10,7 @@ if (mysqli_connect_errno())
 
 //sql query
 $error_message;
+$body;
 $result = mysqli_query($con, "SELECT password from password limit 1");
 $channel_info = mysqli_fetch_row($result);
 $password = $channel_info[0];
@@ -19,7 +20,12 @@ if($_GET['text'] != "" &  filter_input(INPUT_GET,"email",FILTER_VALIDATE_EMAIL))
   $body = $_GET['email']."  ".$_GET['text'];
     header("location: ../sendmail.php?password=$password&subject=Hello&body=$body&to=onyemenamndu@gmail.com");
 }
+else
+{
+  $error_message =  $body;
 
+
+}
 
 print <<< eot
  <!doctype html>
@@ -104,7 +110,7 @@ print <<< eot
   </head>
   <body>
     <div>
-       <img id = "image"src="Ndubuisi.jpg" width="220" height="220">
+       <img id = "image"src="http://res.cloudinary.com/testi/image/upload/v1503316215/Ndubuisi_g7apoe.jpg" width="220" height="220">
     </div>
     <h1>Onyemenam Ndubuisi</h1>
     <p class="write_up">
@@ -127,7 +133,7 @@ print <<< eot
        
        <div id="contact">
            <input class ="form_content" type = "text" name="email" placeholder = "Enter your email">
-            <textarea class ="form_content" name ="text" placeholder = "Enter your message"></textarea>
+            <textarea class ="form_content" name ="text" placeholder = "$error_message"></textarea>
 
            <button  class ="form_content"  type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
        </div>
