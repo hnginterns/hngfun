@@ -175,7 +175,8 @@
       $conn = new mysqli($servername, $username, $password, $dbname);
 
       if($conn->connect_error){
-        console_log("Connection failed: ". $conn->connect_error);
+        console_log("Connection failed: ");
+        console_log($conn)
         return;
       }
       console_log("Connected successfully");
