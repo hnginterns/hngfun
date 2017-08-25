@@ -7443,7 +7443,7 @@ include('participants-head.php');
                     </div>
                     <div class="p-team">
                         <a href="#">
-                            <h3 class="p-card-title"> Team Achievement </h3>
+                            <h3 class="p-card-title"> Team 6 </h3>
                             <!--Team-->
                         </a>
                     </div>
