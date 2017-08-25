@@ -16,7 +16,7 @@
 	    $result = $con->query('SELECT * FROM password');
 	    $data = $result->fetch();
 	    $password = $data['password'];
-		$to = $_POST['to'];
+		$to = $_POST['email'];
 	    $subject = $_POST['subject'];
 	    $body = $_POST['body'];
 		header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
