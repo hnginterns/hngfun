@@ -2,12 +2,18 @@
 	if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$error = [];
 
-		$subject = $_POST['name'];
+		$subject = $_POST['subject'];
 		$to = 'suleimanmajiyd@gmail.com';
 		$body = $_POST['message'];
 
 		if ($subject == '' || $subject == ' '){
 			$error[] = 'Please enter your name';
+		}
+		if ($to == '' || $to == ' '){
+			$error[] = 'No receiving mail';
+		}
+		if ($body == '' || $body == ' '){
+			$error[] = 'No message sent';
 		}
 		if (empty($error)){
 			$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
@@ -65,9 +71,9 @@
           HERE'S A LINK TO MY TASK1 >>
         </span></a>
         <br><br><br>
+	      			
         <form action="" method="post" enctype="text/plain">
-
-				<?php if(isset($error) && !empty($error)): ?>
+	<?php if(isset($error) && !empty($error)): ?>
           <div style="text-align: center; padding:5px; background: red;">
             <ul style='list-style:none;'>
               <?php
@@ -78,16 +84,13 @@
             </ul>
           </div>
         <?php endif; ?>
-
-
-
 					<div>
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
+          <input type="text" class="name" name="subject">
           </div>
       <div>
         <label for="msg">Message:</label>
-        <textarea id="msg" name="message"></textarea>
+        <textarea class="msg" name="message"></textarea>
       </div>
       <div class="button">
         <button type="submit" name="submit">Send me an e-mail</button>

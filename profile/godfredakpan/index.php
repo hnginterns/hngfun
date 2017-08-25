@@ -73,7 +73,7 @@
 		                            <li class="scroll"><a href="#contact">Contact</a></li>
 							
 		                </ul>
-		            </div>
+		           
 		        </div>
 	        </div>
         </div>                    
@@ -140,7 +140,7 @@
 					<div class="col-sm-5">
 						<div id="contact-section">
 							<h3>Send a message</h3>
-					    	<font color="blacl"><div class="form-container">
+					    	<div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
 				
@@ -149,14 +149,14 @@
                             <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
 				
-                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
-                            <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
-                        </form></font>  <br>  
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
+                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+                        </form>  <br>  
 					    </div>
 					</div>
 				</div>
 			</div>
-		</div>		
+				
 	</section>
     <!--/#contact-->
 

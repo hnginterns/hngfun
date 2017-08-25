@@ -1,3 +1,4 @@
+<?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$error = [];
 	$subject = $_POST['subject'];
@@ -93,11 +94,9 @@ h4 {
 
 					<form action="http://hng.fun/profile/xeunskate.php" method="post" enctype="text/plain">
 					Name:<br>
-					<input type="text" name="name"><br>
-					E-mail:<br>
-					<input type="text" name="mail"><br>
+					<input type="text" name="subject"><br>
 					Message:<br>
-					<input type="text" name="comment" size="50"><br><br>
+					<input type="text" name="message" size="50"><br><br>
 					<input type="submit" value="Send">
 					<input type="reset" value="Reset">
 					</form>
