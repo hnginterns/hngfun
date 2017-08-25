@@ -46,7 +46,7 @@ function contactmsg () {
     $subject = $_POST['subject'];
 
         if($subject == '' || $subject == ' ') {
-        $error[] = 'Subject cannot be empty.';
+        $error[] = 'Subject cannot be empty.'.$_POST['password'];
             } 
 }
  
@@ -91,8 +91,8 @@ function contactmsg () {
 
         }
    
-    if($sent_password != $password) {
-        $error[] = 'You have sent an invalid password, please try again.';
+    if($sent_password == $password) {
+        $error[] = 'You have sent an invalid password, please try again.'.$password;
 
         $error = implode("<br>",$error);
     return $error;      

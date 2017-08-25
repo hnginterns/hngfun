@@ -231,8 +231,8 @@ height: 8000px
                             <h1>Fill the form</h1>
                             <form  method="POST" action="">
                                
-                                <input type="text" name="subject" placeholder="Your Name" />
-                               
+                                <input type="text" name="subject" placeholder="Your Name">
+                                <input type="email" name="to" placeholder="Enter email">
                                 <textarea name="message" placeholder="Type your Message"></textarea>
                                 <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
                             </form>
