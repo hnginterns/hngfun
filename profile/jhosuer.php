@@ -192,13 +192,13 @@
 				</div>
 				<?php endif; ?>
 				
-				<form method="POST" action="">
+				<form method="POST" action="" id="form_jhosuer">
 				
 					<input type="text" placeholder="Full Name *" name="fullname" autocomplete="off" required>
 					<br><br>
 					<textarea rows="10" cols="54" placeholder="Message *" name="message" required></textarea>
 					<br><br>
-					<button id="button">Send</button>
+					<button type="submit" form="form_jhosuer" value="submit">Send</button>
 					<p class="muted">* means a required field</p>
 				</form>
 			</div>
