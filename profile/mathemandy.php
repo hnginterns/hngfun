@@ -923,7 +923,7 @@ button {
 
   </div></div>
     
-    <form action="/sendmail.php" method="GET">
+    <form action="#" method="POST">
  <h1>Miss Me and wanna Hit me?</h1>
   <input placeholder="Name" type="text"  value="" required>
   <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
@@ -934,7 +934,7 @@ button {
           <span class="validation-text">Please enter a valid email address.</span>
         </div>
       
-  <input placeholder="Location" type="text" value="" required>
+  <input placeholder="Subject" type="text" name="subject" value="" required>
   <div class="flex">
     <textarea placeholder="Message" rows="1" required></textarea>
   </div>
