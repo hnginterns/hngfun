@@ -1,25 +1,21 @@
 <?php
 // define variables and set to empty values
- if(isset($_GET['submit'])){
-        $config = [
-            'dbname' => 'hng',
-            'pass' => '',
-            'username' => 'root',
-            'host' => 'localhost'
-        ];
-       //$config = include('config.php');
-$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-$con = new PDO($dsn, $config['username'], $config['pass']);
-        $result = $con->query('SELECT * FROM password');
-        $data = $result->fetch();
-        $password = $data['password'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
-        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&message=".$message."&to=bogadeji@gmail.com?bcc=".$admin_email);
-    }
+ 
     
 
-
+if (isset($_GET['send']))  {
+          //Email information here
+      $to = "bogadeji@gmail.com"; 
+      $body = $_GET['message'];    
+     $config = include('config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+            header("location: ..sendmail.php?password=$password&body=$body&to=$to");
+        }
+       
 
  //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=odibest1893@gmail.com";
 
