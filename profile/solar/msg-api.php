@@ -9,7 +9,7 @@
 function contactmsg () {
     
     if($_SERVER['REQUEST_METHOD'] == 'GET') {
-        return' Data can only be sent on this server via a GET Request';
+        return' Data can only be sent on this server via a POST Request';
          }
 
     if($_SERVER['REQUEST_METHOD'] == 'POST') 
