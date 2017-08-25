@@ -1,47 +1,11 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
     $fullname = $_POST['fullname'];
     $to  = 'jumbojoshua91@gmail.com';
     $body = $_POST['message'];
 
-<<<<<<< HEAD
-	if (isset($_POST['fullname'], $_POST['message'])) {
-		
-		$fields = [
-			'name' => $_POST['fullname'],
-			'message' => $_POST['message']
-		
-		];
-		
-		foreach($fields as $field => $data) {
-			
-			if(empty($data)) {
-				$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-				$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-				$con = new PDO($dsn, $config['username'], $config['pass']);
-				$exe = $con->query('SELECT * FROM password LIMIT 1');
-				$data = $exe->fetch();
-				$password = $data['password'];
-				$uri = "/sendmail.php?to=$to&body=$body&subject=$fullname&password=$password";
-				header("location: $uri");
-			}
-			
-		}
-		
-	} else {
-		
-		$error[] = 'something is not right.';
-	}
- 
-  }
- ?> 
-=======
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
@@ -68,7 +32,6 @@
     }
   }
  ?>
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
 
 <!DOCTYPE html>
 <html>
@@ -145,7 +108,7 @@
 			.form {
 			
 				width: 400px;
-				height: 550px;
+				height: 400px;
 				padding: 50px;
 				padding-bottom: 150px;
 				background-color: rgba(51,51,51,0.5);
@@ -217,18 +180,6 @@
 				</h3>
 			</div>
 			<div class="form">
-<<<<<<< HEAD
-				<?php if(!empty($error)): ?>
-				<div class="panel">
-				
-					<!-- Errors goes Here! --> 
-					<ul><li><?php echo implode('</li><li>', $error); ?></li></ul>
-				</div>
-				<?php endif; ?>
-				
-				<form method="POST" action="">
-				
-=======
 				
 				<?php if(isset($error) && !empty($error)): ?>
 				  <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
@@ -243,16 +194,11 @@
 				<?php endif; ?>
 				<form method="POST" action="" id="form_jhosuer">
 				
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
 					<input type="text" placeholder="Full Name *" name="fullname" autocomplete="off" required>
 					<br><br>
 					<textarea rows="10" cols="54" placeholder="Message *" name="message" required></textarea>
 					<br><br>
-<<<<<<< HEAD
-					<button id="button">Send</button>
-=======
 					<button type="submit" form="form_jhosuer" value="submit">Send</button>
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
 					<p class="muted">* means a required field</p>
 				</form>
 			</div>
