@@ -281,7 +281,7 @@
     </div>
 
 
-    <form class="contact-form" action="" method="post">
+    <form class="contact-form" method="post">
       <div class="form-title">Contact Me</div>
       <div class="form-area">
         <!-- <input type="hidden" name="password" value="$password"> -->
