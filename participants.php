@@ -23,7 +23,7 @@ include('participants-head.php');
             -->
 
 
- <!--  Each Participant starts here  -->
+            <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/iamseyiajayi/seyi.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -5441,6 +5441,27 @@ include('participants-head.php');
             </div>
         </div>
 <!--  Each Participants ends here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://github.com/rufai/rufai.github.io/blob/master/temi.jpg?raw=true); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/temi.html/">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Temi Rufai</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">etop94@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team 3 </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+
 
 <!--  Each Participant starts here  -->
         <div class="p-card">
@@ -7442,7 +7463,6 @@ include('participants-head.php');
             <!-- Each participant ends here -->
     </div>
 
-</div>
 
 
 <!--  Each Participant starts here  -->
