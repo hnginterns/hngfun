@@ -7224,12 +7224,7 @@ include('participants-head.php');
                         </div>
                     </div>
                 </div>    
-                            <!---  Each Participants ends here  -->
-        </div>
-
-
-
-            </div>
+      
 
 
         <div class="p-card">
@@ -7246,6 +7241,8 @@ include('participants-head.php');
                     <a href="#">
                         <h3 class="p-card-title"> Team 2 </h3>
                     </a>
+                </div>
+                </div>
                 </div>
 
     <div class="p-card">
@@ -7378,6 +7375,7 @@ include('participants-head.php');
                     </a>
                 </div>
             </div>
+            </div>
 
   <!--  Each Participants ends here  -->
 
@@ -7427,7 +7425,7 @@ include('participants-head.php');
 
 
 
-        </div>
+   
         <!--  Each Participants ends here  -->
 
         <!-- Each participant starts here -->
@@ -7477,7 +7475,7 @@ include('participants-head.php');
                 </div>
             </div>
             <!-- Each participant ends here -->
-    </div>
+
 
 
 
