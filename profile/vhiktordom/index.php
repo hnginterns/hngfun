@@ -15,7 +15,7 @@
     }
 
     if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'config.php');
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -38,6 +38,10 @@
                     alert("Thanks for Viewing!");
             }
         </script>
+
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     </head>
     <body style="background-color:#563d7c">
         <center>
@@ -53,7 +57,7 @@
             <a href="https://github.com/Vhiktordom/getting-started-h2-2017" style="text-decoration:none;color:white">Stage 1 Project</a><br><br>
             <input style="background-color:red;color:white;height:30px;width:150px;" type="button" class="button" onclick="myDetails()" value="A Message for you">
             
-            <form action="/sendmail.php" method="GET">
+            <form action="" method="GET">
             <div>
                 <label for="name">
                     <p>Name</p>
