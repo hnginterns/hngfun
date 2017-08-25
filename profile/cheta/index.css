@@ -59,6 +59,6 @@ main{
     color: #0f222f;
     position: absolute;
     top:660px;
-    left:400px;
-    right: 200px;
+    margin-left:auto;
+    margin-right: auto;
 }
