@@ -152,7 +152,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
          <main class="profile-body" id="contact-area">
             <h3>Contact Me</h3>
-            <form class="cd-form floating-labels" method="POST" action="http://hng.fun/sendmail.php" >
+            <form class="cd-form floating-labels" method="POST" action="" >
                 <div class="input-holder">
                     <input type="text" placeholder="Full Name" name="subject" class="input-box" required>
                 </div>
