@@ -52,6 +52,7 @@ a{
 main{
     width:1340px;
     height: 550px;
+    display: block;
 }
 #bio{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
