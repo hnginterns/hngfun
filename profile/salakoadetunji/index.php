@@ -21,11 +21,11 @@
 			        return false;
 			    }*/
 
-			    $exe = $con->query('SELECT * FROM password LIMIT 1');
+			    $exe = $conn->query('SELECT * FROM password LIMIT 1');
 		        $data = $exe->fetch();
 		        $password = $data['password'];
 
-			    $url = "../../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+			    $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 	    		header("location: $url");
 	    	}
 	    	
