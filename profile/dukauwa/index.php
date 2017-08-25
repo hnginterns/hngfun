@@ -101,7 +101,7 @@
               left: 50% ;
               transform: translate(-50%,-50%);
               width: 300px;
-              height:550px;
+              height:600px;
               background: #fff;
               box-sizing: border-box;
               border-radius: 10px;
