@@ -98,7 +98,7 @@
             }
             
             body {
-                background-image: url("https://www.google.com.ng/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjs-KyAmfPVAhWSfFAKHXQ8DnwQjRwIBw&url=https%3A%2F%2Fpixabay.com%2Fen%2Fphotos%2Fbackground%2F&psig=AFQjCNEcpcf0cmva5M9C49exBKCyaROjKw&ust=1503778335814567");
+                background-image: url("https://cdn.pixabay.com/photo/2016/12/15/20/21/background-1909992_960_720.jpg");
                 background-repeat: repeat;
                 background-position: right top;
                 margin-right: 200px;
