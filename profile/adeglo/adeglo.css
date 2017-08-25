@@ -3,16 +3,18 @@ body{
 }
 img{
     float: left;
-    height: 460px;
+    height: auto;
+    max-width: 100%;
 }
 div{
     width: 490px;
-    height: 460px;
+    height: auto;
     background-color: #ffffff;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 52px;
+    margin-top: auto;
+    margin-bottom: auto;
     font-family: sans-serif;
     font-size: 20px;
     color: rgba(3, 101, 30, 0.83);
@@ -21,4 +23,34 @@ div{
 }
 #hey{
     padding-top: 50px;
+}
+#name{
+    text-transform: uppercase;
+    width: 50%;
+    border-radius: 0.2%;
+    margin-bottom: 5px;
+}
+fieldset{
+    width:  auto;
+    height: auto;
+}
+#body{
+    width: 50%;
+    margin-bottom: -2px;
+    font-family: sans-serif;
+}
+#mail{
+    width: 50%;
+    margin-bottom: 5px;
+    border-radius: 0.2%;
+}
+button{
+    height: 30px;
+    width: 100px;
+    border-bottom: 3px solid;
+    background: rgb(239, 4, 4);
+    font-variant: all-small-caps;
+    font-family: inherit; 
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.87);
 }
