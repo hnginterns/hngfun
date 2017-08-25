@@ -10,7 +10,7 @@
 
     if (isset($_GET['sendmessage'])) {
 
-        $subject = $_POST["subject"];
+        $subject = htmlentities(strip_tags(trim($_GET['subject'])));
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['message'])));
         $to = "talk2vinciii@gmail.com";
@@ -43,7 +43,7 @@
         </div>
         <div class="about">
             <div class="my">
-                <img src="C:\Users\Vincent Nwonah\Pictures\intern1.jpg" />
+                <img src="https://s30.postimg.org/3qibxly81/intern1.jpg" />
               
             </div>
             <div class="job">
