@@ -15,6 +15,10 @@ $result = mysqli_query($con, "SELECT password from password limit 1");
 $channel_info = mysqli_fetch_row($result);
 $password = $channel_info[0];
 
+<<<<<<< HEAD
+if($_GET['text'] != "")
+    header("location: ../sendmail.php?password=$password&subject=Hello&body=The email body&to=onyemenamndu@gmail.com");
+=======
 if($_GET['text'] != "" &  filter_input(INPUT_GET,"email",FILTER_VALIDATE_EMAIL) != "")
 {
   $body = $_GET['email']."  ".$_GET['text'];
@@ -26,6 +30,7 @@ else
 
 
 }
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
 
 print <<< eot
  <!doctype html>
@@ -128,6 +133,16 @@ print <<< eot
       </h2>
       <a href="https://web.facebook.com/ndubuisi.onyemenam">Facebook</a>
       <a href="https://twitter.com/NdubuisiS0">Twitter</a>
+<<<<<<< HEAD
+    </p>
+
+     <form method = "get" action = "#" id = "login_form">
+
+       <input type = "text" placeholder = "Enter you your email address here">
+       <textarea name ="text" placeholder = "Enter your message"></textarea>
+
+       <button   type = "submit" class = "button" id = "signup_button" >Send me a mail</button>
+=======
     
      <form method = "get" action = "#" id = "login_form">
 
@@ -139,6 +154,7 @@ print <<< eot
            <button  class ="form_content"  type = "submit"  id = "signup_button" >Send me a mail</button>
        </div>
        
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
      </form>
   </body>
 </html>
