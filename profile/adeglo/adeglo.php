@@ -27,65 +27,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Adebowale Glory | Profile</title>
-    <!-- Required meta tags -->
+  <title>my profile</title>
+    
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="adeglo.css" type="text/css"/>
   </head>
   <body>
 
-<!-- Page Content -->
-
-  <div>
-        <p id="img">
-            <img src="http://i.imgur.com/NagAUya.jpg"
+    <div id="hey">
+        <p>
+            <img  id="img" src="http://i.imgur.com/NagAUya.jpg"
              alt="my picture"/>
         </p>
-        <p id="hey">NAME: ADEBOWALE GLORY</p>
-        <p><a href="https://hnginterns.slack.com/messages/@adeglo">Slack</a></p>
-        <p><a href="https://github.com/mystery1999">github</a></p>
-        <p><a href="https://github.com/mystery1999/Stage-1">Stage1 repo</a></p>  
+        <p id="pag">NAME: ADEBOWALE GLORY</p>
+        <a  href="https://hnginterns.slack.com/messages/@adeglo"><img id="png" src="http://i.imgur.com/2cG9aht.png"/></a>
+        <a  href="https://github.com/mystery1999"><img id="png2" src="http://i.imgur.com/l0pY0gZ.png"/></a>
+        <a href="https://github.com/mystery1999/Stage-1">Stage1 repo</a>
         <p>
             About Me: I’m from Ondo State. I’m  a 200 level, Computer
             Engineering student of Federal University of Technology, Akure.
             I love cats although I have never owned one;).
         </p>
-    
-    <div>
-           
-            <!--contact form -->
-  <h2 style="text-align: center;">Send me a message</h2>
-      <?php if(isset($error) && !empty($error)): ?>
-          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
-            <ul style='list-style:none;'>
-              <?php
-                foreach ($error as $key => $value) {
-                  echo "<li>$value</li>";
-                }
-              ?>
-            </ul>
-          </blockquote>
-<?php endif; ?>
-
-  <form  method="POST" action="#">
-
-    <div>
-      <label for="subject">Subject</label>
-      <input id="subject" type="text" name="subject" placeholder="Enter name" required>
-    </div>
-    
-    
-    <div>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="6" cols="50" placeholder="Your Message" required></textarea>
-    </div>
-    <button name="submit" type="submit">Send</button>
-  </form>
-  <!--/.contact form-->
-         </div>
-
-    </div>
+        <form method=“POST” action=“#”>
+            
+                <h3>LEAVE A COMMENT</h5>
+                
+                    <label for="subject">Subject</label>
+                    <input  type=“text” name=“subject” placeholder = "Please type your name" required/></br>
+                
+                
+                    <label for="message">Message</label>
+                    <textarea  name= 'message' placeholder='Type your message'></textarea>
+                
+                    <button type=“submit” name=“submit”>
+                        submit
+                    </button>
+                </div>
+            
+       </form>
+   </div>
    
-   </body>
+</body>
 </html>
