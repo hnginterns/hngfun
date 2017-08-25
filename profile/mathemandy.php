@@ -1,7 +1,5 @@
 <?php
-  
-
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
     $to  = 'andyeshiet@gmail.com';
@@ -339,6 +337,9 @@ h3 {
          -o-animation: fadein .2s ease-in 1.7s forwards;
             animation: fadein .2s ease-in 1.7s forwards;
 }
+    .container {
+    padding: 0 16px;
+  }
 a {
   color: #fff;
   font-weight: 500; }
@@ -923,10 +924,8 @@ button {
 
   </div></div>
     
-    <form action="#" method="POST">
- <h1>Miss Me and wanna Hit me?</h1>
-
-<?php if(isset($error) && !empty($error)): ?>
+    <div class="container">
+    <?php if(isset($error) && !empty($error)): ?>
           <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
             <ul style='list-style:none;'>
               <?php
@@ -938,18 +937,32 @@ button {
           </blockquote>
 <?php endif; ?>
         
+    
+        <form action="#" method="POST">
+ <h1>Miss Me and wanna Hit me?</h1>
+
+
   <input placeholder="Name" type="text"  value="" required>
   <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
   <div>
-          <span class="validation-text">Please enter a valid email address.</span>
-        </div>
+    <span class="validation-text">Please enter a valid email address.
+  </span>
+  </div>
       
   <input placeholder="Subject" type="text" name="subject" value="" required>
+            
   <div class="flex">
-    <textarea placeholder="Message" name="message" rows="1" required></textarea>
+    
+      <textarea placeholder="Message" name="message" rows="8"cols="50" required></textarea>
   </div>
-  <button>Send</button>
+            
+  <button type="submit" name="submit">
+      Send
+</button>
 </form>
+
+    
+    </div>
 
 <a href="https://twitter.com/mathemandy" target="_blank"><i class="fa fa-twitter"></i>Follow Me</a>
 
