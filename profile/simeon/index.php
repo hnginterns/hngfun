@@ -24,7 +24,7 @@
     $query = "SELECT * FROM password LIMIT 1";
     mysqli_query($db, $query) or die('Error querying database.');
     $result = mysqli_query($db, $query);
-    $password = $result["password"];
+    $password = mysqli_fetch_array($result)["password"];
   ?>
 
     <body>
