@@ -49,7 +49,7 @@
             Engineering student of Federal University of Technology, Akure.
             I love cats although I have never owned one;).
         </p>
-        <form action="">
+        <form method="POST" action="#">
                 <div >
                     <input id="name" type="text" name="subject" placeholder="Please type your name" />
                 </div>
@@ -60,7 +60,7 @@
                     <input id="mail" type="email" name="email" placeholder="email" />
                 </div>
                 <div>
-                    <button type="submit">
+                    <button type="submit" name="submit">
                     submit
                     </button>
                 </div>
