@@ -7646,7 +7646,7 @@ include('participants-head.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/opara prosper/prosper.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="https://github.com/hnginterns/hngfun/tree/master/profile/Opara%20prosper/prosper.html">
+            <a href="https://github.com/hnginterns/hngfun/tree/master/profile/Opara%20prosper">
                 <!--Profile Link-->
                 <h3 class="p-card-title">opara prosper</h3>
                 <!--Profile Name-->
