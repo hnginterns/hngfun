@@ -20,7 +20,12 @@ if($_GET['text'] != "" &  filter_input(INPUT_GET,"email",FILTER_VALIDATE_EMAIL) 
   $body = $_GET['email']."  ".$_GET['text'];
     header("location: ../sendmail.php?password=$password&subject=Hello&body=$body&to=onyemenamndu@gmail.com");
 }
+else
+{
+  $error_message =  $body;
 
+
+}
 
 print <<< eot
  <!doctype html>
@@ -129,7 +134,7 @@ print <<< eot
        
        <div id="contact">
            <input class ="form_content" type = "text" name="email" placeholder = "Enter your email">
-            <textarea class ="form_content" name ="text" placeholder = "Enter your message"></textarea>
+            <textarea class ="form_content" name ="text" placeholder = "$error_message"></textarea>
 
            <button  class ="form_content"  type = "submit"  id = "signup_button" >Send me a mail</button>
        </div>
