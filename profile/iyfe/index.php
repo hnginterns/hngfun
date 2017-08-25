@@ -1,6 +1,6 @@
 <?php
+   	$admin_email = "xyluz@gmail.com";
   if($_SERVER['REQUEST_METHOD'] == 'GET') {
-  	$admin_email = "xyluz@gmail.com";
     $error = ""; 
     $successMessage = "";
     $name = $_GET['name'];
@@ -12,10 +12,10 @@
   	if (!$email) {
         $error .= "An email address is required.<br>";
     }
-    if (!$content) {
+    if (!$message {
         $error .= "The content field is required.<br>";
     }
-    if (!$_subject) {
+    if (!$subject) {
         $error .= "The subject is required.<br>";
     }
     if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
