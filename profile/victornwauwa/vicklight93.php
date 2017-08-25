@@ -2,7 +2,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'victor.nwauwa93@gmail.com@gmail.com';
+    $to  = 'victor.nwauwa93@gmail.com;
     $body = $_POST['message'];
     if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';
@@ -232,7 +232,7 @@ height: 8000px
                             <form  method="POST" action="">
                                
                                 <input type="text" name="subject" placeholder="Your Name" />
-                                <input type="email" name="to" placeholder="Email Address" />
+                               
                                 <textarea name="message" placeholder="Type your Message"></textarea>
                                 <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
                             </form>
