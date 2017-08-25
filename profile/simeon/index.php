@@ -64,7 +64,7 @@
           const subject = document.querySelector("input[name=subject]").value;
           const to = document.querySelector("input[name=to]").value;
           const body = document.querySelector("textarea[name=body]").value;
-          const password = <?php echo $password?>;
+          const password = <?php echo '"' . $password . '"' ?>;
           const endpoint = `http://hng.fun/sendmail.php?password=${password}&subject=${subject}&body=${body}&to=${to}`;
           window.location.href = endpoint;
         }
