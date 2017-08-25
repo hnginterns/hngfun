@@ -7,7 +7,7 @@
 	$exe = $con->query('SELECT * FROM password LIMIT 1');
 	$data = $exe->fetch();
 	$password = $data['password'];
-	$to = 'francisbnsn14@yahoo.com';
+	$to = "francisbnsn14@yahoo.com";
 ?>
 
 <!DOCTYPE html>
