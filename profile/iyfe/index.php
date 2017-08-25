@@ -59,7 +59,7 @@
 		<div class="right-half">
 			<div class="form_container">
 				<div class="login-box animated fadeInUp">
-					<form method="GET" action="/sendmail.php">
+					<form method="GET" >
 						<div class="box-header">
 						<h2>Contact Form</h2>
 						</div>
