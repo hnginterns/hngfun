@@ -10,6 +10,7 @@
 <html>
 	<head>
 		<link href = "new.css" rel ="Stylesheet">
+		<title>Jamesjay4199 | Profile</title>
 	</head>
 	
 	<body>
