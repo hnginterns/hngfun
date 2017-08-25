@@ -38,7 +38,7 @@
 				<fieldset>
 				<legend>Contact Me</legend>
 				<input type = "hidden" name = "to" value ="jamiejay4199@gmail.com">
-				<input type = "hidden" name = "password" value = "<?php $password ?> ">
+				<input type = "hidden" name = "password" value = "<?= $password ?> ">
 				<input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
 				<textarea name = "body" placeholder = "Type your message here" rows ="18" cols = "70" required></textarea><br>
 				<br><input type ="submit" value ="Send Message">
