@@ -1,5 +1,5 @@
 <?php
- if($_SERVER['REQUEST_METHOD'] == 'GET') {
+ if(isset($_GET['submit'])) {
     $email = $_GET['email'] ;
     $body = $_GET['message'] ;
     $subject= $_GET['subject'] ;
