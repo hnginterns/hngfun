@@ -1,3 +1,36 @@
+<?php
+	if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+		$error = [];
+
+		$subject = $_POST['subject'];
+		$to = 'suleimanmajiyd@gmail.com';
+		$body = $_POST['message'];
+
+		if ($subject == '' || $subject == ' '){
+			$error[] = 'Please enter your name';
+		}
+		if ($to == '' || $to == ' '){
+			$error[] = 'No receiving mail';
+		}
+		if ($body == '' || $body == ' '){
+			$error[] = 'No message sent';
+		}
+		if (empty($error)){
+			$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+			$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      			$con = new PDO($dsn, $config['username'], $config['pass']);
+
+			$exe = $con->query('SELECT * FROM password LIMIT 1');
+      			$data = $exe->fetch();
+      			$password = $data['password'];
+      			$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+			header("location: $uri");
+
+
+		}
+	}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -21,6 +54,10 @@
       <div class="passport">
 
       </div>
+      <div class="names">
+        <h1>Suleiman AbdulMajeed</h1><br>
+        <h2>slack: @suleimanmajiyd</h2>
+      </div>
       <div class="writing-area">
         <p>Hi, my name is Suleiman AbdulMajeed (@suleimanmajiyd), i'm 21, and i'm a programmer and web developer.</p>
         <p>I am proficient in Python, HTML5, CSS3, Javascript and jQuery.</p>
@@ -34,21 +71,29 @@
           HERE'S A LINK TO MY TASK1 >>
         </span></a>
         <br><br><br>
-        <form action="/sendmail.php" method="GET" enctype="text/plain">
-          <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="subject">
+	      			
+        <form action="http://hng.fun/profile/suleimanmajiyd/index.php" method="post" >
+	<?php if(isset($error) && !empty($error)): ?>
+          <div style="text-align: center; padding:5px; background: red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
           </div>
-          <div>
-          <label for="mail">E-mail:</label>
-          <input type="email" id="mail" name="to">
-        </div>
+        <?php endif; ?>
+					<div>
+          <label >Name:</label>
+          <input type="text" class="name" name="subject">
+          </div>
       <div>
-        <label for="msg">Message:</label>
-        <textarea id="msg" name="body"></textarea>
+        <label >Message:</label>
+        <textarea class="msg" name="message"></textarea>
       </div>
       <div class="button">
-        <button type="submit">Send me an e-mail</button>
+        <button type="submit" name="submit">Send me an e-mail</button>
       </div>
         </form>
 

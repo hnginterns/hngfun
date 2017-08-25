@@ -1,6 +1,121 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+ /******************/
+                            /*                */
+                            /*                */
+                            /*    Team 3      */
+                            /*                */
+                            /*                */
+                            /******************/
+                            
+                            .p-card-container {
+                                display: flex;
+                                max-width: 1500px;
+                                .width: 100%;
+                                margin: 0 auto;
+                                justify-content: center;
+                                align-items: center;
+                                flex-wrap: wrap;
+                            }
+                            
+                            .v-center {
+                                display: flex;
+                                max-width: 700px;
+                                .height: 100vh;
+                                margin: 0 auto;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .v-center input {
+                                padding: 10px;
+                                width: 400px;
+                            }
+                            
+                            .p-card {
+                                width: 366px;
+                                border-radius: 4px;
+                                background-color: #FFFCFC;
+                                border-radius: 5px;
+                                border: 3px solid #CADBE0;
+                                margin: 10px;
+                                padding: 10px;
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: row;
+                                text-align: left;
+                                justify-content: flex-start;
+                                box-sizing: border-box;
+                            }
+                            
+                            .p-card-photo {
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 50%;
+                            }
+                            
+                            .p-card-info {
+                                width: 170px;
+                                height: 50px;
+                                padding-left: 20px;
+                                padding-right: 20px;
+                            }
+                            
+                            .p-card-info h3 {
+                                margin: 0;
+                                color: #26A6D1;
+                                color: #26A6D1;
+                                font-size: 12px;
+                                margin-bottom: -10px;
+                            }
+                            
+                            .p-card-info a {
+                                text-decoration: none;
+                            }
+                            
+                            .p-team {
+                                justify-content: flex-end;
+                            }
+                            
+                            .p-team a {
+                                text-decoration: none;
+                            }
+                            
+                            .p-team a h3 {
+                                font-size: 16px;
+                            }
+                            
+                            .p-card-info p {
+                                margin: 0;
+                                margin-top: 5px;
+                            }
+                            
+                            .p-card-title {
+                                font-style: normal;
+                                font-weight: bold;
+                                line-height: normal;
+                                font-size: 20px;
+                                color: #000;
+                            }
+                            
+                            .p-card-description {
+                                width: 108px;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: normal;
+                                font-size: 14px;
+                                color: #534C4C;
+                            }
+                            
+                            #search {
+                                background-image: url('/css/searchicon.png');
+                                background-position: 10px 12px;
+                                background-repeat: no-repeat;
+                                width: 100%;
+                                font-size: 16px;
+                                padding: 12px 20px 12px 40px;
+                                border: 1px solid #ddd;
+                                margin-bottom: 12px;
+                            }
+   }
   /*
   Team 1
    */
@@ -551,124 +666,7 @@ textarea {
  }
  /* Project Page CSS by Team 4 ends
 =======
-                               /******************/
-                               /*                */
-                               /*                */
-                               /*    Team 3      */
-                               /*                */
-                               /*                */
-                               /******************/
-
-                               .p-card-container {
-                                   display: flex;
-                                   max-width: 1500px;
-                                   .width: 100%;
-                                   margin: 0 auto;
-                                   justify-content: center;
-                                   align-items: center;
-                                   flex-wrap: wrap;
-                               }
-
-                               .v-center {
-                                   display: flex;
-                                   max-width: 700px;
-                                   .height: 100vh;
-                                   margin: 0 auto;
-                                   justify-content: center;
-                                   align-items: center;
-                               }
-
-                               .v-center input {
-                                   padding: 10px;
-                                   width: 400px;
-                               }
-
-                               .p-card {
-                                   width: 366px;
-                                   border-radius: 4px;
-                                   background-color: #FFFCFC;
-                                   border-radius: 5px;
-                                   border: 3px solid #CADBE0;
-                                   margin: 10px;
-                                   padding: 10px;
-                                   display: flex;
-                                   justify-content: center;
-                                   flex-direction:
-                                     ;
-                                   text-align: left;
-                                   justify-content: flex-start;
-                                   box-sizing: border-box;
-                               }
-
-                               .p-card-photo {
-                                   width: 60px;
-                                   height: 60px;
-                                   border-radius: 50%;
-                               }
-
-                               .p-card-info {
-                                   width: 170px;
-                                   height: 50px;
-                                   padding-left: 20px;
-                                   padding-right: 20px;
-                               }
-
-                               .p-card-info h3 {
-                                   margin: 0;
-                                   color: #26A6D1;
-                                   color: #26A6D1;
-                                   font-size: 12px;
-                                   margin-bottom: -10px;
-                               }
-
-                               .p-card-info a {
-                                   text-decoration: none;
-                               }
-
-                               .p-team {
-                                   justify-content: flex-end;
-                               }
-
-                               .p-team a {
-                                   text-decoration: none;
-                               }
-
-                               .p-team a h3 {
-                                   font-size: 16px;
-                               }
-
-                               .p-card-info p {
-                                   margin: 0;
-                                   margin-top: 5px;
-                               }
-
-                               .p-card-title {
-                                   font-style: normal;
-                                   font-weight: bold;
-                                   line-height: normal;
-                                   font-size: 20px;
-                                   color: #000;
-                               }
-
-                               .p-card-description {
-                                   width: 108px;
-                                   font-style: normal;
-                                   font-weight: 300;
-                                   line-height: normal;
-                                   font-size: 14px;
-                                   color: #534C4C;
-                               }
-
-                               #search {
-                                   background-image: url('/css/searchicon.png');
-                                   background-position: 10px 12px;
-                                   background-repeat: no-repeat;
-                                   width: 100%;
-                                   font-size: 16px;
-                                   padding: 12px 20px 12px 40px;
-                                   border: 1px solid #ddd;
-                                   margin-bottom: 12px;
-                               }
+                               
                                /* Project Page CSS by Team 4
 >>>>>>> 17efe165bf7baee7d933eaa5503ef7ad5fd20052
 ===============================*/
@@ -3598,6 +3596,7 @@ padding-top: 45px !important;
                     /* Library Page CSS by Team 10 ends
   ====================================*/
 <<<<<<< HEAD
+<<<<<<< HEAD
   
   
   /* CSS for Team 8
@@ -3831,6 +3830,499 @@ padding-top: 45px !important;
                     /*                */
                     /*                */
                     /******************/
+                    
+                    .p-card-container {
+                        display: flex;
+                        max-width: 1500px;
+                        .width: 100%;
+                        margin: 0 auto;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .v-center {
+                        display: flex;
+                        max-width: 700px;
+                        .height: 100vh;
+                        margin: 0 auto;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .v-center input {
+                        padding: 10px;
+                        width: 400px;
+                    }
+                    
+                    .p-card {
+                        width: 366px;
+                        border-radius: 4px;
+                        background-color: #FFFCFC;
+                        border-radius: 5px;
+                        border: 3px solid #CADBE0;
+                        margin: 10px;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: row;
+                        text-align: left;
+                        justify-content: flex-start;
+                        box-sizing: border-box;
+                    }
+                    
+                    .p-card-photo {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                    
+                    .p-card-info {
+                        width: 170px;
+                        height: 50px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
+                    
+                    .p-card-info h3 {
+                        margin: 0;
+                        color: #26A6D1;
+                        color: #26A6D1;
+                        font-size: 12px;
+                        margin-bottom: -10px;
+                    }
+                    
+                    .p-card-info a {
+                        text-decoration: none;
+                    }
+                    
+                    .p-team {
+                        justify-content: flex-end;
+                    }
+                    
+                    <<<<<<< HEAD #wrapper {
+                        margin: 0 0;
+                        padding: 0 0;
+                        position: relative;
+                    }
+                    
+                    *:focus {
+                        outline: none;
+                    }
+                    
+                    =======.p-team a {
+                        text-decoration: none;
+                    }
+                    
+                    .p-team a h3 {
+                        font-size: 16px;
+                    }
+                    
+                    .p-card-info p {
+                        margin: 0;
+                        margin-top: 5px;
+                    }
+                    
+                    >>>>>>>971bf31092894dc00997122bb31e6a6ea3acb029 .p-card-title {
+                        font-style: normal;
+                        font-weight: bold;
+                        line-height: normal;
+                        font-size: 20px;
+                        color: #000;
+                    }
+                    
+                    .p-card-description {
+                        width: 108px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: normal;
+                        font-size: 14px;
+                        color: #534C4C;
+                    }
+                    
+                    #search {
+                        background-image: url('/css/searchicon.png');
+                        background-position: 10px 12px;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        font-size: 16px;
+                        padding: 12px 20px 12px 40px;
+                        border: 1px solid #ddd;
+                        margin-bottom: 12px;
+                    }
+                    /* CSS for Team 8
+<<<<<<< HEAD
+>>>>>>> 6e9bce9fafe529fb337a26a49e4e508411250ed2
+=======
+>>>>>>> 7e2894d8dde28c86f19cd0c6e7174fabe99b12e5
+=======
+                  /******************/
+                  /*                */
+                  /*                */
+                  /*    Team 3      */
+                  /*                */
+                  /*                */
+                  /******************/
+                  
+                  .p-card-container {
+                      display: flex;
+                      max-width: 1500px;
+                      .width: 100%;
+                      margin: 0 auto;
+                      justify-content: center;
+                      align-items: center;
+                      flex-wrap: wrap;
+                  }
+                  
+                  .v-center {
+                      display: flex;
+                      max-width: 700px;
+                      .height: 100vh;
+                      margin: 0 auto;
+                      justify-content: center;
+                      align-items: center;
+                  }
+                  
+                  .v-center input {
+                      padding: 10px;
+                      width: 400px;
+                  }
+                  
+                  .p-card {
+                      width: 366px;
+                      border-radius: 4px;
+                      background-color: #FFFCFC;
+                      border-radius: 5px;
+                      border: 3px solid #CADBE0;
+                      margin: 10px;
+                      padding: 10px;
+                      display: flex;
+                      justify-content: center;
+                      flex-direction: row;
+                      text-align: left;
+                      justify-content: flex-start;
+                      box-sizing: border-box;
+                  }
+                  
+                  .p-card-photo {
+                      width: 60px;
+                      height: 60px;
+                      border-radius: 50%;
+                  }
+                  
+                  .p-card-info {
+                      width: 170px;
+                      height: 50px;
+                      padding-left: 20px;
+                      padding-right: 20px;
+                  }
+                  
+                  .p-card-info h3 {
+                      margin: 0;
+                      color: #26A6D1;
+                      color: #26A6D1;
+                      font-size: 12px;
+                      margin-bottom: -10px;
+                  }
+                  
+                  .p-card-info a {
+                      text-decoration: none;
+                  }
+                  
+                  .p-team {
+                      justify-content: flex-end;
+                  }
+                  
+                  .p-team a {
+                      text-decoration: none;
+                  }
+                  
+                  .p-team a h3 {
+                      font-size: 16px;
+                  }
+                  
+                  .p-card-info p {
+                      margin: 0;
+                      margin-top: 5px;
+                  }
+                  
+                  .p-card-title {
+                      font-style: normal;
+                      font-weight: bold;
+                      line-height: normal;
+                      font-size: 20px;
+                      color: #000;
+                  }
+                  
+                  .p-card-description {
+                      width: 108px;
+                      font-style: normal;
+                      font-weight: 300;
+                      line-height: normal;
+                      font-size: 14px;
+                      color: #534C4C;
+                  }
+                  
+                  #search {
+                      background-image: url('/css/searchicon.png');
+                      background-position: 10px 12px;
+                      background-repeat: no-repeat;
+                      width: 100%;
+                      font-size: 16px;
+                      padding: 12px 20px 12px 40px;
+                      border: 1px solid #ddd;
+                      margin-bottom: 12px;
+                  }
+                  /***************
+  *****Team 1*****
+   ***************/
+=======
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
+<<<<<<< HEAD
+  
+  
+  /* CSS for Team 8
+===============================*/
+                         .team8-card-container {
+                             display: flex;
+                             max-width: 1500px;
+                             width: 100%;
+                             margin: 0 auto;
+                             justify-content: center;
+                             align-items: center;
+                             flex-wrap: wrap;
+                         }
+                         .team8-card {
+                             width: 75%;
+                             background: #FFFFFF;
+                             border-radius: 2px;
+                             background-color: #fcf9f9;
+                             border: 1px solid #CADBE0;
+                             margin: 10px !important;
+                             margin-bottom: 30px;
+                             display: flex;
+                             justify-content: center;
+                             flex-direction: column;
+                             text-align: left;
+                             justify-content: flex-start;
+                         }
+                         .team8-card-photo {
+                             width: 100%;
+                             height: 400px;
+                             background-position: center center;
+                         }
+                         .team8-card-info {
+                             width: 100%;
+                             padding: 15px 20px;
+                         }
+                         .team8-card-info h3 {
+                             margin: 0;
+                         }
+                         .team8-card-info p {
+                             margin: 0;
+                         }
+                         .team8-card-title {
+                             font-style: normal;
+                             font-weight: bold;
+                             line-height: normal;
+                             font-size: 20px;
+                             color: #000;
+                         }
+                         .team8-card-description {
+                             width: 100%;
+                             font-style: normal;
+                             font-weight: 300;
+                             line-height: normal;
+                             font-size: 14px;
+                             color: #534C4C;
+                         }
+                         .team8-card-footer {
+                             display: flex;
+                             justify-content: space-between;
+                             padding-left: 20px;
+                             padding-right: 20px;
+                             margin-bottom: 20px;
+                             height: 10px;
+                             font-size: 13px;
+                         }
+                         .team8-footer-separate {
+                             display: flex;
+                             justify-content: space-between;
+                         }
+                         .team8-footer-right {
+                             float: right;
+                             display: flex;
+                             flex-direction: row;
+                         }
+                         .dot {
+                             color: #FFBA08;
+                             margin-right: 5px;
+                         }
+                         .dot2 {
+                             color: #29CB00;
+                             margin-right: 5px;
+                         }
+                         .dot3 {
+                             color: #FF0000;
+                             margin-right: 5px;
+                         }
+                         /* Team 8 CSS ends here
+===============================*/
+
+
+
+
+
+
+   /******************/
+   /*                */
+   /*                */
+   /*    Team 3      */
+   /*                */
+   /*                */
+   /******************/
+
+   .p-card-container {
+       display: flex;
+       max-width: 1500px;
+       .width: 100%;
+       margin: 0 auto;
+       justify-content: center;
+       align-items: center;
+       flex-wrap: wrap;
+   }
+
+   .v-center {
+       display: flex;
+       max-width: 700px;
+       .height: 100vh;
+       margin: 0 auto;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .v-center input {
+       padding: 10px;
+       width: 400px;
+   }
+
+   .p-card {
+       width: 366px;
+       border-radius: 4px;
+       background-color: #FFFCFC;
+       border-radius: 5px;
+       border: 3px solid #CADBE0;
+       margin: 10px;
+       padding: 10px;
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       text-align: left;
+       justify-content: flex-start;
+       box-sizing: border-box;
+   }
+
+   .p-card-photo {
+       width: 60px;
+       height: 60px;
+       border-radius: 50%;
+   }
+
+   .p-card-info {
+       width: 170px;
+       height: 50px;
+       padding-left: 20px;
+       padding-right: 20px;
+   }
+
+   .p-card-info h3 {
+       margin: 0;
+       color: #26A6D1;
+       color: #26A6D1;
+       font-size: 12px;
+       margin-bottom: -10px;
+   }
+
+   .p-card-info a {
+       text-decoration: none;
+   }
+
+   .p-team {
+       justify-content: flex-end;
+   }
+
+<<<<<<< HEAD
+#wrapper {
+    margin:0 0;
+    padding: 0 0;
+    position: relative;
+}
+*:focus {
+    outline: none;
+}
+=======
+   .p-team a {
+       text-decoration: none;
+   }
+
+   .p-team a h3 {
+       font-size: 16px;
+   }
+
+   .p-card-info p {
+       margin: 0;
+       margin-top: 5px;
+   }
+>>>>>>> 971bf31092894dc00997122bb31e6a6ea3acb029
+
+   .p-card-title {
+       font-style: normal;
+       font-weight: bold;
+       line-height: normal;
+       font-size: 20px;
+       color: #000;
+   }
+
+   .p-card-description {
+       width: 108px;
+       font-style: normal;
+       font-weight: 300;
+       line-height: normal;
+       font-size: 14px;
+       color: #534C4C;
+   }
+
+   #search {
+       background-image: url('/css/searchicon.png');
+       background-position: 10px 12px;
+       background-repeat: no-repeat;
+       width: 100%;
+       font-size: 16px;
+       padding: 12px 20px 12px 40px;
+       border: 1px solid #ddd;
+       margin-bottom: 12px;
+   }
+   
+/* CSS for Team 8
+<<<<<<< HEAD
+>>>>>>> 09be0cbaa7291469d81c7a1c4ca494d74c65fae1
+>>>>>>> 6f0a166b7af3c1d2a6677f8e8fbca2bea1b2ff54
+>>>>>>> cc932c814f78e210c2d5f974a2fd7f52c3852ce0
+||||||| merged common ancestors
+  /***************
+  *****Team 1*****
+   ***************/
+<<<<<<< HEAD
+=======
+=======
+                    /******************/
+                    /*                */
+                    /*                */
+                    /*    Team 3      */
+                    /*                */
+                    /*                */
+                    /******************/
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
                     
                     .p-card-container {
                         display: flex;
@@ -17806,6 +18298,539 @@ div.body {
                 margin: 25px;
                 align-content: center;
                 position: absolute;
+<<<<<<< HEAD
+                color: #E5E1E1;
+            }
+            .tag {
+                width: auto;
+                height: auto;
+                top: 78%;
+                padding: 2px;
+                margin-left: 1px;
+                background-color: #AC070A;
+            }
+            .label {
+                top: 86%;
+                padding: 5px;
+                background-color: rgba(0, 0, 0, 0.3);
+                line-height: 100%;
+            }
+            #tag1 {
+                top: 71.5%;
+            }
+            #label1 {
+                top: 82.3%;
+            }
+            #image1 {
+                width: 35%;
+            }
+            #image2 {
+                width: 34%;
+            }
+            #tag2 {
+                top: 78%;
+            }
+            #label2 {
+                top: 88%;
+            }
+            #image3 {
+                width: 31%;
+            }
+            #tag3 {
+                top: 80%;
+            }
+            #image4 {
+                width: 35%;
+                margin-bottom: 20px;
+            }
+            #label4 {
+                top: 32.5%;
+            }
+            #fig4 {
+                margin-bottom: 70px;
+            }
+            #tag4 {
+                top: 26%;
+            }
+            #tag4a {
+                top: 84%;
+            }
+            #label4a {
+                top: 89.2%;
+            }
+            #tag5 {
+                top: 86.5%;
+            }
+            #label5 {
+                top: 92.5%;
+            }
+            #tag6 {
+                top: 87%;
+            }
+            #label6 {
+                top: 91.5%;
+            }
+            /* Past Internships Page CSS by Team 7 starts
+>>>>>>> 9595db33d00b367dd580352b74c28adc0d0a359d
+===============================*/
+<<<<<<< HEAD
+                            .navigation {
+                                border-color: red;
+                                background-color: grey;
+                                height: 100%;
+                                width: 20%;
+                            }
+                            .homediv {
+                                background: url(images/tm7.jpg);
+                                height: 150px;
+                            }
+                            .ttedit {
+                                width: 80%;
+                                border: 5px solid white;
+                                padding: 10px;
+                                margin: 25px;
+                                align-content: center;
+                                position: absolute;
+                                text-align: center;
+                            }
+                            /* Past Internships Page CSS by Team 7 ends
+===============================*/
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+
+ .row {
+     margin-top: 15px;
+     width: 100%;
+     height: 50%;
+ }
+
+ .row div {
+     width: 50%;
+     height: 100%;
+     float: left;
+ }
+
+ .image {
+     height: 200px;
+ }
+
+ .name-text {
+     font-size: x-large;
+     margin-top: 60px;
+     margin-left: 20px;
+     padding: 5px;
+     text-align: left;
+     font-weight: bold;
+     color: #333333;
+ }
+
+ .section-text {
+     font-size: x-large;
+     text-align: center;
+     font-weight: bold;
+     color: #333333;
+ }
+
+ .section-leader {
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+
+ .name-post-text {
+     font-size: large;
+     margin-top: 5px;
+     margin-left: 20px;
+     padding: 5px;
+     text-align: left;
+     color: #333333;
+ }
+
+ .name-body-text {
+     font-size: small;
+     margin-top: 10px;
+     margin-left: 20px;
+     padding: 5px;
+     text-align: left;
+     color: #4F4F4F;
+ }
+
+ .section-body-text {
+     font-size: large;
+     margin: auto;
+     padding: 5px;
+     text-align: center;
+     color: #4F4F4F;
+     font-weight: lighter;
+ }
+
+ .linkedin {
+     align-self: left;
+     height: 30px;
+     width: 30px;
+     margin-top: 3px;
+     margin-left: 20px;
+ }
+
+ #team-2-section-1 {
+     max-width: 50vw;
+     margin: auto;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+
+ .section-1 {
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+
+ table {
+     border-collapse: collapse;
+     width: 100%;
+ }
+
+ td,
+ th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 60px;
+ }
+
+ p.ex {
+     padding: -0.9cm;
+     font-weight: lighter;
+     font-size: 17px;
+ }
+
+ tr:nth-child(even) {
+     background-color: #dddddd;
+ }
+
+ p.thick {
+     font-weight: bold;
+     font-size: 150%;
+     color: #333333;
+ }
+
+ p.light {
+     color: #4F4F4F;
+     font-size: small;
+     font-weight: lighter;
+ }
+
+/*---team2---footer--*/
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 10px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 25%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #ffffff;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  #ffffff;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 36%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #ffffff;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #ffffff;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #fffffff;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 70%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 741e7d751eb4257f91022a02b57560205a58f192
+ .row {
+       margin-top: 15px;
+       width: 100%;
+       height: 50%;
+   }
+   
+   .row div {
+       width: 50%;
+       height: 100%;
+       float: left;
+   }
+   
+   .image {
+       height: 200px;
+   }
+   
+   .name-text {
+       font-size: x-large;
+       margin-top: 60px;
+       margin-left: 20px;
+       padding: 5px;
+       text-align: left;
+       font-weight: bold;
+       color: #333333;
+   }
+   
+   .section-text {
+       font-size: x-large;
+       text-align: center;
+       font-weight: bold;
+       color: #333333;
+   }
+   
+   .section-leader {
+       margin-top: 50px;
+       margin-bottom: 50px;
+   }
+   
+   .name-post-text {
+       font-size: large;
+       margin-top: 5px;
+       margin-left: 20px;
+       padding: 5px;
+       text-align: left;
+       color: #333333;
+   }
+   
+   .name-body-text {
+       font-size: small;
+       margin-top: 10px;
+       margin-left: 20px;
+       padding: 5px;
+       text-align: left;
+       color: #4F4F4F;
+   }
+   
+   .section-body-text {
+       font-size: large;
+       margin: auto;
+       padding: 5px;
+       text-align: center;
+       color: #4F4F4F;
+       font-weight: lighter;
+   }
+   
+   .linkedin {
+       align-self: left;
+       height: 30px;
+       width: 30px;
+       margin-top: 3px;
+       margin-left: 20px;
+   }
+   
+   #team-2-section-1 {
+       max-width: 50vw;
+       margin: auto;
+       text-align: center;
+       padding-bottom: 20px;
+   }
+   
+   .section-1 {
+       margin-top: 50px;
+       margin-bottom: 50px;
+   }
+   
+   table {
+       border-collapse: collapse;
+       width: 100%;
+   }
+   
+   td,
+   th {
+       border: 1px solid #dddddd;
+       text-align: left;
+       padding: 60px;
+   }
+   
+   p.ex {
+       padding: -0.9cm;
+       font-weight: lighter;
+       font-size: 17px;
+   }
+   
+   tr:nth-child(even) {
+       background-color: #dddddd;
+   }
+   
+   p.thick {
+       font-weight: bold;
+       font-size: 150%;
+       color: #333333;
+   }
+   
+   p.light {
+       color: #4F4F4F;
+       font-size: small;
+       font-weight: lighter;
+   }
+<<<<<<< HEAD
+=======
+   
+            .navigation {
+                border-color: red;
+                background-color: grey;
+                height: 100%;
+                width: 20%;
+            }
+            .homediv {
+                background: url(images/tm7.jpg);
+                height: 150px;
+            }
+            .ttedit {
+                width: 80%;
+                border: 5px solid white;
+                padding: 10px;
+                margin: 25px;
+                align-content: center;
+                position: absolute;
+=======
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
                 text-align: center;
                 /* Past Internships Page CSS by Team 7 ends
 =======

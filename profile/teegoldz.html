@@ -1,8 +1,11 @@
 
 
-<!DOCTYPE <html>
-  <title> profile page </title>
+<!DOCTYPE html>
+  
   <head>
+    <title> profile page </title>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
       <style>
       body{
         text-align: center;
@@ -105,7 +108,7 @@
     border:1px solid #999;
   }
       
-      
+     
       
       
   
@@ -127,7 +130,7 @@
         <div class="row">
           <div class="col-6 col-m-12">
             <div class="image-container">
-              <img src="https://avatars1.githubusercontent.com/u/28753220?v=4&u=a7b6ef189b8b5a577e22db6437c9a7860c6b1faf&s=400">
+              <img src="https://avatars1.githubusercontent.com/u/28753220?v=4&u=a7b6ef189b8b5a577e22db6437c9a7860c6b1faf&s=400" alt="teegoldz">
               
               </div>
             </div>
@@ -136,7 +139,7 @@
         <div class="col-6 col-m-12">
           <div class="about">
               I'm Okunniga Tosin. I am a school teacher during the day and a self taught software  developer in the night and weekends.I'm a plantain lover.<br>
-              <span style="font-weight: bold;">  <br><a style="color:green" href="https://github.com/Teegold007/getting-started-h2-2017">stage 1  </a><br>
+               <br><a style="color:green" href="https://github.com/Teegold007/getting-started-h2-2017">stage 1  </a><br>
                 <ul class="soc">
   
                   <li><a style="color:black" class="fa fa-github" href="https://github.com/">Teegold007 </a></li>
@@ -150,34 +153,60 @@
   
   
   
-          </div>
+          
         </div>
         </div>
+
+
+
   
   
-         <div class="container3">  
-    <form id="contactME" action="hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=Okunnigatosin@gmail.com" method="POST">
-      <h2>Contact Me</h2>
-      <h4>Shoot me a mail, and get a reply within 24 hours!</h4>
-      <fieldset>
-        <input placeholder="Your name" type="text" tabindex="1" required="" autofocus="">
-      </fieldset>
-      <fieldset>
-        <input placeholder="Your Email Address" type="email" tabindex="2" required="">
-      </fieldset>
-      <fieldset>
-        <input placeholder="Your Phone Number" type="tel" tabindex="3" required="">
-      </fieldset>
-      <fieldset>
-        <textarea placeholder="Type your Message Here...." tabindex="5" required=""></textarea>
-      </fieldset>
-      <fieldset>
-        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-      </fieldset>
-    </form>
+         <div class="container3">
+
+      <form action="teegoldz.php" method="post" id="contactME" >
+<h3>Contact Me</h3>
+<h4>Shoot me a mail, and get a reply within 24 hours!</h4>
+    
+          <fieldset>
+              <input placeholder="Your name" type="text" tabindex="1" required="" autofocus="">
+          </fieldset>
+          <fieldset>
+           <input placeholder="Your Phone Number" type="tel"  required="">
+          </fieldset>
+        
+          <fieldset>
+            <input type="email" id="to" name="to" placeholder="Your email address here">
+          </fieldset>
+
+
+          <fieldset>
+            <input type="text" id="subject" name="subject" placeholder="Your subject here">
+         </fieldset>
+
+          <fieldset>
+           <textarea placeholder="Type your Message Here...." tabindex="5" id="body" name="body" required=""></textarea>
+          </fieldset>
+            
+        
+          <fieldset>
+            <button type="submit" name="process" id="contact-submit" value="Submit">Submit </button>
+          </fieldset>
+        </form>
+    
+
+  
+</div>
+<!-- end contact form --> 
+    
+    
+  
+  
+  
+    
+    
    
     
-  </div>
+  
   <!-- end contact form -->
   
   

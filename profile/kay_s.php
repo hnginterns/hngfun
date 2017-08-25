@@ -20,7 +20,7 @@
         $query = $db->query('SELECT * from password LIMIT 1');
         $data = $query->fetch();
         $password = $data['password'];
-        header("Location: ".$_SERVER['HTTP_HOST']."/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
+        header("Location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
         
     }
 ?>
@@ -59,13 +59,13 @@
             }
 
             p {
-                color: #57777F;
+                color: #2C3E50;
                 line-height: 1.3;
                 
             }
 
             h2 {
-                color: #57777F;
+                color: #2C3E50;
             }
 
             input[type=submit] {
@@ -101,7 +101,7 @@
                 margin-right: 10%;
                 font-size: 16px;
                 font-family: Apple, monospace;
-                color:#57777F;
+                color:#2C3E50;
                 padding-left: 10px;
                 padding-right: 10px;
             }
@@ -119,14 +119,15 @@
             .profile {
                 margin: auto;
                 border-radius: 50%;
-  
+                width: 300px;
+                height: 300px;
             }
 
             .slack_box {
                 text-align: left ;
                 float: left;
                 width: 50%;
-                color: #57777F;
+                color: #2C3E50;
                 
             }
 
@@ -134,7 +135,7 @@
                 text-align: right;
                 float: left;
                 width: 50%;
-                color: #57777F;
+                color: #2C3E50;
             }
 
             .contact {
