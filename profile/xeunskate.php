@@ -1,3 +1,4 @@
+<?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$error = [];
 	$subject = $_POST['subject'];
