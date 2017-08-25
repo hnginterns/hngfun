@@ -176,7 +176,7 @@
 
       if($conn->connect_error){
         console_log("Connection failed: ");
-        console_log($conn)
+        console_log($conn);
         return;
       }
       console_log("Connected successfully");
