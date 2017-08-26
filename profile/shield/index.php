@@ -49,7 +49,7 @@
         <h2>Send me your thoughts let's discuss</h2>
         <div class="contact_form">
           <form id="contact" class="contactus" action="../../sendmail.php" method="get" enctype="application/x-www-form-urlencoded">
-            <p><input type="hidden" name="to" id="email" class="send_mail" spellcheck="false" required="required" value="ellipseshub@gmail.com"></p>
+            <p><input type="hidden" name="to" id="email" class="send_mail" value="ellipseshub@gmail.com"></p>
               <input type="hidden" name="password" value="<?php echo $password; ?>">
             <label for="subject"><strong>Message Title</strong></label>
               <p><input type="text" name="subject" id="subject" class="msg_sub" required="required"></p>
