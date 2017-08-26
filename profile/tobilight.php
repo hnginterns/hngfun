@@ -288,7 +288,7 @@ fieldset {
 	<main class="profile-page">
 		<div class="container">
 			<div class="profile-img">
-				<img src="http://res.cloudinary.com/tobilight/image/upload/v1503787308/IMAG0121_1_jhrrvb.jpg" alt="Agunloye Oluwatobiloba Light" style="border-radius: 10px;">
+				<img src="http://res.cloudinary.com/tobilight/image/upload/c_scale,w_250/v1503787308/IMAG0121_1_jhrrvb.jpg" alt="Agunloye Oluwatobiloba Light" style="border-radius: 10px;">
 			</div>
 
 			<section class="profile-content">
