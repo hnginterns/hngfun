@@ -53,7 +53,7 @@
               <input type="hidden" name="password" value="<?php echo $password; ?>">
             <label for="subject"><strong>Message Title</strong></label>
               <p><input type="text" name="subject" id="subject" class="msg_sub" required="required"></p>
-            <label for="email"><strong>Message</strong></label>
+            <label for="message"><strong>Message</strong></label>
             <p><textarea name="body" id="message" class="" rows="6" required="required"></textarea></p>
             <p><button id="send" name="submit" type="submit">send</button></p>
           </form>
