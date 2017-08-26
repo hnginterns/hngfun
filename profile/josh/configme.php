@@ -17,7 +17,6 @@ if(isset($_POST['submit'])){
     $subject = $_POST['subject'];
     $body = $_POST['body'];
     header("location: ../../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=joshuaaniekwe@gmail.com");
-
 }else{
     header("location: josh.html");
 }
