@@ -1,6 +1,5 @@
 <?php
-      if (isset($_GET['submit']))  {
-          //Email information here
+      if (isset($_GET['send']))  {
       $to = "idee4ril@gmail.com";
       $subject = $_GET['subject'];
       $body = $_GET['message'];    
@@ -29,6 +28,10 @@ width:50%;
 float: left;
 }
 
+p {
+text-align:center
+}
+
 a {
 
 }
@@ -42,8 +45,8 @@ h3 {font-family:tahoma;}
 
 .right {
 float: right;
-width:40%;
-margin-right:10%;
+width: 40%;
+margin-right:8%;
 }
 
 input[type=text] {
@@ -52,6 +55,21 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
 }
+
+a {
+text-decoration: none;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+
 
 p {
 width:50%;
@@ -87,46 +105,41 @@ input[type=button], input[type=submit], input[type=reset] {
 
 <body>
 
-<div class="left">
+<div class="left" style="text-align:center;">
 
-	
-<center>
-<img  src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-1/p160x160/14657334_1259677607387062_8116538770825805178_n.jpg?oh=fd7eeb04eb8940e886b79c5b6354e74b&oe=5A277060">
+
+<img  alt ="profile picture" src="http://res.cloudinary.com/dzb4ks1n6/image/upload/v1503723471/14657334_1259677607387062_8116538770825805178_n_i1hcus.jpg"/>
 	
 <h1>Idorenyin Obong</h1>
 <h3>Slack Username- @idee</h3>
-<p>My name is Idorenyin Obong, an Android Developer from Ini LGA, Akwa Ibom State. I am a 400L student of Cross River University of Technology </p>
-<h2><a href="https://github.com/KingIdee/hng-stage1">HNG Stage 1 Project</a></h2>
-</center>
+<h4>My name is Idorenyin Obong, an Android Developer from Ini LGA, Akwa Ibom State. I am a 400L student of Cross River University of Technology </h4>
+<h2><a href="https://github.com/KingIdee/hng-stage1">Stage 1 project</a></h2>
 
 </div>
 
 
 <div class="right">
 
-<center>
 
-<h3> Contact </h3>
-<form action="" method="GET">
-  Name:<br>
-  <input type="text" name="name" required><br>
-  <input type="text" placeholder="Email Subject" name="subject" required>
+
+<h3> Contact Idorenyin! </h3>
+<form action="" method="get">
+  
+  <input type="text" placeholder="Name" name="name" required/>
+  <input type="text" placeholder="Email Subject" name="subject" required/>
  
-Message:<br>
-<textarea name="message">
+
+<textarea name="message" placeholder="Message" required cols="4" rows="4" />
 Hello Idee! I'll love you to create an android app for me!
 </textarea>
-<br>
 
-<input type="submit" value="submit" name="submit" style="width:100%;"><br>
+
+<input type="submit" value="submit" name="send" style="width:100%;"/>
 
 </form>
 
-</center>
 
 </div>
-
-
 
 
 
@@ -134,4 +147,4 @@ Hello Idee! I'll love you to create an android app for me!
 
 
 
-</html
+</html>

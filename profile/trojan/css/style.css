@@ -1,4 +1,7 @@
+/* -------------------------------- 
+=======
 /* --------------------------------
+>>>>>>> ead6ad70b0df2cf4a88b045691204c927575245f
 
 Form
 
@@ -71,6 +74,8 @@ Form
   box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
 }
 
+<<<<<<< HEAD
+=======
 .cd-form .cd-form-list {
   margin-top: 16px;
 }
@@ -79,7 +84,6 @@ Form
   content: "";
   display: table;
 }
-
 .cd-form textarea {
   min-height: 200px;
   resize: vertical;
@@ -117,7 +121,10 @@ Form
   -o-transform: scale(0.9);
   transform: scale(0.9);
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> ead6ad70b0df2cf4a88b045691204c927575245f
 @media only screen and (min-width: 600px) {
   .cd-form div {
     /* form element wrapper */
@@ -138,3 +145,7 @@ Form
     padding: 16px;
   }
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> ead6ad70b0df2cf4a88b045691204c927575245f
