@@ -123,7 +123,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 <h3> Contact Idorenyin! </h3>
-<form action="" method="get">
+<form method="get">
   
   <input type="text" placeholder="Name" name="name" required>
   <input type="text" placeholder="Email Subject" name="subject" required>
