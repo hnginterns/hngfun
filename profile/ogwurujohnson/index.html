@@ -1,3 +1,9 @@
+<!--
+* Created by PhpStorm.
+* User: BlackHatJohnny
+* Date: 8/26/2017
+* Time: 1:56 PM
+*-->
 <!DOCTYPE html>
 <html lang="en">
 <!-- Head -->
@@ -30,7 +36,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-<!-- navigation -->
+<!-- navigation Begins-->
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header page-scroll">
@@ -47,14 +53,15 @@
             <ul class="nav navbar-nav navbar-right cl-effect-15">
 				<li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
                 <li><a class="page-scroll scroll" href="#home">Home</a></li>
-                <li><a class="page-scroll scroll" href="#about">Project Links</a></li>
+                <li><a class="page-scroll scroll" href="#links">Project Links</a></li>
+				<li><a class="page-scroll scroll" href="#contact">Contact</a></li>
             </ul>
         </div>
 	</div><br/>
 </nav>
-<!-- //navigation -->
+<!-- //navigation ends -->
 
-<!-- banner -->
+<!-- banner begins-->
 <section class="banner" id="home">
 	<div class="container">
 		<div class="col-md-5 banner-left">
@@ -73,9 +80,9 @@
 		</div>
 	</div>
 </section>
-<!-- //banner -->
+<!-- //banner ends-->
 
-<!-- Project Links -->
+<!-- Project Links Begins-->
 <div class="about" id="links">
 	<div class="container">
 		<div class="about-head text-center ">
@@ -111,10 +118,42 @@
 				
 	</div>
 </div>
-<!-- //links -->
-<div>
+<!-- Project //links ends -->
 
-</div>
+
+	<!-- contact Begins-->
+	<div class="agile_about contact" id="contact">
+		<div class="container">
+			<div class="agileits_agile_about">
+				<div class="contact-head text-center ">
+					<h3>contact me</h3>
+				</div>
+				<div class="agileits_agile_about_mail">
+					<form action="contactme.php">
+						<!--Name,Email Div-->
+						<div class="col-md-6 agileits_agile_about_mail_left">
+							<input type="text" name="name" placeholder="Name" required="">
+							<input type="email" name="email" placeholder="Email" required="">
+
+							<div class="clearfix"> </div>
+						</div>
+						<!--Phone Number div-->
+						<div class="col-md-6 agileits_agile_about_mail_left">
+							<input type="text" name="phone" placeholder="Phone" required="">
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+						<textarea name="message" placeholder="Message..." required=""></textarea>
+						<div class="submit">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //contact Ends-->
+
 
 <div>
 
