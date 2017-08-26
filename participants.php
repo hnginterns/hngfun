@@ -1095,12 +1095,38 @@ include('participants-head.php');
                                         <div class="p-card-info">
 
 
-                                            <a href="http://hng.fun/profile/profchydon.html">
+                                            <a href="http://hng.fun/profile/profchydon.php">
                                                 <!--Profile Link-->
                                                 <h3 class="p-card-title">Nkwocha Chidi</h3>
                                                 <!--Profile Name-->
                                             </a>
                                             <p class="p-card-description">profchydon@gmail.com</p>
+                                            <!--Email-->
+                                        </div>
+
+                                        <div class="p-team">
+                                            <a href="#">
+                                                <h3 class="p-card-title"> Team 5 </h3>
+                                                <!--Team-->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+<!--  Each Participants ends here  -->
+
+<!--  Each Participant starts here  -->
+                                <div class="p-card">
+                                    <div class="v-center">
+                                        <div class="p-card-photo" style="background-image: url(https://hng.fun/profile/image/ogechi.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                        <div class="p-card-info">
+
+
+                                            <a href="http://hng.fun/profile/ogechiokoro.php">
+                                                <!--Profile Link-->
+                                                <h3 class="p-card-title">Ogechi Okoro</h3>
+                                                <!--Profile Name-->
+                                            </a>
+                                            <p class="p-card-description">oogehchris@gmail.com</p>
                                             <!--Email-->
                                         </div>
 
