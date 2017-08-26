@@ -1,4 +1,21 @@
-<html><head>
+<?php
+	$servername = "localhost";
+	$username = "intern";
+	$password = "@hng.intern1";
+	$dbname = "hng";
+	
+	$conn = new mysqli($servername, $username, $password, $dbname);
+    mysqli_select_db($conn, 'password');
+    $query = "SELECT * FROM password LIMIT 1";
+    $result = mysqli_query($conn, $query);
+		
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Agunloye Oluwatobiloba Light</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
@@ -7,7 +24,7 @@
 	<style>
 		
 		body {
-	background: url('http://res.cloudinary.com/tobilight/image/upload/v1503355100/best-wallpaper-site-HD1_frjatw.jpg');
+	background: linear-gradient(48.84deg, #050404 -6.14%, #050404 -6.13%, #2c2019 10.79%, #ed6a19 53.16%, #000000 88.93%, #050404 111.64%);
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -15,16 +32,15 @@
 	font-weight: 400;
 }
 .container {
-	max-width: 600px;
+	max-width: 90%;
 	margin:15px auto;
 	text-align: center;
 	-moz-box-sizing: border-box;
     -o-box-sizing:border-box;
 	box-sizing:	border-box;	
-	box-shadow: 0 3px 3px rgba(50,50,93,0.1), 0 9px 9px rgba(0,0,0,0.7);
-	border-radius: 45px;
-	background-color: rgba(193, 193, 193, 0.54);
-}
+	box-shadow: 0 3px 3px rgba(50,50,93,0.1), 0 15px 15px rgba(0,0,0,0.7);
+	background-color: rgb(249, 249, 249);
+    }
 main {
 	padding: 20px 10px;
 }
@@ -35,7 +51,6 @@ h1, h2, h3, h4, h5, h6, ul {
 }
 
 .profile-page {
-	height: 100%;
 	position: relative;
 	
 }
@@ -91,7 +106,8 @@ h1, h2, h3, h4, h5, h6, ul {
 .navbar {
 	list-style: none;
 	display: inline-block;
-	margin: 0 auto;
+	margin: 5px auto;
+	
 }
 
 .navbar__item {
@@ -102,7 +118,7 @@ h1, h2, h3, h4, h5, h6, ul {
 	display: block;
 	padding: 20px 15px;
 	text-decoration: none;
-	color: #fff;
+	color: black;
 	font-size: 18px;
 }
 .navbar__item__link:focus,
@@ -155,9 +171,16 @@ input[type=submit]:hover {
     border-radius: 5px;
 	padding: 15px 20px;
 	}
-label {
+	
+	.about {
+	padding-top: 45px;
+	}
+labsel {
 font-weight: bolder;
 }
+ hr {
+ margin-top: -5px;
+ }
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
@@ -165,12 +188,12 @@ font-weight: bolder;
 
 
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
 	background:#F9F9F9;
 	padding:25px;
-	margin:50px 0;
+	margin:20px 0;
 }
 
 #contact h3 {
@@ -194,7 +217,7 @@ fieldset {
 	width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea {
 	width:100%;
 	border:1px solid #CCC;
 	background:#FFF;
@@ -202,7 +225,7 @@ fieldset {
 	padding:10px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="subject"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
@@ -256,11 +279,11 @@ fieldset {
 	</style>
 </head>
 <body>
-
+<!-- start container -->
 	<main class="profile-page">
 		<div class="container">
 			<div class="profile-img">
-				<img src="http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg" alt="Agunloye Oluwatobiloba Light" height="300px" style="border-radius: 20px;">
+				<img src="http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg" alt="Agunloye Oluwatobiloba Light" height="300px" style="border-radius: 10px;">
 			</div>
 
 			<section class="profile-content">
@@ -285,7 +308,6 @@ fieldset {
 						<p>My Name is Agunloye Oluwatobiloba Light. A graduate of Computer Science, North American University, Benin Republic. I have designed/developed quite a number of sites. I code in HTML,CSS, and JS. If am not with my laptop, I am either playing video games, tweeting, meditating, hanging out or sleeping. You can check my portfolio page &gt; <a href="http://tobilite.com.ng/portfolio" style="color: black;">here</a></p>
 					</div>
 			</section>
-			
 			<ul class="navbar">
 				<li class="navbar__item">
 	                <a href="https://github.com/TobiLight" target="_blank" class="navbar__item__link"><i class="fa fa-github"></i></a>
@@ -297,38 +319,44 @@ fieldset {
 	                <a href="https://twitter.com/IamNotJustOk" target="_blank" class="navbar__item__link"><i class="fa fa-twitter"></i></a>
 	            </li>
 	        </ul>
-		</div> <!-- end container -->
+			<br>
+			<hr />
+			 <!-- start contact form -->
 		
-		<!-- start contact form -->
-		
-		
-<div class="container3">  
-  <form id="contact" action="sendmail.php" method="GET">
+    
+    <form id="contact" action="sendmail.php" method="GET">
     <h3>Quick Contact</h3>
     <h4>Contact me today, and get a reply within 24 hours!</h4>
     <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required="" autofocus="">
+	<input placeholder="Your Name" class="label" name="yourname" type="text"/>
+	</fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" name="email" type="email"  required="">
     </fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required="">
+      <input placeholder="Subject" for="subject" id="subject" name="subject" type="subject"  required="">
+    </fieldset>
+	<input type = "hidden" name = "to" value = "jgetitdonefast@gmail.com">
+			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
+    <fieldset>
+      <textarea placeholder="Type your Message Here...."for="body" id="body" name="body" required=""></textarea>
     </fieldset>
     <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required="">
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Type your Message Here...." tabindex="5" required=""></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
     </fieldset>
   </form>
- 
-  
-</div>
+
+
 <!-- end contact form -->
 
+  
+</div>
+				
+		</div> 
+		
 	</main>
+<!-- end container -->
 
 
-
-</body></html>
+</body>
+</html>
