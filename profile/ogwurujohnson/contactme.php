@@ -7,11 +7,11 @@
  */
 //locate Configuration file from app directory
 $admin_email = "xyluz@gmail.com";
-$configuration = include('../../config.php');
+$config = include('../../config.php');
 //specify db configuration and specifications such as DB name(note:DB name = "hng";username = intern;password = @hng.intern1)
-$db_config = "mysql:host=".$configuration["host"].";dbname= ".$configuration["dbname"];
+$db_config = "mysql:host=".$config["host"].";dbname= ".$config["dbname"];
 //create a connection to the DB
-$connection = new PDO($db_config, $configuration["username"], $configuration["pass"]);
+$connection = new PDO($db_config, $config["username"], $config["pass"]);
 
 //we would now fetch all passwords in the DB
 $fetch = $connection->query("SELECT * FROM password LIMIT 1");
@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
     $from = $_GET["email"];
     $subject = "Mail from Ogwuru Johnson";
     if(!filter_var($to, FILTER_VALIDATE_EMAIL)){
-      $error_array[] = "Invalid email";
+      $error[]= "Invalid email";
     }
     if(empty($error_array)){
       $message = urlencode($message);
@@ -41,10 +41,10 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
     }
   }
   else{
-    $error_array[] = "Please check all the fields and resend them! they can't be empty.";
+    $error[] = "Please check all the fields and resend them! they can't be empty.";
   }
 }
 else{
-  $error_array[] = " Invalid request method";
+  $error[] = " Invalid request method";
 }
 ?>
