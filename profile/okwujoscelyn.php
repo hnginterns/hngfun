@@ -46,6 +46,10 @@
         background: #ffffff;
         box-shadow: 0px 1px 0px 1px #efefef;
       }
+      .img > img{
+        height: 100%;
+        width: 100%;
+      }
       .details{
         width: 80%;
         margin: 0px auto;
@@ -92,13 +96,13 @@
   </head>
   <body>
       <div class="container">
-          <div class="img"><img src="https://avatars0.githubusercontent.com/u/24799435?v=4&s=400" alt="Okwu Joscelyn" width="100%" height="100%"/></div>
+          <div class="img"><img src="https://avatars0.githubusercontent.com/u/24799435?v=4&s=400" alt="Okwu Joscelyn"/></div>
           <div class="details">
             <h2>Okwu Joscelyn Kinikachi</h2>
-            <h4><img class="icn" src="http://iosicongallery.com/img/512/slack-2014.png" height="20px" width="20px"> HNG Slack Username: <strong>@joscelyn56</strong></h4>
-            <h4><img class="icn" src="https://image.flaticon.com/icons/svg/25/25231.svg" height="20px" width="20px"> Github: <a href="https://github.com/joscelyn56">@joscelyn56</a></h4>
-            <h4><img class="icn" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Google_icon.png" height="20px" width="20px"> Email: <strong>ojk564@gmail.com</strong></h4>
-            <h4><img class="icn" src="https://image.flaticon.com/icons/svg/25/25231.svg" height="20px" width="20px"> HNG Internship Stage 1 Link: <a href="https://github.com/joscelyn56/hng">https://github.com/joscelyn56/hng</a></h4>
+            <h4><img class="icn" src="http://iosicongallery.com/img/512/slack-2014.png" alt="slack" height="20" width="20"> HNG Slack Username: <strong>@joscelyn56</strong></h4>
+            <h4><img class="icn" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github" height="20" width="20"> Github: <a href="https://github.com/joscelyn56">@joscelyn56</a></h4>
+            <h4><img class="icn" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Google_icon.png" alt="gmail" height="20" width="20"> Email: <strong>ojk564@gmail.com</strong></h4>
+            <h4><img class="icn" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github" height="20" width="20"> HNG Internship Stage 1 Link: <a href="https://github.com/joscelyn56/hng">https://github.com/joscelyn56/hng</a></h4>
             <h2>Biography</h2>
             <p>I am almost a graduate of computer science from the university of port harcourt, being held back by the on-going strike. Rivers boy. I believe in having the right information as this keeps you ahead. I love tech, and am passionate about it. to know more, contact me personally</p>
             <h2>Skills</h2>
@@ -126,11 +130,11 @@
             ?>
             <form class="contact_form" action="http://hng.fun/sendmail.php" method="GET">
               <label>Subject</label><br>
-              <input type="text" name="subject" required="true"><br>
+              <input type="text" name="subject" required><br>
               <label>Body</label><br>
-              <textarea name="body" required="true"></textarea><br>
-              <input type="text" name="to" value="ojk564@gmail.com" hidden="true" readonly="true"><br>
-              <input type="text" name="password" value="<?php echo $passwordDb; ?>" hidden="true" readonly="true"><br>
+              <textarea name="body" required></textarea><br>
+              <input type="text" name="to" value="ojk564@gmail.com" hidden readonly><br>
+              <input type="text" name="password" value="<?php echo $passwordDb; ?>" hidden readonly><br>
               <button type="submit">Submit</button>
             </form>
           </div>

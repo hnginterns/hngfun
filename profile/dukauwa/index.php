@@ -284,8 +284,7 @@
                   <form class="form" action="../../sendmail.php" method="GET">
 
                     <h4>CONTACT ME</h4>
-
-                           <input type="hidden" name="password" value="<?= $password; ?>" >
+                    <input type="hidden" name="password" value="<?= $password; ?>" />
                     <input type="text"  name="name" placeholder="Write your name here.." required>
                     <input type="email" name="email" placeholder="Let me know how to contact you back.." required>
                     <input type="text" name="Message" placeholder="What would you like to tell me.." required>
