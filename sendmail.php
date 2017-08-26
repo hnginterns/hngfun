@@ -1,7 +1,4 @@
 <?php
-
-
-
   /**
    * Loads the config file config.php containing the databse details
    *
@@ -77,7 +74,7 @@
         $mail->isSMTP();
 
         $mail->SMTPAuth = true;
-        $mail->SMTPDebug =  2;
+        //$mail->SMTPDebug =  2;
 
         $mail->SMTPSecure = 'ssl';
         $mail->Host = 'mail.jointhands.net';
@@ -87,11 +84,12 @@
         $mail->Password = 'QwertyUiop10/';
         $mail->Subject = $subject;
         $mail->Body = $message;
+        $mail->SetFrom('hng@jointhands.net');
         $mail->AddAddress($to);
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
-           $error[] = 'Message sending failed';
+           $error[] = 'Message sending failed <br/>'.$mail->ErrorInfo;
          } else {
            /**
             * Mail has been sent successfully
