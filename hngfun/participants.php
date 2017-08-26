@@ -1052,7 +1052,7 @@
               <div class="v-center">
                   <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/11903253?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                   <div class="p-card-info">
-                      <a href="httphttp://hng.fun/profile/tnkemdilim">
+                      <a href="http://hng.fun/profile/tnkemdilim">
                           <!--Profile Link-->
                           <h3 class="p-card-title">Tochukwu Nkemdilim</h3>
                           <!--Profile Name-->
