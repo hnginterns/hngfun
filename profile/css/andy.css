@@ -24,10 +24,6 @@ body {
     .col-1{
         width: 100%
     }
-.sizey {
-    rows:"4"; 
-    cols:"40";
-}
 .col-1-4 {
   width: 25%;
 }
@@ -669,11 +665,12 @@ textarea {
         input, textarea{
             margin: 20px 45px 20px;
             
-        }
+	      }
+}
 
     @media only screen and (min-width: 801px){
         input, textarea{
-            margin: 20px 134px 20px;
+            margin: 20px 270px 20px;
             
         }
          .name {
@@ -690,10 +687,7 @@ textarea {
   text-align: right;
   clear: both;
 }
-        .sizey {
-    rows:"4"; 
-    cols:"100";
-}
+   
     }
  
     
