@@ -108,8 +108,9 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 <h3> Contact Idorenyin! </h3>
-<form action="idee.php" method="post">
+<form action="idee.php" method="get">
   
+  <input type="text" name="name" placeholder="Name" required > 
   <input type="text" placeholder="Email Subject" name="subject" required>
  
 
@@ -117,7 +118,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 </textarea>
 
-<input type="submit" value="Submit" style="width:100%;">
+<input type="submit" name="send" value="send" style="width:100%;">
 
 </form>
 
