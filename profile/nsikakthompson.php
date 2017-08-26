@@ -132,13 +132,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
             <div class="row">
                 <div class="col-sm-12">
                     <div class="text-center">
-                        <a class="btn btn-primary btn-lg" href="https://github.com/Nsikaktopdown/HNG--internship-test" role="button"> Stage 1</a>
-                    
+                        <!-- <a class="btn btn-primary btn-lg" href="https://github.com/Nsikaktopdown/HNG--internship-test" role="button"> Stage 1</a>
+                     -->
                     </div>
                 </div>
             </div>
         </div>
 
+        <div style="text-align: center; background-color: #337AB7; padding: 20px; margin-bottom: 50px; color: #fff;" ><h3 >Contact Me</h3></div>
         <div class="contact-form">
         <form action="" method="GET">
   
@@ -151,7 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
   </div>
 
-  <input type="submit" class="btn btn-primary btn-lg"  value="submit" >
+  <input type="submit" class="btn  btn-lg" style="background-color: #337AB7;" value="submit" >
 </form>
         </div>
         <footer>
