@@ -23,7 +23,7 @@
     <link href="main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h2 class="hd">Main Content</h2>
+    <h1 class="hd">Main Content</h1>
     <div class="main_wrap">
       <div class="abt">
         <section class="img_wrap">
