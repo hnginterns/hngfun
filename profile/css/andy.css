@@ -24,7 +24,10 @@ body {
     .col-1{
         width: 100%
     }
-    
+.sizey {
+    rows:"4"; 
+    cols:"40";
+}
 .col-1-4 {
   width: 25%;
 }
@@ -686,6 +689,10 @@ textarea {
         .skills {
   text-align: right;
   clear: both;
+}
+        .sizey {
+    rows:"4"; 
+    cols:"100";
 }
     }
  
