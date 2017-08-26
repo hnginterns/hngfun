@@ -93,7 +93,7 @@
 			<div class="container">
 				<h3>contact us</h3>
 				<div class="contact-details">
-					<form name="form" method="GET" action="phphandler/mail.php">
+					<form name="form" method="POST" action="phphandler/mail.php">
 						<div class="col-md-6 contact-left">
 							 <input type="text" class="text" placeholder="subject *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="subject" required>
 							 <input type="text" class="text" placeholder="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="email" required>
