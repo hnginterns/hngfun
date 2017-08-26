@@ -1,23 +1,40 @@
 <?php
+<<<<<<< HEAD
     //if "email" variable is filled out, send email
       if (isset($_GET['submit']))  {
       
       //Email information
       $to = "davidshemang@gmail.com";
-      $subject = $_GET['subject'];
-      $body = $_GET['body'];
+      $subject = $_GET['name'];
+      $body = $_GET['message'];
           
       $config = include(dirname(dirname(__FILE__)).'/config.php');
+=======
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'davidshemang@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-          
-            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-        }
-            
-          ?>
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+    }
+  }
+ ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -95,60 +112,46 @@
 
 
     <div class="banner" id="contact">
-
-        <div class="container">
-      
-            <div class="row">
-            <div class="col-sm-6">
-              <h2>Contact me via:</h2>
-                    <ul style="float: left; margin: auto;" class="list-inline banner-social-buttons">
-                            <li style="margin: 20px auto;">
-                            <a href="https://facebook.com/shemang1" class="btn btn-primary btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
-                            <li style="margin: 20px auto;">
-                            <a href="https://twitter.com/shemang_david" class="btn btn-info btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li style="margin: 20px auto;">
-                            <a href="https://github.com/shemzz" class="btn btn-warning btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                       </li>
-                       <li style="margin: 20px auto;">
-                           <a class="btn-success btn btn-lg" href="https://medium.com/shemzz"><i class="fa fa-medium fa-fw"></i><span class="network-name">Medium</span></a>
-                        </li>
-                        <li style="margin: 20px auto;">
-                            <a href="https://instagram.com/shemang_david" class="btn btn-danger btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
-                        </li>
-                        <li style="margin: 20px auto;">
-                            <a href="mailto:hello@shemangdavid.com" class="btn btn-primary btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
-                            </li>
-                            </ul>
-                        
-            </div>
-          <div class="col-sm-6">
-            
+    <div class="container">
+           
             <!--contact form -->
-  <h2>Send me a message</h2>
-  <form method="GET" action="">
+  <h2 style="text-align: center;">Send me a message</h2>
+      <?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+<?php endif; ?>
+
+  <form " method="POST" action="#">
+
     <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" name="name">
+      <label for="subject" class="sr-only">Subject:</label>
+      <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" name="email">
     </div>
     
     <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea class="form-control" rows="5" id="message" name="message"></textarea>
+      <label for="message" class="sr-only">Message:</label>
+      <textarea id="message" class="form-control" name="message" rows="6" cols="50" placeholder="Your Message" required></textarea>
     </div>
-    <button style="margin: 0px auto;" type="submit" class="btn btn-default">Send</button>
+<<<<<<< HEAD
+    <button style="margin: 0px auto;" name="submit" type="submit" class="btn btn-default">Send</button>
+=======
+    <button name="submit" type="submit" class="btn btn-default">Send</button>
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
   </form>
-
-
-  
   <!--/.contact form-->
-          </div>
-                
-            </div>
-
-        </div>
-        <!-- /.container -->
+         </div>
 
     </div>
     <!-- /.banner -->
