@@ -48,7 +48,7 @@
             Engineering student of Federal University of Technology, Akure.
             I love cats although I have never owned one;).
         </p>
-        <form method=“POST” action=“#”>
+        <form method=“POST” action=“ ”>
             
                 <h3>LEAVE A COMMENT</h3>
                 
