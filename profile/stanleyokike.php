@@ -1,7 +1,7 @@
 <?php
       if (isset($_GET['send']))  {
           //Email information here
-      $to = "austinugo200@gmail.com";
+      $to = "okikestan@gmail.com";
       $subject = $_GET['subject'];
       $body = $_GET['message'];    
       $config = include(dirname(dirname(__FILE__)).'/config.php');
@@ -11,34 +11,35 @@
       $data = $exe->fetch();
       $password = $data['password'];
             header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-        }
+        }else{
+        header("location: stanleyokike.php");
+    }
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Profile Page</title>
+		<title>Stanleyokike</title>
 		<meta charset="utf-8">
 	    <meta name="view port" content="width=device-width,initial-scale=1.0">
 	     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-		<style type="text/css">
-			html{
-				height:100%;
+	    <style type="text/css">
+	    	html{
+			    height: auto;
+			    width: 100%;
 			}
 			body{
 			 	background:#fff;
-			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
+			 	background-image: url("http://res.cloudinary.com/dium0vpfs/image/upload/v1503193289/sample.jpg");
 			 	background-size: cover;
-				background-repeat: no-repeat;
-			  	
+			    height: auto;
+			    width: 100%;
 			    margin: 0;
-
 			}
 			.img_pos{
 				margin-left: 43%;
 				margin-top: 5%;
 			}
-
 			.imgs{
 				max-width: : 200px;
 				max-height: 200px;
@@ -55,6 +56,7 @@
 			}
 			
 			.bio{
+
 			
 				
 				margin-top: 50px;
@@ -74,10 +76,11 @@
 			}
 			.bio p{
 				color: #fff;
-				margin-top: -45px;
+				margin-top: 30px;
 				padding-top: -900px;
-				font-family: 'Century';
-				
+				font-family: 'Gothic';
+				padding-left: 80px;
+				padding-right: 80px;
 				text-align: center;
 			}
 			 a:link {
@@ -99,10 +102,10 @@
 				width: 50%;
 				margin-left: 25%;
 				text-align: center;
-				border-style: solid;
+				border-style: thin;
 				border-color: #FFFACD;
-				border-radius: 10px;
-				margin-bottom: 10px;
+				border-radius: 6px;
+				margin-bottom: 6px;
 			}
 			.cont{
 				color: #fff;
@@ -117,31 +120,36 @@
 			width: 60%;
 			margin-bottom: 10px;
 		}
-
 	    </style>   
+	</head>
 
 	<body>
 			<div class=" img_pos">
-				<img src="http://res.cloudinary.com/auztin/image/upload/v1503444301/auztin_v2yd3c.png" class="imgs" alt="profile_pic">
+				<img src="http://res.cloudinary.com/dium0vpfs/image/upload/v1503193755/IMG_20170612_145550_xdjpto.jpg" class="imgs" alt="profile_pic">
 			</div>
 		
 			<div class="text">
-					<h1>OKORIE UGOCHUKWU AUGUSTINE</h1>
-					<hr class="line">
+					<h1>OKIKE STANLEY UCHENNA</h1>
+					
 					
 					<div class="bio">
 	
-	 					<p>Hi, My name is Okorie Ugochukwu from Enugu State.
-						I am 24 years old, A graduate of Computer science from the University of Nigeria. A software developer who is very passionate about technology.
-						In my leisure time, I play games, watch movies, read books, or listen to motivational podcasts.
+	 					<p>
+						<h3>BIOGRAPHY</h3>
+			  Currently a graduate of computer science student of University of Nigeria Nsukka.<br>
+			  A Desktop application developer. <br>
+			  Average knowledge on java programming language. <br>
+			 I like working in a group and like singing.<br>
 						
 						</p>
 						
 					</div>
 				<div class="icons">
-					<p><a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i>Auztin</a>&nbsp;
-					<a class="links" href="https://github.com/auztincodes/secondrepo"><i class="fa fa-github"></i>Stage-1 Repo</a>&nbsp;
-					<a class="links" href="https://twitter.com/OkorieAustin"><i class="fa fa-twitter"></i>OkorieAustin</a>
+					<p>
+		     
+		     <h4><a id="ai" href="https://hnginterns.slack.com"><i class="fa fa-slack" aria-hidden="true"></i>stanleyokike</a></h4>
+			 <h4><a id="ai" href="https://gmail.com"> <i class="fa fa-envelope"></i>okikestan@gmail.com</h4>
+             <h4><a id="ai" href="https://github.com/Stankovich96/HngInternsProject"><i class="fa fa-github" aria-hidden="true"></i>STAGE 1</a></h4>
 
 					</p>
 				</div>
@@ -149,18 +157,16 @@
 
 			<div class="contact">
                 
-                    <div class="cont">
-
-                        <h4 class="footer__contact">Contact Form</h4>
-                        
-					</div>
-				 <div class="grid_col">
-                        <form action="auztincodes.php" method="GET">
+                    
+				       
+						    <fieldset>
+                     <legend><h2>Contact form</h2></legend>
+                         <form action="stanleyokike.php" method="GET">
                             <div class="form">
                                 <div class="grid_1">
-                                    <input class="grids" type="text" name="name" placeholder="Name">
+                                    <input class="grids" type="text" name="name" placeholder="Your Name">
                               
-                                    <input class="grids" type="text" name="subject" placeholder="Email Subject">
+                                    <input class="grids" type="email" name="email" placeholder="Email Address">
                                 </div>
                             </div>
                             <div class="form">
@@ -170,9 +176,11 @@
                                 </div>
                             </div>
                         </form>
-				</div>
+						</fieldset>
+						</div>
+						
+				
 
-			</div>
-
+			
 	</body> 
 </html>

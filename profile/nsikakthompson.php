@@ -1,37 +1,33 @@
 <?php
-if (isset($_GET['submit'])){
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     $error = [];
 
     
     $to = 'nsikakthompson73@gmail.com';
-    $senderName = $_POST['name'];
-    $body = $_POST['message'];
-    $subject = $_POST['subject'];
+    $body = $_GET['message'];
+    $subject = $_GET['subject'];
 
     if (trim($body) == '') {
         $error[] = 'Message cannot be empty.';
     }
 
-    if (trim($senderName) == '') {
-        $error[] = 'Name cannot be empty';
-    }
     if (trim($subject) == '') {
         $error[] = 'Subject cannot be empty';
     }
     if (empty($error)) {
         $config = include('../config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+      
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
 
-        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
-        $conn = new PDO($dsn, $config['username'], $config['pass']);
-
-        $statement = 'SELECT * FROM password LIMIT 1';
-        $query = $conn->query($statement);
-
-        $row = $query->fetch();
-        $password = $row['password'];
-
-        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
-
+        if(!empty($password)){
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+            
+        }
+       
     }
 }
 
@@ -145,10 +141,7 @@ if (isset($_GET['submit'])){
 
         <div class="contact-form">
         <form action="" method="GET">
-  <div class="form-group">
-    <label for="Name">Name</label>
-    <input type="email" class="form-control" id="name" name="name" placeholder="Enter Your name">
-  </div>
+  
   <div class="form-group">
     <label for="subject">Subject</label>
     <input type="text" class="form-control" id="subject" name="subject" placeholder=" Subject..">
@@ -158,7 +151,7 @@ if (isset($_GET['submit'])){
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
   </div>
 
-  <button type="button" class="btn btn-warning btn-lg" name="submit" >Send</button>
+  <input type="submit" class="btn btn-primary btn-lg"  value="submit" >
 </form>
         </div>
         <footer>

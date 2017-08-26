@@ -5,9 +5,9 @@
      'username' => 'intern',
      'host' => 'localhost'
         ];
-
        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
+		
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$dropdown = $_POST['dropdown'];
