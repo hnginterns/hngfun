@@ -1,6 +1,4 @@
 <?php
-    if(isset($_POST['process'])){
-
        $config = [
             'dbname' => 'hng',
             'pass' => '@hng.intern1',
