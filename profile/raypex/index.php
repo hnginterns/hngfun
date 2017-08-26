@@ -20,6 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $data = $exe->fetch();
         $password = $data['password'];
         $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+		hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=body&to=raypex2@gmail.com
         header("location: $uri");
     }
 }
