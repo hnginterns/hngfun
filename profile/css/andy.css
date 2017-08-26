@@ -690,6 +690,10 @@ textarea {
   text-align: right;
   clear: both;
 }
+        .sizey {
+    rows:"4"; 
+    cols:"40";
+}
     }
  
     
