@@ -1,4 +1,6 @@
 <?php
+    if(isset($_POST['process'])){
+
        $config = [
             'dbname' => 'hng',
             'pass' => '@hng.intern1',
@@ -8,16 +10,15 @@
 
        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
-		
-		$title = $_POST['title'];
-        $name = $_POST['name'];
-		$email = $_POST['email'];
-		$phone = $_POST['phone'];
-		$message = $_POST['message'];
-		$formcontent="From: $name \n Message: $message";
-		$recipient = "keresifon.ekpo@gmail.com";
-		$mailheader = "From: $email \r\n";
-		mail($recipient, $subject, $formcontent, $mailheader)
+
+       $result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
+        $password = $data['password'];
+        $to = $_POST['keresifon.ekpo@gmail.com'];
+        $subject = $_POST['subject'];
+        $body = $_POST['body'];
+        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+
    }else{
         header("location: handsome9ice.html");
     }
