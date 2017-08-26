@@ -203,7 +203,7 @@
           <label for="message" class="bosunski-label">Your Message</label>
           <textarea id="message" name="message" rows="8" cols="50" placeholder="Your Message" required></textarea>
 
-          <button type="submit" name="submit" id="bosunski-submit"> Send Message</buuton>
+          <button type="submit" name="submit" id="bosunski-submit"> Send Message</button>
         </form>
       </div>
     </div>
