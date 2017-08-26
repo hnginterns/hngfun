@@ -45,12 +45,12 @@
 						<p>Simple fetch from database using php and php reverse text algorighm</p>
 					</div>
 				</a>
-				<a href="https://hng.fun/profile/adeojoemmanuel" target="_blank">
+				<a href="https://hng.fun/profile/AbdulhafeezBabatunde/" target="_blank">
 					<div class="col-md-4 service-grid">
 						<img src="images/icons/github.png" class="icon">
-						<h4>Hng profile</h4>
+						<h4>Hng Mentee</h4>
 						<span> </span>
-						<p>HNG profile </p>
+						<p>HNG Mentee </p>
 					</div>
 				</a>
 				<a href="https://hng.fun/library.php" target="_blank">
@@ -71,19 +71,19 @@
 		<div class="container">
 			<div class="col-md-3 face">
 				<p><img src="images/icons/facebook.png" class="icon-social"></p>
-				<h4>Follow me on facebook</h4>
+				<h4>Follow me on facebook @ adeojoemmanuel</h4>
 			</div>
 			<div class="col-md-3 face">
 				<p><img src="images/icons/twitter.png" class="icon-social"></p>
-				<h4>Follow me on twitter</h4>
+				<h4>Follow me on twitter @imm_immanuel</h4>
 			</div>
 			<div class="col-md-3 face">
 				<p><img src="images/icons/Slack.png" class="icon-social"></p>
-				<h4>Add me on Slack</h4>
+				<h4>Add me on Slack @imm</h4>
 			</div>
 			<div class="col-md-3 face">
 				<p><img src="images/icons/watsapp.png" class="icon-social"></p>
-				<h4>Add me on Whapsapp</h4>
+				<h4>Add me on Whapsapp @0814988925</h4>
 			</div>
 			<div class="clearfix"> </div>
 			</div>
@@ -93,7 +93,7 @@
 			<div class="container">
 				<h3>contact us</h3>
 				<div class="contact-details">
-					<form name="form" method="GET" action="phphandler/mail.php">
+					<form name="form" method="POST" action="phphandler/mail.php">
 						<div class="col-md-6 contact-left">
 							 <input type="text" class="text" placeholder="subject *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="subject" required>
 							 <input type="text" class="text" placeholder="Email *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" name="email" required>

@@ -6,17 +6,17 @@ function load($class){
 load('IOhander');
 $IO = new IOhandler;
 
-// if($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$subject = mysql_escape_string($_GET['subject']);
-	$email = mysql_escape_string($_GET['email']);
-	$phone = mysql_escape_string($_GET['phone']);
-	$message = mysql_escape_string($_GET['message']);
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+	$subject = htmlspecialchars_decode(trim($_POST['subject']));
+	$email = htmlspecialchars_decode(trim($_POST['email']));
+	$phone = htmlspecialchars_decode(trim($_POST['phone']));
+	$message = htmlspecialchars_decode(trim($_POST['message']));
 	$to = "emmanuel.adeojo@yahoo.com";
 	
 	$fields = array('subject', 'email', 'phone', 'message');
 	$error = false; 
 	foreach($fields AS $fieldname) { 
-	  if(!isset($_GET[$fieldname]) || empty($_GET[$fieldname])) {
+	  if(!isset($_POST[$fieldname]) || empty($_POST[$fieldname])) {
 	    echo 'Field '.$fieldname.' missing!<br />';
 	    $error = true; //Yup there are errors
 	  }
@@ -33,8 +33,8 @@ $IO = new IOhandler;
 	}
 
 	
-// }else{
-// 	echo "invalid request";
-// }
+}else{
+	echo "invalid request";
+}
 
 ?>
