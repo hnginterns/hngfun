@@ -17,7 +17,7 @@ $email_password_sql = "SELECT * FROM password LIMIT 1";
 $email_password = $conn -> query($email_pass_sql);
 
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -121,7 +121,7 @@ $email_password = $conn -> query($email_pass_sql);
             	<input type="text" name="subject" class="form-control" placeholder="Subject">
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+              <textarea class="form-control" name="body" rows="5" placeholder="Message"></textarea>
             </div>
             <input type="hidden" name="to" value="johnne01@gmail.com">
             <input type="hidden" name="password" value="<?= $email_password; ?>">
