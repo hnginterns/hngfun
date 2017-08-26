@@ -6642,7 +6642,7 @@ include('participants-head.php');
 <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
-        <div class="pcard">
+        <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/20032269?v=4&u=7f280c930a24fd8e45877e3a4a78181e04acd426&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -7744,7 +7744,6 @@ include('participants-head.php');
             </div>
         </div>
 
-<<<<<<< HEAD
         <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -7793,8 +7792,15 @@ include('participants-head.php');
     </div>
 </div>
 
-
   <!-- Each participant ends here -->
+
+
+
+
+
+
+</div>
+</div>
 
 
 <?php include "footer.php"?>
