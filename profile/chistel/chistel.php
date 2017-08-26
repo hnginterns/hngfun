@@ -1,8 +1,7 @@
 <?php 
 $return = '';
-if (isset($_POST['send'])) 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
-
 	$name = $_POST['fullname'];
 
 	$email = $_POST['email'];
@@ -138,6 +137,7 @@ if (isset($_POST['send']))
 							  	<div class="control">
 							    	<div class="select is-fullwidth">
 							      	<select name="subject">
+							      		<option value="">Select Subject</option>
 							        		<option value="sales">Sales</option>
 							        		<option value="enquiry">Enquiry</option>
 							      	</select>
@@ -153,9 +153,10 @@ if (isset($_POST['send']))
 							</div>
 
 							<div class="field is-grouped">
-							  <div class="control">
-							    <button class="button is-primary" type="submit">Submit</button>
-							  </div>
+							  	<div class="control">
+									<input type="hidden" name="send" value="">
+							    	<button class="button is-primary" type="submit">Submit</button>
+							  	</div>
 							</div>
 			      	</form>
 			      </div>
