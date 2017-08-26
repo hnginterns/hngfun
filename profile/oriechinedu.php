@@ -1,5 +1,5 @@
 <?php 
-        $to     = "oriechinedu@gmil.com";
+        $to     = "oriechinedu@gmail.com";
         $dbname   = 'hng';
         $hostname = 'localhost';
         $username = 'intern';
