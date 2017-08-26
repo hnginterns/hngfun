@@ -22,7 +22,15 @@
     <meta content="https://avatars1.githubusercontent.com/u/12105518?v=4&amp;s=75" property="og:image">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<<<<<<< HEAD:profile/arinzedroid/index.html
+<<<<<<< HEAD
+</head>
+=======
 </head>        
+>>>>>>> 2e5afe0f0bb8eae5e16c655689d05659cb6d96cc
+=======
+</head>        
+>>>>>>> 406b5a78b205e7c5c0339b4248e3a822a6381038:profile/arinzedroid/index.php
 <body>
     <div class="container">
         <div class="profile">
