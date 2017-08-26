@@ -99,14 +99,27 @@
 
     <div class="shadow">
       <h1>You Can Contact Me Here</h1>
-      <form>
+
+      <?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+       <?php endif; ?>
+
+      <form action="komsic.php" method="POST">
         <label for="subject">Subject</label><br>
           <input type="text" name="subject" placeholder="Subject...." style="width: 50%" required><br>
 
           <label for="message">Message</label><br>
           <textarea name="message" rows="8" cols="50" style="width: 50%" placeholder="Please Write Your Message Here...." required></textarea><br>
 
-          <button type="submit" name="submit"> Send</button>
+          <button type="submit" name="submit"> Send Now</button>
       </form>
     </div>
   </div>

@@ -30,18 +30,18 @@
 	    </div>	    
 	  </article>
 
-	  <form  class="mw7 center" action="temi.php" method="POST" >
+	  <form  class="mw7 center" action="temi.php" method="post" >
 	  	<div> 
-	  		<label for="Subject"></label>
-	  		<input type="text" name="Subject" placeholder="What is this about?">
+	  		<label for="Subject">Subject</label>
+	  		<input type="text" name="subject" placeholder="What is this about?" required="true">
 	  	</div>    
 	  	<div>
-	  		<label for="mail"></label>
-	  		<input type="email" name="mail" placeholder="Your email">
+	  		<label for="mail">E-mail</label>
+	  		<input type="email" name="to" placeholder="Your email" required="true">
 	  	</div>    
 	  	<div>
-	  		<label for="message"></label>
-	  		<textarea type="text" name="message" placeholder="Your message"></textarea>
+	  		<label for="message">Your message</label>
+	  		<textarea name="message" placeholder="Your message" required="true"></textarea>
 	  	</div>    
 	  	<!-- <button>Send</button> -->
 		<input type="submit" name="submit" value="submit">
