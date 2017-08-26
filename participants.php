@@ -16,7 +16,7 @@ include('participants-head.php');
 
             <!--
               GUIDELINES FOR ADDING DETAILS TO PARTICIPANTS TABLE(Please read the comments)
-                    - Copy the codes in the code block below (Dont include the code block)
+              - Copy the codes in the code block below (Dont include the code block)
               - Only change where you see a comment and paste at the end of the code(Above the comment)
               - Make sure you do not modify information of other participants
               - Pull the repo, before pushing it, inorder to prevent conflicts
@@ -45,7 +45,7 @@ include('participants-head.php');
 </div>
 <!--  Each Participants ends here  -->
 
-            <!--  Each Participant starts here  -->
+<!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/iamseyiajayi/seyi.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -340,6 +340,8 @@ include('participants-head.php');
                     <!--Team-->
             </a>
         </div>
+        </div>
+        </div>
 
         <!--  Each Participant starts here  -->
           <div class="p-card">
@@ -356,21 +358,17 @@ include('participants-head.php');
                 <p class="p-card-description">
                 <!--Email-->
                 richardoluwo50@gmail.com</p>
-                
+
             </div>
             <div class="p-team">
                 <a href="#"><!--Team-->
                 <h3 class="p-card-title"> Team 4 </h3>
-                
+
                 </a>
             </div>
             </div>
         </div>
-	
-		 <div class="p-card">
 
-    </div>
-</div>
 <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
@@ -7692,7 +7690,7 @@ include('participants-head.php');
     </div>
 </div>
 
-  
+
   <!-- Each participant ends here -->
 
 

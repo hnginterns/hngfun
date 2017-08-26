@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Form
 
@@ -41,7 +41,6 @@ Form
   color: #2b3e51;
 }
 .cd-form input[type="text"],
-.cd-form input[type="email"],
 .cd-form textarea,
 .cd-form select,
 .cd-form legend {
@@ -57,7 +56,6 @@ Form
 .cd-form input[type="email"],
 .cd-form textarea,
 .cd-form select {
-  /* general style for input elements */
   padding: 12px;
   border: 1px solid #cfd9db;
   background-color: #ffffff;
@@ -71,6 +69,15 @@ Form
   outline: none;
   border-color: #2c97de;
   box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+}
+
+.cd-form .cd-form-list {
+  margin-top: 16px;
+}
+.cd-form .cd-form-list::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .cd-form textarea {
@@ -110,6 +117,7 @@ Form
   -o-transform: scale(0.9);
   transform: scale(0.9);
 }
+
 @media only screen and (min-width: 600px) {
   .cd-form div {
     /* form element wrapper */
@@ -130,4 +138,3 @@ Form
     padding: 16px;
   }
 }
-
