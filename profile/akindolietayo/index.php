@@ -32,6 +32,7 @@
   }
 
 ?>
+
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8" />
@@ -39,8 +40,7 @@
         <title>Akindolie Oluwatayo</title>
         <link rel="stylesheet" type="text/css" media="all" href="style.css" />
         <script src="https://use.fontawesome.com/0b7956cb33.js"></script>
-    </head>
-    <style type="text/css">
+        <style type="text/css">
         @import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
 html, body {
   height: 100%;
@@ -162,6 +162,7 @@ ul, li{
     }
 }
     </style>
+    </head>
     <body>
         <div class="container">
             <div class="container2">
@@ -186,13 +187,13 @@ ul, li{
                         </li>
                     </ul>
                     <div class="form-container">
-                        <form action=" " method="POST">
-                            <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+                        <form action="#" method="POST">
+                            <!--<input type="hidden" name="password" class="form-input" value="">-->
                             <input type="hidden" name="to" value="akindolietayo@gmail.com">
-                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="">
+                            <input type="text" name="subject" placeholder="Subject " class="form-input" required>
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="">-->
-                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
-                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required></textarea>
+                            <input type="submit" name="submit" value="SEND" class="form-submit">
                         </form>    
                     </div>
                 </div>
