@@ -1,51 +1,19 @@
+<?php
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Temi</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"/>
-	<style type="text/css">
-		#nini{
-			padding: 4em;
-			border: 4em;
-		}
-	</style>
-</head>
-<body>
-	<section id="mw7 center">	
-	 <article class="pv4 bb b--black-10 ph3 ph0-l">
-	    <div id="nini" class="flex flex-column flex-row-ns">
-	      <div id="nini" class="w-100 w-60-ns pr3-ns order-2 order-1-ns">
-	        <h1 class="f3 athelas mt0 lh-title">Temi Rufai</h1>
-	        <h2 class="f3 athelas mt0 lh-title">@temi on slack, check <a href="https://github.com/hnginterns/getting-started-h2-2017/blob/master/contributors.txt">Number 101 </a> in stage one</h2>
-	        <p class="f5 f4-l lh-copy athelas">
-	         This is Temi, he's king in his room. Rider of bicycles and lover of books, speaker of 2 languages. He has hope of climbing Everest!
-	        </p>
-	      </div>
-	      <div id="nini" class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-	        <img src="https://github.com/rufai/rufai.github.io/blob/master/temi.jpg?raw=true" class="db" alt="Photo of a whale's tale coming crashing out of the water.">
-	      </div>
-	    </div>	    
-	  </article>
+ 
+	$config = include('../config.php');
 
-	  <form  class="mw7 center" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" >
-	  	<div> 
-	  		<label for="Subject"></label>
-	  		<input type="text" name="Subject" placeholder="What is this about?">
-	  	</div>    
-	  	<div>
-	  		<label for="mail"></label>
-	  		<input type="email" name="mail" placeholder="Your email">
-	  	</div>    
-	  	<div>
-	  		<label for="message"></label>
-	  		<textarea type="text" name="message" placeholder="Your message"></textarea>
-	  	</div>    
-	  	<!-- <button>Send</button> -->
-		<input type="submit" name="submit" value="submit">
-	  </form>
-	</section>
-</body>
-</html>
+	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+	$con = new PDO($dsn, $config['username'], $config['pass']);
+
+	$result = $con->query('SELECT * FROM password LIMIT 1');
+
+	$data = $result->fetch();
+	password = $data['password'];
+
+    $to = $_POST['mail'];
+    $subject = $_POST['Subject'];
+    $body = $_POST['message'];
+	header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+
+?>
