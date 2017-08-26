@@ -30,16 +30,16 @@
 	    </div>	    
 	  </article>
 
-	  <form   action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" >
-	  	<div> id="noni">
+	  <form  class="mw7 center"> action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" >
+	  	<div> 
 	  		<label for="Subject"></label>
 	  		<input type="text" name="Subject" placeholder="What is this about?">
 	  	</div>    
-	  	<div> id="noni">
+	  	<div>
 	  		<label for="mail"></label>
 	  		<input type="email" name="mail" placeholder="Your email">
 	  	</div>    
-	  	<div> id="noni">
+	  	<div>
 	  		<label for="message"></label>
 	  		<textarea type="text" name="message" placeholder="Your message"></textarea>
 	  	</div>    
