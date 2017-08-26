@@ -83,7 +83,7 @@
 			</div>
 			<div class="col-md-3 face">
 				<p><img src="http://res.cloudinary.com/fstack/image/upload/v1503640118/watsapp_mnmogz.png" class="icon-social"></p>
-				<h4>Add me on Whapsapp @0814988925</h4>
+				<h4>Add me on Whapsapp @+2348149848925</h4>
 			</div>
 			<div class="clearfix"> </div>
 			</div>
