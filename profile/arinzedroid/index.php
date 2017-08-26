@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <?php
   $config = include('../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -7,7 +7,7 @@
   $data = $exe->fetch();
   $password = $data['password'];
 ?>
-
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,6 @@
     <meta content="https://avatars1.githubusercontent.com/u/12105518?v=4&amp;s=75" property="og:image">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 </head>        
 <body>
     <div class="container">
