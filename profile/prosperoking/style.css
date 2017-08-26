@@ -8,14 +8,15 @@ body,html{
     width: 100vw;
     background: #e0e0e0;
     display: flex;
+    color: #37474F;
 }
 
 a{
-    color:#4FC3F7;
+    color:#EE9352;
     text-decoration: none;
 }
 a:visited{
-    color:#00838F;
+    color:#d2691e;
 }
 a:hover{
     text-decoration: underline;
@@ -31,41 +32,103 @@ ul{
     align-self: center;
     width: 100vw;
 }
+
 .container> .profile,.content{
-    padding: 20px;
     margin:10px;
     background: #ffffff;
-    height: 100%;
+    border-radius: 3px;
     border: 1px  solid rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    min-height: 360px;
 }
-.container> .profile{
-    width: 40%;
+
+
+.container .profile{
+    width: 30%;
 }
 
 .content{
     width: 60%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
-.profile{
-    padding: 10px;
+.content h2{
+    color: #d2691e;
+}
+.about__me,.contact__me{
+    position: absolute;
+    height: 100%;
+    padding: 20px;
+}
+.about__me{
     width: 100%;
-    
+    background: white;
+    will-change: transform;
+    transition: transform 0.8s cubic-bezier(0.6, -0.28, 0.74, 0.05) 0ms;
+    z-index: 2;
+}
+.contact__me{
+    width: 80%;
+    background: #EEEEEE;
+    border-right: inherit;
+}
+/*Contact me Stylings*/
+.contact__button{
+    margin-left: 20%;
+    border: none;
+    padding: 9px;
+    color: white;
+    background: linear-gradient(to bottom,#EA8842,#d2691e);
+    border-radius: 3px;
+    outline: none;
+
+}
+.contact__button:hover{
+    background: linear-gradient(to bottom,#D97531,#d2691e);
+    cursor: pointer;
+}
+.contact__me__close-button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.contact__me__close-button:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+/*end contact me region*/
+.profile{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .profile .profile--profile-pic{
     height:80%;
-    border:1px solid rgba(0, 0, 0, 0.2);
-    display: block;
-    padding: 2px;
+    padding: 20px;
     overflow: hidden;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background: #EEEEEE;
 }
 
 .profile .profile--profile-pic img{
     width: 100%;
     border-radius: 5px;
     height: 100%;
+    max-width: 294px;
 }
 .profile .profile--info{
     width: 100%;
+    padding: 10px;
 }
 .content .content--about{
     font-size: 16px;
@@ -80,4 +143,37 @@ ul{
 .profile--info ul> li{
     display: inline-block;
     
+}
+/* open and close contact form*/
+
+.content.contact--open .about__me{
+    transform: translateX(80%) ;
+}
+.content.contact--opened .about__me>div{
+    opacity: 0.3;
+}
+
+@media (max-width:600px){
+    .container{
+        flex-direction: column;
+        align-self: auto;
+    }
+    .container .profile{
+        width: 100%;
+        margin: 0 0 10px 0;
+        height: auto;
+    }
+    
+    .content{
+        width: 100%;
+        margin: 0;
+        height: auto;
+        
+    }
+    .profile .profile--profile-pic{
+        padding: 10px;
+    }
+    .profile .profile--profile-pic img {
+        width: 51%;
+    }
 }
