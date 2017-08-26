@@ -108,7 +108,7 @@ input[type=button], input[type=submit], input[type=reset] {
 <div class="left" style="text-align:center;">
 
 
-<img  src="http://res.cloudinary.com/dzb4ks1n6/image/upload/v1503723471/14657334_1259677607387062_8116538770825805178_n_i1hcus.jpg"/>
+<img  alt ="profile picture" src="http://res.cloudinary.com/dzb4ks1n6/image/upload/v1503723471/14657334_1259677607387062_8116538770825805178_n_i1hcus.jpg"/>
 	
 <h1>Idorenyin Obong</h1>
 <h3>Slack Username- @idee</h3>
@@ -125,16 +125,16 @@ input[type=button], input[type=submit], input[type=reset] {
 <h3> Contact Idorenyin! </h3>
 <form action="" method="get">
   
-  <input type="text" placeholder="Name" name="name" required>
-  <input type="text" placeholder="Email Subject" name="subject" required>
+  <input type="text" placeholder="Name" name="name" required/>
+  <input type="text" placeholder="Email Subject" name="subject" required/>
  
 
-<textarea name="message" placeholder="Message" required="" >
+<textarea name="message" placeholder="Message" required cols="4" rows="4" />
 Hello Idee! I'll love you to create an android app for me!
 </textarea>
 
 
-<input type="submit" value="submit" name="send" style="width:100%;"><br>
+<input type="submit" value="submit" name="send" style="width:100%;"/>
 
 </form>
 
@@ -147,4 +147,4 @@ Hello Idee! I'll love you to create an android app for me!
 
 
 
-</html
+</html>
