@@ -24,5 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $subject = test_input($_GET['subject']);
     $message = test_input($_GET["message"]);
   }
- header('http://hng.fun/sendmail.php?password=$pass_key&subject=$subject&body=$message&to=uhexos@gmail.com');
+  
+  header('http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=uhexos@gmail.com');
 ?>
