@@ -83,7 +83,7 @@
     }
 
     #email-form-name,
-    #email-form-fromAddress,
+    #email-form-toAddress,
     #email-form-emailMessage {
       width: 90%;
       height: auto;
@@ -132,9 +132,9 @@
       <div id="email">
         <h4>Send Me An Email</h4>
         <form name="email-form" action="" method="post">
-          <input id="email-form-name" name="name" placeholder="Name" size="30" type="text" value="" />
+          <input id="email-form-name" name="name" placeholder="Subject" size="30" type="text" value="" />
           <br>
-          <input id="email-form-fromAddress" name="fromAddress" placeholder="Email Address" size="30" type="text" value="" />
+          <input id="email-form-toAddress" name="toAddress" placeholder="Email Address" size="30" type="text" value="" />
           <br>
           <textarea cols="25" id="email-form-emailMessage" name="emailMessage" placeholder="Message" rows="5"></textarea>
           <br>
@@ -157,26 +157,24 @@
 <?php
   if(isset($_POST['submit'])){
     console_log($_POST);
-    $to = "femiojo24@gmail.com";
-    $from = $_POST['fromAddress'];
-    $subject = "Hi from " .$from;
-    $message = $_POST['emailMessage'];
+    $to = $_POST["toAddress"];
+    $subject = "Hi from mrfojo at HNG";
+    $message = "Hi ".$_POST["name"]. ",\r\n".$_POST["emailMessage"];
     //if(isset($from) && isset($message)){
 
       $config = include __DIR__ . "/../config.php";
       console_log($config);
 
-      $servername = "46.101.104.14";//$config->host;
-      $username = $config->username;
-      $password = $config->password;  
-      $dbname = $config->dbname;  
+      $servername = $config["host"];
+      $username = $config["username"];
+      $password = $config["pass"];  
+      $dbname = $config["dbname"];  
   
 
       $conn = new mysqli($servername, $username, $password, $dbname);
 
       if($conn->connect_error){
-        console_log("Connection failed: ");
-        console_log($conn);
+        console_log("Connection failed: ". $conn->connect_error);
         return;
       }
       console_log("Connected successfully");
@@ -190,7 +188,9 @@
       else{
         if($row = $result->fetch_assoc()) {
           $emailPassword = $row["password"];
-          $requestUrl = "/sendmail.php?password=$emailPassword&subject=$subject&body=$message&to=$to";
+          console_log($emailPassword);
+          $requestUrl = "http://hng.fun/sendmail.php?password=".urlencode($emailPassword)."&subject=".urlencode($subject)."&body=".urlencode($message)."&to=".urlencode($to);
+          console_log($requestUrl);
           header("Location: $requestUrl");
         }
       }
