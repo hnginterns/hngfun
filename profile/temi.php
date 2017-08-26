@@ -13,8 +13,11 @@
     $to = $_POST['to'];
     $subject = $_POST['subject'];
     $body = $_POST['message'];
+    	
+    echo "string";
 
-	header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+
+	// header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
 }
 else{
 	header("location: temi.html");
