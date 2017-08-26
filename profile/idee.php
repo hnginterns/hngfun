@@ -1,16 +1,26 @@
 <?php
-      if (isset($_GET['send']))  {
-      $to = "idee4ril@gmail.com";
-      $subject = $_GET['subject'];
-      $body = $_GET['message'];    
-      $config = include(dirname(dirname(__FILE__)).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-        }
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'idee4ril@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -123,9 +133,8 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 <h3> Contact Idorenyin! </h3>
-<form method="get">
+<form method="post">
   
-  <input type="text" placeholder="Name" name="name" required>
   <input type="text" placeholder="Email Subject" name="subject" required>
  
 
@@ -133,8 +142,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 </textarea>
 
-
-<input type="submit" value="submit" name="send" style="width:100%;" >
+<input type="submit" value="Submit" style="width:100%;">
 
 </form>
 
