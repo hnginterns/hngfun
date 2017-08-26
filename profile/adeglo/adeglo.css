@@ -39,7 +39,7 @@ h3{
    
    
 }
-form{
+#form{
     width: auto;
     height: auto;
     align-self: center;
@@ -55,7 +55,7 @@ textarea{
     width: 50%;
     align-self: auto;
     margin-left: 2px;
-    margin-right: 17px;
+    margin-right: 1px;
     margin-bottom: 3px;
     font: 13.3333px Arial;
 
