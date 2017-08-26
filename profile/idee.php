@@ -133,7 +133,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 <h3> Contact Idorenyin! </h3>
-<form method="post">
+<form action="idee.php" method="post">
   
   <input type="text" placeholder="Email Subject" name="subject" required>
  
