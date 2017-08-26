@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +44,20 @@
             <div class="contact__me" aria-hidden="true">
                 <button  class="contact__me__close-button" title="Close" aria-label="Close contact form">X</button>
                 <h2>Contact me</h2>
-                form
+                <form action="../sendmail.php" method="get">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="to" placeholder="Your email address.." required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Your last name.." required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="body" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input type="hidden" name="password" value="<?= $password; ?>" />
+
+          <input type="submit" value="Send">
             </div>
         </div>
     </div>
