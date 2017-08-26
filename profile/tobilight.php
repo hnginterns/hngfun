@@ -328,13 +328,13 @@ fieldset {
     <h3>Quick Contact</h3>
     <h4>Contact me today, and get a reply within 24 hours!</h4>
     <fieldset>
-	<input placeholder="Name" type="text" name="yourname" type="text"/>
+	<input placeholder="Name" name="yourname" type="text"/>
 	</fieldset>
     <fieldset>
       <input placeholder="Email" name="email" type="email"  required="">
     </fieldset>
     <fieldset>
-      <input placeholder="Subject" name="subject" type="subject"  required="">
+      <input placeholder="subject" name="subject">
     </fieldset>
 	<input type = "hidden" name = "to" value = "jgetitdonefast@gmail.com">
 			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
