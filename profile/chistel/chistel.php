@@ -82,7 +82,7 @@ include "contact.php";?>
 					</div>
 	      		<div class="column is-7">
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
-			      	<form action="./contact.php" method="POST">
+			      	<form action="" method="POST">
 			      		<div class="field is-horizontal">
 			      			<div class="field-body">
 									<div class="field">
