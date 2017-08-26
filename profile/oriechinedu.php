@@ -6,25 +6,22 @@
         $password = '@hng.intern1';
         $connection = new mysqli($hostname, $username, $password, $dbname);  
 
-if ($_SERVER['REQUEST_METHOD']=="POST")	
-{   
+// if ($_SERVER['REQUEST_METHOD']=="POST")	
+// {   
 
-	$subject = trim(htmlspecialchars($_POST['subject']));
-	$body = trim(htmlspecialchars($_POST['message']));
+// 	$subject = trim(htmlspecialchars($_POST['subject']));
+// 	$body = trim(htmlspecialchars($_POST['message']));
      
-     if (empty($subject) || empty($body))
-     {
-        $error = "please check for the filled that's empty";
-     }
+//      if (empty($subject) || empty($body))
+//      {
+//         $error = "please check for the filled that's empty";
+//      }
 
      $sql = "select password from $dbname LIMIT 1";
      $pass = $connection->query($sql)->fetch_assoc();
      $password = $pass['password'];
 
-    $end_point_url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
 
-     header("location". $end_point_url);
-}
 
  ?>
 <!DOCTYPE html>
@@ -156,11 +153,13 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
 
 		<!-- contact starts here -->
 		<div id="contact">
-			<form method="post" action="">
+			 <form action="../sendmail.php" method="get">
 			  <p id="error"><?php $err = isset($errror)? $error:''; echo $err; ?></p>
 				<h2 id="conatct-heading">Message Me</h2>
 				<div id="inner-form-content">
-					<input type="text" name="subject" id="subject" placeholder="Subject" required="">
+					<input type="text" name="subject" class="subject" placeholder="Subject" required="">
+					<input type="hidden" name="password"  value="<?php echo $password ?>" >
+					<input type="hidden" name="email"  value="oriechinedu@gmail.com" >
 					<textarea id="message" name="message" placeholder="type your message here" required=""></textarea>
 					<input type="submit" id="submit" name="submit" value="Send">
 				</div>
