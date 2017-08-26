@@ -21,8 +21,6 @@
      $pass = $connection->query($sql)->fetch_assoc();
      $password = $pass['password'];
 
-
-
  ?>
 <!DOCTYPE html>
 <html>
@@ -159,7 +157,7 @@
 				<div id="inner-form-content">
 					<input type="text" name="subject" class="subject" placeholder="Subject" required="">
 					<input type="hidden" name="password"  value="<?php echo $password ?>" >
-					<input type="hidden" name="email"  value="oriechinedu@gmail.com" >
+					<input type="hidden" name="to"  value="oriechinedu@gmail.com" >
 					<textarea id="message" name="message" placeholder="type your message here" required=""></textarea>
 					<input type="submit" id="submit" name="submit" value="Send">
 				</div>
