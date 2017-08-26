@@ -1,31 +1,23 @@
 <?php
-    $admin_email = 'xyluz@ymail.com';
-  
-  $config = include('../config.php');
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-  $con = new PDO($dsn, $config['username'], $config['pass']);
-
-  $exe = $con->query('SELECT * FROM password LIMIT 1');
-  $data = $exe->fetch();
-  $password = $data['password'];
-
-    if (isset($_GET['send'])) {
-        $subject = $_GET['subject'];
-        $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['message'])));
-        $to = "Joseph.mbassey2@gmail.com";
-        $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-        header("Location: " .$location);
-    }
-
-?> 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" />
+      if (isset($_GET['send']))  {
+          //Email information here
+      $to = "joseph.mbassey2@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['message'];    
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        }
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 <title>Joseph Profile Page</title>
-
-<style type="text/css">
-    
+<style type="text/css">   
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
@@ -101,9 +93,7 @@ h1 {
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-
 }
-
 .agileits-inforight{
     float: right; 
 }
@@ -236,29 +226,7 @@ input.email {
    color: #999; 
 } 
 /*-- //main --*/
-/*-- copyright --*/
-.w3copyright-agile {
-    margin: 2em 0;
-    text-align: center;
-}
-.w3copyright-agile p {
-    font-size: 0.9em;
-    color: #fff;
-    line-height: 1.8em;
-    letter-spacing: 2px;
-}
-.w3copyright-agile p a{
-    color: #fff; 
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-    transition: 0.5s all;
-}
-.w3copyright-agile p a:hover{
-    color: #00bcd4; 
-}
-/*-- //copyright --*/ 
+
 /*-- responsive-design --*/
 @media(max-width:1440px){
 .main-wthree-row {
@@ -437,13 +405,10 @@ h1 {
 }
 }
 /*-- //responsive-design --*/
-
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Profile Joseph Bassey" />
-
-
 <!-- web font -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css' />
 <link href="//fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet" />
@@ -489,6 +454,6 @@ h1 {
             </div>  
         </div>  
     </div>  
-    <!-- //main -->   
+    <!-- //main -->    
 </body>
 </html>
