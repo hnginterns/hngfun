@@ -305,7 +305,7 @@ $password = $data['password'];
         name = document.getElementById("name").value;
         email = document.getElementById("email").value;
         subject = document.getElementById("subject").value;
-        body = document.getElementById("body").value;
+        body = document.getElementById("message").value;
         pwd = document.getElementById("pwd").value;
 
         body = ("From: " + email + "( " + name + " )" + "\nMessage: " + body);
