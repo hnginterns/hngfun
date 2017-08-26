@@ -320,11 +320,6 @@ $password = $data['password'];
             prot_host = location.protocol + '//' + location.host;
             url = prot_host + "/sendmail.php?password=" + pwd + "&subject=" + subjectValue + "&body=" + bodyValue + "&to=justprince9@gmail.com";
             window.location = url;
-            
-            nameValue = "";
-            emailValue = "";
-            subjectValue = "";
-            bodyValue = "";
         }
     }
 
