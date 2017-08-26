@@ -2,12 +2,6 @@
     if(isset($_POST['process'])){
 
     	$config = include('../config.php');
-        // $config = [
-        //     'dbname' => 'hng',
-        //     'pass' => '@hng.intern1',
-        //     'username' => 'intern',
-        //     'host' => 'localhost'
-        // ];
 
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
