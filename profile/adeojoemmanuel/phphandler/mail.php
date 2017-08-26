@@ -1,12 +1,12 @@
 <?php
-// function load($class){
-	require  'IOhander.php';
-// }
+function load($class){
+	require  $class .".php";
+}
 
-// load('IOhander');
+load('IOhander');
 $IO = new IOhandler;
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+// if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$subject = mysql_escape_string($_POST['subject']);
 	$email = mysql_escape_string($_POST['email']);
 	$phone = mysql_escape_string($_POST['phone']);
@@ -29,12 +29,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		}	
 
 		$url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
-		header("location: ".$url);
+		header("location:".$url);
 	}
 
 	
-}else{
-	echo "invalid request";
-}
+// }else{
+// 	echo "invalid request";
+// }
 
 ?>
