@@ -1,3 +1,38 @@
+<?php
+
+    $config = include('../config.php');
+    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = new PDO($dsn, $config['username'], $config['pass']);
+
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
+
+    if (isset($_GET['sendmessage'])) {
+
+        $subject = "Hello";
+        $password = htmlentities(strip_tags(trim($password)));
+        $body = htmlentities(strip_tags(trim($_GET['body'])));
+        $to = "oogehchris@gmail.com";
+
+        if (!isset($body) || $body == '' || (!isset($_GET['name'])) || $_GET['name'] == '' ) {
+
+            echo "Form cannot be blank";
+
+        }else {
+
+            $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+
+            header("Location: " . $location);
+
+
+        }
+
+
+    }
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,6 +64,7 @@
 }
 .big {
   font-size: 24px;
+  padding: 30px 0px;
 }
 
 .small {
@@ -51,7 +87,7 @@ a {
 
 .info {
   background-color:#104e80;;
-  
+
 }
 
 .warning {
@@ -66,8 +102,9 @@ body {
 .content {
   text-align:center;
   background-color: #ffffff;
-  margin: 63px auto 0 auto;
+  margin: auto;
   text-align: center;
+  margin-bottom: 40px;
   padding:30px;
   width:75%;
 }
@@ -93,8 +130,40 @@ code {
 }
 .profile{
   color:white;
-  font-size: 20px; 
+  font-size: 20px;
   border-left: 5px solid #eee;
+  text-align: center;
+}
+
+img.profileImage {
+    width: 17%;
+    text-align: center;
+    position: absolute;
+    left: 550px;
+    top: 60px;
+    /* margin-bottom: 74px; */
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+input[type="email"] {
+  width: 50%;
+  padding: 5px;
+  margin: 10px 0px;
+}
+
+textarea {
+    width: 50%;
+    margin: 10px 0px;
+}
+
+.form-group {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
     </style>
@@ -103,11 +172,13 @@ code {
 <body>
     <div class="heading">
         <div class="profile top"><span class="text-primary">Profile  &nbsp|</span> &nbsp Ogechi Okoro</div>
-        <img class="image" src="./images/Ogechi.jpg">
+        <img src="image/ogechi.jpg" class="profileImage" alt="">
     </div>
+
     <div class="details">
         <p class="big">Okoro, Ogechi Christopher</p>
     </div>
+
     <div class="content">
         <p class="big">I'm an aspiring web designer/developer based in Uyo. I develop interest while I was undergoing my industrial training program at Start Innovation Hub, Uyo.
             <br /> "Determination today leads to <code>success</code>tommorrow" </p>
@@ -123,8 +194,29 @@ code {
             <p class="light text-white" style="float:left;margin-top:5px;font-size: 14px">@ogechiokoro</p>
         </div>
     </div>
-    </div>
-    </div>
+
+    <div class="form-group">
+
+        <h3 class="contactme">CONTACT ME</h3>
+
+        <form class="" action="" method="get">
+
+          <div class="row">
+              <input type="text" name="name" value="Enter Your name">
+          </div>
+
+          <div class="row">
+              <input type="email" name="email" value="Enter Your email">
+          </div>
+
+          <div class="row">
+            <textarea name="body" rows="8" cols="80" placeholder="Type your message here"></textarea>
+          </div>
+
+          <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
+
+        </form>
+
     </div>
 </body>
 
