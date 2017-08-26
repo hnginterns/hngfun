@@ -2,7 +2,7 @@
 
 function connectToDatabase()
 {
-	$dsn = "mysql:dbname=hng; host=46.101.104.14";
+	$dsn = "mysql:dbname=hng; host=localhost";
 	$password = "@hng.intern1";
 	$user = "intern";
 	$dbh = new PDO($dsn, $user, $password);
