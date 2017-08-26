@@ -112,14 +112,14 @@
           </blockquote>
        <?php endif; ?>
 
-      <form>
+      <form action="komsic.php" method="POST">
         <label for="subject">Subject</label><br>
           <input type="text" name="subject" placeholder="Subject...." style="width: 50%" required><br>
 
           <label for="message">Message</label><br>
           <textarea name="message" rows="8" cols="50" style="width: 50%" placeholder="Please Write Your Message Here...." required></textarea><br>
 
-          <button type="submit" name="submit"> Send</button>
+          <button type="submit" name="submit"> Send Now</button>
       </form>
     </div>
   </div>
