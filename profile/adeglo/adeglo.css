@@ -1,56 +1,82 @@
 body{
     background-color: #c4c4c4;
 }
-img{
+#img{
     float: left;
     height: auto;
     max-width: 100%;
 }
-div{
-    width: 490px;
+#hey{
+    width: 397px;
     height: auto;
     background-color: #ffffff;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    margin-bottom: auto;
     font-family: sans-serif;
     font-size: 20px;
     color: rgba(3, 101, 30, 0.83);
     text-align: center;
     
 }
-#hey{
-    padding-top: 50px;
+#pag{
+    padding-top: 26px;
 }
-#name{
-    text-transform: uppercase;
+#pic{
+    display: inline;
+}
+
+
+h3{
+    align-self: center;
+    
+}
+
+#subject{
+    align-self: auto;
     width: 50%;
-    border-radius: 0.2%;
-    margin-bottom: 5px;
+   
+   
 }
-fieldset{
-    width:  auto;
+#form{
+    width: auto;
     height: auto;
+    align-self: center;
+    color: purple;
 }
-#body{
+#message{
     width: 50%;
-    margin-bottom: -2px;
     font-family: sans-serif;
+    align-self: auto;
+   
 }
-#mail{
+textarea{
     width: 50%;
-    margin-bottom: 5px;
-    border-radius: 0.2%;
+    align-self: auto;
+    margin-left: 2px;
+    margin-right: 1px;
+    margin-bottom: 3px;
+    font: 13.3333px Arial;
+
 }
+
 button{
     height: 30px;
     width: 100px;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid gray;
     background: rgb(239, 4, 4);
     font-variant: all-small-caps;
     font-family: inherit; 
     font-size: 15px;
     color: rgba(255, 255, 255, 0.87);
 }
+input{
+    margin-bottom: 5px;
+    border-radius: 0.2%;
+    text-transform: uppercase;
+    width: 50%;
+    align-self: auto;
+}
+
+
