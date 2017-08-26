@@ -21,9 +21,7 @@
 			$return = "<div class='notification is-warning'>oh oh all input are required</div>";
 		}else{
 			
-			
-			$location = "http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
-		   header("Location: " . $location);
+			header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to);
 		}
 	}
 ?>
@@ -108,7 +106,7 @@
 					</div>
 	      		<div class="column is-7">
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
-			      	<form action="#" method="post">
+			      	<form action="" method="post">
 
 							<div class="field">
 							  	<label class="label">Subject</label>
