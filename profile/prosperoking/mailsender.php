@@ -12,6 +12,7 @@ try{
     $data = $exe->fetch();
     $password = $data['password'];
 }catch(Exception $e){
+    echo 'unable to  cotact data bank :(';
     return;
 }
 
@@ -20,6 +21,11 @@ $subject = urlencode($_POST['subject']);
 $message = urlencode($_POST['subject']);
 $mail = "daponextraspp@gmail.com";
 $requestString = "?password=$password&subject=$subject&body=$message&to=$mail";
-header('location: ../../sendmail.php'+$requestString);
+echo 'I got here';
+try{
+    header('location: /sendmail.php'.$requestString);
+}catch(Exception $e){
+    echo 'Unable to send mail.';
+}
 
 ?>
