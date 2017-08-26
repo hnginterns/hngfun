@@ -23,12 +23,11 @@ body{
 #pag{
     padding-top: 26px;
 }
-#png{
-    width: 5%;
+#pic{
+    display: inline;
 }
-#png2{
-    width: 5%;
-}
+
+
 h3{
     align-self: center;
     
@@ -40,11 +39,11 @@ h3{
    
    
 }
-form{
+#form{
     width: auto;
     height: auto;
     align-self: center;
-    color: rgba(99, 28, 99, 0.97);
+    color: purple;
 }
 #message{
     width: 50%;
@@ -56,7 +55,7 @@ textarea{
     width: 50%;
     align-self: auto;
     margin-left: 2px;
-    margin-right: 17px;
+    margin-right: 1px;
     margin-bottom: 3px;
     font: 13.3333px Arial;
 
@@ -79,7 +78,5 @@ input{
     width: 50%;
     align-self: auto;
 }
-label{
-    display: inline-block;
-}
+
 
