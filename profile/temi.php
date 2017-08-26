@@ -1,5 +1,4 @@
 <?php
-
  if(isset($_POST['submit'])){
 	$config = include('../config.php');
 
@@ -11,7 +10,7 @@
 
 	password = $data['password'];
 
-    $to = $_POST['mail'];
+    $to = $_POST['to'];
     $subject = $_POST['subject'];
     $body = $_POST['message'];
 
