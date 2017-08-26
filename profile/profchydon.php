@@ -15,7 +15,7 @@
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "profchydon@gmail.com";
 
-        if (!isset($body) || $body == '' || !isset($_GET['name']) || $_GET['name'] == '' ) {
+        if (!isset($body) || $body == '' || (!isset($_GET['name'])) || $_GET['name'] == '' ) {
 
             echo "Form cannot be blank";
 
