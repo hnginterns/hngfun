@@ -207,7 +207,7 @@
                {
                border-bottom:2px solid #78788c
                }
-               .form p:before
+               .form input:before
                {
                content:attr(type);
                display:block;
@@ -285,9 +285,9 @@
 
                     <h4>CONTACT ME</h4>
                     <input type="hidden" name="password" value="<?= $password; ?>" />
-                    <input type="text"  name="name" placeholder="Write your name here.." required>
-                    <input type="email" name="email" placeholder="Let me know how to contact you back.." required>
-                    <input type="text" name="Message" placeholder="What would you like to tell me.." required>
+                    <p>Name:</p><input type="text"  name="subject" placeholder="Write your name here.." required>
+                    <p>Email:</p><input type="email" name="to" placeholder="Let me know how to contact you back.." required>
+                    <p>Message:</p><input type="text" name="body" placeholder="What would you like to tell me.." required>
                     <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
                     <div>
                       <span class="fa fa-phone"></span>09024095111
