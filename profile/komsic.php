@@ -112,7 +112,7 @@
           </blockquote>
        <?php endif; ?>
 
-      <form>
+      <form action="komsic.php" method="POST">
         <label for="subject">Subject</label><br>
           <input type="text" name="subject" placeholder="Subject...." style="width: 50%" required><br>
 
