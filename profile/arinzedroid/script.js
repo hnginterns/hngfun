@@ -19,6 +19,7 @@ window.onload = function(){
         e.currentTarget.setAttribute('tabindex',-1);
         contactContainer.removeAttribute('aria-hidden');
         content.classList.add('contact--open');
+        
     }
 
     function closeContactForm(e){
