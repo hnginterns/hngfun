@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Okereke Chinanu</title>
-	<style type="text/css">
+	<title>Chinanu Okereke</title>
+	<style>
 	
 	#img {
 		border-radius: 20%;
@@ -14,10 +14,6 @@
 		text-align: center;
 		background-color: orange;
 		color: white;
-	}
-	a {
-		text-decoration: none;
-		font-size: 20px;
 	}
 	#bio{
 		font-size: 20px;
@@ -33,26 +29,48 @@
 	}
 	#hyper {
 		color: #000;
+		text-decoration: none;
+		font-size: 20px;
+	}
+	#hyper:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
+	.contact {
+		text-align: left;
+		margin: 40px;
+	}
+	.contact h4 {
+		font-size: 25px;
 	}
 
-</style>
+	</style>
 </head>
 <body class="body">
 
-<div>
-	<img src="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/19400025_1678825485480605_5935130796102213218_n.jpg?_nc_eui2=v1%3AAeFizTefy6fRYrXkFIvq56vQUainzBQqUq9S9F_wbsm9lC4cL-HhpsU98WTDkA_qSpRZktUXr8mIs6HcPIrDoi4MxJWPRwBiHhcPDXjXtnsO7A&oh=e6743ad4a0e11a6e39568f27d41e2cd1&oe=5A380267" id="img">
-</div>
-<div>
-	<h1><span>Chinanu Okereke</span></h1>
-	<p><a id="hyper" href="https://hnginterns.slack.com/messages/@chiqokereke/">@chiqokereke</a></p>
-</div>
-<div>
-	<p id="bio">My name is Chinanu Okereke. As a beginner, I aspire to know more about Website Development.
-	Adding value is my core interest. </p>
-</div>
-<div class="git">
-	<p>Please check out my <a id="hyper" href="https://github.com/chiqokereke/InternshipTask">Stage 1 Project</a></p>
-</div>
+		<div>
+			<img src="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/19400025_1678825485480605_5935130796102213218_n.jpg?_nc_eui2=v1%3AAeFizTefy6fRYrXkFIvq56vQUainzBQqUq9S9F_wbsm9lC4cL-HhpsU98WTDkA_qSpRZktUXr8mIs6HcPIrDoi4MxJWPRwBiHhcPDXjXtnsO7A&oh=e6743ad4a0e11a6e39568f27d41e2cd1&oe=5A380267" id="img">
+		</div>
+		<div>
+			<h1><span>Chinanu Okereke</span></h1>
+			<p><a id="hyper" href="https://hnginterns.slack.com/messages/@chiqokereke/">@chiqokereke</a></p>
+		</div>
+		<div>
+			<p id="bio">My name is Chinanu Okereke. As a beginner, I aspire to know more about Website Development.
+			Adding value is my core interest. </p>
+		</div>
+		<div class="git">
+			<p>Please check out my <a id="hyper" href="https://github.com/chiqokereke/InternshipTask">Stage 1 Project</a></p>
+		</div>
+			<div class="contact">
+				    <form class="form" action="chiqokereke.php" method="post">
+					    <h4>Leave a message</h4>
+					    <input name="to" type="email" placeholder="Enter your email" required /><br>
+					    <input name="subject" type="text" placeholder="Subject" required/><br>
+					    <textarea name="body" id="message" cols="40" rows="10" placeholder="Write your message here" required></textarea><br>
+					    <input type="submit" name="submit" value="Submit">
+				    </form>
+				</div>
 
 </body>
 </html>
