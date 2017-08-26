@@ -135,20 +135,18 @@
                   <a href="https://github.com/Vhiktordom/getting-started-h2-2017"><i class="fa fa-github"> Stage 1 </i></a><br>
                   <a href="#"><i class="fa fa-slack"> @Vhiktordom</i></a>
                 </div>
-                 <form action="" method="POST">
+                 <form method="POST">
             <div>
-                <label for="name">
                     <p>Name</p>
                     <input type="text" name="subject" class="form-input" style="width: 18em;" required>
-                </label>
             </div>
 
 
             <div>
-                <label for="message">
+               
                     <p>Message</p>
                     <textarea name="message" id="message" cols="30" rows="10" class="form-input" required></textarea>
-                </label>
+               
             </div>
             <br>
             <div>
