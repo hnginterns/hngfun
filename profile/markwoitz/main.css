@@ -123,12 +123,38 @@ a .fa-github-square:hover {
 
 
 input[type=text] {
-    width: 50%;
+    width: 70%;
     padding: 12px 20px;
     border-radius: 1%;
-    border: 1px solid #e5e5e5;
+    border: 3px solid #325e35;
     margin: 8px 0;
     box-sizing: border-box;
+}
+
+textarea {
+    width: 70%;
+    padding: 12px 20px;
+    border-radius: 1%;
+    border: 3px solid #325e35;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: #325e35;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 70%;
+}
+
+.fa-smile-o {
+    color: #a58203;
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 hr{
@@ -150,6 +176,35 @@ hr{
         
     h1 {
         font-size: 30px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 1%;
+        border: 3px solid #325e35;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 1%;
+        border: 3px solid #325e35;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        background-color: #325e35;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 100%;
     }
 }
 

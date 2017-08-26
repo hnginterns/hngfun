@@ -71,9 +71,7 @@
 (71) Adeboga Abigail, Slack:@bogadeji Github:bogadeji
 (72) Ikhuohon-Eboreime Caleb , GitHub:calebikhuohon , slack:@calebikhuohon
 (73) Adigun Hammed Olalekan, Github:adigunhammedolalekan, slack:@adigunhammedolalekan
-<<<<<<< HEAD
 (74) Mfonobong Umondia David, (Github: MfonobongD) (Slack: @mfonobong)
-=======
 (74) Adekanmbi Yosola, mo.yosiwealth, Yosiwealth
 (75) Eniwoke Cornelius (Slack: eniwokep, Github: cornzyblack)
 (76) Somto Promise (Slack: @keswardpromise Github:Promxyl)
@@ -197,3 +195,23 @@
 (195) Osuji Chukwuamaka Benjamin, (slack: osujichukwuamaka, github: Chukwuamaka)
 (196) Chuks N Festus, (slack: chuksfestus, github: chuksFestus)
 (197) Ogwuru Johnson Onyekachi, (slack: ogwurujohnson , github: ogwurujohnson )
+(198) Ibanga Jude, (slack: judis , github: judeibanga)
+(199) Ogbor Margaret Eneh, (slack: peggylicious, github: peggylicious
+(197) Jacob Okoro (slack:jaycobokoro4, github:rheinchester)
+(198) Ogwuru Johnson Onyekachi, (slack: ogwurujohnson , github: ogwurujohnson )
+(199) Ibanga Jude, (slack: judis , github: judeibanga)
+(200) Ogbor Margaret Eneh, (slack: peggylicious, github: peggylicious)
+(201) Ukachukwu Dalu, (Slack: daluu, github: ghost147)
+(202) Ogwuru Johnson Onyekachi, (slack: ogwurujohnson , github: ogwurujohnson )
+(203) Ibanga Jude, (slack: judis , github: judeibanga)
+(204) Ogbor Margaret Eneh, (slack: peggylicious, github: peggylicious)
+(205) Ukachukwu Dalu, (Slack: daluu, github: ghost147)
+(206) Nwafor Maxwell Chukwuebuka, (slack: maxwell444, github: maxwell4reel)
+(207) Francis Jude, (Slack: jhude16, Github: jhude16)
+(208) James Cyril Christopher, (slack: fluxy17, github: flexyfluxy)
+(209) Jude Ubon Joshua, (slack: ubyjude, github: ubyjude54)
+(210) Isaac Abasifreke Elijah, (slack: izikelijah, github: ElijahAIsaac)
+(211)Tobechukwu Obitube, tobechukwuobitube, tobechukwuobitube
+(212) Nwaizuzu Anthony Chukwudi (slack:@tonychuks7, github:naccuddi)
+(213) OPARA PROSPER ( slack: @opara_prosper, github: opara-prosper)
+(214) Alexander Ikelia (slack:@alex, github: @alexikelia)
