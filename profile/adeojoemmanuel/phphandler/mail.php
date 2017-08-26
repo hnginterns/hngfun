@@ -1,12 +1,12 @@
 <?php
-function load($class){
-	require  $class .".php";
-}
+// function load($class){
+	require  'IOhander.php';
+// }
 
-load('IOhander');
+// load('IOhander');
 $IO = new IOhandler;
 
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$subject = mysql_escape_string($_POST['subject']);
 	$email = mysql_escape_string($_POST['email']);
 	$phone = mysql_escape_string($_POST['phone']);
