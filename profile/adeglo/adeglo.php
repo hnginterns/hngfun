@@ -40,8 +40,8 @@
              alt="my picture"/>
         </p>
         <p id="pag">NAME: ADEBOWALE GLORY</p>
-        <a  href="https://hnginterns.slack.com/messages/@adeglo"><img id="png" src="http://i.imgur.com/2cG9aht.png"/></a>
-        <a  href="https://github.com/mystery1999"><img id="png2" src="http://i.imgur.com/l0pY0gZ.png"/></a>
+        <a  href="https://hnginterns.slack.com/messages/@adeglo"><img id="png" src="http://i.imgur.com/2cG9aht.png" alt="slack"/></a>
+        <a  href="https://github.com/mystery1999"><img id="png2" src="http://i.imgur.com/l0pY0gZ.png" alt="github"/></a>
         <a href="https://github.com/mystery1999/Stage-1">Stage1 repo</a>
         <p>
             About Me: I’m from Ondo State. I’m  a 200 level, Computer
@@ -50,15 +50,15 @@
         </p>
         <form method=“POST” action=“#”>
             
-                <h3>LEAVE A COMMENT</h5>
+                <h3>LEAVE A COMMENT</h3>
                 
-                    <label for="subject">Subject</label>
-                    <input  type=“text” name=“subject” placeholder = "Please type your name" required/></br>
+                  <div> 
+                    <input  type='text' name='subject' placeholder = 'Please type your name' required/>
+                  </div>
                 
-                
-                    <label for="message">Message</label>
+                  <div> 
                     <textarea  name= 'message' placeholder='Type your message'></textarea>
-                
+                  <div>
                     <button type=“submit” name=“submit”>
                         submit
                     </button>
