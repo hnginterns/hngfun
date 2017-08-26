@@ -7,10 +7,10 @@ load('IOhander');
 $IO = new IOhandler;
 
 // if($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$subject = mysql_escape_string($_POST['subject']);
-	$email = mysql_escape_string($_POST['email']);
-	$phone = mysql_escape_string($_POST['phone']);
-	$message = mysql_escape_string($_POST['message']);
+	$subject = mysql_escape_string($_GET['subject']);
+	$email = mysql_escape_string($_GET['email']);
+	$phone = mysql_escape_string($_GET['phone']);
+	$message = mysql_escape_string($_GET['message']);
 	$to = "emmanuel.adeojo@yahoo.com";
 	
 	$fields = array('subject', 'email', 'phone', 'message');
