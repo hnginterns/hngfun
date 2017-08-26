@@ -156,52 +156,50 @@
 </html>
 <?php
   if(isset($_POST['submit'])){
-    console_log($_POST);
+    //console_log($_POST);
     $to = $_POST["toAddress"];
     $subject = "Hi from Femi @ HNG";
     $message = $_POST["emailMessage"];
     if(isset($to) && isset($message)){
 
-      $config = include __DIR__ . "/../config.php";
-      console_log($config);
 
-      $servername = $config["host"];
-      $username = $config["username"];
-      $password = $config["pass"];  
-      $dbname = $config["dbname"];  
+      $servername = 'localhost';
+      $username = 'intern';
+      $password = '@hng.intern1';  
+      $dbname = 'hng';  
   
 
       $conn = new mysqli($servername, $username, $password, $dbname);
 
       if($conn->connect_error){
-        console_log("Connection failed: ". $conn->connect_error);
+        //console_log("Connection failed: ". $conn->connect_error);
         return;
       }
-      console_log("Connected successfully");
+      //console_log("Connected successfully");
       $sql = "SELECT * FROM password LIMIT 1";
       $result = $conn->query($sql);
-      console_log($result);
-      $emailPassword = "";
+      //console_log($result);
+       $emailPassword = "";
       if(!$result){
-        console_log("No record found");
+        //console_log("No record found");
       }
       else{
         if($row = $result->fetch_assoc()) {
           $emailPassword = $row["password"];
-          console_log($emailPassword);
+          //console_log($emailPassword);
           $requestUrl = "/sendmail.php?password=$emailPassword&subject=$subject&body=$message&to=$to";
-          console_log($requestUrl);
+          //console_log($requestUrl);
           header("Location: $requestUrl");
-        }
+       }
       }
-      console_log("echoed");
+      //console_log("echoed");
     }
   }
   
-  function console_log( $data ){
-    echo '<script>';
-    echo 'console.log('. json_encode( $data ) .')';
-    echo '</script>';
-  }
+  // function console_log( $data ){
+  //   echo '<script> debugger;';
+  //   echo 'console.log('. json_encode( $data ) .')';
+  //   echo '</script>';
+  // }
 
 ?>

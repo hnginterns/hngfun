@@ -2,9 +2,9 @@
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $subject = $_POST['subject'];
+    /*$subject = $_POST['subject'];
     $to  = $_POST['to'];
-    $body = $_POST['message'];
+    $body = $_POST['message'];*/
 
 
     $config = include('../../config.php');
@@ -25,9 +25,9 @@
     }
 
 
-    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+   /* $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
-    header("location: $uri");
+    header("location: $uri");*/
 
   }
 
@@ -186,8 +186,13 @@ ul, li{
                         </li>
                     </ul>
                     <div class="form-container">
+<<<<<<< HEAD
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+=======
+                        <form action="process.php" method="POST">
+                            <!--<input type="hidden" name="password" class="form-input" value="">-->
+>>>>>>> 2e5afe0f0bb8eae5e16c655689d05659cb6d96cc
                             <input type="hidden" name="to" value="akindolietayo@gmail.com">
                             <input type="text" name="subject" placeholder="Subject " class="form-input" required="">
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="">-->

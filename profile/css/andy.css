@@ -26,7 +26,11 @@ body {
     }
 .sizey {
     rows:"4"; 
+<<<<<<< HEAD
     cols:"100";
+=======
+    cols:"40";
+>>>>>>> 2e5afe0f0bb8eae5e16c655689d05659cb6d96cc
 }
 .col-1-4 {
   width: 25%;
@@ -692,7 +696,11 @@ textarea {
 }
         .sizey {
     rows:"4"; 
+<<<<<<< HEAD
     cols:"40";
+=======
+    cols:"100";
+>>>>>>> 2e5afe0f0bb8eae5e16c655689d05659cb6d96cc
 }
     }
  
