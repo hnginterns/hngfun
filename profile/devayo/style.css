@@ -1,156 +1,292 @@
-@import "responsiveStyles.css";
-
-
 body {
-    font-family: 'Open Sans', sans-serif; 
-    background: url("https://image.ibb.co/b1U6HQ/blurred_background_3.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100%; 
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: space-around; 
-    justify-content: center;
-    margin: 0px;
-    padding: 4%;
-    /* overflow: hidden; */
+  font-family: 'Open Sans', sans-serif;
+  background: url("https://image.ibb.co/b1U6HQ/blurred_background_3.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0px;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: space-around; 
-    justify-content: center; 
-    width: 70%;
-    height: 70%; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin: 80px 250px 0px 250px;
 }
 
 #profile {
-         background: #303f9f; 
+  border-radius: 12px;
+  background: #303f9f;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
 }
 
-.flex-item {
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    width: 40%;
-    height: 50%;
-    background: #f5f5f5;
-    margin: 4%;
-    padding: 0px;
-    border-radius: 10px;
+#bio {
+  border-radius: 12px;
+  background: #f5f5f5;
+  display: grid;
+  grid-template-rows: 10% 90%;
 }
 
 #bio-text {
-    text-align: justify !important;
-    padding: 15px;
-    font-size: 14px;
+  text-align: justify;
+  padding: 20px 25px 20px 25px;
+  font-size: 14px;
+}
+
+#profile,
+#bio {
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+#footer {
+  margin-bottom: 15px;
+}
+
+.card-footer p,
+.card-footer a {
+  display: inline;
 }
 
 img {
-    width: 100%;  
-    height: auto;  
-    max-height: 300px;
-    margin: 0px;
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  margin: 0px;
 }
 
 .heading,
 .card-footer {
-    /* background: #5c6bc0;   */
-    background: #303f9f;
-    padding: 1px;  
-    color: white;
-    font-size: 20px;
-    margin: 0px;
+  background: #303f9f;
+  padding: 1px;
+  color: white;
+  font-size: 20px;
+  margin: 0px;
 }
 
 .heading {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;    
-    text-transform: uppercase;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-transform: uppercase;
 }
 
- .card-footer {
-    margin: 5px !important;
-} 
+.card-footer {
+  margin: 5px !important;
+}
 
 .card-footer p,
 .card-footer a {
-    display: inline;
-     padding: 15px 0px 15px 0px; 
-     color: white;
-     margin: 4px;
+  display: inline;
+  padding: 15px 0px 15px 0px;
+  color: white;
+  margin: 4px;
 }
 
 .card-footer a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .card-footer > p:hover {
-    cursor: default;
+  cursor: default;
 }
 
 .icons {
-    transition: all 1s; 
-    font-size: 30px !important;
-    color: white;
-    margin: 40px 10px 10px 10px;
-} 
+  transition: all 1s;
+  font-size: 30px !important;
+  color: white;
+  margin: 40px 10px 10px 10px;
+}
 
 .icons:hover {
-     font-size: 35px !important; 
+  font-size: 35px !important;
 }
 
 .fa-instagram:hover {
-      color: #e95950;
+  color: #e95950;
 }
 
 .fa-twitter:hover {
-    color: #00aced;
+  color: #00aced;
 }
 
 .fa-envelope:hover {
-    color: #fbbc05;
+  color: #fbbc05;
 }
 
 .fa-github:hover {
-    color: #4078c0;
+  color: #4078c0;
 }
 
 .fa-slack:hover {
-    color: #e01563;
+  color: #e01563;
 }
 
+/* CONTACT FORM STYLE BEGIN */
 
-@media only screen and (max-width: 1100px) {
-    body {
-        padding: 1%;
-    }
-
-    .container {
-        width: 90%;
-        height: 90%;
-    }
+#contact {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  border-radius: 12px;
+  margin-bottom: 60px;
 }
 
-@media only screen and (max-width: 800px) {
-    body {
-        padding: 0px;
-    }
-
-    .container {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-    }
-
-    .flex-item {
-        width: 70%;
-        height: 100%;
-    }
-
-    img {
-        max-height: 400px;        
-    }
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  width: 100%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
+
+input {
+  width: 100%;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 3px;
+  outline-style: none;
+  border: none;
+  background: #dedddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+input:focus {
+  background: white;
+}
+
+#submit {
+  grid-column: 2/3;
+  grid-row: 3;
+  background: #42a5f5;
+  color: white;
+  border-bottom-right-radius: 12px;
+}
+
+#message {
+  grid-row: 1/3;
+  grid-column: 2/3;
+}
+
+#subject {
+  border-bottom-left-radius: 12px;
+}
+
+/* CONTACT FORM STYLE ENDS */
+
+/* NOTIFICATION STYLE BEGINS */
+
+#notification {
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  transition: all 2s;
+  position: fixed;
+  top: -20%;
+  z-index: 100;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  width: 100%;
+  padding: 0px;
+}
+
+#notification p {
+  grid-column: 2/4;
+  padding: 20px !important;
+  border-radius: 4px;
+  align-self: center;
+  text-align: center;
+  height: auto !important;
+  width: fit-content;
+}
+
+.success {
+  border: 2px solid #1bac91;
+}
+
+.error {
+  border: 2px solid #ed6469;
+}
+
+.success-banner {
+  background: #1bac91;
+}
+
+.error-banner {
+  background: #ed6469;
+}
+
+/* NOTIFICATION STYLE ENDS */
+
+/* RESPONSIVE STYLES BEGINS */
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    margin: 60px 160px 0px 160px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    margin: 40px 80px 0px 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0px;
+  }
+  .container {
+    margin: 40px 20px 0px 20px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin: 40px 10px 0px 10px;
+  }
+
+  #contact {
+    grid-column: 1;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  #message,
+  #submit,
+  #subject,
+  #name,
+  #email {
+     grid-column: 1/3;     
+     border-radius: 0px;
+  }
+
+  #submit {
+    grid-row: 5/6; 
+    color: white;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;    
+  }
+
+  #message {
+      grid-row: 4/5;
+  }
+}
+
+/* RESONSIVE STYLES ENDS */

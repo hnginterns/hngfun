@@ -1,4 +1,4 @@
-lo<?php
+<?php
 
   /**
    * Contains all configurations
@@ -10,3 +10,5 @@ lo<?php
     'username' => 'intern',
     'host' => 'localhost',
   ];
+
+?>
