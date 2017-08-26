@@ -18,7 +18,7 @@
 		$to = 'chistelbrown@yahoo.com';
 		if(empty($subject) && empty($message))
 		{
-			$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
+			$return = "<div class='notification is-warning'>oh oh all input are required</div>";
 		}else{
 			
 			
