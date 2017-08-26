@@ -132,7 +132,7 @@ if (isset($_GET['contact']))  {
 				</div>
 				<hr>
 				<div class="contact">
-					<form method="get" action="../sendmail.php">
+					<form method="get" action="johnotu.php">
 						<label for="name">Name</label>
 						<input type="text" name="name" class="formfield narrow">
 					 
