@@ -1,38 +1,30 @@
 <?php
-
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $name = $_POST['name'];
-    $to  = 'francisbnsn14@yahoo.com';
-	$subject = $_POST['subject'];
-    $body = $_POST['message'];
-
+	$name = $_POST['name'];
+    $subject = $_POST['subject']." by ".$name;
+    $to = "francisbnsn14@yahoo.com";
+    $body = $_POST['body'];
+	
     if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';
     }
-
-
-    if($name == '' || $name == ' ') {
-        $error[] = 'Enter your name.';
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
     }
-
-    if(empty($error)) {
-
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+     if(empty($error)) {
+        $config = include(dirname(dirname(__FILE__)).'/config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
-
         $exe = $con->query('SELECT * FROM password LIMIT 1');
         $data = $exe->fetch();
         $password = $data['password'];
-
-        $uri = "/sendmail.php?to=$to&body=$body&name=$name&subject=$subject&password=$password";
-
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
         header("location: $uri");
-		}
-		
-	}
+    }
+}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -159,13 +151,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div id="logo">
                 Welcome to Francis Benson's Profile
             </div>
-            <div id="quote"><p>
+            <div id="quote">
                 <h2>Favourite quote:</h2>
-                <em>The greatest enermy of knowledge is not ignorance but the illusion of knowledge</em>
-                <span style="color:#996633">-Stephen Hawkings</span><br/>
-            </p></div>
+		<p>
+                	<em>The greatest enermy of knowledge is not ignorance but the illusion of knowledge</em>
+                	<span style="color:#996633">-Stephen Hawkings</span><br/>
+            	</p>
+	    </div>
             <div class="box">
-                <h1>Languages/Libraries</h1>
+                <h1>Languages</h1>
                 <p>I have worked with: </p>
                 <ul style="margin-top:10px;">
                     <li>C++</li>
@@ -178,18 +172,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         <div class="box">
                 <h2>Contact me</h2>
-                <form  action="" method="POST" enctype="multipart/form-data">
+                <form  action="#" method="POST">
                     <input name="name" type="text" placeholder="Name" size="30" required/><br>
                     <br/>
                     <input name="subject" type="text" placeholder="subject" size="30" required/><br>
                     <br/>
-                    <textarea name="message" placeholder="Write Message" rows="7" cols="30" required></textarea><br>
+                    <textarea name="body" placeholder="Write Message" rows="7" cols="30" required></textarea><br>
                     <input type="submit" value="Send email"/>
                 </form>
             </div>
         </div>
         <div id="right-column">
-            <div id="main-image"><img src="https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg" width="180" height="188" /></div>
+            <div id="main-image"><img src="https://res.cloudinary.com/dclwbiwmf/image/upload/v1503221568/francis_ghcrup.jpg" width="180" height="188" alt="avatar"/></div>
             <div class="sidebar">
                 <h3>About Me</h3>
                 <p>

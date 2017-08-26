@@ -1,327 +1,119 @@
-<?php
-    if(isset($_POST['process'])){
-        $config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-        ];
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $result = $con->query('SELECT * FROM password');
-        $data = $result->fetch();
-        $password = $data['password'];
-        $subject = $_POST['subject'];
-        $body = $_POST['body'];
-        header("hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=gmaumoh@gmail.com");
-	
-    }else{
-        header("location: index.html");
-    }
-?>
-
-<html><head>
-    <title>Essien Saviour</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
-
-
-    <style>
-        
-        body {
-  
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Maven Pro", sans-serif;
-    font-weight: 400;
-}
-.container {
-    
-    margin: auto;
-    text-align: center;
-    -moz-box-sizing: border-box;
-    -o-box-sizing:border-box;
-    box-sizing: border-box; 
-    box-shadow: 0 3px 3px rgba(50,50,93,0.1), 0 9px 9px rgba(0,0,0,0.7);
-    border-radius: 45px;
-    background-color: lightgreen;
-}
-main {
-    padding: 20px 10px;
-}
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
-}
-.profile-page {
-    height: 100%;
-    position: relative;
-    
-}
-.git {
-    display: inline-block;
-    background: #050404;
-    padding: 3px 5px;
-    border-radius: 16px;
-    letter-spacing: 1px;
-}
-.git a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-}
-.icon {
-    height: 20px;
-    margin-right: 10px;
-    position: relative;
-    top: 0;
-}
-.about h4 a {
-    background: #fff ;
-    color: #5387CB;
-    padding: 12px 
-}
-.about h2 {
-    margin-top: 10px;
-    color: #050404;
-    text-decoration: underline;
-}
-.about p {
-    color: #050404;
-    letter-spacing: 1px;
-    font-weight: bolder;
-    text-align: center;
-    
-    
-}
-.profile-img {
-    margin-bottom: 20px;
-    padding-top: 15px;
-}
-.profilename,.profileslack {
-    
-    color: #050404;
-    margin-bottom: 15px;
-}
-.navbar {
-    list-style: none;
-    display: inline-block;
-    margin: 0 auto;
-}
-.navbar__item {
-    float: left;
-}
-.navbar__item__link {
-    display: block;
-    padding: 20px 15px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-.navbar__item__link:focus,
-.navbar__item__link:hover {
-    transform: translateY(-1px);
-}
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-input[type=submit] {
-    background-color: #050404;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-input[type=submit]:hover {
-    background-color: green;
-}
-.container3 {
-    background-color: rgba(193, 193, 193, 0.54);
-    padding: 20px;
-    width: 450px;
-    text-align: center;
-    position: relative;
-    margin: 64px auto;
-    border-radius: 45px;
-    max-width:400px;
-    width:100%;
-}
-.container4 {
-    background-color: white;
-    padding: 20px;
-    width: 130px;
-    text-align: center;
-    position: relative;
-    margin: 15px auto;
-    border-radius: 5px;
-    padding: 15px 20px;
-    }
-label {
-font-weight: bolder;
-}
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
-#contact {
-    background:#F9F9F9;
-    padding:25px;
-    margin:50px 0;
-}
-#contact h3 {
-    color: green;
-    display: block;
-    font-size: 30px;
-    font-weight: 400;
-}
-#contact h4 {
-    margin:5px 0 15px;
-    display:block;
-    font-size:13px;
-}
-fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-}
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
-    width:100%;
-    border:1px solid #CCC;
-    background:#FFF;
-    margin:0 0 5px;
-    padding:10px;
-}
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-    -webkit-transition:border-color 0.3s ease-in-out;
-    -moz-transition:border-color 0.3s ease-in-out;
-    transition:border-color 0.3s ease-in-out;
-    border:1px solid #AAA;
-}
-#contact textarea {
-    height:100px;
-    max-width:100%;
-  resize:none;
-}
-#contact button[type="submit"] {
-    cursor:pointer;
-    width:100%;
-    border:none;
-    background: green;
-    color:#FFF;
-    margin:0 0 5px;
-    padding:10px;
-    font-size:15px;
-}
-#contact button[type="submit"]:hover {
-    background: lightgreen;
-    -webkit-transition:background 0.3s ease-in-out;
-    -moz-transition:background 0.3s ease-in-out;
-    transition:background-color 0.3s ease-in-out;
-}
-#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
-#contact input:focus, #contact textarea:focus {
-    outline:0;
-    border:1px solid #999;
-}
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
-    </style>
-</head>
-<body>
-
-    <main class="profile-page">
-        <div class="container">
-            <div class="profile-img">
-                <img src="http://www.easywebsolutionz.com/images/essien-saviour.jpg" alt="Essien Saviour" height="300px" style="border-radius: 20px;">
-            </div>
-
-            <section class="profile-content">
-                    
-
-                    <div class="git">
-                        <a href="https://github.com/TobiLight/HNGTEST1" target="_blank">
-                            <i class="fa fa-github icon"></i>
-                            <span class="">Stage1 Task</span>
-                        </a>
-                        
-                    </div>
-
-                        <div class="profilename">
-                        <h3>Essien Saviour</h3>
-                    </div>
-                    <div class="profileslack">
-                        <h4><i class="fa fa-slack"></i> Slack: @essien</h4>
-                        <h4><i class="fa fa-github"></i> Github: iamessien</h4>
-                    </div>
-
-                    <div class="about">
-                                
-                        <p> I am Essien Saviour, a young man that fell in love with coding at a very young age.</p>
-                    </div>
-            </section>
-            
-            <ul class="navbar">
-                <li class="navbar__item">
-                    <a href="https://github.com/TobiLight" target="_blank" class="navbar__item__link"><i class="fa fa-github"></i></a>
-                </li>
-                <li class="navbar__item">
-                    <a href="mailto:jgetitdonefast@gmail.com" target="_blank" class="navbar__item__link"><i class="fa fa-envelope"></i></a>
-                </li>
-                <li class="navbar__item">
-                    <a href="https://twitter.com/IamNotJustOk" target="_blank" class="navbar__item__link"><i class="fa fa-twitter"></i></a>
-                </li>
-            </ul>
-        </div> <!-- end container -->
-        
-        <!-- start contact form -->
-        
-        
-<div class="container3">  
-  <form id="contact" action="sendmail.php" method="GET">
-    <h3>Holla @ Me</h3>
-   <br />
-    <fieldset>
-      <input placeholder="Enter Full Name" type="text" tabindex="1" required="" autofocus="">
-    </fieldset>
-    <fieldset>
-      <input placeholder="Enter Email Address" type="email" tabindex="2" required="">
-    </fieldset>
-    <fieldset>
-      <input placeholder="Enter Phone Number" type="tel" tabindex="3" required="">
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Enter Message" tabindex="5" required=""></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-  </form>
+ <?php
+  $config = include('../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $con = new PDO($dsn, $config['username'], $config['pass']);
+  $exe = $con->query('SELECT * FROM password LIMIT 1');
+  $data = $exe->fetch();
+  $password = $data['password'];
+?> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Essien Saviour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin Slab" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <style>
+    .profile-body,body{color:#000000 ;text-align:center}
+    .main-nav,.profile-body,body,header{text-align:center}
+    .nav,footer ul{list-style-type:none}
+    .nav a,a.social{transition:all .5s}*{box-sizing:border-box}
+    body{margin:0;padding:0;font-family:"Ariel";background:lightgreen;}
+    .profile-body{padding:20px}
+    .slack-username{color:#fff;font-weight:700}a{text-decoration:none;color:#999}a:hover{color:#63f}
+    .main-nav{width:100%;background:#000;min-height:30px;padding:10px;position:fixed}
+    .nav{display:flex;justify-content:space-around;font-weight:700;margin:0 auto;padding:0}
+    .nav .name{display:block;margin-right:auto;color:#fff}
+    .nav li{padding:5px 10px 10px}.nav a:hover{color:#009688;font-size:20px}
  
-  
-</div>
-<!-- end contact form -->
+    header .profile-image{margin-top:50px;width:150px;height:150px;border-radius:50%;border:3px solid #fff;transition:all .5s}
+ 
+    .tag{background-color:rgba(2,2,2,.5);color:#fff;padding:10px;border-radius:5px;display:table;margin:10px auto}
+    footer{width:100%;min-height:30px;padding:20px 0 40px 20px}
+    footer .copyright{top:-8px;font-size:.75em}
+    footer ul{margin:0;padding:0}
+    footer ul li{display:inline-block}
+    a.social{margin-left:5px;width:30px;height:30px;background-size:30px 30px;opacity:.4}
+    a.twitter{color:#0084b4}
+    a.facebook{color:#3b5998}
+    a.github{color:#767676}
+    a.social:hover{opacity:1}
+    .clearfix{clear:both}
+    .contact-info{list-style:none;padding:0;margin:0;font-size:.9em}
+    .contact-info a{display:block;min-height:20px;background-repeat:no-repeat;background-size:20px 20px;padding:0 0 0 30px;margin:0 0 10px}
+    .contact-info li.phone a{background-image:url(images/phone.png)}
+    .contact-info li.mail a{background-image:url(images/mail.png)}
+    .contact-info li.twitter a{background-image:url(images/twitter.png)}
+    @media screen and (min-width:720px){.flex,.nav,footer{max-width:1200px}
+    .flex{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around;margin:0 auto}
+    header{min-height:470px}
+    .nav{padding:0 30px}main{padding-top:20px}
+    main p{line-height:1.6em}
+    .btn-primary{background-color:#009688!important}
+    footer{font-size:1.3em;margin:40px auto}
+    label{display:block;text-align:left}
+    input[type=email],input[type=text],select,textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:4px;margin-top:6px;margin-bottom:16px;resize:vertical}
+    a.link,input[type=submit]{background-color:black;color:#fff;padding:12px 20px;border:none;border-radius:4px;cursor:pointer}
+    a.link{text-decoration:none}
+    input[type=submit]:hover{background-color: blue;}
+    .container{border-radius:5px;background-color:#ffffff;padding:20px;width:50%;margin:50px auto 10px}}
+  </style>
+</head>
+  <body>
 
-    </main>
+   
 
+    <div id="home">
+      <header>
+        <img src='http://www.easywebsolutionz.com/images/essien-saviour.jpg' class="profile-image">
+      
+        <p class="slack-username fa fa-slack">@essien</p>
+      </header>
 
+      <div class="profile-body">
+           
+          <h4>I am Essien Saviour, a Web Developer, Founder of Whereedey Global Service, Creative Director of Easyweb Solutionz and Manager Startup Bayelsa. I enjoy spending all day with my baby (My Laptop).</h4>
+      </div>
+        <div class="text-center">
+            <a class="link" href="https://github.com/iamessien/hnginterns" role="button"> Stage 1</a>                    
+        </div>
+    </div>
+    
+    
 
-</body></html>
+      <div class="container">
+        <form action="../sendmail.php" method="get">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="to" placeholder="Your Email Address.." required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter Your Subject Here.." required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="body" placeholder="Your Message Here.." style="height:200px"></textarea>
+
+          <input type="hidden" name="password" value="<?= $password; ?>" />
+
+          <input type="submit" value="Send">
+          
+        </form>
+      
+    </div>
+
+      <footer>
+        <ul>
+          <li><a href="https://web.facebook.com/saviourg" target="_blank" class="fa fa-facebook social facebook"></a></li>
+          <li><a href="https://github.com/iamessien" target="_blank" class="fa fa-github social github"></a></li>
+        </ul>
+        
+      </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+   
+  </body>
+</html>
