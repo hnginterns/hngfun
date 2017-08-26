@@ -5,11 +5,16 @@ if(empty($_POST['subject'])|| empty($_POST['message']) || empty($_POST['subject'
 }
 $config = require_once('../../config.php');
 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-$con = new PDO($dsn, $config['username'], $config['pass']);
+try{
+    $con = new PDO($dsn, $config['username'], $config['pass']);
 
-$exe = $con->query('SELECT * FROM password LIMIT 1');
-$data = $exe->fetch();
-$password = $data['password'];
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
+}catch(Exception $e){
+    var_dump($e);
+}
+
 
 $subject = urlencode($_POST['subject']);
 $message = urlendcode($_POST['subject']);
