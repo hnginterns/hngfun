@@ -1,5 +1,4 @@
 <?php
-header('Content-type: application/javascript');
 if(empty($_POST['subject'])|| empty($_POST['message']) || empty($_POST['subject'])){
     header('location: index.html');
     return;
