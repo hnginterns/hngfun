@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $pageTitle = "Participants";
 include('header.php');
 include('participants-head.php');
@@ -44,6 +44,28 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
+		  <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/30381435?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/Olateju_Biodun/olateju_biodun.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Olateju Biodun</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">talk2olatejuemmanuel@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 2 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
 <div class="p-card">
@@ -1777,6 +1799,34 @@ include('participants-head.php');
                 </div>
             </div>
             <!--  Each Participants ends here  -->
+
+
+<!--  Each Participant starts here  -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(https://avatars2.githubusercontent.com/u/14821816?v=4&u=e557e157664cbb72814f09ad08c3489b36be4c8c&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+
+
+                        <a href="http://hng.fun/profile/ogwurujohnson">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Ogwuru Johnson</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">ogwurujohnson1@gmail.com</p>
+                        <!--Email-->
+                    </div>
+
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team 1 </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  Each Participants ends here  -->
+
 
             <!--  Each Participant starts here  -->
             <div class="p-card">
@@ -7698,6 +7748,31 @@ include('participants-head.php');
             </div>
         </div>
 
+<<<<<<< HEAD
+        <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://image.ibb.co/knhPSQ/IMG_20170818_203414.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/emekaprosper">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Nnaemeka Ukpa</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">nnaemekaukpa@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 5 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+<!--  Each Participants ends here  -->
+
+    </div>
 <!--  Each Participants ends here  -->
 
 <!-- Each participant starts here -->
