@@ -140,14 +140,13 @@
 		<!-- contact starts here -->
 		<div id="contact">
 			 <form action="../sendmail.php" method="get">
-			  <p id="error"><?php $err = isset($errror)? $error:''; echo $err; ?></p>
 				<h2 id="conatct-heading">Message Me</h2>
 				<div id="inner-form-content">
 					<input type="text" name="subject" class="subject" placeholder="Subject" required="">
-					<input type="hidden" name="password"  value="<?php echo $password ?>" >
+					<input type="hidden" name="password"  value="<?php echo $password;?>" >
 					<input type="hidden" name="to"  value="oriechinedu@gmail.com" >
 					<textarea id="message" name="message" placeholder="type your message here" required=""></textarea>
-					<input type="submit" id="submit" name="submit" value="Send">
+					<button type="submit" id="submit" name="submit">Send</button>
 				</div>
 			</form>
 		</div>
