@@ -1,28 +1,15 @@
 <?php
- if($_SERVER['REQUEST_METHOD'] == 'POST') {
-  $email = $_POST['email'] ;
-  $body = $_POST['message'] ;
-  $subject= $_POST['subject'] ;
-}
- $host = "localhost";
- $username = "intern";
-  $password = "@hng.intern1";
- $db = "hng";
-// Create connection
- $connection = mysql_connect($host, $username, $password);
- $db =  mysql_select_db($db);
-// Check connection
- if (!$connection) {
-    die("Connection failed");
- }
-     $query = "SELECT * FROM password";
-     mysql_query($query) or die('Error querying database.');
-     $result = mysql_query($query);
-     $row = mysql_fetch_array($result);
-     $password = $row['1'];
+
+  $config = include('../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $con = new PDO($dsn, $config['username'], $config['pass']);
+  $result = $con->query('SELECT * FROM password LIMIT 1');
+  $data = $result->fetch();
+  $to = $_POST['to'];
+  $password = $data['password'];
+  $subject = $_POST['subject'];
+  $body = $_POST['body'];
     
   header("location:../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=williamadetunji@yahoo.com");
 
-  mail($email, $subject, $body, header );
-  echo "<h4>Thank you, Got your message.</h4>";
 ?>
