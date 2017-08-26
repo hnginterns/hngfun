@@ -1,8 +1,3 @@
-<?php
-include('config.php');
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -59,7 +54,7 @@ include('config.php');
             <div class="about" style="width: 40%;float: left;">
                 <b style="text-shadow: 1px 2px 3px gray;">BIOGRAPHY</b><br>
                 <p>Passionate for tech which has been the driving force that moved me into mobile application development (Android). As an android developer with 3years experience in mobile development. Also a web developer. A lover of God. A researcher</p><br>
-              <form action="index.php" style="margin-top: 10px;" method="post"> 
+              <form action=tobiak.php method="post" style="margin-top: 10px;"> 
                   <h4>Your message</h4> 
                         <input name="to" type="email" placeholder="Enter your email" required /><br>
                         <input name="subject" type="text" placeholder="Subject" required/><br>

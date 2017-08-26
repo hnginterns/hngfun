@@ -13,7 +13,7 @@
         }
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
         <title>Idorenyin Obong</title>
@@ -123,18 +123,18 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 <h3> Contact Idorenyin! </h3>
-<form action="" method="get">
+<form method="get">
   
-  <input type="text" placeholder="Name" name="name" required/>
-  <input type="text" placeholder="Email Subject" name="subject" required/>
+  <input type="text" placeholder="Name" name="name" required>
+  <input type="text" placeholder="Email Subject" name="subject" required>
  
 
-<textarea name="message" placeholder="Message" required cols="4" rows="4" />
-Hello Idee! I'll love you to create an android app for me!
+<textarea name="message" placeholder="Message" required cols="4" rows="4" >
+
 </textarea>
 
 
-<input type="submit" value="submit" name="send" style="width:100%;"/>
+<input type="submit" value="submit" name="send" style="width:100%;" >
 
 </form>
 
