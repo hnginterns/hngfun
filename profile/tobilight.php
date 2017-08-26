@@ -283,7 +283,7 @@ fieldset {
 	<main class="profile-page">
 		<div class="container">
 			<div class="profile-img">
-				<img src="http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg" alt="Agunloye Oluwatobiloba Light" height="300px" style="border-radius: 10px;">
+				<img src="http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg" alt="Agunloye Oluwatobiloba Light" style="border-radius: 10px;">
 			</div>
 
 			<section class="profile-content">
@@ -328,18 +328,18 @@ fieldset {
     <h3>Quick Contact</h3>
     <h4>Contact me today, and get a reply within 24 hours!</h4>
     <fieldset>
-	<input placeholder="Your Name" class="label" name="yourname" type="text"/>
+	<input placeholder="Name" type="text" name="yourname" type="text"/>
 	</fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" name="email" type="email"  required="">
+      <input placeholder="Email" name="email" type="email"  required="">
     </fieldset>
     <fieldset>
-      <input placeholder="Subject" for="subject" id="subject" name="subject" type="subject"  required="">
+      <input placeholder="Subject" name="subject" type="subject"  required="">
     </fieldset>
 	<input type = "hidden" name = "to" value = "jgetitdonefast@gmail.com">
 			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
     <fieldset>
-      <textarea placeholder="Type your Message Here...."for="body" id="body" name="body" required=""></textarea>
+      <textarea placeholder="Type your Message Here...." name="body" required=""></textarea>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
