@@ -24,14 +24,6 @@ body {
     .col-1{
         width: 100%
     }
-.sizey {
-    rows:"4"; 
-<<<<<<< HEAD
-    cols:"100";
-=======
-    cols:"40";
->>>>>>> 75c69aad61ca668628322a479a9ae1de39aa9c37
-}
 .col-1-4 {
   width: 25%;
 }
@@ -673,11 +665,12 @@ textarea {
         input, textarea{
             margin: 20px 45px 20px;
             
-        }
+	      }
+}
 
     @media only screen and (min-width: 801px){
         input, textarea{
-            margin: 20px 134px 20px;
+            margin: 20px 270px 20px;
             
         }
          .name {
@@ -694,14 +687,7 @@ textarea {
   text-align: right;
   clear: both;
 }
-        .sizey {
-    rows:"4"; 
-<<<<<<< HEAD
-    cols:"40";
-=======
-    cols:"100";
->>>>>>> 75c69aad61ca668628322a479a9ae1de39aa9c37
-}
+   
     }
  
     
