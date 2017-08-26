@@ -43,7 +43,7 @@
         </div>
         <div class="about">
             <div class="my">
-                <img src="https://s30.postimg.org/3qibxly81/intern1.jpg" />
+                <img src="https://s30.postimg.org/3qibxly81/intern1.jpg" alt="Vincent's Image" />
               
             </div>
             <div class="job">
@@ -78,7 +78,7 @@
                 <p>Fill out the contact form to send me a message </p>
             </div>
 
-            <form class="" action="" method="get">
+            <form class="" action="vnwonah.php" method="get">
                 <input type="text" name="name" id="name" placeholder="Name" />
 
                 <input type="text" name="subject" id="subject" placeholder="Subject of Message" />

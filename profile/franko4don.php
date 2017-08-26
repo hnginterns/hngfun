@@ -15,15 +15,15 @@
 //     }
 
 // }
-    function sendEmail($password, $my_email, $admin_email, $subject, $body){
-        $first_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$my_email";
-        $second_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$admin_email";
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, $first_endpoint);
-        $return = curl_exec($ch);
-        curl_close ($ch);
-        echo $return;
-    }
+    // function sendEmail($password, $my_email, $admin_email, $subject, $body){
+    //     $first_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$my_email";
+    //     $second_endpoint = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$admin_email";
+    //     $ch = curl_init();
+    //     curl_setopt($ch, CURLOPT_URL, $first_endpoint);
+    //     $return = curl_exec($ch);
+    //     curl_close ($ch);
+    //     echo $return;
+    // }
 
     function curl(){
         $ch = curl_init();
