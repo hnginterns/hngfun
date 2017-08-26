@@ -280,7 +280,7 @@ include('participants-head.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dium0vpfs/image/upload/v1503193755/IMG_20170612_145550_xdjpto.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
             <div class="p-card-info">
-                <a href="http://hng.fun/profile/stanleyokike.html">
+                <a href="http://hng.fun/profile/stanleyokike.php">
                     <!--Profile Link-->
                     <h3 class="p-card-title">Okike stanley</h3>
                     <!--Profile Name-->
@@ -1426,7 +1426,7 @@ include('participants-head.php');
                 <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dium0vpfs/image/upload/v1503193755/IMG_20170612_145550_xdjpto.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
-                        <a href="http://hng.fun/profile/stanleyokike.html">
+                        <a href="http://hng.fun/profile/stanleyokike.php">
                             <!--Profile Link-->
                             <h3 class="p-card-title">Okike stanley</h3>
                             <!--Profile Name-->
@@ -2749,7 +2749,22 @@ include('participants-head.php');
                 </div>
             </div>
 <!--  Each Participants ends here  -->
-
+            <!--  Each Participant starts here  -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url('http://hng.fun/profile/chistel/assets/img/chistel.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/chistel/chistel.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Daniel Ukwu</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">evameet@gmail.com</p>
+                        <!--Email-->
+                    </div>
+                </div>
+            </div>
+<!--  Each Participants ends here  -->
 <!--  Each Participant starts here  -->
             <div class="p-card">
                 <div class="v-center">
