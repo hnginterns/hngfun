@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         </div>
 
         <div class="contact-form">
-        <form action="../sendmail.php" method="GET">
+        <form action="" method="GET">
   
   <div class="form-group">
     <label for="subject">Subject</label>
