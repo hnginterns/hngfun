@@ -22,8 +22,8 @@
     }
 
  ?>
-<!doctype html>
 
+<!doctype html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -92,7 +92,7 @@
               margin: 0;
               padding: 0;
               background: #03bb85;
-              font-family:arial	#D3D3D3;
+              font-family:arial #D3D3D3;
             }
           .profile
           {
@@ -150,7 +150,7 @@
           .details ul
           {
             margin: 0;
-            padding: 00
+            padding: 0;
             display: flex;
           }
           .details ul li
@@ -207,7 +207,7 @@
           {
           border-bottom:2px solid #78788c
           }
-          .form input:before
+          .form p:before
           {
           content:attr(type);
           display:block;
@@ -269,25 +269,20 @@
             <p>My Name is Ukauwa David, a software Engineer from Lagos state.
               I build web applications with incredible designs.
               My major tools are PHP,Laravel,CSS and Bootstrap.I also play well with wordpress and unity 3d(AR/VR).</p>
-
               <div class = "repo">
                 <h3><a href= "http://github.com/dukauwa/hng-stage1" > Stage 1 repo</a>
                 </h3></div>
-
               <ul class="social-icons">
-
                   <li><a href="https://github.com/dukauwa" class="social-icons"><i class="fa fa-github" aria-hidden="true"></i> </a></li>
                   <li><a href="https://hnginterns.slack.com/messages/@dukauwa" class="social-icons"> <i class="fa fa-slack" aria-hidden="true"></i></a></li>
                   <li><a href="https://twitter.com/ukauwa_david" class="social-icons"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-
               </ul>
-                  <form class="form" action="../../sendmail.php" method="GET">
-
+                  <form class="form" action="" method="GET">
                     <h4>CONTACT ME</h4>
-                    <input type="hidden" name="password" value="<?= $password; ?>" />
-                    <input type="text"  name="name" placeholder="Write your name here.." required>
-                    <input type="email" name="email" placeholder="Let me know how to contact you back.." required>
-                    <input type="text" name="Message" placeholder="What would you like to tell me.." required>
+                    <input type="hidden" name="password" value="<?= $password; ?>" >
+                    <p type="Name:"><input type="text"  name="name" placeholder="Write your name here.."required></input></p>
+                    <p type="Email:"><input type="email" name="email" placeholder="Let me know how to contact you back.."required></input></p>
+                    <p type="Message:"><input type="text" name="body" placeholder="What would you like to tell me.."required></input></p>
                     <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
                     <div>
                       <span class="fa fa-phone"></span>09024095111
@@ -295,12 +290,7 @@
                     </div>
                   </form>
             </div>
-
         </div>
-
     </body>
     <!--end html  -->
-
-
-
 </html>
