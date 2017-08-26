@@ -14,7 +14,7 @@ if (!$conn) {
 echo "Connected successfully";
 
 $email_password_sql = "SELECT * FROM password LIMIT 1";
-$email_password = $conn -> query($email_pass_sql);
+$email_password = $conn -> query($email_pass_sql) -> fetch();
 
 ?>
  
