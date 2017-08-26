@@ -22,59 +22,30 @@ body {
 background-color:#FF6800;
 margin-top:10%;
 }
-
 .left {
 width:50%;
 float: left;
 }
-
-p {
-text-align:center
-}
-
 a {
-
 }
-
 h1 {
 font-family:verdana;
-
 }
-
 h3 {font-family:tahoma;}
-
 .right {
 float: right;
-width: 40%;
-margin-right:8%;
+width:40%;
+margin-right:10%;
 }
-
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
-
-a {
-text-decoration: none;
-}
-
-a:link {
-    color: red;
-}
-
-/* visited link */
-a:visited {
-    color: green;
-}
-
-
-
 p {
 width:50%;
 }
-
 textarea {
     width: 100%;
     height: 150px;
@@ -85,11 +56,9 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
 }
-
 img {
     border-radius: 50%;
 }
-
 input[type=button], input[type=submit], input[type=reset] {
     background-color: #4CAF50;
     border: none;
@@ -99,30 +68,31 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
 }
-
 </style>
 </head>
 
 <body>
 
-<div class="left" style="text-align:center;">
+<div class="left">
 
-
-<img  src="http://res.cloudinary.com/dzb4ks1n6/image/upload/v1503723471/14657334_1259677607387062_8116538770825805178_n_i1hcus.jpg"/>
+	
+<center>
+<img  src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-1/p160x160/14657334_1259677607387062_8116538770825805178_n.jpg?oh=fd7eeb04eb8940e886b79c5b6354e74b&oe=5A277060">
 	
 <h1>Idorenyin Obong</h1>
 <h3>Slack Username- @idee</h3>
-<h4>My name is Idorenyin Obong, an Android Developer from Ini LGA, Akwa Ibom State. I am a 400L student of Cross River University of Technology </h4>
-<h2><a href="https://github.com/KingIdee/hng-stage1">Stage 1 project</a></h2>
+<p>My name is Idorenyin Obong, an Android Developer from Ini LGA, Akwa Ibom State. I am a 400L student of Cross River University of Technology </p>
+<h2><a href="https://github.com/KingIdee/hng-stage1">HNG Stage 1 Project</a></h2>
+</center>
 
 </div>
 
 
 <div class="right">
 
+<center>
 
-
-<h3> Contact Idorenyin! </h3>
+<h3> Contact </h3>
 <form action="" method="get">
   
   <input type="text" placeholder="Name" name="name" required>
@@ -138,8 +108,11 @@ Hello Idee! I'll love you to create an android app for me!
 
 </form>
 
+</center>
 
 </div>
+
+
 
 
 
