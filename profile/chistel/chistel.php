@@ -14,12 +14,17 @@ if (isset($_POST['send']))
 	$to = "chistelbrown@yahoo.com";
 	$content = "Hey Chistel you've got a new message from {$email} with subject {$subject}<br/>";
 	$content .= "Message content:{$message}";
+
+	$mailHeader ="From:".$email."\nReply-To:".$name."<".$email.">\n"; 
+	$mailHeader =$mailHeader."X-Mailer:PHP/".phpversion()."\n"; 
+	$mailHeader =$mailHeader."Mime-Version: 1.0\n"; 
+	$mailHeader =$mailHeader."Content-Type: text/html";
 	if(empty($name) OR empty($email) OR empty($subject) OR empty($message))
 	{
 		$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
 	}else{
 
-		if(@mail($to,$subject,$content,"From: $name  <$email>"))
+		if(@mail($to,$subject,$content,$mailHeader))
 		{
 			$return = "<div class='notification is-success'>Message was sent successful</strong></div>";
 		}else{
