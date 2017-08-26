@@ -1,21 +1,90 @@
 body{
-   font-size: 30px;
-   background-color: whitesmoke;
+   font-size: 20px;
+   background-image: url(capture.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   font-family: fantasy;
+   color: white;  
 }
-#container{
-   width: 600px;
+#profile{
+   /*width: 4000px;*/
 }
 b{
    font-family: monospace;
 }
-nav{
+a,header{
+text-transform: capitalize;
+color: white;
+text-align: center;
+}
+li{
+   font-size: 27px;
+}
+h3{
+   text-transform: uppercase;
+}
+button{
+   width: inherit;
+   height: 25px;
+   font-size: 18px;
+}
+li{
+   list-style-type: square;
+   font-size: 24px;
+   /*padding-bottom: 1px;*/
+}
+section{
+   color: whitesmoke;
+   margin: auto;
+}
+#texts{
+   font-family: cursive;
+}
+img{
+   width: 250px;
+}
+.image{
+   float: left;
+   padding-top: 8px;
+}
+.info{
+   margin-left: 30px;
+   padding-left: 300px;
+   padding-bottom: 10px;
+}
+.allinput{
+   width: 300px;
+   height: 30px;
+   font-family: sans-serif;
+   font-size:18px;
+   border-radius:3px;
    display: inline;
 }
-header{
+.message{
+   /*width: 2px;*/
+}
+button{
+   width: 100px;
+   height: 45px;
+   border-radius:4px;
+   text-transform: capitalize;
+}
+th{
    text-align: center;
 }
-a{
-text-decoration: none;
-text-transform: capitalize;
-color: purple;
+label{
+   text-transform: capitalize;
+}
+#comment{
+   font-family: sans-serif;
+   font-size:18px;
+   border-radius:4px;
+   display: inline;
+   height: 100px;
+}
+#table1{
+   float: left;
+}
+#table2{
+   float: right;
 }

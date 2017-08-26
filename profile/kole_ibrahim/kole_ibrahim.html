@@ -2,27 +2,96 @@
 <html>
 <head>
    <title>Kole-Ibrahim AbdulQudus</title>
-   <link rel="stylesheet" type="css" href="kole_ibrahim.css" />
+   <link rel="stylesheet" href="kole_ibrahim.css" />
+   <script type="text/javascript" src="JavaScript.js"></script>
 </head>
 <body>
    <header>
-      <i>Meet Kole!!</i>
+      <h3>Kole-Ibrahim AbdulQudus</h3>
    </header>
-   <center>
-      <div id="container">
-         <div id="theprofileimage">
-            <img src="kole_ibrahim.jpg" width="200" height="250"/>
+   <section id="profile" class="container">
+      <hr />
+      <div class="user-profile">
+         <div class="image">
+            <img src="kole_ibrahim.jpg" alt="user">
          </div>
-         <section id="about">
-            <h4>Kole-Ibrahim AbdulQudus</h4>
-            <summary>
-               19, Developer, Writer and Agriculturist(Farmer). Currently @ Aptech STPL<br />
-               <b><i>PS(current fav quote) : My age doesn't define my intellect and capabilities...</i></b>
-            </summary>
-               Slack : <a href="https://hnginterns.slack.com/team/femi_dd">#Femi-DD</a> ||
-               Results(Stage_1) : <a href="https://github.com/Femi-DD/MyPHP/blob/master/index.php">#Stage1</a>
-         </section>
+         <div class="info">
+            <div>
+               <ul>
+                  <li><strong>Birthday : </strong>02-May-1998</li>
+                  <li><strong>Full name : </strong>Kole-Ibrahim Babafemi AbdulQudus</li>
+                  <li><strong>Bio : </strong>19, Developer, Writer and Agriculturist (Farmer).</li>
+                  <li><string>Education : </string>Advanced Diploma In Software Engineering (ADSE) @ Aptech Software Technology Park.</li>
+                  <li><strong>Hobbies & Interests : </strong>Nature, IoT, Table tennis, Soccer.</li>
+                  <li><strong>Favorite quote : </strong><i>"Age does not define my intellect and capabilities..."</i></li>
+                  <li><strong>Links : </strong>
+                     <a href="https://hnginterns.slack.com/team/femi_dd">View on Slack</a> ,
+                     <a href="https://github.com/Femi-DD/MyPHP/blob/master/index.php">View Github #1 Result</a>
+                  </li>
+                  <li><strong>Telephone : </strong>+234 818 945 6784</li>
+               </ul>
+            </div>
+         </div>
       </div>
-   </center>
+      <hr />
+   </section>
+   <section class="container">
+
+      <form class="message">
+         <table id="table1">
+            <span><th>Connect with Femi</th></span>
+               <div class="formdiv">
+                  <tr>
+                     <td>
+                        <label for="name">Name</label>
+                     </td>
+                     <td>
+                        <input type="text" class="allinput" id="name" placeholder="Your name" required>
+                     </td>
+                  </tr>
+               </div>
+               <div class="formdiv">
+                  <tr>
+                     <td>
+                        <label for="mail">Email</label>
+                     </td>
+                     <td>
+                        <input type="email" class="allinput" id="mail" placeholder="example@example.com" required>
+                     </td>
+                  </tr>
+               </div>
+               <div class="formdiv">
+                  <tr>
+                     <td>
+                        <label for="name">Telephone</label>
+                     </td>
+                     <td>
+                        <input type="tel" class="allinput" id="tel" placeholder="+234 818 945 6784" required>
+                     </td>
+                  </tr>
+               </div>
+         </table>
+         <table id="table2">
+         <th>Message</th>
+            <div class="formdiv">
+               <tr>
+                  <td>
+                     <textarea id="comment" required id="comment" onmouseover="textarea()" onmouseout="textarea()" onkeyup="counter()" onkeydown="counter" maxlength="500" cols="90" rows="15" spellcheck="true" required="true">Enter your comments...</textarea>
+                  </td>
+                  <td>
+                     <span id="count"></span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="formdiv">
+                        <button type="submit" name="submit" onclick="validator()">SEND</button>
+                     </div>
+                  </td>
+               </tr>
+            </div>
+         </table>
+      </form>
+   </section>
 </body>
 </html>
