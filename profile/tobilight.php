@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, ul {
 
 img {
 	max-width: 50%;
-	width: 10%;
+	width: 190px;
 }	
 
 .profile-img {
@@ -288,7 +288,7 @@ fieldset {
 	<main class="profile-page">
 		<div class="container">
 			<div class="profile-img">
-				<img src="http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg" alt="Agunloye Oluwatobiloba Light" style="border-radius: 10px;">
+				<img src="http://res.cloudinary.com/tobilight/image/upload/c_scale,w_250/v1503787308/IMAG0121_1_jhrrvb.jpg" alt="Agunloye Oluwatobiloba Light" style="border-radius: 10px;">
 			</div>
 
 			<section class="profile-content">
@@ -310,7 +310,7 @@ fieldset {
 
 					<div class="about">
 						<h2>About Me</h2>
-						<p>My Name is Agunloye Oluwatobiloba Light. A graduate of Computer Science, North American University, Benin Republic. I have designed/developed quite a number of sites. I code in HTML,CSS, and JS. If am not with my laptop, I am either playing video games, tweeting, meditating, hanging out or sleeping. You can check my portfolio page &gt; <a href="http://tobilite.com.ng/portfolio" style="color: black;">here</a></p>
+						<p>My Name is Agunloye Oluwatobiloba Light. A graduate of Computer Science, North American University, Benin Republic. I have designed/developed quite a number of sites. I code in HTML,CSS, and JS. If i'm not with my laptop, I am either playing video games, tweeting, meditating, hanging out or sleeping. You can check my portfolio page &gt; <a href="http://tobilite.com.ng/portfolio" style="color: black;">here</a></p>
 					</div>
 			</section>
 			<ul class="navbar">

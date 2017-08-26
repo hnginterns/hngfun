@@ -114,6 +114,7 @@
                    }
                    .card-header img{
                      width: 100%;
+                     object-fit: cover;
                    }
                .details
                {
