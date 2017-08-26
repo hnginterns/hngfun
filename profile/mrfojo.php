@@ -158,7 +158,7 @@
   if(isset($_POST['submit'])){
     //console_log($_POST);
     $to = $_POST["toAddress"];
-    $subject = "Hi from Femi @ HNG";
+    $subject = $_POST["name"];
     $message = $_POST["emailMessage"];
     if(isset($to) && isset($message)){
 
