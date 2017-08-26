@@ -310,7 +310,7 @@ fieldset {
 
 					<div class="about">
 						<h2>About Me</h2>
-						<p>My Name is Agunloye Oluwatobiloba Light. A graduate of Computer Science, North American University, Benin Republic. I have designed/developed quite a number of sites. I code in HTML,CSS, and JS. If am not with my laptop, I am either playing video games, tweeting, meditating, hanging out or sleeping. You can check my portfolio page &gt; <a href="http://tobilite.com.ng/portfolio" style="color: black;">here</a></p>
+						<p>My Name is Agunloye Oluwatobiloba Light. A graduate of Computer Science, North American University, Benin Republic. I have designed/developed quite a number of sites. I code in HTML,CSS, and JS. If i'm not with my laptop, I am either playing video games, tweeting, meditating, hanging out or sleeping. You can check my portfolio page &gt; <a href="http://tobilite.com.ng/portfolio" style="color: black;">here</a></p>
 					</div>
 			</section>
 			<ul class="navbar">
