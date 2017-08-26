@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
   $password = $data['password'];
   
   header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$aim_of_sender."&body=".$message_body."&to=".$email_of_sender);
-
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
