@@ -1,6 +1,123 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+/******************/
+ /*                */
+ /*                */
+ /*    Team 3      */
+ /*                */
+ /*                */
+ /******************/
+
+ .p-card-container {
+     display: flex;
+     max-width: 1500px;
+     width: 100%;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+
+ .v-center {
+     display: flex;
+     max-width: 700px;
+     height: 100vh;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .v-center input {
+     padding: 10px;
+     width: 400px;
+ }
+
+ .p-card {
+     width: 366px;
+     border-radius: 4px;
+     background-color: #FFFCFC;
+     border-radius: 5px;
+     border: 3px solid #CADBE0;
+     margin: 10px;
+     padding: 10px;
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     text-align: left;
+     justify-content: flex-start;
+     box-sizing: border-box;
+ }
+
+ .p-card-photo {
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+ }
+
+ .p-card-info {
+     width: 170px;
+     height: 50px;
+     padding-left: 20px;
+     padding-right: 20px;
+ }
+
+ .p-card-info h3 {
+     margin: 0;
+     color: #26A6D1;
+     color: #26A6D1;
+     font-size: 12px;
+     margin-bottom: -10px;
+ }
+
+ .p-card-info a {
+     text-decoration: none;
+ }
+
+ .p-team {
+     justify-content: flex-end;
+ }
+
+ .p-team a {
+     text-decoration: none;
+ }
+
+ .p-team a h3 {
+     font-size: 16px;
+ }
+
+ .p-card-info p {
+     margin: 0;
+     margin-top: 5px;
+ }
+
+ .p-card-title {
+     font-style: normal;
+     font-weight: bold;
+     line-height: normal;
+     font-size: 20px;
+     color: #000;
+ }
+
+ .p-card-description {
+     width: 108px;
+     font-style: normal;
+     font-weight: 300;
+     line-height: normal;
+     font-size: 14px;
+     color: #534C4C;
+ }
+
+ #search {
+     background-image: url('/css/searchicon.png');
+     background-position: 10px 12px;
+     background-repeat: no-repeat;
+     width: 100%;
+     font-size: 16px;
+     padding: 12px 20px 12px 40px;
+     border: 1px solid #ddd;
+     margin-bottom: 12px;
+ }
+
+
+
   /*
   Team 1
    */
@@ -178,243 +295,11 @@ textarea {
 
 
 
-   /******************/
-   /*                */
-   /*                */
-   /*    Team 3      */
-   /*                */
-   /*                */
-   /******************/
-
-   .p-card-container {
-       display: flex;
-       max-width: 1500px;
-       .width: 100%;
-       margin: 0 auto;
-       justify-content: center;
-       align-items: center;
-       flex-wrap: wrap;
-   }
-
-   .v-center {
-       display: flex;
-       max-width: 700px;
-       .height: 100vh;
-       margin: 0 auto;
-       justify-content: center;
-       align-items: center;
-   }
-
-   .v-center input {
-       padding: 10px;
-       width: 400px;
-   }
-
-   .p-card {
-       width: 366px;
-       border-radius: 4px;
-       background-color: #FFFCFC;
-       border-radius: 5px;
-       border: 3px solid #CADBE0;
-       margin: 10px;
-       padding: 10px;
-       display: flex;
-       justify-content: center;
-       flex-direction: row;
-       text-align: left;
-       justify-content: flex-start;
-       box-sizing: border-box;
-   }
-
-   .p-card-photo {
-       width: 60px;
-       height: 60px;
-       border-radius: 50%;
-   }
-
-   .p-card-info {
-       width: 170px;
-       height: 50px;
-       padding-left: 20px;
-       padding-right: 20px;
-   }
-
-   .p-card-info h3 {
-       margin: 0;
-       color: #26A6D1;
-       color: #26A6D1;
-       font-size: 12px;
-       margin-bottom: -10px;
-   }
-
-   .p-card-info a {
-       text-decoration: none;
-   }
-
-   .p-team {
-       justify-content: flex-end;
-   }
-
-   .p-team a {
-       text-decoration: none;
-   }
-
-   .p-team a h3 {
-       font-size: 16px;
-   }
-
-   .p-card-info p {
-       margin: 0;
-       margin-top: 5px;
-   }
-
-   .p-card-title {
-       font-style: normal;
-       font-weight: bold;
-       line-height: normal;
-       font-size: 20px;
-       color: #000;
-   }
-
-   .p-card-description {
-       width: 108px;
-       font-style: normal;
-       font-weight: 300;
-       line-height: normal;
-       font-size: 14px;
-       color: #534C4C;
-   }
-
-   #search {
-       background-image: url('/css/searchicon.png');
-       background-position: 10px 12px;
-       background-repeat: no-repeat;
-       width: 100%;
-       font-size: 16px;
-       padding: 12px 20px 12px 40px;
-       border: 1px solid #ddd;
-       margin-bottom: 12px;
-   }
+  
    /* Project Page CSS by Team 4
 =======
 <<<<<<< HEAD
- /******************/
- /*                */
- /*                */
- /*    Team 3      */
- /*                */
- /*                */
- /******************/
-
- .p-card-container {
-     display: flex;
-     max-width: 1500px;
-     width: 100%;
-     margin: 0 auto;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
- }
-
- .v-center {
-     display: flex;
-     max-width: 700px;
-     height: 100vh;
-     margin: 0 auto;
-     justify-content: center;
-     align-items: center;
- }
-
- .v-center input {
-     padding: 10px;
-     width: 400px;
- }
-
- .p-card {
-     width: 366px;
-     border-radius: 4px;
-     background-color: #FFFCFC;
-     border-radius: 5px;
-     border: 3px solid #CADBE0;
-     margin: 10px;
-     padding: 10px;
-     display: flex;
-     justify-content: center;
-     flex-direction: row;
-     text-align: left;
-     justify-content: flex-start;
-     box-sizing: border-box;
- }
-
- .p-card-photo {
-     width: 60px;
-     height: 60px;
-     border-radius: 50%;
- }
-
- .p-card-info {
-     width: 170px;
-     height: 50px;
-     padding-left: 20px;
-     padding-right: 20px;
- }
-
- .p-card-info h3 {
-     margin: 0;
-     color: #26A6D1;
-     color: #26A6D1;
-     font-size: 12px;
-     margin-bottom: -10px;
- }
-
- .p-card-info a {
-     text-decoration: none;
- }
-
- .p-team {
-     justify-content: flex-end;
- }
-
- .p-team a {
-     text-decoration: none;
- }
-
- .p-team a h3 {
-     font-size: 16px;
- }
-
- .p-card-info p {
-     margin: 0;
-     margin-top: 5px;
- }
-
- .p-card-title {
-     font-style: normal;
-     font-weight: bold;
-     line-height: normal;
-     font-size: 20px;
-     color: #000;
- }
-
- .p-card-description {
-     width: 108px;
-     font-style: normal;
-     font-weight: 300;
-     line-height: normal;
-     font-size: 14px;
-     color: #534C4C;
- }
-
- #search {
-     background-image: url('/css/searchicon.png');
-     background-position: 10px 12px;
-     background-repeat: no-repeat;
-     width: 100%;
-     font-size: 16px;
-     padding: 12px 20px 12px 40px;
-     border: 1px solid #ddd;
-     margin-bottom: 12px;
- }
+ 
 
  /* Project Page CSS by Team 4
 ===============================*/
@@ -1722,7 +1607,7 @@ justify-content: space-between;
                                  margin-right: 0;
                                }
 
-                               =======.footer-distributed {
+                               .footer-distributed {
                                  background-color: #424242;
                                  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
                                  box-sizing: border-box;
@@ -1752,8 +1637,8 @@ justify-content: space-between;
                                  color: #ffffff;
                                }
                                /* Footer Center */
-=======
->>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
+
+ 
 
 .team4-card-info a {
 text-decoration: none;
@@ -1915,7 +1800,7 @@ h4.project-description {
    margin-bottom: 50px;
 }
 @media (max-width: 768px) {
-<<<<<<< HEAD
+
  .team-members {
      width: 100% !important;
      float: left;
@@ -1926,7 +1811,7 @@ h4.project-description {
      text-align: left;
      margin: 20px 0px;
  }
-=======
+
    .team-members {
        width: 100% !important;
        float: left;
@@ -1937,7 +1822,7 @@ h4.project-description {
        text-align: left;
        margin: 20px 0px;
    }
->>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
+
 }
 /* Three columns side by side edited by @godfredakpan under Team 5 */
 .column {
@@ -2368,7 +2253,7 @@ h6 {
 }
 /* handling phones and small screens */
 @media only screen and (max-width: 1024px) {
-<<<<<<< HEAD
+
  .featherlight-next,
  .featherlight-previous {
      top: 10px;
@@ -2386,7 +2271,7 @@ h6 {
      margin-top: -30px;
      font-size: 40px;
  }
-=======
+
    .featherlight-next,
    .featherlight-previous {
        top: 10px;
@@ -2404,7 +2289,7 @@ h6 {
        margin-top: -30px;
        font-size: 40px;
    }
->>>>>>> 06395eba80930f38ee2f82f771b5f48e922cbc3b
+
 }
 /*------------------------------------------------------------------------------------------*/
 /* 7. Footer */
@@ -3673,7 +3558,7 @@ padding-top: 45px !important;
                         justify-content: flex-end;
                     }
                     
-                    <<<<<<< HEAD #wrapper {
+                    HEAD #wrapper {
                         margin: 0 0;
                         padding: 0 0;
                         position: relative;
@@ -3683,7 +3568,7 @@ padding-top: 45px !important;
                         outline: none;
                     }
                     
-                    =======.p-team a {
+                   .p-team a {
                         text-decoration: none;
                     }
                     
@@ -3696,7 +3581,7 @@ padding-top: 45px !important;
                         margin-top: 5px;
                     }
                     
-                    >>>>>>>971bf31092894dc00997122bb31e6a6ea3acb029 .p-card-title {
+                    .p-card-title {
                         font-style: normal;
                         font-weight: bold;
                         line-height: normal;
@@ -3732,7 +3617,7 @@ padding-top: 45px !important;
                   /*    Team 3      */
                   /*                */
                   /*                */
-                  /******************/
+                  /***************** */
                   
                   .p-card-container {
                       display: flex;
@@ -3849,6 +3734,7 @@ padding-top: 45px !important;
 <<<<<<< HEAD
                   
                   body {
+                      
                       font-family: Avgarddo, sans-serif;
                       font-size: 16px;
                       font-weight: normal;
@@ -19376,21 +19262,17 @@ table {
     
 }
 */
-<<<<<<< HEAD
+
                                         #header-content.row {
                                             padding-top: 170px;
                                             padding-bottom: 100px;
                                             background-image: url(images\banner-images\banner-image-1.jpg);
                                         }
-=======
+
                                   #header-content.row {
                                       padding-top: 170px;
                                       padding-bottom: 100px;
                                       background-image: url(images\banner-images\banner-image-1.jpg);
                                   }
                                   /* Library Page CSS by Team 10 ends */
-<<<<<<< HEAD
->>>>>>> 5cb70f8d4215f64d7ce7ef3f3f2ecf26d85b979d
-=======
->>>>>>> 6f0a166b7af3c1d2a6677f8e8fbca2bea1b2ff54
->>>>>>> 7e2894d8dde28c86f19cd0c6e7174fabe99b12e5
+

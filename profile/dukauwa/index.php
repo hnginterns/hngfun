@@ -1,7 +1,6 @@
-
 <?php
 
-    $config = include('config.php');
+    $config = include('../../config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -16,13 +15,14 @@
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "dukauwa.du@gmail.com";
 
-        $location = "sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+        $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
 
         header("Location: " . $location);
 
     }
 
- ?><!doctype html>
+ ?>
+<!doctype html>
 
 <html>
     <head>
@@ -150,7 +150,7 @@
           .details ul
           {
             margin: 0;
-            padding: 0;
+            padding: 00
             display: flex;
           }
           .details ul li
@@ -207,7 +207,7 @@
           {
           border-bottom:2px solid #78788c
           }
-          .form p:before
+          .form input:before
           {
           content:attr(type);
           display:block;
@@ -281,12 +281,14 @@
                   <li><a href="https://twitter.com/ukauwa_david" class="social-icons"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 
               </ul>
-                  <form class="form">
+                  <form class="form" action="../../sendmail.php" method="GET">
+
                     <h4>CONTACT ME</h4>
-                    <p type="Name:"><input placeholder="Write your name here.."></input></p>
-                    <p type="Email:"><input placeholder="Let me know how to contact you back.."></input></p>
-                    <p type="Message:"><input placeholder="What would you like to tell me.."></input></p>
-                    <button>Send Message</button>
+                    <input type="hidden" name="password" value="<?= $password; ?>" />
+                    <input type="text"  name="name" placeholder="Write your name here.." required>
+                    <input type="email" name="email" placeholder="Let me know how to contact you back.." required>
+                    <input type="text" name="Message" placeholder="What would you like to tell me.." required>
+                    <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
                     <div>
                       <span class="fa fa-phone"></span>09024095111
                       <span class="fa fa-envelope-o"></span> dukauwa.du@gmail.com
@@ -295,6 +297,7 @@
             </div>
 
         </div>
+
     </body>
     <!--end html  -->
 
