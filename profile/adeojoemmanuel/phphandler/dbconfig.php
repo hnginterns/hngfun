@@ -1,7 +1,7 @@
 <?php 
 class connect{
     public function __construct(){
-        $dbconfig = require_once __DIR__ . '\serverconfig.php';
+        $dbconfig = require_once __DIR__ . '/serverconfig.php';
         $this->dbhost = $dbconfig['host'];
         $this->dbuser = $dbconfig['username'];
         $this->dbpass = $dbconfig['pass'];
@@ -16,8 +16,7 @@ class connect{
     public function startConn(){
         $this->DBcon = null;
         try{
-            $dsn = 'mysql:host='.$this->dbhost.';dbname='.$this->dbname;
-            $this->DBcon = new PDO($dsn, $this->dbuser, $this->dbpass);
+            $this->DBcon = new PDO("mysql:host=".$this->dbhost.";dbname=".$this->dbname, $this->dbuser, $this->dbpass);
         }catch(Exception $e){
             echo "error connecting:";
         }

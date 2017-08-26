@@ -1,9 +1,9 @@
 <?php
-function load($class){
-	require  $class .".php";
-}
+// function load($class){
+	require  'IOhander.php';
+// }
 
-load('IOhander');
+// load('IOhander');
 $IO = new IOhandler;
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
