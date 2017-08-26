@@ -3,72 +3,81 @@
     <head>
         <meta charset="UTF-8">
         <title>Profile|Jeni</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
-        <style>
-            body{
-    width:auto;
-    height:auto;
-    background-color:#DFECF6;
-    text-align:center;
-    font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
-}
-h1{
-    color:#20bcd5;
-    text-align:center;
-    padding: 1% 0.5%;
-    margin:auto;
-    position: relative;
-
-}
-h1 span{
-    border: 7px dashed #20bcd5;
-    padding: 7px;
-}
-.img{
-    position: relative;
-    top:50px;
-    
-}
-h2 {
-    text-align:center;
-    font-size:30px;
-    position: relative;
-    top: 80px;
-}
-article{
-    position: relative;
-    top: 90px;
-}
-section p i a:hover{
-    color:#02F6F9;
-    background: #B0E0E6;
-    opacity:0.7;
-}
-a {
-    text-decoration: none;
-}
-
-
-        </style>
         <header>
             <h1><span>Jeni's Profile</span></h1>
         </header>
-        <p>
-        <img src ="http://i.imgur.com/LdQpWp2.jpg" height="500px" width="400px" border="1px" alt= "A PICTURE OF  ME" class='img'/></p>
+        <img src ="http://i.imgur.com/LdQpWp2.jpg" height="600" width="500" alt= "A PICTURE OF  ME" class='img'/>
 
         <h2>OLIBIE JENNIFER CHIDERA</h2>
         <article><!-- a short article about me-->
+            <h3>About Me</h3>
             <p>I am a 400 level student in department of Electronic and Computer Engineering <br>
             at Nnamdi Azikiwe University, Awka, Nigeria.<br>
             Love programming, still learning though.
             Believe in being the <strong>'Best of Me'</strong></p>
-            <section><!-- a section of the artcle that gives my username-->
-                <p>Slack username: Jeni<br>
-                    Github username: Je-ni</p>
-                <p>Click on <i><a href= https://github.com/Je-ni/newrepo.git> ME</a></i> for the stage 1 task.
-            </section>
-        </article>
+            <!-- a section of the artcle that gives my username-->
+            <p>Slack username: Jeni<br>
+                Github username: Je-ni</p>
+            <p>Click on <i><a href= https://github.com/Je-ni/newrepo.git> ME</a></i> for the stage 1 task.</p>
+            <aside>
+                
+            </aside>
+        </article><br><br>
+
+        <!--Modal -->
+        <div id="id01" class="modal">
+            <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+
+            <!--Modal Content-->
+            <form autocomplete="off" class="modal-content animate" action="contact.php" method="POST">
+                <div class="container">
+                    
+                    <input type="text" class="input" name="fullname" placeholder="YourName" >                
+                   
+                    <input type="text" class="input" name="subject" placeholder="Subject*" required>
+                    
+                    <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
+
+                    <button type="submit">Send</button> 
+                    <button type="submit"
+                    onclick="document.getElementById('id01').style.
+                    display='none'" class="cancelbtn">Cancel</button>
+                </div>
+
+            </form>
+        </div>
+
+        <script>
+            //Get the modal
+            var modal = document.getElementById('id01');
+
+            //close modal when user clicks anywhere outside modal
+            windows.onclick = function(event){
+                if (event.target !== modal){
+                    modal.style.display ='none';
+                }
+            }
+        </script>
+        
+        <footer>
+            
+            <!-- Add font awesome icons -->
+            <p>
+                <a href="http://facebook.com/JenniOCE" class="fa fa-facebook"></a>
+                <a href="http://instagram.com/Jenn_0c" class="fa fa-instagram"></a>
+                <!--button to open modal contact form-->
+                <button type='submit'
+                onclick="document.getElementById('id01').style.display='block'">Contact Me</button>
+            </p>
+           
+        </footer>
     </body>
 </html>

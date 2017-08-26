@@ -6,11 +6,11 @@ function load($class){
 load('IOhander');
 $IO = new IOhandler;
 
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
-	$subject = mysql_escape_string($_POST['subject']);
-	$email = mysql_escape_string($_POST['email']);
-	$phone = mysql_escape_string($_POST['phone']);
-	$message = mysql_escape_string($_POST['message']);
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+	$subject = htmlspecialchars_decode(trim($_POST['subject']));
+	$email = htmlspecialchars_decode(trim($_POST['email']));
+	$phone = htmlspecialchars_decode(trim($_POST['phone']));
+	$message = htmlspecialchars_decode(trim($_POST['message']));
 	$to = "emmanuel.adeojo@yahoo.com";
 	
 	$fields = array('subject', 'email', 'phone', 'message');
@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		}	
 
 		$url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
-		header("location: ".$url);
+		header("location:".$url);
 	}
 
 	
