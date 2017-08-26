@@ -4,7 +4,7 @@
 		    $error = [];
 		    $subject = $_POST['subject'];
 		    $to  = 'slpepple01@gmail.com';
-		    $body = $_POST['message'];
+		    $body = $_POST['body'];
 		    
 		    if($body == '' || $body == ' ') {
 		      $error[] = 'Message cannot be empty.';
@@ -105,7 +105,7 @@
 			 </div>
 			 <div class="modal-body">
 			 	
-				<form action="<?$_SERVER['PHP_SELF'];?>" method="post">
+				<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
 					<br>
 					<div class="form-group">
 						<label for="subject" style="float: left;">Subject: </label>
