@@ -1,37 +1,15 @@
 <?php
-if(isset($_POST['submit'])) {
-    $error = [];
-
-    $subject = $_POST['subject'];
-    $to  = 'jgetitdonefast@gmail.com';
-    $body = $_POST['body'];
-
-    if($body == '' || $body == ' ') {
-        $error[] = 'Message cannot be empty.';
-    }
-
-
-    if($subject == '' || $subject == ' ') {
-        $error[] = 'Subject cannot be empty.';
-    }
-
-    if(empty($error)) {
-
-        $config = include __DIR__ . "/../config.php";
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-
-        $uri = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-
-        header("location: $uri");
-
-    }
-}
-?>
+	$servername = "localhost";
+	$username = "intern";
+	$password = "@hng.intern1";
+	$dbname = "hng";
+	
+	$conn = new mysqli($servername, $username, $password, $dbname);
+    mysqli_select_db($conn, 'password');
+    $query = "SELECT * FROM password LIMIT 1";
+    $result = mysqli_query($conn, $query);
+		
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -345,7 +323,8 @@ fieldset {
 			<hr />
 			 <!-- start contact form -->
 		
-  <form id="contact" action="http://hng.fun/sendmail.php" method="GET">
+    
+    <form id="contact" action="sendmail.php" method="GET">
     <h3>Quick Contact</h3>
     <h4>Contact me today, and get a reply within 24 hours!</h4>
     <fieldset>
@@ -357,6 +336,8 @@ fieldset {
     <fieldset>
       <input placeholder="Subject" for="subject" id="subject" name="subject" type="subject"  required="">
     </fieldset>
+	<input type = "hidden" name = "to" value = "jgetitdonefast@gmail.com">
+			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
     <fieldset>
       <textarea placeholder="Type your Message Here...."for="body" id="body" name="body" required=""></textarea>
     </fieldset>
