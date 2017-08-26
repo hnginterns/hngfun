@@ -1,6 +1,6 @@
 .top{
     width:100%;
-    background-color: black;
+    background-image:url("back3.jpg");
     height:120px;
     display: flex;
 }
@@ -11,6 +11,7 @@
     border-radius:50%;
     margin-top: 40px;
     background-image: url("image.jpg");
+    align-content: center;
 }
 .name{
     text-align: center;

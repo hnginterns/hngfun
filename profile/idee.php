@@ -13,7 +13,7 @@
         }
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
         <title>Idorenyin Obong</title>
@@ -108,7 +108,7 @@ input[type=button], input[type=submit], input[type=reset] {
 <div class="left" style="text-align:center;">
 
 
-<img  src="http://res.cloudinary.com/dzb4ks1n6/image/upload/v1503723471/14657334_1259677607387062_8116538770825805178_n_i1hcus.jpg"/>
+<img  alt ="profile picture" src="http://res.cloudinary.com/dzb4ks1n6/image/upload/v1503723471/14657334_1259677607387062_8116538770825805178_n_i1hcus.jpg"/>
 	
 <h1>Idorenyin Obong</h1>
 <h3>Slack Username- @idee</h3>
@@ -123,18 +123,18 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 <h3> Contact Idorenyin! </h3>
-<form action="" method="get">
+<form method="get">
   
   <input type="text" placeholder="Name" name="name" required>
   <input type="text" placeholder="Email Subject" name="subject" required>
  
 
-<textarea name="message" placeholder="Message" required="" >
-Hello Idee! I'll love you to create an android app for me!
+<textarea name="message" placeholder="Message" required cols="4" rows="4" >
+
 </textarea>
 
 
-<input type="submit" value="submit" name="send" style="width:100%;"><br>
+<input type="submit" value="submit" name="send" style="width:100%;" >
 
 </form>
 
@@ -147,4 +147,4 @@ Hello Idee! I'll love you to create an android app for me!
 
 
 
-</html
+</html>
