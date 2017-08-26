@@ -47,8 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
 
         if (empty($error)) {
             $message = urlencode($message);
-            $url = "location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
-            header("location: $url");
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
         }
     }
 }
