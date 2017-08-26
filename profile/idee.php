@@ -1,5 +1,6 @@
+<!DOCTYPE html>
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if($_SERVER['REQUEST_METHOD'] == 'post') {
     $error = [];
     $subject = $_POST['subject'];
     $to  = 'idee4ril@gmail.com';
@@ -23,7 +24,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
         <title>Idorenyin Obong</title>
@@ -133,7 +133,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 <h3> Contact Idorenyin! </h3>
-<form action="idee.php" method="post">
+<form method="post">
   
   <input type="text" placeholder="Email Subject" name="subject" required>
  
