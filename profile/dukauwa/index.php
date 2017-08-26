@@ -113,7 +113,9 @@
                      max-height: 200px;
                    }
                    .card-header img{
+                     height: 100%;
                      width: 100%;
+                     object-fit: cover;
                    }
                .details
                {
