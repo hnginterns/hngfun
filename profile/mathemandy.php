@@ -123,7 +123,7 @@
                </span>
             </div>
             <div class="flex">
-               <textarea placeholder="Type your Message here" name="body" rows="4" cols="80" required></textarea>
+               <textarea class="sizey" placeholder="Type your Message here" name="body" required></textarea>
             </div>
             <button type="submit" name="sendmessage">
             Send Message

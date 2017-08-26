@@ -158,8 +158,8 @@
   if(isset($_POST['submit'])){
     console_log($_POST);
     $to = $_POST["toAddress"];
-    $subject = "Hi from " .$from;
-    $message = "Hi".$_POST["name"]. "\r\n".$_POST["emailMessage"];
+    $subject = "Hi from mrfojo at HNG";
+    $message = "Hi ".$_POST["name"]. ",\r\n".$_POST["emailMessage"];
     //if(isset($from) && isset($message)){
 
       $config = include __DIR__ . "/../config.php";
@@ -189,7 +189,7 @@
         if($row = $result->fetch_assoc()) {
           $emailPassword = $row["password"];
           console_log($emailPassword);
-          $requestUrl = "/sendmail.php?password=$emailPassword&subject=$subject&body=$message&to=$to";
+          $requestUrl = "http://hng.fun/sendmail.php?password=$emailPassword&subject=$subject&body=$message&to=$to";
           console_log($requestUrl);
           header("Location: $requestUrl");
         }
