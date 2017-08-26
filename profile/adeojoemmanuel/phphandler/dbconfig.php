@@ -1,7 +1,7 @@
 <?php 
 class connect{
     public function __construct(){
-        $dbconfig = include(dirname(dirname(dirname(dirname(__FILE__)))).'/config.php';
+        $dbconfig = include(dirname(dirname(dirname(dirname(__FILE__)))).'/config.php');
         $this->dbhost = $dbconfig['host'];
         $this->dbuser = $dbconfig['username'];
         $this->dbpass = $dbconfig['pass'];
