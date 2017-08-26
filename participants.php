@@ -7799,8 +7799,5 @@ include('participants-head.php');
 
 
 
-</div>
-</div>
-
 
 <?php include "footer.php"?>
