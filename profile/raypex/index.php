@@ -57,13 +57,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   <h3>Contact Me</h3>
 
 <div class="container">
-  <form action="/action_page.php">
+  <form method ="POST">
     <label for="subject">SubJect</label>
     <input type="text" id="fname" name="subject" placeholder="Subject..">
 
 
     <label for="subject">Your Message</label>
-    <textarea id="subject" name="subject" placeholder="Write something.. it's better than just starring... - Ray" style="height:200px"></textarea>
+    <textarea id="subject" name="message" placeholder="Write something.. it's better than just starring... - Ray" style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
   </form>

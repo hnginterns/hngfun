@@ -1,17 +1,27 @@
-img{
-	width: 400px;
-	height: 600px;
-	float: left;
-	border-radius: 15px;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-p{
+img{
+	float: left;
+	border-radius: 15px;
+	
+	padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.paragraph{
 	float: right;
 	margin-top: 150px;
 	font-size: 30px;
 	font-weight: bold;
 	line-height: 60px;
-	margin-right: 50px;
+	margin-right: 70px;
 }
 
 body{
@@ -25,3 +35,52 @@ a{
 .bio{
 	color: #5B2C6F;
 }
+
+form{
+	margin:0 auto;
+    width:459px;
+	float: left;
+	margin-top: 100px;
+}
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+	-moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+textarea {
+	height:213px;
+	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+input:focus, textarea:focus {
+    border:5px solid #97d6eb;
+}
+
+#submit {
+    width:127px;
+    height:38px;
+    background-color: white;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+	#submit:hover {
+	    opacity:.9;
+	}

@@ -18,6 +18,7 @@
 			display: block;
 			max-width: 300px; 
 			max-height: 300px;
+			border-radius: 50px;
 		}
 		.icons{
 			margin-top: 10px;
@@ -54,6 +55,25 @@
 			display: none;
 
 		}
+		#button {
+			  margin-top:15px;
+			  margin-bottom:25px;
+			  background-color:#2ABCA7;
+			  padding: 12px 45px;
+			  -ms-border-radius: 5px;
+			  -o-border-radius: 5px;
+			  border-radius: 5px;
+			  border: 1px solid #2ABCA7;
+			  -webkit-transition: .5s;
+			  transition: .5s;
+			  display: inline-block;
+			  cursor: pointer;
+			  width:60%;
+			  color:#fff;
+			}
+			.button:hover {
+			  background:#19a08c;
+			}
 	</style>
 </head>
 <body>
@@ -73,16 +93,17 @@
 		<div class="contact">
 			<h3>Shoot me a Mail</h3>
 			<h5 id="msg">Your Message has been sent!</h5>
-			<form class="form" name="contactform" method="GET" action="http://hng.fun/sendmail.php">
-				<input type="text" name="first_name" placeholder="first name" required>
-				<input type="text" name="last_name" placeholder="lastname" required>
+			<form class="form" name="contactform" method="GET" action="princekayc.php">
+				<input type="text" name="name" placeholder="Full name" required>
 				<input type="email" name="email" placeholder="Enter email" required>
-				<input type="text" name="telephone" placeholder="Phone No" required>
+				<input type="text" name="subject" placeholder="Subject" required>
 				<textarea type="text" name="comments" rows="4" cols="19" max-length="200" style="margin-top: 5px"></textarea>
 				<br>
-				<input type="submit" name="" value="Shoot!">
+				<input type="submit" name="" value="Shoot!" id="button">
 			</form>
 		</div>
 	</div>
 </body>
+
+
 </html>
