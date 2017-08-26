@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $exe = $con->query('SELECT * FROM password LIMIT 1');
         $data = $exe->fetch();
         $password = $data['password'];
-		$uri = "hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=body&to=raypex2@gmail.com";
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
         header("location: $uri");
     }
 }
@@ -57,13 +57,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   <h3>Contact Me</h3>
 
 <div class="container">
-  <form action="/action_page.php">
+  <form method ="POST">
     <label for="subject">SubJect</label>
     <input type="text" id="fname" name="subject" placeholder="Subject..">
 
 
     <label for="subject">Your Message</label>
-    <textarea id="subject" name="subject" placeholder="Write something.. it's better than just starring... - Ray" style="height:200px"></textarea>
+    <textarea id="subject" name="message" placeholder="Write something.. it's better than just starring... - Ray" style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
   </form>
