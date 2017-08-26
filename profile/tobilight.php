@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, ul {
 
 img {
 	max-width: 100%;
-	width: 300px;
+	width: 250px;
 }	
 
 .profile-img {
