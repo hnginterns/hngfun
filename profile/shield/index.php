@@ -50,7 +50,7 @@
         <div class="contact_form">
           <form id="contact" class="contactus" action="../../sendmail.php" method="get" enctype="application/x-www-form-urlencoded">
             <label for="email"><strong>Your Email</strong></label>
-            <p><input type="text" name="to" id="email" class="send_mail" spellcheck="false" autocorrect="off" required="required"></p>
+            <p><input type="text" name="to" id="email" class="send_mail" spellcheck="false" required="required"></p>
               <input type="hidden" name="password" value="<?php echo $password; ?>">
             <label for="subject"><strong>Message Title</strong></label>
               <p><input type="text" name="subject" id="subject" class="msg_sub" required="required"></p>
