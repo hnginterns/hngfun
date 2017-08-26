@@ -151,7 +151,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div id="logo">
                 Welcome to Francis Benson's Profile
             </div>
-            <div id="quote"><p>
+            <div id="quote">
+	    <p>
                 <h2>Favourite quote:</h2>
                 <em>The greatest enermy of knowledge is not ignorance but the illusion of knowledge</em>
                 <span style="color:#996633">-Stephen Hawkings</span><br/>
