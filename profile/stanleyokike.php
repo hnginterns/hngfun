@@ -11,9 +11,7 @@
       $data = $exe->fetch();
       $password = $data['password'];
             header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-        }else{
-        header("location: stanleyokike.php");
-    }
+        }
 ?>
 
 <!DOCTYPE html>
