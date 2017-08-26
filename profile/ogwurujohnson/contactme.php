@@ -20,7 +20,7 @@ $password = $result["password"];
 
 $error = [];
 if($_SERVER["REQUEST_METHOD"] == "GET") {
-    if (isset($_GET['submit'])) {
+     if(isset($_GET["name"]) && isset($_GET["message"])){
         $to = "ogwurujohnson@gmail.com";
         $name = $_GET["name"];
         $message = $_GET["message"];
