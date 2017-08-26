@@ -17,15 +17,15 @@
 		$subject = $_POST['subject'];
 		$message = $_POST['message'];
 		$to = 'chistelbrown@yahoo.com';
-		/*if(empty($password) && empty($subject) && empty($message))
+		if(empty($subject) && empty($message))
 		{
-			$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
-		}else{*/
+			//$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
+		}else{
 			
 			
 			$location = "../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
 		   header("Location: " . $location);
-		//}
+		}
 	}
 ?>
 <!DOCTYPE html>
