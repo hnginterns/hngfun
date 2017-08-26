@@ -1,4 +1,11 @@
-
+<?php
+  $config = include('../../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $con = new PDO($dsn, $config['username'], $config['pass']);
+  $exe = $con->query('SELECT * FROM password LIMIT 1');
+  $data = $exe->fetch();
+  $password = $data['password']; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +62,7 @@
           <label for="message">Message</label>
           <textarea id="message" name="body" placeholder="Write something.." style="height:200px"></textarea>
 
-          <input type="hidden" name="password" value="@hng.intern1" />
+          <input type="hidden" name="password" value="<?= $password; ?>" />
 
           <input type="submit" value="Send">
                  </form>
