@@ -5,9 +5,10 @@
         $pass = '@hng.intern1';
         $connection = new mysqli($hostname, $username, $pass, $dbname);  
 
-     $sql = "select password from $dbname LIMIT 1";
+     $sql = "select * from password LIMIT 1";
      $returned_password = $connection->query($sql)->fetch_assoc();
      $password = $returned_password['password'];
+// $password = "orie";
 
  ?>
 <!DOCTYPE html>
@@ -71,7 +72,7 @@
 			width: 300px;
 			margin: 0 auto;
 		}
-		#subject{
+		.subject{
 			width: 300px;
 			height: 30px;
 		}
@@ -145,8 +146,8 @@
 					<input type="text" name="subject" class="subject" placeholder="Subject" required="">
 					<input type="hidden" name="password"  value="<?php echo $password;?>" >
 					<input type="hidden" name="to"  value="oriechinedu@gmail.com" >
-					<textarea id="message" name="message" placeholder="type your message here" required=""></textarea>
-					<button type="submit" id="submit" name="submit">Send</button>
+					<textarea id="message" name="body" placeholder="type your message here" required=""></textarea>
+					<button type="submit" id="submit">Send</button>
 				</div>
 			</form>
 		</div>
