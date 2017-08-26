@@ -1,28 +1,31 @@
 <?php
-    if($_POST['processing']){
-        if(!(isset($_POST['subject']) && isset($_POST['body']))){
+    if(isset($_POST['processing']) && $_POST['processing'] == true){
+        echo 'here';
+        if((empty($_POST['subject']) || empty($_POST['body']))){
             exit;
         }
         $subject = $_POST['subject'];
         $body = $_POST['body'];
-        $config = require('./config.php');
+        $config = require($_SERVER['DOCUMENT_ROOT'] . '/config.php');
         $host = $config['host'];
         $dbname = $config['dbname'];
         // Get Password from database
-        $db = new PDO("mysql:host=$host;dbname=$dbname", $config['user'], $config['pass']);
-        $query = $db->prepare('SELECT * from passwords');
-        $query->execute();
-        $passwords = $query->fetchAll(PDO::ATTR_DEFAULT_FETCH_MODE);
-        foreach($passwords as $record);
-        $password = $record['password'];
-        echo $password;
-        exit;
-        header("Location: hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
+        try{
+            $db = new PDO("mysql:host=$host;dbname=$dbname", $config['username'], $config['pass']);
+        } catch (PDOException $e){
+            echo "Connection error";
+        }
+        
+        
+        $query = $db->query('SELECT * from password LIMIT 1');
+        $data = $query->fetch();
+        $password = $data['password'];
+        header("Location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=ksagoe@gmail.com");
         
     }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Kay Sagoe</title>
         <style type="text/css">
@@ -45,7 +48,7 @@
 
             h1 {
                 text-align: center;
-                color: #ADEFFF;
+                color: #22313F;
                 font-size: 58px;
             }
 
@@ -56,13 +59,13 @@
             }
 
             p {
-                color: #57777F;
+                color: #2C3E50;
                 line-height: 1.3;
                 
             }
 
             h2 {
-                color: #57777F;
+                color: #2C3E50;
             }
 
             input[type=submit] {
@@ -80,6 +83,13 @@
 
             }
 
+            label {
+                display: block;
+                color: #34495E;
+                margin-left: 10%;
+
+            }
+
             .textbox{
                 -moz-box-sizing: padding-box;
                 -webkit-box-sizing: padding-box;
@@ -91,7 +101,7 @@
                 margin-right: 10%;
                 font-size: 16px;
                 font-family: Apple, monospace;
-                color:#57777F;
+                color:#2C3E50;
                 padding-left: 10px;
                 padding-right: 10px;
             }
@@ -109,14 +119,15 @@
             .profile {
                 margin: auto;
                 border-radius: 50%;
-  
+                width: 300px;
+                height: 300px;
             }
 
             .slack_box {
                 text-align: left ;
                 float: left;
                 width: 50%;
-                color: #C8CBCC;
+                color: #2C3E50;
                 
             }
 
@@ -124,7 +135,7 @@
                 text-align: right;
                 float: left;
                 width: 50%;
-                color: #C8CBCC;
+                color: #2C3E50;
             }
 
             .contact {
@@ -140,10 +151,13 @@
             }
 
             .body {
-                margin-top: 10px;
                 height: 300px;
                 resize: none;
                 line-height: 1.3;
+            }
+
+            .body-label {
+                margin-top: 10px;
             }
 
         </style>
@@ -163,14 +177,16 @@
                     </div>
                     <div class="contact">
                         <h2>Contact Me</h2>
-                        <form action="./profile/kay_s.php" method="post">
+                        <form action="./kay_s.php" method="post">
                             <input type="hidden" name="processing" value=true />
-                            <input type="text" class="textbox subject" name="subject" placeholder="Subject" /> 
-                            <textarea class="textbox body" name="body" placeholder="Message"></textarea>
+                            <label for="subject">Subject</label>
+                            <input type="text" class="textbox subject" name="subject" id="subject" /> 
+                            <label for="body" class="body-label">Message</label>
+                            <textarea class="textbox body" name="body" id="body"></textarea>
                             <input type="submit" value="Send" />
-                            <? if($processing) : ?>
+                            <?php if(isset($_POST['processing'])) : ?>
                                 <p>The Subject or Body field has not been entered</p>
-                            <? endif; ?>
+                            <?php endif; ?>
                         </form>
                     </div>
                     

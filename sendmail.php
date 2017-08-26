@@ -6,7 +6,7 @@
    * Loads the config file config.php containing the databse details
    *
    */
-  $admin_email = 'abodunrin5@gmail.com';
+  $admin_email = 'xyluz@ymail.com';
   $config = include('config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
@@ -58,7 +58,7 @@
        *
        */
       if($sent_password != $password)
-        $error[] = 'Invalid password sent';
+        $error[] = 'You have sent an invalid password, please try again.';
 
       if(!empty($error)) {
         /**
@@ -85,14 +85,14 @@
         $mail->isHTML();
         $mail->Username = "hng@jointhands.net";
         $mail->Password = 'QwertyUiop10/';
-        $mail->SetFrom('hng@jointhands.net');
         $mail->Subject = $subject;
         $mail->Body = $message;
+        $mail->SetFrom('hng@jointhands.net');
         $mail->AddAddress($to);
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
-           $error[] = 'Email Sending failed';
+           $error[] = 'Message sending failed <br/>'.$mail->ErrorInfo;
          } else {
            /**
             * Mail has been sent successfully
@@ -101,7 +101,7 @@
             * or we can just tell them that its successful here
             */
 
-           $success = 'Mail Sent Successfuly!';
+           $success = 'Message sent Successfuly!';
          }
 
       }
@@ -125,27 +125,62 @@
     $id = $data['id']; // the id of the password in the database
     $sql = "UPDATE password SET password = '$new_pass', last_updated=NOW() WHERE id = $id"; // The query
     $exec = $con->query($sql); // Executes the query
-    if($exe && $exe->rowCount() > 0) {
+    if($exec && $exec->rowCount() > 0) {
       /**
        * Password updated
        */
     }
   }
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HNG INTERN | Mail Participant</title>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <style media="screen">
+      body {
+        background-color: #e5e5e5;
+        font-family: 'Slabo 27px', serif;
+      }
+      blockquote {
+        margin: 0 auto;
+        text-align: left;
+        padding: 5px;
+        background: #fff;
+        max-width: 500px;
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body style="background-color">
 
 
-/**
- * After everything we check if there is error or if everything was successfull
- */
-  if(!empty($error)) {
-    /**
-     * The error is not empty, we loop through and display the content
-     */
+      <?php
+      /**
+       * After everything we check if there is error or if everything was successfull
+       */
+        if(!empty($error)) {
+          /**
+           * The error is not empty, we loop through and display the content
+           */
+          echo '<blockquote style="border-left:15px solid red;">';
+          echo "<ul style='list-style:none;'>";
+          foreach ($error as $key => $value) {
+            echo "<li>$value</li><br/>";
+          }
+          echo '</ul>';
+        } else {
+          $referer = $_SERVER['HTTP_REFERER'];
+          echo '<blockquote style="border-left:15px solid green;">';
+          echo '<h1>'.$success.'</h1>';
+          echo '<p>Click <a href="'.$referer.'">here</a> to go back.</p>';
+        }
 
-    foreach ($error as $key => $value) {
-      echo "<li>$value</li><br/>";
-    }
-  } else {
-    $referer = $_SERVER['HTTP_REFERER'];
-    echo $success;
-    echo 'Click <a href="'.$referer.'">here</a> to go back';
-  }
+      ?>
+    </blockquote>
+
+  </body>
+</html>

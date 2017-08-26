@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background : grey;
+	margin : auto;
+}
+
+.image2 {
+	border-radius : 20px;
+	box-shadow : 10px 10px 5px grey;
+}
+
+a {
+	text-decoration : none;
+	color : purple;
+}
+a hover {
+	color : blue;
+} 
+
+.info {
+	padding-left : 20px;
+}

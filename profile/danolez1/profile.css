@@ -1,0 +1,40 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0px 0px;
+	padding: 0Px 0px;
+	font-family: 'Raleway', sans-serif;
+}
+#top a{
+	text-decoration: none;
+	color: #ffffff;
+}
+#top{
+	height:50%;
+	background-color: #02B875;
+	padding: 75px;
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+}
+#top img{
+	height:200px;
+	width: 200px;
+	border-radius: 100px;
+}
+#down{
+height:50%;
+padding: 25px
+}
+#left{
+float: left;
+width:20%;
+background-color: #DEB;
+	padding: 15px 25px
+}
+#right{
+	width:70%;
+float: right;
+padding-left: 20px;
+border-left: 2px solid  #eee;
+}
