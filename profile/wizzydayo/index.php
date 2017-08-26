@@ -1,3 +1,4 @@
+
 <?php
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -82,13 +83,13 @@
           </blockquote>
         <?php endif; ?>
         
-   <form  action="#" method="POST">
+   <form  action="index.php" method="POST">
           <label>Subject</label> <br>
           <input type="text" name="subject" placeholder="Subject" required>
           <br>
           <br>
           <label>Your Message</label>
-          <textarea name="message" rows="8" cols="50" placeholder="Your Message Here" required></textarea>
+          <textarea name="message" rows="8" cols="30" placeholder="Your Message Here" required></textarea>
 
           <button type="submit" name="submit" color="blue"> Send Message</button>
       </form>
@@ -130,3 +131,5 @@
 </div>
 
 </body>
+
+ 

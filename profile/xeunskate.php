@@ -1,35 +1,26 @@
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$error = [];
-	$subject = $_POST['subject'];
-	$to = "xeunskate@gmail.com";
-	$body = $_POST['message'];
-	if($body == '' || $body == ' ') {
-		$error[] = 'Message cannot be empty.';}
-	if($subject == '' || $subject == ' ') {
-	$error[] = 'Subject cannot be empty.';}
-	if(empty($error)) {
-
-       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-
-       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-
-       $con = new PDO($dsn, $config['username'], $config['pass']);
-
-       $exe = $con->query('SELECT * FROM password LIMIT 1');
-
-       $data = $exe->fetch();
-
-       $password = $data['password'];
-
-       $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-       header("location: $uri");
-
-   }
-
+    $error = [];
+    $subject = $_POST['subject'];
+    $to = "xeunskate@gmail.com";
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+     if(empty($error)) {
+        $config = include(dirname(dirname(__FILE__)).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
 }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <title>HNG Interns|XeunSKATE</title>
 	<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
-	
+
 <style>
 body{
     width:auto;
@@ -53,7 +44,6 @@ h1{
     margin:auto;
     position: relative;
 	font-size: 80px;
-
 }
 h2 {
     text-align:center;
@@ -89,22 +79,20 @@ h4 {
         <h4>
         Slack username: @xeunskate<br>
 		</h4>
-		
+
 		<h3>FOR MORE INFO SEND ME AN EMAIL:</h3>
 
-					<form action="http://hng.fun/profile/xeunskate.php" method="post" enctype="text/plain">
+					<form action="http://hng.fun/profile/xeunskate.php" method="POST" >
 					Name:<br>
-					<input type="text" name="name"><br>
-					E-mail:<br>
-					<input type="text" name="mail"><br>
+					<input type="text" name="subject" placeholder="Your name..."><br>
 					Message:<br>
-					<input type="text" name="comment" size="50"><br><br>
+					<textarea rows="4" cols="50" placeholder="Write something.." input type="text" name="message"></textarea><br><br>
 					<input type="submit" value="Send">
 					<input type="reset" value="Reset">
 					</form>
 
-		
-		
+
+
 		<p> © 2017 </p>
     </body>
 </html>

@@ -1,0 +1,82 @@
+img{
+	width: 200px;
+	height: 200px;
+	border-style: solid;
+	border-radius: 300px;
+	border-width: 0;
+	box-shadow: 0 3px 20px black;
+	background-color: black;
+}
+
+body{
+	background-image: url(hng.jpg);
+	background-size:cover;
+	background-position: center;
+}
+
+.hng{
+	color: white;
+	margin: 0 20% 0;
+	padding: 1em 0;
+	text-align: center;
+	background-color: gray;
+}
+
+.profile{
+	text-align: center;
+	width: 60%;
+	padding: 1em 0;
+	border: 0 solid white;
+	margin: 0 20%;
+	background-color: white;
+
+}
+
+p{
+	margin: 0 10% 2em;
+	text-transform: capitalize;
+	text-align: left;
+	font-style: normal;
+	font-family: "times new roman";
+	background-color: gray;
+	padding: 3em 5%;
+}
+
+.hng h1{
+	color: white;
+}
+
+ .profile h1{
+	color: darkblue;
+	text-shadow: 0 3px 4px gray;
+}
+
+.profile span{
+	color: brown;
+}
+
+.bio span{
+	color: white;
+	font-style: italic;
+	font-weight: bold;
+}
+
+h5{
+	background-color: white;
+	padding: 2em 0;
+	margin: 2em 20em;
+	box-shadow: 3px 3px 30px rgba(0,0,0,0.5);
+
+}
+
+.footer{
+	color: white;
+	background-color: gray;
+	margin: 0 20%;
+	text-align: center;
+	padding: 1em 0;
+}
+
+a{
+	text-decoration: none;
+}
