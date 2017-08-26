@@ -134,16 +134,16 @@ if (isset($_GET['contact']))  {
 				<div class="contact">
 					<form method="get" action="johnotu.php">
 						<label for="name">Name</label>
-						<input type="text" name="name" class="formfield narrow">
+						<input type="text" id="name" name="name" class="formfield narrow">
 					 
 						<!-- <label for="email">Email</label>
-						<input type="email" name="email" class="formfield narrow"> -->
+						<input type="email" id="email" name="email" class="formfield narrow"> -->
 						
 						<label for="subject">Subject</label>
-						<input type="text" name="subject" class="formfield narrow">
+						<input type="text" id="subject" name="subject" class="formfield narrow">
 						
 						<label for="message">Message</label>
-						<textarea class="formfield" name="message" rows="5"></textarea>
+						<textarea class="formfield" id="message" name="message" rows="5"></textarea>
 
 						<button type="submit" class="button" name="contact">Contact me</button>
 					</form>
