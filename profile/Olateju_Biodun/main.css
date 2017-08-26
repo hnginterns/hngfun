@@ -1,6 +1,6 @@
 .top{
     width:100%;
-    background-color: black;
+    background-images:url("back3.jpg");
     height:120px;
     display: flex;
 }
