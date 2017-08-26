@@ -340,6 +340,8 @@ include('participants-head.php');
                     <!--Team-->
             </a>
         </div>
+        </div>
+        </div>
 
         <!--  Each Participant starts here  -->
           <div class="p-card">
@@ -367,10 +369,6 @@ include('participants-head.php');
             </div>
         </div>
 
-		 <div class="p-card">
-
-    </div>
-</div>
 <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
