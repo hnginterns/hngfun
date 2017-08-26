@@ -1,5 +1,5 @@
 <?php 
-	/*$config = include('../config.php');
+	$config = include('../config.php');
 	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	$con = new PDO($dsn, $config['username'], $config['pass']);
 	$exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -7,18 +7,20 @@
 	$return = '';
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 	{
-		if(empty($name) OR empty($email) OR empty($subject) OR empty($message))
+		$password = $data['password'];
+		$subject = $_POST['subject'];
+		$message = $_POST['message'];
+		$to = 'chistelbrown@yahoo.com';
+		if(empty($password) && empty($subject) && empty($message))
 		{
 			$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
 		}else{
-			$password = $data['password'];
-			$subject = $_POST['subject'];
-			$message = $_POST['message'];
-			$to = 'chistelbrown@yahoo.com';
+			
+			
 			$location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$message";
 		   header("Location: " . $location);
 		}
-	}*/
+	}
 ?>
 <!DOCTYPE html>
 <html>
