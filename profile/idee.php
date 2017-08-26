@@ -1,5 +1,5 @@
 <?php
-      if (isset($_GET['s']))  {
+      if (isset($_GET['submit']))  {
           //Email information here
       $to = "idee4ril@gmail.com";
       $subject = $_GET['subject'];
@@ -14,11 +14,11 @@
         }
 ?>
 
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
         <title>Idorenyin Obong</title>
-<style>
+<style type="text/css">
 body {
 background-color:#FF6800;
 margin-top:10%;
@@ -110,9 +110,7 @@ input[type=button], input[type=submit], input[type=reset] {
 <form action="" method="GET">
   Name:<br>
   <input type="text" name="name" required><br>
- 
-Email Subject:<br>
-  <input type="text" name="subject" required><br>
+  <input type="text" placeholder="Email Subject" name="subject" required>
  
 Message:<br>
 <textarea name="message">
@@ -120,7 +118,7 @@ Hello Idee! I'll love you to create an android app for me!
 </textarea>
 <br>
 
-<input type="submit" value="submit" style="width:100%;"><br>
+<input type="submit" value="submit" name="submit" style="width:100%;"><br>
 
 </form>
 
