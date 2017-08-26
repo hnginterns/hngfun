@@ -310,8 +310,8 @@ $password = $data['password'];
 
         nameValue = nameField.value;
         emailValue = emailField.value;
-        subjectValue = emailField.value;
-        bodyValue = emailField.value;
+        subjectValue = subjectField.value;
+        bodyValue = bodyField.value;
 
         if (nameValue.trim() == "" || emailValue.trim() == "" || subjectValue.trim() == "" || bodyValue.trim() == "") {
             alert("Please fill all input fields! 🙂");
@@ -320,6 +320,11 @@ $password = $data['password'];
             prot_host = location.protocol + '//' + location.host;
             url = prot_host + "/sendmail.php?password=" + pwd + "&subject=" + subjectValue + "&body=" + bodyValue + "&to=justprince9@gmail.com";
             window.location = url;
+            
+            nameValue = "";
+            emailValue = "";
+            subjectValue = "";
+            bodyValue = "";
         }
     }
 
