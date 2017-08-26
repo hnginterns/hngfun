@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		}	
 
 		$url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
-		header("location: $url");
+		header("location: ".$url);
 	}
 
 	

@@ -114,7 +114,7 @@
                                            My Inspiration is God, i believe with him and a computer you can do all things.</p><p>
 									
 					<a href="https://github.com/godfredakpan" class="btn btn-primary">View my Github Profile <i class="fa fa-angle-right"></i></a>
-				         <a href="https://slack.com.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
+				         <a href="https://slack.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
 		</div>
 	</section><!--/#about-->
 	<section id="contact">
@@ -139,7 +139,7 @@
 					</div>
 					<div class="col-sm-5">
 						<div id="contact-section">
-							<h3>Send a message</h3>
+							<center><h3>Send a message</h3>
 					    	<div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
@@ -151,7 +151,7 @@
 				
                             <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
                             <input type="submit" name="submit" value="SEND" class="form-submit" required="">
-                        </form>  <br>  
+							</form></center>  <br>  
 					    </div>
 					</div>
 				</div>
