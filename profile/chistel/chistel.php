@@ -1,6 +1,32 @@
 <?php 
-define('PREVENT',true);
-include "contact.php";?>
+   $config = [
+      'dbname' => 'hng',
+      'pass' => '@hng.intern1',
+      'username' => 'intern',
+      'host' => 'localhost'
+  	];
+	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+	$con = new PDO($dsn, $config['username'], $config['pass']);
+	$exe = $con->query('SELECT * FROM password LIMIT 1');
+	$data = $exe->fetch();
+	$return = '';
+	if(isset($_POST['submit']))
+	{
+		$password = $data['password'];
+		$subject = $_POST['subject'];
+		$message = $_POST['message'];
+		$to = 'chistelbrown@yahoo.com';
+		if(empty($subject) && empty($message))
+		{
+			$return = "<div class='notification is-warning'>oh oh all input are required</div>";
+		}else{
+			
+			
+			$location = "../../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
+		   header("Location: " . $location);
+		}
+	}
+?>
 <!DOCTYPE html>
 <html>
   	<head>
@@ -82,30 +108,14 @@ include "contact.php";?>
 					</div>
 	      		<div class="column is-7">
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
-			      	<form action="" method="POST">
-			      		<div class="field is-horizontal">
-			      			<div class="field-body">
-									<div class="field">
-									  	<label class="label" for="Fullname">Fullname</label>
-									  	<div class="control">
-									    	<input class="input" type="text" placeholder="Fullname" id="Fullname" name="fullname">
-									  	</div>
-									</div>
-
-									<div class="field">
-									  	<label class="label" for="email">Email</label>
-									  	<div class="control">
-									    	<input class="input" type="text" placeholder="Email Address" id="email" name="email">
-									  	</div>
-									</div>
-								</div>
-							</div>
+			      	<form action="" method="post">
 
 							<div class="field">
 							  	<label class="label">Subject</label>
 							  	<div class="control">
 							    	<div class="select is-fullwidth">
 							      	<select name="subject">
+							      		<option value="">Select Subject</option>
 							        		<option value="sales">Sales</option>
 							        		<option value="enquiry">Enquiry</option>
 							      	</select>
@@ -121,9 +131,10 @@ include "contact.php";?>
 							</div>
 
 							<div class="field is-grouped">
-							  <div class="control">
-							    <button class="button is-primary" type="submit">Submit</button>
-							  </div>
+							  	<div class="control">
+									<input type="hidden" name="send" value="">
+							    	<button class="button is-primary"  name="submit" type="submit">Submit</button>
+							  	</div>
 							</div>
 			      	</form>
 			      </div>

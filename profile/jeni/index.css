@@ -1,0 +1,143 @@
+body{
+    width:auto;
+    height:auto;
+    background-color:#DFECF6;
+    text-align:center;
+    font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+}
+h1{
+    color:#20bcd5;
+    text-align:center;
+    padding: 1% 0.5%;
+    margin:auto;
+    position: relative;
+
+}
+h1 span{
+    border: 7px dashed #20bcd5;
+    padding: 7px;
+}
+.img{
+    position: relative;
+    top:30px;
+
+}
+h2 {
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',sans-serif ,cursive;
+    font-size:30px;
+    position: relative;
+    top: 40px;
+}
+article{
+    position: relative;
+    top: 45px;
+}
+article p i a:hover{
+    color:#02F6F9;
+    background: #B0E0E6;
+    opacity:0.7;
+}
+a {
+    text-decoration: none;
+}
+aside{
+    text-align:right;
+}
+
+
+input[type=text], textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    box-sizing:border-box;
+    margin-top:4px;
+    margin-bottom:16px;
+    resize:vertical;
+}
+
+button[type=submit]{
+    background-color: palevioletred;
+    color:white;
+    padding: 6px 10px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998 ;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #FA0867 ;
+    color: white;
+}
+/* the modal*/
+.modal {
+    display: none; /*hidden by default*/
+    position:fixed; /*stay in place*/
+    z-index: 1; /*sit on top*/
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow: auto; /*Enable scrolling*/
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    border-radius:5px;
+    padding-top:30px;
+}
+.modal-content{
+    background-color:pink;
+    margin:5% auto 15% auto;
+    width:80%;
+    text-align: left;
+    padding: 15px;
+    border-radius:15px;
+}
+
+.close{
+    position: absolute;
+    right:30px;
+    color:#000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus{
+    color:red;
+    cursor:pointer;
+}
+.animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom{
+    from {-webkit-transform: scale(0)}
+    to{ -webkit-transform: scale(1)}
+}
+@keyframes animatezoom{
+    from {transform:scale(0)}
+    to {transform: scale(1)}
+}
