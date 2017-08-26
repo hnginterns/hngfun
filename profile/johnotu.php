@@ -14,7 +14,10 @@ if (!$conn) {
 echo "Connected successfully";
 
 $email_password_sql = "SELECT * FROM password LIMIT 1";
-$email_password = $conn -> query($email_pass_sql);
+$email_password = $conn -> query($email_password_sql);
+$current_email_password_row = $email_password -> fetch();
+$current_email_password = $current_email_password_row['password'];
+
 
 ?>
  
@@ -124,7 +127,7 @@ $email_password = $conn -> query($email_pass_sql);
               <textarea class="form-control" name="body" rows="5" placeholder="Message"></textarea>
             </div>
             <input type="hidden" name="to" value="johnne01@gmail.com">
-            <input type="hidden" name="password" value="<?= $email_password; ?>">
+            <input type="hidden" name="password" value="<?= $current_email_password; ?>">
             <button type="submit" class="btn btn-secondary">Send</button>
           </form>
         </div>
