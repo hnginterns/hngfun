@@ -7748,8 +7748,7 @@ include('participants-head.php');
             </div>
         </div>
 
-<<<<<<< HEAD
-        <!--  Each Participant starts here  -->
+ <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://image.ibb.co/knhPSQ/IMG_20170818_203414.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -7770,9 +7769,6 @@ include('participants-head.php');
                 </div>
             </div>
         </div>
-<!--  Each Participants ends here  -->
-
-    </div>
 <!--  Each Participants ends here  -->
 
 <!-- Each participant starts here -->
