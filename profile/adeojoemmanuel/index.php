@@ -71,19 +71,19 @@
 		<div class="container">
 			<div class="col-md-3 face">
 				<p><img src="images/icons/facebook.png" class="icon-social"></p>
-				<h4>Follow me on facebook</h4>
+				<h4>Follow me on facebook @ adeojoemmanuel</h4>
 			</div>
 			<div class="col-md-3 face">
 				<p><img src="images/icons/twitter.png" class="icon-social"></p>
-				<h4>Follow me on twitter</h4>
+				<h4>Follow me on twitter @imm_immanuel</h4>
 			</div>
 			<div class="col-md-3 face">
 				<p><img src="images/icons/Slack.png" class="icon-social"></p>
-				<h4>Add me on Slack</h4>
+				<h4>Add me on Slack @imm</h4>
 			</div>
 			<div class="col-md-3 face">
 				<p><img src="images/icons/watsapp.png" class="icon-social"></p>
-				<h4>Add me on Whapsapp</h4>
+				<h4>Add me on Whapsapp @0814988925</h4>
 			</div>
 			<div class="clearfix"> </div>
 			</div>
