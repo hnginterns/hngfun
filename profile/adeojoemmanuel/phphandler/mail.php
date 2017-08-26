@@ -16,7 +16,7 @@ $IO = new IOhandler;
 	$fields = array('subject', 'email', 'phone', 'message');
 	$error = false; 
 	foreach($fields AS $fieldname) { 
-	  if(!isset($_POST[$fieldname]) || empty($_POST[$fieldname])) {
+	  if(!isset($_GET[$fieldname]) || empty($_GET[$fieldname])) {
 	    echo 'Field '.$fieldname.' missing!<br />';
 	    $error = true; //Yup there are errors
 	  }
