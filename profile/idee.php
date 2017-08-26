@@ -24,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'post') {
 }
 ?>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html lang="en">
 <head>
         <title>Idorenyin Obong</title>
 <style type="text/css">
