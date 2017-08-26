@@ -93,6 +93,11 @@ h1, h2, h3, h4, h5, h6, ul {
 	font-weight: bolder;
 }
 
+img {
+	max-width: 50%;
+	width: 10%;
+}	
+
 .profile-img {
 	margin-bottom: 20px;
 	padding-top: 15px;
