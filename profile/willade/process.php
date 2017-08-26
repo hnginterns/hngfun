@@ -1,9 +1,9 @@
 <?php
- if(isset($_GET['submit'])) {
-    $email = $_GET['email'] ;
-    $body = $_GET['message'] ;
-    $subject= $_GET['subject'] ;
- }
+ if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $email = $_POST['email'] ;
+  $body = $_POST['message'] ;
+  $subject= $_POST['subject'] ;
+}
  $host = "localhost";
  $username = "intern";
   $password = "@hng.intern1";
