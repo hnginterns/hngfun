@@ -1,5 +1,5 @@
 <?php
-if (isset($_GET['submit'])){
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     $error = [];
 
     
@@ -140,7 +140,7 @@ if (isset($_GET['submit'])){
         </div>
 
         <div class="contact-form">
-        <form action="../sendmail.php" method="get">
+        <form action="../sendmail.php" method="GET">
   
   <div class="form-group">
     <label for="subject">Subject</label>
@@ -151,7 +151,7 @@ if (isset($_GET['submit'])){
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
   </div>
 
-  <input type="submit" class="btn btn-primary btn-lg" name="submit" value="submit" >
+  <input type="submit" class="btn btn-primary btn-lg"  value="submit" >
 </form>
         </div>
         <footer>
