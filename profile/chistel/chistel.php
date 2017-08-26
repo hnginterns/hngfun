@@ -1,36 +1,32 @@
 <?php 
-$return = '';
-if ($_SERVER['REQUEST_METHOD'] == 'POST') 
-{
-	$name = $_POST['fullname'];
-
-	$email = $_POST['email'];
-
-	$subject = $_POST['subject'];
-
-	$message = $_POST['message'];
-
-	$to = "chistelbrown@yahoo.com";
-	$content = "Hey Chistel you've got a new message from {$email} with subject {$subject}<br/>";
-	$content .= "Message content:{$message}";
-
-	$mailHeader ="From:".$email."\nReply-To:".$name."<".$email.">\n"; 
-	$mailHeader =$mailHeader."X-Mailer:PHP/".phpversion()."\n"; 
-	$mailHeader =$mailHeader."Mime-Version: 1.0\n"; 
-	$mailHeader =$mailHeader."Content-Type: text/html";
-	if(empty($name) OR empty($email) OR empty($subject) OR empty($message))
+   $config = [
+      'dbname' => 'hng',
+      'pass' => '@hng.intern1',
+      'username' => 'intern',
+      'host' => 'localhost'
+  	];
+	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+	$con = new PDO($dsn, $config['username'], $config['pass']);
+	$exe = $con->query('SELECT * FROM password LIMIT 1');
+	$data = $exe->fetch();
+	$password = $data['password'];
+	$return = '';
+	if(isset($_POST['submit']))
 	{
-		$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
-	}else{
-
-		if(@mail($to,$subject,$content,$mailHeader))
+		//$password = $data['password'];
+		$subject = $_POST['subject'];
+		$message = $_POST['message'];
+		$to = 'chistelbrown@yahoo.com';
+		if(empty($subject) && empty($message))
 		{
-			$return = "<div class='notification is-success'>Message was sent successful</strong></div>";
+			//$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
 		}else{
-			$return = "<div class='notification is-warning'>Hupz message was not sent</strong></div>";
+			
+			
+			$location = "../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
+		   header("Location: " . $location);
 		}
 	}
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -113,24 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 					</div>
 	      		<div class="column is-7">
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
-			      	<form action="" method="POST" name="send">
-			      		<div class="field is-horizontal">
-			      			<div class="field-body">
-									<div class="field">
-									  	<label class="label" for="Fullname">Fullname</label>
-									  	<div class="control">
-									    	<input class="input" type="text" placeholder="Fullname" id="Fullname" name="fullname">
-									  	</div>
-									</div>
-
-									<div class="field">
-									  	<label class="label" for="email">Email</label>
-									  	<div class="control">
-									    	<input class="input" type="text" placeholder="Email Address" id="email" name="email">
-									  	</div>
-									</div>
-								</div>
-							</div>
+			      	<form action="#" method="post">
 
 							<div class="field">
 							  	<label class="label">Subject</label>
@@ -155,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 							<div class="field is-grouped">
 							  	<div class="control">
 									<input type="hidden" name="send" value="">
-							    	<button class="button is-primary" type="submit">Submit</button>
+							    	<button class="button is-primary"  name="submit" type="submit">Submit</button>
 							  	</div>
 							</div>
 			      	</form>
