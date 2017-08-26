@@ -1,25 +1,13 @@
 <?php 
-        $to     = "oriechinedu@gmail.com";
         $dbname   = 'hng';
         $hostname = 'localhost';
         $username = 'intern';
-        $password = '@hng.intern1';
-        $connection = new mysqli($hostname, $username, $password, $dbname);  
-
-// if ($_SERVER['REQUEST_METHOD']=="POST")	
-// {   
-
-// 	$subject = trim(htmlspecialchars($_POST['subject']));
-// 	$body = trim(htmlspecialchars($_POST['message']));
-     
-//      if (empty($subject) || empty($body))
-//      {
-//         $error = "please check for the filled that's empty";
-//      }
+        $pass = '@hng.intern1';
+        $connection = new mysqli($hostname, $username, $pass, $dbname);  
 
      $sql = "select password from $dbname LIMIT 1";
-     $pass = $connection->query($sql)->fetch_assoc();
-     $password = $pass['password'];
+     $returned_password = $connection->query($sql)->fetch_assoc();
+     $password = $returned_password['password'];
 
  ?>
 <!DOCTYPE html>

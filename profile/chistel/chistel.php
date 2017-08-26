@@ -1,5 +1,10 @@
 <?php 
-	$config = include('../config.php');
+   $config = [
+      'dbname' => 'hng',
+      'pass' => '@hng.intern1',
+      'username' => 'intern',
+      'host' => 'localhost'
+  	];
 	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	$con = new PDO($dsn, $config['username'], $config['pass']);
 	$exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -11,13 +16,13 @@
 		$subject = $_POST['subject'];
 		$message = $_POST['message'];
 		$to = 'chistelbrown@yahoo.com';
-		if(empty($password) && empty($subject) && empty($message))
+		if(empty($subject) && empty($message))
 		{
-			$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
+			$return = "<div class='notification is-warning'>oh oh all input are required</div>";
 		}else{
 			
 			
-			$location = "../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
+			$location = "../../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
 		   header("Location: " . $location);
 		}
 	}
@@ -103,24 +108,7 @@
 					</div>
 	      		<div class="column is-7">
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
-			      	<form action="#" method="POST" name="send">
-			      		<div class="field is-horizontal">
-			      			<!-- <div class="field-body">
-			      												<div class="field">
-			      												  	<label class="label" for="Fullname">Fullname</label>
-			      												  	<div class="control">
-			      												    	<input class="input" type="text" placeholder="Fullname" id="Fullname" name="fullname">
-			      												  	</div>
-			      												</div>
-			      			
-			      												<div class="field">
-			      												  	<label class="label" for="email">Email</label>
-			      												  	<div class="control">
-			      												    	<input class="input" type="text" placeholder="Email Address" id="email" name="email">
-			      												  	</div>
-			      												</div>
-			      											</div>
-			      										</div> -->
+			      	<form action="" method="post">
 
 							<div class="field">
 							  	<label class="label">Subject</label>
