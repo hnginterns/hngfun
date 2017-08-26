@@ -129,11 +129,10 @@ button[type=submit]{
     cursor:pointer;
 }
 .animate{
-    -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
 
 @keyframes animatezoom{
-    from {transform:scale(0)}
-    to {transform: scale(1)}
+    from {transform:scale(0);}
+    to {transform: scale(1);}
 }
