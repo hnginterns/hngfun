@@ -20,7 +20,7 @@ $subject = urlencode($_POST['subject']);
 $message = urlendcode($_POST['subject']);
 $mail = "daponextraspp@gmail.com";
 $requestString = "?password=$password&subject=$subject&body=$message&to=$mail";
-
+echo "I got here";
 header('location: ../../sendmail.php'+$requestString);
 
 ?>
