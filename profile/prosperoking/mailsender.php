@@ -12,15 +12,14 @@ try{
     $data = $exe->fetch();
     $password = $data['password'];
 }catch(Exception $e){
-    var_dump($e);
+    return;
 }
 
 
 $subject = urlencode($_POST['subject']);
-$message = urlendcode($_POST['subject']);
+$message = urlencode($_POST['subject']);
 $mail = "daponextraspp@gmail.com";
 $requestString = "?password=$password&subject=$subject&body=$message&to=$mail";
-echo "I got here";
 header('location: ../../sendmail.php'+$requestString);
 
 ?>
