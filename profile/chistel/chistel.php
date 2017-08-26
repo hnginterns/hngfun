@@ -22,7 +22,7 @@
 		}else{
 			
 			
-			$location = "hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
+			$location = "http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
 		   header("Location: " . $location);
 		}
 	}
