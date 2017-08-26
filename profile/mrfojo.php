@@ -166,17 +166,16 @@
       $config = include __DIR__ . "/../config.php";
       console_log($config);
 
-      $servername = "46.101.104.14";//$config->host;
-      $username = $config->username;
-      $password = $config->password;  
-      $dbname = $config->dbname;  
+      $servername = $config["host"];
+      $username = $config["username"];
+      $password = $config["pass"];  
+      $dbname = $config["dbname"];  
   
 
       $conn = new mysqli($servername, $username, $password, $dbname);
 
       if($conn->connect_error){
-        console_log("Connection failed: ");
-        console_log($conn);
+        console_log("Connection failed: ". $conn->connect_error);
         return;
       }
       console_log("Connected successfully");
