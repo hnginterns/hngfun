@@ -345,7 +345,7 @@ fieldset {
 			<hr />
 			 <!-- start contact form -->
 		
-  <form id="contact" action="/sendmail.php" method="POST">
+  <form id="contact" action="" method="GET">
     <h3>Quick Contact</h3>
     <h4>Contact me today, and get a reply within 24 hours!</h4>
     <fieldset>
