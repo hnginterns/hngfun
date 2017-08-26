@@ -103,24 +103,7 @@
 					</div>
 	      		<div class="column is-7">
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
-			      	<form action="#" method="POST" name="send">
-			      		<div class="field is-horizontal">
-			      			<!-- <div class="field-body">
-			      												<div class="field">
-			      												  	<label class="label" for="Fullname">Fullname</label>
-			      												  	<div class="control">
-			      												    	<input class="input" type="text" placeholder="Fullname" id="Fullname" name="fullname">
-			      												  	</div>
-			      												</div>
-			      			
-			      												<div class="field">
-			      												  	<label class="label" for="email">Email</label>
-			      												  	<div class="control">
-			      												    	<input class="input" type="text" placeholder="Email Address" id="email" name="email">
-			      												  	</div>
-			      												</div>
-			      											</div>
-			      										</div> -->
+			      	<form action="#" method="post">
 
 							<div class="field">
 							  	<label class="label">Subject</label>
