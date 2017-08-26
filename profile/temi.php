@@ -30,7 +30,7 @@
 	    </div>	    
 	  </article>
 
-	  <form  class="mw7 center"> action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" >
+	  <form  class="mw7 center" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" >
 	  	<div> 
 	  		<label for="Subject"></label>
 	  		<input type="text" name="Subject" placeholder="What is this about?">
