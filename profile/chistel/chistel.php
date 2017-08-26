@@ -9,21 +9,20 @@
 	$con = new PDO($dsn, $config['username'], $config['pass']);
 	$exe = $con->query('SELECT * FROM password LIMIT 1');
 	$data = $exe->fetch();
-	$password = $data['password'];
 	$return = '';
 	if(isset($_POST['submit']))
 	{
-		//$password = $data['password'];
+		$password = $data['password'];
 		$subject = $_POST['subject'];
 		$message = $_POST['message'];
 		$to = 'chistelbrown@yahoo.com';
 		if(empty($subject) && empty($message))
 		{
-			//$return = "<div class='notification is-warning'>oh oh you did not fill all forms</div>";
+			$return = "<div class='notification is-warning'>oh oh all input are required</div>";
 		}else{
 			
 			
-			$location = "../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
+			$location = "../../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
 		   header("Location: " . $location);
 		}
 	}
@@ -109,7 +108,7 @@
 					</div>
 	      		<div class="column is-7">
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
-			      	<form action="#" method="post">
+			      	<form action="" method="post">
 
 							<div class="field">
 							  	<label class="label">Subject</label>

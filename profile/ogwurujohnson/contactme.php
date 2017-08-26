@@ -6,6 +6,7 @@
  * Time: 1:56 PM
  */
 //locate Configuration file from app directory
+$admin_email = "xyluz@gmail.com";
 $configuration = include('../../config.php');
 //specify db configuration and specifications such as DB name(note:DB name = "hng";username = intern;password = @hng.intern1)
 $db_config = "mysql:host=".$configuration["host"].";dbname= ".$configuration["dbname"];
