@@ -59,7 +59,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form action="http://hng.fun/profile/mofopeojosh" method="POST">
+                    <form action="http://hng.fun/profile/mofopeojosh/index.php" method="POST">
                     <h2 style="color: #adc5d4;">CONTACT ME</h2>
                     <ul class="socials">
                         <li><a href="http://github.com/mofopeojosh"><i class="fa fa-github"></i></a></li>

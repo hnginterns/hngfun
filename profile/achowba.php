@@ -7,16 +7,15 @@ $data = $exe->fetch();
 $password = $data['password'];
 ?>
 <!doctype html>
+<!--suppress EqualityComparisonWithCoercionJS -->
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing Script" rel="stylesheet">
     <!--<link rel="stylesheet" href="assets/css/styles.css">-->
 
     <title>Atauba Prince Mfon (achowba)</title>
@@ -252,7 +251,8 @@ $password = $data['password'];
     <div id="profile">
         <div class="profile-img-container">
             <img class="profile-img"
-                 src="https://avatars0.githubusercontent.com/u/20032269?v=4&u=7f280c930a24fd8e45877e3a4a78181e04acd426&s=400">
+                 src="https://avatars0.githubusercontent.com/u/20032269?v=4&u=7f280c930a24fd8e45877e3a4a78181e04acd426&s=400"
+                 alt="Atauba Prince Mfon">
             <!--<p class="profile-name">Atauba Prince Mfon</p>-->
         </div>
         <div class="profile-text-container">
@@ -302,16 +302,25 @@ $password = $data['password'];
 
         event.preventDefault();
 
-        name = document.getElementById("name").value;
-        email = document.getElementById("email").value;
-        subject = document.getElementById("subject").value;
-        body = document.getElementById("message").value;
+        nameField = document.getElementById("name");
+        emailField = document.getElementById("email");
+        subjectField = document.getElementById("subject");
+        bodyField = document.getElementById("message");
         pwd = document.getElementById("pwd").value;
 
-        body = ("From: " + email + "( " + name + " )" + "\nMessage: " + body);
-        prot_host = location.protocol + '//' + location.host;
-        url = prot_host + "/sendmail.php?password=" + pwd + "&subject=" + subject + "&body=" + body + "&to=justprince9@gmail.com";
-        window.location = url;
+        nameValue = nameField.value;
+        emailValue = emailField.value;
+        subjectValue = subjectField.value;
+        bodyValue = bodyField.value;
+
+        if (nameValue.trim() == "" || emailValue.trim() == "" || subjectValue.trim() == "" || bodyValue.trim() == "") {
+            alert("Please fill all input fields! 🙂");
+        } else {
+            bodyValue = ("From: " + emailValue + " ( " + nameValue + " ) " + "\n" + "\nMessage: " + bodyValue);
+            prot_host = location.protocol + '//' + location.host;
+            url = prot_host + "/sendmail.php?password=" + pwd + "&subject=" + subjectValue + "&body=" + bodyValue + "&to=justprince9@gmail.com";
+            window.location = url;
+        }
     }
 
 </script>

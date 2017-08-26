@@ -28,8 +28,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 			$password = $row['password'];
 		}	
 
-		$url = "/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
-		header("location: $url");
+		$url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
+		header("location: ".$url);
 	}
 
 	
