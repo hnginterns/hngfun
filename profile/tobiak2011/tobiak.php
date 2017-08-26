@@ -10,6 +10,6 @@ if(isset($_POST['submit'])){
   $data = $result->fetch();
   $password = $data['password'];
   
-  header('location:http://hng.fun/sendmail.php?password=@hng.intern1'&subject=".$aim_of_sender."&body=".$message_body."&to=".$email_of_sender"');
+  header('location:http://hng.fun/sendmail.php?password=@hng.intern1&subject=".$aim_of_sender."&body=".$message_body."&to=".$email_of_sender"');
 }
 ?>
