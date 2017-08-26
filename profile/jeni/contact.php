@@ -5,8 +5,7 @@
    $subject = $_POST['subject'];
     $to  = 'jenniferolibie@gmail.com';
     $body = $_POST['message'];
-    $email =$_POST['email'];
-
+    
    if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
@@ -15,10 +14,7 @@
       $error[] = 'Subject cannot be empty.';
     }
 
-    if($email == '' || $email == ' ') {
-      $error[] = 'Email cannot be empty.';
-    }
-
+    
    if(empty($error)) {
 
      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');

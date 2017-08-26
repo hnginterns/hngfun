@@ -20,6 +20,7 @@ h1 span{
 .img{
     position: relative;
     top:30px;
+
 }
 h2 {
     text-align:center;
@@ -44,6 +45,7 @@ aside{
     text-align:right;
 }
 
+
 input[type=text], textarea{
     width:100%;
     padding:12px;
@@ -52,7 +54,7 @@ input[type=text], textarea{
     box-sizing:border-box;
     margin-top:4px;
     margin-bottom:16px;
-    resize:vertical
+    resize:vertical;
 }
 
 button[type=submit]{
@@ -69,8 +71,7 @@ button[type=submit]{
     padding: 5px;
     font-size: 30px;
     width: 30px;
-    text-align: center;
-    text-decoration: none;
+    
 }
 
 /* Add a hover effect*/
@@ -101,10 +102,10 @@ button[type=submit]{
     width:100%;
     height:100%;
     overflow: auto; /*Enable scrolling*/
-    background-color: rgba(0,0,0);
-    backfround-color: rgba(0,0,0,0.4);
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
     border-radius:5px;
-    padding-top:60px;
+    padding-top:30px;
 }
 .modal-content{
     background-color:pink;
@@ -112,6 +113,7 @@ button[type=submit]{
     width:80%;
     text-align: left;
     padding: 15px;
+    border-radius:15px;
 }
 
 .close{
@@ -127,14 +129,10 @@ button[type=submit]{
     cursor:pointer;
 }
 .animate{
-    -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
-@-webkit-keyframes animatezoom{
-    from {-webkit-transform: scale(0)}
-    to{ -webkit-transform: scale(1)}
-}
+
 @keyframes animatezoom{
-    from {transform:scale(0)}
-    to {transform: scale(1)}
+    from {transform:scale(0);}
+    to {transform: scale(1);}
 }
