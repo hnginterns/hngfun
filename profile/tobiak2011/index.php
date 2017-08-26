@@ -1,19 +1,3 @@
-<?php
-
-if(isset($_POST['submit'])){
-  $message_body = $_POST['body'];
-  $aim_of_sender = $_POST['subject'];
-  $email_of_sender = $_POST['to'];
-  $config = include(../../config.php);
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-  $con = new PDO($dsn, $config['username'], $config['pass']);
-  $result = $con->query('SELECT * FROM password LIMIT 1');
-  $data = $result->fetch();
-  $password = $data['password'];
-  
-  header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$aim_of_sender."&body=".$message_body."&to=".$email_of_sender);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,7 +54,7 @@ if(isset($_POST['submit'])){
             <div class="about" style="width: 40%;float: left;">
                 <b style="text-shadow: 1px 2px 3px gray;">BIOGRAPHY</b><br>
                 <p>Passionate for tech which has been the driving force that moved me into mobile application development (Android). As an android developer with 3years experience in mobile development. Also a web developer. A lover of God. A researcher</p><br>
-              <form action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" style="margin-top: 10px;"> 
+              <form action=tobiak.php method="post" style="margin-top: 10px;"> 
                   <h4>Your message</h4> 
                         <input name="to" type="email" placeholder="Enter your email" required /><br>
                         <input name="subject" type="text" placeholder="Subject" required/><br>
