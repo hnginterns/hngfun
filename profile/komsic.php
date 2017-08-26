@@ -119,7 +119,7 @@
           <label for="message">Message</label><br>
           <textarea name="message" rows="8" cols="50" style="width: 50%" placeholder="Please Write Your Message Here...." required></textarea><br>
 
-          <button type="submit" name="submit"> Send</button>
+          <button type="submit" name="submit"> Send Now</button>
       </form>
     </div>
   </div>
