@@ -8,6 +8,7 @@
         $result = $con->query('SELECT * FROM password LIMIT 1');
         $data = $result->fetch();
 
+        $to = $_POST['to'];
         $password = $data['password'];
         $subject = $_POST['subject'];
         $body = $_POST['body'];
