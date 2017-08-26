@@ -662,10 +662,15 @@ textarea {
             margin: 20px 70px 20px;
         }
     }
-    
-    @media only screen and (min-width: 768px){
+      @media only screen and (min-width: 600px){
         input, textarea{
-            margin: 20px 360px 20px;
+            margin: 20px 45px 20px;
+            
+        }
+
+    @media only screen and (min-width: 801px){
+        input, textarea{
+            margin: 20px 134px 20px;
             
         }
          .name {

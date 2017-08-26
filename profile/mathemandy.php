@@ -115,11 +115,11 @@
       </div>
       <div class="container">
          <form action="#" method="get">
-            <h1>Miss Me and wanna Hit me?</h1>
+            <h1>Contact Me</h1>
             <input placeholder="Name" name="name" type="text" value="" required>
             <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
             <div>
-               <span class="validation-text">Please enter a valid email address.
+               <span class="validation-text">Please enter a valid input
                </span>
             </div>
             <div class="flex">
@@ -131,5 +131,6 @@
          </form>
       </div>
         </div>
-          </body>
+      </div>
+    </body>
 </html>
