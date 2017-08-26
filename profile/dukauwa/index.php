@@ -277,12 +277,12 @@
                   <li><a href="https://hnginterns.slack.com/messages/@dukauwa" class="social-icons"> <i class="fa fa-slack" aria-hidden="true"></i></a></li>
                   <li><a href="https://twitter.com/ukauwa_david" class="social-icons"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
               </ul>
-                  <form class="form" action="" method="GET">
+                  <form class="form" action="../../sendmail.php" method="GET">
                     <h4>CONTACT ME</h4>
                     <input type="hidden" name="password" value="<?= $password; ?>" >
-                    <p type="Name:"><input type="text"  name="name" placeholder="Write your name here.."required></input></p>
-                    <p type="Email:"><input type="email" name="email" placeholder="Let me know how to contact you back.."required></input></p>
-                    <p type="Message:"><input type="text" name="body" placeholder="What would you like to tell me.."required></input></p>
+                    <p type="Name:"><input type="text"  name="name" placeholder="Write your name here.." required/></p>
+                    <p type="Email:"><input type="email" name="email" placeholder="Let me know how to contact you back.." required/></p>
+                    <p type="Message:"><input type="text" name="body" placeholder="What would you like to tell me.." required/></p>
                     <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
                     <div>
                       <span class="fa fa-phone"></span>09024095111
