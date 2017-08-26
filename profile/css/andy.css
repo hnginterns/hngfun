@@ -24,7 +24,10 @@ body {
     .col-1{
         width: 100%
     }
-    
+.sizey {
+    rows:"4"; 
+    cols:"100";
+}
 .col-1-4 {
   width: 25%;
 }
