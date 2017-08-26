@@ -3768,12 +3768,6 @@ include('participants-head.php');
             </div>
 <!--  Each Participants ends here  -->
 
-<!--  E
-
-
-
-
-
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -7747,33 +7741,30 @@ include('participants-head.php');
                 </div>
             </div>
         </div>
+ 
 
-<<<<<<< HEAD
-        <!--  Each Participant starts here  -->
-        <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://image.ibb.co/knhPSQ/IMG_20170818_203414.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="http://hng.fun/profile/emekaprosper">
-                        <!--Profile Link-->
-                        <h3 class="p-card-title">Nnaemeka Ukpa</h3>
-                        <!--Profile Name-->
-                    </a>
-                    <p class="p-card-description">nnaemekaukpa@gmail.com</p>
-                    <!--Email-->
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 5 </h3>
-                        <!--Team-->
-                    </a>
-                </div>
-            </div>
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://image.ibb.co/knhPSQ/IMG_20170818_203414.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/emekaprosper">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Nnaemeka, Ukpa</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">nnaemekaukpa@gmail.com</p>
+            <!--Email-->
         </div>
-<!--  Each Participants ends here  -->
-
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team-5 </h3>
+                    <!--Team-->
+            </a>
+        </div>
     </div>
-<!--  Each Participants ends here  -->
+</div>
+
 
 <!-- Each participant starts here -->
 <div class="p-card">
@@ -7799,6 +7790,27 @@ include('participants-head.php');
 
 
   <!-- Each participant ends here -->
-
+    <!-- OpsiJay Details start here -->
+  <div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(profile/opsijay.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="profile/opsijay.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Joda Opemipo</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">opsijay@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+   <!-- OpsiJay Details ends here -->
 
 <?php include "footer.php"?>
