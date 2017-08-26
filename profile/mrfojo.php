@@ -189,7 +189,9 @@
       else{
         if($row = $result->fetch_assoc()) {
           $emailPassword = $row["password"];
+          console_log($emailPassword);
           $requestUrl = "/sendmail.php?password=$emailPassword&subject=$subject&body=$message&to=$to";
+          console_log($requestUrl);
           header("Location: $requestUrl");
         }
       }
