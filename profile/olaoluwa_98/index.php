@@ -9,11 +9,11 @@
         $data = $exe->fetch();
         $password = $data['password'];
 
-<<<<<<< HEAD:profile/olaoluwa_98/index.php
+<<<<<<< HEAD:profile/olaoluwa_98/index.html
         $subject = "HEY THERE";
 =======
         $subject = htmlentities(strip_tags(trim($_GET['subject'])));
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c:profile/olaoluwa_98/index.php
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c:profile/olaoluwa_98/index.html
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "awotunde.emmanuel@gmail.com";
@@ -301,11 +301,11 @@
   <div class="row">
     <div class="col-4 col-m-12">
       <div class="image-container-image">
-<<<<<<< HEAD:profile/olaoluwa_98/index.php
+<<<<<<< HEAD:profile/olaoluwa_98/index.html
         <img class="image" src="https://cdn-images-1.medium.com/fit/c/120/120/1*KQbibJtclzBy3gjrPvfDHA@2x.jpeg">
 =======
         <img class="image" src="https://cdn-images-1.medium.com/fit/c/120/120/1*KQbibJtclzBy3gjrPvfDHA@2x.jpeg" alt="olaoluwa_98's Picture">
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c:profile/olaoluwa_98/index.php
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c:profile/olaoluwa_98/index.html
       </div>
     </div>
 
@@ -315,15 +315,15 @@
         I love simplicity.<br>
         <span style="font-weight: bold;">Here is my stage one solution <br><a style="text-decoration: underline;color: #65c5c5" href="https://github.com/olaoluwa-98/HNG-internship"><i style="color: #65c5c5" class="fa fa-github"></i> HNG-internship</a></span>
 
-          <form class="contact" action="http://hng.fun/profile/olaoluwa_98/index.php" method="get">
+          <form class="contact" action="http://hng.fun/profile/olaoluwa_98/index.html" method="get">
             <p class="contact-title">Send Me a Mail</p>
-<<<<<<< HEAD:profile/olaoluwa_98/index.php
+<<<<<<< HEAD:profile/olaoluwa_98/index.html
             <input type="text" name="subject" placeholder="subject" value="">
             <textarea rows="3" cols="60" name="body" placeholder="type your message here" value=""></textarea><br>
 =======
             <input type="text" name="subject" placeholder="subject" required>
             <textarea rows="3" cols="60" name="body" placeholder="type your message here" required></textarea><br>
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c:profile/olaoluwa_98/index.php
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c:profile/olaoluwa_98/index.html
             <button type="submit" name="sendmessage" class="button">Send Mail</button>
           </form>
     </div>

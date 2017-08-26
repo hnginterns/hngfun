@@ -19,7 +19,7 @@
 		header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=stephenjudesuccess@gmail.com");
 
 	}else{
-		header("location:index.php");
+		header("location:index.html");
 	}
 ?>
 
