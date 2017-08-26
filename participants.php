@@ -3768,7 +3768,7 @@ include('participants-head.php');
             </div>
 <!--  Each Participants ends here  -->
 
-<!--  E
+<!--  E -->
 
 
 
@@ -3837,10 +3837,6 @@ include('participants-head.php');
                         <h3 class="p-card-title">Alaba Mustapha O.</h3>
                         <!--Profile Name-->
                     </a>
-
-                    <p class="p-card-description">jumbojoshua91@gmail.com</p>
-
-
 
                     <p class="p-card-description">alabamustapha@gmail.com</p>
                     <!--Email-->
