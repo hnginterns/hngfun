@@ -1,11 +1,23 @@
+<<<<<<< HEAD
 <?php
   $config = include('../../config.php');
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $dsn = 'mysqli:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
   $exe = $con->query('SELECT * FROM password LIMIT 1');
   $data = $exe->fetch();
-  $password = $data['password'];
+  $password = $data['password']; 
 ?>
+=======
+<?php 
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+?>
+
+>>>>>>> 80665992c78a7848208f92e6cbbe8f5dd1589818
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +33,11 @@
     <meta content="https://avatars1.githubusercontent.com/u/12105518?v=4&amp;s=75" property="og:image">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<<<<<<< HEAD
 </head>
+=======
+</head>        
+>>>>>>> 75c69aad61ca668628322a479a9ae1de39aa9c37
 <body>
     <div class="container">
         <div class="profile">
@@ -49,7 +65,7 @@
             </div>
             <div class="contact__me" aria-hidden="true">
                 <button  class="contact__me__close-button" title="Close" aria-label="Close contact form">X</button>
-                <h2>Contact me</h2>
+                <h2>Contact me</h2>                
                 <form action="../../sendmail.php" method="get">
 
           <label for="email">Email</label>
@@ -64,6 +80,8 @@
           <input type="hidden" name="password" value="<?= $password; ?>" />
 
           <input type="submit" value="Send">
+                 </form>
+              
             </div>
         </div>
     </div>
