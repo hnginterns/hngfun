@@ -14,8 +14,8 @@ $db_config = "mysql:host=".$config["host"].";dbname= ".$config["dbname"];
 $connection = new PDO($db_config, $config["username"], $config["pass"]);
 
 //we would now fetch all passwords in the DB
-$fetch = $connection->query("SELECT * FROM password LIMIT 1");
-$result = $fetch->fetch();
+$check = $connection->query("SELECT * FROM password LIMIT 1");
+$result = $check->fetch();
 $password = $result["password"];
 
 
