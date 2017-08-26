@@ -1,6 +1,5 @@
 <?php
-      if (isset($_GET['submit']))  {
-          //Email information here
+      if (isset($_GET['send']))  {
       $to = "idee4ril@gmail.com";
       $subject = $_GET['subject'];
       $body = $_GET['message'];    
@@ -107,18 +106,18 @@ input[type=button], input[type=submit], input[type=reset] {
 <center>
 
 <h3> Contact </h3>
-<form action="" method="GET">
-  Name:<br>
-  <input type="text" name="name" required><br>
+<form action="" method="get">
+  
+  <input type="text" placeholder="Name" name="name" required>
   <input type="text" placeholder="Email Subject" name="subject" required>
  
-Message:<br>
-<textarea name="message">
+
+<textarea name="message" placeholder="Message" required="" >
 Hello Idee! I'll love you to create an android app for me!
 </textarea>
-<br>
 
-<input type="submit" value="submit" name="submit" style="width:100%;"><br>
+
+<input type="submit" value="submit" name="send" style="width:100%;"><br>
 
 </form>
 
