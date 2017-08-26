@@ -1,15 +1,48 @@
 <!--DOCTYPE html-->
 <html>
 <style type="text/css">
-html body div #menu, html body div #menu a {background-color: transparent; font family: Georgia; color: #212e36;}
-body {background-color: #d8f0f4; background-image: url(https://images.template.net/wp-content/uploads/2015/11/25190558/Plain-Dark-Blue-Background-Images-Download.jpg); backgroud-repeat: repeat;}
-#container {width: 550px; margin: 25px;}
-#two, #three, #four {background-color: #bbb; padding: 8px; font-family: new times roman; color: #212e36; font-size: 20px;}
-#two, #three {width: 250px; text-align: center;}
-#four {text-align: justify;}
+html body div #menu, html body div #menu a 
+{background-color: transparent;
+ font family: Georgia; 
+ color: #212e36;}
+ 
+body 
+{background-color: #d8f0f4; 
+background-image: url(https://images.template.net/wp-content/uploads/2015/11/25190558/Plain-Dark-Blue-Background-Images-Download.jpg); backgroud-repeat: repeat;}
+
+#container 
+{width: 550px;
+ margin: 25px;}
+ 
+#two, 
+#three, 
+#four
+ {background-color: #bbb;
+ padding: 8px;
+ font-family: new times roman;
+ color: #212e36;
+ font-size: 20px;}
+ 
+#two,
+#three 
+{width: 250px; 
+text-align: center;}
+
+#four 
+{text-align: justify;}
+
 a {color: #3f7464;}
-.head {font-family: Georgia; color: #192e28; font-size: 20px; text-align: center;}
-#one .head {font-size: 30px; color: silver;}
+
+.head 
+{font-family: Georgia;
+ color: #192e28;
+ font-size: 20px;
+ text-align: center;}
+ 
+#one .head 
+{font-size: 30px;
+ color: silver;}
+ 
 b {color: #50193E;}
 </style>
 <center>
@@ -31,29 +64,28 @@ b {color: #50193E;}
 </td>
 <td id="three"> <!--second column in Row B--><br>
 <div class="head">ABOUT ME</div>
-i am keresifon Ekpo, an aspiring full stack developer who aspires to provide solutions to everyday life issues and have fun while at it!
+I am keresifon Ekpo, an aspiring full stack developer who intends to provide solutions to everyday life issues and have fun while at it!
 </td>
 </tr>
 <tr> <!--this is Row C-->
 <td colspan="2" id="four"><br>
-<div class="head">CONTACT FORM</div><br>
+<div class="head">CONTACT FORM</div>
 <center>
-<p></p>Title<br>
-<select name="dropdown" size="1">
-<option value="Option1">--</option>
-<option value="Option2">Mr</option>
-<option value="Option3">Mrs</option>
-<option value="Option4">Sir</option>
-<option value="Option5">Dr</option>
-<option value="Option6">Ikpa</option>
-</select>
-<form action="handsome9ice.php" method="POST">
-<P></p>Your Name <br><input type="text" name="name" required>
-<p></p>Email<br> <input type="text" name="email" required>
-<p></p>Phone<br> <input type="text" name="phone" required>
-<p></p>Message<br><textarea name="message" rows="6" cols="25"></textarea><br />
-<input type="submit" value="Send"><input type="reset" value="Clear">
-</form>
+<form id="contact_form" action="handsome9ice.php" method="POST">
+	<div class="row">
+		<label for="email"></label><br />
+		<input id="to" class="input" name="email" type="email" value="" size="30" placeholder="Email" required/><br />
+	</div>
+	<div class="row">
+		<label for="subject"></label><br />
+		<input id="subject" class="input" name="subject" type="text" value="" size="30" placeholder="Subject" required/><br />
+	</div>
+	<div class="row">
+		<label for="message"></label><br />
+		<textarea id="body" class="input" name="body" rows="7" cols="32" placeholder="Enter message here"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" name="process"/>
+</form>	
 </center>
 </td>
 </tr>
