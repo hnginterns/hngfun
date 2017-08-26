@@ -114,7 +114,7 @@ if (isset($_POST['send']))
 					</div>
 	      		<div class="column is-7">
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
-			      	<form action="" method="POST">
+			      	<form action="" method="POST" name="send">
 			      		<div class="field is-horizontal">
 			      			<div class="field-body">
 									<div class="field">
