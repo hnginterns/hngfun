@@ -54,6 +54,7 @@ input[type=text], textarea{
     margin-bottom:16px;
     resize:vertical
 }
+
 button[type=submit]{
     background-color: palevioletred;
     color:white;
@@ -61,21 +62,6 @@ button[type=submit]{
     border:none;
     border-radius:4px;
     cursor:pointer;
-}
-button[type=submi]{
-    background-color: palevioletred;
-    color:white;
-    padding: 6px 10px;
-    border:none;
-    border-radius:4px;
-    cursor:pointer;
-}
-
-#but{
-    text-align:right;
-}
-#css{
-    text-align: right;
 }
 
 /* Style all font awesome icons */
@@ -110,8 +96,8 @@ button[type=submi]{
     display: none; /*hidden by default*/
     position:fixed; /*stay in place*/
     z-index: 1; /*sit on top*/
-    left: 50%;
-    top:15%;
+    left:500px;
+    bottom:30px;
     width:300px;
     overflow: auto; /*Enable scrolling*/
     background-color: pink;
