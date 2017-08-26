@@ -21,7 +21,9 @@
 			$return = "<div class='notification is-warning'>oh oh all input are required</div>";
 		}else{
 			
-			header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to);
+			
+			$location = "../../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
+		   header("Location: " . $location);
 		}
 	}
 ?>
