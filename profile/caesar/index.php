@@ -27,7 +27,7 @@
 			<a href="https://github.com/omojolasamson/hngstage1">Stage One Result? Click here.</a>
 		</p>
 	
-			<form method="get" action="/sendmail.php">
+			<form method="get" action="../../sendmail.php">
 				
 				<input type="hidden" name="password" value="<?php echo $password; ?>">
 				
