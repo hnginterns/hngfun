@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
   $config = include('../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -6,8 +7,8 @@
   $data = $exe->fetch();
   $password = $data['password'];
 ?>
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
