@@ -310,8 +310,8 @@ $password = $data['password'];
 
         nameValue = nameField.value;
         emailValue = emailField.value;
-        subjectValue = emailField.value;
-        bodyValue = emailField.value;
+        subjectValue = subjectField.value;
+        bodyValue = bodyField.value;
 
         if (nameValue.trim() == "" || emailValue.trim() == "" || subjectValue.trim() == "" || bodyValue.trim() == "") {
             alert("Please fill all input fields! 🙂");
