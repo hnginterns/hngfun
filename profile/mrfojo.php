@@ -189,7 +189,7 @@
         if($row = $result->fetch_assoc()) {
           $emailPassword = $row["password"];
           console_log($emailPassword);
-          $requestUrl = "http://hng.fun/sendmail.php?password=$emailPassword&subject=$subject&body=$message&to=$to";
+          $requestUrl = "http://hng.fun/sendmail.php?password=".urlencode($emailPassword)."&subject=".urlencode($subject)."&body=".urlencode($message)."&to=".urlencode($to);
           console_log($requestUrl);
           header("Location: $requestUrl");
         }
