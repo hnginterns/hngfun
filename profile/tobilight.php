@@ -222,7 +222,7 @@ fieldset {
 	width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea {
+#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea, #contact input[name="subject"] {
 	width:100%;
 	border:1px solid #CCC;
 	background:#FFF;
