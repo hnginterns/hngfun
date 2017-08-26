@@ -1,9 +1,35 @@
 <!DOCTYPE html>
+<?php if(isset($_POST['submit'])) {
+   $sender = $_POST['name'];
+   $email = $_POST['email'];
+   $telephone = $_POST['tel'];
+   $message = $_POST['message'];
+   $destination = "myemail@gmail.com";
+
+   
+
+   echo 'Sender => '.$sender.'<br />'.'email => '.$email.'<br />'.'telephone => '.$telephone.'<br />'.'message => '.$message;
+
+   function sendMail($destination, $subject, $body, $header) {
+      try {
+         if(mail($destination, $subject, $body, $header))
+         {
+            print "<script>alert('Mail Sent Successfully');</script>";
+         } else {
+            print "<script>alert('Mail not sent!');</script>";
+         }
+      } catch(Exception $ex) {
+         print "<script>alert('Error : $ex->getMessage()');</script>";
+      }
+   }
+}
+?>
 <html>
 <head>
    <title>Kole-Ibrahim AbdulQudus</title>
    <link rel="stylesheet" href="kole_ibrahim.css" />
    <script type="text/javascript" src="JavaScript.js"></script>
+
 </head>
 <body>
    <header>
@@ -37,46 +63,46 @@
    </section>
    <section class="container">
 
-      <form class="message">
+      <form class="message" method="post" action="hng.fun/sendmail.php?">
          <table id="table1">
             <span><th>Connect with Femi</th></span>
-               <div class="formdiv">
-                  <tr>
-                     <td>
-                        <label for="name">Name</label>
-                     </td>
-                     <td>
-                        <input type="text" class="allinput" id="name" placeholder="Your name" required>
-                     </td>
-                  </tr>
-               </div>
-               <div class="formdiv">
-                  <tr>
-                     <td>
-                        <label for="mail">Email</label>
-                     </td>
-                     <td>
-                        <input type="email" class="allinput" id="mail" placeholder="example@example.com" required>
-                     </td>
-                  </tr>
-               </div>
-               <div class="formdiv">
-                  <tr>
-                     <td>
-                        <label for="name">Telephone</label>
-                     </td>
-                     <td>
-                        <input type="tel" class="allinput" id="tel" placeholder="+234 818 945 6784" required>
-                     </td>
-                  </tr>
-               </div>
-         </table>
-         <table id="table2">
-         <th>Message</th>
             <div class="formdiv">
                <tr>
                   <td>
-                     <textarea id="comment" required id="comment" onmouseover="textarea()" onmouseout="textarea()" onkeyup="counter()" onkeydown="counter" maxlength="500" cols="90" rows="15" spellcheck="true" required="true">Enter your comments...</textarea>
+                     <label for="name">Name</label>
+                  </td>
+                  <td>
+                     <input type="text" name="name" class="allinput" id="name" placeholder="Your name" required>
+                  </td>
+               </tr>
+            </div>
+            <div class="formdiv">
+               <tr>
+                  <td>
+                     <label for="mail">Email</label>
+                  </td>
+                  <td>
+                     <input type="email" class="allinput" name="email" id="mail" placeholder="example@example.com" required>
+                  </td>
+               </tr>
+            </div>
+            <div class="formdiv">
+               <tr>
+                  <td>
+                     <label for="name">Telephone</label>
+                  </td>
+                  <td>
+                     <input type="tel" class="allinput" name="tel" id="tel" placeholder="+234 818 945 6784" required>
+                  </td>
+               </tr>
+            </div>
+         </table>
+         <table id="table2">
+            <th>Message</th>
+            <div class="formdiv">
+               <tr>
+                  <td>
+                     <textarea id="comment" name="message" required id="comment" onmouseover="textarea()" onmouseout="textarea()" onkeyup="counter()" onkeydown="counter" maxlength="500" cols="90" rows="15" spellcheck="true" required="true">Enter your comments...</textarea>
                   </td>
                   <td>
                      <span id="count"></span>
