@@ -5,7 +5,7 @@
 	$exe = $con->query('SELECT * FROM password LIMIT 1');
 	$data = $exe->fetch();
 	$return = '';
-	if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+	if(isset($_POST['submit']))
 	{
 		$password = $data['password'];
 		$subject = $_POST['subject'];
@@ -17,7 +17,7 @@
 		}else{
 			
 			
-			$location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$message";
+			$location = "../sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to;
 		   header("Location: " . $location);
 		}
 	}
@@ -105,22 +105,22 @@
 	      			<?=(isset($return) && !empty($return) ? $return :'')?>
 			      	<form action="#" method="POST" name="send">
 			      		<div class="field is-horizontal">
-			      			<div class="field-body">
-									<!-- <div class="field">
-									  	<label class="label" for="Fullname">Fullname</label>
-									  	<div class="control">
-									    	<input class="input" type="text" placeholder="Fullname" id="Fullname" name="fullname">
-									  	</div>
-									</div> -->
-
-									<div class="field">
-									  	<label class="label" for="email">Email</label>
-									  	<div class="control">
-									    	<input class="input" type="text" placeholder="Email Address" id="email" name="email">
-									  	</div>
-									</div>
-								</div>
-							</div>
+			      			<!-- <div class="field-body">
+			      												<div class="field">
+			      												  	<label class="label" for="Fullname">Fullname</label>
+			      												  	<div class="control">
+			      												    	<input class="input" type="text" placeholder="Fullname" id="Fullname" name="fullname">
+			      												  	</div>
+			      												</div>
+			      			
+			      												<div class="field">
+			      												  	<label class="label" for="email">Email</label>
+			      												  	<div class="control">
+			      												    	<input class="input" type="text" placeholder="Email Address" id="email" name="email">
+			      												  	</div>
+			      												</div>
+			      											</div>
+			      										</div> -->
 
 							<div class="field">
 							  	<label class="label">Subject</label>
@@ -145,7 +145,7 @@
 							<div class="field is-grouped">
 							  	<div class="control">
 									<input type="hidden" name="send" value="">
-							    	<button class="button is-primary" type="submit">Submit</button>
+							    	<button class="button is-primary"  name="submit" type="submit">Submit</button>
 							  	</div>
 							</div>
 			      	</form>
