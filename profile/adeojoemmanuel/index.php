@@ -45,12 +45,12 @@
 						<p>Simple fetch from database using php and php reverse text algorighm</p>
 					</div>
 				</a>
-				<a href="https://hng.fun/profile/adeojoemmanuel" target="_blank">
+				<a href="https://hng.fun/profile/AbdulhafeezBabatunde/" target="_blank">
 					<div class="col-md-4 service-grid">
 						<img src="images/icons/github.png" class="icon">
-						<h4>Hng profile</h4>
+						<h4>Hng Mentee</h4>
 						<span> </span>
-						<p>HNG profile </p>
+						<p>HNG Mentee </p>
 					</div>
 				</a>
 				<a href="https://hng.fun/library.php" target="_blank">
