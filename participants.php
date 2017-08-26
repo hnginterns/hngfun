@@ -7796,6 +7796,27 @@ include('participants-head.php');
 
 
   <!-- Each participant ends here -->
-
+    <!-- OpsiJay Details start here -->
+  <div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(profile/opsijay.png); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="profile/opsijay.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Joda Opemipo</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">opsijay@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+   <!-- OpsiJay Details ends here -->
 
 <?php include "footer.php"?>
