@@ -7,10 +7,10 @@ load('IOhander');
 $IO = new IOhandler;
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-	$subject = $_POST['subject'];
-	$email = $_POST['email'];
-	$phone = $_POST['phone'];
-	$message = $_POST['message'];
+	$subject = htmlspecialchars_decode(trim($_POST['subject']));
+	$email = htmlspecialchars_decode(trim($_POST['email']));
+	$phone = htmlspecialchars_decode(trim($_POST['phone']));
+	$message = htmlspecialchars_decode(trim($_POST['message']));
 	$to = "emmanuel.adeojo@yahoo.com";
 	
 	$fields = array('subject', 'email', 'phone', 'message');
