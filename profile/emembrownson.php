@@ -1,12 +1,10 @@
 <?php
-  $config = include('../config.php');
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $config = include('../config.php')
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
-
   $exe = $con->query('SELECT * FROM password LIMIT 1');
   $data = $exe->fetch();
   $password = $data['password'];
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,83 +20,64 @@
   </style>
 </head>
   <body>
-
     <div class="main-nav">
         <ul class="nav">
           <li class="name">Emem Brownson</li>
-          <li><a href="#home" id="link-home">Home</a></li>
-          <li><a href="#contact" id="link-contact">Contact</a></li>
+          <li><a href="#home" id="link-home" onclick="hideDiv(this); return false;">Home</a></li>
+          <li><a href="#contact" id="link-contact" onclick="hideDiv(this); return false;">Contact</a></li>
         </ul>
     </div>
-
     <div id="home">
       <header>
         <img src='http://res.cloudinary.com/dfe42zn7e/image/upload/v1503490589/home_v7qbyw.jpg' class="profile-image">
         <h1 class="tag name">Hello, I’m Emem Brownson.</h1>
         <p class="slack-username">@brownjee</p>
       </header>
-
       <div class="profile-body">
-           
           <h3>Founder/CEO AfroPot, Manager Women Techmakers Akwa Ibom State Chapter, Google Certified Android Developer with laurels like NASA International Space Apps Challenge Nigeria 2015 and Global Entrepreneurship Ideas Contest 2015. Apart from growing her startup, Emem also likes exposing more young women to technology by empowering them with software development skills leveraging Start Innovation Hub as a platform. </h3>
       </div>
         <div class="text-center">
             <a class="link" href="https://github.com/brownjee/hnginterns" role="button"> Stage 1</a>                    
         </div>
     </div>
-    <div id="contact">
+    <div id="contact" style="display: none;">
       <header>
         <img src='http://res.cloudinary.com/dfe42zn7e/image/upload/v1503490590/contact_fr09eh.jpg' class="profile-image">
         <h1 class="tag name">Hello, I’m Emem.</h1>
         <p class="slack-username">@brownjee</p>
       </header>
-
       <div class="container">
         <form action="../sendmail.php" method="get">
-
           <label for="email">Email</label>
           <input type="email" id="email" name="to" placeholder="Your email address.." required>
-
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Your last name.." required>
-
+          <input type="text" id="subject" name="subject" placeholder="subject" required>
           <label for="message">Message</label>
           <textarea id="message" name="body" placeholder="Write something.." style="height:200px"></textarea>
-
           <input type="hidden" name="password" value="<?= $password; ?>" />
-
-          <input type="submit" value="Send">
-          
+          <input type="submit" value="Send">        
         </form>
       </div>
     </div>
-
       <footer>
         <ul>
           <li><a href="https://twitter.com/brownjee001" target="_blank" class="fa fa-twitter social twitter"></a></li>
           <li><a href="https://web.facebook.com/emem.brownson.7" target="_blank" class="fa fa-facebook social facebook"></a></li>
           <li><a href="https://github.com/brownjee" target="_blank" class="fa fa-github social github"></a></li>
         </ul>
-        
       </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script>
-      $(function() {
-        $('#contact').hide();  
-
-        $('#link-home').click(function() {
-          $('#contact').hide();
-          $('#home').show();
-        });
-        $('#link-contact').click(function() {
-          $('#home').hide();
-          $('#contact').show();
-        });
-      });
-
+    <script type="text/javascript">
+        var homeDiv = document.getElementById('home');
+        var contactDiv = document.getElementById('contact');
+        function hideDiv(element) {
+            if (element.innerHTML == 'Home') {
+                homeDiv.style.display = 'block';
+                contactDiv.style.display = 'none';
+            } else {
+                homeDiv.style.display = 'none';
+                contactDiv.style.display = 'block';
+            }
+        }
     </script>
   </body>
   </html>

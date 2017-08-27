@@ -132,8 +132,8 @@ $dbname = $config['dbname'];
 if (isset($_GET['contact']))  {
       $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
       $email_password_sql = "SELECT * FROM password LIMIT 1";
-      $email_password_obj = $conn-query($email_password_sql);
-      $email_password_row = $email_password_obj - fetch();
+      $email_password_obj = $conn->query($email_password_sql);
+      $email_password_row = $email_password_obj ->fetch();
       $email_password = $email_password_row['password'];
       $to = "odejidefemi@gmail.com";
       $subject = $_GET['subject'];
