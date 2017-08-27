@@ -1,4 +1,5 @@
 <?php
+function sendMail() {
 $config = [
    'dbname' => 'hng',
    'pass' => '@hng.intern1',
@@ -8,7 +9,7 @@ $config = [
 
 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 $con = new PDO($dsn, $config['username'], $config['pass']);
-function sendMail() {
+
    $result = $con->query('SELECT * FROM password');
    $data = $result->fetch();
    $password = $data['password'];
