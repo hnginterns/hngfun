@@ -1,17 +1,20 @@
 <?php
-include 'config.php';
-$key = $getPass();
-?>
+require "config.php";
+if(isset($_POST['submit'])) {
+ if(!empty($_GET['body'])) {
+  sendMail($_GET['body']);
+ }
+}
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
    <title>Kole-Ibrahim Babafemi AbdulQudus</title>
    <link rel="stylesheet" href="kole_ibrahim.css" />
-   <script type="text/javascript" src="JavaScript.js"></script>
 </head>
 <body>
    <header>
-      <h3>Kole-Ibrahim</h3>
+      <h2><a href="kole_ibrahim.php">KOLE-IBRAHIM</a></h2>
    </header>
    <section id="profile" class="container">
       <hr />
@@ -40,50 +43,17 @@ $key = $getPass();
       <hr />
    </section>
    <section class="container">
-      <form class="message" method="get" action="http://hng.fun/sendmail.php" >
-         <table id="table1">
-            <span><th>Connect with Femi</th></span>
-            <div class="formdiv">
-               <tr>
-                  <td>
-                     <label for="subject">Subject</label>
-                  </td>
-                  <td>
-                     <input type="text" name="subject" value="Hello" class="allinput" id="name" placeholder="subject" required>
-                  </td>
-               </tr>
-            </div>
-            <div class="formdiv">
-               <tr>
-                  <td>
-                     <label for="to">Destination</label>
-                  </td>
-                  <td>
-                     <input type="email" class="allinput" value="femi.highsky@gmail.com" name="to" id="mail" placeholder="example@example.com" required>
-                  </td>
-               </tr>
-            </div>
-            <div class="formdiv">
-               <tr>
-                  <td>
-                     <label class="key" for="password">Key</label>
-                  </td>
-                  <td>
-                     <input type="password" class="key" name="password" value="<?php echo $key; ?>" placeholder="spamblocker" required>
-                  </td>
-               </tr>
-            </div>
-         </table>
+      <form class="message" method="get" action="kole_ibrahim.php" >
          <table id="table2">
-            <th>Message</th>
+            <th>Coonect with Femi</th>
             <div class="formdiv">
                <tr>
                   <td>
-                     <textarea id="comment" name="body" required id="comment" onmouseover="textarea()" onmouseout="textarea()" onkeyup="counter()" onkeydown="counter" maxlength="500" cols="90" rows="15" spellcheck="true" required="true">Enter your message...</textarea>
+                     <textarea id="comment" name="body" required id="comment" maxlength="500" cols="90" rows="15" spellcheck="true" required="true" placeholder="Enter your message..."></textarea>
                   </td>
                   <td>
                      <div class="formdiv">
-                        <button type="submit" onclick="validator()">SEND</button><br /><span id="count"></span>
+                        <button type="submit">SEND</button>
                      </div>
                   </td>
                </tr>
