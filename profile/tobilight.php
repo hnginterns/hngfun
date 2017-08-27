@@ -93,6 +93,11 @@ h1, h2, h3, h4, h5, h6, ul {
 	font-weight: bolder;
 }
 
+img {
+	max-width: 50%;
+	width: 190px;
+}	
+
 .profile-img {
 	margin-bottom: 20px;
 	padding-top: 15px;
@@ -217,7 +222,7 @@ fieldset {
 	width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea {
+#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea, #contact input[name="subject"] {
 	width:100%;
 	border:1px solid #CCC;
 	background:#FFF;
@@ -283,7 +288,7 @@ fieldset {
 	<main class="profile-page">
 		<div class="container">
 			<div class="profile-img">
-				<img src="http://res.cloudinary.com/tobilight/image/upload/v1503321342/IMAG0082_fuubsp.jpg" alt="Agunloye Oluwatobiloba Light" height="300px" style="border-radius: 10px;">
+				<img src="http://res.cloudinary.com/tobilight/image/upload/c_scale,w_250/v1503787308/IMAG0121_1_jhrrvb.jpg" alt="Agunloye Oluwatobiloba Light" style="border-radius: 10px;">
 			</div>
 
 			<section class="profile-content">
@@ -305,7 +310,7 @@ fieldset {
 
 					<div class="about">
 						<h2>About Me</h2>
-						<p>My Name is Agunloye Oluwatobiloba Light. A graduate of Computer Science, North American University, Benin Republic. I have designed/developed quite a number of sites. I code in HTML,CSS, and JS. If am not with my laptop, I am either playing video games, tweeting, meditating, hanging out or sleeping. You can check my portfolio page &gt; <a href="http://tobilite.com.ng/portfolio" style="color: black;">here</a></p>
+						<p>My Name is Agunloye Oluwatobiloba Light. A graduate of Computer Science, North American University, Benin Republic. I have designed/developed quite a number of sites. I code in HTML,CSS, and JS. If i'm not with my laptop, I am either playing video games, tweeting, meditating, hanging out or sleeping. You can check my portfolio page &gt; <a href="http://tobilite.com.ng/portfolio" style="color: black;">here</a></p>
 					</div>
 			</section>
 			<ul class="navbar">
@@ -323,20 +328,23 @@ fieldset {
 			<hr />
 			 <!-- start contact form -->
 		
-  <form id="contact" action="/sendmail.php" method="GET">
+    
+    <form id="contact" action="/sendmail.php" method="GET">
     <h3>Quick Contact</h3>
     <h4>Contact me today, and get a reply within 24 hours!</h4>
     <fieldset>
-	<input placeholder="Your Name" class="label" name="yourname" type="text"/>
+	<input placeholder="Name" name="yourname" type="text"/>
 	</fieldset>
     <fieldset>
-      <input placeholder="Your Email Address" name="email" type="email"  required="">
+      <input placeholder="Email" name="email" type="email"  required="">
     </fieldset>
     <fieldset>
-      <input placeholder="Subject" for="subject" id="subject" name="subject" type="subject"  required="">
+      <input placeholder="subject" name="subject">
     </fieldset>
+	<input type = "hidden" name = "to" value = "jgetitdonefast@gmail.com">
+			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
     <fieldset>
-      <textarea placeholder="Type your Message Here...."for="body" id="body" name="body" required=""></textarea>
+      <textarea placeholder="Type your Message Here...." name="body" required=""></textarea>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
@@ -349,7 +357,7 @@ fieldset {
   
 </div>
 				
-		</div> 
+		
 		
 	</main>
 <!-- end container -->

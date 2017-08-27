@@ -192,7 +192,7 @@ input[type=submit]:hover {
         <p>
             I'm a 300 level Computer Science Student of the Federal University of Agriculture, Abeokuta. I'm a Front-End Developer.<br> I'm a lover of anything "techy". I like to try out new things. <br>I believe in Hardwork and consistency..
         </p>
-        <p><img src="https://p4.zdassets.com/hc/theme_assets/138842/200037786/logo.png" height="32" width="200" alt="Slack logo">  <span class="name">@dolapobabs</span> </p>
+        <p><img src="https://p4.zdassets.com/hc/theme_assets/138842/200037786/logo.png" height="32" width="100" alt="Slack logo">  <span class="name">@dolapobabs</span> </p>
         <ul class="social-icons">
             <li><a target='_blank' href="mailto:dolapob@gmail.com" title="Send an email"><i class="fa fa-envelope"></i></a></li>
             <li><a target='_blank' href="https://web.facebook.com/adedolapo.adekunle.5"> <i class="fa fa-facebook"></i></a></li>

@@ -1,0 +1,126 @@
+
+body {
+    margin: 0;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+.stage {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.img {
+  height: 300px;
+  border: solid 0px #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+.topbar {
+  background-color: #fbfbfb;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -35px;
+  margin-bottom: 15px;
+  height: 80px;
+  /*border-bottom: solid 1px #ccc;*/
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.6);
+}
+.topbarTitle {
+	font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  color: #555555;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.name {
+  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Montserrat';*/
+  font-size: 60px;
+  color: #555555;
+}
+.biography {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  color: #555555;
+  line-height: 25px;
+  text-align: justify;
+}
+.info {
+  font-family: 'Montserrat', sans-serif;;
+  font-size: 15px;
+  color: #555555;
+  text-align: left;
+  padding-left: 10px;
+}
+.indent {
+  padding-left: 5px;
+}
+.right {
+  position: relative;
+  clear: right;
+  float: right;
+  width: 640px;
+}
+.left {
+  position: relative;
+  clear: left;
+  float: left;
+  width: 320px
+}
+.btnL {
+  border-radius: 5px;
+  background-color: #888888;
+  color: white;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  clear: left;
+  float: left;
+}
+.btnL .icon{
+  color: black;
+}
+.btnL .iconlink{
+  color: white;
+  text-decoration: none;
+}
+.btnL .iconlink:hover{
+  color: #ccc;
+  text-decoration: none;
+}
+.btnR {
+  border-radius: 5px;
+  background-color: #888888;
+  color: white;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  clear: right;
+  float: left;
+  margin-left: 10px;
+}
+.btnR .icon{
+  color: black;
+}
+.btnR .iconlink{
+  color: white;
+  text-decoration: none;
+}
+.btnR .iconlink:hover{
+  color: #ccc;
+  text-decoration: none;
+}
