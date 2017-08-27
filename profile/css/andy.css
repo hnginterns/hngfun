@@ -24,6 +24,17 @@ body {
     .col-1{
         width: 100%
     }
+<<<<<<< HEAD
+.sizey {
+    rows:"4"; 
+<<<<<<< HEAD
+    cols:"100";
+=======
+    cols:"40";
+>>>>>>> 2e5afe0f0bb8eae5e16c655689d05659cb6d96cc
+}
+=======
+>>>>>>> 406b5a78b205e7c5c0339b4248e3a822a6381038
 .col-1-4 {
   width: 25%;
 }
@@ -687,7 +698,18 @@ textarea {
   text-align: right;
   clear: both;
 }
+<<<<<<< HEAD
+        .sizey {
+    rows:"4"; 
+<<<<<<< HEAD
+    cols:"40";
+=======
+    cols:"100";
+>>>>>>> 2e5afe0f0bb8eae5e16c655689d05659cb6d96cc
+}
+=======
    
+>>>>>>> 406b5a78b205e7c5c0339b4248e3a822a6381038
     }
  
     
