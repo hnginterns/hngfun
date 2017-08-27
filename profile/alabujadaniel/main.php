@@ -26,7 +26,7 @@
 	    	$data = $execute->fetch();
 	    	$password = $data['password'];
 
-            $sent_url = "/sendmail.php?to=$to&body=$body&password=$password";
+            $sent_url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
 	    	header("location: $sent_url");
 	    }
