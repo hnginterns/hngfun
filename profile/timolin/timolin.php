@@ -13,7 +13,7 @@
 <body>
     <div id="main">
         <div>
-            <p style="background-color: #5cb85c; color:#ffffff; padding: 10px;"><?php if (isset($_GET['message'])) { echo $_GET['message'];} ?> <a href="hng.fun/profile/timolin/timolin.php"> Reload Page</a> </p>
+        <?php if (isset($_GET['message'])) { echo "<p style=\"background-color: #5cb85c; color:#ffffff; padding: 10px; border-radius: 5px;\">". $_GET['message'] . "<a href=\"http://hng.fun/profile/timolin/timolin.php\"> Reload Page</a>";} ?></p>
         </div>
         
         <div class="sec1">
