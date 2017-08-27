@@ -217,3 +217,4 @@
 (214) Alexander Ikelia (slack:@alex, github: @alexikelia)
 (215) Ifeanyi Okoye (slack:@ifeanyi0, github: @NoRestrictions)
 (216) Silas Silas (Slack@silassilas  Github:@silassilasm)
+(217) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
