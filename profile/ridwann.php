@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
 
     $subject = "Hello from HNG";
-    $to = 'radpangolin@gmail.com';
+    $to = 'thosynlasisi@gmail.com';
     $senderName = $_POST['name'];
     $body = $_POST['message'];
 
