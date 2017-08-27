@@ -1,0 +1,588 @@
+/* Main color - #e54c45 */
+/* Hover color - #7f1612 */
+
+/* clearfix class */
+
+.clearfix1 {zoom: 1}
+.clearfix1 {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*#DCE1DF*/
+
+/* ---------------------------------------- */
+/*   BASIC SETUP */
+/* ---------------------------------------- */
+
+
+.clearfix {
+    clear: both;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    height: auto;
+    color: #555;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+}
+
+body {
+    height: auto;
+}
+
+/* ---------------------------------------- */
+/*   REUSABLE COMPONENTS */
+/* ---------------------------------------- */
+
+
+
+.myrow {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+ 
+
+/* ------headings -------- */
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    color: #555;
+}
+
+
+
+h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+
+
+.style-h1 {
+    font-weight: 400;
+    color: #d61c1b;
+}
+
+
+
+.long-copy {
+    line-height: 145%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    word-spacing: 4px;
+    font-size: 17px;
+    width: 70%;
+    font-weight:400;
+}
+
+.long-copy2 {
+    line-height: 145%;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    word-spacing: 4px;
+    font-size: 17px;
+}
+
+.offer h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 100%;
+    word-spacing: 4px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #e54c45;
+}
+
+
+/* ---------------------------------------- */
+/*   HEADER COMPONENTS */
+/* ---------------------------------------- */
+
+header {
+    height: 100vh;
+    background-color: #DCE1DF;
+}
+
+.hero-text-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.logo {
+    float: left;
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
+.small {
+    width:80px;
+    float: left;
+    color: #555;
+    font-size: 70%;
+}
+
+.logo-content {
+    float: left;
+    margin-top: 30px;
+}
+
+.main-nav {
+    margin-top: 40px;
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 10px 0px;
+    color: #555; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 300;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    border-bottom: 2px solid #d61c1b;
+}
+
+
+.myBtn:link,
+.myBtn:visited {
+    padding: 10px 20px;
+    border: 1px solid #d61c1b;
+    background-color: transparent;
+    color: #555;
+    transition: background-color color 0.2s;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.button .myBtn {
+    padding: 10px 20px;
+}
+
+.myBtn:hover,
+.myBtn:active {
+    background-color: rgba(214, 28, 27, 0.85);
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* MOBILE NAVI */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #d61c1b;
+}
+
+
+
+/* Sticky Navigation */ 
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin-top: 18px;
+}
+
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 25px 0;
+    color: #555;6    
+}
+
+
+.sticky .logo-content {
+    margin-top: 5px;
+}
+
+
+.header-content {
+    position: absolute;
+    top: 30%;
+    left: 10%;   
+    color: #555;
+}
+
+.header-content p {
+    font-weight: 100;
+}
+
+
+
+
+.photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.photo img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 620px;
+}
+
+
+
+.header-copy {
+    line-height: 145%;
+    margin-bottom: 20px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    color: #555;
+    word-spacing: 4px;
+    font-size: 17px;
+    width: 40%;
+    font-weight:400;
+}
+
+
+
+.base-space {
+    margin-top: 30px;
+}
+
+
+
+/* ---------------------------------------- */
+/*   SECTION ABOUT US */
+/* ---------------------------------------- */
+
+
+
+.section-about {
+    height: 100%;
+    padding: 80px;
+    background-color: #fff;
+}
+
+
+.card {
+
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    -moz-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.card2 {
+      box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    -moz-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: #DCE1DF;
+}
+
+.card-header {
+    margin: 0;
+    background: #fff;
+    color: #e54c45;
+}
+
+
+.card-header h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 120%;
+    margin: 0px;
+    color: #fff;
+}
+
+
+.card-header h4 {
+    color: #fff;
+}
+
+.title {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;;
+    align-items: center;
+}
+
+
+/* Resume button */
+
+.title a  {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.title h4 {
+    font-size: 100%;
+    font-weight: 100;
+    color: #555;
+}
+
+/* SOCIAL MEDIA */
+
+.social-links {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    color: #e54c45;
+    font-size: 150%;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-github,
+.ion-social-codepen,
+.ion-social-linkedin {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+
+.ion-social-github:hover {
+    color: #3b5998;
+}
+
+.ion-social-linkedin:hover {
+    color: #007bb6;
+    
+}
+
+.ion-social-codepen:hover {
+    color: #3b5998;
+}
+
+
+
+.who h2 {
+    text-align: left;
+    font-size: 130%;
+    color: #e54c45;
+}
+
+.who .style-h1 {
+    color: #e54c45;
+}
+
+
+
+
+/* ---------------------------------------- */
+/*   CONTACT */
+/* ---------------------------------------- */
+
+
+.section-contact {
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.h2-title {
+    font-size: 80%;
+    margin-bottom: 40px;
+    
+}
+
+.h2-title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 140%;
+    font-weight: 300;
+}
+
+
+
+
+.contact-form {
+    width: 90%; 
+    margin: 0 auto;
+}
+
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border-bottom: 1px soild #ccc;
+    margin-bottom: 20px;
+}
+
+input[type=checkbox] {
+    margin: 0 10px 20px 0;
+}
+
+input[type=submit] {
+    margin-bottom: 20px;
+}
+textarea {
+    height: 100px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.map-box {
+    width: 100%;
+    height: 560px;
+    position: relative
+}
+
+
+
+.form-box {
+    margin: 0 auto;
+    width: 40%;
+    background-color: #DCE1DF;
+    height: 560px;
+    z-index: 10;
+    padding-top: 40px;
+}
+
+
+
+.map-box .card {
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 20%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.map-box .card .phone {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.map-box .card i {
+    margin-right: 20px;
+    font-size: 200%;
+    color: #e54c45;
+}
+
+
+.map-box .style-p {
+    padding-top: 8px;
+    width: 70%;
+    font-size: 70%;
+    text-align: left;
+}
+
+.map-box p {
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.map-box p span {
+    font-weight: 400;
+    color: #e54c45;
+}
+
+.map-box .style-i {
+    width: 30%;
+    text-align: right;
+}
+
+
