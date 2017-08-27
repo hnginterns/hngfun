@@ -8,7 +8,8 @@ $link = mysql_connect($db_host, $db_username, $db_password, $db_name) or die('Co
 
 function getPass() {
    global $link;
-   $query = $link->query("SELECT password FROM PASSWORD LIMIT 1");
+   $query = "SELECT password FROM PASSWORD LIMIT 1";
+   $result = mysql_query($link, $query) or die("Email or Password Incorrect!") . mysqli_error($link);
    while($getAll = mysql_fetch_array($query)) {
       $pass = $getAll['password'];
    }
