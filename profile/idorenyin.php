@@ -1,5 +1,5 @@
 <?php
-  //if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if(isset($_SERVER['REQUEST_METHOD']) == 'POST') {
     $error = [];
     $subject = isset($_POST['subject']);
     $to  = 'masterinem@gmail.com';
@@ -20,7 +20,7 @@
       $url = "http://hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       header("location: $url");
     //}
-  //}
+  }
  ?>
 <!DOCTYPE html>
 <html lang="en">
