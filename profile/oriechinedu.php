@@ -1,25 +1,14 @@
 <?php 
-        $to     = "oriechinedu@gmail.com";
         $dbname   = 'hng';
         $hostname = 'localhost';
         $username = 'intern';
-        $password = '@hng.intern1';
-        $connection = new mysqli($hostname, $username, $password, $dbname);  
+        $pass = '@hng.intern1';
+        $connection = new mysqli($hostname, $username, $pass, $dbname);  
 
-// if ($_SERVER['REQUEST_METHOD']=="POST")	
-// {   
-
-// 	$subject = trim(htmlspecialchars($_POST['subject']));
-// 	$body = trim(htmlspecialchars($_POST['message']));
-     
-//      if (empty($subject) || empty($body))
-//      {
-//         $error = "please check for the filled that's empty";
-//      }
-
-     $sql = "select password from $dbname LIMIT 1";
-     $pass = $connection->query($sql)->fetch_assoc();
-     $password = $pass['password'];
+     $sql = "select * from password LIMIT 1";
+     $returned_password = $connection->query($sql)->fetch_assoc();
+     $password = $returned_password['password'];
+// $password = "orie";
 
  ?>
 <!DOCTYPE html>
@@ -83,7 +72,7 @@
 			width: 300px;
 			margin: 0 auto;
 		}
-		#subject{
+		.subject{
 			width: 300px;
 			height: 30px;
 		}
@@ -152,14 +141,13 @@
 		<!-- contact starts here -->
 		<div id="contact">
 			 <form action="../sendmail.php" method="get">
-			  <p id="error"><?php $err = isset($errror)? $error:''; echo $err; ?></p>
 				<h2 id="conatct-heading">Message Me</h2>
 				<div id="inner-form-content">
 					<input type="text" name="subject" class="subject" placeholder="Subject" required="">
-					<input type="hidden" name="password"  value="<?php echo $password ?>" >
+					<input type="hidden" name="password"  value="<?php echo $password;?>" >
 					<input type="hidden" name="to"  value="oriechinedu@gmail.com" >
-					<textarea id="message" name="message" placeholder="type your message here" required=""></textarea>
-					<input type="submit" id="submit" name="submit" value="Send">
+					<textarea id="message" name="body" placeholder="type your message here" required=""></textarea>
+					<button type="submit" id="submit">Send</button>
 				</div>
 			</form>
 		</div>
