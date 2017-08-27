@@ -47,12 +47,12 @@
    <div class="form-holder">
        <header class="clearfix">
            <div id="info">
-               <h1><span itemprop="name">Nse-Abasi Joseph</span></h1>
-               <h3><span itemprop="jobtitle">Software Engineer &amp; Programmer</span></h3>
-               <small itemprop="adress" itemscope="" itemtype="http://schema.org/PostalAddress">
-                   <span itemprop="addressLocality">Oron</span>,
-                   <span itemprop="addressState">Akwa-Ibom</span><br>
-                   <span itemprop="addressCountry">Nigeria</span>
+               <h1><span>Nse-Abasi Joseph</span></h1>
+               <h3><span>Software Engineer &amp; Programmer</span></h3>
+               <small itemscope="" itemtype="http://schema.org/PostalAddress">
+                   <span>Oron</span>,
+                   <span>Akwa-Ibom</span><br>
+                   <span>Nigeria</span>
                </small>
                </div>
        </header>
@@ -74,9 +74,9 @@
            </fieldset>
        </form>
      <p class="top">Thanks for reaching out.</p>
-       <a href="https://github.com/nseetim/hotels.ng/blob/master/script.php" class="fa fa-github" fa_custom fa-2x aria-hidden="true">Stage 1 repo</a>
-       <a href="http://hnginterns.slack.com/etimnseabasi" class="fa fa-slack" fa_custom fa-2x aria-hidden="true">slack</a>
-       <a href="https://facebook.com/nse.etim" class="fa fa-facebook-square" fa_custom fa-2x aria-hidden="true">Facebook</a>
+       <a href="https://github.com/nseetim/hotels.ng/blob/master/script.php" class="fa fa-github" aria-hidden="true">Stage 1 repo</a>
+       <a href="http://hnginterns.slack.com/etimnseabasi" class="fa fa-slack" aria-hidden="true">slack</a>
+       <a href="https://facebook.com/nse.etim" class="fa fa-facebook-square" aria-hidden="true">Facebook</a>
 
    </div>
 </div>
