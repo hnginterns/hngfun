@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>josh</title>
+    <script src="https://use.fontawesome.com/0b7956cb33.js"></script>
+    <style>
+        body{
+            background-color:#2e303e ;
+        }
+        .body-content{
+            position: absolute;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            left:300px;
+            width: 60%;
+            background-color:#6c6b74;
+
+            color:white;
+            text-align: center;
+        }
+        img{
+            border-radius:50%;
+            width:300px;
+            height:300px;
+            margin-top: 20px;
+        }
+        .body-content .inner-body .icon{
+            color: black;
+        }
+        .body-content .inner-body .iconlink{
+            color: black;
+            text-decoration: none;
+        }
+        .body-content .inner-body .iconlink:hover{
+            color: white;
+            text-decoration: none;
+        }
+        .myform{
+            position:relative;
+            text-align: left;
+            font-weight: bold;
+            background-color:#2e303e;
+            padding: 20px;
+            width: 400px;
+            margin: 20px;
+            left:250px;
+        }
+        .myform #name,#to,#pass,#message {
+            display: block;
+            width: 300px;
+            height: 30px;
+            margin: 5px;
+            border-radius:5px;
+        }
+        .myform button{
+            margin: 5px;
+            padding: 7px;
+            border-radius: 4px;
+            color:white;
+            background-color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+  <div class="body-content">
+    <div class="inner-body">
+        <img src="http://res.cloudinary.com/dr7qeat3t/image/upload/v1503196109/josh_2_gkeaf7.jpg"  alt="josh_profile">
+        <h2>Aniekwe Joshua Chigozie</h2>
+
+        <h4 class="icon"><i class="fa fa-envelope" aria-hidden="true"></i> joshuaaniekwe@gmail.com</h4>
+        <h4 class="icon"><i class="fa fa-slack" aria-hidden="true"></i> josh </h4>
+        <h4 ><a class="iconlink" href="https://github.com/sir-josh/HNGIntern.git"><i class="fa fa-github" aria-hidden="true"></i> stage 1</a></h4>
+        <br><br>
+        <div>
+            <h1 class="icon">BIOGRAPHY</h1>
+            <h4 class="icon">A current graduate of computer science from University of Nigeria, Nsukka. <br>
+               Web developer (backend), passionate with tech products, loves robotics and A.I
+               technologies.<br><br>
+            </h4>
+        </div>
+        <hr/>
+        <div class="myform">
+            <form action="configme.php" method="POST">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="subject" placeholder="Name">
+
+                <label for="to">Email</label>
+                <input type="text" id="to" name="to" placeholder="Email"><br><br>
+
+                <input type="hidden" id="pass" style="display:none" name="password">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="body" placeholder="Write message body here.." style="height:100px"></textarea>
+
+                <button type="submit" name="submit" value="Submit"><strong>Contact me</strong></button>
+
+            </form>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

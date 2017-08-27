@@ -2,26 +2,167 @@
 <html>
  <head> 
  	<style type="text/css">
-h1, h2 {
 
-	font-family: "times new roman";
-	margin-left: 400px;
-    margin-right: 400px;
+
+
+body {
+  padding-top:25px;
+  background: #FFFFFF;
+  margin-left:10px;
+  margin-right:10px;
+}
+.container {
+  max-width:600px;
+  margin:0 auto;
+  text-align:center;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  background-color:#FAFAFA;
+}
+.head {
+  -webkit-border-radius:6px 6px 0px 0px;
+  -moz-border-radius:6px 6px 0px 0px;
+  border-radius:6px 6px 0px 0px;
+  background-color:#2ABCA7;
+  color:#FAFAFA;
+}
+h2 {
+	color:#FAFAFA;
+	background-color:#2ABCA7;
+  text-align:center;
+  padding:8px 0 8px 0;
+  font-size: 1.4em;
+}
+input {
+  margin-bottom:10px;
+}
+textarea {
+  height:100px;
+  margin-bottom:10px;
+}
+input:first-of-type
+{
+  margin-top:35px;
+}
+input, textarea {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
+}
+::-webkit-input-placeholder {
+   color: #000;
+}
+:-moz-placeholder {
+   color: #000;  
+}
+::-moz-placeholder {
+   color: #000; 
+}
+:-ms-input-placeholder {  
+   color: #000;  
+}
+hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#2ABCA7;
+  padding: 12px 45px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #2ABCA7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
+}
+button:hover, .button:hover {
+  background:#19a08c;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
 }
 
+@media (max-width: 700px) {
+  label.error {
+    width: 90%;
+  }
+  input, textarea {
+    width: 90%;
+  }
+  button {
+    width:90%;
+  }
+  body {
+  padding-top:10px;
+  }  
+}
+.message {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#2ABCA7;
+    width: 80%;
+    margin:auto;
+    color: #000;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+
+
 a {
+	 padding-top:10px;
+    padding-bottom:10px;
+    background-color:#FAFAFA;
 	font-family: "times new roman";
 	margin-left: 600px;
     margin-right: 600px;
 }
-
 p {
 	margin-left: 400px;
     margin-right: 400px;
 	font-size: 15px;
-	font-family: verdana;
+	font-family: verdana, sans-serif;
 }
-
 img {
     display: block;
     margin-left: auto;
@@ -32,18 +173,36 @@ img {
 body {
 background-color: powderblue;
 }
-	
+
+
  	</style>
  </head>
  <body>
-
+    
  	
  	<img src="pp.png" width="300" height="300" />
- 	<h1>Emem Jonah</h1>
+
+ 	<center><h1>Emem Jonah</h1></center>
  	<h2>Slack Username: @emiqueena</h2>
     <p>Emem is a tech enthusiast and also have a flare  for sport. Currently an undergraduate studying Computer Science in the University of Uyo for a Bachelor of Science degree.</p>
  	
     <a href="https://github.com/Emiqueena/hnginternship">GitHub-stage1</a>
+
+<form  id="contact" action="emiqueena.php" method="post">
+  <div class="container">
+    <div class="head">
+      <h2>You can reach me</h2>
+    </div>
+    <input type="text" name="name" placeholder="Name" /><br />
+    <input  type="email" name="email" placeholder="Email" /><br />
+    <input type="text" placeholder="Subject" name="subject" required/><br>
+    <textarea type="text" name="message" placeholder="Write your message here"></textarea><br />
+     <button id="submit" type="submit">
+      Send!
+    </button>
+  </div>
+
+</form>
 
  </body>
 </html

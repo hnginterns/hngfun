@@ -154,8 +154,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   <title>Olatunbosun Gabriel | Profile</title>
-</head>
-<body>
+</head><body>
   <div>
     <div class="card">
       <img src="http://i.imgur.com/TAaP38Y.jpg" alt="Olatunbosun Gabriel" style="width:100%">
@@ -196,14 +195,14 @@
             </ul>
           </blockquote>
         <?php endif; ?>
-        <form class="bosunski_form" action="" method="POST">
+        <form class="bosunski_form" action="#" method="POST">
           <label for="subject" class="bosunski-label">Subject</label>
           <input id="subject" type="text" name="subject" placeholder="Subject" required>
 
           <label for="message" class="bosunski-label">Your Message</label>
           <textarea id="message" name="message" rows="8" cols="50" placeholder="Your Message" required></textarea>
 
-          <button type="submit" name="submit" id="bosunski-submit"> Send Message</buuton>
+          <button type="submit" name="submit" id="bosunski-submit"> Send Message</button>
         </form>
       </div>
     </div>

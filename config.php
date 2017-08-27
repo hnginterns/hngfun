@@ -10,3 +10,5 @@
     'username' => 'intern',
     'host' => 'localhost',
   ];
+
+?>

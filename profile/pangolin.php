@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Okoko Michaels - @pangolin</title>
+	<title>Okoko Michaels :: @pangolin</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		:root {
@@ -343,18 +343,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
 <div id="mugshot">
-<img src="https://ca.slack-edge.com/T3QLSP8HM-U3RKCT0NN-94f0f01b2d45-512" />
+<img src="https://ca.slack-edge.com/T3QLSP8HM-U3RKCT0NN-94f0f01b2d45-512" alt="Okoko Michaels" />
 </div>
-	<div id="icons", style="font-size:24px">
-		<i id="github", class="fa fa-github-alt", onclick="Javascript: window.location = 'https://github.com/idoqo'"></i>
-		<i id="slack", class="fa fa-slack", onclick="Javascript: window.location = 'hnginterns.slack.com/team/pangolin'"></i>
-        <i id="twitter", class="fa fa-twitter", onclick="Javascript: window.location = 'https://twitter.com/jordan__zzz'"></i>
-        <i id="mail", class="fa fa-envelope", onclick="Javascript: window.location = 'mailto:radpangolin@gmail.com'"></i>
+	<div id="icons" style="font-size:24px">
+		<i id="github" class="fa fa-github-alt" onclick="Javascript: window.location = 'https://github.com/idoqo'"></i>
+		<i id="slack" class="fa fa-slack" onclick="Javascript: window.location = 'hnginterns.slack.com/team/pangolin'"></i>
+        <i id="twitter" class="fa fa-twitter" onclick="Javascript: window.location = 'https://twitter.com/jordan__zzz'"></i>
+        <i id="mail" class="fa fa-envelope" onclick="Javascript: window.location = 'mailto:radpangolin@gmail.com'"></i>
 	</div>
 	<p class="stage-1"><a href="https://github.com/idoqo/hng-stage1">Stage-1 Project</a></p>
 
 	<div class="contact-form">
-		<form action="" method="post">
+		<form action="pangolin.php" method="post">
 			<input type="text" name="name" placeholder="Your Name">
 			<textarea name="message" placeholder="Your Message"></textarea>
 			<input type="submit" name="submit" value="Send">

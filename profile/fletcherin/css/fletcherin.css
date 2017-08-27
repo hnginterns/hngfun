@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{background:#CCCCCC; top: 0; margin: 0px; padding: 0px;}
+img{
+	width: 100%;
+
+}
+p{font-size: 16px; color: #000;}
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color:#006699;
+    padding: 3px;
+}
+.main{
+	max-width: 400px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	margin: auto;
+	text-align: center;
+	background:#999999;
+}
+.container{
+	padding: 0 16px;
+}
+
+button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background-color:#003366;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 5px;
+}

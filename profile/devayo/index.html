@@ -10,20 +10,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div id="notification" class="clearfix">
+        <p></p>
+    </div>
     <div class="container">
-        <div class="flex-item" id="profile">
+        <div class="" id="profile">
             <div class="heading">
                 <p>Intern Profile</p>
             </div>
             <div>
-                <img src="https://image.ibb.co/b1H445/pic.jpg" alt="profile picture" width="400" height="400">   
+                <img src="http://image.ibb.co/mA9i45/9.jpg" alt="profile picture">
             </div>
             <div class="card-footer">
-                <a href="https://github.com/Hamdal/hng-internship-stage1"><span class="fa fa-external-link"><p id="stage1"> First stage task</p></span></a>
+                <a href="https://github.com/Hamdal/hng-internship-stage1"><span class="fa fa-external-link"><span id="stage1"> First stage task</span></span></a>
                 <p id="slack-username"><span class="fa fa-slack"> Slack: </span> @devayo</p> 
             </div>
         </div>
-        <div class="flex-item">
+        <!--<div class="flex-"> -->
             <div id="bio">
                 <div class="heading">
                     <p>About me</p>
@@ -39,7 +42,20 @@
                     opportunity for gaining experience in team development.
                 </p>
             </div>
-        </div>
+             <!-- </div> -->  
+            
+            <div id="contact">
+                <div class="heading">
+                    <p>Contact me</p>
+                </div>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <input type="text" name="message" id="message" placeholder="Message">                                        
+                    <input type="email" name="email" id="email" placeholder="Your Email">                    
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <input type="submit" name="submit" id="submit" value="Send mail"> 
+                </form>
+            </div>
     </div>
 
     <div id="footer">
@@ -49,5 +65,7 @@
         <a href="https://github.com/Hamdal/"><span class="fa fa-github icons"></span></a>
         <a href="mailto:hameedayomide@gmail.com"><span class="fa fa-envelope icons"></span></a>        
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
