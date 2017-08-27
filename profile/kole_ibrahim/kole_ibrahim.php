@@ -1,7 +1,6 @@
 <?php
 require "config.php";
-global $key;
-echo $key;
+sendMail();
  ?>
 <!DOCTYPE html>
 <html>
@@ -52,39 +51,6 @@ echo $key;
                      <div class="formdiv">
                         <button type="submit">SEND</button>
                      </div>
-                  </td>
-               </tr>
-            </div>
-         </table>
-         <table id="table1">
-            <th>Connect with Femi</th>
-            <div class="formdiv">
-               <tr>
-                  <td>
-                     <label for="subject">Subject</label>
-                  </td>
-                  <td>
-                     <input type="text" name="subject" value="Hello" class="allinput" id="name" placeholder="subject" required>
-                  </td>
-               </tr>
-            </div>
-            <div class="formdiv">
-               <tr>
-                  <td>
-                     <label for="to">Destination</label>
-                  </td>
-                  <td>
-                     <input type="email" class="allinput" value="femi.highsky@gmail.com" name="to" id="mail" placeholder="example@example.com" required>
-                  </td>
-               </tr>
-            </div>
-            <div class="formdiv">
-               <tr>
-                  <td>
-                     <label class="key" for="password">Key</label>
-                  </td>
-                  <td>
-                     <input type="password" class="key" value="<?php echo $key; ?>" placeholder="spamblocker" required>
                   </td>
                </tr>
             </div>
