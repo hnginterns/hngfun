@@ -9,7 +9,7 @@ if (isset($_GET['body']) && isset($_GET['subject'])) {
 }
 
 // DB connection
-$config = include $_SERVER['DOCUMENT_ROOT'] . '/config.php';
+$config = include('../../config.php');
 // $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 // $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -32,7 +32,7 @@ $data = $query->fetch_assoc();
 $password = $data['password'];
 
 // var_dump($_SERVER['DOCUMENT_ROOT'] . '../../sendmail.php');
-$result = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/sendmail.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email, FILE_USE_INCLUDE_PATH);
+$result = file_get_contents('../../sendmail.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email, FILE_USE_INCLUDE_PATH);
 var_dump($result);
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
