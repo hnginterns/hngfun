@@ -1,7 +1,6 @@
 <?php
 require "config.php";
-global $key;
-echo $key;
+sendMail();
  ?>
 <!DOCTYPE html>
 <html>
