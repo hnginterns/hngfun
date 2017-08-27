@@ -1,3 +1,24 @@
+
+ <?php 
+ if(isset($_POST['send'])){
+$to = "danolez1fatuns@gmail.com";
+$body = trim($_POST['body']);
+$subject = trim($_POST['subject']);
+
+$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      echo json_encode($config);
+      $param = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $conn = new PDO($param, $config['username'], $config['pass']);
+
+      $stmt= $conn->query('SELECT * FROM password LIMIT 1');
+      $data = $stmt->fetch();
+      $password = $data['password'];      
+      $stmt->close();
+      echo $password;
+      $link = "http://hng.fun/sendmail.php?to=".$to."&body=".$body."&subject=".$subject."&password=".$password;
+      header("location:".$link);
+}
+ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -24,31 +45,10 @@
 	<div style="text-align: left;"> <p>	My name is Fatunmbi Daniel, I am a native of Osun State and currently a 200 level student of Mechatronic Engineering at Federal University of Agriculture Abeokuta.</p>
 <p>		My prior experience as a software engineer include 
 two years of web and Android apps development.</p>
-<p>			Languages I speak in are :
+<p>			Languages I speak are :
 Java, Php, Javascript, Mysql, Html, Xml and Css.</p>
  </div>
  <div >
- <?php
- 
- if(isset($_POST['send'])){
-$to = "danolez1fatuns@gmail.com";
-$body = trim($_POST['body']);
-$subject = trim($_POST['subject']);
-
-$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      
-      $param = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $conn = new PDO($param, $config['username'], $config['pass']);
-
-      $stmt= $conn->query('SELECT * FROM password LIMIT 1');
-      $data = $stmt->fetch();
-      $password = $data['password'];      
-      $stmt->close();
-
-      $link = "http://hng.fun/sendmail.php?to=".$to."&body=".$body."&subject=".$subject."&password=".$password;
-      header("location:".$link);
-}
- ?>
  	<form method="POST" action="">
  		<input type="text" name="subject" required placeholder="Subject"><br>
  		<input type="text" name="body" style="height: 150px" required placeholder="Message"><br>
