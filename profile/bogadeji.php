@@ -4,7 +4,7 @@
     
 
 
-      if (isset($_GET['send']))  {
+      if (isset($_GET['submit']))  {
           //Email information here
       $to = "bogadeji@gmail.com";
       $subject = $_GET['subject'];
@@ -33,7 +33,7 @@
 	    img{
     border-radius:50%; 
       display:block;
-      
+      w
       border:1px solid #551A8B;
       margin: auto; 
      }
@@ -140,7 +140,7 @@ button[type="submit"] {
 
   <div class ="contact">
     
-                        <form action="bogadeji.php" method="GET">
+                        <form action="bogadeji.php" method="POST">
                         <h3>Contact</h3>
     
     <fieldset>

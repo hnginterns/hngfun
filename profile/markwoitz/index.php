@@ -26,24 +26,24 @@
                             I love making things work on computer. A graduate of Computer Science from the unique University of Port Harcourt,
                             a strong advocate of Jollof Rice. Proficient in PHP & Mysql, HTML, CSS, Javascript. 
                         </p>
-                        <p>
+                       
                             You can find me on:
                             <div class="social">
                                 <ul>
                                     <li><span><a href="https://www.facebook.com/ik.nwakanma"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span></li>
                                     <li><span><a href="https://www.twitter.com/ik_nwakanma"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></span></li>
-                                    <li><span><a href="https://github.com/icnwakanma"><i class="fa fa-github-square" aria-hidden="true"></a></i></span></li>
+                                    <li><span><a href="https://github.com/icnwakanma"><i class="fa fa-github-square" aria-hidden="true"></i></a></span></li>
                                 </ul>
                             </div>
-                        </p>
+                        
 
                         <h3 class="about-header">HNG TASKS</h3>
-                        <p>
+                       
                             <ol class="task-list">
                                 <li><a href="https://github.com/icnwakanma/hng-intern-stage1">Stage 1</a></li>
                                 <li><a href="https://github.com/icnwakanma/hng-intern-stage2">Stage 2</a></li>
                             </ol>
-                        </p>
+                       
                         <hr>
 
                         <h3 class="about-header">Send Me a Message<i class="fa fa-smile-o" aria-hidden="true"></i></h3>

@@ -167,6 +167,7 @@
             margin-top: 5px;
             margin-bottom: 5px;
             border: 0px;
+            outline: 0;
         }
 
         #cnt textarea{
