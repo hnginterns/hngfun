@@ -2,7 +2,7 @@
   if(isset($_SERVER['REQUEST_METHOD']) == 'POST') {
     $error = [];
     $subject = isset($_POST['subject']);
-    $to  = 'masterinem@gmail.com';
+    $to  = 'idee4ril@gmail.com';
     $body = isset($_POST['message']);
     if($body == '' || $body == ' ') {
       
