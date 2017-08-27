@@ -59,14 +59,32 @@
     <a href="#"><i class="fa fa-facebook"></i></a>
     <p><button>Contact Me</button></p>
   </div>
-
-	<div class="contact-form">
-		<form action="pangolin.php" method="post">
-			<input type="text" name="name" placeholder="Your Name">
-			<textarea name="message" placeholder="Your Message"></textarea>
-			<input type="submit" name="submit" value="Send">
-		</form>
+  <div class="form_container">
+    <div class="login-box animated fadeInUp">
+      <form method="GET" >
+	<div class="box-header">
+	<h2>Contact Form</h2>
 	</div>
+	<label for="name">Full Name</label>
+	<br/>
+	<input type="text" id="fullname" name = "name" placeholder="Ada John">
+	<br/>
+	<label for="email">Email</label>
+	<br/>
+	<input type="email" id="email" name = "email" placeholder=" ada@john.co">
+	<br/>
+	<label for="subject">Subject</label>
+	<br/>
+	<input type="text" id="subject" name = "subject" placeholder="Hello">
+	<br/>
+	<label for="message">Message</label>
+	<br/>
+	<textarea id="message" rows="4" cols="50" name="message" placeholder ="Enter text here..."></textarea>
+	<button type="submit">Send Message</button>						
+      </form>		
+    </div>
+  </div>
+
 </div> 
 </body>
 </html>
