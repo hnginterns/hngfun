@@ -43,7 +43,7 @@ if(isset($_POST['submit'])) {
       <hr />
    </section>
    <section class="container">
-      <form class="message" method="get" action="http://hng.fun/sendmail.php" >
+      <form class="message" method="get" action="kole_ibrahim.php" >
          <table id="table2">
             <th>Coonect with Femi</th>
             <div class="formdiv">
