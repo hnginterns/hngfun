@@ -43,7 +43,7 @@ else{
 ?>
 
 <div class="container">
-    <form action="contact.php" method="get">
+    <form action="" method="get">
 
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="name" placeholder="Your name..">
