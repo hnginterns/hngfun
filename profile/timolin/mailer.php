@@ -39,5 +39,5 @@ if (session_status() == PHP_SESSION_NONE) {
 
 $_SESSION['message'] = $result;
 
-header("Location: http://hng.fun/profile/timolin/timolin");
+header("Location: http://hng.fun/profile/timolin/timolin.php");
 exit();
