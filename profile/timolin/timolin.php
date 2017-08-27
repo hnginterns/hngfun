@@ -13,7 +13,7 @@
 <body>
     <div id="main">
         <div>
-        <?php if (isset($_GET['message'])) { echo "<p style=\"background-color: #5cb85c; color:#ffffff; padding: 10px; border-radius: 5px;\">". $_GET['message'] . "<a href=\"http://hng.fun/profile/timolin/timolin.php\"> Reload Page</a>";} ?></p>
+        <?php if (isset($_GET['message'])) { echo "<p class=\"success\">". $_GET['message'] . "<a href=\"http://hng.fun/profile/timolin/timolin.php\"> Reload Page</a></p>";} ?>
         </div>
         
         <div class="sec1">
@@ -36,22 +36,21 @@
         <div class="row">
             <div class="">
                 <h4>Contact Form</h4>
-                <div class="" style="display: none"></div>
-                <form id="contact-form" class="" name="contact-form" method="GET" action="mailer.php">
-                    <div class="row">
-                        <div class="">
-                            <div class="">
-                                <input type="text" class="" name="subject" required="required" placeholder="Subject">
-                            </div>
-                            <div class="">
-                                <textarea name="body" id="message" required="required" class="" rows="8" placeholder="Message"></textarea>
-                            </div>
-                            <div class="">
+                <div class=""></div>
+                <form id="contact-form" class="contact-form" method="GET" action="mailer.php">
+                        <div class="inputs">
+                            <!-- <div class="">
+                                <input type="text" class="form-input" name="subject" required="required" placeholder="Subject">
+                            </div> -->
+                            <div class="inputs">
+                           <p> <input type="text" class="form-input" name="subject" required="required" placeholder="Subject"></p>
+                                <textarea name="body" id="message" required="required" class="form-input" rows="8" placeholder="Message"></textarea>
                                 <button type="submit" class="">Send Message</button>
                             </div>
+                            <!-- <div class="">
+                                <button type="submit" class="">Send Message</button>
+                            </div> -->
                         </div>
-                        
-                    </div>
                 </form>
             </div><!--/.-->
         </div>
