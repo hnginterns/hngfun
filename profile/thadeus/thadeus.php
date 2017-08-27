@@ -8,7 +8,7 @@
     $data = $exe->fetch();
     $password = $data['password'];
 
-    if (isset($_GET['submit'])) {
+  /*  if (isset($_GET['submit'])) {
 
         $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
@@ -31,7 +31,7 @@
 
     }
 	
-
+*/
 ?>
 
 <!DOCTYPE html>
