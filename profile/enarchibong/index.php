@@ -32,7 +32,7 @@
 		
 		<form action="<?= $_SERVER[PHP_SELF]?>" method="post" >
             <div class="form-group">
-                <input type="text" name="Name" placeholder="Enter name" required><br>
+                <input type="text" name="name" placeholder="Enter name" required><br>
             </div>
             <div class="form-group">
                 <input type="text" name="subject" placeholder="Enter Subject" required><br>
