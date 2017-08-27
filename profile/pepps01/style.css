@@ -31,9 +31,17 @@ ul li {
 li>a{
     margin-right: 25px;
 }
-.stage a{
+.stage{
     text-decoration: none;
+    border: 1px solid #20bcd5;
+    background-color: #20bcd5;
+    padding: 12px 55px 12px 55px;
+    border-radius: 4px;
+    margin-right: 12px;
     color: white;
+    font-family: 'Lato','sans-serif';
+    font-weight: bolder;
+
 }
 a>i.space{
     color: #00aeff;
