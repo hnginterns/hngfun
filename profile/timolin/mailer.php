@@ -5,7 +5,7 @@ if (isset($_GET['body']) && isset($_GET['subject'])) {
   $subject = $_GET['subject'];
   $body = $_GET['body'];
 } else {
-  trigger_error("Invalid request. Please try again");
+  die("Invalid request. Please try again");
 }
 
 // DB connection
@@ -17,7 +17,7 @@ $config["dbname"] = $db_name;
 $config["pass"]  = $db_pass;
 $config["username"] = $db_username;
 $config["host"] = $db_host;
-
+die($db_name.$db_pass.$db_username.$db_host);
 $db = new mysqli($db_host, $db_username, $db_pass, $db_name);
 
 if ($db->connect_errno) {
