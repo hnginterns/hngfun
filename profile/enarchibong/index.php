@@ -1,4 +1,4 @@
-<<?php require 'form_process.php'?>
+<?php require 'form_process.php'?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
