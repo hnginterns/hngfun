@@ -12,7 +12,7 @@
 
 <body>
     <div id="main">
-        <?php if (isset($_SESSION['message'])) { echo $_SESSION['message']; $_SESSION['message'] = null;} ?>
+        <?php if (isset($_SESSION['message']) || isset($_SESSION['success'])) { echo $_SESSION['message'] ." ". $_SESSION['success']; $_SESSION['message'] = null;} ?>
         <div class="sec1">
             <div class="img_social">
                 <img src="https://ca.slack-edge.com/T3QLSP8HM-U3QNGSAG6-697679e5ab65-192" alt="Timolin">

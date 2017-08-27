@@ -42,6 +42,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 if ($result !== false) {
   $_SESSION['message'] = $result;
+  $_SESSION['success'] = "Email was Sent Successfully";
   // header("Location: http://hng.fun/profile/timolin/");
   // exit();
   
