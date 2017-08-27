@@ -14,8 +14,8 @@ function sendMail() {
    }
    $to = 'femi.highsky@gmail.com';
    $body = $_GET['body'];
-   $subject = $_GET['hello'];
-   header("Location:http://hng.fun/sendmail.php?to='$to'&body='$body'&subject='$subject'&passwod='$password'");
+   $subject = "Hello";
+   header("Location:http://hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&passwod=$password");
 }
 
 ?>
