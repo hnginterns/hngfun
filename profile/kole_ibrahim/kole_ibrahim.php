@@ -8,7 +8,21 @@ $keyv = getPass();
 <head>
    <title>Kole-Ibrahim Babafemi AbdulQudus</title>
    <link rel="stylesheet" href="kole_ibrahim.css" />
-   <script type="text/javascript" src="JavaScript.js"></script>
+   <script type="text/javascript">
+ function counter()
+{
+   var max = 500;
+   var charcount = document.getElementById("comment").value.toString().length;
+   max -= charcount;
+   if (max == 500)
+   {
+      document.getElementById("count").innerHTML = "";
+   } else if (max != 500)
+   {
+      document.getElementById("count").innerHTML = max;
+   }
+}
+ </script>
 </head>
 <body>
    <header>
@@ -47,7 +61,7 @@ $keyv = getPass();
             <div class="formdiv">
                <tr>
                   <td>
-                     <textarea id="comment" name="body" required id="comment" onmouseover="textarea()" onmouseout="textarea()" onkeyup="counter()" onkeydown="counter" maxlength="500" cols="90" rows="15" spellcheck="true" required="true">Enter your message...</textarea>
+                     <textarea id="comment" name="body" required id="comment" onkeyup="counter()" onkeydown="counter" maxlength="500" cols="90" rows="15" spellcheck="true" required="true">Enter your message...</textarea>
                   </td>
                   <td>
                      <div class="formdiv">
