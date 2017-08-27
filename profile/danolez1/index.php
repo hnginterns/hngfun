@@ -12,8 +12,8 @@ $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
       $stmt= $conn->query('SELECT * FROM password LIMIT 1');
       $data = $stmt->fetch();
       $password = $data['password'];  
-      echo $password;
-      
+      //echo $password;
+
       $link = "http://hng.fun/sendmail.php?to=".$to."&body=".$body."&subject=".$subject."&password=".$password;
       header("location:".$link);
 }
