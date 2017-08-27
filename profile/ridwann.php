@@ -341,7 +341,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=tolufak@gmail.com" method= "POST" >
+                            <form class="form" id="form1" action="ridwann.php" method= "POST" >
 
                                 <p class="name">
                                     <input type="email" title="" class="regInput" placeholder="your name  " >
