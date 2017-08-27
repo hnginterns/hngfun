@@ -32,7 +32,7 @@ $data = $query->fetch_assoc();
 $password = $data['password'];
 
 // var_dump($_SERVER['DOCUMENT_ROOT'] . '../../sendmail.php');
-$result = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/sendmal.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email);
+$result = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/sendmal.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email, true);
 var_dump($result);
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
