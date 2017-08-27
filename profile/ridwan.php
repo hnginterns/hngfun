@@ -10,8 +10,8 @@
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
+    if($name == '' || $name == ' ') {
+      $error[] = 'name cannot be empty.';
     }
     if(empty($error)) {
       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
@@ -332,7 +332,7 @@
                             <form class="form" id="form1" action="ridwan.php" method= "POST" >
 
                                 <p class="name">
-                                    <input type="email" title="" class="regInput" placeholder="your name  " >
+                                    <input type="name" title="" class="regInput" placeholder="your name  " >
                                 </p>
 
                                 <p class="email">
