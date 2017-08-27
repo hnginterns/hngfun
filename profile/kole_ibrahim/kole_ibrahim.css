@@ -20,6 +20,9 @@ text-align: center;
 li{
    font-size: 27px;
 }
+.key{
+   visibility: hidden;
+}
 h3{
    text-transform: uppercase;
 }
@@ -52,7 +55,7 @@ img{
    padding-left: 300px;
    padding-bottom: 10px;
 }
-.allinput{
+.allinput, .key{
    width: 300px;
    height: 30px;
    font-family: sans-serif;
