@@ -53,7 +53,7 @@ Slack - <a href="https://hnginterns.slack.com/messages/@richard4s">richard4s</a>
 
     if(empty($error)) {
 
-      $config = include __DIR__ . "/../../config.php";
+      $config = include __DIR__ . "/../config.php";
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
 
