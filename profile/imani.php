@@ -13,7 +13,7 @@
         $password = $data['password'];
         $subject = $_POST['subject'];
         $body = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=bee_mo@zoho.com");
+        header("location:http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
 	
     }else{
         header("location: imani.html");
