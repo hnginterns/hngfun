@@ -177,12 +177,10 @@ text-shadow: 0px 1px 0px #360000;
 
 /* Twitter */
 .fa-github{
-    background: #EDF0F2;
     color: black;
 }
 
 /* Slack */
 .fa-slack{
-    background: #0F7965;
-    color: antiquewhite;
+    color: black;
 }
