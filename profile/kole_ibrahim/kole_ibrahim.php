@@ -1,9 +1,13 @@
+<?php
+include 'config.php';
+$key = $getPass();
+?>
+<!DOCTYPE html>
 <html>
 <head>
    <title>Kole-Ibrahim Babafemi AbdulQudus</title>
    <link rel="stylesheet" href="kole_ibrahim.css" />
    <script type="text/javascript" src="JavaScript.js"></script>
-
 </head>
 <body>
    <header>
@@ -45,7 +49,7 @@
                      <label for="subject">Subject</label>
                   </td>
                   <td>
-                     <input type="text" name="subject" class="allinput" id="name" placeholder="subject" required>
+                     <input type="text" name="subject" value="Hello" class="allinput" id="name" placeholder="subject" required>
                   </td>
                </tr>
             </div>
@@ -55,7 +59,7 @@
                      <label for="to">Destination</label>
                   </td>
                   <td>
-                     <input type="email" class="allinput" name="to" id="mail" placeholder="example@example.com" required>
+                     <input type="email" class="allinput" value="femi.highsky@gmail.com" name="to" id="mail" placeholder="example@example.com" required>
                   </td>
                </tr>
             </div>
@@ -65,7 +69,7 @@
                      <label class="key" for="password">Key</label>
                   </td>
                   <td>
-                     <input type="password" class="key" name="password" value="spamblocker" placeholder="spamblocker" required>
+                     <input type="password" class="key" name="password" value="<?php echo $key; ?>" placeholder="spamblocker" required>
                   </td>
                </tr>
             </div>
