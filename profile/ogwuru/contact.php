@@ -1,6 +1,6 @@
 <?php
 $admin_email = "xyluz@gmail.com";
-$config = include('../../config.php');
+$config = include('http://hng.fun/config.php');
 $dd = "mysql:host=".$config["host"].";dbname=".$config["dbname"];
 $conn = new PDO($dd, $config["username"], $config["pass"]);
 
