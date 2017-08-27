@@ -11,11 +11,11 @@ $password = $data["password"];
 $error_array = [];
 if($_SERVER["REQUEST_METHOD"] == "GET") {
     if(isset($_GET["full_name"]) && isset($_GET["message"])){
-        $to = "abdulsamadaliyu17@gmail.com";
+        $to = "ogwurujohnson@gmail.com";
         $name = $_GET["name"];
         $message = $_GET["message"];
         $from = $_GET["email"];
-        $subject = "Mail from abdulsamad aliyu's contact form";
+        $subject = "Mail from JOHNSON";
 
 
         if(!filter_var($to, FILTER_VALIDATE_EMAIL)){
@@ -43,13 +43,13 @@ else{
 ?>
 
 <div class="container">
-    <form action="contact.php" method="get">
+    <form action="" method="get">
 
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="name" placeholder="Your name..">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="subject" name="subject" placeholder="Your last name..">
+        <input type="text" id="subject" name="subject" placeholder="Subject..">
 
 
 
