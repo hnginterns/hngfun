@@ -102,7 +102,27 @@
           <a class="links" href="https://github.com/itzjf/My-repo-hng-intern"><i class="fa fa-github"></i> #Stage-1</a>
         </div>
       </div>
+<?php  
+      <div class="contact">
+          <form method="get" action="johnotu.php">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" class="formfield narrow">
+           
+            <!-- <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="formfield narrow"> -->
+            
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" class="formfield narrow">
+            
+            <label for="message">Message</label>
+            <textarea class="formfield" id="message" name="message" rows="5"></textarea>
 
+            <button type="submit" class="button" name="contact">Contact me</button>
+</form>
     </div>
   </body>
 </html>
+
+
+
+?>
