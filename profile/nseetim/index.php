@@ -1,10 +1,10 @@
-<<?php
+<?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $error = [];
     $subject = $_POST['subject'];
     $to  = 'etimnseabasi@gmail.com';
-    $body = $_POST['body'];
+    $body = $_POST['message'];
 
     if($body == '' || $body == ' ') {
       $error[] = "I would love to have your opinion. Please Write me a message";
@@ -15,7 +15,7 @@
     }
       
     if(empty($error)) {
-      $config = include __DIR__ . "/../config.php";
+      $config = include __DIR__ . "/../../config.php";
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -26,6 +26,7 @@
     }
   }
  ?>
+
 
 <!DOCTYPE html>
 <html >
@@ -46,12 +47,12 @@
    <div class="form-holder">
        <header class="clearfix">
            <div id="info">
-               <h1><span itemprop="name">Nse-Abasi Joseph</span></h1>
-               <h3><span itemprop="jobtitle">Software Engineer &amp; Programmer</span></h3>
-               <small itemprop="adress" itemscope="" itemtype="http://schema.org/PostalAddress">
-                   <span itemprop="addressLocality">Oron</span>,
-                   <span itemprop="addressState">Akwa-Ibom</span><br>
-                   <span itemprop="addressCountry">Nigeria</span>
+               <h1><span>Nse-Abasi Joseph</span></h1>
+               <h3><span>Software Engineer &amp; Programmer</span></h3>
+               <small itemscope="" itemtype="http://schema.org/PostalAddress">
+                   <span>Oron</span>,
+                   <span>Akwa-Ibom</span><br>
+                   <span>Nigeria</span>
                </small>
                </div>
        </header>
@@ -61,20 +62,21 @@
      <p>A full stack Python Developer,
        experienced with HTML,CSS and Java script for web design with Python as the backend, and Software Development on all platforms using Python. This profile wont be complete if i fail to mention that am a Christian and Jesus is my everything.
        </p>
-       <form action="#" method="POST" name="Contat-Me">
-        <input class="contact-me-input placeholder" name="name" placeholder="Your name" type="text">
-        <input class="contact-me-input placeholder" name="phone-number" placeholder="Your phone-number" type="number">
-        <input class="contact-me-input placeholder" name="email" placeholder="Your email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
-        <div class="contact-me-input placeholder">
-        <textarea class="contact-me-input placeholder" placeholder="Message" rows="1" required></textarea>
-        </div>
-        <input class="cta top" type="submit" value="Submit">
-        <input name="input-processing" type="hidden" value="contact-me">
+       <form action="index.php" method="POST" name="Contat-Me">
+        <fieldset>
+            <legend>Contact Me</legend>
+                <input class="contact-me-input placeholder" name="to" value="etimnseabasi@gmail.com" type="email" required>
+                <input class="contact-me-input placeholder" name="subject" placeholder="Subject" type="text" required>
+                <input class="contact-me-input placeholder" name="email" placeholder="Your email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+                <textarea class="contact-me-input placeholder" name="message" placeholder="Message" cols="50" rows="5" required></textarea>
+                <input class="cta top" type="submit" value="submit">
+                <input name="input-processing" type="hidden" value="contact-me">
+           </fieldset>
        </form>
      <p class="top">Thanks for reaching out.</p>
-       <a href="https://github.com/nseetim/hotels.ng/blob/master/script.php" class="fa fa-github" fa_custom fa-2x aria-hidden="true">Stage 1 repo</a>
-       <a href="http://hnginterns.slack.com/etimnseabasi" class="fa fa-slack" fa_custom fa-2x aria-hidden="true">slack</a>
-       <a href="https://facebook.com/nse.etim" class="fa fa-facebook-square" fa_custom fa-2x aria-hidden="true">Facebook</a>
+       <a href="https://github.com/nseetim/hotels.ng/blob/master/script.php" class="fa fa-github" aria-hidden="true">Stage 1 repo</a>
+       <a href="http://hnginterns.slack.com/etimnseabasi" class="fa fa-slack" aria-hidden="true">slack</a>
+       <a href="https://facebook.com/nse.etim" class="fa fa-facebook-square" aria-hidden="true">Facebook</a>
 
    </div>
 </div>

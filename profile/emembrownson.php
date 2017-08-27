@@ -1,6 +1,6 @@
 <?php
-  $config = include('../config.php')
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dname'];
+  $config = include('../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
   $exe = $con->query('SELECT * FROM password LIMIT 1');
   $data = $exe->fetch();
@@ -49,9 +49,9 @@
       <div class="container">
         <form action="../sendmail.php" method="get">
           <label for="email">Email</label>
-          <input type="email" id="email" name="to" placeholder="Your email address.." required>
+          <input type="email" id="email" name="to" placeholder="xyluz@ymail.com" required>
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="subject" required>
+          <input type="text" id="subject" name="subject" placeholder="subject.." required>
           <label for="message">Message</label>
           <textarea id="message" name="body" placeholder="Write something.." style="height:200px"></textarea>
           <input type="hidden" name="password" value="<?= $password; ?>" />
