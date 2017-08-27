@@ -1,5 +1,5 @@
 <?php
-  $config = include('../config.php')
+  $config = include('../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
   $exe = $con->query('SELECT * FROM password LIMIT 1');
