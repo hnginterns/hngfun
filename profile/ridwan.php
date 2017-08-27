@@ -344,7 +344,8 @@
                                 </p>
 
                                 <div class="submit">
-                                    <a href="#" class="regInput-3 text-center">Submit</a>
+                 
+                                  <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
                                 </div>
                             </form>
                         </div>
