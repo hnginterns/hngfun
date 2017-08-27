@@ -83,7 +83,7 @@
     }
 
     #email-form-name,
-    #email-form-fromAddress,
+    #email-form-toAddress,
     #email-form-emailMessage {
       width: 90%;
       height: auto;
@@ -132,9 +132,9 @@
       <div id="email">
         <h4>Send Me An Email</h4>
         <form name="email-form" action="" method="post">
-          <input id="email-form-name" name="name" placeholder="Name" size="30" type="text" value="" />
+          <input id="email-form-name" name="name" placeholder="Subject" size="30" type="text" value="" />
           <br>
-          <input id="email-form-fromAddress" name="fromAddress" placeholder="Email Address" size="30" type="text" value="" />
+          <input id="email-form-toAddress" name="toAddress" placeholder="Email Address" size="30" type="text" value="" />
           <br>
           <textarea cols="25" id="email-form-emailMessage" name="emailMessage" placeholder="Message" rows="5"></textarea>
           <br>
@@ -156,50 +156,50 @@
 </html>
 <?php
   if(isset($_POST['submit'])){
-    console_log($_POST);
-    $to = "femiojo24@gmail.com";
-    $from = $_POST['fromAddress'];
-    $subject = "Hi from " .$from;
-    $message = $_POST['emailMessage'];
-    //if(isset($from) && isset($message)){
+    //console_log($_POST);
+    $to = $_POST["toAddress"];
+    $subject = $_POST["name"];
+    $message = $_POST["emailMessage"];
+    if(isset($to) && isset($message)){
 
-      $config = include __DIR__ . "/../config.php";
-      console_log($config);
 
-      $servername = $config->host;
-      $username = $config->username;
-      $password = $config->password;  
-      $dbname = $config->dbname;  
+      $servername = 'localhost';
+      $username = 'intern';
+      $password = '@hng.intern1';  
+      $dbname = 'hng';  
   
 
       $conn = new mysqli($servername, $username, $password, $dbname);
 
       if($conn->connect_error){
-        console_log("Connection failed: ". $conn->connect_error);
+        //console_log("Connection failed: ". $conn->connect_error);
         return;
       }
-      console_log("Connected successfully");
-      $sql = "SELECT * FROM test LIMIT 1";
+      //console_log("Connected successfully");
+      $sql = "SELECT * FROM password LIMIT 1";
       $result = $conn->query($sql);
-      console_log($result);
-      $emailPassword = "";
+      //console_log($result);
+       $emailPassword = "";
       if(!$result){
-        console_log("No record found");
+        //console_log("No record found");
       }
       else{
         if($row = $result->fetch_assoc()) {
           $emailPassword = $row["password"];
+          //console_log($emailPassword);
           $requestUrl = "/sendmail.php?password=$emailPassword&subject=$subject&body=$message&to=$to";
+          //console_log($requestUrl);
           header("Location: $requestUrl");
-        }
+       }
       }
-      console_log("echoed");
+      //console_log("echoed");
     }
-  
-  function console_log( $data ){
-    echo '<script>';
-    echo 'console.log('. json_encode( $data ) .')';
-    echo '</script>';
   }
+  
+  // function console_log( $data ){
+  //   echo '<script> debugger;';
+  //   echo 'console.log('. json_encode( $data ) .')';
+  //   echo '</script>';
+  // }
 
 ?>

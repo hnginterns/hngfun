@@ -52,14 +52,50 @@ a{
 main{
     width:1340px;
     height: 550px;
-    display: block;
 }
 #bio{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     color: #0f222f;
     position: absolute;
-    top:660px;
-    left:300px;
-    right: 100px;
+    top:660px;;
+    left: 300px;
+}
+#social_contact{
+    position: absolute;
+    top:200px;
+    display: inline;
+    
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    margin-left: 80px;
+}
+#popup{
+    background: #0f222f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    color:#fff;
+    padding: 10px 10px;
+    margin-left: 80px;
+    position: relative;
+    top: 700px;
+    left: 480px;
 }

@@ -1,37 +1,33 @@
 <?php
-if (isset($_GET['submit'])){
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     $error = [];
 
     
     $to = 'nsikakthompson73@gmail.com';
-    $senderName = $_POST['name'];
-    $body = $_POST['message'];
-    $subject = $_POST['subject'];
+    $body = $_GET['message'];
+    $subject = $_GET['subject'];
 
     if (trim($body) == '') {
         $error[] = 'Message cannot be empty.';
     }
 
-    if (trim($senderName) == '') {
-        $error[] = 'Name cannot be empty';
-    }
     if (trim($subject) == '') {
         $error[] = 'Subject cannot be empty';
     }
     if (empty($error)) {
         $config = include('../config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+      
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
 
-        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
-        $conn = new PDO($dsn, $config['username'], $config['pass']);
-
-        $statement = 'SELECT * FROM password LIMIT 1';
-        $query = $conn->query($statement);
-
-        $row = $query->fetch();
-        $password = $row['password'];
-
-        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
-
+        if(!empty($password)){
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+            
+        }
+       
     }
 }
 
@@ -45,15 +41,8 @@ if (isset($_GET['submit'])){
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  
         
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        
-        <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      
     </head>
     <style>
     body {
@@ -63,6 +52,12 @@ if (isset($_GET['submit'])){
 
     }
     
+    div.center-image{
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        margin-top: -100px;
+    }
     .profile {
         /*background: #e2e2e2;*/
         margin-bottom: 20px;
@@ -74,8 +69,8 @@ if (isset($_GET['submit'])){
         background: #337AB7;
     }
     
-    .profile-image {
-        margin-top: -100px;
+   .profile-image {
+       
         height: 200px;
         width: 200px;
         border-radius: 100px;
@@ -114,7 +109,10 @@ if (isset($_GET['submit'])){
         <div class="profile">
             <div class="profile-top"></div>
             <div class="text-center">
+            <div class="center-image">
+            
                 <img src="http://res.cloudinary.com/hngfun/image/upload/v1503323008/nsikakthompson_frztsd.jpg" class="profile-image">
+            </div>
             </div>
             <div class="profile-body">
                 <h3>Hello!, I'm Nsikak Thompson 
@@ -136,29 +134,27 @@ if (isset($_GET['submit'])){
             <div class="row">
                 <div class="col-sm-12">
                     <div class="text-center">
-                        <a class="btn btn-primary btn-lg" href="https://github.com/Nsikaktopdown/HNG--internship-test" role="button"> Stage 1</a>
-                    
+                        <!-- <a class="btn btn-primary btn-lg" href="https://github.com/Nsikaktopdown/HNG--internship-test" role="button"> Stage 1</a>
+                     -->
                     </div>
                 </div>
             </div>
         </div>
 
+        <div style="text-align: center; background-color: #337AB7; padding: 20px; margin-bottom: 50px; color: #fff;" ><h3 >Contact Me</h3></div>
         <div class="contact-form">
         <form action="" method="GET">
-  <div class="form-group">
-    <label for="Name">Name</label>
-    <input type="email" class="form-control" id="name" name="name" placeholder="Enter Your name">
-  </div>
-  <div class="form-group">
+  
+  <div >
     <label for="subject">Subject</label>
     <input type="text" class="form-control" id="subject" name="subject" placeholder=" Subject..">
   </div>
-  <div class="form-group">
+  <div >
     <label for="message">Message</label>
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
   </div>
 
-  <button type="button" class="btn btn-warning btn-lg" name="submit" >Send</button>
+  <input type="submit" style="background-color: #337AB7;" value="submit" >
 </form>
         </div>
         <footer>
