@@ -15,7 +15,7 @@
 	    $subject = $_POST['subject'];
 	    $body = $_POST['body'];
       $to2 = 'azegaf@gmail.com';
-		header("location: ../hngfun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to,$to2);
+		header("location: ./sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to,$to2);
 	}else{
 		header("location: index.html");
 	}
