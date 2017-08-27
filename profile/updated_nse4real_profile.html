@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Profile</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style type = "text/css">
+        .white {color: white;}
+
+body{
+        
+    background: url("http://res.cloudinary.com/dcvk975c9/image/upload/v1503670732/stefan-kunze-26932_hrxzyn.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    
+.pic{
+        
+    border-radius: 50px;  
+        
+    }    
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.title {
+    color: midnightblue;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+#name{
+     border-radius: 4px;
+    height: 30px;
+            }
+#subject{
+     border-radius: 4px;  
+    height: 30px;
+            }
+#message{
+       border-radius: 5px;         
+            }
+#submit_button{
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+                
+}     
+#submit_button:hover {
+   background-color: #3e8e41;
+            
+}          
+            
+#submit_button:active{
+    background-color: #3e8e41;
+    transform: translateY(4px);
+    
+}
+</style>
+    </head>
+    
+<body>
+    <br/><br/>
+<div class="card">
+
+  <img class="pic" src="http://res.cloudinary.com/dcvk975c9/image/upload/v1503664884/IMG_20170825_125207_zlaniq.jpg?" style="width:100%">
+    
+  <div class="container">
+    <h1>Nsenam Udoh</h1>
+      
+    <p class = "white"; class="title">Programming & Cloud Development Newbie>
+    <p>I am a newbie in the field of programming with an aspiration to be a Data Scientist, AI expert, Machine Learning expert and Cloud Programmer. I currently intern with Hotels.ng.</p>
+    <a href="www.twitter.com"><i class="fa fa-twitter"></i></a> 
+    <a href="#"><i class="fa fa-linkedin"></i></a> 
+    <a href="www.facebook.com"><i class="fa fa-facebook"></i></a> 
+    <p><button onclick="myFunction()">Contact Info</button></p>
+  </div>
+    <div class = "white"; id="myDIV">
+        Slack: @nsenam <br/>
+        Github: nse4real
+    </div>
+    <br/>
+    
+    <p><a href="https://github.com/nse4real/Commit_-st_php"> Link to Stage One Tasks</a> </p>
+    
+    <br/><br/>
+    
+    <h1>Contact Form</h1>
+    <form id="contact_form" action="nse4real.php" method="POST">
+    <div class="row">
+        <label for="email"></label><br />
+        <input id="to" class="input" name="email" type="email" value="" size="30" placeholder="Your Email"/><br />
+    </div>
+    <div class="row">
+        <label for="subject"></label><br />
+        <input id="subject" class="input" name="subject" type="text" value="" size="30" placeholder="Subject"/><br />
+    </div>
+    <div class="row">
+        <label for="message"></label><br />
+        <textarea id="body" class="input" name="body" rows="7" cols="30" placeholder="Your message"></textarea><br />
+    </div>
+    <input id="submit_button" type="submit" value="Send email" name="process"/>
+</form>     
+    
+    <br/>
+</div>
+
+</body>
+</html>

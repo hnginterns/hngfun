@@ -3278,7 +3278,7 @@ include('participants-head.php');
    <!--  Each Participant starts here  -->
             <div class="p-card">
                 <div class="v-center">
-                    <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/30381435?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-photo" style="background-image: url(http://techarener.com/free-images/oriechinedu.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
                         <a href="http://hng.fun/profile/oriechinedu.php">
                             <!--Profile Link-->
@@ -3768,7 +3768,7 @@ include('participants-head.php');
             </div>
 <!--  Each Participants ends here  -->
 
-<!--  E
+<!--  E -->
 
 
 
@@ -3837,10 +3837,6 @@ include('participants-head.php');
                         <h3 class="p-card-title">Alaba Mustapha O.</h3>
                         <!--Profile Name-->
                     </a>
-
-                    <p class="p-card-description">jumbojoshua91@gmail.com</p>
-
-
 
                     <p class="p-card-description">alabamustapha@gmail.com</p>
                     <!--Email-->
@@ -6646,7 +6642,7 @@ include('participants-head.php');
 <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
-        <div class="pcard">
+        <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/20032269?v=4&u=7f280c930a24fd8e45877e3a4a78181e04acd426&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
@@ -7748,7 +7744,6 @@ include('participants-head.php');
             </div>
         </div>
 
-<<<<<<< HEAD
         <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -7778,7 +7773,7 @@ include('participants-head.php');
 <!-- Each participant starts here -->
 <div class="p-card">
     <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/opara prosper/prosper.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/opara prosper/prosper.jp); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
             <a href="https://github.com/hnginterns/hngfun/tree/master/profile/Opara%20prosper">
                 <!--Profile Link-->
@@ -7797,8 +7792,81 @@ include('participants-head.php');
     </div>
 </div>
 
-
   <!-- Each participant ends here -->
+
+  <!-- Each participant starts here -->
+  <div class="p-card">
+      <div class="v-center">
+          <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/aebam-inc/image/upload/v1503784183/ebam_wurgm1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+          <div class="p-card-info">
+              <a href="http://hng.fun/profile/ebam.html">
+                  <!--Profile Link-->
+                  <h3 class="p-card-title">Agbor, Ebam John</h3>
+                  <!--Profile Name-->
+              </a>
+              <p class="p-card-description">ebamagbor@gmail.com</p>
+              <!--Email-->
+          </div>
+          <div class="p-team">
+              <a href="#">
+                  <h3 class="p-card-title">  </h3>
+                  <!--Team-->
+              </a>
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Each participant ends here -->
+<!-- Each participant starts here -->
+  <div class="p-card">
+      <div class="v-center">
+          <div class="p-card-photo" style="background-image: url(http://www.filetolink.com/d2922e27de); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+          <div class="p-card-info">
+              <a href="http://hng.fun/profile/maroof.html">
+                  <!--Profile Link-->
+                  <h3 class="p-card-title">Maroof Shittu</h3>
+                  <!--Profile Name-->
+              </a>
+              <p class="p-card-description">dbugshe2@gmail.com</p>
+              <!--Email-->
+          </div>
+          <div class="p-team">
+              <a href="#">
+                  <h3 class="p-card-title"> team-knowledge </h3>
+                  <!--Team-->
+              </a>
+          </div>
+      </div>
+  </div>
+
+
+    <!-- Each participant ends here -->
+
+    <!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dsevf03vj/image/upload/v1503790413/hotelsng_ba9zsz.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/codeshifu">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Olushi Luqman</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">olushilukmon03@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
+
+
 
 
 <?php include "footer.php"?>
