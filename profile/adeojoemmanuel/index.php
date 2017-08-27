@@ -11,7 +11,7 @@
 	<!--start-header-section-->
 	<div class="header-section" id="top">
 		<div class="container">
-			<img class="img-circle" src="images/im.jpg">
+			<img class="img-circle" src="http://res.cloudinary.com/fstack/image/upload/v1503640047/im_trpkvw.jpg">
 			<h1>hello..<span>!</span></h1>
 			<p>My name is Adeojo Emmanuel WEB/MOBILE DEVELOPER</p>
 			<a href="#contact" id="toButtom" class="scroll top"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
@@ -39,23 +39,23 @@
 			<div class="service-grids">
 				<a href="https://github.com/adeojoemmanuel/HNG-Internship" target="_blank">
 					<div class="col-md-4 service-grid">
-						<img src="images/icons/github.png" class="icon">
+						<img src="http://res.cloudinary.com/fstack/image/upload/v1503640173/github_v5kwsg.png" class="icon">
 						<h4>Hng Task 1</h4>
 						<span> </span>
 						<p>Simple fetch from database using php and php reverse text algorighm</p>
 					</div>
 				</a>
-				<a href="https://hng.fun/profile/adeojoemmanuel" target="_blank">
+				<a href="https://hng.fun/profile/AbdulhafeezBabatunde/" target="_blank">
 					<div class="col-md-4 service-grid">
-						<img src="images/icons/github.png" class="icon">
-						<h4>Hng profile</h4>
+						<img src="http://res.cloudinary.com/fstack/image/upload/v1503640173/github_v5kwsg.png" class="icon">
+						<h4>Hng Mentee</h4>
 						<span> </span>
-						<p>HNG profile </p>
+						<p>HNG Mentee </p>
 					</div>
 				</a>
 				<a href="https://hng.fun/library.php" target="_blank">
 					<div class="col-md-4 service-grid">
-						<img src="images/icons/github.png" class="icon">
+						<img src="http://res.cloudinary.com/fstack/image/upload/v1503640173/github_v5kwsg.png" class="icon">
 						<h4>HNG team task</h4>
 						<span> </span>
 						<p>Hng team task to build a library page</p>
@@ -70,20 +70,20 @@
 		<h3>Social Network</h3>
 		<div class="container">
 			<div class="col-md-3 face">
-				<p><img src="images/icons/facebook.png" class="icon-social"></p>
-				<h4>Follow me on facebook</h4>
+				<p><img src="http://res.cloudinary.com/fstack/image/upload/v1503640105/facebook_qouyja.png" class="icon-social"></p>
+				<h4>Follow me on facebook @ adeojoemmanuel</h4>
 			</div>
 			<div class="col-md-3 face">
-				<p><img src="images/icons/twitter.png" class="icon-social"></p>
-				<h4>Follow me on twitter</h4>
+				<p><img src="http://res.cloudinary.com/fstack/image/upload/v1503640153/twitter_qnahgp.png" class="icon-social"></p>
+				<h4>Follow me on twitter @imm_immanuel</h4>
 			</div>
 			<div class="col-md-3 face">
-				<p><img src="images/icons/Slack.png" class="icon-social"></p>
-				<h4>Add me on Slack</h4>
+				<p><img src="http://res.cloudinary.com/fstack/image/upload/v1503640158/Slack_jjm5vh.png" class="icon-social"></p>
+				<h4>Add me on Slack @imm</h4>
 			</div>
 			<div class="col-md-3 face">
-				<p><img src="images/icons/watsapp.png" class="icon-social"></p>
-				<h4>Add me on Whapsapp</h4>
+				<p><img src="http://res.cloudinary.com/fstack/image/upload/v1503640118/watsapp_mnmogz.png" class="icon-social"></p>
+				<h4>Add me on Whapsapp @+2348149848925</h4>
 			</div>
 			<div class="clearfix"> </div>
 			</div>

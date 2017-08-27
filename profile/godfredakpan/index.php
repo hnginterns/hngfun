@@ -146,10 +146,10 @@
 				
                             <input type="hidden" name="to" value="godfredakpan@gmail.com">
 				
-                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
+                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text"><p>
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
 				
-                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea><p>
                             <input type="submit" name="submit" value="SEND" class="form-submit" required="">
 							</form></center>  <br>  
 					    </div>
