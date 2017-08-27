@@ -32,8 +32,8 @@ $data = $query->fetch_assoc();
 $password = $data['password'];
 
 // var_dump($_SERVER['DOCUMENT_ROOT'] . '../../sendmail.php');
-$result = file_get_contents('../../sendmail.php', FILE_USE_INCLUDE_PATH);
-var_dump($result);
+$result = file_get_contents('http://hng.fun/sendmail.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email);
+//var_dump($result);
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
