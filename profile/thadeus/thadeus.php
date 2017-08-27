@@ -1,3 +1,40 @@
+<?php
+
+/*	$config = include('../config.php');
+    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = new PDO($dsn, $config['username'], $config['pass']);
+
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
+*/
+    if (isset($_GET['submit'])) {
+
+        $subject = "Hello";
+        $password = htmlentities(strip_tags(trim($password)));
+        $body = htmlentities(strip_tags(trim($_GET['message'])));
+        $to = "ainojie@gmail.com";
+
+        if (!isset($body) || $body == '' || (!isset($_GET['email'])) || $_GET['message'] == '' ) {
+
+            echo "Form cannot be blank";
+
+        }else {
+
+            $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+
+            header("Location: " . $location);
+
+
+        }
+
+
+    }
+	
+
+?>
+
+<!DOCTYPE html>
 <html>
 
 	<head>
@@ -41,7 +78,7 @@
 		<h2 class="center">Contact Form</h2>
 		<div id="contact" class="top_margin pad_form detail_wrap center">
 
-			<form class="" action="mail.php" method="get">
+			<form class="" action="" method="get">
 
 				<label class="top_margin" for="email">Email :</label>
 				<input type="textbox" name="email" /><br>
