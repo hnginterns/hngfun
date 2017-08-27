@@ -14,7 +14,7 @@ if(isset($_POST['submit'])) {
 </head>
 <body>
    <header>
-      <h2><a href="kole_ibrahim.php" style="text-decoration=none">KOLE-IBRAHIM</a></h2>
+      <h2><a href="kole_ibrahim.php">KOLE-IBRAHIM</a></h2>
    </header>
    <section id="profile" class="container">
       <hr />
