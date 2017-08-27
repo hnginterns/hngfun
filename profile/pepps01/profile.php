@@ -24,12 +24,12 @@
 			
 			<div class="submit-container">
 				
-               			<button class="stage">
                				 <a href="https://github.com/pepps01/hng-task" target="_blank">
+               					<button class="stage">
                			 		#Stage 1
+               			 		</button>
              				 </a>
-               			 </button>
-				<button style="background-color: lightgreen" id="myContact" style="font-weight: bolder">Contact Me</button>
+				<button style="background-color: lightgreen" id="myContact">Contact Me</button>
 			</div>
 			
 			<div  class="link-container">
