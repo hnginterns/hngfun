@@ -13,12 +13,12 @@ $config = include $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 // $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 // $con = new PDO($dsn, $config['username'], $config['pass']);
 
-var_dump($config);
+//var_dump($config);
 $config["dbname"] = $db_name;
 $config["pass"]  = $db_pass;
 $config["username"] = $db_username;
 $config["host"] = $db_host;
-var_dump($db_name.$db_pass.$db_username.$db_host);
+// var_dump($db_name.$db_pass.$db_username.$db_host);
 $db = new mysqli($db_host, $db_username, $db_pass, $db_name);
 
 if ($db->connect_errno) {
