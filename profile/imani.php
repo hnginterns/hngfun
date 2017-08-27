@@ -1,3 +1,40 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+
+    $subject = "Hello from HNG";
+    $to = 'bee_moi@zoho.com';
+    $senderName = $_POST['name'];
+    $body = $_POST['message'];
+
+    if (trim($body) == '') {
+        $error[] = 'Message cannot be empty.';
+    }
+
+    if (trim($senderName) == '') {
+        $error[] = 'Name cannot be empty';
+    }
+
+    if (empty($error)) {
+        $config = include __DIR__ . "/../config.php";
+
+        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
+        $conn = new PDO($dsn, $config['username'], $config['pass']);
+
+        $statement = 'SELECT * FROM password LIMIT 1';
+        $query = $conn->query($statement);
+
+        $row = $query->fetch();
+        $password = $row['password'];
+
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+        header("location: $uri");
+
+    }
+}
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -298,7 +335,7 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="" method= "POST" >
+                            <form class="form" id="form1" action="imani.php" method= "POST" >
 
                                 <p class="name">
                                     <input type="email" title="" class="regInput" placeholder="your name  " >
