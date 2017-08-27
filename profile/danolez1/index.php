@@ -42,12 +42,11 @@ $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
 
       $stmt= $conn->query('SELECT * FROM password LIMIT 1');
       $data = $stmt->fetch();
-      $password = $data['password'];
+      $password = $data['password'];      
+      $stmt->close();
 
       $link = "http://hng.fun/sendmail.php?to=".$to."&body=".$body."&subject=".$subject."&password=".$password;
       header("location:".$link);
-      $stmt->close();
-
 }
  ?>
  	<form method="POST" action="">
