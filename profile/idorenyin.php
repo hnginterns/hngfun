@@ -1,16 +1,16 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  //if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $subject = $_POST['subject'];
-    $to  = 'idee4ril@gmail.com';
-    $body = $_POST['message'];
+    $subject = isset($_POST['subject']);
+    $to  = 'masterinem@gmail.com';
+    $body = isset($_POST['message']);
     if($body == '' || $body == ' ') {
       
     }
     if($subject == '' || $subject == ' ') {
       
     }
-    if(empty($error)) {
+    //if(empty($error)) {
       $config = include __DIR__ . "/../config.php";
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
@@ -19,8 +19,8 @@
       $password = $data['password'];
       $url = "http://hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       header("location: $url");
-    }
-  }
+    //}
+  //}
  ?>
 <!DOCTYPE html>
 <html lang="en">
