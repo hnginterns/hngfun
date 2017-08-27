@@ -68,7 +68,7 @@
 			 </div>
 			 <div class="modal-body">
 			 	
-				<form action="" method="POST">
+				<form action="contact.php" method="POST">
 					<br>
 					<div class="form-group">
 						<label for="subject" style="float: left;">Subject: </label>
