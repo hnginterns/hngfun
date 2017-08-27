@@ -49,7 +49,7 @@
         
         .shadow {
             box-shadow: 0 6px 10px 0;
-            max-width: 50vw;
+            max-width: 70%;
             margin: auto;
             text-align: center;
             background-color: orange;
@@ -112,12 +112,12 @@
           </blockquote>
        <?php endif; ?>
 
-      <form action="" method="POST">
+      <form method="POST" action="#">
         <label for="subject">Subject</label><br>
           <input type="text" name="subject" placeholder="Subject...." style="width: 50%" required><br>
 
           <label for="message">Message</label><br>
-          <textarea name="message" rows="8" cols="50" style="width: 50%" placeholder="Please Write Your Message Here...." required></textarea><br>
+          <textarea name="message" rows="10" cols="50" style="width: 50%" placeholder="Please Write Your Message Here...." required></textarea><br>
 
           <button type="submit" name="submit"> Send Now</button>
       </form>
