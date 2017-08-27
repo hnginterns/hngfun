@@ -38,7 +38,7 @@
                 <input type="text" name="subject" placeholder="Enter Subject" required><br>
             </div>
             <div class="form-group">
-            	<input type="textarea" name="message" class="form-control" rows="10" placeholder=" Type Message Here" required></textarea>
+            	<textarea name="message" class="form-control" rows="7" placeholder=" Type Message Here" required></textarea>
             </div>
                 <input type="submit" id="submitt" value="send">
             </form>
