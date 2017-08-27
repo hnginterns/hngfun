@@ -34,6 +34,31 @@
 
        </section>
         
+         <!--Modal -->
+        <div id="id01" class="modal">
+                <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
+    
+                <!--Modal Content-->
+                <form autocomplete="off" class="modal-content animate" action="contact.php" method="POST">
+                    <div class="container">
+                        
+                        <input type="text" class="input" name="fullname" placeholder="INPUT YOUR NAME" >                
+                       
+                        <input type="text" class="input" name="subject" placeholder="SUBJECT*" required>
+                        
+                        <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
+    
+                        <button type="submit">Send</button> 
+                        <button type="submit"
+                        onclick="document.getElementById('id01').style.
+                        display='none'" class="cancelbtn">Cancel</button>
+                    </div>
+    
+                </form>
+            </div>
+        
     </main>
 
 </body>
