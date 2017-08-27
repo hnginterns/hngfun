@@ -72,7 +72,7 @@ main{
     font-size: 30px;
     width: 50px;
     position:absolute;
-    left:600px;
+    left:550px;
     text-decoration: none;
 }
 /* Add a hover effect if you want */
@@ -96,13 +96,8 @@ main{
     margin-left:80px;
     text-align:center;
 }
-#popup{
-    background: #0f222f;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 13px;
-    color:#fff;
-    padding: 10px 10px;
+.popup{
     position: relative;
     top: 700px;
-    left: 600px;
+    left: 550px;
 }
