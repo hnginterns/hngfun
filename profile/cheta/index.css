@@ -72,7 +72,7 @@ main{
     font-size: 30px;
     width: 50px;
     position:absolute;
-    left:500px;
+    left:600px;
     text-decoration: none;
 }
 /* Add a hover effect if you want */
@@ -86,6 +86,7 @@ main{
 .fa-facebook {
     background: #3B5998;
     color: white;
+    text-align:center;
 }
 
 /* Twitter */
@@ -93,6 +94,7 @@ main{
     background: #55ACEE;
     color: white;
     margin-left:80px;
+    text-align:center;
 }
 #popup{
     background: #0f222f;
@@ -102,5 +104,5 @@ main{
     padding: 10px 10px;
     position: relative;
     top: 700px;
-    left: 500px;
+    left: 600px;
 }
