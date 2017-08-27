@@ -1,65 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Idorenyin Obong</title>
 <style type="text/css">
 body {
 background-color:#FF6800;
 margin-top:10%;
 }
-
 .left {
 width:50%;
 float: left;
 }
-
 p {
 text-align:center
 }
-
 a {
-
 }
-
 h1 {
 font-family:verdana;
-
 }
-
 h3 {font-family:tahoma;}
-
 .right {
 float: right;
 width: 40%;
 margin-right:8%;
 }
-
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
-
 a {
 text-decoration: none;
 }
-
 a:link {
     color: red;
 }
-
 /* visited link */
 a:visited {
     color: green;
 }
-
-
-
 p {
 width:50%;
 }
-
 textarea {
     width: 100%;
     height: 150px;
@@ -70,11 +57,9 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
 }
-
 img {
     border-radius: 50%;
 }
-
 input[type=button], input[type=submit], input[type=reset] {
     background-color: #4CAF50;
     border: none;
@@ -84,7 +69,6 @@ input[type=button], input[type=submit], input[type=reset] {
     margin: 4px 2px;
     cursor: pointer;
 }
-
 </style>
 </head>
 
@@ -108,17 +92,16 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 <h3> Contact Idorenyin! </h3>
-<form action="idee.php" method="get">
+<form action="idee.php" method="POST">
   
-  <input type="text" name="name" placeholder="Name" required > 
   <input type="text" placeholder="Email Subject" name="subject" required>
  
 
 <textarea name="message" placeholder="Message" required cols="4" rows="4" >
 
 </textarea>
-
-<input type="submit" name="send" value="send" style="width:100%;">
+<button type="submit" name="send">Send</button>
+        
 
 </form>
 

@@ -1,6 +1,6 @@
 body{
    font-size: 20px;
-   background-image: url(capture.png);
+   background-image: url(Capture.PNG);
    background-repeat: no-repeat;
    background-size: 100%;
    font-family: fantasy;
@@ -19,6 +19,9 @@ text-align: center;
 }
 li{
    font-size: 27px;
+}
+.key{
+   visibility: hidden;
 }
 h3{
    text-transform: uppercase;
@@ -52,7 +55,7 @@ img{
    padding-left: 300px;
    padding-bottom: 10px;
 }
-.allinput{
+.allinput, .key{
    width: 300px;
    height: 30px;
    font-family: sans-serif;
@@ -83,8 +86,9 @@ label{
    height: 200px;
 }
 #table1{
-   float: left;
+   /*float: right;*/
+   visibility: hidden;
 }
 #table2{
-   float: right;
+   float: left;
 }
