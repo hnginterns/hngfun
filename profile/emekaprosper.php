@@ -1,35 +1,40 @@
 <?php
-    //if "email" variable is filled out, send email
-      if (isset($_GET['submit']))  {
-      
-      //Email information
-      $to = "nnaemekaukpa@gmail.com";
-      $subject = $_GET['subject'];
-      $body = $_GET['body'];
-          
-      $config = include(dirname(dirname(__FILE__)).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
+    if (!empty($_GET)) {
+        $subject = $_GET['subject'];
+        $message = $_GET['message'];
 
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-          
-            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-        }
-            
-  ?>
+        // Retrieving password from database
+        $db = 'hng';
+        $pwd = '@hng.intern1';
+        $username = 'intern';
+        $host = 'localhost';
+        $connection = mysqli_connect($host, $username, $pwd, $db)
+            or die('Failed to connect to database');
+
+        $query = 'SELECT * FROM password LIMIT 1';
+
+        $result = mysqli_query($connection, $query)
+            or die('Error Connecting to database');
+
+        $info = mysqli_fetch_array($result);
+        $pwd = $info['password'];
+
+        $url = 'http://hng.fun/sendmail.php?password=' . $pwd . '&subject=' . $subject . '&body=' . $message . '&to=nnaemekaukpa@gmail.com';
+        header("location: $url"); 
+
+    }
+?>
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <style type="text/css">
+<style type="text/css">
       @import "responsiveStyles.css";
 
 
-body {
+    body {
     font-family: 'Open Sans', sans-serif; 
     background-color: teal;
     background-size: cover;
@@ -44,9 +49,9 @@ body {
     margin: 0px;
     padding: 4%;
     /* overflow: hidden; */
-}
+    }
 
-.container {
+    .container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -54,13 +59,13 @@ body {
     justify-content: center; 
     width: 50%;
     height: 60%; 
-}
+    }
 
-#profile {
+    #profile {
          background: #001f3f; 
-}
+    }
 
-.flex-item {
+    .flex-item {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     width: 40%;
     height: 50%;
@@ -68,94 +73,95 @@ body {
     margin: 2%;
     padding: 0px;
     border-radius: 10px;
-}
+    }
 
-#bio-text {
+    #bio-text {
     text-align: justify !important;
     padding: 15px;
     font-size: 14px;
-}
- p .uam > a:hover{
+    }
+    p .uam > a:hover{
     cursor:pointer;
     text-decoration:none !important;
-}
-img {
+    }
+    img {
     width: 100%;  
     height: auto;  
     max-height: 300px;
     margin: 0px;
-}
+    }
 
-.heading,
-.card-footer {
+    .heading,
+    .card-footer {
     /* background: #5c6bc0;   */
     background: #001f3f;
     padding: 1px;  
     color: white;
     font-size: 20px;
     margin: 0px;
-}
+    }
 
-.heading {
+    .heading {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;    
     text-transform: uppercase;
-}
+    }
 
- .card-footer {
+    .card-footer {
     margin: 5px !important;
-} 
+    } 
 
-.card-footer p,
-.card-footer a {
+    .card-footer p,
+    .card-footer a {
     display: inline;
      padding: 15px 0px 15px 0px; 
      color: white;
      margin: 4px;
-}
+    }
 
-.card-footer a:hover {
+    .card-footer a:hover {
     cursor: pointer;
-}
+    }
 
-.card-footer > p:hover {
+    .card-footer > p:hover {
     cursor: default
     color:#001f3f;
-}
+    }
 
-.icons {
+    .icons {
     transition: all 1s; 
     font-size: 30px !important;
     color: white;
     margin: 40px 10px 10px 10px;
-} 
+    } 
 
-.icons:hover {
+    .icons:hover {
      font-size: 35px !important; 
-}
+    }
 
-.fa-instagram:hover {
+    .fa-instagram:hover {
       color: #e95950;
-}
+    }
 
-.fa-twitter:hover {
+    .fa-twitter:hover {
     color: #001f3f;
-}
+    }
 
-.fa-envelope:hover {
+    .fa-envelope:hover {
     color: #001f3f;
-}
+    }
 
-.fa-github:hover {
+    .fa-github:hover {
     color: #4078c0;
-}
+    }
 
-.fa-slack:hover {
+    .fa-slack:hover {
     color: #01FF70;
-}
+    }
+    h2{color:#4078c0;
+        text-align: center;}
 
-
-@media only screen and (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
     body {
         padding: 1%;
     }
@@ -164,9 +170,9 @@ img {
         width: 90%;
         height: 90%;
     }
-}
+    }
 
-@media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
     body {
         padding: 0px;
     }
@@ -185,8 +191,94 @@ img {
     img {
         max-height: 400px;        
     }
-}
-    </style>
+
+    /* CONTACT FORM STYLE BEGIN */
+
+    #contact {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    border-radius: 12px;
+    margin-bottom: 60px;
+    }
+
+    form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    }
+
+    input {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 3px;
+    outline-style: none;
+    border: none;
+    background: #dedddd;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    }
+
+    input:focus {
+    background: white;
+    }
+
+    #submit {
+    grid-column: 2/3;
+    grid-row: 3;
+    background: #42a5f5;
+    color: white;
+    border-bottom-right-radius: 12px;
+    }
+
+    #message {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    }
+
+    #subject {
+    border-bottom-left-radius: 12px;
+    }
+
+    /* CONTACT FORM STYLE ENDS */
+
+    /* NOTIFICATION STYLE BEGINS */
+
+    #notification {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    transition: all 2s;
+    position: fixed;
+    top: -20%;
+    z-index: 100;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+    width: 100%;
+    padding: 0px;
+    }
+
+    #notification p {
+    grid-column: 2/4;
+    padding: 20px !important;
+    border-radius: 4px;
+    align-self: center;
+    text-align: center;
+    height: auto !important;
+    width: fit-content;
+    }
+
+
+    }
+</style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>emekaprosper profile</title>
@@ -235,23 +327,22 @@ img {
         <a href="mailto:nnaemekaukpa@gmail.com"><span class="fa fa-envelope icons"></span></a>        
     </div>
 
-    <div class="contact__me" aria-hidden="true">
-        <button  class="contact__me__close-button" title="Close" aria-label="Close contact form">X</button>
-        <h2>CONTACT ME</h2>                
+            <h2>CONTACT ME</h2>                
             <form class="form-control" action="../../sendmail.php" method="get">
-
-              <label for="email">Email</label>
+            <div class="control-group">
+                <label for="email">Email</label>
               <input type="email" id="email" name="to" placeholder="example@example.com" required>
-
-              <label for="subject">Subject</label>
+            </div>
+            <div class="form-control">
+                <label for="subject">Subject</label>
               <input type="text" id="subject" name="subject" placeholder="Your last name.." required>
-
-              <label for="message">Message</label>
-              <textarea id="message" name="body" placeholder="Write something.." style="height:200px"></textarea>
-
-              <input type="hidden" name="password" value="<?= $password; ?>" />
-
-              <input type="submit" value="Send">
+            </div>
+              <div class="form-control">
+                  <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+              
+              <input type="submit" id="submit" value="Send mail">
             </form>
 </body>
 </html>

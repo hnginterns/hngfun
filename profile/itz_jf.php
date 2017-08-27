@@ -125,7 +125,7 @@ if (isset($_GET['contact']))  {
       </div>
       
       <div class="contact">
-          <form method="get" action="it_jf.php">
+          <form method="get" action="itz_jf.php">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" class="formfield narrow">
            
