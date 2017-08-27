@@ -4,7 +4,7 @@ body{
    background-repeat: no-repeat;
    background-size: 100%;
    font-family: fantasy;
-   color: white;  
+   color: white;
 }
 #profile{
    /*width: 4000px;*/
@@ -80,7 +80,7 @@ label{
    font-size:18px;
    border-radius:4px;
    display: inline;
-   height: 100px;
+   height: 200px;
 }
 #table1{
    float: left;
