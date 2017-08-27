@@ -5,47 +5,115 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>thenameisdrey</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <style>
     body{
-      background: #99ccff;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    img{
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
-    }
-    .container{
-      padding: 10px;
-      padding-left: 450px;
-      padding-bottom: 0px;
-    }
-    h1{
-      padding-left: 115px;
-    }
-    p{
-      text-align: center;
-    }
-    li{
-      float: left;
-      list-style-type: none;
-      margin: 7px;
+    background: #99ccff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+  .container{
+    padding: 10px;
+    padding-left: 550px;
+    padding-bottom: 0px;
+  }
+  h1{
+    padding-left: 50px;
+  }
+  p{
+    text-align: center;
+  }
+  li{
+    float: left;
+    list-style-type: none;
+    margin: 7px;
+  }
+
+  li img{
+    width: 30px;
+    height: 30px;
+
+  }
+
+  ul{
+    padding-left: 550px;
+  }
+
+  .container h2{
+    margin-bottom: 0;
+    padding-right: 10px;
     }
 
-    li img{
-      width: 30px;
-      height: 30px;
-
+    h2{
+      padding-left: 60px;
+      margin-top: 20px;
     }
 
-    ul{
-      padding-left: 550px;
-    }
+/* form */
 
+.body {
+	width:576px;
+	margin:0 auto;
+	display:block;
+}
+form {
+	width:459px;
+	margin:0 auto;
+}
+
+.section{
+  margin-top: 20px;
+}
+
+label {
+	display:block;
+	margin-top:20px;
+	letter-spacing:2px;
+}
+
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+	input:focus, textarea:focus {
+		border:1px solid #97d6eb;
+	}
+
+textarea {
+	height:213px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+#submit {
+  width: 150px;
+  height: 38px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+	#submit:hover {
+		opacity:0.9;
+	}
 
   </style>
   <div class="container">
@@ -57,7 +125,30 @@
     <ul>
       <li><img src="http://res.cloudinary.com/thenameisdrey/image/upload/v1503329180/app-256_ghv3uh.png" alt=""> thedrey</li>
       <li><img src="http://res.cloudinary.com/thenameisdrey/image/upload/v1503329179/logomark-orange_2x_jfpduo.png" alt=""> thenameisdrey</li>
-    </ul>
+    </ul><br>
+    <br>
+    <div class="container">
+      <h2>Get In Touch</h2>
+    </div>
+
+    <br>
+    <br>
+    <section>
+      <form action="thenameisdrey.php" method="POST">
+
+      <label>Name</label>
+      <input name="name" type="text" placeholder="Type Here">
+
+      <label>Email</label>
+      <input name="email" type="email" placeholder="Input Your Email">
+
+      <label>Message</label>
+      <textarea name="message" placeholder="Type Here"></textarea>
+
+      <input id="submit" name="submit" type="submit" value="Submit">
+
+  </form>
+      </section>
 
 
 </body>

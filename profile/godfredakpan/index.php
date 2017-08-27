@@ -39,21 +39,19 @@
 	    <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
+    
     <link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body>
-	<header id="header" role="banner">		
+			
 		<div class="main-nav">
 			<div class="container">
 				<div class="header-top">
 					<div class="pull-right social-icons">
 						<a href="https://twitter.com/godfredakpan"><i class="fa fa-twitter"></i></a>
 						<a href="https://facebook.com/godfred.akpan.14"><i class="fa fa-facebook"></i></a>
-						<a href="https://google.com/archer web solution"><i class="fa fa-google-plus"></i></a>
+						<a href="https://google.com/archerwebmaster"><i class="fa fa-google-plus"></i></a>
 						<a href="https://youtube.com/archerwebsolution"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>     
@@ -75,11 +73,11 @@
 		                            <li class="scroll"><a href="#contact">Contact</a></li>
 							
 		                </ul>
-		            </div>
+				</div>
 		        </div>
 	        </div>
         </div>                    
-    </header>
+    
     <!--/#header--> 
 
     <section id="home">	
@@ -116,7 +114,7 @@
                                            My Inspiration is God, i believe with him and a computer you can do all things.</p><p>
 									
 					<a href="https://github.com/godfredakpan" class="btn btn-primary">View my Github Profile <i class="fa fa-angle-right"></i></a>
-				         <a href="https://slack.com.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
+				         <a href="https://slack.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
 		</div>
 	</section><!--/#about-->
 	<section id="contact">
@@ -141,19 +139,19 @@
 					</div>
 					<div class="col-sm-5">
 						<div id="contact-section">
-							<h3>Send a message</h3>
-					    	<font color="blacl"><div class="form-container">
+							<center><h3>Send a message</h3>
+					    	<div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
 				
                             <input type="hidden" name="to" value="godfredakpan@gmail.com">
 				
-                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
+                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text"><p>
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
 				
-                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
-                            <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
-                        </form></font>  <br>  
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea><p>
+                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+							</form></center>  <br>  
 					    </div>
 					</div>
 				</div>
