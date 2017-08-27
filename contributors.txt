@@ -222,5 +222,9 @@
 (219) Gafar Azeez Oluwafemi (Slack: @zee, Github: ZeeUnltd)
 (220) Olushi Luqman Opemipo, codeshifu, codeshifu
 (221)Richard Oluwo(slack: @richard4s, github: richard4s)
+<<<<<<< HEAD
 (222) Uche Madu (Slack: @dreemer6, Github: dreemer6)
+=======
+
+>>>>>>> 6d20f8b527ca331a39b0f051a1825a5933b810ef
 
