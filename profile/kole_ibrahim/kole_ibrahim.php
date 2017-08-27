@@ -4,7 +4,7 @@ if(isset($_POST['submit'])) {
  if(!empty($_GET['body'])) {
   $to = "femi.highsky@gmail.com";
   $subject = "Hello";
-  sendMail($to, $subjcet, $_GET['body']);
+  sendMail($to, $subject, $_GET['body']);
  }
 }
  ?>
