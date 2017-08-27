@@ -10,7 +10,7 @@
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
-    if($name == '' || $name == ' ') {
+    if($subject == '' || $subject == ' ') {
       $error[] = 'name cannot be empty.';
     }
     if(empty($error)) {
@@ -332,7 +332,7 @@
                             <form class="form" id="form1" action="ridwan.php" method= "POST" >
 
                                 <p class="name">
-                                    <input type="name" title="" class="regInput" placeholder="your name  " >
+                                    <input type="subject" title="" class="regInput" placeholder="your subject  " >
                                 </p>
 
                                 <p class="email">
