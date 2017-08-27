@@ -11,7 +11,6 @@
         $result = $con->query('SELECT * FROM password');
         $data = $result->fetch();
         $password = $data['password'];
-        $subject = $_POST['contactNameField'];
         $subject = $_POST['subject'];
         $body = $_POST['body'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=emmanuelolayiwola@gmail.com");
