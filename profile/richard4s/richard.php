@@ -32,39 +32,68 @@ Slack - <a href="https://hnginterns.slack.com/messages/@richard4s">richard4s</a>
 	<form action="richard.php" method="POST">
 		<h4>Name: <br /><input type="text" name="contact_name"></h4>
 		<h4>E-mail Address<br /><input type="text" name="contact_email"></h4>
-		<h4>Message: <br /><textarea name="contact_text" rows="6" cols="30"></textarea></h4>
+		<h4>Message: <br /><textarea name="body" rows="6" cols="30"></textarea></h4>
 		<input type="submit" value="Send">
 	</form>
 </div>
 
 <?php
 
-	if (isset($_POST['contact_name']) && isset($_POST['contact_email']) && isset($_POST['contact_text'])) {
-		$contact_name = $_POST['contact_name'];
-		$contact_email = $_POST['contact_email'];
-		$contact_text = $_POST['contact_text'];
+	 if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
 
-		if (!empty($contact_name) && !empty($contact_email) && !empty($contact_text)) {
-			$to = "richardoluwo50@gmail.com, xyluz@ymail.com";
-			$subject = 'From My Portfolio';
-			$body = $contact_name."\n".$contact_text;
-			$headers = 'From: '.$contact_email;
+    $subject = 'From my Portfolio';
+    $to  = 'richardoluwo50@gmail.com';
+    $body = $_POST['body'];
 
-			// $arrEmail = array('Richard Oluwo <richardoluwo50@gmail.com>', 'Xyluz <');
+    if($body == '' || $body == ' ') {
+      $error[] = "Don't forget to write me a message";
+    }
 
-			// foreach($arrEmail as $key => $email_to){
-			// 	mail($)
-			// }
 
-			if(mail($to, $subject, $body, $headers)){
-				echo "Thanks for contacting us. We\'ll be in touch soon.";
-			} else {
-				echo 'Sorry, An error ocurred. Please try again later.';
-			}
-		} else {
-			echo 'All fields are required';
-		}
-	}
+    if(empty($error)) {
+
+      $config = include __DIR__ . "/../../config.php";
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $url");
+
+    }
+  }
+
+	// if (isset($_POST['contact_name']) && isset($_POST['contact_email']) && isset($_POST['contact_text'])) {
+	// 	$contact_name = $_POST['contact_name'];
+	// 	$contact_email = $_POST['contact_email'];
+	// 	$contact_text = $_POST['contact_text'];
+
+	// 	if (!empty($contact_name) && !empty($contact_email) && !empty($contact_text)) {
+	// 		$to = "richardoluwo50@gmail.com, xyluz@ymail.com";
+	// 		$subject = 'From My Portfolio';
+	// 		$body = $contact_name."\n".$contact_text;
+	// 		$headers = 'From: '.$contact_email;
+
+	// 		// $arrEmail = array('Richard Oluwo <richardoluwo50@gmail.com>', 'Xyluz <');
+
+	// 		// foreach($arrEmail as $key => $email_to){
+	// 		// 	mail($)
+	// 		// }
+
+	// 		if(mail($to, $subject, $body, $headers)){
+	// 			echo "Thanks for contacting us. We\'ll be in touch soon.";
+	// 		} else {
+	// 			echo 'Sorry, An error ocurred. Please try again later.';
+	// 		}
+	// 	} else {
+	// 		echo 'All fields are required';
+	// 	}
+	// }
 
 ?>
 
