@@ -1,28 +1,31 @@
-<?php 
-   $config = include('../config.php');
-       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-       $con = new PDO($dsn, $config['username'], $config['pass']);
-   
-       $exe = $con->query('SELECT * FROM password LIMIT 1');
-       $data = $exe->fetch();
-       $password = $data['password'];
-   
-   
-   if (isset($_GET['sendmessage'])) {
-   
-           $subject = "Hello";
-           $password = htmlentities(strip_tags(trim($password)));
-           $body = htmlentities(strip_tags(trim($_GET['body'])));
-           $to = "etimnseabasi@gmail.com";
-   
-           $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-   
-           header("Location: " . $location);
-   
-       }
-   
-   ?>
+<<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'etimnseabasi@gmail.com';
+    $body = $_POST['body'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = "I would love to have your opinion. Please Write me a message";
+    }
+      
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'A subject would be nice.';
+    }
+      
+    if(empty($error)) {
+      $config = include __DIR__ . "/../config.php";
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $url");
+    }
+  }
+ ?>
 
 <!DOCTYPE html>
 <html >
@@ -58,7 +61,7 @@
      <p>A full stack Python Developer,
        experienced with HTML,CSS and Java script for web design with Python as the backend, and Software Development on all platforms using Python. This profile wont be complete if i fail to mention that am a Christian and Jesus is my everything.
        </p>
-       <form action="#" method="get" name="Contat-Me">
+       <form action="#" method="POST" name="Contat-Me">
         <input class="contact-me-input placeholder" name="name" placeholder="Your name" type="text">
         <input class="contact-me-input placeholder" name="phone-number" placeholder="Your phone-number" type="number">
         <input class="contact-me-input placeholder" name="email" placeholder="Your email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
