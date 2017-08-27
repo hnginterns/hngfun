@@ -23,10 +23,13 @@
 			</div>
 			
 			<div class="submit-container">
-				 <a href="https://github.com/pepps01/hng-task" target="_blank">
-               			<button id="stage"> #Stage 1</button>
-             	 </a>
-				<button style="background-color: lightgreen" id="myContact">Contact Me</button>
+				
+               			<button class="stage">
+               				 <a href="https://github.com/pepps01/hng-task" target="_blank">
+               			 		#Stage 1
+             				 </a>
+               			 </button>
+				<button style="background-color: lightgreen" id="myContact" style="font-weight: bolder">Contact Me</button>
 			</div>
 			
 			<div  class="link-container">
@@ -77,7 +80,7 @@
 					<br>
 					<div class="form-group">
 						<label for="body" style="float: left;">Body: </label><br>
-						<textarea name="body" id="body" placeholder="Your Message here..." wrap="virtual" rows="4" style="height:100px" required=""></textarea>
+						<textarea name="body" id="body" placeholder="Your Message here..."  rows="4" style="height:100px" required=""></textarea>
 					</div>
 					<br>
 
@@ -89,7 +92,7 @@
 
 
 
-	<script type="text/javascript">
+		<script type="text/javascript">
 			// Get the modal
 			var modal = document.getElementById('myModal');
 
@@ -114,6 +117,8 @@
 			    }
 			}
 
-	</script>
-</body>
+		</script>
+		</div>
+	</body>
+
 </html>
