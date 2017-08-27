@@ -1,13 +1,13 @@
 <?php
 
-/*	$config = include('../config.php');
+	$config = include('../config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     $con = new PDO($dsn, $config['username'], $config['pass']);
 
     $exe = $con->query('SELECT * FROM password LIMIT 1');
     $data = $exe->fetch();
     $password = $data['password'];
-*/
+
     if (isset($_GET['submit'])) {
 
         $subject = "Hello";
@@ -39,7 +39,36 @@
 
 	<head>
 		<title>My Profile</title>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
+		
+		<style>
+		
+		.center {
+			text-align: center;
+			padding: 20px;
+		}
+
+		.detail_wrap {
+			margin: 0px 100px 0px 100px;
+		}
+
+		img {
+			border-radius: 50% ;
+		}
+
+		.link_margin {
+			padding: 10px 50px 10px 50px;
+		}
+
+		.top_margin {
+			margin-top: 20px;
+		}
+
+		.pad_form {
+			border: 2px solid black;
+		}
+		
+		</style>
+		
 	</head>
 
 	<body class="">
