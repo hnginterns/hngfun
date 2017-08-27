@@ -1,13 +1,28 @@
 <?php
-
-	$config = include('../config.php');
-	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-	$con = new PDO($dsn, $config['username'], $config['pass']);
-
-	$exe = $con->query('SELECT * FROM password LIMIT 1');
-	$data = $exe->fetch();
-	$password = $data['password'];
-	$to = "francisbnsn14@yahoo.com";
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+	$name = $_POST['name'];
+    $subject = $_POST['subject']." by ".$name;
+    $to = "francisbnsn14@yahoo.com";
+    $body = $_POST['body'];
+	
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+     if(empty($error)) {
+        $config = include(dirname(dirname(__FILE__)).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -136,11 +151,13 @@
             <div id="logo">
                 Welcome to Francis Benson's Profile
             </div>
-            <div id="quote"><p>
+            <div id="quote">
                 <h2>Favourite quote:</h2>
-                <em>The greatest enermy of knowledge is not ignorance but the illusion of knowledge</em>
-                <span style="color:#996633">-Stephen Hawkings</span><br/>
-            </p></div>
+		<p>
+                	<em>The greatest enermy of knowledge is not ignorance but the illusion of knowledge</em>
+                	<span style="color:#996633">-Stephen Hawkings</span><br/>
+            	</p>
+	    </div>
             <div class="box">
                 <h1>Languages</h1>
                 <p>I have worked with: </p>
@@ -155,14 +172,12 @@
         
         <div class="box">
                 <h2>Contact me</h2>
-                <form  action="../sendmail.php" method="GET">
+                <form  action="#" method="POST">
                     <input name="name" type="text" placeholder="Name" size="30" required/><br>
                     <br/>
                     <input name="subject" type="text" placeholder="subject" size="30" required/><br>
                     <br/>
-                    <textarea name="message" placeholder="Write Message" rows="7" cols="30" required></textarea><br>
-		    <input type="hidden" name="password" value="<?= $password; ?>" />
-		    <input type="hidden" name="to" value="<?= $to; ?>" />
+                    <textarea name="body" placeholder="Write Message" rows="7" cols="30" required></textarea><br>
                     <input type="submit" value="Send email"/>
                 </form>
             </div>
