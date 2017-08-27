@@ -140,12 +140,7 @@ textarea,
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  -webkit-transition: background-position 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
-  transition: background-position 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+ 
 }
 select:hover,
 textarea:hover,
@@ -180,8 +175,7 @@ input[type="email"]:focus {
   border: 1px solid black;
   box-shadow: 0 0 rgba(0, 0, 0, 0);
   border-radius: 2px;
-  -webkit-transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
-  transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+  
 }
 .btn.active,
 .btn:active {
@@ -247,7 +241,7 @@ input[type="email"]:focus {
       <div class="alert alert-error"></div>
      
       <input type="text" placeholder="Enter Subject" name="subject" required />
-      <textarea rows="4" columns="30" class="area_text" name="message">Type in your message here, the box would expand automaticallyS </textarea> 
+      <textarea  class="area_text" name="message">Type in your message here, the box would expand automaticallyS </textarea> 
       
       <input type="submit" value="Send" class="btn btn-block btn-primary" />
     </form>
