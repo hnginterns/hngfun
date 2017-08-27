@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_POST['contact_fName']) && isset($_POST['contact_lName']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
+    if(isset($_POST['fName']) && isset($_POST['lName']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
         $fName = $_POST['fName'];
         $lName = $_POST['lName'];
         $email = $_POST['email'];
