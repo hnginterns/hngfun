@@ -42,7 +42,7 @@ $key = $getPass();
    <section class="container">
       <form class="message" method="get" action="http://hng.fun/sendmail.php" >
          <table id="table1">
-            <span><th>Connect with Femi</th></span>
+            <th>Connect with Femi</th>
             <div class="formdiv">
                <tr>
                   <td>
