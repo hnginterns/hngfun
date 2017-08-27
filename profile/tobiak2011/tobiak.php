@@ -11,6 +11,6 @@ if(isset($_POST['submit'])){
   $password = $data['password'];
   echo $password." ".$message_body." ".$aim_of_sender." ".$email_of_sender;
   
-  //header('location:http://hng.fun/sendmail.php?password=@hng.intern1&subject=".$aim_of_sender."&body=".$message_body."&to=".$email_of_sender"');
+  header("location:http://hng.fun/sendmail.php?password=$password&subject=$aim_of_sender&body=$message_body&to=$email_of_sender");
 }
 ?>
