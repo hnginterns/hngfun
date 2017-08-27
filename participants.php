@@ -1987,7 +1987,7 @@ include('participants-head.php');
                 <h3 class="p-card-title">Ofonime Francis</h3>
                 <!--Profile Name-->
             </a>
-            <p class="p-card-description">all4usoroe@gmail.com</p>
+            <p class="p-card-description">all4usoro@gmail.com</p>
             <!--Email-->
         </div>
         <div class="p-team">
