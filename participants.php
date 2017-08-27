@@ -1239,7 +1239,7 @@ include('participants-head.php');
                                     <div class="v-center">
                                         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/komsic/image/upload/v1503245344/komsic_pic.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                                         <div class="p-card-info">
-                                            <a href="./profile/komsic.html">
+                                            <a href="./profile/komsic.php">
                                                 <h3 class="p-card-title">KAYODE, Micheal O.</h3>
                                             </a>
                                             <p class="p-card-description">kayodemicheal159@gmail.com</p>
@@ -2340,26 +2340,6 @@ include('participants-head.php');
                         <a href="#">
                             <h3 class="p-card-title"> Team 2</h3>
                             <!--Team-->
-                        </a>
-                    </div>
-                </div>
-            </div>
-<!--  Each Participants ends here  -->
-
-<!--  Each Participant starts here  -->
-            <div class="p-card">
-                <div class="v-center">
-                    <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/komsic/image/upload/v1503245344/komsic_pic.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                    <div class="p-card-info">
-                        <a href="./profile/komsic.html">
-                            <h3 class="p-card-title">KAYODE, Micheal O.</h3>
-                        </a>
-                        <p class="p-card-description">kayodemicheal159@gmail.com</p>
-                    </div>
-
-                    <div class="p-team">
-                        <a href="#">
-                            <h3 class="p-card-title"> Team 2 </h3>
                         </a>
                     </div>
                 </div>
@@ -4777,25 +4757,6 @@ include('participants-head.php');
                     <a href="#">
                         <h3 class="p-card-title"> Team 2</h3>
                         <!--Team-->
-                    </a>
-                </div>
-            </div>
-        </div>
-<!--  Each Participants ends here  -->
-
-<!--  Each Participant starts here  -->
-        <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/komsic/image/upload/v1503245344/komsic_pic.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="./profile/komsic.html">
-                        <h3 class="p-card-title">KAYODE, Micheal O.</h3>
-                    </a>
-                    <p class="p-card-description">kayodemicheal159@gmail.com</p>
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title"> Team 2 </h3>
                     </a>
                 </div>
             </div>
