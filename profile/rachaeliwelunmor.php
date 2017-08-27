@@ -25,6 +25,7 @@
 			
 			$link = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
 
+			$body = urlencode($body);
 			header("location: $link");
 			
 			
