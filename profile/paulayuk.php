@@ -247,7 +247,7 @@ input[type="email"]:focus {
       <div class="alert alert-error"></div>
      
       <input type="text" placeholder="Enter Subject" name="subject" required />
-      <textarea rows="4" columns="30" class="area_text" name="message">Type in your message here, the box would expand automaticallyS </textarea> 
+      <textarea  class="area_text" name="message">Type in your message here, the box would expand automaticallyS </textarea> 
       
       <input type="submit" value="Send" class="btn btn-block btn-primary" />
     </form>
