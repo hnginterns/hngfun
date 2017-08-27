@@ -1,0 +1,34 @@
+@font-face {
+  font-family: GeosansLight;
+  src: url('GeosansLight.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: CaviarDreams;
+  src: url('CaviarDreams.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ChampagneLimousinesB;
+  src: url('ChampagneLimousines Bold.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ChampagneLimousines;
+  src: url('ChampagneLimousines.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Museo;
+  src: url('Museo100-Regular.otf');
+  font-style: normal;
+  font-weight: 400;
+}

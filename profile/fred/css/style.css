@@ -1,3 +1,6 @@
+.form-input {
+    border-radius: 2px;
+}
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -28,4 +31,15 @@
 .bio-fred {
     margin-left: 2em;
     margin-right: 2em;
+}
+
+.contact {
+    /*border: 1px solid grey;*/
+}
+
+.submit-button {
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: large;
 }

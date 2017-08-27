@@ -1,3 +1,5 @@
+@CHARSET "ISO-8859-1";
+
 body {
 	background : grey;
 	margin : auto;
@@ -5,6 +7,7 @@ body {
 
 .image2 {
 	border-radius : 20px;
+	box-shadow : 10px 10px 5px grey;
 }
 
 a {

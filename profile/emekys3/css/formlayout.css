@@ -1,12 +1,12 @@
-html{
-	background-color: black;
+html
+{
+	background-color: white;
 }
-
 .mainsection
 {
 	height: 900px;
 	width: auto;
-    background-color: gray;
+    background-color: white;
     border: 2px solid;
     margin: 5em;
 
