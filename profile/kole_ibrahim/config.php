@@ -16,7 +16,7 @@ $con = new PDO($dsn, $config['username'], $config['pass']);
    $email = $_POST['email'];
    $subject = $_POST['subject'];
    $body = $_POST['body'];
-   header("Location:http://hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password");
+   header("Location:http://hng.fun/sendmail.php?to=$email&body=$body&subject=$subject&password=$password");
 }
 
 
