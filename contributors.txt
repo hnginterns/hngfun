@@ -227,3 +227,4 @@
 (224) Iroleh Vincent Nwachukwu (Slack: @irolehvincent, github: vincentiroleh)
 (225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
 (226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
+(227) Erisan Olasheni (Slack: @olasheni, Github: software202)
