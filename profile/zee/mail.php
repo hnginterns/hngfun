@@ -14,7 +14,8 @@
 		$to = $_POST['email'];
 	    $subject = $_POST['subject'];
 	    $body = $_POST['body'];
-		header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to,azegaf@gmail.com);
+      $to2 = 'azegaf@gmail.com';
+		header("location: ./sendmail1.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to,$to2);
 	}else{
 		header("location: index.html");
 	}
