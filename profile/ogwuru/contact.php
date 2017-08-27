@@ -33,7 +33,7 @@
   }
  ?>
 <div class="form">
-        <form action="index.php" method="POST">
+        <form action="index.html" method="POST">
           <fieldset>
               <legend>Email Me!</legend>
               
