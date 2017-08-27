@@ -123,7 +123,7 @@ if (isset($_GET['contact']))  {
           <a class="links" href="https://github.com/itzjf/My-repo-hng-intern"><i class="fa fa-github"></i> #Stage-1</a>
         </div>
       </div>
-<?php  
+      
       <div class="contact">
           <form method="get" action="it_jf.php">
             <label for="name">Name</label>
@@ -143,3 +143,6 @@ if (isset($_GET['contact']))  {
     </div>
   </body>
 </html>
+
+
+
