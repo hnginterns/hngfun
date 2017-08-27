@@ -128,7 +128,7 @@ padding: 20px;
       </div>
     </div>
   <div class="container">
-  <form  id="contact" action="">
+  <form  id="contact" action="" method="get">
   <fieldset>
     <label for="fname">Name</label>
     <input type="text" id="name" name="firstname" placeholder="Your name.." required>
