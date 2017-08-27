@@ -24,10 +24,8 @@
 			
 			<div class="submit-container">
 				
-               				 <a href="https://github.com/pepps01/hng-task" target="_blank">
-               					<button class="stage">
-               			 		#Stage 1
-               			 		</button>
+               				 <a href="https://github.com/pepps01/hng-task" target="_blank" class="stage">
+               			 			#Stage 1
              				 </a>
 				<button style="background-color: lightgreen" id="myContact">Contact Me</button>
 			</div>
