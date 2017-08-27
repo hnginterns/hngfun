@@ -3,7 +3,7 @@
     
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'tolufak@gmail.com';
+    $to  = 'bee_moi@zoho.com';
     $body = $_POST['message'];
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
@@ -23,6 +23,7 @@
     }
   }
  ?>
+
 
 
 <!DOCTYPE html>
@@ -328,7 +329,7 @@
                             <form class="form" id="form1" action="" method= "POST" >
 
                                 <p class="name">
-                                    <input name="subject" id="name" type="subject" title="" class="regInput" placeholder="subject  " >
+                                    <input name="subject" id="subject" type="subject" title="" class="regInput" placeholder="subject  " >
                                 </p>
 
                                 
