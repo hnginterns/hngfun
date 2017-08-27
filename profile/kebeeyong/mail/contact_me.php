@@ -1,3 +1,4 @@
+
 <?php
     if(isset($_POST['subject'])){
         $config = [
@@ -16,6 +17,6 @@
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=kylexcorcize@gmail.com");
     
     }else{
-        header("location: /kebeeyong/index.html");
+        header("location: princekayc.html");
     }
 ?>
