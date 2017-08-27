@@ -12,8 +12,8 @@ function sendMail() {
    $body = $_POST['body'];
    $query = $link->query("SELECT * FROM PASSWORD");
    while($getAll = mysqli_fetch_array($query)) {
-      $password = "it"; = $getAll['password'];
+      $password = $getAll['password'];
    }
-   header("Location:http://hng.fun/sendmail.php?to=$to &body=$body &subject=$subject &password=$password");
+   header("Location:http://hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password");
 }
 ?>
