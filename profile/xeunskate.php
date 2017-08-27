@@ -27,7 +27,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <head>
     <meta charset="UTF-8">
     <title>HNG Interns|XeunSKATE</title>
-	<link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style>
 body{
@@ -35,7 +38,8 @@ body{
     height:auto;
     background-color:#F0E68C;
     text-align:center;
-    font-family: Berkshire Swash
+    font-family: Berkshire Swash;
+	color:#000000;
 }
 h1{
     color:#000000;
@@ -43,17 +47,22 @@ h1{
     padding: 0% 0%;
     margin:auto;
     position: relative;
-	font-size: 80px;
+	font-size: 40px;
+	font-family: Berkshire Swash;
 }
 h2 {
-    text-align:center;
-    font-size:60px;
+    color:#000000;
+	text-align:center;
+    font-size:40px;
     position: relative;
     top: 0px;
+	font-family: Berkshire Swash;
 }
-h3 {text-align:center;
+h3 {
+	text-align:center;
 	colour:#000000;
 	font-family: Arial;
+	
 }	
 	
 h4 {
@@ -65,11 +74,13 @@ h4 {
 	</style>
     </head>
     <body>
+	
+	<div class="container">
      <header>
      <h1><span>XeunSKATE's Profile</span></h1>
      </header>
      <p>
-     <img src ="http://imgur.com/AMFBh5s.jpg" alt= "PROFILE PICTURE" class='img' style="width:728px;height:500px;"></p>
+     <img src ="http://i.imgur.com/5CbCfNt.jpg" alt= "PROFILE PICTURE" class="img-thumbnail" style="width:313.7px;height:364.3px;"></p>
 
         <h2>FAGBEMI OLUWASEUN</h2>
         <p>I currently just learnt the basics of html and css, and i'm definitely willing to learn so much more<br>
@@ -84,9 +95,9 @@ h4 {
 
 					<form action="http://hng.fun/profile/xeunskate.php" method="POST" >
 					Name:<br>
-					<input type="text" name="subject" placeholder="Your name..."><br>
+					<input type="text" class="form-control" name="subject" placeholder="Your name..."><br>
 					Message:<br>
-					<textarea rows="4" cols="50" placeholder="Write something.." name="message"></textarea><br><br>
+					<textarea rows="4" cols="50" placeholder="Write something.." class="form-control" name="message"></textarea><br><br>
 					<input type="submit" value="Send">
 					<input type="reset" value="Reset">
 					</form>
@@ -94,5 +105,6 @@ h4 {
 
 
 		<p> © 2017 </p>
+	</div>
     </body>
 </html>
