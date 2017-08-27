@@ -98,18 +98,26 @@
         </div>
         
         <div class="content" style=" max-width: 500px; margin: auto;">
+           
+                <div class="container heading-style">
+                    <h4 class="heading-title">Get in touch!</h4>
+                    <i class="fa fa-envelope-o heading-icon"></i>
+                    <div class="line bg-black"></div>
+                    <p class="heading-subtitle">
+                       Send me an email.
+                    </p>
+              </div>
         <div class = "card-form">
-          <form  action="php/contactme.php" method="post" >
-            <p class = "title" >CONTACT ME</p>
+          <form  action="php/contactme.php" method="post" > 
               
-                    <input type="text" id="subject" name="subject" placeholder="Your Full Name">
+                    <input type="text" id="subject" class="contactField" name="subject" placeholder="Your Full Name">
                     <br>
           
-    			    <input type="email" id="to" name="to" placeholder="Your Email">
+    			    <input type="email" id="to" class="contactField" name="to" placeholder="Your Email">
     			    <br> 
 
     			   
-    			    <textarea id="body" name="body" placeholder="Write some subjects here" style="height:120px"></textarea>
+    			    <textarea id="body" name="body" class="contactTextarea" placeholder="Write some subjects here" style="height:120px"></textarea>
     			    <br><br>
 
     			    <input type="submit" name="process" value="Submit">
@@ -118,15 +126,7 @@
         </div>
 
         <div class="content" style=" max-width: 500px; margin: auto;">
-        <div class="">
-                <div class="container heading-style">
-                    <h4 class="heading-title">Get in touch!</h4>
-                    <i class="fa fa-envelope-o heading-icon"></i>
-                    <div class="line bg-black"></div>
-                    <p class="heading-subtitle">
-                       Send me an email.
-                    </p>
-                </div>
+        
                 <div class="container no-bottom">
                     <div class="contact-form no-bottom"> 
                          
