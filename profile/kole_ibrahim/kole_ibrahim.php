@@ -2,6 +2,7 @@
 require "config.php";
 global $link;
 $key = getPass();
+echo $key;
  ?>
 <!DOCTYPE html>
 <html>
