@@ -12,7 +12,7 @@
 
         $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
+        $body = htmlentities(strip_tags(trim($_GET['subject'])));
         $to = "dxelpraise@gmail.com";
 
         $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
@@ -25,7 +25,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+ <title>david umoren</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
     

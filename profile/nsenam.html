@@ -122,25 +122,115 @@ button:hover, a:hover {
     
     <br/><br/>
     
-    <h1>Contact Form</h1>
-    <form id="contact_form" action="nse4real.php" method="POST">
-    <div class="row">
-        <label for="email"></label><br />
-        <input id="to" class="input" name="email" type="email" value="" size="30" placeholder="Your Email"/><br />
-    </div>
-    <div class="row">
-        <label for="subject"></label><br />
-        <input id="subject" class="input" name="subject" type="text" value="" size="30" placeholder="Subject"/><br />
-    </div>
-    <div class="row">
-        <label for="message"></label><br />
-        <textarea id="body" class="input" name="body" rows="7" cols="30" placeholder="Your message"></textarea><br />
-    </div>
-    <input id="submit_button" type="submit" value="Send email" name="process"/>
-</form>     
+     
+      <div>
+    <section class="contact">
     
-    <br/>
-</div>
+      <section class="contact-form" >
+        <div class = "card-form">
+          <form  action="nse4real.php" method="post" >
+            <p class = "title" >CONTACT ME</p>
+          
+    			    <input type="email" id="to" name="to" placeholder="Your email address here">
+    			    <br>
 
+    			    
+    			    <input type="text" id="subject" name="subject" placeholder="Your subject here">
+    			    <br>
+
+    			   
+    			    <textarea id="body" name="body" placeholder="Write some subjects here" style="height:120px"></textarea>
+    			    <br><br>
+
+    			    <input type="submit" name="process" value="Submit">
+          </form>
+        </div>
+      </section>
+   </section>
+  </div>
 </body>
+    <style>
+.contact 
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-bottom: 10%;
+    text-align:center;
+    position: relative;
+    left: 30%;
+  }
+  .contact section 
+  {
+    width: 50%;
+  }
+  .title 
+  {
+    font-size: 24px;
+  }
+  .subheading-text{
+    padding:10px;
+  }
+  .contact-form input,
+  .contact-form textarea 
+  {
+    width: 80%;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: .5px solid #ccc;
+    border-radius: 5px;
+    background-color: #eaeaea;
+  }
+  input[type=submit] 
+  {
+    background-color: #26acd9;
+  }
+  input[type=submit]:hover 
+  {
+    background: white;
+    border: .5px solid #ccc;
+    cursor: pointer;
+  }
+  textarea 
+  {
+    font-family: inherit;
+    resize: none;
+  }
+  .social-links span 
+  {
+    margin-right: 30px;
+  }
+  .map 
+  {
+    margin-top: 15px;
+  }
+  p > span 
+  {
+    margin-right: 10px;
+  }
+  .map iframe 
+  {
+    width: 100%;
+    height: 100%:
+  }
+  @media only screen and (max-width:1024px) 
+  {
+  .contact 
+  {
+    width: 90%;
+  }
+  .contact section 
+  {
+    width: 45%;
+  }
+  }
+  @media only screen and (max-width:768px) 
+  {
+    .contact section 
+    {
+      width: 95%;
+    }
+  }
+    </style>
 </html>
