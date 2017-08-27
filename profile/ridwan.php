@@ -11,7 +11,7 @@
       $error[] = 'Message cannot be empty.';
     }
     if($subject == '' || $subject == ' ') {
-      $error[] = 'name cannot be empty.';
+      $error[] = 'Subject cannot be empty.';
     }
     if(empty($error)) {
       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
@@ -25,9 +25,6 @@
     }
   }
  ?>
-
-
-
 
 
 
@@ -329,7 +326,7 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=thosynlasisi@gmail.com" method= "POST" >
+                            <form class="form" id="form1" action="" method= "POST" >
 
                                 <p class="name">
                                     <input type="subject" title="" class="regInput" placeholder="your subject  " >
