@@ -14,7 +14,7 @@ if(isset($_POST['submit'])) {
 </head>
 <body>
    <header>
-      <h3>Kole-Ibrahim</h3>
+      <h2><a href="kole_ibrahim.php">KOLE-IBRAHIM</a></h2>
    </header>
    <section id="profile" class="container">
       <hr />
@@ -43,7 +43,7 @@ if(isset($_POST['submit'])) {
       <hr />
    </section>
    <section class="container">
-      <form class="message" method="get" action="http://hng.fun/sendmail.php" >
+      <form class="message" method="get" action="kole_ibrahim.php" >
          <table id="table2">
             <th>Coonect with Femi</th>
             <div class="formdiv">
