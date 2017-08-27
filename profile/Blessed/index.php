@@ -62,20 +62,17 @@
   <div class="form_container">
     <div class="login-box animated fadeInUp">
       <form method="GET" >
-	<div class="box-header">
-	<h2>Contact Form</h2>
-	</div>
 	<label for="name">Full Name</label>
 	<br/>
-	<input type="text" id="fullname" name = "name" placeholder="Ada John">
+	<input type="text" id="fullname" name = "name" placeholder="Your Name">
 	<br/>
 	<label for="email">Email</label>
 	<br/>
-	<input type="email" id="email" name = "email" placeholder=" ada@john.co">
+	<input type="email" id="email" name = "email" placeholder=" example@hng.fun">
 	<br/>
 	<label for="subject">Subject</label>
 	<br/>
-	<input type="text" id="subject" name = "subject" placeholder="Hello">
+	<input type="text" id="subject" name = "subject" placeholder="Subject">
 	<br/>
 	<label for="message">Message</label>
 	<br/>
