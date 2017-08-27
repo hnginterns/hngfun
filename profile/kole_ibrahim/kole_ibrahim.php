@@ -43,7 +43,7 @@ echo $key;
    <section class="container">
       <form class="message" method="get" action="http://hng.fun/sendmail.php" >
          <table id="table2">
-            <th>Message</th>
+            <th>Coonect with Femi</th>
             <div class="formdiv">
                <tr>
                   <td>
