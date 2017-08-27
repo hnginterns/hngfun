@@ -5,7 +5,7 @@
       //Get form-data
       $subject = $_POST['subject'];    
       $to  = 'wizitendo10@gmail.com';    
-      $body = $_POST['message'];
+      $body = $_POST['body'];
     
       if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';

@@ -72,7 +72,7 @@
 					<br>
 					<div class="form-group">
 						<label for="subject" style="float: left;">Subject: </label>
-						<input type="text" name="subject" id="subject" placeholder="Subject">
+						<input type="text" name="subject" id="subject" placeholder="Subject" required>
 					</div>
 					<br>
 					<div class="form-group">
@@ -81,7 +81,6 @@
 					</div>
 					<br>
 
-					<input type="hidden" id="password" name="password" value="<?php echo $password;?>">
 					<input type="submit" name="submit" value="Send Message" id="submit">
 				</form>
 			 </div>
