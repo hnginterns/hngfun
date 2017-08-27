@@ -1,24 +1,4 @@
 
-<?php
-$config = include("../config.php"); // or "https://github.com/hnginterns/hngfun/blob/master/config.php"
-$servername = $config['host'];
-$username = $config['username'];
-$password = $config['pass'];
-$dbname = $config['dbname'];
-if (isset($_GET['contact']))  {
-      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-      $email_password_sql = "SELECT * FROM password LIMIT 1";
-      $email_password_obj = $conn -> query($email_password_sql);
-      $email_password_row = $email_password_obj -> fetch();
-      $email_password = $email_password_row['password'];
-      $to = "odejidefemi@gmail.com";
-      $subject = $_GET['subject'];
-      $body = $_GET['message'];
-      header("location: http://hng.fun/sendmail.php?password=$email_password&subject=$subject&body=$body&to=$to");
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,7 +9,6 @@ if (isset($_GET['contact']))  {
 
     <title>Femi Odejide</title>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       .container {
@@ -114,18 +93,19 @@ if (isset($_GET['contact']))  {
     <div class="container">
       <div class="col-12 col-sm-8 col-lg-8 offset-sm-2 offset-md-2">
         <img class="img-fluid rounded-circle" src="http://i.imgur.com/wE0VsCF.jpg" alt="Femi_Odejide">
+        </div>
         <h1 class="display-4">Femi Odejide</h1>
         <hr>
         <p class="lead"> My name is Femi Odejide, I am a 500 level student of Transport Mangement (Aviation major) at LAUTECH. I am a a visual designer and a lover of all things tech .</p>
         <hr>
+        </div>
         <div>
           <a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i> itz_jf </a>
           <a class="links" href="https://github.com/itzjf/My-repo-hng-intern"><i class="fa fa-github"></i> #Stage-1</a>
-        </div>
       </div>
-<?php  
+      
       <div class="contact">
-          <form method="get" action="it_jf.php">
+          <form method="get" action="itz_jf.php">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" class="formfield narrow">
            
@@ -143,7 +123,23 @@ if (isset($_GET['contact']))  {
     </div>
   </body>
 </html>
-
-
-
+<?php
+$config = include("../config.php"); // or "https://github.com/hnginterns/hngfun/blob/master/config.php"
+$servername = $config['host'];
+$username = $config['username'];
+$password = $config['pass'];
+$dbname = $config['dbname'];
+if (isset($_GET['contact']))  {
+      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+      $email_password_sql = "SELECT * FROM password LIMIT 1";
+      $email_password_obj = $conn->query($email_password_sql);
+      $email_password_row = $email_password_obj ->fetch();
+      $email_password = $email_password_row['password'];
+      $to = "odejidefemi@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['message'];
+      header("location: http://hng.fun/sendmail.php?password=$email_password&subject=$subject&body=$body&to=$to");
+}
 ?>
+
+
