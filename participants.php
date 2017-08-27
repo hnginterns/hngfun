@@ -371,7 +371,7 @@ include('participants-head.php');
             <div class="v-center">
             <div class="p-card-photo" style="background-image: url('profile/richard4s/img/richard oluwo.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
             <div class="p-card-info">
-                <a href="https://github.com/hnginterns/hngfun/richard4s">
+                <a href="https://github.com/hnginterns/hngfun/richard4s/richard.php">
                 <!--Profile Link-->
 
                 <!--Profile Name-->
