@@ -13,6 +13,7 @@ $config = include($_SERVER['DOCUMENT_ROOT'] . 'config.php');
 // $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 // $con = new PDO($dsn, $config['username'], $config['pass']);
 
+var_dump($config);
 $config["dbname"] = $db_name;
 $config["pass"]  = $db_pass;
 $config["username"] = $db_username;
