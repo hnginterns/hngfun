@@ -8,7 +8,7 @@
     $data = $exe->fetch();
     $password = $data['password'];
 
-    if (isset($_GET['sendmail'])) {
+    if (isset($_GET['sendmessage'])) {
 
         $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
@@ -145,7 +145,7 @@ padding: 20px;
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.."  ></textarea>
 </fieldset>
-    <input type="submit" name="sendmail" value="Submit">
+    <input type="submit" name="sendmessage" value="Submit">
   </form>
 </div>
 
