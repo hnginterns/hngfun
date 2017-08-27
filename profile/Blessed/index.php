@@ -60,28 +60,13 @@
     <p><button>Contact Me</button></p>
   </div>
 
-        <div class="container2">
-        <form action="/action_page.php">
-
-          <div>
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-          </div>
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email address.." required>
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-
-          <input type="submit" value="Send">
-          
-
-        </form>
-      </div>
+	<div class="contact-form">
+		<form action="pangolin.php" method="post">
+			<input type="text" name="name" placeholder="Your Name">
+			<textarea name="message" placeholder="Your Message"></textarea>
+			<input type="submit" name="submit" value="Send">
+		</form>
+	</div>
 </div> 
 </body>
 </html>
