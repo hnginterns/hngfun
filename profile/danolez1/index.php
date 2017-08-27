@@ -6,7 +6,6 @@ $body = trim($_POST['body']);
 $subject = trim($_POST['subject']);
 
 $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      echo json_encode($config);
       $param = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $conn = new PDO($param, $config['username'], $config['pass']);
 
