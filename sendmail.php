@@ -1,12 +1,9 @@
 <?php
-
-
-
   /**
    * Loads the config file config.php containing the databse details
    *
    */
-  $admin_email = 'abodunrin5@gmail.com';
+  $admin_email = 'xyluz@ymail.com';
   $config = include('config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
   $con = new PDO($dsn, $config['username'], $config['pass']);
@@ -85,14 +82,14 @@
         $mail->isHTML();
         $mail->Username = "hng@jointhands.net";
         $mail->Password = 'QwertyUiop10/';
-        $mail->SetFrom('hng@jointhands.net');
         $mail->Subject = $subject;
         $mail->Body = $message;
+        $mail->SetFrom('hng@jointhands.net');
         $mail->AddAddress($to);
         $mail->AddCc($admin_email);
 
          if(!$mail->send()) {
-           $error[] = 'Message sending failed';
+           $error[] = 'Message sending failed <br/>'.$mail->ErrorInfo;
          } else {
            /**
             * Mail has been sent successfully
@@ -125,7 +122,7 @@
     $id = $data['id']; // the id of the password in the database
     $sql = "UPDATE password SET password = '$new_pass', last_updated=NOW() WHERE id = $id"; // The query
     $exec = $con->query($sql); // Executes the query
-    if($exe && $exe->rowCount() > 0) {
+    if($exec && $exec->rowCount() > 0) {
       /**
        * Password updated
        */

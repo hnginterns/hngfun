@@ -70,6 +70,7 @@ ul.menu-item {
 ul.menu-item li {
   list-style-type: none;
   margin-right: 10px;
+  transition: .5s;
 }
 
 ul.menu-item li:last-of-type {
@@ -103,6 +104,7 @@ textarea {
   border-color: #ccc;
   border-radius: 2px;
   font-family: inherit;
+  transition: .5s;
 }
 
 input:focus,
@@ -119,6 +121,7 @@ input[type=submit] {
   background-color: #E57373;
   font-family: inherit;
   width: 80px;
+  transition: .5s ease-out;
 }
 
 input[type=submit]:hover {

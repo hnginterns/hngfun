@@ -11,8 +11,6 @@
 			background-image: url('https://web3.com.au/wp-content/uploads/2015/09/web3-web-design-engage-background-image.jpg');
 			background-repeat: no-repeat;
 			background-size: 100% 102%;
-			background-
-			//background-image: url('http://wallpapercave.com/wp/UDj4qrD.jpg');
 		}
 		#img_position{
 			width: 250px;
@@ -27,12 +25,29 @@
 			margin: auto;
 			text-align: center;
 		}
+		.form_container{
+			width: 450px;
+			margin: auto;
+			border-radius: 5px;
+		    background-color: #f2f2f2;
+		    padding: 20px;
+		    opacity: 0.7;
+		}
 		div h1{
 			color: #C1E5F4;
 			font-size: 1.8em;
 		}
 		div p{
 			color: #C1E5F4;
+		}
+		input[type=text], input[type=email], textarea {
+		    width: 75%;
+		    padding: 5px;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    box-sizing: border-box;
+		   	margin-top: 4px;
+		    margin-bottom: 4px;
 		}
 	</style>
 </head>
@@ -53,14 +68,31 @@
 		</p>
 		<p>
 			find me on slack<br>
-			<img width="20" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxhJhSyOB6wpSI-jtu2J4e17v_oUrYsDyWSh4gSFZDEA5GLle_">
+			<img width="20" alt="my slack" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxhJhSyOB6wpSI-jtu2J4e17v_oUrYsDyWSh4gSFZDEA5GLle_">
 			@philippy
 			<br><br>
 			Contact me!<br>
-			<span><a href="#"><img width="40" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/facebook.jpg"></a></span>
-			<span><a href="#"><img width="40" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/youtube.jpg"></a></span>
-			<span><a target="_blank" href="https://twitter.com/philipakpeki"><img width="40" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/twitter.jpg"></a></span>
+			<span><a href="#"><img width="40" alt="my facebook" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/facebook.jpg"></a></span>
+			<span><a href="#"><img width="40" alt="my youtube" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/youtube.jpg"></a></span>
+			<span><a target="_blank" href="https://twitter.com/philipakpeki"><img width="40" alt="my twitter" src="https://www.marjiekemper.com/wp-content/uploads/2015/03/twitter.jpg"></a></span>
 		</p>
+	</div>
+	<div class="form_container">
+	  	<form method="post" action="process.php">
+		    <label for="to">Email:</label>&nbsp;&nbsp;
+		    <input type="email" id="to" name="to" placeholder="Your email address here">
+		    <br>
+
+		    <label for="subject">Subject:</label>&nbsp;&nbsp;
+		    <input type="text" id="subject" name="subject" placeholder="Your subject here">
+		    <br>
+
+		    <label for="body">Message Body:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <textarea id="body" name="body" placeholder="Write some subjects here" style="height:120px"></textarea>
+		    <br><br>
+
+		    <input type="submit" name="process" value="Submit">
+	  	</form>
 	</div>
 </body>
 </html>
