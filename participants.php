@@ -3144,7 +3144,7 @@ include('participants-head.php');
 		<div class="v-center ">
 			<div class="p-card-photo " style="background-image: url(http://res.cloudinary.com/jsmyth/image/upload/v1503171603/IMG_20170819_203825_jsknvs.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
 			<div class="p-card-info">
-				<a href="http://hng.fun/profile/jsmyth.html">
+				<a href="http://hng.fun/profile/jsmyth.php">
 				    <h3 class="p-card-title">Joe-smith Essang</h3>
 				</a>
 				<p class="p-card-description">joesmithessang@gmail.com</p>
