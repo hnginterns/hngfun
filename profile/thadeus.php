@@ -13,7 +13,7 @@
         $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['message'])));
-        $to = "xyluz@ymail.com";
+        $to = "ainojie@gmail.com";
 
         if (!isset($body) || $body == '' || (!isset($_GET['email'])) || $_GET['message'] == '' ) {
 
