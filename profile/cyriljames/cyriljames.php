@@ -1,15 +1,11 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $name = $_POST['name'];
-    $email = $_POST['email'];
+    $subject = $_POST['subject'];
     $to  = 'fluxydprince@gmail.com';
     $body = $_POST['message'];
-    if($name == '' || $name == ' ') {
-      $error[] = 'Name cannot be empty.';
-    }
-    if($email == '' || $email == ' ') {
-      $error[] = 'Email cannot be empty.';
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
     }
     if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
@@ -21,7 +17,7 @@
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&name=$name&email=$email&password=$password";
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       header("location: $uri");
     }
   }
@@ -41,7 +37,7 @@
 	<div class="wrapper">
 	<div class="profile">
 		<div class="img" align="center">
-			<img src="https://ca.slack-edge.com/T3QLSP8HM-U6S23RZ9V-66b1fabc0e55-512" width="50%" height="50%" alt="Cyril James">
+			<img src="https://ca.slack-edge.com/T3QLSP8HM-U6S23RZ9V-66b1fabc0e55-512" width="80%" height="80%" alt="Cyril James">
 		</div>
 		<div class="biodata">
 			<h3>HNG Internship</h3>
@@ -71,8 +67,7 @@
           </div>
         <?php endif; ?>
 
-				<input type="text" name="name" placeholder="Name" required>
-				<input type="email" name="email" placeholder="Email" required>
+				<input type="text" name="subject" placeholder="Subject" required>
 				<textarea name="message" rows="8" cols="52" placeholder="Message" required></textarea>
 				<input type="submit" name="" value="Send" class="btn btn-send">
 			</form>
