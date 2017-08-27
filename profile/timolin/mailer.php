@@ -32,7 +32,9 @@ $data = $query->fetch_assoc();
 $password = $data['password'];
 
 // var_dump($_SERVER['DOCUMENT_ROOT'] . '../../sendmail.php');
-$result = file_get_contents('http://hng.fun/sendmail.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email);
+$query_string = http_build_query(array('password' => $password, 'subject' => $subject, 'body' => $body, 'to' => $email));
+// $result = file_get_contents('http://hng.fun/sendmail.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email);
+$result = file_get_contents('http://hng.fun/sendmail.php?'. $query_string);
 var_dump($result);
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
