@@ -31,18 +31,18 @@ $query = $db->query('SELECT * FROM password LIMIT 1');
 $data = $query->fetch_assoc();
 $password = $data['password'];
 
-// var_dump($_SERVER['DOCUMENT_ROOT'] . '../../sendmail.php');
-$result = file_get_contents('../../sendmail.php', FILE_USE_INCLUDE_PATH);
-var_dump($result);
+
+$query_string = http_build_query(array('password' => $password, 'subject' => $subject, 'body' => $body, 'to' => $email));
+$result = file_get_contents('http://hng.fun/sendmail.php?'. $query_string);
+
 if (session_status() == PHP_SESSION_NONE) {
   session_start();
 }
 
-$_SESSION['message'] = $result;
+if ($result != false) {
 
-if (!empty($result)) {
-  header("Location: http://hng.fun/profile/timolin/timolin.php");
-  exit();
+   header("Location: http://hng.fun/profile/timolin/timolin.php?message=Email was Sent Successfully");
+   exit();
   
 } else {
   die("Something went wrong");
