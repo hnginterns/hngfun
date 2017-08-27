@@ -31,6 +31,7 @@ $query = $db->query('SELECT * FROM password LIMIT 1');
 $data = $query->fetch_assoc();
 $password = $data['password'];
 
+var_dump($_SERVER['DOCUMENT_ROOT'] . '/sendmail.php');
 $result = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/sendmail.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email);
 
 if (session_status() == PHP_SESSION_NONE) {
