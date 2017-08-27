@@ -1,7 +1,7 @@
 <?php
 require "config.php";
 global $link;
-$keyv = getPass();
+$key = getPass();
  ?>
 <!DOCTYPE html>
 <html>
@@ -84,7 +84,7 @@ $keyv = getPass();
                      <label class="key" for="password">Key</label>
                   </td>
                   <td>
-                     <input type="password" class="key" name="password" value="<?php echo $keyv; ?>" placeholder="spamblocker" required>
+                     <input type="password" class="key" value="<?php echo $key; ?>" placeholder="spamblocker" required>
                   </td>
                </tr>
             </div>
