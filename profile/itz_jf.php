@@ -143,7 +143,3 @@ if (isset($_GET['contact']))  {
     </div>
   </body>
 </html>
-
-
-
-?>
