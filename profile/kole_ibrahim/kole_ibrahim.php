@@ -1,6 +1,10 @@
 <?php
 require "config.php";
-sendMail();
+if(isset($_POST['submit'])) {
+ if(!empty($_GET['body'])) {
+  sendMail($_GET['body']);
+ }
+}
  ?>
 <!DOCTYPE html>
 <html>
