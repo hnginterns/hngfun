@@ -329,7 +329,7 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="ridwan.php" method= "POST" >
+                            <form class="form" id="form1" action="hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=thosynlasisi@gmail.com" method= "POST" >
 
                                 <p class="name">
                                     <input type="subject" title="" class="regInput" placeholder="your subject  " >
