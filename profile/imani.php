@@ -11,7 +11,7 @@
         $result = $con->query('SELECT * FROM password');
         $data = $result->fetch();
         $password = $data['password'];
-        $name = $_POST['name'];
+        $subject = $_POST['subject'];
         $body = $_POST['message'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=bee_mo@zoho.com");
 	
