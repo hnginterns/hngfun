@@ -21,11 +21,9 @@
 			$data = $exe->fetch();
 			$password = $data['password'];
 			
-			$link = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-			
-			$link = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
-
 			$body = urlencode($body);
+			$link = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
+			
 			header("location: $link");
 			
 			
