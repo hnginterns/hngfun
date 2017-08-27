@@ -1,9 +1,7 @@
 <?php
 require "config.php";
-global $db_name;
-echo $db_name;
-//$key = getPass();
-//echo $key;
+global $key;
+echo $key;
  ?>
 <!DOCTYPE html>
 <html>
