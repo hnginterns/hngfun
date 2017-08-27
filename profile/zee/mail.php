@@ -1,5 +1,5 @@
 <?php
-	if(isset($_POST['process'])){
+	if(isset($_POST['submit'])){
 		$config = [
 		    'dbname' => 'hng',
 		    'pass' => '@hng.intern1',
@@ -14,7 +14,7 @@
 		$to = $_POST['email'];
 	    $subject = $_POST['subject'];
 	    $body = $_POST['body'];
-		header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+		header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to,azegaf@gmail.com);
 	}else{
 		header("location: index.html");
 	}
