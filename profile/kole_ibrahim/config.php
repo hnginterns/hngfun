@@ -2,12 +2,9 @@
 $db_host = "localhost";
 $db_username = "intern";
 $db_password = "@hng.intern1";
-$db_name = "@hng.intern1";
-try {
-   $link = mysqli_connect($db_host, $db_username, $db_password, $db_name);
-} catch (Exception $ex) {
-   die('Could not connect to server<br /> Error => ' . $ex->getMessage());
-}
+$db_name = "hng";
+
+$link = mysqli_connect($db_host, $db_username, $db_password, $db_name) or die('Could not connect to server');
 
 function getPass() {
    global $link;
