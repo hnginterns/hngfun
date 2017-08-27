@@ -49,7 +49,7 @@ else{
         <input type="text" id="fname" name="name" placeholder="Your name..">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject..">
+        <input type="text" id="subject" name="message" placeholder="Subject..">
 
 
 
