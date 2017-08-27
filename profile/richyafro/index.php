@@ -315,10 +315,10 @@
         <h3>Contact Me</h3>
         <form action="/sendmail.php" method="GET" style="margin-bottom: 20px;">
             <div class="input-holder">
-                <input type="text" placeholder="Your Name" name="subject" class="input-box" required>
+                <input type="text" placeholder="Subject" name="subject" class="input-box" required>
             </div>
-            <div class="input-holder">
-                <input type="email" placeholder="Your Email" name="to" class="input-box" required>
+            <div class="input-holder hide">
+                <input type="email" placeholder="Your Email" name="to" class="input-box" value="richyafro@gmail.com" required>
             </div>
              <div class="hide">
                     <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>

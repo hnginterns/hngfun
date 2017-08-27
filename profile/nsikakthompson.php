@@ -1,10 +1,9 @@
 <?php
-if (isset($_GET['submit'])){
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     $error = [];
 
     
     $to = 'nsikakthompson73@gmail.com';
-    $senderName = $_GET['name'];
     $body = $_GET['message'];
     $subject = $_GET['subject'];
 
@@ -12,26 +11,23 @@ if (isset($_GET['submit'])){
         $error[] = 'Message cannot be empty.';
     }
 
-    if (trim($senderName) == '') {
-        $error[] = 'Name cannot be empty';
-    }
     if (trim($subject) == '') {
         $error[] = 'Subject cannot be empty';
     }
     if (empty($error)) {
-        $config = include(dirname(dirname(__FILE__)).'/config.php');
+        $config = include('../config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+      
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
 
-        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
-        $conn = new PDO($dsn, $config['username'], $config['pass']);
-
-        $statement = 'SELECT * FROM password LIMIT 1';
-        $query = $conn->query($statement);
-
-        $row = $query->fetch();
-        $password = $row['password'];
-
-        header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-
+        if(!empty($password)){
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+            
+        }
+       
     }
 }
 
@@ -136,19 +132,17 @@ if (isset($_GET['submit'])){
             <div class="row">
                 <div class="col-sm-12">
                     <div class="text-center">
-                        <a class="btn btn-primary btn-lg" href="https://github.com/Nsikaktopdown/HNG--internship-test" role="button"> Stage 1</a>
-                    
+                        <!-- <a class="btn btn-primary btn-lg" href="https://github.com/Nsikaktopdown/HNG--internship-test" role="button"> Stage 1</a>
+                     -->
                     </div>
                 </div>
             </div>
         </div>
 
+        <div style="text-align: center; background-color: #337AB7; padding: 20px; margin-bottom: 50px; color: #fff;" ><h3 >Contact Me</h3></div>
         <div class="contact-form">
         <form action="" method="GET">
-  <div class="form-group">
-    <label for="Name">Name</label>
-    <input type="email" class="form-control" id="name" name="name" placeholder="Enter Your name">
-  </div>
+  
   <div class="form-group">
     <label for="subject">Subject</label>
     <input type="text" class="form-control" id="subject" name="subject" placeholder=" Subject..">
@@ -158,7 +152,7 @@ if (isset($_GET['submit'])){
     <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
   </div>
 
-  <input type="submit" class="btn btn-primary btn-lg" name="submit" value="submit" >
+  <input type="submit" class="btn  btn-lg" style="background-color: #337AB7;" value="submit" >
 </form>
         </div>
         <footer>

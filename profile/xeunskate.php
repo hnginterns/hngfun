@@ -86,7 +86,7 @@ h4 {
 					Name:<br>
 					<input type="text" name="subject" placeholder="Your name..."><br>
 					Message:<br>
-					<input type="text" name="message" placeholder="Write something.." size="50"><br><br>
+					<textarea rows="4" cols="50" placeholder="Write something.." input type="text" name="message"></textarea><br><br>
 					<input type="submit" value="Send">
 					<input type="reset" value="Reset">
 					</form>

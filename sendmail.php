@@ -1,7 +1,4 @@
 <?php
-
-
-
   /**
    * Loads the config file config.php containing the databse details
    *
