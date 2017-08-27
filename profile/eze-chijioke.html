@@ -260,16 +260,15 @@ white-space: nowra
         <img src="img/cejay.PNG" alt="Avatar" style="width:30%" class="cc margin-top">
       </div>
 
-      <form class="container" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+      <form class="container" method="post" action="eze-chijioke.php">
         <div class="section">
           <label><b>Subject</b></label>
-          <input class="input border margin_bottom" type="text" placeholder="Enter Subject" name="subjt" required>
-          <span class="error">* <?php echo $subErr;?></span>
+          <input class="input border margin_bottom" type="text" placeholder="Enter Subject" name="subject" required>
           <label><b>email</b></label>
           <input class="input border" type="text" placeholder="Enter email" name="email" required>
-          <span class="error">* <?php echo $emailErr;?></span>
-          <textarea class="input border section " type="text" name="msg"  placeholder="type your mail..." required></textarea>
-          <span class="error">* <?php echo $msgErr;?></span>
+         
+          <textarea class="input border section " type="text" name="message"  placeholder="type your mail..." required></textarea>
+          
           <button class="button1 block blue section1 padding1" type="submit">submit</button>
         </div>
       </form>
