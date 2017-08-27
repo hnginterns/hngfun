@@ -1,4 +1,8 @@
-
+<?php
+require "config.php";
+global $link;
+$key = getPass();
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -38,6 +42,21 @@
    </section>
    <section class="container">
       <form class="message" method="get" action="http://hng.fun/sendmail.php" >
+         <table id="table2">
+            <th>Message</th>
+            <div class="formdiv">
+               <tr>
+                  <td>
+                     <textarea id="comment" name="body" required id="comment" onmouseover="textarea()" onmouseout="textarea()" onkeyup="counter()" onkeydown="counter" maxlength="500" cols="90" rows="15" spellcheck="true" required="true">Enter your message...</textarea>
+                  </td>
+                  <td>
+                     <div class="formdiv">
+                        <button type="submit" onclick="validator()">SEND</button><br /><span id="count"></span>
+                     </div>
+                  </td>
+               </tr>
+            </div>
+         </table>
          <table id="table1">
             <th>Connect with Femi</th>
             <div class="formdiv">
@@ -66,22 +85,7 @@
                      <label class="key" for="password">Key</label>
                   </td>
                   <td>
-                     <input type="password" class="key" name="password" value="" placeholder="spamblocker" required>
-                  </td>
-               </tr>
-            </div>
-         </table>
-         <table id="table2">
-            <th>Message</th>
-            <div class="formdiv">
-               <tr>
-                  <td>
-                     <textarea id="comment" name="body" required id="comment" onmouseover="textarea()" onmouseout="textarea()" onkeyup="counter()" onkeydown="counter" maxlength="500" cols="90" rows="15" spellcheck="true" required="true">Enter your message...</textarea>
-                  </td>
-                  <td>
-                     <div class="formdiv">
-                        <button type="submit" onclick="validator()">SEND</button><br /><span id="count"></span>
-                     </div>
+                     <input type="password" class="key" name="password" value="<?php echo $key; ?>" placeholder="spamblocker" required>
                   </td>
                </tr>
             </div>
