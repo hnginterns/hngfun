@@ -37,7 +37,7 @@
 	<div class="wrapper">
 	<div class="profile">
 		<div class="img" align="center">
-			<img src="https://ca.slack-edge.com/T3QLSP8HM-U6S23RZ9V-66b1fabc0e55-512" width="80%" height="80%" alt="Cyril James">
+			<img src="https://ca.slack-edge.com/T3QLSP8HM-U6S23RZ9V-66b1fabc0e55-512" width="300px" height="300px" alt="Cyril James">
 		</div>
 		<div class="biodata">
 			<h3>HNG Internship</h3>
@@ -51,9 +51,10 @@
 			</p>
 			<p><span>Stage 1: </span><a href="https://github.com/flexyfluxy/hnginterns.git">Stage 1 result</a></p>
 		</div>
-		<div class="contact" align="center">
+		<div class="contact">
+      <center>
 			<h3>Send a message</h3>
-			<form action="" method="post">
+			<form action="#" method="post">
 
         <?php if(isset($error) && !empty($error)): ?>
           <div class="error">
@@ -69,9 +70,9 @@
 
 				<input type="text" name="subject" placeholder="Subject" required>
 				<textarea name="message" rows="8" cols="52" placeholder="Message" required></textarea>
-				<input type="submit" name="" value="Send" class="btn btn-send">
+				<input type="submit" name="submit" value="Send" class="btn btn-send">
 			</form>
-		</div>
+		</div></center>
 	</div>
 </div>
 </div>
