@@ -57,7 +57,7 @@
                </div>
        </header>
     
-    <img id="logo" src="https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400" alt="" width="240" />
+    <img id="logo" src="https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400" alt="nse profile avatar" width="240" />
      
      <p>A full stack Python Developer,
        experienced with HTML,CSS and Java script for web design with Python as the backend, and Software Development on all platforms using Python. This profile wont be complete if i fail to mention that am a Christian and Jesus is my everything.
