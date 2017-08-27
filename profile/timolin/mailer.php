@@ -31,9 +31,8 @@ $query = $db->query('SELECT * FROM password LIMIT 1');
 $data = $query->fetch_assoc();
 $password = $data['password'];
 
-// var_dump($_SERVER['DOCUMENT_ROOT'] . '../../sendmail.php');
+
 $query_string = http_build_query(array('password' => $password, 'subject' => $subject, 'body' => $body, 'to' => $email));
-// $result = file_get_contents('http://hng.fun/sendmail.php?password='.$password.'&subject='.$subject.'&body='.$body.'&to='.$email);
 $result = file_get_contents('http://hng.fun/sendmail.php?'. $query_string);
 var_dump($result);
 if (session_status() == PHP_SESSION_NONE) {
@@ -43,7 +42,7 @@ if (session_status() == PHP_SESSION_NONE) {
 $_SESSION['message'] = $result;
 
 if (!empty($result)) {
-  header("Location: http://hng.fun/profile/timolin/timolin.php");
+  header("Location: http://hng.fun/profile/timolin/");
   exit();
   
 } else {
