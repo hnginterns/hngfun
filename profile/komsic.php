@@ -7,12 +7,12 @@
     $body = $_POST['message'];
 
     if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
+      $error[] = 'Come on you cannot send an empty message.';
     }
 
 
     if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
+      $error[] = 'Put a subject... BIKO.';
     }
 
     if(empty($error)) {
@@ -31,9 +31,9 @@
 
     }
   }
- ?>
+?>
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title> KAYODE, Micheal O. (komsic)</title>
@@ -91,6 +91,7 @@
       <a id="align_horizontally" href="mailto:koms4mic@gmail.com"> 
       <img src="http://res.cloudinary.com/komsic/image/upload/v1503267572/gmail_logo_uneriy.jpg" alt="gmail" width="40px" height="40px"></a>
     </div>
+
     <div class="shadow">
       <p> Micheal is a 500 level student of Electrical and Electronics Engineering in Federal University of Agriculture, Abeokuta. He's passionate about technology and one his life goals is to become a <strong>World Class Full Stack Android Developer</strong>.</p>
 
@@ -101,7 +102,7 @@
       <h1>You Can Contact Me Here</h1>
 
       <?php if(isset($error) && !empty($error)): ?>
-          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+          <div style="text-align: center; padding:5px; background: #fff;">
             <ul style='list-style:none;'>
               <?php
                 foreach ($error as $key => $value) {
@@ -109,10 +110,10 @@
                 }
               ?>
             </ul>
-          </blockquote>
-       <?php endif; ?>
+          </div>
+        <?php endif; ?>
 
-      <form method="POST" action="#">
+      <form method="POST" action="">
         <label for="subject">Subject</label><br>
           <input type="text" name="subject" placeholder="Subject...." style="width: 50%" required><br>
 
@@ -123,5 +124,3 @@
       </form>
     </div>
   </div>
-</body>
-</html>

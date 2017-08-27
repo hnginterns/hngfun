@@ -31,7 +31,6 @@
 		</article>
 		
 		<form action="<?php $_SERVER[PHP_SELF]?>" method="post" >
-
             <div class="form-group">
                 <input type="text" name="Name" placeholder="Enter name" required><br>
             </div>
