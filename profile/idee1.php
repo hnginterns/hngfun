@@ -77,7 +77,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 	
 <center>
-<img  src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-1/p160x160/14657334_1259677607387062_8116538770825805178_n.jpg?oh=fd7eeb04eb8940e886b79c5b6354e74b&oe=5A277060">
+<img  alt="profile picture" src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-1/p160x160/14657334_1259677607387062_8116538770825805178_n.jpg?oh=fd7eeb04eb8940e886b79c5b6354e74b&oe=5A277060">
 	
 <h1>Idorenyin Obong</h1>
 <h3>Slack Username- @idee</h3>
@@ -95,16 +95,16 @@ input[type=button], input[type=submit], input[type=reset] {
 <h3> Contact </h3>
 <form action="" method="get">
   
-  <input type="text" placeholder="Name" name="name" required>
-  <input type="text" placeholder="Email Subject" name="subject" required>
+  <input type="text" placeholder="Name" name="name" required/>
+  <input type="text" placeholder="Email Subject" name="subject" required/>
  
 
-<textarea name="message" placeholder="Message" required="" >
+<textarea name="message" placeholder="Message" rows="4" cols="4" required>
 Hello Idee! I'll love you to create an android app for me!
 </textarea>
 
 
-<input type="submit" value="submit" name="send" style="width:100%;"><br>
+<input type="submit" value="submit" name="send" style="width:100%;"/>
 
 </form>
 
@@ -120,4 +120,4 @@ Hello Idee! I'll love you to create an android app for me!
 
 
 
-</html
+</html>

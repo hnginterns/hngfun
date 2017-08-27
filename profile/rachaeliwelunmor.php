@@ -11,12 +11,26 @@
             $to = "rachaeliwelunmor@gmail.com";
             $body = $fName . $lName . "\n\n" . $message;
             $headers = " From: " .$email;
+			
+			$config = include('../config.php');
+			$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+			
+			try{
+				$con = new PDO($dsn, $config['username'], $config['pass']);
+			} catch(PDOException $e){
+				echo "A connection error occurred. Please try again later";
+			}
 
-            if (mail($to, $subject, $body, $headers)) {
-                echo "your message has been sent, i'll get back to you as soon as i can";
-            } else {
-                echo "There was an error sending your mail, please try again later";
-            } 
+			$exe = $con->query('SELECT * FROM password LIMIT 1');
+			$data = $exe->fetch();
+			$password = $data['password'];
+			
+			$link = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+			
+			$link = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
+
+			header("location: $link");
+			
         }else{
             echo "all fields are required";
         }

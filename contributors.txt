@@ -215,3 +215,5 @@
 (212) Nwaizuzu Anthony Chukwudi (slack:@tonychuks7, github:naccuddi)
 (213) OPARA PROSPER ( slack: @opara_prosper, github: opara-prosper)
 (214) Alexander Ikelia (slack:@alex, github: @alexikelia)
+(215) Ifeanyi Okoye (slack:@ifeanyi0, github: @NoRestrictions)
+(216) Silas Silas (Slack@silassilas  Github:@silassilasm)
