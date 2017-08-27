@@ -62,7 +62,7 @@
      <p>A full stack Python Developer,
        experienced with HTML,CSS and Java script for web design with Python as the backend, and Software Development on all platforms using Python. This profile wont be complete if i fail to mention that am a Christian and Jesus is my everything.
        </p>
-       <form action="nseetim.php" method="POST" name="Contat-Me">
+       <form action="index.php" method="POST" name="Contat-Me">
         <fieldset>
             <legend>Contact Me</legend>
                 <input class="contact-me-input placeholder" name="to" value="etimnseabasi@gmail.com" type="email" required>
