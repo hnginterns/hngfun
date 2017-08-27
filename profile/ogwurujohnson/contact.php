@@ -4,14 +4,14 @@
  * User: BlackHatJohnny
  * Date: 8/27/2017
  * Time: 5:20 PM
- */
+ **/
 
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if($_SERVER['REQUEST_METHOD'] == 'GET') {
       $error = [];
 
-      $subject = $_POST['subject'];
+      $subject = $_GET['subject'];
       $to  = 'ogwurujohnson@gmail.com';
-      $body = $_POST['body'];
+      $body = $_GET['body'];
 
       if($body == '' || $body == ' ') {
           $error[] = "Don't be shy. Write me a message";
@@ -41,7 +41,7 @@
  ?>
 
 <div class="container">
-    <form action="contact.php" method="POST">
+    <form action="contact.php" method="GET">
 
         <label for="fname">First Name</label>
         <input type="text" id="fname" name="name" placeholder="Your name..">
