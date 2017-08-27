@@ -8052,7 +8052,7 @@ include('participants-head.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/jhay95/image/upload/a_0/v1503738181/sobe.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="http://hng.fun/profile/Jhay95">
+            <a href="http://hng.fun/profile/Jhay95.html">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Anwunah Sobechukwu</h3>
                 <!--Profile Name-->
