@@ -20,8 +20,9 @@ $config["host"] = $db_host;
 
 $db = new mysqli($db_host, $db_username, $db_pass, $db_name);
 
-if ($db->connect_error) {
-  trigger_error('Connection Failed!', E_USER_ERROR);
+if ($db->connect_errno) {
+  // trigger_error('Connection Failed!', E_USER_ERROR);
+  die("Connection failed ". $db->connect_error);
 }
 
 // Fetch password from DB
