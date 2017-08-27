@@ -199,7 +199,7 @@
 				</p>
 
 	<div class="shadow">
-      <h1>You Can Contact Me Here</h1>
+      <h3>You Can Contact Me Here</h3>
 
       <?php if(isset($error) && !empty($error)): ?>
           <div style="text-align: center; padding:5px; background: #fff;">
