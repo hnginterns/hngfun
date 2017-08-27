@@ -9,7 +9,7 @@ if (isset($_GET['body']) && isset($_GET['subject'])) {
 }
 
 // DB connection
-$config = include($_SERVER['DOCUMENT_ROOT'] . 'config.php');
+$config = include $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 // $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 // $con = new PDO($dsn, $config['username'], $config['pass']);
 
