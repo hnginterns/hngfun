@@ -39,7 +39,7 @@
 		<h4 class="softtext">
 			Message Seyi
 		</h4>
-		<form action="" method="POST">
+		<form action="<?=$_SERVER['PHP_SELF'];?>" method="POST">
 		<input type="text" class="input_text" placeholder="Subject" name="subject">
 		<br>
 		<br>

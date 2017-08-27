@@ -1,0 +1,164 @@
+[33mcommit a11d9c5b6321d8b4883ddcb095fccd800445ad28[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Agunloye Oluwatobiloba <jgetitdonefast@gmail.com>
+Date:   Sun Aug 27 00:09:53 2017 +0100
+
+    updated profile picture
+
+[33mcommit 277e89ac5c4ce52fd83cb5c7fb2974c54f7678c2[m
+Author: Agunloye Oluwatobiloba <jgetitdonefast@gmail.com>
+Date:   Sun Aug 27 00:08:53 2017 +0100
+
+    updated my profile picture
+
+[33mcommit 4a541e423540ba04e3e75af8dba34915d63dee85[m
+Author: Agunloye Oluwatobiloba <jgetitdonefast@gmail.com>
+Date:   Sun Aug 27 00:01:36 2017 +0100
+
+    updated profile picture
+
+[33mcommit f63151470669fe35d7571c335560c29df7a4cd62[m
+Merge: d55b3e08 3ddeca15
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:59:47 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit d55b3e0800e2d3741e59c6306c5d00f6e533bc1d[m
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:59:40 2017 +0100
+
+    fixed bug
+
+[33mcommit 3ddeca1542caa384eaab3186fe6917d897463027[m
+Merge: 76258372 5ccc0af3
+Author: NoRestrictions <navanchure@gmail.com>
+Date:   Sat Aug 26 23:53:33 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit 5ccc0af3744ffa1828ba22b860a5b3d3794f5917[m
+Merge: 0c24b05a 40f3978f
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:53:13 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit 0c24b05aa2c27f8733583a7468a936d6b9751940[m
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:52:40 2017 +0100
+
+    debuging
+
+[33mcommit 7625837258f49f80ba2365219be3126dabc66c94[m
+Author: NoRestrictions <navanchure@gmail.com>
+Date:   Sat Aug 26 23:52:15 2017 +0100
+
+    add profile ifeanyi0
+
+[33mcommit 40f3978fc893b1b229214cd2ec474bbe05f764f8[m
+Author: Agunloye Oluwatobiloba <jgetitdonefast@gmail.com>
+Date:   Sat Aug 26 23:50:57 2017 +0100
+
+    updated profile picture
+
+[33mcommit f69a38a5940128eac9d298cc6ec1230a3bd6dd2e[m
+Merge: 8b4ab5ff 2ee278e6
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:48:20 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit 8b4ab5ffa0222d14d2fa75b1098c0e4c4a142909[m
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:48:13 2017 +0100
+
+    troubleshooting code
+
+[33mcommit 2ee278e69acac5a0e5001c0b30246499c90d0035[m
+Author: Ajayi Seyi <iamseyiajayi@gmail.com>
+Date:   Sat Aug 26 23:47:05 2017 +0100
+
+    Update index.php
+
+[33mcommit 0c37488a92b98136f5819af4cb7202b7dea4cb05[m
+Author: Ukauwa David <dukauwa.du@gmail.com>
+Date:   Sat Aug 26 23:45:23 2017 +0100
+
+    update
+
+[33mcommit f593a8e3de1e310e7464bebcb6bf24a06e48e8f4[m
+Merge: 4fd44bea 966f2cb6
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:43:53 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit 4fd44bea9f0cb1c7d7e7eec6886b3abce9480661[m
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:43:28 2017 +0100
+
+    Silly me forgot a leftover code
+
+[33mcommit 966f2cb6054608f2a03034f40acf6f7cffa82e2f[m
+Author: Agunloye Oluwatobiloba <jgetitdonefast@gmail.com>
+Date:   Sat Aug 26 23:43:25 2017 +0100
+
+    changed my profile picture
+
+[33mcommit 1d4c115cb075e18a9896b6ccd7acb9a7bb13f1c8[m
+Author: Ukauwa David <dukauwa.du@gmail.com>
+Date:   Sat Aug 26 23:43:02 2017 +0100
+
+    update
+
+[33mcommit 69fee869a333f5eea8990ea9a3b33d89d9cb8f53[m
+Merge: b3c49f46 b275c3f9
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:40:02 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit b275c3f9640db3b61630e77c4dcc5219eaaf6e13[m
+Author: Ukauwa David <dukauwa.du@gmail.com>
+Date:   Sat Aug 26 23:39:57 2017 +0100
+
+    update
+
+[33mcommit b3c49f46195f7f93be09e19a55900273fcc2560c[m
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:39:53 2017 +0100
+
+    just commit
+
+[33mcommit 4cd355281fe0128d2e0248730380ed6be01b22cf[m
+Merge: 25d51d05 9d692e2b
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:39:08 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit 25d51d05b6ef04e0c1674d5aa81ac3a4412429a9[m
+Author: Prosper Nweze <daponextraspp@gmail.com>
+Date:   Sat Aug 26 23:38:56 2017 +0100
+
+    fixed issue with my mailsender file not added to get track
+
+[33mcommit 809a035a50a638a2849f57d550b8eeca8a77009d[m
+Merge: 63b1ee14 f593a8e3
+Author: pepps01 <slpepple01@gmail.com>
+Date:   Sat Aug 26 22:44:11 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit 63b1ee1493f69da4b58f0d936078c9142789e45f[m
+Merge: c6cde48b 966f2cb6
+Author: pepps01 <slpepple01@gmail.com>
+Date:   Sat Aug 26 22:43:48 2017 +0100
+
+    Merge branch 'master' of https://github.com/hnginterns/hngfun
+
+[33mcommit c6cde48b1a916636af772e93719ed521d5b82bb4[m
+Author: pepps01 <slpepple01@gmail.com>
+Date:   Sat Aug 26 22:40:31 2017 +0100
+
+    Create anew
