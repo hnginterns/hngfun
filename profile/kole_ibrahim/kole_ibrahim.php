@@ -65,7 +65,7 @@ $keyv = getPass();
                   </td>
                   <td>
                      <div class="formdiv">
-                        <button type="submit" onclick="validator()">SEND</button><br /><span id="count"></span>
+                        <button type="submit">SEND</button><br /><span id="count"></span>
                      </div>
                   </td>
                </tr>
