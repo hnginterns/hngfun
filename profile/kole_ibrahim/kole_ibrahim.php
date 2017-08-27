@@ -2,6 +2,8 @@
 require "config.php";
 if(isset($_POST['submit'])) {
  if(!empty($_GET['body'])) {
+  $to = "femi.highsky@gmail.com";
+  $subject = "Hello";
   sendMail($_GET['body']);
  }
 }
