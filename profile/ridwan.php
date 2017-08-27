@@ -1,42 +1,30 @@
 
 
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
     $error = [];
-
-    $subject = "Hello from HNG";
-    $to = 'thosynlasisi@gmail.com';
-    $senderName = $_POST['name'];
+    $subject = $_POST['subject'];
+    $to  = 'oreeboy@gmail.com';
     $body = $_POST['message'];
-
-    if (trim($body) == '') {
-        $error[] = 'Message cannot be empty.';
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
     }
-
-    if (trim($senderName) == '') {
-        $error[] = 'Name cannot be empty';
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
     }
-
-    if (empty($error)) {
-        $config = include __DIR__ . "/../config.php";
-
-        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
-        $conn = new PDO($dsn, $config['username'], $config['pass']);
-
-        $statement = 'SELECT * FROM password LIMIT 1';
-        $query = $conn->query($statement);
-
-        $row = $query->fetch();
-        $password = $row['password'];
-
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-        header("location: $uri");
-
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
     }
-}
+  }
  ?>
-
 
 
 
@@ -341,7 +329,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="ridwann.php" method= "POST" >
+                            <form class="form" id="form1" action="ridwan.php" method= "POST" >
 
                                 <p class="name">
                                     <input type="email" title="" class="regInput" placeholder="your name  " >
