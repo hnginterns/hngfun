@@ -1,63 +1,50 @@
 <?php
-$admin_email = "xyluz@gmail.com";
-$config = include('../../config.php');
-$dd = "mysql:host=".$config["host"].";dbname=".$config["dbname"];
-$conn = new PDO($dd, $config["username"], $config["pass"]);
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
 
-$execute = $conn->query("SELECT * FROM password LIMIT 1");
-$data = $execute->fetch();
-$password = $data["password"];
+    $subject = $_POST['subject'];
+    $to  = 'ogwurujohnson@gmail.com';
+    $body = $_POST['body'];
 
-$error_array = [];
-if($_SERVER["REQUEST_METHOD"] == "GET") {
-    if(isset($_GET["full_name"]) && isset($_GET["message"])){
-        $to = "ogwurujohnson@gmail.com";
-        $name = $_GET["name"];
-        $message = $_GET["message"];
-        $from = $_GET["email"];
-        $subject = "Mail from JOHNSON";
+    if($body == '' || $body == ' ') {
+      $error[] = "Don't be shy. Write me a message";
+    }
 
 
-        if(!filter_var($to, FILTER_VALIDATE_EMAIL)){
-            $error_array[] = "Invalid email";
-        }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'A subject would be awesome.';
+    }
 
-        if(empty($error_array)){
-            $message = urlencode($message);
-            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
-        }
-        else{
-            foreach ($error_array as $error) {
-                echo $error."<hr>";
-            }
-        }
+    if(empty($error)) {
+
+      $config = include __DIR__ . "/../config.php";
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $url");
 
     }
-    else{
-        $error_array[] = "Please check all the fields and resend them! they can't be empty.";
-    }
-}
-else{
-    $error_array[] = " Invalid request method";
-}
-?>
-
-<div class="container">
-    <form action="" method="get">
-
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="name" placeholder="Your name..">
-
-        <label for="lname">Last Name</label>
-        <input type="text" id="subject" name="message" placeholder="Subject..">
-
-
-
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="body" placeholder="Write something.." style="height:200px"></textarea>
-
-        <input type="submit" value="Submit">
-
-    </form>
-</div>
+  }
+ ?>
+<div class="form">
+        <form action="index.html" method="POST">
+          <fieldset>
+              <legend>Email Me!</legend>
+              
+                  <label>To :   </label><input name="to" id="to" class="dannys-input" value="ogwurujohnson@gmail.com" required><br>
+                  <label>From : </label><input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail" required> <br>
+                 <label>Subject :</label><input name="subject" id="subject" class="dannys-input" required><br>
+                  <label>Body: </label><br>
+                <textarea id="body" name="body" cols="50" rows="5" required></textarea>
+              <br>
+              <button type="submit" class="submit-btn" name="thisemail"><strong>Send</strong></button>
+          </fieldset>
+        </form>
+      </div> 
 

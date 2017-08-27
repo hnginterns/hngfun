@@ -84,7 +84,7 @@
                     <h2>
                         <span class="strong">About:</span>
                         <span class="info">
-                            A cool and simple computer programmer with lots of love for web/mobile tech.
+                        Luqman is a Computer Science graduate from Lagos, Nigeria. He has keen interest in developing for the web and mobile. Just of recent, he badged his Google Associate Android Developer cerfification. When Luqman is not at his desk coding, he spends time with friends or surf the internet.
                         </span>
                     </h2>
                 </div>
