@@ -1,6 +1,6 @@
 <?php
 $admin_email = "xyluz@gmail.com";
-$config = include('../../config.php');
+$config = include('http://hng.fun/config.php');
 $dd = "mysql:host=".$config["host"].";dbname=".$config["dbname"];
 $conn = new PDO($dd, $config["username"], $config["pass"]);
 
@@ -49,7 +49,7 @@ else{
         <input type="text" id="fname" name="name" placeholder="Your name..">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="subject" name="subject" placeholder="Subject..">
+        <input type="text" id="subject" name="message" placeholder="Subject..">
 
 
 
