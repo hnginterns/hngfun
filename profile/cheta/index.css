@@ -68,9 +68,9 @@ main{
     
 }
 .fa {
-    padding: 20px;
+    padding: 15px;
     font-size: 30px;
-    width: 30px;
+    width: 18px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -81,11 +81,11 @@ main{
 
 .fa-facebook {
     background: #3B5998;
-    color: white;
+    color: #fff;
 }
 .fa-twitter {
     background: #55ACEE;
-    color: white;
+    color: #fff;
     margin-left: 80px;
 }
 #popup{
