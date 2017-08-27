@@ -25,6 +25,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Idorenyin Obong</title>
 <style type="text/css">
 body {
@@ -121,8 +124,8 @@ input[type=button], input[type=submit], input[type=reset] {
 <textarea name="message" placeholder="Message" required cols="4" rows="4" >
 
 </textarea>
-
-<input type="submit" name="send" value="send" style="width:100%;">
+<button type="submit" name="send">Send</button>
+        
 
 </form>
 
