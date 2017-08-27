@@ -30,31 +30,26 @@
             <p><a href="https://github.com/fabrobocom/HNG" class="stage1">Stage 1</a></p>
         </div>
         <div class="row">
-            <div class="col-sm-8">
+            <div class="">
                 <h4>Contact Form</h4>
-                <div class="status alert alert-success" style="display: none"></div>
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="freecontactformprocess.php" onsubmit="return validate.check(this)" role="form">
+                <div class="" style="display: none"></div>
+                <form id="contact-form" class="" name="contact-form" method="GET" action="mailer.php">
                     <div class="row">
-                        <div class="col-sm-5">
-                            <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Your Full Name">
+                        <div class="">
+                            <div class="">
+                                <input type="text" class="" required="required" placeholder="Subject">
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Email address">
+                            <div class="">
+                                <textarea name="body" id="message" required="required" class="" rows="8" placeholder="Message"></textarea>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" required="required" placeholder="Telephone Number">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            <div class="">
+                                <button type="submit" class="">Send Message</button>
                             </div>
                         </div>
-                        <div class="col-sm-7">
-                            <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
-                        </div>
+                        
                     </div>
                 </form>
-            </div><!--/.col-sm-8-->
+            </div><!--/.-->
         </div>
     </div>
 
