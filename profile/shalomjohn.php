@@ -1,4 +1,29 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'johnprince58@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
+    }
+
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
+?>
 <html>
 
 <head>
@@ -6,11 +31,14 @@
 <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
 <style type="text/css">
 body {
-    background-color: #C5B358;
+    background-color: #EBECF0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a{
     text-decoration: none;
+}
+ul{
+	align-items: center;
 }
 .image{
 
@@ -40,6 +68,15 @@ a{
                                 <a href="https://github.com/otuekongjohn/Test" target="_blank">https://github.com/otuekongjohn</a>
                             </li>
                         </ul></span>
+                        <form id = "contact-form" method = "POST" >
+				<fieldset>
+				<legend>Contact Me</legend>
+				<input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
+				<textarea name = "message" placeholder = "Type your message here" rows ="10" cols = "70" required></textarea><br>
+				<br><input type ="submit" name="submit" value ="Send Message">
+				</fieldset>
+			</form>
+			<footer id = "footer"> Shalom John &copy; </footer>
 </p>
 </center>
 </body>
