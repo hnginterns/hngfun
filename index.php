@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <!--do not touch-->
     <main>
         <header class="landing-page">
            <div class="landing-page__nav">
@@ -57,7 +58,7 @@
                                 </a>
                             </li>
                             <li class="landing-page__item">
-                                <a class="landing-page__item--links" href="#contact">
+                                <a class="landing-page__item--links" href="supporters.php">
                                     <img src="img/supporters.png" width="30">
                                 </a>
                             </li>
@@ -72,7 +73,7 @@
 
                     <div class="clear"></div>
                 </div>
-            </div> 
+            </div>
         </header>
 
 

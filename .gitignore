@@ -1,5 +1,9 @@
-#Ignore PHPStorm file
-*.idea
-.vscode/
+.idea
 .DS_Store
-.idea/
+config.php
+sendmail.php
+auto-deploy.php
+index.php
+footer.php
+header.php
+PHPMailerAutoload.php

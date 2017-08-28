@@ -1,5 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stage 3</title>
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     
@@ -332,8 +338,6 @@ a {
 }
 
 
-    </style>
-    <style>
 input[type=text], select, textarea {
     width: 20%;
     padding: 6px;
@@ -380,61 +384,68 @@ input[type=submit]:hover {
 
 <body>
    
-<div class="sheath">
-<div id="body-wrapper">
-  
-  <div class="name">Olanrewaju Yusuf
-      <h3>Lagos, Nigeria</h3>
-      <h3> <a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i> Lanrewells </a>
-          </h3>
-    
-    
-    </div>
-  
-  <div class="row">    
-      <div class="content">
-        <div class="me"></div>
-        <div class="info">
-          <p>
-            Tending towards becoming a well groomed full stack developer who provides solutions to problems like its nothing...
-          </p>
+    <div class="sheath">
+        <div id="body-wrapper">
+
+            <div class="name">Olanrewaju Yusuf
+                <h3>Lagos, Nigeria</h3>
+                <h3> <a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i> Lanrewells </a><br>
+      		<p> <a href="https://twitter.com/lanrewells" target="_blank"><i class="fa fa-twitter dannys-slack-icon"></i>follow on twitter</a></p>
+                     
+                </h3>
+
+            </div>
+
+            <div class="row">    
+                <div class="content">
+                    <div class="me"></div>
+                    <div class="info">
+                        <p>
+                        Tending towards becoming a well groomed full stack developer who provides solutions to problems like its nothing...
+                        </p>
+                    </div>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div >
+                    <h2>
+                    <a class="title" href="https://github.com/yusuflanre/task1"><i class="fa fa-github"></i> Stage 1</a>
+
+                    </h2>
+
+                    </div>
+                </div>
+            </div>
         </div>
-      </div> 
-  </div>
-  <div class="row">
-    <div class="col-1">
-      <div >
-          <h2>
-            <a class="title" href="https://github.com/hnginterns/task1"><i class="fa fa-github"></i> Stage 1</a>
-     
-          </h2>
-      
-        </div>
-            
-      
-  </div>
+
+
+        <div class="container">
+            <form action="yusuflanre.php" method="post">
+                <h2>Contact Form</h2> 
                 
-  </div></div>
-    
+                
+              
+                
+                <p><input type="email" id="to" name="email" placeholder="email is required" required></p><br>
 
-<div class="container">
-  <form action="">
-   
-     <p> <h2>Contact Form</h2></p>
-    <input type="text" id="fname" name="firstname" placeholder="Your firstname.."><br>
+                <p> <input type="text" id="subject" name="subject" placeholder="message subject"></p><br>
 
-    
-   <p> <input type="text" id="lname" name="lastname" placeholder="Your lastname.."></p><br>
-    
-    
-    <p><input type="email" id="email" name="email" placeholder="email is required" /required></p><br>
-  
 
-  
-   <p> <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea></p>
 
-   <p> <input type="submit" value="Submit"> </p>
-  </form>
-</div>
-     </body>
-        </html>
+
+
+                <p> <textarea id="body" name="body" placeholder="Write something.." style="height:100px"></textarea></p>
+
+                
+                
+            
+
+                <p> <input type="submit" name="process" value="Submit"> </p>
+            </form>
+        </div>
+    </div>
+		
+
+</body>
+</html>
