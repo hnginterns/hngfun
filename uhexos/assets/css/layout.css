@@ -1,0 +1,21 @@
+.container   {
+  display: flex;
+}
+body {
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+
+
+   background-image: -webkit-gradient(radial-gradient(), left top, left bottom, from(#191718), to(#036c7c));
+    background-image: -webkit-radial-gradient(top, #191718, #036c7c);
+    background-image: -moz-radial-gradient(top, #191718, #036c7c);
+    background-image: radial-gradient(to bottom, #191718, #036c7c);
+}
+
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: rotate(90deg);
+}

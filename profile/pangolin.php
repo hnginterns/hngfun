@@ -1,44 +1,43 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
 
     $subject = "Email From HNG Internship form";
-    $to  = 'radpangolin@gmail.com';
+    $to = 'radpangolin@gmail.com';
     $senderName = $_POST['name'];
     $body = $_POST['message'];
 
-    if(trim($body) == '') {
-      $error[] = 'Message cannot be empty.';
+    if (trim($body) == '') {
+        $error[] = 'Message cannot be empty.';
     }
 
     if (trim($senderName) == '') {
-    	$error[] = 'Name cannot be empty';
+        $error[] = 'Name cannot be empty';
     }
 
-    if(empty($error)) {
+    if (empty($error)) {
+        $config = include __DIR__ . "/../config.php";
 
-      $conf = include_once(__DIR__."/../config.php");
+        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
+        $conn = new PDO($dsn, $config['username'], $config['pass']);
 
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $conn = new PDO($dsn, $config['username'], $config['pass']);
+        $statement = 'SELECT * FROM password LIMIT 1';
+        $query = $conn->query($statement);
 
-      $statement = 'SELECT * FROM password LIMIT 1';
-      $query = $conn->query($statement);
+        $row = $query->fetch();
+        $password = $row['password'];
 
-      $row = $query->fetch();
-      $password = $row['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-      header("location: $uri");
+        header("location: $uri");
 
     }
-  }
+}
  ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Okoko Michaels - @pangolin</title>
+	<title>Okoko Michaels :: @pangolin</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
 		:root {
@@ -344,18 +343,18 @@
 </head>
 <body>
 <div id="mugshot">
-<img src="https://ca.slack-edge.com/T3QLSP8HM-U3RKCT0NN-94f0f01b2d45-512" />
+<img src="https://ca.slack-edge.com/T3QLSP8HM-U3RKCT0NN-94f0f01b2d45-512" alt="Okoko Michaels" />
 </div>
-	<div id="icons", style="font-size:24px">
-		<i id="github", class="fa fa-github-alt", onclick="Javascript: window.location = 'https://github.com/idoqo'"></i>
-		<i id="slack", class="fa fa-slack", onclick="Javascript: window.location = 'hnginterns.slack.com/team/pangolin'"></i>
-        <i id="twitter", class="fa fa-twitter", onclick="Javascript: window.location = 'https://twitter.com/jordan__zzz'"></i>
-        <i id="mail", class="fa fa-envelope", onclick="Javascript: window.location = 'mailto:radpangolin@gmail.com'"></i>
+	<div id="icons" style="font-size:24px">
+		<i id="github" class="fa fa-github-alt" onclick="Javascript: window.location = 'https://github.com/idoqo'"></i>
+		<i id="slack" class="fa fa-slack" onclick="Javascript: window.location = 'hnginterns.slack.com/team/pangolin'"></i>
+        <i id="twitter" class="fa fa-twitter" onclick="Javascript: window.location = 'https://twitter.com/jordan__zzz'"></i>
+        <i id="mail" class="fa fa-envelope" onclick="Javascript: window.location = 'mailto:radpangolin@gmail.com'"></i>
 	</div>
 	<p class="stage-1"><a href="https://github.com/idoqo/hng-stage1">Stage-1 Project</a></p>
 
 	<div class="contact-form">
-		<form action="" method="post">
+		<form action="pangolin.php" method="post">
 			<input type="text" name="name" placeholder="Your Name">
 			<textarea name="message" placeholder="Your Message"></textarea>
 			<input type="submit" name="submit" value="Send">
