@@ -13,5 +13,7 @@
     // $homepage = file_get_contents('http://poloniex.com/public?command=returnTicker');
     echo $homepage;
 
+    echo "Test";
+
 
 ?>
