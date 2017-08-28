@@ -14,14 +14,14 @@
   <body>
   	<div id="container">
 	    <header>
-	 			<h2><center>(E. A.) Enomfon's Profile </center></h3>
+	 			<h2><center>(E. A.) Enomfon's Profile </center></h2>
 	    </header>
 
-		<center><img src="http://i.imgur.com/soZDbld.jpg" title="source: imgur.com" /></a></center><br><br>
+		<center><img src="http://i.imgur.com/soZDbld.jpg" title="source: imgur.com" /></center><br><br>
 		
 		<ul>
-			<li><a href="https://github.com/enarchibong" target="_blank"><button> Stage 1</button></li></a>
-			<li><a href="#" target="_blank"><button> Stage 2</button></li></a>
+			<li><a href="https://github.com/enarchibong" target="_blank"><button> Stage 1</button></a></li>
+			<li><a href="#" target="_blank"><button> Stage 2</button></a></li>
 		</ul><br>
 		<h3><center>About E. A.</center></h3><br><br>
 		
