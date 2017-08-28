@@ -1,3 +1,31 @@
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'bee_moi@zoho.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+    }
+  }
+ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -301,13 +329,13 @@
                             <form class="form" id="form1" action="" method= "POST" >
 
                                 <p class="name">
-                                    <input type="subject" title="" class="regInput" placeholder="subject  " >
+                                    <input name="subject" id="subject" type="subject" title="" class="regInput" placeholder="subject  " >
                                 </p>
 
                                 
 
                                 <p class="text">
-                                    <textarea class="regInput-1" placeholder=" Write that message...."></textarea>
+                                    <textarea name="message" id="message" class="regInput-1" placeholder=" Write that message...."></textarea>
                                 </p>
 
                                 <div class="submit">

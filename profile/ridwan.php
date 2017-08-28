@@ -1,3 +1,5 @@
+
+
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     
@@ -23,6 +25,8 @@
     }
   }
  ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +66,7 @@
         
         h1 {
             font-size: 2.2em;
-            margin: 0 0 0.75rem 0;
+            margin: 0 60 0.75rem 0;
             color: rgba(12, 8, 8, 0.72);
             cursor: pointer;
         }
@@ -97,23 +101,51 @@
             position: absolute;
             right: 0px;
             width: 50%;
+           overflow-y: scroll;
         }
         .about{
             color: rgba(12, 8, 8, 0.72);
         }
         
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
+            body {
+                overflow-y: scroll;
+                overflow-x: hidden;
+                background-color: #dddddd;
+            }
             .right-half {
                 width: 100%;
-                height: 50%;
-                bottom: 0;
+                text-align: center;
+                overflow-y: inherit;
             }
             .left-half {
                 top: 0;
                 width: 100%;
-                height: 50%;
+                position: relative;
+                align-items: center;
+                overflow-x: hidden;
+            }
+            article {
+                width: auto;
+            }
+            #form-div {
+                width: auto !important;
+                padding: 0px;
+                margin-left: -50px;
+            }
+            .left-half>img {
+                max-width: 100%;
+                max-height: 100% !important;
             }
         }
+
+        @media (max-width: 500px) {
+            .left-half>img {
+                max-width: 100%;
+                height: auto !important;
+            }
+        }
+        
         
         .icons {
             margin-top: 10px;
@@ -164,6 +196,95 @@
             color: rgba(63, 37, 64, 0.84);
             padding-bottom: -30px;
         }
+        .regInput {
+            position: relative;
+            z-index: 0;
+            display: block;
+            width: 69%;
+            height: 45px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            color: rgb(95, 106, 125);
+            margin: 0px 0px 30px -16px;
+            padding: 10px;
+            background: rgb(255, 255, 255);
+            outline: none;
+            border: 0.2px solid rgb(196, 196, 196);
+            border-radius: 3px;
+            -webkit-transition: background-color 1s;
+            transition: background-color 1s;
+            left: 100px;
+        }
+
+
+
+
+        input:focus{
+            background-color: transparent;
+            color: black;
+            border-color: white;
+            outline: none;
+        }
+        textarea:focus{
+            background-color: transparent;
+            color: black !important;
+            border-color: #ffffff;
+            outline: none;
+            resize: none;
+        }
+        .regInput-3 {
+            position: relative;
+            left: 100px;
+            z-index: 0;
+            width: 69%;
+            height: 35px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            margin: 0px 0px 30px -16px;
+            padding: 10px;
+            background: rgb(255, 255, 255);
+            outline: none;
+            border: 1px solid rgb(196, 196, 196);
+            border-radius: 3px;
+            color: black;
+            display: block;
+            -webkit-transition: background-color 1s;
+            transition: background-color 1s;
+            text-decoration: none !important;
+        }
+        .regInput-3:hover{
+            background-color: #DDDDDD;
+            color: #ffffff;
+            text-decoration: none !important;
+        }
+        .regInput-1 {
+            position: relative;
+            z-index: 0;
+            display: block;
+            width: 69%;
+            height: 150px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            color: rgb(95, 106, 125);
+            margin: 0px 0px 25px -16px;
+            padding: 10px;
+            background: rgb(255, 255, 255);
+            outline: none;
+            border: 1px solid rgb(196, 196, 196);
+            border-radius: 3px;
+            resize: none;
+            -webkit-transition: background-color 1s;
+            transition: background-color 2s;
+            left: 100px;
+        }
+
+        #form-div{
+            margin-left: 20px;
+        }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -188,10 +309,8 @@
                 <div class="icons">
                     <ul>
                         <li><a class="twitter" href="http://twitter.com/@_yhincah"><i class="fa fa-twitter"></i></a></li>
-<!--                        <li><a class="facebook" href="http://facebook.com/Tosin Lasisi"><i class="fa fa-facebook"></i></a></li>-->
                         <li><a class="instagram" href="http://instagram.com/_yhincah"><i class="fa fa-instagram"></i></a></li>
-                        <li><a class="github" href="http://github.com/ridwan099"><i class="fa fa-github-alt"></i></a></li>
-<!--                        <li><a class="slack" href="http://hng.interns.herokuapp.com"><i class="fa fa-globe"></i></a></li>-->
+                        <li><a class="github" href="http://github.com/ridwan099"><i class="fa fa-github-alt"></i></a></li>                    
                     </ul>
                 </div>
                 <div class="about">
@@ -199,12 +318,41 @@
                         <br>Hello! I am Tosin, a UI Learner.
                         <br>I study Computer Science in the Federal University of Agriculture Abeokuta (FUNAAB).
                         <br>I am really passionate about technology and I hope to be an outstanding UI designer someday :).
-<!--                        <br>Here is the <a class="link" href="http:github.com/OreoluwaOjo/HNG-Test">Link</a> to my first task as an intern at Hotels.ng-->
                     </p>
+                    
+                    
+                    
+                    <p class="slack contact">Contact me</p>
+
+                    <div id="form-main">
+                        <div id="form-div">
+                            <form class="form" id="form1" action="" method= "POST" >
+
+                                <p class="name">
+                                    <input type="subject" title="" class="regInput" placeholder="your subject  " >
+                                </p>
+
+                                <p class="email">
+                                    <input type="email" title="" class="regInput" placeholder="email address  " >
+                                </p>
+
+                                <p class="text">
+                                    <textarea class="regInput-1" placeholder=" Write that message...."></textarea>
+                                </p>
+
+                                <div class="submit">
+                 
+                                  <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </article>
         </div>
-        </div>
+    </section>
 
 </body>
 
