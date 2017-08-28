@@ -93,7 +93,7 @@ a:hover {
 html {
   background-color: #061C30; }
 
-body.page-template-page-fullsingle-split {
+body.full {
   background-color: #061C30;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -103,7 +103,7 @@ body.page-template-page-fullsingle-split {
   color: #848d96;
   -webkit-animation: fadein 2s;
           animation: fadein 2s; }
-  body.page-template-page-fullsingle-split p {
+  body.page-full p {
     color: #848d96; }
 
 .fs-split {
