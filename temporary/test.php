@@ -8,7 +8,7 @@
 
     $poloniex = new Poloniex;
 
-    $currency = "all";
+    $currency = "BTC_NXT";
 
     $homepage = $poloniex->returnOrderBook($currency);
 
