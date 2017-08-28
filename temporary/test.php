@@ -2,15 +2,15 @@
 
     // $homepage = $poloniex->curl_get_file_contents('http://poloniex.com/public?command=returnTicker');
 
-    // $homepage = file_get_contents('http://poloniex.com/public?command=returnTicker');
+    $homepage = file_get_contents('https://poloniex.com/public?command=returnOrderBook&currencyPair=BTC_NXT&depth=10');
 
-    require 'Poloniex.php';
+    // require 'Poloniex.php';
+    //
+    // $poloniex = new Poloniex;
+    //
+    // $currency = "BTC_NXT";
 
-    $poloniex = new Poloniex;
-
-    $currency = "BTC_NXT";
-
-    $homepage = $poloniex->returnOrderBook($currency);
+    // $homepage = $poloniex->returnOrderBook($currency);
 
     $homepage = json_decode($homepage);
 
