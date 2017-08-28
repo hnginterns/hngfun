@@ -39,6 +39,7 @@ a{
 	text-decoration: none;
 	color: white;
 	font-size: 15px;
+	font-weight: bold;
 }
 a:hover{
 	font-weight: bold;
