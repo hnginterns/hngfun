@@ -9,7 +9,7 @@ echo "Ticker: ";
 print_r($poloniex->returnTicker());
 echo "<br>";
 echo "24h volume: ";
-print_r(.$poloniex->return24hVolume());
+print_r($poloniex->return24hVolume());
 echo "<br>";
 
 
