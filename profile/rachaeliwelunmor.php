@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_POST['contact_fName']) && isset($_POST['contact_lName']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
+    if(isset($_POST['fName']) && isset($_POST['lName']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
         $fName = $_POST['fName'];
         $lName = $_POST['lName'];
         $email = $_POST['email'];
@@ -11,12 +11,22 @@
             $to = "rachaeliwelunmor@gmail.com";
             $body = $fName . $lName . "\n\n" . $message;
             $headers = " From: " .$email;
-
-            if (mail($to, $subject, $body, $headers)) {
-                echo "your message has been sent, i'll get back to you as soon as i can";
-            } else {
-                echo "There was an error sending your mail, please try again later";
-            } 
+			
+			$config = include('../config.php');
+			$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+			
+			$con = new PDO($dsn, $config['username'], $config['pass']);
+	
+			$exe = $con->query('SELECT * FROM password LIMIT 1');
+			$data = $exe->fetch();
+			$password = $data['password'];
+			
+			$body = urlencode($body);
+			$link = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
+			
+			header("location: $link");
+			
+			
         }else{
             echo "all fields are required";
         }
@@ -66,7 +76,7 @@
 <section class="contactSection">
     <h2>I&apos;d be glad to hear from you</h2>
 
-    <form class="contactForm" action="rachaeliwelunmor.php" method="POST" name="contactForm">
+    <form class="contactForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" name="contactForm">
 
         <div class="row">
             <div class="col span-1-of-3">

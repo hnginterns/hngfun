@@ -43,13 +43,13 @@
         </div>
         <div class="about">
             <div class="my">
-                <img src="https://s30.postimg.org/3qibxly81/intern1.jpg" />
+                <img src="https://s30.postimg.org/3qibxly81/intern1.jpg" alt="Vincent's Image" />
               
             </div>
             <div class="job">
                 <p>My name is Nwonah Vincent. I'm concluding a B.Sc. programme in Computer Science in September of 2017.
  I am above average proficient at C# and ASP.NET web technologies (according to my pluralsight test) and i'm looking to work with a team where i can groom my skills</p>
-                <p class="link"><a href="google.com">Click to View My Stage 1 Repo</a></p>
+                <p class="link"><a href="https://github.com/vnwonah/learnphp">Click to View My Stage 1 Repo</a></p>
             </div>
         </div>
         <div class="n-contact">
@@ -78,7 +78,7 @@
                 <p>Fill out the contact form to send me a message </p>
             </div>
 
-            <form class="" action="" method="get">
+            <form class="" action="vnwonah.php" method="get">
                 <input type="text" name="name" id="name" placeholder="Name" />
 
                 <input type="text" name="subject" id="subject" placeholder="Subject of Message" />

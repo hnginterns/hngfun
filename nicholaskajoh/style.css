@@ -1,0 +1,42 @@
+/* Styles */
+
+body {
+  font-family: Georgia, Arial;
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  background-color: #e2e2e2;
+}
+
+#siteTitle {
+  margin-top: inherit;
+  padding-top: 25px;
+  padding-left: 50px;
+  font-family: Tahoma, Arial;
+}
+
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+}
+
+#photo img {
+  border-radius: 50%;
+}
+
+footer {
+  font-family: Tahoma;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+footer ul {
+  text-align: right;
+}
+
+footer ul li {
+  display: inline;
+}
