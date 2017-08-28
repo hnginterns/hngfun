@@ -16,9 +16,9 @@
 
     echo "<pre>";
 
-    var_dump($homepage);
+    print_r($homepage);
 
-    
+
 
     // echo "Test";
 
