@@ -27,8 +27,7 @@ li{
 	margin-left: 5%;
 	margin-right: 5%;
 	letter-spacing: -0.05em;
-	color: white;
-	font-size: 15px;
+	
 	
 }
 ul{
@@ -36,6 +35,10 @@ ul{
 	text-align: center;
 	margin-top:20px;
 	
+}
+a{
+	color: white;
+	font-size: 15px;
 }
 a:hover{
 	font-weight: bold;
