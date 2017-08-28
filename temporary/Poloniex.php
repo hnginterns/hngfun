@@ -4,7 +4,7 @@ class Poloniex
 {
     protected $key = '';
     protected $secret = '';
-    
+
     /**
      * Poloniex constructor.
      *
@@ -38,11 +38,11 @@ class Poloniex
      *
      * @return array
      */
-    public function returnOrderBook($currencyPair = null)
+    public function returnOrderBook($currencyPair)
     {
-        if ($currencyPair === null) {
-            $currencyPair = 'all';
-        }
+        // if ($currencyPair === null) {
+        //     $currencyPair = 'all';
+        // }
 
         return $this->queryPublic('returnOrderBook&currencyPair='.$currencyPair);
     }

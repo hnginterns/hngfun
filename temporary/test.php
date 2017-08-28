@@ -8,7 +8,7 @@
 
     $poloniex = new Poloniex;
 
-    $currency = null;
+    $currency = "all";
 
     $homepage = $poloniex->returnOrderBook($currency);
 
