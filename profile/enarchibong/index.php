@@ -17,7 +17,7 @@
 		    <h2>(E. A.) Enomfon's Profile </h2>
 	    </header>
 
-		<img src="http://i.imgur.com/soZDbld.jpg" title="source: imgur.com" alt="http://i.imgur.com/soZDbld.jpg"/><br><br>
+		<p style="text-align:center;"><img src="http://i.imgur.com/soZDbld.jpg" title="source: imgur.com" alt="http://i.imgur.com/soZDbld.jpg"/></p><br><br>
 		
 		<ul>
 			<li><button><a href="https://github.com/enarchibong" target="_blank"> Stage 1</a></button></li>
