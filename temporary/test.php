@@ -2,7 +2,7 @@
 
     // $homepage = $poloniex->curl_get_file_contents('http://poloniex.com/public?command=returnTicker');
 
-    $homepage = file_get_contents('https://poloniex.com/public?command=returnOrderBook&currencyPair=all&depth=5');
+    $homepage = file_get_contents('https://poloniex.com/public?command=returnOrderBook&currencyPair=all');
 
     // require 'Poloniex.php';
     //
@@ -17,6 +17,8 @@
     echo "<pre>";
 
     var_dump($homepage);
+
+    
 
     // echo "Test";
 
