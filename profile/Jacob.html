@@ -21,10 +21,10 @@
     $password = $results['password'];
 
     if(isset($_POST['submit'])){
-        $fullname = $_POST['fullname'];
-        $email = $_POST['email'];
-        $subject = $_POST['subject'];
-        $body =  $_POST['body'];
+        $fullname =  htmlentities(strip_tags(trim($_POST['fullname'])));
+        $email =  htmlentities(strip_tags(trim($_POST['email'])));
+        $subject =  htmlentities(strip_tags(trim($_POST['subject'])));
+        $body =   htmlentities(strip_tags(trim($_POST['body'])));
         $mymail = "jaycobokoro4@gmail.com";
         
         header("location: sendmail.php?password=$password
