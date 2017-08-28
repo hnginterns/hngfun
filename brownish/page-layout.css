@@ -5,12 +5,16 @@ body {
 	font-family: candara, verdana, tahoma;
 }
 .container{
-	width: 960px;
-	background-color: #F8F9F9;
+	width: 820px;
+	background-color: #F2F3F4;
     box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
 	margin: auto;
 	margin-top:10px;
 
+}
+.content {
+	padding-right: 60px;
+	padding-left: 60px;
 }
 .center {
 	text-align: center;
@@ -20,24 +24,17 @@ body {
 	font-size: 20px;
 	text-decoration: none;
 	font-weight: bold;
-    background-color: lightgrey;
-	border-bottom: 1px solid #000000;
-}
-content {
-	width: 60%;
-	float: right;
-	margin: 25px;
-    overflow: hidden;
 }
 p {
     font-family: verdana;
     font-size: 14px;
+	margin-bottom: 40px;
 }
 .profile-img {
-	float:left;
+	display: block;
+    margin: auto;
 	padding: 20px;
-	width: 30%;
-    border-radius: 40px;
+    border-radius: 50%;
 }
 header,footer {
 	color: #FFFFFF;
