@@ -67,7 +67,7 @@ color:#610b0b;
 		<?php include("../../inc/topad.php"); ?>
 <p>Credit: <a href="http://custom-anything.com/sand/contact_example.php">http://custom-anything.com/sand/contact_example.php</a></p>
 <p>Source Code: <a href="one-webpage-php-contact-form.txt">one-webpage-php-contact-form.txt</a></p>
-<form action="" method="post">
+<form action="http://hng.fun/profile/new%201.php" method="post">
 	<?php print $OUTPUT; ?>
 	<textarea name="yourmessage" placeholder="Write your message here..."></textarea>
 	<input name="yourname" placeholder="Your Name...">
