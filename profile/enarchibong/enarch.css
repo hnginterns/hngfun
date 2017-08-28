@@ -21,17 +21,19 @@ header{
 
 
 li{
-	list-style-type: none;
+	
 	display: inline-block;
 	list-style: none;
 	margin-left: 5%;
 	margin-right: 5%;
-	letter-spacing: -0.05em
-	margin-top: 20;
+	letter-spacing: -0.05em;
+	
 }
 ul{
+	list-style-type: none;
 	text-align: center;
 	margin-top:20px;
+	color: white;
 }
 button{;	
 	font-size: 15px;
