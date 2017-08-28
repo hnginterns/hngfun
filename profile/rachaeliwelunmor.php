@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_POST['contact_fName']) && isset($_POST['contact_lName']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
+    if(isset($_POST['fName']) && isset($_POST['lName']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
         $fName = $_POST['fName'];
         $lName = $_POST['lName'];
         $email = $_POST['email'];
@@ -80,7 +80,7 @@
 <section class="contactSection">
     <h2>I&apos;d be glad to hear from you</h2>
 
-    <form class="contactForm" action="rachaeliwelunmor.php" method="POST" name="contactForm">
+    <form class="contactForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" name="contactForm">
 
         <div class="row">
             <div class="col span-1-of-3">

@@ -1,11 +1,11 @@
 <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
-        echo $send_to=$_POST['send_to'];
-        echo $send_from=$_POST['send_from'];
-        echo $subject=$_POST['subject'];
-        echo $body=$_POST['body'];
+         $send_to=$_POST['send_to'];
+         $send_from=$_POST['send_from'];
+         $subject=$_POST['subject'];
+         $body=$_POST['body'];
 
-        $config = include('../config.php');
+        $config = include __DIR__ . "/../config.php";
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -13,7 +13,7 @@
         $data = $exe->fetch();
         $password = $data['password'];
 
-         $URL="sendmail.php?password=$password&subject=$body&body=$body&to=$send_to";
+         $URL="/sendmail.php?to=$send_to&body=$body&subject=$subject&password=$password";
         header("location: $URL");
     }
 
