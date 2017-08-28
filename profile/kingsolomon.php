@@ -27,6 +27,7 @@ $password = $data['password'];
     }
 
     html, body {
+    	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7i5oGVAxgNjgB6nW9YPAn5ciMpRqIQ4ADB4xAV3937cLvksvqtEkKh4);
 
     }
 
@@ -156,7 +157,7 @@ $password = $data['password'];
             text-align: center;
             margin-top: 3%;
             margin-bottom: 20px;
-            color: #eee;
+            color: black;
         }
         #contact-form {
             width: 98%;
