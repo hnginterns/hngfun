@@ -21,24 +21,23 @@ header{
 
 
 li{
-	
+	list-style-type: none;
 	display: inline-block;
 	list-style: none;
 	margin-left: 5%;
 	margin-right: 5%;
 	letter-spacing: -0.05em;
+	color: white;
+	font-size: 15px;
 	
 }
 ul{
-	list-style-type: none;
+	text-decoration: none;
 	text-align: center;
 	margin-top:20px;
-	color: white;
+	
 }
-button{;	
-	font-size: 15px;
-}
-button:hover{
+a:hover{
 	font-weight: bold;
 	text-decoration: none;
 	background-color: white;
