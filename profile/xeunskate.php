@@ -36,7 +36,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 body{
     width:auto;
     height:auto;
-    background-color:#F0E68C;
+    background-color:#ffff91;
     text-align:center;
     font-family: Berkshire Swash;
 	color:#000000;
@@ -66,8 +66,7 @@ h3 {
 }	
 	
 h4 {
-    color:#0137f9;
-    background: #B0E0E6;
+    color:#000000;
 }
 	
 	
@@ -101,6 +100,9 @@ h4 {
 					<input type="submit" value="Send">
 					<input type="reset" value="Reset">
 					</form>
+					
+					
+	
 
 
 
