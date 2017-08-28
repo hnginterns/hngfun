@@ -25,6 +25,7 @@ a:hover{
 ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .container{
     height: 80vh;
@@ -111,11 +112,11 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 100%;
 }
 
 .profile .profile--profile-pic{
-    height:80%;
-    padding: 20px;
+    height:90%;
     overflow: hidden;
     justify-content: center;
     display: flex;
@@ -125,7 +126,6 @@ ul{
 
 .profile .profile--profile-pic img{
     width: 100%;
-    border-radius: 5px;
     height: 100%;
     max-width: 294px;
 }
