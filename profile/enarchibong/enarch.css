@@ -31,12 +31,12 @@ li{
 	
 }
 ul{
-	text-decoration: none;
 	text-align: center;
 	margin-top:20px;
 	
 }
 a{
+	text-decoration: none;
 	color: white;
 	font-size: 15px;
 }
