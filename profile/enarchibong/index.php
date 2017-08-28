@@ -20,8 +20,8 @@
 		<p style="text-align:center;"><img src="http://i.imgur.com/soZDbld.jpg" title="source: imgur.com" alt="http://i.imgur.com/soZDbld.jpg"/></p><br><br>
 		
 		<ul>
-			<li><<a href="https://github.com/enarchibong" target="_blank"> Stage 1</a>></li>
-			<li><<a href="#" target="_blank"> Stage 2</a>></li>
+			<li>&lt;<a href="https://github.com/enarchibong" target="_blank"> Stage 1</a>&gt;</li>
+			<li>&lt;<a href="#" target="_blank"> Stage 2</a>&gt;</li>
 		</ul><br>
 		
 		<article>
