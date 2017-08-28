@@ -103,7 +103,7 @@ body.full {
   color: #848d96;
   -webkit-animation: fadein 2s;
           animation: fadein 2s; }
-  body.page-full p {
+  body.full p {
     color: #848d96; }
 
 .fs-split {
