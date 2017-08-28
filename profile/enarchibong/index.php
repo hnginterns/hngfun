@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>enarchibong</title>
     <link rel="stylesheet" type="text/css" href="enarch.css">
@@ -17,15 +17,16 @@
 		    <center><h2>(E. A.) Enomfon's Profile </h2></center>
 	    </header>
 
-		<center><img src="http://i.imgur.com/soZDbld.jpg" title="source: imgur.com" /></center><br><br>
+		<center><img src="http://i.imgur.com/soZDbld.jpg" title="source: imgur.com" alt="http://i.imgur.com/soZDbld.jpg"/></center><br><br>
 		
 		<ul>
 			<li><button><a href="https://github.com/enarchibong" target="_blank"> Stage 1</a></button></li>
 			<li><button><a href="#" target="_blank"> Stage 2</a></button></li>
 		</ul><br>
-		<center><h3>About E. A.</h3></center><br><br>
 		
 		<article>
+			<center><h3>About E. A.</h3></center><br><br>
+			
 			A technophile and a student of computer engineering who loves solving challenging real time problems and who also has
 			knowledge of but not an expert in;<br>Html<br>Css<br>Java<br>javascript<br>C<br>C++<br>Database(Mssql, MySql)<br>
 		</article>
