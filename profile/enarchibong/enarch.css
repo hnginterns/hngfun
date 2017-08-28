@@ -19,6 +19,7 @@ header{
 	margin-top: 30px;
 }
 
+
 li{
 	list-style-type: none;
 	display: inline-block;
@@ -43,7 +44,11 @@ button:hover{
 }
 h3{
 	color:white;
+	align:center;
 }
+
+h2{align:center;}
+
 article{
 	text-align:center;
 	color:white;
@@ -51,6 +56,7 @@ article{
 }
 
 img{
+	align:center;
 	margin-top: 25px;
 	border-radius: 40px;
 	border: 1px solid yellow;
@@ -81,4 +87,5 @@ footer{
 	position:fixed;
 	border-top:1px solid yellow;
 	height: 20px;
+	text-align:center;
 }
