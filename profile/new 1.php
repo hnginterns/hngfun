@@ -1,15 +1,19 @@
 <?php
 // Source: http://custom-anything.com/sand/contact_example.php
-$mailConfig = array(
-    'John Q. Webmaster'                     
-   ,'xeunskate@gmail.com' 
-);
-
-$OUTPUT = '';
+if(empty($error)) {
+        $config = include(dirname(dirname(__FILE__)).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
 
 if( formSubmission() && ( $formFields = validateFormSubmission( $errors )) ){
     if( !$errors ){
-        if( sendEmail( $mailConfig,$formFields ) ){
+        if( sendEmail( $config,$formFields ) ){
             $OUTPUT = successMessage();
         }else{
             $OUTPUT = failureMessage();
