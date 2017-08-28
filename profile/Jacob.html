@@ -10,9 +10,17 @@
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "jaycobokoro4@gmail.com";
-        $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-        header("Location: " . $location);
-    }
+		header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=jaycobokoro4@gmail.com");
+	}
+
+
+
+
+        // $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+        // header("Location: " . $location);
+
+
+
  ?>
 ?>
 <!DOCTYPE html>
