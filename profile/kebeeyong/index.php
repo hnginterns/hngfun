@@ -1,3 +1,4 @@
+<?php require 'contact_me.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +35,7 @@ margin: 0 auto; width: 600px;}
 
 <div id="details">
   <div class="container">
-  <form action="" method="post" enctype="text/plain">
+  <form action="<?= $_SERVER[PHP_SELF]?>" method="post">
 Name:<br>
 <input type="text" name="name"><br>
 E-mail:<br>
@@ -42,7 +43,7 @@ E-mail:<br>
 Subject<br>
 <input type="text" name="subject"><br>
 Message<br>
-<textarea class="form-control" id="message" rows="5" placeholder="Type your Message Here ..."></textarea><br>
+<textarea class="form-control" name="message" rows="5" placeholder="Type your Message Here ..."></textarea><br>
 <input type="submit" value="Send">
 </form>
 </div>
