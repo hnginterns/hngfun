@@ -8021,7 +8021,7 @@ include('participants-head.php');
         <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://image.ibb.co/knhPSQ/IMG_20170818_203414.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://image.ibb.co/knhPSQ/IMG_20170818_203414.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/emekaprosper">
                         <!--Profile Link-->
@@ -8185,5 +8185,28 @@ include('participants-head.php');
 </div>
 <!-- Each participant ends here -->
 
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/farida/reedah.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/farida/farida.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Farida Kabir</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">fareedakabeer@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team Achievement </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+
+<!--  Each Participant starts here  -->
 
 <?php include "footer.php"?>
