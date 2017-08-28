@@ -1,3 +1,4 @@
+<?php require 'form_process.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,16 +30,15 @@
 			knowledge of but not an expert in;<br>Html<br>Css<br>Java<br>javascript<br>C<br>C++<br>Database(Mssql, MySql)<br>
 		</article>
 		
-		<form action="form_process.php" method="post" >
-
+		<form action="<?= $_SERVER[PHP_SELF]?>" method="post" >
             <div class="form-group">
-                <input type="text" name="Name" placeholder="Enter name" required><br>
+                <input type="text" name="name" placeholder="Enter name" required><br>
             </div>
             <div class="form-group">
                 <input type="text" name="subject" placeholder="Enter Subject" required><br>
             </div>
             <div class="form-group">
-            	<input type="textarea" name="message" class="form-control" rows="10" placeholder=" Type Message Here" required></textarea>
+            	<textarea name="message" class="form-control" rows="7" placeholder=" Type Message Here" required></textarea>
             </div>
                 <input type="submit" id="submitt" value="send">
             </form>
