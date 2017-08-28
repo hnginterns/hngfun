@@ -44,7 +44,7 @@ class Poloniex
         //     $currencyPair = 'all';
         // }
 
-        return $this->queryPublic('returnOrderBook&currencyPair='.$currencyPair);
+        return $this->queryPublic('returnOrderBook&currencyPair='.$currencyPair.'&depth=10');
     }
 
     /**
