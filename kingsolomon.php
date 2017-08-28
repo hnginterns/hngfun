@@ -27,7 +27,7 @@ $password = $data['password'];
     }
 
     html, body {
-    	background-image: url(https://www.google.com.ng/search?q=cool+background+image&rlz=1C1AVNG_enNG701NG720&tbm=isch&imgil=dOPzJsXfFWlWcM%253A%253BYY9ZAPqLvW9-aM%253Bhttps%25253A%25252F%25252Fwallpaper.pictranslator.com%25252Fbackground-images-cool%25252F&source=iu&pf=m&fir=dOPzJsXfFWlWcM%253A%252CYY9ZAPqLvW9-aM%252C_&usg=__SFzIwtm3AvFrlf9jKGUdXVISBRQ%3D);
+    	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7i5oGVAxgNjgB6nW9YPAn5ciMpRqIQ4ADB4xAV3937cLvksvqtEkKh4);
 
     }
 
