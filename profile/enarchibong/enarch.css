@@ -18,6 +18,29 @@ header{
 	height: 50px;
 	margin-top: 30px;
 }
+
+li{
+	list-style-type: none;
+	display: inline-block;
+	list-style: none;
+	margin-left: 5%;
+	margin-right: 5%;
+	letter-spacing: -0.05em
+	margin-top: 20;
+}
+ul{
+	text-align: center;
+	margin-top:20px;
+}
+button{;	
+	font-size: 15px;
+}
+button:hover{
+	font-weight: bold;
+	text-decoration: none;
+	background-color: white;
+	color: #326140;
+}
 h3{
 	color:white;
 }
@@ -35,13 +58,27 @@ img{
 	
 }
 
+form{
+	margin-left: 35%;
+	margin-right:30%;
+	margin-bottom:10%;
+	margin-top:5%;
+	border: 3px solid white;
+	box-shadow: 0px 0px 20px black;
+	width: 30%;
+	position:relative;
+	text-align:center;
 
+}
+input[type=text]{margin:5%; width:80%; height:40px; border-radius:10px;}
+
+input[type=textarea]{width= 80%; height:40px; border-radius:10px;}
 
 footer{
 	right:0;
 	bottom:0;
 	left:0;
-	position: absolute;
+	position:fixed;
 	border-top:1px solid yellow;
 	height: 20px;
 }

@@ -1,15 +1,4 @@
 <?php
-<<<<<<< HEAD
-    //if "email" variable is filled out, send email
-      if (isset($_GET['submit']))  {
-      
-      //Email information
-      $to = "davidshemang@gmail.com";
-      $subject = $_GET['name'];
-      $body = $_GET['message'];
-          
-      $config = include(dirname(dirname(__FILE__)).'/config.php');
-=======
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
@@ -23,7 +12,6 @@
     }
     if(empty($error)) {
       $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -129,35 +117,23 @@
 <?php endif; ?>
 
   <form " method="POST" action="#">
-
     <div class="form-group">
       <label for="subject" class="sr-only">Subject:</label>
       <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject" required>
-    </div>
-
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="text" class="form-control" id="email" name="email">
     </div>
     
     <div class="form-group">
       <label for="message" class="sr-only">Message:</label>
       <textarea id="message" class="form-control" name="message" rows="6" cols="50" placeholder="Your Message" required></textarea>
     </div>
-<<<<<<< HEAD
-    <button style="margin: 0px auto;" name="submit" type="submit" class="btn btn-default">Send</button>
-=======
     <button name="submit" type="submit" class="btn btn-default">Send</button>
->>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
   </form>
   <!--/.contact form-->
          </div>
-
     </div>
     <!-- /.banner -->
   
   
-
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -173,7 +149,6 @@
             </div>
         </div>
     </footer>
-
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

@@ -26,7 +26,7 @@
 (26) Akunne Obinna, (slack : obinna_akunne), (github: thirdwrist)
 (27) Ojo Oreoluwa Victor, (slack: @ogbeniore) (github: @OreoluwaOjo)
 (28) Okunniga Samson Tosin, (github: Teegold007) (slack:teegoldz)
-(29) Olatunbosun Gabriel, @bosunski, bosunski 
+(29) Olatunbosun Gabriel, @bosunski, bosunski
 (30) Alexandrix Ikechukwu, cornevan, SpaghettiThots
 (31) Okwu Joscelyn Kinikachi, slack: joscelyn56, github: joscelyn56
 (32) Prosper Nweze, @prosperoking ,@prosperoking
@@ -140,7 +140,7 @@
 (139) John Ayeni, slack:@johnayeni10, github:JohnAyeni
 (140) Okoro Ogechi (slack: @ogechiokoro, github:ogechiokoro)
 (141) Okokon Christopher Ntuk (slack: @chrix95, github: @chrix95)
-(142) Daniel Archibong (slack: @archibongdaniel13, github: @danielcomputer) 
+(142) Daniel Archibong (slack: @archibongdaniel13, github: @danielcomputer)
 (143) Ajayi Thadeus (Slack: @ainoije, github: @ThadeusAjayi)
 (144) Nnaemeka Ukpa (Slack: @emekaprosper, github:@emekaProsper)
 (145) Okwara Ebuka (slack: @okwaraebuka, github:fletcherin)
@@ -217,3 +217,21 @@
 (214) Alexander Ikelia (slack:@alex, github: @alexikelia)
 (215) Ifeanyi Okoye (slack:@ifeanyi0, github: @NoRestrictions)
 (216) Silas Silas (Slack@silassilas  Github:@silassilasm)
+(217) Emem Okpon (slack:ememtony, github:EmemTony)
+(218) Otuekong Shield, @shield, @otu02
+(219) Gafar Azeez Oluwafemi (Slack: @zee, Github: ZeeUnltd)
+(220) Olushi Luqman Opemipo, codeshifu, codeshifu
+(221)Richard Oluwo(slack: @richard4s, github: richard4s)
+(219)Olayiwola Emmanuel(slack: @emma, github: olaasz)
+(220) Gafar Azeez Oluwafemi (Slack: @zee, Github: ZeeUnltd)
+(222) Olushi Luqman Opemipo, codeshifu, codeshifu
+(222)Richard Oluwo(slack: @richard4s, github: richard4s)
+(223) Nnwankwo Wisdom , slack: nwankwowisdom96, github: widomd
+(224) Iroleh Vincent Nwachukwu (Slack: @irolehvincent, github: vincentiroleh)
+(225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
+(226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
+(227) Erisan Olasheni (Slack: @olasheni, Github: software202)
+(228) Uche Madu (Slack: @dreemer6, Github: dreemer6)
+(229) Nwaizuzu Anthony Chukwudi (Slack: @tonychuks7, Github: naccuddi)
+(230) Erisan Olasheni (Slack: @olasheni, Github: software202)
+(231) Mopah Emmanuel Shewuri (Slack: @mopahshewuri, Github: mopilo)
