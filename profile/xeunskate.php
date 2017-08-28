@@ -97,7 +97,7 @@ h4 {
 					Name:<br>
 					<input type="text" class="form-control" name="subject" placeholder="Your name..."><br>
 					Message:<br>
-					<textarea rows="4" cols="50" placeholder="Write something.." class="form-control" name="message"></textarea><br><br>
+					<textarea placeholder="Write something.." class="form-control" name="message"></textarea><br><br>
 					<input type="submit" value="Send">
 					<input type="reset" value="Reset">
 					</form>
