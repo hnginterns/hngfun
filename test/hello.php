@@ -7,8 +7,6 @@ $poloniex = new Poloniex("U5ZUDL9X-20HYGDKV-MZ4D7300-Z6UZTFHE","3f5705466251ff4e
 
 echo "Ticker: ".$poloniex->returnTicker()."<br>";
 echo "24h volume: ".$poloniex->return24hVolume()."<br>";
-echo "Order book: "$poloniex->returnOrderBook()."<br>";
-echo "Trade history: "$poloniex->returnTradeHistory()."<br>";
 
 
 
