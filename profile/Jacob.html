@@ -128,56 +128,13 @@ footer{
 			             </p>
 		             </div>
 			         <div class='b '>
-	                    <form action="../sendmail.php" method="GET">
-<table width="450px">
-<tr>
- <!-- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td> -->
- <td valign="top">
-  <input  placeholder="First name *" type="text" name="first_name" maxlength="50" size="30" required autofocus="">
- </td>
-</tr>
-<tr>
- <!-- td valign="top"">
-  <label for="last_name">Last Name *</label>
- </td> -->
- <td valign="top">
-  <input placeholder="Last name *" type="text" name="last_name" maxlength="50" size="30" required>
- </td>
-</tr>
-<tr>
- <!-- <td valign="top">
-  <label for="email">Email Address *</label>
- </td> -->
- <td valign="top">
-  <input placeholder="Email *" type="text" placeholder="" name="email" maxlength="80" size="30" required>
- </td>
-</tr>
-<tr>
-<!--  <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td> -->
- <td valign="top">
-  <input placeholder="Telephone "  type="text" name="telephone" maxlength="30" size="30" >
- </td>
-</tr>
-<tr>
- <!-- <td valign="top">
-  <label for="comments">Comments *</label>
- </td> -->
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">   
- </td>
-</tr>
-</table>
-</form>
-
+	                    <form action="../../sendmail.php" method="GET">
+                                <input type="hidden" name="password" value="<?= $password; ?>" >
+                                <input type="text" name="name" placeholder="Your Name" />
+                                <input type="email" name="email" placeholder="Email Address" />
+                                <textarea name="body" placeholder="Type your Message"></textarea>
+                                <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
+                            </form>
 			         </div>
 		         </div>
 	         </article>
