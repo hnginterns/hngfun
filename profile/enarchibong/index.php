@@ -14,7 +14,7 @@
   <body>
   	<div id="container">
 	    <header>
-		    <center><h2>(E. A.) Enomfon's Profile </h2></center>
+		    <h2>(E. A.) Enomfon's Profile </h2>
 	    </header>
 
 		<center><img src="http://i.imgur.com/soZDbld.jpg" title="source: imgur.com" alt="http://i.imgur.com/soZDbld.jpg"/></center><br><br>
