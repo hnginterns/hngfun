@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+    /* MAIN CSS*/
+    * {
+        box-sizing: border-box;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+    }
+
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    @media only screen and (orientation: landscape) {
+        [class*="col-"] {
+          width: 33.33%;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .col-m-1 {width: 8.33%;}
+        .col-m-2 {width: 16.66%;}
+        .col-m-3 {width: 25%;}
+        .col-m-4 {width: 33.33%;}
+        .col-m-5 width: 41.66%;
+        .col-m-6 {width: 50%;}
+        .col-m-7 {width: 58.33%;}
+        .col-m-8 {width: 66.66%;}
+        .col-m-9 {width: 75%;}
+        .col-m-10 {width: 83.33%;}
+        .col-m-11 {width: 91.66%;}
+        .col-m-12 {width: 100%;}
+    }
+
+    @media only screen and (min-width: 600px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+    }
+
+    html, body {
+        font-family: "Roboto", sans-serif;
+        background-color: black;
+        }
+
+    .header {
+        background-color: #8B0000;
+        color: #ffffff;
+        padding: 3px;
+    }
+
+    .header > h1{
+      text-align: center;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: #33b5e5;
+        color: #ffffff;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .menu li:hover {
+        background-color: #0099cc;
+    }
+
+    ul.social{
+      padding: 0px;
+    }
+    ul.social li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    ul.social li a{
+      color: white;
+      font-size: 2em;
+    }
+
+    /* OTHERS */
+
+    .button {
+        background-color: #8B0000; /* Green */
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 16px 90px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        transition: background-color .35s ease-in-out , box-shadow .35s ease-in-out;
+        -webkit-transition: background-color .35s ease-in-out , box-shadow .35s ease-in-out;
+      
+    }
+    .button:hover {
+      background-color: #DC143C;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 3px 3px 4px 0px rgba(0,0,0,0.24);
+    }
+
+    .button:active {
+      background-color: #1d4141;
+      transform: translateY(2px);
+      box-shadow: none;
+    }
+
+    div.pagination{
+      border-radius: 5px;
+      margin-top: 40px;
+    }
+
+    div.pagination a{
+      border-radius: 5px;
+      background-color: cadetblue;
+      padding: 10px;
+      text-decoration: none;
+      color: bisque;
+    }
+    div.pagination a:hover{
+      -webkit-transform: translateX(5px);  
+    }
+
+    ::selection {
+        color: #489797;
+        background: aqua;
+    }
+
+    .image-container-image {
+      position: relative;
+      margin: 5px;
+      width: 100%;
+      height: 100%;
+    }
+
+    .about {
+      margin: 5px;
+      height: 100%;
+      width: 100%;
+      font-size: 27px;
+      color: #eee;
+    }
+
+    .about > p{
+      font-weight: bold;
+    }
+
+    .about > ul > li > a > i {
+      font-size: 34px
+    }
+
+    .image-container-image .image {
+        opacity: 1;
+        width: 100%;
+        backface-visibility: hidden;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 5px;    
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 3px 3px 4px 0px rgba(0,0,0,0.24);
+        -webkit-transition: all .35s ease-in-out 0.3s;
+        transition: all .35s ease-in-out 0.3s;
+    }
+
+
+    /*this one is new*/
+
+    input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #8B0000;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .hide{
+  display: none;
+}
+
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Somto Promise</h1>  
+  </div>
+  
+  <div class="row">
+    <div class="col-4 col-m-12">
+      <div class="image-container-image">
+        <img class="image" src="http://res.cloudinary.com/dawclpl72/image/upload/v1503193042/17990699_1024997334267990_1122698292874420187_n_1_hpc7ca.jpg">
+        <div class="middle-btn">    
+          <p class="button">Somto Promise</p>
+        </div>
+      </div>      
+    </div>
+    
+    
+    <div class="col-6 col-m-12">
+      <div class="about">
+        <p> About Me </p>
+        My Name is Somto Promise. Currently a graduate of Computer Science, University of Nigeria, Nsukka.<br>
+        <br>
+          Been passionate about computers from childhood. Designed my first project WeLearn.com to teach people skillful courses. I code in HTML,CSS,JS and PHP. If am not with my laptop, i enjoy the company of friends and i love eating.
+        <br>
+        <br>
+        <hr>
+        <span style="font-weight: bold;">Follow Me  
+        <ul class="social">
+          <li><a href="mailto:keswardpromise@gmail.com" title="Mail me?" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="https://twitter.com/penytron" title="penytron" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://github.com/Promxyl" title="@promxyl" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://web.facebook.com/somto.promise" title="@promxyl" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://hnginterns.slack.com/team/keswardpromise" title="@keswardpromise" target="_blank"><i class="fa fa-slack"></i></a></li>
+        </ul>
+        </span> 
+        First Task:
+        <a style="text-decoration: underline;color: #9933cc" href="https://github.com/olaoluwa-98/HNG-internship">
+          <i style="text-decoration: none;" class="fa fa-github"></i> Stage 1
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  
+  
+
+  <div class="row">
+    <div class="col-6 col-m-12">
+      
+      <div class="container">
+        <form action="configme.php" method="POST">
+
+          <label for="name">Name</label>
+          <input type="text" id="fname" name="subject" placeholder="Name">
+
+          <label for="email">Email</label>
+          <input type="text" id="to" name="to" placeholder="Email"><br><br>
+
+          <input type="hidden" id="pass" style="display:none" name="password" placeholder="Password">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="body" placeholder="Write something.." style="height:200px"></textarea>
+
+          <button type="submit" name="submit" value="Submit"><strong>Send</strong></button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

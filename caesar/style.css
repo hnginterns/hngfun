@@ -1,0 +1,27 @@
+img{
+	width: 400px;
+	height: 600px;
+	float: left;
+	border-radius: 15px;
+}
+
+p{
+	float: right;
+	margin-top: 150px;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 60px;
+	margin-right: 50px;
+}
+
+body{
+	background: #337ab7;
+}
+
+a{
+	text-decoration: none;
+}
+
+.bio{
+	color: #5B2C6F;
+}
