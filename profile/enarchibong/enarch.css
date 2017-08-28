@@ -44,10 +44,10 @@ button:hover{
 }
 h3{
 	color:white;
-	align:center;
+	text-align:center;
 }
 
-h2{align:center;}
+h2{text-align:center;}
 
 article{
 	text-align:center;
@@ -56,7 +56,7 @@ article{
 }
 
 img{
-	align:center;
+	text-align:center;
 	margin-top: 25px;
 	border-radius: 40px;
 	border: 1px solid yellow;
