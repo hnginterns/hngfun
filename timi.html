@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+
+<style media="screen">
+		@import	url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+		@import url(https://fonts.googleapis.com/css?family=Open+Sans|Oswald|Open+Sans+Condensed:300|Lora);
+
+		body {
+			background-color: #FCFFCC;
+			height: 460px;
+		}
+
+		header {
+			height: 40px;
+			padding: 20px;
+			text-align: center;
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+
+		.container {
+			background-color: #FFF;
+			color: #000;
+			width: 1000px;
+			height: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 20px;
+			padding: 30px;
+		}
+
+		.about {
+			font-family: 'Open Sans', sans-serif; 
+			width: 580px;
+			height: 100%;
+		}
+
+		.photo {
+			width: 400px;
+			height: 400px;
+		}
+
+		img {
+			border: 3px solid #2E5C6D;
+			border-radius: 8px;	
+			width: 400px;
+			height: 400px;
+		}
+
+		label {
+			color: #98D6B2;
+			font-family: 'Oswald', sans-serif;
+		}
+
+
+
+		.footer_container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+			padding: 5px;
+			background-color: #BCB49E;
+			height: 30px;
+			text-align: center;
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-size: 28px;
+		}
+
+		a {
+			color: black;
+		}
+
+		@media only screen 
+			and (min-device-width : 320px) 
+			and (max-device-width : 480px) {
+			/* Styles */
+			body {
+				background-color: #FCFFCC;
+				height: 100%;
+				width: 320px;
+			}
+
+			header {
+				margin-bottom: 30px;
+				height: 20px;
+				width: 310px;
+			}
+
+			.container {
+				width: 300px;
+				display: flex;
+				margin-left: 0;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-content: center;
+			}
+
+			.about {
+				width: 280px;
+			}
+
+			.photo {
+				margin-left: 0;
+				width: 280px;
+				border-radius: 30px;
+			}
+			img {
+				width: 250px;
+				height: 300px;
+				border-radius: 30px;
+			}
+
+			.footer_container {
+				width: 320px;
+				height: 30px;
+			}
+		}
+
+		@media only screen 
+			and (min-device-width : 768px) 
+			and (max-device-width : 1024px) {
+				body {
+				background-color: #FCFFCC;
+				height: 100%;
+				width: 748px;
+			}
+
+			header {
+				margin-bottom: 30px;
+				height: 20px;
+				width: 748px;
+			}
+
+			.container {
+				width: 680px;
+				display: flex;
+				margin-left: 0;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-content: space-around;
+			}
+
+			.about {
+				width: 660px;
+			}
+
+			.photo {
+				margin-left: 0;
+				width: 660px;
+				border-radius: 30px;
+			}
+			img {
+				width: 400px;
+				height: 300px;
+				border-radius: 30px;
+			}
+
+			.footer_container {
+				width: 680px;
+				height: 30px;
+			}
+		}
+		@media only screen 
+			and (min-device-width : 768px) 
+			and (max-device-width : 1024px) 
+			and (orientation : portrait) {
+				body {
+				background-color: #FCFFCC;
+				height: 100%;
+				width: 988px;
+			}
+
+			header {
+				margin-bottom: 30px;
+				height: 20px;
+				width: 980px;
+			}
+
+			.container {
+				width: 955px;
+				display: flex;
+				margin-left: 0;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-content: space-around;
+			}
+
+			.about {
+				width: 890px;
+			}
+
+			.photo {
+				margin-left: 0;
+				width: 890px;
+				border-radius: 30px;
+			}
+			img {
+				width: 400px;
+				height: 300px;
+				border-radius: 30px;
+			}
+
+			.footer_container {
+				width: 990px;
+				height: 30px;
+			}
+			}
+
+
+
+</style>
+	<title>HNG Profile Page</title>
+</head>
+<body>
+	<header> <em><h1>HNG profile page</em></h1></header>
+	<div class="container">
+		<div class="photo">
+			<img src="http://i.imgur.com/rydLCog.jpg" alt="personal photo">
+		</div>
+		<div class="about">
+			<label for="name"><strong>Name:</strong></label>
+			<p>Timi Omoyeni</p> <br>
+			<label for="slack username"><strong>Slack name:</strong></label>
+			<p>timi</p>
+			<label for="Biography"><strong>Biography:</strong></label>
+			<p>
+				I'm a Front end developer eloquent in HTML,CSS,JavaScript and jQuery.I'm a beginner at Nodejs and php,Fast learner, good team player,Problem solver.
+			</p>
+			<label for="link"><strong>Link:</strong></label>
+			<p>
+				you can find a link to my stage one repo <a href="https://github.com/Timibadass/hng_internship_repo_1" target="_blank">here</a>
+			</p>
+
+		</div>
+	</div>
+</body>
+<footer>
+	<div class="footer_container">
+		<div>
+			<em> (c) Made with <i class="fa fa-heart"></i> by me </em>
+		</div>
+		<div>
+			<a href="https://medium.com/@timibadass" target="_blank"><i class="fa fa-medium"></a></i> <a href="https://twitter.com/timipapi" target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+	</div>
+</footer>
+</html>

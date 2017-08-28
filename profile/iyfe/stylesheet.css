@@ -3,6 +3,7 @@
     border-radius: 40%;
     width:40%;
     padding: 40px;
+    margin: auto;
   
 }
 #container {
@@ -13,11 +14,8 @@
   	font-family: 'Slabo 27px', serif;
 }
 #container_2 {
-
-    background: #fbf;
+text-align: center;
 }
-
-
 
 .left-half {
   position: absolute;
