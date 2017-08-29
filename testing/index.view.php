@@ -1,6 +1,6 @@
 
 
-<?php foreach($tickets as $ticket) : ?>
+<?php foreach($tickets as $ticket => $value ) : ?>
 
-<li><?= $ticket ?></li>
+<li><?= $ticket->name ?></li>
 <?php endforeach ?>
