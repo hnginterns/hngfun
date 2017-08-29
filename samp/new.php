@@ -41,11 +41,17 @@
                  //Get coin name
                  $coin_name = $coin['name'];
 
+                 //Get current time in UNIX timestamp
+                 $now = time();
+
+                 //Go 5mins back
+                 $then = $now - 300;
+
                  /**
                  **  Call the poloniex API to get all trade history for the currency pair
                  **
                  **/
-                 $trades = file_get_contents("https://poloniex.com/public?command=returnTradeHistory&currencyPair=$currencypair&start=1504008000&end=1504009200");
+                 $trades = file_get_contents("https://poloniex.com/public?command=returnTradeHistory&currencyPair=$currencypair&start=$then&end=$now");
 
                  // Convert JSOn resource to object
                  $trades = json_decode($trades);
