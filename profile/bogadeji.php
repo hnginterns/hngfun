@@ -16,7 +16,7 @@
       $data = $exe->fetch();
       $password = $data['password'];
            // header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-      echo $config['dbname'];
+      echo $config['fetch'];
        // }
 
  //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=bogadeji@gmail.com";
