@@ -9,4 +9,4 @@ $ticket = PoloniexAPIPublic::returnTicker();
 $poloniex = new Poloniex();
 $tickets = $poloniex->returnTicker();
 
-require 'index.view.php';
+var_dump($tickets);
