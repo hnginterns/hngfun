@@ -7,7 +7,7 @@ use poloniex\api\Poloniex;
 $ticket = PoloniexAPIPublic::returnTicker();
 // Dynamic call
 $poloniex = new Poloniex();
-$tickets = $poloniex->returnPublicTradeHistory();
+$tickets = $poloniex->returnTicker();
 
 //var_dump($tickets);
 
