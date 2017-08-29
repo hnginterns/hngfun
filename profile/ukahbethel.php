@@ -46,12 +46,6 @@
 	   <input type="submit" id="submit" value="Submit Message">
 	 
 	   
-	
-	
-	
-	</form>
-	</div>
-	
 	<?php
 
   $config = include('../config.php');
@@ -68,6 +62,12 @@
 
   
 ?>
+	
+	
+	</form>
+	</div>
+	
+	
 	
 	
 	
