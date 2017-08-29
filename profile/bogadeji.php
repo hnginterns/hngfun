@@ -2,13 +2,13 @@
 // define variables and set to empty values
  
     
+    $to = "bogadeji@gmail.com";
+    $subject = $_GET['subject'];
+    $body = $_GET['message']; 
+    $name = $_GET['name'];
+    $email =$_GET['email'];
 
-
-      if (isset($_GET['submit']))  {
-          //Email information here
-      $to = "bogadeji@gmail.com";
-      $subject = $_GET['subject'];
-     $body = $_GET['message'];    
+    if(!empty($name) && !empty($body) && !empty($subject) && !empty($email))  {
       $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
