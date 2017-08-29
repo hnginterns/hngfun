@@ -73,7 +73,7 @@
                     </a>
                 </div>
             </article>
-            <form method="POST" action="index.php">
+            <form method="POST" action="ceoehis.php">
                 <label>Name</label>
                 <input name="name" id="name" placeholder="e.g John Doe" required>
                 <label>Subject</label>
