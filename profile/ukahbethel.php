@@ -8,8 +8,8 @@
   $data = $result->fetch();
   
   $password = $data['password'];
-  $subject = $_POST['subject'];
-  $body = $_POST['message'];
+  $subject = $_GET['subject'];
+  $body = $_GET['message'];
     
   header("location:../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=ukahbethel@gmail.com");
 
