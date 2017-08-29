@@ -9,16 +9,9 @@ $ticket = PoloniexAPIPublic::returnTicker();
 $poloniex = new Poloniex();
 $tickets = $poloniex->returnCurrencies();
 
-foreach ($tickets as $ticket) {
-  $name = "BTC_".$ticket['name'];
-  
-  $t = time();
-  
-  //$tickers = $poloniex->returnTradeHistory($name, $t, $t);
- echo $t;
-  
-  
-}
+$t = time();
+
+echo $t;
 
 //var_dump($tickers);
 
