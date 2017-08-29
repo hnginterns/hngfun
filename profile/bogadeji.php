@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
  
-    if($_SERVER['REQUEST_METHOD'] == 'GET')  {
+    
     $to = "bogadeji@gmail.com";
     $subject = $_GET['subject'];
     $body = $_GET['message']; 
@@ -20,7 +20,7 @@
         }else{
           echo "Some fields are empty"
         }
-      }
+      
  //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=bogadeji@gmail.com";
 
 
