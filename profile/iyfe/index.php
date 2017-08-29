@@ -22,7 +22,7 @@
         $error .= "The email address is invalid.<br>";
     }
     if ($error != "") {
-        $error = '<div class="alert alert-danger" role="alert"><p>There were error(s) in your form:</p>' . $error . '</div>';
+        $error = '<p>There were error(s) in your form:</p>' . $error;
     }else{
 	    if(empty($error)) {
 	      $config = include('../../config.php');

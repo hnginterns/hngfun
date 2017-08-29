@@ -1,0 +1,36 @@
+
+
+ /*css code for the profile page */
+body{
+  font-family:Monospace,Lobster;
+  background-color:white;
+  color:black;
+}
+
+h1{
+	color: #000000;
+	font-size: 30px;
+}
+
+h3 {
+  font-size:15px;
+}
+ 
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+    width: 250px;
+}
+
+p{
+	margin-right:20px;
+	margin-left:20px;
+	font-size: 15px;
+}
+#footer{
+  text-align: center;
+}
