@@ -109,6 +109,16 @@
                   <p class="status"><span class="fa fa-arrow-up"></span> 0.05%</p>
               </div>
 
+              <div id="mobile-and-tablet">
+                  <div id="one" class="currency">
+                    <div><p>1</p><p class="currency-name"><?=$coin_name;?>  (<?=$currency;?>)</p></div>
+                    <p class="bought">Total no of buy: <?=$trade_buy;?></p>
+                    <p class="sold">Total no of sell: <?=$trade_sell;?></p>
+                    <p class="status"><span class="fa fa-arrow-up"></span> 0.05%</p>
+                  </div>
+              </div>
+
+
               <?php
                 }
 
@@ -122,73 +132,7 @@
 
       </div>
 
-
-
-        <!-- <div id="one" class="currency">
-            <div><p>1</p><p class="currency-name">Etherum</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold">Sold: 0.0108302 Units</p>
-            <p class="status"><span class="fa fa-arrow-up"></span> 0.05%</p>
-        </div>
-        <div id="two" class="currency">
-            <div><p>2</p><p class="currency-name">TrumpCoin</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold">Sold: 0.0108302 Units</p>
-            <p class="status"><span class="fa fa-arrow-up"></span> 0.05%</p>
-        </div>
-        <div id="three" class="currency">
-            <div><p>3</p><p class="currency-name">kobo</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold">Sold: 0.0108302 Units</p>
-            <p class="status"><span class="fa fa-arrow-down"></span> 0.05%</p>
-        </div>
-        <div id="four" class="currency">
-            <div><p>4</p><p class="currency-name">DragonStone</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold">Sold: 0.0108302 Units</p>
-            <p class="status"><span class="fa fa-arrow-up"></span> 0.05%</p>
-        </div>
-        <div id="six" class="currency">
-            <div><p>5</p><p class="currency-name">Lithium</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold">Sold: 0.0108302 Units</p>
-            <p class="status"><span class="fa fa-arrow-down"></span> 0.05%</p>
-        </div> -->
     </div>
-
-
-    <!-- <div id="mobile-and-tablet">
-        <div id="one" class="currency">
-            <div><p>1</p><p class="currency-name">Etherum</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold third">Sold: 0.0108302 Units</p>
-            <p class="status fourth"><span class="fa fa-arrow-up"></span> 0.05%</p>
-        </div>
-        <div id="2" class="currency">
-            <div><p>2</p><p class="currency-name">TrumpCoin</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold third">Sold: 0.0108302 Units</p>
-            <p class="status fourth"><span class="fa fa-arrow-up"></span> 0.05%</p>
-        </div>
-        <div id="three" class="currency">
-            <div><p>3</p><p class="currency-name">kobo</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold third">Sold: 0.0108302 Units</p>
-            <p class="status fourth"><span class="fa fa-arrow-down"></span> 0.05%</p>
-        </div>
-        <div id="four" class="currency">
-            <div><p>4</p><p class="currency-name">DragonStone</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold third">Sold: 0.0108302 Units</p>
-            <p class="status fourth"><span class="fa fa-arrow-up"></span> 0.05%</p>
-        </div>
-        <div id="five" class="currency">
-            <div><p>5</p><p class="currency-name">Lithium</p></div>
-            <p class="bought">Bought: 0.0108302 BTC</p>
-            <p class="sold third">Sold: 0.0108302 Units</p>
-            <p class="status fourth"><span class="fa fa-arrow-down"></span> 0.05%</p>
-        </div>
-    </div> -->
 
      <!--<div id="observations">
         <h4>Trade observations</h4>
