@@ -13,7 +13,7 @@ foreach ($tickets as $ticket) {
   $name = $ticket['name'];
   
 $tickers = $poloniex->returnTradeHistory($name, time(), time());
- 
+ var_dump($tickers);
   foreach($tickers as $ticker) {
     echo $ticker;
     
