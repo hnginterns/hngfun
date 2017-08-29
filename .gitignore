@@ -3,7 +3,6 @@
 config.php
 sendmail.php
 auto-deploy.php
-index.php
 footer.php
 header.php
 PHPMailerAutoload.php
