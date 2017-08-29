@@ -38,7 +38,7 @@
  <body>
    <div class="container">
      <div class="col-12 col-sm-8 col-lg-8 offset-sm-2 offset-md-2">
-       <img class="profile photo" src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/1972455_10202185344929806_753062081_n.jpg?oh=fc267d405d6d2303e3644b86327c313e&oe=5A601FC1" alt="">
+       <img class="profile photo" src="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/16003108_10209503989651350_842914644845801165_n.jpg?_nc_eui2=v1%3AAeEDMgrEIEeQ4GUovknx7VDNvUmP5lcd4uv5eYceW_Ime3uHEaXZCoj71EfiPoBX6LeEV9uw-b0Rmzo3WerozMNDkzqR_3x13u7xUkkKgguFfQ&oh=9043f562324754bf09bc8a43c760f2a6&oe=5A24E48D" alt="">
        <h2 class="display-4">EMJAY EKANEM</h2>
        <hr>
        <p class="lead">My name is Emmanuel Godswill Ekanem, i am a Graduate of Information And Computer Technology from Akwa Ibom State, Nigeria. Technology is nothing. 
