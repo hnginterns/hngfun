@@ -1,8 +1,5 @@
 
 
 <?php 
-
-foreach($tickets as $ticket) {
-  echo $ticket->id;
-}
+var_dump($tickets);
 ?>
