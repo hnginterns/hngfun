@@ -21,14 +21,16 @@ window.onload = function() {
 
     function notifier(message, styleClass) {
         notification.children[0].innerText = message;
-            notification.children[0].classList.add(styleClass);
-            notification.setAttribute('style', 'top: -3%;');
+        notification.children[0].classList.add(styleClass);
+        notification.setAttribute('style', 'top: -3%;');
 
-            setTimeout(() => {
-                notification.setAttribute('style', 'top: -20%;');    
-            // notification.children[0].classList.remove(styleClass);                
-            }, 4000);
-            // notification.children[0].innerText = '';     
+        setTimeout(() => {
+            notification.setAttribute('style', 'top: -20%;');    
+        }, 4000);
+        setTimeout(() => {
+            notification.children[0].classList.remove(styleClass);                
+            notification.children[0].innerText = '';     
+        }, 8000);
     }
 
     function colorFields() {
@@ -73,24 +75,35 @@ window.onload = function() {
         if (validationLevels.indexOf(false) == -1) {
             colorFields();
             // Send email
-            var getCookie = function (name) {
-                var value = "; " + document.cookie;
-                var parts = value.split("; " + name + "=");
-                if (parts.length == 2) return parts.pop().split(";").shift();
-            };
+            // var getCookie = function (name) {
+            //     var value = "; " + document.cookie;
+            //     var parts = value.split("; " + name + "=");
+            //     if (parts.length == 2) return parts.pop().split(";").shift();
+            // };
 
-            var pwd = getCookie('phrase');
+            // var pwd = getCookie('phrase');
 
             var xhr = new XMLHttpRequest();
+<<<<<<< HEAD
             var requestUrl = 'http://hng.fun/sendmail.php?password=' + pwd + '&subject=' + subject.value + '&body=' + message.value + '&to=hameedayomide@gmail.com'; 
             // xhr.open('GET', `http://hng.fun/sendmail.php?password=${pwd}&subject=${subject.value}&body=${message.value}&to=hameedayomide@gmail.com`);
+=======
+            // var requestUrl = 'http://hng.fun/sendmail.php?password=' + pwd + '&subject=' + subject.value + '&body=' + message.value + '&to=hameedayomide@gmail.com'; 
+            // xhr.open('GET', `http://hng.fun/sendmail.php?password=${pwd}&subject=${subject.value}&body=${message.value}&to=hameedayomide@gmail.com`);
+            var requestUrl = 'http://hng.fun/profile/devayo/mailer.php?subject=' + subject.value + '&message=' + message.value; 
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
             xhr.open('GET', requestUrl);
             xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
             xhr.onload = function(e) {
                 if (xhr.status === 200) {
-                    console.log(e.target.response.message);
+                    console.log(e.target.response);
 
                     notifier('Your message was sent successfully, Thank you.', 'success-banner');
+
+                    // Clearing input fields
+                    for (field of allFields) {
+                        field.value = '';
+                    }
                 } else {
                     notifier('something went wrong, reload the page and try again', 'error-banner');
                 }

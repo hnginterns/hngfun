@@ -25,6 +25,7 @@ a:hover{
 ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .container{
     height: 80vh;
@@ -74,7 +75,7 @@ ul{
     border-right: inherit;
 }
 /*Contact me Stylings*/
-.contact__button{
+.contact__button,.contact-form button{
     margin-left: 20%;
     border: none;
     padding: 9px;
@@ -84,7 +85,10 @@ ul{
     outline: none;
 
 }
-.contact__button:hover{
+.contact-form button{
+    margin: 4px;
+}
+.contact__button:hover,.contact-form button:hover{
     background: linear-gradient(to bottom,#D97531,#d2691e);
     cursor: pointer;
 }
@@ -108,11 +112,11 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 100%;
 }
 
 .profile .profile--profile-pic{
-    height:80%;
-    padding: 20px;
+    height:90%;
     overflow: hidden;
     justify-content: center;
     display: flex;
@@ -122,7 +126,6 @@ ul{
 
 .profile .profile--profile-pic img{
     width: 100%;
-    border-radius: 5px;
     height: 100%;
     max-width: 294px;
 }
@@ -152,7 +155,30 @@ ul{
 .content.contact--opened .about__me>div{
     opacity: 0.3;
 }
+/*contact form */
 
+.contact-form{
+    width: 100%;
+    align-content: center;
+    height: 80%;
+    overflow-y: auto;
+}
+.contact-form input[type='text']{
+    font-weight: 600;
+}
+.contact-form input[type='text'],.contact-form textarea{
+    width: 90%;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid #E0E0E0;
+    outline: none;
+    border-radius: 4px;
+}
+.contact-form input[type='text']:hover,.contact-form textarea:hover{   
+    box-shadow: inset 0px 0px 2px 0px;
+}
 @media (max-width:600px){
     .container{
         flex-direction: column;

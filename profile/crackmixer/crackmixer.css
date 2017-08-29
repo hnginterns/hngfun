@@ -1,0 +1,41 @@
+/*
+CSS for My Web Profile
+*/
+body {
+	font-family: cursive, Verdana, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	color: white;
+	background-color: #e6e6e6;
+	padding: 50px;
+	padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 250px;
+    padding-right: 250px;
+    background-size: cover;
+}
+
+.box-container {
+  	width: 820px;
+	background-color: grey;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
+	margin: auto;
+	margin-top:10px;
+}
+
+.img-circle {
+    border-radius: 10%;
+    border-color: black;
+}
+table, th, td, tr {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    background-color: #d6d6c2;
+    color: black;
+    font-style: cursive, Verdana;
+    font-size: 14px;
+	margin-bottom: 40px;
+}
+a{
+      text-decoration: none; 
+}

@@ -1,5 +1,6 @@
+
 <?php
-    if(isset($_POST['submit'])){
+    if(isset($_POST['process'])){
 
         $config = [
             'dbname' => 'hng',
@@ -14,11 +15,12 @@
         $result = $con->query('SELECT * FROM password');
         $data = $result->fetch();
         $password = $data['password'];
+        $to = $_POST['email'];
         $subject = $_POST['subject'];
-        $message = $_POST['message'];
-        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&message=".$message."&to=obinnawalker@gmail.com");
+        $body = $_POST['body'];
+        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
 
     }else{
-        header("location: ObinnaWalker.php");
+        header("location: ObinnaWalker.html");
     }
 ?>
