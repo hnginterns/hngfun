@@ -11,7 +11,7 @@ try {
 	//set Attribute 
 	$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	$result = $con->query('SELECT * FROM password');
+	$result = $con->query('SELECT * FROM password LIMIT 1');
 
 	$data = $result->setFetchMode(PDO::FETCH_ASSOC);
 
