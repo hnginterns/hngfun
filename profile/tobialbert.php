@@ -2,7 +2,7 @@
 
 try {
 
-	$config = include('../../config.php');
+	$config = include('../config.php');
 		
 	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
@@ -26,7 +26,7 @@ try {
 	$subject = $_GET['subject'];
 	$body = $_GET['body'];
 	$to = $_GET['to'];
-	
+
 
 	$body = "Sent by: $body";
 
