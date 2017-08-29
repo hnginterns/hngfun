@@ -35,25 +35,30 @@
     <th><a href="https://github.com/crackmixer"> Crackmixer</a></th>
   </tr>
 </table>
-<p>
-<form method="post" action="crack_mixer.php">
+<div>
+    <section class="contact">
+    
+      <section class="contact-form" >
+        <div class = "card-form">
+          <form  action="crack_mixer.php" method="post" >
     <h2>CONTACT FORM</h2>   
-    <label>Name</label>
-    <input name="name" placeholder="Type Here">
-            
+        
     <label>Email</label>
-    <input name="email" type="email" placeholder="Type Here">
+    <input type="email" id="to" name="to" placeholder="Type Here">
 
     <label>Subject</label>
-    <input name="Subject" type="Subject" placeholder="Type Here">
+    <input type="text" id="subject" name="subject" placeholder="Type Here">
             
     <label>Message</label>
-    <textarea name="body" placeholder="Type Here"></textarea>
+    <textarea id="body" name="body" placeholder="Type Here""></textarea>
             
-    <input id="submit" style="font-weight: bold" name="submit" type="submit" value="Submit" >
+    <input type="submit" name="process" value="Submit">
         
 </form>
-</p>
+     </div>
+      </section>
+   </section>
+  </div>
 </div>
 
  </body>
