@@ -39,7 +39,7 @@
 			<form method = "GET" action="contact.php">
 					Contact Form
 					<br>
-					<input type="name" name="Full Name" placeholder="Enter Full name">
+					<input type="name" name="name" placeholder="Enter Full name">
 					<br>
 					<input type="email" name="sender_email" placeholder="Enter email">
 					<br>
@@ -52,27 +52,30 @@
 		</div>
 
 		<?php
-			$error_msg = "";
+			// $error_msg = "";
 
-			if(isset($_POST['send'])) {
-   			// Prepare the email
-			$to = 'ndusunday@example.com';
+			// if(isset($_POST['submit'])) {
+   // 			// Prepare the email
+			// //$to = 'ndusunday@example.com';
 
-			$name = $_POST['name'];
-			$mail_from = $_POST['sender_email'];
-			   $subject = 'Message sent from Hng internship';
-			   $message = $_POST['message'];
+			// $name = $_POST['name'];
+			// $mail_from = $_POST['sender_email'];
+			//    $subject = 'Message sent from Hng internship';
+			//    $message = $_POST['message'];
 
-			$header = "From: $name <$mail_from>";
+			// $header = "From: $name <$mail_from>";
 
-			   // Send it
-			   $sent = mail($to, $subject, $message, $header);
-			   if($sent) {
-			   $error_msg =  'Your message has been sent successfully!';
-			   } else {
-			   $error_msg =  'Sorry, your message could not send.';
-			   }
-			}
+			//    // Send it
+			//    $sent = mail('ndusunday@gmail.com', $subject, $message, $header);
+			//    if($sent) {
+			//    $error_msg =  'Your message has been sent successfully!';
+			//    header("location: ndusunday.php")
+			//    } else {
+			//    $error_msg =  'Sorry, your message could not send.';
+			//    }
+			// }
+
+			 echo "Hello test";
 
 		?>
 

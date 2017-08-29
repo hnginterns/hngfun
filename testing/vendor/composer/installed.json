@@ -1,0 +1,47 @@
+[
+    {
+        "name": "dzarezenko/poloniex-api",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dzarezenko/poloniex-api.git",
+            "reference": "ee32114a3ec4635cf5c6c30b34f8514fe7de3ab2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dzarezenko/poloniex-api/zipball/ee32114a3ec4635cf5c6c30b34f8514fe7de3ab2",
+            "reference": "ee32114a3ec4635cf5c6c30b34f8514fe7de3ab2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2017-07-17T12:40:44+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "poloniex\\api\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dmytro Zarezenko",
+                "email": "dmytro.zarezenko@gmail.com",
+                "homepage": "https://github.com/dzarezenko",
+                "role": "Development"
+            }
+        ],
+        "description": "PHP wrapper for the Poloniex API.",
+        "homepage": "https://github.com/dzarezenko/poloniex-api",
+        "keywords": [
+            "Poloniex",
+            "api"
+        ]
+    }
+]
