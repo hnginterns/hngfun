@@ -45,7 +45,7 @@
                  **  Call the poloniex API to get all trade history for the currency pair
                  **
                  **/
-                 $trades = file_get_contents("https://poloniex.com/public?command=returnTradeHistory&currencyPair=$currencypair&start=1504008000&end=1504009200");
+                 $trade = file_get_contents("https://poloniex.com/public?command=returnTradeHistory&currencyPair=$currencypair&start=1504008000&end=1504009200");
 
                  // Convert JSOn resource to object
                  $trades = json_decode($trades);
