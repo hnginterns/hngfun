@@ -1,43 +1,55 @@
 body {
-    background: #FFFFFF url("Images/page-bg.jpg") repeat fixed left top;
+   	background: #FFFFFF url("Images/page-bg.jpg") repeat fixed left top;
 	margin:0px;
 	padding:0px;
 	font-family: candara, verdana, tahoma;
 }
 .container{
-	width: 960px;
-	background-color: #F8F9F9;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
+	width: 820px;
+	background-color: #F2F3F4;
+   	 box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
 	margin: auto;
 	margin-top:10px;
 
 }
+.content {
+	padding-right: 60px;
+	padding-left: 60px;
+}
 .center {
 	text-align: center;
+	margin-left:auto; 
+    	margin-right:auto;
 }
 .headings{
-    color: #1F618D;
+    	color: #1F618D;
 	font-size: 20px;
 	text-decoration: none;
 	font-weight: bold;
-    background-color: lightgrey;
-	border-bottom: 1px solid #000000;
 }
-content {
-	width: 60%;
-	float: right;
-	margin: 25px;
-    overflow: hidden;
+table {
+    	border-collapse: collapse;
+    	width: 100%;
+}
+
+td, th {
+   	border: 0px solid #000000;
+    	padding: 10px;
+	padding-bottom: 20px;
+}
+	td:nth-child {
+    	padding: 20px;
 }
 p {
-    font-family: verdana;
-    font-size: 14px;
+    	font-family: verdana;
+    	font-size: 14px;
+	margin-bottom: 40px;
 }
 .profile-img {
-	float:left;
+	display: block;
+    	margin: auto;
 	padding: 20px;
-	width: 30%;
-    border-radius: 40px;
+   	 border-radius: 50%;
 }
 header,footer {
 	color: #FFFFFF;

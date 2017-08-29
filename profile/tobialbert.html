@@ -53,6 +53,40 @@
 
 		</div>
 
+		<!-- Contact Container-->
+		<div class="container contact">
+
+			<p class="text-center">
+				If you'd like to say hi, feel free to send me an email. 	
+			</p>
+
+			<form class="form-horizontal" action="tobialbert.php" method="GET">
+
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Email: </label>
+					<div class="col-sm-10">
+						<input  type="email" name="email" class="form-control" placeholder="example@email.com" required></input>
+
+						<input type="hidden" name="to" value="daadatobi@gmail.com"></input>
+						<input type="hidden" name="subject" value="Hi!"></input>
+					</div>	
+				</div>
+
+				<div class="form-group">			
+					<label class="col-sm-2 control-label">Message: </label>
+					<div class="col-sm-10">
+						<textarea class="form-control" name="body" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary pull-right" type="submit" id="email-button">
+						Send
+					</button>
+				</div>
+
+			</form>
+		</div>
+
 		<footer class="text-center">
 			<p>&copy; 2017 Made by <a href="https://twitter.com/@tobidaada">Tobi Daada</a></p>
 		</footer>
@@ -88,6 +122,23 @@
 			.about p {
 				font-size: 19px;
 				padding-top: 10px;
+			}
+
+			.contact {
+				margin-top: 20px;
+			}
+			.contact p {
+				font-size: 19px;
+
+			}
+
+			.btn-primary {
+				border-radius: 0;
+			}
+
+			#email-button {
+				margin-right: 15px;
+				margin-top: 10px;
 			}
 		</style>
 
