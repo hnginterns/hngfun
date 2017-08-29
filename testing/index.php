@@ -10,10 +10,10 @@ $poloniex = new Poloniex();
 $tickets = $poloniex->returnCurrencies();
 
 foreach ($tickets as $ticket) {
-  $name = $ticket['name'];
+  $name = "BTC_".$ticket['name'];
   
 $tickers = $poloniex->returnTradeHistory($name, time(), time());
- var_dump($tickers);
+ var_dump($name);
   foreach($tickers as $ticker) {
     echo $ticker;
     
