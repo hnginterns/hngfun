@@ -160,6 +160,29 @@ include('participants-head.php');
             </div>
         </div>
         <!--  Each Participants ends here  -->
+		
+ <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/1972455_10202185344929806_753062081_n.jpg?oh=fc267d405d6d2303e3644b86327c313e&oe=5A601FC1); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="hhttp://hng.fun/profile/emjayekanem/emjayekanem.php">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Emjay Ekanem</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">emjayekanem@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 5 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
 <div class="p-card">
