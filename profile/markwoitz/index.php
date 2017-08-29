@@ -33,8 +33,10 @@
                                     <li><span><a href="https://www.facebook.com/ik.nwakanma"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span></li>
                                     <li><span><a href="https://www.twitter.com/ik_nwakanma"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></span></li>
                                     <li><span><a href="https://github.com/icnwakanma"><i class="fa fa-github-square" aria-hidden="true"></i></a></span></li>
-                                    <li><span><a href="http://bit.ly/2iCLQY4"><i class="fa fa-cloud-download" aria-hidden="true"></i>contact app</a></span></li>
                                 </ul>
+                                <p>
+                                    You can also download my app <span><a href="http://bit.ly/2iCLQY4"><i class="fa fa-cloud-download" aria-hidden="true"></i>here</a>
+                                </p>
                             </div>
                     
                             <h3 class="about-header">HNG TASKS</h3>
