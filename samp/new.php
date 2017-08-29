@@ -44,7 +44,7 @@
                  //Get current time in UNIX timestamp
                  $now = time();
 
-                 //Go 5mins back
+                 //Go 20mins back
                  $then = $now - 1200;
 
                  /**
