@@ -15,21 +15,17 @@
 			$config = include('../config.php');
 			$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 			
-			try{
-				$con = new PDO($dsn, $config['username'], $config['pass']);
-			} catch(PDOException $e){
-				echo "A connection error occurred. Please try again later";
-			}
-
+			$con = new PDO($dsn, $config['username'], $config['pass']);
+	
 			$exe = $con->query('SELECT * FROM password LIMIT 1');
 			$data = $exe->fetch();
 			$password = $data['password'];
 			
-			$link = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-			
+			$body = urlencode($body);
 			$link = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
-
+			
 			header("location: $link");
+			
 			
         }else{
             echo "all fields are required";

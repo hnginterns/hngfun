@@ -28,9 +28,6 @@
 
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -329,10 +326,10 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="ridwan.php" method= "POST" >
+                            <form class="form" id="form1" action="" method= "POST" >
 
                                 <p class="name">
-                                    <input type="email" title="" class="regInput" placeholder="your name  " >
+                                    <input type="subject" title="" class="regInput" placeholder="your subject  " >
                                 </p>
 
                                 <p class="email">
