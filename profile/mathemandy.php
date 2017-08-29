@@ -116,7 +116,7 @@
             <div class="col-1">
                <div >
                   <h2>
-                     <a class="title" href="https://github.com/mathemandy/HNG-Test"><i class="fa fa-github"></i>Android APP</a>
+                     <a class="title" href="https://raw.githubusercontent.com/mathemandy/HngPro/screenshot/profile.apk"><i class="fa fa-github"></i>Android APP</a>
                   </h2>
                </div>
             </div>
