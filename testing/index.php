@@ -8,8 +8,7 @@ $ticket = PoloniexAPIPublic::returnTicker();
 // Dynamic call
 $poloniex = new Poloniex();
 $tickets = $poloniex->returnCurrencies();
-$currencies = $poloniex->returnTradeHistory();
 
-var_dump($currencies);
+//var_dump($currencies);
 
 require 'index.view.php';
