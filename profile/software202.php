@@ -1,20 +1,21 @@
 <?php
-//Send Mail
+	//Send Mail
 error_reporting(-1);
 if(isset($_POST['submit']))
 {
-	 $config = [
+	$config = [
            'dbname' => 'hng',
            'pass' => '@hng.intern1',
            'username' => 'intern',
            'host' => 'localhost'
        ];
-     $result = $con->query('SELECT * FROM password');
+
+       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+       $con = new PDO($dsn, $config['username'], $config['pass']);
+
+       $result = $con->query('SELECT * FROM password');
        $data = $result->fetch();
        $password = $data['password'];
-
-   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-   $con = new PDO($dsn, $config['username'], $config['pass']);
 	$to = strtolower($_POST['to']);
 	$headers = "From: $from ";
 	$subject = ucwords($_POST['subject']);
