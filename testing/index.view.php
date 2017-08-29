@@ -1,5 +1,6 @@
 
 
-<?php 
-var_dump($tickets);
-?>
+<?php foreach($tickets as $ticket) : ?>
+
+<li><?= $ticket['currencyPair'] ?></li>
+<?php endforeach ?>
