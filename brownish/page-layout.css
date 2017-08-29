@@ -30,12 +30,12 @@ body {
 table {
     	border-collapse: collapse;
     	width: 100%;
-	padding-bottom: 20px;
 }
 
 td, th {
    	border: 0px solid #000000;
     	padding: 10px;
+	padding-bottom: 20px;
 }
 	td:nth-child {
     	padding: 20px;
