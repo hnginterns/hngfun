@@ -1,21 +1,24 @@
 <?php
-    if(isset($_POST['subject'])){
-    	$config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-    	];
-    	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    	$con = new PDO($dsn, $config['username'], $config['pass']);
-    	$result = $con->query('SELECT * FROM password');
-    	$data = $result->fetch();
-    	$password = $data['password'];
-    	$subject = $_POST['subject'];
-    	$body = $_POST['message'];
-    	header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=beccadaniels1824@gmail.com");
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'beccadaniels1824@gmail.com';
+    $body = $_POST['body'];
+    if($body == '' || $body == ' ') {
+      $error[] = "It's empty. Send me a message";
     }
-    else{
-    	header("location: beccadaniels.html");
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'No subject?';
     }
-?>
+    if(empty($error)) {
+      $config = include __DIR__ . "/../config.php";
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $url");
+    }
+  }
+ ?>
