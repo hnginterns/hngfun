@@ -4,7 +4,7 @@
     
 
 
-     // if (isset($_GET['submit']))  {
+      if (isset($_GET['submit']))  {
           //Email information here
       $to = "bogadeji@gmail.com";
       $subject = $_GET['subject'];
@@ -17,7 +17,7 @@
       $password = $data['password'];
            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
       
-       // }
+        }
 
  //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=bogadeji@gmail.com";
 
