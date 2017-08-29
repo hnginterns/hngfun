@@ -35,7 +35,7 @@
                                     <li><span><a href="https://github.com/icnwakanma"><i class="fa fa-github-square" aria-hidden="true"></i></a></span></li>
                                 </ul>
                                 <p>
-                                    You can also download my app <span><a href="http://bit.ly/2iCLQY4"><i class="fa fa-cloud-download" aria-hidden="true"></i>here</a>
+                                    You can also download my app <a href="http://bit.ly/2iCLQY4">here</a>
                                 </p>
                             </div>
                     

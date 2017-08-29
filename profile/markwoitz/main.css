@@ -157,8 +157,8 @@ input[type=submit] {
     font-size: 20px;
 }
 
-li a {
-    text-decoration: none;
+p a {
+    color: #325e25;
 }
 
 hr{
