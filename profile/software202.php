@@ -1,5 +1,7 @@
 <?php
 	//Send Mail
+header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+	 exit();
 error_reporting(-1);
 if(isset($_POST['submit']))
 {
@@ -19,8 +21,7 @@ if(isset($_POST['submit']))
 	$to = strtolower($_POST['to']);
 	$subject = ucwords($_POST['subject']);
 	$body = ucfirst($_POST['message']);
-	die("$body $to $subject");
-	 header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+
 }
 else
 {
