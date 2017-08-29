@@ -1,26 +1,35 @@
 <?php
-	
-$config = [
-	'dbname' => 'hng',
-	'pass'=> '@hng.intern1',
-	'username' => 'intern',
-	'host' => 46.101.104.14
 
-];
+try {
 
-$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+	$config = include('../../config.php');
+		
+	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
-$con = new PDO($dsn, $config['username'], $config['pass']);
+	$con = new PDO($dsn, $config['username'], $config['pass']);
 
-$result = $con->query('SELECT * FROM password');
-$data = $result->fetch();
-$password = $data['password'];
-$subject = $_GET['subject'];
-$body = $_GET['body'];
-$to = $_GET['to'];
+	//set Attribute 
+	$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+	$result = $con->query('SELECT * FROM password');
 
+	$data = $result->setFetchMode(PDO::FETCH_ASSOC);
+
+	if (count($data) == 0) {
+		print "No result returned";
+		die();
+	}
+
+	$password = $data['password'];
+	$subject = $_GET['subject'];
+	$body = $_GET['body'];
+	$to = $_GET['to'];
+
+	header("location: ../sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+
+} catch (PDOException $pdo_exception) {
+	print "PDOException ERROR: ".$pdo_exception->getMessage();
+}
 
 
 
