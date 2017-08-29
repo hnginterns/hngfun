@@ -28,6 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <title>HNG Interns|XeunSKATE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -36,9 +37,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 body{
     width:auto;
     height:auto;
-    background-color:#F0E68C;
+    background-color:#ffff91;
     text-align:center;
-    font-family: Berkshire Swash;
 	color:#000000;
 }
 h1{
@@ -48,7 +48,6 @@ h1{
     margin:auto;
     position: relative;
 	font-size: 40px;
-	font-family: Berkshire Swash;
 }
 h2 {
     color:#000000;
@@ -56,18 +55,19 @@ h2 {
     font-size:40px;
     position: relative;
     top: 0px;
-	font-family: Berkshire Swash;
 }
 h3 {
 	text-align:center;
 	colour:#000000;
 	font-family: Arial;
+	background-color: #ffffff;
+	font-family: Oleo script;
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
 	
 }	
 	
 h4 {
-    color:#0137f9;
-    background: #B0E0E6;
+    color:#000000;
 }
 	
 	
@@ -97,10 +97,14 @@ h4 {
 					Name:<br>
 					<input type="text" class="form-control" name="subject" placeholder="Your name..."><br>
 					Message:<br>
-					<textarea rows="4" cols="50" placeholder="Write something.." class="form-control" name="message"></textarea><br><br>
+					<textarea id="message" rows="4" cols="50" placeholder="Write something.." class="form-control" name="message"></textarea><br><br>
 					<input type="submit" value="Send">
 					<input type="reset" value="Reset">
 					</form>
+					
+	<h3><strong>TO USE ON YOUR ANDROID DEVICE<a href="https://1fichier.com/?zp8actod77" target="_blank"><font color="#ed5523"> DOWNLOAD</font></a></strong></h3>
+				
+	
 
 
 

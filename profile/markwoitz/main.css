@@ -157,6 +157,10 @@ input[type=submit] {
     font-size: 20px;
 }
 
+li a {
+    text-decoration: none;
+}
+
 hr{
     border: 1px solid #e3e3e3;
 }
