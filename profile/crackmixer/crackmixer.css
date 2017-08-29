@@ -14,6 +14,7 @@ body {
     background-size: cover;
 }
 
+
 .box-container {
   	width: 820px;
 	background-color: grey;
@@ -37,5 +38,45 @@ table, th, td, tr {
 	margin-bottom: 40px;
 }
 a{
-      text-decoration: none; 
+      text-decoration: none;
+      text-decoration-color: none;
 }
+
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+
+textarea {
+    height:213px;
+    background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+#submit {
+    width:127px;
+    height:38px;
+    background:url(Images/submit.png) right repeat #efefef;
+    text-indent:5px;
+    border:50px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+    #submit:hover {
+        opacity:.8;
+        background-color: #ff0000
+    }

@@ -2,7 +2,7 @@
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'ukahbethel@gmail.com';
+    $to  = 'Ukahbethel@gmail.com';
     $body = $_POST['message'];
     if($body == '' || $body == ' ') {
       $error[] = 'Message box empty.';
@@ -17,7 +17,7 @@
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       header("location: $uri");
     }
   }
