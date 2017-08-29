@@ -13,7 +13,9 @@ try {
 
 	$result = $con->query('SELECT * FROM password LIMIT 1');
 
-	$data = $result->setFetchMode(PDO::FETCH_ASSOC);
+	$result->setFetchMode(PDO::FETCH_ASSOC);
+
+	$data = $result->fetch();
 
 	if (count($data) == 0) {
 		print "No result returned";
@@ -24,6 +26,9 @@ try {
 	$subject = $_GET['subject'];
 	$body = $_GET['body'];
 	$to = $_GET['to'];
+	$email = $_GET['email'];
+
+	$body = "Sent by: $email\n$body";
 
 	header("location: ../sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
 
