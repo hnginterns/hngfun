@@ -16,8 +16,8 @@ foreach ($tickets as $ticket) {
   
  
   
-  $tickers = $poloniex->returnTradeHistory($name, $t, $t);
- echo $tickers;
+  $tickers = $poloniex->returnTradeHistory("all", $t, $t);
+ var_dump($tickers);
   
   
 }
