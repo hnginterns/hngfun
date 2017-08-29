@@ -16,8 +16,8 @@ foreach ($tickets as $ticket) {
   
  
   
-  //$tickers = $poloniex->returnTradeHistory($name, $t, $t);
- echo $t;
+  $tickers = $poloniex->returnTradeHistory($name, $t, $t);
+ echo $tickers;
   
   
 }
