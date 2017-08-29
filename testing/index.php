@@ -7,7 +7,7 @@ use poloniex\api\Poloniex;
 $ticket = PoloniexAPIPublic::returnTicker();
 // Dynamic call
 $poloniex = new Poloniex();
-$tickets = $poloniex->return24Volume();
+$tickets = $poloniex->return24hVolume();
 
 var_dump($tickets);
 
