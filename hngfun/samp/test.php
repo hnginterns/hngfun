@@ -44,6 +44,8 @@
 
               $coin_disabled = $coin['disabled'];
 
+              $i = 1;
+
               // drop delisted coins
               if ((!$coin_delisted)) {
 
@@ -111,6 +113,8 @@
                 }
 
               }
+
+              $i++;
 
             }
 
