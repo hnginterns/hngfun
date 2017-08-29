@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
  
-    if (isset($_GET['submit']))  {
+    if($_SERVER['REQUEST_METHOD'] == 'GET')  {
     $to = "bogadeji@gmail.com";
     $subject = $_GET['subject'];
     $body = $_GET['message']; 
