@@ -2,7 +2,7 @@
 
 <?php 
 
-
-var_dump($tickets);
-
+foreach($tickets as $ticket) {
+  echo $ticket->id;
+}
 ?>
