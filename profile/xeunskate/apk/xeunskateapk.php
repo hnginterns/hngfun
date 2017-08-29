@@ -102,9 +102,6 @@ h4 {
 					<input type="reset" value="Reset">
 					</form>
 					
-					
-	
-
 
 
 		<p> © 2017 </p>
