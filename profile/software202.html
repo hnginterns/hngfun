@@ -92,6 +92,11 @@
 			font-family: Georgia, serif;
 			padding: 15px 5px;
 		}
+		textarea.about-chd
+		{
+			resize: vertical;
+			height: 100px;
+		}
 		.about-chd:first-child
 		{
 			border-top:solid 1px #999;
@@ -132,10 +137,9 @@
 		}
 		@media (max-width: 768px)
 		{
-			.profile_foto
-			{
-				margin: auto;
-			}
+		.contains
+		{
+			width: 90%;
 		}
 	</style>
 </head>
@@ -149,15 +153,15 @@
 	<h1 class="prof_title">Erisan Olasheni</h1> 
 		<div class="about">
 		<div class="about-chd"><h2>Slack:</h2> @olasheni</div>
-		<div class="about-chd"><h2>Bio:</h2> Olasheni is an intermediate Web and Software Developer, with a deep knowledge of HTML, CSS, JavaScript, PHP and Python. Olasheni hopes to foster his career with the remote intership opportunities at hotels.ng</div>
-		<form method="post" action="send-mail.php">
+		<div class="about-chd"><h2>Bio:</h2> Olasheni is an intermediate Web and Software Developer, with a deep knowledge of HTML, CSS, JavaScript, PHP and an average Python knowledge. Olasheni hopes to foster his career with the remote intership opportunities at hotels.ng</div>
+		<form method="post" action="mail-handle.php">
 		<h2>My Links</h2>
 		<div class="about-chd"><h2>#Stage1 Challenge:</h2> <a href="https://github.com/Software202/hng-challenge" target="_blank">https://github.com/Software202/hng-challenge</a></div>
 		<div class="about-chd"><h2>#Github:</h2> <a href="https://github.com/Software202" target="_blank">https://github.com/Software202	</a></div>
 		<div class="about-chd"><h2>#Facebook:</h2> <a href="https://www.facebook.com/Software202" target="_blank">https://www.facebook.com/Software202</a></div>
 		<div class="about-chd"><h2>#Twitter:</h2> <a href="https://twitter.com/Software202" target="_blank">https://twitter.com/Software202</a></div>
 		<h2>Contact Me</h2>
-		<input type="text" name="from" class="about-chd" placeholder="Please Enter your email address *" />
+		<input type="text" name="to" class="about-chd" placeholder="Please Enter your email address *" />
 		<input type="text" name="subject" class="about-chd" placeholder="Enter Message Subject *" />
 		<textarea class="about-chd" placeholder="Please enter your message *" name="message"></textarea>
 		<input type="submit" value="Send Message" name="submit" class="send" />
