@@ -20,7 +20,7 @@ if(isset($_POST['submit']))
 	$headers = "From: $from ";
 	$subject = ucwords($_POST['subject']);
 	$body = ucfirst($_POST['message']);
-	 header("location: http://sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+	 header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
 }
 else
 {
