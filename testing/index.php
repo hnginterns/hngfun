@@ -1,14 +1,12 @@
 <?php
 
 require_once("vendor/autoload.php");
-
+use poloniex\api\PoloniexAPIPublic;
 use poloniex\api\Poloniex;
-
-// Returns ticker based BTC rate value in USD.
-$tickerRate = Poloniex::getTickerBTCRate();
-// Returns estimated (by order book) BTC rate value in USD.
-$estimatedRate = Poloniex::getEstimatedBTCRate();
-
-
-require 'index.view.php';
-
+// Static call
+$ticket = PoloniexAPIPublic::returnTicker();
+var_dump($ticket);
+// Dynamic call
+$poloniex = new Poloniex();
+$ticket = $poloniex->returnTicker();
+var_dump($ticket);
