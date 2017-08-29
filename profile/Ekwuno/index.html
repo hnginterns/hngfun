@@ -3,6 +3,8 @@
 <head>
     <title >Ekwuno Obinna</title>
     <link rel="stylesheet" href="index.css" >
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -18,6 +20,52 @@
         
 </p>
 <p> Click HERE<a href= https://github.com/ekwunoobinna/Obinna.git target="_blank"> Stage 1 repo.</a></p>
+
+<aside>
+    
+</aside>
+</article><br><br>
+
+<!--Modal -->
+<div id="id01" class="modal">
+<span
+onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+<!--Modal Content-->
+<form autocomplete="off" class="modal-content animate" action="contact.php" method="POST">
+    <div class="container">
+        
+        <input type="text" class="input" name="fullname" placeholder="YourName" >                
+       
+        <input type="text" class="input" name="subject" placeholder="Subject*" required>
+        
+        <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
+
+        <button type="submit">Send</button> 
+        <button type="submit"
+        onclick="document.getElementById('id01').style.
+        display='none'" class="cancelbtn">Cancel</button>
+    </div>
+
+</form>
+</div>
+
+<footer>
+
+<!-- Add font awesome icons -->
+<p>
+    <a href="https://web.facebook.com/alex.west.5891" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com/obinnaspeaks/" class="fa fa-instagram"></a>
+    <!--button to open modal contact form-->
+    <button type='submit'
+    onclick="document.getElementById('id01').style.display='block'">Contact Me</button>
+</p>
+
+</footer>
+</body>
+</html>
+
 
 
 
