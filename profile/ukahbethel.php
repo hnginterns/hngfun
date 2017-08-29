@@ -10,7 +10,7 @@
   $subject = $_POST['subject'];
   $body = $_POST['message'];
     
-  header("/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=ukahbethel@gmail.com");
+  header("../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=ukahbethel@gmail.com");
 
   
 ?>
