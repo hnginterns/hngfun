@@ -67,7 +67,6 @@ ul li {
 label {
     display:block;
     margin-top:20px;
-    /*letter-spacing:2px;*/
 }
 
 input, textarea {
@@ -80,8 +79,8 @@ input, textarea {
   font-size:0.9em;
   color:#3a3a3a;
   -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
 }
 
 textarea {
