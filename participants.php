@@ -8348,7 +8348,7 @@ include('participants-head.php');
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://github.com/hnginterns/hngfun/blob/master/profile/victorilozulu/ILOZULU.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-        <div class="p-card-info">
+/        <div class="p-card-info">
             <a href="http://hng.fun/profile/victorilozulu/index.html">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Victor Ilozulu</h3>
@@ -8390,6 +8390,30 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participant Ends here  -->
+	 
+279 	<!--  Each Participant starts here  --> 
+280 <div class="p-card"> 
+281     <div class="v-center"> 
+282         <div class="p-card-photo" style="background-image: url(http://www.soccerclassique.com/wp-content/uploads/2017/06/Emem.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div> 
+283         <div class="p-card-info"> 
+284             <a href="http://hng.fun/profile/Ekwuno"> 
+285                 <!--Profile Link--> 
+286                 <h3 class="p-card-title">Ekwuno Obinna</h3> 
+287                 <!--Profile Name--> 
+288             </a> 
+289             <p class="p-card-description">obinnaspeaks@gmail.com</p> 
+290             <!--Email--> 
+291         </div> 
+292         <div class="p-team"> 
+293             <a href="#"> 
+294                 <h3 class="p-card-title">No Team</h3> 
+295                 <!--Team--> 
+296             </a> 
+297         </div> 
+298     </div> 
+299 </div> 
+300 <!--  Each Participants ends here  --> 
+
 >>>>>>> baa4162dd134b7c1e41d2d985976e6ded76f836f
 
 
