@@ -5,8 +5,10 @@ use poloniex\api\PoloniexAPIPublic;
 use poloniex\api\Poloniex;
 // Static call
 $ticket = PoloniexAPIPublic::returnTicker();
-var_dump($ticket);
 // Dynamic call
 $poloniex = new Poloniex();
-$ticket = $poloniex->returnTicker();
-var_dump($ticket);
+$tickets = $poloniex->returnTicker();
+
+var_dump($tickets);
+
+require 'index.view.php';
