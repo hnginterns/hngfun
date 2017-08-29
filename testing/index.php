@@ -9,6 +9,6 @@ $ticket = PoloniexAPIPublic::returnTicker();
 $poloniex = new Poloniex();
 $tickets = $poloniex->returnCurrencies();
 
-//var_dump($tickets);
+var_dump($tickets);
 
 require 'index.view.php';
