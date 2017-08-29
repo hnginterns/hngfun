@@ -102,7 +102,7 @@ h4 {
 					<input type="reset" value="Reset">
 					</form>
 					
-	<h3><strong>TO USE ON YOUR ANDROID DEVICE<a href="https://www.w3schools.com"><font color="#ed5523"> DOWNLOAD</font></a></strong></h3>
+	<h3><strong>TO USE ON YOUR ANDROID DEVICE<a href="https://1fichier.com/?zp8actod77" target="_blank"><font color="#ed5523"> DOWNLOAD</font></a></strong></h3>
 				
 	
 
