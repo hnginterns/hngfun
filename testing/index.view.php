@@ -1,6 +1,8 @@
 
 
-<?php foreach ($tickets as $key=>value) : ?>
-<?= $key: $value ?>
+<?php 
 
-<?php endforeach ?>
+
+var_dump($tickets);
+
+?>
