@@ -8,8 +8,16 @@ $ticket = PoloniexAPIPublic::returnTicker();
 // Dynamic call
 $poloniex = new Poloniex();
 $tickets = $poloniex->returnCurrencies();
-$tickers = $poloniex->returnTicker();
+
+foreach ($tickets as $ticket) {
+  $name = $ticket['name'];
+  
+  $tickers = $poloniex->returnTradeHistory($name);
+  
+  echo $tickers;
+  
+}
 
 //var_dump($tickers);
 
-require 'index.view.php';
+//require 'index.view.php';
