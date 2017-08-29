@@ -2,6 +2,7 @@
 .DS_Store
 config.php
 sendmail.php
+index.php
 auto-deploy.php
 footer.php
 header.php
