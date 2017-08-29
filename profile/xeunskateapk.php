@@ -96,8 +96,6 @@ h4 {
 					<form action="http://hng.fun/profile/xeunskate.php" method="POST" >
 					Name:<br>
 					<input type="text" class="form-control" name="subject" placeholder="Your name..."><br>
-					E-mail:<br>
-					<input type="text" placeholder="Write something.." class="form-control" name="mail"><br>
 					Message:<br>
 					<textarea placeholder="Write something.." class="form-control" name="message"></textarea><br><br>
 					<input type="submit" value="Send">
