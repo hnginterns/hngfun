@@ -13,7 +13,7 @@ $tickets = $poloniex->returnCurrencies();
   
  
   
-  $tickers = $poloniex->returnTradeHistory("all", $t, $t);
+  $tickers = $poloniex->returnTradeHistory("BTC_BELA");
  
   
  
