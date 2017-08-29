@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $exe = $con->query('SELECT * FROM password LIMIT 1');
         $data = $exe->fetch();
         $password = $data['password'];
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        $uri = " http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
         header("location: $uri");
     }
 }
