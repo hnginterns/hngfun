@@ -103,7 +103,7 @@
               ?>
 
               <div id="one" class="currency">
-                  <div><p>1</p><p class="currency-name"><?=$coin_name;?>  (<?=$currency;?>)</p></div>
+                  <div><p><?=$i;?></p><p class="currency-name"><?=$coin_name;?>  (<?=$currency;?>)</p></div>
                   <p class="bought">Total no of buy: <?=$trade_buy;?></p>
                   <p class="sold">Total no of sell: <?=$trade_sell;?></p>
                   <p class="status"><span class="fa fa-arrow-up"></span> 0.05%</p>
@@ -111,7 +111,7 @@
 
               <div id="mobile-and-tablet">
                   <div id="one" class="currency">
-                    <div><p>1</p><p class="currency-name"><?=$coin_name;?>  (<?=$currency;?>)</p></div>
+                    <div><p><?=$i;?></p><p class="currency-name"><?=$coin_name;?>  (<?=$currency;?>)</p></div>
                     <p class="bought">Total no of buy: <?=$trade_buy;?></p>
                     <p class="sold">Total no of sell: <?=$trade_sell;?></p>
                     <p class="status"><span class="fa fa-arrow-up"></span> 0.05%</p>
