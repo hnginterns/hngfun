@@ -16,7 +16,7 @@
         $password = $data['password'];
         $email = $_POST['email'];
         $subject = $_POST['subject'];
-        $body = $_POST['body'];
+        $body = $_POST['message'];
         header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=olanre12waju@gmail.com");
     }else{
         header("location: AbdulrahmanAbdulkarimAyoola.html");
