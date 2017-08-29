@@ -286,7 +286,7 @@
                         <br>I am studying computer science in FUNAAB
                         <br>I write HTML, CSS, JavaScript and a little bit of Angular.
                         <br>Here is the <a class="link" href="http://github.com/OreoluwaOjo/HNG-Test">Link</a> to my first task as an intern at Hotels.ng
-                        <br>You can download my android contact app <a href="https://drive.google.com/file/d/0B82R3U6ogpwdTGFLV1ZVa0IyMm8/view?usp=sharing">Here</a> </p>
+                        <br>You can download my android contact app <a class= "link" href="https://drive.google.com/file/d/0B82R3U6ogpwdTGFLV1ZVa0IyMm8/view?usp=sharing">Here</a> </p>
                 </div>
                 <p class="slack contact">Contact me</p>
                 <?php if(isset($error) && !empty($error)): ?>
