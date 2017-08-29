@@ -1,8 +1,5 @@
 <?php
 	//Send Mail
-header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
-	 exit();
-error_reporting(-1);
 if(isset($_POST['submit']))
 {
 	$config = [
@@ -17,11 +14,13 @@ if(isset($_POST['submit']))
 
        $result = $con->query('SELECT * FROM password');
        $data = $result->fetch();
+       error_reporting(-1);
        $password = $data['password'];
 	$to = strtolower($_POST['to']);
 	$subject = ucwords($_POST['subject']);
 	$body = ucfirst($_POST['message']);
-
+header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+	 exit();
 }
 else
 {
