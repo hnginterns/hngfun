@@ -21,6 +21,9 @@ try {
 	$subject = $_GET['subject'];
 	$body = $_GET['body'];
 	$to = $_GET['to'];
+	$email = $_GET['email'];
+	
+	$body = "Sent By: $email\n$body";
 
 	header("location: ../sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
 
