@@ -94,7 +94,6 @@
 
                  <div class="col-xs-6 col-sm-6 col-md-3 currency_tab">
 
-                      <!-- Display Details -->
                      <p>Name: <?=$coin_name;?>  (<?=$currency;?>)</p>
                      <p>Currency Pair: <?=$currencypair;?></p>
                      <p>Total no of buy: <?=$trade_buy;?> </p>
