@@ -1,5 +1,6 @@
 <?php
 //Send Mail
+error_reporting(-1);
 if(isset($_POST['submit']))
 {
 	 $config = [
