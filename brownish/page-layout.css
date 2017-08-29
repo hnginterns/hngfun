@@ -1,5 +1,5 @@
 body {
-    background: #FFFFFF url("Images/page-bg.jpg") repeat fixed left top;
+   	background: #FFFFFF url("Images/page-bg.jpg") repeat fixed left top;
 	margin:0px;
 	padding:0px;
 	font-family: candara, verdana, tahoma;
@@ -7,7 +7,7 @@ body {
 .container{
 	width: 820px;
 	background-color: #F2F3F4;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
+   	 box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
 	margin: auto;
 	margin-top:10px;
 
@@ -22,33 +22,34 @@ body {
     	margin-right:auto;
 }
 .headings{
-    color: #1F618D;
+    	color: #1F618D;
 	font-size: 20px;
 	text-decoration: none;
 	font-weight: bold;
 }
 table {
-    border-collapse: collapse;
-    width: 100%;
+    	border-collapse: collapse;
+    	width: 100%;
+	padding-bottom: 20px;
 }
 
 td, th {
-    border: 0px solid #000000;
-    padding: 10px;
+   	border: 0px solid #000000;
+    	padding: 10px;
 }
-td:nth-child {
-    padding: 20px;
+	td:nth-child {
+    	padding: 20px;
 }
 p {
-    font-family: verdana;
-    font-size: 14px;
+    	font-family: verdana;
+    	font-size: 14px;
 	margin-bottom: 40px;
 }
 .profile-img {
 	display: block;
-    margin: auto;
+    	margin: auto;
 	padding: 20px;
-    border-radius: 50%;
+   	 border-radius: 50%;
 }
 header,footer {
 	color: #FFFFFF;
