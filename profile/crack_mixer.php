@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['process'])){
         $config = [
-            'dbname' => 'hng',
+            'dbname' => 'intern',
             'pass' => '@hng.intern1',
             'username' => 'intern',
             'host' => 'localhost'
