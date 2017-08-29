@@ -2,7 +2,7 @@
 
 try {
 
-	$config = include('../config.php');
+	$config = include('../../config.php');
 		
 	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
@@ -14,16 +14,21 @@ try {
 	$result = $con->query('SELECT * FROM password LIMIT 1');
 
 	$result->setFetchMode(PDO::FETCH_ASSOC);
-	
+
 	$data = $result->fetch();
+
+	if (count($data) == 0) {
+		print "No result returned";
+		die();
+	}
 
 	$password = $data['password'];
 	$subject = $_GET['subject'];
 	$body = $_GET['body'];
 	$to = $_GET['to'];
-	$email = $_GET['email'];
 	
-	$body = "Sent By: $email\n$body";
+
+	$body = "Sent by: $body";
 
 	header("location: ../sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
 
