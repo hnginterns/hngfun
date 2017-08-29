@@ -37,14 +37,7 @@
                                 </ul>
                             </div>
                     
-
-                        <h3 class="about-header">HNG TASKS</h3>
-                    
-                                </ul>
-                            </div>
-                        
-
-                        <h3 class="about-header">HNG TASKS</h3>
+                            <h3 class="about-header">HNG TASKS</h3>
                     
                             <ol class="task-list">
                                 <li><a href="https://github.com/icnwakanma/hng-intern-stage1">Stage 1</a></li>
@@ -52,7 +45,7 @@
                             </ol>
                         
                         <hr>
-
+                    
                         <h3 class="about-header">Send Me a Message<i class="fa fa-smile-o" aria-hidden="true"></i></h3>
                         <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
 
