@@ -10,3 +10,5 @@ $poloniex = new Poloniex();
 $tickets = $poloniex->returnTicker();
 
 //var_dump($tickets);
+
+require 'index.view.php';
