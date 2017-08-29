@@ -6,7 +6,7 @@ try {
 		
 	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
-	$con = new PDO($dsn, $config['username'], $config['pass']);
+	$con = new PDO($dsn, 'intern', $config['pass']);
 
 	//set Attribute 
 	$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
