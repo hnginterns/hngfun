@@ -28,6 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <title>HNG Interns|XeunSKATE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -38,7 +39,6 @@ body{
     height:auto;
     background-color:#ffff91;
     text-align:center;
-    font-family: Berkshire Swash;
 	color:#000000;
 }
 h1{
@@ -48,7 +48,6 @@ h1{
     margin:auto;
     position: relative;
 	font-size: 40px;
-	font-family: Berkshire Swash;
 }
 h2 {
     color:#000000;
@@ -56,12 +55,14 @@ h2 {
     font-size:40px;
     position: relative;
     top: 0px;
-	font-family: Berkshire Swash;
 }
 h3 {
 	text-align:center;
 	colour:#000000;
 	font-family: Arial;
+	background-color: #ffffff;
+	font-family: Oleo script;
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
 	
 }	
 	
