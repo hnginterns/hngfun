@@ -1,4 +1,6 @@
 
 
-<?php foreach ($tickets as $ticket) : ?>
-<?= $ticket ?>
+<?php foreach ($tickets as $key=>value) : ?>
+<?= $key: $value ?>
+
+<?php endforeach ?>
