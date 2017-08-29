@@ -2,5 +2,5 @@
 
 <?php foreach($tickets as $ticket) : ?>
 
-<li><?= $ticket['currencyPair'] ?></li>
+<li><?= $ticket['name'] ?></li>
 <?php endforeach ?>
