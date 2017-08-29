@@ -1,3 +1,4 @@
 
 
-<?= $tickerRate ?>
+<?php foreach ($tickets as $ticket) : ?>
+<?= $ticket ?>
