@@ -57,7 +57,7 @@
                </div>
        </header>
     
-    <img id="logo" src="https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400" alt="" width="240" />
+    <img id="logo" src="https://avatars3.githubusercontent.com/u/6292486?v=4&u=e0f8b24571da3e3701296ba2df9e09b09cdb556b&s=400" alt="nse profile avatar" width="240" />
      
      <p>A full stack Python Developer,
        experienced with HTML,CSS and Java script for web design with Python as the backend, and Software Development on all platforms using Python. This profile wont be complete if i fail to mention that am a Christian and Jesus is my everything.
@@ -65,7 +65,6 @@
        <form action="index.php" method="POST" name="Contat-Me">
         <fieldset>
             <legend>Contact Me</legend>
-                <input class="contact-me-input placeholder" name="to" value="etimnseabasi@gmail.com" type="email" required>
                 <input class="contact-me-input placeholder" name="subject" placeholder="Subject" type="text" required>
                 <input class="contact-me-input placeholder" name="email" placeholder="Your email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
                 <textarea class="contact-me-input placeholder" name="message" placeholder="Message" cols="50" rows="5" required></textarea>
