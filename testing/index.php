@@ -12,13 +12,9 @@ $tickets = $poloniex->returnCurrencies();
 foreach ($tickets as $ticket) {
   $name = "BTC_".$ticket['name'];
   
-$tickers = $poloniex->returnTradeHistory($name, time(), time());
+//$tickers = $poloniex->returnTradeHistory($name, time(), time());
  var_dump($name);
-  foreach($tickers as $ticker) {
-    echo $ticker;
-    
-  }
- 
+  
   
 }
 
