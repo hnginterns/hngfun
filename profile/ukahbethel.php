@@ -58,7 +58,7 @@
 	<div class="box">
 	<h3>Leave A Message</h3>
 	
-	<form method="POST" action="" >
+	<form method="POST" action=" " >
 	   <label for="name">Name:</label> <br/>
 	   <input type="text" id="name" name="Name" size="70" required ><br/>
 	   <label for= "email">Email:</label><br/>
