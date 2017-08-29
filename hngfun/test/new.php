@@ -54,10 +54,7 @@
                  $now = time();
 
                  //Go 24hrs back
-                //  $then = $now - 86400;
-
-                 //Go 24hrs back
-                 $then = $now - 1200;
+                 $then = $now - 86400;
 
                  /**
                  **  Call the poloniex API to get all trade history for the currency pair
