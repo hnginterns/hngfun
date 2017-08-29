@@ -2,5 +2,5 @@
 
 <?php foreach($tickets as $ticket => $value ) : ?>
 
-<li><?= $ticket ?> <?= $value ?></li>
+<li><?= $ticket ?> <?= $ticket[$value] ?></li>
 <?php endforeach ?>
