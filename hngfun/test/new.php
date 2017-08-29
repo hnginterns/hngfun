@@ -53,8 +53,8 @@
                  //Get current time in UNIX timestamp
                  $now = time();
 
-                 //Go 20mins back
-                 $then = $now - 1200;
+                 //Go 24hrs back
+                 $then = $now - 86400;
 
                  /**
                  **  Call the poloniex API to get all trade history for the currency pair
