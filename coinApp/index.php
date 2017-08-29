@@ -8,5 +8,3 @@ use poloniex\api\Poloniex;
 $tickerRate = Poloniex::getTickerBTCRate();
 // Returns estimated (by order book) BTC rate value in USD.
 $estimatedRate = Poloniex::getEstimatedBTCRate();
-
-require 'index.view.php';
