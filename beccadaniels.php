@@ -1,3 +1,23 @@
+<?php
+      if (isset($_GET['send']))  {
+          //Email information here
+      $to = "beccadaniels1824@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['message'];    
+     $config = [
+           'dbname' => 'hng',
+           'pass' => '@hng.intern1',
+           'username' => 'intern',
+           'host' => 'localhost'
+       ];
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        }
+?>
 <!DOCTYPE html>
 	<head>
 	    <title>Folashade</title>
@@ -27,7 +47,7 @@
 		</div>
 		<div class="right">
 			<h2>Send a mail</h2>
-			<form action="beccadaniels.php" method="POST">
+			<form action="beccadaniels.php" method="GET">
 				First name <br> <input type="text" name="firstname"> <br>
 				Phone number <br> <input type="text" name="phone"> <br>
 				Subject <br><input type="text" name="subject"> <br>

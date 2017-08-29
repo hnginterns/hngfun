@@ -1,3 +1,20 @@
+<?php
+    $config = include('../../config.php');
+    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = new PDO($dsn, $config['username'],
+        $config['pass']);
+    $result = $con->query('SELECT * FROM password LIMIT 1');
+
+    $data = $result->fetch();
+
+    $password = $data['password'];
+    $subject = $_POST['subject'];
+    $body = $_POST['message'];
+
+    header("location:../../sendmail.php?
+        password=".$password."&subject=".$subject."&body=".$body.
+        "&to=olanre12waju@gmail.com");
+        ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -215,7 +232,7 @@
     </div>
 
     <div class="w3-panel w3-card-4" style="width: 50%; margin-left: auto; margin-right: auto;; text-align: left; padding: 5px; margin-bottom: 15px;">
-        <form style="color: #4285f4;" id="contact_form" action="Abdulrahman.php" method="GET">
+        <form style="color: #4285f4;" id="contact_form" action="#" method="GET">
         <fieldset style="border-color: #4285f4; margin: 1px; border-radius: 4px">
 
         <h2>Contact Me!</h2>

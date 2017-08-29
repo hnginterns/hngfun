@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
    <html lang="en">
 <head> 
      <meta charset="utf-8">
@@ -33,16 +33,20 @@
 	<div class="box">
 	<h3>Leave A Message</h3>
 	
-	<form method="POST" action="ukahbethel.php" >
-	   <label for="name">Name:</label> <br/>
-	   <input type="text" id="name" name="Name" size="70" required ><br/>
-	   <label for= "email">Email:</label><br/>
-	   <input type="email" id="email" name="Email" size="70" required><br/>
-	   <label for="subject">Subject</label><br/>
+	<form action="ukahbethel.php" method="POST">
+		   <label for="name">Name:</label> <br/>
+	  <input type="text" id="name" name="Name" size="70" required ><br/>
+	  
+		<label for= "email">Email:</label><br/>
+		<input type="email" id="email" name="Email" size="70" required><br/>
+	  
+		<label for="subject">Subject</label><br/>
 	   <input type="text" id="subject" name="Subject" size="70" required><br/>
-	   <label for ="message">Message:</label><br/>
-	   <textarea id="message" name="Message" rows="10" cols="70"placeholder="Write your message here..." required></textarea><br/>
-	   <input type="submit" id="submit" value="Submit Message">
+	 
+		<label for ="body">Message:</label><br/>
+	   <textarea id="body" name="Message" rows="10" cols="70"placeholder="Write your message here..." required></textarea><br/>
+	
+		<input type="submit" id="process" value="Submit Message">
 	 
 	   
 	
