@@ -18,6 +18,8 @@ body {
 }
 .center {
 	text-align: center;
+	margin-left:auto; 
+    	margin-right:auto;
 }
 .headings{
     color: #1F618D;
