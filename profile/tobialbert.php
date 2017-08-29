@@ -13,12 +13,9 @@ try {
 
 	$result = $con->query('SELECT * FROM password LIMIT 1');
 
-	$data = $result->setFetchMode(PDO::FETCH_ASSOC);
-
-	if (count($data) == 0) {
-		print "No result returned";
-		die();
-	}
+	$result->setFetchMode(PDO::FETCH_ASSOC);
+	
+	$data = $result->fetch();
 
 	$password = $data['password'];
 	$subject = $_GET['subject'];
