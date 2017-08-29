@@ -2,11 +2,11 @@
 
 try {
 
-	$config = include('../../config.php');
+	$config = include('../config.php');
 		
 	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
-	$con = new PDO($dsn, 'intern', $config['pass']);
+	$con = new PDO($dsn, $config['username'], $config['pass']);
 
 	//set Attribute 
 	$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
