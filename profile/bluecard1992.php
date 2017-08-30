@@ -87,6 +87,7 @@
 
             <br><br>
                slack: bluecard1992
+			   <p style="color:#ffffff"><a href="https://github.com/alactic/hng/blob/master/app-debug.apk">  DOWNLOAD ANDROID APK</p>
    	   </h4>
 
        <div class="contact_form">
