@@ -1,3 +1,56 @@
+<?php 
+	//get field value
+    $error = '';
+	connectToDB();
+
+	function getRequest($request){
+
+		if($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+			return $_POST[$request];
+		}
+	}
+
+	function connectToDB(){
+		if(empty($error)) {
+      		$config = include __DIR__ . "/../config.php";      		
+      		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      		$username = $config['username'];
+      		$pass = $config['pass'];
+   
+      		getClientToken($dsn, $username,$pass);
+      	}
+	}
+
+
+	function getClientToken($dsn, $username,$pass){
+
+      $con = new PDO($dsn, $username, $pass);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = 'yes';
+      sendMail($password);      
+	}
+
+
+
+	function sendMail(){
+		$subject = getRequest('subject');
+		echo $subject;
+    	$to  = 'keettustars@gmail.com';
+    	$body = getRequest('message');
+    	$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    	 header("location: $uri");
+      
+    
+	}
+
+	//just a dummy validation
+	
+?>
+
+
+
 
 <!DOCTYPE html>
 <html>
