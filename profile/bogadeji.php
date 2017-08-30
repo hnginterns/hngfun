@@ -7,8 +7,8 @@
     $body = $_GET['message']; 
     $name = $_GET['name'];
     $email =$_GET['email'];
-
-    if(!empty($name) && !empty($body) && !empty($subject) && !empty($email))  {
+    echo "button is set"
+   
       $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
@@ -17,8 +17,8 @@
       $password = $data['password'];
            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
       
-        }
-      }
+        
+      }else{echo "check your button boga"}
  //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=bogadeji@gmail.com";
 
 
@@ -91,7 +91,7 @@ fieldset {
   resize:none;
 }
 
-button[type="submit"] {
+button {
   cursor:pointer;
   width:100%;
   border:none;
