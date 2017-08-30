@@ -20,7 +20,7 @@
       $con = new PDO($dsn, $username, $pass);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
-      $password = $data['password'];echo $pass;
+      $password = $data['password'];
       sendMail($password);    
 
 	}
@@ -183,7 +183,7 @@
 
 				<div class="contact-container">
 					<p class="muted">* means a required field</p>
-					<form method="POST" action="/" >
+					<form method="POST" action="keettustars.php" >
 						<input type="text" placeholder="Subject *" name="subject" autocomplete="off" required>
 						<textarea rows="" cols="" placeholder="Message *" name="message" required></textarea>
 						<input type="submit" name="" value="Send">
