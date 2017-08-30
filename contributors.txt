@@ -259,3 +259,4 @@
 (253) Abdulkarim Abdulrahman Ayoola,slack: @abdul, github: lanre01
 (254) Emmanuel Jacobson, slack: writeprovidence, github: writeprovidence
 (255) Emem Okon, slack: @currentboy, github: currentboy
+(256) Stephen Ojo, slack: @ripplz, github: Ripplz
