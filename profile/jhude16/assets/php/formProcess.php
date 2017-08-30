@@ -20,15 +20,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         
         $config = include('../../../../config.php');
         
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $result = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $result->fetch();
         echo $config['host'];
-        echo $config['dbname'];
+        echo $data;
         echo 'Initialized!';
         die();
-        
-//         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-//         $con = new PDO($dsn, $config['username'], $config['pass']);
-//         $result = $con->query('SELECT * FROM password LIMIT 1');
-//         $data = $result->fetch();
 //         $to = $to;
 //         $password = $data['password'];
 //         $subject = $subject;
