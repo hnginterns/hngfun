@@ -2,14 +2,14 @@
 <html lang="en">
  <head>
  <title>Miracle Azurunwa's Profile | HNG Interns</title>
- <link href="crackmixer/crackmixer.css" rel="stylesheet" type="text/css"/>
- <link rel="shortcut icon" href="crackmixer/Images/favicon.ico" />
+ <link href="http://res.cloudinary.com/crackmixer/raw/upload/v1504099467/crackmixer_b8tbpr.css" rel="stylesheet" type="text/css"/>
+ <link rel="shortcut icon" href="http://res.cloudinary.com/crackmixer/image/upload/v1504098154/favicon_igwjfd.ico" />
  </head>
  <body>
  <div class="box-container">
  <div style="text-align: center">
  <h2>MY HTML PROFILE PAGE</h2>
- <img class="img-circle" alt="Crackmixer" title="Miracle Azurunwa" src="crackmixer/Images/image.jpg" style=" height:285px; width:214px; border-size:5px">
+ <img class="img-circle" alt="Crackmixer" title="Miracle Azurunwa" src="http://res.cloudinary.com/crackmixer/image/upload/v1504098159/image_ez3a7j.jpg" style=" height:285px; width:214px; border-size:5px">
  </div>
  
  <p>
@@ -19,7 +19,7 @@
     <th>Miracle Azurunwa</th>
   </tr>
   <tr>
-   <th style=" width:200px"><img class="img-circle" alt="slack" src="crackmixer/Images/slack.png" height="35" width="120"></th>
+   <th style=" width:200px"><img class="img-circle" alt="slack" src="http://res.cloudinary.com/crackmixer/image/upload/v1504098155/slack_foydcp.png" height="35" width="120"></th>
     <th>@Crackmixer</th>
   </tr>
   <tr>
@@ -31,29 +31,34 @@
     <th><a href="mailto:miracleazurunwa@gmail.com">miracleazurunwa@gmail.com</a></th>
   </tr>
   <tr>
-    <th style=" width:100px"><img class="img-circle" alt="github" src="crackmixer/Images/github.png" height="46" width="125"></th>
+    <th style=" width:100px"><img class="img-circle" alt="github" src="http://res.cloudinary.com/crackmixer/image/upload/v1504098154/github_wf5xdr.png" height="46" width="125"></th>
     <th><a href="https://github.com/crackmixer"> Crackmixer</a></th>
   </tr>
 </table>
-<p>
-<form method="get" action="crack_mixer.php">
+<div>
+    <section class="contact">
+    
+      <section class="contact-form" >
+        <div class = "card-form">
+          <form  action="crack_mixer.php" method="post" >
     <h2>CONTACT FORM</h2>   
-    <label>Name</label>
-    <input name="name" placeholder="Type Here">
-            
+        
     <label>Email</label>
-    <input name="email" type="email" placeholder="Type Here">
+    <input type="email" id="to" name="to" placeholder="Type Here">
 
     <label>Subject</label>
-    <input name="Subject" type="Subject" placeholder="Type Here">
+    <input type="text" id="subject" name="subject" placeholder="Type Here">
             
     <label>Message</label>
-    <textarea name="body" placeholder="Type Here"></textarea>
+    <textarea id="body" name="body" placeholder="Type Here""></textarea>
             
-    <input id="submit" style="font-weight: bold" name="submit" type="submit" value="Submit" >
+    <input type="submit" name="process" value="Submit">
         
 </form>
-</p>
+     </div>
+      </section>
+   </section>
+  </div>
 </div>
 
  </body>
