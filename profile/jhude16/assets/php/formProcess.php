@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $password = $data['password'];
         $url = "http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$email." ".$message."&to=".$to;
         header("location: ".$url);
+        echo 'success';
       
     } else {
         echo "Incomplete data";
