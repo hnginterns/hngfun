@@ -7420,9 +7420,7 @@ include('participants-head.php');
 
                 </div>
             </div>
-<<<<<<< HEAD
         </div>
-<<<<<<< HEAD
 
         <!--  Each Participants ends here  -->
 
@@ -7565,13 +7563,18 @@ include('participants-head.php');
             </a>
             <p class="p-card-description">dolapob@gmail.com</p>
             <!--Email-->
-=======
-    <!--  Each Participants ends here  -->
-=======
+            </div>
+            <div class="p-team">
+                <a href="#">
+                    <h3 class="p-card-title">  </h3>
+                    <!--Team-->
+                </a>
+            </div>
+        </div>
+    </div>
             <!-- Each participant ends here -->
 
              <!--  Each Participant starts here  -->
->>>>>>> 1e53cc397c0e27a0f6a1a25bfad08e1bc445835e
     <div class="p-card">
         <div class="v-center">
             <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dcvk975c9/image/upload/v1503493619/IMG_20170821_174248_569_wrw4dw.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -7591,7 +7594,6 @@ include('participants-head.php');
                     <!--Team-->
                 </a>
             </div>
->>>>>>> f3987ad20bc28536ce667d35173dae867b174da2
         </div>
     </div>
     <!--  Each Participants ends here  -->
