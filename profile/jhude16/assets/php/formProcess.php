@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $subject = $subject;
         $full_name = $name;
         $body = $body;
-        echo $config;
+        echo 'Config'.$config;
         
 //         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
             
