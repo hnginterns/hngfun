@@ -28,7 +28,7 @@
       $con = new PDO($dsn, $username, $pass);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
-      $password = 'yes';
+      $password = $data['password'];
       sendMail($password);      
 	}
 
@@ -40,7 +40,9 @@
     	$to  = 'keettustars@gmail.com';
     	$body = getRequest('message');
     	$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    	  if($subject !== ''){
     	 header("location: $uri");
+    	  }
       
     
 	}
