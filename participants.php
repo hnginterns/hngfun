@@ -160,7 +160,7 @@ include('participants-head.php');
             </div>
         </div>
         <!--  Each Participants ends here  -->
-		
+
  <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -580,7 +580,7 @@ include('participants-head.php');
                         </div>
                     </div>
 <!--  Each Participants ends here  -->
-		
+
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
@@ -603,7 +603,7 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
-		
+
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
@@ -7392,7 +7392,7 @@ include('participants-head.php');
 	</div>
 	<div class="p-team">
 	    <a href="#">
-		<h3 class="p-card-title"> None </h3>
+		<h3 class="p-card-title"> Null </h3>
 		<!--Team-->
 	    </a>
 	</div>
@@ -8408,29 +8408,29 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participant Ends here  -->
-	 
-<!--  Each Participant starts here  --> 
-<div class="p-card"> 
-     <div class="v-center"> 
-        <div class="p-card-photo" style="background-image: url(http://www.soccerclassique.com/wp-content/uploads/2017/06/Emem.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div> 
-         <div class="p-card-info"> 
-             <a href="http://hng.fun/profile/Ekwuno"> 
-                <!--Profile Link--> 
-                <h3 class="p-card-title">Ekwuno Obinna</h3> 
-                 <!--Profile Name--> 
-             </a> 
-             <p class="p-card-description">obinnaspeaks@gmail.com</p> 
-             <!--Email--> 
-         </div> 
-         <div class="p-team"> 
-             <a href="#"> 
-                 <h3 class="p-card-title">No Team</h3> 
-                 <!--Team--> 
-             </a> 
-         </div> 
-     </div> 
- </div> 
- <!--  Each Participants ends here  --> 
+
+<!--  Each Participant starts here  -->
+<div class="p-card">
+     <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(http://www.soccerclassique.com/wp-content/uploads/2017/06/Emem.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+         <div class="p-card-info">
+             <a href="http://hng.fun/profile/Ekwuno">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Ekwuno Obinna</h3>
+                 <!--Profile Name-->
+             </a>
+             <p class="p-card-description">obinnaspeaks@gmail.com</p>
+             <!--Email-->
+         </div>
+         <div class="p-team">
+             <a href="#">
+                 <h3 class="p-card-title">No Team</h3>
+                 <!--Team-->
+             </a>
+         </div>
+     </div>
+ </div>
+ <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
 <div class="p-card">
@@ -8478,7 +8478,7 @@ include('participants-head.php');
     </div>
 </div>
 <!-- Each participant ends here -->
-		    
+
  <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -8524,7 +8524,7 @@ include('participants-head.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
-		  
+
 <!--  Each Participant starts here  -->
 
 <div class="p-card">
