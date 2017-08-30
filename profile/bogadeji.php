@@ -30,11 +30,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Adeboga Abigail | Profile Page</title>
     <style type="text/css">
+        div{
+          max-width: 100%;
+          height:auto;
+        }
 	      img{
             border-radius:50%; 
             display:block;
             border:1px solid #551A8B;
             margin: auto; 
+            max-width: 100%;
+            height:auto;
              }
 
         .myprofile{
