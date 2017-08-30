@@ -1158,5 +1158,28 @@
                     </a>
                 </div>
             </div>
-        </div>    
+        </div>
+    <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/30381435?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/GS/index.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Gideon Salami</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">GideonSalami@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team - </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+    <!--  Each Participants ends here  -->
+		
 <?php  include "footer.php" ?>

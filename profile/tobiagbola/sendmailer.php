@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 include"conn.php";
 $sql = "SELECT * FROM password"; // Query to pull record for the current ID
 $result = $conn->query($sql); // runs query and stores values 

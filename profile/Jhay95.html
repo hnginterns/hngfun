@@ -84,6 +84,13 @@
             font:bold 14px Arial, Helvetica, sans-serif;
             border-bottom:1px solid #efece7;
         }
+		
+		legend {
+		    color:#000000;
+			font:bold 14px Arial, Helvetica, sans-serif;
+			
+		}
+		       
         .box {
             background:#F0E68C;
             border:1px solid #f0e9eb;
@@ -107,7 +114,8 @@
 <div id="wrapper">
     
     <div id="main-content">
-        <div id="left-column">
+        
+		<div id="left-column">
             <div id="logo">
                 WELCOME TO ANWUNAH SOBECHUKWU'S PROFILE
             </div>
@@ -130,9 +138,9 @@
                         <li><a href="https://www.linkedin.com/in/sobechukwu-anwunah-398a7ab8/" target="_blank">LinkedIn</a></li>
                     </ul>
             </div>
-			
         </div>
-        <div id="right-column">
+        
+		<div id="right-column">
             <div id="main-image"><img src="http://res.cloudinary.com/jhay95/image/upload/a_0/v1503738181/sobe.jpg" width="230" height="250" alt="avatar"/></div>
             <div class="box">
                 <h3>About Me</h3>
@@ -146,21 +154,26 @@
                 <p class="box"><a href="https://github.com/Jhay95" target="_blank">Stage1</a></p>
             </div>
         </div>
+		
 		<div class="box">
-	    <h4>CONTACT ME</h4>
-		<p> For more information
-	        <form action="#" method="POST">
-		        <input name="name" type="text" placeholder="Name" size="30" required><br>
-				</br>
-			    <input type="text" placeholder="Subject" size="30" required><br>
-				</br>
-				<input type="text" placeholder="Email Address" size="30" required><br>
-				</br>
-			    <textarea name="message" placeholder="Type your message here" rows="7" cols="30" required></textarea><br>
-				</br>
-                <input type="submit" value="Send"/>
+			<form action="Jhay95.php" method="GET">
+		            <fieldset>
+                    <legend>For more information</legend>
+			            <label>To :   </label><input name="to" id="to"  value="missjay2805@gmail.com" required><br>
+		                First name:<br>
+                        <input type="text" name="firstname" size="30"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" size="30"><br><br>
+				        Subject:<br>
+				        <textarea name="message" placeholder="Type your message here" rows="7" cols="32" size="100" required></textarea><br>
+				        </br>
+						<label>From : <br>
+						</label><input type="text" placeholder="Email Address" size="30" required><br>
+                        <input type="submit" value="Send"/>
+			        </fieldset>
 		    </form>
 		</div>
+		
     </div>
 	
     

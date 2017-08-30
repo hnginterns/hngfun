@@ -1,4 +1,4 @@
-﻿hp
+﻿<?php
 $pageTitle = "Participants";
 include('header.php');
 include('participants-head.php');
@@ -8438,7 +8438,51 @@ include('participants-head.php');
 </div>
 <!--  Each Participant Ends here  -->
 
->>>>>>> baa4162dd134b7c1e41d2d985976e6ded76f836f
+<!--  Each Participant starts here  -->
+<div class="p-card">
 
+    <div class="v-center">
+    <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/13476980?v=4); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+    <div class="p-card-info">
+        <a href="http://hng.fun/profile/dreemer6/dreemer6.html">
+        <!--Profile Link-->
+        <h3 class="p-card-title">Uche Madu</h3>
+        <!--Profile Name-->
+        </a>
+        <p class="p-card-description">dreemer6@yahoo.com</p>
+        <!--Email-->
+    </div>
+    <div class="p-team">
+        <a href="#">
+        <h3 class="p-card-title"></h3>
+        <!--Team-->
+        </a>
+    </div>
+    </div>
+</div>
+<!--  Each Participant Ends here  -->
+
+<!-- Each participant starts here -->
+  <div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dmyow6n0v/image/upload/v1503540677/IMG_20160424_112337_edit_vz0vwz.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/frankly034.php">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Franklyn Ugege</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">franklynugege@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"></h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Each participant ends here -->
 
 <?php include "footer.php"?>
