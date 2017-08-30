@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
  
-    if($_SERVER['REQUEST_METHOD'] == 'POST')  {
+    if (isset($_GET['send']))  {
     $to = "bogadeji@gmail.com";
     $subject = $_GET['subject'];
     $body = $_GET['message']; 
@@ -162,7 +162,7 @@ button[type="submit"] {
     </fieldset>
 
     <fieldset>
-      <button name="submit" type="submit"  >Submit</button>
+      <input name="submit" type="button" value ="submit" >
     </fieldset>
                             
                         </form>
