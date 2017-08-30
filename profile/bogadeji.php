@@ -58,8 +58,8 @@
             color:white;
             margin:0 auto 0 auto;
             width:80%;
-            padding: 20px;
-            pa
+            padding: 20px 20px 0 20px;
+            
              }
 
         form{
