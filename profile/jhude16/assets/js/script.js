@@ -65,7 +65,7 @@ form.addEventListener("submit", (e) => {
             console.log('Res', res);
         }
     };
-    xhr.open('POST', url);
+    xhr.open('GET', url);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhr.send();
 
