@@ -7382,7 +7382,7 @@ include('participants-head.php');
 	<div class="v-center">
 	<div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/13476980?v=4); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
 	<div class="p-card-info">
-	    <a href="http://hng.fun/brownish/index.html">
+	    <a href="http://hng.fun/profile/brownish/index.html">
 		<!--Profile Link-->
 		<h3 class="p-card-title">Ekebo Brown Etuk</h3>
 		<!--Profile Name-->
