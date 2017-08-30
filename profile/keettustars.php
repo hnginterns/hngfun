@@ -21,7 +21,7 @@
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      sendMail($pass);
+      sendMail($password);
 	         
 	}
 
