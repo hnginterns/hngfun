@@ -138,7 +138,7 @@ footer{
 			             </p>
 		             </div>
 			         <div class='b '>
-	                    <form action="../../sendmail.php" method="GET">
+	                    <form action="../../sendmail.php" method="POST">
 <table width="450px">
 <tr>
  <!-- <td valign="top">
