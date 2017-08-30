@@ -245,3 +245,4 @@
 (239) Franklyn Ugege, Slack: @franklynugege, Github: frankly034
 (240) Temitope Dada, Slack: @jotdada, GitHub: iYoung90
 (241) Ogundiran Ayobami, slack: @keettustars, Github: codingnninja
+(242) William Anazodo (slack : @williamzodos, Github: williamzodos)
