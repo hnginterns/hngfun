@@ -243,4 +243,5 @@
 (237) Junior Gantin, slack: @nioperas06, Github: nioperas06
 (238) Rowena Bernard, Slack: @rowenagold, Github: rowenagold
 (239) Franklyn Ugege, Slack: @franklynugege, Github: frankly034
-(240) Ogundiran Ayobami, slack: @keettustars, Github: codingnninja
+(240) Temitope Dada, Slack: @jotdada, GitHub: iYoung90
+(241) Ogundiran Ayobami, slack: @keettustars, Github: codingnninja
