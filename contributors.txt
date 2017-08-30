@@ -252,4 +252,5 @@
 (246) Iwaloye Olawale  (Slack: @iwa_temmy,  github: @iwa-temmy)
 (247) Michael Chukwu (Slack: michaelchukwu, github: @michaelchukwu)
 (248)Jude Ukana (Slack:@Judeukana, Github:JudeUk)
-(249) Peter Johnson, peterjohnson, Rhasu
+(249) Peter Johnson (Slack: peterjohnson, github: @Rhasu
+
