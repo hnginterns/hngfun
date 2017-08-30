@@ -40,9 +40,7 @@ form.addEventListener("submit", (e) => {
         setTimeout(() => {
             submit.removeAttribute('disabled');
             submit.innerHTML = `Send`;
-            document.getElementById("name").value = '';
-            document.getElementById("email").value = '';
-            document.getElementById("message").value = '';
+            document.getElementById("contactForm").reset();
         }, 10000)
     };
     xhr.onerror = function() {
