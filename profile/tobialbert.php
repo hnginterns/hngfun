@@ -2,7 +2,7 @@
 
 try {
 
-	$config = include('../../config.php');
+	$config = include('../config.php');
 		
 	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
@@ -11,9 +11,11 @@ try {
 	//set Attribute 
 	$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	$result = $con->query('SELECT * FROM password');
+	$result = $con->query('SELECT * FROM password LIMIT 1');
 
-	$data = $result->setFetchMode(PDO::FETCH_ASSOC);
+	$result->setFetchMode(PDO::FETCH_ASSOC);
+
+	$data = $result->fetch();
 
 	if (count($data) == 0) {
 		print "No result returned";
