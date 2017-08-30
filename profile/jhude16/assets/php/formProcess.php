@@ -27,8 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $result = $con->query('SELECT * FROM password LIMIT 1');
         $data = $result->fetch();
         $password = $data['password'];
-//         $url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=judehawkson@yahoo.com";
-        $url = "http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$name." ".$message."&to=".$to;
+        $url = "http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$email." ".$message."&to=".$to;
         header("location: ".$url);
       
     } else {
