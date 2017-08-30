@@ -162,7 +162,7 @@ button[type="submit"] {
     </fieldset>
 
     <fieldset>
-      <input name="submit" type="submit"  >Submit</input>
+      <button name="submit" type="submit"  >Submit</button>
     </fieldset>
                             
                         </form>
