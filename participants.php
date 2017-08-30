@@ -7416,8 +7416,6 @@ include('participants-head.php');
                             <h3 class="p-card-title"> Team 3 </h3>
                             <!--Team-->
                         </a>
-                    </div>
-
                 </div>
             </div>
         </div>
