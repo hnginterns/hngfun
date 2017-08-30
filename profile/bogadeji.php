@@ -5,9 +5,8 @@
     $to = "bogadeji@gmail.com";
     $subject = $_GET['subject'];
     $name = $_GET['name'];
-    $body = $name .$_GET['message']; 
+    $body = $name .'<br>'.$email . '<br>'.$_GET['message']; 
     $email =$_GET['email'];
-    $headers = " From: " .$email;
     
    
     $config = include(dirname(dirname(__FILE__)).'/config.php');
@@ -16,7 +15,7 @@
     $exe = $con->query('SELECT * FROM password LIMIT 1');
     $data = $exe->fetch();
     $password = $data['password'];
-    header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to&email=$email&name=$name");
+    header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to);
       
     }
 ?>
