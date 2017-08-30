@@ -35,6 +35,9 @@ form{
     background-color: #000000;
     padding: 20px;
 }
+label.form-header {
+	font: bold 15px candara, verdana, tahoma;color:#FFFFFF;;
+}
 input[type=text], input[type=email], select {
     width: 100%;
     padding: 12px 20px;
