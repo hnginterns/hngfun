@@ -25,25 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $result = $con->query('SELECT * FROM password LIMIT 1');
         $data = $result->fetch();
         $password = $data['password'];
-        echo $config['host'];
-        echo $password;
         $url = "http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to;
-        echo $url;
-        die();
-//         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
-            
-        // $headers = "MIME-Version: 1.0"."\r\n";
-        // $headers .= "Content-Type:text/html;charset=UTF-8"."\r\n";
-        // $headers .= "From: webmaster@example.com" . "\r\n" .
-        //     'Reply-To: '. $email . "\r\n";
-
-        
-        // if (mail($to, $subject, $body, $headers)) {
-        //     echo 'success';
-        // } else {
-        //     echo 'error';
-        // }
-        
+        echo 'success';
+        header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+      
     } else {
         echo "Incomplete data";
     }
