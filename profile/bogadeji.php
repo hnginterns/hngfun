@@ -60,7 +60,7 @@
             margin:0 auto 0 auto;
             width:80%;
             padding: 20px 20px 0 20px;
-            
+            background-color: #aaa;
              }
 
         form{
