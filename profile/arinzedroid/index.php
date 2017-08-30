@@ -28,7 +28,7 @@
     <div class="container">
         <div class="profile">
             <div class="profile--profile-pic">
-                <img src="./dp1.jpg" alt="image of arinze">
+                <img src="https://www.facebook.com/photo.php?fbid=1368509249914337&set=t.100002658249968&type=3&theater" alt="image of arinze">
             </div>
             <div class="profile--info">
                 <ul>
