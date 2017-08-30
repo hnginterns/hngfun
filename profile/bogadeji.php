@@ -73,7 +73,7 @@
             background-color: #aaa;
             text-align: center;
             align-items: center;
-            margin: auto;
+            margin:  0 auto auto auto;
             display: block;
             padding: 20px 0 50px 0;
             width:100%;
