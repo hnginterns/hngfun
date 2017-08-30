@@ -29,8 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         echo $config['host'];
         echo $password;
         echo 'Initialized!';
-        echo url;
         url = "location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to;
+        echo url;
         die();
 //         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
             
