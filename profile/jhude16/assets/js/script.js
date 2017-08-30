@@ -67,8 +67,8 @@ form.addEventListener("submit", (e) => {
     
     xhr.open('GET', url, true);
     //Send the proper header information along with the request
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xmlhttp.onload = function () {
+//     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.onload = function () {
       submit.innerHTML = `<i class="fa fa-check fa-fw"></i> Sent`
         setTimeout(() => {
             submit.removeAttribute('disabled');
