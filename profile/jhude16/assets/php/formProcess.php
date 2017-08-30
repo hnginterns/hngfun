@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $result = $con->query('SELECT * FROM password LIMIT 1');
         $data = $result->fetch();
         echo $config['host'];
-        echo $data;
+        echo $data['password'];
         echo 'Initialized!';
         die();
 //         $to = $to;
