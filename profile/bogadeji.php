@@ -5,9 +5,8 @@
     $to = "bogadeji@gmail.com";
     $subject = $_GET['subject'];
     $name = $_GET['name'];
-    $body = $name .$_GET['message']; 
+    $body = $name .'<br>'.$email . '<br>'.$_GET['message']; 
     $email =$_GET['email'];
-    $headers = " From: " .$email;
     
    
     $config = include(dirname(dirname(__FILE__)).'/config.php');
