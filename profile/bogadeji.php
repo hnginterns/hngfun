@@ -150,7 +150,7 @@
     <div class = "myprofile">
       	
       	
-      	<img src="../images/bogadeji.jpg" onload="this.width/=(2);this.onload=null;"">
+      	<img src="../images/bogadeji.jpg" >
       	<div id ="profile"><p>Beginner web developer with a desire to see the things I have learnt make sense and become something tangible. I love to learn and work on challenges even when I shed tears, get headaches and almost quit way too many times. Slack name: @bogadeji. Check out my first task <a href = "https://github.com/bogadeji/hnginterns-stage1" target ="_blank">here</a></p><hr>
       	<p id="name">ADEBOGA ABIGAIL</p></div><hr>
 
