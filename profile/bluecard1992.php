@@ -42,7 +42,7 @@
 			float: right;
 			width: 50%;
 			text-align: center;
-			color:#F4EEEE;
+			color:#ffffff;
 		}
 
 		.myName{
@@ -61,6 +61,9 @@
             width: 300px;
             height: 30px;
         }
+		h3{
+			color:#fff
+		}
 	</style>
 </head>
 <body>
@@ -87,11 +90,12 @@
 
             <br><br>
                slack: bluecard1992
+			   <h5><a href="https://github.com/alactic/hng/blob/master/app-debug.apk" style="color:red">  DOWNLOAD ANDROID APK</a></h5>
    	   </h4>
 
        <div class="contact_form">
            <hr>
-           <h1 style="color:firebrick">SEND YOUR EMAIL</h1>
+           <h1>SEND YOUR EMAIL</h1>
            <form action="bluecard1992.php" method="post">
                <h3>SEND TO:<br> <input type="email" name="send_to" placeholder="RECIEVER'S EMAIL" class="input" required></h3>
 
