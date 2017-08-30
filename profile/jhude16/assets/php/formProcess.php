@@ -24,12 +24,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $result = $con->query('SELECT * FROM password LIMIT 1');
         $data = $result->fetch();
-        
         $password = $data['password'];
         echo $config['host'];
         echo $password;
-        echo 'Initialized!';
-        url = "location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to;
+        url = "http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to;
         echo url;
         die();
 //         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
