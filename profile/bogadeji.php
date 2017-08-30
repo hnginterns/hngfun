@@ -1,23 +1,24 @@
 <?php
 // define variables and set to empty values
  
-    
+    if (isset($_GET['send']))  {
+    $to = "bogadeji@gmail.com";
+    $subject = $_GET['subject'];
+    $body = $_GET['message']; 
+    $name = $_GET['name'];
+    $email =$_GET['email'];
 
-
-      if (isset($_GET['submit']))  {
-          //Email information here
-      $to = "bogadeji@gmail.com";
-      $subject = $_GET['subject'];
-      $body = $_GET['message'];    
+    if(!empty($name) && !empty($body) && !empty($subject) && !empty($email))  {
       $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+           header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+      
         }
-
+      }
  //$url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password&to=bogadeji@gmail.com";
 
 
@@ -161,7 +162,7 @@ button[type="submit"] {
     </fieldset>
 
     <fieldset>
-      <button name="submit" type="submit"  >Submit</button>
+      <input name="submit" type="button" value ="submit" >
     </fieldset>
                             
                         </form>

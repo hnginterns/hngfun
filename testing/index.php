@@ -9,6 +9,15 @@ $ticket = PoloniexAPIPublic::returnTicker();
 $poloniex = new Poloniex();
 $tickets = $poloniex->returnCurrencies();
 
-var_dump($tickets);
 
-require 'index.view.php';
+  
+ 
+  
+  $tickers = $poloniex->returnTradeHistory("BTC_BELA", 1504042566, 1504042566);
+ 
+  
+ 
+
+var_dump($tickers);
+
+//require 'index.view.php';
