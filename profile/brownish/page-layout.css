@@ -32,10 +32,13 @@ td.content {
 }
 form{
     border-radius: 10px;
-    background-color: #f2f2f2;
+    background-color: #000000;
     padding: 20px;
 }
-input[type=text], select {
+label.form-header {
+	font: bold 15px candara, verdana, tahoma;color:#FFFFFF;;
+}
+input[type=text], input[type=email], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -62,13 +65,27 @@ input[type=submit] {
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 0px;
+    border-radius: 30px;
     cursor: pointer;
 }
 
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+::-webkit-input-placeholder {
+	font-style:italic;
+}
+:-moz-placeholder { /* older Firefox*/
+	font-style:italic;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+	font-style:italic;
+} 
+:-ms-input-placeholder { 
+	font-style:italic;
+}
+
 .center {
 	text-align: center;
 }
