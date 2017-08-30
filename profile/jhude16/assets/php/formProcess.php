@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <h4>Body: </h4><p>'.$message.'</p>
                 ';
         
-        $config = include('../config.php');
+        $config = include('../../../../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $result = $con->query('SELECT * FROM password LIMIT 1');
@@ -27,8 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $subject = $subject;
         $full_name = $name;
         $body = $body;
-        
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+        echo $config;
+//         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
             
         // $headers = "MIME-Version: 1.0"."\r\n";
         // $headers .= "Content-Type:text/html;charset=UTF-8"."\r\n";
