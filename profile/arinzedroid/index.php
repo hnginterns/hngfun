@@ -28,7 +28,7 @@
     <div class="container">
         <div class="profile">
             <div class="profile--profile-pic">
-                <img src=".dp1.jpg" alt="image of arinze">
+                <img src="./dp1.jpg" alt="image of arinze">
             </div>
             <div class="profile--info">
                 <ul>
