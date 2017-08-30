@@ -27,9 +27,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $subject = $subject;
         $full_name = $name;
         $body = $body;
-        echo $config;
+        echo $config['host'];
+        echo $config['dbname'];
         
-//         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+        url = "location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to;
+        echo url;
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
             
         // $headers = "MIME-Version: 1.0"."\r\n";
         // $headers .= "Content-Type:text/html;charset=UTF-8"."\r\n";
@@ -48,5 +51,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     }
 
 } else {
-    echo('Null');
+    echo('what are you trying to do?');
 }
