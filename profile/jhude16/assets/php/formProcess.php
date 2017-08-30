@@ -1,14 +1,15 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    echo 'Initialized!';
-    die();
+    
     $name = htmlspecialchars($_GET['name']);
     $email = htmlspecialchars($_GET['email']);
     $message = htmlspecialchars($_GET['message']);
-
-    if (!empty($name) && !empty($email) && !empty($message)) {
     
+    
+    if (!empty($name) && !empty($email) && !empty($message)) {
+    echo 'Initialized!';
+    die();
         $to      = 'judehawkson@yahoo.com';
         $subject = 'Contact Request From ' . $name;
         $body = '
