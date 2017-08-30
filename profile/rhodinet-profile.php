@@ -75,7 +75,7 @@ button:hover, a:hover {
         <p><h10><span class="fa fa-github">
         </span></i> <a target="_blank" href="https://github.com/rhodinet/" class="repo"> @rhodinet</a></h10></p>
         <p><h10><span class="fa fa-facebook">
-        </span></i> <a target="_blank" href="https://facebook.com/rhodinet2/" class="repo"> @rhodinet2</a></h10></p>
+        </span></i> <a target="_blank" href="https://facebook.com/rhodinet/" class="repo"> @rhodinet</a></h10></p>
         </span></i> <a target="_blank" href="https://globalwealthtrade.com/rhodinet/opportunity.html" class="repo">GWT COMPANY</a></h10></p>
   
   </div>

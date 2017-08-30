@@ -1,3 +1,50 @@
+<?php 
+	//get field value
+    $error = '';
+	connectToDB();
+
+	function connectToDB(){
+		if(empty($error)) {
+      		$config = include __DIR__ . "/../config.php";      		
+      		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      		$username = $config['username'];
+      		$pass = $config['pass'];
+   
+      		getClientToken($dsn, $username,$pass);
+      	}
+	}
+
+
+	function getClientToken($dsn, $username,$pass){
+
+      $con = new PDO($dsn, $username, $pass);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];echo $pass;
+      sendMail($password);    
+
+	}
+
+
+
+	function sendMail(){
+		$subject = $_POST['subject']);
+    	$to  = 'keettustars@gmail.com';
+    	$body = $_POST['message'];
+    	$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    	  if($subject == ''){
+    	 	return ;
+    	  }
+      
+    	  header("location: $uri");
+	}
+
+	//just a dummy validation
+	
+?>
+
+
+
 
 <!DOCTYPE html>
 <html>
