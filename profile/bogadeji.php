@@ -31,9 +31,9 @@
     <title>Adeboga Abigail | Profile Page</title>
     <style type="text/css">
         div{
-          max-width: 100%;
-          height:auto;
-        }
+            max-width: 100%;
+            height:auto;
+              }
 	      img{
             border-radius:50%; 
             display:block;
@@ -56,9 +56,10 @@
             font-family:  Serif;
             font-style: oblique;
             color:white;
-            margin:auto;
+            margin:0 auto 0 auto;
             width:80%;
             padding: 20px;
+            pa
              }
 
         form{
@@ -74,7 +75,7 @@
             align-items: center;
             margin: auto;
             display: block;
-            padding: 0 0 50px 0;
+            padding: 20px 0 50px 0;
             width:100%;
              }
 
