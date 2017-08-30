@@ -40,7 +40,7 @@ form.addEventListener("submit", (e) => {
         setTimeout(() => {
             submit.removeAttribute('disabled');
             submit.innerHTML = `Send`;
-        }, 3000)
+        }, 10000)
     };
     xhr.onerror = function() {
         submit.innerHTML = `<i class="fa fa-times fa-fw"></i> Sent`
