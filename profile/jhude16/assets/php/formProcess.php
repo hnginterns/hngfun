@@ -8,8 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     
     
     if (!empty($name) && !empty($email) && !empty($message)) {
-    echo 'Initialized!';
-    die();
+    
         $to      = 'judehawkson@yahoo.com';
         $subject = 'Contact Request From ' . $name;
         $body = '
@@ -19,7 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <h4>Body: </h4><p>'.$message.'</p>
                 ';
         
-//         $config = include('../../../../config.php');
+        $config = include('../../../../config.php');
+        echo 'Initialized!';
+        die();
 //         echo 'View';
 //         echo $config['host'];
 //         echo $config['dbname'];
