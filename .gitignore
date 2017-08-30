@@ -7,3 +7,5 @@ auto-deploy.php
 footer.php
 header.php
 PHPMailerAutoload.php
+/profile
+/images
