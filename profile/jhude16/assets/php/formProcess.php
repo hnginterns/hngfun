@@ -1,2 +1,5 @@
+<?php
 echo 'Welcome';
 die();
+
+?>
