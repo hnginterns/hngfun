@@ -83,7 +83,7 @@
 (82) Orobosa Cornelius (Slack: Orobosa, Github: OrobosaV)
 (83) Essien Saviour Aniefiok (Slack: @essien, Github: iamessien)
 (84) Israel Akpan Github:tagximum slack:@israelakpan296
-(85) Adekanmbi Yosola, mo.yosiwealth, Yosiwealth
+(85) Miracle Azurunwa (Slack: @crackmixer, github: @crackmixer)
 (86) Eniwoke Cornelius (Slack: eniwokep, Github: cornzyblack)
 (87) Orobosa Cornelius (Slack: Orobosa, Github: OrobosaV)
 (88) Essien Saviour Aniefiok (Slack: @essien, Github: iamessien
@@ -241,3 +241,16 @@
 (235) Bennieville Onojighofia Akpobasa, slack: @bennieville, Github: bennieville
 (236) Mfreke-mfon Akai, @akai, @successakai
 (237) Junior Gantin, slack: @nioperas06, Github: nioperas06
+(238) Rowena Bernard, Slack: @rowenagold, Github: rowenagold
+(239) Franklyn Ugege, Slack: @franklynugege, Github: frankly034
+(240) Temitope Dada, Slack: @jotdada, GitHub: iYoung90
+(241) Ogundiran Ayobami, slack: @keettustars, Github: codingnninja
+(242) William Anazodo (slack : @williamzodos, Github: williamzodos)
+(243) (Utibe Okon) (Slack: @yutee_okon , github: @yutee)
+(244) Joshua Israel (slack: @nattyjay2,  github:@Israelhoncho)
+(245) Miracle Azurunwa (Slack: @crackmixer, github: @crackmixer)
+(246) Iwaloye Olawale  (Slack: @iwa_temmy,  github: @iwa-temmy)
+(247) Michael Chukwu (Slack: michaelchukwu, github: @michaelchukwu)
+(248)Jude Ukana (Slack:@Judeukana, Github:JudeUk)
+(249) Peter Johnson (Slack: peterjohnson, github: @Rhasu)
+
