@@ -48,7 +48,7 @@
             background-color: #aaa;
             height:100%;
             padding-top: 70px;
-            padding-bottom: 30px;
+            padding-bottom: 50px;
              }
 
         #profile{
