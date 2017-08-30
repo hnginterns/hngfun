@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfect Gentleman</title>
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!--
+        Used a bit of CSS Grid.. Might not display wel on some browsers
+      -->
+    <div class="contact-btn" id="contactBtn">
+        <button>
+            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+            <!-- <i class="fa fa-envelope-square" aria-hidden="true"></i> -->
+            <!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+        </button>
+    </div>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="img-wrapper">
+                <img src="assets/images/pg.jpeg" alt="Perfect Gentleman's Image">
+            </div>
+            <section>
+                <div class="about">
+                    <div class="title">
+                        <h1>About Me</h1>
+                    </div>
+                    <hr style="width: 60px;text-align: center;display:inline-block;margin-bottom: 1em;">
+                    <p>
+                        Je m'appelle Jude Francis<br>
+                        <i>skills:</i><br> web developer (frontend, backend) & <i>more</i><br>
+                        <!-- Graphic designer,
+                        Sound producer<br> -->
+                        <i>languages:</i><br> HTML, Sass, Javascript, PHP, C#
+                    </p>
+                </div>
+                <div class="contact">
+                    <div class="title">
+                        <h1>Get in Touch</h1>
+                    </div>
+                    <hr style="width: 60px;text-align: center;display:inline-block;margin-bottom: 1em;">
+                    <p>
+                        <span><i class="fa fa-facebook-f" aria-hidden="true"></i> <a href="http://facebook.com/p.gentlman">p.gentlman</a></span>
+                        <br>
+                        <span><i class="fa fa-twitter" aria-hidden="true"></i> <a href="http://twitter.com/gen2man_">gen2man_</a></span>
+                        <br>
+                        <span><i class="fa fa-github" aria-hidden="true"></i> <a href="http://github.com/jhude16">jhude16</a></span>
+                        <br>
+                        <span><i class="fa fa-slack" aria-hidden="true"></i>@jhude16</span>
+                    </p>
+                </div>
+                <!-- <button class="test"> -->
+                    <!-- <i class="fa fa-archive" aria-hidden="true"></i> -->
+                    <!-- <span>Get Started</span> -->
+                <!-- </button> -->
+                <!-- <h1>Francis Jude</h1>  -->
+            </section>
+        </div>
+    </div>
+    <div class="modal-wrapper">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Send me a message</h2>
+            </div>
+            <div class="modal-body">
+                <form id="contactForm">
+                    
+                    <input type="text" id="name" placeholder="Full name" required>
+                    <input type="text" id="email" placeholder="Email address" required>
+                    <textarea type="text" id="message" placeholder="Message ..." required></textarea>
+                    <div class="btn-wrapper">
+                        <button type="submit" id="submit">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+             <div class="modal-footer">
+                <h3><i class="fa fa-whatsapp" aria-hidden="true"></i> <i class="fa fa-mobile-phone" aria-hidden="true"></i> +2347066198768</h3>
+            </div> 
+        </div>
+    </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
