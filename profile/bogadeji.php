@@ -141,7 +141,7 @@ input [type="submit"] {
 
   <div class ="contact">
     
-                        <form action="bogadeji.php" method="POST">
+                        <form action="bogadeji.php" method="GET">
                         <h3>Contact</h3>
     
     <fieldset>
