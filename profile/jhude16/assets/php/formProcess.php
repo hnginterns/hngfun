@@ -11,12 +11,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     
         $to      = 'judehawkson@yahoo.com';
         $subject = 'Contact Request From ' . $name;
-        $body = '
-                <h2>Contact Request</h2>    
-                <h4>Name: </h4><p>'.$name.'</p>
-                <h4>Email: </h4><p>'.$email.'</p>
-                <h4>Body: </h4><p>'.$message.'</p>
-                ';
+       
+        
+        //         $body = '
+//                 <h2>Contact Request</h2>    
+//                 <h4>Name: </h4><p>'.$name.'</p>
+//                 <h4>Email: </h4><p>'.$email.'</p>
+//                 <h4>Body: </h4><p>'.$message.'</p>
+//                 ';
         
         $config = include('../../../../config.php');
         
@@ -25,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $result = $con->query('SELECT * FROM password LIMIT 1');
         $data = $result->fetch();
         $password = $data['password'];
-        $url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=judehawkson@yahoo.com";
+        $url = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=judehawkson@yahoo.com";
 //         $url = "http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to;
         header("location: ".$url);
       
