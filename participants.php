@@ -8478,5 +8478,28 @@ include('participants-head.php');
     </div>
 </div>
 <!-- Each participant ends here -->
+		    
+ <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/29741635?v=4&u=5d29232abf5d2030a62b7427a988856735d1441f&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/kingsolomon.php">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">KING SOLOMON SESE.</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">kinsolomon9@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team knowledge </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+<!--  Each Participants ends here  -->
 
 <?php include "footer.php"?>
