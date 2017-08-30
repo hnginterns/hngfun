@@ -94,7 +94,7 @@
           resize:none;
             }
 
-        button [type="submit"] {
+        button{
           cursor:pointer;
           width:100%;
           border:none;
