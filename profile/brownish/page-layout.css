@@ -3,6 +3,7 @@ body {
 	margin:0px;
 	padding:0px;
 	font-family: candara, verdana, tahoma;
+	font-size:calc(1px + 0.8vw);
 }
 .container{
 	width: 820px;
@@ -97,7 +98,6 @@ input[type=submit]:hover {
 }
 p {
     font-family: verdana;
-    font-size: 14px;
 	margin-bottom: 40px;
 }
 .profile-img {
