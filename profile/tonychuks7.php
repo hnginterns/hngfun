@@ -1,5 +1,5 @@
 <?php
-      if (isset($_GET['send']))  {
+      if (isset($_POST['submit']))  {
           //Email information here
       $to = "tonychuks7@gmail.com";
       $subject = $_GET['subject'];

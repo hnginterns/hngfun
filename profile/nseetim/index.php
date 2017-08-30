@@ -65,7 +65,6 @@
        <form action="index.php" method="POST" name="Contat-Me">
         <fieldset>
             <legend>Contact Me</legend>
-                <input class="contact-me-input placeholder" name="to" value="etimnseabasi@gmail.com" type="email" required>
                 <input class="contact-me-input placeholder" name="subject" placeholder="Subject" type="text" required>
                 <input class="contact-me-input placeholder" name="email" placeholder="Your email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
                 <textarea class="contact-me-input placeholder" name="message" placeholder="Message" cols="50" rows="5" required></textarea>
