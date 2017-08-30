@@ -8415,7 +8415,29 @@ include('participants-head.php');
 299 </div> 
 300 <!--  Each Participants ends here  --> 
 
->>>>>>> baa4162dd134b7c1e41d2d985976e6ded76f836f
+<!--  Each Participant starts here  -->
+<div class="p-card">
+
+    <div class="v-center">
+    <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/13476980?v=4); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+    <div class="p-card-info">
+        <a href="http://hng.fun/profile/dreemer6.html">
+        <!--Profile Link-->
+        <h3 class="p-card-title">Uche Madu</h3>
+        <!--Profile Name-->
+        </a>
+        <p class="p-card-description">dreemer6@yahoo.com</p>
+        <!--Email-->
+    </div>
+    <div class="p-team">
+        <a href="#">
+        <h3 class="p-card-title"></h3>
+        <!--Team-->
+        </a>
+    </div>
+    </div>
+</div>
+<!--  Each Participant Ends here  -->
 
 
 <?php include "footer.php"?>
