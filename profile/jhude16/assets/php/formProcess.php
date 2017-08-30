@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <h4>Body: </h4><p>'.$message.'</p>
                 ';
         
-        $config = include('../../../../config.php');
+//         $config = include('../../../../config.php');
         echo 'View';
         echo $config['host'];
         echo $config['dbname'];
