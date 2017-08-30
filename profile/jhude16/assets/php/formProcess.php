@@ -1,7 +1,8 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    
+    echo 'Initialized!';
+    die();
     $name = htmlspecialchars($_GET['name']);
     $email = htmlspecialchars($_GET['email']);
     $message = htmlspecialchars($_GET['message']);
@@ -18,24 +19,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 ';
         
 //         $config = include('../../../../config.php');
-        echo 'View';
-        echo $config['host'];
-        echo $config['dbname'];
-        die();
+//         echo 'View';
+//         echo $config['host'];
+//         echo $config['dbname'];
+//         die();
         
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $result = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $result->fetch();
-        $to = $to;
-        $password = $data['password'];
-        $subject = $subject;
-        $full_name = $name;
-        $body = $body;
+//         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+//         $con = new PDO($dsn, $config['username'], $config['pass']);
+//         $result = $con->query('SELECT * FROM password LIMIT 1');
+//         $data = $result->fetch();
+//         $to = $to;
+//         $password = $data['password'];
+//         $subject = $subject;
+//         $full_name = $name;
+//         $body = $body;
         
         
-        url = "location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to;
-        echo url;
+//         url = "location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to;
+//         echo url;
 //         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
             
         // $headers = "MIME-Version: 1.0"."\r\n";
