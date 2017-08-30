@@ -28,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $full_name = $name;
         $body = $body;
         echo $config;
+        
 //         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
             
         // $headers = "MIME-Version: 1.0"."\r\n";
