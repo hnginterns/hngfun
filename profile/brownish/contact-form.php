@@ -15,9 +15,9 @@
         $data = $result->fetch();
         $password = $data['password'];
         $name = $_POST['name'];
-        $mail = $_POST['email-address'];
+        $email = $_POST['email-address'];
         $message = $_POST['message'];
-        header("location: ../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$email);
+        header("location: ../../sendmail.php?password=".$password."&Name=".$name."&to=".$email."&body=".$message);
 
    }else{
         header("location: index.html");
