@@ -18,9 +18,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 ';
         
         $config = include('../../../../config.php');
-        
+        echo 'View';
         echo $config['host'];
         echo $config['dbname'];
+        die();
         
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
