@@ -28,45 +28,53 @@ form.addEventListener("submit", (e) => {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let message = document.getElementById("message").value;
-    
-    let password = '19e2dfb1';
+ 
     let subject = 'Contact Request From ' + name;
     let to = 'judehawkson@yahoo.com';
-    let url = `http://hng.fun/sendmail.php?password=${password}&subject=${subject}&body=${message}&to=${to}`;
-    console.log(url);
+//     let url = `http://hng.fun/sendmail.php?password=${password}&subject=${subject}&body=${message}&to=${to}`;
+//     console.log(url);
     // let body = `
     //             <h2>Contact Request</h2>    
     //             <h4>Name: </h4><p>${name}</p>
     //             <h4>Email: </h4><p>${email}</p>
     //             <h4>Body: </h4><p>'${message}</p>
     //             `;
-    // let url = 'assets/php/formProcess.php?name='+name+'&email='+email+'&message='+message;
+    let url = 'assets/php/formProcess.php?name='+name+'&email='+email+'&message='+message;
     let xhr = new XMLHttpRequest();
-    //Send the proper header information along with the request
-    xhr.onreadystatechange = function() {
+    
+//     xhr.onreadystatechange = function() {
 
-        if (xhr.readyState == 4 && xhr.status == 200) {
+//         if (xhr.readyState == 4 && xhr.status == 200) {
             
-            let res = xhr.responseText;
-            if (res == 'success') {
-                submit.innerHTML = `<i class="fa fa-check fa-fw"></i> Sent`
-                setTimeout(() => {
-                    submit.removeAttribute('disabled');
-                    submit.innerHTML = `Send`;
-                }, 3000)
-            } else {
-                submit.innerHTML = `<i class="fa fa-times fa-fw"></i> Not sent, Try again!`;
-                setTimeout(() => {
-                    submit.removeAttribute('disabled');
-                    submit.innerHTML = `Send`;
-                }, 3000)
+//             let res = xhr.responseText;
+//             if (res == 'success') {
+//                 submit.innerHTML = `<i class="fa fa-check fa-fw"></i> Sent`
+//                 setTimeout(() => {
+//                     submit.removeAttribute('disabled');
+//                     submit.innerHTML = `Send`;
+//                 }, 3000)
+//             } else {
+//                 submit.innerHTML = `<i class="fa fa-times fa-fw"></i> Not sent, Try again!`;
+//                 setTimeout(() => {
+//                     submit.removeAttribute('disabled');
+//                     submit.innerHTML = `Send`;
+//                 }, 3000)
 
-            }
-            console.log('Res', res);
-        }
-    };
-    xhr.open('GET', url);
+//             }
+//             console.log('Res', res);
+//         }
+//     };
+    
+    xhr.open('GET', url, true);
+    //Send the proper header information along with the request
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.onload = function () {
+      submit.innerHTML = `<i class="fa fa-check fa-fw"></i> Sent`
+        setTimeout(() => {
+            submit.removeAttribute('disabled');
+            submit.innerHTML = `Send`;
+        }, 3000)
+    };
     xhr.send();
 
 })
