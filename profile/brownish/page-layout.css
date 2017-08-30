@@ -10,6 +10,7 @@ body {
     box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
 	margin: auto;
 	margin-top:10px;
+	margin-bottom:10px;
 
 }
 .content {
@@ -23,6 +24,50 @@ table, th, td {
 th, td {
     text-align: left;   
 	padding-bottom: 20px;
+	padding-right: 20px;
+}
+td.content {
+	width: 20%;
+	text-transform: italic;
+}
+form{
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+textarea{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+	resize: none;
+    overflow: auto;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #866861;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }
 .center {
 	text-align: center;
