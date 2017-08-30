@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 <h4>Body: </h4><p>'.$message.'</p>
                 ';
         
-        $config = include('../config.php');
+        $config = include('../../../../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $result = $con->query('SELECT * FROM password LIMIT 1');
