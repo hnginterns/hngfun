@@ -1,0 +1,51 @@
+/*CSS for index.html*/
+body{
+    width: auto;
+    height: auto;
+    background: linear-gradient(to right, deeppink , skyblue, pink);
+}
+.logo{
+    font-size: 29px;
+    font-family: fantasy 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic bold;
+}
+.pp{
+    width: 350px;
+    height: 550px;
+    border: 0px outset black;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-left: 70px;
+}
+.names{
+    float: right;   
+    margin-right: 60px;
+}
+.name{
+    font-size: 40px;
+    font-family:serif, 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Name{
+    font-size: 30px;
+    font-family: cursive, Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+blockquote{
+    width: 600px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+.click{
+    margin-left: 200px;
+    margin-top: 40px;
+    color: navy;
+}
+a{
+    font-size: 28px;
+    text-decoration: none;
+    border: 1px outset aqua;
+    background-color: deeppink;
+    color: black;
+    cursor: pointer;
+}

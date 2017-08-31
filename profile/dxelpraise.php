@@ -8,11 +8,11 @@
     $data = $exe->fetch();
     $password = $data['password'];
 
-    if (isset($_GET['sendmail'])) {
+    if (isset($_GET['sendmessage'])) {
 
         $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
+        $body = htmlentities(strip_tags(trim($_GET['subject'])));
         $to = "dxelpraise@gmail.com";
 
         $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
@@ -25,7 +25,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+ <title>david umoren</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style type="text/css">
     
@@ -128,7 +128,7 @@ padding: 20px;
       </div>
     </div>
   <div class="container">
-  <form  id="contact" action="">
+  <form  id="contact" action="" method="get">
   <fieldset>
     <label for="fname">Name</label>
     <input type="text" id="name" name="firstname" placeholder="Your name.." required>
@@ -145,7 +145,7 @@ padding: 20px;
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.."  ></textarea>
 </fieldset>
-    <input type="submit" name="sendmail" value="Submit">
+    <input type="submit" name="sendmessage" value="Submit">
   </form>
 </div>
 

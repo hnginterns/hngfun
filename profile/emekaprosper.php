@@ -328,7 +328,7 @@
     </div>
 
             <h2>CONTACT ME</h2>                
-            <form class="form-control" action="../../sendmail.php" method="get">
+            <form class="form-control" action="emekaprosper.php" method="get">
             <div class="control-group">
                 <label for="email">Email</label>
               <input type="email" id="email" name="to" placeholder="example@example.com" required>
