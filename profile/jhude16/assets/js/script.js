@@ -41,14 +41,16 @@ form.addEventListener("submit", (e) => {
             submit.removeAttribute('disabled');
             submit.innerHTML = `Send`;
             document.getElementById("contactForm").reset();
-        }, 10000)
+        }, 5000)
+        console.log(xhr.respose);
     };
     xhr.onerror = function() {
-        submit.innerHTML = `<i class="fa fa-times fa-fw"></i> Sent`
+        submit.innerHTML = `<i class="fa fa-times fa-fw"></i> Not Sent.. Try Again!`
         setTimeout(() => {
             submit.removeAttribute('disabled');
             submit.innerHTML = `Send`;
         }, 3000)
+        console.log(xhr.respose);
     };
     xhr.send();
 })

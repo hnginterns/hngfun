@@ -36,7 +36,7 @@
 
 		}
 		img{
-			border-radius: 30%;
+			border-radius: 10px;
 		}
 		#mydetail{
 			float: right;
@@ -69,7 +69,7 @@
 <body>
 <div>
    <div id="mypix">
-   	 <img src="image/bluecard1992.jpg" height="100%" width="100%">
+   	 <img src="https://scontent.flos7-1.fna.fbcdn.net/v/t1.0-9/17155318_1210783419019658_6822334054252122257_n.jpg?oh=8a95c6fdf4d3934651732a19d955c97e&oe=5A5AB1A2" height="60%" width="70%">
    	 <div class="myName">
 	   	 <h2>ECHEZONA OKAFOR</h2>
 	   	 <h5>WEB DEVELOPER</h5>

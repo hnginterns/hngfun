@@ -1,31 +1,33 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
-    $error = [];
-    $subject = $_POST['subject'];
-    $to  = 'bee_moi@zoho.com';
-    $body = $_POST['message'];
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
-    }
-    if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      header("location: $uri");
-    }
-  }
- ?>
+ if($_SERVER['REQUEST_METHOD'] == 'POST') {
+   $error = [];
+   
+   $subject = $_POST['subject'];
+   $to  = 'tolufak@gmail.com';
+   $body = $_POST['message'];
+   
+   if(empty($subject)) {
+     $error[] = 'Subject cannot be empty.';
+   }
 
+   if(empty($body)) {
+     $error[] = 'Message cannot be empty.';
+   
+   }
+   
+   if(empty($error)) {
 
-
+     $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+     $con = new PDO($dsn, $config['username'], $config['pass']);
+     $exe = $con->query('SELECT * FROM password LIMIT 1');
+     $data = $exe->fetch();
+     $password = $data['password'];
+     $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+     header("location: $uri");
+   }
+ }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -326,20 +328,20 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="" method= "POST" >
+                            <form action="imani.php" method="POST">
 
-                                <p class="name">
-                                    <input name="subject" id="subject" type="subject" title="" class="regInput" placeholder="subject  " >
-                                </p>
+                                <div class="name">
+                                    <input type="text" name="subject" id="subject" class="regInput" placeholder="subject">
+                                </div>
 
                                 
 
-                                <p class="text">
+                                <div class="text">
                                     <textarea name="message" id="message" class="regInput-1" placeholder=" Write that message...."></textarea>
-                                </p>
+                                </div>
 
                                 <div class="submit">
-                                    <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
+                                    <input type="submit" value="SEND" class="regInput-3 text-center">
                                 </div>
                             </form>
                         </div>

@@ -145,8 +145,9 @@
 	<div class="bg">
 		<div class="text">
 			<h1>Nwafor Maxwell Chukwuebuka</h1>
+			<p class="tex"><a href="https://github.com/maxwell4reel"><i class="fa fa-github">Username: Maxwell4reel</i></a></p>
 			<p><a style="color: white;" href="https://github.com/maxwell4reel/Hngtest_register"><i class="fa fa-github"></i> Click here to view my Stage 1 Project</a></p>
-			<p class="tex"><i class="fa fa-slack">Slack: </i> Maxwell444</p>
+			<p class="tex"><a href="hnginterns.slack.com/team/maxwell444"><i class="fa fa-slack">Slack:</i> Maxwell444</a></p>
 			<div class="bio">
 				<h3>Biography</h3>
 				<p>I am Nwafor Maxwell Chukwuebuka. A 300l student of computer science from the University of Nigeria, Nsukka. I am from Enugu state Nigeria and i reside at Lagos state. Am web/software developer who strives to add value any where i find myself. At my lesiure i enjoy Swimming, Playing games.
