@@ -9,7 +9,7 @@
       		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       		$username = $config['username'];
       		$pass = $config['pass'];
-      		getClientToken($dsn, $username,$pass)
+      		getClientToken($dsn, $username,$pass);
       		      		
    			
       	}
