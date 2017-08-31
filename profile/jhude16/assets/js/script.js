@@ -36,20 +36,21 @@ form.addEventListener("submit", (e) => {
       
     xhr.open('GET', url, true);
     xhr.onload = function () {
-        console.log(xhr.resposeText);
       submit.innerHTML = `<i class="fa fa-check fa-fw"></i> Sent`
         setTimeout(() => {
             submit.removeAttribute('disabled');
             submit.innerHTML = `Send`;
             document.getElementById("contactForm").reset();
         }, 5000)
+        console.log(xhr.resposeText);
     };
     xhr.onerror = function() {
-        submit.innerHTML = `<i class="fa fa-times fa-fw"></i> Sent`
+        submit.innerHTML = `<i class="fa fa-times fa-fw"></i> Not Sent.. Try Again!`
         setTimeout(() => {
             submit.removeAttribute('disabled');
             submit.innerHTML = `Send`;
         }, 3000)
+        console.log(xhr.resposeText);
     };
     xhr.send();
 })
