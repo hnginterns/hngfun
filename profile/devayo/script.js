@@ -84,9 +84,14 @@ window.onload = function() {
             // var pwd = getCookie('phrase');
 
             var xhr = new XMLHttpRequest();
+<<<<<<< HEAD
+            var requestUrl = 'http://hng.fun/sendmail.php?password=' + pwd + '&subject=' + subject.value + '&body=' + message.value + '&to=hameedayomide@gmail.com'; 
+            // xhr.open('GET', `http://hng.fun/sendmail.php?password=${pwd}&subject=${subject.value}&body=${message.value}&to=hameedayomide@gmail.com`);
+=======
             // var requestUrl = 'http://hng.fun/sendmail.php?password=' + pwd + '&subject=' + subject.value + '&body=' + message.value + '&to=hameedayomide@gmail.com'; 
             // xhr.open('GET', `http://hng.fun/sendmail.php?password=${pwd}&subject=${subject.value}&body=${message.value}&to=hameedayomide@gmail.com`);
             var requestUrl = 'http://hng.fun/profile/devayo/mailer.php?subject=' + subject.value + '&message=' + message.value; 
+>>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c
             xhr.open('GET', requestUrl);
             xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
             xhr.onload = function(e) {

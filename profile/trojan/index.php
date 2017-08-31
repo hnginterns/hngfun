@@ -225,7 +225,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h3>Work</h3>
                 <p><b>Software Engineer - ntel || Software Engineer - Tsaboin || CTO - autohub.ng || CEO - Okoh</b></p>
 
-                <form class="cd-form floating-labels" method="POST" action="">
+                <form class="cd-form floating-labels" method="POST">
               		<fieldset>
 
 

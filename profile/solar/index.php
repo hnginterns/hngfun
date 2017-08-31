@@ -2,13 +2,28 @@
 
 $config = include('../../config.php');
 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-$con = new PDO($dsn, $config['username'], $config['pass']);
+try {
+         $con = new PDO($dsn, $config['username'], $config['pass']);
 
-$exe = $con->query('SELECT * FROM password LIMIT 1');
-$data = $exe->fetch();
-$password = $data['password'];
+            }
 
+//catch exception
+        catch(Exception $e) {
+                echo 'Message: ' .$e->getMessage();
+                die();
+            }
 
+     if(isset($con)){
+
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+
+        }else {
+    echo "Error Fetching Data";
+    die();
+
+        }
 
 ?>
 

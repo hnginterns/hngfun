@@ -1,0 +1,15 @@
+/* My profile CSS*/
+
+#container {
+	font-family: verdana;
+	font-size: 15px;
+}
+
+.image {
+	width: 400px;
+	height: 500px;
+}
+
+.center {
+	text-align: center;
+}

@@ -39,21 +39,19 @@
 	    <script src="js/respond.min.js"></script>
     <![endif]-->       
     <link rel="shortcut icon" href="assets/img/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
+    
     <link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body>
-	<header id="header" role="banner">		
+			
 		<div class="main-nav">
 			<div class="container">
 				<div class="header-top">
 					<div class="pull-right social-icons">
 						<a href="https://twitter.com/godfredakpan"><i class="fa fa-twitter"></i></a>
 						<a href="https://facebook.com/godfred.akpan.14"><i class="fa fa-facebook"></i></a>
-						<a href="https://google.com/archer web solution"><i class="fa fa-google-plus"></i></a>
+						<a href="https://google.com/archerwebmaster"><i class="fa fa-google-plus"></i></a>
 						<a href="https://youtube.com/archerwebsolution"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>     
@@ -75,18 +73,18 @@
 		                            <li class="scroll"><a href="#contact">Contact</a></li>
 							
 		                </ul>
-		            </div>
+				</div>
 		        </div>
 	        </div>
         </div>                    
-    </header>
+    
     <!--/#header--> 
 
     <section id="home">	
 
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="img-responsive" src="assets/img/bg.jpg" alt="godfred">						
+					<img class="img-responsive" src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/21192347_111619372864201_4174204081189570107_n.jpg?oh=c8fdf5bb1028b177206af3d5d1347f04&oe=5A564A3A" alt="godfred">						
 					<div class="carousel-caption">
 						<h2>Welcome to my page</h2>
 						<h4>Thanks to hotels.ng</h4>
@@ -106,7 +104,7 @@
 	
 	<section id="about">
 		<div class="guitar2">				
-			<img class="img-responsive" src="assets/img/11.jpg" alt="godfred">
+			<img class="img-responsive" src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/21192138_111619312864207_8937764799900046911_n.jpg?oh=00cce6aa5b1f51c09ebc290f0a55638d&oe=5A2A6F0F" alt="godfred">
 		</div>
 		<div class="about-content">					
 					<h2>About Godfred Akpan</h2>
@@ -116,14 +114,14 @@
                                            My Inspiration is God, i believe with him and a computer you can do all things.</p><p>
 									
 					<a href="https://github.com/godfredakpan" class="btn btn-primary">View my Github Profile <i class="fa fa-angle-right"></i></a>
-				         <a href="https://slack.com.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
+				         <a href="https://slack.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
 		</div>
 	</section><!--/#about-->
 	<section id="contact">
 		
 		<div class="contact-section">
 			<div class="ear-piece">
-				<img class="img-responsive" src="assets/img/ear-piece.png" alt="">
+				<img class="img-responsive" src="https://web.facebook.com/photo.php?fbid=111619402864198&set=a.111619232864215.1073741829.100020484164456&type=3&theater" alt="">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -141,19 +139,19 @@
 					</div>
 					<div class="col-sm-5">
 						<div id="contact-section">
-							<h3>Send a message</h3>
-					    	<font color="blacl"><div class="form-container">
+							<center><h3>Send a message</h3>
+					    	<div class="form-container">
                         <form action=" " method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
 				
                             <input type="hidden" name="to" value="godfredakpan@gmail.com">
 				
-                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text">
+                            <input type="text" name="subject" placeholder="Subject " class="form-input" required="text"><p>
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
 				
-                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required="text"></textarea>
-                            <input type="submit" name="submit" value="SEND" class="form-submit" required="text">
-                        </form></font>  <br>  
+                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea><p>
+                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+							</form></center>  <br>  
 					    </div>
 					</div>
 				</div>
@@ -171,15 +169,6 @@
     </footer>
     <!--/#footer-->
   
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  	<script type="text/javascript" src="js/gmaps.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax.js"></script>
-    <script type="text/javascript" src="js/coundown-timer.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-    <script type="text/javascript" src="js/jquery.nav.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>  
+      
 </body>
 </html>
