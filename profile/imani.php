@@ -1,5 +1,5 @@
 <?php
- if($_SERVER['REQUEST_METHOD'] == 'POST') {
+ if($_SERVER['REQUEST_METHOD'] == 'GET') {
    $error = [];
    
    $subject = $_POST['subject'];
@@ -328,7 +328,7 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="<?= $_SERVER[PHP_SELF] ?>" method= "POST" >
+                            <form class="form" id="form1" action="" method= "GET" >
 
                                 <p class="name">
                                     <input name="subject" id="subject" type="subject" title="" class="regInput" placeholder="subject  " >
