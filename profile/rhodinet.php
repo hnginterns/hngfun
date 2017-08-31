@@ -10,6 +10,6 @@
       $body = $_POST['body'];
       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=rhodimosokon@gmail.com");
   }else{
-      header("location: rhodinet.html");
+      header("location: rhodinet-profile.php");
   }
 ?>

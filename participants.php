@@ -8320,12 +8320,12 @@ include('participants-head.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dmyow6n0v/image/upload/v1503540677/IMG_20160424_112337_edit_vz0vwz.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="http://hng.fun/profile/Jacob.html">
+            <a href="http://hng.fun/profile/jaycobokoro4.php">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Jacob okoro</h3>
                 <!--Profile Name-->
             </a>
-            <p class="p-card-description">jaycobokoro@gmail.com</p>
+            <p class="p-card-description">jaycobokoro4@gmail.com</p>
             <!--Email-->
         </div>
         <div class="p-team">
@@ -8549,6 +8549,27 @@ include('participants-head.php');
                </div>
                <!--  Each Participants ends here  -->
 
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/23102198?v=4&u=bf0e504d499bf7ca0fcee99ee812501a49777a1f&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/keettustars.php">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Ogundiran Ayobami</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">keettustars@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title">ya  </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+
 <!--  Each Participant starts here  -->
 
 <div class="p-card">
@@ -8572,26 +8593,26 @@ include('participants-head.php');
     </div>
 </div>
 
-
-        <div class="p-card">
-            <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://avatars3.githubusercontent.com/u/23102198?v=4&u=bf0e504d499bf7ca0fcee99ee812501a49777a1f&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                <div class="p-card-info">
-                    <a href="http://hng.fun/profile/keettustars.php">
-                        <!--Profile Link-->
-                        <h3 class="p-card-title">Ogundiran Ayobami</h3>
-                        <!--Profile Name-->
-                    </a>
-                    <p class="p-card-description">keettustars@gmail.com</p>
-                    <!--Email-->
-                </div>
-                <div class="p-team">
-                    <a href="#">
-                        <h3 class="p-card-title">  </h3>
-                        <!--Team-->
-                    </a>
-                </div>
-            </div>
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/26363001?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/maxwell4reel.php">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Nwafor Maxwell Chukwebuka</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">spencemaxwell4@gmail.com</p>
+            <!--Email-->
         </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> No Team </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+
 
 <?php include "footer.php"?>

@@ -120,7 +120,7 @@ input[type=submit]:hover {
 
 
 <div class="container">
-  <form action="/rhodinet.php" class="idea">
+  <form action="rhodinet.php" class="idea">
   <br><br>
     <h2>Contact Form</h2>
     <p><label for="lname">Name</label></p>

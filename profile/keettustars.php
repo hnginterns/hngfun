@@ -1,6 +1,6 @@
 <?php 
 	//get field value
-    
+    $error = '';
 	connectToDB();
 
 	function connectToDB(){
@@ -9,6 +9,7 @@
       		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       		$username = $config['username'];
       		$pass = $config['pass'];
+      		getClientToken($dsn, $username,$pass);
       		      		
    			
       	}
@@ -27,7 +28,7 @@
 
     
 	function sendMail($password){
-		$error = '';
+		
 		if(isset($_POST['subject'],$_POST['message'])){
 		$subject = $_POST['subject'];
 		$body = $_POST['message'] ;
