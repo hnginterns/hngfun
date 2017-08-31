@@ -8483,7 +8483,9 @@ include('participants-head.php');
 <!-- Each participant starts here -->
   <div class="p-card">
     <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dmyow6n0v/image/upload/v1503540677/IMG_20160424_112337_edit_vz0vwz.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-photo" style="background-image:
+         url(http://res.cloudinary.com/dmyow6n0v/image/upload/v1503540677/IMG_20160424_112337_edit_vz0vwz.jpg); 
+         background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
             <a href="http://hng.fun/profile/frankly034.php">
                 <!--Profile Link-->
@@ -8593,5 +8595,29 @@ include('participants-head.php');
                 </div>
             </div>
         </div>
+
+
+<!-- Each participant starts here -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image:url(https://scontent-cdt1-1.xx.fbcdn.net/v/t1.0-9/12321145_712353902197787_5006979978849539128_n.jpg?oh=aa4d5e9f7f799cf090e86f9bb3b34eea&oe=5A5C3C05); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/ahmadAbdulAziz/index.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Ahmad Abdul-Aziz</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">ahmad.abdulaziz37@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"></h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Each participant ends here -->
 
 <?php include "footer.php"?>
