@@ -17,42 +17,42 @@
 		$password = '';
 
 		//Initialize an errors array to store all the errors
-		$errors = [];
+		$errors = '';
 
 		if(!$name)
 		{
 			//if there is no name add the name error to the errors array
-			array_add($errors, 'name', 'The name field is important.');
+			$errors .= 'name: The name field is important.';
 		}
 
 		if(!$email)
 		{
 			//if there is no email add the email error to the errors array
-			array_add($errors, 'email', 'The email field is important.');
+			$errors .= 'email: The email field is important.';
 
 		}elseif ($email && !ValidateEmail($email)) {
 			//if there is an email but it doesnt match a valid email format
-			array_add($errors, 'email', 'This is not a valid email.');
+			$errors .= 'email: This is not a valid email.';
 		}
 
 		if(!$subject)
 		{
 			//if there is no subject add the subject error to the errors array
-			array_add($errors, 'subject', 'There subject field is required.');
+			$errors .= 'subject: There subject field is required.';
 		}
 
 		if(!$message || strlen($message) < 10)
 		{
 			//If there is no message or it is less than 10 characters long
-			array_add($errors, 'message', 'Please enter your message. It should have at least 10 characters.');
+			$errors .= 'message: Please enter your message. It should have at least 10 characters.';
 		}
 
-		$hasErrors = (!empty($errors)) ? true : false; //check if the errors array is empty
+		$hasErrors = (strlen($errors) >= 2) ? true : false; //check if the errors array is empty
 
 		if($hasErrors)
 		{
 			//if there are errors return them 
-			return $errors;
+			echo $errors;
 
 		}else {
 			//if there are no errors send me a mail
