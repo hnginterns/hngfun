@@ -330,15 +330,15 @@
                         <div id="form-div">
                             <form action="" method="POST">
 
-                                <p class="name">
+                                <div class="name">
                                     <input name="subject" id="subject" type="subject" title="" class="regInput" placeholder="subject  " >
-                                </p>
+                                </div>
 
                                 
 
-                                <p class="text">
+                                <div class="text">
                                     <textarea name="message" id="message" class="regInput-1" placeholder=" Write that message...."></textarea>
-                                </p>
+                                </div>
 
                                 <div class="submit">
                                     <input type="submit" value="SEND" class="regInput-3 text-center" name="submit"/>
