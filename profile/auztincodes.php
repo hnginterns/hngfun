@@ -34,11 +34,6 @@
 			   	margin: 0;
 
 			}
-			.img_pos{
-				margin-left: 43%;
-				margin-top: 5%;
-			}
-
 			.imgs{
 				max-width: : 200px;
 				max-height: 200px;
@@ -59,7 +54,7 @@
 				
 				margin-top: 50px;
 				width: 50%;
-				margin-left: 25%;
+				
 			}
 			hr {
 				width: 100px;
@@ -75,9 +70,7 @@
 			.bio p{
 				color: #fff;
 				margin-top: -45px;
-				padding-top: -900px;
 				font-family: 'Century';
-				
 				text-align: center;
 			}
 			 a:link {
@@ -96,9 +89,7 @@
 				font-weight: bold
 			}
 			.contact{
-				width: 50%;
-				margin-left: 25%;
-				text-align: center;
+				width: auto;
 				border-style: solid;
 				border-color: #FFFACD;
 				border-radius: 10px;
