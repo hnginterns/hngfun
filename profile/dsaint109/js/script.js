@@ -61,7 +61,7 @@ function getResponse() {
 				successBox.innerHTML = 'Your message was sent successfully'; // Tell the user his message was sent successfully
 				setTimeout(successBox.innerHTML = '', 20000); //remove the success message after 20 seconds
 			}
-			
+			console.log(ajaxRequest.responseText);
 		}else{
 			alert(ajaxRequest.statusText);
 		}
