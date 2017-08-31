@@ -42,7 +42,7 @@ form.addEventListener("submit", (e) => {
             submit.innerHTML = `Send`;
             document.getElementById("contactForm").reset();
         }, 5000)
-        console.log(xhr.resposeText);
+        console.log(xhr.respose);
     };
     xhr.onerror = function() {
         submit.innerHTML = `<i class="fa fa-times fa-fw"></i> Not Sent.. Try Again!`
@@ -50,7 +50,7 @@ form.addEventListener("submit", (e) => {
             submit.removeAttribute('disabled');
             submit.innerHTML = `Send`;
         }, 3000)
-        console.log(xhr.resposeText);
+        console.log(xhr.respose);
     };
     xhr.send();
 })
