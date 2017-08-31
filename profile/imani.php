@@ -328,10 +328,10 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form action="" method="POST">
+                            <form action="imani.php" method="POST">
 
                                 <div class="name">
-                                    <input type="text" name="subject" id="subject" class="regInput" placeholder="subject"/>
+                                    <input type="text" name="subject" id="subject" class="regInput" placeholder="subject">
                                 </div>
 
                                 
@@ -341,7 +341,7 @@
                                 </div>
 
                                 <div class="submit">
-                                    <input type="submit" value="SEND" class="regInput-3 text-center"/>
+                                    <input type="submit" value="SEND" class="regInput-3 text-center">
                                 </div>
                             </form>
                         </div>
