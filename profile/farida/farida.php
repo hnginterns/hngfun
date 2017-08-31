@@ -40,7 +40,7 @@ else{
 		$data = $exe->fetch();
 		$password = $data['password'];
 
-		       header("location:http://hng.fun/sendmail.php?password=".$password."&name=".$name."&email=".$email."&subject=".$subject."&message=".$body."&to=fareedakabeer@gmail.com");
+		       header("location:http://hng.fun/sendmail.php?password=".$password."&name=".$name."&subject=".$subject."&message=".$body."&to=fareedakabeer@gmail.com");
 	}
 			 
 	}
