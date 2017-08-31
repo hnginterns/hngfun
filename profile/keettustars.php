@@ -1,6 +1,6 @@
 <?php 
 	//get field value
-    $error = '';
+    
 	connectToDB();
 
 	function connectToDB(){
@@ -9,8 +9,8 @@
       		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       		$username = $config['username'];
       		$pass = $config['pass'];
-   
-      		getClientToken($dsn, $username,$pass);
+      		 getClientToken($dsn, $username,$pass);       		
+   			
       	}
 	}
 
@@ -20,23 +20,25 @@
       $con = new PDO($dsn, $username, $pass);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
-      $password = $data['password'];echo $pass;
-      sendMail($password);    
-
+      $password = $data['password'];
+      sendMail($password);
+	         
 	}
 
-
-
-	function sendMail(){
-		$subject = $_POST['subject']);
-    	$to  = 'keettustars@gmail.com';
-    	$body = $_POST['message'];
-    	$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-    	  if($subject == ''){
-    	 	return ;
-    	  }
-      
-    	  header("location: $uri");
+    
+	function sendMail($password){
+		$error = '';
+		if(isset($_POST['subject'],$_POST['message'])){
+		$subject = $_POST['subject'];
+		$body = $_POST['message'] ;
+		$to = 'keettustars@gmail.com';
+    	$uri = "/../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    	header("location: $uri");
+		}else{
+		 $error = 'All fields must be filled';	
+		}
+    	 
+    	  
 	}
 
 	//just a dummy validation
@@ -141,10 +143,14 @@
 	.contact-container input, .contact-container textarea,.contact-container button{
 		width: 100%;
 		height: 40px;
+		margin-bottom: 5px;
 	}
 
 	.contact-container textarea {
 		height: 150px !important;
+	}
+	.field              {
+		  margin-bottom: 10px !important;
 	}
 
 
@@ -155,7 +161,7 @@
 		<div class="header bg-1 color-1">
 			<h1 class="tagline">Request for software development.</h1>
 		</div>
-            
+            <?php if(isset($error)){echo $error;}?>
 		<div class="container bg-2">
 			
 				<div class="img-wrapper">
@@ -178,18 +184,24 @@
 						have learnt Native javaScript, react/react native, jQuery, php/laravel and python( basic ) despite my art background. I co-organised bizIntel where Ibadan and Ife business school, P&G, PWC and many others were represented. I co-founder Wetech. Above all, I am learner for life. 
 				</p>
 
-				<a href="https://github.com/hnginterns/hngfun/commit/ac3bccc7d86592f20e40f21aaeee73c4e2262f0c">link to my stage 1</a>
-
 
 				<div class="contact-container">
 					<p class="muted">* means a required field</p>
-					<form method="POST" action="/" >
-						<input type="text" placeholder="Subject *" name="subject" autocomplete="off" required>
-						<textarea rows="" cols="" placeholder="Message *" name="message" required></textarea>
-						<input type="submit" name="" value="Send">
+					<form method="POST" action="keettustars.php" >
+						<div class="field">
+							<label for = "subject">Subject:</label>
+							<input type="text" placeholder="Subject *" name="subject" autocomplete="off" required>
+						</div>
+						<div class="field">
+							<textarea placeholder="Message *" name="message" required></textarea>
+						</div>
+						<div class="field">
+							<input type="submit" name="" value="Send">
+						</div>
 					</form>
 				</div>
 
+				<a href="https://github.com/hnginterns/hngfun/commit/ac3bccc7d86592f20e40f21aaeee73c4e2262f0c">link to my stage 1</a>
 		</div>
 
 		 

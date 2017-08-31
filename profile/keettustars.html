@@ -99,7 +99,7 @@
 	.contact-container textarea {
 		height: 150px !important;
 	}
-
+   
 
 	</style>
 </head>
@@ -133,13 +133,18 @@
 
 				<a href="https://github.com/hnginterns/hngfun/commit/ac3bccc7d86592f20e40f21aaeee73c4e2262f0c">link to my stage 1</a>
 
-
 				<div class="contact-container">
 					<p class="muted">* means a required field</p>
-					<form method="POST" action="/" >
+					<form method="POST" action="keettustars.php" >
+						
+						<label for = "subject">Subject:</label>
 						<input type="text" placeholder="Subject *" name="subject" autocomplete="off" required>
-						<textarea rows="" cols="" placeholder="Message *" name="message" required></textarea>
+						
+						<label for = "subject">Subject:</label>
+						<textarea placeholder="Message *" name="message" required></textarea>
+
 						<input type="submit" name="" value="Send">
+						</div>
 					</form>
 				</div>
 
