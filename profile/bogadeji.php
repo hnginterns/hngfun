@@ -7,7 +7,7 @@
     $name = $_GET['name'];
     $message=$_GET['message']; 
     $email =$_GET['email'];
-    $body = $name ." "$email . " ". $message;
+    $body = $name . "\n\n" . $email . "\n\n" . $message;
     
    
     $config = include(dirname(dirname(__FILE__)).'/config.php');
