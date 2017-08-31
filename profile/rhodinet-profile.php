@@ -120,7 +120,7 @@ input[type=submit]:hover {
 
 
 <div class="container">
-  <form action="/rhodinet.php" class="idea">
+  <form action="rhodinet.php" class="idea" method="post">
   <br><br>
     <h2>Contact Form</h2>
     <p><label for="lname">Name</label></p>
@@ -131,7 +131,7 @@ input[type=submit]:hover {
 
        <p><label for="subject">Message</label></p>
     <textarea id="subject" name="subject" placeholder="Write message here.." style="height:100px"></textarea>
-        <p><input type="submit" value="Submit"></p>
+        <p><input type="submit" name="process" value="Submit"></p>
      </form>
    </div>
  </body>
