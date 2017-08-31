@@ -8618,7 +8618,7 @@ include('participants-head.php');
  <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
-                <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/29741635?v=4&u=5d29232abf5d2030a62b7427a988856735d1441f&s=400https://avatars1.githubusercontent.com/u/30692180?v=4&u=b7ee8f2fc91c2f389bd58fa06c430db35af912e9&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/30692180?v=4&u=b7ee8f2fc91c2f389bd58fa06c430db35af912e9&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
                     <a href="http://hng.fun/profile/Dsparkle.html">
                         <!--Profile Link-->
