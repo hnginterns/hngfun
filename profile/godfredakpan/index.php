@@ -84,7 +84,7 @@
 
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="img-responsive" src="assets/img/bg.jpg" alt="godfred">						
+					<img class="img-responsive" src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/21192347_111619372864201_4174204081189570107_n.jpg?oh=c8fdf5bb1028b177206af3d5d1347f04&oe=5A564A3A" alt="godfred">						
 					<div class="carousel-caption">
 						<h2>Welcome to my page</h2>
 						<h4>Thanks to hotels.ng</h4>
@@ -104,7 +104,7 @@
 	
 	<section id="about">
 		<div class="guitar2">				
-			<img class="img-responsive" src="assets/img/11.jpg" alt="godfred">
+			<img class="img-responsive" src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/21192138_111619312864207_8937764799900046911_n.jpg?oh=00cce6aa5b1f51c09ebc290f0a55638d&oe=5A2A6F0F" alt="godfred">
 		</div>
 		<div class="about-content">					
 					<h2>About Godfred Akpan</h2>
@@ -121,7 +121,7 @@
 		
 		<div class="contact-section">
 			<div class="ear-piece">
-				<img class="img-responsive" src="assets/img/ear-piece.png" alt="">
+				<img class="img-responsive" src="https://web.facebook.com/photo.php?fbid=111619402864198&set=a.111619232864215.1073741829.100020484164456&type=3&theater" alt="">
 			</div>
 			<div class="container">
 				<div class="row">
@@ -169,15 +169,6 @@
     </footer>
     <!--/#footer-->
   
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  	<script type="text/javascript" src="js/gmaps.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax.js"></script>
-    <script type="text/javascript" src="js/coundown-timer.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-    <script type="text/javascript" src="js/jquery.nav.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>  
+      
 </body>
 </html>
