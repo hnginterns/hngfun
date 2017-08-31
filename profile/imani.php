@@ -331,7 +331,7 @@
                             <form action="" method="POST">
 
                                 <div class="name">
-                                    <input type="text" name="subject" id="subject" class="regInput" placeholder="subject  " >
+                                    <input type="text" name="subject" id="subject" class="regInput" placeholder="subject"/>
                                 </div>
 
                                 
