@@ -53,8 +53,8 @@
 			
 				
 				margin-top: 50px;
-				width: 50%;
-				text-align:center;
+				width: auto;
+				text-align: center;
 			}
 			hr {
 				width: 100px;
