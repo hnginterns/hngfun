@@ -19,6 +19,8 @@
 		$connection = new PDO($dsn, $configuration['username'], $configuration['password']);
 		$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);//With errors
 
+		define("CONTACT_FORM", 'topstronics@gmail.com');//My email to receive the message
+
 	}catch(PDOException $e)
 	{
 		//in case of connection failure
