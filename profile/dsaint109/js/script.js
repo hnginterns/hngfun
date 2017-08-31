@@ -49,7 +49,7 @@ function getResponse() {
 		if(ajaxRequest.status == 200) {
 			//200 if the request was succesful
 			//
-			if(ajaxRequest.responseText){
+			if(ajaxRequest.responseText.length >= 2){
 				//if there is a response then there is an error
 				var errorBox = document.getElementById('error');// get the error p tag 
 				errorBox.innerHTML = ajaxRequest.responseText; //input the response as HTML
