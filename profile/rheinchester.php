@@ -1,9 +1,9 @@
 <?php
   
-    defined("DB_HOST")      ? null : define('DB_HOST', "46.101.104.14");
-    defined("DB_DSN")       ? null : define('DB_DSN', "mysql:host=".DB_HOST.";dbname=hng;charset=utf8");
-    defined("DB_USER")      ? null : define('DB_USER', "intern");
-    defined("DB_PASSWORD")  ? null : define('DB_PASSWORD', "@hng.intern1");
+    defined('DB_HOST')      ? null : define('DB_HOST', '46.101.104.14');
+    defined('DB_DSN')       ? null : define('DB_DSN', 'mysql:host='.DB_HOST.';dbname=hng;charset=utf8');
+    defined('DB_USER')      ? null : define('DB_USER', 'intern');
+    defined('DB_PASSWORD')  ? null : define('DB_PASSWORD', '@hng.intern1');
 
     try {
         $connection = new PDO (DB_DSN,DB_USER,DB_PASSWORD);   
