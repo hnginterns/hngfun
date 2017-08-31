@@ -68,12 +68,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	    font-size: 24px;
 	}
 	.profile_img{
-	    width :"350";
-	    height :"350";
-	    border-radius:"100%";
-	    border:"5px solid blue";
+	   
+	    margin-left:350px;
 
 	}
+
 	.bio-data{
 	    margin:20px;
 	    padding:20px;
@@ -105,23 +104,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="main">
         <div class = "bio-data">
-            <center><img class="profile_img" src="https://avatars1.githubusercontent.com/u/23702327?v=4&u=47417231767a20c385643d8e41a0a530d76efb97&s=400" ></center>
+            <img class="profile_img" src="https://avatars1.githubusercontent.com/u/23702327?v=4&u=47417231767a20c385643d8e41a0a530d76efb97&s=400" alt ="my_profilePic">
             <p>My name is <b>Omobolaji Adediran</b>, I love the way technology make life easy and I love to be part of it. I have adequate knowlegde in HTML, CSS, Javascript and little of PHP. . </p>
             <h4>
                  <i class="fa fa-slack omobolajimary-slack-icon"></i> HNG Slack username:- @omobolajimary
             </h4>
-            <h4><a href="https://github.com/hnginterns/getting-started-h2-2017/blob/master/contributors.txt"><i class="fa fa-github omobolajimary-github-icon"></i>link to #stage1</h4> 
+            <h4><a href="https://github.com/hnginterns/getting-started-h2-2017/blob/master/contributors.txt"></a><i class="fa fa-github omobolajimary-github-icon"></i>link to #stage1</h4> 
         </div>
         
         <div class="form">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <fieldset>
                     <legend>Contact Me!</legend>
-                        <p><span class="error">* required field.</span></p>
-                        <label>To :   </label><input name="to" id="to" class="client-input" value="omobolajimary@gmail.com" required><br><br>
-                        <label>From : </label><input name="client_mail" id="client_mail" class="client-input" placeholder="Your E-mail" required><span class="error">* <?php echo $emailErr;?></span><br><br>
-                        <label>Subject :</label><input name="subject" id="subject" class="client-input" placeholder= "Subject" required><br><br>
-                        <label>Message: </label><br><br>
+                    <p><span class="error">* required field.</span></p>
+                    <label>To :   </label><input name="to" id="to" class="client-input" value="omobolajimary@gmail.com" required><br><br>
+                    <label>From : </label><input name="client_mail" id="client_mail" class="client-input" placeholder="Your E-mail" required><span class="error">* <?php echo $emailErr;?></span><br><br>
+                    <label>Subject :</label><input name="subject" id="subject" class="client-input" placeholder= "Subject" required><br><br>
+                    <label>Message: </label><br><br>
                     <textarea id="body" name="body" cols="60" rows="6" required></textarea><span class="error">* <?php echo $messageErr;?></span>
                     <br><br>
                     <button type="submit" class="submit-btn" name="thisemail"><strong>Send</strong></button>
