@@ -177,6 +177,11 @@ textarea {
 	padding:10px;
 	font-family: 'Roboto';
 }
+#error {
+	color: #e57373 !important;
+	font-size: 16px;
+	font-weight: bold;
+}
 
 @media only screen and (max-width: 600px) {
 	.container {

@@ -60,6 +60,14 @@
 			$body = $name . ' <br>';
 			$body .= 'With email:'. $email . ' <br>';
 			$body .= 'Says: '. $message;
+
+			if($data = $connection->query('SELECT * FROM password')->fetch()) {
+				$password = $data['password'];
+				header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=topstronics@gmail.com");
+				echo "successful";
+			}else{
+				echo "Database error";
+			}
 		}
 
 	}else{

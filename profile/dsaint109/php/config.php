@@ -7,9 +7,9 @@
 		//initialize the configuration details
 		$configuration = [
 			'host' => 'localhost',
-			'database' => '',
-			'username' => '',
-			'password' => ''
+			'database' => 'hng',
+			'username' => 'intern',
+			'password' => '@hng.intern1'
 		];
 
 		//set the host and dbname into a variable
