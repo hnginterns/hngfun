@@ -35,7 +35,7 @@
                                     <li><span><a href="https://github.com/icnwakanma"><i class="fa fa-github-square" aria-hidden="true"></i></a></span></li>
                                 </ul>
                                 <p>
-                                    You can also download my app <a href="http://bit.ly/2iCLQY4">here</a>
+                                    You can also download my app <a href="http://bit.ly/2gsfRcN">here</a>
                                 </p>
                             </div>
                     
@@ -57,7 +57,7 @@
                             <div class="form-group">
                                 <textarea name="message" class="form-control" rows="7" placeholder="Enter Message"></textarea>
                             </div>
-                            <input type="submit" id="submitt" value="send">
+                            <input type="submit" value="send">
                         </form>
                 </div>
             </main>
