@@ -46,7 +46,7 @@ function sendContactForm() {
 function getResponse() {
 	if(ajaxRequest.readyState == 4) {
 		if(ajaxRequest.status == 200) {
-
+			alert(ajaxRequest.responseText);
 		}else{
 			alert(ajaxRequest.statusText);
 		}
