@@ -151,7 +151,7 @@
     <div class = "myprofile">
       	
       	
-      	<img src="http://i.imgur.com/aizAwig.png" onload="this.width/=(2);this.onload=null;">
+      	<img src="http://i.imgur.com/aizAwig.png" alt="bogadeji" onload="this.width/=(2);this.onload=null;">
       	<div id ="profile"><p>Beginner web developer with a desire to see the things I have learnt make sense and become something tangible. I love to learn and work on challenges even when I shed tears, get headaches and almost quit way too many times. Slack name: @bogadeji. Check out my first task <a href = "https://github.com/bogadeji/hnginterns-stage1" target ="_blank">here</a></p><hr>
       	<p id="name">ADEBOGA ABIGAIL</p></div><hr>
 
@@ -161,20 +161,20 @@
                 <h3>Contact</h3>
           
                 <fieldset>
-                  <input type="text" name="name" placeholder="Your Name" required="Enter your name">
+                  <input type="text" name="name" placeholder="Your Name" required="">
                  
                 </fieldset>
 
                 <fieldset>
-                  <input type="email" name="email" placeholder="Email Address" required="This field cannot be blank">
+                  <input type="email" name="email" placeholder="Email Address" required="">
                 </fieldset>
 
                  <fieldset>
-                  <input type="text" name="subject" placeholder="Subject" required="This field cannot be blank">
+                  <input type="text" name="subject" placeholder="Subject" required="">
                 </fieldset>
               
                 <fieldset>
-                  <textarea name ="message" rows="6" placeholder="Type your Message Here...." required="This field cannot be blank"></textarea> 
+                  <textarea name ="message" rows="6" placeholder="Type your Message Here...." required=""></textarea> 
                 </fieldset>
 
                 <fieldset>
