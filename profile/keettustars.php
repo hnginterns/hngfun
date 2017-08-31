@@ -1,6 +1,6 @@
 <?php 
 	//get field value
-    
+    $error = '';
 	connectToDB();
 
 	function connectToDB(){
@@ -28,7 +28,7 @@
 
     
 	function sendMail($password){
-		$error = '';
+		
 		if(isset($_POST['subject'],$_POST['message'])){
 		$subject = $_POST['subject'];
 		$body = $_POST['message'] ;
