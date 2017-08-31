@@ -19,6 +19,7 @@
     header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
       
     }
+    else {echo "submit is null";}
 ?>
 
 
@@ -179,7 +180,7 @@
                 </fieldset>
 
                 <fieldset>
-                  <button  type="submit"  name = "submit" value ="Submit">Submit</button>
+                  <button  type="submit"  name = "submit" value ="submit">Submit</button>
                 </fieldset>
                                         
             </form>
