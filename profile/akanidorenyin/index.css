@@ -11,7 +11,7 @@ h2 {
 body {
     background-color: darkblue;
 }
-    p {
+    p a {
     text-align: center;
     color: white;
 }
