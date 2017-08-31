@@ -24,12 +24,14 @@
 		<style type="text/css">
 			
 			body{
+				width: auto;
+			  	height: auto;
 			 	background:#fff;
 			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
 			 	background-size: cover;
 				background-repeat: no-repeat;
-			  	
-			    margin: 0;
+			  	text-align:center;
+			   	margin: 0;
 
 			}
 			.img_pos{
