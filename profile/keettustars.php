@@ -9,8 +9,9 @@
       		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       		$username = $config['username'];
       		$pass = $config['pass'];
-   
       		getClientToken($dsn, $username,$pass);
+      		      		
+   			
       	}
 	}
 
@@ -20,23 +21,25 @@
       $con = new PDO($dsn, $username, $pass);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
-      $password = $data['password'];echo $pass;
-      sendMail($password);    
-
+      $password = $data['password'];
+      sendMail($password);
+	         
 	}
 
-
-
-	function sendMail(){
-		$subject = $_POST['subject']);
-    	$to  = 'keettustars@gmail.com';
-    	$body = $_POST['message'];
-    	$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-    	  if($subject == ''){
-    	 	return ;
-    	  }
-      
-    	  header("location: $uri");
+    
+	function sendMail($password){
+		
+		if(isset($_POST['subject'],$_POST['message'])){
+		$subject = $_POST['subject'];
+		$body = $_POST['message'] ;
+		$to = 'keettustars@gmail.com';
+    	$uri = "/../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    	header("location: $uri");
+		}else{
+		 $error = 'All fields must be filled';	
+		}
+    	 
+    	  
 	}
 
 	//just a dummy validation
@@ -55,7 +58,7 @@
 	<title></title>
 	
 	<style type="text/css">
-		*         {
+			*         {
 	 padding: 0px;
 	 margin: 0px;
 }
@@ -104,7 +107,20 @@
 
 		}
 
+		.tagline        {
+		width:400px;
+		margin:0px auto;
+	}
+
 }	
+	
+		.tagline        {
+		
+		text-align: center;
+	    font-size: 40px;
+	    padding-top: 50px;
+	    text-shadow: 0px 5px 5px #333;
+	}
 
 	.circle    {
 				border-radius: 50%;
@@ -129,25 +145,34 @@
 		padding: 20px;
 	}
 
-	.tagline        {
-		width:400px;
-		margin:0px auto;
-		text-align: center;
-	    font-size: 40px;
-	    padding-top: 50px;
-	    text-shadow: 0px 5px 5px #333;
-	}
+	
 
 	.contact-container input, .contact-container textarea,.contact-container button{
 		width: 100%;
 		height: 40px;
+		border: 1px solid #777;
+	
 	}
 
 	.contact-container textarea {
 		height: 150px !important;
 	}
 
+	.contact-container  {
+        
+         color: #333;
+         
 
+	}
+
+	.send           {
+		 background-color: #368;
+		 color:#fff;
+		 font-size: 18px;
+		 border: 1px solid #fff;
+		 -webkit-border-radius:10px;
+		 font-family: sans-serif;
+	}
 	</style>
 </head>
 <body>
@@ -155,7 +180,7 @@
 		<div class="header bg-1 color-1">
 			<h1 class="tagline">Request for software development.</h1>
 		</div>
-            
+            <?php if(isset($error)){echo $error;}?>
 		<div class="container bg-2">
 			
 				<div class="img-wrapper">
@@ -178,18 +203,28 @@
 						have learnt Native javaScript, react/react native, jQuery, php/laravel and python( basic ) despite my art background. I co-organised bizIntel where Ibadan and Ife business school, P&G, PWC and many others were represented. I co-founder Wetech. Above all, I am learner for life. 
 				</p>
 
-				<a href="https://github.com/hnginterns/hngfun/commit/ac3bccc7d86592f20e40f21aaeee73c4e2262f0c">link to my stage 1</a>
-
 
 				<div class="contact-container">
 					<p class="muted">* means a required field</p>
-					<form method="POST" action="/" >
-						<input type="text" placeholder="Subject *" name="subject" autocomplete="off" required>
-						<textarea rows="" cols="" placeholder="Message *" name="message" required></textarea>
-						<input type="submit" name="" value="Send">
+					<br>
+					<form method="POST" action="keettustars.php" >
+						<div class="field">
+							<input type="text" placeholder="Subject *" name="subject" autocomplete="off" required>
+						</div>
+
+						<br>
+						<div class="field">
+							<textarea placeholder="Message *" name="message" required></textarea>
+						</div>
+
+						<br>
+						<div class="field">
+							<input type="submit" class="color-1 send" value="Send">
+						</div>
 					</form>
 				</div>
 
+				<a href="https://github.com/hnginterns/hngfun/commit/ac3bccc7d86592f20e40f21aaeee73c4e2262f0c">link to my stage 1</a>
 		</div>
 
 		 

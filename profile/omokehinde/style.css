@@ -51,13 +51,57 @@ ul {
     background: #f9feff
 }
 
-/* About me STYLES */
+/* FORM STYLES */
 
 .contact img {
     height: 200px;
 }
 
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
 
+.contact form label {
+    display: block;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9ecff;
+}
+
+.contact form button {
+    background: #c9ecff;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact form button:hover, .contact form button:focus {
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background-color: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
 
 /* LARGE SCREENS */
 
