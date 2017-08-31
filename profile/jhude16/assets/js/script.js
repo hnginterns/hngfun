@@ -36,6 +36,7 @@ form.addEventListener("submit", (e) => {
       
     xhr.open('GET', url, true);
     xhr.onload = function () {
+        console.log(xhr.resposeText);
       submit.innerHTML = `<i class="fa fa-check fa-fw"></i> Sent`
         setTimeout(() => {
             submit.removeAttribute('disabled');
