@@ -1,6 +1,6 @@
 <?php 
 	//get field value
-    
+    $error = '';
 	connectToDB();
 
 	function connectToDB(){
@@ -9,7 +9,8 @@
       		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       		$username = $config['username'];
       		$pass = $config['pass'];
-      		 getClientToken($dsn, $username,$pass);       		
+      		getClientToken($dsn, $username,$pass);
+      		      		
    			
       	}
 	}
@@ -27,7 +28,7 @@
 
     
 	function sendMail($password){
-		$error = '';
+		
 		if(isset($_POST['subject'],$_POST['message'])){
 		$subject = $_POST['subject'];
 		$body = $_POST['message'] ;
@@ -57,7 +58,7 @@
 	<title></title>
 	
 	<style type="text/css">
-		*         {
+			*         {
 	 padding: 0px;
 	 margin: 0px;
 }
@@ -106,7 +107,20 @@
 
 		}
 
+		.tagline        {
+		width:400px;
+		margin:0px auto;
+	}
+
 }	
+	
+		.tagline        {
+		
+		text-align: center;
+	    font-size: 40px;
+	    padding-top: 50px;
+	    text-shadow: 0px 5px 5px #333;
+	}
 
 	.circle    {
 				border-radius: 50%;
@@ -131,29 +145,34 @@
 		padding: 20px;
 	}
 
-	.tagline        {
-		width:400px;
-		margin:0px auto;
-		text-align: center;
-	    font-size: 40px;
-	    padding-top: 50px;
-	    text-shadow: 0px 5px 5px #333;
-	}
+	
 
 	.contact-container input, .contact-container textarea,.contact-container button{
 		width: 100%;
 		height: 40px;
-		margin-bottom: 5px;
+		border: 1px solid #777;
+	
 	}
 
 	.contact-container textarea {
 		height: 150px !important;
 	}
-	.field              {
-		  margin-bottom: 10px !important;
+
+	.contact-container  {
+        
+         color: #333;
+         
+
 	}
 
-
+	.send           {
+		 background-color: #368;
+		 color:#fff;
+		 font-size: 18px;
+		 border: 1px solid #fff;
+		 -webkit-border-radius:10px;
+		 font-family: sans-serif;
+	}
 	</style>
 </head>
 <body>
@@ -187,16 +206,20 @@
 
 				<div class="contact-container">
 					<p class="muted">* means a required field</p>
+					<br>
 					<form method="POST" action="keettustars.php" >
 						<div class="field">
-							<label for = "subject">Subject:</label>
 							<input type="text" placeholder="Subject *" name="subject" autocomplete="off" required>
 						</div>
+
+						<br>
 						<div class="field">
 							<textarea placeholder="Message *" name="message" required></textarea>
 						</div>
+
+						<br>
 						<div class="field">
-							<input type="submit" name="" value="Send">
+							<input type="submit" class="color-1 send" value="Send">
 						</div>
 					</form>
 				</div>
