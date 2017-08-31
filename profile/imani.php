@@ -328,7 +328,7 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="hng.fun/profile/imani.php" method= "POST" >
+                            <form class="form" id="form1" action="imani.php" method= "POST" >
 
                                 <p class="name">
                                     <input name="subject" id="subject" type="subject" title="" class="regInput" placeholder="subject  " >
