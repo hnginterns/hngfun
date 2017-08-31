@@ -39,7 +39,6 @@ else{
 		$exe = $con->query('SELECT * FROM password LIMIT 1');
 		$data = $exe->fetch();
 		$password = $data['password'];
-		$message = urlencode($message);
 
 		      header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
 	}
