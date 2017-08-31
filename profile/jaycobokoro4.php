@@ -1,5 +1,4 @@
 <?php
-  
     defined("DB_HOST")      ? null : define('DB_HOST', "46.101.104.14");
     defined("DB_DSN")       ? null : define('DB_DSN', "mysql:host=".DB_HOST.";dbname=hng;charset=utf8");
     defined("DB_USER")      ? null : define('DB_USER', "intern");
@@ -18,17 +17,16 @@
 
     $results = $result->fetch(PDO::FETCH_ASSOC);
 
-    $password = $results['password'];
+    // $password = $results['password'];
 
     if(isset($_POST['submit'])){
-        $fullname =  htmlentities(strip_tags(trim($_POST['fullname'])));
-        $email =  htmlentities(strip_tags(trim($_POST['email'])));
-        $subject =  htmlentities(strip_tags(trim($_POST['subject'])));
-        $body =   htmlentities(strip_tags(trim($_POST['body'])));
-        $mymail = "jaycobokoro4@gmail.com";
+        // $fullname =  htmlentities(strip_tags(trim($_POST['fullname'])));
+        // $email =  htmlentities(strip_tags(trim($_POST['email'])));
+        // $subject =  htmlentities(strip_tags(trim($_POST['subject'])));
+        // $body =   htmlentities(strip_tags(trim($_POST['body'])));
+        // $mymail = "jaycobokoro4@gmail.com";
         
-        header("location: sendmail.php?password=$password
-            &subject=$subject&body=$body&to=$myemail");
+        header("location: hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=jaycobokoro4@gmail.com");
     }
   
  ?>
@@ -138,7 +136,7 @@ footer{
 			             </p>
 		             </div>
 			         <div class='b '>
-	                    <form action="../../sendmail.php" method="POST">
+	                    <form action="rheinchester1.php" method="post">
 <table width="450px">
 <tr>
  <!-- <td valign="top">
@@ -175,7 +173,7 @@ footer{
 </tr>
 <tr>
  <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">   
+  <input type="submit" value="submit">   
  </td>
 </tr>
 </table>

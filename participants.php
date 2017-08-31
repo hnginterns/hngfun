@@ -8320,12 +8320,12 @@ include('participants-head.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dmyow6n0v/image/upload/v1503540677/IMG_20160424_112337_edit_vz0vwz.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="http://hng.fun/profile/Jacob.html">
+            <a href="http://hng.fun/profile/jaycobokoro4.php">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Jacob okoro</h3>
                 <!--Profile Name-->
             </a>
-            <p class="p-card-description">jaycobokoro@gmail.com</p>
+            <p class="p-card-description">jaycobokoro4@gmail.com</p>
             <!--Email-->
         </div>
         <div class="p-team">
