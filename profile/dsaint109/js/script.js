@@ -45,8 +45,23 @@ function sendContactForm() {
 
 function getResponse() {
 	if(ajaxRequest.readyState == 4) {
+		//readyState 4 determines if request has been sent
 		if(ajaxRequest.status == 200) {
-			alert(ajaxRequest.responseText);
+			//200 if the request was succesful
+			//
+			if(ajaxRequest.responseText){
+				//if there is a response then there is an error
+				var errorBox = document.getElementById('error');// get the error p tag 
+				errorBox.innerHTML = ajaxRequest.responseText; //input the response as HTML
+				setTimeout(errorBox.innerHTML = '', 20000); //remove the error after 20 seconds
+
+			}else {
+				// if there is no response text then the mail was sent successfully
+				var successBox = document.getElementById('success'); // get the success p tag
+				successBox.innerHTML = 'Your message was sent successfully'; // Tell the user his message was sent successfully
+				setTimeout(successBox.innerHTML = '', 20000); //remove the success message after 20 seconds
+			}
+			console.log(ajaxRequest.responseText);
 		}else{
 			alert(ajaxRequest.statusText);
 		}

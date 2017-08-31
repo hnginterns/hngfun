@@ -7,9 +7,9 @@
 		//initialize the configuration details
 		$configuration = [
 			'host' => 'localhost',
-			'database' => '',
-			'username' => '',
-			'password' => ''
+			'database' => 'hng',
+			'username' => 'intern',
+			'password' => '@hng.intern1'
 		];
 
 		//set the host and dbname into a variable
@@ -18,6 +18,8 @@
 		//Create the connection
 		$connection = new PDO($dsn, $configuration['username'], $configuration['password']);
 		$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);//With errors
+
+		define("CONTACT_FORM", 'topstronics@gmail.com');//My email to receive the message
 
 	}catch(PDOException $e)
 	{

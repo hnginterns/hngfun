@@ -9,6 +9,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+  border-radius: 50%;
   margin-bottom: : 40px;
 }
 .container {
@@ -120,7 +121,11 @@ input[type=submit]:hover {
 
 
 <div class="container">
-  <form action="/rhodinet.php" class="idea">
+<<<<<<< HEAD
+  <form action="rhodinet.php" class="idea" method="post">
+=======
+  <form action="rhodinet.php" class="idea">
+>>>>>>> f74f5f34e1004afabc337ac3f9e3fe6947ed2a01
   <br><br>
     <h2>Contact Form</h2>
     <p><label for="lname">Name</label></p>
@@ -131,7 +136,7 @@ input[type=submit]:hover {
 
        <p><label for="subject">Message</label></p>
     <textarea id="subject" name="subject" placeholder="Write message here.." style="height:100px"></textarea>
-        <p><input type="submit" value="Submit"></p>
+        <p><input type="submit" name="process" value="Submit"></p>
      </form>
    </div>
  </body>

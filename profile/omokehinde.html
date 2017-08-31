@@ -7,87 +7,8 @@
     <title>Omokehnde's Profile</title>
     <link rel="stylesheet" href="../css/font-awesome.css">
     <link rel="stylesheet" href="../css/animate.css">
-    <!--link rel="stylesheet" href="omokehinde/style.css"-->
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background: #92bde7;
-            color: #485e74;
-            line-height: 1.6;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 1em;
-        }
-
-        .container {
-            max-width: 1170px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 1em;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .brand {
-            text-align: center;
-        }
-
-        .brand span {
-            color: #fff
-        }
-
-        .wrapper {
-            box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
-        }
-
-        .wrapper > * {
-            padding: 1em;
-        }
-
-        .company-info {
-            background: #c9e6ff;
-        }
-
-        .company-info h3, .company-info ul {
-            text-align: center;
-            margin: 0 0 1em 0;
-        }
-
-        .contact {
-            background: #f9feff
-        }
-
-        /* About me STYLES */
-
-        .contact img {
-            height: 200px;
-        }
-
-
-
-        /* LARGE SCREENS */
-
-        @media(min-width:700px){
-            .wrapper {
-                display: grid;
-                grid-template-columns: 1fr 2fr;
-            }
-
-            .wrapper > * {
-                padding: 2em;
-            }
-
-            .company-info h3, .company-info ul, .brand {
-                text-align: left;
-            }
-        }
-    
-    </style>
+    <link rel="stylesheet" href="omokehinde/style.css">
+   
 </head>
 <body>
     <div class="container">
@@ -119,9 +40,45 @@
                          and taking a long walk.
                     </p>
                 </div>
+
+                <h3>Contact me</h3>
+                <div class="alert">Your message has been sent</div>
+                <form id="contactForm">
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </p>
+                        <p>
+                            <label>Company</label>
+                            <input type="text" name="company" id="company">
+                        </p>
+    
+                         <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+    
+                         <p>
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </p>
+    
+                         <p class="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" id="message" required></textarea>
+                        </p>
+    
+                        <p class="full">
+                            <button type="submit">Submit</button>
+                        </p>
+                         
+                    </form>
               
             </div>
         </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="omokehinde/main.js"></script>
 </body>
 </html>
