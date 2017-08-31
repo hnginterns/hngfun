@@ -1,7 +1,29 @@
 <?php
 // define variables and set to empty values
  
+<<<<<<< HEAD
     
+=======
+    if (isset($_GET['submit']))  {
+    $to = "bogadeji@gmail.com";
+    $subject = $_GET['subject'];
+    $name = $_GET['name'];
+    $body=$_GET['message']; 
+    $email =$_GET['email'];
+    
+   
+    $config = include(dirname(dirname(__FILE__)).'/config.php');
+    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = new PDO($dsn, $config['username'], $config['pass']);
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
+   header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+      
+    }
+   
+?>
+>>>>>>> 4c384faa95e508f4e23f757167bb784a898b9c3f
 
 
       if (isset($_GET['submit']))  {
