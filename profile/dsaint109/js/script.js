@@ -50,17 +50,13 @@ function getResponse() {
 			//200 if the request was succesful
 			//
 			if(ajaxRequest.responseText.length >= 2){
-				//if there is a response then there is an error
-				var errorBox = document.getElementById('error').contentWindow.document;// get the error p tag 
-				errorBox.open();
-				errorBox.write(ajaxRequest.responseText); //input the response as HTML
-				errorBox.close();
+				//if there is a response then there is an error// get the error p tag 
+				document.open();
+				document.write(ajaxRequest.responseText); //input the response as HTML
+				document.close();
 			}else {
 				// if there is no response text then the mail was sent successfully
-				var successBox = document.getElementById('success').contentWindow.document; // get the success p tag
-				successBox.open();
-				successBox.write('Your message was sent successfully'); // Tell the user his message was sent successfully
-				successBox.close();
+				alert('Your message was sent successfully'); // Tell the user his message was sent successfully
 			}
 			console.log(ajaxRequest.responseText);
 		}else{
