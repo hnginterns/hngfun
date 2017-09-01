@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 <?php
     if(isset($_POST['submit'])){
         $config = [
@@ -21,5 +19,4 @@
         header("location: ukahbethel.html");
     }
 ?>
-=======
-<?php
+
