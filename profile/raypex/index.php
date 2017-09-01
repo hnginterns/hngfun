@@ -44,6 +44,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   <div class="container">
     <h1>RAY OKAAH</h1>
     <p>I am a Java / Android Enthusiast. 200 level student of The University of Port Harcourt, Rivers state Nigeria.</p>
+<<<<<<< HEAD
 	 <p> <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk> You can download my android app here </a></p>
 	<p> Slack username: raypex </p>
 <<<<<<< HEAD
@@ -52,11 +53,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 =======
 	<p> My stage 1 test project is <a href="https://github.com/raypex/hngtest">here</a> <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk> Download my Andoid app here</a></p>
 >>>>>>> 136dcc15293fb20c53c68f48a63dfa00f4aa1e20
+=======
+	  <p> <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> Download my Andoid app here</a></p>
+	<p> Slack username: raypex </p>
+	<p> My stage 1 test project is <a href="https://github.com/raypex/hngtest">here</a> </p>
+>>>>>>> 603aa2475ebfd37e8e9564c167e745ae57cb9b26
     <div style="margin: 24px 0;">
       <a href="http://www.github.com/raypex"><i class="fa fa-github"></i></a> 
       <a href="http://www.twitter.com/dear_ray"><i class="fa fa-twitter"></i></a> 
    </div>
-  
+	  
   </div>
   
   
