@@ -31,12 +31,17 @@ $trade_ticker = $load_trade->get_trading_pairs();
 					//	echo '<br>'.$trade_history[$j]["type"];
 					//}
 					
-					foreach($trade_history as $x => $x_value) {
-					    echo "Key=" . $x . ", Value=" . $x_value[3];
+					//foreach($trade_history as $x => $x_value) {
+					//    echo "Key=" . $x . ", Value=" . $x_value["type"];
+					//    echo "<br>";
+					//}
+					//echo '</p>';
+				}
+			
+					foreach($load_trade->get_trade_history("BTC_BCN") as $x => $x_value) {
+					    echo "Key=" . $x . ", Value=" . $x_value["type"];
 					    echo "<br>";
 					}
-					echo '</p>';
-				}
 			
 				 	//$trade_history = $load_trade->get_trade_history($trade_ticker['3']);				
 					//echo $bcn_coin_status = $trade_history[3]["type"];
