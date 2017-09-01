@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html>
 <head>
 <title> Hng Intern </title>
@@ -79,19 +81,19 @@
 <hr>
 <hr>
  <div class="form">
-        <form action="Mfoni.php" method="GET">
+        <form action="index.php" method="POST">
           <fieldset>
               <legend>Contact Me</legend>
               	  My address:<br>
-                  <input name="my_address" required placeholder="mfnsumana@gmail.com"><br>
+                  <input name="to" type = "hidden"required value="itozabu@gmail.com@gmail.com"><br>
                   Your email: <br>
                   <input name="customer_mail" placeholder="Your E-mail" required> <br>
                   Subject: <br>
-                  <input name="Sub" placeholder: "subject" required><br>
+                  <input name="subject" placeholder = "subject" required><br>
                   Say Something:<br>
-                  <textarea name = "txta"cols="50" rows="5" placeholder = "write something" required></textarea>
+                  <textarea name = "message" cols= "50" rows="5" placeholder = "write something" required></textarea>
                   <br>
-                  <button type="submit" ><strong>Send</strong></button>
+                  <button type="submit" value = "SEND"><strong>Send</strong></button>
           </fieldset>
         </form>
       </div> 
@@ -99,3 +101,4 @@
 
 </body>
 </html>
+ 
