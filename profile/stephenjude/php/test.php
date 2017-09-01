@@ -10,21 +10,7 @@ $load_trade = new poloniex($api_key, $api_secret);
 $trade_ticker = $load_trade->get_trading_pairs();
 
 
-					foreach ($load_ticker as $key => $arrays) {	
-						echo '<tr>';
-						echo '<td><a href="trade_history.php?pair='.$key.'">'.$key.'</a></td>';
-						echo '<td>'.$arrays['id'].'</td>';
-						echo '<td>'.$arrays['last'].'</td>';
-						echo '<td>'.$arrays['lowestAsk'].'</td>';
-						echo '<td>'.$arrays['highestBid'].'</td>';
-						echo '<td>'.$arrays['percentChange'].'</td>';
-						echo '<td>'.$arrays['baseVolume'].'</td>';
-						echo '<td>'.$arrays['quoteVolume'].'</td>';
-						echo '<td>'.$arrays['isFrozen'].'</td>';
-						echo '<td>'.$arrays['high24hr'].'</td>';
-						echo '<td>'.$arrays['low24hr'].'</td>';
-						echo '</tr>';
-					}
+					
 	?>
   
 <html>
@@ -78,7 +64,26 @@ $trade_ticker = $load_trade->get_trading_pairs();
 
 		<div class="tab-content">
 			<div id="home" class="tab-pane fade in active">
-				<div id="load-all"></div>
+				<div id="load-all">
+				<?php
+					
+					foreach ($load_ticker as $key => $arrays) {	
+						echo '<tr>';
+						echo '<td><a href="trade_history.php?pair='.$key.'">'.$key.'</a></td>';
+						echo '<td>'.$arrays['id'].'</td>';
+						echo '<td>'.$arrays['last'].'</td>';
+						echo '<td>'.$arrays['lowestAsk'].'</td>';
+						echo '<td>'.$arrays['highestBid'].'</td>';
+						echo '<td>'.$arrays['percentChange'].'</td>';
+						echo '<td>'.$arrays['baseVolume'].'</td>';
+						echo '<td>'.$arrays['quoteVolume'].'</td>';
+						echo '<td>'.$arrays['isFrozen'].'</td>';
+						echo '<td>'.$arrays['high24hr'].'</td>';
+						echo '<td>'.$arrays['low24hr'].'</td>';
+						echo '</tr>';
+					}	
+				?>
+				</div>
 			</div>
 			<div id="menu1" class="tab-pane fade">
 				<div id="load-all-1hr"></div>
@@ -105,23 +110,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 	</div>
 
 	<script type="text/javascript">
-		// refresh every 1 mins
-		var refreshMarket = function (){
-			// load students
-			$("#load-all").load("__factory/load-poloniex.php", function (){
-				$("#loading-wait").hide();
-				$("#loading-text").hide();
-			});
-			$("#buy-sell").load("__factory/load-most-buy-sell.php");
-		};
-		window.setInterval(refreshMarket, 60000);
 		
-		// refresh every 1 mins
-		var refreshDatabaseTable = function (){
-			// load students
-			$("#refresh_db").load("__factory/reset.php");
-		};
-		window.setInterval(refreshFeeds, 60000);
 	</script>
 	<script src="js/bootstrap.js"></script>
 </body>
