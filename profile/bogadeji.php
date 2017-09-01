@@ -31,8 +31,7 @@
                     display:block;
                     border:1px solid #551A8B;
                     margin: auto; 
-                    max-width: 100%;
-                    height: auto;
+                    
                       }
 
                 .myprofile {
