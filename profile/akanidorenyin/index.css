@@ -9,9 +9,9 @@ h2 {
     color: white;
 }
 body {
-    background-color: darkblue;
+    background-color: lightblue;
 }
-    p {
+    p a{
     text-align: center;
     color: white;
 }

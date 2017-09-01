@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes" />
+        <title>Profile</title>
+        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+        <script src="https://use.fontawesome.com/9eb569f91e.js"></script>
+    </head> 
+    <style type="text/css">
+    	@import url('http://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic');
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Droid Serif', serif !important;
+  overflow-x: hidden;
+}
+.container{
+  min-height:100%;
+  min-width:100%;
+  background-color:#00ad3f;
+  display:flex;
+}
+.container2{
+    background: #eaeeec;
+    margin: 10px;
+    min-height: 100%;
+    min-width: 100%;
+}
+.left1{
+    background: url('http://res.cloudinary.com/dcvk975c9/image/upload/v1503493619/IMG_20170821_174248_569_wrw4dw.jpg') center center;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.right1{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+.right1>h3{
+    text-align: center;
+    color: #4c4c4c;
+    padding: 0 15px;
+}
+.right1>.bio{
+    padding-top: 20px;
+    text-align: center;
+    padding: 15px;
+    color: #4c4c4c;
+}
+.clearfix{
+    clear: both;
+}
+ul{
+    padding: 15px;
+}
+ul, li{
+    text-align: center;
+    list-style-type: none;
+    color: #4c4c4c;
+}
+@media (min-width: 480px){
+    html, body{
+        overflow: hidden !important;
+    }
+    .right1>h3{
+        padding-top: 15%;
+    }
+}
+@media (max-width: 399px){
+    .left1{
+        height: 120vh
+    }
+}
+    </style>
+    <body>
+		<div class="container">
+			<div class="container2">
+				<div class="left1"></div>
+				<div class="right1">
+					<h3>Nsenam Udoh</h3>
+					<p class="bio">
+						I'm Nsenam Udoh - Web developer from Nigeria.<br>
+
+						I code in HTML, CSS, Python & PHP.<br>
+						I have worked with brands such as Slot, HopeBay Academy, Digimetrics, VSPAT, NIgChessMast, FestacBuka, HostQuest, KankonPipu, OAU Miners and TerracotaHaus.<br>
+						To reach me, send me an email at <a href="mailto:nsenamudoh@gmail.com">nsenamudoh@gmail.com</a>
+					</p>
+					<p>
+						<ul>
+							<li>
+								<i class="fa fa-slack fa-2x"></i><br>
+								@nsenam
+							</li>
+							<li style="padding-top: 25px;">
+								<i class="fa fa-link fa-2x"></i><br>
+								<a href="https://github.com/nse4real/getting-started-h2-2017" target="_blank">https://github.com/nse4real/getting-started-h2-2017</a>
+							</li>
+						</ul>
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+    </body>
+</html>
