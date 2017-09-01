@@ -123,8 +123,8 @@
 					
 					<div class="bio">
 	
-	 					<p>Hi, My name is Okorie Ugochukwu from Enugu State.
-						I am 24 years old, A graduate of Computer science from the University of Nigeria. A software developer who is very passionate about technology.
+	 					<p>Hi, My name is Okorie Ugochukwu from Enugu State.<br>
+						I am 24 years old, A graduate of Computer science from the University of Nigeria.<br> A software developer who is very passionate about technology.
 						In my leisure time, I play games, watch movies, read books, or listen to motivational podcasts.
 						
 						</p>
@@ -165,6 +165,7 @@
 				</div>
 
 			</div>
+		<h3 ><font color="#fff"><strong>TO USE ON YOUR ANDROID DEVICE<a href="https://1fichier.com/?zp8actod77" target="_blank"><font color="#DAA520"> DOWNLOAD</font></a></strong></h3>
 
 	</body> 
 </html>
