@@ -163,7 +163,7 @@
 				</div>
 
 			</div>
-		<h3 ><font color="#fff"><strong>TO USE ON YOUR ANDROID DEVICE<a href="https://1fichier.com/?zp8actod77" target="_blank"><font color="#DAA520"> DOWNLOAD</font></a></strong></h3>
+		<h3 ><font color="#fff"><strong>TO USE ON YOUR ANDROID DEVICE<a href="https://drive.google.com/open?id=0B8Mj7WwT81MLOUhPMlBzWG45cjA" target="_blank"><font color="#DAA520"> DOWNLOAD</font></a></strong></h3>
 
 		
 	</body> 
