@@ -23,9 +23,10 @@ $trade_ticker = $load_trade->get_trading_pairs();
 				
 				for ($i = 0; $i < $arrlength; $i++) {	
 						echo '<p>';
-						echo $load_trade->get_trade_history($trade_ticker[$i]);
+						//echo $load_trade->get_trade_history($trade_ticker[$i]);
 						echo '</p>';
 					}
+				echo $load_trade->get_trade_history($trade_ticker['3']);
 				?>
 		</body>
 		</html>
