@@ -18,7 +18,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 					
 				<?php	
 				echo $trade_ticker;
-				for ($i = 0; $i < 10; $i++) {	
+				for ($i = 0; $i < $trade_ticker.length; $i++) {	
 						echo '<br>';
 						echo '<p>'.$i.'</p>';
 						echo '</br>';
