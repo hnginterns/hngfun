@@ -32,7 +32,7 @@ if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
 
 else{
 	if(empty($error)) {
-		$config = include('../../config.php');
+		$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
 		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 		$con = new PDO($dsn, $config['username'], $config['pass']);
 		
@@ -40,7 +40,7 @@ else{
 		$data = $exe->fetch();
 		$password = $data['password'];
 
-		      header("location: http://hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=fareedakabeer@gmail.com");
+		       header("location:http://hng.fun/sendmail.php?password=".$password."&name=".$name."&subject=".$subject."&message=".$body."&to=fareedakabeer@gmail.com");
 	}
 			 
 	}

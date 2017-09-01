@@ -28,7 +28,8 @@
     }
 
   }
- ?>
+  
+?>
 
 <html lang="en">
   <head>
@@ -144,32 +145,34 @@
 				 	<div class="title m-b-md shadow-multiple">
 					  Ijaware Tiwaloluwa
 					</div>
-					<p>My name is Tiwaloluwa Ijaware, I code in<b> HTML & CSS </b></p>
-					<p><a href="https://github.com/tiwalolu/getting-started-h2-2017" target="_blank">Stage-1-Link</a></p>
 					<ul class="social-icons">
 			 	 		<li><a href="https://www.instagram.com/tiwaloluu" class="social-icon"><i class="fa fa-instagram"></i></a></li>
 				 		<li><a href="https://hnginterns.slack.com/messages/@tiwaloluu" class="social-icon"><i class="fa fa-slack"></i></a></li>
 				 		<li><a href="https://github.com/tiwalolu" class="social-icon"><i class="fa fa-github"></i></a></li>
 			 		</ul>
-				<form class="cd-form floating-labels" method="POST" action="">
-              		<fieldset>
+					<p>My name is Tiwaloluwa Ijaware, I code in<b> HTML & CSS </b></p>
+					<p><a href="https://github.com/tiwalolu/getting-started-h2-2017" target="_blank">Stage-1-Link</a></p>
+					<p><a href="https://drive.google.com/file/d/0B7R3s248sK6oMXFIVTh2LWpEcUk/view?usp=sharing_eip&ts=59a6c35e" target="_blank">Download App</a></p>
+					
+						 <form class="cd-form floating-labels" method="POST">
+              			 	<fieldset>
 
 
-              			<div class="icon">
-              				<label class="cd-label" for="cd-name">Subject</label>
-              				<input class="user" type="text" name="subject" id="cd-name" required>
-              		  </div>
+              				   <div class="icon">
+              				   		<label class="cd-label" for="cd-name">Subject</label>
+              						<input class="user" type="text" name="subject" id="cd-name" required>
+              		 		   </div>
 
-              			<div class="icon">
-              				<label class="cd-label" for="cd-textarea">Message</label>
-                    	<textarea class="message" name="message" id="cd-textarea" required></textarea>
-              			</div>
+              				   <div class="icon">
+              				   <label class="cd-label" for="cd-textarea">Message</label>
+                    		   <textarea class="message" name="message" id="cd-textarea" required></textarea>
+              				   </div>
 
-              			<div>
-              		   <input type="submit" value="Send Message">
-              		  </div>
-              		</fieldset>
-              	</form>
+              				   <div>
+              		   		   <input type="submit" value="Send Message">
+              		  		   </div>
+              				</fieldset>
+              			</form>
 			 </div>
 
 		</div>
