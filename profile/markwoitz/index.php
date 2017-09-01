@@ -27,7 +27,7 @@
                             a strong advocate of Jollof Rice. Proficient in PHP & Mysql, HTML, CSS, Javascript. 
                         </p>            
 
-                            You can find me on:
+                    <p>You can find me on:</p>
                             <div class="social">
                                 <ul>
                                     <li><span><a href="https://www.facebook.com/ik.nwakanma"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span></li>
