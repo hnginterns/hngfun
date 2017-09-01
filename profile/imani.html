@@ -295,25 +295,27 @@
 
 
                     <p class="slack contact">Contact me</p>
+       <section class="contact">
+    
+      <section class="contact-form" >
+       <div class = "card-form">
+        <form  action="imani.php" method="post" >   
+        
+    <label>Email</label>
+    <input type="email" id="to" name="to" placeholder="Type Here">
 
-                    <div id="form-main">
-                        <div id="form-div">
-                            <form class="form" id="form1" action="" method= "POST" >
-
-                                <p class="name">
-                                    <input type="subject" title="" class="regInput" placeholder="subject  " >
-                                </p>
-
-                                
-
-                                <p class="text">
-                                    <textarea class="regInput-1" placeholder=" Write that message...."></textarea>
-                                </p>
-
-                                <div class="submit">
-                                    <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
-                                </div>
-                            </form>
+    <label>Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Type Here">
+            
+    <label>Message</label>
+    <textarea id="body" name="body" placeholder="Type Here""></textarea>
+            
+    <input type="submit" name="process" value="Submit">
+        
+</form>
+              </div>
+      </section>
+   </section>
                         </div>
                     </div>
 
