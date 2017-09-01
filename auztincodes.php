@@ -32,10 +32,6 @@
 			    	margin: 0;
 				text-align:center;
 			}
-			.img_pos{
-				margin-left: 43%;
-				margin-top: 5%;
-			}
 
 			.imgs{
 				max-width: : 200px;
