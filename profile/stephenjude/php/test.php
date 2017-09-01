@@ -39,7 +39,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 					    echo "Value=" . $x_value["type"];
 					    echo "<br>";
 					}
-					//echo "<p> total buy = ".$count_buy."; total sell =  ".$count_sell."</p>";
+					echo "<p> total buy = ".$count_buy."; total sell =  ".$count_sell."</p>";
 					echo '</p>';
 				}
 			
