@@ -201,10 +201,15 @@
 			</div>
 			<div class="row">
 				<div class="col-4" style="text-align: right;">
-					<a class="no-decor" target="_blank" href="https://github.com/efefregene/hng-internship"><h3><i class="fa fa-github"></i> Stage 1</h3></a>
+					<a class="no-decor" target="_blank" href="https://github.com/efefregene/hng-internship"><h3><i class="fa fa-github"></i> Stage 1</h3>
+					</a>
 				</div>
-				<div class="col-6" style="text-align: right;">
+				<div class="col-3" style="text-align: right;">
 					<a class="no-decor" target="_blank" href="javascript:void(0)"><h3><i class="fa fa-github"></i> Stage 2</h3>
+					</a>
+				</div>
+				<div class="col-3" style="text-align: right;">
+					<a class="no-decor" target="_blank" href="https://github.com/efefregene/hng-android"><h3><i class="fa fa-github"></i> Stage 3</h3>
 					</a>
 				</div>
 				<div class="col-2"></div>
