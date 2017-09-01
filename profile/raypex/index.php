@@ -45,12 +45,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h1>RAY OKAAH</h1>
     <p>I am a Java / Android Enthusiast. 200 level student of The University of Port Harcourt, Rivers state Nigeria.</p>
 	<p> Slack username: raypex </p>
-	<p> My stage 1 test project is <a href="https://github.com/raypex/hngtest">here</a> </p> <p>  <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> Download My Android App Here</a></p>
+	<p> My stage 1 test project is <a href="https://github.com/raypex/hngtest">here</a> </p>
     <div style="margin: 24px 0;">
       <a href="http://www.github.com/raypex"><i class="fa fa-github"></i></a> 
       <a href="http://www.twitter.com/dear_ray"><i class="fa fa-twitter"></i></a> 
    </div>
-  
+     <p> <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> Download My Android App Here</a></p>
   </div>
   
   
