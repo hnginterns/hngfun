@@ -1,7 +1,5 @@
 
-require ("../__config/p_api.php");
-require ("../__config/core.php");
-require ("../__config/functions.php");
+require ("p_api.php");
   
 $api_key = "52P8WQDT-UNTGQINY-A7RUEC8A-PJ7RQCKL"; // Api Keys here
 $api_secret = "1d63d60d45b510553c0bc7dd2aa4128e8b36c44d23a47459e03ef077bb5c1d25a098e1139434c7ceb97ed3ab7673164a6f12a67432d5062be08992b5c04e358e"; // Api Secret here
