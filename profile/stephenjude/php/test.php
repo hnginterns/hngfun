@@ -25,7 +25,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 						echo '<p>';
 						//echo $load_trade->get_trade_history($trade_ticker[$i]);
 						$trade_history = $load_trade->get_trade_history($trade_ticker['3']);				
-						echo $bcn_coin_status = $trade_history[3]["type"];
+						echo $trade_ticker.": ".$bcn_coin_status = $trade_history[3]["type"]."- ".count($trade_history);
 						echo '</p>';
 					}
 			
