@@ -50,7 +50,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       <a href="http://www.github.com/raypex"><i class="fa fa-github"></i></a> 
       <a href="http://www.twitter.com/dear_ray"><i class="fa fa-twitter"></i></a> 
    </div>
-     <p> <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> Download My Android App Here</a></p>
+    <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> Download My Android App Here</a>
   </div>
   
   
