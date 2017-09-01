@@ -100,11 +100,13 @@ header h1 {
 	text-transform:uppercase;
 }
 .about div >div {
-	margin:0 2%;
+	margin:0 auto;
+	width:70%;
 }
 .about  p {
-	width:60%;
+	width:70%;
 	margin:0 auto;
+	font-size:110%;
 }
 .progress {
 	background:#fff;
