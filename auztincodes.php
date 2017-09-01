@@ -29,6 +29,7 @@
 			 	background:#fff;
 			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
 			 	background-size: cover;
+				background-repeat:no-repeat;
 			    	margin: 0;
 				text-align:center;
 			}
@@ -52,8 +53,8 @@
 			
 				
 				margin-top: 50px;
-				width: 50%;
-				margin-left: 25%;
+				width: auto;
+				text-align:center;
 			}
 			hr {
 				width: 100px;
@@ -69,10 +70,7 @@
 			.bio p{
 				color: #fff;
 				margin-top: -45px;
-				padding-top: -900px;
 				font-family: 'Century';
-				padding-left: 80px;
-				padding-right: 80px;
 				text-align: center;
 			}
 			 a:link {
@@ -91,9 +89,7 @@
 				font-weight: bold
 			}
 			.contact{
-				width: 50%;
-				margin-left: 25%;
-				text-align: center;
+				width: auto;
 				border-style: solid;
 				border-color: #FFFACD;
 				border-radius: 10px;
