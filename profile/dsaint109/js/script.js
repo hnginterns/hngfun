@@ -65,7 +65,7 @@ function getResponse() {
 		}
 	}
 }
-
+/*
 if (form.addEventListener) {
     form.addEventListener("submit", function(evt) {
         evt.preventDefault();
@@ -77,4 +77,4 @@ else {
         evt.preventDefault();
         sendContactForm();
     });
-} 
+}*/
