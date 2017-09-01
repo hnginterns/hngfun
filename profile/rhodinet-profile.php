@@ -9,6 +9,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+  border-radius: 50%;
   margin-bottom: : 40px;
 }
 .container {
