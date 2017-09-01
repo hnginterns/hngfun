@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['process'])){
+    if(isset($_POST['submit'])){
         $config = [
             'dbname' => 'hng',
             'pass' => '@hng.intern1',
@@ -12,9 +12,10 @@
         $data = $result->fetch();
         $password = $data['password'];
         $subject = $_POST['subject'];
-        $body = $_POST['body'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=bee_moi@zoho.com");
+        $body = $_POST['message'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=ukahbethel@gmail.com");
+    
     }else{
-        header("location: imani.html");
+        header("location: ukahbethel.html");
     }
 ?>
