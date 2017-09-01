@@ -49,7 +49,7 @@
 	<div id = "container_2">
 		<h1>Ifunanya's Profile</h1>
 		<div class="left-half">
-				<img id = "dp" alt="Display Picture" src="https://drive.google.com/file/d/0B4e4ri7wvyyAcVFxVmJFcG1CdTQ/view?usp=sharing">
+				<img id = "dp" alt="Display Picture" src="https://goo.gl/photos/A9saVcZpHP93cBX98">
 				<p> Hello, my name is Ifunanya Ukachukwu. I am learning to become a software developer. Before now, my focus has been on HTML, CSS and JavaScript. I am really excited about this internship.  If you like to connect please say hi.
 
 				</p>
