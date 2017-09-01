@@ -6477,6 +6477,31 @@ include('participants-head.php');
         </div>
 <!--  Each Participants ends here  -->
 
+
+
+<!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/euphoriawolf/image/upload/v1504185973/16583879_179332742557953_5350358069068955648_n_xtl6dp.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/euphoriawolf/iderrick.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Ikenga Derrick</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">euphoriawolf@outlook.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> null </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+<!--  Each Participants ends here  -->
+
 <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
