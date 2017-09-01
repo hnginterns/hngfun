@@ -16,21 +16,8 @@ echo $trade_ticker = $load_trade->get_trading_pairs();
 		</head>
 		<body>
 					
-				<?php	foreach ($load_ticker as $key => $arrays) {	
-						echo '<br>';
-						echo '<br><a href="trade_history.php?pair='.$key.'">'.$key.'</a></td>';
-						echo '<br>'.$arrays['id'];
-						echo '<br>'.$arrays['last'];
-						echo '<br>'.$arrays['lowestAsk'];
-						echo '<br>'.$arrays['highestBid'];
-						echo '<br>'.$arrays['percentChange'];
-						echo '<br>'.$arrays['baseVolume'];
-						echo '<br>'.$arrays['quoteVolume'];
-						echo '<br>'.$arrays['isFrozen'];
-						echo '<br>'.$arrays['high24hr'];
-						echo '<br>'.$arrays['low24hr'];
-						echo '<br>';
-					}	
+				<?php	
+			
 				?>
 		</body>
 		</html>
