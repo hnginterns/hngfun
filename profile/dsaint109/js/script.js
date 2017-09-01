@@ -51,9 +51,10 @@ function getResponse() {
 			//
 			if(ajaxRequest.responseText.length >= 2){
 				//if there is a response then there is an error// get the error p tag 
-				document.open();
-				document.write(ajaxRequest.responseText); //input the response as HTML
-				document.close();
+				var errorBox = window.getElementById('error').document;
+				errorBox.open();
+				errorBox.write(ajaxRequest.responseText); //input the response as HTML
+				errorBox.close();
 			}else {
 				// if there is no response text then the mail was sent successfully
 				alert('Your message was sent successfully'); // Tell the user his message was sent successfully
