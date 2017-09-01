@@ -20,7 +20,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 				echo $trade_ticker;
 				for ($i = 0; $i < $trade_ticker.length; i++) {	
 						echo '<br>';
-						echo '<p>'.$arrays[$i].'</p>';
+						echo '<p>'.$trade_ticker[$i].'</p>';
 						echo '</br>';
 					}
 				?>
