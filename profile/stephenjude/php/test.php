@@ -21,7 +21,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 				<?php	
 				 $arrlength = count($trade_ticker);
 				
-				for ($i = 0; $i < 6; $i++) {	
+				for ($i = 0; $i < 20; $i++) {	
 					//echo $load_trade->get_trade_history($trade_ticker[$i]);
 					$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 					$trade_history_count = count($trade_history);					
@@ -35,7 +35,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 					    }
 					}
 					echo '<p>';
-					echo $trade_ticker[$i].": ".$trade_history_count."total buy = ".$count_buy."; total sell =  ".$count_sell."</p>";
+					echo $trade_ticker[$i].": ".$trade_history_count."; Total Buy = ".$count_buy."; Total Sell =  ".$count_sell."</p>";
 					echo '</p>';
 				}
 			
