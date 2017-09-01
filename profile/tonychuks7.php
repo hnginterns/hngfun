@@ -122,10 +122,14 @@
 					<a class="links" href="https://hnginterns.slack.com/team/tonychuks7"><i class="fa fa-slack"></i> @tonychuks7 </a>&nbsp;
        
           			 <a class="links"> <i class="fa fa-mail"></i> tonychuks7@gmail.com</a>&nbsp;
+<<<<<<< HEAD
 					   </p>
 					   
 					   <p style="text-align:center;"><a class="links" href="https://drive.google.com/open?id=0B07iD5LdywvBVC1YS2preDV6RGc"><i class="fa fa-Download App"></i> Download App </a>&nbsp;
  						</p>
+=======
+          			 </p>
+>>>>>>> 0f7e34fdfcff8b43e98bae48a5ec0dfcd765bef8
 
 				</div>
 			</div>

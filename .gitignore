@@ -2,8 +2,9 @@
 .DS_Store
 config.php
 sendmail.php
-index.php
 auto-deploy.php
+index.php
 footer.php
 header.php
 PHPMailerAutoload.php
+mercyikpe/styles.css

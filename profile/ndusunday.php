@@ -33,18 +33,15 @@
 			</ul>
 		</div>
 		<?php
-			include 'ndusunday/message.php';
 			echo $error_msg;
 		?>
 		<div class="contact-form">
-			<form method = "GET" action="<?php htmlspecialchars($_SERVER['PHP_SELF']);?>">  
+			<form method = "GET" action="contact.php">
 					Contact Form
 					<br>
 					<input type="name" name="Full Name" placeholder="Enter Full name">
 					<br>
 					<input type="email" name="sender_email" placeholder="Enter email">
-					<br>
-					<input type="textarea" name="subject" placeholder="Subject">
 					<br>
 					<textarea name="message" hint="Enter your message">
 						
@@ -54,7 +51,30 @@
 				</form>
 		</div>
 
-		
+		<?php
+			$error_msg = "";
+
+			if(isset($_POST['send'])) {
+   			// Prepare the email
+			$to = 'ndusunday@example.com';
+
+			$name = $_POST['name'];
+			$mail_from = $_POST['sender_email'];
+			   $subject = 'Message sent from Hng internship';
+			   $message = $_POST['message'];
+
+			$header = "From: $name <$mail_from>";
+
+			   // Send it
+			   $sent = mail($to, $subject, $message, $header);
+			   if($sent) {
+			   $error_msg =  'Your message has been sent successfully!';
+			   } else {
+			   $error_msg =  'Sorry, your message could not send.';
+			   }
+			}
+
+		?>
 
 	</body>
 
