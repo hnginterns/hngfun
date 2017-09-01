@@ -24,13 +24,13 @@
 	    	
 
 			body{
+				height: auto;
+			   	width: auto;
 			 	background:#fff;
 			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
 			 	background-size: cover;
-			    height: auto;
-			    width: 100%;
-			    margin: 0;
-
+			    	margin: 0;
+				text-align:center;
 			}
 			.img_pos{
 				margin-left: 43%;
