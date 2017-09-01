@@ -76,7 +76,7 @@ button:hover, a:hover {
         <p><h10><span class="fa fa-github">
         </span></i> <a target="_blank" href="https://github.com/rhodinet/" class="repo"> @rhodinet</a></h10></p>
         <p><h10><span class="fa fa-facebook">
-        </span></i> <a target="_blank" href="https://facebook.com/rhodinet2/" class="repo"> @rhodinet2</a></h10></p>
+        </span></i> <a target="_blank" href="https://facebook.com/rhodinet/" class="repo"> @rhodinet</a></h10></p>
         </span></i> <a target="_blank" href="https://globalwealthtrade.com/rhodinet/opportunity.html" class="repo">GWT COMPANY</a></h10></p>
   
   </div>
@@ -121,7 +121,11 @@ input[type=submit]:hover {
 
 
 <div class="container">
+<<<<<<< HEAD
   <form action="rhodinet.php" class="idea" method="post">
+=======
+  <form action="rhodinet.php" class="idea">
+>>>>>>> f74f5f34e1004afabc337ac3f9e3fe6947ed2a01
   <br><br>
     <h2>Contact Form</h2>
     <p><label for="lname">Name</label></p>

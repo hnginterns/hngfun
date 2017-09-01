@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/font-awesome.css">
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="omokehinde/style.css">
+   
 </head>
 <body>
     <div class="container">
@@ -27,7 +28,7 @@
             <div class="contact">
                 <h3>About me</h3>
                 <div class="animated fadeInRight">
-                    <img src="omokehinde/omokehinde.jpg" alt="omokehinde">
+                    <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/21106892_1455704257799574_743438624955973796_n.jpg?oh=524f3593d3e606ac09bdd8bf5b8d490a&oe=5A1389B8" alt="omokehinde">
                 </div>
 
                 <div>
@@ -39,9 +40,45 @@
                          and taking a long walk.
                     </p>
                 </div>
+
+                <h3>Contact me</h3>
+                <div class="alert">Your message has been sent</div>
+                <form id="contactForm">
+                        <p>
+                            <label>Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </p>
+                        <p>
+                            <label>Company</label>
+                            <input type="text" name="company" id="company">
+                        </p>
+    
+                         <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+    
+                         <p>
+                            <label>Phone Number</label>
+                            <input type="text" name="phone" id="phone">
+                        </p>
+    
+                         <p class="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" id="message" required></textarea>
+                        </p>
+    
+                        <p class="full">
+                            <button type="submit">Submit</button>
+                        </p>
+                         
+                    </form>
               
             </div>
         </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="omokehinde/main.js"></script>
 </body>
 </html>
