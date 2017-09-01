@@ -4,6 +4,8 @@ body {
 
 .box {
 	background-color: #ffd2e8;
+	color: #A91961;
+	font-weight: bolder;
 	padding: 30px;
 	width: 600px;
 	height:80px;
@@ -16,9 +18,6 @@ body {
 	
 }
 
-h1 {
-	color: #993f6c; 
-}
 
 .long {
 	background-color: #7f345a;
@@ -28,7 +27,7 @@ h1 {
 	padding-top: 5px;
 	margin: auto;
 	position:relative;
-	top: -16px;
+	top: 7px;
 	left:-1px;
 	text-align: center;
 	font-size:15px;
@@ -38,10 +37,22 @@ h1 {
 	color: #ffa5d2
 }
 
+.img{ 
+	border: 3px solid #ddd;
+	border-radius:8px;
+	width : 308px;
+	height: 500px;
+	margin: auto;
+	position:relative;
+	top: 30px;
+	left:-1px;
+}
+
 .shrt {
 	background-color: #ffd2e8;
 	padding-top: 10px;
 	color: #993f6c; 
+	font-weight: bolder;
 	position: relative;
 	top: 50px;
 	left:10px;
@@ -90,10 +101,3 @@ h1 {
 	color: white
 }
 
-.img{ 
-	border: 3px solid #ddd;
-	border-radius:8px;
-	width : 308px;
-	height: 500px;
-	margin: auto;
-}
