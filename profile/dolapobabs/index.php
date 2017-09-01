@@ -204,8 +204,6 @@ input[type=submit]:hover {
         </ul>
 
         <p>Want to check my Completed Stage 1 Task? <a target='_blank' href="https://github.com/dolapobabs/HNG-Internship">Here!</a></p>
-        <p>Download my Contact App here <a href="https://drive.google.com/open?id=0B_ECWfrLK9fdLXd5UjFocFVaY1E"><button type="submit">Download Now</button></a></p> 
-        <p>Check Screenshot of My Contact App  <a href="https://drive.google.com/open?id=0B_ECWfrLK9fdU0pWV2tIZ21ObUk">Here!</a></p> 
 
         <br>
         <h3>Contact Me</h3>

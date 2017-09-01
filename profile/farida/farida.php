@@ -1,6 +1,6 @@
 <?php
 
-if (isset ($_POST ['submit'])){
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
  $name = $_POST['name'];
  $email = $_POST['email'];
  $subject = $_POST['subject'];
@@ -40,31 +40,7 @@ else{
 		$data = $exe->fetch();
 		$password = $data['password'];
 
-		//Things i added start from here		 
-		require_once('PHPMailer/PHPMailerAutoload.php');
-
-        $mail = new PHPMailer();
-        $mail->isSMTP();
-        $mail->SMTPAuth = true;
-        $mail->Host = 'mail.jointhands.net';
-        $mail->Port = '465';
-        $mail->isHTML();
-        $mail->Username = "hng@jointhands.net";
-        $mail->Password = 'QwertyUiop10/';
-        $mail->Subject = $subject;
-        $mail->Body = $message;
-        $mail->SetFrom('hng@jointhands.net');
-        $mail->AddAddress($email);
-        $mail->AddCc($admin_email);
-
-         if(!$mail->send()) {
-           $error[] = 'Message sending failed <br/>'.$mail->ErrorInfo;
-         } else {
-			 $mail->send();
-			 echo "Message sent Successfully";
-		 }
-
-		      header("location: http://hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=fareedakabeer@gmail.com");
+		       header("location:http://hng.fun/sendmail.php?password=".$password."&name=".$name."&subject=".$subject."&message=".$body."&to=fareedakabeer@gmail.com");
 	}
 			 
 	}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfect Gentleman</title>
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body {
+            background: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            color: #777;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #333;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 100%;
+        }
+
+        .content {
+            position: relative;
+            display: block;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .img-wrapper {
+            display: block;
+            position: relative;
+            width: 100%;
+            top: 0;
+            height: 300px;
+            padding: 3em 0 2em;
+            box-shadow: 0 0 40px #000;
+        }
+
+        .img-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #171717;
+            z-index: -1;
+        }
+
+        .img-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #252525;
+            z-index: -1;
+        }
+
+        .img-wrapper img {
+            max-width: 200px;
+            border-radius: 50%;
+            border: 5px solid #ccc;
+        }
+
+        .content section {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            z-index: 1;
+            padding-top: 2em;
+            padding-bottom: 3em;
+        }
+
+        .content section .contact {
+            border-left: 1px solid #eee;
+        }
+
+        .content section>* {
+            padding: 0 5em 1em;
+            text-align: center
+        }
+
+        .content section .about p {
+            font-size: 1.4em;
+            line-height: 1.5em;
+            color: #666;
+        }
+
+        .content section .contact p {
+            font-size: 1.5em;
+            line-height: 1.7em;
+            color: #666;
+        }
+
+        .content section * p span {
+            display: inline-block;
+            width: 100%;
+            margin: 0 auto;
+            text-align: left!important;
+        }
+
+        .content section * p span i {
+            width: 43%;
+            padding-right: 20px;
+            text-align: right;
+        }
+
+        .content section .title {
+            width: 100%;
+            padding: 1em;
+            text-align: center;
+            font-size: 1.4em;
+            color: #666;
+        }
+
+        @media (max-width: 900px) {
+            .content section {
+                grid-template-columns: 1fr;
+            }
+            .content section>* {
+                padding: 1em;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+        Used a bit of CSS Grid.. Might not display wel on some browsers
+      -->
+    <div class="wrapper">
+        <div class="content">
+            <div class="img-wrapper">
+                <img src="pg.jpeg" alt="Perfect Gentleman's Image">
+            </div>
+            <section>
+                <div class="about">
+                    <div class="title">
+                        <h1>About Me</h1>
+                    </div>
+                    <hr style="width: 60px;text-align: center;display:inline-block;margin-bottom: 1em;">
+                    <p>
+                        Je m'appelle Jude Francis<br>
+                        <i>skills:</i><br> web developer (frontend, backend) & <i>more</i><br>
+                        <!-- Graphic designer,
+                        Sound producer<br> -->
+                        <i>languages:</i><br> HTML, Sass, Javascript, PHP, C#
+                    </p>
+                </div>
+                <div class="contact">
+                    <div class="title">
+                        <h1>Get in Touch</h1>
+                    </div>
+                    <hr style="width: 60px;text-align: center;display:inline-block;margin-bottom: 1em;">
+                    <p>
+                        <span><i class="fa fa-facebook-f" aria-hidden="true"></i> <a href="http://facebook.com/p.gentlman">p.gentlman</a></span>
+                        <br>
+                        <span><i class="fa fa-twitter" aria-hidden="true"></i> <a href="http://twitter.com/gen2man_">gen2man_</a></span>
+                        <br>
+                        <span><i class="fa fa-github" aria-hidden="true"></i> <a href="http://github.com/jhude16">jhude16</a></span>
+                        <br>
+                        <span><i class="fa fa-slack" aria-hidden="true"></i>@jhude16</span>
+                    </p>
+                </div>
+                <!-- <h1>Francis Jude</h1>  -->
+            </section>
+        </div>
+
+    </div>
+</body>
+
+</html>
