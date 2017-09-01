@@ -1,0 +1,9 @@
+html {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #F0F8FF;
+}
+
+:link, a:visited, .at, .fa, .fa-slack, .fa-github, .fa-headphones, .fa-twitter, .fa-envelope {
+    color: #00BFFF;
+}
