@@ -22,13 +22,15 @@ $trade_ticker = $load_trade->get_trading_pairs();
 				 $arrlength = count($trade_ticker);
 				
 				for ($i = 0; $i < $arrlength; $i++) {	
-						//echo '<p>';
+						echo '<p>';
 						//echo $load_trade->get_trade_history($trade_ticker[$i]);
-						//echo '</p>';
+						$trade_history = $load_trade->get_trade_history($trade_ticker['3']);				
+						echo $bcn_coin_status = $trade_history[3]["type"];
+						echo '</p>';
 					}
 			
-				 	$trade_history = $load_trade->get_trade_history($trade_ticker['3']);				
-					echo $bcn_coin_status = $trade_history[3]["type"];
+				 	//$trade_history = $load_trade->get_trade_history($trade_ticker['3']);				
+					//echo $bcn_coin_status = $trade_history[3]["type"];
 				?>
 		</body>
 		</html>
