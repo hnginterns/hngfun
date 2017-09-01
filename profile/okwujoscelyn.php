@@ -103,6 +103,7 @@
             <h4><img class="icn" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github" height="20" width="20"> Github: <a href="https://github.com/joscelyn56">@joscelyn56</a></h4>
             <h4><img class="icn" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Google_icon.png" alt="gmail" height="20" width="20"> Email: <strong>ojk564@gmail.com</strong></h4>
             <h4><img class="icn" src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="github" height="20" width="20"> HNG Internship Stage 1 Link: <a href="https://github.com/joscelyn56/hng">https://github.com/joscelyn56/hng</a></h4>
+            <h4><img class="icn" src="https://maxcdn.icons8.com/Share/icon/Operating_Systems//android_os1600.png" alt="github" height="20" width="20"> Download Android App Link: <a href="https://github.com/joscelyn56/hng">https://github.com/joscelyn56/hng</a></h4>
             <h2>Biography</h2>
             <p>I am almost a graduate of computer science from the university of port harcourt, being held back by the on-going strike. Rivers boy. I believe in having the right information as this keeps you ahead. I love tech, and am passionate about it. to know more, contact me personally</p>
             <h2>Skills</h2>
