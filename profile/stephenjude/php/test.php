@@ -9,14 +9,14 @@ $api_secret = "1d63d60d45b510553c0bc7dd2aa4128e8b36c44d23a47459e03ef077bb5c1d25a
 echo $load_trade = new poloniex($api_key, $api_secret);
 echo $trade_ticker = $load_trade->get_trading_pairs();
 
-
+?>
 					
 	<html>
 		<head>
 		</head>
 		<body>
 					
-					foreach ($load_ticker as $key => $arrays) {	
+				<?php	foreach ($load_ticker as $key => $arrays) {	
 						echo '<br>';
 						echo '<br><a href="trade_history.php?pair='.$key.'">'.$key.'</a></td>';
 						echo '<br>'.$arrays['id'];
