@@ -20,21 +20,21 @@ body {
 
 
 .long {
-	background-color: #7f345a;
+	background-color: #CD8DAD;
 	
 	width: 660px;
 	height:25px;
 	padding-top: 5px;
 	margin: auto;
 	position:relative;
-	top: 7px;
+	top: 45px;
 	left:-1px;
 	text-align: center;
 	font-size:15px;
 	border-bottom-right-radius:1.2em;
 	border-bottom-left-radius:1.2em;
 	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-	color: #ffa5d2
+	color: #60163B
 }
 
 .img{ 
@@ -42,10 +42,9 @@ body {
 	border-radius:8px;
 	width : 308px;
 	height: 500px;
-	margin: auto;
 	position:relative;
-	top: 30px;
-	left:-1px;
+	top: 80px;
+	left:60px;
 }
 
 .shrt {
@@ -54,8 +53,8 @@ body {
 	color: #993f6c; 
 	font-weight: bolder;
 	position: relative;
-	top: 50px;
-	left:10px;
+	top: -360px;
+	left:140px;
 	width: 200px;
 	height:50px;
 	margin: auto;
@@ -69,14 +68,14 @@ body {
 .drk {
 	background-color: #7f345a;
 	
-	width: 660px;
-	height:110px;
+	width: 200px;
+	height:300px;
 	padding: 5px;
 	margin: auto;
 	position:relative;
-	top: 90px;
-	left:10px;
-	text-align: center;
+	top: -350px;
+	left:140px;
+	text-align: justify;
 	font-size:16px;
 	border-bottom-right-radius:1.2em;
 	border-bottom-left-radius:1.2em;
@@ -87,17 +86,17 @@ body {
 
 .det{
 	background-color: #ff1d8e;
-	width: 660px;
+	width: 650px;
 	height:20px;
 	padding: 5px;
 	margin: auto;
 	position:relative;
-	top: -60px;
-	left:10px;
+	top: -900px;
 	text-align: center;
 	font-size:16px;
 	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
 	color: white
 }
+
 
