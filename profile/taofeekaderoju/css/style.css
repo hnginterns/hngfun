@@ -82,9 +82,10 @@ body {
   background-color: white;
 }
 .footer {
+  background-color: #fbfbfb;
   color: #555;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   padding: 15px;
   margin-top: 20px;
 
