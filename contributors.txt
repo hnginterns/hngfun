@@ -238,4 +238,5 @@
 (232) Ukah Bethel , ukahbethel , bethel-u
 (233) Idorenyin Akaninyene Etim, Slack: @akanidorenyin, Github: dorenyin1
 (234) Samfield Hawb Bassey, Slack:@samfield4sure, Github: psalmfill
-(235) Abulhafeez Babatunde, Slack: mista-oba, Github: mistaOba
+(235) Abulhafeez Babatunde, Slack: mista-oba, Github: 
+(236) Iwaloye Samuel Olawale (slack: @iwa_temmy ,Github:iwa-temmy)
