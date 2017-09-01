@@ -144,7 +144,7 @@
 
         <div class ="contact">
           
-            <form action="" method="GET">
+            <form action="bogadeji.php" method="GET">
                 <h3>Contact</h3>
               
                 <fieldset>
@@ -165,7 +165,7 @@
                 </fieldset>
 
                 <fieldset>
-                  <button name="submit" type="submit"  >Submit</button>
+                  <button name="submit" type="submit" value="submit">Submit</button>
                 </fieldset>
                                     
             </form>
