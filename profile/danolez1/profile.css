@@ -10,9 +10,9 @@ body{
 	color: #ffffff;
 }
 #top{
-	height:50%;
+	height:40%;
 	background-color: #02B875;
-	padding: 75px;
+	padding: 50px 0px;
 	color: #ffffff;
 	font-size: 20px;
 	text-align: center;
@@ -26,15 +26,51 @@ body{
 height:50%;
 padding: 25px
 }
+
 #left{
 float: left;
-width:20%;
-background-color: #DEB;
-	padding: 15px 25px
+width:25%;
+padding: 5px 5px;
 }
+#left button{
+background-color: #DEB;
+	padding: 15px 30px;
+	border:none;
+	width: 100%;
+	margin-top: 10px;
+	outline: none;
+	cursor: pointer;
+}
+#left button:hover{	
+background-color: #AADEBDEB;
+	padding: 16px 31px;
+	color:#000000;
+}
+#sendBtn{
+	background-color: #AADEBDEB;
+	padding: 10px 10px;
+	color:#555555;
+	border:none;
+	outline: none;
+	cursor: pointer;
+}
+#sendBtn:hover{
+	padding: 11px 11px;
+	color:#000000;
+}
+
 #right{
-	width:70%;
+width:70%;
 float: right;
 padding-left: 20px;
 border-left: 2px solid  #eee;
+}
+#right div{
+width:100%;
+text-align: center;
+}
+#right div input {
+	width: 90%;
+	margin: 1% 2%;
+
 }

@@ -1,4 +1,4 @@
-(1) Nwanze Franklin, franko4don, @franko4don
+﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -222,5 +222,33 @@
 (219) Gafar Azeez Oluwafemi (Slack: @zee, Github: ZeeUnltd)
 (220) Olushi Luqman Opemipo, codeshifu, codeshifu
 (221)Richard Oluwo(slack: @richard4s, github: richard4s)
-
-
+(219)Olayiwola Emmanuel(slack: @emma, github: olaasz)
+(220) Gafar Azeez Oluwafemi (Slack: @zee, Github: ZeeUnltd)
+(222) Olushi Luqman Opemipo, codeshifu, codeshifu
+(222)Richard Oluwo(slack: @richard4s, github: richard4s)
+(223) Nnwankwo Wisdom , slack: nwankwowisdom96, github: widomd
+(224) Iroleh Vincent Nwachukwu (Slack: @irolehvincent, github: vincentiroleh)
+(225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
+(226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
+(227) Erisan Olasheni (Slack: @olasheni, Github: software202)
+(228) Uche Madu (Slack: @dreemer6, Github: dreemer6)
+(229) Nwaizuzu Anthony Chukwudi (Slack: @tonychuks7, Github: naccuddi)
+(230) Erisan Olasheni (Slack: @olasheni, Github: software202)
+(231) Mopah Emmanuel Shewuri (Slack: @mopahshewuri, Github: mopilo)
+(232) Ukah Bethel , ukahbethel , bethel-u
+(233) Idorenyin Akaninyene Etim, Slack: @akanidorenyin, Github: dorenyin1
+(234) Samfield Hawb Bassey, Slack:@samfield4sure, Github: psalmfill
+(235) Abulhafeez Babatunde, Slack: mista-oba, Github: 
+(236) Iwaloye Samuel Olawale (slack: @iwa_temmy ,Github:iwa-temmy)
+(237) Okedusi Olumide, @olumideokedusi, @Lumie31
+<<<<<<< HEAD
+(238) Ozokolo Sandra, @sandieozokolo, @ozokolosandra
+=======
+(238) Ozokolo Sandra, @sandieozokolo, @ozokolosandra
+(239) Abdulrahman Abdulkarim Ayoola, @abdul, lanre01
+(240) Akande Gbolahan, @gbolahan_akande, gboigwe
+(241) Emmanuel Jacobson, writeprovidence, writeprovidence
+(242) Stephen Ojo, @ripplz, Ripplz
+(243) Grace Ebong, @graceebong, graceebong25
+(244) Emem Okon, currentboy, currentboy
+>>>>>>> 91bb498bd26ad95912babad7c26c9159d3a3bf6a
