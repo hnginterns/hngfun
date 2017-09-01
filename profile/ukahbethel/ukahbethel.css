@@ -22,6 +22,7 @@ p #biography{
 }
 a{
 	text-decoration: none;
+	target:blank;
 }
 h3{
 	font-size: 25px;
@@ -33,7 +34,22 @@ form input[type="submit"] {
 	margin: 20px 0 0 20px;
 	padding: 5px 20px;
 	cursor: pointer;
+	border-radius: 10px;
+	
 }
 form {
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: bold;
+}
+
+input, textarea{
+      line-height: 1.5;
+	  padding: 10px;
+	  font-size: 16px;
+	  font-weight: 400;
+}
+h4{
+	display: inline-block;
+	padding: 5px;
+	margin-right: 2px;
+}
