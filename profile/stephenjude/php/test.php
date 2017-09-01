@@ -32,7 +32,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 					//}
 					
 					foreach($trade_history as $x => $x_value) {
-					    echo "Key=" . $x . ", Value=" . $x_value[3]["type"];
+					    echo "Key=" . $x . ", Value=" . $x_value["type"];
 					    echo "<br>";
 					}
 					echo '</p>';
