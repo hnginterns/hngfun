@@ -1143,7 +1143,7 @@
                 <div class="p-card-info">
 
 
-                    <a href="http://hng.fun/profile/GS/index.html">
+                    <a href="http://hng.fun/profile/gideonsalami.html">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Gideon Salami</h3>
                         <!--Profile Name-->
