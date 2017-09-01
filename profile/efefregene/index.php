@@ -209,7 +209,7 @@
 					</a>
 				</div>
 				<div class="col-3" style="text-align: right;">
-					<a class="no-decor" target="_blank" href="https://github.com/efefregene/hng-android"><h3><i class="fa fa-github"></i> Stage 3</h3>
+					<a class="no-decor" target="_blank" href="https://github.com/efefregene/hng-android/blob/master/app-debug.apk"><h3><i class="fa fa-github"></i> Stage 3</h3>
 					</a>
 				</div>
 				<div class="col-2"></div>
