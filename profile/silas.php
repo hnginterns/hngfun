@@ -11,9 +11,7 @@
         $full_name = $_POST['full_name'];
         $body = $_POST['body'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
-     } else {
-         header("location: silas.html");
-     }
+     } 
 ?>
 
 
