@@ -145,7 +145,8 @@
 	<div class="bg">
 		<div class="text">
 			<h1>Nwafor Maxwell Chukwuebuka</h1>
-			<p><a style="color: white;" href="https://github.com/maxwell4reel/Hngtest_register"><i class="fa fa-github"></i> Click here to view my Stage 1 Project</a></p>
+			<p><a style="color: white;" href="https://github.com/maxwell4reel/Hngtest_register"> Click here to view my Stage 1 Project</a></p>
+			<p class="tex"><a href="https://github.com/maxwell4reel"><i class="fa fa-github">Github:</i>Maxwell4reel</a></p>
 			<p class="tex"><i class="fa fa-slack">Slack: </i> Maxwell444</p>
 			<div class="bio">
 				<h3>Biography</h3>
