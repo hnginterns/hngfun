@@ -3,8 +3,8 @@
     if (isset($_GET['submit']))  {
     $to = "bogadeji@gmail.com";
     $subject = $_GET['subject'];
-    $body=$_GET['message']; 
-    
+    $message=$_GET['message']; 
+   
    
     $config = include(dirname(dirname(__FILE__)).'/config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -12,7 +12,7 @@
     $exe = $con->query('SELECT * FROM password LIMIT 1');
     $data = $exe->fetch();
     $password = $data['password'];
-    header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+    header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
       
     }
    
