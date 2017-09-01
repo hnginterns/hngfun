@@ -31,11 +31,11 @@ $trade_ticker = $load_trade->get_trading_pairs();
 					$count_sell = 0;
 					$count_buy = 0;					
 					foreach($load_trade->get_trade_history($trade_ticker[$i]) as $x => $x_value) {
-					    //if($x_value["type"] == "sell"){
-					//	$count_sell = $count_sell+1
-					    //}elseif($x_value["type"] == "buy"){
-						//$count_buy = $count_buy+1
-					    //}
+					    if($x_value["type"] == "sell"){
+						$count_sell = $count_sell+1;
+					    }else if($x_value["type"] == "buy"){
+						$count_buy = $count_buy+1;
+					    }
 					    echo "Value=" . $x_value["type"];
 					    echo "<br>";
 					}
