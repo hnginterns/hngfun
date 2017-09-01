@@ -45,7 +45,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h1>RAY OKAAH</h1>
     <p>I am a Java / Android Enthusiast. 200 level student of The University of Port Harcourt, Rivers state Nigeria.</p>
 
-	 <p> <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk> You can download my android app here </a></p>
+	 <p> <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> You can download my android app here </a></p>
 	<p> Slack username: raypex </p>
 
 	<p> My stage 1 test project is <a href="https://github.com/raypex/hngtest">here</a> </p>
