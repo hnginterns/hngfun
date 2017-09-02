@@ -18,7 +18,7 @@
 		<title>Omojola Samson's profile</title>
 	</head>
 	<body>
-			<img src="https://www.dropbox.com/s/fo29a10g6bw60rr/dp2.jpeg" alt="profile picture of Omojola Samson">
+			<img src="https://photos-3.dropbox.com/t/2/AAA-vROcs0OaLNQv7atzqeqpVqbkVPlSVcrPTy_Z5z0wfg/12/299107697/jpeg/32x32/1/_/1/2/dp2.jpeg/EM2XyqMCGA4gBygH/AtbTNS8XLuUnhQ1EPHmlb5Zlt6iqgIIVYOsth6BpoQg?size=1280x960&size_mode=3" alt="profile picture of Omojola Samson">
 		<p class="paragraph">
 			Name: Omojola Samson Ade<br>
 			Slack Username: caesar<br>
