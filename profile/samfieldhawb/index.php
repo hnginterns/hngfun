@@ -66,7 +66,7 @@
 	<div>
 		<section class="container">
 			<div id="myPhoto">
-				<img src="dp.jpg" alt="Samfield Hawb Bassey"/>
+				<img src="https://preview.ibb.co/jTdc6v/IMG_20160421_074718.jpg" alt="Samfield Hawb Bassey"/>
 			</div>
 			<div class="myProfile">
 				<div class="label">Full Name : &#8595; </div>
