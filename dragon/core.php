@@ -22,7 +22,7 @@ $first_runner_up = 0;
 $second_runner_up = 0;
 $third_runner_up = 0;
 
-for ($i = 0; $i < 6; $i++) {
+for ($i = 0; $i < 10; $i++) {
 	
 	$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 	$trade_history_count = count($trade_history);					
@@ -65,7 +65,7 @@ for ($i = 0; $i < 6; $i++) {
 	$biggestPercent = $biggest['total_buy'] / 200 * 100;
 	echo '<div class="container">
 		  <h2>'.$biggest['coin'].'<br>
-		  <small> '.$biggest['total_buy'].'Bids  '.$biggest['total_sell'].' Asks</small></h2>
+		  <small> '.$biggest['total_buy'].'Bids &nbsp;&nbsp;&nbsp;  '.$biggest['total_sell'].' Asks</small></h2>
 		  <div class="progress">
 		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggestPercent.'%">
 		      <span class="sr-only">'.$biggestPercent.'% Complete</span>
@@ -77,7 +77,7 @@ for ($i = 0; $i < 6; $i++) {
 	$biggerPercent = $bigger['total_buy'] / 200 * 100;
 	echo '<div class="container">
 		  <h2>'.$bigger['coin'].'<br>
-		  <small> '.$bigger['total_buy'].' Bids, '.$bigger['total_sell'].' Asks</small></h2>
+		  <small> '.$bigger['total_buy'].' Bids &nbsp;&nbsp;&nbsp; '.$bigger['total_sell'].' Asks</small></h2>
 		  <div class="progress">
 		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggerPercent.'%">
 		      <span class="sr-only">'.$biggerPercent.'% Complete</span>
