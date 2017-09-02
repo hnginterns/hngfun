@@ -1,6 +1,5 @@
 
 <?php
-require ("Thread.php");
 require ("p_api.php");
   
 $api_key = "52P8WQDT-UNTGQINY-A7RUEC8A-PJ7RQCKL"; // Api Keys here
@@ -20,18 +19,10 @@ $trade_ticker = $load_trade->get_trading_pairs();
 		<body>
 					
 				<?php	
-				
-				
-			// test to see if threading is available
-			if( ! Thread::isAvailable() ) {
-			    die( 'Threads not supported' );
-			}
-
-			// function to be ran on separate threads
-			function task( ) {
-			     $arrlength = count($trade_ticker);
-				
-				for ($i = 0; $i < 20; $i++) {	
+			
+				$arrlength = count($trade_ticker);
+				$alldata = Array();
+				for ($i = 0; $i < 4; $i++) {	
 					//echo $load_trade->get_trade_history($trade_ticker[$i]);
 					$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 					$trade_history_count = count($trade_history);					
@@ -44,22 +35,14 @@ $trade_ticker = $load_trade->get_trading_pairs();
 						$count_buy = $count_buy+1;
 					    }
 					}
-					echo '<p>';
-					echo $trade_ticker[$i].": ".$trade_history_count."; Total Buy = ".$count_buy."; Total Sell =  ".$count_sell."</p>";
-					echo '</p>';
+					//echo '<p>';
+					$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
+					//$alldata.push($data);
+					//echo '</p>';
 				}
-			}
-
-			// create 2 thread objects
-			$t1 = new Thread( 'task' );
-
-			// start them
-			$t1->start();
-
-			// keep the program running until the threads finish
-			while( $t1->isAlive() && $t2->isAlive() ) {
-
-			}
+				
+					//echo json_encode($alldata);
+			
 			
 				?>
 		</body>
