@@ -78,7 +78,7 @@ class Coinman
     $sales = $coinData[2];
     echo "INSERT into trade_history VALUES (null, $coin, '$buys', '$sales')";
     exit;
-    $this->db->query("INSERT into trade_history VALUES (null, $coin, '$buys', '$sales')");
+    $this->db->query("INSERT into trade_history VALUES (null, '$coin', $buys, $sales)");
   }
 
   private function getPairsFromDb() {
