@@ -14,7 +14,7 @@ class Coinman
   public function __construct($api_key, $api_secret)
   {
     $this->poloniex = new Poloniex($api_key, $api_secret);
-    $this->db = new PDO('mysql:host=localhost;dbname=hng', 'intern', '@hng.intern1');
+    $this->db = new PDO('mysql:host=localhost;dbname=hng', 'root', '@hng.funmysql');
   }
 
   /**
@@ -78,8 +78,8 @@ class Coinman
     $sales = $coinData[2];
     $e = $this->db->query("INSERT into trade_history VALUES (null, '$coin', '$buys', '$sales')");
     if(!$e) {
-     echo  $this->db->errorInfo()[2];
-      exit;
+     //echo  $this->db->errorInfo()[2];
+      //exit;
     }
   }
 
