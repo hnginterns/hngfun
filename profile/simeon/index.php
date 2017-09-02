@@ -5,13 +5,152 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simeon | Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
   </head>
 
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Rubik", Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #E57373;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #7B2131;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 154px;
+  height: 154px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.logo {
+  font-size: 2em;
+  color: #E57373;
+  font-family: 'Homemade Apple', cursive;
+  text-align: center;
+}
+
+.menu-item {
+  width: 100%;
+  text-align: center;
+}
+
+ul.menu-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+ul.menu-item li {
+  list-style-type: none;
+  margin-right: 10px;
+  transition: .5s;
+}
+
+ul.menu-item li:last-of-type {
+  margin-right: 0px;
+}
+
+.short-bio {
+  text-align: center;
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.short-bio p {
+  font-size: 1.4em;
+}
+
+.contact {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 600px;
+}
+
+input:not([type="submit"]),
+textarea {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-width: 0px 0px .5px 0px;
+  border-style: solid;
+  border-color: #ccc;
+  border-radius: 2px;
+  font-family: inherit;
+  transition: .5s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #E57373;
+  outline: none;
+}
+
+input[type=submit] {
+  padding: 10px;
+  margin: 15px 0 20px 0;
+  border: .5px solid #ccc;
+  border-radius: 5px;
+  background-color: #E57373;
+  font-family: inherit;
+  width: 80px;
+  transition: .5s ease-out;
+}
+
+input[type=submit]:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 601px) {
+  .avatar {
+    width: 200px;
+    height: 200px;
+  }
+  .menu {
+    width: 50%;
+  }
+}
+  </style>
   <!-- This was adapted from my normal online profile, and some things have been taken from it to meet the requirements
      therefore some class might not make sense -->
 
@@ -36,7 +175,7 @@
 
       <main>
         <div class="container">
-          <img class="avatar" src="images/avatar.jpg" alt="simeon avatar" />
+          <img class="avatar" src="https://res.cloudinary.com/simeon/image/upload/v1503343973/17188537_a7xioi.jpg" alt="simeon avatar" />
           <div class="short-bio">
             <p>Hello there, <br />My name is Simeon Adegbola<br />I am a Front-End Developer</p>
           </div>
@@ -44,7 +183,7 @@
             <ul class="links menu-item">
               <li><a href="https://github.com/simeon979"><i data-feather="github"></i><br>simeon979</a></li>
               <li><i data-feather="slack"></i><br>simeon</li>
-              <li><a href="https://github.com/simeon979/hng-stage1"><i data-feather="navigation"></i><br>Stage 1 repo</a></li>
+              <li><a href="https://github.com/simeon979/hng-stage1"><i data-feather="github"></i><br>Stage 1 repo</a></li>
             </ul>
           </div>
           <div class="contact">
