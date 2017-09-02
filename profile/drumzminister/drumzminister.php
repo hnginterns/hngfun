@@ -13,7 +13,7 @@
         $password = $data['password'];
         $subject = $_POST['subject'];
         $body = $_POST['body'];
-        header("hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=tonychuks7@gmail.com");
+        header("hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=ishukpong418@gmail.com");
 	
     }
     ?>
