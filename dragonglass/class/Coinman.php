@@ -14,7 +14,7 @@ class Coinman
   public function __construct($api_key, $api_secret)
   {
     $this->poloniex = new Poloniex($api_key, $api_secret);
-    $this->db = new PDO('mysql:host=localhost;dbname=hng', 'intern', '@hng.intern1');
+    $this->db = new PDO('mysql:host=localhost;dbname=hng', 'root', '@hng.funmysql');
   }
 
   /**
@@ -76,8 +76,11 @@ class Coinman
     $coin = $coinData[0];
     $buys = $coinData[1];
     $sales = $coinData[2];
-
-    $this->db->query("UPDATE trade_history SET buys = '$buys', sales = '$sales' WHERE pair='$coin' )");
+    $e = $this->db->query("UPDATE trade_history SET buys = '$buys', sales= '$sales' WHERE pair = '$coin'");
+    if(!$e) {
+     //echo  $this->db->errorInfo()[2];
+      //exit;
+    }
   }
 
   private function getPairsFromDb() {
@@ -88,8 +91,6 @@ class Coinman
 
   private function savePairs($pairs) {
     $pairs = json_encode($pairs);
-    echo $pairs;
-    exit;
     $exe = $this->db->query("INSERT into pair VALUES (null, '$pairs')");
   }
 
