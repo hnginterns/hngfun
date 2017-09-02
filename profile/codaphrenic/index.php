@@ -25,7 +25,7 @@
 				<div id="contactwas">Thanks for contacting me!<br/><br/>I will stay in touch.</center></div>
 
 				<form method="post" id="mailer" action="mail.php">
-					<input type="hidden" name="to" value="fegoedafe@gmail.com">
+					<input type="hidden" name="to" value="fegoedafe@yahoo.com">
 					
 					<p class="email">
 						<input name="email" type="text" placeholder="Email" />
