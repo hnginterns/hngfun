@@ -29,7 +29,7 @@ for ($i = 0; $i < 6; $i++) {
 	$count_sell = 0;
 	$count_buy = 0;
 	
-	$coin_histry = $load_trade->get_trade_history($trade_ticker[$i]) ;
+	echo $coin_histry = $load_trade->get_trade_history($trade_ticker[$i]) ;
 	foreach($coin_histry as $x => $x_value) {
 	echo array_search("buy", $coin_histry);
 	
