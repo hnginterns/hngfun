@@ -24,7 +24,7 @@ $first_runner_up = 0;
 $second_runner_up = 0;
 $third_runner_up = 0;
 
-for ($i = 0; $i < 4; $i++) {
+for ($i = 0; $i < 2; $i++) {
 	
 	$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 	$trade_history_count = count($trade_history);					
@@ -66,7 +66,7 @@ for ($i = 0; $i < 4; $i++) {
 	$biggestPercent = $biggest['total_buy'] * 200 / 100;
 	echo'
 	 <div class="progress">
-	  <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'"
+	  <div class="progress-bar" role="progressbar" aria-valuenow=""
 	  aria-valuemin="0" aria-valuemax="100" style="width:200%">
 	    <span class="sr-only">'.$biggestPercent.' progress</span>
 	  </div>
