@@ -1,15 +1,13 @@
 <?php
+    $config = include('../config.php');
+    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = new PDO($dsn, $config['username'], $config['pass']);
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
+
     if(isset($_POST['submit'])){
-
-        $config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-        ];
-
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
+       
 
         $result = $con->query('SELECT * FROM password');
         $data = $result->fetch();
