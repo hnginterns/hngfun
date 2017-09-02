@@ -132,7 +132,7 @@
 .form{
     background-color: #ff1d8e;
     width: 650px;
-    height:320px;
+    height:400px;
     padding: 10px;
     margin: auto;
     position:relative;
@@ -169,7 +169,7 @@ h3{
     height:30px;
     padding: 10px;
     position:relative;
-    left:130px;
+    left:110px;
     text-align: center;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     color:black
@@ -258,7 +258,7 @@ About Me
 <div class="drk"><p> I am a Cute and Responsible Guy, Playing the drums is my weakness , i like making Responsible 
 friends, surfing the INTERNET, going to Church, going on Excursion, catching fun, reading, Swimming, TRAVELLING, Praying, Loving some persons i meet that deserve it and rendering my assistance to anybody in need...Especially You!!!!!!...its more than I CAN SAY</p>
 </div>
-    <div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </font> </a> \\ <strong> Github:</strong> Drumzminister | 
+    <div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </a> \\ <strong> Github:</strong> Drumzminister | 
 </div>
 
 <div class="form">
