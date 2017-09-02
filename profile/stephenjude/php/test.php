@@ -42,7 +42,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 			    }				
 			}
 			
-			if($first_runner_up < $count_buy){
+			if( $count_buy > $first_runner_up){
 				$first_runner_up = $count_buy;
 				
 				$biggest =array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);			
