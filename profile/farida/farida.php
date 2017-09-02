@@ -1,43 +1,120 @@
-<?php
+<?php 
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
- $name = $_POST['name'];
- $email = $_POST['email'];
- $subject = $_POST['subject'];
- $body = $_POST['message'];
+$config = include('../../config.php');
+$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+try {
+         $con = new PDO($dsn, $config['username'], $config['pass']);
 
+            }
 
-$to  = 'fareedakabeer@gmail.com';
-$admin_email = 'xyluz@ymail.com';
-$error = "";
+//catch exception
+        catch(Exception $e) {
+                echo 'Message: ' .$e->getMessage();
+                die();
+            }
 
-if (!$email) {
-	$error .= "Your email address is required.<br>";
-}
+     if(isset($con)){
 
-if (!$subject) {
-	$error .= "A subject is required.<br>";
-}
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
 
-if (!$body) {
-	$error .= "Your message is required.<br>";
-}
+        }else {
+    echo "Error Fetching Data";
+    die();
 
-if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-        $error .= "The email address is invalid.<br>";
-    }
-    if ($error != "") {
-        $error = '<p>There were error(s) in your form:</p>' . $error;
-}
+        }
 
-else{
-	ini_set("sendmail_from", $admin_email);
-	$sent = mail($email_to, $email_subject, $message, $headers, "-f" .$email_from);
-	if ($sent)
-	{
-	header("Location: http://hng.fun/sendmail.php?password=".$password."&name=".$name."&email=".$email."&subject=".$subject."&message=".$body."&to=fareedakabeer@gmail.com");
-	}
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Farida Kabir | Profile </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <div class="grid-item grid1">
+
+            <img src="https://pbs.twimg.com/media/DC8fonuW0AE1gkU.jpg" class="image" alt="farida's picture">
+            <div class="social">
+                <ul>
+                    <li><a href="mailto:fareedakabeer@gmail.com" title="lets talk?" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/reedahkh" title="@reedahkh" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://medium.com/@reedahkh" title="@reedahkh" target="_blank"><i class="fa fa-medium"></i></a></li>
+                    <li><a href="https://github.com/reedahkh" title="@reedahkh" target="_blank"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://instagram.com/reedahkh/" title="@reedahkh" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/farida.kabir.3" title="@reedahkh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="grid-item grid2">
+
+            <div class="inner-grid">
+
+                <p class="typing">
+                    I'm Farida Kabir 👨🏻‍<br>
+                    <br> A Full Stack Web Developer based in Abuja, Nigeria.<br>
+                    <br> My Favorite Quote
+                    <br>“The price of victory is high, but so is the reward”
+                </p>
+                <a href="#" id="msgbutton" class="message">Send me a Message</a>
+            </div>
 
 
+
+            <div id="messagebox" class="inner-grid modal">
+
+<form id="messageform" class="contact-grid">
+
+                <div id="alert" class="form-group full">Sending...</div>
+
+    <div class="form-group full">
+
+        <label for="name">Subject</label>
+        <input type="text" id="subject">
+
+    </div>
+  
+    <div class="form-group full">
+        <label for="message">Message</label>
+        <textarea id="message" rows="5"> </textarea>
+
+    </div>
+    <div class="form-group leftspan">
+        <input type="hidden"  id="password" name="password" value="<?php echo $password; ?>">
+    <button type="submit" id="formsubmit" class="submit">Submit</button>
+
+    </div>
+
+<span id="expand">X</span>
+
+</form>
+
+
+            </div>
+
+
+        </div>
+    </div>
+<script src="js/main.js"></script>
+</body>
+
+</html>
