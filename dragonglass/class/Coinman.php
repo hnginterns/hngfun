@@ -80,14 +80,14 @@ class Coinman
   }
 
   private function getPairsFromDb() {
-    $exe = $this->db->query("SELECT pairs FROM pairs LIMIT 1");
+    $exe = $this->db->query("SELECT pairs FROM pair LIMIT 1");
     $pairJSON = $exe->fetch(PDO::FETCH_ASSOC)['pairs'];
     return json_decode($pairJSON, true);
   }
 
   private function savePairs($pairs) {
     $pairs = json_encode($pairs);
-    $exe = $this->db->query("INSERT into pairs VALUES (null, '$pairs')");
+    $exe = $this->db->query("INSERT into pair VALUES (null, '$pairs')");
   }
 
 
