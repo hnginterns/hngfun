@@ -200,7 +200,7 @@ button[type=submit]{
             <p>Slack username: Jeni<br>
                 Github username: Je-ni</p>
             <p><a href= https://github.com/Je-ni/newrepo.git>Stage 1 task</a>
-               <a href = https://drive.google.com/file/d/0B4RsYe5Wn1hBQVA3Rk1jMUhReTQ/view?usp=drivesdk>Contact App</p>
+               <a href = https://drive.google.com/file/d/0B4RsYe5Wn1hBQVA3Rk1jMUhReTQ/view?usp=drivesdk>Contact App</a></p>
             
           </article><br><br>
 
