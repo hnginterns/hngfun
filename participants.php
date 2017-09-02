@@ -25986,6 +25986,17 @@ include('participants-head.php');
                         <!--Profile Name-->
                     </a>
                     <p class="p-card-description">aniebiet.akpan@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> NONE </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+<!--  Each Participants ends here  -->
 =======
  <!--  Each Participant starts here  -->
         <div class="p-card">
