@@ -25974,6 +25974,29 @@ include('participants-head.php');
         </div>
 <!--  Each Participants ends here  -->
 
+ <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/29776435?v=4&u=bd141f4bab64d3848e744ff5fe342d4a48bb2fa2&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/iwa_temmy/iwa_temmy.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Iwaloye Samuel Olawale</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">iwaloyeo@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> NONE </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+<!--  Each Participants ends here  -->
+
 
 <?php include "footer.php"?>
 >>>>>>> 17fd2374bb7267dcda8eb02fc5cc08b023009c2c
