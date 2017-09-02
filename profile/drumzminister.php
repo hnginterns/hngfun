@@ -1,22 +1,37 @@
-<?php
-    if(isset($_POST['process'])){
-        $config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-        ];
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $result = $con->query('SELECT * FROM password');
-        $data = $result->fetch();
-        $password = $data['password'];
-        $subject = $_POST['subject'];
-        $body = $_POST['body'];
-        header("hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=tonychuks7@gmail.com");
-	
-    }
-    ?>
+<?php 
+if($_SERVER['REQUEST_METHOD'] == 'POST') 
+{ 
+    $error = []; 
+    $subject = $_POST['subject']; 
+    $to = 'ishukpong418@gmail.com'; 
+    $body = $_POST['message']; 
+    if($body == '' || $body == ' ') 
+    { 
+        $error[] = 'Message cannot be empty.'; 
+        } 
+        if($subject == '' || $subject == ' ') 
+        { 
+            $error[] = 'Subject cannot be empty.'; 
+            } 
+            if(empty($error)) 
+            { 
+                $config = include(dirname(dirname(dirname(__FILE__))).'/config.php'); 
+                $dsn = 'mysql:host='.
+                $config['host'].';dbname='.
+                $config['dbname']; 
+                $con = new PDO(
+                    $dsn, 
+                    $config['username'], 
+                    $config['pass']); 
+                    $exe = 
+                    $con->query('SELECT * FROM password LIMIT 1'); 
+                    $data = 
+                    $exe->fetch(); 
+                    $password = 
+                    $data['password']; 
+                    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password"; header("location: $uri"); } } ?>
+    
+    
 
     <!DOCTYPE html>
     <html>
@@ -56,24 +71,12 @@
 	<div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </a> \\ <strong> Github:</strong> Drumzminister | 
 </div>
 
-<form id="contact_form" action="#" method="GET" >
-    <div class="row">
-        <label for="fname">First Name:</label><br />
-        <input id="fname" class="input" name="fname" type="text" value="" size="30" /><br />
-    </div>
-    <div class="row">
-        <label for="lname">Last Name:</label><br />
-        <input id="lname" class="input" name="lname" type="text" value="" size="30" /><br />
-    </div>
-    <div class="row">
-        <label for="email">Your Email:</label><br />
-        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    </div>
-    <div class="row">
-        <label for="message">Your Message:</label><br />
-        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-    </div>
-    <input id="submit_button" type="submit" value="Send email" />
+<form autocomplete="off" action="#" method="POST"> 
+<div class="container"> 
+<input type="text" class="input" name="fullname" placeholder="Name" > 
+<input type="text" class="input" name="subject" placeholder="Subject*" required> 
+<textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required>
+</textarea> <button type="submit">Send</button>
 </form>	
 </body>
 
