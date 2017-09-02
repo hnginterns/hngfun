@@ -43,7 +43,7 @@
 ?>
 
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +52,7 @@
 </head>
 <body>
 	<header>
-		<div><a href="#"><h1>Samfield Hawb's <span >Profile</h1> </div></a>
+		<div><a href="#"><h1>Samfield Hawb's <span >Profile</span></h1> </div></a>
 		<nav>
 			<ul>
 				<li><a href="https://web.facebook.com/SamfieldHawb">Facebook</a></li>
@@ -97,31 +97,31 @@
 				<h2>My programming Skills progress</h2>
 				<div >
 					<h3>Html</h3>
-					<progress max="100" min="0" value="98"></progress>
+					<progress max="100"  value="98"></progress>
 				</div>
 				<div >
 					<h3>css</h3>
-					<progress max="100" min="0" value="98"></progress>
+					<progress max="100" value="98"></progress>
 				</div>
 				<div >
 					<h3>Javascript</h3>
-					<progress max="100" min="0" value="95"></progress>
+					<progress max="100" value="95"></progress>
 				</div>
 				<div >
 					<h3>php</h3>
-					<progress max="100" min="0" value="90"></progress>
+					<progress max="100" value="90"></progress>
 				</div>
 				<div >
 					<h3>sql</h3>
-					<progress max="100" min="0" value="80"></progress>
+					<progress max="100" value="80"></progress>
 				</div>
 				<div >
 					<h3>java</h3>
-					<progress max="100" min="0" value="80"></progress>
+					<progress max="100" value="80"></progress>
 				</div>
 				<div >
 					<h3>Python</h3>
-					<progress max="100" min="0" value="70"></progress>
+					<progress max="100" value="70"></progress>
 				</div>
 				
 			
@@ -140,20 +140,20 @@
 					<label for="from">Email:</label>
 					<input type="email" name="email" required >
 					<div class="error"><?php if(isset($errorEmail)){echo $errorEmail;} ?></div>
-					<label for="subject" name="subject">Subject :</label>
+					<label for="subject">Subject :</label>
 					<input type="text" name="subject" required>
 					<div class="error"><?php if(isset($errorSubject)){echo $errorSubject;} ?></div>
 					<label for="message">Message :</label>
 					<textarea name="message"></textarea>
 					<div class="error"><?php if(isset($errorMessage)){echo $errorMessage;} ?></div>
-					<input type="submit" name="submit" value="send" required>
+					<input type="submit" name="submit" value="send" >
 				</form>
 				
 			</div>
 			<div id="addr">
 				<div class="addr">
 					<address>
-					<h3>Address:</h3>
+					<p class="addrtitle">Address:</p>
 					<p>WorldCell Technologies<br>
 						No 7 Oron Road Uyo,<br>
 						Akwa Ibom State,<br>
@@ -162,24 +162,24 @@
 					</address>
 				</div>
 				<div  class="addr">
-					<h3>Phone Number:</h3>
-					<p>08188631121</h3>
+					<p class="addrtitle">Phone Number:</p>
+					<p>08188631121</p>
 				</div>
 				
 				<div  class="addr">
-					<h3>Skype :</h3>
+					<p class="addrtitle">Skype :</p>
 					<p>Sammywise</h3>
 				</div>
 				<div  class="addr">
-					<h3>Slack :</h3>
-					<p>samfield4sure</h3>
+					<p class="addrtitle">Slack :</p>
+					<p>samfield4sure</p>
 				</div>
 				<div  class="addr">
-					<h3>Github :</h3>
-					<p>psalmfill</h3>
+					<p class="addrtitle">Github :</p>
+					<p>psalmfill</p>
 				</div>
 				<div  class="addr">
-					<h3>Whatsapp :</h3>
+					<p class="addrtitle">Whatsapp :</p>
 					<p><button><a href="whatsapp://send?text=Hi Intent!&phone=+2348188631121">Message me on whatsapp</a></button></p>
 				</div>
 			</div>
