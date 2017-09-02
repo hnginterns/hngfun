@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'johnprince58@gmail.com';
-    $body = $_POST['message'];
+    $to  = 'shaliz.jhay@gmail.com';
+    $body = $_POST['body'];
     if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';
     }
@@ -24,6 +23,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
+
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -65,14 +66,14 @@ ul{
                             </li>
                             <li style="padding-top: 25px;">
                                 <i class="fa fa-link fa-2x"></i><br>
-                                <a href="https://github.com/otuekongjohn/Test" target="_blank">https://github.com/otuekongjohn</a>
+                                <a href="https://github.com/otuekongjohn/Test" target="_blank">Stage 1 Task Here</a>
                             </li>
                         </ul></span>
-                        <form id = "contact-form" method = "POST" >
+                        <form action="shalomjohn.php" id = "contact-form" method = "POST" >
 				<fieldset>
 				<legend>Contact Me</legend>
-				<input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
-				<textarea name = "message" placeholder = "Type your message here" rows ="10" cols = "70" required></textarea><br>
+				<input type = "text" name = 'subject' placeholder= "Enter subject for email" required><br><br>
+				<textarea name = 'body' placeholder = "Type your message here" rows ="10" cols = "70" required></textarea><br>
 				<br><input type ="submit" name="submit" value ="Send Message">
 				</fieldset>
 			</form>

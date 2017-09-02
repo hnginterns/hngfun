@@ -94,12 +94,12 @@
                     <input type="hidden" name="to" value="olushilukmon03@gmail.com">
                     <div class="input-group">
                         <label for="subject">Subject</label>
-                        <input name="subject" placeholder="Enter subject" class="form-control" type="text" id="fullname">
+                        <input autofocus name="subject" placeholder="Enter subject" class="form-control" type="text" id="subject">
                     </div>
                 
                     <div class="input-group">
                         <label for="message">Your Message</label>
-                        <textarea rows="10" placeholder="Enter message here..." name="message" class="form-control" type="text" id="fullname"></textarea>
+                        <textarea rows="10" placeholder="Enter message here..." name="message" class="form-control" id="message"></textarea>
                     </div>
                     <div>
                         <input type="submit" name="send" class="btn" value="SEND">

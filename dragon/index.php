@@ -49,11 +49,11 @@
 			// refresh every 1 mins
 			var refreshMarket = function (){
 				// load students
-				$("#load-all").load("test.php", function (){
+				$("#load-all").load("core.php", function (){
 				});
 			};			
 			
-			$("#load-all").load("test.php", function (){
+			$("#load-all").load("core.php", function (){
 			});
 			
 			window.setInterval(refreshMarket, 60000);

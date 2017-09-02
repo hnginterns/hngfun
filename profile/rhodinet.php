@@ -9,7 +9,6 @@
   margin: auto;
   text-align: center;
   font-family: arial;
-  margin-bottom: : 40px;
 }
 .container {
   padding: 0 16px;
@@ -18,13 +17,6 @@
   content: "";
   clear: both;
   display: table;
-}
-.need{
-background-color: gold;
-}
-.idea{
-  background-color:teal;
-
 }
 .title {
   color: blue;
@@ -57,26 +49,25 @@ button:hover, a:hover {
 
 <body>
 
-<h2 style="text-align:center">My HNG Profile</h2>
+<h2 style="text-align:center">My HNG Interns Profile</h2>
 
 <div class="card">
   <img src="https://image.ibb.co/cjXCcQ/Rhodinet.jpg" alt="Rhodinet" border="0" height="180" width="150">
-  <div class="container need">
+  <div class="container">
     <h1>Imo Okon</h1>
-    <p class="title">My Stage 3 Repo</p>
-    <p>I am a Laxury Consultant in GWTcorp a POSH, FERI and FERIMOSH designers company that deals with Men and Women wears.
+    <p class="title">My Stage 1 Repository</p>
+   <p>I am a Laxury Consultant in GWTcorp a POSH, FERI and FERIMOSH designers company that deals with Men and Women wears.
     a graduate of Physics, University of Uyo, Nigeria. My hobby is Korean martial arts (Taekwondo). 
      My career as a computer programmer in HTML, CSS, MYSQL, JAVA, PYTHON, JAVASCRIPT, PHP is a great decision in my life. 
-        I have passion to work with Web and Android developers </p>
+        I have passion to work with Web and Android developers. </p>
     <p></p>
     <div style="margin: 10px 0;">
-    <p><h8><span class="fa fa-slack">
+    <p><h10><span class="fa fa-slack">
     </span></i> <a target="_blank" href="https://slack.com/in/rhodinet/" class="repo"> @rhodinet</a> </h10><p>
         <p><h10><span class="fa fa-github">
         </span></i> <a target="_blank" href="https://github.com/rhodinet/" class="repo"> @rhodinet</a></h10></p>
         <p><h10><span class="fa fa-facebook">
-        </span></i> <a target="_blank" href="https://facebook.com/rhodinet2/" class="repo"> @rhodinet2</a></h10></p>
-        </span></i> <a target="_blank" href="https://globalwealthtrade.com/rhodinet/opportunity.html" class="repo">GWT COMPANY</a></h10></p>
+        </span></i> <a target="_blank" href="https://facebook.com/rhodinet/" class="repo"> @rhodinet</a></h10></p>
   
   </div>
 </div>
@@ -117,12 +108,10 @@ input[type=submit]:hover {
 </head>
 <body>
 
-
+<h4>Contact Form</h4>
 
 <div class="container">
-  <form action="/rhodimos.php" class="idea">
-  <br><br>
-    <h2>Contact Form</h2>
+  <form action="action_page.php">
     <p><label for="lname">Name</label></p>
      <input type="text" id="name" name="name" placeholder="Full name">
 
@@ -130,7 +119,7 @@ input[type=submit]:hover {
 <input type="text" id="lname" name="e-mail" placeholder="example@gmail.com">
 
        <p><label for="subject">Message</label></p>
-    <textarea id="subject" name="subject" placeholder="Write message here.." style="height:100px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
         <p><input type="submit" value="Submit"></p>
      </form>
    </div>
@@ -139,3 +128,24 @@ input[type=submit]:hover {
 
 </body>
 </html>
+
+<?php
+  if(isset($_POST['process'])){
+      $config = [
+          'dbname' => 'hng',
+          'pass' => '@hng.intern1',
+          'username' => 'intern',
+          'host' => 'localhost'
+      ];
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $result = $con->query('SELECT * FROM password');
+      $data = $result->fetch();
+      $password = $data['password'];
+      $subject = $_POST['subject'];
+      $body = $_POST['body'];
+      header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=rhodimosokon@gmail.com");
+  }else{
+      header("location: rhodinet.html");
+  }
+?>
