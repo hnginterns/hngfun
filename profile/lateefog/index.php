@@ -175,6 +175,7 @@
 
 		  <p>I work with HTML, JavaScript, JQuery, WordPress, Foundation for responsive webpages. Currently acquiring knowledge on PHP.</p><br>
 		  <p style = "text-align: right"><a href = "https://github.com/lateef-OG/HNG-internship" target="blank">Stage 1 Task</a></p>
+		  <p style = "text-align: right"><a href="https://drive.google.com/file/d/0B8owGKhrTkUBNkJTM3dmWmFDb0k/view" target="blank" style ="text-decoration:none">Android App<img src="https://png.icons8.com/download/color/24" title="Download" width="24" height="24"></a></p>
 		  <h2>Send Me a Message</h2>
 		  <form method = "GET" action = "/sendmail.php">
 			<input type = "text" name = "subject" placeholder = "your name" required>
