@@ -88,7 +88,7 @@ class Coinman
 
   private function savePairs($pairs) {
     $pairs = json_encode($pairs);
-    echo "INSERT into pair VALUES (null, '$pairs');
+    echo "INSERT into pair VALUES (null, '$pairs')";
     exit;
     $exe = $this->db->query("INSERT into pair VALUES (null, '$pairs')");
   }
