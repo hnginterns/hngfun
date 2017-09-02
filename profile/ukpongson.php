@@ -1,86 +1,11 @@
-<?php 
-if (isset($_REQUEST['submitted'])) {
-// Initialize error array.
-  $errors = array();
-  // Check for a proper First name
-  if (!empty($_REQUEST['firstname'])) {
-  $firstname = $_REQUEST['firstname'];
-  $pattern = "/^[a-zA-Z0-9\_]{2,20}/";// This is a regular expression that checks if the name is valid characters
-  if (preg_match($pattern,$firstname)){ $firstname = $_REQUEST['firstname'];}
-  else{ $errors[] = 'Your Name can only contain _, 1-9, A-Z or a-z 2-20 long.';}
-  } else {$errors[] = 'You forgot to enter your First Name.';}
-  
-  // Check for a proper Last name
-  if (!empty($_REQUEST['lastname'])) {
-  $lastname = $_REQUEST['lastname'];
-  $pattern = "/^[a-zA-Z0-9\_]{2,20}/";// This is a regular expression that checks if the name is valid characters
-  if (preg_match($pattern,$lastname)){ $lastname = $_REQUEST['lastname'];}
-  else{ $errors[] = 'Your Name can only contain _, 1-9, A-Z or a-z 2-20 long.';}
-  } else {$errors[] = 'You forgot to enter your Last Name.';}
-  
-  //Check for a valid phone number
-  if (!empty($_REQUEST['phone'])) {
-  $phone = $_REQUEST['phone'];
-  $pattern = "/^[0-9\_]{7,20}/";
-  if (preg_match($pattern,$phone)){ $phone = $_REQUEST['phone'];}
-  else{ $errors[] = 'Your Phone number can only be numbers.';}
-  } else {$errors[] = 'You forgot to enter your Phone number.';}
-  
-	 else {$errors[] = 'You forgot to enter your Phone number.';}
-  }
-  //End of validation  
 
-  if (isset($_REQUEST['submitted'])) {
-	if (empty($errors)) { 
-	$from = "From: Intern Drumzminister!"; //Site name
-	// Change this to your email address you want to form sent to
-	$to = "ishukpong418@email.com"; 
-	$subject = "Admin - Intern Drumzminister! Comment from " . $name . "";
-	
-	$message = "Message from " . $firstname . " " . $lastname . " 
-	Subject: " . $messager . " 
-	"";
-	mail($to,$subject,$message,$from);
-	$config = include(dirname(dirname(__FILE__)).'/config.php');
-	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-	$con = new PDO($dsn, $config['username'], $config['pass']);
-	$exe = $con->query('SELECT * FROM password LIMIT 1');
-	$data = $exe->fetch();
-	$password = $data['password'];
-		  header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-	  }
-	}
-  }
-  ?>
-     
-?>
-
-<?php 
-  //Print Errors
-  if (isset($_REQUEST['submitted'])) {
-  // Print any error messages. 
-  if (!empty($errors)) { 
-  echo '<hr /><h3>The following occurred:</h3><ul>'; 
-  // Print each error. 
-  foreach ($errors as $msg) { echo '<li>'. $msg . '</li>';}
-  echo '</ul><h3>Your mail could not be sent due to input errors.</h3><hr />';}
-   else{echo '<hr /><h3 align="center">Your mail was sent. Thank you!</h3><hr /><p>Below is the message that you sent.</p>'; 
-  echo "Message from " . $firstname . " " . $lastname . " <br />Phone: ".$phone." <br />";
-  
-  }
-  }
-//End of errors array
-  ?>
-    <!DOCTYPE html>
+ <!DOCTYPE html>
     <html>
-
     <head>
   <meta charset="utf-8">
   <title>Elisha Ukpong| HNG Intern Profile</title>
   <link rel="stylesheet" href="structure.css">
     </head>
-
-
 
 
     <body>
@@ -110,17 +35,31 @@ if (isset($_REQUEST['submitted'])) {
 </div>
 
 
-<h2>Contact us</h2>
-<p>Fill out the form below.</p>
-<form action="" method="post">
-<label>First Name: <br />
-<input name="firstname" type="text" value="- Enter First Name -" /><br /></label>
-<label>Last Name: <br />
-<input name="lastname" type="text" value="- Enter Last Name -" /><br /></label>
-<label>Phone Number: <br />
-<input name="messager" type="text" value="- Enter message -" /><br /></label>
-<input name="" type="reset" value="Reset Form" /><input name="submitted" type="submit" value="Submit" />
-</form>
+<div>
+<section class="contact">
+
+  <section class="contact-form" >
+    <div class = "card-form">
+      <form  action="unyimep.php" method="post" >
+        <p class = "title" >CONTACT ME</p>
+      
+          <input type="email" id="to" name="to" placeholder="Your email address here">
+          <br>
+
+          
+          <input type="text" id="subject" name="subject" placeholder="Your subject here">
+          <br>
+
+         
+          <textarea id="body" name="body" placeholder="Write some subjects here" style="height:120px"></textarea>
+          <br><br>
+
+          <input type="submit" name="process" value="Submit">
+      </form>
+    </div>
+  </section>
+</section>
+</div>
 </body>
 
 </html>
