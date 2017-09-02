@@ -36,7 +36,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Profile|Jeni</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style type="text/css">
@@ -213,7 +213,7 @@ button[type=submit]{
             class="close" title="Close Modal">&times;</span>
 
             <!--Modal Content-->
-            <form autocomplete="off" class="modal-content animate" action="contact.php" method="POST">
+            <form autocomplete="off" class="modal-content animate" action="" method="POST">
                 <div class="container">
                     
                     <input type="text" class="input" name="fullname" placeholder="YourName" >                
