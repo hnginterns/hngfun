@@ -70,6 +70,30 @@ for ($i = 0; $i < 2; $i++) {
 		    </div>
 		  </div>
 		</div>';
+	
+
+	$biggerPercent = $bigger['total_buy'] / 200 * 100;
+	echo '<div class="container">
+		  <h2>'.$bigger['coin'].'</h2>
+		  <h4><small> '.$bigger['total_buy'].' Trades</small></h4>
+		  <div class="progress">
+		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggerPercent.'%">
+		      <span class="sr-only">'.$biggerPercent.'% Complete</span>
+		    </div>
+		  </div>
+		</div>';
+	
+
+	$bigPercent = $big['total_buy'] / 200 * 100;
+	echo '<div class="container">
+		  <h2>'.$big['coin'].'</h2>
+		  <h4><small> '.$big['total_buy'].' Trades</small></h4>
+		  <div class="progress">
+		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$bigPercent.'%">
+		      <span class="sr-only">'.$bigPercent.'% Complete</span>
+		    </div>
+		  </div>
+		</div>';
 	//echo json_encode($biggest)." <br>";
 	//echo json_encode($bigger)." <br>";
 	//echo json_encode($big)." <br>";
