@@ -3,8 +3,8 @@
  // require(../config.php);
   
   $servername = "localhost";
-$username = "intern";
-$password = "@hng.intern1";
+$username = "root";
+$password = "@hng.fun";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
