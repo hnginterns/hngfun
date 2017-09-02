@@ -183,7 +183,7 @@
               <li><a href="https://github.com/simeon979"><i data-feather="github"></i><br>simeon979</a></li>
               <li><i data-feather="slack"></i><br>simeon</li>
               <li><a href="https://github.com/simeon979/hng-stage1"><i data-feather="navigation"></i><br>Stage 1 repo</a></li>
-              <li><a href="https://drive.google.com/open?id=0Bxyolg5PsJAqVlZYR0NQcUkxSjA"><i data-feather="box"></i><br>App</a>
+              <li><a href="https://drive.google.com/file/d/0Bxyolg5PsJAqMWs3N2stczNJUHc/view?usp=sharing"><i data-feather="box"></i><br>App</a>
             </ul>
           </div>
           <div class="contact">
