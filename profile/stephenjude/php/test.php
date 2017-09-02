@@ -22,18 +22,22 @@ $first_runner_up = 0;
 $second_runner_up = 0;
 $third_runner_up = 0;
 
-for ($i = 0; $i < $arrlength; $i++) {
+for ($i = 0; $i < 6; $i++) {
 	
 	$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 	$trade_history_count = count($trade_history);					
 	$count_sell = 0;
 	$count_buy = 0;
-	foreach($load_trade->get_trade_history($trade_ticker[$i]) as $x => $x_value) {
+	
+	echo $coin_histry = $load_trade->get_trade_history($trade_ticker[$i]) ;
+	foreach($coin_histry as $x => $x_value) {
+	echo array_search("buy", $coin_histry);
+	
 	    if($x_value["type"] == "sell"){
 		$count_sell = $count_sell+1;
 	    }else if($x_value["type"] == "buy"){
 		$count_buy = $count_buy+1;
-	    }				
+	    }
 	}
 
 	if($count_buy > $first_runner_up){
