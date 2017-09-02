@@ -1,5 +1,5 @@
 <?php
-  if(isset($_GET['send'])) {
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
 
    $subject = $_POST['subject'];
@@ -164,8 +164,7 @@ button[type=submit]{
 .close{
     position: absolute;
     right:30px;
-    color:#000;
-    font-size: 35px;
+    color:#000;    font-size: 35px;
     font-weight: bold;
 }
 .close:hover,
@@ -212,7 +211,7 @@ button[type=submit]{
             class="close" title="Close Modal">&times;</span>
 
             <!--Modal Content-->
-            <form autocomplete="off" class="modal-content animate" action="" method="POST">
+            <form autocomplete="off" class="modal-content animate" action="#" method="POST">
                 <div class="container">
                     
                     <input type="text" class="input" name="fullname" placeholder="YourName" >                
