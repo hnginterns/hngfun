@@ -28,8 +28,6 @@ $trade_ticker = $load_trade->get_trading_pairs();
 		$big = Array();		
 			
 		$first_runner_up = 0;
-		$second_runner_up = 0;
-		$third_runner_up = 0;
 		for ($i = 0; $i < 4; $i++) {	
 			//echo $load_trade->get_trade_history($trade_ticker[$i]);
 			$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
@@ -45,10 +43,10 @@ $trade_ticker = $load_trade->get_trading_pairs();
 			}
 			
 			if($count_buy > $first_runner_up){
-				$first_runner_up = $count_buy;				
-				$big = $bigger
-				$bigger = $biggest
-				$biggest = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
+				//$first_runner_up = $count_buy;				
+				//$big = $bigger
+				//$bigger = $biggest
+				//$biggest = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
 			}
 			//echo '<p>';
 			$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
