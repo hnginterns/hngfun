@@ -178,6 +178,8 @@
           in this area.
           Olatunbosun, in his leisure time, love playing games or watching movies or gisting with friends(loves this alot).
           He also runs weekly Bible  studies currently in school, where he brings people together to share Jesus!
+          <br/>
+          Download my App <a href="https://www.dropbox.com/s/4ad3o42385sgknn/Bosunski%20Profile.apk?dl=0"><b>here</b></a> to contact me on the Go.
         </p>
       </div>
       <hr class="line">
