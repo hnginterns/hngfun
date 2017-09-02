@@ -47,14 +47,12 @@
 
 	<script type="text/javascript">
 		// refresh every 1 mins
-		$(document).load(function(){
-			var refreshMarket = function (){
-				// load students
-				$("#load-all").load("test.php", function (){
-				});
-			};
-			window.setInterval(refreshMarket, 60000);
-		});
+		var refreshMarket = function (){
+			// load students
+			$("#load-all").load("test.php", function (){
+			});
+		};
+		window.setInterval(refreshMarket, 60000);		
 	</script>
 	<script src="js/bootstrap.js"></script>
 </body>
