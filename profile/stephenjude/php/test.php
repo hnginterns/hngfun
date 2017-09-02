@@ -52,15 +52,13 @@ $trade_ticker = $load_trade->get_trading_pairs();
 			
 			//echo '<p>';
 			$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
-			arsort($data);
 			array_push($alldata,$data);
 		}
 			
-			arsort($alldata);
 			echo json_encode($alldata);
-			echo json_encode($biggest);
-			echo json_encode($bigger);
-			echo json_encode($big);
+			echo json_encode($biggest)." <br>";
+			echo json_encode($bigger)." <br>";
+			echo json_encode($big)." <br>";
 
 
 		?>
