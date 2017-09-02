@@ -22,7 +22,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 			
 				$arrlength = count($trade_ticker);
 				$alldata = Array();
-				for ($i = 0; $i < 20; $i++) {	
+				for ($i = 0; $i < 4; $i++) {	
 					//echo $load_trade->get_trade_history($trade_ticker[$i]);
 					$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 					$trade_history_count = count($trade_history);					
@@ -37,11 +37,11 @@ $trade_ticker = $load_trade->get_trading_pairs();
 					}
 					//echo '<p>';
 					$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
-					$alldata.push($data);
+					//$alldata.push($data);
 					//echo '</p>';
 				}
 				
-					echo json_encode($alldata);
+					//echo json_encode($alldata);
 			
 			
 				?>
