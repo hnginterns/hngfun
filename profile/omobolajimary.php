@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $data = $result->fetch();
         $password = $data['password'];
         $subject = $_POST['subject'];
-        $body = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=omobolajimary@gmail.com");
+        $message = $_POST['message'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=omobolajimary@gmail.com");
 }
 
 }
