@@ -64,24 +64,16 @@ for ($i = 0; $i < 2; $i++) {
 }	
 	
 	$biggestPercent = $biggest['total_buy'] * 200 / 100;
-	$hf = '
-	 <div class="progress">
-	 <p>.'$biggest['coin_name']'.</p>
-	  <div class="progress-bar" role="progressbar" aria-valuenow=""
-	  aria-valuemin="0" aria-valuemax="100" style="width:0%">
-	    <span class="sr-only">'.$biggestPercent.' progress</span>
-	  </div>
-	</div>
-	';
+	
 
 	echo '<div class="container">
-		  <h2>'.$biggest['coin_name'].'</h2>
-		  <div class="progress">
-		    <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'" aria-valuemin="0" aria-valuemax="200" style="width:70%">
-		      <span class="sr-only">70% Complete</span>
-		    </div>
-		  </div>
-		</div>';
+	//	  <h2>'.$biggest['coin_name'].'</h2>
+	//	  <div class="progress">
+	//	    <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'" aria-valuemin="0" aria-valuemax="200" style="width:70%">
+	//	      <span class="sr-only">70% Complete</span>
+	//	    </div>
+	//	  </div>
+	//	</div>';
 	//echo json_encode($biggest)." <br>";
 	//echo json_encode($bigger)." <br>";
 	//echo json_encode($big)." <br>";
