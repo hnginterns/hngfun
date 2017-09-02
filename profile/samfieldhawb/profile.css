@@ -108,13 +108,20 @@ header h1 {
 	margin:0 auto;
 	font-size:110%;
 }
+
 .progress {
+	padding-bottom:1%;
+}
+.progress >div {
 	background:#fff;
+	padding:.5% 4%;
+	
+}
+.progress div >h3 {
+	color:#1c9963;
 }
 progress {
-	width:100%;
-	color:2;
-	
+	width:100%;	
 }
 .result a {
 	color:#1c9963;
@@ -122,6 +129,105 @@ progress {
 .result a:hover {
 	color:#cccccc;
 }
+#contact .form{
+	width:40%;
+	margin:2%;
+	text-align:left;
+	border:2px solid #1c9963;
+	border-radius:10px;
+	float:left;
+}
+#contact .form h3 {
+	background:#1c9963;
+	color:#fff;
+	height:50px;
+	line-height:50px;
+	text-transform:uppercase;
+	text-align:center;
+	border-top-left-radius:6px;
+	border-top-right-radius:6px;
+	margin-bottom:5%;
+	
+}
+#contact input,#contact textarea {
+	width:94%;
+	border:1px solid #cccccc;
+	padding:1%;
+	border-radius:5px;
+	margin:0% 2% ;
+
+}
+#contact label {
+	width:100%;
+	font-size:120%; 
+	margin:2% 4%;
+	height:50px;
+	text-transform:uppercase;
+}
+#contact input {
+	height:30px;
+}
+#contact input[type="submit"] {
+	cursor:pointer;
+	background:#1c9963;
+	height:50px;
+	color:#fff;
+}
+#contact textarea {
+	height:200px;
+}
+.header {
+	background:#000000;
+	color:#fff;
+	height:80px;
+	line-height:80px;
+}
+#addr {
+	width:40%;
+	float:left;
+	margin:2%;
+	padding:2% 2% 4% 2%;
+	font-size:120%;
+	/*border:2px solid #1c9963;*/
+	border-radius:5px;
+}
+.addr {
+	width:96%;
+	margin:1% 0%;
+	display:inline-block;
+	padding:2%;
+	text-align:left;
+}
+.addr .addrtitle {
+	width:60%;
+	float:left;
+	color:#1c9963;
+	font-size:120%;
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:30px;
+	
+}
+.addr p {
+	float:right;
+	width:40%
+}
+.addr button {
+	background:#1c9963;
+	width:100%;
+	height:50px;
+	border-radius:5px;
+	cursor:pointer
+}
+.addr a {
+	
+}
+.error {
+	color:red;
+	margin:0% 2%;
+	height:20px;
+}
+
 footer {
 	background:#000000;
 	height:50px;
@@ -159,6 +265,15 @@ footer {
 		width:96%;
 		text-align:left;
 		padding:2%;
+	}
+	#contact .form {
+		width:92%;
+		border:none;
+	}
+	#addr {
+		width:96%;
+		margin:0;
+		border:0;
 	}
 	
 }
