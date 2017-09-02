@@ -132,7 +132,7 @@
 .form{
     background-color: #ff1d8e;
     width: 650px;
-    height:450px;
+    height:500px;
     padding: 10px;
     margin: auto;
     position:relative;
