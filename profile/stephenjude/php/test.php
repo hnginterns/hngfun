@@ -13,9 +13,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 
 
 $arrlength = count($trade_ticker);
-$alldata = Array();			
-$leadingdata = Array();
-
+$alldata = Array();		
 $biggest = Array();	
 $bigger = Array();	
 $big = Array();		
@@ -58,7 +56,6 @@ for ($i = 0; $i < 2; $i++) {
 		$big = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
 	}
 
-	//echo '<p>';
 	$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
 	array_push($alldata,$data);
 }	
@@ -66,17 +63,17 @@ for ($i = 0; $i < 2; $i++) {
 	//$biggestPercent = $biggest['total_buy'] * 200 / 100;
 	
 
-	//echo '<div class="container">
-	//	  <h2>'.$biggest['coin_name'].'</h2>
-	//	  <div class="progress">
-	//	    <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'" aria-valuemin="0" aria-valuemax="200" style="width:70%">
-	//	      <span class="sr-only">70% Complete</span>
-	//	    </div>
-	//	  </div>
-	//	</div>';
-	echo json_encode($biggest)." <br>";
-	echo json_encode($bigger)." <br>";
-	echo json_encode($big)." <br>";
+	echo '<div class="container">
+		  <h2>'.$biggest['coin_name'].'</h2>
+		  <div class="progress">
+		    <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'" aria-valuemin="0" aria-valuemax="200" style="width:70%">
+		      <span class="sr-only">70% Complete</span>
+		    </div>
+		  </div>
+		</div>';
+	//echo json_encode($biggest)." <br>";
+	//echo json_encode($bigger)." <br>";
+	//echo json_encode($big)." <br>";
 
 
 ?>	
