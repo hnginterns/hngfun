@@ -87,6 +87,12 @@
                         Luqman is a Computer Science graduate from Lagos, Nigeria. He has keen interest in developing for the web and mobile. Just of recent, he badged his Google Associate Android Developer cerfification. When Luqman is not at his desk coding, he spends time with friends or surf the internet.
                         </span>
                     </h2>
+                    <h2>
+                        <span class="strong">Donwload app:</span>
+                        <span class="info">
+                            <a href="https://drive.google.com/open?id=0BysGWpdVZTLXZHRRd2NBNklBYVk" title="Download HNG Profile Card App">HNG Profile Card App</a>
+                        </span>
+                    </h2>
                 </div>
             </div>
             <div id="contact-form" class="left">

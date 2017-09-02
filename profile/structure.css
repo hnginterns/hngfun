@@ -4,6 +4,8 @@ body {
 
 .box {
 	background-color: #ffd2e8;
+	color: #A91961;
+	font-weight: bolder;
 	padding: 30px;
 	width: 600px;
 	height:80px;
@@ -16,35 +18,43 @@ body {
 	
 }
 
-h1 {
-	color: #993f6c; 
-}
 
 .long {
-	background-color: #7f345a;
+	background-color: #CD8DAD;
 	
 	width: 660px;
 	height:25px;
 	padding-top: 5px;
 	margin: auto;
 	position:relative;
-	top: -16px;
+	top: 45px;
 	left:-1px;
 	text-align: center;
 	font-size:15px;
 	border-bottom-right-radius:1.2em;
 	border-bottom-left-radius:1.2em;
 	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-	color: #ffa5d2
+	color: #60163B
+}
+
+.img{ 
+	border: 3px solid #ddd;
+	border-radius:8px;
+	width : 308px;
+	height: 500px;
+	position:relative;
+	top: 80px;
+	left:60px;
 }
 
 .shrt {
 	background-color: #ffd2e8;
 	padding-top: 10px;
 	color: #993f6c; 
+	font-weight: bolder;
 	position: relative;
-	top: 50px;
-	left:10px;
+	top: -360px;
+	left:140px;
 	width: 200px;
 	height:50px;
 	margin: auto;
@@ -58,14 +68,14 @@ h1 {
 .drk {
 	background-color: #7f345a;
 	
-	width: 660px;
-	height:110px;
+	width: 200px;
+	height:300px;
 	padding: 5px;
 	margin: auto;
 	position:relative;
-	top: 90px;
-	left:10px;
-	text-align: center;
+	top: -350px;
+	left:140px;
+	text-align: justify;
 	font-size:16px;
 	border-bottom-right-radius:1.2em;
 	border-bottom-left-radius:1.2em;
@@ -76,13 +86,12 @@ h1 {
 
 .det{
 	background-color: #ff1d8e;
-	width: 660px;
+	width: 650px;
 	height:20px;
 	padding: 5px;
 	margin: auto;
 	position:relative;
-	top: -60px;
-	left:10px;
+	top: -900px;
 	text-align: center;
 	font-size:16px;
 	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -90,10 +99,4 @@ h1 {
 	color: white
 }
 
-.img{ 
-	border: 3px solid #ddd;
-	border-radius:8px;
-	width : 308px;
-	height: 500px;
-	margin: auto;
-}
+
