@@ -3,7 +3,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'ordrizzy@gmail.com';
+    $to  = 'johnprince58@gmail.com';
     $body = $_POST['message'];
     if($body == '' || $body == ' ') {
         $error[] = 'Message cannot be empty.';
@@ -31,11 +31,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <script src="https://use.fontawesome.com/6d6c797eb7.js"></script>
 <style type="text/css">
 body {
-    background-color: #C5B358;
+    background-color: #EBECF0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 a{
     text-decoration: none;
+}
+ul{
+	align-items: center;
 }
 .image{
 
@@ -65,14 +68,15 @@ a{
                                 <a href="https://github.com/otuekongjohn/Test" target="_blank">https://github.com/otuekongjohn</a>
                             </li>
                         </ul></span>
-                        <form action = "index.php" id = "contact-form" method = "POST" >
+                        <form id = "contact-form" method = "POST" >
 				<fieldset>
 				<legend>Contact Me</legend>
 				<input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
-				<textarea name = "body" placeholder = "Type your message here" rows ="18" cols = "70" required></textarea><br>
+				<textarea name = "message" placeholder = "Type your message here" rows ="10" cols = "70" required></textarea><br>
 				<br><input type ="submit" name="submit" value ="Send Message">
 				</fieldset>
 			</form>
+			<footer id = "footer"> Shalom John &copy; </footer>
 </p>
 </center>
 </body>
