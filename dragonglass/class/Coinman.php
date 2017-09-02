@@ -76,7 +76,7 @@ class Coinman
     $coin = $coinData[0];
     $buys = $coinData[1];
     $sales = $coinData[2];
-
+    
     $this->db->query("INSERT into trade_history VALUES (null, $coin, '$buys', '$sales' )");
   }
 
@@ -88,8 +88,6 @@ class Coinman
 
   private function savePairs($pairs) {
     $pairs = json_encode($pairs);
-    echo "INSERT into pair VALUES (null, '$pairs')";
-    exit;
     $exe = $this->db->query("INSERT into pair VALUES (null, '$pairs')");
   }
 
