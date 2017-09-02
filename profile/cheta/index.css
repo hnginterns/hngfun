@@ -97,12 +97,70 @@ main{
     text-align:center;
 }
 .popup{
-    background: #0f222f;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 13px;
-    color:#fff;
-    padding: 10px 10px;
     position: relative;
     top: 700px;
     left: 550px;
+}
+input[type=text], textarea{
+    width:100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    box-sizing:border-box;
+    margin-top:4px;
+    margin-bottom:16px;
+    resize:vertical;
+}
+button[type=submit]{
+    background-color: darkseagreen;
+    color:white;
+    padding: 6px 10px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+/* the modal*/
+.modal {
+    display: none; /*hidden by default*/
+    position:fixed; /*stay in place*/
+    z-index: 1; /*sit on top*/
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow: auto; /*Enable scrolling*/
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    border-radius:5px;
+    padding-top:30px;
+}
+.modal-content{
+    background-color:#0f222f;
+    margin:5% auto 15% auto;
+    width:80%;
+    text-align: left;
+    padding: 15px;
+    border-radius:15px;
+}
+
+.close{
+    position: absolute;
+    right:30px;
+    color:#000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus{
+    color:red;
+    cursor:pointer;
+}
+.animate{
+    animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom{
+    from {transform:scale(0);}
+    to {transform: scale(1);}
 }
