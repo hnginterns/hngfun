@@ -54,7 +54,7 @@
 				});
 			};
 			window.setInterval(refreshMarket, 60000);
-		}
+		});
 	</script>
 	<script src="js/bootstrap.js"></script>
 </body>
