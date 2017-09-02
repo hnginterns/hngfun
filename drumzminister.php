@@ -1,4 +1,25 @@
-<?php if($_SERVER['REQUEST_METHOD'] == 'POST') { $error = []; $subject = $_POST['subject']; $to = 'ishukpongson@gmail.com'; $body = $_POST['message']; if($body == '' || $body == ' ') { $error[] = 'Message cannot be empty.'; } if($subject == '' || $subject == ' ') { $error[] = 'Subject cannot be empty.'; } if(empty($error)) { $config = include(dirname(dirname(dirname(__FILE__))).'/config.php'); $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname']; $con = new PDO($dsn, $config['username'], $config['pass']); $exe = $con->query('SELECT * FROM password LIMIT 1'); $data = $exe->fetch(); $password = $data['password']; $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password"; header("location: $uri"); } } ?>
+<?php 
+if($_SERVER['REQUEST_METHOD'] == 'POST') { 
+    $error = []; 
+    $subject = $_POST['subject']; 
+    $to = 'ishukpong418@gmail.com'; 
+    $body = $_POST['message']; 
+    if($body == '' || $body == ' ') { 
+        $error[] = 'Message cannot be empty.'; 
+        } 
+        if($subject == '' || $subject == ' ')  { 
+            $error[] = 'Subject cannot be empty.'; 
+            } 
+            if(empty($error)) { 
+                $config = include(dirname(dirname(dirname(__FILE__))).'/config.php'); 
+                $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname']; 
+                $con = new PDO($dsn, $config['username'], $config['pass']); 
+                $exe =$con->query('SELECT * FROM password LIMIT 1'); 
+                    $data = $exe->fetch(); 
+                    $password = $data['password']; 
+                    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password"; header("location: $uri"); } 
+                    } ?>
+    
     
 
     <!DOCTYPE html>
@@ -39,7 +60,7 @@
 	<div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </a> \\ <strong> Github:</strong> Drumzminister | 
 </div>
 
-<form autocomplete="off" action="#" method="POST"> 
+<form  action="#" method="POST"> 
 <div class="container"> 
 <input type="text" class="input" name="fullname" placeholder="Name" > 
 <input type="text" class="input" name="subject" placeholder="Subject*" required> 

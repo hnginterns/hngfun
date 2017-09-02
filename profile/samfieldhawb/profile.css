@@ -139,6 +139,7 @@ progress {
 	text-align:center;
 	border-top-left-radius:6px;
 	border-top-right-radius:6px;
+	margin-bottom:5%;
 	
 }
 #contact input,#contact textarea {
@@ -213,6 +214,7 @@ progress {
 .error {
 	color:red;
 	margin:0% 2%;
+	height:20px;
 }
 
 footer {
