@@ -61,13 +61,14 @@ for ($i = 0; $i < 4; $i++) {
 	//echo '<p>';
 	$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
 	array_push($alldata,$data);
-}
+}	
 	
+	$biggestPercent = $biggest['total_buy'] * 200 / 100;
 	echo'
 	 <div class="progress">
 	  <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'"
 	  aria-valuemin="0" aria-valuemax="100" style="width:200%">
-	    <span class="sr-only">'.$biggest['total_buy'].' progress</span>
+	    <span class="sr-only">'.$biggestPercent.' progress</span>
 	  </div>
 	</div>
 	';
