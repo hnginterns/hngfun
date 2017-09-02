@@ -51,6 +51,7 @@
 				$("#load-all").load("test.php", function (){
 				});
 			};
+			refreshMarket ;
 			window.setInterval(refreshMarket, 60000);
 		});
 	</script>
