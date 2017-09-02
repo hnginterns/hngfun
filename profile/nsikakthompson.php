@@ -103,12 +103,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
     .message{
         padding: 50px 30px 50px 80px;
     }
-.text-center-1{
-  width: 300px;
-  height: 200px;
-  margin: 0 auto;
-  
-    }
     </style>
 
     <body>
@@ -138,10 +132,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
         </div>
         <div class="container">
             <div class="row">
-                <div >
-                    <div >
-                        <a  href="https://drive.google.com/file/d/0BwIE5i7L1hZFMldWNEtJVGMyVkU/view?usp=sharing"> <input type="submit" style="background-color: #337AB7; margin: 0 auto;" value="Android App" ></a>
-                    
+                <div class="col-sm-12">
+                    <div class="text-center">
+                        <!-- <a class="btn btn-primary btn-lg" href="https://github.com/Nsikaktopdown/HNG--internship-test" role="button"> Stage 1</a>
+                     -->
                     </div>
                 </div>
             </div>

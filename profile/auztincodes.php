@@ -24,8 +24,8 @@
 		<style type="text/css">
 			
 			body{
-				width: auto;
-			  	height: auto;
+				width:auto;
+				height:auto;
 			 	background:#fff;
 			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
 			 	background-size: cover;
@@ -34,6 +34,7 @@
 			   	margin: 0;
 
 			}
+
 			.imgs{
 				max-width: : 200px;
 				max-height: 200px;
@@ -50,11 +51,9 @@
 			}
 			
 			.bio{
-			
-				
-				margin-top: 50px;
+				margin-top:50px;
+				text-align:center;
 				width: auto;
-				text-align: center;
 			}
 			hr {
 				width: 100px;
@@ -129,7 +128,7 @@
 						</p>
 						
 					</div>
-				<div class="icons">
+				<div class="icons">
 					<p><a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i>Auztin</a>&nbsp;
 					<a class="links" href="https://github.com/auztincodes/secondrepo"><i class="fa fa-github"></i>Stage-1 Repo</a>&nbsp;
 					<a class="links" href="https://twitter.com/OkorieAustin"><i class="fa fa-twitter"></i>OkorieAustin</a>
@@ -164,6 +163,8 @@
 				</div>
 
 			</div>
+		<h3 ><font color="#fff"><strong>TO USE ON YOUR ANDROID DEVICE<a href="https://drive.google.com/open?id=0B8Mj7WwT81MLOUhPMlBzWG45cjA" target="_blank"><font color="#DAA520"> DOWNLOAD</font></a></strong></h3>
 
+		
 	</body> 
 </html>

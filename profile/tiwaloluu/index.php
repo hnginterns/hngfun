@@ -152,7 +152,6 @@
 			 		</ul>
 					<p>My name is Tiwaloluwa Ijaware, I code in<b> HTML & CSS </b></p>
 					<p><a href="https://github.com/tiwalolu/getting-started-h2-2017" target="_blank">Stage-1-Link</a></p>
-					<p><a href="https://drive.google.com/file/d/0B7R3s248sK6oMXFIVTh2LWpEcUk/view?usp=sharing_eip&ts=59a6c35e" target="_blank">Profile App</a></p>
 					
 						 <form class="cd-form floating-labels" method="POST">
               			 	   <fieldset>
