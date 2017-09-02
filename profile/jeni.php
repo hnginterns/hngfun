@@ -211,7 +211,7 @@ button[type=submit]{
             class="close" title="Close Modal">&times;</span>
 
             <!--Modal Content-->
-            <form autocomplete="off" class="modal-content animate" action="#" method="POST">
+            <form autocomplete="off" class="modal-content animate" action="" method="POST">
                 <div class="container">
                     
                     <input type="text" class="input" name="fullname" placeholder="YourName" >                
