@@ -77,7 +77,7 @@ class Coinman
     $buys = $coinData[1];
     $sales = $coinData[2];
 
-    $this->db->query("UPDATE trade_history SET buys = '$buys', sales = '$sales' WHERE pair='$coin' )");
+    $this->db->query("INSERT into trade_history VALUES (null, $coin, '$buys', '$sales' )");
   }
 
   private function getPairsFromDb() {
