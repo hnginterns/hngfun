@@ -9,6 +9,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+  margin-bottom: : 40px;
 }
 .container {
   padding: 0 16px;
@@ -17,6 +18,13 @@
   content: "";
   clear: both;
   display: table;
+}
+.need{
+background-color: gold;
+}
+.idea{
+  background-color:teal;
+
 }
 .title {
   color: blue;
@@ -42,20 +50,24 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+
 </style>
+
 </head>
+
 <body>
 
-<h2 style="text-align:center">My HNG Interns Profile</h2>
+<h2 style="text-align:center">My HNG Profile</h2>
 
 <div class="card">
-  <img src="https://image.ibb.co/cjXCcQ/Rhodinet.jpg" alt="Rhodinet" border="0px" height="180px" width="150px">
-  <div class="container">
+  <img src="https://image.ibb.co/cjXCcQ/Rhodinet.jpg" alt="Rhodinet" border="0" height="180" width="150">
+  <div class="container need">
     <h1>Imo Okon</h1>
-    <p class="title">My Stage 1 Repository</p>
-    <p>I am a graduate of Physics from University of Uyo, Nigeria. I live in   Abuja, my hobby is Taekwondo. 
-        I have passion for programming languages such as: HTML, CSS, MYSQL, JAVA, PYTHON, JAVASCRIPT, PHP etc. 
-        I enjoyed working with great developers. Its a real hngfun.org</p>
+    <p class="title">My Stage 3 Repo</p>
+    <p>I am a Laxury Consultant in GWTcorp a POSH, FERI and FERIMOSH designers company that deals with Men and Women wears.
+    a graduate of Physics, University of Uyo, Nigeria. My hobby is Korean martial arts (Taekwondo). 
+     My career as a computer programmer in HTML, CSS, MYSQL, JAVA, PYTHON, JAVASCRIPT, PHP is a great decision in my life. 
+        I have passion to work with Web and Android developers </p>
     <p></p>
     <div style="margin: 10px 0;">
     <p><h8><span class="fa fa-slack">
@@ -63,17 +75,67 @@ button:hover, a:hover {
         <p><h10><span class="fa fa-github">
         </span></i> <a target="_blank" href="https://github.com/rhodinet/" class="repo"> @rhodinet</a></h10></p>
         <p><h10><span class="fa fa-facebook">
-        </span></i> <a target="_blank" href="https://facebook.com/rhodinet/" class="repo"> @rhodinet</a></h10></p>
-           <p><h10><span class="fa fa-linkedin">
-      </span></i><a target="_blank" href="https://linkedin.com/in/rhodinet/" 
-class="repo">  @rhodinet</a></h10></p>
-        <p><h10><span class="fa fa-twitter">
-        </span></i> <a target="_blank" href="https://twitter.com/rhodinethub/" class="repo"> @rhodinethub</a></h10></p>
-   </div>
-        </span></i> <a target="_blank" href="https://globalwealthtrade.com/rhodinet/opportunity.html"
-   <p><button>Contact</button></p>
+        </span></i> <a target="_blank" href="https://facebook.com/rhodinet2/" class="repo"> @rhodinet2</a></h10></p>
+        </span></i> <a target="_blank" href="https://globalwealthtrade.com/rhodinet/opportunity.html" class="repo">GWT COMPANY</a></h10></p>
+  
   </div>
 </div>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select, textarea {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <form action="/rhodimos.php" class="idea">
+  <br><br>
+    <h2>Contact Form</h2>
+    <p><label for="lname">Name</label></p>
+     <input type="text" id="name" name="name" placeholder="Full name">
+
+        <p><label for="lname">E-mail</label></p>
+<input type="text" id="lname" name="e-mail" placeholder="example@gmail.com">
+
+       <p><label for="subject">Message</label></p>
+    <textarea id="subject" name="subject" placeholder="Write message here.." style="height:100px"></textarea>
+        <p><input type="submit" value="Submit"></p>
+     </form>
+   </div>
+ </body>
+</html>
 
 </body>
 </html>

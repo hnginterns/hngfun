@@ -1,0 +1,152 @@
+/*Colors*/
+/*Imports*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+body {
+  background: #f37346;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 400px;
+  margin: 10% auto 0;
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+.container:hover .social li {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 30px 0 30px;
+}
+.header h1, .header h2 {
+  font-weight: 300;
+}
+.header h1 {
+  margin: 0;
+}
+.header h2 {
+  margin: 0 0 15px 0;
+  color: #329696;
+}
+
+.profile {
+  width: 130px;
+  height: 130px;
+  border-radius: 10%;
+  margin: 20px 0 -70px 0;
+  border: 3px solid #505064;
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+.profile:hover {
+  border: 3px solid #f37346;
+}
+
+.content {
+  background: #505064;
+  color: #f0f0f0;
+  padding: 75px 0 0 0;
+  text-align: center;
+  height: auto;
+}
+.content p {
+  padding: 20px 40px;
+  font-weight: 300;
+}
+a {
+  color: #FF6B6B;
+}
+a:hover {
+  color: #ff9a9a;
+  text-decoration: none;
+}
+/*Contact form;type=form*/
+#mailer{
+	height: 320px;
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 3px;
+}
+/*Input name+email;type=text*/
+#mailer > .name input, #mailer > .email input{
+	max-width: 900px;
+	height: 40px;
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+/*Input message;type=text*/
+#mailer > .text textarea{
+	max-width: 900px;
+	width: 100%;
+	height: 150px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	resize: none;
+}
+/*Send button;type=submit*/
+#mailer > .submit input{
+	width: 150px;
+	height: 40px;
+	float: right;
+	border-radius: 5px;
+}
+
+#mailer > .name input, #mailer > .email input, #mailer > .text textarea{
+	border: 4px solid #e5e5e5;
+}
+#mailer > .submit input, #mailer > .reset input{
+	color: #6b6b6b;
+	border: 1px solid #e5e5e5;
+	background-color: #f5f5f5;
+ }
+ #mailer > .submit input:hover, #mailer > .reset input:hover{
+	background-color: #6b6b6b;
+	color: #f5f5f5;
+ }
+
+/*Mail was sent*/
+#wraptheform{
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+    max-width: 910px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+@media screen and (max-width: 990px){
+	#wraptheform{
+		margin-top: 20px;
+		margin-left: 2.5% !important;
+		width: 95%;
+	}
+}
+#contactwas{
+	color: #a0a0a0;
+	display: none;
+	font-weight: bold;
+	font-size: 30px;
+	z-index: 1;
+	position: relative;
+	top: 80px;
+	left: 50%;
+	margin-left: -172px;
+}
+#contactform{
+	text-align: center;
+	color: #6E6E6E;
+}
+
