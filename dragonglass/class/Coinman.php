@@ -80,7 +80,7 @@ class Coinman
   }
 
   private function getPairsFromDb() {
-    $exe = $this->db->query("SELECT pairs FROM pair LIMIT 1");
+    $exe = $this->db->query("SELECT * pair FROM pair LIMIT 1");
     $pairJSON = $exe->fetch(PDO::FETCH_ASSOC)['pairs'];
     return json_decode($pairJSON, true);
   }
