@@ -51,11 +51,8 @@ if (isset($_REQUEST['submitted'])) {
 	  }
 	}
   }
-  ?>
-     
-?>
+  
 
-<?php 
   //Print Errors
   if (isset($_REQUEST['submitted'])) {
   // Print any error messages. 
@@ -71,7 +68,8 @@ if (isset($_REQUEST['submitted'])) {
   }
 //End of errors array
   ?>
-    <!DOCTYPE html>
+    
+<!DOCTYPE html>
     <html>
 
     <head>
