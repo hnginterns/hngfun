@@ -53,8 +53,10 @@
 				});
 			};
 			
-			$("#load-all").setInterval(refreshMarket, 60000);
-			$("#load-all").load("test.php", function (){});
+			
+			$("#load-all").load("test.php", function (){
+				window.setInterval(refreshMarket, 60000);
+			});
 		});
 	</script>
 </body>
