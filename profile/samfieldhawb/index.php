@@ -132,7 +132,7 @@
 		</section>
 		<section id="contact">
 			<div class="header">
-				<h2>Contact Form</h2>
+				<h2>Contact</h2>
 			</div>
 			<div class="form">
 				<h3>Send Me a Mail</h3>

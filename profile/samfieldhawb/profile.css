@@ -181,7 +181,7 @@ progress {
 	margin:2%;
 	padding:2% 2% 4% 2%;
 	font-size:120%;
-	border:2px solid #1c9963;
+	/*border:2px solid #1c9963;*/
 	border-radius:5px;
 }
 .addr {
