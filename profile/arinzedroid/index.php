@@ -42,7 +42,8 @@
                 <div>
                         <h2> About Me</h2>
                         <div class="content--about">
-                            <p>Hi,<br/><br/>I am a professional software engineer with 5 years of experience in design and app development. My skills and experience includes web, mobile and desktop app developments with database. I work a range of businesses including start ups, agencies, established brands, & entrepreneurs around the globe.</p>
+                            <p>Hi,<br/><br/>I am a professional software developer with 3 years of experience in app development. My skills and experience includes mobile, desktop and web  developments with database. I work a range of businesses including start ups, agencies, established brands, & entrepreneurs around the globe.
+				I graduated from Ebonyi State University, 2016, in the field of computer Science. </p>
                         </div>
                         <div class="content--link-to-stage1">
                                <p><i class="fa fa-2x fa-github"></i> <a href="https://github.com/Arinze39/hng_stage_1">Stage One Result</a> </p>

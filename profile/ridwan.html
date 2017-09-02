@@ -189,17 +189,23 @@
             outline: none;
         }
         input, textarea {
-    width:439px;
-    height:27px;
-    background:#efefef;
-    border:1px solid #dedede;
-    padding:10px;
-    margin-top:3px;
-    font-size:0.9em;
-    color:#3a3a3a;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
+        position: relative;
+        z-index: 0;
+        display: block;
+        width: 69%;
+        height: 45px;
+        font-size: 14px;
+        font-weight: 300;
+        color: rgb(95, 106, 125);
+        margin: 0px 0px 30px -16px;
+        padding: 10px;
+        background: rgb(255, 255, 255);
+        outline: none;
+        border: 0.2px solid rgb(196, 196, 196);
+        border-radius: 3px;
+        -webkit-transition: background-color 1s;
+        transition: background-color 1s;
+        left: 127px;
 }
         
         textarea {
@@ -211,9 +217,10 @@ input[type="submit"] {
     text-indent: 5px;
     border: 50px;
     margin-top: 20px;
+    color: white;
     cursor: pointer;
     opacity: .8;
-    background-color: rgba(179, 160, 160, 0.32);
+    background-color: rgba(47, 36, 36, 0.87);
 }
         }
         .regInput-3 {
