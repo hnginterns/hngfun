@@ -45,26 +45,12 @@
 			
 	</div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div id="refresh_db"></div>
-				<div id="trade-history">
-					<img id="loading-wait" src="http://coinman.000webhostapp.com/app/img/loading.svg" height="50" width="50"> 
-					<span id="loading-text">Loading.............</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<script type="text/javascript">
 		// refresh every 1 mins
 		$(document).load(function(){
 			var refreshMarket = function (){
 				// load students
 				$("#load-all").load("test.php", function (){
-					$("#loading-wait").hide();
-					$("#loading-text").hide();
 				});
 			};
 			window.setInterval(refreshMarket, 60000);
