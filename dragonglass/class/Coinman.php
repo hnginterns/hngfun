@@ -78,7 +78,7 @@ class Coinman
     $sales = $coinData[2];
     $e = $this->db->query("INSERT into trade_history VALUES (null, '$coin', '$buys', '$sales')");
     if(!$e) {
-     echo  $this->db->errorInfo();
+     echo  $this->db->errorInfo()[2];
       exit;
     }
   }
