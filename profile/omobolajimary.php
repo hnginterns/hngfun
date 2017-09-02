@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label>From : </label><input name="client_mail" id="client_mail" class="client-input" placeholder="Your E-mail" required><span class="error">* <?php echo $emailErr;?></span><br><br>
                     <label>Subject :</label><input name="subject" id="subject" class="client-input" placeholder= "Subject" required><br><br>
                     <label>Message: </label><br><br>
-                    <textarea id="body" name="body" cols="60" rows="6" required></textarea><span class="error">* <?php echo $messageErr;?></span>
+                    <textarea id="message" name="message" cols="60" rows="6" required></textarea><span class="error">* <?php echo $messageErr;?></span>
                     <br><br>
                     <button type="submit" class="submit-btn" name="thisemail"><strong>Send</strong></button>
                 </fieldset>
