@@ -62,10 +62,19 @@ for ($i = 0; $i < 4; $i++) {
 	$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
 	array_push($alldata,$data);
 }
-	echo json_encode($alldata)." <br>";
-	echo json_encode($biggest)." <br>";
-	echo json_encode($bigger)." <br>";
-	echo json_encode($big)." <br>";
+	
+	echo'
+	 <div class="progress">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'"
+	  aria-valuemin="0" aria-valuemax="100" style="width:200%">
+	    <span class="sr-only">'.$biggest['total_buy'].' progress</span>
+	  </div>
+	</div>
+	';
+
+	//echo json_encode($biggest)." <br>";
+	//echo json_encode($bigger)." <br>";
+	//echo json_encode($big)." <br>";
 
 
 ?>	
