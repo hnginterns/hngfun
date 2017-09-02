@@ -51,12 +51,12 @@
 				// load students
 				$("#load-all").load("test.php", function (){
 				});
-			};
-			
+			};			
 			
 			$("#load-all").load("test.php", function (){
-				window.setInterval(refreshMarket, 60000);
 			});
+			
+			window.setInterval(refreshMarket, 60000);
 		});
 	</script>
 </body>
