@@ -54,13 +54,13 @@ $trade_ticker = $load_trade->get_trading_pairs();
 				$bigger = $biggest;
 				$biggest =array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);						
 					
-			}else if($count_buy > $second_runner_up){				
+			}elseif($count_buy > $second_runner_up){				
 				$third_runner_up = $second_runner_up;
 				$second_runner_up = $count_buy;
 				
 				$big = $bigger;
 				$bigger = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);	
-			}else if($count_buy > $third_runner_up){				
+			}elseif($count_buy > $third_runner_up){				
 				$third_runner_up  = $count_buy;				
 				$big = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
 			}
