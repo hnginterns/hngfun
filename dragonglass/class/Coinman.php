@@ -23,6 +23,7 @@ class Coinman
    */
   public function runCoinMan()
   {
+    $this->catchData();
     // two Ajax calls running
     if($_GET['type'] == 'catchData') {
       $this->catchData();
