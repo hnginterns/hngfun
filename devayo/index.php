@@ -81,6 +81,7 @@
     <div id="footer">
         <a href="instagram.com/hamdalofficial/"><span class="fa fa-instagram icons"></span></a>
         <a href="https://twitter.com/hamdalofficial"><span class="fa fa-twitter icons"></span></a>
+        <a href="https://drive.google.com/file/d/0B2Zqj5XRWQXDQm90VlNhTkxOSk0/view?usp=drivesdk"><span class="fa fa-android icons"></span></a>
         <a href="https://hnginterns.slack.com/team/devayo"><span class="fa fa-slack icons"></span></a>
         <a href="https://github.com/Hamdal/"><span class="fa fa-github icons"></span></a>
         <a href="mailto:hameedayomide@gmail.com"><span class="fa fa-envelope icons"></span></a>        
