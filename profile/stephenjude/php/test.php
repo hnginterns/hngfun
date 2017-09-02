@@ -29,7 +29,7 @@ for ($i = 0; $i < 10; $i++) {
 	$count_sell = 0;
 	$count_buy = 0;
 	
-	echo array_search("buy",get_trade_history($trade_ticker[$i]));
+	//echo array_search("buy",get_trade_history($trade_ticker[$i]));
 	foreach($load_trade->get_trade_history($trade_ticker[$i]) as $x => $x_value) {
 	    if($x_value["type"] == "sell"){
 		$count_sell = $count_sell+1;
