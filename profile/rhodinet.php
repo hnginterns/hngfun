@@ -110,7 +110,7 @@ input[type=submit]:hover {
 <h4>Contact Form</h4>
 
 <div class="container">
-  <form action="/action_page.php">
+  <form action="action_page.php">
     <p><label for="lname">Name</label></p>
      <input type="text" id="name" name="name" placeholder="Full name">
 
