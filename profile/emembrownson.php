@@ -37,7 +37,11 @@
           <h3>Founder/CEO AfroPot, Manager Women Techmakers Akwa Ibom State Chapter, Google Certified Android Developer with laurels like NASA International Space Apps Challenge Nigeria 2015 and Global Entrepreneurship Ideas Contest 2015. Apart from growing her startup, Emem also likes exposing more young women to technology by empowering them with software development skills leveraging Start Innovation Hub as a platform. </h3>
       </div>
         <div class="text-center">
-            <a class="link" href="https://github.com/brownjee/hnginterns" role="button"> Stage 1</a>                    
+            <a class="link" href="https://github.com/brownjee/hnginterns" role="button"> Stage 1</a>
+        </div>
+        <div class="text-center">
+            <a class="link" href="https://drive.google.com/open?id=0B9jjqiX2cQpFRjcyc0VBMDYxV1U" role="button"> Android Profile </a>
+                                
         </div>
     </div>
     <div id="contact" style="display: none;">
