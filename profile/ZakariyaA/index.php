@@ -18,9 +18,9 @@
         $to = $_POST['email'];
         $subject = $_POST['subject'];
         $body = $_POST['body'];
-        header("location: ZakariyaA/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+        header("location: /sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
 
    }else{
-        header("location: ZakariyaA/index.html");
+        header("location: /index.html");
     }
 ?>
