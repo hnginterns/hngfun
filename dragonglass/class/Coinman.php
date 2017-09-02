@@ -36,6 +36,9 @@ class Coinman
     $coins = $this->getPairsFromDb();
     if(empty($coins)) {
       $coins = $this->poloniex->get_trading_pairs();
+      
+      echo json_decode($coins);
+      exit;
       $coins = $this->getOnlyBtc($coins);
     }
 
