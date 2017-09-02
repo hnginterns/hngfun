@@ -28,12 +28,14 @@ for ($i = 0; $i < $arrlength; $i++) {
 	$trade_history_count = count($trade_history);					
 	$count_sell = 0;
 	$count_buy = 0;
+	
+	echo array_search("buy",get_trade_history($trade_ticker[$i]));
 	foreach($load_trade->get_trade_history($trade_ticker[$i]) as $x => $x_value) {
 	    if($x_value["type"] == "sell"){
 		$count_sell = $count_sell+1;
 	    }else if($x_value["type"] == "buy"){
 		$count_buy = $count_buy+1;
-	    }				
+	    }
 	}
 
 	if($count_buy > $first_runner_up){
