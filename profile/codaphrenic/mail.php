@@ -1,13 +1,13 @@
 <?php
    	$admin_email = "xyluz@gmail.com";
-	if($_SERVER['REQUEST_METHOD'] == 'POST') {
+	if($_SERVER['REQUEST_METHOD'] == 'GET') {
 		$error          = ""; 
 		$successMessage = "";
-		$name           = $_POST['name'];
+		$name           = $_GET['name'];
 		$to  			= 'fegoedafe@gmail.com';
-		$subject 		= $_POST['subject'];
-		$message 		= $_POST['message'];
-		$email 			= $_POST["email"];
+		$subject 		= $_GET['subject'];
+		$message 		= $_GET['message'];
+		$email 			= $_GET["email"];
 		
 		if (!$email) {
 			$error .= "Please enter your email address.<br>";
@@ -19,7 +19,7 @@
 			$error .= "Please enter a subject.<br>";
 		}
 		if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-			$error .= "The email address you entered is invalid.<br>";
+			$error .= "The email address is invalid.<br>";
 		}
 		if ($error != "") {
 			$error = '<p>There were error(s) in your form:</p>' . $error;

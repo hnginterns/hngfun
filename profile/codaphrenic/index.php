@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 	<head>
-	  <meta charset=utf-8" />
+	  <meta charset="utf-8" />
 	  <meta name="codaphrenic" content="profile" />
 
 	  <link rel="stylesheet" type="text/css" href="css/style.css"  />
@@ -12,7 +12,7 @@
 			<div class="header">
 				<h1>@codaphrenic</h1>
 				<h2>Backend Developer</h2>
-				<img src="https://imgur.com/lWDqRlc.jpg" class="profile" />
+				<img src="https://imgur.com/lWDqRlc.jpg" class="profile" alt="Codaphrenic"/>
 			</div>
 			<div class="content">
 				<h3>about me</h3>
@@ -22,9 +22,9 @@
 			</div>
 			<div id="wraptheform">
 				<div id="contactform"><h4>Leave me a message:</h4><br /></div>    
-				<div id="contactwas"><center>Thanks for contacting me!<br/><br/>I will stay in touch.</center></div>
+				<div id="contactwas">Thanks for contacting me!<br/><br/>I will stay in touch.</center></div>
 
-				<form method="post" id="mailer" action="mail.php">
+				<form method="get" id="mailer" action="mail.php">
 					
 					<p class="name">
 						<input name="name" type="text" placeholder="Name" />
