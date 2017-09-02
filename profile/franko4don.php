@@ -181,7 +181,7 @@
                         in my area grow in technology especially in programming by organizing meetups.
                     </p>
                     <p class="links"><a href="https://github.com/franko4don/hnginternship"><i class="fa fa-github fa-2x"></i></a> </p>
-                    <p class="links"><a href="https://drive.google.com/open?id=0B-wTh1mGcYkfMVhITGhKTG8wNnM"><i class="fa fa-android" aria-hidden="true"></i></a></p>
+                    <p class="links"><a href="https://drive.google.com/open?id=0B-wTh1mGcYkfMVhITGhKTG8wNnM"><i class="fa fa-2x fa-android" aria-hidden="true"></i></a></p>
                     
                 </div>
             </center>
