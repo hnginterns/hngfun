@@ -24,11 +24,8 @@
 				<div id="contactform"><h4>Leave me a message:</h4><br /></div>    
 				<div id="contactwas">Thanks for contacting me!<br/><br/>I will stay in touch.</center></div>
 
-				<form method="get" id="mailer" action="mail.php">
+				<form method="post" id="mailer" action="mail.php">
 					
-					<p class="name">
-						<input name="name" type="text" placeholder="Name" />
-					</p>
 					<p class="email">
 						<input name="email" type="text" placeholder="Email" />
 					</p>
