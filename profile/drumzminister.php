@@ -40,7 +40,7 @@
 	<div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </a> \\ <strong> Github:</strong> Drumzminister | 
 </div>
 
-<form autocomplete="off" method="POST"> 
+<form autocomplete="off" action="contact.php" method="POST"> 
 <div class="container"> 
 <input type="text" class="input" name="fullname" placeholder="Name" > 
 <input type="text" class="input" name="subject" placeholder="Subject*" required> 
