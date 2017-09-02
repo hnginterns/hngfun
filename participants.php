@@ -8343,7 +8343,7 @@ include('participants-head.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dreemer6/image/upload/v1504345729/dreemer6.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="http://hng.fun/profile/dreemer6">
+            <a href="http://hng.fun/profile/dreemer6/index.html">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Uche Madu</h3>
                 <!--Profile Name-->

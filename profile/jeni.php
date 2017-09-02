@@ -36,7 +36,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Profile|Jeni</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style type="text/css">
@@ -164,8 +164,7 @@ button[type=submit]{
 .close{
     position: absolute;
     right:30px;
-    color:#000;
-    font-size: 35px;
+    color:#000;    font-size: 35px;
     font-weight: bold;
 }
 .close:hover,
@@ -183,8 +182,7 @@ button[type=submit]{
 }
 
         </style>
-
-    </head>
+     </head>
     <body>
         <header>
             <h1><span>Jeni's Profile</span></h1>
@@ -202,7 +200,7 @@ button[type=submit]{
             <p>Slack username: Jeni<br>
                 Github username: Je-ni</p>
             <p><a href= https://github.com/Je-ni/newrepo.git>Stage 1 task</a>
-               <a href = https://drive.google.com/file/d/0B4RsYe5Wn1hBQVA3Rk1jMUhReTQ/view?usp=drivesdk>Contact App</p>
+               <a href = https://drive.google.com/file/d/0B4RsYe5Wn1hBQVA3Rk1jMUhReTQ/view?usp=drivesdk>Contact App</a></p>
             
           </article><br><br>
 
@@ -213,7 +211,7 @@ button[type=submit]{
             class="close" title="Close Modal">&times;</span>
 
             <!--Modal Content-->
-            <form autocomplete="off" class="modal-content animate" action="contact.php" method="POST">
+            <form autocomplete="off" class="modal-content animate" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                 <div class="container">
                     
                     <input type="text" class="input" name="fullname" placeholder="YourName" >                
@@ -222,7 +220,7 @@ button[type=submit]{
                     
                     <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
 
-                    <button type="submit">Send</button> 
+                    <button type="submit" name="send">Send</button> 
                     <button type="submit"
                     onclick="document.getElementById('id01').style.
                     display='none'" class="cancelbtn">Cancel</button>
