@@ -154,7 +154,7 @@
      therefore some class might not make sense -->
 
   <?php
-    $config = include("../../config.php");
+    $config = include("../config.php");
     $dbname = $config["dbname"];
     $pass = $config["pass"];
     $username = $config["username"];
