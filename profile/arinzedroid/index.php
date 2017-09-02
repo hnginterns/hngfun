@@ -47,7 +47,7 @@
                         <div class="content--link-to-stage1">
                                <p><i class="fa fa-2x fa-github"></i> <a href="https://github.com/Arinze39/hng_stage_1">Stage One Result</a> </p>
                         </div>
-						            <div class="content--link-to-ContactApp">
+			<div class="content--link-to-ContactApp">
                                <p><i class="fa fa-2x fa-dropbox"></i> <a href="https://www.dropbox.com/s/aflefvepz47rqk3/ContactApp.apk?dl=0">Link to Android App</a> <button href="#" class="contact__button" arial>Contact me</button></p>
                         </div>
                 </div>
