@@ -1,36 +1,18 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-
-   $subject = $_POST['subject'];
-    $to  = 'ishukpong418@gmail.com';
-    $body = $_POST['message'];
-
-   if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
-
-   if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
-    }
-
-   if(empty($error)) {
-
-     $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      if (isset($_GET['send']))  {
+          //Email information here
+      $to = "ishukpong418@gmail.com";
+      $subject = $_GET['subject'];
+      $body = $_GET['message'];    
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
-
-     $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-
-     $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-     header("location: $uri");
-
-   }
-  }
- ?>
+            header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        }
+?>
     <!DOCTYPE html>
     <html>
 
@@ -70,7 +52,7 @@
 </div>
 
 
-<form autocomplete="off"  action="contact.php" method="POST">
+<form autocomplete="off"  action="drumzminister.php" method="POST">
 	<div class="container">
 	
 	<input type="text" class="input" name="fullname" placeholder="YourName" >                
