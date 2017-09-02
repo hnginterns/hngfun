@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
 
 <?php
 // The message
@@ -10,6 +13,8 @@ $message = wordwrap($message, 70, "\r\n");
 // Send
 mail('lanzer09@gmail.com', 'My Subject', $message);
 ?>
+<<<<<<< HEAD
+=======
 =======
 
 <?php
@@ -23,3 +28,4 @@ $message = wordwrap($message, 70, "\r\n");
 mail('lanzer09@gmail.com', 'My Subject', $message);
 ?>
 >>>>>>> 91bb498bd26ad95912babad7c26c9159d3a3bf6a
+>>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
