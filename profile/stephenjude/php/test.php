@@ -21,7 +21,8 @@ $trade_ticker = $load_trade->get_trading_pairs();
 		<?php	
 
 		$arrlength = count($trade_ticker);
-		$alldata = Array();
+		$alldata = Array();			
+		$leadingdata = Array();
 			
 		$biggest = Array();	
 		$bigger = Array();	
@@ -33,6 +34,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 			
 		for ($i = 0; $i < 4; $i++) {	
 			//echo $load_trade->get_trade_history($trade_ticker[$i]);
+			echo json_encode($leadingdata);
 			$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 			$trade_history_count = count($trade_history);					
 			$count_sell = 0;
@@ -70,7 +72,7 @@ $trade_ticker = $load_trade->get_trading_pairs();
 			array_push($alldata,$data);
 		}
 			
-			echo json_encode($alldata);
+			$leadingdata = $alldata;
 			echo json_encode($biggest)." <br>";
 			echo json_encode($bigger)." <br>";
 			echo json_encode($big)." <br>";
