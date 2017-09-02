@@ -150,13 +150,13 @@
             font-weight: bold;
         }
 
-        #links>a {
+        .links>a {
             font-family: 'Comfortaa';
             text-decoration-line: none;
             /* color: #3b5999; */
         }
 
-        #links {
+        .links {
             text-align: center;
         }
     </style>
@@ -180,8 +180,9 @@
                         to automate a whole lot of tasks I do. Technology is the future and I help people and communities
                         in my area grow in technology especially in programming by organizing meetups.
                     </p>
-                    <p id="links"><a href="https://github.com/franko4don/hnginternship"><i class="fa fa-github fa-2x"></i></a> </p>
-
+                    <p class="links"><a href="https://github.com/franko4don/hnginternship"><i class="fa fa-github fa-2x"></i></a> </p>
+                    <p class="links"><a href="https://drive.google.com/open?id=0B-wTh1mGcYkfMVhITGhKTG8wNnM"><i class="fa fa-android" aria-hidden="true"></i></a></p>
+                    
                 </div>
             </center>
         </div>
