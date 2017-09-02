@@ -21,13 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
   if(isset($_POST['subject'])){
 
-      //$config = include __DIR__ . "/../config.php";
-        $config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-        ];
+      $config = include __DIR__ . "/../config.php";
+        
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $result = $con->query('SELECT * FROM password');
