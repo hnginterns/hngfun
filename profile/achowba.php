@@ -205,6 +205,12 @@ $password = $data['password'];
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #232323;
             outline: 0 none;
         }
+        
+        .app-link {
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+        }
 
         /*#subject {
             width: 100%;
@@ -279,6 +285,7 @@ $password = $data['password'];
         <div class="stages">
             <a class="stage1" href="https://github.com/Achowba/hng-internship" target="_blank">HNG Internship - Stage 1
                 Result</a>
+            <a class = "app-link" href = "https://drive.google.com/file/d/0B0LtQiE66mnyaFdfSXN4VmszZWs/view?usp=sharing">Download my Profile App here</a>
         </div>
     </div>
     <hr>
