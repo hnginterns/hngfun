@@ -860,6 +860,29 @@ include('participants-head.php');
 
     <!--  Each Participants ends here  -->
 
+                        <div class="p-card">
+                            <div class="v-center">
+                                <div class="p-card-photo" style="background-image: url(https://preview.ibb.co/jTdc6v/IMG_20160421_074718.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                <div class="p-card-info">
+
+
+                                    <a href="http://hng.fun/profile/samfieldhawb">
+                                        <!--Profile Link-->
+                                        <h3 class="p-card-title">Samfield Hawb Bassey</h3>
+                                        <!--Profile Name-->
+                                    </a>
+                                    <p class="p-card-description">samfield4sure@gmail.com</p>
+                                    <!--Email-->
+                                </div>
+
+                                <div class="p-team">
+                                    <a href="#">
+                                        <h3 class="p-card-title"> Team 3 </h3>
+                                        <!--Team-->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
 
     <!--  Each Participant starts here  -->
