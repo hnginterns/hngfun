@@ -13,11 +13,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     if(empty($error)) {
         $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $dsn = 'mysql:host='.$config['host'].';dbname='.'$config['hng']';
+        $con = new PDO($dsn, $config['intern'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
         $data = $exe->fetch();
-        $password = $data['password'];
+        $password = '@hng.intern1database';
         $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
         header("location: $uri");
     }
