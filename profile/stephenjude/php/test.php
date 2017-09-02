@@ -22,7 +22,7 @@ $first_runner_up = 0;
 $second_runner_up = 0;
 $third_runner_up = 0;
 
-for ($i = 0; $i < 2; $i++) {
+for ($i = 0; $i < 6; $i++) {
 	
 	$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 	$trade_history_count = count($trade_history);					
