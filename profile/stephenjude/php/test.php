@@ -22,7 +22,7 @@ $first_runner_up = 0;
 $second_runner_up = 0;
 $third_runner_up = 0;
 
-for ($i = 0; $i < 2; $i++) {
+for ($i = 0; $i < 6; $i++) {
 	
 	$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
 	$trade_history_count = count($trade_history);					
@@ -60,12 +60,37 @@ for ($i = 0; $i < 2; $i++) {
 	array_push($alldata,$data);
 }	
 	
-	$biggestPercent = $biggest['total_buy'] * 200 / 100;
+	$biggestPercent = $biggest['total_buy'] / 200 * 100;
 	echo '<div class="container">
-		  <h2>'.$biggest['coin'].' <small>>'.$biggest['total_buy'].'</small></h2>
+		  <h2>'.$biggest['coin'].'<br>
+		  <small> '.$biggest['total_buy'].' Trades</small></h2>
 		  <div class="progress">
-		    <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'" aria-valuemin="0" aria-valuemax="200" style="width:'.$biggestPercent.'%">
-		      <span class="sr-only">70% Complete</span>
+		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggestPercent.'%">
+		      <span class="sr-only">'.$biggestPercent.'% Complete</span>
+		    </div>
+		  </div>
+		</div>';
+	
+
+	$biggerPercent = $bigger['total_buy'] / 200 * 100;
+	echo '<div class="container">
+		  <h2>'.$bigger['coin'].'<br>
+		  <small> '.$bigger['total_buy'].' Trades</small></h2>
+		  <div class="progress">
+		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggerPercent.'%">
+		      <span class="sr-only">'.$biggerPercent.'% Complete</span>
+		    </div>
+		  </div>
+		</div>';
+	
+
+	$bigPercent = $big['total_buy'] / 200 * 100;
+	echo '<div class="container">
+		  <h2>'.$big['coin'].'<br>
+		  <small> '.$big['total_buy'].' Trades</small></h2>
+		  <div class="progress">
+		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$bigPercent.'%">
+		      <span class="sr-only">'.$bigPercent.'% Complete</span>
 		    </div>
 		  </div>
 		</div>';
