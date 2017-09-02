@@ -36,14 +36,12 @@ class Coinman
     $coins = $this->getPairsFromDb();
     if(empty($coins)) {
       $coins = $this->poloniex->get_trading_pairs();
-      
-      echo json_encode($coins);
-      exit;
       $coins = $this->getOnlyBtc($coins);
+      $this->savePairs($coins);
     }
 
     //$coins = $this->getOnlyBtc($coins);
-    $this->savePairs($coins);
+    
 
     $cnt_coins = 0;
 
@@ -90,6 +88,8 @@ class Coinman
 
   private function savePairs($pairs) {
     $pairs = json_encode($pairs);
+    echo $pairs;
+    exit;
     $exe = $this->db->query("INSERT into pair VALUES (null, '$pairs')");
   }
 
