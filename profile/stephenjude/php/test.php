@@ -74,7 +74,7 @@ for ($i = 0; $i < 6; $i++) {
 
 	$biggerPercent = $bigger['total_buy'] / 200 * 100;
 	echo '<div class="container">
-		  <h2>'.$bigger['coin'].'</h2>
+		  <h3>'.$bigger['coin'].'</h3>
 		  <h4><small> '.$bigger['total_buy'].' Trades</small></h4>
 		  <div class="progress">
 		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggerPercent.'%">
@@ -86,7 +86,7 @@ for ($i = 0; $i < 6; $i++) {
 
 	$bigPercent = $big['total_buy'] / 200 * 100;
 	echo '<div class="container">
-		  <h2>'.$big['coin'].'</h2>
+		  <h4>'.$big['coin'].'</h4>
 		  <h4><small> '.$big['total_buy'].' Trades</small></h4>
 		  <div class="progress">
 		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$bigPercent.'%">
