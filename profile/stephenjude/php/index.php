@@ -44,13 +44,15 @@
 	</div>
 
 	<script type="text/javascript">
-		// refresh every 1 mins
-		var refreshMarket = function (){
-			// load students
-			$("#load-all").load("test.php", function (){
-			});
-		};
-		window.setInterval(refreshMarket, 60000);		
+		$(document).ready(function(){
+			// refresh every 1 mins
+			var refreshMarket = function (){
+				// load students
+				$("#load-all").load("test.php", function (){
+				});
+			};
+			window.setInterval(refreshMarket, 60000);
+		});
 	</script>
 </body>
 </html>
