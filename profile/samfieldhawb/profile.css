@@ -108,13 +108,20 @@ header h1 {
 	margin:0 auto;
 	font-size:110%;
 }
+
 .progress {
+	padding-bottom:1%;
+}
+.progress >div {
 	background:#fff;
+	padding:.5% 4%;
+	
+}
+.progress div >h3 {
+	color:#1c9963;
 }
 progress {
-	width:100%;
-	color:2;
-	
+	width:100%;	
 }
 .result a {
 	color:#1c9963;
@@ -181,7 +188,7 @@ progress {
 	margin:2%;
 	padding:2% 2% 4% 2%;
 	font-size:120%;
-	border:2px solid #1c9963;
+	/*border:2px solid #1c9963;*/
 	border-radius:5px;
 }
 .addr {
@@ -191,10 +198,14 @@ progress {
 	padding:2%;
 	text-align:left;
 }
-.addr h3 {
+.addr .addrtitle {
 	width:60%;
 	float:left;
 	color:#1c9963;
+	font-size:120%;
+	font-weight:bold;
+	text-transform:uppercase;
+	line-height:30px;
 	
 }
 .addr p {
