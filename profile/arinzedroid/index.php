@@ -45,7 +45,10 @@
                             <p>Hi,<br/><br/>I am a professional software engineer with 5 years of experience in design and app development. My skills and experience includes web, mobile and desktop app developments with database. I work a range of businesses including start ups, agencies, established brands, & entrepreneurs around the globe.</p>
                         </div>
                         <div class="content--link-to-stage1">
-                               <p><i class="fa fa-2x fa-github"></i> <a href="https://github.com/Arinze39/hng_stage_1">Stage One Result</a> <button class="contact__button" >Contact me</button></p>
+                               <p><i class="fa fa-2x fa-github"></i> <a href="https://github.com/Arinze39/hng_stage_1">Stage One Result</a> </p>
+                        </div>
+						            <div class="content--link-to-ContactApp">
+                               <p><i class="fa fa-2x fa-dropbox"></i> <a href="https://www.dropbox.com/s/aflefvepz47rqk3/ContactApp.apk?dl=0">Link to Android App</a> <button href="#" class="contact__button" arial>Contact me</button></p>
                         </div>
                 </div>
             </div>
