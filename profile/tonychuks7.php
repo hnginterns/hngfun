@@ -1,7 +1,7 @@
 <?php
       if (isset($_GET['send']))  {
           //Email information here
-      $to = "tonychuks7@gmail.com";
+      $to = "ishukpong418@gmail.com";
       $subject = $_GET['subject'];
       $body = $_GET['message'];    
       $config = include(dirname(dirname(__FILE__)).'/config.php');

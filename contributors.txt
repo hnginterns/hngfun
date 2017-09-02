@@ -251,4 +251,6 @@
 (242) Stephen Ojo, @ripplz, Ripplz
 (243) Grace Ebong, @graceebong, graceebong25
 (244) Emem Okon, currentboy, currentboy
->>>>>>> 91bb498bd26ad95912babad7c26c9159d3a3bf6a
+(245)(Ezeoke Chiamaka)(slack: @amaka_anne, github:@amakaanne)
+(246) Aniebiet Akpan, Github: elniebiet, Slack: elniebiet 
+(247) Ikeoffiah Pius, slack:ikeoffiah, github:ikeoffiah
