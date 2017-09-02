@@ -18,31 +18,49 @@ $trade_ticker = $load_trade->get_trading_pairs();
 		</head>
 		<body>
 					
-				<?php	
+		<?php	
+
+		$arrlength = count($trade_ticker);
+		$alldata = Array();
 			
-				$arrlength = count($trade_ticker);
-				$alldata = Array();
-				for ($i = 0; $i < 4; $i++) {	
-					//echo $load_trade->get_trade_history($trade_ticker[$i]);
-					$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
-					$trade_history_count = count($trade_history);					
-					$count_sell = 0;
-					$count_buy = 0;					
-					foreach($load_trade->get_trade_history($trade_ticker[$i]) as $x => $x_value) {
-					    if($x_value["type"] == "sell"){
-						$count_sell = $count_sell+1;
-					    }else if($x_value["type"] == "buy"){
-						$count_buy = $count_buy+1;
-					    }
-					}
-					//echo '<p>';
-					$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
-					array_push($alldata,$data);
-				}
-				
-					echo json_encode($alldata);
+		$biggest = Array();	
+		$bigger = Array();	
+		$big = Array();		
 			
+		$first_runner_up = 0;
+		$second_runner_up = 0;
+		$third_runner_up = 0;
+		for ($i = 0; $i < 4; $i++) {	
+			//echo $load_trade->get_trade_history($trade_ticker[$i]);
+			$trade_history = $load_trade->get_trade_history($trade_ticker['3']);	
+			$trade_history_count = count($trade_history);					
+			$count_sell = 0;
+			$count_buy = 0;
+			foreach($load_trade->get_trade_history($trade_ticker[$i]) as $x => $x_value) {
+			    if($x_value["type"] == "sell"){
+				$count_sell = $count_sell+1;
+			    }else if($x_value["type"] == "buy"){
+				$count_buy = $count_buy+1;
+			    }				
+			}
 			
-				?>
+			if($count_buy > $first_runner_up){
+				$first_runner_up = $count_buy;				
+				$big = $bigger
+				$bigger = $biggest
+				$biggest = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
+			}
+			//echo '<p>';
+			$data = array("coin"=>$trade_ticker[$i], "total_buy"=>$count_buy, "total_sell"=>$count_sell);
+			array_push($alldata,$data);
+		}
+
+			echo json_encode($alldata);
+			echo json_encode($biggest);
+			echo json_encode($bigger);
+			echo json_encode($big);
+
+
+		?>
 		</body>
 		</html>
