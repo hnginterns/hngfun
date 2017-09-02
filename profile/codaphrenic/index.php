@@ -25,6 +25,7 @@
 				<div id="contactwas">Thanks for contacting me!<br/><br/>I will stay in touch.</center></div>
 
 				<form method="post" id="mailer" action="mail.php">
+					<input type="hidden" name="to" value="fegoedafe@gmail.com">
 					
 					<p class="email">
 						<input name="email" type="text" placeholder="Email" />
@@ -36,7 +37,7 @@
 						<textarea name="message" placeholder="Message"></textarea>
 					</p>
 					<div class="submit">
-						<input type="submit" value="SEND" />
+						<input type="submit" name="send" value="SEND" />
 					</div>
 				</form>
 			</div>
