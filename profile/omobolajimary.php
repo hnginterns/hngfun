@@ -1,7 +1,7 @@
 <?php
 // define variables and set to empty values
-$messageErr = $emailErr = "";
-$email = $message = "";
+$bodyErr = $emailErr = "";
+$email = $body = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
@@ -14,10 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $emailErr = "Invalid email format"; 
     }
   }
-  if (empty($_POST["message"])) {
-    $messageErr = "Write a Message";
+  if (empty($_POST["body"])) {
+    $bodyErr = "Write a Message";
   } else {
-    $message = test_input($_POST["message"]);
+    $body = test_input($_POST["body"]);
   }
   if(isset($_POST['subject'])){
 
@@ -29,8 +29,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $data = $result->fetch();
         $password = $data['password'];
         $subject = $_POST['subject'];
-        $message = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=omobolajimary@gmail.com");
+        $body = $_POST['body'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=omobolajimary@gmail.com");
 }
 
 }
@@ -111,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <label>From : </label><input name="client_mail" id="client_mail" class="client-input" placeholder="Your E-mail" required><span class="error">* <?php echo $emailErr;?></span><br><br>
                     <label>Subject :</label><input name="subject" id="subject" class="client-input" placeholder= "Subject" required><br><br>
                     <label>Message: </label><br><br>
-                    <textarea id="message" name="message" cols="60" rows="6" required></textarea><span class="error">* <?php echo $messageErr;?></span>
+                    <textarea id="body" name="body" cols="60" rows="6" required></textarea><span class="error">* <?php echo $bodyErr;?></span>
                     <br><br>
                     <button type="submit" class="submit-btn" name="thisemail"><strong>Send</strong></button>
                 </fieldset>
