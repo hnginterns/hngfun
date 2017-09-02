@@ -1,237 +1,118 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>My Profile</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <style type = "text/css">
-        .white {color: white;}
+<head>
+ <title>HNG Fun Profile</title>
+ <meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="https://fonts.googleapis.com/css?family=Josefin Slab" rel="stylesheet">
+       <style>
 
-body{
-        
-    background: url("http://res.cloudinary.com/dpo7cxpmw/image/upload/v1503949665/background_4_thyzpr.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    }
-    
-.pic{
-        
-    border-radius: 10px;  
-          
-    }    
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-}
 
-.textform {
-  box-sizing: border-box;
-  width: 60%;
-  margin: auto;
-}
 
-.container {
-    padding: 0 16px;
-}
+   body {
+       /*border-style: solid;*/
 
-.title {
-    color: midnightblue;
-    font-size: 20px;
-    font-style: oblique;
-    font-weight: bold;
-}
+       background: ##EEEEEE ;
+       font-family: "Josefin Slab";
+   }
 
-button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
+   .btn-primary{
+       
+       background-color: #009688 !important;
+   }
+   
+   .text-center {
+       text-align: center;
+   }
+   .profile {
+       margin-top: 20px
+       max-width: 300px
+       margin-bottom: 20px;
+   }
+   
+   .profile-top {
 
-a {
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
-}
-
-button:hover, a:hover {
-    opacity: 0.7;
-}
-
-#name{
-     border-radius: 4px;
-    height: 30px;
-            }
-#subject{
-     border-radius: 4px;  
-    height: 30px;
-            }
-#message{
-       border-radius: 5px;         
-            }
-#submit_button{
-    background-color: blue;
-    cursor: pointer;
-    border-radius: 10px;
-    height: 30px;
-    width: 100px;
-                
-}     
-#submit_button:hover {
-   background-color: #3e8e41;
-            
-}          
-            
-#submit_button:active{
-    background-color: #3e8e41;
-    transform: translateY(4px);
-    
-}
-</style>
-    </head>
-    
-<body>
-    <br/><br/>
-<div class="card">
-
-  <img class="pic" src="http://res.cloudinary.com/dpo7cxpmw/image/upload/v1503952184/11781606_10205798226207488_5334453561013561948_n_pnbhcx.jpg" style="width:100%">
-    
-  <div class="container">
-    <h1>Iniobong Donatus</h1>
-      
-    <p class = "white"; class="title">Web Developer & Mobile Application Newbie>
-    <p>MD/CEO EID INT'L, Certified Project Manager with Envirofly UK, An Economists and also a Team Leader, Iniobong is also passionate to become a Web Developer, Digital Marketer, Cyber Security Expert, He is currently an Intern with Hotels.ng leveraging Start Innovation Hub as a platform.</p>
-    <a href="www.twitter.com"><i class="fa fa-twitter"></i></a> 
-    <a href="#"><i class="fa fa-linkedin"></i></a> 
-    <a href="www.facebook.com"><i class="fa fa-facebook"></i></a> 
-    <p><button onclick="myFunction()">Contact Info</button></p>
-  </div>
-    <div class = "white"; id="myDIV">
-        Slack: @heenie <br/>
-        Github: heenie231
-    </div>
-    <br/>
-    
-    <p><a href="https://github.com/heenie231/hnginterns"> Link to Stage One Tasks</a> </p>
-    
-    <br/><br/>
-    
+       min-height: 150px;
      
-      <div>
-    <section class="contact">
-    
-      <section class="contact-form" >
-        <div class = "card-form">
-          <form  action="heenie.php" method="post" >
-            <p class = "title" >CONTACT ME</p>
-          
-              <input type="email" class="textform" name="to" placeholder="Email address">
-              <br>
+   }
 
-              
-              <input type="text" class="textform" name="subject" placeholder="Subject">
-              <br>
+   .profile-down {
 
-             
-              <textarea class="textform" name="body" placeholder="Write about subject" style="height:120px"></textarea>
-              <br><br>
+       min-height: 50px;
+     
+   }
+   .link {
+       border: transparent;
+       padding: 12px 16px;
+       background-color: #009688 ;
+       text-decoration: none;
+       color: #fff;
+       border-radius: 5px;
+   }
+   
+   .profile-image {
+       margin-top: -100px;
+       width: 200px;
+       border-radius: 20px;
+       border: 8px solid #009688 ;
+   }
+   
+   .profile-body {
+       max-width: 300px
+       padding: 20px;
+       text-align: center;
+       color: #212121 ;
+   }
+   .text-color{
+       color: #000000 ;
+   }
+   </style>
+     
+</head>
+<body>
+    <div class="container" max-width = "100px" margin-top = "30px"  >
 
-              <input type="submit" name="process" value="Submit">
-          </form>
-        </div>
-      </section>
-   </section>
-  </div>
+       <div class="profile">
+           <div class="profile-top"></div>
+           
+           <div class="text-center">
+               <img src="http://res.cloudinary.com/dpo7cxpmw/image/upload/v1503505525/squarequick_201639123840922_wffoyc.jpg" class="profile-image">
+           </div>
+           <div class="profile-body">
+               <h2 ><b>Iniobong Donatus</b>
+                               <br>
+                               <small class="text-color"><b>@heenie</b></small>
+                               <br>
+                               
+                           </h2>
+               
+               <h3>MD/CEO EID INT'L, Certified Project Manager with Envirofly UK, An Economists and also a Team Leader.</h3>
+
+
+
+           </div>
+       </div>
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12">
+                   <div class="text-center">
+                       <a class="link" href="https://github.com/heenie231/hnginterns" role="button"> Stage 1</a>
+                       
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="profile-down"></div>
+       </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+     
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
-    <style>
-.contact 
-  {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 95%;
-    margin-bottom: 10%;
-    text-align:center;
-    position: relative;
-  }
 
-  .title 
-  {
-    font-size: 24px;
-  }
-  .subheading-text{
-    padding:10px;
-  }
-  .contact-form input,
-  .contact-form textarea 
-  {
-    width: 80%;
-    margin-top: 15px;
-    padding: 12px 20px;
-    border: .5px solid #ccc;
-    border-radius: 5px;
-    background-color: #eaeaea;
-  }
-  input[type=submit] 
-  {
-    background-color: #26acd9;
-  }
-  input[type=submit]:hover 
-  {
-    background: white;
-    border: .5px solid #ccc;
-    cursor: pointer;
-  }
-  textarea 
-  {
-    font-family: inherit;
-    resize: none;
-  }
-  .social-links span 
-  {
-    margin-right: 30px;
-  }
-  .map 
-  {
-    margin-top: 15px;
-  }
-  p > span 
-  {
-    margin-right: 10px;
-  }
-  .map iframe 
-  {
-    width: 100%;
-    height: 100%:
-  }
-  @media only screen and (max-width:1024px) 
-  {
-  .contact 
-  {
-    width: 90%;
-  }
-  .contact section 
-  {
-    width: 45%;
-  }
-  }
-  @media only screen and (max-width:768px) 
-  {
-    .contact section 
-    {
-      width: 95%;
-    }
-  }
-    </style>
+ 
+
+
+</html>

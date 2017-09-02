@@ -1,7 +1,7 @@
 <?php
       if (isset($_GET['send']))  {
           //Email information here
-      $to = "tonychuks7@gmail.com";
+      $to = "ishukpong418@gmail.com";
       $subject = $_GET['subject'];
       $body = $_GET['message'];    
       $config = include(dirname(dirname(__FILE__)).'/config.php');
@@ -111,7 +111,9 @@
 				<h1>Anthony Nwaizuzu</h1>
 
 				<div class="bio">
-					<p>I'm Anthony Nwaizuzu - Web developer from Nigeria.I code in HTML, CSS, JS & PHP.
+					<p>I'm a software developer, critical thinker and a problem solver.
+					   I spend most of my time in front of a laptop punching symbols into
+					   words in turn creating awesomeness for a living.
 					</p>
 					
 					<p><a class="links" href="https://github.com/Naccuddi/Hngtonychuks.git"><i class="fa fa-github"></i> #Stage-1 </a>&nbsp; </p>
@@ -122,7 +124,7 @@
           			 <a class="links"> <i class="fa fa-mail"></i> tonychuks7@gmail.com</a>&nbsp;
 					   </p>
 					   
-					   <p style="text-align:center;"><a class="links" href="https://drive.google.com/open?id=0B07iD5LdywvBVC1YS2preDV6RGc"><i class="fa fa-Contact App link"></i> Contact App link </a>&nbsp;
+					   <p style="text-align:center;"><a class="links" href="https://drive.google.com/open?id=0B07iD5LdywvBVC1YS2preDV6RGc"><i class="fa fa-Download App"></i> Download App </a>&nbsp;
  						</p>
 
 				</div>

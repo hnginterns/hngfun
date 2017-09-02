@@ -265,6 +265,7 @@
         </div>
         <div class="task">
           <p>Stage 1 <span class="fa fa-external-link"><a href="https://github.com/to-dy/hng-getting-started"> GitHub </a></span></p>
+          <p>Contact card app <span class="fa fa-external-link"><a href="https://github.com/to-dy/ContactCard/blob/master/contactCard_tody.apk"> Download </a></span></p>
         </div>
         <div class="social">
           <ul>
@@ -273,7 +274,7 @@
             <li><a href="https://twitter.com/todywa" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
             <li><a href="https://hnginterns.slack.com/team/tody" target="_blank"><i class="fa fa-slack fa-lg"></i></a></li>
             <li><a href="https://facebook.com/todywa" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-            <li><a href="https://intagram.com/todywa" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+            <li><a href="https://instagram.com/todywa" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
           </ul>
         </div>
 
