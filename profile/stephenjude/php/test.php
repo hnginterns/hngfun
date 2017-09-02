@@ -60,7 +60,7 @@ for ($i = 0; $i < 2; $i++) {
 	array_push($alldata,$data);
 }	
 	
-	$biggestPercent = $biggest['total_buy'] * 200 / 100;
+	$biggestPercent = $biggest['total_buy'] / 200 * 100;
 	echo '<div class="container">
 		  <h2>'.$biggest['coin'].'</h2>
 		  <h4><small> '.$biggest['total_buy'].' Trades</small></h4>
