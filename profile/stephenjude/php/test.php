@@ -63,7 +63,7 @@ for ($i = 0; $i < 2; $i++) {
 	$biggestPercent = $biggest['total_buy'] * 200 / 100;
 	echo '<div class="container">
 		  <h2>'.$biggest['coin'].'</h2>
-		  <h4><small> .'$biggest['total_buy'].' Trades</small></h4>
+		  <h4><small> '.$biggest['total_buy'].' Trades</small></h4>
 		  <div class="progress">
 		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggestPercent.'%">
 		      <span class="sr-only">'.$biggestPercent.'% Complete</span>
