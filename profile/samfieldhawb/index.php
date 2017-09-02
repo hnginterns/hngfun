@@ -21,13 +21,14 @@
 		}else{
 			$email = test_input($email);
 		}
+		$message = $message. ". Send by ".$email;
 		$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
 		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 		$con = new PDO($dsn, $config['username'], $config['pass']);
 		$exe = $con->query('SELECT * FROM password LIMIT 1');
 		$data = $exe->fetch();
 		$password = $data['password'];
-		$uri = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
+		$uri = "/sendmail.php?password=$password&subject=$subject&to=$to&body=$message";
 		header("location: $uri");
 		
 	
