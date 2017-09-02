@@ -1,5 +1,5 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if(isset($_GET['send'])) {
     $error = [];
 
    $subject = $_POST['subject'];
@@ -183,8 +183,7 @@ button[type=submit]{
 }
 
         </style>
-
-    </head>
+     </head>
     <body>
         <header>
             <h1><span>Jeni's Profile</span></h1>
@@ -222,7 +221,7 @@ button[type=submit]{
                     
                     <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
 
-                    <button type="submit">Send</button> 
+                    <button type="submit" name="send">Send</button> 
                     <button type="submit"
                     onclick="document.getElementById('id01').style.
                     display='none'" class="cancelbtn">Cancel</button>
