@@ -196,12 +196,34 @@
             border-color: white;
             outline: none;
         }
-        textarea:focus{
-            background-color: transparent;
-            color: black !important;
-            border-color: #ffffff;
-            outline: none;
-            resize: none;
+        input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+        
+        textarea {
+    height:213px;
+}
+
+input[type="submit"] {
+    width:127px;
+    height:38px;
+    text-indent:5px;
+    border:50px;
+    margin-top:20px;
+    cursor:pointer;
+    opacity:.8;
+    background-color: #ff0000
+    }
         }
         .regInput-3 {
             position: relative;
@@ -295,25 +317,20 @@
 
 
                     <p class="slack contact">Contact me</p>
+        <form  action="imani.php" method="post" >   
+        
+    <p><label>Email:</label>
+        <input type="email" id="to" name="to" placeholder="Type Here"></p>
 
-                    <div id="form-main">
-                        <div id="form-div">
-                            <form class="form" id="form1" action="" method= "POST" >
-
-                                <p class="name">
-                                    <input type="subject" title="" class="regInput" placeholder="subject  " >
-                                </p>
-
-                                
-
-                                <p class="text">
-                                    <textarea class="regInput-1" placeholder=" Write that message...."></textarea>
-                                </p>
-
-                                <div class="submit">
-                                    <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
-                                </div>
-                            </form>
+    <p><label>Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Type Here"></p>
+            
+    <p><label>Message:</label>
+        <textarea id="body" name="body" placeholder="Type Here""></textarea></p>
+            
+            <p><input type="submit" name="process" value="Submit"></p>
+        
+</form>
                         </div>
                     </div>
 

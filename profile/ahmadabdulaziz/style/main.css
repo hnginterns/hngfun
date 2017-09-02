@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+    background-color: gray;
+}
+
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.center-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+img {
+    border-radius: 50%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
