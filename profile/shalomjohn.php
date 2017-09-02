@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
         $data = $exe->fetch();
-        $password = '@hng.intern1database';
+        $password = '$data['password']';
         $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
         header("location: $uri");
     }
