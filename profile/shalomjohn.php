@@ -75,7 +75,7 @@ ul{
                             </li>
                             <li style="padding-top: 25px;">
                                 <i class="fa fa-link fa-2x"></i><br>
-                                <a href="https://github.com/otuekongjohn/Test" target="_blank">https://github.com/otuekongjohn</a>
+                                <a href="https://github.com/otuekongjohn/Test" target="_blank">Stage 1 Task Here</a>
                             </li>
                         </ul></span>
                         <form action="shalomjohn.php" id = "contact-form" method = "POST" >
