@@ -60,13 +60,11 @@ for ($i = 0; $i < 2; $i++) {
 	array_push($alldata,$data);
 }	
 	
-	//$biggestPercent = $biggest['total_buy'] * 200 / 100;
-	
-
+	$biggestPercent = $biggest['total_buy'] * 200 / 100;
 	echo '<div class="container">
-		  <h2>'.$biggest['coin_name'].'</h2>
+		  <h2>'.$biggest['coin'].' <small>>'.$biggest['total_buy'].'</small></h2>
 		  <div class="progress">
-		    <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'" aria-valuemin="0" aria-valuemax="200" style="width:70%">
+		    <div class="progress-bar" role="progressbar" aria-valuenow="'.$biggest['total_buy'].'" aria-valuemin="0" aria-valuemax="200" style="width:'.$biggestPercent.'%">
 		      <span class="sr-only">70% Complete</span>
 		    </div>
 		  </div>
