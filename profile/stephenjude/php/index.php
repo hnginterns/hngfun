@@ -53,7 +53,7 @@
 				});
 			};
 			
-			window.setInterval(refreshMarket, 60000);
+			//window.setInterval(refreshMarket, 60000);
 			$("#load-all").load("test.php", function (){});
 		});
 	</script>
