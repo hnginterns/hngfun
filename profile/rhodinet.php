@@ -56,9 +56,10 @@ button:hover, a:hover {
   <div class="container">
     <h1>Imo Okon</h1>
     <p class="title">My Stage 1 Repository</p>
-    <p>I am a graduate of Physics from University of Uyo, Nigeria. I live in   Abuja, my hobby is Taekwondo. 
-        I have passion for programming languages such as: HTML, CSS, MYSQL, JAVA, PYTHON, JAVASCRIPT, PHP etc. 
-        I enjoyed working with software developers. Its a real hngfun</p>
+   <p>I am a Laxury Consultant in GWTcorp a POSH, FERI and FERIMOSH designers company that deals with Men and Women wears.
+    a graduate of Physics, University of Uyo, Nigeria. My hobby is Korean martial arts (Taekwondo). 
+     My career as a computer programmer in HTML, CSS, MYSQL, JAVA, PYTHON, JAVASCRIPT, PHP is a great decision in my life. 
+        I have passion to work with Web and Android developers. </p>
     <p></p>
     <div style="margin: 10px 0;">
     <p><h10><span class="fa fa-slack">
