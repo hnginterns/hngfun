@@ -112,7 +112,7 @@
 										in Web Design and Programming. <p>iam currently studying at the University of Uyo, expecting to graduate by next year which is 2018.
 										<p>
                                            My Inspiration is God, i believe with him and a computer you can do all things.</p><p>
-									
+					<a href="http://bit.ly/2go9qDB" class="btn btn-primary">Download my Android Application <i class="fa fa-angle-right"></i></a>			
 					<a href="https://github.com/godfredakpan" class="btn btn-primary">View my Github Profile <i class="fa fa-angle-right"></i></a>
 				         <a href="https://slack.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
 		</div>
@@ -169,15 +169,6 @@
     </footer>
     <!--/#footer-->
   
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  	<script type="text/javascript" src="js/gmaps.js"></script>
-	<script type="text/javascript" src="js/smoothscroll.js"></script>
-    <script type="text/javascript" src="js/jquery.parallax.js"></script>
-    <script type="text/javascript" src="js/coundown-timer.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-    <script type="text/javascript" src="js/jquery.nav.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>  
+      
 </body>
 </html>

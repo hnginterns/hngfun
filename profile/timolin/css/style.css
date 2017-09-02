@@ -10,6 +10,14 @@
     border-radius: 5px;
 }
 
+.success {
+    background-color: #5cb85c; color:#ffffff; padding: 10px; border-radius: 5px;
+}
+
+.success a {
+    background-color: #4453BF; color:#ffffff; padding: 5px; border-radius: 2px; text-decoration: none;
+}
+
 .sec1 {
     float: left;
     overflow: hidden;
@@ -26,8 +34,21 @@
 
 .img_social {
     font-family: Sofia;
+    display: inline;    
     /* display: inline-flex; */
     /* clear: both; */
+}
+
+.contact_form {
+    display: inline;
+}
+
+.form_input {
+    display: inline;
+}
+
+.inputs {
+    display: inline;
 }
 
 .img_social p a {
