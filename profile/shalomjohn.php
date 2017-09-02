@@ -1,28 +1,37 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
+
     $subject = $_POST['subject'];
     $to  = 'shaliz.jhay@gmail.com';
     $body = $_POST['body'];
+
     if($body == '' || $body == ' ') {
-        $error[] = 'Message cannot be empty.';
+      $error[] = "Don't be shy. Write me a message";
     }
 
+
     if($subject == '' || $subject == ' ') {
-        $error[] = 'Subject cannot be empty.';
+      $error[] = 'A subject would be awesome.';
     }
+
     if(empty($error)) {
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-        header("location: $uri");
+
+      $config = include __DIR__ . "/../config.php";
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $url");
+
     }
-}
-?>
+  }
+ ?>
 
 <!DOCTYPE html>
 <html>
