@@ -8,6 +8,11 @@ ul, li,a{
     display: inline;
     
 }
+span{
+    
+    margin-right: 40px;
+    padding: 20px;
+}
 li{
     margin-right: 10px;
     font-size: 32px;
@@ -34,7 +39,7 @@ position:relative;
 top:-280px;
 }
 
-.hed{color:#41f4d3;
+.hed{color:#555555;
     width:540px;
     height:290px;
     margin: 0px auto;
@@ -80,4 +85,15 @@ textarea{
 input[type="button"]{
       color:white;
       background:blue;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
