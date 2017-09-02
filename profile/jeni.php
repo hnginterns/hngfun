@@ -41,8 +41,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style type="text/css">
             body{
-    width:auto;
-    height:auto;
+    width:auto;    height:auto;
     background-color:#DFECF6;
     text-align:center;
     font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
@@ -74,11 +73,17 @@ article{
     position: relative;
     top: 45px;
 }
-article p i a:hover{
+article p a:hover{
     color:#02F6F9;
    background: #B0E0E6;
     opacity:0.7;
 }
+article p a{ 
+    padding: 10px;
+    background-color:  #20bcd5;
+    border-radius:15px;
+    color: white;
+}          
 a {
     text-decoration: none;
 }
@@ -196,11 +201,10 @@ button[type=submit]{
             <!-- a section of the artcle that gives my username-->
             <p>Slack username: Jeni<br>
                 Github username: Je-ni</p>
-            <p>Click on <i><a href= https://github.com/Je-ni/newrepo.git> ME</a></i> for the stage 1 task.</p>
-            <aside>
-                
-            </aside>
-        </article><br><br>
+            <p><a href= https://github.com/Je-ni/newrepo.git>Stage 1 task</a>
+               <a href = https://drive.google.com/file/d/0B4RsYe5Wn1hBQVA3Rk1jMUhReTQ/view?usp=drivesdk>Contact App</p>
+            
+          </article><br><br>
 
         <!--Modal -->
         <div id="id01" class="modal">

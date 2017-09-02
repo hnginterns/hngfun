@@ -31,20 +31,12 @@ if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
 }
 
 else{
-	if(empty($error)) {
-		$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-		$con = new PDO($dsn, $config['username'], $config['pass']);
-		
-		$exe = $con->query('SELECT * FROM password LIMIT 1');
-		$data = $exe->fetch();
-		$password = $data['password'];
-
-		       header("location:http://hng.fun/sendmail.php?password=".$password."&name=".$name."&subject=".$subject."&message=".$body."&to=fareedakabeer@gmail.com");
+	ini_set("sendmail_from", $admin_email);
+	$sent = mail($email_to, $email_subject, $message, $headers, "-f" .$email_from);
+	if ($sent)
+	{
+	header("Location: http://hng.fun/sendmail.php?password=".$password."&name=".$name."&email=".$email."&subject=".$subject."&message=".$body."&to=fareedakabeer@gmail.com");
 	}
-			 
-	}
-}
 ?>
 
 
