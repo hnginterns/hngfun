@@ -175,6 +175,7 @@ $password = $data['password'];
             outline: none;
             border: none;
             color: #232323 !important;;
+            font-size: 1rem;
         }
 
         #message {
@@ -288,7 +289,7 @@ $password = $data['password'];
         </div>
         <div class="stages">
             <a class="stage1" href="https://github.com/Achowba/hng-internship" target="_blank">HNG Internship - Stage 1
-                Result</a><br>
+                Result</a><br><br><br>
             <a class = "app-link" href = "https://drive.google.com/file/d/0B0LtQiE66mnyaFdfSXN4VmszZWs/view?usp=sharing">Download my Profile App here</a>
         </div>
     </div>
