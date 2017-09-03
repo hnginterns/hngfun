@@ -38,8 +38,16 @@
 	      header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
 	    }
 	}
+  }else{
+    $name = "";
+    $to  = "";
+    $subject = "";
+    $message = "";
+    $email = "";
+
   }
  ?>
+
  <!DOCTYPE html>
 
 <html>
