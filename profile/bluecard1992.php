@@ -36,13 +36,13 @@
 
 		}
 		img{
-			border-radius: 30%;
+			border-radius: 10px;
 		}
 		#mydetail{
 			float: right;
 			width: 50%;
 			text-align: center;
-			color:#F4EEEE;
+			color:#ffffff;
 		}
 
 		.myName{
@@ -61,12 +61,15 @@
             width: 300px;
             height: 30px;
         }
+		h3{
+			color:#fff
+		}
 	</style>
 </head>
 <body>
 <div>
    <div id="mypix">
-   	 <img src="image/bluecard1992.jpg" height="100%" width="100%">
+   	 <img src="https://scontent.flos7-1.fna.fbcdn.net/v/t1.0-9/17155318_1210783419019658_6822334054252122257_n.jpg?oh=8a95c6fdf4d3934651732a19d955c97e&oe=5A5AB1A2" height="60%" width="70%">
    	 <div class="myName">
 	   	 <h2>ECHEZONA OKAFOR</h2>
 	   	 <h5>WEB DEVELOPER</h5>
@@ -87,11 +90,12 @@
 
             <br><br>
                slack: bluecard1992
+			   <h5><a href="https://github.com/alactic/hng/blob/master/hng-app.apk" style="color:red">  DOWNLOAD ANDROID APK</a></h5>
    	   </h4>
 
        <div class="contact_form">
            <hr>
-           <h1 style="color:firebrick">SEND YOUR EMAIL</h1>
+           <h1>SEND YOUR EMAIL</h1>
            <form action="bluecard1992.php" method="post">
                <h3>SEND TO:<br> <input type="email" name="send_to" placeholder="RECIEVER'S EMAIL" class="input" required></h3>
 
