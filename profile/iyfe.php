@@ -4,11 +4,11 @@
   if($_SERVER['REQUEST_METHOD'] == 'GET') {
     $error = ""; 
     $successMessage = "";
-    $name = $_GET['name'];
     $to  = 'icukachuk@gmail.com';
     $subject = $_GET['subject'];
     $message = $_GET['message'];
     $email = $_GET["email"];
+    $name = $_GET['name'];
 
     if (!$email) {
 
@@ -202,7 +202,7 @@
 						</div>
 						<label for="name">Full Name</label>
 						<br/>
-						<input type="text" id="fullname" name = "name" placeholder="Ada John">
+						<input type="email" id="fullname" name = "name" placeholder="Ada John">
 						<br/>
 						<label for="email">Email</label>
 						<br/>
