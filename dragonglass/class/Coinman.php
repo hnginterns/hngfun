@@ -61,7 +61,7 @@ class Coinman
                     $coin,
                     $buys,
                     $sales,
-                    $diff,
+                    $newDifference,
                     $percentIncrease,
         ];
 
