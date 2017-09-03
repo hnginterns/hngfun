@@ -1,3 +1,31 @@
+<?php
+
+if($_SERVER['REQUEST_METHOD'] == 'submitbtn') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'stephenjudesuccess@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
+    }
+ 
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+ 
+       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +70,7 @@
         <div class="divider"></div>
         <div class="contact-form">
             <h1 class="head-col">Contact Form</h1>
-                <form method="post" action="send.php">
+                <form method="post" action="<?php echo $_SERVER['SELF'] ?>">
                     <input type="text" name="subject" class="form-input" placeholder="subject" required="required">
                     <textarea name="msg-body" placeholder="message body..." class="form-input" cols="30" rows="6" required="required"></textarea> 
                     <input type="submit"  value="Send" class="sub-btn" name="submitBtn">                
