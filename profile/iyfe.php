@@ -40,7 +40,7 @@
 	}
   }else {
             // enter mail subject and message to send mail
-            echo "enter mail subject and message to send mail";
+            echo " ";
         }
  ?>
 
