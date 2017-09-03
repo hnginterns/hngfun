@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
 <?php
     if(isset($_POST['process'])){
         $config = [
@@ -18,6 +21,8 @@
     }else{
         header("location: crackmixer.html");
     }
+<<<<<<< HEAD
+=======
 =======
 <?php
     if(isset($_POST['process'])){
@@ -39,4 +44,5 @@
         header("location: crackmixer.html");
     }
 >>>>>>> 91bb498bd26ad95912babad7c26c9159d3a3bf6a
+>>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
 ?>
