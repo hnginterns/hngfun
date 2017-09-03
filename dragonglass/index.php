@@ -40,7 +40,7 @@ if(isset($_GET['type'])){
 		
 		// refresh data every 1 mins
 		var refreshData = function (){
-			$("#useless").load("start.php?type=catchData");
+			$.get("start.php?type=catchData");
 		}
 		// onload fresh data
 		window.setInterval(refreshData, 1000 * 60);
