@@ -62,11 +62,11 @@
                           rows = rows+"<tr><td>"+newvalue['1']+"</td><td>"+newvalue['buys']+"</td><td>"+newvalue['sales']+"</td><td>"+newvalue['difference']+"</td><td>"+newvalue['perIncrease']+"</td></tr>";
                     });
                     alltables = alltables+'<div class="table-responsive"><table class="table table-striped table-bordered"><thead><tr><th>Coin Pair</th><th>Buys</th><th>Sells </th><th>Difference </th><th>Percentage Increase</th></tr></thead><tbody id="display">'+rows+'</tbody></table></div>';
-
                     
-                 });
                     $('#tablediv').html(alltables);
                     console.log(alltables);
+                    
+                 });
          },
          error: function(data){
               console.log(data);
