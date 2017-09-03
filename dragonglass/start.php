@@ -22,8 +22,8 @@ $json = $cm->runCoinMan();
                 
                 
     				echo '
-						<div class="tbl-header">
-					    <table  cellpadding="0" cellspacing="0" border="0">
+						<div class="tbl-header ">
+					    <table class="table" cellpadding="0" cellspacing="0" border="0">
 					      <thead>
 					        <tr>
 					          <th>S/N</th>
@@ -45,6 +45,7 @@ $json = $cm->runCoinMan();
 
 
 				foreach ($json as $key => $sub_array) {
+					$sn = $key + 1;
 					# code...
 					//echo strtoupper($key).'<hr />';
 
@@ -58,7 +59,7 @@ $json = $cm->runCoinMan();
 						}
 						
 						echo '<tr>';
-					    echo '<td>'.$sub_array["id"].'</td>';
+					    echo '<td>'.$sn.'</td>';
 					    echo '<td>'.$sub_array["pair"].'</td>';
 					    echo '<td>'.$sub_array["buys"].'</td>';
 					    echo '<td>'.$sub_array["sales"].'</td>';
