@@ -10,7 +10,6 @@ $password = $data['password'];
 <!--suppress EqualityComparisonWithCoercionJS -->
 <html>
 <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css"
@@ -99,7 +98,7 @@ $password = $data['password'];
         }
 
         .stage1 {
-            color: #0d47a1;
+            color: #ffff00;
             text-decoration: none;
             font-size: 1.2rem;
         }
@@ -107,7 +106,7 @@ $password = $data['password'];
         .prt-site {
             text-decoration: none;
             /*color: #fff;*/
-            color: #0d47a1;
+            color: #ffff00;
         }
 
         .profile-link span {
@@ -209,12 +208,8 @@ $password = $data['password'];
         
         .app-link {
             text-decoration: none;
-            color: white;
+            color: #ffff00;
             margin-left: 10px;
-        }
-        
-        .app-link:hover {
-            color: red;   
         }
 
         /*#subject {
