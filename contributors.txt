@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -519,3 +519,4 @@
 (250) Baruwa Fadhlu-rahman Ayoku. (slack:@baruwa123, githib:@baruwa123)
 >>>>>>> a7c05d04b44f915b454311ed92c07bff73a294dc
 (251)Olunloye Akinkunmi, (slack: @roqak, github: @roqak)
+(252) Ugwueze Victor Chigozie, (slack: @gozman, github: @Victor-Ugwueze)
