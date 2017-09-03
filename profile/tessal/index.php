@@ -35,7 +35,7 @@ $dbc = mysqli_connect($config['host'],$config['username'],$config['pass'],$confi
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tes Sal's Profile</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="http://hng.fun/profile/tessal/style/main.css">
     
 </head>
 <body>
