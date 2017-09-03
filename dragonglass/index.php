@@ -1,6 +1,8 @@
 <?php
-if($_GET['type']){
-  $data = $_GET['type'];
+if(isset($_GET['type'])){
+  $data = 'catchData';
+}else{
+	$data = 'catchData';
 }
 ?>
 <!DOCTYPE html>
