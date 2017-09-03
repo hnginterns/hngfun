@@ -5,9 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coinman</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script src="js/jquery.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+<style>
+	body{
+		background: linear-gradient(to right, #25c481, #25b7c4);
+	}
+</style>
 
 <body>
     <nav class="navbar navbar-default navbar-static-top">
@@ -51,25 +58,41 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script>
+        
+        // when docs is ready load data
+		getJsonData();
+        
+		// refresh data every 1 mins
+		var refreshData = function (){
+			getJsonData();
+		}
+        
+		// onload fresh data
+		window.setInterval(refreshData, 1000 * 60);
+        function getJsonData(){
        $.ajax({
          type: "POST", dataType: "json", url: "class/load-data.php",
-         success: function(data){
+            success: function(data){
                 //var jsondata = $.parseJSON(data); // create an object with the key of the array
-             var row = "";
-                $.each(data, function(key, value) {
+                var alltables = "";
+                $.each(data, function(key, value) {                    
+                    var rows = "";
                     $.each(value, function(newkey, newvalue) {
-                          row = row+"<tr><td>"+newvalue['1']+"</td><td>"+newvalue['buys']+"</td><td>"+newvalue['sales']+"</td><td>"+newvalue['difference']+"</td><td>"+newvalue['perIncrease']+"</td></tr>";
-                         
+                          rows = rows+"<tr><td>"+newvalue['1']+"</td><td>"+newvalue['buys']+"</td><td>"+newvalue['sales']+"</td><td>"+newvalue['difference']+"</td><td>"+newvalue['perIncrease']+"</td></tr>";
                     });
-                    $('#display').html(row);
-                    console.log(value);
+                    alltables = alltables+'<div class="table-responsive"><table class="table table-striped table-bordered"><thead><tr><th>Coin Pair</th><th>Buys</th><th>Sells </th><th>Difference </th><th>Percentage Increase</th></tr></thead><tbody id="display">'+rows+'</tbody></table></div>';
+                    
+                    $('#tablediv').html(alltables);
+                    console.log(alltables);
+                    
                  });
-              
-         },
-         error: function(data){
-              console.log(data);
-            }
-        });
+             },
+             error: function(data){
+                  console.log(data);
+                }
+         });
+            
+        }
     </script>
 </body>
 

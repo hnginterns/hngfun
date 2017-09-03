@@ -351,7 +351,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <i id="twitter" class="fa fa-twitter" onclick="Javascript: window.location = 'https://twitter.com/jordan__zzz'"></i>
         <i id="mail" class="fa fa-envelope" onclick="Javascript: window.location = 'mailto:radpangolin@gmail.com'"></i>
 	</div>
-	<p class="stage-1"><a href="https://github.com/idoqo/hng-stage1">Stage-1 Project</a></p>
+	<p class="stage-1">
+	  <a href="https://github.com/idoqo/hng-stage1">Stage-1 Project</a> |
+	  <a href="https://github.com/idoqo/pangolin-android/blob/master/pangolin-android.apk"> Profile Android app
+	</p>
 
 	<div class="contact-form">
 		<form action="pangolin.php" method="post">

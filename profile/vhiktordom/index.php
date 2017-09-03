@@ -55,7 +55,7 @@
 
                 .bg{
 
-                  background-image: url("me.jpg");
+                  background-image: url(http://res.cloudinary.com/vhiktordom/image/upload/v1504450415/me_gsicry.jpg);
 
                   height: 100%;
 
@@ -123,7 +123,7 @@
        
           <div class="card">
 
-            <img src="vhiktordom.jpg" alt="Victor Dominic" style="width:100%">
+            <img src="http://res.cloudinary.com/vhiktordom/image/upload/v1504450417/vhiktordom_hyldh8.jpg" alt="Victor Dominic" style="width:100%">
             <div class="container">
               <h1>Victor Dominic</h1>
               <p class="title">Web/Mobile Developer</p>

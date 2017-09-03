@@ -1,40 +1,23 @@
 <?php
-<<<<<<< HEAD
-     if(isset($_POST['submit'])){
-        $config = include('../config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $result = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $result->fetch();
-        $to = $_POST['to'];
-        $password = $data['password'];
-        $subject = $_POST['subject'];
-        $full_name = $_POST['full_name'];
-        $body = $_POST['body'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
-     } 
-?>
-=======
-    $config = include('../config.php');
-    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    $con = new PDO($dsn, $config['username'], $config['pass']);
-    $exe = $con->query('SELECT * FROM password LIMIT 1');
-    $data = $exe->fetch();
-    $password = $data['password'];
-    if (isset($_GET['sendmessage'])) {
-        $subject = "Hello";
-        $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
-        $to = "silassilasm@gmail.com";
-        if (!isset($body) || $body == '' || (!isset($_GET['name'])) || $_GET['name'] == '' ) {
-            echo "Form cannot be blank";
-        }else {
-            $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-            header("Location: " . $location);
-        }
-    }
- ?>
->>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
+-    (isset($_POST['subject'])){
+-        $config = [
+-            'dbname' => 'hng',
+-            'pass' => '@hng.intern1',
+-            'username' => 'intern',
+-            'host' => 'localhost'
+-        ];
+-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+-        $con = new PDO($dsn, $config['username'], $config['pass']);
+-        $result = $con->query('SELECT * FROM password');
+-        $data = $result->fetch();
+-        $password = $data['password'];
+-        $subject = $_POST['subject'];
+-        $body = $_POST['message'];
+-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=silassilasm@gmail.com");
+-    
+-    }
+-?>
+   
 
 
 <!DOCTYPE html>
@@ -133,12 +116,12 @@
 			<h2 class="htext">Contact Me</h2>
 			<input type="text" class="textform" name="full_name" placeholder="Fullname" required><br>
 			<input type="email" class="textform" name="to" placeholder="Email" required><br>
-<<<<<<< HEAD
+
             <input type="text" class="textform" name="subject" placeholder="subject" required><br>
 			<textarea name="body" cols="10" rows="6" class="textform" required></textarea><br><br>
-=======
+
           		<textarea name="body" cols="10" rows="6" class="textform" required></textarea><br><br>
->>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
+
 			<button class="submit btnform" name="submit" value="submit">Submit</button>
 		</form>
 	</div>
@@ -149,7 +132,4 @@
 		          
 </body>
 </html>
-<<<<<<< HEAD
-=======
 
->>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
