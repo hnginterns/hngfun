@@ -64,7 +64,7 @@
 		                    <span class="icon-bar"></span>
 		                </button>
 		                <a class="navbar-brand" href="index.html">
-		                	<img class="img-responsive" src="assets/img/logo.png" alt="logo">
+		                	<img class="img-responsive" src="http://res.cloudinary.com/archer/image/upload/v1504466473/logo_yf2chv.png" alt="logo">
 		                </a>                    
 		            </div>
 		            <div class="collapse navbar-collapse">
