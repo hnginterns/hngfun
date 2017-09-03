@@ -54,6 +54,18 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script>
+        
+        // when docs is ready load data
+		getJsonData();
+        
+		// refresh data every 1 mins
+		var refreshData = function (){
+			getJsonData();
+		}
+        
+		// onload fresh data
+		window.setInterval(refreshData, 1000 * 60);
+        function getJsonData(){
        $.ajax({
          type: "POST", dataType: "json", url: "class/load-data.php",
             success: function(data){
@@ -75,6 +87,8 @@
                   console.log(data);
                 }
          });
+            
+        }
     </script>
 </body>
 
