@@ -102,7 +102,7 @@ a {
     <h1>Iniobong Daniel Isang </h1>
     <p class="about"><blockquote>I am a Web Developer ,An indigine of Akwa Abasi Ibom State, Currently residing in Calabar,Cross River State </blockquote></p>
         <p><i class="fa fa-slack"></i>@opinerdan </p>
-	<p><i class="link to android app"></i>https://files.slack.com/files-pri/T3QLSP8HM-F6XNECY6R/download/opinerdan.apk </p>
+	<p><i class="link to android app"></i>https:opinerdan.apk </p>
         
  
     <p class="stage"><a  target="_blank" href="https://github.com/opiner/test">Stage-3</a></p>
