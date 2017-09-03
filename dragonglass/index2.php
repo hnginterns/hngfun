@@ -53,11 +53,11 @@
     <script>
        $.ajax({
          type: "POST", dataType: "json", url: "class/load-data.php",
-         success: function(data){
+            success: function(data){
                 //var jsondata = $.parseJSON(data); // create an object with the key of the array
-             var rows = "";
-             var alltables = "";
-                $.each(data, function(key, value) {
+                var alltables = "";
+                $.each(data, function(key, value) {                    
+                    var rows = "";
                     $.each(value, function(newkey, newvalue) {
                           rows = rows+"<tr><td>"+newvalue['1']+"</td><td>"+newvalue['buys']+"</td><td>"+newvalue['sales']+"</td><td>"+newvalue['difference']+"</td><td>"+newvalue['perIncrease']+"</td></tr>";
                     });
@@ -67,11 +67,11 @@
                     console.log(alltables);
                     
                  });
-         },
-         error: function(data){
-              console.log(data);
-            }
-        });
+             },
+             error: function(data){
+                  console.log(data);
+                }
+         });
     </script>
 </body>
 
