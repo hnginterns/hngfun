@@ -8613,8 +8613,8 @@ include('participants-head.php');
         </div>
     </div>
 </div>
-		    
-		    
+
+
  <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -17304,8 +17304,8 @@ include('participants-head.php');
         </div>
     </div>
 </div>
-		    
-		    
+
+
  <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -25949,8 +25949,8 @@ include('participants-head.php');
         </div>
     </div>
 </div>
-		    
-		    
+
+
  <!--  Each Participant starts here  -->
         <div class="p-card">
             <div class="v-center">
@@ -26070,6 +26070,34 @@ include('participants-head.php');
                             </div>
                         </div>
                         <!--  Each Participants ends here  -->
+
+
+                        <!--  Ojo Stephen's Participant slot starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/ripplz/image/upload/v1504409410/me_l5yqsh.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+
+                               <!--Profile Link-->
+                           <a href="http://hng.fun/profile/ripplz.html">
+
+                               <!--Profile Name-->
+                               <h3 class="p-card-title">Ojo Stephen</h3>
+                           </a>
+
+                           <!--Email-->
+                           <p class="p-card-description">ojboy42@yahoo.com</p>
+                       </div>
+
+                               <!--Team-->
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"></h3>
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Ojo Stephen's Participant slot ends here  -->
 
 <?php include "footer.php"?>
 >>>>>>> 17fd2374bb7267dcda8eb02fc5cc08b023009c2c
