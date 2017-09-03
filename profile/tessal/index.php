@@ -25,7 +25,7 @@ $dbc = mysqli_connect($config['host'],$config['username'],$config['pass'],$confi
     }
   }
   }
-  $ferror ='';
+  // $ferror ='';
 ?>
 <!DOCTYPE html>
 <html lang="en">
