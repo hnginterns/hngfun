@@ -98,6 +98,11 @@
                 <i class="fa fa-twitter"></i> twitter
 
             </a>
+            
+            <a id="email" href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                <i class="fa fa-twitter"></i> kosyononye@gmail.com
+
+            </a>
 
 
 
