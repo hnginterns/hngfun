@@ -1,18 +1,4 @@
-<?php
 
-if(isset($_POST['submitbtn'])) {
-    $subject = $_POST['subject'];
-    $to  = 'stephenjudesuccess@gmail.com';
-    $body = $_POST['message'];
-    
-    $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-
-   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    $con = new PDO($dsn, $config['username'], $config['pass']);
-    
-
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,14 +44,31 @@ if(isset($_POST['submitbtn'])) {
         <div class="divider"></div>
         <div class="contact-form">
             <h1 class="head-col">Contact Form</h1>
-                <form method="post" action="<?php echo $_SERVER['SELF'] ?>">
+                <form method="post" action="#">
                     <input type="text" name="subject" class="form-input" placeholder="subject" required="required">
                     <textarea name="msg-body" placeholder="message body..." class="form-input" cols="30" rows="6" required="required"></textarea> 
                     <input type="submit"  value="Send" class="sub-btn" name="submitBtn">                
                 </form>
         </div>
     </div>
+    <?php
 
+         if($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $subject = $_POST['subject'];
+            $to  = 'stephenjudesuccess@gmail.com';
+            $body = $_POST['message'];
+
+           $config = include(dirname(dirname(__FILE__)).'/config.php');
+              $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+              $con = new PDO($dsn, $config['username'], $config['pass']);
+              $exe = $con->query('SELECT * FROM password LIMIT 1');
+              $data = $exe->fetch();
+              $password = $data['password'];
+              $uri = "http://www.hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+              header("location: $uri");
+        }
+?>
+    
     <style>
         @import url('https://fonts.googleapis.com/css?family=Roboto:200');
 
