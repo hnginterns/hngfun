@@ -12,7 +12,9 @@ $json = $cm->runCoinMan();
 
 // decode json 
 // $json = $cm->loadData();
-$json = json_decode($json, TRUE);
+// $json = json_decode($json, TRUE);
+
+var_dump($json);
 ?>
 
 <section>
