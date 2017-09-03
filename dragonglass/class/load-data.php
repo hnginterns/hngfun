@@ -11,10 +11,10 @@ $cm = new Coinman($config['api_key'], $config['api_secret']);
 // $cm->runCoinMan();
 
 // fetch json File from class
-$json = $cm->loadData();
+//$json = $cm->loadData();
 
 //$json = json_encode($json);
-$json = json_decode($json, TRUE);
+//$json = json_decode($json, TRUE);
 ?>
 
 <section>
