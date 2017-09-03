@@ -69,7 +69,7 @@
                          
                     });
                     $('#display').html(row);
-                    console.log(row);
+                    console.log(value);
                  });
               
          },
