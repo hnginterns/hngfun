@@ -15,11 +15,11 @@ if(isset($_GET['type'])){
 	<title>coinman</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  	<script src="js/scripts.js"></script>
  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<link rel="stylesheet" type="text/css" href="css/table-style.css">
- 	<link rel="stylesheet" type="text/css" href="js/scripts.js">
 </head>
 <body>
 	<br />
@@ -31,19 +31,31 @@ if(isset($_GET['type'])){
 			</div>
 		</div>
 	</div>
+	
+	<div id="useless">
+	</div>
 	<script type="text/javascript">
 		// when docs is ready load data
 		var getType = $("#getType").val()
+		
+		// refresh data every 1 mins
+		var refreshData = function (){
+			$.get("start.php?type=catchData");
+		}
+		// onload fresh data
+		window.setInterval(refreshData, 1000 * 60);
+		
+		var refreshPage = function (){
+			$("#results").load("start.php");
+		}
+		
+		window.setInterval(refreshPage, 1500 * 60);
+
 		$("document").ready(function (){
 			$("#results").load("start.php");
 		});
 
-		// refresh data every 1 mins
-		var refreshData = function (){
-			$("#results").load("class/load-data.php?type="+getType);
-		}
-		// onload fresh data
-		window.setInterval(refreshData, 1000 * 60);
+		
 	</script>
 </body>
 </html>

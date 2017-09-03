@@ -28,12 +28,12 @@ $json = $cm->runCoinMan();
 					        <tr>
 					          <th>S/N</th>
 					          <th>Currency Pairs</th>
-					          <th>Buy</th>
-					          <th>Sell</th>
-					          <th>% Change in trade</th>
-					          <th>Trade Shift <i class="fa fa-timer"></i> (5mins ago) </th>
+					          <th>Number Buys</th>
+					          <th>Number of Sells</th>
+					          <th>Diffrence</th>
+					          <th>$ Percent Change</th>
 					          <th>Pointer</th>
-					          <th>Examination</th>
+					          <th>Summary</th>
 					        </tr>
 					      </thead>
 					    </table>
