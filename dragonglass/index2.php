@@ -10,6 +10,11 @@
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
  	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<style>
+	body{
+		background: linear-gradient(to right, #25c481, #25b7c4);
+	}
+</style>
 
 <body>
     <nav class="navbar navbar-default navbar-static-top">
