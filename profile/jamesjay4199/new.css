@@ -1,0 +1,128 @@
+body{
+	border:none;
+	margin: 0 40px ;
+	background-color:rgb(235,235,235);
+}
+#container{
+	background-color:rgb(255,255,255);
+	box-shadow:2px 2px 2px 2px #000;
+}
+
+nav{
+	padding-top:0;
+	margin-top:0;
+	background-color:green;
+	width: 200px;
+	margin-left:30px;
+	border-radius:0 0 10px 10px;
+	box-shadow:2px 2px 2px 2px rgb(220,220,220);
+}
+nav ul li{
+	display:inline;
+	padding-right:10px;
+}
+nav ul li a img{
+	border-radius:15px;
+	transition: transform .5s;
+	transform:box-shadow .5s;
+}
+nav ul li a img:hover{
+	transform:scale(1.05);
+	box-shadow:1px 1px 1px 1px rgb(0,0,0);
+}
+#my-pic{
+	margin-top:10px;
+	margin-left:50px;
+}
+aside{
+	position:relative;
+	 border-left: solid 2px green;
+	 margin-left:10px;
+	 margin-bottom:30px;
+	 width:300px;
+	 height:100%;
+	 max-width:350px;
+	 box-shadow: 2px 3px 3px 3px rgb(200,200,200);
+}
+aside img{
+	margin-top:50px;
+}
+aside p{
+	margin-top:0;
+	padding-top:0;
+	text-align:center;
+	font-size:30px;
+	font-family:georgia;
+	text-shadow:2px 2px 2px rgb(200,200,200);
+}
+aside hr{
+	margin-left:50px;
+}
+#job{
+	color: #aaa;
+}
+#slack{
+	font-size: 15px;
+	color: #aaa;
+}
+aside a{
+	color:white;
+	text-decoration:none;
+	font-family:georgia;
+}
+#stage1{
+	width:120px;
+	margin-top:10px;
+	padding:10px;
+	height:30px;
+	font-size:20px;
+	margin-left:100px;
+	text-align:center;
+	background-color:green;
+	border:solid 2px rgb(0,100,29);
+}
+aside a:hover{
+	color:green;
+}
+#stage1:hover{
+	background-color:rgb(255,255,255);
+	box-shadow:5px 5px 5px 5px rgb(180,180,180);
+	border:none;
+}
+#my-biography{
+	float:left;
+	text-align:left;
+	position:absolute;
+	margin-left:350px;
+	margin-right:50px;
+	padding:5px;
+	padding-left:10px;
+	padding-top:0;
+	font-family:georgia;
+	font-size:15px;
+	 box-shadow: 2px 3px 3px 3px rgb(200,200,200);
+}
+#my-biography >span{
+	color: #aaa;
+}
+#my-biography p span{
+	font-size:30px;
+	color:#aaa;
+	text-shadow:2px 2px 2px rgb(200,200,200);
+}
+#footer{
+	clear:both;
+	width:100%;
+	background-color:rgb(235,235,235);
+	text-align:center;
+}
+#contact-form{
+	position:absolute;
+	margin-top:275px;
+	margin-left:350px;
+}
+fieldset{box-shadow: 2px 3px 3px 3px rgb(200,200,200);}
+legend{
+	font-size:30px;
+	text-shadow:2px 2px 2px rgb(200,200,200);
+}	

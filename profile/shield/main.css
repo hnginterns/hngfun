@@ -1,0 +1,112 @@
+/* 
+    Author     : SHIELD
+*/
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+.hd {
+    display: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+    color: hsl(174, 100%, 29%);
+}
+body {
+    background-color: hsl(200, 18%, 46%);
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.main_wrap {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.abt {
+    width: 100%;
+    overflow: hidden;
+}
+.img_wrap {
+    margin-left: 8em;
+    padding: 2em;
+    line-height: 1.65;
+}
+img {
+    float: left;
+    border-radius: 50%;
+    width: 350px;
+    border: 10px solid hsl(240, 30%, 77%);
+    margin-right: 1.8em;
+        
+    shape-outside: circle();
+}
+.img_wrap > p:first-of-type {
+    padding-top: 4em;
+}
+.img_wrap p strong {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+.img_wrap p {
+    font-family: serif;
+    font-size: 1.15em;
+}
+.bio {
+    clear: both;
+    margin: 2em auto .85em;
+    width: 70%;
+}
+.bio p {
+    font-size: 1.085em;
+    padding-bottom: .65em;
+}
+.contact {
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 3em;
+}
+.contact_form {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+.contact h2 {
+    margin-bottom: 1.15em;
+}
+#contact label strong {
+    display: inline-block;
+    font-size: 1.05em;
+    padding-bottom: .075em;
+}
+.contact_form input[type='text'], .contact_form textarea {
+    font-size: .98em;
+    font-family: sans-serif;
+    line-height: 1.7;
+    padding: .275em;
+    margin-bottom: 1em;
+    width: 100%;
+    border: 1px solid #000;
+    outline: 0;
+}
+.contact_form input[type='text']:active,
+.contact_form input[type='text']:hover,
+.contact_form textarea:active,
+.contact_form textarea:hover {
+    outline: 0;
+    border: 1px solid #c4cfe7;
+}
+#contact button {
+    font-size: 1.2em;
+    line-height: 2;
+    text-align: center;
+    width: 5em;
+    border: 1px solid #000;
+    font-weight: bold;
+}
+#contact button:hover {
+    border: 1px solid #c4cfe7;
+    font-weight: bolder;
+}

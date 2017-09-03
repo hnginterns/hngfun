@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
    	$admin_email = "xyluz@ymail.com";
   if($_SERVER['REQUEST_METHOD'] == 'GET') {
@@ -38,6 +39,8 @@
   }
  ?>
 
+=======
+>>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
 <!DOCTYPE html>
 <html>
 <head>
@@ -183,6 +186,10 @@
 				</p>
 				<p>Catch me on Slack : 	<a href="https://hnginterns.slack.com/team/iyfe"> @iyfe</a> </p>
 				<p> My first task : <a href="https://github.com/iyfe/HNGInternship/blob/master/helloworld.php" class="button">Stage#1</a></p>
+<<<<<<< HEAD
+=======
+        <p> Download My contact App: <a href="https://drive.google.com/drive/folders/0B4e4ri7wvyyAbVhOMDRBYmNjNUE?usp=sharing" class="button">Stage#1</a></p>
+>>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
 		</div>
 		<div class="right-half">
 			<div class="form_container">
@@ -214,4 +221,49 @@
 </div>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+
+
+<?php
+    $admin_email = "xyluz@ymail.com";
+  if($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $error = ""; 
+    $successMessage = "";
+    $name = $_GET['name'];
+    $to  = 'icukachuk@gmail.com';
+    $subject = $_GET['subject'];
+    $message = $_GET['message'];
+    $email = $_GET["email"];
+
+    if (!$email) {
+        $error .= "An email address is required.<br>";
+    }
+    if (!$message) {
+        $error .= "The content field is required.<br>";
+    }
+    if (!$subject) {
+        $error .= "The subject is required.<br>";
+    }
+    if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        $error .= "The email address is invalid.<br>";
+    }
+    if ($error != "") {
+        $error = '<p>There were error(s) in your form:</p>' . $error;
+    }else{
+      if(empty($error)) {
+        $config = include('../../config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $message = urlencode($message);
+        header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
+      }
+  }
+  }
+ ?>
+>>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
