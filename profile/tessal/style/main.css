@@ -8,15 +8,31 @@ body, html {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.center-text {
+/*.center-text {
     text-align: center;
     position: absolute;
-    top: 70%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-}
+}*/
 
+ .flex-container {
+        display: -webkit-flex;
+        display: flex;  
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        text-align: center;
+       /* padding-left:  30%;
+        padding-right:  30%;*/
+        /*transform: translate(-50%, -50%);*/
+        color: white;
+}
+    .flex-container > * {
+        padding: 15px;
+        -webkit-flex: 1 100%;
+        flex: 1 100%;
+}
 img {
     border-radius: 50%;
 }

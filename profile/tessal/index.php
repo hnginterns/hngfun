@@ -25,6 +25,7 @@ $dbc = mysqli_connect($config['host'],$config['username'],$config['pass'],$confi
     }
   }
   }
+  $ferror ='';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,8 +39,8 @@ $dbc = mysqli_connect($config['host'],$config['username'],$config['pass'],$confi
     
 </head>
 <body>
-    <div class="">
-        <div class="center-text">
+    <div class="flex-container">
+        <div class="">
           <?php if(empty($ferror)){?>
           <img src="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/21105692_1789938437702588_2039611269563020598_n.jpg?_nc_eui2=v1%3AAeELBWEsIVmuUYg34mXqWpzoiDSQQzGXK1SJtF-DAdYUtW1I4sPhcZKkQRc2ExG1xASREw5dkxLW5gY5Fs5IfY8XiJuuI3SROVOVRTJ1-ljqqA&oh=f3b62cb1a86651328b84c358803f97b0&oe=5A263493" alt="tessal" class="card" width="200" >
           <h1>Name: Salako Teslim Akolade</h1>
