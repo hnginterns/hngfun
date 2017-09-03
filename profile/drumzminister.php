@@ -132,7 +132,7 @@
 .form{
     background-color: #ff1d8e;
     width: 650px;
-    height:500px;
+    height:3#20px;
     padding: 10px;
     margin: auto;
     position:relative;
@@ -262,7 +262,7 @@ friends, surfing the INTERNET, going to Church, going on Excursion, catching fun
 </div>
 
 <div class="form">
-        <form action="drumzminister.php" method="POST">
+        <form action="review.php" method="POST">
           <fieldset>
               <legend> <h2> Email Me! </h2></legend>
               

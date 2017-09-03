@@ -1,3 +1,56 @@
+<?php
+
+if (isset($_GET['submit'])) {
+
+    if (isset($_GET['body']) && isset($_GET['subject'])) {
+        $email = "fabrobocomx@gmail.com";//$_GET['to'];
+        $subject = $_GET['subject'];
+        $body = $_GET['body'];
+    } else {
+        die("Invalid request. Please try again");
+    }
+
+
+    // DB connection
+    $config = include('../../config.php');
+    // $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    // $con = new PDO($dsn, $config['username'], $config['pass']);
+
+    //var_dump($config);
+    $db_name = $config["dbname"];
+    $db_pass = $config["pass"];
+    $db_username = $config["username"];
+    $db_host = $config["host"];
+    //var_dump($db_name.$db_pass.$db_username.$db_host);
+    $db = new mysqli($db_host, $db_username, $db_pass, $db_name);
+
+    if ($db->connect_errno) {
+    // trigger_error('Connection Failed!', E_USER_ERROR);
+    die("Connection failed ". $db->connect_error);
+    }
+
+    // Fetch password from DB
+    $query = $db->query('SELECT * FROM password LIMIT 1');
+    $data = $query->fetch_assoc();
+    $password = $data['password'];
+
+
+    $query_string = http_build_query(array('password' => $password, 'subject' => $subject, 'body' => $body, 'to' => $email));
+    $result = file_get_contents('http://hng.fun/sendmail.php?'. $query_string);
+
+    if ($result != false) {
+
+    header("Location: http://hng.fun/profile/timolin/timolin.php?message=Email was Sent Successfully");
+    exit();
+    
+    } else {
+    die("Something went wrong");
+    }
+} else {
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -148,7 +201,7 @@ body {
                 <p><i class="fa fa-github fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/fabrobocom">fabrobocom</a></p>
                 <p><i class="fa fa-slack fa-lg fa-fw" aria-hidden="true"></i><a href="https://hnginterns.slack.com/team/timolin">timolin</a></p>
             </div>
-
+            
         </div>
         <div class="sec2" style="">
             <p>I'm Timothy Onyiuke, Mid-Level Web developer. I code mostly in PHP/Laravel.</p>
@@ -156,12 +209,13 @@ body {
                 and I like to think of myself as someone on a mission, I love Chess and Soccer.</p>
 
             <p><a href="https://github.com/fabrobocom/HNG" class="stage1">Stage 1</a></p>
+            <p><a href="https://www.dropbox.com/s/21biq8u46w4exe8/timi.apk?dl=0" class="stage1">Download My Personal App</a></p>
         </div>
         <div class="row">
             <div class="">
                 <h4>Contact Form</h4>
                 <div class=""></div>
-                <form id="contact-form" class="contact-form" method="GET" action="mailer.php">
+                <form id="contact-form" class="contact-form" method="GET" action="timolin.php">
                         <div class="inputs">
                             <!-- <div class="">
                                 <input type="text" class="form-input" name="subject" required="required" placeholder="Subject">
@@ -169,13 +223,14 @@ body {
                             <div class="inputs">
                            <p> <input type="text" class="form-input" name="subject" required="required" placeholder="Subject"></p>
                                 <textarea name="body" id="message" required="required" class="form-input" rows="8" placeholder="Message"></textarea>
-                                <button type="submit" class="">Send Message</button>
+                                <button type="submit" name="submit" class="">Send Message</button>
                             </div>
                             <!-- <div class="">
                                 <button type="submit" class="">Send Message</button>
                             </div> -->
                         </div>
                 </form>
+                <br><br>
             </div><!--/.-->
         </div>
     </div>

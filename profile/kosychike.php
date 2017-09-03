@@ -98,8 +98,11 @@
                 <i class="fa fa-twitter"></i> twitter
 
             </a>
+<<<<<<< HEAD
             
             <a href="https://drive.google.com/file/d/0BzOtc_sZyUCVamVXSHFtQVQ4VjA/view">DOWNLOAD APP</a>
+=======
+>>>>>>> 4a1978c1ee18eed2b40e11dc2dd7e7b5ebbfc449
 
 
 

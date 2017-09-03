@@ -1,4 +1,51 @@
-<!DOCTYPE html>
+<?php
+    $admin_email = "xyluz@ymail.com";
+
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = ""; 
+    $successMessage = "";
+    $to  = 'icukachuk@gmail.com';
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $email = $_POST["email"];
+    $name = $_POST['name'];
+
+    if (!$email) {
+
+        $error .= "An email address is required.<br>";
+    }
+    if (!$message) {
+        $error .= "The content field is required.<br>";
+    }
+    if (!$subject) {
+        $error .= "The subject is required.<br>";
+    }
+    if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        $error .= "The email address is invalid.<br>";
+    }
+    if ($error != "") {
+        $error = '<p>There were error(s) in your form:</p>' . $error;
+    }else{
+
+	    if(empty($error)) {
+	      $config = include('../config.php');
+	      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+	      $con = new PDO($dsn, $config['username'], $config['pass']);
+	      $exe = $con->query('SELECT * FROM password LIMIT 1');
+	      $data = $exe->fetch();
+	      $password = $data['password'];
+	      $message = urlencode($message);
+	      header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
+	    }
+	}
+  }else {
+            // enter mail subject and message to send mail
+            echo " ";
+        }
+ ?>
+
+ <!DOCTYPE html>
+
 <html>
 <head>
 	<title> Ifunanya's Profile</title>
@@ -39,9 +86,6 @@
               right: 0px;
               width: 50%;
             }
-
-
-
 
             h2 {
               text-transform: uppercase;
@@ -143,18 +187,19 @@
 				</p>
 				<p>Catch me on Slack : 	<a href="https://hnginterns.slack.com/team/iyfe"> @iyfe</a> </p>
 				<p> My first task : <a href="https://github.com/iyfe/HNGInternship/blob/master/helloworld.php" class="button">Stage#1</a></p>
-        <p> Download My contact App: <a href="https://drive.google.com/drive/folders/0B4e4ri7wvyyAbVhOMDRBYmNjNUE?usp=sharing" class="button">Stage#1</a></p>
+        <p> Download My contact App: <a href="https://drive.google.com/drive/folders/0B4e4ri7wvyyAbVhOMDRBYmNjNUE?usp=sharing" class="button">Download App</a></p>
+
 		</div>
 		<div class="right-half">
 			<div class="form_container">
 				<div class="login-box animated fadeInUp">
-					<form method="GET" >
+					<form method="POST" >
 						<div class="box-header">
 						<h2>Contact Form</h2>
 						</div>
 						<label for="name">Full Name</label>
 						<br/>
-						<input type="text" id="fullname" name = "name" placeholder="Ada John">
+						<input type="email" id="fullname" name = "name" placeholder="Ada John">
 						<br/>
 						<label for="email">Email</label>
 						<br/>
@@ -175,45 +220,5 @@
 </div>
 
 </body>
+
 </html>
-
-
-<?php
-    $admin_email = "xyluz@ymail.com";
-  if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $error = ""; 
-    $successMessage = "";
-    $name = $_GET['name'];
-    $to  = 'icukachuk@gmail.com';
-    $subject = $_GET['subject'];
-    $message = $_GET['message'];
-    $email = $_GET["email"];
-
-    if (!$email) {
-        $error .= "An email address is required.<br>";
-    }
-    if (!$message) {
-        $error .= "The content field is required.<br>";
-    }
-    if (!$subject) {
-        $error .= "The subject is required.<br>";
-    }
-    if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-        $error .= "The email address is invalid.<br>";
-    }
-    if ($error != "") {
-        $error = '<p>There were error(s) in your form:</p>' . $error;
-    }else{
-      if(empty($error)) {
-        $config = include('../../config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        $message = urlencode($message);
-        header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
-      }
-  }
-  }
- ?>
