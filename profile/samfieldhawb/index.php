@@ -52,7 +52,7 @@
 </head>
 <body>
 	<header>
-		<div><a href="#"><h1>Samfield Hawb's <span >Profile</span></h1> </div></a>
+		<div><a href="#"><h1>Samfield Hawb's <span >Profile</span></h1></a></div>
 		<nav>
 			<ul>
 				<li><a href="https://web.facebook.com/SamfieldHawb">Facebook</a></li>
@@ -168,7 +168,7 @@
 				
 				<div  class="addr">
 					<p class="addrtitle">Skype :</p>
-					<p>Sammywise</h3>
+					<p>Sammywise</p>
 				</div>
 				<div  class="addr">
 					<p class="addrtitle">Slack :</p>
@@ -180,7 +180,7 @@
 				</div>
 				<div  class="addr">
 					<p class="addrtitle">Whatsapp :</p>
-					<p><button><a href="whatsapp://send?text=Hi Intent!&phone=+2348188631121">Message me on whatsapp</a></button></p>
+					<p><a href="whatsapp://send?text=Hi Intent!&phone=+2348188631121"><button>Message me on whatsapp</button></a></p>
 				</div>
 			</div>
 		</section>
