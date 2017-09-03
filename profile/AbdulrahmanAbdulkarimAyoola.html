@@ -137,12 +137,15 @@
     }
 
     #app_button{
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: bolder;
         background-color: #4285f4;
         border: none;
         border-radius: 8px;
-        color: white;
+        color: initial;
         padding: 15px 15px;
         margin: 8px 0;
         text-align: center;
@@ -241,7 +244,7 @@
         <p class="slack">Slack handle: @abdul</p>
         <p class="slack">Github username: @lanre01</p>
         <p class="slack">Twitter handle: @da_kafilicious</p>
-        <button id="app_button">Download Profile App</button>
+        <a href="#" id="app_button"> Download Profile App</a>
     </div>
 
     <div class="w3-panel w3-card-4" style="width: 50%; margin-left: auto; margin-right: auto;; text-align: left; padding: 5px; margin-bottom: 15px;">
