@@ -1,4 +1,4 @@
-<? php
+<?php
 	
 	$config = include('../../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -18,13 +18,14 @@
 		<title>Omojola Samson's profile</title>
 	</head>
 	<body>
-			<img src="dp2.jpeg" alt="profile picture of Omojola Samson">
+			<img src="https://www.dropbox.com/s/fo29a10g6bw60rr/dp2.jpeg?dl=0" alt="profile picture of Omojola Samson">
 		<p class="paragraph">
 			Name: Omojola Samson Ade<br>
 			Slack Username: caesar<br>
 			<span class="bio">Biography: My name is Omojola Samson. I'm a tech enthusiast.<br> I'm currently in 500 level, University of Ilorin,<br> studying
 			Electrical Engineering.</span><br>
-			<a href="https://github.com/omojolasamson/hngstage1">Stage One Result? Click here.</a>
+			<a href="https://github.com/omojolasamson/hngstage1">Stage One Result? Click here.</a><br>
+			<a href="https://github.com/omojolasamson/hngstage1">Click here to download my android app.</a><br>
 		</p>
 	
 			<form method="get" action="../../sendmail.php">
