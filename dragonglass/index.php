@@ -1,10 +1,3 @@
-<?php
-if(isset($_GET['type'])){
-  $data = 'catchData';
-}else{
-	$data = 'catchData';
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
