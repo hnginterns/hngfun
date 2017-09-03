@@ -45,6 +45,12 @@ if(isset($_GET['type'])){
 		// onload fresh data
 		window.setInterval(refreshData, 1000 * 60);
 		
+		var refreshPage = function (){
+			$("#results").load("start.php");
+		}
+		
+		window.setInterval(refreshPage, 1500 * 60);
+
 		$("document").ready(function (){
 			$("#results").load("start.php");
 		});
