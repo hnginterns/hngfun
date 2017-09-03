@@ -156,11 +156,11 @@ buttons {
 </style>
 
 <div class="card">
-  <img src="me.jpg" alt="Raymond" height = "500px" style="width:100%">
+  <img src="http://res.cloudinary.com/dwdc0kcsk/image/upload/v1504470233/IMG_20170814_052224_bc0yzz.jpg" alt="Raymond" height = "500px" style="width:100%">
   <div class="container">
     <h1>Raymond Blessed</h1>
     <p class="title">Hi!, I am a young Lagosian with an interest in tech especially programming, I am so happy to be a part of this HNG internship and hope to learn alot as I go along.</p>
-    <a href='http://bit.ly/2wwZv6q'>See My Android App</a>
+    <a href='http://bit.ly/2wwZv6q'>See My Android App</a> <br />
     <a href="#"><i class="fa fa-github"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-slack"></i></a>
