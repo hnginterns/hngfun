@@ -167,6 +167,7 @@
             margin-top: 5px;
             margin-bottom: 5px;
             border: 0px;
+            outline: 0;
         }
 
         #cnt textarea{
@@ -315,6 +316,10 @@
                             <p onclick="displayAbout()" id="ram">
                             <i class="fa fa-info"></i> Read about me
 
+                            </p>
+
+                            <p>
+                                <a href="https://github.com/peterperez/PerezHNG_APP/blob/master/PerezHNG.apk" target="_blank"> CLICK HERE TO DOWNLOAD MY APP</a>
                             </p>
 
                             <script type="text/javascript">

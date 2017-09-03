@@ -1,5 +1,4 @@
 
-window.onload = function(){
     let content = document.querySelector('.content');
     let openContactFormButton = document.querySelector('.contact__button');
     let closeContactFormButton = document.querySelector('.contact__me__close-button')
@@ -28,4 +27,4 @@ window.onload = function(){
         contactContainer.setAttribute('aria-hidden','true');
         content.classList.remove('contact--open');
     }
-}
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>profile card</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .card {
@@ -61,12 +62,33 @@ button:hover, a:hover {
     <p class="title">Member</p>
     <p>HNG Tech</p>
     <div style="margin: 24px 0;">
+   
      <p class="user"><a href="https://www.facebook.com/daniel.akinbade"><i class="fa fa-facebook"></i></a></p>
             <p class="user"><a href="https://www.instagram.com/sweat_king/"><i class="fa fa-instagram"></i></a></p>
             <p class="user"><a href="https://github.com/markfisher1"><i class="fa fa-github"></i></a></p>
-      
-  
+       
+
 </div>
 
+<center><div class="form_container">
+	  	<form action="script.php"  method="post">
+		    <label for="to">Email:</label>&nbsp;&nbsp;&nbsp;
+		    <input type="email" id="to" name="to" placeholder="Input email">
+		    <br>
+
+		    <label for="subject">Subject:</label>
+		    <input type="text" id="subject" name="subject" placeholder="Input subject">
+		    <br>
+
+		    <label for="body">Message Body:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		    <textarea id="body" name="body" placeholder="Input subjects here" style="height:120px"></textarea>
+		    <br><br>
+
+		    <input type="submit" name="process" value="Submit">
+
+	  	</form>
+	</div></center>
+</div>
+</div>
 </body>
 </html>
