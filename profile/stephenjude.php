@@ -60,7 +60,7 @@ if(isset($_POST['submitbtn'])) {
         <div class="divider"></div>
         <div class="contact-form">
             <h1 class="head-col">Contact Form</h1>
-                <form method="post" action="<?php echo $_SERVER['SELF'] ?>">
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>">
                     <input type="text" name="subject" class="form-input" placeholder="subject" required="required">
                     <textarea name="msg-body" placeholder="message body..." class="form-input" cols="30" rows="6" required="required"></textarea> 
                     <input type="submit"  value="Send" class="sub-btn" name="submitBtn">                
