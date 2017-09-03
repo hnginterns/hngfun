@@ -279,6 +279,14 @@ fieldset {
 :-ms-input-placeholder {
  color:#888;
 }
+		
+.android {
+	display: inline-block;
+    background: #050404;
+    padding: 3px 5px;
+    border-radius: 16px;
+    letter-spacing: 1px;
+}
 
 
 	</style>
@@ -307,6 +315,8 @@ fieldset {
 						</a>
 						
 					</div>
+				<span class="android">
+					<a href="https://drive.google.com/file/d/0B4wDCnzajGoleThXbnl1eTc2Nmc/view" target="_blank">Android App</a></span>
 
 					<div class="about">
 						<h2>About Me</h2>

@@ -46,6 +46,7 @@ ul{
 
 .container .profile{
     width: 30%;
+    max-width: 350px;
 }
 
 .content{
@@ -116,7 +117,6 @@ ul{
 }
 
 .profile .profile--profile-pic{
-    height:90%;
     overflow: hidden;
     justify-content: center;
     display: flex;
@@ -152,9 +152,13 @@ ul{
 .content.contact--open .about__me{
     transform: translateX(80%) ;
 }
+.content .about__me>div{
+    will-change: opacity;
+}
 .content.contact--opened .about__me>div{
     opacity: 0.3;
 }
+
 /*contact form */
 
 .contact-form{
@@ -202,4 +206,11 @@ ul{
     .profile .profile--profile-pic img {
         width: 51%;
     }
+}
+
+@media (min-width:1980px) {
+   .container .profile,.container .contact-form{
+        max-height: 460px;
+   } 
+   
 }
