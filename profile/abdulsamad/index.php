@@ -44,6 +44,7 @@
             <h2 class = "standard-header">Where can you follow all my craziness?</h2>
             <p class = "paragraph-text">I am most active on instagram <a href = "https://instagram.com/glidez007">@glidez007</a> where i show all my day-to-day life with code.</p>
             <p class = "paragraph-text">Here is the link to my repo for stage 1: <a href = "https://github.com/abdulsamad234/hngstage1">Go here</a></p>
+            <p class = "paragraph-text">Here is the link to my android task: <a href = "https://doc-0c-a4-docs.googleusercontent.com/docs/securesc/8csl5c0jnqt6s1netg675pcpujmfsjoe/57rjp1e9vt2l4cenlqicvceklhdpjff8/1504274400000/12491002531671411133/12491002531671411133/0B2DHngS5Ri65MDRCU2ZfWm9PU28?e=download">Go here</a></p>
           </div>
         </div>
       </div>

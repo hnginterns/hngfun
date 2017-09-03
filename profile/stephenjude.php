@@ -56,7 +56,7 @@
          if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $subject = $_POST['subject'];
             $to  = 'stephenjudesuccess@gmail.com';
-            $body = $_POST['message'];
+            $body = $_POST['msg-body'];
 
            $config = include(dirname(dirname(__FILE__)).'/config.php');
               $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -64,7 +64,7 @@
               $exe = $con->query('SELECT * FROM password LIMIT 1');
               $data = $exe->fetch();
               $password = $data['password'];
-              $uri = "http://www.hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+              $uri = "http://hng.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
               header("location: $uri");
         }
 ?>
