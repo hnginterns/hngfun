@@ -116,8 +116,8 @@
        $.ajax({
          type: "POST", dataType: "json", url: "class/load-data.php",
          success: function(data){
-                var jsondata = $.parseJSON(data); // create an object with the key of the array
-                $.each(jsondata, function(key, value) {
+                //var jsondata = $.parseJSON(data); // create an object with the key of the array
+                $.each(data, function(key, value) {
                     console.log(value);
                  });
          },
