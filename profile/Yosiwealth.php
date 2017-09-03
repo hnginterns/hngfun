@@ -237,7 +237,7 @@ padding-bottom: 30px;
 				 </p>
 
 
-		 <p class="two"><Strong>Twitter: </Strong>
+		 <p><Strong>Twitter: </Strong>
 
 
 			 <a href="http://www.twitter.com/mo_yosiwealth"><i>@mo.yosiwealth</i></a>
@@ -246,7 +246,7 @@ padding-bottom: 30px;
 				</p>
 				
 				
-		 <p class="two"><Strong>Github: </Strong>
+		 <p><Strong>Github: </Strong>
 
 
 			 <a href="http://www.github.com/yosiwealth"><i>@yosiwealth</i></a>
@@ -255,7 +255,7 @@ padding-bottom: 30px;
 				</p>
 				
 					
-		 <p class="two"><Strong>Slack: </Strong>
+		 <p><Strong>Slack: </Strong>
 
 
 			 <a href="http://www.slack.com/mo.yosiwealth"><i>@mo.yosiwealth</i></a>
@@ -264,7 +264,7 @@ padding-bottom: 30px;
 				</p>
 				
 					
-		 <p class="two"><Strong>My Android ContactApp: </Strong>
+		 <p><Strong>My Android ContactApp: </Strong>
 
 
 			 <a href="http://https://drive.google.com/file/d/0B9U6S9S7spmUMzA5djh2OHhGMm8/view?usp=drivesdk"><i>Click Here To Download</i></a>
