@@ -1,25 +1,15 @@
 <!DOCTYPE HTML>
 <head>
+ html 
+ {
+    overflow: scroll;
+}
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<link rel="icon" type="image/png" href="images/splash/android-chrome-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" sizes="196x196" href="images/splash/apple-touch-icon-196x196.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/splash/apple-touch-icon-180x180.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/splash/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/splash/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/splash/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/splash/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/splash/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/splash/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/splash/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="57x57" href="images/splash/apple-touch-icon-57x57.png">
-<link rel="icon" type="image/png" href="images/splash/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="images/splash/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
-<link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" />
+ 
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
 <title>Emmanuel Olayiwola | Interns Profile</title>
@@ -29,9 +19,7 @@
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
 <link rel="stylesheet" type="text/css" href="styles/font-awesome.css">
 
-<script type="text/javascript" src="scripts/jquery.js"></script>
-<script type="text/javascript" src="scripts/plugins.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
+
 </head>
 
 <body>
@@ -42,7 +30,7 @@
 <div class="header-fixed header-light">
     <a href="http://hng.fun/participants.php" class="header-icon-1"> <i class="fa fa-arrow-left"></i>  Back</a>
     <a href="#!" class="header-logo"></a>
-    <a href="#!" class="header-icon-4 open-right-sidebar"> <i class="fa fa-arrow-down"></i></a>
+    <a href="#!" class="header-icon-4 open-right-sidebar"> </a>
 </div>
 
 
@@ -51,11 +39,11 @@
     <div id="page-content-scroll"><!--Enables this element to be scrolled -->
         <div class="header-clear"></div>
 
-        <div class="circle-slider no-bottom">
+        <div class=" no-bottom">
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide" style="margin:auto !important;">
-                    <img class="responsive-image scale-hover" src="images/2t.jpg" alt="img">
+                <div class="swiper-slide" style="max-height: fit-content; max-width: fit-content; margin:auto !important;">
+                    <img class="responsive-image" src="images/2t.jpg" alt="img">
                     <div class="slider-caption">
                         <h3 class="center-text">Emmanuel Olayiwola</h3>
                         <p class="center-text">Student and Technology Entrepreneur, founded <a target="blank_" href="https://homespike.com">www.homespike.com</a>!!</p>
@@ -94,11 +82,38 @@
                 <i class="fa fa-hand-peace-o"></i>
             </div>
             <div class="overlay"></div>
-            <img class="preload-image" data-original="images/1.jpg" alt="img">
+            <img src="#" class="preload-image" data-original="images/1.jpg" alt="img">
         </div>
+        <div class="decoration"></div>
+        <div class="content" style=" max-width: 500px; margin: auto;">
+           
+                <div class="container heading-style">
+                    <h4 class="heading-title">Get in touch!</h4>
+                    <i class="fa fa-envelope-o heading-icon"></i>
+                    <div class="line bg-black"></div>
+                    <p class="heading-subtitle">
+                       Send me an email.
+                    </p>
+              </div>
+        <div class = "card-form">
+          <form  action="php/contactme.php" method="post" > 
+              
+                    <input type="text" id="subject" class="contactField" name="subject" placeholder="Your Full Name">
+                    <br>
+          
+    			    <input type="email" id="to" class="contactField" name="to" placeholder="Your Email">
+    			    <br> 
 
+    			   
+    			    <textarea id="body" name="body" class="contactTextarea" placeholder="Write some subjects here" style="height:120px"></textarea>
+    			    <br>
 
-
+    			    <input type="submit" class="contactSubmitButton buttonWrap button button-green" name="process" value="Submit">
+          </form>
+        </div>
+        </div>
+        <div class="decoration"></div>
+      
 
 
         <div class="content">
@@ -114,7 +129,7 @@
         <div class="footer-clear disabled"></div>
     </div>
 
-    <a href="#" class="back-to-top-badge"><i class="fa fa-caret-up"></i>Back to top</a>
+     
 </div>
 
 

@@ -86,9 +86,9 @@ label{
    height: 200px;
 }
 #table1{
-   /*float: right;*/
-   visibility: hidden;
+   float: left;
+   /*visibility: hidden;*/
 }
 #table2{
-   float: left;
+   float: right;
 }

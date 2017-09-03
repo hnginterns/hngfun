@@ -81,7 +81,7 @@
 				padding-right: 80px;
 				text-align: center;
 			}
-			 a:link {
+			 #ai {
 			
 				color: #DAA520;
 				font-size: 20px;
@@ -148,15 +148,13 @@
 		     <h4><a id="ai" href="https://hnginterns.slack.com"><i class="fa fa-slack" aria-hidden="true"></i>stanleyokike</a></h4>
 			 <h4><a id="ai" href="https://gmail.com"> <i class="fa fa-envelope"></i>okikestan@gmail.com</h4>
              <h4><a id="ai" href="https://github.com/Stankovich96/HngInternsProject"><i class="fa fa-github" aria-hidden="true"></i>STAGE 1</a></h4>
-
+	        <h4 ><a id="ai" href="https://drive.google.com/open?id=0BwHAInmml6l2am1fQS1PcmpxMjg" target="_blank">ANDROID CONTACT APP</a></h4>
 					</p>
 				</div>
 			</div>
 
 			<div class="contact">
                 
-                    
-				       
 						    <fieldset>
                      <legend><h2>Contact form</h2></legend>
                          <form action="stanleyokike.php" method="GET">
@@ -175,8 +173,9 @@
                             </div>
                         </form>
 						</fieldset>
+					
 						</div>
-						
+						 
 				
 
 			

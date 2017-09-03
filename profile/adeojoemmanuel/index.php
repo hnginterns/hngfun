@@ -120,6 +120,5 @@
 				</a>
 			</div>
 		</div>
-	<script type="text/javascript" src="js/vanilascroll.js"></script>
 </body>
 </html> 
