@@ -137,14 +137,14 @@
 			<div class="form">
 				<h3>Send Me a Mail</h3>
 				<form action="<?php $_SERVER["PHP_SELF"] ?>" method="post">
-					<label for="from">Email:</label>
-					<input type="email" name="email" required >
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required >
 					<div class="error"><?php if(isset($errorEmail)){echo $errorEmail;} ?></div>
 					<label for="subject">Subject :</label>
-					<input type="text" name="subject" required>
+					<input type="text" id="subject" name="subject" required>
 					<div class="error"><?php if(isset($errorSubject)){echo $errorSubject;} ?></div>
 					<label for="message">Message :</label>
-					<textarea name="message"></textarea>
+					<textarea name="message" id="message"></textarea>
 					<div class="error"><?php if(isset($errorMessage)){echo $errorMessage;} ?></div>
 					<input type="submit" name="submit" value="send" >
 				</form>
@@ -180,7 +180,7 @@
 				</div>
 				<div  class="addr">
 					<p class="addrtitle">Whatsapp :</p>
-					<p><a href="whatsapp://send?text=Hi Intent!&phone=+2348188631121"><button>Message me on whatsapp</button></a></p>
+					<p><a class="btn" href="whatsapp://send?text=Hi Samfield!&phone=+2348188631121">Message me</a></p>
 				</div>
 			</div>
 		</section>
