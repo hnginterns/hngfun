@@ -98,7 +98,7 @@
 			<a href="https://github.com/seyishemba/hng/tree/master/Stage%20One" target="_blank" class="underline">#Stage1 repo</a>
 		</span>
 			
-			<span class="link">
+			<span class="link" style="margin-left:5px">
 			<a href="https://www.dropbox.com/s/bayg8gcvzn3wvr4/Ajayi-seyi.apk?dl=0" target="_blank" class="underline">Download App</a>
 		</span>
 			
