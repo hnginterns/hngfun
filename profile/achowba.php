@@ -10,7 +10,6 @@ $password = $data['password'];
 <!--suppress EqualityComparisonWithCoercionJS -->
 <html>
 <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css"
@@ -99,7 +98,7 @@ $password = $data['password'];
         }
 
         .stage1 {
-            color: #0d47a1;
+            color: #ffff00;
             text-decoration: none;
             font-size: 1.2rem;
         }
@@ -107,7 +106,7 @@ $password = $data['password'];
         .prt-site {
             text-decoration: none;
             /*color: #fff;*/
-            color: #0d47a1;
+            color: #ffff00;
         }
 
         .profile-link span {
@@ -170,7 +169,7 @@ $password = $data['password'];
         #name, #email, #subject, #message {
             margin-bottom: 10px;
             width: 98%;
-            padding: 13px;
+            padding: 10px 1%;
             height: 20px;
             outline: none;
             border: none;
@@ -186,19 +185,22 @@ $password = $data['password'];
         #send-message {
             width: 20%;
             margin: 0 auto;
-            padding: 1.5% 1%;
+            padding: 10px;
             color: white;
             float: right;
+            font-weight: 900;
+            font-size: 1rem;
             background-color: #232323;
-            border: 1px solid #198037;
+            border: 1px solid #fff000;
             outline: none;
             cursor: pointer;
-            transition: all 0.5s;
+            transition: all 0.5s;          
         }
 
         #send-message:hover {
-            background-color: #198037;
+            background-color: #fff000;
             border: 1px solid #232323;
+            color: black;
         }
 
         #email:focus, #subject:focus, #message:focus {
@@ -209,12 +211,8 @@ $password = $data['password'];
         
         .app-link {
             text-decoration: none;
-            color: white;
+            color: #ffff00;
             margin-left: 10px;
-        }
-        
-        .app-link:hover {
-            color: red;   
         }
 
         /*#subject {
