@@ -22,7 +22,8 @@
 	<script type="text/javascript">
 		// when docs is ready load data
 		$("document").ready(function (){
-			$("#results").load("class/load-data.php");
+			var data = 'catchData';
+			$("#results").load("class/load-data.php?type="+data);
 		});
 
 		// refresh data every 1 mins
