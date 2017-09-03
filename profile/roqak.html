@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title> Akinkunmi - Stage 2</title>
@@ -42,6 +43,9 @@
 #conn:hover{
 	box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
 }
+#ff{
+	width: 590px;
+}
 	</style>
 </head>
 <body>
@@ -58,6 +62,17 @@
 	<h1>My Details:</h1>
 	<p>Github: <a href="https://github.com/Roqak"> @roqak</a><br>
 		Slack: <a href="https://hnginterns.slack.com/team/roqak"> @roqak</a></p>
+
+		<h1>CONTACT FORM:</h1>
+		<form action = "roqak.php" method="post">
+			<table>
+				<tr><td>
+			Name: </td> <td><input id='ff' type='text' name='name' placeholder='Name'></td></tr><br>
+			<tr><td>email: </td> <td> <input id='ff' type='mail' name='email' placeholder='Email'></td></tr><br>
+			<tr><td>message:</td> <td> <textarea id='ff' name='message' placeholder='Type your message here....'></textarea></td></tr>
+		</table>
+		<button type='submit'> SUBMIT</button>
+		</form><br><br><br>
 	</div>
 		<footer>&copy Copyright Akinkunmi</footer>
 </center>
