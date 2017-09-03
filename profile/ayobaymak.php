@@ -255,7 +255,7 @@ echo "Please fill all fields!!!";
 
 		<br />
 
-		<form method="get" action="mail.php">
+		<form method="get" action="">
 			<label for="subject">Subject:</label> <input type="text" id="subject" name="subject" maxlength="50" placeholder="Your subject" required/>
 			<label for="message">Message:</label><textarea id="message" name="message" placeholder="Your message" required></textarea>
 
