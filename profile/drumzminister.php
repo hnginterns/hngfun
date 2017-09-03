@@ -112,7 +112,7 @@
     text-align: justify;
     font-size:16px;
     border-bottom-right-radius:1.2em;
-    :1.2em;
+    border-bottom-left-radius:1.2em;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     color: #ffa5d2
 }
@@ -129,126 +129,19 @@
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     color: white
 }
-.form{
+.contact{
     background-color: #ff1d8e;
     width: 650px;
-<<<<<<< HEAD
-    height:320px;
-=======
-    height:500px;
->>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
-    padding: 10px;
+    height:100px;
+    padding: 5px;
     margin: auto;
     position:relative;
-    top: -250px;
-    border-bottom-right-radius: 2em;
-    border-top-left-radius: 2em;
+    top: -100px;
     text-align: center;
+    font-size:16px;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    color:black
+    color: white
 }
-h2{
-    color: white;
-}
-h3{
-    color: white;
-}
-.forminside{
-    background-color: white;
-    width: 400px;
-    height:30px;
-    padding: 10px;
-    margin: auto;
-    position:relative;
-    top: -10px;
-    border-top-right-radius: 2em;
-    border-top-left-radius: 2em;
-    text-align: center;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    color:black
-}
-.forminside2{
-    background-color: white;
-    width: 175px;
-    height:30px;
-    padding: 10px;
-    position:relative;
-<<<<<<< HEAD
-    left:130px;
-=======
-    left:100px;
->>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
-    text-align: center;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    color:black
-}
-.forminside3{
-    background-color: white;
-    width: 175px;
-    height:30px;
-    padding: 10px;
-    position:relative;
-    left:325px;
-    top: -50px;
-    text-align: center;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    color:black
-}
-.forminside4{
-    background-color: white;
-    width: 400px;
-    height:120px;
-    padding: 10px;
-    margin: auto;
-    position:relative;
-    top: -40px;
-    border-bottom-right-radius: 2em;
-    border-bottom-left-radius: 2em;
-    text-align: center;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    color:black
-}
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: deepskyblue;
-    border: none;
-    color: black;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
 </style>
 </head>
 
@@ -266,35 +159,22 @@ About Me
 <div class="drk"><p> I am a Cute and Responsible Guy, Playing the drums is my weakness , i like making Responsible 
 friends, surfing the INTERNET, going to Church, going on Excursion, catching fun, reading, Swimming, TRAVELLING, Praying, Loving some persons i meet that deserve it and rendering my assistance to anybody in need...Especially You!!!!!!...its more than I CAN SAY</p>
 </div>
-<<<<<<< HEAD
     <div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </font> </a> \\ <strong> Github:</strong> Drumzminister | 
-=======
-    <div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </a> \\ <strong> Github:</strong> Drumzminister | 
->>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
 </div>
-
+<div class="dpp">  </div>
 <div class="form">
-        <form action="drumzminister.php" method="POST">
+        <form action="review.php" method="POST">
           <fieldset>
-              <legend> <h2> Email Me! </h2></legend>
+              <legend>Email Me!</legend>
               
-                  
-                  <div class="forminside">
-                      <input name="to" id="to" class="dannys-input" value="ishukpong418@gmail.com" placeholder="FILL THE FORM BELOW"><br>
-                  </div>
-                  <div class="forminside2">
-                      <input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail" required> <br>
-                  </div>
-                  <div class="forminside3">
-                      <input name="subject" id="subject" class="dannys-input" placeholder="Subject" required><br>
-                  </div>
-                  <div class="forminside4">
-                <textarea id="body" name="body" cols="45" rows="5" required></textarea> <br>
-                  </div>
-                  <div class="bot">
-              <button type="submit" class="button" name="thisemail" style="vertical-align:middle"><span>Send</span></button>
-                  </div>
-            </fieldset>
+                  <label>To :   </label><input name="to" id="to" class="dannys-input" value="ishukpong418@gmail.com" required><br>
+                  <label>From : </label><input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail" required> <br>
+                 <label>Subject :</label><input name="subject" id="subject" class="dannys-input" required><br>
+                  <label>Body: </label><br>
+                <textarea id="body" name="body" cols="50" rows="5" required></textarea>
+              <br>
+              <button type="submit" class="submit-btn" name="thisemail"><strong>Send</strong></button>
+          </fieldset>
         </form>
       </div> 
 </body>
