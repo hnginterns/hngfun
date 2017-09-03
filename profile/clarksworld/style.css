@@ -17,6 +17,12 @@ body {
   padding-left:100px;
 }
 .aboutme{
+  height: 100px;
+  width: 445px;
+padding-top:15px;
+padding-left:15px;
+  border: dotted #85C1E9;
+border-radius:5px;
 
 pdding-left:400px;
 color:#ADD8E6;
@@ -45,12 +51,15 @@ text-align: center;
 
 
 .writer-img {
+border: 7px solid black;
+border-radius:10px;
   
   width:228px;
+margin:0 auto;
 height:228px;
 
     
 }
 .details{
-padding-down:20px;
+margin-bottom:40px;
 }
