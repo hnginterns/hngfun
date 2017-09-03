@@ -132,6 +132,7 @@
                   
                   <a href="https://github.com/Vhiktordom/getting-started-h2-2017"><i class="fa fa-github"> Stage 1 </i></a><br>
                   <a href="#"><i class="fa fa-slack"> @Vhiktordom</i></a>
+                   <a href="https://drive.google.com/open?id=0Bx02to2djOrrMEVYeWdDU1I5dXc"><i class="fa fa-android"> My Android App</i></a>
                 </div>
                  <form method="POST">
             <div>

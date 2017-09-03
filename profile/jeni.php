@@ -36,13 +36,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Profile|Jeni</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style type="text/css">
             body{
-    width:auto;
-    height:auto;
+    width:auto;    height:auto;
     background-color:#DFECF6;
     text-align:center;
     font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
@@ -74,11 +73,17 @@ article{
     position: relative;
     top: 45px;
 }
-article p i a:hover{
+article p a:hover{
     color:#02F6F9;
    background: #B0E0E6;
     opacity:0.7;
 }
+article p a{ 
+    padding: 10px;
+    background-color:  #20bcd5;
+    border-radius:15px;
+    color: white;
+}          
 a {
     text-decoration: none;
 }
@@ -159,8 +164,7 @@ button[type=submit]{
 .close{
     position: absolute;
     right:30px;
-    color:#000;
-    font-size: 35px;
+    color:#000;    font-size: 35px;
     font-weight: bold;
 }
 .close:hover,
@@ -178,8 +182,7 @@ button[type=submit]{
 }
 
         </style>
-
-    </head>
+     </head>
     <body>
         <header>
             <h1><span>Jeni's Profile</span></h1>
@@ -196,11 +199,10 @@ button[type=submit]{
             <!-- a section of the artcle that gives my username-->
             <p>Slack username: Jeni<br>
                 Github username: Je-ni</p>
-            <p>Click on <i><a href= https://github.com/Je-ni/newrepo.git> ME</a></i> for the stage 1 task.</p>
-            <aside>
-                
-            </aside>
-        </article><br><br>
+            <p><a href= https://github.com/Je-ni/newrepo.git>Stage 1 task</a>
+               <a href = https://drive.google.com/file/d/0B4RsYe5Wn1hBQVA3Rk1jMUhReTQ/view?usp=drivesdk>Contact App</a></p>
+            
+          </article><br><br>
 
         <!--Modal -->
         <div id="id01" class="modal">
@@ -209,7 +211,7 @@ button[type=submit]{
             class="close" title="Close Modal">&times;</span>
 
             <!--Modal Content-->
-            <form autocomplete="off" class="modal-content animate" action="contact.php" method="POST">
+            <form autocomplete="off" class="modal-content animate" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                 <div class="container">
                     
                     <input type="text" class="input" name="fullname" placeholder="YourName" >                
@@ -218,7 +220,7 @@ button[type=submit]{
                     
                     <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
 
-                    <button type="submit">Send</button> 
+                    <button type="submit" name="send">Send</button> 
                     <button type="submit"
                     onclick="document.getElementById('id01').style.
                     display='none'" class="cancelbtn">Cancel</button>

@@ -231,6 +231,9 @@
 (225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
 (226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
 (227) Erisan Olasheni (Slack: @olasheni, Github: software202)
+<<<<<<< HEAD
+(228) Oladipo kehinde (Slack: @kehindeoladipo01), Github: kehindeoladipo)
+=======
 (228) Uche Madu (Slack: @dreemer6, Github: dreemer6)
 (229) Nwaizuzu Anthony Chukwudi (Slack: @tonychuks7, Github: naccuddi)
 (230) Erisan Olasheni (Slack: @olasheni, Github: software202)
@@ -253,3 +256,7 @@
 (244) Emem Okon, currentboy, currentboy
 (245)(Ezeoke Chiamaka)(slack: @amaka_anne, github:@amakaanne)
 (246) Aniebiet Akpan, Github: elniebiet, Slack: elniebiet 
+(247) Ikeoffiah Pius, slack:ikeoffiah, github:ikeoffiah
+>>>>>>> c06a2500ea4b59ea60e9d24f287c9d33aed9e3a2
+(247) Emmanuel Eke, slack: emmaeke, github: Passion-max
+(248) Akintola Moronfoluwa (slack: @foluwa, github: @moronfoluwa)
