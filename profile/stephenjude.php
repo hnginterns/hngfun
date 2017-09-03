@@ -56,7 +56,7 @@
          if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $subject = $_POST['subject'];
             $to  = 'stephenjudesuccess@gmail.com';
-            $body = $_POST['message'];
+            $body = $_POST['msg-body'];
 
            $config = include(dirname(dirname(__FILE__)).'/config.php');
               $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
