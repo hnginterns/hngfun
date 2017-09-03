@@ -40,13 +40,6 @@
                     </tr>
                 </thead>
                 <tbody id="display">
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                    </tr>
                     
                 </tbody>
             </table>
@@ -62,11 +55,16 @@
          type: "POST", dataType: "json", url: "class/load-data.php",
          success: function(data){
                 //var jsondata = $.parseJSON(data); // create an object with the key of the array
+             var row = "";
                 $.each(data, function(key, value) {
-                    var row = "<tr><td>"+value['type']+"</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td><td>Cell 5</td></tr>";
+                    $.each(value, function(newkey, newvalue) {
+                          row = row+"<tr><td>"+newvalue['1']+"</td><td>"+newvalue['buys']+"</td><td>"+newvalue['sales']+"</td><td>"+newvalue['difference']+"</td><td>"+newvalue['perIncrease']+"</td></tr>";
+                         
+                    });
                     $('#display').html(row);
                     console.log(value);
                  });
+              
          },
          error: function(data){
               console.log(data);
