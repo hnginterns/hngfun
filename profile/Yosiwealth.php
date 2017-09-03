@@ -267,7 +267,7 @@ padding-bottom: 30px;
 		 <p><Strong>My Android ContactApp: </Strong>
 
 
-			 <a href="https://drive.google.com/file/d/0B9U6S9S7spmUMzA5djh2OHhGMm8/view"><i>Click Here To Download</i></a>
+			 <a href="drive.google.com/file/d/0B9U6S9S7spmUMzA5djh2OHhGMm8/view"><i>Click Here To Download</i></a>
 
 
 				</p>
