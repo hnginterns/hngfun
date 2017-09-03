@@ -81,10 +81,30 @@ class Coinman
     $exe2 = $this->db->query("SELECT * FROM trade_history ORDER BY sales DESC LIMIT 5");
     $buysData = $exe->fetchAll();
     $sellsData = $exe2->fetchAll();
+    $overAllAveragePercentIncrease = $this->getAllAveragePercentIncrease();
 
-    $arr = ['buys' => $buysData, 'sales' => $sellsData];
+    $arr = [
+            'buys' => $buysData, 
+            'sales' => $sellsData,
+            'overallAveragePercentIncrease' => $overAllAveragePercentIncrease,        
+    ];
 
     $this->json_response($arr);
+  }
+  
+  
+  private function getAllAveragePercentIncrease() {
+    $exe = $this->db->query("SELECT * FROM trade_history ");
+    $trades = $exe->fetchAll(PDO::FETCH_ASSOC);
+    $nos = count($trades);
+    $totalPercentIncrease = 0;
+    foreach ($trades as $key => $value) {
+      $totalPercentIncrease = $totalPercentIncrease + $value['perIncrease'];
+    }
+
+    $avg = $totalPercentIncrease / $nos;
+
+    return ($avg > 0) ? $avg : (-1 * $avg);
   }
 
   private function saveCoinData($coinData) {
@@ -148,6 +168,6 @@ class Coinman
   {
     header('Content-type: application/json');
     $jsonData = json_encode($data);
-    echo $jsonData;
+    return $jsonData;
   }
 }
