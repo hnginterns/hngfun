@@ -38,7 +38,11 @@ $json = $cm->runCoinMan();
 					          <th>Number of Sells</th>
 					          <th>Diffrence</th>
 					          <th>$ Percent Change</th>
+<<<<<<< HEAD
 >>>>>>> 0aa00fb6e0cd7410e81d4aeb69a13c501b4d7d82
+=======
+>>>>>>> 0efc801c25bd4871ef202e84a673e3854de5506a
+>>>>>>> e600758e4bb1267864f2c72d18866b205eda6284
 					          <th>Pointer</th>
 					          <th>Summary</th>
 					        </tr>

@@ -26048,7 +26048,28 @@ include('participants-head.php');
             </div>
         </div>
 <!--  Each Participants ends here  -->
-
+<!--  Each Participant starts here  -->
+                        <div class="p-card">
+                            <div class="v-center">
+                                <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/21105692_1789938437702588_2039611269563020598_n.jpg?_nc_eui2=v1%3AAeELBWEsIVmuUYg34mXqWpzoiDSQQzGXK1SJtF-DAdYUtW1I4sPhcZKkQRc2ExG1xASREw5dkxLW5gY5Fs5IfY8XiJuuI3SROVOVRTJ1-ljqqA&oh=f3b62cb1a86651328b84c358803f97b0&oe=5A263493); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                <div class="p-card-info">
+                                    <a href="http://hng.fun/profile/tessal">
+                                        <!--Profile Link-->
+                                        <h3 class="p-card-title">Salako Teslim</h3>
+                                        <!--Profile Name-->
+                                    </a>
+                                    <p class="p-card-description">tescointsite@gmail.com</p>
+                                    <!--Email-->
+                                </div>
+                                <div class="p-team">
+                                    <a href="#">
+                                        <h3 class="p-card-title"> NONE </h3>
+                                        <!--Team-->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Each Participants ends here  -->
 
 <?php include "footer.php"?>
 >>>>>>> 17fd2374bb7267dcda8eb02fc5cc08b023009c2c
