@@ -515,3 +515,4 @@
 (248) Akintola Moronfoluwa (slack: @foluwa, github: @moronfoluwa)
 (249)Omobolaji Adediran, omobolajimary,omobolajimary
 >>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
+(250) Baruwa Fadhlu-rahman Ayoku. (slack:@baruwa123, githib:@baruwa123)
