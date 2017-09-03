@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <html>
 <head>
     <title>HNG Internship | Home</title>
@@ -79,7 +79,7 @@
 
 
 <?php include('footer.php'); ?>
-=======
+
 <html>
 <head>
     <title>HNG Internship | Home</title>
