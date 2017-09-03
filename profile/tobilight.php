@@ -279,7 +279,19 @@ fieldset {
 :-ms-input-placeholder {
  color:#888;
 }
-
+		
+.android {
+	display: inline-block;
+	padding: 3px 5px;
+    border-radius: 16px;
+    letter-spacing: 1px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+.android img {
+	width: 24px;
+	height: 24px;
+}
 
 	</style>
 </head>
@@ -307,6 +319,9 @@ fieldset {
 						</a>
 						
 					</div>
+				</br>
+				<div class="android"><a href="https://drive.google.com/file/d/0B4wDCnzajGoleThXbnl1eTc2Nmc/view" target="_blank" style="text-decoration:none">Android App<img src="https://png.icons8.com/download/color/24" title="Download" width="24" height="24"></a></div>
+		
 
 					<div class="about">
 						<h2>About Me</h2>
