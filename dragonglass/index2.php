@@ -122,8 +122,7 @@
                  });
          },
          error: function(data){
-               var json = $.parseJSON(data);
-               alert(json.error);
+              console.log(data);
             }
         });
     </script>
