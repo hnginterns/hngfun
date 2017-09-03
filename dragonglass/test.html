@@ -15,69 +15,23 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<section>
-					<!--for demo wrap-->
-					  <h1>DragonGlass</h1>
-					  <div class="tbl-header">
-					    <table cellpadding="0" cellspacing="0" border="0">
-					      <thead>
-					        <tr>
-					          <th>S/N</th>
-					          <th>Currency Pairs</th>
-					          <th>Buy</th>
-					          <th>Sell</th>
-					          <th>Pointer</th>
-					          <th>Examination</th>
-					        </tr>
-					      </thead>
-					    </table>
-					  </div>
-					  <div class="tbl-content">
-					    <table cellpadding="0" cellspacing="0" border="0">
-					      <tbody>
-					        <tr>
-					          <td>1</td>
-					          <td>test</td>
-					          <td>BTC_TEST</td>
-					          <td>+2.01</td>
-					          <td><i class="fa fa-chevron-up" style="color:green;"></i> -0.36%</td>
-					          <td>increases in trade in the last 5mins</td>
-					          
-					        </tr>
-					        <tr>
-					          <td>2</td>
-					          <td>test</td>
-					          <td>BTC_TEST</td>
-					          <td>-0.01</td>
-					          <td><i class="fa fa-chevron-down" style="color:red;"></i> -1.36%</td>
-					          <td>Decreases in trade in the last 5mins</td>
-					          
-					        </tr>
-					        <tr>
-					          <td>3</td>
-					          <td>test</td>
-					          <td>BTC_TEST</td>
-					          <td>+0.01</td>
-					          <td><i class="fa fa-chevron-up" style="color:green;"></i> +1.36%</td>
-					          <td>increases in trade in the last 5mins</td>
-					          
-					        </tr>
-					        <tr>
-					          <td>4</td>
-					          <td>test</td>
-					          <td>BTC_TEST</td>
-					          <td>-1.01</td>
-					          <td><i class="fa fa-chevron-up" style="color:green;"></i> +2.36%</td>
-					          <td>increases in trade in the last 5mins</td>
-					          
-					        </tr>
-					      </tbody>
-					    </table>
-					  </div>
-				</section>
+				<div id="results"></div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		// when docs is ready load data
+		$("document").ready(function (){
+			$("#results").load("class/load-data.php");
+		});
+
+		// refresh data every 1 mins
+		var refreshData = function (){
+			$("#results").load("class/load-data.php");
+		}
+		// onload fresh data
+		window.setInterval(refreshData, 1000 * 60);
+	</script>
 </body>
 </html>
 
