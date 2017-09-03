@@ -26026,6 +26026,29 @@ include('participants-head.php');
         </div>
 <!--  Each Participants ends here  -->
 
+<!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://avatars1.githubusercontent.com/u/30692180?v=4&u=b7ee8f2fc91c2f389bd58fa06c430db35af912e9&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/roqak.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Olunloye Akinkunmi</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">roqak1@gmail.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> NONE </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+<!--  Each Participants ends here  -->
+
 
 <?php include "footer.php"?>
 >>>>>>> 17fd2374bb7267dcda8eb02fc5cc08b023009c2c
