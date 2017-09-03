@@ -14,7 +14,7 @@ $cm->runCoinMan();
 $json = $cm->loadData();
 
 //$json = json_encode($json);
-$json = json_decode($json, TRUE);
+//$json = json_decode($json, TRUE);
 ?>
 
 <section>
