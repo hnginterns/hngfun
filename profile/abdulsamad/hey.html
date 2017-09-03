@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" href = "style.css">
+
+  </head>
+  <body>
+    <div id = "table-div">
+      <table>
+        <thead>
+          <tr>
+            <th>Buys</th>
+            <th>Sales</th>
+            <th>overall Average Percent Increase</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  <script type = "text/javascript" src = "jquery.js"></script>
+  <script type = "text/javascript">
+    $.getJSON("http://hng.fun/dragonglass/class/load-data.php", function(data){
+      var items = [];
+      $.each(data, function(key, val){
+        items.push("<li id = '" + key +"'>" + val + "</li");
+        $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+      });
+    });
+  </script>
+  </body>
+</html>
