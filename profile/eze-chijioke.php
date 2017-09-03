@@ -12,7 +12,7 @@
         $data = $result->fetch();
         $password = $data['password'];
         $subject = $_POST['subject'];
-        $body = $_POST['message'];
+        $body = $_POST['massege'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=ezecejay1@gmail.com");
 	
     }else{
