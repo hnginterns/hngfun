@@ -187,9 +187,6 @@
 				</p>
 				<p>Catch me on Slack : 	<a href="https://hnginterns.slack.com/team/iyfe"> @iyfe</a> </p>
 				<p> My first task : <a href="https://github.com/iyfe/HNGInternship/blob/master/helloworld.php" class="button">Stage#1</a></p>
-
-        <p> Download My contact App: <a href="https://drive.google.com/drive/folders/0B4e4ri7wvyyAbVhOMDRBYmNjNUE?usp=sharing" class="button">Stage#1</a></p>
-
         <p> Download My contact App: <a href="https://drive.google.com/drive/folders/0B4e4ri7wvyyAbVhOMDRBYmNjNUE?usp=sharing" class="button">Download App</a></p>
 
 		</div>
