@@ -1,21 +1,21 @@
 <?php
-   	$admin_email = "xyluz@gmail.com";
-  if($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $admin_email = "xyluz@ymail.com";
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = ""; 
     $successMessage = "";
-    $name = $_GET['name'];
     $to  = 'officialanoti@gmail.com';
-    $subject = $_GET['subject'];
-    $message = $_GET['message'];
-    $email = $_GET["email"];
-  	if (!$email) {
-        $error .= "Please enter your email address.<br>";
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $email = $_POST["email"];
+    $name = $_POST['name'];
+    if (!$email) {
+        $error .= "An email address is required.<br>";
     }
     if (!$message) {
-        $error .= "Th message field cannot be empty.<br>";
+        $error .= "The content field is required.<br>";
     }
     if (!$subject) {
-        $error .= "Please enter a subject.<br>";
+        $error .= "The subject is required.<br>";
     }
     if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
         $error .= "The email address is invalid.<br>";
@@ -24,7 +24,7 @@
         $error = '<p>There were error(s) in your form:</p>' . $error;
     }else{
 	    if(empty($error)) {
-	      $config = include('../../config.php');
+	      $config = include('../config.php');
 	      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	      $con = new PDO($dsn, $config['username'], $config['pass']);
 	      $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -34,9 +34,12 @@
 	      header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
 	    }
 	}
-  }
- ?>
-
+  }else {
+            // enter mail subject and message to send mail
+            echo " ";
+        }
+ ?>  
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -153,11 +156,11 @@ buttons {
 </style>
 
 <div class="card">
-  <img src="me.jpg" alt="Raymond" height = "500px" style="width:100%">
+  <img src="http://res.cloudinary.com/dwdc0kcsk/image/upload/v1504470233/IMG_20170814_052224_bc0yzz.jpg" alt="Raymond" height = "500px" style="width:100%">
   <div class="container">
     <h1>Raymond Blessed</h1>
     <p class="title">Hi!, I am a young Lagosian with an interest in tech especially programming, I am so happy to be a part of this HNG internship and hope to learn alot as I go along.</p>
-    <a href='http://bit.ly/2wwZv6q'>See My Android App</a>
+    <a href='http://bit.ly/2wwZv6q'>See My Android App</a> <br />
     <a href="#"><i class="fa fa-github"></i></a>
     <a href="#"><i class="fa fa-twitter"></i></a>
     <a href="#"><i class="fa fa-slack"></i></a>
