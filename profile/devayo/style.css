@@ -125,6 +125,10 @@ img {
   color: #4078c0;
 }
 
+.fa-android:hover {
+  color: lightgreen;
+}
+
 .fa-slack:hover {
   color: #e01563;
 }
