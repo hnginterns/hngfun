@@ -13,6 +13,7 @@ if(isset($_POST['submitbtn'])) {
       $password = $data['password'];
       $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       header("location: $uri");
+}
 ?>
 
 <!DOCTYPE html>
