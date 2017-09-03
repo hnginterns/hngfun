@@ -83,9 +83,6 @@
               width: 50%;
             }
 
-
-
-
             h2 {
               text-transform: uppercase;
               color: ddd;
@@ -222,7 +219,5 @@
 </div>
 
 </body>
-
-</html>
 
 </html>
