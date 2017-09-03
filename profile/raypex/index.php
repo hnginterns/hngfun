@@ -47,21 +47,18 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	 <p> <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> You can download my android app here </a></p>
 	<p> Slack username: raypex </p>
-<<<<<<< HEAD
+
 	<p> My stage 1 test project is <a href="https://github.com/raypex/hngtest">here</a> </p> <p>  <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> Download My Android App Here</a></p>
-=======
 
-	<p> My stage 1 test project is <a href="https://github.com/raypex/hngtest">here</a> </p>
-
->>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
     <div style="margin: 24px 0;">
-      <a href="http://www.github.com/raypex"><i class="fa fa-github"></i></a> 
-      <a href="http://www.twitter.com/dear_ray"><i class="fa fa-twitter"></i></a> 
+      <a href="http://www.github.com/raypex"><i class="fa fa-github"></i></a>
+      <a href="http://www.twitter.com/dear_ray"><i class="fa fa-twitter"></i></a>
    </div>
-	  
+    <a href="https://drive.google.com/file/d/0BzOmXkPnTgXSZ1NfVHdvODlyVEk/view?usp=drivesdk"> Download My Android App Here</a>
+
   </div>
-  
-  
+
+
   <h3>Contact Me</h3>
 
 <div class="container">
