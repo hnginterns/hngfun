@@ -7,5 +7,5 @@ $config = include('config.php');
 $cm = new Coinman($config['api_key'], $config['api_secret']);
 
 // We Run CoinMan
-$cm->runCoinMan();
+echo $cm->runCoinMan();
 ?>
