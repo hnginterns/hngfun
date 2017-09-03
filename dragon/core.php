@@ -79,7 +79,7 @@ for ($i = 0; $i < 10; $i++) {
 		  <h2>'.$bigger['coin'].'<br>
 		  <small> '.$bigger['total_buy'].' Bids | '.$bigger['total_sell'].' Asks</small></h2>
 		  <div class="progress">
-		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggerPercent.'%">
+		    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$biggerPercent.'%">
 		      <span class="sr-only">'.$biggerPercent.'% Complete</span>
 		    </div>
 		  </div>
@@ -91,7 +91,7 @@ for ($i = 0; $i < 10; $i++) {
 		  <h2>'.$big['coin'].'<br>
 		  <small> '.$big['total_buy'].' Bids | '.$big['total_sell'].' Asks</small></h2>
 		  <div class="progress">
-		    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$bigPercent.'%">
+		    <div class="progress-bar  progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:'.$bigPercent.'%">
 		      <span class="sr-only">'.$bigPercent.'% Complete</span>
 		    </div>
 		  </div>
