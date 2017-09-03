@@ -1,49 +1,54 @@
 <?php
 
-if (isset($_GET['body']) && isset($_GET['subject'])) {
-  $email = "fabrobocomx@gmail.com";//$_GET['to'];
-  $subject = $_GET['subject'];
-  $body = $_GET['body'];
+if (isset($_GET['submit'])) {
+
+    if (isset($_GET['body']) && isset($_GET['subject'])) {
+        $email = "fabrobocomx@gmail.com";//$_GET['to'];
+        $subject = $_GET['subject'];
+        $body = $_GET['body'];
+    } else {
+        die("Invalid request. Please try again");
+    }
+
+
+    // DB connection
+    $config = include('../../config.php');
+    // $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    // $con = new PDO($dsn, $config['username'], $config['pass']);
+
+    //var_dump($config);
+    $db_name = $config["dbname"];
+    $db_pass = $config["pass"];
+    $db_username = $config["username"];
+    $db_host = $config["host"];
+    //var_dump($db_name.$db_pass.$db_username.$db_host);
+    $db = new mysqli($db_host, $db_username, $db_pass, $db_name);
+
+    if ($db->connect_errno) {
+    // trigger_error('Connection Failed!', E_USER_ERROR);
+    die("Connection failed ". $db->connect_error);
+    }
+
+    // Fetch password from DB
+    $query = $db->query('SELECT * FROM password LIMIT 1');
+    $data = $query->fetch_assoc();
+    $password = $data['password'];
+
+
+    $query_string = http_build_query(array('password' => $password, 'subject' => $subject, 'body' => $body, 'to' => $email));
+    $result = file_get_contents('http://hng.fun/sendmail.php?'. $query_string);
+
+    if ($result != false) {
+
+    header("Location: http://hng.fun/profile/timolin/timolin.php?message=Email was Sent Successfully");
+    exit();
+    
+    } else {
+    die("Something went wrong");
+    }
 } else {
-  die("Invalid request. Please try again");
+
 }
-
-// DB connection
-$config = include('../../config.php');
-// $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-// $con = new PDO($dsn, $config['username'], $config['pass']);
-
-//var_dump($config);
-$db_name = $config["dbname"];
-$db_pass = $config["pass"];
-$db_username = $config["username"];
-$db_host = $config["host"];
-//var_dump($db_name.$db_pass.$db_username.$db_host);
-$db = new mysqli($db_host, $db_username, $db_pass, $db_name);
-
-if ($db->connect_errno) {
-  // trigger_error('Connection Failed!', E_USER_ERROR);
-  die("Connection failed ". $db->connect_error);
-}
-
-// Fetch password from DB
-$query = $db->query('SELECT * FROM password LIMIT 1');
-$data = $query->fetch_assoc();
-$password = $data['password'];
-
-
-$query_string = http_build_query(array('password' => $password, 'subject' => $subject, 'body' => $body, 'to' => $email));
-$result = file_get_contents('http://hng.fun/sendmail.php?'. $query_string);
-
-if ($result != false) {
-
-   header("Location: http://hng.fun/profile/timolin/timolin.php?message=Email was Sent Successfully");
-   exit();
-  
-} else {
-  die("Something went wrong");
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -217,7 +222,7 @@ body {
                             <div class="inputs">
                            <p> <input type="text" class="form-input" name="subject" required="required" placeholder="Subject"></p>
                                 <textarea name="body" id="message" required="required" class="form-input" rows="8" placeholder="Message"></textarea>
-                                <button type="submit" class="">Send Message</button>
+                                <button type="submit" name="submit" class="">Send Message</button>
                             </div>
                             <!-- <div class="">
                                 <button type="submit" class="">Send Message</button>
