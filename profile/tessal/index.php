@@ -55,6 +55,7 @@ $dbc = mysqli_connect($config['host'],$config['username'],$config['pass'],$confi
           <a  href="https://hnginterns.slack.com/team/tessal"><i class="fa fa-slack"></i> tessal</a>
                     <a  href="https://github.com/hnginterns/hngfun/commit/0efc801c25bd4871ef202e84a673e3854de5506a"><i class="fa fa-github"></i> #Stage-1</a>
                   <a  href="mailto:tescointsite@gmail.com"><i class="fa fa-envelope"></i> tescointsite@gmail.com</a>
+                  <a href="http://app.appsgeyser.com/5580744/Tes%20Sal">Download App</a>
           <div class="container">
             
            <form action="" method="post" >
