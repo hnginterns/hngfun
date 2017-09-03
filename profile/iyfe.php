@@ -1,14 +1,14 @@
 <?php
     $admin_email = "xyluz@ymail.com";
 
-  if($_SERVER['REQUEST_METHOD'] == 'GET') {
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = ""; 
     $successMessage = "";
     $to  = 'icukachuk@gmail.com';
-    $subject = $_GET['subject'];
-    $message = $_GET['message'];
-    $email = $_GET["email"];
-    $name = $_GET['name'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $email = $_POST["email"];
+    $name = $_POST['name'];
 
     if (!$email) {
 
@@ -196,7 +196,7 @@
 		<div class="right-half">
 			<div class="form_container">
 				<div class="login-box animated fadeInUp">
-					<form method="GET" >
+					<form method="POST" >
 						<div class="box-header">
 						<h2>Contact Form</h2>
 						</div>
