@@ -166,7 +166,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                             I love to read, I love art, I love simplicity. 
                         <br><br>
                         <a class="button" href="http://github.com/mofopeojosh/hngintern-1">Stage 1</a>
-                        <a class="button" href="#" style="margin-left: 20px;">My App</a>
+                        <a class="button" href="https://drive.google.com/open?id=0B6s5GMHXG-9hQ2h0a0tqdFVYOWs" style="margin-left: 20px;">My App</a>
                         
                     </div>
                 </div>
