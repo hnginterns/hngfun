@@ -1,6 +1,6 @@
 <?php
 
-if($_SERVER['REQUEST_METHOD'] == 'submitbtn') {
+if(isset($_POST['submitbtn']) {
     $error = [];
     $subject = $_POST['subject'];
     $to  = 'stephenjudesuccess@gmail.com';
