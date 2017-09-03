@@ -56,7 +56,7 @@ class Coinman
         $newDifference = $buys - $sales;
       
         $increase = $newDifference - $oldDifference;
-        $percenIncrease = ($increase/$oldDifference) * 100;
+        $percentIncrease = ($increase/$oldDifference) * 100;
         $coinData = [
                     $coin,
                     $buys,
