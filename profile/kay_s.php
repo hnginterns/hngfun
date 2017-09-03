@@ -189,6 +189,7 @@
                             <?php endif; ?>
                         </form>
                     </div>
+                    <a href="https://drive.google.com/open?id=0B0CcH2PubiCUTHYwRDZPRWl0UXM">Click here to download Android app</a>
                     
             </div>      
     </body>

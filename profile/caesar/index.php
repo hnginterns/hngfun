@@ -18,14 +18,15 @@
 		<title>Omojola Samson's profile</title>
 	</head>
 	<body>
-			<img src="https://www.dropbox.com/s/fo29a10g6bw60rr/dp2.jpeg?dl=0" alt="profile picture of Omojola Samson">
+
+			<img src="https://photos-3.dropbox.com/t/2/AAA-vROcs0OaLNQv7atzqeqpVqbkVPlSVcrPTy_Z5z0wfg/12/299107697/jpeg/32x32/1/_/1/2/dp2.jpeg/EM2XyqMCGA4gBygH/AtbTNS8XLuUnhQ1EPHmlb5Zlt6iqgIIVYOsth6BpoQg?size=1280x960&size_mode=3" alt="profile picture of Omojola Samson">
 		<p class="paragraph">
 			Name: Omojola Samson Ade<br>
 			Slack Username: caesar<br>
 			<span class="bio">Biography: My name is Omojola Samson. I'm a tech enthusiast.<br> I'm currently in 500 level, University of Ilorin,<br> studying
 			Electrical Engineering.</span><br>
 			<a href="https://github.com/omojolasamson/hngstage1">Stage One Result? Click here.</a><br>
-			<a href="https://github.com/omojolasamson/hngstage1">Click here to download my android app.</a><br>
+			<a href="https://www.dropbox.com/s/yas37ygt00l4num/hngApp.apk?dl=0">Click here to download my android app.</a><br>
 		</p>
 	
 			<form method="get" action="../../sendmail.php">

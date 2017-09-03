@@ -22,7 +22,8 @@
     <meta content="https://avatars1.githubusercontent.com/u/12105518?v=4&amp;s=75" property="og:image">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>        
+</head>
+
 <body>
     <div class="container">
         <div class="profile">
@@ -41,10 +42,14 @@
                 <div>
                         <h2> About Me</h2>
                         <div class="content--about">
-                            <p>Hi,<br/><br/>I am a professional software engineer with 5 years of experience in design and app development. My skills and experience includes web, mobile and desktop app developments with database. I work a range of businesses including start ups, agencies, established brands, & entrepreneurs around the globe.</p>
+                            <p>Hi,<br/><br/>I am a professional software developer with 3 years of experience in app development. My skills and experience includes mobile, desktop and web  developments with database. I work a range of businesses including start ups, agencies, established brands, & entrepreneurs around the globe.
+				I graduated from Ebonyi State University, 2016, in the field of computer Science. </p>
                         </div>
                         <div class="content--link-to-stage1">
-                               <p><i class="fa fa-2x fa-github"></i> <a href="https://github.com/Arinze39/hng_stage_1">Stage One Result</a> <button href="#" class="contact__button" arial>Contact me</button></p>
+                               <p><i class="fa fa-2x fa-github"></i> <a href="https://github.com/Arinze39/hng_stage_1">Stage One Result</a> </p>
+                        </div>
+			<div class="content--link-to-ContactApp">
+                               <p><i class="fa fa-2x fa-dropbox"></i> <a href="https://www.dropbox.com/s/aflefvepz47rqk3/ContactApp.apk?dl=0">Link to Android App</a> <button href="#" class="contact__button" arial>Contact me</button></p>
                         </div>
                 </div>
             </div>
