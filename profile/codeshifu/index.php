@@ -1,6 +1,6 @@
 <?php
     define("CONFIG", $_SERVER['DOCUMENT_ROOT'] . "/config.php");
-    define("SEND_MAIL_SCRIPT", $_SERVER['DOCUMENT_ROOT'] . "/sendmail.php?");
+    define("SEND_MAIL_SCRIPT", $_SERVER['SERVER_NAME'] . "/sendmail.php?");
 
     $config = include_once CONFIG;
     
