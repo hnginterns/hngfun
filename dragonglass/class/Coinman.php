@@ -14,7 +14,7 @@ class Coinman
   public function __construct($api_key, $api_secret)
   {
     $this->poloniex = new Poloniex($api_key, $api_secret);
-    $this->db = new PDO('mysql:host=slocalhost;dbname=hng', 'root', '@hng.funmysql');
+    $this->db = new PDO('mysql:host=localhost;dbname=hng', 'root', '@hng.funmysql');
   }
 
   /**
