@@ -114,7 +114,7 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script>
        $.ajax({
-         type: "POST", dataType: "json", url: "class/load-data.php", data: "action=loadall&id=" + id,
+         type: "POST", dataType: "json", url: "class/load-data.php",
          success: function(data){
                 var jsondata = $.parseJSON(data); // create an object with the key of the array
                 $.each(jsondata, function(key, value) {
