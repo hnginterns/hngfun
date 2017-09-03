@@ -28,10 +28,10 @@ $json = $cm->runCoinMan();
 					        <tr>
 					          <th>S/N</th>
 					          <th>Currency Pairs</th>
-					          <th>Number Buys</th>
-					          <th>Number of Sells</th>
+					          <th>No. Buys</th>
+					          <th>No. Sells</th>
 					          <th>Diffrence</th>
-					          <th>$ Percent Change</th>
+					          <th>% Change</th>
 					          <th>Pointer</th>
 					          <th>Summary</th>
 					        </tr>
@@ -63,8 +63,8 @@ $json = $cm->runCoinMan();
 					    echo '<td>'.$sub_array["pair"].'</td>';
 					    echo '<td>'.$sub_array["buys"].'</td>';
 					    echo '<td>'.$sub_array["sales"].'</td>';
-					    echo '<td>'.$sub_array["difference"].'% </td>';
-					    echo '<td>'.$sub_array["perIncrease"].'</td>';
+					    echo '<td>'.$sub_array["difference"].' </td>';
+					    echo '<td>'.$sub_array["perIncrease"].'% </td>';
 					    echo '<td>'.$pointer.'</td>';
 					    echo '<td>'.$examination.'</td>';   
 					    echo '</tr>';
