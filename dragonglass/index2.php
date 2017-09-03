@@ -62,14 +62,16 @@
          type: "POST", dataType: "json", url: "class/load-data.php",
          success: function(data){
                 //var jsondata = $.parseJSON(data); // create an object with the key of the array
+             var row = "";
                 $.each(data, function(key, value) {
                     $.each(value, function(newkey, newvalue) {
-                          var row = "<tr><td>"+newvalue['buys']+"</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td><td>Cell 5</td></tr>";
-                          $('#display').html(row);
-                          console.log(newvalue);
+                          row = row+"<tr><td>"+newvalue['buys']+"</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td><td>Cell 5</td></tr>";
+                         
                     });
                     
                  });
+              $('#display').html(row);
+              console.log(row);
          },
          error: function(data){
               console.log(data);
