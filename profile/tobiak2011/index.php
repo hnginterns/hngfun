@@ -62,7 +62,7 @@
                         <input type="submit" name="submit" value="Submit">`
               
               </form> <br />
-              <p>download my mobile call card <a href="hngfun/profile/tobiak2011/com.example.progtobi.hngtobiak2011call[1].apk">here</a></p>
+              <p>download my mobile call card <a href="com.example.progtobi.hngtobiak2011call[1].apk">here</a></p>
             </div>
         </div>
     </body>
