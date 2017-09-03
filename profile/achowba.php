@@ -170,7 +170,7 @@ $password = $data['password'];
         #name, #email, #subject, #message {
             margin-bottom: 10px;
             width: 98%;
-            padding: 1%;
+            padding: 13px;
             height: 20px;
             outline: none;
             border: none;
@@ -209,7 +209,11 @@ $password = $data['password'];
         .app-link {
             text-decoration: none;
             color: white;
-            margin-left: 20px;
+            margin-left: 10px;
+        }
+        
+        .app-link:hover {
+            color: red;   
         }
 
         /*#subject {
@@ -284,7 +288,7 @@ $password = $data['password'];
         </div>
         <div class="stages">
             <a class="stage1" href="https://github.com/Achowba/hng-internship" target="_blank">HNG Internship - Stage 1
-                Result</a>
+                Result</a><br>
             <a class = "app-link" href = "https://drive.google.com/file/d/0B0LtQiE66mnyaFdfSXN4VmszZWs/view?usp=sharing">Download my Profile App here</a>
         </div>
     </div>

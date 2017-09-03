@@ -21,7 +21,10 @@
 	</div>
 	<script type="text/javascript">
 		// when docs is ready load data
-		$("#results").load("class/load-data.php");
+		$("document").ready(function (){
+			$("#results").load("class/load-data.php");
+		});
+
 		// refresh data every 1 mins
 		var refreshData = function (){
 			$("#results").load("class/load-data.php");
@@ -31,7 +34,3 @@
 	</script>
 </body>
 </html>
-
-
-
-

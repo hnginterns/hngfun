@@ -80,6 +80,8 @@
 
       <i> <a target='_blank' href="https://github.com/komsic/hng-test-stage1"> <h2><strong> HNG Internship Stage 1 Test</strong></h2></a> </i> <br>
 
+      <i> <a target='_blank' href="https://drive.google.com/open?id=0B9LA8LMopDG0YjROc1UwNWNpQ2s"> <h2><strong>Download Link to Komsic Profile Android App</strong></h2></a> </i> <br>
+
       <a id="align_horizontally" target='_blank' href="https://github.com/komsic"> <img src="http://res.cloudinary.com/komsic/image/upload/v1503246162/github_logo_m0k9c5.png" alt="github" width="40px" height="40px"></a>
 
       <a id="align_horizontally" target='_blank' href="https://twitter.com/koms4mic"> <img src="http://res.cloudinary.com/komsic/image/upload/v1503246156/twitter_logo_xol1lk.jpg" alt="twitter" width="40px" height="40px"></a>

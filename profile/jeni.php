@@ -199,8 +199,13 @@ button[type=submit]{
             <!-- a section of the artcle that gives my username-->
             <p>Slack username: Jeni<br>
                 Github username: Je-ni</p>
+<<<<<<< HEAD
             <p><a href= https://github.com/Je-ni/newrepo.git>Stage 1 task</a>
                <a href = https://drive.google.com/file/d/0B4RsYe5Wn1hBdDJmRTNNdTZWYUE/view?usp=drivesdk>Contact App</a></p>
+=======
+            <p><a href= "https://github.com/Je-ni/newrepo.git">Stage 1 task</a>
+               <a href = "https://drive.google.com/file/d/0B4RsYe5Wn1hBdDJmRTNNdTZWYUE/view?usp=drivesdk">Contact App</a></p>
+>>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
             
           </article><br><br>
 
@@ -221,9 +226,13 @@ button[type=submit]{
                     <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
 
                     <button type="submit" name="send">Send</button> 
+<<<<<<< HEAD
                     <button type="submit"
                     onclick="document.getElementById('id01').style.
                     display='none'" class="cancelbtn">Cancel</button>
+=======
+                    
+>>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
                 </div>
 
             </form>

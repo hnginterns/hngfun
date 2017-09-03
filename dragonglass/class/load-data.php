@@ -8,14 +8,11 @@ require('Coinman.php');
 $cm = new Coinman($config['api_key'], $config['api_secret']);
 
 // We Run CoinMan
-$cm->runCoinMan();
+$json = $cm->runCoinMan();
 
-// get request from the home page query 
-if(isset($_GET['data'])){
-	// this pages only return loaded json
-	$load_data = $cm->loadData();
+// decode json 
+// $json = $cm->loadData();
+// $json = json_decode($json, TRUE);
 
-	// if the data is already in Json decode it
-	echo json_decode($load_data);
-}
+// print_r($json);
 ?>

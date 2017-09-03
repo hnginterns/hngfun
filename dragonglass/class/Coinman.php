@@ -50,15 +50,30 @@ class Coinman
         $tradeData = $this->poloniex->get_trade_history($coin);
         $sales = $this->countTransaction($tradeData, 'sell');
         $buys = $this->countTransaction($tradeData, 'buy');
+      
+        $oldDifference = $this->getOldTransaction($coin, 'difference');
+        
+        $newDifference = $buys - $sales;
+      
+        $increase = $newDifference - $oldDifference;
+        $percentIncrease = $oldDifference != 0 ? ($increase/$oldDifference) * 100 : 0;
         $coinData = [
                     $coin,
                     $buys,
                     $sales,
+                    $newDifference,
+                    $percentIncrease,
         ];
 
         $this->saveCoinData($coinData);
     }
 
+  }
+  
+  private function getOldTransaction($pair, $type) {
+    $previousData = $this->db->query("SELECT $type FROM trade_history WHERE pair = '$pair' LIMIT 1");
+    $previousData = $previousData->fetch()[$type];
+    return $previousData;
   }
 
   public function loadData() {
@@ -66,17 +81,39 @@ class Coinman
     $exe2 = $this->db->query("SELECT * FROM trade_history ORDER BY sales DESC LIMIT 5");
     $buysData = $exe->fetchAll();
     $sellsData = $exe2->fetchAll();
+    $overAllAveragePercentIncrease = $this->getAllAveragePercentIncrease();
 
-    $arr = ['buys' => $buysData, 'sales' => $sellsData];
+    $arr = [
+            'buys' => $buysData, 
+            'sales' => $sellsData,
+            'overallAveragePercentIncrease' => $overAllAveragePercentIncrease,        
+    ];
 
     $this->json_response($arr);
+  }
+  
+  
+  private function getAllAveragePercentIncrease() {
+    $exe = $this->db->query("SELECT * FROM trade_history ");
+    $trades = $exe->fetchAll(PDO::FETCH_ASSOC);
+    $nos = count($trades);
+    $totalPercentIncrease = 0;
+    foreach ($trades as $key => $value) {
+      $totalPercentIncrease = $totalPercentIncrease + $value['perIncrease'];
+    }
+
+    $avg = $totalPercentIncrease / $nos;
+
+    return ($avg > 0) ? $avg : (-1 * $avg);
   }
 
   private function saveCoinData($coinData) {
     $coin = $coinData[0];
     $buys = $coinData[1];
     $sales = $coinData[2];
-    $e = $this->db->query("UPDATE trade_history SET buys = '$buys', sales= '$sales' WHERE pair = '$coin'");
+    $diff = $coinData[3];
+    $perIncrease = $coinData[4];
+    $e = $this->db->query("UPDATE trade_history SET buys = '$buys', sales= '$sales', difference = '$diff', perIncrease = '$perIncrease' WHERE pair = '$coin'");
     if(!$e) {
      //echo  $this->db->errorInfo()[2];
       //exit;
@@ -130,7 +167,7 @@ class Coinman
   public function json_response($data)
   {
     header('Content-type: application/json');
-    echo json_encode($data);
+    $jsonData = json_encode($data);
+    echo $jsonData;
   }
-
 }
