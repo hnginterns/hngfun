@@ -68,10 +68,10 @@
                           row = row+"<tr><td>"+newvalue['buys']+"</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td><td>Cell 5</td></tr>";
                          
                     });
-                    
+                    $('#display').html(row);
+                    console.log(row);
                  });
-              $('#display').html(row);
-              console.log(row);
+              
          },
          error: function(data){
               console.log(data);
