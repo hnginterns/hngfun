@@ -84,7 +84,7 @@
 
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="img-responsive" src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/21192347_111619372864201_4174204081189570107_n.jpg?oh=c8fdf5bb1028b177206af3d5d1347f04&oe=5A564A3A" alt="godfred">						
+					<img class="img-responsive" src="http://res.cloudinary.com/archer/image/upload/v1504466862/bg1_tbub8x.jpg" alt="godfred">						
 					<div class="carousel-caption">
 						<h2>Welcome to my page</h2>
 						<h4>Thanks to hotels.ng</h4>
@@ -121,7 +121,7 @@
 		
 		<div class="contact-section">
 			<div class="ear-piece">
-				<img class="img-responsive" src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/21150034_111619402864198_2133663520847997635_n.jpg?oh=8466458a957c35b2a5c97d238a743080&oe=5A53E5CE" alt="">
+				<img class="img-responsive" src="http://res.cloudinary.com/archer/image/upload/v1504466842/ear-piece_orkl6e.png" alt="">
 			</div>
 			<div class="container">
 				<div class="row">
