@@ -15,8 +15,6 @@
 -        $body = $_POST['message'];
 -        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=silassilasm@gmail.com");
 -    
--    }else{
--        header("location: Silas.html");
 -    }
 -?>
    
