@@ -8,10 +8,10 @@ require('Coinman.php');
 $cm = new Coinman($config['api_key'], $config['api_secret']);
 
 // We Run CoinMan
-// $cm->runCoinMan();
+$json = $cm->runCoinMan();
 
 // decode json 
-$json = $cm->loadData();
+// $json = $cm->loadData();
 $json = json_decode($json, TRUE);
 ?>
 
@@ -34,7 +34,8 @@ $json = json_decode($json, TRUE);
 					          <th>Currency Pairs</th>
 					          <th>Buy</th>
 					          <th>Sell</th>
-					          <th>% <i class="fa fa-timer"></i> (5mins ago) </th>
+					          <th>% Change in trade</th>
+					          <th>Trade Shift <i class="fa fa-timer"></i> (5mins ago) </th>
 					          <th>Pointer</th>
 					          <th>Examination</th>
 					        </tr>
@@ -47,26 +48,23 @@ $json = json_decode($json, TRUE);
 	      			';
 					foreach ($array as $sub_array) {
 						# compare pointer
-						if($sub_array["buys"] > $sub_array["sales"]){
-							$pointer = '<i class="fa fa-chevron-up" style="color:green;"></i>';
-						}else{
+						if(preg_match('/-/', $sub_array["difference"])){
 							$pointer = '<i class="fa fa-chevron-down" style="color:red;"></i>';
+							$examination = 'decreasing trade vol in the last 5mins';
+						}else{
+							$pointer = '<i class="fa fa-chevron-up" style="color:green;"></i>';
+							$examination = 'increasing trade vol in the last 5mins';
 						}
-
-						$percentage_100 = 100;
-						$total = $sub_array["buys"] + $sub_array["sales"];
-						$average = $total / 2;
-
-
 						
 						echo '<tr>';
 					    echo '<td>'.$sub_array["id"].'</td>';
 					    echo '<td>'.$sub_array["pair"].'</td>';
 					    echo '<td>'.$sub_array["buys"].'</td>';
 					    echo '<td>'.$sub_array["sales"].'</td>';
-					    echo '<td> % change</td>';
+					    echo '<td>'.$sub_array["difference"].'% </td>';
+					    echo '<td>'.$sub_array["perIncrease"].'</td>';
 					    echo '<td>'.$pointer.'</td>';
-					    echo '<td>increases in trade in the last 5mins</td>';   
+					    echo '<td>'.$examination.'</td>';   
 					    echo '</tr>';
 					}
 
@@ -79,7 +77,4 @@ $json = json_decode($json, TRUE);
 				}
 	      	?>
 	        
-	       
-	      
-	  
 </section>
