@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
 ﻿<?php
 $pageTitle = "Participants";
 include('header.php');
