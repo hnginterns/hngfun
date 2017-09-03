@@ -63,9 +63,12 @@
          success: function(data){
                 //var jsondata = $.parseJSON(data); // create an object with the key of the array
                 $.each(data, function(key, value) {
-                    var row = "<tr><td>"+value['type']+"</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td><td>Cell 5</td></tr>";
-                    $('#display').html(row);
-                    console.log(value);
+                    $.each(value, function(newkey, newvalue) {
+                          var row = "<tr><td>"+newvalue+"</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td><td>Cell 5</td></tr>";
+                          $('#display').html(row);
+                          console.log(newvalue);
+                    });
+                    
                  });
          },
          error: function(data){
