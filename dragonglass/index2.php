@@ -62,9 +62,9 @@
                          
                     });
                     $('#display').html(row);
-                    console.log(value);
+                    
                  });
-              
+              console.log(data);
          },
          error: function(data){
               console.log(data);
