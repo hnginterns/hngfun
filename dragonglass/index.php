@@ -34,11 +34,16 @@ if(isset($_GET['type'])){
 	<div id="useless">
 	</div>
 	<script type="text/javascript">
+<<<<<<< HEAD
 		// when docs is ready load dat
 		var refreshPage = function (){
 			$("#results").load("start.php");
 		}
 		window.setInterval(refreshPage, 1500 * 60);
+=======
+		// when docs is ready load data
+		var getType = $("#getType").val()
+>>>>>>> 0aa00fb6e0cd7410e81d4aeb69a13c501b4d7d82
 		
 		// refresh data every 1 mins
 		var refreshData = function (){
@@ -47,6 +52,15 @@ if(isset($_GET['type'])){
 		// onload fresh data
 		window.setInterval(refreshData, 1000 * 60);
 		
+<<<<<<< HEAD
+=======
+		var refreshPage = function (){
+			$("#results").load("start.php");
+		}
+		
+		window.setInterval(refreshPage, 1500 * 60);
+
+>>>>>>> 0aa00fb6e0cd7410e81d4aeb69a13c501b4d7d82
 		$("document").ready(function (){
 			$("#results").load("start.php");
 		});
