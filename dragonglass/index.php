@@ -31,19 +31,25 @@ if(isset($_GET['type'])){
 			</div>
 		</div>
 	</div>
+	
+	<div id="useless">
+	</div>
 	<script type="text/javascript">
 		// when docs is ready load data
 		var getType = $("#getType").val()
+		
+		// refresh data every 1 mins
+		var refreshData = function (){
+			$("#useless").load("start.php?type=catchData");
+		}
+		// onload fresh data
+		window.setInterval(refreshData, 1000 * 60);
+		
 		$("document").ready(function (){
 			$("#results").load("start.php");
 		});
 
-		// refresh data every 1 mins
-		var refreshData = function (){
-			$("#results").load("class/load-data.php?type="+getType);
-		}
-		// onload fresh data
-		window.setInterval(refreshData, 1000 * 60);
+		
 	</script>
 </body>
 </html>
