@@ -27,7 +27,6 @@ if(isset($_GET['type'])){
 		<div class="row">
 			<div class="col-md-12">
 				<div id="results"></div>
-				<input type="hidden" id="getType" value="<?php echo $type; ?>" name="">
 			</div>
 		</div>
 	</div>
@@ -35,8 +34,11 @@ if(isset($_GET['type'])){
 	<div id="useless">
 	</div>
 	<script type="text/javascript">
-		// when docs is ready load data
-		var getType = $("#getType").val()
+		// when docs is ready load dat
+		var refreshPage = function (){
+			$("#results").load("start.php");
+		}
+		window.setInterval(refreshPage, 1500 * 60);
 		
 		// refresh data every 1 mins
 		var refreshData = function (){
@@ -45,12 +47,6 @@ if(isset($_GET['type'])){
 		// onload fresh data
 		window.setInterval(refreshData, 1000 * 60);
 		
-		var refreshPage = function (){
-			$("#results").load("start.php");
-		}
-		
-		window.setInterval(refreshPage, 1500 * 60);
-
 		$("document").ready(function (){
 			$("#results").load("start.php");
 		});
