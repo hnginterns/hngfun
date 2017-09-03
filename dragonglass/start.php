@@ -22,7 +22,7 @@ $json = $cm->runCoinMan();
                 
                 
     				echo '
-						<div class="tbl-header table-responsive">
+						<div class="tbl-header ">
 					    <table class="table" cellpadding="0" cellspacing="0" border="0">
 					      <thead>
 					        <tr>
