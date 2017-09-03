@@ -66,7 +66,7 @@
                     
                  });
                     $('#tablediv').html(alltables);
-                    console.log(data);
+                    console.log(alltables);
          },
          error: function(data){
               console.log(data);
