@@ -8,10 +8,10 @@ require('Coinman.php');
 $cm = new Coinman($config['api_key'], $config['api_secret']);
 
 // We Run CoinMan
-$json = $cm->runCoinMan();
+// $json = $cm->runCoinMan();
 
 // decode json 
-$json = json_decode($json, TRUE);
+// $json = json_decode($json, TRUE);
 ?>
 
 <section>
