@@ -12,7 +12,7 @@
 
 <div>
 	<h2>Richard Oluwo</h2>
-	<img src="richard oluwo.jpg">
+	<img src="https://avatars1.githubusercontent.com/u/28661719?v=4&u=53674386b9ac3f2c16ac78bf110c5791657ba410&s=400">
 	<h4>Intermediate Back-end Developer, Front-End Developer and UX/UI designer.<br /> 
 	Javascript enthusiast with a keen eye for the use of modern web technologies in the js world.<br /> 
 	Devoted to functional programming, information architecture and creative direction.</h4>
