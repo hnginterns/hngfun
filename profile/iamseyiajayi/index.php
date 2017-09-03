@@ -63,7 +63,7 @@
 	</em>
 	</h3>
 	<br>
-		<img src="seyi.jpg" class="profileimg" alt="Loading Image...">
+		<img src="http://www.filetolink.com/a32509a8a8" class="profileimg" alt="Loading Image...">
 		<h3>
 		<span class="namewrapper">
 			Ajayi Oluwaseyi
@@ -74,7 +74,7 @@
 		</span>
 		</h3>
 		<h4 style="margin-top: 20px">
-		<img src="slack.png" class="logo" alt="Loading Image...">
+		<img src="http://www.filetolink.com/1092898140" class="logo" alt="Loading Image...">
 		<span class="username">
 		iamseyiajayi
 		</span>
