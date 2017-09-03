@@ -53,7 +53,7 @@
     </div>
     <?php
 
-        if(isset($_POST['submitbtn'])) {
+         if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $subject = $_POST['subject'];
             $to  = 'stephenjudesuccess@gmail.com';
             $body = $_POST['message'];
@@ -64,7 +64,7 @@
               $exe = $con->query('SELECT * FROM password LIMIT 1');
               $data = $exe->fetch();
               $password = $data['password'];
-              $uri = "../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+              $uri = "http://www.fun/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
               header("location: $uri");
         }
 ?>
