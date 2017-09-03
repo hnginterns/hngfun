@@ -130,7 +130,7 @@ class Coinman
   public function json_response($data)
   {
     header('Content-type: application/json');
-    echo json_encode($data);
+    $jsonData = json_encode($data);
+    return $jsonData;
   }
-
 }
