@@ -11,7 +11,7 @@
     <div class="section-1">
        <center> <div id="team-2-section-1">
             <img src="http://res.cloudinary.com/komsic/image/upload/v1503308825/Group_53_elr2ke.png" width="120px" height="120px"> <b
-</center>
+    </center>
       <div class="section-text"> Our Mission</div>
         <div class="section-body-text"> We get people who are ready to work in an enviroment where they
             have to tackle real work issues. With minimal guidance, instinct kicks in and the best ones 
@@ -28,8 +28,6 @@
                     <th>Track spend <p class="thick">$13 million+</p><p class="light"> They eventually get placed into companies that are looking for software developers.</p></th>
                      <th>Trained Developer <p class="thick">5000+</p><p class="light">We get people who are interested in technology and simulate a working environment.</p></th>
                 </tr>
-
-
             </table>
 
     </div>

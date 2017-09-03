@@ -1,11 +1,11 @@
 <?php
 require "config.php";
 if(isset($_POST['submit'])) {
- if(!empty($_GET['body'])) {
-  sendMail($_GET['body']);
- }
+   if(!empty($_POST['body']) && !empty($_POST['email']) && !empty($_POST['subject'])) {
+      sendMail();
+   }
 }
- ?>
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,9 +43,30 @@ if(isset($_POST['submit'])) {
       <hr />
    </section>
    <section class="container">
-      <form class="message" method="get" action="kole_ibrahim.php" >
+      <form class="message" method="POST" action="kole_ibrahim.php">
+         <table id="table1">
+            <th>Connect with Femi</th>
+            <div class="formdiv">
+               <tr>
+                  <td>
+                     <label for="subject">Subject</label>
+                  </td>
+                  <td>
+                     <input type="text" name="subject" class="allinput" placeholder="subject" />
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label for="email">Email</label>
+                  </td>
+                  <td>
+                     <input type="email" name="email" class="allinput" placeholder="email" />
+                  </td>
+               </tr>
+            </div>
+         </table>
          <table id="table2">
-            <th>Coonect with Femi</th>
+            <th>Message</th>
             <div class="formdiv">
                <tr>
                   <td>
@@ -53,7 +74,7 @@ if(isset($_POST['submit'])) {
                   </td>
                   <td>
                      <div class="formdiv">
-                        <button type="submit">SEND</button>
+                        <button type="submit" name="submit">SEND</button>
                      </div>
                   </td>
                </tr>

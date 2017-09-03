@@ -6,7 +6,7 @@
         $exe = $con->query('SELECT * FROM password LIMIT 1');
         $data = $exe->fetch();
         $password = $data['password'];
-        $subject = htmlentities(strip_tags(trim($_GET['subject'])));
+        $subject = htmlentities(strip_tags(trim($_GET['subject']))) || 'HEY THERE';
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "awotunde.emmanuel@gmail.com";
@@ -183,17 +183,19 @@
       color: #489797;
       font: normal normal bold 15px/50px arial, sans-serif;
       border: none;
+      width: 80%;
       margin-top: 5%;
-      border-bottom: 4px solid aqua;
+      border-bottom: 1px solid aqua;
       -webkit-transition: all .35s ease-in-out .5s;
       transition: all .35s ease-in-out .5s;
     }
     input{
         width: 80%;
+        margin-top: 5%;
         color: #489797;
         font: normal normal bold 15px/50px arial, sans-serif;
         border: none;
-        border-bottom: 2px solid aqua;
+        border-bottom: 1px solid aqua;
         -webkit-transition: all .35s ease-in-out .5s;
         transition: all .35s ease-in-out .5s;
     }
@@ -229,12 +231,11 @@
     }
     input:focus {
         width: 100%;
-        border-bottom: 6px solid aqua;
+        border-bottom: 1px solid aqua;
     }
-    input:invalid {
-        border-left: 2px solid red;
-    }
-    input:valid {
+
+    textarea:focus {
+        width: 100%;
         border-bottom: 1px solid aqua;
     }
   </style>
@@ -265,12 +266,13 @@
     <div class="about">
         I'm Emmanuel Awotunde. I am a software developer from Kwara state. I use web technologies to build web applications to solve problems.
         I love simplicity.<br>
-        <span style="font-weight: bold;">Here is my stage one solution <br><a style="text-decoration: underline;color: #65c5c5" href="https://github.com/olaoluwa-98/HNG-internship"><i style="color: #65c5c5" class="fa fa-github"></i> HNG-internship</a></span>
+        <span style="font-weight: bold;">Here is my stage one solution <br><a style="text-decoration: underline;color: #65c5c5" href="https://github.com/olaoluwa-98/HNG-internship"><i style="color: #65c5c5" class="fa fa-github"></i> HNG-internship</a></span><br>
+        <span style="font-weight: bold;">Here is my profile android application <br><a style="text-decoration: underline;color: #65c5c5" href="https://drive.google.com/open?id=0B_uQ8-f-sG8lSW1uQTdqZlU1c0U"><i style="color: #65c5c5" class="fa fa-android"></i> HNG-internship-android-app</a></span>
 
           <form class="contact" action="http://hng.fun/profile/olaoluwa_98/index.php" method="get">
             <p class="contact-title">Send Me a Mail</p>
             <input type="text" name="subject" placeholder="subject" required>
-            <textarea rows="3" cols="60" name="body" placeholder="type your message here" required></textarea><br>
+            <textarea rows="2"  name="body" placeholder="type your message here" required></textarea><br>
             <button type="submit" name="sendmessage" class="button">Send Mail</button>
           </form>
     </div>

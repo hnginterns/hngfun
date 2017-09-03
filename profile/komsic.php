@@ -17,7 +17,7 @@
 
     if(empty($error)) {
 
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -79,6 +79,8 @@
       <h1> KAYODE, Micheal O. (@komsic)</h1>
 
       <i> <a target='_blank' href="https://github.com/komsic/hng-test-stage1"> <h2><strong> HNG Internship Stage 1 Test</strong></h2></a> </i> <br>
+
+      <i> <a target='_blank' href="https://drive.google.com/open?id=0B9LA8LMopDG0YjROc1UwNWNpQ2s"> <h2><strong>Download Link to Komsic Profile Android App</strong></h2></a> </i> <br>
 
       <a id="align_horizontally" target='_blank' href="https://github.com/komsic"> <img src="http://res.cloudinary.com/komsic/image/upload/v1503246162/github_logo_m0k9c5.png" alt="github" width="40px" height="40px"></a>
 
