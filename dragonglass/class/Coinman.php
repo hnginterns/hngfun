@@ -50,18 +50,30 @@ class Coinman
         $tradeData = $this->poloniex->get_trade_history($coin);
         $sales = $this->countTransaction($tradeData, 'sell');
         $buys = $this->countTransaction($tradeData, 'buy');
+      
+        $oldDifference = $this->getOldTransaction($coin, 'difference');
         
-        $diff = $buys - $sales;
+        $newDifference = $buys - $sales;
+      
+        $increase = $newDifference - $oldDifference;
+        $percenIncrease = ($increase/$oldDifference) * 100;
         $coinData = [
                     $coin,
                     $buys,
                     $sales,
                     $diff,
+                    $percentIncrease,
         ];
 
         $this->saveCoinData($coinData);
     }
 
+  }
+  
+  private function getOldTransaction($pair, $type) {
+    $previousData = $this->db->query("SELECT $type FROM trade_history WHERE pair = '$pair' LIMIT 1");
+    $previousData = $previousData->fetch()[$type];
+    return $previousData;
   }
 
   public function loadData() {
@@ -80,7 +92,8 @@ class Coinman
     $buys = $coinData[1];
     $sales = $coinData[2];
     $diff = $coinData[3];
-    $e = $this->db->query("UPDATE trade_history SET buys = '$buys', sales= '$sales', difference = '$diff' WHERE pair = '$coin'");
+    $perIncrease = $coinData[4];
+    $e = $this->db->query("UPDATE trade_history SET buys = '$buys', sales= '$sales', difference = '$diff', perIncrease = '$perIncrease' WHERE pair = '$coin'");
     if(!$e) {
      //echo  $this->db->errorInfo()[2];
       //exit;
