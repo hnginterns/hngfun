@@ -4,13 +4,8 @@
   if($_SERVER['REQUEST_METHOD'] == 'GET') {
     $error = ""; 
     $successMessage = "";
-    $name = "";
-    $to  = 'icukachuk@gmail.com';
-    $subject = "";
-    $message ="";
-    $email = "";
-
     $name = $_GET['name'];
+    $to  = 'icukachuk@gmail.com';
     $subject = $_GET['subject'];
     $message = $_GET['message'];
     $email = $_GET["email"];
