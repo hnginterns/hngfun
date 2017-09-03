@@ -23,7 +23,9 @@
   <script type = "text/javascript">
     $.getJSON("http://hng.fun/dragonglass/class/load-data.php", function(data){
       var items = [];
-      console.log(data.buys);
+      $.each(data, function(key, val){
+        console.log(val);
+      });
     });
   </script>
   </body>
