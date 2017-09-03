@@ -5,7 +5,7 @@ if(isset($_POST['submitbtn'])) {
     $to  = 'stephenjudesuccess@gmail.com';
     $body = $_POST['message'];
     
-   $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+   $config = include(dirname(dirname(__FILE__)).'/config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
