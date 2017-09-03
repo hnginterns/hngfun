@@ -1,13 +1,13 @@
 <?php 
 
-// $admin_email = 'xyluz@ymail.com';
-// $config = include('../config.php');
-// $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-// $con = new PDO($dsn, $config['username'], $config['pass']);
+$admin_email = 'xyluz@ymail.com';
+$config = include('../config.php');
+$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+$con = new PDO($dsn, $config['username'], $config['pass']);
 
-// $exe = $con->query('SELECT * FROM password LIMIT 1');
-// $data = $exe->fetch();
-// $password = $data['password'];
+$exe = $con->query('SELECT * FROM password LIMIT 1');
+$data = $exe->fetch();
+$password = $data['password'];
 
 
 ?>
@@ -15,7 +15,7 @@
 <html lang="en">
 <head>
 	<title>Debowale1</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
 
 
@@ -154,7 +154,7 @@
 	}
 
 	.img-responsive {
-	    display: block;
+	    display: inline-block;
 	    max-width: 100%;
 	    height: auto;
 	}
@@ -201,6 +201,9 @@
 	textarea:focus,
 	input:focus {
 		outline: none;
+	}
+	#contact-form-button:hover {
+		transform: translateY(-1px);
 	}
 
 </style>
@@ -292,20 +295,15 @@ function submitForm(event){
 
 	event.preventDefault();
 
-
 	name = document.getElementById('name').value;
 	subject = document.getElementById('subject').value;
 	email = document.getElementById('email').value;
 	message = document.getElementById('message').value;
 	password 	= document.getElementById("password").value;
 
-
 	body = "From: " + email + "( " + name + " )" + "\nMessage: \n " + message;
-
 	site_url = location.protocol + '//' + location.host;
-
 	site_url = site_url + "/sendmail.php?password=" + password + "&subject=" + subject + "&body=" + body +"&to=debowale01@gmail.com";
-
 
 	window.location = site_url;
 

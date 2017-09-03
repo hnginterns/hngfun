@@ -1,3 +1,39 @@
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+
+    $fullname = $_POST['fullname'];
+    $to  = 'jumbojoshua91@gmail.com';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+
+
+    if($fullname == '' || $fullname == ' ') {
+      $error[] = 'Name cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+      $config = include '../config.php';
+      $sn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($sn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$fullname&password=$password";
+
+      header("location: $uri");
+
+    }
+  }
+ ?>
+
+<!DOCTYPE html>
 <html>
 
 	<head>
@@ -16,16 +52,16 @@
 				margin: 0px;
 				padding: 0px;
 				background-color: #f8f8f8;
-				color: #ccc;
+				color: #fff;
 				font-family: Raleway, Sans;
 			}
 			.wrap {
 			
 				width: 80%;
 				min-height: 150px;
-				padding-bottom: 200px;
+				padding-bottom: 300px;
 				margin: 0px auto;
-				background-color: #256EFF;
+				background-color: #053daf;
 				
 			}
 			a {
@@ -39,7 +75,7 @@
 				height: 30px;
 				padding: 10px;
 				text-align: center;
-				color: #333;
+				color: #ccc;
 			}
 			.img {
 				width: 400px;
@@ -65,20 +101,20 @@
 			}
 			h3 {
 				font-size: 16px;
-				color: #333;
+				color: #ccc;
 				text-align: center;
 				padding: 10px;
 			}
 			.form {
 			
 				width: 400px;
-				height: 200px;
+				height: 300px;
 				padding: 50px;
 				padding-bottom: 150px;
 				background-color: rgba(51,51,51,0.5);
 				margin: 0px auto;
 				position: relative;
-				top: 80px;
+				top: 150px;
 			}
 			input[type="text"] {
 			
@@ -107,6 +143,21 @@
 				
 				background-color: transparent;
 			}
+			
+			div.panel {
+				
+				width: 300px;
+				padding: 50px;
+				margin: 0px auto;
+				position: relative;
+				bottom: 10px;
+				background-color: #333;
+			}
+			
+			p.muted {
+				color: #aaa; 
+			}
+			
 			footer {
 			
 				width: 80%;
@@ -129,13 +180,26 @@
 				</h3>
 			</div>
 			<div class="form">
-				<form method="POST" action="">
 				
-					<input type="text" placeholder="Full Name" id="fullname">
+				<?php if(isset($error) && !empty($error)): ?>
+				  <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+					<ul style='list-style:none;'>
+					  <?php
+						foreach ($error as $key => $value) {
+						  echo "<li>$value</li>";
+						}
+					  ?>
+					</ul>
+				  </blockquote>
+				<?php endif; ?>
+				<form method="POST" action="" id="form_jhosuer">
+				
+					<input type="text" placeholder="Full Name *" name="fullname" autocomplete="off" required>
 					<br><br>
-					<textarea rows="10" cols="54" placeholder="Message" id="message"></textarea>
+					<textarea rows="10" cols="54" placeholder="Message *" name="message" required></textarea>
 					<br><br>
-					<button id="button">Send</button>
+					<button type="submit" form="form_jhosuer" value="submit">Send</button>
+					<p class="muted">* means a required field</p>
 				</form>
 			</div>
 		</div>
