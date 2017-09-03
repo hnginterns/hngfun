@@ -40,13 +40,6 @@
                     </tr>
                 </thead>
                 <tbody id="display">
-                    <tr>
-                        <td>Cell 1</td>
-                        <td>Cell 2</td>
-                        <td>Cell 3</td>
-                        <td>Cell 4</td>
-                        <td>Cell 5</td>
-                    </tr>
                     
                 </tbody>
             </table>
@@ -65,7 +58,7 @@
              var row = "";
                 $.each(data, function(key, value) {
                     $.each(value, function(newkey, newvalue) {
-                          row = row+"<tr><td>"+newvalue['buys']+"</td><td>Cell 2</td><td>Cell 3</td><td>Cell 4</td><td>Cell 5</td></tr>";
+                          row = row+"<tr><td>"+newvalue['1']+"</td><td>"+newvalue['buys']+"</td><td>"+newvalue['sales']+"</td><td>"+newvalue['difference']+"</td><td>"+newvalue['perIncrease']+"</td></tr>";
                          
                     });
                     $('#display').html(row);
