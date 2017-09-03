@@ -169,7 +169,7 @@ $password = $data['password'];
         #name, #email, #subject, #message {
             margin-bottom: 10px;
             width: 98%;
-            padding: 13px;
+            padding: 10px 1%;
             height: 20px;
             outline: none;
             border: none;
@@ -185,19 +185,22 @@ $password = $data['password'];
         #send-message {
             width: 20%;
             margin: 0 auto;
-            padding: 1.5% 1%;
+            padding: 10px;
             color: white;
             float: right;
+            font-weight: 900;
+            font-size: 1rem;
             background-color: #232323;
-            border: 1px solid #198037;
+            border: 1px solid #fff000;
             outline: none;
             cursor: pointer;
-            transition: all 0.5s;
+            transition: all 0.5s;          
         }
 
         #send-message:hover {
-            background-color: #198037;
+            background-color: #fff000;
             border: 1px solid #232323;
+            color: black;
         }
 
         #email:focus, #subject:focus, #message:focus {
