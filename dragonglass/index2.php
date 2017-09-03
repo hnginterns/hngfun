@@ -112,6 +112,21 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+       $.ajax({
+         type: "POST", dataType: "json", url: "class/load-data.php", data: "action=loadall&id=" + id,
+         success: function(data){
+                var jsondata = $.parseJSON(data); // create an object with the key of the array
+                $.each(jsondata, function(key, value) {
+                    console.log(value);
+                 });
+         },
+         error: function(data){
+               var json = $.parseJSON(data);
+               alert(json.error);
+            }
+        });
+    </script>
 </body>
 
 </html>
