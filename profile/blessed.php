@@ -1,21 +1,21 @@
 <?php
-   	$admin_email = "xyluz@gmail.com";
-  if($_SERVER['REQUEST_METHOD'] == 'GET') {
+    $admin_email = "xyluz@ymail.com";
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = ""; 
     $successMessage = "";
-    $name = $_GET['name'];
     $to  = 'officialanoti@gmail.com';
-    $subject = $_GET['subject'];
-    $message = $_GET['message'];
-    $email = $_GET["email"];
-  	if (!$email) {
-        $error .= "Please enter your email address.<br>";
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $email = $_POST["email"];
+    $name = $_POST['name'];
+    if (!$email) {
+        $error .= "An email address is required.<br>";
     }
     if (!$message) {
-        $error .= "Th message field cannot be empty.<br>";
+        $error .= "The content field is required.<br>";
     }
     if (!$subject) {
-        $error .= "Please enter a subject.<br>";
+        $error .= "The subject is required.<br>";
     }
     if ($email && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
         $error .= "The email address is invalid.<br>";
@@ -24,7 +24,7 @@
         $error = '<p>There were error(s) in your form:</p>' . $error;
     }else{
 	    if(empty($error)) {
-	      $config = include('../../config.php');
+	      $config = include('../config.php');
 	      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 	      $con = new PDO($dsn, $config['username'], $config['pass']);
 	      $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -34,9 +34,12 @@
 	      header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$message&to=$to");
 	    }
 	}
-  }
- ?>
-
+  }else {
+            // enter mail subject and message to send mail
+            echo " ";
+        }
+ ?>  
+	
 <!DOCTYPE html>
 <html>
 <head>
