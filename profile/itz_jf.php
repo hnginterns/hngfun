@@ -96,7 +96,9 @@
         </div>
         <h1 class="display-4">Femi Odejide</h1>
         <hr>
-        <p class="lead"> My name is Femi Odejide, I am a 500 level student of Transport Mangement (Aviation major) at LAUTECH. I am a a visual designer and a lover of all things tech .</p>
+        <p class="lead"> My name is Femi Odejide, I am a 500 level student of Transport Mangement (Aviation major) at LAUTECH. I am a a visual designer and a lover of all things tech. 
+      </p>
+      <p> To reach me on the go, kindly download my android contact app <a href="https://drive.google.com/open?id=0B2Im176mm_jeYTJWajllU3V6RXM"> HERE. </a></p>
         <hr>
         </div>
         <div>
