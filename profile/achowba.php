@@ -169,7 +169,7 @@ $password = $data['password'];
         #name, #email, #subject, #message {
             margin-bottom: 10px;
             width: 98%;
-            padding: 3% 2%;
+            padding: 10px 1%;
             height: 20px;
             outline: none;
             border: none;
