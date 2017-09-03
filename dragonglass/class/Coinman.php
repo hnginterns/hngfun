@@ -168,6 +168,6 @@ class Coinman
   {
     header('Content-type: application/json');
     $jsonData = json_encode($data);
-    return $jsonData;
+    echo $jsonData;
   }
 }
