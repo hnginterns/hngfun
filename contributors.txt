@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -525,3 +525,4 @@
 (250) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
 (251) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 >>>>>>> 36b7780924cccc337176b386198a8446f92f036a
+(252) Ikemefuna Obioha, Slack: legend5463, Github: ikem-legend
