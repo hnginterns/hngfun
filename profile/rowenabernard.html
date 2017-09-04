@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rowena Bernard's Profile</title>
+    
+</head>
+<style type="text/css">
+    body {
+    background-color: #81476A;
+    text-align: center;
+    text-decoration-color: white;
+    color:white;
+ 
+    }
+    
+img {
+    border: 5px dotted #878383;
+    position: center;
+    border-radius: 10%;
+    padding: 20px;
+    position:absolute;
+    top: 70px;
+    left: 70px;
+    height: 100%;
+}
+.name { font-family: 'bowlby one';
+font-size: 50px;
+font-style: bold;
+
+padding-top:70px;}
+
+
+
+h1 { size: 20%;
+color: beige;}
+div.ex1 {
+    font: bold 12px/30px Georgia, serif;
+}
+#overview {
+    
+    font-size: 1.2em;
+    line-height: 1.5;
+    display: block;
+    margin: auto;
+    float: center;
+    width: 500px;
+}
+.contact {
+  width:500px;
+  border-radius: 10px;
+background-color: grey;
+    position: fixed;
+  top: 60%;
+  left: 40%;
+  margin-top: -50px;
+  margin-left: -100px;
+  align-self: auto;
+
+}
+
+.container { 
+   
+    position: relative;;
+ 
+}
+input[type=text], select, textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+</style>
+
+<body>
+<div class="container">
+    <div >
+    <a href="http://imgur.com/vXb4iDS">
+    <img src="http://i.imgur.com/vXb4iDS.jpg" title="source: imgur.com" width="250px" height="200px"/></a>
+           
+        </div>
+<div  >
+       <div  class="name">  ROWENA BERNARD </div>
+        <h3 id="overview"> BUDDING DEVELOPER & TECH ENTHUSIAST
+                <i><br><br> I have short experience with 
+            Android Programming, <br> currently learning bootstrap and php
+        <br>I am super excited to learn new things on the HNG Internship. </h3></i>
+        <h3 id="slack">Slack UserName: <a href="http://www.slack.com/@rowenagold"> @rowenagold</a></h3>
+      
+    </div>  
+        
+        
+        <div class="contact">
+        <form action="rowenabernard.php" method="post">
+            <p> CONTACT ME </p>
+        NAME: <input type="text" id="name" name="name" placeholder="Your Name.."><br><br>
+        E-MAIL: <input type="text" id="email" name="email" placeholder="Your Email Address"><br>
+        <br>
+        SUBJECT: <input type="text" id="subject" name="subject" placeholder="subject"><br>
+        <br>
+    MESSAGE: <textarea id="message" name="message" placeholder="Write something.." style="height:50%"></textarea><br>
+        <input type="submit" id="submit" name="submit">
+        </form>
+        </div>
+    </div>
+            </body>
+</html>

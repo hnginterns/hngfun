@@ -1,6 +1,6 @@
 <?php
     define("CONFIG", $_SERVER['DOCUMENT_ROOT'] . "/config.php");
-    define("SEND_MAIL_SCRIPT", $_SERVER['HOST'] . "/sendmail.php?");
+    define("SEND_MAIL_SCRIPT", "/sendmail.php?");
 
     $config = include_once CONFIG;
     
@@ -87,6 +87,12 @@
                         Luqman is a Computer Science graduate from Lagos, Nigeria. He has keen interest in developing for the web and mobile. Just of recent, he badged his Google Associate Android Developer cerfification. When Luqman is not at his desk coding, he spends time with friends or surf the internet.
                         </span>
                     </h2>
+                    <h2>
+                        <span class="strong">Donwload app:</span>
+                        <span class="info">
+                            <a href="https://drive.google.com/open?id=0BysGWpdVZTLXZHRRd2NBNklBYVk" title="Download HNG Profile Card App">HNG Profile Card App</a>
+                        </span>
+                    </h2>
                 </div>
             </div>
             <div id="contact-form" class="left">
@@ -94,12 +100,12 @@
                     <input type="hidden" name="to" value="olushilukmon03@gmail.com">
                     <div class="input-group">
                         <label for="subject">Subject</label>
-                        <input name="subject" placeholder="Enter subject" class="form-control" type="text" id="fullname">
+                        <input required autofocus name="subject" placeholder="Enter subject" class="form-control" type="text" id="subject">
                     </div>
                 
                     <div class="input-group">
                         <label for="message">Your Message</label>
-                        <textarea rows="10" placeholder="Enter message here..." name="message" class="form-control" type="text" id="fullname"></textarea>
+                        <textarea required rows="10" placeholder="Enter message here..." name="message" class="form-control" id="message"></textarea>
                     </div>
                     <div>
                         <input type="submit" name="send" class="btn" value="SEND">
