@@ -515,15 +515,16 @@
 (244) Emem Okon, currentboy, currentboy
 (245) Olunloye Akinkunmi (Slack: @roqak, Github: roqak)
 (246) David Ofiare , artofofiare , artofofiare
+(247) Ilozulu Victor, victorilozulu, veekthor
 <<<<<<< HEAD
-(247) Fru Anthony, @antonyfru,  @westside200
+(248) Fru Anthony, @antonyfru,  @westside200
 =======
-(247) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
-(248) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
+(249) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
+(250) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
 >>>>>>> e1f1d0d604909c9b2c849c7c8ff458712121f442
-(249) Salako Teslim Akolade, tessal, tescoint
-(250) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
-(251) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
+(251) Salako Teslim Akolade, tessal, tescoint
+(252) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
+(253) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 >>>>>>> 36b7780924cccc337176b386198a8446f92f036a
-(252) Ikemefuna Obioha, Slack: legend5463, Github: ikem-legend
-(253) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
+(254) Ikemefuna Obioha, Slack: legend5463, Github: ikem-legend
+(255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
