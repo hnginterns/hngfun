@@ -493,7 +493,7 @@ fieldset {
 
 		<div class="content">
 			<h1 class="title">Joe-Smith<br>Essang</h1>
-			<p> Slack:<a href="mailto:joesmithessang@gmail.com">	@jsmyth</a>.</p>
+			<p> Slack:<a href="https://hnginterns.slack.com/jsmyth">	@jsmyth</a>.</p>
 			
 
 			<p>	[ANDROID DEVELOPER] </p> 
@@ -516,6 +516,11 @@ fieldset {
 				<a href="https://github.com/Joesmithessang/HNG-Test1">https://github.com/Joesmithessang/HNG-Test1"</a>
 			</p>
 
+			<p>
+				Download my android app here:<br>
+				<a href="https://goo.gl/ESLWv1">Jsmyth's Profile.Apk</a>
+			</p>
+			
 			<p>Want to send me a love letter? <a href="mailto:joesmithessang@gmail.com">Email me</a>.</p>
 			</div>
 			<div class="container">  

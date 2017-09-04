@@ -51,7 +51,7 @@ function getResponse() {
 			//
 			if(ajaxRequest.responseText.length >= 2){
 				//if there is a response then there is an error// get the error p tag 
-				var errorBox = window.getElementById('error').document;
+				var errorBox = document.getElementById('error').document;
 				errorBox.open();
 				errorBox.write(ajaxRequest.responseText); //input the response as HTML
 				errorBox.close();
@@ -65,7 +65,7 @@ function getResponse() {
 		}
 	}
 }
-
+/*
 if (form.addEventListener) {
     form.addEventListener("submit", function(evt) {
         evt.preventDefault();
@@ -77,4 +77,4 @@ else {
         evt.preventDefault();
         sendContactForm();
     });
-} 
+}*/

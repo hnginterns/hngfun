@@ -55,7 +55,7 @@
 
                 .bg{
 
-                  background-image: url("me.jpg");
+                  background-image: url(http://res.cloudinary.com/vhiktordom/image/upload/v1504450415/me_gsicry.jpg);
 
                   height: 100%;
 
@@ -123,7 +123,7 @@
        
           <div class="card">
 
-            <img src="vhiktordom.jpg" alt="Victor Dominic" style="width:100%">
+            <img src="http://res.cloudinary.com/vhiktordom/image/upload/v1504450417/vhiktordom_hyldh8.jpg" alt="Victor Dominic" style="width:100%">
             <div class="container">
               <h1>Victor Dominic</h1>
               <p class="title">Web/Mobile Developer</p>
@@ -132,6 +132,7 @@
                   
                   <a href="https://github.com/Vhiktordom/getting-started-h2-2017"><i class="fa fa-github"> Stage 1 </i></a><br>
                   <a href="#"><i class="fa fa-slack"> @Vhiktordom</i></a>
+                   <a href="https://drive.google.com/open?id=0Bx02to2djOrrMEVYeWdDU1I5dXc"><i class="fa fa-android"> My Android App</i></a>
                 </div>
                  <form method="POST">
             <div>
