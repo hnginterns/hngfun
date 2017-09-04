@@ -1,4 +1,4 @@
-﻿<?php
+﻿hp
 $pageTitle = "Participants";
 include('header.php');
 include('participants-head.php');
