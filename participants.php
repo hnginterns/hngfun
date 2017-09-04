@@ -8424,7 +8424,7 @@ include('participants-head.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/ikem-legend/image/upload/v1503867440/Ikem_kyuk6m.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="http://hng.fun/profile/ikemobioha/ikem.html">
+            <a href="http://hng.fun/profile/ikem.html">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Ikemefuna Obioha</h3>
                 <!--Profile Name-->
