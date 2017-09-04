@@ -1,4 +1,4 @@
-﻿(1) Nwanze Franklin, franko4don, @franko4don
+(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -251,12 +251,13 @@
 (244) Emem Okon, currentboy, currentboy
 (245) Olunloye Akinkunmi (Slack: @roqak, Github: roqak)
 (246) David Ofiare , artofofiare , artofofiare
-<<<<<<< HEAD
 (247) Fru Anthony, @antonyfru,  @westside200
-=======
-(247) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
-(248) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
->>>>>>> e1f1d0d604909c9b2c849c7c8ff458712121f442
-(249) Salako Teslim Akolade, tessal, tescoint
-(250) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
-(251) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
+(248) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
+(249) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
+(250) Salako Teslim Akolade, tessal, tescoint
+(251) Ibanga Kpereobong, Slack:@kpere, Github:@Kpere
+(252) Ikemefuna Obioha, Slack: legend5463, Github: ikem-legend
+(253) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
+(254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
+(255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
+(256) Samuel Oyewole, @samueloyewole, @SamuelOye
