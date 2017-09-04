@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_POST['subject'])){
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error = [];
 
         $name = $_POST['name'];
@@ -33,5 +33,5 @@
         }
     }else{
             header("location: ceoehis.html");
-        }
+    }
 ?>
