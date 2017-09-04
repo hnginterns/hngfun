@@ -76,15 +76,32 @@ aside a{
 	padding:10px;
 	height:30px;
 	font-size:20px;
+	margin-left:80px;
+	text-align:center;
+	background-color:green;
+	border:solid 2px rgb(0,100,29);
+}
+#stage1{
+	width:120px;
+	margin-top:10px;
+	padding:10px;
+	height:30px;
+	font-size:20px;
 	margin-left:100px;
 	text-align:center;
 	background-color:green;
 	border:solid 2px rgb(0,100,29);
 }
+
 aside a:hover{
 	color:green;
 }
 .others:hover{
+	background-color:rgb(255,255,255);
+	box-shadow:5px 5px 5px 5px rgb(180,180,180);
+	border:none;
+}
+#stage1:hover{
 	background-color:rgb(255,255,255);
 	box-shadow:5px 5px 5px 5px rgb(180,180,180);
 	border:none;
