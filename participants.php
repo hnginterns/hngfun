@@ -8231,7 +8231,32 @@ include('participants-head.php');
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
+<<<<<<< HEAD
         <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/farida/reedah.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+=======
+        <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/ikem-legend/image/upload/v1503867440/Ikem_kyuk6m.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/ikem.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Ikemefuna Obioha</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">legend5463@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> No Team </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/26363001?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+>>>>>>> ce22192f1bbf37a2df70eea97e7da2a84a0a8aed
         <div class="p-card-info">
             <a href="http://hng.fun/profile/farida/farida.html">
                 <!--Profile Link-->
