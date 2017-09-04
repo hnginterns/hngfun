@@ -1,4 +1,4 @@
-﻿hp
+﻿<?php
 $pageTitle = "Participants";
 include('header.php');
 include('participants-head.php');
@@ -293,6 +293,29 @@ include('participants-head.php');
         <div class="p-team">
             <a href="#"><!--Team-->
                 <h3 class="p-card-title"> Team 3 </h3>
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
+
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/saintswebnology/image/upload/v1504434944/bg_focli2.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/dsaint109/">
+            <!--Profile Link-->
+                <!--Profile Name-->
+                <h3 class="p-card-title">David Saint</h3>
+            </a>
+            <p class="p-card-description">
+                <!--Email-->
+                topstronics@gmail.com</p>
+        </div>
+        <div class="p-team">
+            <a href="#"><!--Team-->
+                <h3 class="p-card-title">Saints Webnology</h3>
             </a>
         </div>
     </div>
