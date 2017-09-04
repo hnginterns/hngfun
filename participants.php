@@ -8349,4 +8349,32 @@ include('participants-head.php');
   <!-- Each participant ends here -->
 
 
+
+
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/dsreqkgmh/image/upload/v1503148590/sayopaul_nguuja.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/sayopaul2.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Ademola Abisayo Paul</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">yobizzi416@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team 3 </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
+
+
+
+
 <?php include "footer.php"?>
