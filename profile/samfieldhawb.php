@@ -21,7 +21,7 @@
 		}else{
 			$email = test_input($email);
 		}
-		$message = $message. ". Send by ".$email;
+		$message = $message. ". Sent by ".$email;
 		$config = [
             'dbname' => 'hng',
             'pass' => '@hng.intern1',
