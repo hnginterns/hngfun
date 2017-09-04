@@ -1,28 +1,46 @@
+<<<<<<< HEAD
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
-    $error = [];
-    $subject = $_POST['subject'];
-    $to  = 'bee_moi@zoho.com';
-    $body = $_POST['message'];
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
+    if(isset($_POST['process'])){
+        $config = [
+            'dbname' => 'hng',
+            'pass' => '@hng.intern1',
+            'username' => 'intern',
+            'host' => 'localhost'
+        ];
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
+        $password = $data['password'];
+        $subject = $_POST['subject'];
+        $body = $_POST['body'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=bee_moi@zoho.com");
+    }else{
+        header("location: imani.html");
     }
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
+?>
+=======
+<?php
+    if(isset($_POST['process'])){
+        $config = [
+            'dbname' => 'hng',
+            'pass' => '@hng.intern1',
+            'username' => 'intern',
+            'host' => 'localhost'
+        ];
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
+        $password = $data['password'];
+        $subject = $_POST['subject'];
+        $body = $_POST['body'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=bee_moi@zoho.com");
+    }else{
+//         header("location: imani.html");
     }
-    if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      header("location: $uri");
-    }
-  }
- ?>
+?>
+
 
 
 
@@ -224,12 +242,34 @@
             border-color: white;
             outline: none;
         }
-        textarea:focus{
-            background-color: transparent;
-            color: black !important;
-            border-color: #ffffff;
-            outline: none;
-            resize: none;
+        input, textarea {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+}
+        
+        textarea {
+    height:213px;
+}
+
+input[type="submit"] {
+    width:127px;
+    height:38px;
+    text-indent:5px;
+    border:50px;
+    margin-top:20px;
+    cursor:pointer;
+    opacity:.8;
+    background-color: #ff0000
+    }
         }
         .regInput-3 {
             position: relative;
@@ -323,25 +363,20 @@
 
 
                     <p class="slack contact">Contact me</p>
+        <form  action="imani.php" method="post" >   
+        
+    <p><label>Email:</label>
+        <input type="email" id="to" name="to" placeholder="Type Here"></p>
 
-                    <div id="form-main">
-                        <div id="form-div">
-                            <form class="form" id="form1" action="" method= "POST" >
-
-                                <p class="name">
-                                    <input name="subject" id="subject" type="subject" title="" class="regInput" placeholder="subject  " >
-                                </p>
-
-                                
-
-                                <p class="text">
-                                    <textarea name="message" id="message" class="regInput-1" placeholder=" Write that message...."></textarea>
-                                </p>
-
-                                <div class="submit">
-                                    <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
-                                </div>
-                            </form>
+    <p><label>Subject:</label>
+        <input type="text" id="subject" name="subject" placeholder="Type Here"></p>
+            
+    <p><label>Message:</label>
+        <textarea id="body" name="body" placeholder="Type Here""></textarea></p>
+            
+            <p><input type="submit" name="process" value="Submit"></p>
+        
+</form>
                         </div>
                     </div>
 
@@ -361,3 +396,5 @@
 </body>
 
 </html>
+
+>>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
