@@ -5,3 +5,5 @@
 # The poloniex API will be processed every 5mins
 # Once the index.php page is accessed, it queries the previous table and fetches the data and also the time the data was saved. It then compares with the current time if it exceeds or  # is equal to 5mins it redirects to the process.php which then fetches new data, delete all data from the previous table, move all data in the current table to the previous table and  # stored fetched data in the current table.
 
+#Database name: coins
+
