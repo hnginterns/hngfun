@@ -1,6 +1,6 @@
 <?php
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if(isset($_POST['subject'])){
         $error = [];
 
         $name = $_POST['name'];
@@ -30,8 +30,8 @@
             $data = $result->fetch();
             $password = $data['password'];
             header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to."");
-        }else{
+        }
+    }else{
             header("location: ceoehis.html");
         }
-    }
 ?>
