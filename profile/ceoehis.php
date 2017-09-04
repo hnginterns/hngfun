@@ -1,40 +1,26 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
 
-    $name = $_POST['name'];
-    $to = 'ceo.ehis@outlook.com';
-    $subject = $_POST['subject'];
-    $message = $_POST['message'];
-    
-    if($name == '' || $name == ' ') {
-      $error[] = 'Message cannot be empty!';
+    if(isset($_POST['process'])){
+        $config = [
+            'dbname' => 'hng',
+            'pass' => '@hng.intern1',
+            'username' => 'intern',
+            'host' => 'localhost'
+        ];
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
+        $name = $_POST['name'];
+        $to = 'ceo.ehis@outlook.com';
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+        $password = $data['password'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to.");
+    }else{
+        header("location: ceoehis.php");
     }
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Message cannot be empty!';
-    }
-    if($message == '' || $message == ' ') {
-      $error[] = 'Message cannot be empty!';
-    }
-
-    if(empty($error)) {
-
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-
-      $uri = "/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
-
-      header("location: $uri");
-
-    }
-
-  }
-
+   
 ?>
 <!DOCTYPE html>
 <html>
