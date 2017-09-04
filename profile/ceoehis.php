@@ -18,7 +18,7 @@
         $password = $data['password'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=.$to.");
     }else{
-        header("location: ceoehis.github.io");
+        header("location: ceoehis.html");
     }
    
 ?>
