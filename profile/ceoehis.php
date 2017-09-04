@@ -16,7 +16,7 @@
         $subject = $_POST['subject'];
         $message = $_POST['message'];
         $password = $data['password'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=.$to.");
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$message."&to=".$to."");
     }else{
         header("location: ceoehis.html");
     }
