@@ -1,5 +1,4 @@
-﻿<<<<<<< HEAD
-﻿(1) Nwanze Franklin, franko4don, @franko4don
+(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -239,7 +238,7 @@
 (232) Ukah Bethel , ukahbethel , bethel-u
 (233) Idorenyin Akaninyene Etim, Slack: @akanidorenyin, Github: dorenyin1
 (234) Samfield Hawb Bassey, Slack:@samfield4sure, Github: psalmfill
-(235) Abulhafeez Babatunde, Slack: mista-oba, Github: 
+(235) Abulhafeez Babatunde, Slack: mista-oba, Github:
 (236) Iwaloye Samuel Olawale (slack: @iwa_temmy ,Github:iwa-temmy)
 (237) Okedusi Olumide, @olumideokedusi, @Lumie31
 (238) Ozokolo Sandra, @sandieozokolo, @ozokolosandra
@@ -248,7 +247,9 @@
 (241) Emmanuel Jacobson, writeprovidence, writeprovidence
 (242) Stephen Ojo, @ripplz, Ripplz
 (243) Grace Ebong, @graceebong, graceebong25
+(244) Elisha Nseobong Ukpong (Slack:@Drumzminister, Guthub:Drumzminister)
 (244) Emem Okon, currentboy, currentboy
+<<<<<<< HEAD
 (245) Samuel Ojukwu, @topazdeepro, topazdeepro
 =======
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
@@ -521,3 +522,17 @@
 (251)Olunloye Akinkunmi, (slack: @roqak, github: @roqak)
 (252) Ugwueze Victor Chigozie, (slack: @gozman, github: @Victor-Ugwueze)
 (253)Clarkson Emmanuel(Slack:@clarksworld, github:@clarksworld)
+=======
+(245) Olunloye Akinkunmi (Slack: @roqak, Github: roqak)
+(246) David Ofiare , artofofiare , artofofiare
+(247) Fru Anthony, @antonyfru,  @westside200
+(248) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
+(249) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
+(250) Salako Teslim Akolade, tessal, tescoint
+(251) Ibanga Kpereobong, Slack:@kpere, Github:@Kpere
+(252) Ikemefuna Obioha, Slack: legend5463, Github: ikem-legend
+(253) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
+(254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
+(255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
+(256) Samuel Oyewole, @samueloyewole, @SamuelOye
+>>>>>>> 1088233fc39985b3b51a0dec90639d511fde6a9a
