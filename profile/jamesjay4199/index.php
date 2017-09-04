@@ -75,7 +75,7 @@
 				<p id = "job">Web <br> Developer</p>
 				<p id = "slack">SLACK @jamesjay4199</p><br>
 				<a href = "https://github.com/Jamesjay4199/HNG_Internship" id = "stage1" color ="green">STAGE1</a><br><br>
-				<br><br><a href = "https://github.com/Jamesjay4199/hello-world/raw/master/JamesContactApp.apk">Contact App</a>
+				<br><br><a href = "https://github.com/Jamesjay4199/hello-world/raw/master/JamesContactApp.apk" style="margin-left:90px " align="center">Contact App</a>
 				<br><hr align = "left" width = "200px" color = "green">
 				
 			</aside>
