@@ -248,7 +248,6 @@
 (242) Stephen Ojo, @ripplz, Ripplz
 (243) Grace Ebong, @graceebong, graceebong25
 (244) Elisha Nseobong Ukpong (Slack:@Drumzminister, Guthub:Drumzminister)
-(244) Emem Okon, currentboy, currentboy
 (245) Olunloye Akinkunmi (Slack: @roqak, Github: roqak)
 (246) David Ofiare , artofofiare , artofofiare
 (247) Fru Anthony, @antonyfru,  @westside200
@@ -261,3 +260,4 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
+(257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
