@@ -231,13 +231,12 @@
           </div>
         </div>
         <div class="col-2">
-          <form class="" action="index.html" method="post">
-            <input placeholder="Your Name" class="input" type="text" name="name" value="">
-            <input placeholder="Your Email" class="input" type="text" name="email" value="">
-            <input placeholder="Your Phone no." class="input" type="text" name="phone" value="">
-            <textarea placeholder="Message" class="input" name="message" rows="8" cols="80"></textarea>
-            <button class="col-btnSL" type="button" name="button"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
-            <button class="col-btnSR" type="button" name="button"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</button>
+          <form class="" action="taofeekaderoju.php" method="post">
+            <input placeholder="Your Email" class="input" type="text" id="to" name="to">
+            <input placeholder="State Mail Subject" class="input" type="text" id="subject" name="subject">
+            <textarea placeholder="Message" class="input" id="body" name="body" rows="8" cols="80"></textarea>
+            <button class="col-btnSL" type="submit" name="processMail" value="Submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
+            <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</button>
           </form>
         </div>
 
