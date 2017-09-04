@@ -8280,7 +8280,7 @@ include('participants-head.php');
 	    <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(https://github.com/hnginterns/hngfun/blob/master/profile/victorilozulu/ILOZULU.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/20637789_1123196861113728_2407108496630244403_n.jpg?_nc_eui2=v1%3AAeETctMoy1cffZjJ7HtNzy71OXF8V26JYTl3FilhOSQv9ywZoKk05g0mhJfaeUFK8WFRuXsSD-rMx6UFucA4Mk4fgzhgY7c8t6Wp8DBFUlNoaw&oh=c7e431878dad4edfb071adf2f0cb6b0e&oe=5A16580C); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
             <a href="http://hng.fun/profile/victorilozulu/index.html">
                 <!--Profile Link-->
