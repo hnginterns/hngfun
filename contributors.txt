@@ -247,12 +247,15 @@
 (241) Emmanuel Jacobson, writeprovidence, writeprovidence
 (242) Stephen Ojo, @ripplz, Ripplz
 (243) Grace Ebong, @graceebong, graceebong25
+(244) Elisha Nseobong Ukpong (Slack:@Drumzminister, Guthub:Drumzminister)
 (244) Emem Okon, currentboy, currentboy
 (245) Olunloye Akinkunmi (Slack: @roqak, Github: roqak)
 (246) David Ofiare , artofofiare , artofofiare
 <<<<<<< HEAD
 (247) Fru Anthony, @antonyfru,  @westside200
 =======
+(247) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
 (248) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
 >>>>>>> e1f1d0d604909c9b2c849c7c8ff458712121f442
 (249) Salako Teslim Akolade, tessal, tescoint
+(250) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
