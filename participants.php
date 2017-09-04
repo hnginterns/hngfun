@@ -27,7 +27,7 @@ include('participants-head.php');
                    <div class="v-center">
                        <div class="p-card-photo" style="background-image: url(https://image.ibb.co/e0giMk/prolifichands.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                        <div class="p-card-info">
-                           <a href="http://hng.fun/profile/taofeekaderoju/taofeek.html">
+                           <a href="http://hng.fun/profile/taofeekaderoju.html">
                                <!--Profile Link-->
                                <h3 class="p-card-title">Taofeek Aderoju</h3>
                                <!--Profile Name-->
