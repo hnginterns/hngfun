@@ -71,9 +71,7 @@ aside a{
 	font-family:georgia;
 }
 #others{
-	display:inline;
 	width:120px;
-	margin-top:10px;
 	padding:10px;
 	height:30px;
 	font-size:20px;
@@ -81,7 +79,7 @@ aside a{
 	text-align:center;
 	background-color:green;
 	color:red;
-	border:solid 2px rgb(0,100,29);
+	border:dotted 2px rgb(0,100,29);
 }
 #stage1{
 	width:120px;
