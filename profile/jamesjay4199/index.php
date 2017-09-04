@@ -74,8 +74,8 @@
 				<hr align = "left" width = "200px" color = "green"><br>
 				<p id = "job">Web <br> Developer</p>
 				<p id = "slack">SLACK @jamesjay4199</p><br>
-				<a href = "https://github.com/Jamesjay4199/HNG_Internship"><span id = "stage1">STAGE1</span></a><br><br>
-				<br><br><a href = "https://github.com/Jamesjay4199/hello-world/raw/master/JamesContactApp.apk" ><div id = "others">Contact App</div></a><br><br>
+				<a href = "https://github.com/Jamesjay4199/HNG_Internship" id = "stage1">STAGE1</a><br><br>
+				<br><br><a href = "https://github.com/Jamesjay4199/hello-world/raw/master/JamesContactApp.apk" id = "others">Contact App</a><br><br>
 				<br><hr align = "left" width = "200px" color = "green">
 				
 			</aside>
