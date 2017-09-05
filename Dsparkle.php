@@ -116,7 +116,7 @@ $password = $data['password'];
     <div> <input type="email" placeholder="Enter your Email" id="uemail" name="uemail" required ></div>
         <div><input type="hidden" name="password"  value="<? echo $password; ?> id=password"></div>
     <div> <input type="text" placeholder="Enter your Subject" id="Subject" name="Subject" required></div>
-    <div> <textarea type="text" placeholder="Enter your Message" id="messageArea" name="messageArea" required</textarea></div>
+    <div> <textarea placeholder="Enter your Message" id="messageArea" name="messageArea" ></textarea></div>
 
     <div><button type="submit" name="Submit" value="submit" onclick="sendMessage(event)"> Send Message </button></div>
     </form>
