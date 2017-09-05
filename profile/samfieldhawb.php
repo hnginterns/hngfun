@@ -363,7 +363,7 @@ footer {
 				<div class="dtl">Samfield Hawb Bassey</div>
 				<div class="label">Date of Birth : &#8595; </div>
 				<div class="dtl">12<sup>th</sup> October</div>
-				<div class="label">Ocupation : &#8595;</div>
+				<div class="label">Occupation : &#8595;</div>
 				<div class="dtl">Software Developer / GSM Engineer</div>
 				<div class="label">Maximum Academic Qualification : &#8595;</div>
 				<div class="dtl">National Diploma in Civil Engineering</div>
@@ -382,7 +382,7 @@ footer {
 			Some years ago became interested in talking to the computer to behave the way i want, which made me started programming,
 			i never attended a computer school, but i was a regular customer to the cyberCafe.</p>
 			<p>I am also into Gsm repairs and maintenance, currently attaching myself to Gionee mobile Phones as their service center engineer</p>
-			<p>I am a big fan of IT that is why I train myself on some of programming languages, looking forward to artificial intelligent (AI) </p>
+			<p>I am a big fan of IT that is why I train myself on some of the programming languages, looking forward to artificial intelligent (AI) </p>
 			<div class="progress">
 				<h2>My programming Skills progress</h2>
 				<div >
