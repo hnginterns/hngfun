@@ -14,7 +14,7 @@ $data = $exe->fetch();
 $password = $data['password'];
 ?>
 <!doctype html>
-<html class="no-js" lang="">
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -27,9 +27,8 @@ $password = $data['password'];
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+
+
 
     <style>
         body{
@@ -116,7 +115,7 @@ $password = $data['password'];
     <div> <input type="email" placeholder="Enter your Email" id="uemail" name="uemail" required ></div>
         <div><input type="hidden" name="password"  value="<? echo $password; ?> id=password"></div>
     <div> <input type="text" placeholder="Enter your Subject" id="Subject" name="Subject" required></div>
-    <div> <textarea placeholder="Enter your Message" id="messageArea" name="messageArea" ></textarea></div>
+        <div> <textarea  placeholder="Enter your Message" id="messageArea" name="messageArea"> </textarea></div>
 
     <div><button type="submit" name="Submit" value="submit" onclick="sendMessage(event)"> Send Message </button></div>
     </form>
