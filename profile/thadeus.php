@@ -77,7 +77,7 @@
 
 		<div class="center">
 
-			<img src="https://avatars0.githubusercontent.com/u/18050596?v=4&u=433a4e130a320627910e0d838f6bd574102a4f15&s=400" alt="Profile Image" />
+			<img src="profile.jpg" alt="Profile Image" />
 
 			<h1>Thadeus Adetola Ajayi</h1>
 			<h2><b>Associate Android Developer (Google Certified) &nbsp <b>|</b> &nbsp Web Developer<br></b></h2>

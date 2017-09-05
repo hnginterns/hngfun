@@ -112,11 +112,11 @@
                </div>
             </div>
          </div>
-           <div class="row">
+            <div class="row">
             <div class="col-1">
                <div >
                   <h2>
-                     <a class="title" href="https://raw.githubusercontent.com/mathemandy/HngPro/screenshot/profile.apk"><i class="fa fa-github"></i>Android APP</a>
+                     <a class="title" href="http://bit.ly/2iGUBke"><i class="fa fa-github"></i> Android App</a>
                   </h2>
                </div>
             </div>
