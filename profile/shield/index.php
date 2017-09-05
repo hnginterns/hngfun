@@ -33,7 +33,7 @@
           <p><strong>Username:&nbsp;</strong>shield</p>
           <p><strong>Hobbies:&nbsp;</strong>Playing games, Studying, Tennis, Travelling</p>
           <p><strong>Slack Task:&nbsp;</strong><a href="https://github.com/otu02/first-task/blob/master/index.php">Stage 1</a></p>
-          <p><strong>Download:&nbsp;</strong><a href="https://drive.google.com/file/d/0ByBYrX2Fbv33a2NnQU12OVZFYjg/view?usp=sharing">My profile app for Android</a></p>
+          <p><strong>Download:&nbsp;</strong><a href="https://github.com/hnginterns/hngfun/blob/master/profile/shield/shield.apk">My profile app for Android</a></p>
         </section>
       </div>
       <section class="bio">
