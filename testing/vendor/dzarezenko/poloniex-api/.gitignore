@@ -1,8 +1,0 @@
-# netbeans project files
-/nbproject/
-
-# composer vendor dir
-/vendor/
-
-# composer.lock in applications is ignored since it's automatically created by composer when application is installed
-/composer.lock
