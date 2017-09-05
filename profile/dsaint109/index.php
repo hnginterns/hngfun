@@ -33,6 +33,7 @@
 		return empty($string) ? true : false;
 	}
 	$post = (!empty($_POST)) ? true : false; //determine if the post request is empty 
+	$showErrors=$showSuccess=false;
 	if ($post) 
 	{
 		$name = stripslashes($_POST['name']); //Fix the name from post
