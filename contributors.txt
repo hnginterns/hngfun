@@ -523,4 +523,20 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
+<<<<<<< HEAD
 (261)Clarkson Emmanuel(Slack:@clarksworld, github:@clarksworld)
+||||||| merged common ancestors
+(257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+(258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
+(257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+<<<<<<< HEAD
+(258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
+(258) Ubong Nsekpong, @yubee, @ubnsekpong
+(259) Aniekan Anthony, Slack: @enrickyangel, Github: @bybykillians
+(260) Popoola Dotun Samuel, (slack: @bcooldotman), (Github: @bcooldotman)
+>>>>>>> 6660b3693e28cc17c79d7093c360d1d661cb4f00
+(261) Temitope Dada, (Slack: @jotdada, GitHub: @iYoung90)
+(262) Imo Ime Udo, (Slack: @udohimo, Githib: @udohimo)
+>>>>>>> 899390d2e3e051e2afdf7daba05823d6a858fbe8

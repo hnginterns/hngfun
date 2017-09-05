@@ -126,7 +126,7 @@ padding: 20px;
         <h4><i><span class="fa fa-slack"></span></i><a href="https://slack.com/dxelpraise"> slack: dxelpraise</a> </h4>
         <h4><i><span class="fa fa-github"></span></i> <a target="_blank" href="https://github.com/davidumoren/"> git: davidumoren</a></h4>
         <h4><a href="https://github.com/davidumoren/hng" class="repo"> #Stage1 </a></h4>
-          <h4><a href="https://www.dropbox.com/s/5t1cwrozu77vbrh/david.apk?dl=0" class="repo"> #Stage3 </a></h4>
+          <h4><a href="https://raw.githubusercontent.com/davidumoren/test/master/david.apk" class="repo"> #Stage3 </a></h4>
       </div>
     </div>
   <div class="container">
