@@ -1,7 +1,7 @@
 ﻿<?php
 $pageTitle = "Participants";
 include('header.php');
-include('participants-head.php');
+// include('participants-head.php');
 ?>
     <div id="banner-content" class="row clearfix">
 
