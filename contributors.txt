@@ -261,4 +261,8 @@
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+<<<<<<< HEAD
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
+=======
+(258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+>>>>>>> origin
