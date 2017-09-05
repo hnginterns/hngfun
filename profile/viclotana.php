@@ -165,6 +165,7 @@ input[type=submit]:hover {
 			Slack : @viclotana
 			<br /><span>
 				<a href="https://twitter.com/viclotana" target="_blank">Twitter</a>
+				<a href="https://creator.ionic.io/share/a25e75e5d175" target="_blank">App Link</a>
 				<a href="https://github.com/viclotana" target="_blank">Github</a>
 				<a href="https://github.com/viclotana/hnginternship" target="_blank">Stage1 link</a>
 			</span>
