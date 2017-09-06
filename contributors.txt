@@ -1,6 +1,7 @@
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
+
 (4) Fregene Efe-Uririn, efefregene, efefregene
 (5) Joe-smith Essang (slack: @jsmyth,  github: joesmithessang)
 (6) Chinke Ifeyinwa Ruth (github: eephie) (slack: ifychinke)
@@ -571,9 +572,13 @@
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 (269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 (270) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
 (271) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
 >>>>>>> 447ff934a53f063bc3fd1c81bee1d1264bb31656
 
+=======
+(270) Itoro Simple Ekpenyong (Slack : @itorosimple, github : @itorosimple)
+>>>>>>> 43a5d376d37281e3fc7d5b0879c92cec8b6347a0
 
