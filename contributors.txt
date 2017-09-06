@@ -569,6 +569,6 @@
 >>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
-
+(269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
 
 
