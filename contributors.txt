@@ -533,8 +533,7 @@
 >>>>>>> origin
 =======
 =======
-(261)Clarkson Emmanuel(Slack:@clarksworld, github:@clarksworld)
-||||||| merged common ancestors
+
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 =======
