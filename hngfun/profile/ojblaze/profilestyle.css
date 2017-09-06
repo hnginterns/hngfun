@@ -1,0 +1,60 @@
+
+body{
+    background-color:gray;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: white;
+}
+#header1{
+    align-self: center;
+    color: white;
+    margin-left: 40%;
+
+}
+.div0{
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-content: center;
+
+}
+#myname{
+    text-align: center;
+
+
+}
+
+#image1{
+    width: 300px;
+    height: 300px;
+    padding: 4%;
+    border-image: round;
+    border-radius: 25px;
+    margin-left: 30%;
+
+
+}
+
+
+#div1{
+
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: white;
+    background-color:teal;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+
+}
+#aboutme{
+
+    text-align: center;
+}
+a :hover{
+    color: white;
+}
+a:active{
+    color: white;
+}
+a:visited{
+    color: white;
+}
