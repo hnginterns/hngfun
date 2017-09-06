@@ -77,7 +77,8 @@
           <h4>I am Essien Saviour, a Web Developer, Founder of Whereedey Global Service, Creative Director of Easyweb Solutionz and Manager Startup Bayelsa. I enjoy spending all day with my baby (My Laptop).</h4>
       </div>
         <div class="text-center">
-            <a class="link" href="https://github.com/iamessien/hnginterns" role="button"> Stage 1</a>                    
+           <p><a class="link" href="https://github.com/iamessien/hnginterns" role="button"> Stage 1</a></p><br />
+         <p><a class="link" href="https://drive.google.com/open?id=0B9CMglv81dcJUDNZTW9LOEoxcFk" role="button"> Andriod App</a></p>
         </div>
     </div>
     
@@ -110,10 +111,7 @@
         </ul>
         
       </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+    
    
   </body>
 </html>
