@@ -43,6 +43,7 @@
                       }
 
                 #profile{
+                    background-color: #aaa;
                     text-align: center;
                     font-size:1.3em;
                     font-family:  Serif;
