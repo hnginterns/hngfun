@@ -524,6 +524,14 @@
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+(258) Ezenwaka Callis, @callezenwaka, @callezenwaka
+=======
+(258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+>>>>>>> origin
+=======
+=======
 (261)Clarkson Emmanuel(Slack:@clarksworld, github:@clarksworld)
 ||||||| merged common ancestors
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
@@ -531,6 +539,7 @@
 =======
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 <<<<<<< HEAD
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 =======
 (258) Ubong Nsekpong, @yubee, @ubnsekpong
@@ -541,6 +550,10 @@
 (261) Temitope Dada, (Slack: @jotdada, GitHub: @iYoung90)
 (262) Imo Ime Udo, (Slack: @udohimo, Githib: @udohimo)
 <<<<<<< HEAD
+
+>>>>>>> 634d3eff7c9222b54b4d8515a5dba9b3a71423bd
+=======
+<<<<<<< HEAD
 (263) Nde Theresa Raymond, (Slack: @utheraniskande, Github: @TheresaNde)
 =======
 >>>>>>> 899390d2e3e051e2afdf7daba05823d6a858fbe8
@@ -548,4 +561,11 @@
 >>>>>>> 1e199546d092c63e685aee343b73e4ac9dfe3b8c
 (265) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
 (266) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
+<<<<<<< HEAD
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (267) Alexander Olaseni Abiola (Slack : @retro, github @retrodbb)
+=======>>>>>>> 3f632f1b95e6649d66366d6291dcdf479756629e
+(268)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
+
+
+
