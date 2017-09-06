@@ -571,5 +571,6 @@
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 (269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
 (270) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
+(271) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
 
 
