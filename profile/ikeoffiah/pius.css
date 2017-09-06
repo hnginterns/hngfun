@@ -1,2 +1,9 @@
-body{ text-align:center;background-color:#E6E6FA; color:black;}
-div{ background-color:#E5FF77; border:2px; position:absolute; width:45%;left:30%;}
+body{ text-align:center;
+  background-color:#E6E6FA;
+  color:black;}
+div{ background-color:#E5FF77;
+  border:2px;
+  position:absolute;
+  width:45%;
+  left:30%;
+}
