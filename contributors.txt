@@ -500,7 +500,7 @@
 (239) Abdulrahman Abdulkarim Ayoola, @abdul, lanre01
 (240) Akande Gbolahan, @gbolahan_akande, gboigwe
 (241) Emmanuel Jacobson, writeprovidence, writeprovidence
-(242) Stephen Ojo, @ripplz, Rippl
+(242) Stephen Ojo, @ripplz, Ripplz
 (243) Grace Ebong, @graceebong, graceebong25
 (244) Emem Okon, currentboy, currentboy
 (245)(Ezeoke Chiamaka)(slack: @amaka_anne, github:@amakaanne)
@@ -591,4 +591,4 @@
 (275) Unwanaobong Usen Ekwere (Slack: Unwanapearl github: unwanapearl)
 (276) Umana Enobong George (Slack: Enoumana66 Github: enoumana)
 (277) Uduak-abasi Samuel (Slack: Cherubin Github: Cherubin12)
-(288) Okon Albert (Slack: okonalbert Github: okonalbert)
+(288) Okon Albert,@okonalbert,okonalbert
