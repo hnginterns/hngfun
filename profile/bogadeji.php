@@ -160,7 +160,7 @@
       	<div id ="profile"><p>Beginner web developer with a desire to see the things I have learnt make sense and become something tangible. I love to learn and work on challenges even when I shed tears, get headaches and almost quit way too many times. Slack name: @bogadeji. Check out my first task <a href = "https://github.com/bogadeji/hnginterns-stage1" target ="_blank">here</a></p>
       	<p id="name">ADEBOGA ABIGAIL</p>
         <hr> 
-        <div id="app" ><a href="https://goo.gl/aEwawb" style="color: white" target ="_blank">DOWNLOAD APP</a></div>
+        <a href="https://goo.gl/aEwawb" style="color: white" target ="_blank"><div id="app" >DOWNLOAD APP</div></a>
         <hr>
         </div>
         
