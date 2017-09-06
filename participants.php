@@ -8494,6 +8494,28 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
+			   <!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent.fdla2-1.fna.fbcdn.net/v/t1.0-9/18698486_10154919055128462_639121027810742216_n.jpg?oh=9e2b7cc43721bb6824eb84136dc9e224&oe=5A5E7A77); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/westside200.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Fru Anthony</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">antonyfru@yahoo.com</p>
+                    <!--Email-->
+                </div>
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title">  </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
                 
                 <!--  Each Participant starts here  -->
                <div class="p-card">
