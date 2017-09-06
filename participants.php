@@ -1,7 +1,7 @@
-﻿hp
+﻿<?php
 $pageTitle = "Participants";
 include('header.php');
-include('participants-head.php');
+// include('participants-head.php');
 ?>
     <div id="banner-content" class="row clearfix">
 
@@ -8396,6 +8396,28 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
+	<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+	<div class="p-card-photo" style="background-image: url(https://raw.githubusercontent.com/hnginterns/hngfun/master/profile/ikeoffiah/IMG.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+	<div class="p-card-info">
+	    <a href="http://hng.fun/profile/ikeoffiah">
+		<!--Profile Link-->
+		<h3 class="p-card-title">Ikeoffiah Pius</h3>
+		<!--Profile Name-->
+	    </a>
+	    <p class="p-card-description">piuspio12@gmail.com</p>
+	    <!--Email-->
+	</div>
+	<div class="p-team">
+	    <a href="#">
+		<h3 class="p-card-title"></h3>
+		<!--Team-->
+	    </a>
+	</div>
+    </div>
+</div>
+<!--  Each Participant Ends here  -->
 
 <<<<<<< HEAD
 <!--  Each Participant starts here  -->

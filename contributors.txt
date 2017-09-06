@@ -262,8 +262,19 @@
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 <<<<<<< HEAD
+<<<<<<< HEAD
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
 =======
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
-(259)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 >>>>>>> origin
+=======
+(258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
+(258) Ubong Nsekpong, @yubee, @ubnsekpong
+(259) Aniekan Anthony, Slack: @enrickyangel, Github: @bybykillians
+(260) Popoola Dotun Samuel, (slack: @bcooldotman), (Github: @bcooldotman)
+>>>>>>> 6660b3693e28cc17c79d7093c360d1d661cb4f00
+(261) Temitope Dada, (Slack: @jotdada, GitHub: @iYoung90)
+(262) Imo Ime Udo, (Slack: @udohimo, Githib: @udohimo)
+(263)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
+>>>>>>> 634d3eff7c9222b54b4d8515a5dba9b3a71423bd
