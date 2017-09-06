@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://use.fontawesome.com/7faee5982a.js"></script>
+
+<style>
+
+body{
+    width:1280px;
+    margin: 0px auto;
+}
+ul, li,a{
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    
+}
+li{
+    margin-right: 10px;
+    font-size: 32px;
+}
+li:hover{
+    background-color: bisque;
+}
+#navig
+{text-align: center;
+margin-top:30px; 
+width:540px;
+margin: 5px auto;
+border-bottom: solid red 3px;
+}
+
+.small-pics  {
+    border-radius:100px;
+    display:block; 
+    width:160px; 
+    height:120px;
+}
+.align-top{
+position:relative;
+top:-280px;
+}
+
+.hed{color:#555555;
+    width:540px;
+    height:290px;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
+.moveto{
+    position:absolute;
+    width: 200px;
+    height: 300px;
+    top:200px;
+    margin-left: 10px;
+}
+
+.copy{
+	position:fixed;
+	bottom:-10px;
+	left:540px;
+    font-size: 16px;
+}
+input {
+    margin:10px 10px 0px 0px;
+}
+input[type="submit"]{
+      color:white;
+      background:red;
+	  font-size: 18px;
+     margin:10px;}
+.sidenav{
+    position:absolute;
+    right:0px;
+    top:80px;
+    text-align: center;
+    }
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+span{
+     margin: 20px;
+
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.form-style-6 h1{
+    background: #43D1AF;
+    padding: 10px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3px 0%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+    margin: -12px -12px -12px -12px;
+}
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #2EBC99;
+}
+
+
+</style>
+</head>
+<body>
+<nav id="navig">
+    <ul>
+        <li><a href="">Home</a></li>
+         <li><a href="">About</a></li>
+         <li><a href="">Contact</a></li>
+        <li><a href=""> Profile</a></li>
+    </ul>
+    </nav>
+
+
+<header class="hed">
+    <h1>My Profile</h1>
+    <p>My name is Shotola Hammed a native Of Ogun state, I am Naive for now but am Willing to learn, I Love Reading and the last book i read 
+    was Green and Black by Craig Sams and Jo fairlay. </p>
+    <small>Am a dot-net developer (begginer) Proficent with C#, and intemediate with the Asp.net Mvc framework</small> <br />
+    
+    <p align = "center">   
+        <span><iframe src = "http://thumb.ibb.co/mOZGGv/image1.png" width = "200" height = "200" align = "center">
+        </iframe>
+    </span>
+      <span>
+       <iframe src = "http://thumb.ibb.co/c0yoeF/work.png" width = "200" height = "200" align = "center">
+      </iframe>
+    </span>
+   </p>
+  </header>
+    <div class = "sidenav">
+        <h3> My Socials include</h3> 
+        <a href="https://twitter.com/oluwolley"><i class="fa fa-twitter" aria-hidden="true"></i></a> <br /><br />
+       <a href="https://github.com/hammed01" > <i class="fa fa-github" aria-hidden="true"></i> </a> <br /><br />
+        <a href="mailto:shotolahammed01@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a><br /><br />
+        <a href="https://hnginterns.slack.com/team/shotolahammed01"><i class="fa fa-slack" aria-hidden="true"></i></a> <br /><br />
+        
+    </div>
+    
+<section class="tone">
+<img class="small-pics align-top" src="http://preview.ibb.co/bvomp5/IMG_0338.jpg" alt= "my pics"/>
+    <article class="moveto">
+<p> Check out my Apps below</p>
+        <input class = "button" type="button" value="Stage-1" onclick="window.location.href='https://github.com/hammed01'"/> <br />
+        <input class="button" type="button" value="Android App" onclick="window.location.href='https://drive.google.com/file/d/0B17mCWtkrc3QSXhoNHpXdGxYd2M/view'"/> <br /> <br />
+         
+<!--<form action="contact.php" id= "space" method="post">
+<input type="text" value="" placeholder="your name" size="18px" /><br />
+<input type="email" placeholder="your email" value="" size="18px"/><br /><br />
+<textarea rows="20" cols="20" placeholder ="Your Message">
+  </textarea>                          
+<input type ="submit"/>
+</form>-->
+  
+        
+<div class="form-style-6">
+<h1>Contact Us</h1>
+<form action="hammed01.php" method = "post">
+<input type="text" name="field1" placeholder="Your Name" />
+<input type="email" name="field2" placeholder="Email Address" />
+<textarea rows="10" cols="5" name="field3" placeholder="Type your Message"></textarea>
+<input type="submit" value="Send" />
+</form>
+</div>
+        
+</article>
+</section> 
+
+<div class="copy">
+<h6>&copy; Copyright Hotels.ng </h6>
+    </div>
+</body>
+</html>
+
+
+
+
+
