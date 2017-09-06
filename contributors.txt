@@ -562,6 +562,10 @@
 (265) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
 (266) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
 <<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 739c6b0607b2da7565694e166fbbf7c3e0c34875
 >>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
