@@ -580,5 +580,9 @@
 
 =======
 (270) Itoro Simple Ekpenyong (Slack : @itorosimple, github : @itorosimple)
+<<<<<<< HEAD
 >>>>>>> 43a5d376d37281e3fc7d5b0879c92cec8b6347a0
 
+=======
+(271) lawrence lawrence (slack: @lawrencelawrence, githup: @lawrencebrothers)
+>>>>>>> 48bfb6a7e86b9722465f1a1d2042417b380719f3
