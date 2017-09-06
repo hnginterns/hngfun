@@ -561,5 +561,5 @@
 >>>>>>> 1e199546d092c63e685aee343b73e4ac9dfe3b8c
 (265) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
 (266) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
-(266)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
+(267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 >>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
