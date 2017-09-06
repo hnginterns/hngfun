@@ -115,6 +115,23 @@ try {
 
         </div>
     </div>
+         <div class="below-container">
+<p class="typing">
+    <strong> Stage 1 Link </strong> <a href="https://github.com/okanlawonema/HNG-Internship">Click here </a>
+</p>
+<p class="typing">
+    <strong> Stage 2 Link </strong> <a href="http://hng.fun/profile/solar">Click here </a>
+</p>
+<p class="typing">
+    <strong> Team Work </strong> <a href="http://hng.fun/participants.php">Click here </a>
+</p>
+<p class="typing">
+<strong> Stage 3 Link </strong> <a  href="https://drive.google.com/file/d/0B5N-l7L1i-SRRmRBUUU2elRJOHM/view?usp=sharing">Click here </a>
+</p>
+
+
+</div>
+         
 <script src="js/main.js"></script>
 </body>
 
