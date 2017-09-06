@@ -6745,7 +6745,7 @@ include('header.php');
                  <!--  Each Participant starts here  -->
                <div class="p-card">
                    <div class="v-center">
-                       <div class="p-card-photo" style="background-image: url(https://image.ibb.co/e0giMk/prolifichands.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/Judeukana/jay.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                        <div class="p-card-info">
                            <a href="http://hng.fun/profile/Judeukana">
                                <!--Profile Link-->
