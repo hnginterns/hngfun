@@ -570,5 +570,10 @@
 (267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 (269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
+<<<<<<< HEAD
+=======
+(270) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
+(271) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
+>>>>>>> 447ff934a53f063bc3fd1c81bee1d1264bb31656
 
 
