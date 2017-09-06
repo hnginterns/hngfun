@@ -3,7 +3,7 @@ body
 	background-color: #ffdab9;
 }
 img {
-	width: 600px;
+	width: 300px;
 	height: auto;
 	position: relative;
 	left: 250px;
@@ -12,7 +12,7 @@ img {
 .left {
 	float: left;
 	background-color: #54ff9f;
-	height: 400px;
+	height: 1000px;
 	width: 50%;
 }
 .right {height: 100%;
