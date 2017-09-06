@@ -29,6 +29,24 @@
 	<a href="https://web.facebook.com/chuka.ilozulu">Chuka Ilozulu</a>
   
 	</div>
+	<!-- This is the contact form -->
+	<form action="email_script.php" method="POST">
+     <fieldset>
+     	<legend>CONTACT ME</legend>
+     	<p>Name:
+     	<input type="text" name="name" size="30" required></p>
+     	
+     	<p>Subject:
+     	<input type="text" name="subject" size="30" required></p>
+     	<p>Message:</p>
+     
+     	<p><textarea rows="10" cols="30" name="message" placeholder="Type your message here, please feel free to pour out your heart"></textarea></p>
+     	<p>Your e-mail address:
+     	<input type="text" name="from" size="30" required></p>
+
+     <input type="submit" name="submit" value="SEND">
+     </fieldset>
+
 	</div>
 </body>
 </html>
