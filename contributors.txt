@@ -543,5 +543,6 @@
 (263) Nde Theresa Raymond, (Slack: @utheraniskande, Github: @TheresaNde)
 =======
 >>>>>>> 899390d2e3e051e2afdf7daba05823d6a858fbe8
-(263)clarkson Emmanuel(slack: @clarksworld, github: @clarksworld)
+(264)clarkson Emmanuel(slack: @clarksworld, github: @clarksworld)
 >>>>>>> 1e199546d092c63e685aee343b73e4ac9dfe3b8c
+(265) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
