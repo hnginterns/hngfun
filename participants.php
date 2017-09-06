@@ -8532,7 +8532,7 @@ include('header.php');
                        </div>
                        <div class="p-team">
                            <a href="#">
-                               <h3 class="p-card-title">NULL</h3>
+                               <h3 class="p-card-title"></h3>
                                <!--Team-->
                            </a>
                        </div>
