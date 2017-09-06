@@ -563,9 +563,8 @@
 (266) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
 <<<<<<< HEAD
 >>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
-(267) Alexander Olaseni Abiola (Slack : @retro, github @retrodbb)
-=======>>>>>>> 3f632f1b95e6649d66366d6291dcdf479756629e
-(268)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
+(267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
+(268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 
 
 
