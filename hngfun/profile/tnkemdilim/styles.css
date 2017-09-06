@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: 'Baloo Bhaijaan', cursive;
+  color: white;
+  font-size: 20px;
+}
+
+/*Custom helpers*/
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+.text-center {
+  text-align: center;
+}
+
+/*Header*/
+.header {
+  background-color: black;
+  min-height: 30px;
+  padding: 20px;
+}
+nav li {
+  list-style: none;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav li a {
+   color: white;
+}
+/*Main content*/
+.container {
+  background-image: url('https://preview.ibb.co/bCaNgk/dark_wood.png');
+}
+.image-container p {
+  padding-top: 10px;
+}
+.image-container > div {
+  padding: 30px;
+  text-align: center;
+}
+.image-container div > img {
+  border-radius: 100%;
+  height: 160px;
+}
+.image-container div > p {
+  font-style: none;
+}
+.img-center {
+  display: block;
+  margin: auto;
+}
+.description {
+  font-size: small;
+}
+.pill ul li {
+  font-size: 14px;
+  padding: 5px 15px 5px 15px;
+  margin-top: 50px;
+  border-radius: 20px;
+  color: white;
+  background-color: #FF2052;
+  display: inline;
+  list-style: none;
+}
+.empty-container {
+  padding: 7%;
+  background-color: transparent;
+}
+
+/*Footer*/
+.footer {
+  background-color: black;
+  font-size: small;
+  padding: 30px;
+}
+
+/*Font awesome*/
+.fa-heart {
+  color: red;
+}
+.fa-envelope {
+  color: gold;
+  opacity: 0.8;
+}
