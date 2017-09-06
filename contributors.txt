@@ -500,7 +500,7 @@
 (239) Abdulrahman Abdulkarim Ayoola, @abdul, lanre01
 (240) Akande Gbolahan, @gbolahan_akande, gboigwe
 (241) Emmanuel Jacobson, writeprovidence, writeprovidence
-(242) Stephen Ojo, @ripplz, Ripplz
+(242) Stephen Ojo, @ripplz, Rippl
 (243) Grace Ebong, @graceebong, graceebong25
 (244) Emem Okon, currentboy, currentboy
 (245)(Ezeoke Chiamaka)(slack: @amaka_anne, github:@amakaanne)
@@ -533,8 +533,7 @@
 >>>>>>> origin
 =======
 =======
-(261)Clarkson Emmanuel(Slack:@clarksworld, github:@clarksworld)
-||||||| merged common ancestors
+
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 =======
