@@ -1,6 +1,6 @@
 body
 {
-	background-color: #54ff9f;
+	background-color: #ffdab9;
 }
 img {
 	width: 300px;
@@ -11,8 +11,8 @@ img {
 }
 .left {
 	float: left;
-	background-color: #ffdab9;
-	height: 100%;
+	background-color: #54ff9f;
+	height: 400px;
 	width: 50%;
 }
 .right {height: 100%;
