@@ -53,6 +53,26 @@
                     padding: 20px;
                      }
 
+                #app{
+                    background-color: #551A8B;
+                    border-top-left-radius: 5%;
+                    border-top-right-radius: 5%;
+                    border-bottom-left-radius:5%;
+                    border-bottom-right-radius:5%;
+                    font-size: 0.75em;
+                    padding: 5px;
+                    display: inline-block; overflow: hidden;
+                    
+                     }
+
+                div#app a :link {
+                    color: white;
+                    }
+                    
+                div#app a :hover {
+                    color: #aaa;
+                    }
+
                 form{
                     background:#F9F9F9;
                     padding:25px;
@@ -137,10 +157,13 @@
 
       	<div class = "myprofile">
       	<img src="../images/bogadeji.jpg" onload="this.width/=(2);this.onload=null;"">
-      	<div id ="profile"><p>Beginner web developer with a desire to see the things I have learnt make sense and become something tangible. I love to learn and work on challenges even when I shed tears, get headaches and almost quit way too many times. Slack name: @bogadeji. Check out my first task <a href = "https://github.com/bogadeji/hnginterns-stage1" target ="_blank">here</a></p><hr>
+      	<div id ="profile"><p>Beginner web developer with a desire to see the things I have learnt make sense and become something tangible. I love to learn and work on challenges even when I shed tears, get headaches and almost quit way too many times. Slack name: @bogadeji. Check out my first task <a href = "https://github.com/bogadeji/hnginterns-stage1" target ="_blank">here</a></p>
       	<p id="name">ADEBOGA ABIGAIL</p>
-        </div>
+        <hr> 
+        <div id="app" ><a href="https://goo.gl/aEwawb" style="color: white" target ="_blank">DOWNLOAD APP</a></div>
         <hr>
+        </div>
+        
 
         <div class ="contact">
           
