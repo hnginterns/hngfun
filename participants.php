@@ -2060,7 +2060,7 @@ include('header.php');
 
                     <div class="p-team">
                         <a href="#">
-                            <h3 class="p-card-title">  </h3>
+                            <h3 class="p-card-title">NO TEAM </h3>
                             <!--Team-->
                         </a>
                     </div>
@@ -2068,6 +2068,31 @@ include('header.php');
             </div>
 <!--  Each Participants ends here  -->
 
+		<!--  Each Participant starts here  -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/crackmixer/image/upload/v1504098159/image_ez3a7j.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+
+
+                        <a href="http://hng.fun/profile/crackmixer.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Azurunwa Miracle</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">miracleazurunwa@gmail.com</p>
+                        <!--Email-->
+                    </div>
+
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title">NO TEAM</h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
             <div class="p-card">
