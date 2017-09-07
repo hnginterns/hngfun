@@ -184,7 +184,7 @@ textarea {
             <br /> "Determination today leads to <code>success</code>tommorrow" </p>
         <a href="https://github.com/ogechiokoro/intern_hng" class="info">View <code>Stage 1</code> Repository</a>
         <br>
-        <h4><a target="_blank" href="https://github.com/ogechiokoro/Androidprofile/raw/master/app/app-release.apk" class="info"> Download  my contact app</a></h4>
+        <h4><a target="_blank" href="https://drive.google.com/open?id=0B6YE7xMAswrrY1NLMV9FMTV1azg" class="info"> Download  my contact app</a></h4>
         <br>
         <br>
         <div class="github"><img src="./images/github.png" width="30" style="float: left;">
