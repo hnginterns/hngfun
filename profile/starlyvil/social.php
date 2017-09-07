@@ -5,12 +5,12 @@
 <title>Starlyvil's Profile</title>
 <link rel="stylesheet"  type="text/css" href="styles/gen.css"/>
 <style>
-	#Ci{
+	#Sh{
 		color: #005151;
 		font-size: 24px;
 		text-shadow: 0 0 8px white;
 	}
-	#Ci:hover{
+	#Sh:hover{
 		text-decoration: none;
 	}
 	
@@ -32,17 +32,17 @@
 		</div>
 		<div class="rgt">
 			<div class="infoCon">
-				<h1>Contact info</h1>
-				<p>You can reach me through any of the following contact points listed below</p>
+				<h1>Social handler</h1>
+				<p>You can reach me also through any of the following social handlers listed below</p>
 				<table border="0">
 				  <tbody>
 					<tr>
-					  <td><span>Mobile number:</span></td>
-					  <td>08087470569</td>
+					  <td><span>Slack:</span></td>
+					  <td>@Starlyvil</td>
 					</tr>
 					<tr>
-					  <td><span>Email:</span></td>
-					  <td>starlyvil@gmail.com</td>
+					  <td><span>Github:</span></td>
+					  <td>@Starlyvil</td>
 					</tr>
 				  </tbody>
 				</table>
@@ -53,8 +53,9 @@
 		<div class="lCon">
 			<div class="mainCon">
 				<a href="index.html" id="Bi">Basic Info</a>
-				<a id="Ci">Contact Info</a>
-				<a href="social.html" id="Sh">Social handler</a>
+				<a href="contact.html" id="Ci">Contact Info</a>
+				<a id="Sh">Social handler</a>
+				<a href="cform.php" id="Cf">Contact form</a>
 			</div>
 		</div>
 	</div>
