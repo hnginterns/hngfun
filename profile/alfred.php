@@ -129,6 +129,7 @@
 			#contact-form input {
 				border:1px solid #cccccc;
 				height:30px;
+				padding:1%;
 			}
 			 #contact-form  label {
 				text-transform:uppercase;
