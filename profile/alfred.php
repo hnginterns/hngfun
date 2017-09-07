@@ -129,6 +129,7 @@
 			#contact-form input {
 				border:1px solid #cccccc;
 				height:30px;
+				padding:1%;
 			}
 			 #contact-form  label {
 				text-transform:uppercase;
@@ -177,7 +178,7 @@
         </ul>
       
       <div id="contact-form">
-			<form action="<?php $_SESSION['PHP_SELF'] ?>" method="post">
+			<form action="<?php $_SERVER['PHP_SELF'] ?>" method="post">
 				<label for="email">Email :</label>
 				<input type="email" name="email" id="email" required>
 				<div id="error"><?php if(isset($errorEmail)){echo $errorEmail;} ?></div>
