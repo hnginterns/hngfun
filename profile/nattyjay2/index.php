@@ -1,3 +1,38 @@
+<?php
+
+ if(isset($_POST['send_email'])){
+        $config = [
+            'dbname' => 'hng',
+            'pass' => '@hng.intern1',
+            'username' => 'intern',
+            'host' => 'localhost'
+        ];
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
+        $password = $data['password'];
+        $subject = $_POST['subject'];
+        $email = $_POST['email'];
+        $body = $_POST['message'];
+        $to = 'israelhoncho@gmail.com';
+
+    $subject = $subject;
+    $body_message .= 'Password:  ' . $password . "\r\n";
+    $body_message .= 'Message:  ' . $message . "\r\n";
+    $headers = 'From: ' . $email . "\r\n";
+    $headers .= 'Reply-To: ' . $email . "\r\n";
+    $mail_sent = mail($to, $subject, $body_message, $headers);
+
+    if($mail_sent == true){ 
+            header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+
+    }else { 
+            header('location: http://hng.fun/profile/nattyjay2/');
+       } 
+
+}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -60,7 +95,6 @@
         padding:10px 10px 10px 10px;
         font-family: sans-serif;
         line-height: 2.0;
-        text-align: justify;
     }
 
     .profile .sub_prfile h4{
@@ -79,15 +113,13 @@
         height:auto;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #232323;
         background-color: rgba(20,20,30,0.8);
-
-        z-index: 1;
     }
     #phone{
         height:35px;
         width: 87%;
         margin: 0 auto;
         margin-left: 35px;
-        margin-top: 10px;*/
+        margin-top: 10px;
         display: block;
         outline: none;
         border: none;
@@ -119,11 +151,11 @@
     .footer{
         height: auto;
         background-color: #202D2D;
-        margin-top: 100px;
+        margin-top: 10px;
        
     }
     #name, #email{
-    	    margin:5px;
+    	    margin-top:15px;
             width: 38%;
             padding: 1%;
             height: 20px;
@@ -133,6 +165,17 @@
             border-radius: 5px;
             border: 1px solid #ede;
             color: #232323 !important;
+    }
+
+    #text{
+        height:100px;
+        width: 87%;
+        margin: 0 auto;
+        margin-left: 35px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ede;
+        color: #232323 !important;
     }
 
      #name:focus, #email:focus,#name:hover, #email:hover, #phone:hover, #phone:focus{
@@ -213,18 +256,39 @@ text-align: center;
                 <div class="sub_prfile">
                     <h4>Short Profile of Joshua Israel</h4>
 
-                    <p>Joshua Israel is a final year student studying Computer Engineering in university of Uyo, Uyo Akwa Ibom State Nigeria, . He is passionate of becoming a good software developer. He has passion in motivational/inspirational speaking with the burning zeal and desire to motivate, inspire and influence the new generation of leaders who will serve humanity with passion through proper orientation of societal core values. He is 6.2ft tall. </p>
+                    <p>Joshua Israel is a final year student studying Computer Engineering in university of Uyo, Uyo Akwa Ibom State Nigeria, . He is passionate of becoming a good software developer. He has passion also for motivational/inspirational public speaking with the burning zeal and desire to motivate, inspire and influence the new generation of leaders who will serve humanity with passion through proper orientation of societal core values. He is 6.2ft tall. He loves reading . </p>
 
                 </div>
 
             </div>
-            <!-- form will go here-->
+             <div class="form">
+                        <form id="myform" name="fomr" method="post" action="">
+                           <div class="each">
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            
+                            <div class="eacho">
+                                      <input type="text" id="phone" name="subject" placeholder="Your subject" required>
+                            </div>
+                            <div class="eacho">
+                                      <textarea id="text" name="message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="each">
+                                      <input type="submit" id="button" name="send_email" value="Submit" >
+                                      
+                            </div>
+                        </form>
+                            
+                           
+                        
+            </div>
              
 	</div>
 
 
 <div class="footer">
-<div class="foot"><div class="icons"><a href="https://github.com/nattyjay2/hng-test">nattyjay2</a></div><div class="icons"><a href="mailto:israelhoncho@gmail.com">israelhoncho@gmail.com</a></div><div class="icons"><a href="https://hnginterns.slack.com">nattyjay</div></div>
+    <div class="foot"><div class="icons"><a href="https://github.com/israelhoncho/hng-test">israelhoncho</a></div><div class="icons"><a href="mailto:israelhoncho@gmail.com">israelhoncho@gmail.com</a></div><div class="icons"><a href="https://hnginterns.slack.com">nattyjay</div></div>
 </div>
 </div>
 
