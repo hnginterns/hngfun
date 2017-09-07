@@ -1,13 +1,7 @@
-﻿<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
+﻿
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
-
 (4) Fregene Efe-Uririn, efefregene, efefregene
 (5) Joe-smith Essang (slack: @jsmyth,  github: joesmithessang)
 (6) Chinke Ifeyinwa Ruth (github: eephie) (slack: ifychinke)
@@ -2822,7 +2816,6 @@
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
-
 (4) Fregene Efe-Uririn, efefregene, efefregene
 (5) Joe-smith Essang (slack: @jsmyth,  github: joesmithessang)
 (6) Chinke Ifeyinwa Ruth (github: eephie) (slack: ifychinke)
@@ -11312,7 +11305,9 @@
 (299) David iton,(Slack:@daviditon21,github:daviditon21)
 (300) David Daniels,(Slack:daviddaniels3000,github:DavidDaniels3000)
 (301) Edidiong Asikpo,(Slack:Edidiong,github:EdyAsikpo)
-(294) Albert Christopher Okon (Slack: okonalbert, Github: okonalbert)
-(302) Aniekan Etim, (Slack: codeislife, Github: onlycodeislife)
-(303) Kazeem Victoria (slack: kelzvictoria, github: kelzvictoria)
+(302) Albert Christopher Okon (Slack: okonalbert, Github: okonalbert)
+(303) Aniekan Etim, (Slack: codeislife, Github: onlycodeislife)
+(304) Kazeem Victoria (slack: kelzvictoria, github: kelzvictoria)
+(305) Sunday Bright (slack: @sundaybright01, github: Bright)
+(306) Iniobong Afahakan, (Slack: afahakaniniobong, github: afahakani)
 
