@@ -110,17 +110,14 @@ alt = "profile picture" />
 <fieldset>
 <legend><h3> Contact Udohimo </h3></legend>
 
-<div class="forminside">
-<input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail" required> <br>
-</div>
-<div class="forminside2">
-<input name="subject" id="subject" class="dannys-input" placeholder="Subject" required><br>
-</div>
-<div class="forminside3">
-<textarea id="body" name="body" cols="45" rows="5" required></textarea> <br>
-<div class="bot">
+<form  action="#" method="POST"> 
+<div class="container"> 
+<input type="text" class="input" name="fullname" placeholder="Name" > 
+<input type="text" class="input" name="subject" placeholder="Subject*" required> 
+<textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required>
 </textarea> <button type="submit">Send</button>
-</div></div>
+</form>	
+
 </fieldset></div>
 </body>
 </html>
