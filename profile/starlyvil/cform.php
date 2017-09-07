@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	require ("/ini/link.php");
+	require ("ini/link.php");
 ?>
 <!doctype html>
 <html>
