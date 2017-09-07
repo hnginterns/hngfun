@@ -70,6 +70,9 @@
     border: 2px solid transparent;
     padding: 5px;
     text-align: center;
+    white-space: normal;
+    word-spacing: normal;
+    display: inline;
 }
 
        .form-control{
@@ -92,14 +95,6 @@
     margin-top: 18px;
     height:35px;
 }
-        input[type="subject"] {
-    border: 4px solid transparent;
-    color: black;
-    letter-spacing: 1px;
-    margin-top: 18px;
-    height:35px;
-}
-
        input[type="email"] {
     border: 4px solid transparent;
     color: black;
@@ -107,16 +102,6 @@
     margin-top: 18px;
     height:35px;
 }
-
-       input[type="mssg"] {
-    border: 4px solid transparent;
-    color: black;
-    letter-spacing: 1px;
-    margin-top: 18px;
-    height:120px;
-}
-
-
        input[type="submit"] {
     border: 4px solid transparent;
     color: rebeccapurple;
@@ -141,20 +126,20 @@
         </div>
         
         <div class="section-title">
-        <form action="kpere.php" method="post" class="form-control">
+        <form action="kpere.php" method="post" class="form">
             <h4>CONTACT ME</h4>
-				        <b>Name:</b> <input type="text" class="form-control" placeholder="Name" name="name">
-					<div class="form-control">
-						<b>Email:</b> <input type="email" class="form-control" placeholder="Email" name="email">
+				        <b>Name:</b> <input type="text" class="form" placeholder="Name" name="name">
+					<div class="form">
+						<b>Email:</b> <input type="email" class="form" placeholder="Email" name="email">
 					</div>
-                    <div class="form-control">
-						<b>Submit:</b> <input type="subject" class="form-control" placeholder="Subject to discuss" name="subject">
+                    <div class="form">
+						<b>Subject:</b> <input type="text" class="form" placeholder="Subject to discuss" name="subject">
 					</div>
-				    <div class="form-control">
-						<b>Message:</b> <input type="mssg" class="form-control" placeholder="Message" name="message">
+				    <div class="form">
+						<b>Message:</b> <input type="text" class="form" placeholder="Message" name="message">
 					</div>
-                    <div class="form-control">
-						<input type="submit" class="form-control" name="submit" value="SEND MESSAGE">
+                    <div class="form">
+						<input type="submit" class="form" name="submit" value="SEND MESSAGE">
 					</div>
             </form>
         </div>
