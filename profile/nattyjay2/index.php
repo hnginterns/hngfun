@@ -256,7 +256,7 @@ text-align: center;
                 <div class="sub_prfile">
                     <h4>Short Profile of Joshua Israel</h4>
 
-                    <p>Joshua Israel is a final year student studying Computer Engineering in university of Uyo, Uyo Akwa Ibom State Nigeria, . He is passionate of becoming a good software developer. He has passion speaking with the burning zeal and desire to motivate, inspire and influence the new generation of leaders who will serve humanity with passion through proper orientation of societal core values. He is 6.2ft tall. He loves reading . </p>
+                    <p>Joshua Israel is a final year student studying Computer Engineering in university of Uyo, Uyo Akwa Ibom State Nigeria, . He is passionate of becoming a good software developer. He has passion also for motivational/inspirational public speaking with the burning zeal and desire to motivate, inspire and influence the new generation of leaders who will serve humanity with passion through proper orientation of societal core values. He is 6.2ft tall. He loves reading . </p>
 
                 </div>
 
