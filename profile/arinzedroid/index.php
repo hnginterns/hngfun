@@ -28,7 +28,7 @@
     <div class="container">
         <div class="profile">
             <div class="profile--profile-pic">
-                <img src="./dp1.jpg" alt="image of arinze">
+                <img src="http://res.cloudinary.com/arinzedroid/image/upload/v1504513580/dp1_onjmbo.jpg" alt="image of arinze">
             </div>
             <div class="profile--info">
                 <ul>
