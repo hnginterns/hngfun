@@ -1159,5 +1159,4 @@
 (286) Solomon Okon Equan (Slack: @slowbz: github:@slowbz)
 (287) Ilozulu Chuka Victor, victorilozulu, veekthor
 (288) Ndifreke Matthew Essien (slack: @Starlyvil), (github: Starlyvil)
-(289) Unyime Edet (slack: @izi2brauz, github: @izi2brauz)
 >>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847
