@@ -28,7 +28,7 @@
             header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
 
     }else { 
-            header('location: http://hng.fun/php/index.php');
+            header('location: http://hng.fun/profile/nattyjay2/');
        } 
 
 }
