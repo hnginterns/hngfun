@@ -3,6 +3,9 @@
      error_reporting(0);
      require_once 'function/function.php';
 
+      $url1=$_SERVER['REQUEST_URI'];
+      header("Refresh: 30; URL=$url1");
+
        $last_time = selectPastTime();
 
       $last_time = $last_time[0]['date_saved'];
@@ -50,13 +53,12 @@
                          <th>S/no</th>
                          <th>Coin</th>
                          <th>Currency Pair</th>
-                         <th>Previous Buy trade Vol.</th>
-                         <th>Previous Total buy trade volume</th>
-                         <th>% of coin in previous total buy trade volume</th>
+                         <th>Buy trade Vol. 5mins ago</th>
+                         <th>Total buy trade vol. 5mins ago</th>
+                         <th>% of coin in total buy trade vol. 5mins ago</th>
                          <th>Current Buy trade Vol.</th>
                          <th>Current Total buy trade volume</th>
                          <th>% of coin in total buy trade volume</th>
-                         <th>% Change</th>
 
                      </tr>
                  </thead>
@@ -66,6 +68,23 @@
 
                        // Lets fetch record from database
                        $records = fetchRecords();
+
+                      //  Get Previous Top coin
+                      $prev_top_coin_details = GetPrevTopCoin();
+
+                      $prev_top_coin = $prev_top_coin_details[0]['coin'];
+
+                      $prev_top_coin_currency = $prev_top_coin_details[0]['currencypair'];
+
+                      $prev_top_coin_buy_trade = $prev_top_coin_details[0]['buy'];
+
+                      $prev_top_coin_current_buy_trade = GetPrevTopCoinNewBuyTrade($prev_top_coin_currency);
+
+                      $prev_top_coin_current_buy_trade = $prev_top_coin_current_buy_trade[0]['current_buy'];
+
+                      //  echo "<pre>";
+                       //
+                      //  var_dump($records);
 
                        $total_trade_volume_resources = selectTotalCurrentBuy();
 
@@ -125,7 +144,6 @@
                                  <td><?=$record['current_buy'];?></td>
                                  <td><?=$current_total_trade_volume ;?></td>
                                  <td><?=$current_percentage?>%</td>
-                                 <td><?=$percentage_change?>%</td>
 
                                </tr>
 
@@ -139,6 +157,8 @@
                                $most_popular_coin = array_keys($percentage_array)[0];
                                $most_popular_coin_value = array_values($percentage_array)[0];
 
+                               $current_top_coin_details = GetCurrentTopCoinDetails($most_popular_coin);
+
                         ?>
 
                </tbody>
@@ -146,23 +166,44 @@
 
           </div>
 
+
           <div class="col-md-12">
               <div class="alert alert-success" role="alert">
                   <h4>Who is gaining the shift?</h4>
+
+
+
                   <p>
-                      <?=$most_popular_coin?> seems to be gaining the attention right now having a greater percentage shift of <?=$most_popular_coin_value?>%
+                      <b>Top Coin 5mins ago:</b> <br>
+                      <?=$prev_top_coin?> (<?=$prev_top_coin_currency?>) was the most popular coin 5mins ago with <?=$prev_top_coin_buy_trade?> buys trades but has declined in trade having <?=$prev_top_coin_current_buy_trade;?> buys 5mins later.
+                  </p>
+                  <br>
+                  <hr>
+                  <p>
+                      <b>Current Top Coin:</b> <br>
+                      <?php
+
+                      if ($prev_top_coin_current_buy_trade < $prev_top_coin_buy_trade) { ?>
+
+                        <?=$most_popular_coin?> seems to be gaining the attention right now at the expense <?=$prev_top_coin?> of  having just <?=$current_top_coin_details[0]['buy']?> buys 5mins ago but has recently increased to <?=$current_top_coin_details[0]['current_buy']?>  with a percentage shift of <?=$most_popular_coin_value?>%
+
+                  <?php
+                      }else { ?>
+
+                          There is no shift because the last popular coin <?=$prev_top_coin?> (<?=$prev_top_coin_currency?>) is still gaining attention.
+
+                  <?php
+
+                      }
+
+                  ?>
+
                   </p>
               </div>
           </div>
 
       </div>
 
-
-
     </div>
 
-
-<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_teamwildfire&amp;utm_content=footer_img"><img src="https://cloud.githubusercontent.com/assets/23024110/20663010/9968df22-b55e-11e6-941d-edbc894c2b78.png" alt="www.000webhost.com"></a></div>
-
-</body>
-</html>
+</body></html>
