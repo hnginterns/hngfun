@@ -532,7 +532,27 @@ include('header.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
+					<div class="p-card">
 
+                        <div class="v-center">
+                            <div class="p-card-photo" style="background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20770311_1441615789264525_9111256913563638000_n.jpg?oh=84db1f63db386a88a0411ca9a6e36c7a&oe=5A179347; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                            <div class="p-card-info">
+                                <a href="http://hng.fun/profile/alfred.html">
+                                    <!--Profile Link-->
+                                    <h3 class="p-card-title">Stonywonder</h3>
+                                    <!--Profile Name-->
+                                </a>
+                                <p class="p-card-description">wonderalfred@gmail.com</p>
+                                <!--Email-->
+                            </div>
+                            <div class="p-team">
+                                <a href="#">
+                                    <h3 class="p-card-title"> Team 10 </h3>
+                                    <!--Team-->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 <!--  Each Participant starts here  -->
 
                     <div class="p-card">
@@ -25900,6 +25920,7 @@ include('participants-head.php');
 <div class="p-card">
 
 <div class="v-center">
+<<<<<<< HEAD
 
 <div class="p-card-photo" style="background-image: url(https://z-p3-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/21317727_146340795959751_4478513973771236916_n.jpg?oh=d046ba2d75888839340476edaa592154&oe=5A54FB08); background-size: cover; background-repeat: no-repeat; background-position: center center; ">
 </div>
@@ -25921,6 +25942,29 @@ include('participants-head.php');
 
 </div>
 
+=======
+
+<div class="p-card-photo" style="background-image: url(https://z-p3-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/21317727_146340795959751_4478513973771236916_n.jpg?oh=d046ba2d75888839340476edaa592154&oe=5A54FB08); background-size: cover; background-repeat: no-repeat; background-position: center center; ">
+</div>
+
+<div class="p-card-info">
+
+<a href="http://hng.fun/profile/tommyimmanuel.html">
+
+<!--Profile Link-->
+<h3 class="p-card-title">TOMMY IMMANUEL</h3>
+
+<!--Profile Name-->
+
+</a>
+
+<p class="p-card-description">p.tommyimmanuel247@gmail.com</p>
+
+<!--Email-->
+
+</div>
+
+>>>>>>> 80c7e952c5897ad17f37f7aade27ec880950bc8b
 <div class="p-team">
 
 <a href="#">
