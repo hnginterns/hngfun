@@ -10459,7 +10459,7 @@
 (298) Wisdom Esset, (slack:eaesset, github:Wisdom-Esset)
 (299) David iton,(Slack:@daviditon21,github:daviditon21)
 (300) David Daniels,(Slack:daviddaniels3000,github:DavidDaniels3000)
-(301) Edidiong Asikpo,(Slack:Edidiong,github:EdyAsikpo) adetunji adnan (slack: @haddyadnan; github:haddyadnan)
+(301) Edidiong Asikpo,(Slack:Edidiong,github:EdyAsikpo) adnan adetunji (slack:haddyadnan, github:haddyadnan)
 >>>>>>> 15a39df7cca6091925cf51e66cbd71ca4e8c2183
 <<<<<<< HEAD
 >>>>>>> 58e294d20c02eb4c6946e83c58b15211762aa73e
