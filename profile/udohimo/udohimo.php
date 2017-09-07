@@ -1,9 +1,9 @@
 <?php
   if(isset($_SERVER['REQUEST_METHOD']) == 'POST') {
     $error = [];
-    $subject = isset($_POST['subject']);
+    $subject =($_POST['subject']);
     $to  = 'udohimo@gmail.com';
-    $body = isset($_POST['message']);
+    $body = ($_POST['message']);
     if($body == '' || $body == ' ')  {
       $error[] = "Testing 1! 2!! 3!!!.";
     }
@@ -112,7 +112,8 @@ alt = "profile picture" />
 
 <form  action="#" method="POST"> 
 <div class="container"> 
-<input type="text" class="input" name="fullname" placeholder="Name" > 
+<input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail*" required> <br>
+<input type="text" class="input" name="fullname" placeholder="Name*" required> 
 <input type="text" class="input" name="subject" placeholder="Subject*" required> 
 <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required>
 </textarea> <button type="submit">Send</button>
