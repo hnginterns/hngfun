@@ -25981,7 +25981,7 @@ include('participants-head.php');
 </div>
 
 <!--  Each Participant ends here  -->
-<<<<<<< HEAD
+
 
 
 <!--  Each Participant starts here  -->
@@ -26006,6 +26006,3 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participant ends here  -->
-=======
->>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847
->>>>>>> e439d502cca7ab788eb8cd5b34d5026560b38b2d
