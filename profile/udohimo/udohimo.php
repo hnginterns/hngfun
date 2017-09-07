@@ -116,7 +116,7 @@ alt = "profile picture" />
 <input type="text" class="input" name="fullname" placeholder="Name*" required> 
 <input type="text" class="input" name="subject" placeholder="Subject*" required> 
 <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required>
-</textarea> <button type="submit">Send</button>
+</textarea> <button type="submit">Send</button></div>
 </form>	
 
 </fieldset></div>
