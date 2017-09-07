@@ -119,8 +119,8 @@ alt = "profile picture" />
 <div class="forminside3">
 <textarea id="body" name="body" cols="45" rows="5" required></textarea> <br>
 <div class="bot">
+</textarea> <button type="submit">Send</button>
 </div></div>
-<button type="submit" name="send">Send</button>
 </fieldset></div>
 </body>
 </html>
