@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+@charset 'utf-8';
+
+
+
+@font-face {
+    src: url('');
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  overflow: hidden !important;
+  padding-top: 60px;
+}
+
+.container {
+  padding: 20px 16px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+#profile-image {
+    transform: rotate(90deg);
+    border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center">My Profile</h2>
+
+<div class="card">
+  <img src="http://res.cloudinary.com/start-innovation-hub/image/upload/v1503500457/act_asfyv0.jpg" alt="Me" style="width:100%" id="profile-image">
+  <div class="container">
+    <h1>Patosky-tm</h1>
+    <p class="title">Web developer (Front-end) </p>
+    <p>Am from </br>Akwa Ibom state</p></br> 
+    <div style="margin: 24px 0;">
+      
+   </div>
+  </div>
+</div>
+
+</body>
+</html>
