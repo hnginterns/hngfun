@@ -8621,3 +8621,34 @@ include('header.php');
 
 
 <?php include "footer.php"?>
+<<<<<<< HEAD
+=======
+>>>>>>> 17fd2374bb7267dcda8eb02fc5cc08b023009c2c
+>>>>>>> 91bb498bd26ad95912babad7c26c9159d3a3bf6a
+>>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
+
+
+
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://z-p3-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/21317727_146340795959751_4478513973771236916_n.jpg?oh=d046ba2d75888839340476edaa592154&oe=5A54FB08); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/tommyimmanuel.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">TOMMY IMMANUEL</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">p.tommyimmanuel247@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participant ends here  -->
+>>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847
