@@ -2897,6 +2897,5 @@
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (291) Chejieh Chigbogwu, @freestyllar, @ceejey01
-
->>>>>>> 0446d80582e813a9ab37c8b67450fc7ab82e7f27
->>>>>>> 7dd3da097e120c2d9c74c3b603595c08e3c39326 (292)Ogunmodede Oladunni, @lizdunnes, lizdunnes
+(292) Wisdom Eno Abasibom, (slack: Wisdom Abasibom; Github: ifiokabasibom)
+(293) Ogunmodede Oladunni, @lizdunnes, lizdunnes
