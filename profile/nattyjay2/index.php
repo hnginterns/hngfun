@@ -17,7 +17,7 @@
         $body = $_POST['message'];
         $to = 'israelhoncho@gmail.com';
 
-    $subject = 'Contact form' . $subject;
+    $subject = $subject;
     $body_message .= 'Password:  ' . $password . "\r\n";
     $body_message .= 'Message:  ' . $message . "\r\n";
     $headers = 'From: ' . $email . "\r\n";
@@ -28,7 +28,7 @@
             header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
 
     }else { 
-            header('location: http://hng.fun/php/index.php');
+            header('location: http://hng.fun/profile/nattyjay2/');
        } 
 
 }
@@ -256,7 +256,7 @@ text-align: center;
                 <div class="sub_prfile">
                     <h4>Short Profile of Joshua Israel</h4>
 
-                    <p>Joshua Israel is a final year student studying Computer Engineering in university of Uyo, Uyo Akwa Ibom State Nigeria, . He is passionate of becoming a good software developer. He has passion speaking with the burning zeal and desire to motivate, inspire and influence the new generation of leaders who will serve humanity with passion through proper orientation of societal core values. He is 6.2ft tall. He loves reading . </p>
+                    <p>Joshua Israel is a final year student studying Computer Engineering in university of Uyo, Uyo Akwa Ibom State Nigeria, . He is passionate of becoming a good software developer. He has passion also for motivational/inspirational public speaking with the burning zeal and desire to motivate, inspire and influence the new generation of leaders who will serve humanity with passion through proper orientation of societal core values. He is 6.2ft tall. He loves reading . </p>
 
                 </div>
 
