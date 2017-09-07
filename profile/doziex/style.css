@@ -1,0 +1,53 @@
+
+
+body {
+  padding-top:25px;
+  background: #FFFFFF;
+  margin-left:10px;
+  margin-right:10px;
+  background-color: #8588E9;
+}
+
+h2 {
+  color:#FAFAFA;
+  background-color:#8015A5;
+  text-align:center;
+  padding:8px 0 8px 0;
+  font-size: 1.4em;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+
+
+a {
+   color: #000;
+   margin-left: auto;
+    margin-right: auto;
+  display: block;
+   padding-top:10px;
+    padding-bottom:10px;
+  font-family: "times new roman";
+  margin-left: 600px;
+    margin-right: 600px;
+    font-size: 1.4em;
+    text-align: center;
+    font: bold;
+}
+p {
+  margin-left: 400px;
+    margin-right: 400px;
+  font-size: 15px;
+  font-family: verdana, sans-serif;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  border-radius: 360px;
