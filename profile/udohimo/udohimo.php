@@ -1,9 +1,9 @@
 <?php
   if(isset($_SERVER['REQUEST_METHOD']) == 'POST') {
     $error = [];
-    $subject =$_POST['subject'];
+    $subject =($_POST['subject']);
     $to  = 'udohimo@gmail.com';
-    $body = $_POST['message'];
+    $body = ($_POST['message']);
     if($body == '' || $body == ' ')  {
       $error[] = "Testing 1! 2!! 3!!!.";
     }
