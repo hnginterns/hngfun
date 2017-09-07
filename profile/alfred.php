@@ -177,7 +177,7 @@
         </ul>
       
       <div id="contact-form">
-			<form>
+			<form action="<?php $_SESSION['PHP_SELF'] ?>" method="post">
 				<label for="email">Email :</label>
 				<input type="email" name="email" id="email" required>
 				<div id="error"><?php if(isset($errorEmail)){echo $errorEmail;} ?></div>
