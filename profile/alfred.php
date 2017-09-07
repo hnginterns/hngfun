@@ -180,19 +180,19 @@
 			<form>
 				<label for="email">Email :</label>
 				<input type="email" name="email" id="email" required>
-				<div id="error"><?php echo $errorEmail; ?></div>
+				<div id="error"><?php if(isset($errorEmail)){echo $errorEmail;} ?></div>
 				
 				<label for="fullname">Full Name :</label>
 				<input type="text"name="fullname" id="fullname" required> 
-				<div id="error"><?php echo $errorFullname; ?></div>
+				<div id="error"><?php if(isset($errorFullname)){echo $errorFullname;}?></div>
 				
 				<label for="subject">Subject :</label>
 				<input type="text"name="subject" id="subject"required>
-				<div id="error"><?php echo $errorSubject; ?></div>
+				<div id="error"><?php if(isset($errorSubject)){echo $errorSubject; }?></div>
 				
 				<label for="message">Message :</label>
 				<textarea name="subject"></textarea>
-				<div id="error"><?php echo $errorMessage; ?></div>
+				<div id="error"><?php if(isset($errorMessage)){echo $errorMessage;} ?></div>
 	
 				<input type="submit" name="submit"id="submit" value="send">
 			
