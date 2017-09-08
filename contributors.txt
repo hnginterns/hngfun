@@ -284,10 +284,8 @@
 (269) Akpan Prevailer, (slack:akpanprevailer, github:yngprev)
 (270) Edidiong Asikpo, (slack: @edidiong, github: edyasikpo)
 (271) David Daniels, (slack:@daviddaniels3000, github:DavidDaniels3000)
-=======
-<<<<<<< HEAD
 
-=======
-(266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
->>>>>>> 0fe22d407dd9c50d31ac88fa5c65fab1affab27d
->>>>>>> 75ed45d63fb12870b16a94be70fe35cc116e1505
+(272) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
+(273) Wilson Mmasifon  (slack: @lyndelle, github: @lyndellewilson)
+
+
