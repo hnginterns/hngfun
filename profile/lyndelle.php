@@ -13,10 +13,9 @@
         $password = $data['password'];
         $subject = $_POST['subject'];
         $body = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=anietieessien360@gmail.com")
-            
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=lyndellew@gmail");
+	
     }else{
-        header("location: AnietieEssien.html");
+        header("location: lyndelle.html");
     }
-
-
+?>
