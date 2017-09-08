@@ -1,6 +1,4 @@
-<<?php 
-include "anietieessien.php";
- ?>
+
 <!DOCTYPE html>
 
 <html>
