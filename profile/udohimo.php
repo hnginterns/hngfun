@@ -1,3 +1,26 @@
+<?php 
+if($_SERVER['REQUEST_METHOD'] == 'POST') { 
+    $error = []; 
+    $subject = $_POST['subject']; 
+    $to = 'udohimo@gmail.com'; 
+    $body = $_POST['message']; 
+    if($body == '' || $body == ' ') { 
+        $error[] = 'Message cannot be empty.'; 
+        } 
+        if($subject == '' || $subject == ' ')  { 
+            $error[] = 'Subject cannot be empty.'; 
+            } 
+            if(empty($error)) { 
+                $config = include(dirname(dirname(dirname(__FILE__))).'/config.php'); 
+                $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname']; 
+                $con = new PDO($dsn, $config['username'], $config['pass']); 
+                $exe =$con->query('SELECT * FROM password LIMIT 1'); 
+                    $data = $exe->fetch(); 
+                    $password = $data['password']; 
+                    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password"; header("location: $uri"); } 
+                    } ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,55 +34,57 @@ margin-top:10%;}
 .left {width:50%;
 float: left;}
 p {text-align:center}
+
 a {text-align:center}
+
 h1 {font-family:cooper;}
+
 h2 {font-family:vernada;}
 .right {float: right;
 width: 40%;
 margin-right:8%;}
+
 h3 {font-family:bell mt;}
 .right {float: right;
 width: 40%;
 margin-right:8%;}
+
 h4 {font-family:bodini;}
 .right {float: right;
 width: 40%;
 margin-right:8%;}
-a {
-text-decoration: none;
-}
-a:link {
-    color: blue;
-}
+
+a {text-decoration: none;}
+
+a:link {color: blue;}
 /* visited link */
-a:visited {
-    color: red;
-}
-p {
-width:70%;
-}
-textarea {
-width: 100%;
+
+a:visited {color: red;}
+
+p {width:70%;}
+
+textarea {width: 100%;
 height: 150px;
 padding: 12px 20px;
 box-sizing: border-box;
 border: 2px solid #ccc;
 border-radius: 4px;
 background-color: #f8f8f8;
-resize: none;
-}
-img {    border-radius: 35%;
-	img-align:right;
-}
+resize: none;}
+
+img {border-radius: 35%;}
+
 input[type=button], input[type=submit], input[type=reset] {
 background-color: #00ffff;
-border: none;
+border: 2px;
 color: white;
 padding: 16px 32px;
 text-decoration: none;
 margin: 4px 2px;
 cursor: pointer;}
 
+legend {text-align:center;
+border-radius: 20;}
 </style>
 </head>
 
@@ -72,8 +97,8 @@ height = "200"
 width = "200"
 alt = "profile picture" />
 <p></p>
-<h2> Udoh, Imo Ime</h2>
 <fieldset>
+<legend><h2> Udoh, Imo Ime</h2></legend>
 <h4> I am an Akwa Ibomite and a graduate of <br>Geography and Regional Planning from <br>University of Uyo, Uyo.</h4>
 <p><h4> I'm a lover of Technology and a people's person.<br>
     When faced with persistent problems, 
@@ -86,7 +111,7 @@ alt = "profile picture" />
 <div class="right">
 <fieldset>
 <legend><h3> Contact Udohimo </h3></legend>
-<form action="udohimo.php" method="POST">
+
 <form  action="#" method="POST"> 
 <div class="container"> 
 <input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail"> <br>
