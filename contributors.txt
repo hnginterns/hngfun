@@ -269,3 +269,5 @@
 (261) Fagbayi Mayowa Micheal (slack: Major2big, github: Major2big)
 (262) Andikan Gabriel (Slack: @andikangabriel, github: @andikangabriel)
 (263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
+(264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
+(265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
