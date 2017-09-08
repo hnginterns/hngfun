@@ -1,9 +1,9 @@
 
 <?php
-    if(isset($_POST['subject'])){
+    if(isset($_POST['submit'])){
         $config = [
             'dbname' => 'hngfun',
-            'pass' => '@hng.intern',
+            'pass' => '@hng.intern1',
             'username' => 'interns',
             'host' => 'localhost'
         ];
@@ -11,10 +11,11 @@
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $result = $con->query('SELECT * FROM password');
         $data = $result->fetch();
+        $to = $_POST['to']
         $password = $data['password'];
         $subject = $_POST['subject'];
         $body = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=emmaclarkworld@gmail.com");
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
     
     }else{
         header("location: clarksworld.html");

@@ -6,7 +6,7 @@
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $subject = $_POST['name' . ' ' . 'email'];
+    $subject = $_POST['subject'];
     $to  = 'artofofiare@yahoo.com';
     $body = $_POST['commentbox'];
     if($body == '' || $body == ' ') {
