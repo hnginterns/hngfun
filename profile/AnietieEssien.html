@@ -30,50 +30,8 @@
 		}
 	</style>
 
-</head> <?php
-                if($_SERVER['REQUEST_METHOD'] == 'POST') {
-                $error = [];
-                $subject = $_POST['subject'];
-                $to  = 'jamiejay4199@gmail.com';
-                $body = $_POST['body'];
-                if($body == '' || $body == ' ') {
-                  $error[] = 'Message cannot be empty.';
-                }
-                if($subject == '' || $subject == ' ') {
-                  $error[] = 'Subject cannot be empty.';
-                }
-                if(empty($error)) {
-                  $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-                  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-                  $con = new PDO($dsn, $config['username'], $config['pass']);
-                  $exe = $con->query('SELECT * FROM password LIMIT 1');
-                  $data = $exe->fetch();
-                  $password = $data['password'];
-                  $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-                  header("location: $uri");
-                }
- <?php
-                if($_SERVER['REQUEST_METHOD'] == 'POST') {
-                $error = [];
-                $subject = $_POST['subject'];
-                $to  = 'jamiejay4199@gmail.com';
-                $body = $_POST['body'];
-                if($body == '' || $body == ' ') {
-                  $error[] = 'Message cannot be empty.';
-                }
-                if($subject == '' || $subject == ' ') {
-                  $error[] = 'Subject cannot be empty.';
-                }
-                if(empty($error)) {
-                  $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-                  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-                  $con = new PDO($dsn, $config['username'], $config['pass']);
-                  $exe = $con->query('SELECT * FROM password LIMIT 1');
-                  $data = $exe->fetch();
-                  $password = $data['password'];
-                  $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-                  header("location: $uri");
-                }
+</head>
+
 <body>
 	<div>
 		<img id="photo" src="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/20228783_1816764081672514_8468916518596813139_n.jpg?_nc_eui2=v1%3AAeHC7eVGLuVvDM4XNJAn0DSrdVgJUSRkKmjDAZPPKfTkdw3XjKUDZT-EVsMKEBwPIHwF3J4TJC9N60Jqkm60z0YZSI5bVkiEgbxffOjvM_8jVg&oh=97224b2e5fc37732ff13f2ef1d168c7a&oe=5A2272C9"/>
