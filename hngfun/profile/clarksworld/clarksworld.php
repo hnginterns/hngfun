@@ -2,9 +2,9 @@
 <?php
     if(isset($_POST['subject'])){
         $config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
+            'dbname' => 'hngfun',
+            'pass' => '@hng.intern2',
+            'username' => 'interns',
             'host' => 'localhost'
         ];
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];

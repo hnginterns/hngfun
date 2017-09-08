@@ -262,3 +262,6 @@
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
 (257) Clarkson Emmanuel(slack:@clarksworld, github:@clarksworld)
+(279) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
+(258) kazeem Victoria (slack: @kelzvictoria, github:kelzvictoria )
+(259) Anazodo william (slack: @williamzodos, github: williamzodos )
