@@ -26360,13 +26360,7 @@ include('header.php');
             </div>
             <!--  Each Participants ends here  -->
 
-<?php include "footer.php"?>
->>>>>>> d32d89c67e8fe57b03d6a7a43134c0c685b1d992
-=======
->>>>>>> 71cafb493f594f3935db117cfa226cf662133a17
->>>>>>> e8529784efb3cb629341f262cd37dae97494df6c
-
-  <!-- Each participant ends here -->
+ <!-- Each participant ends here -->
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/18058073_830806640405023_7265722691586714055_n.jpg?_nc_eui2=v1%3AAeFAuVy-anoKcMQ7xp51gy3v6uVVhs_080v279ZZ0MfDpkdjKSoyiTzq0Knd_xZa8ncXSm5mFgwSUZSvOVoK2Hv0cyPob28gblzFUOOWMgEahA&oh=d3b42cc6a6f1e5bd29bba771fe491709&oe=5A4A99F4.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -26377,31 +26371,21 @@ include('header.php');
                 <!--Profile Name-->
             </a>
             <p class="p-card-description">nsegodndrake@gmail.com</p>
->>>>>>> a4de25d0e33db076b8300ca0b4e0e57334afaad0
+
             <!--Email-->
         </div>
         <div class="p-team">
             <a href="#">
-<<<<<<< HEAD
-                <h3 class="p-card-title"> Null </h3>
-=======
+                <h3 class="p-card-title"> Null </h>
                 <h3 class="p-card-title"> Team-achievement </h3>
->>>>>>> a4de25d0e33db076b8300ca0b4e0e57334afaad0
                 <!--Team-->
             </a>
         </div>
     </div>
 </div>
 
-<<<<<<< HEAD
 
-<!--  Each Participants ends here  --><?php include "footer.php"?>
-=======
-=======
->>>>>>> c25a845127a951307a1c454ef56743645ab1707f
-=======
 <!--  Each Participants ends here  -->
-
 <!--  Each Participant starts here  -->
                <div class="p-card">
                    <div class="v-center">
@@ -26424,15 +26408,7 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
-
-
-
-=======
->>>>>>> a4de25d0e33db076b8300ca0b4e0e57334afaad0
-  <!-- Each participant ends here -->
->>>>>>> 04ebe51d5572ce882bb44a7933059534c3d8431b
-
->>>>>>> 27aff4b9753a90f0de9e1ccd9b50c49ae53004c9
+  
 <!--  Each Participant starts here  -->
                 <div class="p-card">
     <div class="v-center">
