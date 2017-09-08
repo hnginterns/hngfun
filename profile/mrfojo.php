@@ -126,7 +126,11 @@
       </p>
       <ul>
         <li>
-          <a href="https://github.com/MrFojo/hngStage1" target="_blank">Stage 1</a>
+          <a href="https://github.com/MrFojo/hngStage1" target="_blank">Stage 1: PHP Read from db</a>
+        </li>
+        <li>
+          <!--<a href="https://drive.google.com/file/d/0B-l1szh2ifN-WUsyU3EyQ2d4NnM" target="_blank">Stage 3: Android Profile App</a>-->
+          <a href="https://drive.google.com/open?id=0B-l1szh2ifN-VXFIN1lBZktGQm8" target="_blank">Stage 3: Android Profile App</a>
         </li>
       </ul>
       <div id="email">
