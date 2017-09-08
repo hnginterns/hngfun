@@ -48,11 +48,7 @@
 		<div class="lCon">
 			<div class="mainCon">
 				<a href="index.php" id="Bi">Basic Info</a>
-<<<<<<< HEAD
-				<a id="Ci">Contact Info</a>
-=======
 				<a href="contact.php"id="Ci">Contact Info</a>
->>>>>>> 5815338a02e29a6390f818715b29681d77ca886a
 				<a href="social.php" id="Sh">Social handler</a>
 				<a id="Cf">Contact form</a>
 			</div>

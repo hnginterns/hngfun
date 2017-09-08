@@ -1,4 +1,4 @@
- <?php
+<?php
 
     $user = 'intern';
     $pass = '@hng.intern1';
@@ -7,8 +7,8 @@
     mysqli_select_db($connect, 'password');
     $query ="SELECT * FROM password LIMIT 1";
     $passes = mysqli_query($connect, $query);
-?>
-<!DOCTYPE html>
+?> 
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -25,7 +25,7 @@
             margin: 0;
             font-family: 'Roboto Condensed', sans-serif;
         }
-
+        
         .jumbotron {
             background: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url(https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345836/hng-profile/bridge-path-straight-wooden_bkbwue.jpg);
             height: 100%;
@@ -33,11 +33,11 @@
             padding-top: 40px;
             text-align: center;
         }
-
+        
         .center {
             text-align: center;
         }
-
+        
         .intro-text {
             font-style: normal;
             font-weight: bold;
@@ -45,21 +45,21 @@
             text-transform: uppercase;
             margin: 0;
         }
-
+        
         .hello {
             font-size: 26px;
             color: #DFDFDF;
             font-weight: 300;
             text-transform: capitalize;
         }
-
+        
         .my-name {
             font-size: 46px;
             color: #FEFAFA;
             padding-top: 13px;
             font-weight: 500;
         }
-
+        
         .what-i-do {
             font-weight: normal;
             font-size: 24px;
@@ -69,26 +69,26 @@
             margin-top: 15px;
             text-transform: capitalize;
         }
-
+        
         .avatar {
             width: 100px;
             height: 100px;
             border-radius: 50%;
             margin: 15px;
         }
-
+        
         .skillset .heading {
             margin-top: 30px;
             font-size: 23px;
             color: #FFFEFE;
             font-weight: 400;
         }
-
+        
         .skill-icon {
             width: 35px;
             height: 35px;
         }
-
+        
         .skill-text {
             font-weight: normal;
             line-height: normal;
@@ -96,7 +96,7 @@
             color: white;
             margin-left: 15px;
         }
-
+        
         .skill {
             margin: 15px auto;
             display: flex;
@@ -104,11 +104,11 @@
             justify-content: center;
             align-items: center;
         }
-
+        
         .hide {
             display: none;
         }
-
+        
         .submit-button {
             min-width: 100px;
             padding: 10px;
@@ -122,34 +122,34 @@
             color: white;
             cursor: pointer;
         }
-
+        
         .submit-button:focus {
             outline: none;
             background: darkgrey;
         }
-
+        
         .no-margin {
             margin: 0;
         }
-
+        
         img.angular {
             margin-right: 5px;
         }
-
+        
         img.js {
             margin-left: 18px;
         }
-
+        
         img.html {
             margin-right: 5px;
             margin-left: 16px;
         }
-
+        
         img.django {
             margin-left: 47px;
             margin-right: 10px;
         }
-
+        
         .social {
             bottom: 0px;
             width: 100%;
@@ -159,13 +159,13 @@
             flex-direction: row;
             padding: 5px 0;
         }
-
+        
         .social-icon {
             height: 30px;
             width: 30px;
             margin: 0 7px;
         }
-
+        
         .social-text {
             font-size: 15px;
             color: white;
@@ -173,7 +173,7 @@
             font-weight: 400;
             margin: 10px 10px 10px 35px;
         }
-
+        
         .go-down {
             width: 45px;
             height: 45px;
@@ -184,12 +184,12 @@
             text-align: center;
             margin-top: 30px;
         }
-
+        
         .profile-body {
             text-align: center;
             margin-top: 20px;
         }
-
+        
         .user-message {
             border: 2px solid #4e4b4b;
             padding: 10px;
@@ -199,12 +199,12 @@
             background: black;
             color: white;
         }
-
+        
         .user-message:focus {
             border: 2px solid black;
             outline: none;
         }
-
+        
         .input-box {
             height: 28px;
             border: 2px solid #4e4b4b;
@@ -216,17 +216,17 @@
             background: black;
             color: white;
         }
-
+        
         .input-box:focus {
             border: 2px solid black;
             outline: none;
         }
-
+        
         .input-holder {
             margin: 20px 0;
         }
         /* Media  queries ****/
-
+        
         @media screen and (max-width: 1024px) {
             .jumbotron {
                 padding-top: 60px;
@@ -262,7 +262,7 @@
                 width: 60%;
             }
         }
-
+        
         @media screen and (max-width:700px) {
             .input-box,
             .user-message {
@@ -281,7 +281,7 @@
                 Hello there
             </h3>
 
-            <h2 class="my-name intro-text">
+            <h2 class="my-name intro-text" id="name">
                 I'm Richard Umoffia
             </h2>
             <h5 class="what-i-do intro-text">
@@ -320,9 +320,9 @@
             <div class="input-holder hide">
                 <input type="email" placeholder="Your Email" name="to" class="input-box" value="richyafro@gmail.com" required>
             </div>
-             <div class="hide">
-                    <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo"".$password[ 'password']; } ?>>
-                </div> 
+            <div class="hide">
+                 <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo"".$password[ 'password']; } ?>>
+            </div>
             <div class="input-holder">
                 <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Your message here" class="user-message" required></textarea>
             </div>
@@ -342,6 +342,13 @@
         <a href="https://twitter.com/iamafro"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345833/hng-profile/if_14_2315305_l2xljo.svg" alt="twitter-icon" class="social-icon"></a>
         <a href="https://drive.google.com/open?id=0Bxn234SKUU6rbFVSVF9FdGFUSDg"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1504444765/symbol_n5igrf.svg" alt="Link to android app" class="social-icon"></a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+            stringsElement: '#name'
+        });
+    </script>
 </body>
 
 </html>
