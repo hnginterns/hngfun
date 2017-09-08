@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-﻿<?php
-=======
+﻿﻿<?php
 <?php
->>>>>>> 20ed620236b15ba001deff70c08720e6a493ee22
 $pageTitle = "Participants";
 include('header.php');
 // include('participants-head.php');
@@ -8709,7 +8706,7 @@ include('header.php');
                   <div class="v-center">
                       <div class="p-card-photo" style="background-image: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANpAAAAJDdlMzFiOWM4LTE0ZDEtNGE5Ny1iMGUxLTAwODJiMTlkYjc4Yw.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                       <div class="p-card-info">
-                          <a href="hngfun/profile/aniekan_u.html">
+                          <a href="https://www.hngfun/profile/aniekan_u.html">
                               <!--Profile Link-->
                               <h3 class="p-card-title">Aniekan Umana</h3>
                               <!--Profile Name-->
