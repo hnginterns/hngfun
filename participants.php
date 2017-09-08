@@ -8700,6 +8700,28 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
+<!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/12313893_752626931516434_3909050069136300386_n.jpg?oh=3784362fa0d3595e0f4dd458cccdd61f&oe=5A1E86F2); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/johnsoncyril.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">johnson cyril</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">mistacy6@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> No Team </h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
 
                <!--  Each Participant starts here  -->
               <div class="p-card">
