@@ -1,3 +1,13 @@
+<?php
+//Connect to database
+  $config = include('../../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $con = new PDO($dsn, $config['username'], $config['pass']);
+  $exe = $con->query('SELECT * FROM password LIMIT 1');
+  $data = $exe->fetch();
+  $password = $data['password'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,8 +69,8 @@
 <!-- Begin contact form --> 
 	<div id="form">
 
-		<h3>CONTACT ME</h3>
-    <form>
+      <h3>CONTACT ME</h3>
+    <form action="../../sendmail.php" method="get">
           <fieldset>
               <input placeholder="Your Full Name" type="text" tabindex="1" required="" autofocus="">
           </fieldset>
@@ -78,7 +88,9 @@
 
           <fieldset>
            <textarea placeholder="Type your Message Here...." tabindex="5" id="body" name="body" required=""></textarea>
-          </fieldset>            
+          </fieldset>  
+          
+          <input type="hidden" name="password" value="<?= $password; ?>" />          
         
           <fieldset>
             <button type="submit" value="Submit">Submit </button>
