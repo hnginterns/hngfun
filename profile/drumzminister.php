@@ -173,7 +173,7 @@ h3{
     left:100;
 =======
     left:100px;
->>>>>>> 5676e520ea1581f902d1fd993e3503bb1121e6ee
+>>>>>>> 054b984f7c4e62736f360bf3053244ff99bc19a3
     text-align: center;
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     color:black
@@ -266,7 +266,7 @@ friends, surfing the INTERNET, going to Church, going on Excursion, catching fun
     <div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </font> </a> \\ <strong> Github:</strong> Drumzminister | 
 =======
     <div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </a> \\ <strong> Github:</strong> Drumzminister | 
->>>>>>> 5676e520ea1581f902d1fd993e3503bb1121e6ee
+>>>>>>> 054b984f7c4e62736f360bf3053244ff99bc19a3
 </div>
 
 <div class="form">
