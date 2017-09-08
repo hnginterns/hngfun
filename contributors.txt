@@ -279,7 +279,6 @@
 (265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
 
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
-(274) Nsikak Akpan (slack:@free, github:@freet96)
 
 (266) Ubong Udotai, (slack: @donpaloez, github: donpaloez)
 (267) Wisdom Esset, (Slack: @eaesset, github: Wisdom-Esset)
@@ -290,4 +289,4 @@
 (272) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (273) Wilson Mmasifon  (slack: @lyndelle, github: @lyndellewilson)
 (274) Emmanuel John (slack:@emmastasho, github: @emmastasho)
-
+(275) Nsikak Akpan (slack:@free, github:@freet96)
