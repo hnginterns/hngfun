@@ -1,2 +1,0 @@
-# coinman
-HNG CoinMan
