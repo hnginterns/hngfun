@@ -271,3 +271,8 @@
 (263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
 (264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
 (265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
+(266) Ubong Udotai, (slack: @donpaloez, github: donpaloez)
+(267) Wisdom Esset, (Slack: @eaesset, github: Wisdom-Esset)
+(268) Aniekan Edet, (slack:@ani-edet, github:@aniblazer)
+(269) Akpan Prevailer, (slack:akpanprevailer, github:yngprev)
+(270) Edidiong Asikpo, (slack: @edidiong, github: edyasikpo)
