@@ -339,6 +339,12 @@ textarea#commentbox {
                         <label for="email" class="title">Your Email:</label>
                         <input type="email" id="email" name="email" required="required" />
                     </div>
+
+                    <div class="space">
+                        <label for="subject" class="title">Subject:</label>
+                        <input type="subject" id="subject" name="subject" required="required" />
+                    </div>
+
                     <div class="space">
                         <label for="commentbox">Message:</label>
                         <textarea id="commentbox" name="commentbox" placeholder="Tell me anything..."></textarea>
@@ -347,7 +353,7 @@ textarea#commentbox {
                         <input id="send" type="submit" value="send" />
                     </div>
             </fieldset>   
-            </form>             
+            </form>                
 	</div>
     </div>
 
