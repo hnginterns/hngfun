@@ -1,4 +1,37 @@
 <!DOCTYPE html>
+
+<!--before php summon-->
+
+<?php
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'artofofiare@yahoo.com';
+    $body = $_POST['commentbox'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'You have to TYPE in something to tell me something';
+    }
+
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Your name and email are very important, TYPE them in';
+    }
+    if(empty($error)) {
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
+?>
+
+<!-- after php summon -->
+
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Ofiare David | profile of artofofiare</title>
@@ -141,6 +174,7 @@ li {
     padding: 1em 2.3em; 
     display: inline;
     margin: 0.2em 0.9em;
+    font-size: 100%;
     border-radius: 17px 0 17px 0;
     -moz-border-radius: 17px 0 17px 0;
     -webkit-border-radius: 17px 0 17px 0;
@@ -174,6 +208,7 @@ fieldset {
     padding: 0.9em;
     border: 1px solid #03bcee;
     text-align:right;
+    font-size: 100%;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -293,26 +328,28 @@ textarea#commentbox {
         <h2>Drop a Comment</h2>
 
         <p class="minitext">I would love to hear from you, since you now know the least about me</p>
-        	<form action="" method="get">
+        	<form action="#" method="POST">
             <fieldset>
                 <legend>Looking forward</legend>
                     <div class="space">
                         <label for="name" class="title">Your Name:</label>
-                        <input type="text" id="name" name="name" /> 
+                        <input type="text" id="name" name="name" required="required" /> 
                     </div>
                     <div class="space">
                         <label for="email" class="title">Your Email:</label>
-                        <input type="email" id="email" name="email" />
+                        <input type="email" id="email" name="email" required="required" />
                     </div>
                     <div class="space">
                         <label for="commentbox">Message:</label>
-                        <textarea id="commentbox" placeholder="Tell me anything..."></textarea>
+                        <textarea id="commentbox" name="commentbox" placeholder="Tell me anything..."></textarea>
                     </div>
                     <div class="spacesend">
                         <input id="send" type="submit" value="send" />
                     </div>
-            </fieldset>                
+            </fieldset>   
+            </form>             
 	</div>
+    </div>
 
 	<div id="footer">
 
