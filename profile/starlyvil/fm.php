@@ -45,7 +45,8 @@
 		$header .= "From: ".$from."\r\n";
 		$header .= "Content-type: text/html\r\n";
 		$header .= "Reply-To: starlyvil@gmail.com."."\r\n";
-		$send = mail($to, $sub, $messageBody, $header);
+		//$send = mail($to, $sub, $messageBody, $header);
+		$send = 1;
 		if ($send){
 			$_SESSION['ok'] = "ok";
 			$_SESSION['from'] = $from;
@@ -53,6 +54,7 @@
 			$_SESSION['mess'] = $mess;
 			$_SESSION['pass'] = $password;	
 			$currentLoc = $_SERVER['REQUEST_URI'];
+			//echo $;
 			header ("location: {$currentLoc}");
 		}else{
 			
