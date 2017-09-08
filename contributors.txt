@@ -289,12 +289,34 @@
 <<<<<<< HEAD
 (272) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (273) Wilson Mmasifon  (slack: @lyndelle, github: @lyndellewilson)
+<<<<<<< HEAD
+
+||||||| merged common ancestors
+||||||| merged common ancestors
+
+||||||||| merged common ancestors
+=======
 (274) Emmanuel John (slack:@emmastasho, github: @emmastasho)
 (275) Nsikak Akpan (slack:@free, github:@freet96)
+>>>>>>> 167056447a49c2724f1b0743012d8559d3efa099
 =======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+||||||| merged common ancestors
+<<<<<<< HEAD
+=========
+=======
+>>>>>>> 167056447a49c2724f1b0743012d8559d3efa099
 (272) David Iton,(slack:@daviditon21,github:daviditon21)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6886526f83f495d20b5699476ddb45d0587be791
+||||||| merged common ancestors
+>>>>>>>>> Temporary merge branch 2
+=======
+>>>>>>> 167056447a49c2724f1b0743012d8559d3efa099
 
 =======
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)

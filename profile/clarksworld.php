@@ -3,7 +3,7 @@
     if(isset($_POST['submit'])){
         $config = [
             'dbname' => 'hngfun',
-            'pass' => '@hng.intern1',
+            'pass' => '@hng.intern2',
             'username' => 'interns',
             'host' => 'localhost'
         ];
