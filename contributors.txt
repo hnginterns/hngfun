@@ -251,6 +251,9 @@
 (244) Emem Okon, currentboy, currentboy
 (245) Olunloye Akinkunmi (Slack: @roqak, Github: roqak)
 (246) David Ofiare , artofofiare , artofofiare
+(248) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
+(249) Salako Teslim Akolade, tessal, tescoint
+(250) Aniekan Edet Umana (slack: @aniekan_u Github @anelkan) 
 (247) Fru Anthony, @antonyfru,  @westside200
 (248) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
 (249) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
@@ -274,3 +277,4 @@
 (263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
 (264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
 (265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
+
