@@ -250,9 +250,6 @@
 (244) Emem Okon, currentboy, currentboy
 (245) Olunloye Akinkunmi (Slack: @roqak, Github: roqak)
 (246) David Ofiare , artofofiare , artofofiare
-<<<<<<< HEAD
-(247) Fru Anthony, @antonyfru,  @westside200
-=======
 (248) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
->>>>>>> e1f1d0d604909c9b2c849c7c8ff458712121f442
 (249) Salako Teslim Akolade, tessal, tescoint
+(250) Aniekan Edet Umana (slack: @aniekan_u Github @anelkan) 
