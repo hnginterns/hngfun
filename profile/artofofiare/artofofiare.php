@@ -116,6 +116,23 @@ p.copyright {
     border-top: 10px solid #eeeeee;
 }
 
+p.linksto {
+
+    padding: 0.9em 0em;
+    text-align: center;
+    float: none;
+    background-color: none;
+    margin: 0 auto;
+    color: #000;
+    border-top: 10px solid #eeeeee;
+    border-bottom: 10px solid #eeeeee;
+    font-size: 100%;
+    border-radius: 17px 0 17px 0;
+    -moz-border-radius: 17px 0 17px 0;
+    -webkit-border-radius: 17px 0 17px 0;
+    -o-border-radius: 17px 0 17px 0;
+}
+
 h1 {
     font-size: 200%;
     font-weight: bold;
@@ -144,7 +161,7 @@ h2 {
 
 #footer {
 
-    width: 100%;
+    margin: 0 auto;
 }
 
 em {
@@ -187,6 +204,19 @@ a:link {
     text-decoration: none;
     
 }
+
+.linksto a:link {
+    color: #000;
+    text-decoration: none;
+    
+}
+
+.linksto a:visited {
+    color: #03bcee;
+    text-decoration: none;
+    
+}
+
 a:visited {
     color: #fff;
     text-decoration: none;
@@ -304,64 +334,71 @@ textarea#commentbox {
 
 <body>
 	<div id="content">
-	<div id="header">
-		<p class="icon">Icon space</p>
-		<h1>David Ofiare</h1>
-		<p><em>" impossibility is a short sighted myth "</em></p>
+	   <div id="header">
+		  <p class="icon">Icon space</p>
+		  <h1>David Ofiare</h1>
+		  <p><em>" impossibility is a short sighted myth "</em></p>
 
-		<h2>Know Me</h2>
-		<p class="descriptionwhite">I am first a very strong Nigerian in every sense of the word. A 2016 gradute of Civil Engineering from Madonna University Nigeria, Akpugo (currently in Service). Good at making great things come from nothing, and striving hard to make difficult things work.</p>
-		<p class="description">Strongly inclined towards every form of creativity in art and design and in every other form creativity presents itself, I am a couple of meters short of a wiz in Graphics Design, and can control comfortably a range of softwares ranging from Adobe Photoshop, Adobe Illustrator, Adobe After Effects, Adobe Premiere Pro, Cinema 4D down to the common Microsoft Paint.</p>
-		<p class="descriptionwhite">I also possess utilisable knowledge of HTML and CSS, and know a little something of what javascript can do. This is coupled with knowledge of other softwares like FL Studio and Audacity, utilisable for sound creation.</p>
-		<p class="description">I am very interested in learning fun things that would be brought to the table, and can function well with a team to further sharpen our skills for better productivity. I also love music and literature and a few calculations here and there.</p>
+		  <h2>Know Me</h2>
+		  <p class="descriptionwhite">I am first a very strong Nigerian in every sense of the word. A 2016 gradute of Civil Engineering from Madonna University Nigeria, Akpugo (currently in Service). Good at making great things come from nothing, and striving hard to make difficult things work.</p>
+		  <p class="description">Strongly inclined towards every form of creativity in art and design and in every other form creativity presents itself, I am a couple of meters short of a wiz in Graphics Design, and can control comfortably a range of softwares ranging from Adobe Photoshop, Adobe Illustrator, Adobe After Effects, Adobe Premiere Pro, Cinema 4D down to the common Microsoft Paint.</p>
+		  <p class="descriptionwhite">I also possess utilisable knowledge of HTML and CSS, and know a little something of what javascript can do. This is coupled with knowledge of other softwares like FL Studio and Audacity, utilisable for sound creation.</p>
+		  <p class="description">I am very interested in learning fun things that would be brought to the table, and can function well with a team to further sharpen our skills for better productivity. I also love music and literature and a few calculations here and there.</p>
 
-	</div>
-	<div id="contact">
+	   </div>
+	   <div id="contact">
 
-		<h2>Link Up</h2>
-		<ul>
-            <li class="onlineme"><a href="http://hnginterns.slack.com/messages/@artofofiare" target="_blank">My Slack</a></li>
-            <li class="onlineme"><a href="http://github.com/artofofiare" target="_blank">My GitHUB</a></li>
-            <li class="onlineme"><a href="mailto:artofofiare@yahoo.com" target="_blank">My Email</a></li>
-        </ul>
+            <h2>Link Up</h2>
 
-        <h2>Drop a Comment</h2>
+            <ul>
+                <li class="onlineme"><a href="http://hnginterns.slack.com/messages/@artofofiare" target="_blank">My Slack</a></li>
+                <li class="onlineme"><a href="http://github.com/artofofiare" target="_blank">My GitHUB</a></li>
+                <li class="onlineme"><a href="mailto:artofofiare@yahoo.com" target="_blank">My Email</a></li>
+            </ul>
 
-        <p class="minitext">I would love to hear from you, since you now know the least about me</p>
-        	<form action="#" method="POST">
-            <fieldset>
-                <legend>Looking forward</legend>
-                    <div class="space">
-                        <label for="name" class="title">Your Name:</label>
-                        <input type="text" id="name" name="name" required="required" /> 
-                    </div>
-                    <div class="space">
-                        <label for="email" class="title">Your Email:</label>
-                        <input type="email" id="email" name="email" required="required" />
-                    </div>
+            <h2>Tasks</h2>
 
-                    <div class="space">
-                        <label for="subject" class="title">Subject:</label>
-                        <input type="subject" id="subject" name="subject" required="required" />
-                    </div>
+                <p class="linksto"><a href="https://github.com/artofofiare/stage-tasks" target="_blank">Link to stage one Repo</a></p>
 
-                    <div class="space">
-                        <label for="commentbox">Message:</label>
-                        <textarea id="commentbox" name="commentbox" placeholder="Tell me anything..."></textarea>
-                    </div>
-                    <div class="spacesend">
-                        <input id="send" type="submit" value="send" />
-                    </div>
-            </fieldset>   
-            </form>                
-	</div>
-    </div>
+            <h2>Drop a Comment</h2>
 
-	<div id="footer">
+            <p class="minitext">I would love to hear from you, since you now know the least about me</p>
+                <form action="#" method="POST">
+                <fieldset>
+                    <legend>Looking forward</legend>
+                        <div class="space">
+                            <label for="name" class="title">Your Name:</label>
+                            <input type="text" id="name" name="name" required="required" /> 
+                        </div>
 
-		<p class="copyright">Copyright 2017 'Art of Ofiare' Design</p>	
+                        <div class="space">
+                            <label for="email" class="title">Your Email:</label>
+                            <input type="email" id="email" name="email" required="required" />
+                        </div>
 
-	</div>
+                        <div class="space">
+                            <label for="subject" class="title">Subject:</label>
+                            <input type="text" id="subject" name="subject" required="required" />
+                        </div>
+
+                        <div class="space">
+                            <label for="commentbox">Message:</label>
+                            <textarea id="commentbox" name="commentbox" placeholder="Tell me anything..."></textarea>
+                        </div>
+
+                        <div class="spacesend">
+                            <input id="send" type="submit" value="send" />
+                        </div>
+                </fieldset>   
+                </form>               
+        </div>
+
+        <div id="footer">
+
+            <p class="copyright">Copyright 2017 'Art of Ofiare' Design</p>	
+
+        </div>
+
 	</div>
 	
 
