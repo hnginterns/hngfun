@@ -12,9 +12,10 @@
 	}, 3000);
 </script>
 <?php
-	
+	//if($_SESSION['ok']){
+		//unset($_SESSION['ok']);
 		session_destroy();
-	
+	//}
 
 ?>
 <div class="suc">
