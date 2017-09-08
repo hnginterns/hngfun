@@ -15,7 +15,7 @@
         $body = $_POST['message'];
         header("location:http://hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=anietieessien360@gmail.com")
             
-    else{
+    }else{
         header("location: AnietieEssien.html");
     }
 
