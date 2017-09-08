@@ -25968,3 +25968,26 @@ include('participants-head.php');
 <!--  Each Participant ends here  -->
 
 
+
+<div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://image.ibb.co/e0giMk/prolifichands.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="file:///C:/Users/ADETOLA/Desktop/hng_interns/hngfun/profile/Adnan%20Adetunji/profile.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Adnan Adetunji</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">haddyadnan@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> null </h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+			   
+			   
