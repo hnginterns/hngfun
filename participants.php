@@ -8579,15 +8579,31 @@ include('header.php');
             </div>
         </div>
 <!--  Each Participants ends here  -->
-==
- <!--  Each Participant starts here  -->
- 
-=======
 
->>>>>>> 8bd006fa177ed5219bc632103a6249d72c59529a
+<!--  Each Participant starts here  -->
+                                <div class="p-card">
+                                    <div class="v-center">
+                                        <div class="p-card-photo" style="background-image: url(https://scontent.flos1-1.fna.fbcdn.net/v/t1.0-9/18198535_822966411187913_4004373990999690564_n.jpg?oh=f69be8c7b1a20356a5a542204b8f7d46&oe=5A1B8675); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                        <div class="p-card-info">
 
->>>>>>> d26b94dcce3980815301ae3b6dff8ee51d1f19bf
-=======
->>>>>>> 20ed620236b15ba001deff70c08720e6a493ee22
+
+                                            <a href="http://hng.fun/profile/shido.html">
+                                                <!--Profile Link-->
+                                                <h3 class="p-card-title">Shido's page</h3>
+                                                <!--Profile Name-->
+                                            </a>
+                                            <p class="p-card-description">uwahsheedo@yahoo.com</p>
+                                            <!--Email-->
+                                        </div>
+
+                                        <div class="p-team">
+                                            <a href="#">
+                                                <h3 class="p-card-title"> NONE </h3>
+                                                <!--Team-->
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+<!--  Each Participants ends here  -->
 
 <?php include "footer.php"?>
