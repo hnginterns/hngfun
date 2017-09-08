@@ -16,7 +16,7 @@
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=anietieessien360@gmail.com");
     
     }else{
-        header("location: anietieessien.html");
+        header("location: AnietieEssien.html");
     }
 
 
