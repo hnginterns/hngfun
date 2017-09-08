@@ -1,37 +1,3 @@
-<?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-
-    $subject = $_POST['subject'];
-    $to  = 'dmpire2@gmail.com';
-    $body = $_POST['body'];
-
-    if($body == '' || $body == ' ') {
-      $error[] = "Don't be shy. Write me a message";
-    }
-
-
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'A subject would be awesome.';
-    }
-
-    if(empty($error)) {
-
-      $config = include __DIR__ . "/../config.php";
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-
-      $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-      header("location: $url");
-
-    }
-  }
- ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -162,11 +128,11 @@
       </div>
 
       <div class="form">
-        <form action="daniella.php" method="POST">
+        <form action="victorbest34.php" method="POST">
           <fieldset>
               <legend>Email Me!</legend>
               
-                  <label>To :   </label><input name="to" id="to" class="dannys-input" value="dmpire2@gmail.com" required><br>
+                  <label>To :   </label><input name="to" id="to" class="victor-input" value="victorchimobi@yahoo.com" required><br>
                   <label>From : </label><input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail" required> <br>
                  <label>Subject :</label><input name="subject" id="subject" class="dannys-input" required><br>
                   <label>Body: </label><br>
