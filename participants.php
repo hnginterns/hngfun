@@ -25944,3 +25944,27 @@ include('participants-head.php');
 </div>
 <!--  Each Participant ends here  -->
 >>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://instagram.flos2-1.fna.fbcdn.net/t51.2885-15/e35/18812667_1846669062260926_8245218755886448640_n.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/IdongesitSunday.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Idongesit Albert</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">sundayidongesit@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participant ends here  -->
+
+
