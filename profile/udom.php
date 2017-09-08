@@ -66,7 +66,6 @@
 		        <P><a href="https://github.com/udom19" target="_blank" class="fa fa-github social github"></a>
                   <a href="https://twitter.com/udomcosmas" target="_blank" class="fa fa-twitter social twitter"></a>
 		          <ul></P>		</center><button class=" btn-lg " id="AboutMe">Stage1 Task</button>
-	<button class=" btn-lg " id="AboutMe"><a href="https://drive.google.com/open?id=0B17__D8maVgcU3AxSHl4aDNCdG8">My Android App</a></button>
 </center>
 	<form action="udom19.php" method="post">
 		<label for="name">Name</label>
