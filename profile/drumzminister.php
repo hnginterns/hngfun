@@ -73,14 +73,14 @@
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     color: #60163B
 }
-.imrg{ 
+.img{ 
     border: 3px solid #ddd;
     border-radius:8px;
     width : 308px;
     height: 500px;
     position:relative;
     top: 80px;
-    left:170px;
+    left:70px;
 }
 .shrt {
     background-color: #ffd2e8;
@@ -249,7 +249,7 @@ h3{
 MY PROFILE
 </div>
 <div class="long">hng intern  //// <strong>ELISHA NSEOBONG UKPONG </strong>\\\\ hng intern</div>
-<div class="imrg">
+<div class="img">
 <img src="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/17798922_1361886410535795_378898555776697954_n.jpg?_nc_eui2=v1%3AAeG14frAcu706jl6GJYaQfve4VEv2m2G6IL5RMWjOzuShInNnCG6KPhkOh5X9HUqxYIP5SUucguE9YcFzXmY2iuWJH5Ogg9Sve4a_Pde7tJ0Sg&oh=976615d8eff180fee35f6c792a84e788&oe=5A27D97D" alt=" Elisha" style="width: 308px; height:500px;">
 </div>
     <div class="shrt">
@@ -258,7 +258,7 @@ About Me
 <div class="drk"><p> I am a Cute and Responsible Guy, Playing the drums is my weakness , i like making Responsible 
 friends, surfing the INTERNET, going to Church, going on Excursion, catching fun, reading, Swimming, TRAVELLING, Praying, Loving some persons i meet that deserve it and rendering my assistance to anybody in need...Especially You!!!!!!...its more than I CAN SAY</p>
 </div>
-    <div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </font> </a> \\ <strong> Github:</strong> Drumzminister | 
+    <div class="det"> |<strong> Slack: </strong> @Drumzminister // <a href="https://github.com/Drumzminister/Drrumzminister"> <strong> Stage 1 Task </strong> </a> \\ <strong> Github:</strong> Drumzminister | 
 </div>
 
 <div class="form">

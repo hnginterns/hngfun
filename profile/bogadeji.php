@@ -43,7 +43,6 @@
                       }
 
                 #profile{
-                    background-color: #aaa;
                     text-align: center;
                     font-size:1.3em;
                     font-family:  Serif;
@@ -53,26 +52,6 @@
                     width:80%;
                     padding: 20px;
                      }
-
-                #app{
-                    background-color: #551A8B;
-                    border-top-left-radius: 5%;
-                    border-top-right-radius: 5%;
-                    border-bottom-left-radius:5%;
-                    border-bottom-right-radius:5%;
-                    font-size: 0.75em;
-                    padding: 5px;
-                    display: inline-block; overflow: hidden;
-                    
-                     }
-
-                div#app a :link {
-                    color: white;
-                    }
-                    
-                div#app a :hover {
-                    color: #aaa;
-                    }
 
                 form{
                     background:#F9F9F9;
@@ -158,13 +137,10 @@
 
       	<div class = "myprofile">
       	<img src="../images/bogadeji.jpg" onload="this.width/=(2);this.onload=null;"">
-      	<div id ="profile"><p>Beginner web developer with a desire to see the things I have learnt make sense and become something tangible. I love to learn and work on challenges even when I shed tears, get headaches and almost quit way too many times. Slack name: @bogadeji. Check out my first task <a href = "https://github.com/bogadeji/hnginterns-stage1" target ="_blank">here</a></p>
+      	<div id ="profile"><p>Beginner web developer with a desire to see the things I have learnt make sense and become something tangible. I love to learn and work on challenges even when I shed tears, get headaches and almost quit way too many times. Slack name: @bogadeji. Check out my first task <a href = "https://github.com/bogadeji/hnginterns-stage1" target ="_blank">here</a></p><hr>
       	<p id="name">ADEBOGA ABIGAIL</p>
-        <hr> 
-        <a href="https://goo.gl/aEwawb" style="color: white" target ="_blank"><div id="app" >DOWNLOAD APP</div></a>
-        <hr>
         </div>
-        
+        <hr>
 
         <div class ="contact">
           

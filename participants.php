@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿<?php
+=======
+<?php
+>>>>>>> 20ed620236b15ba001deff70c08720e6a493ee22
 $pageTitle = "Participants";
 include('header.php');
 // include('participants-head.php');
@@ -8422,6 +8426,7 @@ include('header.php');
 </div>
 <!--  Each Participant Ends here  -->
 
+<<<<<<< HEAD
 <!-- Each participant starts here -->
 <div class="p-card">
     <div class="v-center">
@@ -8560,5 +8565,7 @@ include('header.php');
 >>>>>>> 8bd006fa177ed5219bc632103a6249d72c59529a
 
 >>>>>>> d26b94dcce3980815301ae3b6dff8ee51d1f19bf
+=======
+>>>>>>> 20ed620236b15ba001deff70c08720e6a493ee22
 
 <?php include "footer.php"?>
