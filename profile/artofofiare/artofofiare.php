@@ -328,7 +328,7 @@ textarea#commentbox {
         <h2>Drop a Comment</h2>
 
         <p class="minitext">I would love to hear from you, since you now know the least about me</p>
-        	<form action="#" method="post">
+        	<form action="#" method="POST">
             <fieldset>
                 <legend>Looking forward</legend>
                     <div class="space">
