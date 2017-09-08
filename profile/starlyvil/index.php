@@ -45,7 +45,11 @@
 			<div class="mainCon">
 				<a id="Bi">Basic Info</a>
 				<a href="contact.php" id="Ci">Contact Info</a>
+<<<<<<< HEAD:profile/starlyvil/index.php
+				<a href="social.html" id="Sh">Social handler</a>
+=======
 				<a href="social.php" id="Sh">Social handler</a>
+>>>>>>> 5815338a02e29a6390f818715b29681d77ca886a:profile/starlyvil/index.php
 				<a href="cform.php" id="Cf">Contact form</a>
 			</div>
 		</div>
