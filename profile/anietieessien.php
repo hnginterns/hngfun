@@ -18,5 +18,3 @@
     }else{
         header("location: AnietieEssien.html");
     }
-
-
