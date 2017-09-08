@@ -64,7 +64,7 @@ ul{
 </head>
 
 <body>
-
+<div class="container-fluid">
 <center><img class="image" src="https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/17626667_1304703359605988_8550045173239731599_n.jpg?oh=71d5449bed8089446acb4620e3e5425d&oe=5A25E345"></center>
 
 <div id="container">
@@ -94,6 +94,7 @@ ul{
 			<footer id = "footer"> Shalom John &copy; </footer>
 </p>
 </center>
+</div>
 </div>
 </body>
 </html>
