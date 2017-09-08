@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
 ﻿<?php
+=======
+<?php
+>>>>>>> 6fad32291a73d2bb9e572c105dbbda08bbe25047
 $pageTitle = "Participants";
 include('header.php');
 include('participants-head.php');
@@ -15741,7 +15745,7 @@ include('participants-head.php');
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/17691634?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                 <div class="p-card-info">
-                    <a href="http://hng.fun/profile/emekys3/emekys3.html">
+                    <a href="http://hng.fun/profile/emekys3.php">
                         <!--Profile Link-->
                         <h3 class="p-card-title">Nwadike Chikezie</h3>
                         <!--Profile Name-->
