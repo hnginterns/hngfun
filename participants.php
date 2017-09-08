@@ -70,6 +70,30 @@ include('header.php');
 <!--  Each Participant starts here  -->
 
 <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(http://i.imgur.com/auvYRL1.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/OgunmodedeOladunni/lizdunnes.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Ogunmodede Oladunni</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">elizdunnes@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> Team 5 </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
+<div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://i.imgur.com/M2buGfY.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
@@ -532,27 +556,7 @@ include('header.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
-					<div class="p-card">
 
-                        <div class="v-center">
-                            <div class="p-card-photo" style="background-image: url(https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/20770311_1441615789264525_9111256913563638000_n.jpg?oh=84db1f63db386a88a0411ca9a6e36c7a&oe=5A179347; background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-                            <div class="p-card-info">
-                                <a href="http://hng.fun/profile/alfred.html">
-                                    <!--Profile Link-->
-                                    <h3 class="p-card-title">Stonywonder</h3>
-                                    <!--Profile Name-->
-                                </a>
-                                <p class="p-card-description">wonderalfred@gmail.com</p>
-                                <!--Email-->
-                            </div>
-                            <div class="p-team">
-                                <a href="#">
-                                    <h3 class="p-card-title"> Team 10 </h3>
-                                    <!--Team-->
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 <!--  Each Participant starts here  -->
 
                     <div class="p-card">
@@ -25898,6 +25902,7 @@ include('participants-head.php');
                <!--  Each Participants ends here  -->
 		 
 
+<<<<<<< HEAD
 <!--  Each Participant starts here  -->
 
 <div class="p-card">
@@ -25914,11 +25919,19 @@ include('participants-head.php');
 
 <!--Profile Link-->
 <h3 class="p-card-title">TOMMY IMMANUEL</h3>
+=======
 
-<!--Profile Name-->
+<?php include "footer.php"?>
+<<<<<<< HEAD
+=======
+>>>>>>> 17fd2374bb7267dcda8eb02fc5cc08b023009c2c
+>>>>>>> 91bb498bd26ad95912babad7c26c9159d3a3bf6a
+>>>>>>> 7b8637e8c329cbd2114e29802cbfdd2427df030d
+>>>>>>> 5815338a02e29a6390f818715b29681d77ca886a
 
-</a>
 
+
+<<<<<<< HEAD
 <p class="p-card-description">p.tommyimmanuel247@gmail.com</p>
 
 <!--Email-->
@@ -25928,25 +25941,55 @@ include('participants-head.php');
 
 
 <div class="p-card-photo" style="background-image: url(https://z-p3-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/21317727_146340795959751_4478513973771236916_n.jpg?oh=d046ba2d75888839340476edaa592154&oe=5A54FB08); background-size: cover; background-repeat: no-repeat; background-position: center center; ">
+=======
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://z-p3-scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/21317727_146340795959751_4478513973771236916_n.jpg?oh=d046ba2d75888839340476edaa592154&oe=5A54FB08); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/tommyimmanuel.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">TOMMY IMMANUEL</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">p.tommyimmanuel247@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+>>>>>>> 5815338a02e29a6390f818715b29681d77ca886a
 </div>
-
-<div class="p-card-info">
-
-<a href="http://hng.fun/profile/tommyimmanuel.html">
-
-<!--Profile Link-->
-<h3 class="p-card-title">TOMMY IMMANUEL</h3>
-
-<!--Profile Name-->
-
-</a>
-
-<p class="p-card-description">p.tommyimmanuel247@gmail.com</p>
-
-<!--Email-->
-
+<!--  Each Participant ends here  -->
+>>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://instagram.flos2-1.fna.fbcdn.net/t51.2885-15/e35/18812667_1846669062260926_8245218755886448640_n.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/IdongesitSunday.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Idongesit Albert</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">sundayidongesit@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
 </div>
+<!--  Each Participant ends here  -->
 
+<<<<<<< HEAD
 
 <div class="p-team">
 
@@ -25960,9 +26003,33 @@ include('participants-head.php');
 
 </div>
 </div>
+=======
+<!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/ddzwebxdh/image/upload/v1504805624/cyn_emdmn4.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/damssel2000.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Cynthia Emenike</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">damssel2000@yahoo.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"></h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
+>>>>>>> 5815338a02e29a6390f818715b29681d77ca886a
 
-</div>
 
+<<<<<<< HEAD
 <!--  Each Participant ends here  -->
 
 
@@ -25989,3 +26056,5 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participant ends here  -->
+=======
+>>>>>>> 5815338a02e29a6390f818715b29681d77ca886a
