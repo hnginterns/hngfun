@@ -52,9 +52,10 @@
 	<div class="ft">
 		<div class="lCon">
 			<div class="mainCon">
-				<a href="index.html" id="Bi">Basic Info</a>
+				<a href="index.php" id="Bi">Basic Info</a>
 				<a id="Ci">Contact Info</a>
-				<a href="social.html" id="Sh">Social handler</a>
+				<a href="social.php" id="Sh">Social handler</a>
+				<a href="cform.php" id="Cf">Contact form</a>
 			</div>
 		</div>
 	</div>
