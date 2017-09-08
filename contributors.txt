@@ -277,10 +277,10 @@
 (263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
 (264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
 (265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
-<<<<<<< HEAD
+
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
-(267) Nsikak Akpan (slack:@free, github:@freet96)
-=======
+(274) Nsikak Akpan (slack:@free, github:@freet96)
+
 (266) Ubong Udotai, (slack: @donpaloez, github: donpaloez)
 (267) Wisdom Esset, (Slack: @eaesset, github: Wisdom-Esset)
 (268) Aniekan Edet, (slack:@ani-edet, github:@aniblazer)
@@ -290,5 +290,3 @@
 (272) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (273) Wilson Mmasifon  (slack: @lyndelle, github: @lyndellewilson)
 
-
->>>>>>> e95f27345bd06e098de497cd22a0ebbaf47a5956
