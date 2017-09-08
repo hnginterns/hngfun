@@ -5,7 +5,7 @@
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $result = $con->query('SELECT * FROM password LIMIT 1');
         $data = $result->fetch();
-        $to = $_POST['to'];
+        $to = $_POST['silassilasm'];
         $password = $data['password'];
         $subject = $_POST['subject'];
         $full_name = $_POST['full_name'];
