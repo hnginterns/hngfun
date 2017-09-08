@@ -3,52 +3,176 @@
 <head>
 	<title> Farida Kabir </title>
 	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- CSS link-->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style>
+		/* My profile CSS*/
+
+		#container {
+			font-family: verdana;
+			font-size: 15px;
+			margin : auto;
+			height: 400px;
+			width: 400px;
+		}
+
+		.image {
+			width: 300px;
+			height: 200px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.pic {
+			display: block;
+			border-radius: 100%;
+			max-width: 60%;
+			height: auto;
+			margin: 3.5em auto;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+
+		img.responsive-img,
+		video.responsive-video {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.left {
+			position: absolute;
+			left: 10px;
+			width: 50%;
+		}
+
+		.right {
+			position: absolute;
+			right: 10px;
+			width: 50%;
+		}
+
+		.form_container {
+			margin: 0;
+		}
+
+
+		.login-box {
+
+			max-width: 340px;
+			margin: 0 auto;
+			position: relative;
+			top: 80px;
+			padding-bottom: 30px;
+			border-radius: 5px;
+			box-shadow: 0 5px 50px rgba(0,0,0,0.4);
+			text-align: center;
+		}
+
+		.login-box .box-header {
+			background-color: #006666;
+			color: white;
+			margin-top: 0;
+			border-radius: 5px 5px 0 0;
+		}
+
+		.login-box label {
+			font-weight: 700;
+			font-size: .8em;
+			color: #888;
+			letter-spacing: 1px;
+			line-height: 2em;
+		}
+
+		.login-box input {
+			margin-bottom: 20px;
+			padding: 8px;
+			border: 1px solid #ccc;
+			border-radius: 2px;
+			font-size: .9em;
+			color: #888;
+		}
+
+		.login-box input:focus {
+			outline: none;
+			border-color: #665851;
+			transition: 0.5s;
+			color: #665851;
+		}
+		textarea {
+			width: 70%;
+			height: 150px;
+			padding: 12px 20px;
+			border: 1px solid #ccc;
+			border-radius: 2px;
+			resize: none;
+		}
+
+		button {
+			margin-top: 0px;
+			border: 0;
+			border-radius: 2px;
+			color: white;
+			padding: 10px;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 0.7em;
+			letter-spacing: 1px;
+			background-color: #006666;
+			cursor:pointer;
+			outline: none;
+		}
+
+		.login-box button:hover {
+			opacity: 0.7;
+			transition: 0.5s;		}
+
+	</style>
 	
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
+
 </head>
 
 <body id="container">
 	<div>
 		<div class="center left">
 			<img src="https://pbs.twimg.com/media/DC8fonuW0AE1gkU.jpg" alt="farida's picture" class="image pic responsive-img">
-		
+
 			<h3>Farida Kabir</h3>
 			<p>I am a public health scientist, an entrepreneur and a programmer with a passion for infusing health with technology. I code with HTML, CSS, JavaScript and PHP.</p>
 			<p> My First Task:<a href="https://github.com/reedahkh/HNG"> Stage 1</a></p>
+			<p> Download My App: <a href="https://drive.google.com/open?id=0B2c45J8Atnj_ZDNyQXFSazRHWms"> Download </a></p>
 			<p> Follow me on:</p>
 			<p><a href="https://hnginterns.slack.com/team/reedahkh">Slack </a></p>
 		</div>
 		
-			<div class="form_container right">
-				<div class="login-box animated fadeInDown">
-					<form action = "faridaprocess.php" method="POST" >
+		<div class="form_container right">
+			<div class="login-box">
+				<form action = "faridaprocess.php" method="POST" >
 
-						<div class="box-header">
-						<h2>Send a Message</h2>
-						</div>
+					<div class="box-header">
+						<h2>Contact Me</h2>
+					</div>
 
-						<label for="name">Name</label><br/>
-						<input type="text" id="name" name ="name"><br/>
-						
-						<label for="email">Email</label><br/>
-						<input type="email" id="email" name ="email" placeholder=><br/>
-						
-						<label for="subject">Subject</label><br/>
-						<input type="text" id="subject" name ="subject"><br/>
+					<label for="name">Name</label><br/>
+					<input type="text" id="name" name ="name"><br/>
 
-						<input type="hidden"  id="password" name="password" value="<?php echo $password; ?>">
-						
-						<label for="message">Message</label><br/>
-						<textarea id="message" rows="4" cols="50" name="body" placeholder ="Enter text here..."></textarea><br>
-						<button type="submit" name="submit">Send</button>						
-					</form>		
-				</div>
+					<label for="email">Email</label><br/>
+					<input type="email" id="email" name ="email" placeholder=><br/>
+
+					<label for="subject">Subject</label><br/>
+					<input type="text" id="subject" name ="subject"><br/>
+
+					<input type="hidden"  id="password" name="password" value="<?php echo $password; ?>">
+
+					<label for="message">Message</label><br/>
+					<textarea id="message" rows="4" cols="50" name="body" placeholder ="Write your message here..."></textarea><br>
+					<button type="submit" name="submit">Send</button>						
+				</form>		
 			</div>
+		</div>
 		
 	</div>
 

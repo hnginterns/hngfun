@@ -1,0 +1,33 @@
+<style>
+		.container
+		{
+			width: 1350px;
+			height: 650px;
+			background-image: url(images/bg.png);
+			
+		}
+		.content
+		{
+			width: 450px;
+			height: 620px;
+			background-color: white;
+			margin: auto;
+			
+		}
+		table{
+			width: 50%;
+		}
+		.row{
+			color: black;
+			height: 300px;
+			 margin: auto;
+			 background-color:white ;
+			 padding-left: 40px; 
+			 padding-right: 40px;
+		}
+		a{text-decoration:none;
+			color: black;
+		}
+
+
+	</style>

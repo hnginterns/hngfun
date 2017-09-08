@@ -172,7 +172,7 @@ textarea {
 <body>
     <div class="heading">
         <div class="profile top"><span class="text-primary">Profile  &nbsp|</span> &nbsp Ogechi Okoro</div>
-        <img src="image/ogechi.jpg" class="profileImage" alt="">
+        <img src="https://ca.slack-edge.com/T3QLSP8HM-U6Q3ZL0LQ-945b807f0505-1024" class="profileImage" alt="">
     </div>
 
     <div class="details">
@@ -183,6 +183,8 @@ textarea {
         <p class="big">I'm an aspiring web designer/developer based in Uyo. I develop interest while I was undergoing my industrial training program at Start Innovation Hub, Uyo.
             <br /> "Determination today leads to <code>success</code>tommorrow" </p>
         <a href="https://github.com/ogechiokoro/intern_hng" class="info">View <code>Stage 1</code> Repository</a>
+        <br>
+        <h4><a target="_blank" href="https://drive.google.com/open?id=0B6YE7xMAswrrY1NLMV9FMTV1azg" class="info">Android App</a></h4>
         <br>
         <br>
         <div class="github"><img src="./images/github.png" width="30" style="float: left;">

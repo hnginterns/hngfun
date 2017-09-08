@@ -147,18 +147,22 @@
             </div>
         </div>
 		<div class="box">
-	    <h4>CONTACT ME</h4>
-		<p> For more information
-	        <form action="#" method="POST">
-		        <input name="name" type="text" placeholder="Name" size="30" required><br>
-				</br>
-			    <input type="text" placeholder="Subject" size="30" required><br>
-				</br>
-				<input type="text" placeholder="Email Address" size="30" required><br>
-				</br>
-			    <textarea name="message" placeholder="Type your message here" rows="7" cols="30" required></textarea><br>
-				</br>
-                <input type="submit" value="Send"/>
+
+			<form action="mailto:missjay2805@gmail.com" method="GET">
+		            <fieldset>
+                    <legend>For more information</legend>
+			            To :<br>
+						<input name="to" id="to"  value="missjay2805@gmail.com" required><br>
+		                First name:<br>
+                        <input type="text" name="firstname" size="30"><br>
+                        Last name:<br>
+                        <input type="text" name="lastname" size="30"><br><br>
+				        Subject:<br>
+				        <textarea name="message" placeholder="Type your message here" rows="7" cols="32" size="100" required></textarea><br>
+						From : <br>
+						<input type="text" placeholder="Email Address" size="30" required><br>
+                        <input type="submit" value="Submit">
+			        </fieldset>
 		    </form>
 		</div>
     </div>
