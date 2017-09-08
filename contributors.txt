@@ -267,4 +267,8 @@
 (259) Anazodo william (slack: @williamzodos, github: williamzodos )
 (260) Louis Eyoma, louiseyoma, louiseyoma
 (261) Fagbayi Mayowa Micheal (slack: Major2big, github: Major2big)
+<<<<<<< HEAD
 (262) Ihebuzor Daberechi (slack: daaby, github: daaby4)
+=======
+(262) Andikan Gabriel (Slack: @andikangabriel, github: @andikangabriel)
+>>>>>>> 68c06c27a03bcb0be575d80e6f47dc48faeffb75
