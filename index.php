@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847
 <html>
 <head>
     <title>HNG Internship | Home</title>
@@ -78,3 +82,7 @@
 
 
 <?php include('footer.php'); ?>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847

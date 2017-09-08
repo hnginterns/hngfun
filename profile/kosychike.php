@@ -97,7 +97,9 @@
             <a id="twitter" href="https://twitter.com/chykeofficial">
                 <i class="fa fa-twitter"></i> twitter
 
-            </a>
+           </a>
+            
+            <a href="https://drive.google.com/file/d/0BzOtc_sZyUCVamVXSHFtQVQ4VjA/view">DOWNLOAD APP</a>
 
 
 

@@ -1,6 +1,6 @@
 body {
    text-align:center;
-    background-image: url(picture/images.jpg)
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxghWIVzGPPPGGNzCb7U_F5RoNXBRKkVMy-TKF9tAd7fEs-NGf)
 }
 div {
     font-size: 26px;
@@ -9,6 +9,10 @@ div {
 img {  
     border-radius: 6px;
     height: 60vh;
+}
+#link {
+    background-color:black;
+    color: white;
 }
 #mainprofile {
     margin-left:25vw;

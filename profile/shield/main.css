@@ -1,4 +1,4 @@
-/* 
+/*
     Author     : SHIELD
 */
 * {
@@ -39,8 +39,8 @@ img {
     border-radius: 50%;
     width: 350px;
     border: 10px solid hsl(240, 30%, 77%);
-    margin-right: 1.8em;
-        
+    margin-right: 6.8em;
+
     shape-outside: circle();
 }
 .img_wrap > p:first-of-type {

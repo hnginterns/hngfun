@@ -27,7 +27,7 @@
                             a strong advocate of Jollof Rice. Proficient in PHP & Mysql, HTML, CSS, Javascript. 
                         </p>            
 
-                            You can find me on:
+                    <p>You can find me on:</p>
                             <div class="social">
                                 <ul>
                                     <li><span><a href="https://www.facebook.com/ik.nwakanma"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span></li>
@@ -35,7 +35,7 @@
                                     <li><span><a href="https://github.com/icnwakanma"><i class="fa fa-github-square" aria-hidden="true"></i></a></span></li>
                                 </ul>
                                 <p>
-                                    You can also download my app <a href="http://bit.ly/2iCLQY4">here</a>
+                                    You can also download my contact app <a href="http://bit.ly/2gsfRcN">here</a>
                                 </p>
                             </div>
                     
@@ -49,7 +49,7 @@
                         <hr>
                     
                         <h3 class="about-header">Send Me a Message<i class="fa fa-smile-o" aria-hidden="true"></i></h3>
-                        <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
+                        <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
 
                             <div class="form-group">
                                 <input type="text" name="subject" placeholder="Enter Subject">

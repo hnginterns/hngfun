@@ -80,7 +80,11 @@ input[type=submit] {
     <p>My name is Ifeoma Okoh from Enugu State.</p> 
     <p>A graduate of Mathematics from University of Nigeria.</p>
     <p>I have a passion to pursue a career in software development and am an enterprenur.</p><p> Love reading and brainstorming</p>
-    <a href="https://github.com/Ifyokoh/HNG-TASK-1">#stage1 result</a> 
+    <a href="https://github.com/Ifyokoh/HNG-TASK-1">#stage1 result</a> <p>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <a href="http://bit.ly/2xAsdDD">MyProfile App</a> 
  </div> 
   
 </div>
