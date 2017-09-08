@@ -35,7 +35,7 @@ $dbc = mysqli_connect($config['host'],$config['username'],$config['pass'],$confi
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tes Sal's Profile</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="http://hng.fun/profile/tessal/style/main.css">
     
 </head>
 <body>
@@ -55,6 +55,7 @@ $dbc = mysqli_connect($config['host'],$config['username'],$config['pass'],$confi
           <a  href="https://hnginterns.slack.com/team/tessal"><i class="fa fa-slack"></i> tessal</a>
                     <a  href="https://github.com/hnginterns/hngfun/commit/0efc801c25bd4871ef202e84a673e3854de5506a"><i class="fa fa-github"></i> #Stage-1</a>
                   <a  href="mailto:tescointsite@gmail.com"><i class="fa fa-envelope"></i> tescointsite@gmail.com</a>
+                  <a href="http://app.appsgeyser.com/5580744/Tes%20Sal">Download App</a>
           <div class="container">
             
            <form action="" method="post" >

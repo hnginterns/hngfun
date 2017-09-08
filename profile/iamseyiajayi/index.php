@@ -6,9 +6,10 @@
 		$qdata = mysqli_fetch_assoc($query);
 		$password = $qdata['password'];
 		$to = 'iamseyiajayi@gmail.com';
+		if (isset($_POST['send'])) {
+			
 		$subject = mysqli_real_escape_string($conn, $_POST['subject']);
 		$body = mysqli_real_escape_string($conn, $_POST['body']);
-		if (isset($_POST['send'])) {
 			if ($body == '' || $subject == '') {
 			?>
 			<script>
@@ -63,7 +64,7 @@
 	</em>
 	</h3>
 	<br>
-		<img src="seyi.jpg" class="profileimg" alt="Loading Image...">
+		<img src="http://www.filetolink.com/25f7df6cf1" class="profileimg" alt="Loading Image...">
 		<h3>
 		<span class="namewrapper">
 			Ajayi Oluwaseyi
@@ -74,7 +75,7 @@
 		</span>
 		</h3>
 		<h4 style="margin-top: 20px">
-		<img src="slack.png" class="logo" alt="Loading Image...">
+		<img src="http://www.filetolink.com/d2e7b12ea4" class="logo" alt="Loading Image...">
 		<span class="username">
 		iamseyiajayi
 		</span>
@@ -96,6 +97,12 @@
 		<span class="link">
 			<a href="https://github.com/seyishemba/hng/tree/master/Stage%20One" target="_blank" class="underline">#Stage1 repo</a>
 		</span>
+			
+			<span class="link" style="margin-left:5px">
+			<a href="https://www.dropbox.com/s/ufh7npbxir2pugv/android-debug.apk?dl=0" target="_blank" class="underline">Download App</a>
+		</span>
+			
+			
 		</h4>
 </div>
 
