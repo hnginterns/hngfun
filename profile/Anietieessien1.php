@@ -1,4 +1,8 @@
+<<?php 
+include "anietieessien.php";
+ ?>
 <!DOCTYPE html>
+
 <html>
 <head>
 	<title>Anietie Essien HNG Internship Profile</title>
