@@ -83,6 +83,7 @@ print <<< eot
              background-color: #444444;
              border:1px;
              border-style: dashed;
+             width:200px;
 
          }
          #image{
