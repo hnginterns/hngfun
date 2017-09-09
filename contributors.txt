@@ -930,6 +930,7 @@
 (282) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak)
 (283) Inoh gordian (slack:@inohgordian, Github: @inohgordian)
 (284) Azeezah Abdulwahab (Slack:@azeezah, Github:zee-geek)
+(285) Etuk Godwin(slack:@tourist2017, Github:tourist2017)
 
 
 >>>>>>> a0c4654bded7a33a670eea2d966277c5e7f51b33
