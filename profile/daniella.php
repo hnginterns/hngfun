@@ -129,6 +129,9 @@
           border-radius: 7px;
         }
 
+        #android {
+          color : #ffffff;
+        }
     </style>
   </head>
   <body>
@@ -144,6 +147,7 @@
             <span class="my-github-task"> GitHub Stage 1 Task</span>
           </a>
         </h4>
+        <h4><a href="https://github.com/dmpire/my_android_app/blob/master/my_android_app/my_android_app.apk" id="android">My Android App</a></h4>
         <hr>
             <img src="http://i.imgur.com/dYFenOU.jpg" alt="Daniella Mato's photo" class="myImage" width="40%" height="40%" >
           
