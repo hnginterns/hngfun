@@ -65,12 +65,22 @@ aside hr{
 	font-size: 15px;
 	color: #aaa;
 }
-aside a{
-	color:white;
-	text-decoration:none;
-	font-family:georgia;
+
+#others{
+	width:120px;
+	padding:10px;
+	height:30px;
+	font-size:20px;
+	margin-left:80px;
+	text-align:center;
+	background-color:green;
+	color:red;
+	border:dotted 2px rgb(0,100,29);
 }
 #stage1{
+	color:#aaa;
+	text-decoration:none;
+	font-family:georgia;
 	width:120px;
 	margin-top:10px;
 	padding:10px;
@@ -81,13 +91,31 @@ aside a{
 	background-color:green;
 	border:solid 2px rgb(0,100,29);
 }
-aside a:hover{
+#my-app{
+	margin-left:260px;
+	background-color:green;
+	color:white;
+	padding:5px;
+	text-decoration:none;
+	
+
+}
+#my-app:hover{
+	background-color:white;
 	color:green;
+	box-shadow:2px 2px 2px rgb(133,133,133);
+	
+}
+#others:hover{
+	background-color:rgb(255,255,255);
+	box-shadow:5px 5px 5px 5px rgb(180,180,180);
+	border:none;
 }
 #stage1:hover{
 	background-color:rgb(255,255,255);
 	box-shadow:5px 5px 5px 5px rgb(180,180,180);
 	border:none;
+	color:green;
 }
 #my-biography{
 	float:left;
