@@ -6,13 +6,11 @@ $exe = $connect->query('SELECT * FROM password LIMIT 1');
 $data = $exe->fetch();
 $password = $data['password'];
 ?>
-?>
+
 <!doctype html>
-<!--suppress EqualityComparisonWithCoercionJS -->
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+   
     <title> Ogbonna Destiny (dsparkle)</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -109,10 +107,6 @@ $password = $data['password'];
             font-family: Lato;
 
          }
-
-
-
-
 
     </style>
 </head>
