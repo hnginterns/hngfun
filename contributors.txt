@@ -290,7 +290,6 @@
 (273) Wilson Mmasifon  (slack: @lyndelle, github: @lyndellewilson)
 (274) Emmanuel John (slack:@emmastasho, github: @emmastasho)
 (275) Nsikak Akpan (slack:@free, github:@freet96)
-<<<<<<< HEAD
 (272) David Iton,(slack:@daviditon21,github:daviditon2)
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
@@ -301,4 +300,5 @@
 (278) Saade Udoka, @saade, @hasaade
 (278) kingsley Ogechukwu (Slack: @kingsley, Github: @ogekingsley
 (279) abasiakara akpanekpo (Slack: @abas, Github:@ Paragon-AE)
-(280) Jude Ukana (slack:@judeukana, github:@JudeUk)
+(280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
+(281) Jude Ukana (slack:@judeukana, github:@JudeUk)
