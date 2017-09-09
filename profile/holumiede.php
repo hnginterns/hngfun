@@ -204,6 +204,7 @@
                 <ul class="icons">
                     <li><a href="http://twitter.com/holumiede" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                     <li><a href="https://github.com/holumiede" class="icon fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="#" class="icon fa-android"><span class="label">Android App</span></a></li>
                     <li><a href="https://hnginterns.slack.com/messages/@holumiede/" class="icon fa-slack"><span class="label">Slack</span></a></li>
                     <!--
                 <li><a href="osideindeo@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>

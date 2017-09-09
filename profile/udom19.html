@@ -37,6 +37,24 @@
 	body{
 		background-color: #efefef;
 	}
+	form {
+		width: 60%;
+		margin: 30px auto;
+		color: #000;
+	}
+	form input {
+		width: 100%;
+		padding: 12px;
+		border: #ededed;
+		border-radius: 3px;
+	}
+
+	form button {
+		border: transparent;
+		background: blue;
+	}
+
+	
 	</style>
 </head>
 <body id="bck">
@@ -50,8 +68,17 @@
 		        <P><a href="https://github.com/udom19" target="_blank" class="fa fa-github social github"></a>
                   <a href="https://twitter.com/udomcosmas" target="_blank" class="fa fa-twitter social twitter"></a>
 		          <ul></P>		</center><button class=" btn-lg " id="AboutMe">Stage1 Task</button>
+		          
+	<button class=" btn-lg " id="AboutMe"><a href="https://drive.google.com/open?id=0B17__D8maVgcTHVpNnhYcnItSTg">My Android App</a></button>
+ 
 </center>
-	
+	<form action="udom19.php" method="post">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" placeholder="Enter Your Name" />
+		<label for="message">Message</label>
+		<textarea id="message" name="message"></textarea>
+		<button type="submit" name="submit">Send</button>
+	</form>
 
 </body>
 </html>

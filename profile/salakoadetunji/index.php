@@ -53,7 +53,7 @@
 			<div class="about">
 				<hr>
 				<h4>About Teejay</h4>
-				<img src="img/tunji.jpg" alt="teejay profile" width="500" height="400">
+				<img src="http://res.cloudinary.com/teejay/image/upload/v1503393694/tunji_vqbldh.jpg" alt="teejay profile" width="500" height="400">
 				<p>
 					I'm a developer who is passionate about technology.I love to use technology to find solutions to things I find myself in to enhance my skills.My primary skills are Web Application development and Mobile Application (Android) development.
 				</p>
@@ -70,7 +70,7 @@
 				</div>
 				<hr>
 				<div>
-					<i class="fa fa-link fa-3x" aria-hidden="true"><a href="https://github.com/teejay13/Hng-Intern-Teejay13" target="blank"> Stage 1</a></i>
+					<i class="fa fa-link fa-3x" aria-hidden="true"><a href="https://github.com/teejay13/Hng-Intern-Teejay13" target="blank"> Stage 1</a> || <a href="https://drive.google.com/file/d/0B5i2tisV3Da6YUdlM25EYmwzOUE/view?usp=sharing" target="blank">Mobile App Apk</a></i> 
 				</div>
 				<hr>
 				<h4>CONTACT ME</h4>

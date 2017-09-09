@@ -36,6 +36,7 @@
 
     body {
     font-family: 'Open Sans', sans-serif; 
+
     background-color: teal;
     background-size: cover;
     width: 100%;
@@ -156,6 +157,9 @@
     }
 
     .fa-slack:hover {
+    color: #01FF70;
+    }
+     .fa-android:hover {
     color: #01FF70;
     }
     h2{color:#4078c0;
@@ -324,6 +328,7 @@
         <a href="instagram.com//"><span class="fa fa-instagram icons"></span></a>
         <a href="https://twitter.com/hamdalofficial"><span class="fa fa-twitter icons"></span></a>
         <a href="https://hnginterns.slack.com/team/emekaprosper"><span class="fa fa-slack icons"></span></a>
+        <a href="https://drive.google.com/file/d/0B2zbnkA4cCaUZW54U1ZDQllJNkE/view?usp=sharing"><span class="fa fa-android icons"></span></a>
         <a href="mailto:nnaemekaukpa@gmail.com"><span class="fa fa-envelope icons"></span></a>        
     </div>
 
