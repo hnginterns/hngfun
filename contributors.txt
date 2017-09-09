@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 <<<<<<< HEAD
 (1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
@@ -1229,10 +1229,6 @@
 (286) Gift Udowo (Slack:@giftwhite, Github:@giftwhite)
 (287) Nsikak Nyong (Slack:@, Github:@)
 (288) Ubong Silas (Slack:@ubsilo, Github:@ubsilo)
-<<<<<<< HEAD
-
->>>>>>> cb3429e774c8d63f45ba26e09c0aa6c38ab28f79
-=======
 (289) Ubokho Akpan, (Slack: @affilgain10, Github: affilgain10)
 (290) Amara Odunze (Slack: @vanessa17, github: @amydiva)
->>>>>>> fe6e55ab691c18a150e34b799b0d4bce744e7dbc
+(291) Sekanam Akpabio (Slack: @sekaiz5, Github: sekaiz5)
