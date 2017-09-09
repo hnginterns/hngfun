@@ -1,30 +1,44 @@
-  $error = [];
-
-    $subject = $_POST['subject'];
-    $to  = 'anietieessien360@gmail.com';
-    $body = $_POST['message'];
-
-    if($body == '' || $body == ' ') {
-        $error[] = 'Message cannot be empty.';
-    }
- 
-
-    if($subject == '' || $subject == ' ') {
-        $error[] = 'Subject cannot be empty.';
-    }
-
-    if(empty($error)) {
-
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+ <?php
+    if(isset($_POST['subject'])){
+        $config = [
+            'dbname' => 'hng',
+            'pass' => '@hng.intern1',
+            'username' => 'intern',
+            'host' => 'localhost'
+        ];
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
-
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
+        $result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
         $password = $data['password'];
-
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-        header("location:AnietieEssien.html $uri");
-
+        $subject = $_POST['subject'];
+        $body = $_POST['message'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=anietieessien360@gmail.com");
+    
+    }else{
+        header("location: AnietieEssien.html");
     }
+?>
+<?php
+    if(isset($_POST['subject'])){
+        $config = [
+            'dbname' => 'hng',
+            'pass' => '@hng.intern1',
+            'username' => 'intern',
+            'host' => 'localhost'
+        ];
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $result = $con->query('SELECT * FROM password');
+        $data = $result->fetch();
+        $password = $data['password'];
+        $subject = $_POST['subject'];
+        $body = $_POST['message'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=anietieessien360@gmail.com");
+    
+    }else{
+        header("location: AnietieEssien.html");
+    }
+?>
+>>>>>>> ead6ad70b0df2cf4a88b045691204c927575245f
+© 2017 GitHub, Inc.
