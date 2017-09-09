@@ -26082,9 +26082,29 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participant ends here  -->
-=======
 
-
+<!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/kelzvictoria/image/upload/v1504960110/kelz_sgc9sb.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/kelzvictoria.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Victoria Kazeem</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">kelzvictoria@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"></h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
 
                <!--  Each Participant starts here  -->
               <div class="p-card">
