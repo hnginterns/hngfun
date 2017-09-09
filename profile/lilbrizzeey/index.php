@@ -44,15 +44,23 @@
 			padding-bottom: 60px;
 			height: 173px;
 			width: 230px;
-		    transform: rotate(270deg);
 			}
+		.icon{
+			width: 24px;
+			height: 24px;
+			margin-top: 57px;
+			display: ruby-text;
+		}
+		.picture{
+			transform: rotate(270deg);
+		}
 			
 		.container{
 			margin-top: 100px;
 			margin-right: auto;
 			margin-left: auto;
 			width: 75%;
-			background-image: url(background.jpg);
+			background-image: url(http://res.cloudinary.com/lilbrizzeey/image/upload/v1504127981/background_tneirf.jpg);
 		}
 		
 		.section1{
@@ -69,7 +77,7 @@
 		}
 		
 		.card{
-			width: 29.7%;
+			width: 38.2%;
 			margin-top: 0;
 			margin-bottom: 1rem;
 			border: none;
@@ -176,24 +184,24 @@
 		<div class="section1">
 		  <div class = "card">
 		    <div class="card-section">
-			  <img src = "me.jpg" alt = "profile picture">
+			  <img class="picture" src = "http://res.cloudinary.com/lilbrizzeey/image/upload/v1504127986/me_epgw68.jpg" alt = "profile picture">
 			</div>
 			<div class="card-section">
 				<h2>Chukwuma David</h2>
-			   <p>Slack:lilbrizzeey</p>
+			   <p><a href="https://hnginterns.slack.com/team/lilbrizzeey" target="blank">Slack:lilbrizzeey</a></p>
 			   <p>Email:lilbrizzeey97@gmail.com</p>
 			</div>
 		  </div>
 		</div>
 	    <div class="section2">
 		  <h2>Biography</h2>
-		  <p> A 19 year old student of Mechanical Engineering  in the University of Nigeria Nsukka.
-			 I know the basics of html, css, javascript and php. I started programming since May 2017
+		  <p> A 19 year old student of Mechanical Engineering  in the University of Nigeria Nsukka. I started programming since May 2017
 				and since then I would say programming has really been an interesting experience for me
 				and I'm glad with the knowledge I've been gaining. I look forward to becoming better and
 				I hope one day to be a guru in the coding world.</p><br>
 			<p>I work with HTML, JavaScript, CSS and PHP. I'm still open to learning and I hope HNG can help me broaden my horizons.</p><br>
 		  <p style = "text-align: right"><a href = "https://github.com/lilbrizzeey/myrepo.git" target="blank">Stage 1</a></p>
+		   <p style = "text-align: right" ><a href="https://drive.google.com/open?id=0B_PwjTbh_IMrQ3gtdHFUcFluWWM" target="blank">Android App<img class="icon" src="http://res.cloudinary.com/lilbrizzeey/image/upload/v1504352144/icon8_mxu5yj.png" title="Download" width="24" height="24"></a></p>
 		  <h2>Send Me a Message</h2>
 		  <form class="form" method = "GET" action = "/sendmail.php">
 			<input type = "text" name = "subject" placeholder = "Your name" required>
