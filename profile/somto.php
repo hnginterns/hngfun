@@ -110,7 +110,7 @@
 		</div>
 		<div>
 			
-          <form class="contact" action="http://hng.fun/profile/somto/index.php" method="get">
+          <form class="contact" action="http://hng.fun/profile/somto.php" method="get">
             <p class="contact-title">Send Me a Mail</p>
             <input type="text" name="subject" placeholder="subject" required>
             <textarea rows="2"  name="body" placeholder="type your message here" required></textarea><br>
