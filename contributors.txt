@@ -600,7 +600,7 @@
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (272) David Iton,(slack:@daviditon21,github:daviditon21)
-(266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
+(266) emmanuel ekong (slack: @uwemekong11(, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (277) Precious Akpan  (Slack: @preciousakpan119, Github: @preciousak)
 (278) Saade Udoka, @saade, @hasaade
@@ -609,4 +609,4 @@
 (280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
 (281) Jude Ukana (slack:@judeukana, github:@JudeUk)
 >>>>>>> 303e6d35eb758a96e5d533269947ba20c5b01f89
-(282) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak)
+(282) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak) (283) Patrick Idungafa (Slack:Maguar2, Github:Maguar2)
