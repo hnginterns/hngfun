@@ -1,10 +1,9 @@
-
 <?php
     if(isset($_POST['subject'])){
         $config = [
-            'dbname' => 'hngfun',
-            'pass' => '@hng.intern2',
-            'username' => 'interns',
+            'dbname' => 'hng',
+            'pass' => '@hng.intern1',
+            'username' => 'intern',
             'host' => 'localhost'
         ];
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -14,9 +13,9 @@
         $password = $data['password'];
         $subject = $_POST['subject'];
         $body = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=emmaclarkworld@gmail.com");
-    
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=lyndellew@gmail");
+	
     }else{
-        header("location: clarksworld.html");
+        header("location: lyndelle.html");
     }
 ?>
