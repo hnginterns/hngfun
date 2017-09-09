@@ -303,3 +303,4 @@
 (280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
 (281) Jude Ukana (slack:@judeukana, github:@JudeUk)
 (282) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak)
+(283) Kingsley Bestor (Slack:bestorw, Github:bestorw01)
