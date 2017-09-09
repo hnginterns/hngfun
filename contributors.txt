@@ -1,4 +1,4 @@
-(1) Nwanze Franklin, franko4don, @franko4don
+﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -7263,6 +7263,4 @@
 =======
 =======
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
->>>>>>> 0fe22d407dd9c50d31ac88fa5c65fab1affab27d
->>>>>>> 75ed45d63fb12870b16a94be70fe35cc116e1505
->>>>>>> 3da823a8a319845ba44d8ce8b7734d1b7874a1ec
+
