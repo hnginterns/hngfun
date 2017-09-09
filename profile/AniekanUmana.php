@@ -1,4 +1,4 @@
- <?php
+<?php
      if(isset($_POST['submit'])){
     	$config = include('../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -13,7 +13,6 @@
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
      }
      else{
-         header("location: AnietieEssien.html");
+         header("location: AniekanUmana.html");
      }
 ?>
-
