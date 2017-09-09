@@ -1,20 +1,30 @@
-<?php
-    if(isset($_POST['subject'])){
-        $config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-        ];
+  $error = [];
+
+    $subject = $_POST['subject'];
+    $to  = 'anietieessien360@gmail.com';
+    $body = $_POST['message'];
+
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
+    }
+ 
+
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+
+    if(empty($error)) {
+
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
-        $result = $con->query('SELECT * FROM password');
-        $data = $result->fetch();
+
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
         $password = $data['password'];
-        $subject = $_POST['subject'];
-        $body = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=anietieessien360@gmail.com");
-    
-    }else{
-        header("location: AnietieEssien.html");
+
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+        header("location:AnietieEssien.html $uri");
+
     }
