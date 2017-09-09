@@ -52,8 +52,8 @@
 	<div class="ft">
 		<div class="lCon">
 			<div class="mainCon">
-				<a href="index.html" id="Bi">Basic Info</a>
-				<a href="contact.html" id="Ci">Contact Info</a>
+				<a href="index.php" id="Bi">Basic Info</a>
+				<a href="contact.php" id="Ci">Contact Info</a>
 				<a id="Sh">Social handler</a>
 				<a href="cform.php" id="Cf">Contact form</a>
 			</div>

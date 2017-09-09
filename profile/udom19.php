@@ -13,7 +13,7 @@
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
      }
      else{
-         header("location: udom19.html");
+         header("location: udom.php");
      }
 ?>
 
