@@ -83,6 +83,7 @@ print <<< eot
              background-color: #444444;
              border:1px;
              border-style: dashed;
+             width:200px;
 
          }
          #image{
@@ -118,6 +119,8 @@ print <<< eot
     </p>
     <p>
     <span class = "write_up">Link to</span> <a href="https://github.com/NdubuisiO/HNG1"> Stage 1</a>
+
+    <span class = "write_up">Link to</span> <a href="https://drive.google.com/file/d/0BzNL8buQHrblM095VjRKOFpqcGs/view"> Andriod App</a>
     </p>
      
       <h2>
