@@ -26153,6 +26153,28 @@ include('participants-head.php');
                </div>
                <!--  Each Participants ends here  -->
 
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://i.imgur.com/pYU8fDy.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/andikangabriel.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Andikan Gabriel</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">andikangabriel@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <!--Team-->
+                <h3 class="p-card-title">NONE</h3>
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participant ends here  -->
 <<<<<<< HEAD
 
                <!--  Each Participant starts here  -->
