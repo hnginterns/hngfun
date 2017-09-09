@@ -293,3 +293,4 @@
 (272) David Iton,(slack:@daviditon21,github:daviditon2)
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
+(277) Jude Ukana (slack:@judeukana, github:@JudeUk)
