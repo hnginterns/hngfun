@@ -33,6 +33,37 @@
 			margin-top: 30px;
 			font-weight: 800;
 		}
+				input[type=text], select, textarea {
+		    width: 100%; 
+		    padding: 12px;  
+		    border: 1px solid #ccc;
+		    border-radius: 4px; 
+		    box-sizing: border-box; 
+		    margin-top: 6px; 
+		    margin-bottom: 16px; 
+		    resize: vertical 
+		}
+
+				input[type=submit] {
+		    background-color: #4CAF50;
+		    color: white;
+		    padding: 12px 20px;
+		    border: none;
+		    border-radius: 4px;
+		    cursor: pointer;
+		}
+
+		
+		input[type=submit]:hover {
+		    background-color: #45a049;
+		}
+
+		
+		.container {
+		    border-radius: 5px;
+		    background-color: #f2f2f2;
+		    padding: 20px;
+		}
 		
 
 
@@ -53,52 +84,28 @@
 		<p>My name is <strong>Derrick Ikenga</strong> and I'm a Full stack web developer in training with a passion for learning and a drive for Entrepreneurship</p>
 	
 
-	<div >
-		<h4>send me a mail</h4>
-		<form  method="post" action="euphoriawolf.php">
-			<table width="450px">
-				</tr>
-				<tr>
-				 <td valign="top">
-				  <label for="name">Name </label>
-				 </td>
-				 <td valign="top">
-				  <input  type="text" name="name" maxlength="50" size="30">
-				 </td>
-				</tr>
-				 
-				<tr>
-				 <td valign="top">
-				  <label for="email">Email Address </label>
-				 </td>
-				 <td valign="top">
-				  <input  type="text" name="email" maxlength="80" size="30">
-				 </td>
-				 
-				</tr>
+	
+	<div class="container">
+		<h4>Contact</h4>
+	  <form action="/action_page.php" method="post" action="euphoriawolf.php">
 
-				<tr>
-				 <td valign="top">
-				  <label for="message">Message </label>
-				 </td>
-				 <td valign="top">
-				  <textarea  name="message" maxlength="1000" cols="25" rows="6"></textarea>
-				 </td>
-				</tr>
-				<tr>
-				 <td colspan="2" style="text-align:center">
-				  <button class="btn btn-default" type="submit" name="send">Send</button>
-				 </td>
-				</tr>
-			</table>		 
-				 
-				
-			
-			
-		</form>
+	    <label for="fname">First Name</label>
+	    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+	    <label for="sject">Subject</label>
+	    <input type="text" id="sject" name="lastname" placeholder="your subject">
+
+	    
+
+	    <label for="msg">Message</label>
+	    <textarea id="msg" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+	    <input type="submit" value="Submit">
+
+	  </form>
 	</div>
 
-		<h4>Hit me up</h4>
+		<h4>Social</h4>
 		
 			<p>Slack : euphoriawolf</p>
 
