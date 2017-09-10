@@ -1,14 +1,14 @@
- <?php
+<?php
 
     $user = 'intern';
     $pass = '@hng.intern1';
     $db = 'hng';
     $connect = new mysqli('localhost', $user, $pass, $db);
     mysqli_select_db($connect, 'password');
-    $query = "SELECT * FROM password LIMIT 1";
+    $query ="SELECT * FROM password LIMIT 1";
     $passes = mysqli_query($connect, $query);
 ?> 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -281,7 +281,7 @@
                 Hello there
             </h3>
 
-            <h2 class="my-name intro-text">
+            <h2 class="my-name intro-text" id="name">
                 I'm Richard Umoffia
             </h2>
             <h5 class="what-i-do intro-text">
@@ -294,17 +294,17 @@
                     <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345827/hng-profile/angular_o3n6ze.svg" alt="Angular" class="skill-icon angular">
                     <p class="skill-text no-margin angular">Angular</p>
                 </div>
-                <div class="skill ">
-                    <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347022/if_Python_logo_282803_bkpw9k.svg" alt="Python/Django " class="skill-icon django ">
-                    <p class="skill-text no-margin django ">Python/Django</p>
+                <div class="skill">
+                    <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347022/if_Python_logo_282803_bkpw9k.svg" alt="Python/Django" class="skill-icon django">
+                    <p class="skill-text no-margin django">Python/Django</p>
                 </div>
                 <div class="skill">
-                    <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345836/hng-profile/if_html5_682696_ihjyrc.svg " alt="Html " class="skill-icon js ">
-                    <p class="skill-text no-margin js ">HTML/CSS</p>
+                    <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345836/hng-profile/if_html5_682696_ihjyrc.svg" alt="Html" class="skill-icon js">
+                    <p class="skill-text no-margin js">HTML/CSS</p>
                 </div>
-                <div class="skill ">
-                    <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345837/hng-profile/if_javascript_682690_zx3ygw.svg " alt="Javascript " class="skill-icon html ">
-                    <p class="skill-text no-margin html ">Javascript</p>
+                <div class="skill">
+                    <img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345837/hng-profile/if_javascript_682690_zx3ygw.svg" alt="Javascript" class="skill-icon html">
+                    <p class="skill-text no-margin html">Javascript</p>
                 </div>
             </div>
         </div>
@@ -320,9 +320,9 @@
             <div class="input-holder hide">
                 <input type="email" placeholder="Your Email" name="to" class="input-box" value="richyafro@gmail.com" required>
             </div>
-             <div class="hide">
-                    <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo "".$password[ 'password']; } ?>>
-                </div> 
+            <div class="hide">
+                 <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo"".$password[ 'password']; } ?>>
+            </div>
             <div class="input-holder">
                 <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Your message here" class="user-message" required></textarea>
             </div>
@@ -335,12 +335,20 @@
     </main>
 
     <footer class="social">
-        <p class="social-text ">Social</p>
-        <a href="https://github.com/hackafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347033/if_social_media_online_github_837837_hpj86u.svg " alt="github-icon" style="margin: 5px 7px; height: 25px; width: 25px; " class="social-icon "></a>
-        <a href="https://instagram.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345829/hng-profile/if_6_2315313_rcurv9.svg " alt="instagram-icon" class="social-icon "></a>
-        <a href="https://linkedin.com "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345831/hng-profile/if_7_2315311_ts77wy.svg " alt="linkedin-icon" class="social-icon "></a>
-        <a href="https://twitter.com/iamafro "><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345833/hng-profile/if_14_2315305_l2xljo.svg " alt="twitter-icon" class="social-icon "></a>
+        <p class="social-text">Social</p>
+        <a href="https://github.com/hackafro"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503347033/if_social_media_online_github_837837_hpj86u.svg" alt="github-icon" style="margin: 5px 7px; height: 25px; width: 25px;" class="social-icon"></a>
+        <a href="https://instagram.com/iamafro"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345829/hng-profile/if_6_2315313_rcurv9.svg" alt="instagram-icon" class="social-icon"></a>
+        <a href="https://linkedin.com"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345831/hng-profile/if_7_2315311_ts77wy.svg" alt="linkedin-icon" class="social-icon"></a>
+        <a href="https://twitter.com/iamafro"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345833/hng-profile/if_14_2315305_l2xljo.svg" alt="twitter-icon" class="social-icon"></a>
+        <a href="https://drive.google.com/open?id=0Bxn234SKUU6rbFVSVF9FdGFUSDg"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1504444765/symbol_n5igrf.svg" alt="Link to android app" class="social-icon"></a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+            stringsElement: '#name'
+        });
+    </script>
 </body>
 
 </html>
