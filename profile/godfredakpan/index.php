@@ -64,7 +64,7 @@
 		                    <span class="icon-bar"></span>
 		                </button>
 		                <a class="navbar-brand" href="index.html">
-		                	<img class="img-responsive" src="assets/img/logo.png" alt="logo">
+		                	<img class="img-responsive" src="http://res.cloudinary.com/archer/image/upload/v1504466473/logo_yf2chv.png" alt="logo">
 		                </a>                    
 		            </div>
 		            <div class="collapse navbar-collapse">
@@ -84,7 +84,7 @@
 
 			<div class="carousel-inner">
 				<div class="item active">
-					<img class="img-responsive" src="assets/img/bg.jpg" alt="godfred">						
+					<img class="img-responsive" src="http://res.cloudinary.com/archer/image/upload/v1504466862/bg1_tbub8x.jpg" alt="godfred">						
 					<div class="carousel-caption">
 						<h2>Welcome to my page</h2>
 						<h4>Thanks to hotels.ng</h4>
@@ -104,7 +104,7 @@
 	
 	<section id="about">
 		<div class="guitar2">				
-			<img class="img-responsive" src="assets/img/11.jpg" alt="godfred">
+			<img class="img-responsive" src="https://scontent.flos5-1.fna.fbcdn.net/v/t1.0-9/21192138_111619312864207_8937764799900046911_n.jpg?oh=4ab7c9e6e11fbe0bd50ce5ba938b51f2&oe=5A51FC0F" alt="godfred">
 		</div>
 		<div class="about-content">					
 					<h2>About Godfred Akpan</h2>
@@ -112,7 +112,7 @@
 										in Web Design and Programming. <p>iam currently studying at the University of Uyo, expecting to graduate by next year which is 2018.
 										<p>
                                            My Inspiration is God, i believe with him and a computer you can do all things.</p><p>
-					<a href="http://bit.ly/2go9qDB" class="btn btn-primary">Download my Android Application <i class="fa fa-angle-right"></i></a>			
+					<a href="https://drive.google.com/open?id=0BysGWpdVZTLXcDlkNXBKcnR5U0E" class="btn btn-primary">Download my Android Application <i class="fa fa-angle-right"></i></a>			
 					<a href="https://github.com/godfredakpan" class="btn btn-primary">View my Github Profile <i class="fa fa-angle-right"></i></a>
 				         <a href="https://slack.com/godfredakpan" class="btn btn-primary">View my Slack Profile <i class="fa fa-angle-right"></i></a>
 		</div>
@@ -121,7 +121,7 @@
 		
 		<div class="contact-section">
 			<div class="ear-piece">
-				<img class="img-responsive" src="assets/img/ear-piece.png" alt="">
+				<img class="img-responsive" src="http://res.cloudinary.com/archer/image/upload/v1504466842/ear-piece_orkl6e.png" alt="">
 			</div>
 			<div class="container">
 				<div class="row">

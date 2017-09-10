@@ -5,15 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coinman</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  	<script src="js/scripts.js"></script>
+  	<script src="js/jquery.js"></script>
  	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- 	<link rel="stylesheet" type="text/css" href="css/table-style.css">
-	<link rel="stylesheet" type="text/css" href="js/scripts.js">
 </head>
+<style>
+	body{
+		background: linear-gradient(to right, #25c481, #25b7c4);
+	}
+</style>
 
 <body>
     <nav class="navbar navbar-default navbar-static-top">
@@ -57,6 +58,18 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script>
+        
+        // when docs is ready load data
+		getJsonData();
+        
+		// refresh data every 1 mins
+		var refreshData = function (){
+			getJsonData();
+		}
+        
+		// onload fresh data
+		window.setInterval(refreshData, 1000 * 60);
+        function getJsonData(){
        $.ajax({
          type: "POST", dataType: "json", url: "class/load-data.php",
             success: function(data){
@@ -78,6 +91,8 @@
                   console.log(data);
                 }
          });
+            
+        }
     </script>
 </body>
 

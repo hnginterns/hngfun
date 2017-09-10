@@ -201,7 +201,7 @@ body {
                 <p><i class="fa fa-github fa-lg fa-fw" aria-hidden="true"></i><a href="https://github.com/fabrobocom">fabrobocom</a></p>
                 <p><i class="fa fa-slack fa-lg fa-fw" aria-hidden="true"></i><a href="https://hnginterns.slack.com/team/timolin">timolin</a></p>
             </div>
-
+            
         </div>
         <div class="sec2" style="">
             <p>I'm Timothy Onyiuke, Mid-Level Web developer. I code mostly in PHP/Laravel.</p>
@@ -209,6 +209,7 @@ body {
                 and I like to think of myself as someone on a mission, I love Chess and Soccer.</p>
 
             <p><a href="https://github.com/fabrobocom/HNG" class="stage1">Stage 1</a></p>
+            <p><a href="https://www.dropbox.com/s/21biq8u46w4exe8/timi.apk?dl=0" class="stage1">Download My Personal App</a></p>
         </div>
         <div class="row">
             <div class="">
@@ -229,6 +230,7 @@ body {
                             </div> -->
                         </div>
                 </form>
+                <br><br>
             </div><!--/.-->
         </div>
     </div>
