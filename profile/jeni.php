@@ -16,7 +16,7 @@
 
    if(empty($error)) {
 
-     $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+     $config = include __DIR__ . "/../config.php";
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -199,8 +199,9 @@ button[type=submit]{
             <!-- a section of the artcle that gives my username-->
             <p>Slack username: Jeni<br>
                 Github username: Je-ni</p>
-            <p><a href= https://github.com/Je-ni/newrepo.git>Stage 1 task</a>
-               <a href = https://drive.google.com/file/d/0B4RsYe5Wn1hBQVA3Rk1jMUhReTQ/view?usp=drivesdk>Contact App</a></p>
+
+            <p><a href= "https://github.com/Je-ni/newrepo.git">Stage 1 task</a>
+               <a href = "https://drive.google.com/file/d/0B4RsYe5Wn1hBaS1DLVh2WmNXaEU/view?usp=drivesdk">Contact App</a></p>
             
           </article><br><br>
 
@@ -221,9 +222,7 @@ button[type=submit]{
                     <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
 
                     <button type="submit" name="send">Send</button> 
-                    <button type="submit"
-                    onclick="document.getElementById('id01').style.
-                    display='none'" class="cancelbtn">Cancel</button>
+
                 </div>
 
             </form>
