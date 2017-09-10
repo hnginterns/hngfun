@@ -7569,7 +7569,7 @@ include('header.php');
         <div class="p-card-info">
             <a href="http://hng.fun/profile/ayobaymak">
                 <!--Profile Link-->
-                <h3 class="p-card-title">Ayodeji Bayo-Makindel</h3>
+                <h3 class="p-card-title">Ayodeji Bayo-Makinde</h3>
                 <!--Profile Name-->
             </a>
             <p class="p-card-description">ayobaymak@gmail.com</p>
@@ -7586,26 +7586,35 @@ include('header.php');
 <!--  Each Participants ends here  -->
 
                <!--  Each Participant starts here  -->
+			   <!--
               <div class="p-card">
                   <div class="v-center">
                       <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/894886569563303937/SDDv2YBT_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                       <div class="p-card-info">
                           <a href="http://hng.fun/profile/kosychike.html">
                               <!--Profile Link-->
+							  <!--
                               <h3 class="p-card-title">Chike Ononye</h3>
+							  -->
                               <!--Profile Name-->
+							  <!--
                           </a>
                           <p class="p-card-description">kosyononye@gmail.com</p>
+						  -->
                           <!--Email-->
+						  <!--
                       </div>
                       <div class="p-team">
                           <a href="#">
                               <h3 class="p-card-title"> Team 1 </h3>
+							  -->
                               <!--Team-->
+							  <!--
                           </a>
                       </div>
                   </div>
               </div>
+			  -->
               <!--  Each Participants ends here  -->
 
 
