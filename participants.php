@@ -1,10 +1,8 @@
 <<<<<<< HEAD
-<?php
-=======
+
 
 <?php
 
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
 $pageTitle = "Participants";
 include('header.php');
 // include('participants-head.php');
@@ -8735,36 +8733,6 @@ include('header.php');
 </div>
 <!--  Each Participants ends here  -->
 
-
-<<<<<<< HEAD
-
-=======
-<?php include "footer.php"?>
-﻿<?php
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
-$pageTitle = "Participants";
-include('header.php');
-include('participants-head.php');
-?>
-    <div id="banner-content" class="row clearfix">
-
-        <div class="p-card-container">
-            <div class="v-center">
-                <input style="margin-top: 40px;" type="text" id="search" placeholder="Enter Participant name to search" name="search">
-            </div>
-        </div>
-
-        <div class="p-card-container">
-
-
-            <!--
-              GUIDELINES FOR ADDING DETAILS TO PARTICIPANTS TABLE(Please read the comments)
-              - Copy the codes in the code block below (Dont include the code block)
-              - Only change where you see a comment and paste at the end of the code(Above the comment)
-              - Make sure you do not modify information of other participants
-              - Pull the repo, before pushing it, inorder to prevent conflicts
-            -->
-
 <!--  Each Participant starts here  -->
                <div class="p-card">
                    <div class="v-center">
@@ -17427,36 +17395,6 @@ include('participants-head.php');
         </div>
 <!--  Each Participants ends here  -->
 
-
-<?php include "footer.php"?>
-
-<<<<<<< HEAD
-=======
-﻿<?php
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
-$pageTitle = "Participants";
-include('header.php');
-include('participants-head.php');
-?>
-    <div id="banner-content" class="row clearfix">
-
-        <div class="p-card-container">
-            <div class="v-center">
-                <input style="margin-top: 40px;" type="text" id="search" placeholder="Enter Participant name to search" name="search">
-            </div>
-        </div>
-
-        <div class="p-card-container">
-
-
-            <!--
-              GUIDELINES FOR ADDING DETAILS TO PARTICIPANTS TABLE(Please read the comments)
-              - Copy the codes in the code block below (Dont include the code block)
-              - Only change where you see a comment and paste at the end of the code(Above the comment)
-              - Make sure you do not modify information of other participants
-              - Pull the repo, before pushing it, inorder to prevent conflicts
-            -->
-
 <!--  Each Participant starts here  -->
                <div class="p-card">
                    <div class="v-center">
@@ -24147,7 +24085,7 @@ include('participants-head.php');
                 </div>
             </div>
         </div>
-        <!-- Thadeus' profile -->
+        <!--  Each Participant starts here  -->
 
         <div class="p-card">
             <div class="v-center">
@@ -26256,4 +26194,27 @@ include('participants-head.php');
 </div>
 <!--  Each Participants ends here  -->
 
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style=" background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/Nzikak.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Nsikak Isaac</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">isaacnsikak@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Nill </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
+
+<?php include "footer.php"?>
