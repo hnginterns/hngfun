@@ -7569,7 +7569,7 @@ include('header.php');
         <div class="p-card-info">
             <a href="http://hng.fun/profile/ayobaymak">
                 <!--Profile Link-->
-                <h3 class="p-card-title">Ayodeji Bayo-Makinde</h3>
+                <h3 class="p-card-title">Ayodeji Bayo-Makindel</h3>
                 <!--Profile Name-->
             </a>
             <p class="p-card-description">ayobaymak@gmail.com</p>
@@ -7584,9 +7584,6 @@ include('header.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
-
-
-
 
                <!--  Each Participant starts here  -->
               <div class="p-card">
