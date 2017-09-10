@@ -61,7 +61,10 @@
 		</h3>
 	
 
-		<a href="https://github.com/nwadaigbo/hng" style="font-family: arial">#STAGE 1</a><a href="http://hng.fun/profile/damssel2000.html" style="font-family: arial">#STAGE 2</a><a href="http://hng.fun/profile/damssel2000/damssel2000.php" style="font-family: arial">#STAGE 3</a><a href="https://www.dropbox.com/s/f1oouuisvan8ex3/Profile.apk?dl=0" style="font-family: arial">#STAGE 4</a>
+		<button><a href="https://github.com/nwadaigbo/hng" style="font-family: arial">#STAGE 1</a></button>
+		<button><a href="http://hng.fun/profile/damssel2000.html" style="font-family: arial">#STAGE 2</a></button>
+		<button><a href="http://hng.fun/profile/damssel2000/damssel2000.php" style="font-family: arial">#STAGE 3</a></button>
+		<button><a href="https://www.dropbox.com/s/f1oouuisvan8ex3/Profile.apk?dl=0" style="font-family: arial">#STAGE 4</a></button>
 		<br><br><!-- Add social media icons -->
 		<a href="https://github.com/nwadaigbo" target="_blank" class="fa fa-github social github" style="font-size:48px;color:black"></a>
         <a href="https://web.facebook.com/NwadaMuonso" target="_blank" class="fa fa-facebook social facebook" style="font-size:48px;color:blue"></a>
