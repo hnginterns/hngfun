@@ -25961,25 +25961,12 @@ include('header.php');
                                <!--Profile Name-->
                            </a>
                            <p class="p-card-description">lyndellew@gmail.com</p>
-<<<<<<< HEAD
-
-=======
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
                            <!--Email-->
                        </div>
                        <div class="p-team">
                            <a href="#">
-<<<<<<< HEAD
-
                                <h3 class="p-card-title"> Stage 1 </h3>
-
                                <h3 class="p-card-title"> No Team </h3>
-
-=======
-                               <h3 class="p-card-title"> Stage 1 </h3>
-
-                               <h3 class="p-card-title"> No Team </h3>
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
                                <!--Team-->
                            </a>
                        </div>
@@ -25998,6 +25985,18 @@ include('header.php');
                                <!--Profile Name-->
                            </a>
                            <p class="p-card-description">judeukana@gmail.com</p>
+						   <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> </h3>
+                               <h3 class="p-card-title"> </h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
                <div class="p-card">
@@ -26010,43 +26009,18 @@ include('header.php');
                                <!--Profile Name-->
                            </a>
                            <p class="p-card-description">mistacy6@gmail.com</p>
-<<<<<<< HEAD
-
-=======
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
                            <!--Email-->
                        </div>
                        <div class="p-team">
                            <a href="#">
-<<<<<<< HEAD
-
                                <h3 class="p-card-title">NULL</h3>
-
                                <h3 class="p-card-title"> No Team </h3>
-
-=======
-                               <h3 class="p-card-title">NULL</h3>
-
-                               <h3 class="p-card-title"> No Team </h3>
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
                                <!--Team-->
                            </a>
                        </div>
                    </div>
                </div>
                <!--  Each Participants ends here  -->
-<<<<<<< HEAD
-
-
-
-
-=======
-
-
-<?php include "footer.php"?>
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
-
-
 
 <!--  Each Participant starts here  -->
 <div class="p-card">
@@ -26094,8 +26068,7 @@ include('header.php');
 </div>
 <!--  Each Participant ends here  -->
 
-<<<<<<< HEAD
-=======
+
 <!--  Each Participant starts here  -->
                <div class="p-card">
                    <div class="v-center">
@@ -26118,8 +26091,6 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
-
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
 
 <!--  Each Participant starts here  -->
 <div class="p-card">
@@ -26165,9 +26136,6 @@ include('header.php');
                   </div>
               </div>
               <!--  Each Participants ends here  -->
-
-<<<<<<< HEAD
-=======
 
 <!--  Each Participant starts here  -->
 <div class="p-card">
