@@ -8240,9 +8240,6 @@ include('header.php');
         </div>
 <!--  Each Participants ends here  -->
 
-    </div>
-<!--  Each Participants ends here  -->
-
 <!-- Each participant starts here -->
 <div class="p-card">
     <div class="v-center">
