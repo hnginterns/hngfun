@@ -1,4 +1,4 @@
-﻿<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 (1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
@@ -1234,3 +1234,4 @@
 (291) Sekanam Akpabio (Slack: @sekaiz5, Github: sekaiz5)
 (292) Mfonabasi Isaac (Slack: @breezyhub, Github: breezyhub)
 (293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
+(294) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
