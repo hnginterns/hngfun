@@ -26272,7 +26272,52 @@ include('header.php');
                         </div>
 <!--  Each Participants ends here  -->
 
-<?php include "footer.php"?>
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/ntep/index.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Ntep Profile</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">ntep.robert@yahoo.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Null </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
+
+
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/Drumzminister/index.php">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Drumzminister's Profile</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">ishukpong418@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Null </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  --><?php include "footer.php"?>
 >>>>>>> d32d89c67e8fe57b03d6a7a43134c0c685b1d992
 
         <div class="p-card">
