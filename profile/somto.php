@@ -1,6 +1,6 @@
 <?php
     if (isset($_GET['sendmessage'])) {
-        $config = include('../../config.php');
+        $config = include('../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -9,11 +9,11 @@
         $subject = htmlentities(strip_tags(trim($_GET['subject']))) || 'HEY THERE';
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
-        $to = "somto.achu5@gmail.com";
+        $to = "awotunde.emmanuel@gmail.com";
         $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
         header("Location: " . $location);
     }
- ?>
+ ?>   
 
 <html><head>
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -110,7 +110,7 @@
 		</div>
 		<div>
 			
-          <form class="contact" action="http://hng.fun/profile/somto/index.php" method="get">
+          <form class="contact" action="http://hng.fun/profile/somto.php" method="get">
             <p class="contact-title">Send Me a Mail</p>
             <input type="text" name="subject" placeholder="subject" required>
             <textarea rows="2"  name="body" placeholder="type your message here" required></textarea><br>
