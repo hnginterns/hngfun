@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 (1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -914,8 +914,9 @@
 (292) Mfonabasi Isaac (Slack: @mfonabasiisaac, Github: breezyhub)
 (293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
 (294) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
-(295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva)
-=======
+(295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva
+(296) Nkereuwem, Nseobong Ndarake (Slack:@winsome, Github:@NseGod)
+
 >>>>>>> 7c2aab73254e7653ad70a3e2d94872ecfe4abd2e 
 (279) Antai Mfonobong (slack: @flynxx, GitHub: @fonexie)
 >>>>>>> 394f6821f15e3a9b44cd0629dea0baa6c969fe4e
