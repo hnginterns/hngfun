@@ -7256,14 +7256,10 @@
 (299) David iton,(Slack:@daviditon21,github:daviditon21)
 (300) David Daniels,(Slack:daviddaniels3000,github:DavidDaniels3000)
 (301) Edidiong Asikpo,(Slack:Edidiong,github:EdyAsikpo) 
-adnan adetunji, (slack:haddyadnan; github:haddyadnan)
->>>>>>> 15a39df7cca6091925cf51e66cbd71ca4e8c2183
-<<<<<<< HEAD
->>>>>>> 58e294d20c02eb4c6946e83c58b15211762aa73e
-=======
+(302) adnan adetunji, (slack:haddyadnan; github:haddyadnan)
+
 (294) Albert Christopher Okon (Slack: okonalbert, Github: okonalbert)
->>>>>>> cdec89fdd9d08e2d11530aeeec9079023d528be3
-=======
+
 (258) kazeem Victoria (slack: @kelzvictoria, github:kelzvictoria )
 (259) Anazodo william (slack: @williamzodos, github: williamzodos )
 (260) Louis Eyoma, louiseyoma, louiseyoma
@@ -7289,16 +7285,16 @@ adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (277) Precious Akpan  (Slack: @preciousakpan119, Github: @preciousak)
-<<<<<<< HEAD
+
 (278) Saade Udoka, @saade, @hasaade
 
-=======
+
 (278) kingsley Ogechukwu (Slack: @kingsley, Github: @ogekingsley
-<<<<<<< HEAD
+
 (279) abasiakara akpanekpo (Slack: @abas, Github:@ Paragon-AE)
-<<<<<<< HEAD
+
 (280) som-anya valentina (slack: @nina, Github:@som-anya valentina)
-=======
+
 (280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
 (281) Jude Ukana (slack:@judeukana, github:@JudeUk)
 (282) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak) 
@@ -7315,17 +7311,21 @@ adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (292) Mfonabasi Isaac (Slack: @mfonabasiisaac, Github: breezyhub)
 (293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
 (294) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
-<<<<<<< HEAD
+
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva
 (296) Nkereuwem, Nseobong Ndarake (Slack:@winsome, Github:@NseGod)
 
-=======
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva)
 (296) Nkereuwem, Nseobong Ndarake (github:NseGod) (slack:winsome)
->>>>>>> 57fae35034c5aa91b3924fcf91a625b9c193e268
->>>>>>> 7c2aab73254e7653ad70a3e2d94872ecfe4abd2e 
+
 (279) Antai Mfonobong (slack: @flynxx, GitHub: @fonexie)
->>>>>>> 394f6821f15e3a9b44cd0629dea0baa6c969fe4e
->>>>>>> 4f2830c5aa4ce97caf6d333d6e7b3aff29418708
->>>>>>> d32d89c67e8fe57b03d6a7a43134c0c685b1d992
->>>>>>> b60950cce9c8a73ca37c6fa0ae1dbeef56c32872
+(297) Ntep Okon Robert (slack:@ntep,github:@NtepRobert)
+
+
+
+
+
+
+
+
+
