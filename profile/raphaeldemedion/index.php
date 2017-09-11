@@ -77,17 +77,17 @@
                             <ul class="footer-links list-inline">
                                 <li>
                                 
-                                    <a href="index.html"></i>Basic Info</a>
+                                    <a href="index.php"></i>Basic Info</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html"></i>Contact</a>
+                                    <a href="contact.php"></i>Contact</a>
                                 </li>
 
                                 <li>
-                                    <a href="social.html"></i>Social</a>
+                                    <a href="social.php"></i>Social</a>
                                 </li>
                                 <li>
-                                    <a href="message box.html"></i>Message Me</a>
+                                    <a href="message box.php"></i>Message Me</a>
                                 </li>                                
                             </ul>
                         </div>
