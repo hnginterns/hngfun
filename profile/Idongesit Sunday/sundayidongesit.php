@@ -28,13 +28,13 @@
 
        $body = $_POST['message'];
 
-       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=sundayidongesit@gmail@gmail.com");
+       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=sundayidongesit@gmail.com");
 
    
 
    }else{
 
-       header("location: sundayidongesit@gmail.html");
+       header("location: sundayidongesit.html");
 
    }
 
