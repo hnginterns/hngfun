@@ -45,7 +45,7 @@
 			<div class="mainCon">
 				<a id="Bi">Basic Info</a>
 				<a href="contact.php" id="Ci">Contact Info</a>
-				<a href="social.html" id="Sh">Social handler</a>
+				<a href="social.php" id="Sh">Social handler</a>
 				<a href="cform.php" id="Cf">Contact form</a>
 			</div>
 		</div>
