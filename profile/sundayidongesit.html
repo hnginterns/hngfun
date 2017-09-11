@@ -299,9 +299,7 @@
             <div class="input-holder hide">
                 <input type="email" placeholder="Your Email" name="to" class="input-box" value="sundayidongesit@gmail.com" required>
             </div>
-            <div class="hide">
-                 <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo"".$password[ 'password']; } ?>>
-            </div>
+            
             <div class="input-holder">
                 <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Your message here" class="user-message" required></textarea>
             </div>
