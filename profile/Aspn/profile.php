@@ -1,5 +1,29 @@
 <!DOCTYPE html>
-
+<?php
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'itozabu@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
+    }
+ 
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
+?>
 
 <html>
 <head>
@@ -81,19 +105,20 @@
 <hr>
 <hr>
  <div class="form">
-        <form action="Mfoni.php" method="POST">
-          <fieldset>
-              <legend>Contact Me</legend>
-              	  <br>
-                  <input name="to" type = "hidden" value="itozabu@gmail.com@gmail.com" required ><br>
-                 <br>
-                  Subject: <br>
-                  <input name="subject" placeholder = "subject" required><br>
-                  Say Something:<br>
-                  <textarea name = "message" cols= "50" rows="5" placeholder = "write something" required></textarea>
-                  <br>
-                  <button type="submit" value = "Send Message"><strong>Send</strong></button>
-          </fieldset>
+        <form action="" method="POST">
+            
+                <label for="subject">
+                    <p>Subject</p>
+                    <input type="text" name="subject"  required>
+                
+                    <p>Message</p>
+                    <textarea name="message"  required></textarea>
+                </label>
+            
+            <br>
+          
+                <button type="submit"> Send </button>
+            
         </form>
       </div> 
 

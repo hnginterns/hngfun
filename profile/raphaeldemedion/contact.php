@@ -87,8 +87,8 @@
                                     <a href="social.php"></i>Social</a>
                                 </li>
                                 <li>
-                                    <a href="message box.php"></i>Message Me</a>
-                                </li>                                
+                                    <a href="message.php"></i>Message Box</a>
+                                </li>                               
                             </ul>
                         </div>
                         <!-- End Social Links -->
@@ -101,8 +101,6 @@
 ===================================== -->
         <script src="js/jquery.min.js" type="text/javascript"></script>        
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/jquery validation.js" type="text/javascript"></script>
-
     </body>
 <!--=== End Body ===-->
 </html>

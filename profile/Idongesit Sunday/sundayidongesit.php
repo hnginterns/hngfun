@@ -1,42 +1,49 @@
 <?php
 
-   if(isset($_POST['subject'])){
+    if(isset($_POST['send'])){
 
-       $config = [
 
-           'dbname' => 'hng',
 
-           'pass' => '@hng.intern1',
+        $config = [
 
-           'username' => 'intern',
+            'dbname' => 'hng',
 
-           'host' => 'localhost'
+            'pass' => '@hng.intern1',
 
-       ];
+            'username' => 'intern',
 
-       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+            'host' => 'localhost'
 
-       $con = new PDO($dsn, $config['username'], $config['pass']);
+        ];
 
-       $result = $con->query('SELECT * FROM password');
 
-       $data = $result->fetch();
 
-       $password = $data['password'];
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 
-       $subject = $_POST['subject'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
 
-       $body = $_POST['message'];
 
-       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".&to=".$email);
-	   );
 
-   
+        $result = $con->query('SELECT * FROM password');
 
-   }else{
+        $data = $result->fetch();
 
-       header("location:sundayidongesit.html");
+        $password = $data['password'];
 
-   }
+        $email = $_POST['email'];
+
+        $subject = $_POST['subject'];
+
+        $body = $_POST['body'];
+
+        header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$email);
+
+
+
+    }else{
+
+        header("location: sundayidongesit.html");
+
+    }
 
 ?>
