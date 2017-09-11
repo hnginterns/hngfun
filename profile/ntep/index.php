@@ -45,6 +45,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
                <div class="r">
+               Contact Form
                 <form action="#" method="POST">
           
                   
@@ -113,9 +114,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
  		height:280px;
  		font-family: cursive;
  		font-size: 19px;
- 		margin: auto;
  		text-align: center;
  		background-color: black;
+ 		color:white;
  	}
  	.space{
  		display: inline-block;
