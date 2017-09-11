@@ -26352,3 +26352,27 @@ include('header.php');
                        </div>
                    </div>
                </div>
+<!--  Each Participants ends here  -->
+
+            <!--  Each Participant starts here  -->
+            <div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/ubyjude/image/upload/v1505078446/PicsArt_dyyppx.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://http://hng.fun/profile/Ubyjude/index.html">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Iam_Ubyjude</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description"ubyjude54@gmail.com</p>
+                        <!--Email-->
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Null </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  Each Participants ends here  -->
