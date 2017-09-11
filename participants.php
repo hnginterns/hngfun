@@ -45,6 +45,28 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
+               <!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/20374806_964326527043102_8411855216411653263_n.jpg?_nc_eui2=v1%3AAeE22-9JKowJOxa9wqY_xxUiWENQqeY2yOGQ3FIHgh5PnEZjGoHSnccOYzlBnvHM8IqlU-vx2G7xyz5BRdWRENZCTI9lcCB9HG1y7YElFI8sDQ&oh=85f3f3cefef1de58c0f28b359e05ff63&oe=5A4A2D38); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/elishaekanem.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Elisha Ekanem(EasyE)</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">elishaekanem@yahoo.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> null</h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
 			   
 <!--  Each Participant starts here  -->
                <div class="p-card">
