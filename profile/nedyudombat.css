@@ -5,7 +5,7 @@ h3{
 	border: 5px  solid #ff0000 blue;
 }
 h3{
-	border-style: solid;
+	border-style: solid, border-width: 20px;
 }
 body {
     background: #00ff00 url("https://github.com/NedyUdombat/Nedy/blob/master/back.jpg?raw=true") no-repeat fixed center;
@@ -13,6 +13,7 @@ body {
 }
 h1 {
     background-color: rgb(255,165,0);
+    border-width: 300px;
 }
 
 p {
@@ -20,4 +21,13 @@ p {
 }
 h3{
 	background-color: rgb(255,165,0);
+}
+#contact{
+	width:600px;
+}
+#footer{
+	color: white;
+}
+h3{
+	border-width: 150px;
 }
