@@ -8731,7 +8731,7 @@ include('header.php');
     <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/29546622?v=4&u=1ea0f5bf37dc266696c9fec63566a4c00c3bf714&s=400); background-size: cover; background-repeat: no-repeat; background-position: center center; ">
     </div>
     <div class="p-card-info">
-      <a href="http://hng.fun/profile/callezenwaka.html">
+      <a href="http://hng.fun/profile/callezenwaka/">
         <!--Profile Link-->
         <h3 class="p-card-title">Callis Ezenwaka</h3>
         <!--Profile Name-->
@@ -8741,7 +8741,7 @@ include('header.php');
     </div>
     <div class="p-team">
       <a href="#">
-        <h3 class="p-card-title">NONE</h3>
+        <h3 class="p-card-title"></h3>
         <!--Team-->
       </a>
     </div>
@@ -26249,6 +26249,27 @@ include('header.php');
         </div>
     </div>
 </div>
+<!--  Each Participants ends here  -->
+
+<!--  Each Participant starts here  -->
+                        <div class="p-card">
+                            <div class="v-center">
+                                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dutaffn3e/image/upload/v1504884035/11537800_758543687599634_6283110010198569855_n_1_vp0pgt.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                <div class="p-card-info">
+                                    <a href="http://hng.fun/profile/free.html">
+                                        <h3 class="p-card-title">freet96's page</h3>
+                                    </a>
+                                    <p class="p-card-description">free.t.1896@gmail.com</p>
+                                </div>
+
+                                <div class="p-team">
+                                    <a href="#">
+                                        <h3 class="p-card-title"> none </h3>
+                                        <!--Team-->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 <!--  Each Participants ends here  -->
 
 <?php include "footer.php"?>
