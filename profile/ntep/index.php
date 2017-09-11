@@ -42,6 +42,36 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	<div class="link">
 		Slack: @ntep  |  <a href="https://github.com/nteprobert/nteprob">Stage 1</a>
 	</div>
+
+
+               <div class="r">
+                <form action="#" method="POST">
+          
+                  
+                        <div class="space">
+                            <input type="text" id="name" name="name" required="required" placeholder="Your Name" /> </br>
+                        
+
+                            <input type="email" id="email" name="email" required="required" placeholder="Your Email" /></br>
+                       
+
+                    
+                            <input type="text" id="subject" name="subject" required="required" placeholder="Subject" /></br>
+                    
+
+                        
+                            <textarea name="commentbox" placeholder="Tell me anything..." cols="34" rows="9"></textarea></br>
+                 
+                       
+                           	<input id="send" type="submit" value="send" />
+                       
+                           </div>
+                         
+                </form>    
+                </div>           
+        </div>
+
+        <div id="footer">
 </body>
 
  <style type="text/css">
@@ -76,6 +106,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
  		height:30px;
  		margin: auto;
  		background-color: black;
+ 	}
+ 	.r{
+ 		margin: auto;
+ 		width: 400px;
+ 		height:280px;
+ 		font-family: cursive;
+ 		font-size: 19px;
+ 		margin: auto;
+ 		text-align: center;
+ 		background-color: black;
+ 	}
+ 	.space{
+ 		display: inline-block;
+ 		width:400px;
+ 		height:150px;
+ 	}
+
  	}
  </style>
 </html>
