@@ -8228,6 +8228,7 @@ include('participants-head.php');
 </div>
 <!-- Each participant ends here -->
 
+
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
@@ -8324,5 +8325,38 @@ include('participants-head.php');
 </div>
 <!--  Each Participant Ends here  -->
 
+<!--  Each Participant starts here  -->
+        <div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url( http://res.cloudinary.com/dmb742rw9/image/upload/v1504886055/DSC00602_ozfm5b.jpg ); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+                    <a href="http://hng.fun/profile/messrsedddie">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Edidiong Samuel</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">messrseddie@gmail.com</p>
+                    <!--Email-->
+                </div>
+            </div>
+        </div>
+<!--  Each Participants ends here  -->
+
+<!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-0/p206x206/20476360_1070795646389293_510622748301289542_n.jpg?_nc_eui2=v1%3AAeFX9BelJdF-4826xmr2OgA921-YZUnAisP0ufB5LSDekqF1sDJbmmMZbXrsy34IGGHBwZ5bj164kPpwbi7UMp8Ih3feHm1-TjLbPr10LCNKxw&oh=62e0b2c1c752d407eff3ca9f300672ac&oe=5A5B29B9); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/aniekanedet.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Aniekan Edet</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">aniblazer42@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
 
 <?php include "footer.php"?>
