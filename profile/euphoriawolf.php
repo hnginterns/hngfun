@@ -31,7 +31,7 @@
       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$email);
 
   }
-    }else{
+    else{
         header("location: euphoriawolf.html");
     }
 
