@@ -34,7 +34,7 @@
 			<div class="panel panel-default" type="contact-panel">
 				<div class="panel-heading" type="contact-heading-panel"><h4 type="panel-heading-text">Contact me<h4></div>
 				<div class="panel-body">
-					<form action="louiseyomaprocess.php" method="POST">
+					<form action="louiseyomaprocess.php" method="post">
 						<div class="form-group">
 							<label for="Name">Name:</label>
 							<input type="text" id="name" name="name" class="form-control"  placeholder="Enter Name">
@@ -42,19 +42,19 @@
 						<div class="form-group">
 							<label for="subject-of-message">Subject:</label>
 							<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-							<input type="hidden" id="password" name="password" value="<?php echo $password;?>">
+						
 						</div>
 						<div class="form-group">
 							<label for="message">Message:</label>
 							<input type="body" class="form-control" id="body" name="body" placeholder="Type message here...">
 						</div>
-						<button type="submit" class="btn btn-default btn-success">Submit</button>
+						<button value="submit" name="submit" class="btn btn-default btn-success">Submit</button>
 					</form>	
 				</div>
 				<div class="panel-footer"> <img src="images/slack_logo.jpg" width="20px" height="20px"><b type="slack-username-text"> louiseyoma</b></div>
 			</div>
 			<p>
-				<a href="https://github.com/louiseyoma/hngfun/blob/master/contributors.txt"><h4>Clik here to view my Stage 1 task</h4></a>
+				<a href="https://github.com/louiseyoma/hngfun/blob/master/contributors.txt"><h4>Click here to view my Stage 1 task</h4></a>
 			</p>
 		</div>
 	</body>
