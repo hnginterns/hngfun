@@ -1,6 +1,6 @@
 <?php
 
-   if(isset($_POST['subject'])){
+   if(isset(POST['subject'])){
 
        $config = [
 
@@ -28,8 +28,8 @@
 
        $body = $_POST['message'];
 
-       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".&to=".$email);
-	   );
+       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to=".&email");
+	   
 
    
 
