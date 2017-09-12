@@ -74,15 +74,10 @@
     html {
         font-family: "Lucida Sans", sans-serif;
     }
-
-    body{
-      margin: 0px;
-    }
-
     .header {
         background-color: #65c5c5;
         color: #ffffff;
-        padding: 5px;        
+        padding: 5px;
     }
     .menu ul {
         list-style-type: none;
@@ -177,79 +172,71 @@
         -webkit-transition: all .35s ease-in-out 0.3s;
         transition: all .35s ease-in-out 0.3s;
     }
-
     .image-container-image:hover .image {
         opacity: 0.3;
         -webkit-transform: translate(-10px, -10px);
         transform: translate(-10px, -10px);
         box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
     }
-
     textarea
     {
       color: #489797;
       font: normal normal bold 15px/50px arial, sans-serif;
-      outline: none;
       border: none;
-      width: 60%;
-      padding: 5px;
+      width: 80%;
       margin-top: 5%;
       border-bottom: 1px solid aqua;
       -webkit-transition: all .35s ease-in-out .5s;
       transition: all .35s ease-in-out .5s;
     }
-
     input{
-        width: 50%;
+        width: 80%;
         margin-top: 5%;
         color: #489797;
         font: normal normal bold 15px/50px arial, sans-serif;
-        padding: 5px;
         border: none;
-        outline: none;
         border-bottom: 1px solid aqua;
         -webkit-transition: all .35s ease-in-out .5s;
         transition: all .35s ease-in-out .5s;
     }
-
     .contact{
       margin-top: 5%;
       padding: 10px;
       border: 1px solid #ddd;
     }
-
     .contact-title{
       margin: 0px;
     }
-
     ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:   rgba(107, 156, 156, 0.5);
+    color:    #rgba(107, 156, 156, 0.5);
     opacity: 0.5;
     }
-
     :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-       color:   rgba(107, 156, 156, 0.5);
+       color:    #rgba(107, 156, 156, 0.5);
        opacity: 0.5;
     }
-
     ::-moz-placeholder { /* Mozilla Firefox 19+ */
-       color:   rgba(107, 156, 156, 0.5);
+       color:    #rgba(107, 156, 156, 0.5);
        opacity: 0.5;
     }
-
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
-       color:   rgba(107, 156, 156, 0.5);
+       color:    #rgba(107, 156, 156, 0.5);
        opacity: 0.5;
     }
-
     ::-ms-input-placeholder { /* Microsoft Edge */
-       color:   rgba(107, 156, 156, 0.5);
+       color:    #rgba(107, 156, 156, 0.5);
        opacity: 0.5;
     }
-
     input:placeholder {
-      color:   rgba(107, 156, 156, 0.5);
-      opacity: 0.5;
+    }
+    input:focus {
+        width: 100%;
+        border-bottom: 1px solid aqua;
+    }
+
+    textarea:focus {
+        width: 100%;
+        border-bottom: 1px solid aqua;
     }
   </style>
 

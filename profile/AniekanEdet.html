@@ -1,21 +1,44 @@
-<!doctype>
+<?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'aniesedet@gmai.com';
+    $body = $_POST['body'];
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+    }
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ani-Edet</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ani-Edet</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <style type="text/css">
    html{
-   	background-color:grey;
-   	 margin: 0;
+    background-color:grey;
+     margin: 0;
     padding: 0;
     border-radius: 5px;
    }
 
-	header{
-	background-color: 48bcea;
+    header{
+    background-color: 48bcea;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
@@ -52,19 +75,19 @@ p {
     text-align:center; ;
 }
 img{
-	border: solid white 5px;
-	border-radius: 7px;
+    border: solid white 5px;
+    border-radius: 7px;
 }
 footer{
-	 text-align:center;
+     text-align:center;
  }
  .section{
- 	 text-align:center;
+     text-align:center;
  }
  aside{
- 	text-align:center;
+    text-align:center;
  }
- 	input{
+    input{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -72,7 +95,7 @@ footer{
  } 
 
  textarea{
- 	 width: 100%;
+     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -96,16 +119,16 @@ footer{
    </tr>
    <tr>
       <td><br />
-       <!-- Contacts section starts -->
+       <!-- Contacts section starts
       <div align="center" class="section">
             <h1><span>Contact Me</span></h1>
-            <form align="center">
-               <input name="name" placeholder="Name" type="text" required /><br/>
-                <input name="email" placeholder="Email" type="email" required /><br/>
-                <textarea name="message" placeholder="Message" required ></textarea><br>
-                <input type="submit" value="SEND" class="submit" />
+           <form action = "AniekanEdet.php" id = "contact-form" method = "POST" >
+                <input type = "text" name = "subject" placeholder= "Enter subject for Name" required><br><br>
+                <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
+                <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
+                <br><input type ="submit" name="submit" value ="Send Message">
             </form>
-        </div>
+        </div> -->
          <!-- Contacts section end
      </td>
 
