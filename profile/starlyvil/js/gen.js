@@ -34,6 +34,7 @@ function director(){
 		target= $(this).attr("data-target");
 		
 		contentHolder.hide("fade",{duration:20});
+		contentHolder.empty();
 		pageLoader.show("fade",{duration:0});
 		contentHolder.load("content/"+target+".html");
 		pageLoader.hide("fade",{duration:0});
