@@ -1,0 +1,95 @@
+
+body{
+  font-family:Monospace,Lobster;
+  background-color:white;
+  color:black;
+}
+
+
+
+
+.nav-pills{
+	font-size: 20px;
+	font-family:Monospace;
+	margin-bottom: 20px; 
+	padding: 0px;
+
+}
+.navbar {
+  padding: -10px;
+  
+}
+
+img{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    border: solid 0px #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+h2.text-center{
+	padding-top: 70px;
+	font-size:30px;
+}
+
+p.text-center{
+	color: #ffffff;
+	font-size: 15px;
+	
+	
+}
+#p3{
+	font-family:Monospace;
+	color: #ffffff;
+
+
+}
+.pageThree{
+    background-color: gray;
+	background-size: 450px;
+	height: 300px;
+	margin-top: 180px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+em{
+	color: black;
+}
+
+h4.me{
+	font-size: 30px;
+	font-family:Monospace,Lobster;
+	margin-top: 260px;
+	margin-bottom: 30px;
+}
+
+#beautify{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.input{
+	width: 50%;
+	min-height: 25px;
+	font-family: Monospace,Lobster;
+	border-radius: 5px;
+    border: solid 1px #ccc;
+    padding:5px;
+    margin-bottom: 25px;
+}
+.btn-success{
+	width: 50%;
+	font-family:Monospace,Lobster;
+	
+}
+
+#footer{
+	margin-top: 5%;
+	font-family: Monospace,Lobster;
+	font-size: 15px;
+}
