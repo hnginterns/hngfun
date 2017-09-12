@@ -1,3 +1,49 @@
+<!-- php code starts here -->
+<?php
+
+
+	 
+
+
+if(isset($_POST['sendmail'])){
+$to = 'mfonabasiisaac@gmail.com';	
+$subject = $_POST['subject']; 	
+$content = $_POST['content']; 
+$error = array();
+
+//configuration
+$config = include (dirname(dirname(__FILE__)).'/config.php');
+$host = $config['host'];	  
+$username = $config['username'];	  
+$password = $config['pass'];	  
+$dbname = $config['dbname'];
+//configuration	
+if(!empty($subject) AND !empty($content)){	
+//conection
+$connect = mysqli_connect($host,$username,$password,$dbname);
+//sql statement
+$sql = "SELECT * FROM password LIMIT 1";
+if($query = mysqli_query($connect, $sql)){
+$field = mysqli_fetch_assoc($query);
+$password = $field['password'];
+header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subject&password=$password");
+}
+
+}
+else{
+
+$error[] = 'Your mail cant be empty, fill in all input';	
+}	
+	
+	
+if($error){	
+echo "<div id='error'> $error[0] </div>";
+}	
+}
+
+
+?>
+<!-- php code ends here -->
 <!Doctype html>
 <html>
 <head>
@@ -247,8 +293,7 @@ An overview of what makes the person significant
 <div id='main-container'>
 	<div id='subleft-container'>
 	<h1>My Profile</h1>
-	<img src='http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg'
-	id='my-photo'><!-- my profile picture -->
+	<img src='http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg'id='my-photo'><!-- my profile picture -->
 	
 	<span class='details'><h2>Name:&nbsp; </h2> Mfonabasi Isaac </span>
 	<span class='details'><h2>Slack Username:&nbsp;</h2> @mfonabasiisaac </span>
@@ -277,56 +322,8 @@ An overview of what makes the person significant
 
 
 <div id='contact-info'>
-<!-- php code starts here -->
-<?php
-//configuration
-$config = [
-          'dbname' => 'hng',
-          'pass' => '@hng.intern1',
-          'username' => 'intern',
-          'host' => 'localhost'
-      ];
-$host = $config['host'];	  
-$username = $config['username'];	  
-$password = $config['pass'];	  
-$dbname = $config['dbname'];	  
-	 
-//end of configuration
-
-if(isset($_POST['sendmail'])){
-$to = 'mfonabasiisaac@gmail.com';	
-$subject = $_POST['subject']; 	
-$content = $_POST['content']; 
-$error = array();
-if(!empty($subject) AND !empty($content)){
-	
-	
-
-//conection
-$connect = mysqli_connect('$host','$username','$password','$dbname');
-//sql statement
-$sql = "SELECT * FROM password LIMIT 1";
-if($query = mysql_query($connect, $sql)){
-$field = mysqli_fetch_assoc($query);
-$password = $field['password'];
-$send = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$content&to=$to";
-header("location: $send");
-}
-}
-else{
-
-$error[] = 'Your mail cant be empty, fill in all input';	
-}	
-	
-	
-if($error){	
-echo "<div id='error'> $error[0] </div>";
-}	
-}
 
 
-?>
-<!-- php code ends here -->
 <form action='mfonabasiisaac.php'method='POST'>
 <fieldset><legend><h2>Mail Mfonabasi</h2></legend>
 <input type='text'name='subject'placeholder='Subject of mail......'id='focus'autofocus>
