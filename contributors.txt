@@ -8059,6 +8059,8 @@
 
 (298) okpongette idio (slack:@infinitepixel,github:paidio)
 (299) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
+(302) Aniekan Etim (slack: @codeislife, GitHub: onlycodeislife)
+
 
 
 
@@ -8068,7 +8070,10 @@
 =======
 adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (300) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
+<<<<<<< HEAD
 >>>>>>> 631fe819de23c8e558515570859e7fc36d6740ec
 >>>>>>> origin/master
 >>>>>>> 5b82f29e3fb5fa73163213e81018c8e854999dae
 >>>>>>> 5bb45c90f7b17e04c308b491657c509a59d4c346
+=======
+>>>>>>> db5e3c19acafc1886ce7e25bde6a163a16445430
