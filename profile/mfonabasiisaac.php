@@ -4,7 +4,7 @@
 
 	 
 
-
+$error = '';
 if(isset($_POST['sendmail'])){
 $to = 'mfonabasiisaac@gmail.com';	
 $subject = $_POST['subject']; 	
@@ -35,10 +35,7 @@ else{
 $error[] = 'Your mail cant be empty, fill in all input';	
 }	
 	
-	
-if($error){	
-echo "<div id='error'> $error[0] </div>";
-}	
+
 }
 
 
@@ -149,7 +146,7 @@ h1{
 #contact-info{
 clear:both;
 height:750px;
-width:90%;
+width:100%;
 margin:auto;
 border:1px solid #000;	
 background-color:#002020;
@@ -166,14 +163,14 @@ form{
 }
 fieldset{
 	width:80%;
-	height:90%;
+	height:80%;
 	margin:auto;
 	-o-border-radius:10px;	
 	border-radius:10px;	
 }
 input {
 width:80%;
-height:6%;
+height:5%;
 margin-bottom:5px;
 -o-border-radius:10px;
 border-radius:10px;
@@ -181,13 +178,12 @@ border-radius:10px;
 }
 input:focus{
 	background-color:#004040;
-	height:12%;
 	color:#fff;
 }
 input[type='submit']:hover{
 background-color:#004040;
 color:#fff;
-height:6%;
+height:4%;
 }
 input[type='submit']:focus{
 position:relative;
@@ -196,7 +192,7 @@ top:5px;
 
 #mail-content{
 	width:80%;
-height:50%;
+height:30%;
 margin-bottom:5px;
 -o-border-radius:10px;
 border-radius:10px;
@@ -206,6 +202,7 @@ border-radius:10px;
 	background-color:#004040;
 	color:#fff;
 }
+
 
 #error{
 	
@@ -303,7 +300,7 @@ An overview of what makes the person significant
 	
 	</div><!--end of sub left container-->
 		<div id='subright-container'>
-		<h1>My Biography</h1>
+		<h1>Auto Biography</h1>
 		<p style='text-indent:12px;'>
 		Mfonabasi Isaac is an accounting student aged 18years. He loves math, accounting and programming and devotes 
 		most of his time to them. He became interested in programming
@@ -322,10 +319,13 @@ An overview of what makes the person significant
 
 
 <div id='contact-info'>
-
-
+<?php	
+if(isset($error)){	
+echo "<div id='error'> $error[0] </div>";
+}	
+?>
 <form action='mfonabasiisaac.php'method='POST'>
-<fieldset><legend><h2>Mail Mfonabasi</h2></legend>
+<fieldset><legend align='center'><h2>Mail Mfonabasi</h2></legend>
 <input type='text'name='subject'placeholder='Subject of mail......'id='focus'autofocus>
 <textarea id='mail-content'name='content'placeholder='Content of the mail......'></textarea>
 <input type='submit'name='sendmail'value='Mail me'>
