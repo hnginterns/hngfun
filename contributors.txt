@@ -6911,11 +6911,8 @@
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (272) David Iton,(slack:@daviditon21,github:daviditon21)
-<<<<<<< HEAD
 (266) emmanuel ekong (slack: @uwemekong11(, github: @emmanuel1995)
-=======
-=======
->>>>>>> 5b82f29e3fb5fa73163213e81018c8e854999dae
+
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (277) Precious Akpan  (Slack: @preciousakpan119, Github: @preciousak)
@@ -6944,9 +6941,6 @@
 (291) Sekanam Akpabio (Slack: @sekaiz5, Github: sekaiz5)
 (292) Mfonabasi Isaac (Slack: @mfonabasiisaac, Github: breezyhub)
 (293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
-<<<<<<< HEAD
-
-=======
 (294) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
 
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva
@@ -6955,29 +6949,14 @@
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva)
 (296) Nkereuwem, Nseobong Ndarake (github:NseGod) (slack:winsome)
 
-<<<<<<< HEAD
->>>>>>> a0c4654bded7a33a670eea2d966277c5e7f51b33
->>>>>>> acb7fcbc0da4c593870ca8670f8feb8b6dfd2733
-=======
 (279) Antai Mfonobong (slack: @flynxx, GitHub: @fonexie)
 (297) Ntep Okon Robert (slack:@ntep,github:@NtepRobert)
 
 (298) okpongette idio (slack:@infinitepixel,github:paidio)
-<<<<<<< HEAD
 (299)Divine Ebitu (slack:@divineebitu2367,github:Divine-Ebitu)
-=======
 (299) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
 
->>>>>>> 6de51884244cc1b45cf7f4f55372862ef47b3d7f
 
-
-
-
->>>>>>> 30e6f2120db619c251dfbdb374bc56fb6a575650
-
-=======
 adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (300) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
->>>>>>> 631fe819de23c8e558515570859e7fc36d6740ec
->>>>>>> origin/master
->>>>>>> 5b82f29e3fb5fa73163213e81018c8e854999dae
+(301) Abraham Edet (slack:@miztaabee; github:miztaabee)
