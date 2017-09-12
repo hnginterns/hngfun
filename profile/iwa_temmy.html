@@ -81,10 +81,6 @@
 	}
 
 		</style>
-		<script>
-			function_(id) { return document.getElementById(id);}
-			_("Sbtn")
-		</script>
 		
 	</head>
 	<body>
@@ -102,12 +98,12 @@
 		</div>
 		
 		<div class="section"
-			<form id="my_form" onsubmit="submitForm();return false;">
+			<form action="iwa.php" method="post">
 			<h1> <span> Contact me </span></h1>
 			<input name="name" placeholder="subject" type="text" required /> <br/>
 			<input name="email" placeholder="Type your email..." type="email" required /> <br/>
 			<textarea name="message" placeholder="Write your message here" required > </textarea>
-			<input id="Sbtn" type="submit" value="SEND" class="submit"  /> <span id ="status"></span>
+			<input type="submit" value="SEND" class="submit"  /> 
 			</form>
 			</div>
 			<hr/>
