@@ -262,6 +262,11 @@
 (246) David Ofiare , artofofiare , artofofiare
 (248) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
 (249) Salako Teslim Akolade, tessal, tescoint
+<<<<<<< HEAD
+(250) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
+(251) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
+(252) OSINAIKE EMMANUEL OLUSEYI, @emma_osinaike, Emmanuel-Osinaike
+=======
 (250) Aniekan Edet Umana (slack: @aniekan_u Github @anelkan) 
 (247) Fru Anthony, @antonyfru,  @westside200
 (248) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
@@ -8065,3 +8070,10 @@
 =======
 adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (300) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
+<<<<<<< HEAD
+>>>>>>> 631fe819de23c8e558515570859e7fc36d6740ec
+>>>>>>> origin/master
+>>>>>>> 5b82f29e3fb5fa73163213e81018c8e854999dae
+>>>>>>> 5bb45c90f7b17e04c308b491657c509a59d4c346
+=======
+>>>>>>> db5e3c19acafc1886ce7e25bde6a163a16445430
