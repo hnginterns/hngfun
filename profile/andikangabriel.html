@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en-UK">
+<html lang="en-GB">
 <head>
-	<meta http-equiv="X-UA-Compactible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Andikan Gabriel | Profile Page</title>
-	<link rel="short icon" href="https://i.imgur.com/D24GBWQ.jpg" />
+	<meta name="subject" content="Andikan @HNG Intern" />
+	<meta name="language" content="EN" />
+	<meta name="revised" content="Tuesday, August 12th, 2017, 8:20 am" />
+	<link rel="shortcut icon" href="https://i.imgur.com/D24GBWQ.jpg" />
 	<style>
+		*, *:after, *:before {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			 -o-transition: all .3s ease;
+			 -ms-transition: all .3s ease;
+			 -moz-transition: all .3s ease;
+			 -webkit-transition: all .3s ease;
+			transition: all .3s ease;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+		}
 		html, body {
 			height: 100%;
-		}
-		body, div, dl, dt, ul, ol, li, h1, h2, h3, pre, form, fieldset, input, textarea, p, blockquote, *, ::before, ::after {
-			box-sizing: border-box;
-			margin: 0px;
-			padding: 0px;
 		}
 		img {
 			width: 100%;
@@ -23,24 +35,25 @@
 			border: 0;
 		}
 		body {
-			background-color: rgb(255, 255, 255);
+			background-color: #fff;
 			font: 16px sans-serif;
 		}
 		a {
-			color: blue;
+			outline: 0;
 			text-decoration: none;
-			outline: none;
+			color: blue;
 		}
 		a:hover {
+			color: #444;
 			text-decoration: underline;
 		}
 		.basin {
 			margin: 0px auto;
 		}
 		header {
-			background-color: rgb(238, 238, 238);
+			background-color: rgba(0,0,0,.1);
 			text-align: center;
-			padding: 10px;
+			padding: 25px;
 		}
 		header #header-bar {
 			text-transform: uppercase;
@@ -79,7 +92,6 @@
 		}
 		.profile-body p {
 			text-align: center;
-			padding-bottom: 30px;
 			line-height: 20px;
 			font-size: 17px;
 			padding: 0 10px 30px 10px;
@@ -105,6 +117,77 @@
 			margin-right: 5px;
 			margin-left: 5px;
 		}
+		#andikan-form {
+		    background-color: rgba(99,50,0,.3);
+		    margin-bottom: 20px;
+		}
+		.form-wrapper {
+		    display: table;
+		    padding: 20px;
+		    margin-top: 20px;
+		    width: 100%;
+		}
+		#andikan-form .horz label,
+		#andikan-form .horz input {
+		    display: block;
+		}
+		.form-wrapper label {
+		    text-transform: capitalize;
+		    font-family: Tahoma;
+		    font-size: 18px;
+		    margin-bottom: 5px;
+		    cursor: pointer;
+		}
+		.form-wrapper input {
+		    padding: 6px 12px;
+		    width: 100%;
+		}
+		.horz {
+		    margin-top: 15px;
+		}
+		.horz:first-child {
+		    margin-top: 0;
+		}
+		.form-wrapper textarea {
+		    width: 100%;
+		    height: 200px;
+		    resize: none;
+		    padding: 10px;
+		    overflow: auto;
+		}
+		.form-wrapper textarea,
+		.form-wrapper input {
+		    font-size: 17px;
+		    border: 0;
+		    outline: 0;
+		}
+		.form-wrapper textarea:focus,
+		.form-wrapper input:focus {
+		    background-color: #666;
+		    color: #fff;
+		}
+		.form-wrapper textarea:hover,
+		.form-wrapper input:hover {
+		    background-color: #666;
+		}
+		.form-wrapper input[type="submit"] {
+		    background-color: #f4f4f4;
+		    padding: 10px 10px;
+		    display: inline-block;
+		    cursor: pointer;
+		    background-color: rgba(99,50,0,.75);
+		    color: #fff;
+		    width: auto;
+		    border-radius: 5px;
+		}
+		.contact-success-msg {
+		    padding: 20px;
+		    margin-top: -20px;
+		    margin: -20px -20px 0 -20px;
+		    text-align: center;
+		    font-size: 17px;
+		    color: #f9f9f9;
+		}		
 		@media (min-width: 400px){
 			.content > .photo {
 				height: 230px;
@@ -115,7 +198,7 @@
 		}
 		@media (min-width: 700px){
 			body {
-				background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKBGHFoPueEicXkKjRSWqfORHouE8JdZ8SG74BQsaSUIotXWnCA");
+				/*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKBGHFoPueEicXkKjRSWqfORHouE8JdZ8SG74BQsaSUIotXWnCA");*/
 				background-size: cover;
 				background-position: 50% 50%;
 			}
@@ -127,6 +210,9 @@
 				border-bottom-right-radius: 10px;
 				border-bottom-left-radius: 10px;
 				margin: 30px auto;
+			}
+			.profile-body li {
+				margin-bottom: 0;
 			}
 		}
 	</style>
@@ -155,19 +241,43 @@
 					Aside from chess-playing, physics racking and speaking,<br/> coding is one of my hobby.<br/>
 					Proudly from <b id="state">Akwa Ibom State</b>
 				</p>
-				<div class="name">contact andikan gabriel akpan</div><hr/>
+				<div class="name" id="contact">contact andikan gabriel akpan</div><hr/>
+				<form id="andikan-form" action="andikangabriel.php" method="post">
+					<div class="form-wrapper">
+						<div class="horz">
+							<label for="form-name">name:</label>
+							<input type="text" id="form-name" name="visitor-name" required />
+						</div>
+						<div class="horz">
+							<label for="form-mail">email:</label>
+							<input type="email" id="form-mail" name="visitor-email" required />
+						</div>
+						<div class="horz">
+							<label for="form-tel">tel:</label>
+							<input type="tel" id="form-tel" name="visitor-tel" required />
+						</div>
+						<div class="horz">
+							<label for="form-topic">subject:</label>
+							<input type="text" id="form-topic" name="visitor-subject" required />
+						</div>
+						<div class="horz">
+							<label for="form-msg">message:</label>
+							<textarea id="form-msg" name="visitor-msg" required></textarea>
+						</div>
+						<div class="horz">
+							<input type="submit" value="Send Message" />
+						</div>
+					</div>
+				</form>
 				<div class="contact">
 					<ul>
-						<li><span><img src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" /></span><a href="https://hnginterns.slack.com/team/andikangabriel" target="_blank">@andikangabriel</li>
-						<li><span><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" /></span><a href="https://github.com/andikangabriel" target="_blank">@andikangabriel</a></li>
-						<li><span><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/whatsapp-512.png" /></span><a href="tel:+2347017743362">+2347017743362</a></li>
+						<li><span><img src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" /></span><a href="https://hnginterns.slack.com/team/andikangabriel" target="_blank">@andikangabriel</a></li>
+						<li><span><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="github" /></span><a href="https://github.com/andikangabriel" target="_blank">@andikangabriel</a></li>
+						<li><span><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/whatsapp-512.png" alt="whatsapp" /></span><a href="tel:+2347017743362">+2347017743362</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<footer>
-		
-		</footer>
 	</div>
 </body>
 </html>

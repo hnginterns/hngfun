@@ -366,6 +366,9 @@
 (291) Sekanam Akpabio (Slack: @sekaiz5, Github: sekaiz5)
 (292) Mfonabasi Isaac (Slack: @mfonabasiisaac, Github: breezyhub)
 (293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
+<<<<<<< HEAD
+
+=======
 (294) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
 
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva
@@ -377,8 +380,8 @@
 (279) Antai Mfonobong (slack: @flynxx, GitHub: @fonexie)
 (297) Ntep Okon Robert (slack:@ntep,github:@NtepRobert)
 
-
-
+(298) okpongette idio (slack:@infinitepixel,github:paidio)
+(299) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
 
 
 
@@ -387,4 +390,6 @@
 
 =======
 adnan adetunji, (slack:haddyadnan; github:haddyadnan)
+(300) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
 >>>>>>> 631fe819de23c8e558515570859e7fc36d6740ec
+>>>>>>> origin/master
