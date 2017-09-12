@@ -26033,7 +26033,7 @@ include('participants-head.php');
                <!--  Each Participants ends here  -->
 
 
-<?php include "footer.php"?>
+
 
 
 
@@ -26059,7 +26059,7 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participant ends here  -->
->>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847
+
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
@@ -26176,3 +26176,31 @@ include('participants-head.php');
 </div>
 <!--  Each Participants ends here  -->
 
+<!-- Each participant starts here -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-0/p206x206/216569_166868763370532_787686_n.jpg?_nc_
+			eui2=v1%3AAeFU4x-sAKzX2X0MKbQMNx5H0GoRurOeZNhcH_wYruc69PIGIqOxHUw1KljIn83ZPBl01HdfiyZVw8o5iiUII46LLnR7Qmj
+			Pd3KXyjIhvmGxFA&oh=593199b18756050c82264b2260c2d40d&oe=5A1BC153); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="https://github.com/hnginterns/hngfun/tree/master/profile/affilgain10">
+                <!--Profile Link-->
+                <h3 class="p-card-title">ubokho akpan</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">affilgain10@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team-achievement </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+
+  <!-- Each participant ends here -->
+
+
+<?php include "footer.php"?>
