@@ -81,6 +81,11 @@
 	}
 
 		</style>
+		<script>
+			function_(id) { return document.getElementById(id);}
+			_("Sbtn")
+		</script>
+		
 	</head>
 	<body>
 		<div id-"header" class="section">
@@ -97,12 +102,12 @@
 		</div>
 		
 		<div class="section"
-			<form>
+			<form id="my_form" onsubmit="submitForm();return false;">
 			<h1> <span> Contact me </span></h1>
 			<input name="name" placeholder="subject" type="text" required /> <br/>
 			<input name="email" placeholder="Type your email..." type="email" required /> <br/>
-			<textarea name="message" placeholder="Message" required > </textarea>
-			<input type="submit" value="SEND" class="submit" />
+			<textarea name="message" placeholder="Write your message here" required > </textarea>
+			<input id="Sbtn" type="submit" value="SEND" class="submit"  /> <span id ="status"></span>
 			</form>
 			</div>
 			<hr/>
