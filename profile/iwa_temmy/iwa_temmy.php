@@ -16,6 +16,6 @@
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=iwaloyeo@gmail.com");
 	
     }else{
-        header("location: iwa_temmy.html");
+        header("location: iwa_temmy/iwa_temmy.html");
     }
 ?>
