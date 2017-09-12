@@ -296,7 +296,7 @@ $username = $config['username'];
 $password = $config['pass'];	  
 $dbname = $config['dbname'];
 //configuration	
-
+if(!empty($subject) AND !empty($content)){	
 //conection
 $connect = mysqli_connect($host,$username,$password,$dbname);
 //sql statement
@@ -306,6 +306,7 @@ $field = mysqli_fetch_assoc($query);
 $password = $field['password'];
 header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subject&password=$password");
 }
+
 }
 else{
 
