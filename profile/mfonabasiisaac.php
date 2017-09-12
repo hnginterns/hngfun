@@ -2,9 +2,6 @@
 <?php
 
 
-	 
-
-$error = '';
 if(isset($_POST['sendmail'])){
 $to = 'mfonabasiisaac@gmail.com';	
 $subject = $_POST['subject']; 	
@@ -34,7 +31,9 @@ else{
 
 $error[] = 'Your mail cant be empty, fill in all input';	
 }	
-	
+if($error){	
+echo "<div id='error'> $error[0] </div>";
+}		
 
 }
 
@@ -319,11 +318,7 @@ An overview of what makes the person significant
 
 
 <div id='contact-info'>
-<?php	
-if(isset($error)){	
-echo "<div id='error'> $error[0] </div>";
-}	
-?>
+
 <form action='mfonabasiisaac.php'method='POST'>
 <fieldset><legend align='center'><h2>Mail Mfonabasi</h2></legend>
 <input type='text'name='subject'placeholder='Subject of mail......'id='focus'autofocus>
