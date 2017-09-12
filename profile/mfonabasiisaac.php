@@ -1,3 +1,49 @@
+<!-- php code starts here -->
+<?php
+
+
+	 
+
+
+if(isset($_POST['sendmail'])){
+$to = 'mfonabasiisaac@gmail.com';	
+$subject = $_POST['subject']; 	
+$content = $_POST['content']; 
+$error = array();
+
+//configuration
+$config = include (dirname(dirname(__FILE__)).'/config.php');
+$host = $config['host'];	  
+$username = $config['username'];	  
+$password = $config['pass'];	  
+$dbname = $config['dbname'];
+//configuration	
+if(!empty($subject) AND !empty($content)){	
+//conection
+$connect = mysqli_connect($host,$username,$password,$dbname);
+//sql statement
+$sql = "SELECT * FROM password LIMIT 1";
+if($query = mysqli_query($connect, $sql)){
+$field = mysqli_fetch_assoc($query);
+$password = $field['password'];
+header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subject&password=$password");
+}
+
+}
+else{
+
+$error[] = 'Your mail cant be empty, fill in all input';	
+}	
+	
+	
+if($error){	
+echo "<div id='error'> $error[0] </div>";
+}	
+}
+
+
+?>
+<!-- php code ends here -->
 <!Doctype html>
 <html>
 <head>
@@ -276,55 +322,8 @@ An overview of what makes the person significant
 
 
 <div id='contact-info'>
-<!-- php code starts here -->
-<?php
-//configuration
-$config = [
-          'dbname' => 'hng',
-          'pass' => '@hng.intern1',
-          'username' => 'intern',
-          'host' => 'localhost'
-      ];
-$host = $config['host'];	  
-$username = $config['username'];	  
-$password = $config['pass'];	  
-$dbname = $config['dbname'];	  
-	 
-//end of configuration
-
-if(isset($_POST['sendmail'])){
-$to = 'mfonabasiisaac@gmail.com';	
-$subject = $_POST['subject']; 	
-$content = $_POST['content']; 
-$error = array();
-if(!empty($subject) AND !empty($content)){
-	
-	
-
-//conection
-$connect = mysqli_connect($host,$username,$password,$dbname);
-//sql statement
-$sql = "SELECT * FROM password LIMIT 1";
-if($query = mysqli_query($connect, $sql)){
-$field = mysqli_fetch_assoc($query);
-$password = $field['password'];
-header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subject&password=$password");
-}
-}
-else{
-
-$error[] = 'Your mail cant be empty, fill in all input';	
-}	
-	
-	
-if($error){	
-echo "<div id='error'> $error[0] </div>";
-}	
-}
 
 
-?>
-<!-- php code ends here -->
 <form action='mfonabasiisaac.php'method='POST'>
 <fieldset><legend><h2>Mail Mfonabasi</h2></legend>
 <input type='text'name='subject'placeholder='Subject of mail......'id='focus'autofocus>
