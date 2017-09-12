@@ -117,6 +117,77 @@
 			margin-right: 5px;
 			margin-left: 5px;
 		}
+		#andikan-form {
+		    background-color: rgba(99,50,0,.3);
+		    margin-bottom: 20px;
+		}
+		.form-wrapper {
+		    display: table;
+		    padding: 20px;
+		    margin-top: 20px;
+		    width: 100%;
+		}
+		#andikan-form .horz label,
+		#andikan-form .horz input {
+		    display: block;
+		}
+		.form-wrapper label {
+		    text-transform: capitalize;
+		    font-family: Tahoma;
+		    font-size: 18px;
+		    margin-bottom: 5px;
+		    cursor: pointer;
+		}
+		.form-wrapper input {
+		    padding: 6px 12px;
+		    width: 100%;
+		}
+		.horz {
+		    margin-top: 15px;
+		}
+		.horz:first-child {
+		    margin-top: 0;
+		}
+		.form-wrapper textarea {
+		    width: 100%;
+		    height: 200px;
+		    resize: none;
+		    padding: 10px;
+		    overflow: auto;
+		}
+		.form-wrapper textarea,
+		.form-wrapper input {
+		    font-size: 17px;
+		    border: 0;
+		    outline: 0;
+		}
+		.form-wrapper textarea:focus,
+		.form-wrapper input:focus {
+		    background-color: #666;
+		    color: #fff;
+		}
+		.form-wrapper textarea:hover,
+		.form-wrapper input:hover {
+		    background-color: #666;
+		}
+		.form-wrapper input[type="submit"] {
+		    background-color: #f4f4f4;
+		    padding: 10px 10px;
+		    display: inline-block;
+		    cursor: pointer;
+		    background-color: rgba(99,50,0,.75);
+		    color: #fff;
+		    width: auto;
+		    border-radius: 5px;
+		}
+		.contact-success-msg {
+		    padding: 20px;
+		    margin-top: -20px;
+		    margin: -20px -20px 0 -20px;
+		    text-align: center;
+		    font-size: 17px;
+		    color: #f9f9f9;
+		}		
 		@media (min-width: 400px){
 			.content > .photo {
 				height: 230px;
@@ -173,9 +244,6 @@
 				<div class="name" id="contact">contact andikan gabriel akpan</div><hr/>
 				<form id="andikan-form" action="/andikangabriel.php" method="post">
 					<div class="form-wrapper">
-						<div class="contact-success-msg okay">
-							Your Message has been sent successfully
-						</div>
 						<div class="horz">
 							<label for="form-name">name:</label>
 							<input type="text" id="form-name" name="visitor-name" required />
