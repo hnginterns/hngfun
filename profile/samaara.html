@@ -1,0 +1,405 @@
+<<<<<<< HEAD
+﻿<?php
+	$servername = "localhost";
+	$username = "intern";
+	$password = "@hng.intern1";
+	$dbname = "hng";
+	
+	$conn = new mysqli($servername, $username, $password, $dbname);
+    mysqli_select_db($conn, 'password');
+    $query = "SELECT * FROM password LIMIT 1";
+    $result = mysqli_query($conn, $query);
+		
+ ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Chide Adejo</title>
+<style>
+
+body {
+  background: linear-gradient(48.84deg, #050404 -6.14%, #050404 -6.13%, #2c2019 10.79%, black 53.16%, #000000 88.93%, #050404 111.64%); 
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: lightgrey; 
+  border-radius: 35px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: red;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+// styles for contact form is here
+#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:20px 0;
+}
+
+#contact h3 {
+	color: #F8B0000;
+	display: block;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea, #contact input[name="subject"] {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="subject"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:15%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+
+<div class="card">
+  <img src="https://avatars2.githubusercontent.com/u/25506336?v=4&u=14ee0759f66826d404e55f9f1da4734da162177f&s=400" alt="" style="width:50%">
+  <div class="container">
+    <h1>Chide Adejo</h1>
+    <p class="title">HTML, CSS, Javascript, PHP, Java</p>
+    <p>Lagos, Nigeria</p>
+    <div style="margin: 20px 0;">
+      <a href="https://twitter.com/#"><i class="fa fa-twitter">@Layyal_</i></a>  
+      <a href="#"><i class="fa fa-github">Github: @samaara</i></a>
+      <a href="#"><i class="fa fa-slack">Slack: @samara</i></a>   
+   </div>
+   <hr>
+   <form id="contact" action="/sendmail.php" method="GET">
+    <h3>Send a mail</h3>
+    <h4>I generally reply as soon as I possibly can.</h4>
+    <fieldset>
+	<input placeholder="Name" name="yourname" type="text"/>
+	</fieldset>
+    <fieldset>
+      <input placeholder="Email" name="email" type="email"  required="">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Subject" name="subject">
+    </fieldset>
+	<input type = "hidden" name = "to" value = "bimboadejo@gmail.com">
+			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
+    <fieldset>
+      <textarea placeholder="Type your message here..." name="body" required=""></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
+=======
+﻿<?php
+	$servername = "localhost";
+	$username = "intern";
+	$password = "@hng.intern1";
+	$dbname = "hng";
+	
+	$conn = new mysqli($servername, $username, $password, $dbname);
+    mysqli_select_db($conn, 'password');
+    $query = "SELECT * FROM password LIMIT 1";
+    $result = mysqli_query($conn, $query);
+		
+ ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Chide Adejo</title>
+<style>
+
+body {
+  background: linear-gradient(48.84deg, #050404 -6.14%, #050404 -6.13%, #2c2019 10.79%, black 53.16%, #000000 88.93%, #050404 111.64%); 
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: lightgrey; 
+  border-radius: 35px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: red;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+// styles for contact form is here
+#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:20px 0;
+}
+
+#contact h3 {
+	color: #F8B0000;
+	display: block;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="subject"], #contact input[type="url"], #contact textarea, #contact input[name="subject"] {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="subject"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:15%;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+
+<div class="card">
+  <img src="https://avatars2.githubusercontent.com/u/25506336?v=4&u=14ee0759f66826d404e55f9f1da4734da162177f&s=400" alt="" style="width:50%">
+  <div class="container">
+    <h1>Chide Adejo</h1>
+    <p class="title">HTML, CSS, Javascript, PHP, Java</p>
+    <p>Lagos, Nigeria</p>
+    <div style="margin: 20px 0;">
+      <a href="https://twitter.com/#"><i class="fa fa-twitter">@Layyal_</i></a>  
+      <a href="#"><i class="fa fa-github">Github: @samaara</i></a>
+      <a href="#"><i class="fa fa-slack">Slack: @samara</i></a>   
+   </div>
+   <hr>
+   <form id="contact" action="/sendmail.php" method="GET">
+    <h3>Send a mail</h3>
+    <h4>I generally reply as soon as I possibly can.</h4>
+    <fieldset>
+	<input placeholder="Name" name="yourname" type="text"/>
+	</fieldset>
+    <fieldset>
+      <input placeholder="Email" name="email" type="email"  required="">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Subject" name="subject">
+    </fieldset>
+	<input type = "hidden" name = "to" value = "bimboadejo@gmail.com">
+			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
+    <fieldset>
+      <textarea placeholder="Type your message here..." name="body" required=""></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
+>>>>>>> 303e6d35eb758a96e5d533269947ba20c5b01f89
