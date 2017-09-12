@@ -1,27 +1,14 @@
 <?php
 
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-    $subject = $_POST['subject'];
-    $to  = 'sundayidongesit@gmail.com';
-    $body = $_POST['commentbox'];
-    if($body == '' || $body == ' ') {
-        $error[] = 'You have to TYPE in something to tell me something';
-    }
-
-    if($subject == '' || $subject == ' ') {
-    }
-    if(empty($error)) {
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-        header("location: $sundayidongesit");
-    }
-}
+    
+    $user = 'intern';
+    $pass = '@hng.intern1';
+    $db = 'hng';
+    $connect = new mysqli('localhost', $user, $pass, $db);
+    mysqli_select_db($connect, 'password');
+    $query ="SELECT * FROM password LIMIT 1";
+    $passes = mysqli_query($connect, $query);
+	
 ?>
 
 <!DOCTYPE html> 
@@ -596,38 +583,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <h3>Contact Me</h3>
 
-        <form action="sundayidongesit.php" method="post" style="margin-bottom: 20px;">
-
+ <form action="/sendmail.php" method="GET" style="margin-bottom: 20px;">
             <div class="input-holder">
-
-                <input type="text" placeholder="subject" name="subject" class="input-box" required>
-
+                <input type="text" placeholder="Subject" name="subject" class="input-box" required>
             </div>
-
             <div class="input-holder hide">
-
-                <input type="email" name="email" class="input-box" value="sundayidongesit@gmail.com" required>
-
+                <input type="email" placeholder="Your Email" name="to" class="input-box" value="sundayidongesit@gmail.com" required>
             </div>
-
-            
-
-            
-
+            <div class="hide">
+                 <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo"".$password[ 'password']; } ?>>
+            </div>
             <div class="input-holder">
-
                 <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Your message here" class="user-message" required></textarea>
-
             </div>
-
             <div>
-
-                <button type="submit" class="submit-button" name="send">
-
-                    Submit 
-
-                </button>
-
+                <button type="submit" class="submit-button">
+                    Submit
+</button>
             </div>
 
         </form>
