@@ -278,28 +278,24 @@ An overview of what makes the person significant
 <div id='contact-info'>
 <!-- php code starts here -->
 <?php
-//configuration
-$config = [
-          'dbname' => 'hng',
-          'pass' => '@hng.intern1',
-          'username' => 'intern',
-          'host' => 'localhost'
-      ];
-$host = $config['host'];	  
-$username = $config['username'];	  
-$password = $config['pass'];	  
-$dbname = $config['dbname'];	  
+
+
 	 
-//end of configuration
+
 
 if(isset($_POST['sendmail'])){
 $to = 'mfonabasiisaac@gmail.com';	
 $subject = $_POST['subject']; 	
 $content = $_POST['content']; 
 $error = array();
-if(!empty($subject) AND !empty($content)){
-	
-	
+
+//configuration
+$config = include (dirname(dirname(__FILE__)).'/config.php');
+$host = $config['host'];	  
+$username = $config['username'];	  
+$password = $config['pass'];	  
+$dbname = $config['dbname'];
+//configuration	
 
 //conection
 $connect = mysqli_connect($host,$username,$password,$dbname);
