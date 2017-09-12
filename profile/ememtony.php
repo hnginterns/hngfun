@@ -123,7 +123,8 @@
 					
 					<div class="text-center">
 		<a href="https://hnginterns.slack.com"><i class="fa fa-slack"></i>@ememtony</a>
-		<a href="https://github.com/EmemTony/Stage1"><i class="fa fa-github"></i> Stage 1</a>
+		<a href="https://github.com/EmemTony/Stage1"><i class="fa fa-github"></i> Stage1</a>
+		<a href="https://drive.google.com/open?id=0B4dR0m_V1AVGSzRkQ1hrUUF5ZmM"><i class="fa fa-app"></i> Android app</a>
 		
 		
 	</div>
