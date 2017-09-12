@@ -25,11 +25,14 @@
         margin-left:auto;
         margin-right:auto;
         display: block;
+        border-style: solid;
+        border-width: 2px;
         }
 
       body{
         background-color: deepskyblue;
         }
+      
 
     </style>
 
@@ -49,6 +52,18 @@
       <div>
         <p><strong>Slack User Name:</strong> Afahakaniniobong</p>
       </div>
-      
+      <center><section class="contact-form" >
+         <div class = "card-form">
+            <form  action="AfahakanIniobong.php" method="post" >
+               <p class = "title" >CONTACT ME</p>
+               <input type="text" placeholder="Subject" name="subject" required/><br>
+               <input type="email" placeholder="Email" name="email" required/><br>
+               <input type="hidden" name="to" value="iniobong.afahakan@gmail.com">
+               <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required></textarea>
+               <br>
+               <input type="submit"/>
+            </form>
+         </div>
+      </section></center>
     </body>
   </html>
