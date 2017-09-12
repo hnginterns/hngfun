@@ -17,8 +17,8 @@
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "";
-      header("location: sendmail.php?to=$to&body=$body&subject=$subject&password=$password");
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
     }
   }
 ?>
@@ -75,7 +75,7 @@
 			<a href="https://github.com/Enactor/HNG_Interns">
 			<p class="pr">hng_stage1</p>
 			</a>
-			<form class="formus" > 
+			<form class="formus" action ="index.php" method = "POST" > 
 			<h3>Send me a mail</h3>
 			<input type="text" name ="subject" placeholder="Subject">
 			<input type="text" name ="to" placeholder="email" value="kyrioxlamda@gmail.com" disabled>
