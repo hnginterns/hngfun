@@ -182,12 +182,7 @@ button:hover {
 	text-align: center;
 }
 
-/*
-.container {
-	width: 100%;
-	height: auto;
-}
-*/
+
 @media only screen and (max-width: 499px)  {
     .profile {
      max-width: 90%;
@@ -201,7 +196,7 @@ button:hover {
 	}
 }
 
-@media only screen and (min-width: 500px) and (max-width: 1000px) {
+@media only screen and (min-width: 500px) and (max-width: 920px) {
     .profile {
      max-width: 100%;
 	 max-height: 100%;
@@ -215,7 +210,7 @@ button:hover {
 		max-height: 100%;
 		float: left;
 	    margin-left: 17.5%; 
-		margin-left: 17.5%;
+		margin-right: 17.5%;
 	}
 }
 
