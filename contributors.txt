@@ -1,4 +1,4 @@
-(1) Nwanze Franklin, franko4don, @franko4don
+﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -6963,8 +6963,12 @@
 (297) Ntep Okon Robert (slack:@ntep,github:@NtepRobert)
 
 (298) okpongette idio (slack:@infinitepixel,github:paidio)
+<<<<<<< HEAD
+(299)Divine Ebitu (slack:@divineebitu2367,github:Divine-Ebitu)
+=======
 (299) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
 
+>>>>>>> 6de51884244cc1b45cf7f4f55372862ef47b3d7f
 
 
 
