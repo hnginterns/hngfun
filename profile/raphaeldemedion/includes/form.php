@@ -47,7 +47,7 @@
                             </h1>
                             <h5>Please complete the form to send a message.</h5>
                             </div>
-                    <form name="contact-form" id="contact-form" method="post">
+                    <form name="contact-form" id="contact-form">
 
                         <!-- fullname start -->
                         <div class="col-sm-12">
