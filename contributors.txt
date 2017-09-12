@@ -382,6 +382,8 @@
 
 (298) okpongette idio (slack:@infinitepixel,github:paidio)
 (299) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
+(300) Aniekan Etim (slack:@codeislife, GitHub: onlycodeislife)
+
 
 
 
