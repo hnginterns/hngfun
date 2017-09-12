@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['submit'])){
+    if(isset($_POST['subject'])){
         $config = [
             'dbname' => 'hng',
             'pass' => '@hng.intern1',
@@ -14,7 +14,7 @@
         $subject = $_POST['subject'];
         $body = $_POST['message'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=linibensonjr@gmail.com");
-    
+	
     }else{
         header("location: linibensonjr.html");
     }
