@@ -41,6 +41,9 @@
       
         $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       
-        header("location: $uri");
+        header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
       }
+       else{
+         header("location: major2big.html");
     }
+      ?>
