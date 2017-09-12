@@ -2,7 +2,6 @@
    if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       $error = [];
-      
       //Get form-data
       $subject = $_POST['subject'];    
       $to  = 'wizitendo10@gmail.com';    
