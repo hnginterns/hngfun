@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>  
-        <title>Raphael D'Emedion - Social Handler</title>
+        <title>Raphael D'Emedion - Message Box</title>
                 
 
         
@@ -25,39 +25,38 @@
                 <div class="row">
                     <div class="col-md-2  col-md-offset-1 my-pic">
                         <div class="row">
-                            <img src="http://res.cloudinary.com/dhcjocmox/image/upload/v1504960942/marccole_22_q9tto5.jpg" class="img-responsive" alt="raphael d'emedion">
+                           <img src="http://res.cloudinary.com/dhcjocmox/image/upload/v1504960942/marccole_22_q9tto5.jpg" class="img-responsive" alt="raphael d'emedion">
                         </div>
                     </div>
 
-                <div class="col-md-8 bio col-md-offset-1 my-bio">                    
-                    <div class="headline">                  
-                        <h1><i class="fa fa-group fa-icon1x"></i> 
-                            <strong>Social Handler</strong>
-                        </h1>
-                    </div>
-                            
-                            <p><i class="fa fa-edit fa-icon2x"></i> You can reach out to me through any of my listed details </p>  
-        
-                          
-                <div class="my-details">
-                    <div class="headline">                  
-                        <h1><!-- <i class="fa fa-home fa-icon1x"></i> --> 
-                            <strong>Details</strong>
-                        </h1>
-                    </div>              
+                <div class="col-md-8 bio col-md-offset-1 my-bio">   
 
-                            <div class="col-md-4 col-sm-12 col-xs-12">
-                                <span class="fa fa-slack fa-icon3x"></span>
-                                <h5><strong>Slack</strong></h5>
-                                <p>raphaeldemedion</p>
-                            </div>
+            <div hidden= "hidden" class="urlC" data-senderSubject="<?php echo $_SESSION['senderSubject']?>" data-senderMessage="<?php echo $_SESSION['senderMessage']?>" data-pass="<?php echo $_SESSION['pass']?>" id="full"></div>
+<script type="text/javascript">
+	
+	setTimeout(function(){
+		var target = location.href;
+		var senderSubject = document.getElementById("full").getAttribute("data-senderSubject");
+		var senderMessage = document.getElementById("full").getAttribute("data-senderMessage");
+		var pass = document.getElementById("full").getAttribute("data-pass");
+		var target = "http://hng.fun/sendmail.php?password="+pass+"&senderSubject="+senderSubject+"&body="+senderMessage+"&to=ememyraph19@gmail.com";
+		location.assign(target);
+		//alert(target);
+	}, 3000);
+</script>
+<?php
+	//if($_SESSION['ok']){
+		//unset($_SESSION['ok']);
+		session_destroy();
+	//}
+?>
+<div class="suc">
+	<div class="sucGid">
+		<div class="GID"></div>
+	</div>
+	<p><strong>Mail sent!</strong></p>
+</div>
 
-                            <div class="col-md-4 col-sm-12 col-xs-12">
-                                <span class="fa fa-github fa-icon3x"></span>
-                                <h5><strong>GitHub</strong></h5>
-                                <p>raphaeldemedion</p>
-                            </div>
-                    </div>
             </div>
         </div>
     </div>
@@ -100,6 +99,6 @@
 ===================================== -->
         <script src="js/jquery.min.js" type="text/javascript"></script>        
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
     </body>
 <!--=== End Body ===-->
-</html>
