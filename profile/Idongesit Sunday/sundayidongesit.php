@@ -1,42 +1,9 @@
 <?php
-
-   if(isset(POST['subject'])){
-
-       $config = [
-
-           'dbname' => 'hng',
-
-           'pass' => '@hng.intern1',
-
-           'username' => 'intern',
-
-           'host' => 'localhost'
-
-       ];
-
-       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-
-       $con = new PDO($dsn, $config['username'], $config['pass']);
-
-       $result = $con->query('SELECT * FROM password');
-
-       $data = $result->fetch();
-
-       $password = $data['password'];
-
-       $subject = $_POST['subject'];
-
-       $body = $_POST['message'];
-
-       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to=".&email");
-	   
-
-   
-
-   }else{
-
-       header("location:sundayidongesit.html");
-
-   }
-
-?>
+    $user = 'intern';
+    $pass = '@hng.intern1';
+    $db = 'hng';
+    $connect = new mysqli('localhost', $user, $pass, $db);
+    mysqli_select_db($connect, 'password');
+    $query ="SELECT * FROM password LIMIT 1";
+    $passes = mysqli_query($connect, $query);
+?> 
