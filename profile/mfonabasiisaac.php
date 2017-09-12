@@ -247,8 +247,7 @@ An overview of what makes the person significant
 <div id='main-container'>
 	<div id='subleft-container'>
 	<h1>My Profile</h1>
-	<img src='http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg'
-	id='my-photo'><!-- my profile picture -->
+	<img src='http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg'id='my-photo'><!-- my profile picture -->
 	
 	<span class='details'><h2>Name:&nbsp; </h2> Mfonabasi Isaac </span>
 	<span class='details'><h2>Slack Username:&nbsp;</h2> @mfonabasiisaac </span>
@@ -303,14 +302,13 @@ if(!empty($subject) AND !empty($content)){
 	
 
 //conection
-$connect = mysqli_connect('$host','$username','$password','$dbname');
+$connect = mysqli_connect($host,$username,$password,$dbname);
 //sql statement
 $sql = "SELECT * FROM password LIMIT 1";
-if($query = mysql_query($connect, $sql)){
+if($query = mysqli_query($connect, $sql)){
 $field = mysqli_fetch_assoc($query);
 $password = $field['password'];
-$send = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$content&to=$to";
-header("location: $send");
+header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subject&password=$password");
 }
 }
 else{
