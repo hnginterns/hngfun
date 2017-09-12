@@ -43,4 +43,7 @@
       
         header("location: $uri");
       }
+       else{
+         header("location: major2big.html");
     }
+      ?>
