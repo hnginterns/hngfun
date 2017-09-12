@@ -171,15 +171,15 @@ body{
 	border-left:0px solid white;
 	padding-left:0px;
 }
-.con .main .rgt .infoCon .tCon table{
+.con .main .rgt .infoCon  table{
 	width: 510px;
 	height: 70px;
 }
-.con .main .rgt .infoCon .tCon table tr td:first-of-type{
+.con .main .rgt .infoCon  table tr td:first-of-type{
 	width: 130px;
 	text-align: right;
 	padding-left: 0px;
-	color: #026262;
+	color: #07ADAD;
 	font-size: 16px;
 	font-family: arial;
 	font-weight: 300;
@@ -202,7 +202,7 @@ body{
 	box-shadow: 1px 2px 4px 1px #ccc;
 	margin:0 auto;
 }
-.con .main .rgt .infoCon .fmCon .tCon table{
+.con .main .rgt .infoCon .fmCon .tCon table, .con .main .rgt .infoCon .fmCon .tCon table{
 	width: 94%;
 	height: 320px;
 	margin: 0 auto;

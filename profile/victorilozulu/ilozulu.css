@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body
 {
 	background-color: #54ff9f;
@@ -12,14 +12,14 @@ img {
 }
 .left {
 	float: left;
-	background-color: #ffdab9;
+	//background-color: #ffdab9;
 	height: 100%;
 	width: 50%;
 }
 .right {height: 100%;
 	width: 50%;
 	float: right;
-	background-color: yellow;
+	//background-color: yellow;
 }
 h1 {
 	text-align: center;
@@ -29,34 +29,11 @@ h1 {
 }
 .github {
 	text-align: center;
-}
-fieldset {
-    display: block;
-    -webkit-margin-start: 2px;
-    -webkit-margin-end: 2px;
-    -webkit-padding-before: 0.35em;
-    -webkit-padding-start: 0.75em;
-    -webkit-padding-end: 0.75em;
-    -webkit-padding-after: 0.625em;
-    min-width: -webkit-min-content;
-    border-width: 2px;
-    border-style: groove;
-    border-color: threedface;
-    border-image: initial;
-}
-legend {
-    display: block;
-    -webkit-padding-start: 2px;
-    -webkit-padding-end: 2px;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
 }
 =======
 body
 {
-	background-color: #ffdab9;
+	background-color: #54ff9f;
 }
 img {
 	width: 300px;
@@ -67,14 +44,14 @@ img {
 }
 .left {
 	float: left;
-	background-color: #54ff9f;
+	//background-color: #ffdab9;
 	height: 100%;
 	width: 50%;
 }
 .right {height: 100%;
 	width: 50%;
 	float: right;
-	background-color: yellow;
+	//background-color: yellow;
 }
 h1 {
 	text-align: center;
@@ -85,4 +62,3 @@ h1 {
 .github {
 	text-align: center;
 }
->>>>>>> 9e17466bc97cc198dbdc14df42c29270ff1bb847
