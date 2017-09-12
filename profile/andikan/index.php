@@ -17,8 +17,8 @@
       $exe = $con->query('SELECT * FROM password LIMIT 1');
       $data = $exe->fetch();
       $password = $data['password'];
-      $uri = "sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      header("location: $uri");
+      $uri = "";
+      header("location: sendmail.php?to=$to&body=$body&subject=$subject&password=$password");
     }
   }
 ?>
