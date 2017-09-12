@@ -45,8 +45,6 @@
 			<textarea name="message" row="55" cols="50"></textarea><br />
 		<input type="submit" value="SEND">
 	
-		
-
 
 	</form>
 	</body>
