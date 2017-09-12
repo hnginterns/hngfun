@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  
+    <head>
 <title>Edidiong Asikpo</title>
 
 <meta charset="utf-8">
@@ -10,68 +8,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/rt.css">
+        <link rel="stylesheet" href="css/st.css">
+        
 </head>
-<style type="text/css">
+<style>
+        
+h1{
+  text-align: center;
+}
 
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+}
 body {
   padding-top:25px;
   background: #FFFFFF;
   margin-left:10px;
   margin-right:10px;
 }
-.container {
-  max-width:600px;
-  margin:0 auto;
-  text-align:center;
-  -webkit-border-radius:6px;
-  -moz-border-radius:6px;
-  border-radius:6px;
-  background-color:#FAFAFA;
-}
-.head {
-  -webkit-border-radius:6px 6px 0px 0px;
-  -moz-border-radius:6px 6px 0px 0px;
-  border-radius:6px 6px 0px 0px;
-  background-color:#2ABCA7;
-  color:#FAFAFA;
-}
+.contact-form input,
+      .contact-form textarea {
+      width: 80%;
+      margin-top: 15px;
+      padding: 12px 20px;
+      border: .5px solid #ccc;
+      border-radius: 7px;
+      background-color: #eaeaea;
+      }
+      input[type=submit] {
+      background-color: #26acd9;
+      }
+      input[type=submit]:hover {
+      background: white;
+      border: .7px solid #ccc;
+      cursor: pointer;
+      }
+      textarea {
+      font-family: inherit;
+      resize: none;
+      }
 
 
-h2 {
-  text-align:center;
-  padding:18px 0 18px 0;
-  font-size: 1.4em;
-}
-input {
-  margin-bottom:10px;
-}
-textarea {
-  height:100px;
-  margin-bottom:10px;
-}
-input:first-of-type
-{
-  margin-top:35px;
-}
-input, textarea {
-  font-size: 1em;
-  padding: 15px 10px 10px;
-  font-family: 'Source Sans Pro',arial,sans-serif;
-  border: 1px solid #cecece;
-  background: #d7d7d7;
-  color:#000;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 80%;
-  max-width: 600px;
-}
+
 ::-webkit-input-placeholder {
    color: #000;
 }
@@ -92,25 +73,7 @@ hr {
     color: #333; /* old IE */
     background-color: #333; /* Modern Browsers */
 }
-button {
-  margin-top:15px;
-  margin-bottom:25px;
-  background-color:#2ABCA7;
-  padding: 12px 45px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #2ABCA7;
-  -webkit-transition: .5s;
-  transition: .5s;
-  display: inline-block;
-  cursor: pointer;
-  width:30%;
-  color:#fff;
-}
-button:hover, .button:hover {
-  background:#19a08c;
-}
+
 label.error {
     font-family:'Source Sans Pro',arial,sans-serif;
     font-size:1em;
@@ -125,21 +88,7 @@ label.error {
     -moz-border-radius:6px;
     border-radius:6px;
 }
-/* media queries */
-@media (max-width: 700px) {
-  label.error {
-    width: 90%;
-  }
-  input, textarea {
-    width: 90%;
-  }
-  button {
-    width:90%;
-  }
-  body {
-  padding-top:10px;
-  }  
-}
+
 .message {
     font-family:'Source Sans Pro',arial,sans-serif;
     font-size:1.1em;
@@ -149,7 +98,7 @@ label.error {
     background-color:#2ABCA7;
     width: 80%;
     margin:auto;
-    color: #000;
+    color: #666;
     color: #FAFAFA;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
@@ -185,7 +134,9 @@ label.error {
     .text-color{
         color: #337AB7;
     }
-    </style>
+
+        </style>
+    </head>
 <body>
 <div class="profile">
   <div class="profile-top"></div>
@@ -195,19 +146,51 @@ label.error {
   <div class="profile-body">
                 <h3>Edidiong Asikpo 
                                 <br>
-                                <small>Android Developer</small>
-                                <br>                            
-                                <small class="text-color"><b>@edidiong</b></small>
+                                <small>Android Developer</small>                           
                             </h3>
 
                              <h3> hello, my name is Edidiong Asikpo <br> I`m an android developer. I have always loved programing since high school.<br> Join me as we make the best out of this wonderful opportunity.</h3>
+                              <div>
 
+                                <br><strong>Slack Username :</strong> @edidiong
+                                </div>
+                                <div>
+                           <strong>Github Username :</strong> @edyasikpo
                             </div>
-        </div>
+                          </div>
 
       
 <hr/>  
 
 </body>
 
+
+                <form class="cd-form floating-labels" method="POST">
+                  <fieldset>
+
+
+                    <div class="icon">
+                      <label class="cd-label" for="cd-name">Subject</label>
+                      <input class="user" type="text" name="subject" id="cd-name" required>
+      
+                    </div>
+
+                          <div class="icon">
+                      <label class="cd-label" for="cd-textarea">Email</label>
+                      <input class="user" type="text" id="cd-email" name="Email" required>
+
+                    </div>
+                    <div class="icon">
+                      <label class="cd-label" for="cd-textarea">Message</label>
+                      <textarea class="message" name="message" id="cd-textarea" required></textarea>
+                    </div>
+                    <div>
+                     <input type="submit" value="Send Message">
+                    </div>
+                  </fieldset>
+                </form>
+
+            </div>
+        </div>
+    </body>
 </html>
