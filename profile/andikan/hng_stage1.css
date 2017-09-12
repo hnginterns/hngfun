@@ -1,16 +1,15 @@
 body{
-
+background:#e6e6e6;
 }
 div{ 
-	border:#aaa;
-	background: #cccccc;
-	margin: 0 30px;
-	background-color: #e6e6e6;
+	border:#808080;
+	background: #9a9292;
+	margin: 0 3px;
+	background-color:#cccccc ;
 	
  }
 .an{
  margin: auto;
- 
 }
 .mage{
 	display:block;
@@ -18,9 +17,8 @@ div{
 	margin:0px;
 	}
 .image{
-	border-radius:135px;
+	border-radius:120px;
 	padding:0px;
-	text-align:center;
 	box-shadow:2px 2px 2px 2px rgb(80,80,80);
 }
 .image:hover{
@@ -30,15 +28,16 @@ box-shadow:0px 0px 0px ;
 .an li{
 color:light-grey;
 	max-width:4000px;
+	
     display: block;
-    padding: 9px;
+    padding: 6px;
     border:1px solid #8d95a5;
-    margin-bottom: 0px;
+    margin-left:138px;
     border-radius: 30px;
 	box-shadow:0px 0px 0px 0px rgb(80,80,80);
 	}
 .an li:hover{
-	box-shadow:2px 2px 2px 2px rgb(80,80,80);
+	box-shadow:1px 1px 2px 2px rgb(80,80,80);
 	}
 p{
 	text-shadow:1px;
@@ -50,14 +49,15 @@ p{
 	}
 .de{
 	max-width:100px;
-	margin-left:45%;
+	
 	}
 .de a{
 	text-decoration:none;
 	}
 .pr{
-	
-	 background: #2471FF;
+	float:left;
+	margin-left:165%;
+	background: #2471FF;
     border: none;
     padding: 10px 20px 10px 20px;
     border-bottom: 3px solid #5994FF;
@@ -67,6 +67,53 @@ p{
 	background: #6B9FFF;
     color:#fff;
 	}
+.formus{
+border-radius:20px;
+background:#7e7ead;
+margin-top:5%;
+margin-left:400%;
+height:190px;
+width:400px;
+border:1px solid grey;
+size:auto;
+	}
+	.formus:active{
+	background:#ababab;
+	}
+textarea{
+background:white;
+margin:4px;
+margin-left:0px;
+width: 372px;
+height:100px;
+border-radius:10px;
+}
+input{
+float:left;
+margin-left:14px;
+}	
+.submit{
+float:right;
+margin-right:3%;
+    background-color: #4CAF50; 
+    border: 1px solid grey;
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius:10px;
 	
-	
+}
+.submit:active{
+transform: translateY(2px);
+}
+h3{
+color:blue;
+margin:0px;
+padding:0px;
+border:0px;
+
+}
 	
