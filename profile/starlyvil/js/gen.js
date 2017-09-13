@@ -8,7 +8,6 @@ $(document).ready(function(){
 	contsT = "Starlyvil's Profile";
 	initiate();
 	director();
-	pageLoader.show("fade",{duration:0});
 })
 function initiate(){
 	pageLoader.show("fade",{duration:0});
