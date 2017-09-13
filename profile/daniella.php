@@ -1,4 +1,39 @@
+<?php 
 
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+
+    $subject = $_POST['subject'];
+    $to  = 'daniella@gmail.com';
+    $body = $_POST['body'];
+
+    if($body == '' || $body == ' ') {
+      $error[] = "Please feel free to leave a message";
+    }
+
+
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'A subject would be appreciated.';
+    }
+
+    if(empty($error)) {
+
+      $config = include __DIR__ . "/../config.php";
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+
+      $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+      header("location: $url");
+
+    }
+  }
+
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
