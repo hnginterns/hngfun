@@ -14,34 +14,37 @@ Victoryman
 <br>
 <br>
 <br>
-<a href=https://github.com/vicroj/Hotels.ng-Internship/blob/master/stage1.php" style="color:red" align="center">stage1 project</a>
+<p style="color:red" align="center"><a href="https://github.com/hnginterns/hngfun/blob/master/contributors.txt/">#Stage1 project</a></p>
 <br>
 <br>
 </p>
 
+   <center>
    <div class="container">
-     <form action="../../sendmail.php" method="GET">
-	 
-	 <label for="fname">First Name</label>
-	 <input type="text" id="fname" name="Firstname" placeholder="Your name...">
-	 
-	 <label for="lname">Last Name</label>
-	 <input type="text" id="lname" name="Lastname" placeholder="Your Lastname...">
-	 
-	 <label for="country">State</label>
-	 <select id="country" name="country">
-	   <option value="china">Shangai</option>
-	   <option value="nigeria">Lagos</option>
-	   <option value="germany">Belarus</option>
-	   </select>
-	   
-	   <label for="email">Drop Your message</Label>
-       <textarea name="body" placeholder="Leave a message..." style="height:200px"></textarea>
-	   <input type="submit" value="Submit">
-	   
-	   </form>
+      <hr>
+   <form id="contact" action="/sendmail.php" method="GET">
+    <h3 style ="color:red">Send me a mail</h3>
+    <h4 style="color:red">Will get back to you shortly.</h4>
+    <fieldset>
+	<input placeholder="Name" name="yourname" type="text"/>
+	</fieldset>
+    <fieldset>
+      <input placeholder="Email" name="email" type="email"  required="">
+    </fieldset>
+    <fieldset>
+      <input placeholder="Subject" name="subject">
+    </fieldset>
+	<input type = "hidden" name = "to" value = "victoryman.olusola@gmail.com">
+			<input type = "hidden" name = "password" value = "<?php while($row = mysqli_fetch_assoc($result)){echo $row['password'];} ?>">
+    <fieldset>
+      <textarea placeholder="Type your message here..." name="body" required=""></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
 </div>
-
+</center>
 </body>
 </html>
 	
