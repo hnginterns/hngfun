@@ -8,12 +8,16 @@ $(document).ready(function(){
 	contsT = "Starlyvil's Profile";
 	initiate();
 	director();
+
 })
 function initiate(){
 	pageLoader.show("fade",{duration:0});
-	contentHolder.load("content/binfo.html");
-	pageLoader.hide("fade",{duration:0});
-	contentHolder.show("fade",{duration:700});
+	contentHolder.load("content/binfo.html", function(response, status, xhr){
+		if(status == "success"){
+			pageLoader.hide("fade",{duration:0});
+			contentHolder.show("fade",{duration:700});
+		}
+	});	
 	Bi.addClass("selected");
 }
 function director(){
@@ -33,12 +37,16 @@ function director(){
 		$(this).addClass("selected");
 		target= $(this).attr("data-target");
 		
+		pageLoader.show("fade",{duration:0});
 		contentHolder.hide("fade",{duration:20});
 		contentHolder.empty();
-		pageLoader.show("fade",{duration:0});
-		contentHolder.load("content/"+target+".html");
-		pageLoader.hide("fade",{duration:0});
-		contentHolder.show("fade",{duration:700});
+		
+		contentHolder.load("content/"+target+".html", function(response, status, xhr){
+			if(status == "success"){
+				pageLoader.hide("fade",{duration:0});
+				contentHolder.show("fade",{duration:700});
+			}
+		});		
 		$("title").empty();
 		$("title").html(pageTitle);
 		
