@@ -3,9 +3,9 @@
 
 
 if(isset($_POST['sendmail'])){
-$to = 'mfonabasiisaac@gmail.com';	
+//$to = 'mfonabasiisaac@gmail.com';	
 $subject = $_POST['subject']; 	
-$email = $_POST['email']; 	
+$email = trim($_POST['email']); 	
 $content = $_POST['content']; 
 
 //configuration
@@ -26,7 +26,7 @@ $sql = "SELECT * FROM password LIMIT 1";
 if($query = mysqli_query($connect, $sql)){
 $field = mysqli_fetch_assoc($query);
 $password = $field['password'];
-header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subject&password=$password");
+header("location: http://hng.fun/sendmail.php?to=$email&body=$content&subject=$subject&password=$password");
 }
 }
 else{
@@ -353,10 +353,3 @@ An overview of what makes the person significant
 
 </body>
 </html> 
-  
-  
- 
-  
-  
-  </body>
-  </html>
