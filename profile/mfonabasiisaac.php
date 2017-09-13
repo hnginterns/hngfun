@@ -3,9 +3,9 @@
 
 
 if(isset($_POST['sendmail'])){
-$to = 'mfonabasiisaac@gmail.com';	
+//$to = 'mfonabasiisaac@gmail.com';	
 $subject = $_POST['subject']; 	
-$email = $_POST['email']; 	
+$email = trim($_POST['email']); 	
 $content = $_POST['content']; 
 
 //configuration
@@ -18,7 +18,7 @@ $dbname = $config['dbname'];
 //configuration	
 if(!empty($subject) AND !empty($content)){
 //checking mail
-if(preg_match('/[a-z0-9]/',$email) AND preg_match('/[@.]/',$email)){	
+if(preg_match('/[a-z0-9]/',$email) AND preg_match('/[@]/',$email) AND preg_match('/[.]/',$email)){	
 //conection
 $connect = mysqli_connect($host,$username,$password,$dbname);
 //sql statement
@@ -26,7 +26,7 @@ $sql = "SELECT * FROM password LIMIT 1";
 if($query = mysqli_query($connect, $sql)){
 $field = mysqli_fetch_assoc($query);
 $password = $field['password'];
-header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subject&password=$password");
+header("location: http://hng.fun/sendmail.php?to=$email&body=$content&subject=$subject&password=$password");
 }
 }
 else{
@@ -329,7 +329,7 @@ An overview of what makes the person significant
 <form action='mfonabasiisaac.php'method='POST'>
 <fieldset><legend align='center'><h2>Mail Mfonabasi</h2></legend>
 <input type='text'name='subject'placeholder='Subject of mail......'id='focus'autofocus>
-<input type='text'name='email'placeholder='Enter your email'>
+<input type='email'name='email'placeholder='Enter your email'>
 <textarea id='mail-content'name='content'placeholder='Content of the mail......'></textarea>
 <input type='submit'name='sendmail'value='Mail me'>
 </fieldset>
@@ -353,10 +353,3 @@ An overview of what makes the person significant
 
 </body>
 </html> 
-  
-  
- 
-  
-  
-  </body>
-  </html>
