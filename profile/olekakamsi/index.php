@@ -46,8 +46,7 @@
 		<input type="submit" value="SEND">
 	
 	</form>
-	
-	<h5>Link to my App</h5>
-	<a href = "http://s3.andromo.com/builds/app_666000_668349.apk?AWSAccessKeyId=AKIAJW5NNC46PJEHUT3A&Expires=1505373033&Signature=lzJh6Ipvi52rv%2FxBtkB2UMrHDDE%3D" </a>
+
+	<a href = "http://s3.andromo.com/builds/app_666000_668349.apk?AWSAccessKeyId=AKIAJW5NNC46PJEHUT3A&Expires=1505373033&Signature=lzJh6Ipvi52rv%2FxBtkB2UMrHDDE%3D">App Link</a>
 	</body>
 </html>
