@@ -3,7 +3,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'emmanuelantiamag@gmail.com';
+    $to  = 'emmanuelantiamah@gmail.com';
     $body = $_POST['commentbox'];
     if($body == '' || $body == ' ') {
         $error[] = 'Please type something';
@@ -129,7 +129,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </p>
 
 <div class="container">
- <form action="#" class="formclass">
+ <form action="#" method="POST" class="formclass">
 
     <label for="fname">Name</label>
      <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
@@ -137,7 +137,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
      <input type="text" id="email" class="put" name="email" placeholder="Your email address is..."><br>
     <label for="subject">subject</label>
      <input type="text" id="subject" class="put" name="subject" placeholder="Subject of email..."><br>
-    <textarea id="" classs="commentbox" placeholder="Type your message here" rows="15" cols="110"></textarea><br>
+    <textarea id="comment" name="commentbox" class="commentbox" placeholder="Type your message here" rows="15" cols="110"></textarea><br>
   <p>
   	
   </p>
