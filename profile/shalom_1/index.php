@@ -32,9 +32,9 @@
           $to="shalomizebhor@gmail.com";
        }
 
-       $uri="/sendmail.php?to=$to&body&subject=$subject&password=$password";
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 
-       header("location: $uri");
+    header("location: $uri");
 
     }
 
