@@ -8003,7 +8003,7 @@ include('header.php');
                 <div class="v-center">
                     <div class="p-card-photo" style="background-image: url(https://res.cloudinary.com/digtsbqc4/image/upload/v1503616696/Isaac_f71qxq.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                     <div class="p-card-info">
-                        <a href="http://hng.fun/profile/izikelijah/izikelijah.html">
+                        <a href="http://hng.fun/profile/izik/izikelijah.html">
                             <!--Profile Link-->
                             <h3 class="p-card-title">izikelijah</h3>
                             <!--Profile Name-->
