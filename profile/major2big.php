@@ -88,10 +88,8 @@ if (isset($_POST['send-mail']) ){
 						}
 					?>
         
-       <div id="contact">
-                <div class="heading">
-                    <p>Contact me</p>
-                </div>
+        <form id='contact-form' action='#' method='POST'>
+                    <h><b>Contact me</b></h>
                 <form>
                     <input type="text" name="name" id="name" placeholder="Your name">
                     <input type="text" name="message" id="message" placeholder="Message">                                        
