@@ -1,7 +1,7 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject = $_POST['subject'];
-    $to  = $_POST['to'];
+    $to  = $_POST['olekakamsy@gmail.com'];
     $body = $_POST['message'];
     $config = include('../../config.php');
     $server = $config['host'];
@@ -34,7 +34,7 @@
 
 	</div>
 	<form action="" method="POST"><br />
-		<b></b><i>Fill out the form below and type in your message if you want to contact me.</i</ib>><br />
+		<b></b><i>Fill out the form below and type in your message if you want to contact me.</i></b>><br />
 		<br />Subject:<br />
 			<input type="text' name="subject"><br />
 		Name:<br />
