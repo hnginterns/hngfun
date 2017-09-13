@@ -30,12 +30,12 @@
           $subject=$_POST['mail_subject'];
           $body=$_POST['mail_body'];
           $to="shalomizebhor@gmail.com";
-       }
+       
 
-       $uri="/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
+       $uri="/sendmail.php?password=$password&subject=$subject&body=$body&to=";
 
        header("location: $uri");
-
+       }
     }
 
  ?>
