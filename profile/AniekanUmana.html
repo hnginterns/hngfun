@@ -21,7 +21,7 @@
 		padding: 0;
 		background-image: url(http://bit.ly/2wJSfpB);
 		background-size: cover;
-		background-repeat: no-repeat;
+		background-repeat: repeat;
 		position: relative;
 		font-family: Arial, helvetica, sans-serif;
 		height: 100%;
@@ -65,6 +65,7 @@
         
     .containerform{
             text-align: center;
+            padding-bottom: 50px;
         }
 
 	a{
@@ -91,22 +92,23 @@
 	}
 
 		.btnform{
-			width: 20%;
+			width: 15%;
 			padding: 8px;
-			border-radius: 2px;
-			background-color: blue;
+			background-color: #E8E60E;
 			border:none;
 			font-size: 14px;
+			border-radius: 10px;
 
 		}
 
 		.textform{
-			width: 60%;
+			width: 40%;
 			margin: auto;
 			padding: 10px;
 			color: black;
 			box-sizing: border-box;
 			margin-top: 20px;
+			border-radius: 10px;
 		}
 
 		.htext{
@@ -131,6 +133,17 @@
 		<a href="https:"">@aniekan_u</a>
 			<a href="https://github.com/Anelkan/hng-internship"> Stage 1 task</a>
  		</div>
+
+ 		<div class="containerform">
+		<form class="form-vertical" action="AniekanUmana.php" method="POST">
+			<h2 class="htext">Contact Me</h2>
+			<input type="text" class="textform" name="full_name" placeholder="Full name" required><br>
+			<input type="email" class="textform" name="to" placeholder="Email" required><br>
+            <input type="text" class="textform" name="subject" placeholder="subject" required><br>
+			<textarea name="body" cols="10" rows="6" class="textform" placeholder="Type Your Message Here" required></textarea><br><br>
+			<button class="submit btnform" name="submit" value="submit">Submit</button>
+		</form>
+	</div>
 
 </body>
 </html>

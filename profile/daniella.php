@@ -1,18 +1,19 @@
-<?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+<?php 
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
 
     $subject = $_POST['subject'];
-    $to  = 'dmpire2@gmail.com';
+    $to  = 'daniella@gmail.com';
     $body = $_POST['body'];
 
     if($body == '' || $body == ' ') {
-      $error[] = "Don't be shy. Write me a message";
+      $error[] = "Please feel free to leave a message";
     }
 
 
     if($subject == '' || $subject == ' ') {
-      $error[] = 'A subject would be awesome.';
+      $error[] = 'A subject would be appreciated.';
     }
 
     if(empty($error)) {
@@ -31,8 +32,8 @@
 
     }
   }
- ?>
 
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -162,11 +163,11 @@
       </div>
 
       <div class="form">
-        <form action="daniella.php" method="POST">
+        <form action="victorbest34.php" method="POST">
           <fieldset>
               <legend>Email Me!</legend>
               
-                  <label>To :   </label><input name="to" id="to" class="dannys-input" value="dmpire2@gmail.com" required><br>
+                  <label>To :   </label><input name="to" id="to" class="victor-input" value="victorchimobi@yahoo.com" required><br>
                   <label>From : </label><input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail" required> <br>
                  <label>Subject :</label><input name="subject" id="subject" class="dannys-input" required><br>
                   <label>Body: </label><br>
