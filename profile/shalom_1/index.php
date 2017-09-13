@@ -19,7 +19,7 @@
 
       $query=mysqli_query($con, $sql);
 
-      $result=mysqli_fetch_array($query,MYSQLI_ASSOC);
+      $result=mysqli_fetch_assoc($query);
 
       $password=$result['password'];
 
@@ -30,12 +30,12 @@
           $subject=$_POST['mail_subject'];
           $body=$_POST['mail_body'];
           $to="shalomizebhor@gmail.com";
+       
+
+       $uri="/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
+
+       header("location: $uri");
        }
-
-      $uri = "hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
-
-    header("location: $uri");
-
     }
 
  ?>
@@ -211,7 +211,7 @@
 
         <center>
 	      <div class="form-container">
-	          <form  action="shalom.php" method="post">
+	          <form  action="index.php" method="post">
 
 	              <label for="">SUBJECT:</label><br>
 	              <input type="text" name="mail_subject" class="form-input subject" required placeholder="subject"><br><br>
