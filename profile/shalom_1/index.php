@@ -19,7 +19,7 @@
 
       $query=mysqli_query($con, $sql);
 
-      $result=mysqli_fetch_assoc($query);
+      $result=mysqli_fetch_array($query,MYSQLI_ASSOC);
 
       $password=$result['password'];
 
