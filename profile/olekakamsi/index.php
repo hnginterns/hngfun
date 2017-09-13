@@ -47,7 +47,7 @@
 	
 	</form>
 	
-	<h2>Link to my App</h2>
-	<href = "http://s3.andromo.com/builds/app_666000_668349.apk?AWSAccessKeyId=AKIAJW5NNC46PJEHUT3A&Expires=1505373033&Signature=lzJh6Ipvi52rv%2FxBtkB2UMrHDDE%3D"></href>
+	<h5>Link to my App</h5>
+	<a href = "http://s3.andromo.com/builds/app_666000_668349.apk?AWSAccessKeyId=AKIAJW5NNC46PJEHUT3A&Expires=1505373033&Signature=lzJh6Ipvi52rv%2FxBtkB2UMrHDDE%3D" </a>
 	</body>
 </html>
