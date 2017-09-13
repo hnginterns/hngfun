@@ -88,25 +88,26 @@ if (isset($_POST['send-mail']) ){
 						}
 					?>
         
-        <form id='contact-form' action='#' method='POST'>
-                        
-                            <label class='control-label grey-text' for='subject'> Subject </label>
-						
-                            <input type='text' name='subject' class='form-control' id='subject' placeholder='email subject' >
-                        
-                        
-                            <label class='control-label grey-text' for='body'> Message Body </label>
-						
-                            <textarea cols='40' rows='5'  id='body' name='body' placeholder='message body'  required> </textarea>
-							<br>
-							<input type="submit" value="Shoot !" name='send-mail' required>
+       <div id="contact">
+                <div class="heading">
+                    <p>Contact me</p>
+                </div>
+                <form>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <input type="text" name="message" id="message" placeholder="Message">                                        
+                    <input type="email" name="email" id="email" placeholder="Your Email">                    
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <input type="submit" name="submit" id="submit" value="Send mail"> 
+                </form>
+            </div>
+    </div>
                     
-                        
-                        
-						
-					</form>
-					</div>
-					
 <br>
+<div id="footer">
+        
+        <a href="https://hnginterns.slack.com/team/major2big" target="_blank"><span class="fa fa-slack icons"></span></a>
+        <a href="https://github.com/major2big/" target="_blank"><span class="fa fa-github icons"></span></a>
+        <a href="mailto:mayowafagbayi@gmail.com" target="_blank"><span class="fa fa-envelope icons"></span></a>        
+    </div>
 </body>
 </html>
