@@ -1,29 +1,17 @@
 <?php
    if($_SERVER['REQUEST_METHOD'] == 'POST') {
       $error = [];
-      
       //Get form-data
-      $name = $_POST['name'];
-      $message = $_POST['message'];
-      $email = $_POST['email']
       $subject = $_POST['subject'];    
       $to  = 'wizitendo10@gmail.com';    
-      
+      $body = $_POST['body'];
     
-      if($name == '' || $name == ' ') {
-        $error[] = 'Name cannot be empty.';
+      if($body == '' || $body == ' ') {
+        $error[] = 'Message cannot be empty.';
       }
     
       if($subject == '' || $subject == ' ') {
         $error[] = 'Subject cannot be empty.';
-      }
-
-      if($message == '' || $message == ' '){
-      	$error[] = 'Message cannot be empty.';
-      }
-
-      if ($mail == '' || $mail == ' '){
-      	$error[] = 'Mail cannot be empty.';
       }
     
       if(empty($error)) {
@@ -41,9 +29,7 @@
       
         $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
       
-        header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
+        header("location: $uri");
       }
-       else{
-         header("location: major2big.html");
     }
-      ?>
+ ?>
