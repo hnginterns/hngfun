@@ -1,10 +1,10 @@
 <?php
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
+    $error = array();
     $subject = $_POST['subject'];
     $to  = 'flekumxzy@gmail.com';
-    $body = $_POST['commentbox'];
+    $body = $_POST['subject'];
     if($body == '' || $body == ' ')  {
         $error[] = 'You have to TYPE in something to tell me something';
     }
@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error[] = 'Your name and email are very important, TYPE them in';
     }
     if(empty($error)) {
-        $config = include('../config.php');
+        $config = include('../../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -144,7 +144,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
      <p>
      </p>
      <div class="container" align="center">
-         <form action="<?= $_SERVER['PHP_SELF']; ?>" class="etuk">
+         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="etuk">
 
             <p><label for="fname">Name</label>
             <input type="text" id="fname" class="soc" name="firstname"
