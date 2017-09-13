@@ -78,14 +78,6 @@ img {
 							<input name='to' type='text' value='<?php echo $to;?>' >
 					
 						<br><br><br>
-				<label for='gender'>Gender:</label>
-							<input type='radio' name='gender' <?php if (isset($gender) && $gender=="male") echo "checked";  ?> value='Male'>Male 
-					
-						<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type='radio' name='gender'<?php if ( isset($gender) && $gender =='female') echo 'checked';  ?> value='Female'>Female
-						<br><br>
-			
 						
 				<label for='comment' >Comment</label>:
 						<br>
