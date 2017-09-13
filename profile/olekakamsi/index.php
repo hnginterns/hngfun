@@ -28,7 +28,7 @@
 		
 		<img src = "https://i.imgur.com/9CRtF8r_d.jpg" alt="A picture of muah hehehe(If you're seeing this then i blew it or your network is shit fam)" />
 	<div>
-		<p align = center>The name is Oleka Kamsi <br /> Olekakamsi on slack channel</p>
+		<p align = center>I'm Oleka Kamsi, olekakamsi on slack channel</p>
 		<p align = center>Year two student of Mechanical Engineering at the University of Nigeria. I'm an at Intern at HNG.</p>
 		<p align = center>I'm from <b>Enugu State.</b></p>
 
@@ -45,7 +45,9 @@
 			<textarea name="message" row="55" cols="50"></textarea><br />
 		<input type="submit" value="SEND">
 	
-
 	</form>
+	
+	<h2>Link to my App</h2>
+	<href = "http://s3.andromo.com/builds/app_666000_668349.apk?AWSAccessKeyId=AKIAJW5NNC46PJEHUT3A&Expires=1505373033&Signature=lzJh6Ipvi52rv%2FxBtkB2UMrHDDE%3D"></href>
 	</body>
 </html>
