@@ -1,8 +1,8 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'GET') {
-    $subject = $_GET['subject'];
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $subject = $_POST['subject'];
     $to  = 'olekakamsy@gmail.com';
-    $body = $_GET['message'];
+    $body = $_POST['message'];
     $config = include('../../config.php');
     $server = $config['host'];
     $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
@@ -33,7 +33,7 @@
 		<p align = center>I'm from <b>Enugu State.</b></p>
 
 	</div>
-	<form action="" method="GET"><br />
+	<form action="" method="POST"><br />
 		<b></b><i>Fill out the form below and type in your message if you want to contact me.</i></b>><br />
 		<br />Subject:<br />
 			<input type="text' name="subject"><br />
