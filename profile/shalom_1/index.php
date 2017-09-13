@@ -19,9 +19,9 @@
 
       $query=mysqli_query($con, $sql);
 
-      $result=mysqli_fetch_assoc($query,MYSQLI_ASSOC);
+      $result=mysqli_fetch_assoc($query);
 
-      $password=$query['password'];
+      $password=$result['password'];
 
 
       if (isset($_POST['mail_subject'])&&isset($_POST['mail_body']))
