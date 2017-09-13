@@ -68,11 +68,11 @@ img {
 							<input name='body' type='text' value='<?php echo $body;?>' >
 					
 						<br><br>
-		<?php	/*	<label for='password'>Password:</label>
-						<br>
-							<input name='password' type='password' value='<?php echo $password;?>' >
+		     <?php /*   <label for='password'>Password:</label>
+						<br> */
+							<input name='password' type='hidden' value='<?php echo $password;?>' >
 					
-						<br><br> */ ?>
+						<br><br> 
 				<label for='email' >Email:</label>
 						<br>
 							<input name='to' type='text' value='<?php echo $to;?>' >
