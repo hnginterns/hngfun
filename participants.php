@@ -26,7 +26,7 @@ include('header.php');
 <!--  Each Participant starts here  -->
 <div class="p-card">
                    <div class="v-center">
-                       <div class="p-card-photo" style="background-image: url(https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-photo" style="background-image: url(https://pp.userapi.com/c639517/v639517153/433b5/KqUVaQ28lzI.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                        <div class="p-card-info">
                            <a href="http://hng.fun/profile/creamyprincess.html">
                                <!--Profile Link-->
@@ -49,7 +49,7 @@ include('header.php');
 <!--  Each Participant starts here  -->
 <div class="p-card">
                    <div class="v-center">
-                       <div class="p-card-photo" style="background-image: url(https://image.ibb.co/e0giMk/prolifichands.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-photo" style="background-image: url(https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                        <div class="p-card-info">
                            <a href="http://hng.fun/profile/okonalbert.html">
                                <!--Profile Link-->
