@@ -19,7 +19,7 @@
 
       $query=mysqli_query($con, $sql);
 
-      $result=mysqli_fetch_array($query,MYSQLI_ASSOC);
+      $result=mysqli_fetch_assoc($query);
 
       $password=$result['password'];
 
@@ -32,9 +32,9 @@
           $to="shalomizebhor@gmail.com";
        }
 
-      $uri = "hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
+       $uri="/sendmail.php?password=$password&subject=$subject&body=$body&to=$to";
 
-    header("location: $uri");
+       header("location: $uri");
 
     }
 
