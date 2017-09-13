@@ -7,15 +7,20 @@
   $mysql_pass=$config['pass'];
   $mysql_db=$config['dbname'];
 
+  $con=mysqli_connect($mysql_host,$mysql_user,$mysql_pass,$mysql_db);
 
-  if (!mysqli_connect($mysql_host,$mysql_user,$mysql_pass,$mysql_db)) {
+
+  if (!$con) {
     die('Error');
     }
     else {
 
-      $query=mysqli_query("SELECT * FROM password LIMIT 1");
+      $sql = 'SELECT * FROM password LIMIT 1';
 
-      $result=mysql_fetch_assoc($query);
+      $query=mysqli_query($con, $sql);
+
+      $result=mysqli_fetch_assoc($query,MYSQLI_ASSOC);
+
       $password=$query['password'];
 
 
