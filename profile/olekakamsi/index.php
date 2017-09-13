@@ -1,7 +1,7 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'GET') {
     $subject = $_GET['subject'];
-    $to  = $_GET['olekakamsy@gmail.com'];
+    $to  = 'olekakamsy@gmail.com';
     $body = $_GET['message'];
     $config = include('../../config.php');
     $server = $config['host'];
