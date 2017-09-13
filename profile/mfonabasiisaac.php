@@ -7,7 +7,7 @@ $to = 'mfonabasiisaac@gmail.com';
 $subject = $_POST['subject']; 	
 $email = $_POST['email']; 	
 $content = $_POST['content']; 
-$error = array();
+
 //configuration
 $config = include (dirname(dirname(__FILE__)).'/config.php');
 $host = $config['host'];	  
@@ -30,16 +30,16 @@ header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subj
 }
 }
 else{
-	$error[] = "Fill in correct email ";
+	$error1 = "Fill in correct email ";
+	echo "<div id='error'>" . $error1 . " </div>";
 }
 }
 else{
-
-$error[] = 'please fill in correct input type';	
+$error2 = 'please fill all input';
+echo "<div id='error'>" . $error2 . "</div>";		
 }	
-if($error){	
-echo "<div id='error'> $error[0] $error[1] </div>";
-}		
+
+
 
 }
 
