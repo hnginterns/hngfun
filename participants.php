@@ -23595,7 +23595,7 @@ include('header.php');
 <!--  Each Participant starts here  -->
     <div class="p-card">
         <div class="v-center">
-            <div class="p-card-photo" style="background-image: url(https://i.imgur.com/d5zrtI2.jpg>
+            <div class="p-card-photo" style="background-image: url(https://i.imgur.com/d5zrtI2.jpg)>
             <div class="p-card-info">
                 <a href="http://hng.fun/profile/gbolahan_akande.htm">
                     <!--Profile Link-->
