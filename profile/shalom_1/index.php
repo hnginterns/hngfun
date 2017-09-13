@@ -211,7 +211,7 @@
 
         <center>
 	      <div class="form-container">
-	          <form  action="shalom.php" method="post">
+	          <form  action="index.php" method="post">
 
 	              <label for="">SUBJECT:</label><br>
 	              <input type="text" name="mail_subject" class="form-input subject" required placeholder="subject"><br><br>
