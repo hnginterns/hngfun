@@ -18,7 +18,7 @@ $dbname = $config['dbname'];
 //configuration	
 if(!empty($subject) AND !empty($content)){
 //checking mail
-if(preg_match('/[a-z0-9]/',$email) AND preg_match('/[@]/',$email) AND AND preg_match('/[.]/',$email)){	
+if(preg_match('/[a-z0-9]/',$email) AND preg_match('/[@]/',$email) AND preg_match('/[.]/',$email)){	
 //conection
 $connect = mysqli_connect($host,$username,$password,$dbname);
 //sql statement
