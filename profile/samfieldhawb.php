@@ -21,19 +21,14 @@
 		}else{
 			$email = test_input($email);
 		}
-		$message = $message. ". Sent by ".$email;
-		$config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-        ];
+		$message = $message. ". Send by ".$email;
+		$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
 		$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
 		$con = new PDO($dsn, $config['username'], $config['pass']);
 		$exe = $con->query('SELECT * FROM password LIMIT 1');
 		$data = $exe->fetch();
 		$password = $data['password'];
-		$uri = "http://hng.fun/sendmail.php?to=$to&body=$message&subject=$subject&password=$password";
+		$uri = "../../sendmail.php?password=$password&subject=$subject&body=$message&to=$to";
 		header("location: $uri");
 		
 	
@@ -363,7 +358,7 @@ footer {
 				<div class="dtl">Samfield Hawb Bassey</div>
 				<div class="label">Date of Birth : &#8595; </div>
 				<div class="dtl">12<sup>th</sup> October</div>
-				<div class="label">Occupation : &#8595;</div>
+				<div class="label">Ocupation : &#8595;</div>
 				<div class="dtl">Software Developer / GSM Engineer</div>
 				<div class="label">Maximum Academic Qualification : &#8595;</div>
 				<div class="dtl">National Diploma in Civil Engineering</div>
@@ -382,7 +377,7 @@ footer {
 			Some years ago became interested in talking to the computer to behave the way i want, which made me started programming,
 			i never attended a computer school, but i was a regular customer to the cyberCafe.</p>
 			<p>I am also into Gsm repairs and maintenance, currently attaching myself to Gionee mobile Phones as their service center engineer</p>
-			<p>I am a big fan of IT that is why I train myself on some of the programming languages, looking forward to artificial intelligent (AI) </p>
+			<p>I am a big fan of IT that is why I train myself on some of programming languages, looking forward to artificial intelligent (AI) </p>
 			<div class="progress">
 				<h2>My programming Skills progress</h2>
 				<div >

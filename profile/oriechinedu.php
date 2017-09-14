@@ -1,4 +1,4 @@
- <?php 
+<?php 
         $dbname   = 'hng';
         $hostname = 'localhost';
         $username = 'intern';
@@ -8,7 +8,7 @@
      $sql = "select * from password LIMIT 1";
      $returned_password = $connection->query($sql)->fetch_assoc();
      $password = $returned_password['password'];
-
+// $password = "orie";
 
  ?>
 <!DOCTYPE html>
@@ -136,6 +136,7 @@
 		</div>
 		<div class="link-to-stage-one">
 			<a  href="https://github.com/oriechinedu/HotelsNG-Internship"><span class="fa fa-link"></span> Link to stage 1 task repo</a>
+		</div>
 		</div>
 			<div class="link-to-stage-one" style="margin-top: 20px;">
 			<a  href="https://drive.google.com/open?id=0B7qatw5sDSjZWUVNU3FZR3JNMEU"><span class="fa fa-android"></span> Download my profile Android App</a>
