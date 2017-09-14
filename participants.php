@@ -26254,7 +26254,7 @@ include('header.php');
     </div>
 </div>
 
-  <!-- Each participant ends here -->
+<!-- Each participant ends here -->
 
   <!-- Each participant ends here -->
 <div class="p-card">
@@ -26277,7 +26277,31 @@ include('header.php');
         </div>
     </div>
 </div>
- 
+
 <!--  Each Participants ends here  -->
+
+<!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/893836697535950848/z-dDeZ1j_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/inohgordian.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Gordian Inoh</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">inohgordian@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> NIL </h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
+
 
 <?php include "footer.php"?>
