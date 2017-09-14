@@ -1,0 +1,168 @@
+
+
+/*
+==================
+IMPORTS
+==================  
+*/
+@import url(//fonts.googleapis.com/css?family=Rosario:400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+
+
+
+
+/*
+==================
+DEFAULTS
+==================  
+*/
+body {
+  padding: 2em;
+  font: 16px Rosario, sans-serif;
+}
+
+img {
+  display: block;
+}
+
+h1 {
+  @extend %headers;
+  font-size: 3em;
+  text-align: right;
+  letter-spacing: 0.25em;
+}
+
+h2 {
+  @extend %headers;
+  font-size: 2em;  
+}
+
+a {
+  display: inline-block;
+  color: $darkoff;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5em 0;
+  a {
+    @include transition(all .25s);
+    &:hover {
+      padding: 0 1em;
+      color: #fff;
+      background-color: $darkoff;
+    }
+  }
+}
+
+/*
+==================
+LAYOUT
+==================  
+*/
+article[role="profile"] h2{
+  @include transition(all .5s);
+  &:hover {
+    letter-spacing: .25em;
+    color: $purple;  
+  }  
+}
+
+.vitals {
+  li {
+    font-size: 1.75em;
+    font-family: Helvetica, Verdana, sans-serif;
+    overflow: hidden;
+    a {
+      display: block;
+      position: relative;
+      
+      &:after {
+        font-size: 0.5em;
+        position: absolute;
+        left: -10em;
+        background: transparent;
+        padding: 0.25em 1.5em;
+        margin-top: 0.25em;
+        background: $darkoff;
+        color: #fff;
+        @include border-radius(10px);
+        @include opacity(0);
+        @include transition(all .5s);
+      }
+      
+      &:hover:after {
+        left: 3em;
+        @include opacity(1);
+        @include animation(spinning 0.5s ease-in-out);
+      }
+      
+      &.twitter:after{
+        content: "Twitter";
+      }
+      
+      &.codepen:after {
+        content: "Codepen";
+      }
+      
+      &.github:after {
+        content: "GitHub";
+      }
+      
+      &.location:after {
+        content: "Manchester, NH";
+      }
+    }
+  }
+}
+
+.avatar {
+  float: right;
+  margin-left: 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  border: 1em solid $gray;
+  position: relative;
+  overflow: hidden;
+  background-color: $gray;
+  z-index: 25;
+  
+  &:before {
+    content: "I'm an Avatar image!";
+    text: {
+      transform: uppercase;
+      align: center;
+    }
+    font: {
+      weight: bold;
+      size: 1em;
+    }
+    position: absolute;
+    top: 1em;
+    left: 0;
+    width: 100%;
+  }
+  
+  &:after {
+    content: "You gotta deal with it!";
+    text: {
+      transform: uppercase;
+      align: center;
+    }
+    font: {
+      weight: bold;
+      size: 2em;
+    }
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    @include opacity(0);
+    @include animation(fontbulge 0.5s ease-in infinite, coloriffic 0.5s ease-in infinite);    
+    @include transition(all 0.5s);
+  }
+  
+  &:hover:after{
+    @include opacity(1);
+  }
+}
