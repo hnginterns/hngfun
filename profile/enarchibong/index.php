@@ -31,7 +31,7 @@
 			knowledge of but not an expert in;<br>Html<br>Css<br>Java<br>javascript<br>C<br>C++<br>Database(Mssql, MySql)<br>
 		</article>
 		
-		<form action="<?= $_SERVER['PHP_SELF']?>" method="post" >
+		<form action="<?= $_SERVER[PHP_SELF]?>" method="post" >
             <div class="form-group">
                 <input type="text" name="name" placeholder="Enter name" required><br>
             </div>

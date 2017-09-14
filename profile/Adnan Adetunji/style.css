@@ -54,6 +54,21 @@
 		background-color:#48bcea;
 		border-radius:5px;
 	}
-	img { border-radius:100px;
+	img { border-radius:0px;
+	
+	}
+	input[type="message-box"] {
+		width:75%;
+		height:150px;
+		border-color: #48bcea;
+	}
+	input[type="submit"] {
+		width:150px;
+		background-color: #48bcea;
+		color:white;
+		border-radius; 25%;
+		cursor: pointer;
+		margin: 1px 1px 1px 50%;
+	
 	
 	}
