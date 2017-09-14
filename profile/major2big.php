@@ -48,7 +48,7 @@ if (isset($_POST['send-mail']) ){
                 <p>Intern Profile</p>
             </div>
             <div>
-                <img src="https://i.imgur.com/615CkxB.jpg" alt="profile picture">
+                <img src="https://i.imgur.com/RqdTg09.jpg" alt="profile picture" height="500" width="400">
             </div>
             <div class="card-footer">
                 <a href="git@github.com:Major2big/hng-stage1-task.git"><span class="fa fa-external-link"><span id="stage1"> First stage task</span></span></a>
