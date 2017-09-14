@@ -1,6 +1,6 @@
 <?php
 	define("HOST", "localhost");
-	define("DB", "generalclass");
-	define("USER", "root");
-	define("PASSWORD", "");
+	define("DB", "hng");
+	define("USER", "intern");
+	define("PASSWORD", "@hng.intern1");
 ?>
