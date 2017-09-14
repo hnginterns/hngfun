@@ -26228,7 +26228,27 @@ include('header.php');
         </div>
     </div>
 </div>
-
   <!-- Each participant ends here -->
 
+                <div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://avatars0.githubusercontent.com/u/17594102?v=4&s=460); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="https://github.com/hnginterns/hngfun/blob/fc9881a451680b0c3fa1493ede36074a958521f7/profile/bestorw01.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Kingsley Bestor</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">bestorw@hotmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+  <!-- Each participant ends here -->
 <?php include "footer.php"?>
