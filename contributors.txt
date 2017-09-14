@@ -6964,5 +6964,11 @@
 adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (300) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
 (301) Abraham Edet (slack:@miztaabee; github:miztaabee)
+<<<<<<< HEAD
 (302) Kingsley Bestor (slack:@bestorw; github:bestorw01)
+=======
+(302) Obafunmiso olufemi (slack:@olufemiobafunmiso ; github:@olufemiobafunmiso)
+(303) Udofia Enwongo (slack:@enwong_o, github:@enwong01)
+
+>>>>>>> adccdf6bced45d9c9433ba0c784f4504cf66570d
 >>>>>>> b6c77af0aefd3af8da22577c59e04a0b319da767
