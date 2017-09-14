@@ -26361,7 +26361,7 @@ include('header.php');
                     <div class="p-card-info">
                         <a href="http://http://hng.fun/profile/Ubyjude/index.html">
                             <!--Profile Link-->
-                            <h3 class="p-card-title">Iam_Ubyjude</h3>
+                            <h3 class="p-card-title">Ubyjude Joshua</h3>
                             <!--Profile Name-->
                         </a>
                         <p class="p-card-description"ubyjude54@gmail.com</p>
