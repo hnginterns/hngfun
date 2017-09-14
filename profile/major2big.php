@@ -39,18 +39,12 @@ if (isset($_POST['send-mail']) ){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="notification" class="clearfix">
-        <p></p>
-    </div>
-    <div class="container">
-        <div class="" id="profile">
-            <div class="heading">
-                <p>Intern Profile</p>
-            </div>
-            <div>
-                <img src="https://i.imgur.com/RqdTg09.jpg" alt="profile picture" height="500" width="400">
-            </div>
-            <div class="card-footer">
+  
+            <div class="image-container">
+                <img src="https://i.imgur.com/RqdTg09.jpg" alt="profile picture"  height="500" width="400">
+                <h3 class="sumo">Mayowa Fagbayi</h3>
+                
+            
                 <a href="git@github.com:Major2big/hng-stage1-task.git"><span class="fa fa-external-link"><span id="stage1"> First stage task</span></span></a>
                 <p id="slack-username"><span class="fa fa-slack"> Slack: </span> @major2big</p> 
             </div>
