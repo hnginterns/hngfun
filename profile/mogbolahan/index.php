@@ -60,16 +60,16 @@ img {
 	  <form action='../../sendmail.php' method='get'>
 				<label for='name'>Name:</label>
 						<br>
-							<input name='subject' type='text' value='<?php echo $name;?>' >
+							<input placeholder='subject' name='subject' type='text' value='<?php echo $name;?>' >
 					
 						<br><br>
 				<label for='body'>Body:</label>
 						<br>
-							<input name='body' type='text' value='<?php echo $body;?>' >
+							<input  placeholder='body' name='body' type='text' value='<?php echo $body;?>' >
 					
 						<br><br>
-		     <?php /*   <label for='password'>Password:</label>
-						<br> */
+					<!-- <label for='password'>Password:</label>
+						<br> -->
 							<input name='password' type='hidden' value='<?php echo $password;?>' >
 					
 						<br><br> 
