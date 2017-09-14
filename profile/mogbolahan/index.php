@@ -65,7 +65,7 @@ img {
 						<br><br>
 				<label for='body'>Body:</label>
 						<br>
-							<input  placeholder='body' name='body' type='text' value='<?php echo $body;?>' >
+							<input rows='5' cols='50' placeholder='body' name='body' type='text' value='<?php echo $body;?>' >
 					
 						<br><br>
 					<!-- <label for='password'>Password:</label>
@@ -79,11 +79,11 @@ img {
 					
 						<br><br>
 						
-				<label for='comment' >Comment</label>:
+			<!--	<label for='comment' >Comment</label>:
 						<br>
-							<textarea rows='5' cols='50' placeholder='Tell me about yourself'></textarea>
+							 <textarea rows='5' cols='50' placeholder='Tell me about yourself'></textarea>
 						<br><br>
-				
+				-->
 						
 						<input type='submit' name='submit' value='submit' id='submit' >
 			</form>
