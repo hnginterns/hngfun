@@ -26165,7 +26165,7 @@ include('header.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/brainiac/image/upload/v1504997184/Nzikak_hcfvyc.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="http://hng.fun/profile/Nzikak.html">
+            <a href="http://hng.fun/profile/Nzikak.php">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Nsikak Isaac</h3>
                 <!--Profile Name-->
@@ -26188,7 +26188,7 @@ include('header.php');
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="http://hng.fun/profile/mfonabasiisaac.html">
+            <a href="http://hng.fun/profile/mfonabasiisaac.php">
                 <!--Profile Link-->
                 <h3 class="p-card-title">Mfonabasi Isaac</h3>
                 <!--Profile Name-->
