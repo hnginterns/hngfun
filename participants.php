@@ -26213,7 +26213,7 @@ include('header.php');
 			eui2=v1%3AAeFU4x-sAKzX2X0MKbQMNx5H0GoRurOeZNhcH_wYruc69PIGIqOxHUw1KljIn83ZPBl01HdfiyZVw8o5iiUII46LLnR7Qmj
 			Pd3KXyjIhvmGxFA&oh=593199b18756050c82264b2260c2d40d&oe=5A1BC153); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
-            <a href="https://github.com/hnginterns/hngfun/tree/master/profile/affilgain10.html">
+            <a href="http://hng.fun/profile/affilgain10.html">
                 <!--Profile Link-->
                 <h3 class="p-card-title">ubokho akpan</h3>
                 <!--Profile Name-->
