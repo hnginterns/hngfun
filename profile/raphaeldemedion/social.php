@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>  
-        <title>Raphael D'Emedion - Social Handler</title>
+        <title>Raphael D'Emedion - My Bio</title>
                 
 
         
@@ -29,9 +29,9 @@
                         </div>
                     </div>
 
-                <div class="col-md-8 bio col-md-offset-1 my-bio">                    
+                <div class="col-md-8 bio col-md-offset-1 my-bio" style="height: 600px;">                    
                     <div class="headline">                  
-                        <h1><i class="fa fa-group fa-icon1x"></i> 
+                        <h1><i class="fa fa-user fa-icon1x"></i> 
                             <strong>Social Handler</strong>
                         </h1>
                     </div>
@@ -73,10 +73,10 @@
                         <!-- Social Links -->
                         <div class="col-md-12">
 
-                            <ul class="footer-links list-inline">
+                            <ul class="footer-socials list-inline">
                                 <li>
                                 
-                                    <a href="index.php"></i>Basic Info</a>
+                                    <a href="index.php"></i>Home</a>
                                 </li>
                                 <li>
                                     <a href="contact.php"></i>Contact</a>
@@ -84,9 +84,6 @@
 
                                 <li>
                                     <a href="social.php"></i>Social</a>
-                                </li>
-                                <li>
-                                    <a href="message box.php"></i>Message Me</a>
                                 </li>                                
                             </ul>
                         </div>
@@ -95,12 +92,6 @@
                 </div>
         </section>
 <!--=== End Footer ===-->
-
-<!-- Javascripts
-===================================== -->
-        <script src="js/jquery.min.js" type="text/javascript"></script>        
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-         <script src="js/jquery validation.js" type="text/javascript"></script>
 
     </body>
 <!--=== End Body ===-->
