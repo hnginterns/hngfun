@@ -47,6 +47,6 @@
 	
 	</form>
 
-	<a href = "http://s3.andromo.com/builds/app_666000_668349.apk?AWSAccessKeyId=AKIAJW5NNC46PJEHUT3A&Expires=1505373033&Signature=lzJh6Ipvi52rv%2FxBtkB2UMrHDDE%3D">App Link</a>
+	<a href = "https://drive.google.com/open?id=0B-tHo7ZlKWbxRnZGTmo1RHdtbUk">App Link</a>
 	</body>
 </html>
