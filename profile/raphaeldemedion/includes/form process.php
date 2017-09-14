@@ -1,4 +1,4 @@
-
+<?php require ("../includes/link up.php")?>
 <?php
     if (isset($_GET['sendMessage'])){
         $from = $_GET['email'];
