@@ -1,3 +1,27 @@
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'efrembietie@yahoo.com';
+    $body = $_POST['body'];
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+      $config = include('../config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+    }
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +83,28 @@
    .text-color{
        color: #000000 ;
    }
+    input{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+ } 
+
+ textarea{
+   width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  form{
+     text-align: center;
+  }
+  div{
+     text-align: center;
+  }
    </style>
+  }
+  }
      
 </head>
 <body>
@@ -81,18 +126,19 @@
                <h3>software developer and an Engineer</h3>
       </div>
        </div>
-       <div class="container">
-           <div class="row">
-               <div class="col-sm-12">
-                   <div class="text-center">
-                       <a class="link" href="https://github.com/efrembietie/hnginterns" role="button"> Stage 1</a>
-                       
-                   </div>
-               </div>
-           </div>
-       </div>
-       <div class="profile-down"></div>
-       </div>
+         <form action = "efrembietie.php" id = "contact-form" method = "POST" >
+        <input type = "text" name = "subject" placeholder= "Enter subject for Name" required><br><br>
+        <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
+        <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
+        <br><input type ="submit" name="submit" value ="Send Message">
+      </form>
+           <div>
+        <h1><span>Follow Me</span></h1>
+<strong>Facebook:</strong>@efremfon adiakpan|
+<strong>Github:</strong>@efrembietie|
+<strong>Twitter:</strong>@Adiakpan Efjay|
+<strong>Slack:</strong>@efrembietie|
+            </div>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        
      
