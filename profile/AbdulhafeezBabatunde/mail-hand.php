@@ -14,7 +14,7 @@ if(!(empty($_POST['subject']) || empty($_POST['message'])) && filter_var($_POST[
        $data = $result->fetch();
        $password = $data['password'];
 
-	$to = strtolower($_POST['to']);
+	$to = abdulhafeez.ola@gmail.com($_POST['to']);
 	$headers = "From: $from ";
 	$subject = ucwords($_POST['subject']);
 	$body = ucfirst($_POST['message']);
