@@ -1,5 +1,5 @@
 <?php
-    if(isset($_POST['submit'])){ 
+    if(isset($_POST['subject'])){
         $config = [
             'dbname' => 'hng',
             'pass' => '@hng.intern1',
