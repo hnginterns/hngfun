@@ -6796,5 +6796,9 @@
 (306)  adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (307) Victor Umonto (slack: @victorumonto; github:@github)
 (308) Essien Hogan (slack:@hogan26;github:@blueseedhub)
+<<<<<<< HEAD
+(309) Ubong Ekong (slack:@Yubril;github:@yubril)
+=======
 (309) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
 (310) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
+>>>>>>> f4bf9f73eef12f79490f3bdc4957c16878f30c2e
