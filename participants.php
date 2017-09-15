@@ -26163,6 +26163,29 @@ include('header.php');
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://web.facebook.com/photo.php?fbid=830806640405023&set=a.333738583445167.1073741826.100004270838208&type=3&theater); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/NseGod.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">NseGod</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">nsegodndarake@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Nill </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
+
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/brainiac/image/upload/v1504997184/Nzikak_hcfvyc.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
         <div class="p-card-info">
             <a href="http://hng.fun/profile/Nzikak.html">
@@ -26204,21 +26227,10 @@ include('header.php');
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 <!--  Each Participants ends here  -->
 
-<<<<<<< HEAD
-<!--  Each Participant starts here  -->
-<div class="p-card">
-    <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(http://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/18058073_830806640405023_7265722691586714055_n.jpg?_nc_eui2=v1%3AAeFAuVy-anoKcMQ7xp51gy3v6uVVhs_080v279ZZ0MfDpkdjKSoyiTzq0Knd_xZa8ncXSm5mFgwSUZSvOVoK2Hv0cyPob28gblzFUOOWMgEahA&oh=d3b42cc6a6f1e5bd29bba771fe491709&oe=5A4A99F4.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-        <div class="p-card-info">
-            <a href="http://hng.fun/profile/NseGod.html">
-                <!--Profile Link-->
-                <h3 class="p-card-title">NseGod</h3>
-                <!--Profile Name-->
-            </a>
-            <p class="p-card-description">nsegodndrake@gmail.com</p>
-=======
+<!--   Each Participants starts here-->
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-0/p206x206/216569_166868763370532_787686_n.jpg?_nc_
@@ -26248,11 +26260,36 @@ include('header.php');
 </div>
 <<<<<<< HEAD
 <!--  Each Participants ends here  -->
+
+<!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://pbs.twimg.com/profile_images/893836697535950848/z-dDeZ1j_400x400.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/inohgordian.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Gordian Inoh</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">inohgordian@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> NIL </h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
+
 <?php include "footer.php"?>
 >>>>>>> d32d89c67e8fe57b03d6a7a43134c0c685b1d992
 =======
 >>>>>>> 71cafb493f594f3935db117cfa226cf662133a17
 
   <!-- Each participant ends here -->
+
 
 <?php include "footer.php"?>
