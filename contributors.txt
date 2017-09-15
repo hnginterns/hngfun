@@ -6794,3 +6794,4 @@
 (305) nnamse richard akwa (slack:@richtech, github:@nnamseakwa)
 (305) Utibe Ekom Okon (slack:@yutee_okon, github:@yutee)
 (306)  adnan adetunji, (slack:haddyadnan; github:haddyadnan)
+(307) Victor Umonto (slack: @victorumonto; github:@github)
