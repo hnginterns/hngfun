@@ -6796,6 +6796,7 @@
 (306)  adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (307) Victor Umonto (slack: @victorumonto; github:@github)
 (308) Essien Hogan (slack:@hogan26;github:@blueseedhub)
-(309) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
-(310) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
-(311) Samuel Essien (slack: @samuelessien; github:@samuelessien)
+(309) Ubong Ekong (slack:@Yubril;github:@yubril)
+(310) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
+(311) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
+(312) Samuel Essien (slack: @samuelessien; github:@samuelessien)
