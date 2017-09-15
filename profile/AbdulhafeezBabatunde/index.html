@@ -1,37 +1,3 @@
-<?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-    $subject = $_POST['subject'];
-    $to  = $_POST['to'];
-    $body = $_POST['body'];
-
-
-    $config = include('../../config.php');
-    $server = $config['host'];
-    $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
-
-    if (!$con) {
-      die("Connection failed: ".mysqli_connect_error());
-  }
-
-    $sql = 'SELECT * FROM password LIMIT 1';
-
-    if($result = mysqli_query($con, $sql)) {
-      $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
-      $password = $data['password'];
-    } else {
-        $password = "#";
-    }
-
-
-    $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-
-    header("location: $uri");
-
-  }
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -87,7 +53,7 @@ I believe learning is a continous process. And yea, I just completed my undergra
 </div>
 <div class="contact-section" id="contact">
 
- <form action="mail-hand.php" class="contact-form" method="post">
+ <form action="mail-hand.php" class="contact-form" >
       <div class="form-area">
         <!-- <input type="hidden" name="password" value="$password"> -->
         <input type="hidden" name="to" value="abdulhafeez.ola@gmail.com">
