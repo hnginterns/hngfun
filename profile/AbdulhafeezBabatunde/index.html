@@ -1,3 +1,13 @@
+<?php
+//Connect to database
+  $config = include('../../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $con = new PDO($dsn, $config['username'], $config['pass']);
+  $exe = $con->query('SELECT * FROM password LIMIT 1');
+  $data = $exe->fetch();
+  $password = $data['password'];
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -53,13 +63,12 @@ I believe learning is a continous process. And yea, I just completed my undergra
 </div>
 <div class="contact-section" id="contact">
 
- <form action="mail-hand.php" class="contact-form" >
-      <div class="form-area">
-        <!-- <input type="hidden" name="password" value="$password"> -->
-        <input type="hidden" name="to" value="abdulhafeez.ola@gmail.com">
+ 
+<div class="form-area">
+<form action="../../sendmail.php" method="get">
   <fieldset>
     <legend><span>Contact Me</span></legend>
-    <br>
+	<br>
     Email Address:<br>
     <input type="text" name="to" placeholder="Your Email Address" value="" required>
     <br>
@@ -71,9 +80,9 @@ I believe learning is a continous process. And yea, I just completed my undergra
 
     <br><br>
     <input type="submit" value="Send Me a Mail!">
-</div>
   </fieldset>
 </form>
+</div>
 
 </div>
 </body>
