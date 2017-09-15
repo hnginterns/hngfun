@@ -33,7 +33,6 @@
 		return empty($string) ? true : false;
 	}
 	$post = (!empty($_POST)) ? true : false; //determine if the post request is empty 
-	$showErrors=$showSuccess=false;
 	if ($post) 
 	{
 		$name = stripslashes($_POST['name']); //Fix the name from post
@@ -145,7 +144,7 @@
 						<div class="container">
 							<p class="center">If you would like to get across to me, please send me a mail through here. All feilds are required.</p>
 							<div class="form">
-								<form method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> id="contactForm">
+								<form method="post" action="php/contact.php" id="contactForm">
 									<input type="text" name="name" id="name" placeholder="Enter your name" required>
 									<input type="email" name="email" id="email" placeholder="example@domain.com" required>
 									<input type="text" name="subject" id="subject" placeholder="Enter the subject here" required>
