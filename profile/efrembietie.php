@@ -83,7 +83,28 @@
    .text-color{
        color: #000000 ;
    }
+    input{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+ } 
+
+ textarea{
+   width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  form{
+     text-align: center;
+  }
+  div{
+     text-align: center;
+  }
    </style>
+  }
+  }
      
 </head>
 <body>
@@ -111,18 +132,13 @@
         <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
         <br><input type ="submit" name="submit" value ="Send Message">
       </form>
-       <div class="container">
-           <div class="row">
-               <div class="col-sm-12">
-                   <div class="text-center">
-                       <a class="link" href="https://github.com/efrembietie/hnginterns" role="button"> Stage 1</a>
-                       
-                   </div>
-               </div>
-           </div>
-       </div>
-       <div class="profile-down"></div>
-       </div>
+           <div>
+        <h1><span>Follow Me</span></h1>
+<strong>Facebook:</strong>@efremfon adiakpan|
+<strong>Github:</strong>@efrembietie|
+<strong>Twitter:</strong>@Adiakpan Efjay|
+<strong>Slack:</strong>@efrembietie|
+            </div>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
        
      
