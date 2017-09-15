@@ -1,5 +1,4 @@
 <?php
-
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         $error = [];
@@ -22,7 +21,7 @@
             $exe = $con->query('SELECT * FROM password LIMIT 1');
             $data = $exe->fetch();
             $password = $data['password'];
-            $uri = "/sendmail.php?to=$to&message=$message&name=$name&password=$password";
+            $uri = "/sendmail.php?to=$to&body=$message&subject=$name&password=$password";
             header("location: $uri");
         }
     }
@@ -97,10 +96,20 @@
             float: right;
             margin: 0px 15px;
         }
-        .task {
+
+        .others {
             display: flex;
             justify-content: space-between;
             padding-top: 20px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            float: right;
         }
         .task a {
             text-decoration: none;
@@ -193,7 +202,7 @@
             border: 0px;
         }
         .contact {
-            margin-top: 25px;
+            margin-top: 10px;
         }
         .submit {
             background-color: #322f30;
@@ -214,53 +223,54 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="wrapper">
-        <div class="profile">
-            <img src="https://avatars1.githubusercontent.com/u/7896429?v=4&u=319c16fdd85b8062a2337037c2dd2890db2fe5e9&s=400" class="avatar">
-            <div class="name"><b>Tejumola David Timmy</b>
-            <p>@timicodes</p>
+    <div class="container">
+        <div class="wrapper">
+            <div class="profile">
+                <img src="https://avatars1.githubusercontent.com/u/7896429?v=4&u=319c16fdd85b8062a2337037c2dd2890db2fe5e9&s=400" class="avatar">
+                <div class="name"><b>Tejumola David Timmy</b>
+                <p>@timicodes</p>
+            </div>
+            <div class="others socials">
+                <ul class="profile-social-links">
+                    <li>
+                        <a href="https://github.com/timi-codes" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://hnginterns.slack.com/messages/@timicodes" class="social-icon" target="_blank"> <i class="fa fa-slack"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/codepreneur" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a>
+                    </li>
+                    <br>
+                </ul>
+            </div>
         </div>
-        <div class="task socials">
-            <ul class="profile-social-links">
-                <li>
-                    <a href="https://github.com/timi-codes" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
-                </li>
-                <li>
-                    <a href="https://hnginterns.slack.com/messages/@timicodes" class="social-icon" target="_blank"> <i class="fa fa-slack"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/codepreneur_" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a>
-                </li>
-                <br>
-            </ul>
+
+        <div class="about">
+            <h3>Bio</h3>
+            <p>My Name <b>Tejumola David Oluwatimileyin</b>, a creative junkie from Lagos State. I break barriers with codes & <b>UI/UX designs</b>.<br/> I graduated as a <b>software engineer</b> from Africa University of Technology and Management,
+            Benin Republic. My Major tools & development languages are <b>JAVA</b>, <b>PHP</b> and <b>Swift</b>.<br/></p>
+            <p><b># Avid Programmer<br/># Google Android Associate Developer.<br> # Learning fullstack javascript (MEAN Stack).<br/># Music Lover<br/> </b></p>
+
+            <div class="task">
+                    <a href="https://github.com/timi-codes/HNG-Internship-Test" target="_blank">
+                    Stage One Task<i class="fa fa-link"></i></a>
+                </div>
+
+            <form class="contact" method="POST">
+                <!-- <h3>Contact Me</h3> -->
+                <input class="sendersname" type="text" name="name" id="name" placeholder="Name" required>
+                <textarea class="message" name="message" id="message" placeholder="Leave a message" required></textarea>
+                <input type="submit" class="submit" value="Send a Message">
+            </form>
+
+            <div class="footer-wrapper">
+            <a href="https://drive.google.com/open?id=0B3WJNRXrdS9gRDFVMlJnbHNoa2c" target="_blank">
+                <img height="40px" width="140px" src="http://res.cloudinary.com/tarrot-system-inc/image/upload/v1504393894/bs3-google-play_q0c6pc.png" style="margin-top:10px; margin-right:150px"/></a>
+            </div>
         </div>
     </div>
 
-    <div class="about">
-        <h3>Bio</h3>
-        <p>My Name <b>Tejumola David Oluwatimileyin</b>, a creative junkie from Lagos State. I break barriers with codes & <b>UI/UX designs</b>.<br/> I graduated as a <b>software engineer</b> from Africa University of Technology and Management,
-        Benin Republic. My Major tools & development languages are <b>JAVA</b>, <b>PHP</b> and <b>Swift</b>.<br/></p>
-        <p><b># Avid Programmer<br/># Google Android Associate Developer.<br> # Learning fullstack javascript (MEAN Stack).<br/># Music Lover<br/> </b></p>
-
-        <form class="contact" method="POST">
-            <!-- <h3>Contact Me</h3> -->
-            <input class="sendersname" type="text" name="name" id="name" placeholder="Name" required>
-            <textarea class="message" name="message" id="message" placeholder="Leave a message" required></textarea>
-            <input type="submit" class="submit" value="Send a Message">
-        </form>
-
-        <div class="footer-wrapper">
-            <div class="task">
-                <a href="https://github.com/timi-codes/HNG-Internship-Test" target="_blank">
-                Stage One Task<i class="fa fa-link"></i></a>
-            </div>
-</div>
-
-</div>
-
-</div>
-</div>
 </body>
 
 </html>

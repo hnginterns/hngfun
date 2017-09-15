@@ -1,0 +1,29 @@
+body{
+	background-color: #ddd;
+	/*border: 5px solid black;*/
+}
+div.image{
+	/*border: 5px solid black;*/
+	text-align: center;
+}
+img{
+	width: 300px;
+	height: 300px;
+	border-radius: 1em;
+}
+
+.names p{
+	font-size: 1.5em;
+	width: 25%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.biography{
+	font-size: 1em;
+	font-family: verdana, sans-serif;
+}
+
+span{
+	font-weight: bold;
+}

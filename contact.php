@@ -173,8 +173,8 @@ include "header.php";
   <section class="contact-info">
     <div>
       <p class= "title">OFFICE ADDRESS</hp>
-      <p class = "subheading-text"><span><i class="fa fa-map-marker"></i></span><span>No 3, Birrel Avenue, Off Herbert Macaulay way, Sabo, Yaba Lagos</span></p>
-      <p class = "subheading-text"><span><i class="fa fa-phone"></i></span><span>+234-700-880-8800</span></p>
+      <p class = "subheading-text"><span><i class="fa fa-map-marker"></i></span><span>No 21 Apostolic Road Edem Akai, off Edet Akpan Avenue Uyo, Akwa Ibom State</span></p>
+      <p class = "subheading-text"><span><i class="fa fa-phone"></i></span><span>+234-8069173191</span></p>
       <p class = "subheading-text"><span><i class="fa fa-envelope-o"></i></span><span>internship@hotels.ng</span></p>
     </div>
     <div class="social-links">

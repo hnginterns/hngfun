@@ -4,8 +4,8 @@ body{
 
 #container{
 	background-color: #ffffff;
-	margin-left: 200px;
-	margin-right: 200px;
+	margin-left: 15%;
+	margin-right: 15%;
 }
 
 h1{
@@ -16,17 +16,18 @@ h1{
 }
 
 img{
-	width: 450px;
+	width: 35%;
 	height: auto;
 	border-radius: 50%;
 }
 
-div.images{
+.images{
 	text-align: center;
+	line-height: 30px;
 }
 
 img.icon{
-	width: 30px;
+	width: 4%;
 	height: auto;
 }
 a:link{
@@ -34,10 +35,7 @@ a:link{
 	text-decoration: none;
 	text-align: center;
 }
-#about{
-	width: 500px;
-	margin-left: 200px;
-}
+
 h2{
 	text-align: center;
 	color: #000000;
@@ -48,4 +46,29 @@ p.details{
 	color: #000000;
 	font-family: "Comic-sans";
 	font-weight: 15px;
+}
+
+#wrapper{
+	display: -webkit-flex;
+	display: flex;
+	padding: 0% 5%;
+	background-color: lightgrey;
+}
+
+.left{
+	-webkit-flex: 1;
+	flex: 1;
+	margin: 2%;
+	padding-top: 4px;
+}
+
+.right{
+	-webkit-flex: 1;
+	flex: 1;
+	margin: 2%;
+	text-align: center;
+}
+
+.msg{
+	display: none;
 }

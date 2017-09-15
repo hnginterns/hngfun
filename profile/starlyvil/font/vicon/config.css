@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'vicon';
+  src:  url('fonts/vicon.eot?y9dbff');
+  src:  url('fonts/vicon.eot?y9dbff#iefix') format('embedded-opentype'),
+    url('fonts/vicon.ttf?y9dbff') format('truetype'),
+    url('fonts/vicon.woff?y9dbff') format('woff'),
+    url('fonts/vicon.svg?y9dbff#vicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="vicon-hng-"], [class*=" vicon-hng-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'vicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.vicon-hng-spinner2:before {
+  content: "\e987";
+}
+.vicon-hng-spinner3:before {
+  content: "\e988";
+}
+.vicon-hng-slack:before {
+  content: "\e901";
+}
+.vicon-hng-compass:before {
+  content: "\e955";
+}
+.vicon-hng-spinner:before {
+  content: "\e986";
+}
+.vicon-hng-facebook:before {
+  content: "\ea9d";
+}
+.vicon-hng-whatsapp:before {
+  content: "\ea9f";
+}
+.vicon-hng-twitter:before {
+  content: "\eaa2";
+}
+.vicon-hng-github:before {
+  content: "\eabc";
+}
+.vicon-hng-google:before {
+  content: "\ea95";
+}
+.vicon-hng-facebook2:before {
+  content: "\ea9e";
+}
+.vicon-hng-telegram:before {
+  content: "\eaa1";
+}
+.vicon-hng-phone:before {
+  content: "\e94e";
+}
+.vicon-hng-location:before {
+  content: "\e953";
+}
+.vicon-hng-mail-envelope-closed:before {
+  content: "\e900";
+}
+

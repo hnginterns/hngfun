@@ -1,5 +1,4 @@
 
-
 body{
     background-color:gray;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -8,12 +7,14 @@ body{
 #header1{
     align-self: center;
     color: white;
+    margin-left: 40%;
 
 }
 .div0{
     background-color: black;
     margin-left: 10%;
     margin-right: 10%;
+    align-content: center;
 
 }
 #myname{
@@ -28,6 +29,7 @@ body{
     padding: 4%;
     border-image: round;
     border-radius: 25px;
+    margin-left: 30%;
 
 
 }

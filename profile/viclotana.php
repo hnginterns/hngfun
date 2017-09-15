@@ -1,5 +1,12 @@
 
 `<?php
+
+$dbname ='hng';
+$pass = '@hng.intern1';
+$username ='intern';
+$host ='localhost';
+
+
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
   
 
@@ -20,21 +27,24 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
  if(empty($error)) {
 
-   $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    $con = new PDO($dsn, $config['username'], $config['pass']);
+   //$config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+    $dsn = 'mysql:host='.$host.';dbname='.$dbname;
+    $con = new PDO($dsn, $username, $pass);
 
    $exe = $con->query('SELECT * FROM password LIMIT 1');
     $data = $exe->fetch();
     $password = $data['password'];
 
-   $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+  // $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+
+   $uri = 'http://hng.fun/sendmail.php?password=' . $pass . '&subject=' . $subject . '&body=' . $message . '&to=viclotana@gmail.com';
 
    header("location: $uri");
 
  }
 }
 ?>`
+
 
 
 <!DOCTYPE html>

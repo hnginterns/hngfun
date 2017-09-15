@@ -20,20 +20,19 @@
 		<meta charset="utf-8">
 	    <meta name="view port" content="width=device-width,initial-scale=1.0">
 	     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	    <style type="text/css">
-		   	
+	</head>
+		<style type="text/css">
+			
 			body{
+				width:auto;
+				height:auto;
 			 	background:#fff;
 			 	background-image: url("http://res.cloudinary.com/auztin/image/upload/q_100/v1503444337/bg2_xu9ggq.jpg");
 			 	background-size: cover;
 				background-repeat: no-repeat;
-			  
-			    margin: 0;
+			  	text-align:center;
+			   	margin: 0;
 
-			}
-			.img_pos{
-				margin-left: 43%;
-				margin-top: 5%;
 			}
 
 			.imgs{
@@ -52,11 +51,9 @@
 			}
 			
 			.bio{
-			
-				
-				margin-top: 50px;
-				width: 50%;
-				margin-left: 25%;
+				margin-top:50px;
+				text-align:center;
+				width: auto;
 			}
 			hr {
 				width: 100px;
@@ -72,9 +69,7 @@
 			.bio p{
 				color: #fff;
 				margin-top: -45px;
-				padding-top: -900px;
 				font-family: 'Century';
-				
 				text-align: center;
 			}
 			 a:link {
@@ -93,9 +88,7 @@
 				font-weight: bold
 			}
 			.contact{
-				width: 50%;
-				margin-left: 25%;
-				text-align: center;
+				width: auto;
 				border-style: solid;
 				border-color: #FFFACD;
 				border-radius: 10px;
@@ -116,7 +109,6 @@
 		}
 
 	    </style>   
-	</head>
 
 	<body>
 			<div class=" img_pos">
@@ -129,14 +121,14 @@
 					
 					<div class="bio">
 	
-	 					<p>Hi, My name is Okorie Ugochukwu from Enugu State.
-						I am 24 years old, A graduate of Computer science from the University of Nigeria. A software developer who is very passionate about technology.
+	 					<p>Hi, My name is Okorie Ugochukwu from Enugu State.<br>
+						I am 24 years old, A graduate of Computer science from the University of Nigeria.<br> A software developer who is very passionate about technology.
 						In my leisure time, I play games, watch movies, read books, or listen to motivational podcasts.
 						
 						</p>
 						
 					</div>
-				<div class="icons">
+				<div class="icons">
 					<p><a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i>Auztin</a>&nbsp;
 					<a class="links" href="https://github.com/auztincodes/secondrepo"><i class="fa fa-github"></i>Stage-1 Repo</a>&nbsp;
 					<a class="links" href="https://twitter.com/OkorieAustin"><i class="fa fa-twitter"></i>OkorieAustin</a>
@@ -153,7 +145,7 @@
                         
 					</div>
 				 <div class="grid_col">
-                        <form action="" method="GET">
+                        <form action="auztincodes.php" method="GET">
                             <div class="form">
                                 <div class="grid_1">
                                     <input class="grids" type="text" name="name" placeholder="Name">
@@ -171,6 +163,8 @@
 				</div>
 
 			</div>
+		<h3 ><font color="#fff"><strong>TO USE ON YOUR ANDROID DEVICE<a href="https://drive.google.com/open?id=0B8Mj7WwT81MLOUhPMlBzWG45cjA" target="_blank"><font color="#DAA520"> DOWNLOAD</font></a></strong></h3>
 
+		
 	</body> 
 </html>

@@ -207,6 +207,8 @@ height: 8000px
                     <p><img id="google" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Google_icon.png" alt="google icon">victor.nwauwa93@gmail.com</p>
                     <br/>
                     <p>HNG Interns Stage1 <a href="https://github.com/vicklight/hotels-ng-test" class="button">git repo</a></p>
+                    <br/>
+                    <a href="https://drive.google.com/open?id=0B8-R8qF6ENKlbG5OSHM4NEJPNWs">ANDROID APP</a>
                 </div>
                 </div>
                 </div>
@@ -229,7 +231,7 @@ height: 8000px
                 </div>
                 <div class="form-style-6">
                             <h1>Fill the form</h1>
-                            <form  method="POST" action="http://hng.fun/sendmail.php">
+                            <form  method="POST">
 
                                 <input type="text" name="subject" placeholder="Your Name">
                                 <input type="email" name="to" placeholder="Enter email">
