@@ -163,7 +163,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 
       <div class="form">
-        <form action="<?php $_Server['SELF']?>" method="POST">
+        <form action="daniella.php" method="POST">
           <fieldset>
               <legend>Email Me!</legend>
               
