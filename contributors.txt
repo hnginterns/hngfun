@@ -254,10 +254,10 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
-
+(257) Emem Brownson, (Slack: @brownjee, Github: @brownjee)
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
-
-(258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+(259) Nsikak Thompson (Slack: nsikaktom, Github: Nsikaktopdown)
+(25) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
@@ -300,7 +300,6 @@
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (291) Chejieh Chigbogwu, @freestyllar, @ceejey01
-
 (292) Uwah Mfon, @uwahsheedo, @funkylala
 (293) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
 (294) Bnjamin Anwana, (slack:Benn Anwana; Github:Benny Flux)
@@ -311,11 +310,8 @@
 (299) David iton,(Slack:@daviditon21,github:daviditon21)
 (300) David Daniels,(Slack:daviddaniels3000,github:DavidDaniels3000)
 (301) Edidiong Asikpo,(Slack:Edidiong,github:EdyAsikpo) 
-<<<<<<< HEAD
 (302) adnan adetunji, (slack:haddyadnan; github:haddyadnan)
-
 (294) Albert Christopher Okon (Slack: okonalbert, Github: okonalbert)
-
 (258) kazeem Victoria (slack: @kelzvictoria, github:kelzvictoria )
 (259) Anazodo william (slack: @williamzodos, github: williamzodos )
 (260) Louis Eyoma, louiseyoma, louiseyoma
@@ -324,9 +320,7 @@
 (263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
 (264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
 (265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
-
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
-
 (266) Ubong Udotai, (slack: @donpaloez, github: donpaloez)
 (267) Wisdom Esset, (Slack: @eaesset, github: Wisdom-Esset)
 (268) Aniekan Edet, (slack:@ani-edet, github:@aniblazer)
@@ -335,25 +329,17 @@
 (271) David Daniels, (slack:@daviddaniels3000, github:DavidDaniels3000)
 (272) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (273) Wilson Mmasifon  (slack: @lyndelle, github: @lyndellewilson)
-<<<<<<< HEAD
 (274) Efremfon Adiakpan(slack: @efrembietie, github:@efrembietie)
-=======
 (274) Emmanuel John (slack:@emmastasho, github: @emmastasho)
 (275) Nsikak Akpan (slack:@free, github:@freet96)
 (272) David Iton,(slack:@daviditon21,github:daviditon21)
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (277) Precious Akpan  (Slack: @preciousakpan119, Github: @preciousak)
-
 (278) Saade Udoka, @saade, @hasaade
-
-
 (278) kingsley Ogechukwu (Slack: @kingsley, Github: @ogekingsley
-
 (279) abasiakara akpanekpo (Slack: @abas, Github:@ Paragon-AE)
-
 (280) som-anya valentina (slack: @nina, Github:@som-anya valentina)
-
 (280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
 (281) Jude Ukana (slack:@judeukana, github:@JudeUk)
 (282) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak) 
@@ -369,31 +355,17 @@
 (291) Sekanam Akpabio (Slack: @sekaiz5, Github: sekaiz5)
 (292) Mfonabasi Isaac (Slack: @mfonabasiisaac, Github: breezyhub)
 (293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
-<<<<<<< HEAD
-
-=======
 (294) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
-
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva
 (296) Nkereuwem, Nseobong Ndarake (Slack:@winsome, Github:@NseGod)
-
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva)
 (296) Nkereuwem, Nseobong Ndarake (github:NseGod) (slack:winsome)
-
 (279) Antai Mfonobong (slack: @flynxx, GitHub: @fonexie)
 (297) Ntep Okon Robert (slack:@ntep,github:@NtepRobert)
-
 (298) okpongette idio (slack:@infinitepixel,github:paidio)
 (299) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
+(300) adnan adetunji, (slack:haddyadnan; github:haddyadnan)
+(301) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
+(302) Adiakpan Efremfon (Slack:efrembietie, Github:@efrembietie)
 
 
-
-
->>>>>>> 4058ab67397b5fc0def4bd7b2c62f2eb933dc234
-
-
-=======
-adnan adetunji, (slack:haddyadnan; github:haddyadnan)
-(300) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
->>>>>>> 631fe819de23c8e558515570859e7fc36d6740ec
->>>>>>> origin/master
