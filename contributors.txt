@@ -1,4 +1,4 @@
-﻿(1) Nwanze Franklin, franko4don, @franko4don
+(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -6796,4 +6796,5 @@
 (306)  adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (307) Victor Umonto (slack: @victorumonto; github:@github)
 (308) Essien Hogan (slack:@hogan26;github:@blueseedhub)
-(309) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
+(309) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
+(310) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
