@@ -1,5 +1,242 @@
-.container{
-  width: 100;
-  background-color: #EBECEB;
+body{font-family: 'Roboto', sans-serif; color: #424142;}
+
+.container-fluid{
+  width: 100%;
   text-align: center;
+}
+
+.profile{
+  min-height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+          -webkit-animation-duration: 2s;
+                  animation-duration: 2s;
+          -webkit-animation-iteration-count: 1;
+                  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.profile-pic{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+  background: url(https://avatars2.githubusercontent.com/u/25535834?v=4&s=460), #C4C4C4;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+}
+
+.profile-caption{
+  text-align: center;
+  position: relative;
+}
+
+h2{
+  color: white;
+  margin-top: -20px;
+  padding: 2px;
+  color: #CE3538;
+
+}
+
+
+
+.line{
+  position: relative;
+  top: -20px;
+		width: 250px;
+		height: 0px;
+    margin: 0 auto;
+		border: 1px solid #424142;
+	}
+
+
+.down-arrow{
+  position: relative;
+  top: 30px;
+  margin-top: 10px;
+  margin: 0 auto;
+  color: #CE3538;
+  transition: 0.4s all ease;
+
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+
+  .contact-container{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+	position:relative;
+	  top:-5px;
+  }
+
+  .contact-text{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 80px;
+    padding: 20px;
+    width: 40%;
+    font-size: 15pt;
+  }
+
+  .line1{
+  position: relative;
+  top: 5px;
+    width: 250px;
+    height: 0px;
+    margin: 0 auto;
+    border: 1px solid #CE3538;
+  }
+
+  .form-container{
+    position: relative;
+    width: 50%;
+    top: 150px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  a{
+    margin: 5px;
+  }
+
+  label{
+    margin:5px;
+    padding:5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #412135
+
+  }
+
+  .form-input{
+    padding:5px;
+    font-size: 11pt;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    border-bottom: 1px solid #424142;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+      text-align: center;
+      transition: 0.5s all ease;
+  }
+
+  .form-input:focus{
+    padding: 10px;
+    outline: none;
+    border-bottom: 2px solid #CE3539;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  }
+
+  .subject{
+    width: 40%;
+  }
+
+  .body{
+    width: 60%;
+  }
+
+  .send-button{
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    background-color: #CE3539;
+    padding:10px;
+    border:none;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+     color: #FFFFFF;
+  }
+
+
+  @media(max-width: 768px){
+    .contact-text{
+      width: 80%
+    }
+  }
+
+
+
+@media (max-width:425px) {
+  .profile-pic{
+    width: 250px;
+    height: 250px;
+    background-size: 250px;
+  }
+  .contact-text{
+    width: 94%;
+    font-size: 12pt;
+    padding: 5px;
+  }
+  .line1{
+    width: 200px;
+  }
+   .subject{
+    width: 80%;
+  }
+
+  .body{
+    width: 100%;
+  }
 }
