@@ -37,7 +37,7 @@
                         </div>
                         <div class="content--link-to-stage1">
                                <p><i class="fa fa-2x fa-github"></i> <a href="https://github.com/prosperoking/HNGIntern">Stage One Result</a>
-                                <i class="fa fa-2x fa-dropbox"> </i><a href="https://dl.dropbox.com/s/wul3obybn5fksoz/app-debug.apk"></a>Andriod App</a>
+                                <i class="fa fa-2x fa-dropbox"> </i><a href="https://dl.dropbox.com/s/wul3obybn5fksoz/app-debug.apk">Andriod App</a>
                                   <button class="contact__button">Contact me</button></p>
                         </div>
                 </div>
