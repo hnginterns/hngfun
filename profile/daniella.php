@@ -4,7 +4,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
 
     $subject = $_POST['subject'];
-    $to  = 'daniella@gmail.com';
+    $to  = 'dmpire2@gmail.com';
     $body = $_POST['body'];
 
     if($body == '' || $body == ' ') {
@@ -163,11 +163,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 
       <div class="form">
-        <form action="victorbest34.php" method="POST">
+        <form action="daniella.php" method="POST">
           <fieldset>
               <legend>Email Me!</legend>
               
-                  <label>To :   </label><input name="to" id="to" class="victor-input" value="victorchimobi@yahoo.com" required><br>
+                  <label>To :   </label><input name="to" id="to" class="dannys-input" value="dmpire2@gmail.com" required><br>
                   <label>From : </label><input name="customer_mail" id="customer_mail" class="dannys-input" placeholder="Your E-mail" required> <br>
                  <label>Subject :</label><input name="subject" id="subject" class="dannys-input" required><br>
                   <label>Body: </label><br>
