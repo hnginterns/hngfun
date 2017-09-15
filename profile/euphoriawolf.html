@@ -33,30 +33,31 @@
 			margin-top: 30px;
 			font-weight: 800;
 		}
-				input[type=text], select, textarea {
-		    width: 100%; 
-		    padding: 12px;  
-		    border: 1px solid #ccc;
-		    border-radius: 4px; 
-		    box-sizing: border-box; 
-		    margin-top: 6px; 
-		    margin-bottom: 16px; 
-		    resize: vertical 
-		}
-
-				input[type=submit] {
-		    background-color: #4CAF50;
-		    color: white;
+		  .contact-form input,
+		  .contact-form textarea 
+		  {
+		    width: 80%;
+		    margin-top: 15px;
 		    padding: 12px 20px;
-		    border: none;
-		    border-radius: 4px;
+		    border: .5px solid #ccc;
+		    border-radius: 5px;
+		    background-color: #eaeaea;
+		  }
+		  input[type=submit] 
+		  {
+		    background-color: #26acd9;
+		  }
+		  input[type=submit]:hover 
+		  {
+		    background: white;
+		    border: .5px solid #ccc;
 		    cursor: pointer;
-		}
-
-		
-		input[type=submit]:hover {
-		    background-color: #45a049;
-		}
+		  }
+		  textarea 
+		  {
+		    font-family: inherit;
+		    resize: none;
+		  }
 
 		
 		.container {
@@ -87,24 +88,30 @@
 
 	
 	<div class="container">
-		<h4>Contact</h4>
-	  <form  method="post" action="euphoriawolf.php">
+    <section class="contact">
+    
+      <section class="contact-form" >
+        <div class = "card-form">
+          <form  action="euphoriawolf.php" method="post" >
+            <p class = "title" >CONTACT ME</p>
+          
+              <input type="email" class="textform" name="to" placeholder="Email address">
+              <br>
 
-	    <label for="fname">First Name</label>
-	    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+              <input type="text" class="textform" name="subject" placeholder="Subject">
+              <br>
 
-	    <label for="sject">Subject</label>
-	    <input type="text" id="sject" name="lastname" placeholder="your subject">
+             
+              <textarea class="textform" name="body" placeholder="Write about subject" style="height:120px"></textarea>
+              <br><br>
 
-	    
-
-	    <label for="msg">Message</label>
-	    <textarea id="msg" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-	    <input type="submit" value="Submit">
-
-	  </form>
-	</div>
+              <input type="submit" name="process" value="Submit">
+          </form>
+        </div>
+      </section>
+   </section>
+  </div>
 
 		<h4>Social</h4>
 		

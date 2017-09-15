@@ -1,39 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Profile</title>
-  <style>
-  body{
-	background-color: white;
+   <title>My Profile</title>
+<style>
+
+body{background: ghostwhite;
+}
+*{padding: 0px;
+  margin: 0px;
+}
+.container{
+  width: 100%;
+  height: 100px;
+  border: 0px solid black;
 }
 
 .card{
-	border: 2px 2px 2px 10px;
-	border-color: solid white;
-	text-align: center;
-	width: 300px;
-	height: 400px;
-	float: center;
-	float-left:400px;
-	float-right:150px;
-	box-shadow: 10px 10px 5px #888888;
+   border: 2px 2px 2px 10px;
+   border-color: solid white;
+   text-align: center;
+   width: 100%;
+   height: 100px;
+   float: center;
+   float-left:400px;
+   float-right:150px;
+   background: #fff;
+}
+
+
+
+header{
+           text-align: center;
+           font-size: 30px;
+           font-family: verdana;
+           border: 1px solid #fff;
+  
+       }
+label{
+   width: 90%;
+   display: block;
+   padding: 1%;
+   color: #f90;
+}
+
+
+.form-control{
+   width: 50%;
+   margin-left: 1%;
+   padding: 2%;
+   border: 1px solid #eee;
+}
+form input:focus{
+   box-shadow: 1px 1px 5px rgba(110,110,110,0.34);
+}
+legend{
+   font-family: verdana;
+   font-size: 20px;
+   color: #aaa;
+}
+fieldset{
+   border: 1px solid #efefef ;
+   background-color: #efefef;
+}
+.btn{
+   padding: 1%;
+   color:white;
+   border: 1px solid transparent;
+   margin:1%;
+   font-weight: 900;
+   width: 200px;
+}
+.success{
+   background: rgba(50, 200, 225, 0.5) none scroll repeat 0% 0%;
+}
+
 }
 </style>
 </head>
-<body>
+
+
+   <body>
 <div class="container">
 <div class="wrap">
-<div class="card">
- <a href="#"><img src="https://avatars0.githubusercontent.com/u/31765160?v=4&s=400"  alt="azeezah" style="width:100px; height:100x;"></a>
+<div class="card ">
+<a href="#"><img src="https://avatars0.githubusercontent.com/u/31765160?v=4&s=400"  alt="azeezah" style="width:100px; height:100px;"></a>
 <header> Azeezah Abdulwahab <br>@azeezah</header>
-<section>
-<p>Azeezah Abdulwahab is a software developer. She is Studying Electronic/Electrical Engineering at Ladoke Akintola University of Technology, Ogbomoso, Nigeria. She is currently a student and manages her own online shop. She is a passionate entrepreneur, tech enthusiast, book lover, always strives to be a better version of herself and loves to add value wherever she finds herself. She loves reading, writing, hiking and meeting new people. <br> <a href="https://medium.com/hng-internship/">first-steps-for-the-internship/</a></p>
 
+<p>Azeezah Abdulwahab is a future software developer. She is Studying Electronic/Electrical Engineering at Ladoke Akintola University of Technology, Ogbomoso, Nigeria. She is currently a student in her finals and manages her own online shop. She is a passionate entrepreneur, tech enthusiast, book lover, always strives to be a better version of herself and loves to add value wherever she finds herself. She loves reading, writing, hiking and meeting new people. <br> <a href="https://medium.com/hng-internship/">first-steps-for-the-internship/</a></p>
 
-</section>
-</div>
-</div>
-</div>
+                
+
+               <h2>CONTACT ME</h2>
+                   <fieldset>
+                       <form method="post" role="form" action="azeezah.php">
+
+                           <div class="block">
+                               <label for="username"></label>
+                               <input type="text" placeholder="Your subject" class="form-control" name="subject">
+                           </div>
+                           <div class="block">
+                           <label for="username"></label>
+                               <input type="e-mail" placeholder="Your E-mail" class="form-control" name="email">
+                           </div>
+                           <div class="block">
+                           <label for="username"></label>
+                               <textarea  name="message" cols="20" rows="10" class="form-control" placeholder="type your message here" required></textarea>
+                              
+                           </div>
+
+                           <div class="block">
+                           <button type="submit"  value="SEND" class="btn success">Submit your message here</button>
+                           </div>
+                       </form>
+                   </fieldset>    
+                  
+       </div>
+       </div> 
+       </div>
 
 
 </body>
