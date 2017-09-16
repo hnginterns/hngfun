@@ -1,30 +1,12 @@
 
-
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
-    $error = [];
-    $subject = $_POST['subject'];
-    $to  = 'kelzvictoria@gmail.com';
-    $body = $_POST['message'];
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
-    }
-    if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      header("location: $uri");
-    }
-  }
- ?>
+  $config = include('../config.php');
+  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+  $con = new PDO($dsn, $config['username'], $config['pass']);
+  $exe = $con->query('SELECT * FROM password LIMIT 1');
+  $data = $exe->fetch();
+  $password = $data['password'];
+?> 
 
 
 
@@ -325,7 +307,7 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="" method= "POST" >
+                            <form class="form" id="form1" action="../sendmail.php" method= "get" >
 
                                 <p class="name">
                                     <input type="subject" title="" class="regInput" placeholder="your subject  " >
@@ -341,7 +323,7 @@
 
                                 <div class="submit">
                  
-                                  <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
+                                  <input type="submit" value="Send" class="regInput-3 text-center" name="submit" required="" />
                                 </div>
                             </form>
                         </div>
