@@ -41,9 +41,9 @@
 
                 <nav id="top_nav">
                     <ul>
-                        <li><img src="git.png" class="logo">JudeUk</li>
-                        <li><img src="twitter.png" class="logo">@Judee_boi</li>
-                        <li><img src="Slack_Icon.png" class="logo">Judeukana</li>
+                        <li><img src="http://git-scm.com/images/logos/downloads/Git-Icon-Black.png" class="logo">JudeUk</li>
+                        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgkuZuo-HrVw9YHjPuCMjA1yclglctdY8z5lZg247a50rVIPj" class="logo">@Judee_boi</li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" class="logo">Judeukana</li>
 
                     </ul>
                 </nav>
