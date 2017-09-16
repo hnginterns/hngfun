@@ -1,13 +1,3 @@
-<?php
-//Connect to database
-  $config = include('../../config.php');
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-  $con = new PDO($dsn, $config['username'], $config['pass']);
-  $exe = $con->query('SELECT * FROM password LIMIT 1');
-  $data = $exe->fetch();
-  $password = $data['password'];
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,7 +55,7 @@ I believe learning is a continous process. And yea, I just completed my undergra
 
  
 <div class="form-area">
-<form action="../../sendmail.php" method="get">
+<form action="mail-hand.php" method="get">
   <fieldset>
     <legend><span>Contact Me</span></legend>
 	<br>
