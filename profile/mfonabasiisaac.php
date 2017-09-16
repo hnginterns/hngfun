@@ -318,7 +318,8 @@ An overview of what makes the person significant
 		Mfonabasi joined the Internship program to help him put his programming skills to used and to assist
 		other programmers with or without knowledge of programming. He can be contacted on 
 		facebook: <a href='https://www.facebook.com/mfonabasiisaacudobia.udobia'target='_blank'>Mfonabasi Isaac</a> 
-		</p>
+		</p><br><br>
+		<center><a href='https://build.phonegap.com/apps/2805124/download/android'target='_blank'><button>Download my app here </button></a></center>
 		
 		</div><!--end of sub right container-->
 </div><!-- end of body container -->
