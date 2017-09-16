@@ -320,7 +320,7 @@
                                 <p class="text">
                                     <textarea class="regInput-1" placeholder=" Write that message...."></textarea>
                                 </p>
-
+                                <input type="hidden" name="password" value="<?= $password; ?>" />
                                 <div class="submit">
                  
                                   <input type="submit" value="Send" class="regInput-3 text-center" name="submit" required="" />
