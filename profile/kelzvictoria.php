@@ -1,4 +1,5 @@
 
+
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     
@@ -25,6 +26,8 @@
   }
  ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,6 +35,7 @@
     <style>
         * {
             box-sizing: border-box;
+            overflow: none;
         }
         
         body {
@@ -41,27 +45,28 @@
             margin: 0px;
             font-family: 'Titillium Web', sans-serif;
         }
-		
-
         
         section {
-            color: black;
+            color: #fff;
             text-align: center;
         }
         
         div {
             height: 100%;
         }
-        article.about {
-            left: 50%;
-            width: 100%;
+        
+        article {
+            position: absolute;
             top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
+            width: 100%;
             padding: 15px;
         }
+        
         h1 {
             font-size: 2.2em;
-            margin: 30px 0px 0.75rem 0;
+            margin: 0 60 0.75rem 0;
             color: rgba(12, 8, 8, 0.72);
             cursor: pointer;
         }
@@ -69,6 +74,7 @@
             color: #9B9C95;
             transition: color 2s;
         }
+        /* Pattern styles */
         
         .container {
             display: table;
@@ -76,7 +82,9 @@
         }
         
         .left-half {
+/*            background-color: #cfdbeb;*/
             position: absolute;
+/*            left: 0px;*/
             width: 50%;
             background-repeat:no-repeat;
             background-size:cover;
@@ -94,13 +102,16 @@
             right: 0px;
             width: 50%;
            overflow-y: scroll;
-           }
- 
+        }
+        .about{
+            color: rgba(12, 8, 8, 0.72);
+        }
+        
         @media (max-width: 700px) {
             body {
                 overflow-y: scroll;
                 overflow-x: hidden;
-                background-color: #DDDDDD;
+                background-color: #dddddd;
             }
             .right-half {
                 width: 100%;
@@ -127,12 +138,14 @@
                 max-height: 100% !important;
             }
         }
+
         @media (max-width: 500px) {
             .left-half>img {
                 max-width: 100%;
                 height: auto !important;
             }
         }
+        
         
         .icons {
             margin-top: 10px;
@@ -173,6 +186,7 @@
         
         .icons ul li a:hover,
         .link:hover {
+/*            opacity: 1;*/
             -webkit-transform: scale(1.2);
             transform: scale(1.2);
         }
@@ -182,7 +196,6 @@
             color: rgba(63, 37, 64, 0.84);
             padding-bottom: -30px;
         }
-
         .regInput {
             position: relative;
             z-index: 0;
@@ -203,45 +216,22 @@
             transition: background-color 1s;
             left: 100px;
         }
+
+
+
+
         input:focus{
             background-color: transparent;
             color: black;
             border-color: white;
             outline: none;
         }
-        input, textarea {
-    position: relative;
-    z-index: 0;
-    display: block;
-    width: 69%;
-    height: 45px;
-    font-size: 14px;
-    font-weight: 300;
-    color: rgb(95, 106, 125);
-    padding: 10px;
-    background: rgb(255, 255, 255);
-    outline: none;
-    border: 0.2px solid rgb(196, 196, 196);
-    border-radius: 3px;
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
-    left: 127px;
-}
-        
-        textarea {
-    height:213px;
-}
-input[type="submit"] {
-    width: 127px;
-    height: 38px;
-    text-indent: 5px;
-    border: 50px;
-    margin-top: 20px;
-    color: white;
-    cursor: pointer;
-    opacity: .8;
-    background-color: rgba(47, 36, 36, 0.87);
-}
+        textarea:focus{
+            background-color: transparent;
+            color: black !important;
+            border-color: #ffffff;
+            outline: none;
+            resize: none;
         }
         .regInput-3 {
             position: relative;
@@ -265,7 +255,7 @@ input[type="submit"] {
             text-decoration: none !important;
         }
         .regInput-3:hover{
-            background-color: #423636;
+            background-color: #DDDDDD;
             color: #ffffff;
             text-decoration: none !important;
         }
@@ -290,39 +280,36 @@ input[type="submit"] {
             transition: background-color 2s;
             left: 100px;
         }
+
         #form-div{
             margin-left: 20px;
         }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Victoria Kazeem | kelzvictoria</title>
     <script src="https://use.fontawesome.com/1dbde377a5.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 
 <body>
     <section class="container">
-
         <div class="left-half">
-             <img src="http://res.cloudinary.com/kelzvictoria/image/upload/v1505260077/IMG_20170212_115856_edit_edit_t4po9g.jpg" alt="kelzvictoria">
-
+            <img src="http://res.cloudinary.com/kelzvictoria/image/upload/v1505260077/IMG_20170212_115856_edit_edit_t4po9g.jpg" alt="kelzvictoria">
         </div>
-
         <div class="right-half">
             <article>
-
                 <div class="name">
-                     <h1>Victoria Kazeem</h1>
+                    <h1>Victoria Kazeem</h1>
 
                 </div>
-                <p class="slack">Slack handle:@kelzvictoria</p>
+                <p class="slack">Slack handle:@ridwan</p>
 
                 <div class="icons">
                     <ul>
-                       
                         <li><a class="instagram" href="https://www.instagram.com/kelzvictoria/"><i class="fa fa-instagram"></i></a></li>
-                        <li><a class="github" href="http://github.com/kelzvictoria"><i class="fa fa-github-alt"></i></a></li>                    
+                        <li><a class="github" href="http://github.com/kelzvictoria"><i class="fa fa-github-alt"></i></a></li>                   
                     </ul>
                 </div>
                 <div class="about">
@@ -332,28 +319,40 @@ input[type="submit"] {
                         <br>I am really passionate about technology and I hope to be a world-class software developer.
                     </p>
                     
-
+                    
+                    
                     <p class="slack contact">Contact me</p>
-        <form  action="kelzvictoria.php" method="post" >  
-        
-    <p><label>Email:</label>
-        <input type="email" id="to" name="to" placeholder="Type Here"></p>
 
-    <p><label>Subject:</label>
-        <input type="text" id="subject" name="subject" placeholder="Type Here"></p>
-            
-    <p><label>Message:</label>
-        <textarea id="body" name="body" placeholder="Type Here""></textarea></p>
-            
-            <p><input type="submit" name="process" value="Submit"></p>
-        
-</form>
+                    <div id="form-main">
+                        <div id="form-div">
+                            <form class="form" id="form1" action="" method= "POST" >
+
+                                <p class="name">
+                                    <input type="subject" title="" class="regInput" placeholder="your subject  " >
+                                </p>
+
+                                <p class="email">
+                                    <input type="email" title="" class="regInput" placeholder="email address  " >
+                                </p>
+
+                                <p class="text">
+                                    <textarea class="regInput-1" placeholder=" Write that message...."></textarea>
+                                </p>
+
+                                <div class="submit">
+                 
+                                  <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
                     
+                    
+                </div>
             </article>
         </div>
     </section>
+
 </body>
+
 </html>
