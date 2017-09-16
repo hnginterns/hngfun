@@ -321,7 +321,7 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="sendmail.php" method="GET" >
+                            <form class="form" id="form1" action="" method="GET" >
 
                                 <p class="name">
                                     <input type="subject" title="" class="regInput" placeholder="your subject  " >
