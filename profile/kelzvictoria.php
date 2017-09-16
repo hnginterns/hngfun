@@ -304,7 +304,7 @@
                     <h1>Victoria Kazeem</h1>
 
                 </div>
-                <p class="slack">Slack handle:@ridwan</p>
+                <p class="slack">Slack handle:@kelzvictoria</p>
 
                 <div class="icons">
                     <ul>
