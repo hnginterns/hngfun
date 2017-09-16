@@ -50,7 +50,7 @@
                 
                 <section id=main_section>
                     <article>
-                        <img src="https://web.facebook.com/photo.php?fbid=191275324743700&set=pb.100015837014432.-2207520000.1505549286.&type=3&size=640%2C640" id="pp">
+                        <img src="https://scontent.flos6-1.fna.fbcdn.net/v/t1.0-9/20525925_191275324743700_8093226816472092893_n.jpg?_nc_eui2=v1%3AAeE6trVeyO3buaoGQ1dhvCSO4FnGFEysg2Fx2Vs2mIzPwqUXMz3PZi_PeJRdvl7o7qNZFRBpMONHslz2Zrry9tv4idPRGDWWcSkPKmvrH-rRrg&oh=3fa5ecb3fd6c61268497c3c3c850bb46&oe=5A45F2FE" id="pp">
                         <br>
                         <br>
                         <h1>Personal Profile</h1>
