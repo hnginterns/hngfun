@@ -1,27 +1,27 @@
-<?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-    $subject = $_POST['subject'];
-    $to  = 'amara.odunze@gmail.com';
-    $body = $_POST['message'];
-    if($body == '' || $body == ' ') {
-        $error[] = 'Message cannot be empty.';
-    }
-    if($subject == '' || $subject == ' ') {
-        $error[] = 'Subject cannot be empty.';
-    }
-    if(empty($error)) {
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-        header("location: $uri");
-    }
-}
- ?>
+<?php 
+   $config = include('../config.php');
+       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+       $con = new PDO($dsn, $config['username'], $config['pass']);
+   
+       $exe = $con->query('SELECT * FROM password LIMIT 1');
+       $data = $exe->fetch();
+       $password = $data['password'];
+   
+   
+   if (isset($_GET['sendmessage'])) {
+   
+           $subject = "Hello";
+           $password = htmlentities(strip_tags(trim($password)));
+           $body = htmlentities(strip_tags(trim($_GET['body'])));
+           $to = "amara.odunze@gmail.com";
+   
+           $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+   
+           header("Location: " . $location);
+   
+       }
+   
+   ?>
 <!DOCTYPE html>
 
 <html>
@@ -219,16 +219,23 @@ button:hover, a:hover {
         Github: amydiva
     </div>
     
-                    <div class="form-style-6">
-                            <h1>Fill the form</h1>
-                            <form  method="GET" action="http://hng.fun/sendmail.php">
-
-                                <input type="text" name="subject" placeholder="Your Name">
-                                <input type="email" name="to" placeholder="Enter email">
-                                <textarea name="message" placeholder="Type your Message"></textarea>
-                                <input type="submit" value="Send" class="sendmessage" name="sendmessage" />
-                            </form>
-                    </div>
+                    <div class="container">
+         <form action="#" method="get">
+            <h1>Contact Me</h1>
+            <input placeholder="Name" name="name" type="text" value="" required>
+            <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+            <div>
+               <span class="validation-text">Please enter a valid input
+               </span>
+            </div>
+            <div class="flex">
+               <textarea placeholder="Type your Message here" rows="4" cols="50" name="body" required></textarea>
+            </div>
+            <button type="submit" name="sendmessage">
+            Send Message
+            </button>
+         </form>
+      </div>
                     
                     </div>
                     </div>
