@@ -26223,9 +26223,13 @@ include('header.php');
         </div>
     </div>
 </div>
-<<<<<<< HEAD
+
 <!--  Each Participants ends here  -->
 
+<<<<<<< HEAD
+<!--   Each Participants starts here
+<!--  Each Participant starts here  -->
+=======
 <<<<<<< HEAD
   <!-- Each participant ends here -->
 <div class="p-card">
@@ -26259,6 +26263,7 @@ include('header.php');
 <!--  Each Participant starts here  -->
 >>>>>>> dd163ac63ed550361935045fa6800e5063e242de
 >>>>>>> e8529784efb3cb629341f262cd37dae97494df6c
+>>>>>>> 27aff4b9753a90f0de9e1ccd9b50c49ae53004c9
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-0/p206x206/216569_166868763370532_787686_n.jpg?_nc_
@@ -26275,12 +26280,18 @@ include('header.php');
         </div>
         <div class="p-team">
             <a href="#">
+<<<<<<< HEAD
+                <h3 class="p-card-title"> Nill </h3>
+=======
                 <h3 class="p-card-title"> Team-achievement </h3>
+>>>>>>> 27aff4b9753a90f0de9e1ccd9b50c49ae53004c9
                 <!--Team-->
             </a>
         </div>
     </div>
 </div>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 
 <<<<<<< HEAD
@@ -26301,6 +26312,7 @@ include('header.php');
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+>>>>>>> 27aff4b9753a90f0de9e1ccd9b50c49ae53004c9
 <!--  Each Participants ends here  -->
 
 <!--  Each Participant starts here  -->
@@ -26325,6 +26337,9 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
+<<<<<<< HEAD
+  
+=======
                <!--  Each Participant starts here  -->
             <div class="p-card">
                 <div class="v-center">
@@ -26420,6 +26435,7 @@ include('header.php');
   <!-- Each participant ends here -->
 >>>>>>> 04ebe51d5572ce882bb44a7933059534c3d8431b
 
+>>>>>>> 27aff4b9753a90f0de9e1ccd9b50c49ae53004c9
 <!--  Each Participant starts here  -->
                 <div class="p-card">
     <div class="v-center">
@@ -26442,5 +26458,25 @@ include('header.php');
     </div>
 </div>
   <!-- Each participant ends here -->
->>>>>>> dd163ac63ed550361935045fa6800e5063e242de
+  <!--  Each Participant starts here  -->
+                        <div class="p-card">
+                            <div class="v-center">
+                                <div class="p-card-photo" style="background-image: url(http://res.cloudinary.com/dutaffn3e/image/upload/v1504884035/11537800_758543687599634_6283110010198569855_n_1_vp0pgt.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                <div class="p-card-info">
+                                    <a href="http://hng.fun/profile/free.html">
+                                        <h3 class="p-card-title">freet96's page</h3>
+                                    </a>
+                                    <p class="p-card-description">free.t.1896@gmail.com</p>
+                                </div>
+
+                                <div class="p-team">
+                                    <a href="#">
+                                        <h3 class="p-card-title"> none </h3>
+                                        <!--Team-->
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+<!--  Each Participants ends here  -->
+
 <?php include "footer.php"?>
