@@ -14,8 +14,6 @@
         $subject = $_POST['subject'];
         $body = $_POST['body'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=kelzvictoria@gmail.com");
-    }else{
-        header("location: imani.html");
     }
 ?>
 =======
@@ -35,8 +33,6 @@
         $subject = $_POST['subject'];
         $body = $_POST['body'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=kelzvictoria@gmail.com");
-    }else{
-//         header("location: imani.html");
     }
 ?>
 
