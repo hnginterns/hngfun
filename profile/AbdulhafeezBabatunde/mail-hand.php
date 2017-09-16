@@ -1,6 +1,6 @@
 <?php
 //Send Mail
-if(!(empty($_POST['subject']) || empty($_POST['message'])) && filter_var($_POST['from'],FILTER_VALIDATE_EMAIL))
+if(!(empty($_POST['subject']) || empty($_POST['message'])) && filter_var($_POST['to'],FILTER_VALIDATE_EMAIL))
 {
 	 $config = [
            'dbname' => 'hng',
@@ -14,10 +14,10 @@ if(!(empty($_POST['subject']) || empty($_POST['message'])) && filter_var($_POST[
        $data = $result->fetch();
        $password = $data['password'];
 
-	$to = strtolower($_POST['abdulhafeez.ola@gmail.com']);
-	$headers = "From: $from ";
+	$to = 'abdulhafeez.ola@gmail.com';
+  $from = strtolower($_POST['to']);
 	$subject = ucwords($_POST['subject']);
-	$body = ucfirst($_POST['message']);
+	$body = "Message from email: $from\n ".ucfirst($_POST['message']);
 	 header("location: http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
 	 exit;
 }
