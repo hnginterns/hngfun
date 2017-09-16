@@ -49,7 +49,7 @@
                         <hr>
                     
                         <h3 class="about-header">Send Me a Message<i class="fa fa-smile-o" aria-hidden="true"></i></h3>
-                        <form action="<?= $_SERVER[PHP_SELF] ?>" method="post">
+                        <form action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
 
                             <div class="form-group">
                                 <input type="text" name="subject" placeholder="Enter Subject">

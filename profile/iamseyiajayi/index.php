@@ -99,7 +99,7 @@
 		</span>
 			
 			<span class="link" style="margin-left:5px">
-			<a href="https://www.dropbox.com/s/bayg8gcvzn3wvr4/Ajayi-seyi.apk?dl=0" target="_blank" class="underline">Download App</a>
+			<a href="https://www.dropbox.com/s/ufh7npbxir2pugv/android-debug.apk?dl=0" target="_blank" class="underline">Download App</a>
 		</span>
 			
 			

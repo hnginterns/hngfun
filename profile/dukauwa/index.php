@@ -115,7 +115,7 @@
                    .card-header img{
                      height: 200px;
                      width: 100%;
-                     object-fit: fill;
+                     object-fit: cover;
                      /*overflow: hidden;*/
                    }
                .details

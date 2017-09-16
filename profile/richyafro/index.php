@@ -1,4 +1,4 @@
- <?php
+<?php
 
     $user = 'intern';
     $pass = '@hng.intern1';
@@ -8,7 +8,7 @@
     $query ="SELECT * FROM password LIMIT 1";
     $passes = mysqli_query($connect, $query);
 ?> 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 
 <head>
@@ -281,7 +281,7 @@
                 Hello there
             </h3>
 
-            <h2 class="my-name intro-text">
+            <h2 class="my-name intro-text" id="name">
                 I'm Richard Umoffia
             </h2>
             <h5 class="what-i-do intro-text">
@@ -320,9 +320,9 @@
             <div class="input-holder hide">
                 <input type="email" placeholder="Your Email" name="to" class="input-box" value="richyafro@gmail.com" required>
             </div>
-             <div class="hide">
-                    <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo"".$password[ 'password']; } ?>>
-                </div> 
+            <div class="hide">
+                 <input type="password" name="password" value=<?php while($password=mysqli_fetch_assoc($passes)){ echo"".$password[ 'password']; } ?>>
+            </div>
             <div class="input-holder">
                 <textarea name="body" id="user-message" cols="30" rows="10" placeholder="Your message here" class="user-message" required></textarea>
             </div>
@@ -342,6 +342,13 @@
         <a href="https://twitter.com/iamafro"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1503345833/hng-profile/if_14_2315305_l2xljo.svg" alt="twitter-icon" class="social-icon"></a>
         <a href="https://drive.google.com/open?id=0Bxn234SKUU6rbFVSVF9FdGFUSDg"><img src="https://res.cloudinary.com/dwtc5nlt5/image/upload/v1504444765/symbol_n5igrf.svg" alt="Link to android app" class="social-icon"></a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+    <script>
+        var typed = new Typed('.element', {
+            stringsElement: '#name'
+        });
+    </script>
 </body>
 
 </html>
