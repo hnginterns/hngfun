@@ -26128,26 +26128,24 @@ include('participants-head.php');
     </div>
 </div>
 <!--  Each Participant ends here  -->
-=======
 
-<<<<<<< HEAD
 
                <!--  Each Participant starts here  -->
               <div class="p-card">
                   <div class="v-center">
-                      <div class="p-card-photo" style="background-image: url("https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAANpAAAAJDdlMzFiOWM4LTE0ZDEtNGE5Ny1iMGUxLTAwODJiMTlkYjc4Yw.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                      <div class="p-card-photo" style="background-image: url("https://cdn.pixabay.com/photo/2017/07/29/13/17/abstract-2551464__340.jpg"); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                       <div class="p-card-info">
-                          <a href="https://www.hngfun/profile/AniekanUmana.html">
+                          <a href="https://www.hngfun/profile/maguar2.html">
                               <!--Profile Link-->
-                              <h3 class="p-card-title">Aniekan Umana</h3>
+                              <h3 class="p-card-title">patrick idungafa</h3>
                               <!--Profile Name-->
                           </a>
-                          <p class="p-card-description">theaniekanumana@gmail.com</p>
+                          <p class="p-card-description">patrickidungafa2@gmail.com</p>
                           <!--Email-->
                       </div>
                       <div class="p-team">
                           <a href="#">
-                              <h3 class="p-card-title"> Team 9 </h3>
+                              <h3 class="p-card-title"> No Team </h3>
                               <!--Team-->
                           </a>
                       </div>
@@ -26155,7 +26153,5 @@ include('participants-head.php');
               </div>
               <!--  Each Participants ends here  -->
 
->>>>>>> d6b274278d5e95dbec90a54be8e0760c83f7e0c9
->>>>>>> 039deae916137979f364d1a51b8878b2528b2930
 
 
