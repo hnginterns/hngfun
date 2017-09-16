@@ -1,4 +1,4 @@
-﻿(1) Nwanze Franklin, franko4don, @franko4don
+(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -6811,7 +6811,7 @@
 (310) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
 (311) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
 (312) Samuel Essien (slack: @samuelessien; github:@samuelessien)
-(313) Noriode Raphael Brume @oghenebrume oghenebrume
->>>>>>> 248364772d6fe3d311c5f38431a042d06e5005b3
+(313) Noriode Raphael Brume (slack: @oghenebrume oghenebrume)
 (314) Micheal Aboderin (slack: @mroracle; github:@mroracle8)
-(315) Unyime michael, (slack:@umike, github:@janemike)
+(315) Unyime michael (slack:@umike, github:@janemike)
+(316) Uboho Dickson (slack:@ubohodickson, github:ubohodickson)
