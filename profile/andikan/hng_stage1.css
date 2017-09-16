@@ -17,7 +17,7 @@ div{
 	margin:0px;
 	}
 .image{
-	border-radius:120px;
+	border-radius:70px;
 	padding:0px;
 	box-shadow:2px 2px 2px 2px rgb(80,80,80);
 }
@@ -28,11 +28,10 @@ box-shadow:0px 0px 0px ;
 .an li{
 color:light-grey;
 	max-width:4000px;
-	
     display: block;
     padding: 6px;
     border:1px solid #8d95a5;
-    margin-left:138px;
+    margin-right:30px;
     border-radius: 30px;
 	box-shadow:0px 0px 0px 0px rgb(80,80,80);
 	}
@@ -48,15 +47,15 @@ p{
 	color:green;
 	}
 .de{
-	max-width:100px;
-	
+	max-width:10000px;
+	background:#cc22cc;
 	}
 .de a{
 	text-decoration:none;
 	}
 .pr{
 	float:left;
-	margin-left:165%;
+	margin-left:10%;
 	background: #2471FF;
     border: none;
     padding: 10px 20px 10px 20px;
@@ -71,14 +70,14 @@ p{
 border-radius:20px;
 background:#7e7ead;
 margin-top:5%;
-margin-left:400%;
+float:right;
 height:190px;
 width:400px;
 border:1px solid grey;
 size:auto;
 	}
 	.formus:active{
-	background:#ababab;
+	background:#9191c3;
 	}
 textarea{
 background:white;
@@ -86,11 +85,12 @@ margin:4px;
 margin-left:0px;
 width: 372px;
 height:100px;
-border-radius:10px;
+border-radius:14px;
 }
-input{
-float:left;
-margin-left:14px;
+.sp{
+float:right;
+margin-right:8px;
+color:#2a2a3a;
 }	
 .submit{
 float:right;
