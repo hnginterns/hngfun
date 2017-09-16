@@ -1,5 +1,6 @@
-<?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+<?php 
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
 
     $subject = $_POST['subject'];
@@ -7,12 +8,12 @@
     $body = $_POST['body'];
 
     if($body == '' || $body == ' ') {
-      $error[] = "Don't be shy. Write me a message";
+      $error[] = "Please feel free to leave a message";
     }
 
 
     if($subject == '' || $subject == ' ') {
-      $error[] = 'A subject would be awesome.';
+      $error[] = 'A subject would be appreciated.';
     }
 
     if(empty($error)) {
@@ -31,8 +32,8 @@
 
     }
   }
- ?>
 
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

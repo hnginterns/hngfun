@@ -6,6 +6,8 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 	<style type="text/css">
 				body{
 			background: #F1F1F1;
@@ -28,7 +30,43 @@
 			font-size: 30px;
 			letter-spacing: 0.1em;
 			text-transform: uppercase;
+			margin-top: 30px;
+			font-weight: 800;
 		}
+		  .contact-form input,
+		  .contact-form textarea 
+		  {
+		    width: 80%;
+		    margin-top: 15px;
+		    padding: 12px 20px;
+		    border: .5px solid #ccc;
+		    border-radius: 5px;
+		    background-color: #eaeaea;
+		  }
+		  input[type=submit] 
+		  {
+		    background-color: #26acd9;
+		  }
+		  input[type=submit]:hover 
+		  {
+		    background: white;
+		    border: .5px solid #ccc;
+		    cursor: pointer;
+		  }
+		  textarea 
+		  {
+		    font-family: inherit;
+		    resize: none;
+		  }
+
+		
+		.container {
+		    border-radius: 5px;
+		    background-color: #f2f2f2;
+		    padding: 20px;
+		    width: 400px;
+		}
+		
 
 
 
@@ -47,10 +85,35 @@
 
 		<p>My name is <strong>Derrick Ikenga</strong> and I'm a Full stack web developer in training with a passion for learning and a drive for Entrepreneurship</p>
 	
-	
-	
 
-		<h4>Hit me up</h4>
+	
+	<div class="container">
+    <section class="contact">
+    
+      <section class="contact-form" >
+        <div class = "card-form">
+          <form  action="euphoriawolf.php" method="post" >
+            <p class = "title" >CONTACT ME</p>
+          
+              <input type="email" class="textform" name="to" placeholder="Email address">
+              <br>
+
+              
+              <input type="text" class="textform" name="subject" placeholder="Subject">
+              <br>
+
+             
+              <textarea class="textform" name="body" placeholder="Write about subject" style="height:120px"></textarea>
+              <br><br>
+
+              <input type="submit" name="process" value="Submit">
+          </form>
+        </div>
+      </section>
+   </section>
+  </div>
+
+		<h4>Social</h4>
 		
 			<p>Slack : euphoriawolf</p>
 
