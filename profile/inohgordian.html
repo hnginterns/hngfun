@@ -1,210 +1,100 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
 <head>
-<title>PROFILE PAGE</title>
-<style>
-
-
-            
-
-           
-
-           
-
-   html{
-
-    margin:0;
-
-    padding:0;
-
-    }
-
-    body{
-  padding-top: 80px;
-  text-align: center;
-  font-family: monaco, monospace;
-  background-colour: blue;
-  background-size: cover;
-
-    font-family:"Arial", serif;
-
-    background-color:#efefef
-
-;
-
-    padding:10px;
-
-    margin:0px;
-
-    }
-
-    h1{
-
-    font-size:20pt;
-
-    color:#20bcd5
-
-;
-
-    text-align:center;
-
-    padding:18px 0 18px 0;
-
-    margin:0 0 10px 0;
-
-    }
-
-    h1 span{
-
-    border: 2px dashed #20bcd5
-
-;
-
-    padding: 10px;
-
-    }
-
-    p{
-
-    margin:0;
-
-    padding:0;
-
-    }
-
-    .image-circle {
-
-    border:3px solid white;
-
-    border-radius:100%;
-
-    }
-
-    img{
-
-    display: block;
-
-    margin: auto;
-
-    }
-
-    .section{
-
-    background-color: #fff;
-
-    padding:15px;
-
-    margin-bottom: 10px;
-
-    border-radius: 10px;
-
-    text-align: center;
-
-    }
-
-    form {
-
-    text-align: center;
-
-    margin-top:0;
-
-    }
-
-    .submit{
-
-    background-color: #3fb6b2
-
-;
-
-    padding:10px 45px;
-
-    border-radius: 5px;
-
-    cursor: pointer;
-
-    color: #ffffff
-
-;
-
-    border: none;
-
-    outline: none;
-
-    margin:0;
-
-    font-weight:bold;
-
-    }
-
-    .submit:hover{
-
-    background-color: black
-
-;
-
-    
-
-    }
-
-    textarea{
-
-    height:100px;
-
-    }
-
-    input, textarea{
-
-    margin-bottom: 10px;
-
-    font-size:12px;
-
-    padding: 15px 10px 10px;
-
-    border: 1px solid #cecece
-
-;
-
-    background-color: #efefef
-
-;
-
-    color: #787575
-
-;
-
-    border-radius: 5px;
-
-    width: 70%;
-
-    outline: none;
-
-    }
-
-           
-
-           
-
-           
-
-        </style>
-
-
+<style type="text/css">
+body 
+{background-color:grey;}
+
+#container 
+{width: 500px;
+ margin: 25px;}
+ 
+#one {border-radius: 50px;}
+#two, 
+#three, 
+#four
+ {background-color: #bbb;
+ padding: 8px;
+ font-family: new times roman;
+ color: #212e36;
+ font-size: 20px;}
+ 
+#two,
+#three 
+{width: 250px; 
+text-align: center;}
+
+#four 
+{text-align: justify;}
+
+a {color: #3f7464;}
+
+.head 
+{font-family: Georgia;
+ color: #192e28;
+ font-size: 20px;
+ text-align: center;}
+ 
+#one .head 
+{font-size: 30px;
+ color: silver;}
+ 
+b {color: #50193E;}
+</style>
+<center>
+<div id="container">
+<table id="inside" cellspacing="0" border="0">
+<tr>
+<td colspan="2" id="one">
+<div class="head"><strong>PROFILE PAGE</strong></div>
+<center>
+<img src="https://pbs.twimg.com/profile_images/893836697535950848/z-dDeZ1j_400x400.jpg" width = "70%"; height = "60%";>
+</center>
+</td>
+</tr>
+<tr>
+<td id="two"><br>
+<div class="head">stage 1</div>
+<p><a href="https://github.com/inohgordian/hng-stage-1-result">
+<button>LINK</button></a></p>
+<text>Slack-<a href="https://hnginterns.slack.com/team/inohgordian">@inohgordian
+<br>
+<br>
+<text>Github<a href="https://github.com/inohgordian">@inohgordian
+</td>
+<td id="three"><br>
+<div class="head">ABOUT ME</div>
+I am a gradute with a degree in political science, currently internining with HNG in aspiration to be a renowned web developer.
+</td>
+</tr>
+<tr>
+<td colspan="2" id="four"><br>
+<div class="head">CONTACT FORM</div>
+<center>
+<form id="contact_form" action="inohgordian.php" method="POST">
+	<div class="row">
+		<label for="name"></label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" placeholder="Name" required/><br />
+	</div>
+	<div class="row">
+		<label for="email"></label><br />
+		<input id="to" class="input" name="email" type="email" value="" size="30" placeholder="Enter your Email" required/><br />
+	</div>
+	<div class="row">
+		<label for="subject"></label><br />
+		<input id="subject" class="input" name="subject" type="text" value="" size="30" placeholder="Subject" required/><br />
+	</div>
+	<div class="row">
+		<label for="message"></label><br />
+		<textarea id="body" class="input" name="body" rows="7" cols="32" placeholder="Enter message here"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" name="process"/>
+</form>	
+</center>
+</td>
+</tr>
+</table>
+</div>
+</center>
 </head>
-<body>
-
-<div>
-  <h1>MY PROFILE PAGE</h1>
-  <img src="https://pbs.twimg.com/profile_images/893836697535950848/z-dDeZ1j_400x400.jpg" style="height 100%:width 100%" alt=Gordian >
-    <h2><strong>GORDIAN INOH</strong>
- <div/>
-  <p>I am a gradute with a degree in political science, currently internining with HNG in aspiration to be a renowned web developer.</p>
- <div>
-  <h3>CONTACT ME</h3>
-      <p>Facebook-<a href="https://www.facebook.com/kalyxklirk">@Gordian Inoh</a>
-          <p>Twitter-<a href="https://twitter.com/iamklirk">@iamklirk</a>
-            <p>Github-<a href="https://github.com/inohgordian">@inohgordian
-                  <p>Slack-<a href="https://hnginterns.slack.com/team/inohgordian">@inohgordian
-<p><a href="https://github.com/inohgordian/hng-stage-1-result"
-<button>Stage 1 task</button></a></p>
-</body>
 </html>
