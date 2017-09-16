@@ -82,7 +82,8 @@ ul{
                             </li>
                             <li style="padding-top: 25px;">
                                 <i class="fa fa-link fa-2x"></i><br>
-                                <a href="https://github.com/otuekongjohn/Test" target="_blank">Stage 1 Task Here</a>
+                                <a href="https://github.com/otuekongjohn/Test" target="_blank">Stage 1 Task Here</a><br><br>
+                                <a href="https://drive.google.com/open?id=0B8a-ltKYuGn5RnE0eXk0Tk5Vbkk">Apk Sharable link</a>
                             </li>
                         </ul></span>
                         <form action="shalomjohn.php" id = "contact-form" method = "POST" >
