@@ -26476,4 +26476,27 @@ include('header.php');
                         </div>
 <!--  Each Participants ends here  -->
 
+<!--  Each Participant starts here  -->
+<div class="p-card">
+                <div class="v-center">
+                    <div class="p-card-photo" style="background-image: url(https://img00.deviantart.net/32c1/i/2012/178/e/3/a_dark_starry_night_wallpaper_by_s3vendays-d151qon.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                    <div class="p-card-info">
+                        <a href="http://hng.fun/profile/aniekanetim">
+                            <!--Profile Link-->
+                            <h3 class="p-card-title">Aniekan Etim</h3>
+                            <!--Profile Name-->
+                        </a>
+                        <p class="p-card-description">anigottashine@gmail.com</p>
+                        <!--Email-->
+                    </div>
+                    <div class="p-team">
+                        <a href="#">
+                            <h3 class="p-card-title"> Team Solo </h3>
+                            <!--Team-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!--  Each Participants ends here  -->
+
 <?php include "footer.php"?>
