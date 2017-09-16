@@ -319,7 +319,7 @@ An overview of what makes the person significant
 		other programmers with or without knowledge of programming. He can be contacted on 
 		facebook: <a href='https://www.facebook.com/mfonabasiisaacudobia.udobia'target='_blank'>Mfonabasi Isaac</a> 
 		</p><br><br>
-		<center><a href='https://build.phonegap.com/apps/2805124/download/android'target='_blank'><button>Download my app here </button></a></center>
+		<center><a href='https://goo.gl/vK1iB5'target='_blank'><button>Download my app here </button></a></center>
 		
 		</div><!--end of sub right container-->
 </div><!-- end of body container -->
