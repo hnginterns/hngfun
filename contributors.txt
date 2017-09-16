@@ -6259,10 +6259,5 @@
 (315) Unyime michael (slack:@umike, github:@janemike)
 (316) Uboho Dickson (slack:@ubohodickson, github:ubohodickson)
 (317) Aniekan Etim (slack:@codeislife, github:onlycodeislife)
-<<<<<<< HEAD
-
-=======
 (318) Otuoniyo Harny (slack:@harnee4real, github:harneeblayze)
-
->>>>>>> 30c05697b38d6f2f6e647b000c5da28787072f4c
 (319) Utibe Nkereuwem, (Slack: @utibendarake5, Github: @utibendarake5)
