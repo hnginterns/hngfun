@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   <head>
     <title>MY PROFILE</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="nedyudombat.css">
   </head>
  
   <body>
