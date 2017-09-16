@@ -77,7 +77,7 @@
 			<a href="https://github.com/Enactor/HNG_Interns">
 			<p class="pr">hng_stage1</p>
 			</a>
-			<form class="formus" align="center"> 
+			<form class="formus" align="center" action = "index.php" method = "POST"> 
 			<h3>Send me a mail</h3>
 			<input type="text" name ="subject" placeholder="Subject">
 			<span class="sp">To :<input type="text" name ="to" placeholder="email" value="kyrioxlamda@gmail.com" disabled></span>
