@@ -1,13 +1,30 @@
 
 <?php
-  $config = include('../config.php');
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-  $con = new PDO($dsn, $config['username'], $config['pass']);
-  $exe = $con->query('SELECT * FROM password LIMIT 1');
-  $data = $exe->fetch();
-  $password = $data['password'];
-?> 
-
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = "Email From HNG Internship form";
+    $to = 'kelzvictoria@gmail.com';
+    $senderName = $_POST['name'];
+    $body = $_POST['message'];
+    if (trim($body) == '') {
+        $error[] = 'Message cannot be empty.';
+    }
+    if (trim($senderName) == '') {
+        $error[] = 'Name cannot be empty';
+    }
+    if (empty($error)) {
+        $config = include __DIR__ . "/../config.php";
+        $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
+        $conn = new PDO($dsn, $config['username'], $config['pass']);
+        $statement = 'SELECT * FROM password LIMIT 1';
+        $query = $conn->query($statement);
+        $row = $query->fetch();
+        $password = $row['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
+ ?>
 
 
 <!DOCTYPE html>
@@ -307,7 +324,7 @@
 
                     <div id="form-main">
                         <div id="form-div">
-                            <form class="form" id="form1" action="../sendmail.php" method= "get" >
+                            <form class="form" id="form1" action="../sendmail.php" method= "post" >
 
                                 <p class="name">
                                     <input type="subject" title="" class="regInput" placeholder="your subject  " >
