@@ -26789,5 +26789,25 @@ include('header.php');
             </div>
 <!--  Each Participants ends here  -->
 
+<!--  Each Participant starts here  -->
+                            <div class="p-card">
+                                <div class="v-center">
+                                    <div class="p-card-photo" style="background-image: url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-0/p206x206/17554195_1327715417287692_3146276427574417410_n.jpg?oh=e7e831781c9a93567cf0810fd145644d&oe=5A165CF4); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                                    <div class="p-card-info">
+                                        <a href="http://hng.fun/profile/ubohodickson/profile.html">
+                                            <h3 class="p-card-title">Uboho Dickson</h3>
+                                        </a>
+                                        <p class="p-card-description">ubohodickson@gmail.com</p>
+                                    </div>
+
+                                    <div class="p-team">
+                                        <a href="#">
+                                            <h3 class="p-card-title"> NIL </h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+<!--  Each Participants ends here  -->
+
 <?php include "footer.php"?>
 >>>>>>> ead888ba5bb48c23ec4c6033ea10d703ac966bd5

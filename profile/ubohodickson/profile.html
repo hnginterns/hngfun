@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uboho Dickson -Profile</title>
+    	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Slab" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    	<title>My profile</title>
+    </head>
+<body class="bodystyle">
+    <div>
+  		<h1 class="firstheading">Uboho Dickson's Profile</h1>
+  </div>	
+
+	<h2> <a class="secondheading" href="https://github.com/ubohodickson">View Profile</a> </h2>
+
+	<img src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-1/p160x160/15826432_1414810665198710_1821981592103425065_n.jpg?oh=d29f7cc9d402948d9405bca04489bb98&oe=5A40A2CC" class="profile-image">
+
+	<p class="profile">Uboho Dickson is a young enterpreneur and IT professional with <br>foundation skills in web development and programming. </p>
+	
+  <div>
+    <section class="contact">
+    
+      <section class="contact-form" >
+        <div class = "card-form">
+          <form  action="process.php" method="post" >
+            <p class = "title" >CONTACT ME</p>
+          
+    			    <input type="email" id="to" name="to" placeholder="Your email address here">
+    			    <br>
+
+    			    
+    			    <input type="text" id="subject" name="subject" placeholder="Your subject here">
+    			    <br>
+
+    			   
+    			    <textarea id="body" name="body" placeholder="Write some subjects here" style="height:120px"></textarea>
+    			    <br><br>
+    			    <input type="submit" name="process" value="Submit">
+          </form>
+        </div>
+      </section>
+   </section>
+  </div>
+</body>
+
+<style >
+    body
+    {
+        font-family: "Open-Sans", sans-serif;
+    }
+    
+  .secondheading
+  {
+    text-align: center;
+    text-decoration: none;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .firstheading
+  {
+    font-size: 35pt;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .profile
+  {
+    color: black;
+    font-size: 150%;
+    text-align: center;
+  }
+
+  .bodystyle
+  {
+    padding: 0pt;
+    background-color: burlywood;
+    margin: 0pt;
+    margin-top: 0;
+  }
+
+  .profile-image 
+  {
+    width: 300px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  .contact 
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-bottom: 10%;
+    text-align:center;
+    position: relative;
+    left: 30%;
+  }
+  .contact section 
+  {
+    width: 50%;
+  }
+  .title 
+  {
+    font-size: 24px;
+  }
+  .subheading-text{
+    padding:10px;
+  }
+  .contact-form input,
+  .contact-form textarea 
+  {
+    width: 80%;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: .5px solid #ccc;
+    border-radius: 5px;
+    background-color: #eaeaea;
+  }
+  input[type=submit] 
+  {
+    background-color: dodgerblue;
+  }
+  input[type=submit]:hover 
+  {
+    background: white;
+    border: .5px solid #ccc;
+    cursor: pointer;
+  }
+  textarea 
+  {
+    font-family: inherit;
+    resize: none;
+  }
+  .social-links span 
+  {
+    margin-right: 30px;
+  }
+  .map 
+  {
+    margin-top: 15px;
+  }
+  p > span 
+  {
+    margin-right: 10px;
+  }
+  .map iframe 
+  {
+    width: 100%;
+    height: 100%:
+  }
+  @media only screen and (max-width:1024px) 
+  {
+  .contact 
+  {
+    width: 90%;
+  }
+  .contact section 
+  {
+    width: 45%;
+  }
+  }
+  @media only screen and (max-width:768px) 
+  {
+    .contact section 
+    {
+      width: 95%;
+    }
+  }
+</style>
+</html>
+
+
