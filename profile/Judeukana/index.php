@@ -67,6 +67,7 @@
                            <p>JAVASCRIPT(intermediate level)</p>
                            <p>JQUERY(intermediate level)</p>
                            <p>PHP(intermediate level)</p>
+                        <p><a href="https://github.com/JudeUk/Androidapp/raw/master/judeukana.app3.apk">download the app here</a></p>
                     </article>
                 </section>
                 
