@@ -1,0 +1,80 @@
+/*Demo Menu*/
+
+.menu-activation a{
+    font-size:14px;/*Set to 16 in demo*/
+    color:rgba(0,0,0,0.6);
+    font-weight:500;
+    transition:all 250ms ease;
+}
+
+.menu-activation em{
+    opacity:0.7;
+}
+
+.active-menu-selecter{
+    color:rgba(0,0,0,0.99)!important;
+    transition:all 250ms ease;
+}
+
+.active-menu-selecter i{
+    color:#c0392b!important;
+    transition:all 250ms ease;
+    -moz-transform: rotate(45deg)!important;
+    -webkit-transform: rotate(45deg)!important;
+    -o-transform: rotate(45deg)!important;
+    -ms-transform: rotate(45deg)!important;
+    transform: rotate(45deg)!important;  
+}
+
+.menu-activation a i{
+    float:right;
+    line-height:30px;
+    font-size:10px;/*Set to 11 in demo*/
+    color:#27ae60;
+    font-weight:600;
+    transition:all 250ms ease;
+}
+
+.disabled-menus{
+    opacity:0!important;
+    pointer-events:none!important;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

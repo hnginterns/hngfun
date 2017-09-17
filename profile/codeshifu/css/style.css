@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    box-sizing: content-box;
+    line-height: 1.4em;
+    font-size: 16px;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    background: #F4F4F4;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* CUSTOM CSS */
+.container {
+    padding: 10px;
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    overflow: auto;
+}
+.left { float: left; }
+
+.card {
+    background: #fff;
+    width: 500px;
+    height: auto;
+    padding-bottom: 25px;
+    margin-right: 30px;
+    box-shadow: 1px 4px 10px #ccc;
+}
+.img-overlay {
+    position: relative;
+    height: 400px;
+    background-color: #fcfcfc;
+    overflow: hidden;
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+.strong {
+    font-weight: bold;
+    font-size: .95em;
+}
+.data {
+    padding: 25px;
+    font-size: 1em;
+}
+.info {
+    font-size: .9em;
+}
+
+/* FORM STYLES */
+form {
+    padding: 25px;
+}
+
+.input-group label {
+    display: block;
+    margin: 15px 0 5px 0;
+}
+
+.input-group .form-control {
+    padding: 8px;
+    width:100%;
+}
+textarea {
+    resize: none;
+}
+.btn {
+    border: none;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: .9em;
+    background: #2A74B5;
+    box-shadow: 1px 3px 3px #818181;
+    position: relative;
+    outline: none;
+    margin: 10px 0;
+}
+.btn:hover {
+    color: #FBFBFB;
+    background: #1B5384;
+}
+.btn:active {
+    top: 3px;
+}
+#contact-form {
+    width: 430px;
+}

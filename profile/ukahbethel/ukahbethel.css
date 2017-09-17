@@ -1,0 +1,65 @@
+
+body{
+    text-align:center;
+	background-color: #E0E0E0;
+	font-family: cursive, sans-serif;
+}
+h2{
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0;
+}
+
+div img{
+	margin: 10px;
+	height: 350px;
+	width: 400px;
+	border: 5px solid #F0F0F0;
+	border-radius: 10%;
+}
+
+p #biography{
+	font-weight: 100;
+}
+a{
+	text-decoration: none;
+	target:blank;
+}
+h3{
+	font-size: 25px;
+	font-weight: 200;
+}
+
+form input[type="submit"] {
+	width: auto;
+	margin: 20px 0 0 20px;
+	padding: 5px 20px;
+	cursor: pointer;
+	border-radius: 10px;
+	
+}
+form {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+input, textarea{
+      line-height: 1.5;
+	  padding: 10px;
+	  font-size: 16px;
+	  font-weight: 400;
+}
+h4{
+	display: inline-block;
+	padding: 5px;
+	margin-right: 2px;
+}
+@media only screen and (max-width: 500px) {
+	input,textarea{
+		width: 90%;
+	}
+	div img{
+		width:80%;
+		height:auto;
+	}
+	}
