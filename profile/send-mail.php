@@ -4,7 +4,7 @@ if(isset($_POST['submit']))
 {
 if(!(empty($_POST['subject']) || empty($_POST['message'])) && filter_var($_POST['from'],FILTER_VALIDATE_EMAIL))
 {
-	$to = "cgi.helpcenter@gmail.com";
+	$to = $_POST['from'];
 	$from = strtolower($_POST['from']);
 	$headers = "From: $from ";
 	$subject = ucwords($_POST['subject']);
