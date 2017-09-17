@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.outerbox {
+    background-image: url(img/dribbble.png);
+    height: 670px;
+    
+   
+    
+    
+}
+
+.box {
+    width: 300px;
+    margin: auto;
+    font-family: cursive;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    color: black;
+}
+
+.container {
+    padding: 0 18px;
+}
+
+a {
+    color: orangered;
+    text-decoration: none;
+    font-size: 22px;
+    
+}
+
+a:hover {
+    color: white;
+}
+

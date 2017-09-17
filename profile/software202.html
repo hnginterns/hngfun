@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>@Olasheni</title>
+	<style type="text/css">
+	*
+	{
+		box-sizing: border-box;
+	}
+		body
+		{
+			margin: 0;
+			padding: 0;
+			font-family: Georgia, serif;
+			color: #333;
+		}
+		.profile
+		{
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+		}
+		.cover_parent
+		{
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.cover_foto
+		{
+			background: url('https://9jaspot.com/adfiles/software_1340698176.jpg');
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			background-size: cover;
+			background-position: center 25%;
+			background-repeat: no-repeat;
+			-webkit-filter: blur(40px);
+			filter: blur(40px);
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+			z-index: -1;
+			height: 230px;
+}
+		.profile_foto
+		{
+			background: url('https://9jaspot.com/adfiles/software_1340698176.jpg');
+			border-radius: 100%;
+			border:solid 5px #fff;
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			margin-top: -100px;
+		}
+		.profile_fotos
+		{
+			width: auto;
+			position: relative;
+			height: 230px;
+			overflow: hidden;
+		}
+		.prof_title
+		{
+			text-align: center;
+		}
+		.audible
+		{
+			/*height: 100%;*/
+		}
+		a
+		{
+			color: #333;
+		}
+		.about-chd
+		{
+			float: none;
+			width: 100%;
+			border: 0;
+			border-bottom: solid 1px #999;
+			padding: 10px 5px;
+			font-size: 16px;
+			display: block;
+			transition: border 0.3s ease-in-out;
+		}
+		[type="text"].about-chd, textarea.about-chd
+		{
+			font-size: 15px;
+			font-family: Georgia, serif;
+			padding: 15px 5px;
+		}
+		.about-chd:first-child
+		{
+			border-top:solid 1px #999;
+		}
+		.about-chd:focus
+		{
+			border-color: #111;
+		}
+		.about-chd h2
+		{
+			font-size: inherit;
+		}
+		.contains
+		{
+			width: 60%;
+			height: auto;
+			margin: auto;
+		}
+		h2
+		{
+			display: inline-block;
+			margin-bottom: 0;
+		}
+		.send
+		{
+			cursor: default;
+			border: solid 1px #3eb991;
+			color: #fff;
+			background: #3eb991;
+			margin: 10px 0;
+			padding: 5px 20px;
+			transition: background 0.3s ease-in-out;
+		}
+		.send:hover
+		{
+			background: transparent;
+			color: #3eb991;
+		}
+		@media (max-width: 768px)
+		{
+			.profile_foto
+			{
+				margin: auto;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="profile">
+	<div class="profile_fotos">
+		<div class="cover_foto"></div>
+	</div>
+	<div class="contains">
+			<div class="profile_foto"></div>
+	<h1 class="prof_title">Erisan Olasheni</h1> 
+		<div class="about">
+		<div class="about-chd"><h2>Slack:</h2> @olasheni</div>
+		<div class="about-chd"><h2>Bio:</h2> Olasheni is an intermediate Web and Software Developer, with a deep knowledge of HTML, CSS, JavaScript, PHP and Python. Olasheni hopes to foster his career with the remote intership opportunities at hotels.ng</div>
+		<form method="post" action="send-mail.php">
+		<h2>My Links</h2>
+		<div class="about-chd"><h2>#Stage1 Challenge:</h2> <a href="https://github.com/Software202/hng-challenge" target="_blank">https://github.com/Software202/hng-challenge</a></div>
+		<div class="about-chd"><h2>#App Download Link:</h2> <a href="https://drive.google.com/file/d/0B-XiSJBXfRQtQ1hZLU9HaEo1Z2c/view?usp=sharing" target="_blank">https://drive.google.com/file/d/0B-XiSJBXfRQtQ1hZLU9HaEo1Z2c/view?usp=sharing</a></div>
+		<div class="about-chd"><h2>#Github:</h2> <a href="https://github.com/Software202" target="_blank">https://github.com/Software202	</a></div>
+		<div class="about-chd"><h2>#Facebook:</h2> <a href="https://www.facebook.com/Software202" target="_blank">https://www.facebook.com/Software202</a></div>
+		<div class="about-chd"><h2>#Twitter:</h2> <a href="https://twitter.com/Software202" target="_blank">https://twitter.com/Software202</a></div>
+		<h2>Contact Me</h2>
+		<input type="text" name="from" class="about-chd" placeholder="Please Enter your email address *" />
+		<input type="text" name="subject" class="about-chd" placeholder="Enter Message Subject *" />
+		<textarea class="about-chd" placeholder="Please enter your message *" name="message"></textarea>
+		<input type="submit" value="Send Message" name="submit" class="send" />
+		</form>
+	</div>
+</div>
+</body>
+</html>

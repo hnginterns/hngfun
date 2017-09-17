@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+body{
+background-color:#4C4646;}
+#container {background-color: #FFFFFF; margin: 20%; padding-top:5px; padding-bottom:5px;}
+
+#slackusername {text-align:center; color:#0C090A;}
+#slackusername img {width: 150px; height: 200px; border-radius: 40%;}
+#icon {text-align:center;}
+#icon img {width:40px; height:auto;}
+#About {text-align: center; color:#000000;}
+
+
+=======
+body{
+background-color:#4C4646;}
+#container {background-color: #FFFFFF; margin: 20%; padding-top:5px; padding-bottom:5px;}
+
+#slackusername {text-align:center; color:#0C090A;}
+#slackusername img {width: 150px; height: 200px; border-radius: 40%;}
+#icon {text-align:center;}
+#icon img {width:40px; height:auto;}
+#About {text-align: center; color:#000000;}
+
+
+>>>>>>> 303e6d35eb758a96e5d533269947ba20c5b01f89

@@ -1,0 +1,139 @@
+// Color vars
+
+$white: #fff;
+$grey: #ccc;
+$dark_grey: #555;
+$blue: #4f6fad;
+$pink: #ee9cb4;
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+body {
+		/*background-color: #000;*/
+		background-image: url(images/bg.jpg);
+		background-size: cover;
+		background-position: top center;
+	    padding: 10% 20%;
+	}
+
+	/* Type */
+
+	body, input, select, textarea {
+		color: #854;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 13pt;
+		font-weight: 200;
+		line-height: 1.65;
+	}
+
+ a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+		-moz-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: border-bottom-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	}
+
+		a:hover {
+			color: #646;
+			border-bottom-color: transparent;
+		}
+
+	strong, b {
+		color: #344;
+		font-weight: 200;
+	}
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 200;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+	}
+	
+#header {
+	text-align: center;
+}
+#header .avatar img {
+				border-radius: 100%;
+				display: block;
+				width: 10em;
+
+			}
+#header .avatar {
+			border-radius: 100%;
+			display: inline-block;
+			margin: 0 0 1em 0;
+			padding: 0.5em;
+			/*border: solid 1px rgba(255, 255, 255, 0.25);*/
+			/*background-color: rgba(255, 255, 255, 0.075);*/
+			align-items: center;
+    display: flex;
+    justify-content: center;
+		}
+
+section #main, article #main {
+		text-align: center;
+		justify-content: center;
+	}
+
+	section p {
+		color: #354;
+		position: relative;
+		font-size: 1.25em;
+		padding: 1em 0;
+		/*margin: 0em 6em ;*/
+	}
+ input {
+    margin: 0 0 0.5em 0;
+    border: 1px solid $grey;
+    padding: 6px 10px;
+    color: #555;
+     width: 60%;
+  }
+ span .req {
+ 	color: #233; 
+ }
+ label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #4f6fad;
+    
+  }
+  textarea {
+    border: 1px solid $grey;
+    padding: 6px 10px;
+    width: 60%;
+    color: #555;
+}
+  form {
+	max-width: 100%;
+	display: block;
+   }
+ 
+.btn {
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #466;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  width: 30%;
+ 
+}

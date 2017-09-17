@@ -1,0 +1,47 @@
+* {margin: 0; padding: 0;}
+a, a:link, a:hover, a:active {
+    color: #FFF;
+}
+
+.wt { color: #fff;}
+
+body {font-family: 'Helvetica Nueue';}
+ .profile-page {
+     
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 71, 165, 0.69);
+    float: left;
+}
+
+.profile-detail, .bio {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bio {width: 60%; margin: 40px auto; font-size: 18px;}
+
+.profile-detail {
+    margin: 160px auto;  
+}
+
+.authors-name {
+    color: #fff;
+    text-align: center;
+    font-size: 400%;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.authors-img {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #EEE;
+    border-radius: 100%;
+}
+
+.links a img {
+    width: 32px;
+}

@@ -1,0 +1,40 @@
+.bg{
+    background-color: #ffffff;
+    color: #4F4F4F !important;
+}
+header{
+    background: #ffffff;
+}
+.heading{
+    color: #333333;
+    float: right;
+    vertical-align: middle;
+    margin-top: 10px;
+    text-align: center; 
+    font-weight: bold;
+    margin-left: 5px;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.nav-div{
+    margin-top: 10px;
+}
+div.data-section{
+    
+    height: 400px;
+    width: 100%;
+}
+div.coin-1{
+ background-color: #AACDFB;
+ margin-left: 50px;
+ margin-top: 70px;
+ height: 80px;
+ 
+}
+img.image-size{
+    height: 120px;
+    width: 120px;
+    margin-top: -100px;
+    margin-left: 730px;
+}

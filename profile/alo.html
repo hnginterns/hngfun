@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2, user-scalable=yes" />
+        <title>My profile</title>
+        <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+       <script src="https://use.fontawesome.com/0b7956cb33.js"></script>
+
+    </head>
+    <style type="text/css">
+    	@import url('https://fonts.google.com/specimen/Saira+Semi+Condensed?selection.family=Open+Sans');
+			html, body {
+			  height: 100%;
+			  margin: 0 auto;
+			  font-family: 'Open Sans', sans-serif, serif !important;
+			  overflow-x: hidden;
+			}
+			.container{
+			  min-height:100%;
+			  min-width:100%;
+			  display:flex;
+			}
+			.container2{
+			    background: #000000;
+			    margin: 10px;
+			    min-height: 100%;
+			    min-width: 100%;
+			    word-wrap:break-word;
+			}
+			.left1{
+			    background: url("https://image.ibb.co/kvRxSQ/20915096_1725548570789775_4750128550958175649_n.jpg") center center;
+			    background-size: cover;
+			    height: 100%;
+			    width: 40%;
+			    float: left;
+			}
+			.right1{
+				
+			    height: 100%;
+			    width: 60%;
+			    float: right;
+			}
+			.right1>h1{
+			    text-align: center;
+			    color: #eeeeee;
+			    padding: 30px 15px;
+			}
+			.right1>.bio{
+			    padding-top: 5px;
+			    padding-left: 180px;
+			    padding-right: 180px;
+			    text-align: center;	    
+			    color: #eeeeee;
+			    
+			}
+			
+			.clearfix{
+			    clear: both;
+			}
+			ul{
+			    padding: 15px;
+			}
+			ul, li{
+			    text-align: center;
+			    list-style-type: none;
+			    color: #eeeeee;
+			}
+			@media (min-width: 480px){
+			    html, body{
+			        overflow: hidden !important;
+			    }
+			    .right1>h3{
+			        padding-top: 15%;
+			    }
+			}
+			@media (max-width: 399px){
+			    .left1{
+			        height: 120vh
+			    }
+		}
+    </style> 
+
+
+    <body>
+		<div class="container">
+			<div class="container2">
+				<div class="left1"></div>
+				<div class="right1">
+					<h1> Name: Oladele Alo</h1>
+					<p class="bio"><br>
+						My Name is Oladele Alo. Currently a graduate of Computer Science, University of Nigeria, Nsukka.<br><br>
+						Been passionate about computers from childhood. Designed my first project WeLearn.com to teach people skillful courses. I code in HTML,CSS,JS and PHP. If am not with my laptop, i enjoy the company of friends and i love eating and i love video games.
+					</p>
+										
+					<p>
+						<ul>
+							<li>
+								<a href="https://hnginterns.slack.com/team/alo" target="_blank"><i class="fa fa-slack fa-2x"></i></a>
+							</li><br>
+							
+
+							<li>
+								<a href="https://www.facebook.com/oladele.alo" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>							
+							</li><br>
+
+
+							<li>
+								First Stage <a href="https://github.com/horlhardheiley/freshersnighight" target="_blank"><i class="fa fa-link fa-2x"></i></a>
+							</li>
+						</ul>
+					</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+    </body>
+</html>
