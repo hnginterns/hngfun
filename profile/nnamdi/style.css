@@ -71,18 +71,17 @@ border-bottom: solid 1px #999;
 font-size:1em;
 font-style:italic;
 padding:3px 0 3px 10px;
-max-width:1500%;
 margin-top:35%;
 text-align:center;
-line-height:300%}
+line-height:400%}
 
 #content{
 	position: absolute;
-	margin-left:10%;
-	top: 65%;
+	margin-left: 10%;
+	top: 401px;
 	width: 40%;
 	padding: 5px;
-	left: 17px;
+	left: 56px;
 }
 #content2{
 
@@ -135,11 +134,12 @@ fieldset{max-width:300px;}
 .center-text {
 	text-align: center;
 	position: absolute;
-	margin-left:21%;
+	margin-left: 21%;
 	transform: translate(-50%, -25%);
 	color: white;
 	width: 50%;
-	top: 37%;
+	top: 222px;
+	left: 64px;
 	
 }
 .content{
