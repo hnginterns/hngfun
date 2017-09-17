@@ -6242,6 +6242,8 @@
 (305) nnamse richard akwa (slack:@richtech, github:@nnamseakwa)
 (305) Utibe Ekom Okon (slack:@yutee_okon, github:@yutee)
 (306)  adnan adetunji, (slack:haddyadnan; github:haddyadnan)
+<<<<<<< HEAD
+>>>>>>>
 (307) Victor Umonto (slack: @victorumonto; github:@github)
 (308) Essien Hogan (slack:@hogan26;github:@blueseedhub)
 (309) Ubong Ekong (slack:@Yubril;github:@yubril)
@@ -6258,4 +6260,4 @@
 (316) Uboho Dickson (slack:@ubohodickson, github:ubohodickson)
 (317) Aniekan Etim (slack:@codeislife, github:onlycodeislife)
 (318) Otuoniyo Harny (slack:@harnee4real, github:harneeblayze)
-
+(319) Utibe Nkereuwem, (Slack: @utibendarake5, Github: @utibendarake5)
