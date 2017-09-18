@@ -1,17 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> Albert Okon </title>
+<style type="text/css">
     .text{
         font-size: 40px; text-align: center;
            }
     #text{
         font-size: 20px; text-align: center; margin-top: 5px;
           }
-    #click{
+    button{
         padding:10px;
         background-color: #2e8b57;
         text-align: center;
           }
+    footer{
+        text-align: center;
+    }
     #pix{
         display: block;
         width: 300px;
@@ -56,6 +62,8 @@
     fieldset{
         margin-left: 35%;
         margin-right: 35%;
+        font-family: cursive;
+        font-size: small;
     }
     input{
         width: 300px;
@@ -63,49 +71,53 @@
     textarea{
         width: 300px;
     }
-    </style>
-<title> Albert Okon </title>
+    /*.mail{
+        font-family: cursive;
+        font-size: small;
+    }*/
+   
+</style>
+
 </head>
 <body id="body">
 <div id="prof" class="circle">
-<center><img src="https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg"; 
-class="round"; id="pix"; />
+<center><img src="https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg" 
+class="round" id="pix" />
 </center>
 <div class="text">
-<b>ALBERT OKON</b><br />
-<center id="text";>Email: okonalbert@yahoo.com | Slack: okonalbert | Facebook: okonalbert </center>
+<b>ALBERT OKON</b><br/>
+<center id="text">Email: okonalbert@yahoo.com | Slack: okonalbert | Facebook: okonalbert </center>
 </div>
 </div>
-<centre><hr /></centre>
-<article id="text";>
+<hr/>
+<div id="text">
     <h3>A Chemical Engineer with a Master's degree in Engineering Management
-        <br />
+        <br/>
         an indigene of Akwa Ibom state in Nigeria,
-        <br />
+        <br/>
         Currently a Software development Intern at <a href="https://hotels.ng/">Hotels.ng</a>
         <br/><i><small>(the largest online booking site in Nigeria)</small></i>
     </h3>
     <h4></h4>
 
-<form action="" method="GET">
+<form action="" method="GET" class="mail">
     <fieldset>
         <legend> <b>Contact Form</b> </legend>
-        <input type="text" name="name" value="Full Name" /><br />
-        <input type="email" name="email" value="Email" /><br />
-        <strong> Comments </strong><br /> <textarea name="comment" id="" cols="22" rows="10"></textarea><br />
-        <button type="submit">Send</button>
+        <label>Name</label><br/><input type="text" name="name" placeholder="Full Name"/><br/>
+        <label>Email Address</label><br/><input type="text" name="Email" placeholder="Email"/><br/>
+        <label>Your Message</label><br/><textarea name="comment" cols="22" rows="10" placeholder="Message"></textarea><br/>
+        <button type="submit">Send</button>&nbsp<button type="reset">Reset</button>
     </fieldset>
 </form>
-</article>
-<footer id="click";>
-    <button type="text";>
-    <a href='https://hnginterns.slack.com/messages/@okonalbert'>Slack</a>
-    </button>
-    <button type="text";>
-      <a href="https://facebook.com/okonalbert">Facebook</a>
-    </button>
-    <button type="text";>
-      <a href="https://github.com/okonalbert";>Stage 1</a>
+</div>
+<footer>
+    <img src="http://i.imgur.com/DPgggYR.png" width="25px" height="25px" alt="Slack Icon"/>
+    <a href='https://hnginterns.slack.com/messages/@okonalbert'>Slack</a>&nbsp&nbsp
+    <img src="http://icons.iconarchive.com/icons/land-of-web/social-coffee/128/facebook-icon.png" width="25px" height="25px"/>      
+    <a href="https://facebook.com/okonalbert">okonalbert</a>&nbsp&nbsp
+    <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="25px" height="25px" alt="Github Icon">
+    <a href="https://github.com/okonalbert";>Repo</a>
+
 </footer>
 </body>
 </html>
