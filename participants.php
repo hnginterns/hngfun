@@ -50,7 +50,39 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
+<<<<<<< HEAD
 
+=======
+<!--  Each Participants ends here  -->
+
+>>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
+
+<<<<<<< HEAD
+=======
+
+<!--  Each Participant starts here  -->
+<div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style=" background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/nnamdi/index.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Nwabuokei Nnnamdi</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">nnamdinwabuokei@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> None </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+<!--  Each Participants ends here  -->
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
@@ -26254,6 +26286,9 @@ include('participants-head.php');
         </div>
     </div>
 </div>
+<<<<<<< HEAD
 <!--  Each Participants ends here  -->
 
 >>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
+=======
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
