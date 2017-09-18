@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 8132fa77ea0ddc711c44735ae347bb9fa549a6f2
 <?php
 $config = include('../config.php');
 $dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
@@ -12,16 +15,19 @@ $password = $data['password'];
 <!doctype html>
 <html>
 <head>
-   
+
     <title> Ogbonna Destiny (dsparkle)</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 
@@ -63,7 +69,7 @@ $password = $data['password'];
         }
         #facebook{
             font-size: 50px;
-            color: chartreuse;
+            color:#46a546;
         }
         #instagram {
             font-size: 50px;
@@ -109,12 +115,59 @@ $password = $data['password'];
             font-family: Lato;
 
          }
+        effect-18 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; z-index: 99;}
+        .effect-18 ~ .focus-border:before,
+        .effect-18 ~ .focus-border:after{content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 100%; background-color: #3399FF; transition: 0.4s;}
+        .effect-18 ~ .focus-border:after{left: auto; right: 0;}
+        .effect-18:focus ~ .focus-border:before,
+        .effect-18:focus ~ .focus-border:after,
+        .has-content.effect-18 ~ .focus-border:before,
+        .has-content.effect-18 ~ .focus-border:after{width: 50%; transition: 0.4s;}
+        .effect-18 ~ label{position: absolute; left: 0; width: 100%; top: 9px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 0.5px;}
+        .effect-18:focus ~ label, .has-content.effect-18 ~ label{top: -16px; font-size: 12px; color: #3399FF; transition: 0.3s;}
 
+
+
+
+        @media screen and (max-width: 1000px) and (min-width: 360px) {
+            body{
+                text-align: center;
+
+            }
+            h2{
+                text-align: center;
+            }
+            img{
+                width:200px;
+                height: 200px;
+
+            }
+
+            input {
+                font-size: 20px;
+                width:250px;
+                margin-bottom: 10px ;
+                font-family:"Lato Light";
+                background-color: black;
+            }
+
+            textarea{
+                font-size: 20px;
+                width:250px;
+                height:150px;
+                font-family: "Lato Light";
+
+            }
+            p{
+                text-align: center;
+                color: white;
+            }
+        }
     </style>
 </head>
-<body>
-<div class="container">
-    <h1>Dsparkle's Profile</h1>
+<div  class="container-fluid">
+<div>
+    <h2>Dsparkle's Profile</h2>
 
     <img src="https://avatars1.githubusercontent.com/u/30692180?v=4&u=b7ee8f2fc91c2f389bd58fa06c430db35af912e9&s=400" alt="Loading">
     <p>I am Ogbonna Destiny Uchechukwu from Abia State. Am  a software developer am good at html and css.<br>
@@ -136,11 +189,11 @@ $password = $data['password'];
     </div>
 </div>
 <div>
-    <h1>
+    <h2>
         To contact me please drop your message(s) below
-    </h1>
+    </h2>
     <form id="contact-form">
-        <input type="text" id="name" name="name" placeholder="your name" required>
+        <input   type="text" id="name" name="name" placeholder="your name" required>
         <input type="text" id="email" name="email" placeholder="your email" required>
         <input type="text" id="subject" name="subject" placeholder="your subject" required>
         <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
@@ -148,6 +201,7 @@ $password = $data['password'];
         <br>
         <input type="submit" id="send-message" name="submit" value="SUBMIT" onclick="sendMessage(event)">
     </form>
+</div>
 </div>
 
 <script>
@@ -176,6 +230,8 @@ $password = $data['password'];
 </script>
 </body>
 </html>
+<<<<<<< HEAD
+=======
 =======
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
@@ -359,3 +415,4 @@ $password = $data['password'];
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 8132fa77ea0ddc711c44735ae347bb9fa549a6f2
