@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 //Send Mail
 if(isset($_POST['submit']))
@@ -31,13 +32,19 @@ else
 }
 ?>
 =======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <?php
 //Send Mail
 if(isset($_POST['submit']))
 {
 if(!(empty($_POST['subject']) || empty($_POST['message'])) && filter_var($_POST['from'],FILTER_VALIDATE_EMAIL))
 {
+<<<<<<< HEAD
 	$to = $_POST['from'];
+=======
+	$to = "cgi.helpcenter@gmail.com";
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 	$from = strtolower($_POST['from']);
 	$headers = "From: $from ";
 	$subject = ucwords($_POST['subject']);
@@ -61,5 +68,9 @@ else
 {
 	echo 'Please fill out the contact form first, thanks. <a href="software202.html">Back to profile</a>';
 }
+<<<<<<< HEAD
 ?>
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+?>
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
     if(isset($_POST['process'])){
         $config = [
@@ -401,6 +402,8 @@ input[type="submit"] {
 >>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <?php
     if(isset($_POST['process'])){
         $config = [
@@ -800,4 +803,7 @@ input[type="submit"] {
 </html>
 
 >>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
+<<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
