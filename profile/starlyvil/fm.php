@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div class="infoCon">
 	<h1>Contact form</h1>
 	<p>Please use the form below to send me a short mail</p>
@@ -65,6 +66,8 @@
 		
 	}
 =======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <div class="infoCon">
 	<h1>Contact form</h1>
 	<p>Please use the form below to send me a short mail</p>
@@ -130,5 +133,8 @@
 
 		
 	}
+<<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 ?>

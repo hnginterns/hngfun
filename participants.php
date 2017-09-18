@@ -51,6 +51,7 @@ include('header.php');
                </div>
                <!--  Each Participants ends here  -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 <!--  Each Participants ends here  -->
@@ -83,6 +84,31 @@ include('header.php');
 </div>
 <!--  Each Participants ends here  -->
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+<!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://image.ibb.co/e0giMk/prolifichands.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/ify/index.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">NWABUOKEI IFEANYICHUKWU</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">ifeanyichukwunwabuokei@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> Nil</h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
+
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
@@ -26287,8 +26313,14 @@ include('participants-head.php');
     </div>
 </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!--  Each Participants ends here  -->
 
 >>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
 =======
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+<!--  Each Participants ends here  -->
+
+>>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76

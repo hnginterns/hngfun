@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <div hidden= "hidden" class="urlC" data-sub="<?php echo $_SESSION['sub']?>" data-mess="<?php echo $_SESSION['mess']?>" data-pass="<?php echo $_SESSION['pass']?>" id="full"></div>
 <script type="text/javascript">
 	
@@ -26,6 +27,8 @@
 	<p> Mail sent succefuly sent to <b><i>starlyvil@gmail.com</i></b></p>
 	<p>Now Sending to Admin in 3 Seconds</p>
 =======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <div hidden= "hidden" class="urlC" data-sub="<?php echo $_SESSION['sub']?>" data-mess="<?php echo $_SESSION['mess']?>" data-pass="<?php echo $_SESSION['pass']?>" id="full"></div>
 <script type="text/javascript">
 	
@@ -52,5 +55,8 @@
 	</div>
 	<p> Mail sent succefuly sent to <b><i>starlyvil@gmail.com</i></b></p>
 	<p>Now Sending to Admin in 3 Seconds</p>
+<<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 </div>
