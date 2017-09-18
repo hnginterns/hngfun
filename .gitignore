@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .idea
 .DS_Store
 config.php
@@ -6,4 +7,14 @@ auto-deploy.php
 footer.php
 header.php
 PHPMailerAutoload.php
+=======
+.idea
+.DS_Store
+config.php
+sendmail.php
+auto-deploy.php
+footer.php
+header.php
+PHPMailerAutoload.php
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 profile/hammed01/Thumbs.db
