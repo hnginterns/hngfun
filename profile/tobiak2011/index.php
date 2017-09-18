@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -69,6 +70,8 @@
     </body>
     </html>
 =======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -138,4 +141,7 @@
         </div>
     </body>
     </html>
+<<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
