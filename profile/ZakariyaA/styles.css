@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
 	font-family: 'Noto Sans', sans-serif;
 	margin: 0;
@@ -122,6 +123,8 @@ input[type="submit"]{
 textarea {
     resize: none;
 =======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 body {
 	font-family: 'Noto Sans', sans-serif;
 	margin: 0;
@@ -244,5 +247,8 @@ input[type="submit"]{
 
 textarea {
     resize: none;
+<<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 }
