@@ -26375,3 +26375,31 @@ include('header.php');
   <!-- Each participant ends here -->
 >>>>>>> dd163ac63ed550361935045fa6800e5063e242de
 <?php include "footer.php"?>
+
+
+
+<!--  Each Participant starts here  -->
+                <div class="p-card">
+    <div class="v-center">
+        <div class="p-card-photo" style="background-image: url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/21730820_375540992864284_3701375902095186628_n.jpg?oh=ce868d37cc7f48b25e346522ecd95804&oe=5A150A19); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+        <div class="p-card-info">
+            <a href="http://hng.fun/profile/hogan26.html">
+                <!--Profile Link-->
+                <h3 class="p-card-title">Essien Hogan</h3>
+                <!--Profile Name-->
+            </a>
+            <p class="p-card-description">bssjone26@gmail.com</p>
+            <!--Email-->
+        </div>
+        <div class="p-team">
+            <a href="#">
+                <h3 class="p-card-title"> Team </h3>
+                <!--Team-->
+            </a>
+        </div>
+    </div>
+</div>
+  <!-- Each participant ends here -->
+>>>>>>> dd163ac63ed550361935045fa6800e5063e242de
+<?php include "footer.php"?>
+
