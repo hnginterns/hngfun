@@ -50,6 +50,9 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
+<<<<<<< HEAD
+
+=======
 <!--  Each Participants ends here  -->
 
 >>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
@@ -79,6 +82,7 @@ include('header.php');
     </div>
 </div>
 <!--  Each Participants ends here  -->
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
@@ -26282,3 +26286,9 @@ include('participants-head.php');
         </div>
     </div>
 </div>
+<<<<<<< HEAD
+<!--  Each Participants ends here  -->
+
+>>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
+=======
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
