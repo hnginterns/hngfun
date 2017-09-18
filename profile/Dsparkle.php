@@ -1,10 +1,10 @@
 <?php
-//$config = include('../config.php');
-//$dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
-//$connect = new PDO($dsn, $config['username'], $config['pass']);
-//$exe = $connect->query('SELECT * FROM password LIMIT 1');
-//$data = $exe->fetch();
-//$password = $data['password'];
+$config = include('../config.php');
+$dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
+$connect = new PDO($dsn, $config['username'], $config['pass']);
+$exe = $connect->query('SELECT * FROM password LIMIT 1');
+$data = $exe->fetch();
+$password = $data['password'];
 ?>
 
 <!doctype html>
