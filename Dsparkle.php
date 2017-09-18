@@ -110,17 +110,7 @@ $password = $data['password'];
             font-family: Lato;
 
          }
-        effect-18 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; z-index: 99;}
-        .effect-18 ~ .focus-border:before,
-        .effect-18 ~ .focus-border:after{content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 100%; background-color: #3399FF; transition: 0.4s;}
-        .effect-18 ~ .focus-border:after{left: auto; right: 0;}
-        .effect-18:focus ~ .focus-border:before,
-        .effect-18:focus ~ .focus-border:after,
-        .has-content.effect-18 ~ .focus-border:before,
-        .has-content.effect-18 ~ .focus-border:after{width: 50%; transition: 0.4s;}
-        .effect-18 ~ label{position: absolute; left: 0; width: 100%; top: 9px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 0.5px;}
-        .effect-18:focus ~ label, .has-content.effect-18 ~ label{top: -16px; font-size: 12px; color: #3399FF; transition: 0.3s;}
-
+        
 
 
 
@@ -143,7 +133,7 @@ $password = $data['password'];
                 width:250px;
                 margin-bottom: 10px ;
                 font-family:"Lato Light";
-                
+
             }
 
             textarea{
