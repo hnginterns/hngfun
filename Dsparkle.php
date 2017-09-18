@@ -110,7 +110,6 @@ $password = $data['password'];
             font-family: Lato;
 
          }
-        
 
 
 
@@ -133,6 +132,7 @@ $password = $data['password'];
                 width:250px;
                 margin-bottom: 10px ;
                 font-family:"Lato Light";
+                background-color: white;
 
             }
 
