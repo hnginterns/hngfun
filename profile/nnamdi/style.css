@@ -8,11 +8,10 @@
 	
 }*/
 body{
-	width:1000px;
-	height:100%;
+	width:1500px;
+	height:1500px;
 	min-height:100%;
 	margin: 0 auto;
-	padding: 50px 48px 0;
 	line-height:1;
 	color:#333;
 	background:#fff;
@@ -45,9 +44,16 @@ a:active{
 }
 	
 input{margin-left:60px;}
-button{margin-left:120px;}
+button{margin-left:90px;}
 p{
   font-size:90%}
+  textarea{margin-left:60px;}
+
+legend{
+	text-align:center;
+	font-weight:bolder;
+	max-width:400px;
+}
 
 #banner{
 	margin-top:0;
@@ -60,17 +66,19 @@ p{
 	color:#fff;
 	text-align:center;
 	position:static;
+	font-size:133%;
 	
 	
 	
 }
+
 
 #sub_banner{
 background-color:#ccc;
 border-bottom: solid 1px #999;
 font-size:1em;
 font-style:italic;
-padding:3px 0 3px 10px;
+max-width:1500px;
 margin-top:35%;
 text-align:center;
 line-height:400%}
@@ -82,14 +90,18 @@ line-height:400%}
 	width: 40%;
 	padding: 5px;
 	left: 56px;
+	text-align:justify;
 }
 #content2{
 
 width:30%;
 margin-top:0.01%;
-padding:5px;
 float:right;
-right::30%;
+right:5%;
+padding-left:20%;
+position:absolute;
+margin-left:10%;
+
 }
 /*#nav1 {
 	position:absolute;
@@ -103,9 +115,10 @@ right::30%;
 #nav2 {
 	position: absolute;
 	padding: 5px 5px 5px 10px;
-	top: 70px;
-	left: 837px;
-	text-align:center;
+	top: 19px;
+	left: 917px;
+	text-align: center;
+	width: 200px;
 	
 }
 
@@ -128,6 +141,8 @@ fieldset{max-width:300px;}
 .title{
 	font-size:120%;
 	margin-top:1%;
+	text-align:center;
+	margin-left:-20%;
 	}
 	
 	
