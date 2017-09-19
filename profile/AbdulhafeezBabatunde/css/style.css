@@ -179,6 +179,9 @@ input[type=submit]:hover {
 /*input[type=textarea]:focus {
 =======
 <<<<<<< HEAD
+/*input[type=textarea]:focus {
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 /*input[type=text]:focus {
 =======
@@ -188,5 +191,6 @@ input[type=submit]:hover {
 /*input[type=text]:focus {
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 >>>>>>> 8132fa77ea0ddc711c44735ae347bb9fa549a6f2
+>>>>>>> 0bc0105f163d8b924706c8d32af10d8053d7299a
     border: 2px solid #555;
 }

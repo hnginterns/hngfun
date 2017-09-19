@@ -1,0 +1,153 @@
+<!doctype html>
+  <html>
+    <head>
+       <meta charset="utf-8">
+       <title>Aniekan Etim Profile</title>
+    <script src="https://use.fontawesome.com/de1f216bfa.js"></script>
+       <style>
+           body {
+               margin: 20px;
+               padding: 0;
+               background-image: url("http://eskipaper.com/images/squirrel-wallpaper-3.jpg");
+               background-color: #cccccc
+           }
+
+           .box {
+               width: 400px;
+               margin: 0 auto;
+               margin-top: 5px;
+               text-align: center;
+               border: 10px solid #000;
+               padding: 90px;
+               background-color: rgba(255, 255, 255, .7);
+           }
+           img {
+               border-radius: 80%;
+               width: 200px;
+               height: 200px;
+               align: center;
+           }
+           
+           p {
+             text-align: justify;
+             font-size: 20px;
+             text-align: center;
+             margin: 0px;
+             }
+           
+           ul {
+               margin: 0;
+               padding: 0;
+               text-align: center;
+           }
+           
+           ul li {
+               display: block;
+               margin: 1px;
+               font-size: 20px;
+               list-style: none;
+           }
+           
+           ul li a {
+               text-decoration: none;
+               text-align: center;
+               color: black;
+               margin: 5px;
+           }
+           
+           a {
+               text-decoration: none;
+               color: brown;
+           }
+           .project {
+               text-align: center;
+           }
+           h1 , h3 {text-align: center;
+           text-shadow: 0px 1px 0px black;
+           color: black;
+           letter-spacing: 0.5em;
+           }
+           hr { height: 5px;
+           color: black;
+           background-color: black;
+           }
+           .col-btnSR {border-radius: 5px;
+           background-color: darkgoldenrod;
+           color: white;
+           width: 120px;
+           height: 35px;
+           text-align: center;
+           position: relative;
+           clear: right;
+           float: center;
+           margin-right: 0px;
+           margin-top: 5px;
+           }
+           .col-btnSL { border-radius: 5px;
+           background-color: darkslategrey;
+           color: white;
+           width: 120px;
+           height: 35px;
+           text-align: center;
+           position: relative;
+           clear: right;
+           float: center;
+           margin-right: 0px;
+           margin-top: 5px;
+           }
+           .input {
+            width: 90%;
+            min-height: 10px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 5px;
+            border-radius: 0px;
+            border: solid 3px black;
+            padding: 5px;
+            background-color: lightgoldenrodyellow;
+           }
+           button[type=submit]:hover {background-color: red;
+           }
+           button[type=reset]:hover {background-color: red;
+           }
+           footer {color: #FFFFFF;
+           font-size: 19px;
+           text-align: center;
+           line-height: 150px;
+           width: 100%;
+           height: 70px;
+           margin:0px;
+           padding:0px;
+           clear: left;
+           }
+       </style>
+    </head>
+
+    <body>
+    
+      <div class="box">
+      
+        <img src="https://scontent.flos1-1.fna.fbcdn.net/v/t1.0-9/1536563_10203401067207845_5537673505039439775_n.jpg?oh=8af1f27001a78f377e4bb83cd1266443&oe=5A5CFFCE" class="box-img"/>
+        <h1>Aniekan Etim</h1>
+        <p><i class="fa fa-slack"></i> <span class="indent">codeislife</span>    <i class="fa fa-twitter"></i> <span class="indent">anneacan</span></p>
+    <hr>    
+        <p>Am a computer engineer and currently an intern web developer at <a href="https://hotels.ng"><strong>hotels.ng.</strong></a>
+           I love solving problems and i know how to efficiently build websites using CMS(es) like Magento, Wordpress, e.t.c. In my spare time am a philosopher and poet.</p>
+
+        <ul>
+          <li><a href="https://github.com/onlycodeislife"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+        <p><h3>Contact Me</h3></p>
+        <form action="aniekanetim.php" method="post">
+          <input placeholder="Email" class="input" type="text" id="to" name="to">
+          <input placeholder="Subject" class="input" type="text" id="subject" name="subject">
+          <textarea placeholder="Message" class="input" id="body" name="message" rows="3" cols="30"></textarea>
+          <button class="col-btnSL" type="submit" name="processMail" value="Submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> GO</button>
+          <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"></i> RESET</button>
+        </form>
+      </div><!--end of the main div--> 
+      <div class="headings center">&nbsp;</div>
+      <footer>&copy; Copyright 2017 . Hotels.ng Internship</footer>
+    
+    </body>
+</html>
+
