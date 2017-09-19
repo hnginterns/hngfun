@@ -26638,6 +26638,27 @@ include('header.php');
     </div>
 </div>
   <!-- Each participant ends here -->
+<<<<<<< HEAD
+=======
+>>>>>>> dd163ac63ed550361935045fa6800e5063e242de
+<?php include "footer.php"?>
+=======
+>>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+=======
+<<<<<<< HEAD
+
+<?php
+//=======
+﻿
+>>>>>>> 248364772d6fe3d311c5f38431a042d06e5005b3
+
+$pageTitle = "Participants";
+include('header.php');
+// include('participants-head.php');
+?>
+>>>>>>> 718bd18e615194b232b784b686dfe1512f668082
     <div id="banner-content" class="row clearfix">
 
         <div class="p-card-container">
@@ -53401,6 +53422,28 @@ include('header.php');
                             </div>
                         </div>
 <!--  Each Participants ends here  -->
+<!--  Each Participant starts here  -->
+               <div class="p-card">
+                   <div class="v-center">
+                       <div class="p-card-photo" style="background-image: url(https://image.ibb.co/e0giMk/prolifichands.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                       <div class="p-card-info">
+                           <a href="http://hng.fun/profile/dote.html">
+                               <!--Profile Link-->
+                               <h3 class="p-card-title">Emmanuel Nelson</h3>
+                               <!--Profile Name-->
+                           </a>
+                           <p class="p-card-description">eul.nelson@gmail.com</p>
+                           <!--Email-->
+                       </div>
+                       <div class="p-team">
+                           <a href="#">
+                               <h3 class="p-card-title"> Team-flash </h3>
+                               <!--Team-->
+                           </a>
+                       </div>
+                   </div>
+               </div>
+               <!--  Each Participants ends here  -->
 
 
 <!--  Each Participant starts here  -->

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 body
 {
 	background-color: #54ff9f;
@@ -22,7 +18,10 @@ img {
 .right {height: 100%;
 	width: 50%;
 	float: right;
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 718bd18e615194b232b784b686dfe1512f668082
 }
 h1 {
 	text-align: center;
@@ -32,6 +31,7 @@ h1 {
 }
 .github {
 	text-align: center;
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 =======
@@ -150,3 +150,6 @@ h1 {
 >>>>>>> 3e700aa04932485532bea076220823f8563012b6
 }
 >>>>>>> 3ada41a6cfbb3818328309cefd081d3a4c1e0f0c
+=======
+}
+>>>>>>> 718bd18e615194b232b784b686dfe1512f668082

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+
+		body {
+			background-color: #8b0850;
+			text-align: center;
+
+		}
+
+		h1 {
+			color: #ffffff;
+			font-weight: bold;
+			font-size: 3em;
+		}
+
+		#calculator {
+			background-color: gray;
+			width: 250px;
+			height: 350px;
+			border: 1px solid black;
+			border-radius: 10px;
+			box-shadow: 0 0 3px 6px #ccc;
+			margin: 50px auto;
+		}
+
+		#display {
+			margin-top: 2em;
+			margin-bottom: 20px;
+			height: 30px;
+			width: 10em;
+			border-radius: 5px;
+			border: 1px solid gray;
+			box-shadow: 0 0 1px 1px black;
+			text-align: right;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 5px 5px 0 0;
+		}
+
+		#keys {
+			padding: 10px 15px;
+			margin: 4px;
+			font-weight: bold;
+			border-radius: 5px;
+			width:41px;
+			height:35px;
+			box-shadow: 0 0 2px 1px black;
+			outline: none;
+		}
+
+		#equal {
+			padding: 5px 10px;
+			margin: 4px;
+			font-weight: bold;
+			border-radius: 5px;
+			width:92px;
+			height:35px;
+			outline: none;
+			box-shadow: 0 0 2px 1px black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Javascript Calculator</h1>
+	<div id="calculator">
+		<form>
+			<input type='text' name='' id='display'  disabled>
+			<br>
+				<input type='button' value='C' id='keys' onclick='toScreen("c")'>
+				<input type='button' value='CE' id='keys' onclick='backspace()'>
+				<input type='button' value='SQ' id='keys' onclick='power()'>
+				<input type='button' value='+' id='keys' onclick='toScreen("+")'>
+				<br>
+
+				<input type='button' value='7' id='keys' onclick='toScreen("7")'>
+				<input type='button' value='8' id='keys' onclick='toScreen("8")'>
+				<input type='button' value='9' id='keys' onclick='toScreen("9")'>
+				<input type='button' value='-' id='keys' onclick='toScreen("-")'>
+				<br>
+
+				<input type='button' value='4' id='keys' onclick='toScreen("4")'>
+				<input type='button' value='5' id='keys' onclick='toScreen("5")'>
+				<input type='button' value='6' id='keys' onclick='toScreen("6")'>
+				<input type='button' value='*' id='keys' onclick='toScreen("*")'>
+				<br>
+
+				<input type='button' value='1' id='keys' onclick='toScreen("1")'>
+				<input type='button' value='2' id='keys' onclick='toScreen("2")'>
+				<input type='button' value='3' id='keys' onclick='toScreen("3")'>
+				<input type='button' value='/' id='keys' onclick='toScreen("/")'>
+				<br>
+
+				<input type='button' value='0' id='keys' onclick='toScreen("0")'>
+				<input type='button' value='.' id='keys' onclick='toScreen(".")'>
+				<input type='button' value='=' id='equal' onclick='answer()'>
+		</form>
+
+	</div>
+
+	<script type="text/javascript">
+		
+	var box = document.getElementById('display');
+
+	function toScreen(x){
+		box.value += x;
+		if(x ==='c'){
+			box.value = '';
+		}
+	}
+
+	function power(){
+		x = box.value;
+		x = eval(x * x);
+		box.value = x;
+	}
+
+	function answer(){
+		x = box.value;
+		x = eval(x);
+		//eval usually evaluates a string as math.
+		box.value = x;
+	}
+
+	function backspace(){
+		let num = box.value;
+		let length = num.length-1;
+		let newNum = num.substring(0, length);
+		box.value = newNum;
+	}
+
+	// function squareroot(){
+	// 	x = box.value;
+	// 	x = Math.sqrt(x);
+	// 	box.value = x;
+	// }
+	</script>
+</body>
+</html>
