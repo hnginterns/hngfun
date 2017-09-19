@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
 <?php
   $config = include('../../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -12,6 +15,9 @@
   $to = "kajohterna@gmail.com";
   $end_point = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
 =======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 <?php
   $config = include('../../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -24,5 +30,11 @@
   $body = htmlentities(strip_tags(trim($_GET['body'])));
   $to = "kajohterna@gmail.com";
   $end_point = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
   header("Location: " . $end_point);

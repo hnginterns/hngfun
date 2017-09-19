@@ -1,26 +1,32 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
 <?php
-$config = include('../config.php');
-$dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
-$connect = new PDO($dsn, $config['username'], $config['pass']);
-$exe = $connect->query('SELECT * FROM password LIMIT 1');
-$data = $exe->fetch();
-$password = $data['password'];
+//$config = include('../config.php');
+//$dsn = 'mysql:host=' . $config['host'] . ';dbname=' . $config['dbname'];
+//$connect = new PDO($dsn, $config['username'], $config['pass']);
+//$exe = $connect->query('SELECT * FROM password LIMIT 1');
+//$data = $exe->fetch();
+//$password = $data['password'];
 ?>
 
 <!doctype html>
 <html>
 <head>
-   
+
     <title> Ogbonna Destiny (dsparkle)</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 
@@ -62,7 +68,7 @@ $password = $data['password'];
         }
         #facebook{
             font-size: 50px;
-            color: chartreuse;
+            color:#46a546;
         }
         #instagram {
             font-size: 50px;
@@ -109,11 +115,125 @@ $password = $data['password'];
 
          }
 
+
+
+        @media screen and (max-width: 1000px) and (min-width: 360px) {
+            body{
+                text-align: center;
+
+            }
+            h2{
+                text-align: center;
+            }
+            img{
+                width:200px;
+                height: 200px;
+
+            }
+
+            input {
+                font-size: 20px;
+                width:250px;
+                margin-bottom: 10px ;
+                font-family:"Lato Light";
+                background-color: white;
+
+            }
+
+            textarea{
+                font-size: 20px;
+                width:250px;
+                height:150px;
+                font-family: "Lato Light";
+
+            }
+            p{
+                text-align: center;
+                color: white;
+            }
+        }
+
+        @media screen and (max-width: 559px){
+
+            body{
+                text-align: center;
+
+            }
+            h2{
+                text-align: center;
+            }
+            img{
+                width:200px;
+                height: 200px;
+
+            }
+
+            input {
+                font-size: 20px;
+                width:250px;
+                margin-bottom: 10px ;
+                font-family:"Lato Light";
+                background-color: white;
+
+
+            }
+
+            textarea{
+                font-size: 20px;
+                width:250px;
+                height:150px;
+                font-family: "Lato Light";
+
+
+            }
+            p{
+                text-align: center;
+                color: white;
+            }
+        }
+
+       /* @media screen (max-width: 240px) {
+            body{
+                text-align: center;
+
+            }
+            h2{
+                text-align: center;
+            }
+            img{
+                width:200px;
+                height: 200px;
+
+            }
+
+            input {
+                font-size: 20px;
+                width:100px;
+                margin-bottom: 10px ;
+                font-family:"Lato Light";
+                background-color: white;
+
+
+            }
+
+            textarea{
+                font-size: 20px;
+                width:100px;
+                height:150px;
+                font-family: "Lato Light";
+
+
+            }
+            p{
+                text-align: center;
+                color: white;
+            }
+        }*/
     </style>
 </head>
-<body>
-<div class="container">
-    <h1>Dsparkle's Profile</h1>
+<div  class="container-fluid">
+<div>
+    <h2>Dsparkle's Profile</h2>
 
     <img src="https://avatars1.githubusercontent.com/u/30692180?v=4&u=b7ee8f2fc91c2f389bd58fa06c430db35af912e9&s=400" alt="Loading">
     <p>I am Ogbonna Destiny Uchechukwu from Abia State. Am  a software developer am good at html and css.<br>
@@ -135,11 +255,11 @@ $password = $data['password'];
     </div>
 </div>
 <div>
-    <h1>
+    <h2>
         To contact me please drop your message(s) below
-    </h1>
+    </h2>
     <form id="contact-form">
-        <input type="text" id="name" name="name" placeholder="your name" required>
+        <input   type="text" id="name" name="name" placeholder="your name" required>
         <input type="text" id="email" name="email" placeholder="your email" required>
         <input type="text" id="subject" name="subject" placeholder="your subject" required>
         <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
@@ -147,6 +267,7 @@ $password = $data['password'];
         <br>
         <input type="submit" id="send-message" name="submit" value="SUBMIT" onclick="sendMessage(event)">
     </form>
+</div>
 </div>
 
 <script>
@@ -175,6 +296,7 @@ $password = $data['password'];
 </script>
 </body>
 </html>
+<<<<<<< HEAD
 =======
 <?php
 $config = include('../config.php');
@@ -471,3 +593,5 @@ $password = $data['password'];
 </body>
 </html>
 >>>>>>> 10102c15c7b9faeed00255e89bbe69c6a2502ca7
+=======
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
