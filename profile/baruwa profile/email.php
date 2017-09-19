@@ -1,19 +1,22 @@
 <?php
-    $config = include('../config.php');
-    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    $con = new PDO($dsn, $config['username'], $config['pass']);
-    $exe = $con->query('SELECT * FROM password LIMIT 1');
-    $data = $exe->fetch();
-    $password = $data['password'];
-    if (isset($_GET['sendmessage'])) {
-        $subject = "Hello";
-        $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['body'])));
-        $to = "olakes265@gmail.com";
-        if (!isset($body) || $body == '' || (!isset($_GET['name'])) || $_GET['name'] == '' ) {
-            echo "Form cannot be blank";
-        }else {
-            $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
-            header("Location: " . $location);
-        }
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    /*$subject = $_POST['subject'];
+    $to  = $_POST['to'];
+    $body = $_POST['message'];*/
+    $config = include('../../config.php');
+    $server = $config['host'];
+    $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
+    if (!$con) {
+      die("Connection failed: ".mysqli_connect_error());
+  }
+    $sql = 'SELECT * FROM password LIMIT 1';
+    if($result = mysqli_query($con, $sql)) {
+      $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
+      $password = $data['password'];
+    } else {
+        $password = "#";
     }
+   /* $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    header("location: $uri");*/
+  }
+?>
