@@ -67,7 +67,7 @@
 	<h1>Javascript Calculator</h1>
 	<div id="calculator">
 		<form>
-			<input type='text' name='' id='display'  disabled>
+			<input type='text' name='' id='display' maxlength="10" disabled>
 			<br>
 				<input type='button' value='C' id='keys' onclick='toScreen("c")'>
 				<input type='button' value='CE' id='keys' onclick='backspace()'>
@@ -102,12 +102,25 @@
 
 	<script type="text/javascript">
 		
-	var box = document.getElementById('display');
+	let box = document.getElementById('display');
 
 	function toScreen(x){
-		box.value += x;
-		if(x ==='c'){
+
+		let displayArray = box.value.toString().split("");
+
+		if(box.value.length === 10){
+			box.value +='';
+		}
+		else if(x ==='c'){
 			box.value = '';
+		 }// else 
+		// //Bug fix going on here. Trying to find how to put the logic into code.
+		// if (displayArray[0] === "0"){
+		// 	box.value += x;
+		// 	let a = displayArray.slice(1).join("");
+		// }
+		else{
+			box.value += x;
 		}
 	}
 
@@ -119,9 +132,23 @@
 
 	function answer(){
 		x = box.value;
-		x = eval(x);
-		//eval usually evaluates a string as math.
-		box.value = x;
+		let y;
+		try {
+			y = eval(x);
+			let resultArray = y.toString().length;
+			if(resultArray >= 10){
+				y = y.toPrecision(10);
+				box.value = y;
+			}
+			else{
+				box.value = y;
+			}
+		}
+		catch (e) {
+    		if (e instanceof SyntaxError) {
+    		box.value = "NaN";
+    		}
+		}
 	}
 
 	function backspace(){
