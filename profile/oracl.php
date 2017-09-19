@@ -231,7 +231,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
 			<section class="grid-4">
                 <center><h2>Contact</h2></center>
-                 <form class="cd-form floating-labels" method="POST">
+                         <form class="cd-form floating-labels" method="POST">
               		<fieldset>
 
 
