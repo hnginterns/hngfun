@@ -29,11 +29,31 @@ img{
 body{
   background-color: powderblue;
 }
+.contact-form input,
+      .contact-form textarea {
+      width: 80%;
+      margin-top: 15px;
+      padding: 12px 20px;
+      border: .5px solid #ccc;
+      border-radius: 7px;
+      background-color: #eaeaea;
+      }
+      input[type=submit] {
+      background-color: #26acd9;
+      }
+      input[type=submit]:hover {
+      background: white;
+      border: .7px solid #ccc;
+      cursor: pointer;
+      }
+      textarea {
+      font-family: inherit;
+      resize: none;
+      }
 
 </style>
 
 </head>
-
 
 
 <body>
@@ -47,7 +67,7 @@ body{
   </div>
 
   <div>
-   <h2> Bio :</h2> <p>I’m from Akwa ibom state, ibiono ibom LGA. I'm an undergradute of Madonna University Elele campus, studying computer science. I'm currently on my Industrial Training which am learning how to develop andriod applications. I registered on the Hotels.ng programm to better my knowledge more on programming languages. </p>
+   <p><h2> Bio :</h2> I’m from Akwa ibom state, ibiono ibom LGA. I'm an undergradute of Madonna University Elele campus, studying computer science. I'm currently on my Industrial Training which am learning how to develop andriod applications. I registered on the Hotels.ng programm to better my knowledge more on programming languages. </p>
   </div>
 
   <div>
@@ -55,6 +75,19 @@ body{
   </div>
   <div>
     <strong>Github Username :</strong> @funkylala
+      <section class="contact-form" >
+               <div class = "card-form">
+                  <form  action="shido.php" method="post" >
+                     <p class = "title" >CONTACT ME</p>
+                     <input type="text" placeholder="Subject" name="subject" required/><br>
+                     <input type="email" placeholder="Email" name="email" required/><br>
+                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here" required></textarea>
+                     <br>
+                     <input type="submit"/>
+                  </form>
+               </div>
+            </section>
+         </section>
   </div>
 </body>
 </html>

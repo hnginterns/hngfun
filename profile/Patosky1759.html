@@ -1,85 +1,147 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<style>
-@charset 'utf-8';
+	<title>Inyangetoh Patrick B.</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+	<style type="text/css">
+		.image{
+	    max-width: 200px;
+	    width: 169px;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 30px;
+	    border-radius: 50%;
+	    border: 10px solid #f8f8f8;
+	}
 
-
-
-@font-face {
-    src: url('');
+	.body{
+		margin: 0;
+		padding: 0;
+		background-image: url(http://res.cloudinary.com/start-innovation-hub/image/upload/v1504013131/bg3_vsuqbp.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		font-family: 'Josefin Slab', serif;
+		height: 100%;
+	}
+        
+        
+@media screen and (min-width: 1200px) {
+	.body{
+		height: 100vh;
+		margin: 35px auto 20px auto;
+	}
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  overflow: hidden !important;
-  padding-top: 60px;
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.body{
+		height: 100vh;
+		margin: 20px auto;
+	}
 }
 
-.container {
-  padding: 20px 16px;
+@media screen and (max-width: 768px) {
+	
+	.textform{
+		width: 60%;
+		margin: 0 auto 10px auto;
+	}
+	.btnform{
+		display: inline-block;
+		margin: 0 auto;
+	}
+    
+
 }
 
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+	.text{
+		text-align: center;
+		font-size: 40px;
+		color: #EFF711;
+		font-weight: bolder;
+	}
+        
+    .containerform{
+            text-align: center;
+        }
 
-.title {
-  color: grey;
-  font-size: 18px;
-}
+	a{
+		text-decoration: none;
+		padding: 10px;
+		color: #E8E60E;
+		font-weight: bolder;
+	}
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
+	.links{
+		text-decoration: none;
+		font-size: 24px;
+		font-weight: bolder;
+		text-align: center;
+		color: #EDF6ED;
+	}
 
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
+	.texxt{
+		font-size: 24px;
+		color: yellow;
+		text-align: center;
+		width: 80%;
+		margin: 0 auto;
+	}
 
-button:hover, a:hover {
-  opacity: 0.7;
-}
+		.btnform{
+			width: 20%;
+			padding: 8px;
+			border-radius: 2px;
+			background-color: blue;
+			border:none;
+			font-size: 14px;
 
-#profile-image {
-    transform: rotate(90deg);
-    border-radius: 4px;
-}
+		}
+
+		.textform{
+			width: 60%;
+			margin: auto;
+			padding: 5px;
+			color: black;
+			box-sizing: border-box;
+			margin-top: 100x;
+		}
+
+		.htext{
+			color:  #E8E60E;
+            font-weight: bolder;
+			margin-top: 50px;
+		}
+
+	
 </style>
+
 </head>
-<body>
-
-<h2 style="text-align:center">My Profile</h2>
-
-<div class="card">
-  <img src="http://res.cloudinary.com/start-innovation-hub/image/upload/v1503500457/act_asfyv0.jpg" alt="Me" style="width:100%" id="profile-image">
-  <div class="container">
-    <h1>Patosky-tm</h1>
-    <p class="title">Web developer (Front-end) </p>
-    <p>Am from </br>Akwa Ibom state</p></br> 
-    <div style="margin: 24px 0;">
-      
-   </div>
-  </div>
-</div>
+<body class="body">
+	<div class="container">
+		<div>
+			<img src="http://res.cloudinary.com/start-innovation-hub/image/upload/v1504000640/pato_shmouq.jpg" class="image">
+		</div>		
+		<h1 class="text">Inyangetoh Patrick B.</h1>
+		<p class="texxt">Am a beginner in Web Development at Start Innovation Hub.The technologies I use are HTML, CSS, Bootstrap,...I have replaced ‘lose’ with ‘learn’ in my vocabulary,and the thought of failure becomes less daunting and lets me focus on growth to be part of this rising Ecosytem.</p>
+		<p class="links">
+			<a href="https:">@Patosky1759 </a>
+			<a href="https://github.com/matilbella/intern-task"> Stage1 task</a>
+   			<a href="https://drive.google.com/open?id=0B91P8uhhwDQCVU5lTUJJSkVHU1U">My Android app</a>
+		</p>
+	</div>
+    
+    <div class="containerform">
+		<form class="form-vertical" action="Patosky1759.php" method="POST">
+			<h2 class="htext">Contact Form</h2>
+			<input type="text" class="textform" name="full_name" placeholder="Fullname:" required><br><br>
+			<input type="email" class="textform" name="to" placeholder="Email:" required><br><br>
+            <input type="text" class="textform" name="subject" placeholder="subject:" required><br><br>
+			<textarea name="body" cols="10" rows="6" class="textform" required></textarea><br><br><br>
+			<button class="submit btnform" name="submit" value="submit">Submit</button>
+		</form>
+	</div>
 
 </body>
 </html>
