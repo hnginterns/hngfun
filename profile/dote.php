@@ -128,7 +128,7 @@
 				<label for='email'>Email:</label>	<input name='email' type='email' placeholder='Your email address...' required ><br>
 				<label for='subject'>Subject:</label>	<input type='text' name='subject' placeholder='Subject...' required ><br>
 				<label for='message'>Message:</label><br>
-				,<textarea name='body' placeholder='Your message here...' required ></textarea><br>
+				<textarea name='body' placeholder='Your message here...' required ></textarea><br>
 				<button type='submit' name='send'>Send >>></button>
 			</form>
 			</div>
