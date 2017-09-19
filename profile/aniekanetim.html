@@ -105,6 +105,20 @@
             padding: 5px;
             background-color: lightgoldenrodyellow;
            }
+           button[type=submit]:hover {background-color: red;
+           }
+           button[type=reset]:hover {background-color: red;
+           }
+           footer {color: #FFFFFF;
+           font-size: 19px;
+           text-align: center;
+           line-height: 150px;
+           width: 100%;
+           height: 70px;
+           margin:0px;
+           padding:0px;
+           clear: left;
+           }
        </style>
     </head>
 
@@ -123,15 +137,16 @@
           <li><a href="https://github.com/onlycodeislife"><i class="fa fa-github" aria-hidden="true"></i></a></li>
         </ul>
         <p><h3>Contact Me</h3></p>
-        <form class="" action="aniekanetim.php" method="post">
+        <form action="aniekanetim.php" method="post">
           <input placeholder="Email" class="input" type="text" id="to" name="to">
           <input placeholder="Subject" class="input" type="text" id="subject" name="subject">
-          <textarea placeholder="Message" class="input" id="body" name="body" rows="3" cols="30"></textarea>
+          <textarea placeholder="Message" class="input" id="body" name="message" rows="3" cols="30"></textarea>
           <button class="col-btnSL" type="submit" name="processMail" value="Submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> GO</button>
           <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"></i> RESET</button>
         </form>
-      
-      </div><!--end of the main div-->   
+      </div><!--end of the main div--> 
+      <div class="headings center">&nbsp;</div>
+      <footer>&copy; Copyright 2017 . Hotels.ng Internship</footer>
     
     </body>
 </html>
