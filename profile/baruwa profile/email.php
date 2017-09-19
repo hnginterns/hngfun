@@ -22,6 +22,6 @@
 
      $password = $data['password'];
 
-           header("location: hngfun/profile/baruwa profile/baruwa123.html?password=$password&subject=$subject&body=$body&to=olakes265@gmail.com");}
-
-?>.
+           header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=olakes265@gmail.com");
+          }
+?>
