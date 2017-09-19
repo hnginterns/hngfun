@@ -135,7 +135,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div id="form-center">
         <div id="divform">
             <div id="formtitle"><strong>Contact me</strong></div>
-            <form id="form" action+"#" method="post">
+            <form id="form" action="#" method="post">
                 <div class="form-group">
                             <label for="Name">Name:</label>
                             <input type="text" id="name" name="name" class="form-control"  placeholder="Enter Name">
@@ -152,7 +152,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <p>
 
                 </p>
-                <button value="submit" name="submit" class="bttnstyle">Submit</button>
+                <input type="submit" value="submit" name="submit" class="bttnstyle">Submit</input>
                 <p>
 
                 </p>
