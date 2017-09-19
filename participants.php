@@ -26562,9 +26562,6 @@ include('header.php');
 =======
 <<<<<<< HEAD
 
-<?php
-//=======
-﻿<?php
 >>>>>>> 248364772d6fe3d311c5f38431a042d06e5005b3
 
 $pageTitle = "Participants";
