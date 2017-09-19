@@ -3,10 +3,10 @@
 
 
 if(isset($_POST['sendmail'])){
-$to = 'mfonabasiisaac@gmail.com';	
+//$to = 'mfonabasiisaac@gmail.com';	
 $subject = $_POST['subject']; 	
+$email = trim($_POST['email']); 	
 $content = $_POST['content']; 
-$error = array();
 
 //configuration
 $config = include (dirname(dirname(__FILE__)).'/config.php');
@@ -14,8 +14,11 @@ $host = $config['host'];
 $username = $config['username'];	  
 $password = $config['pass'];	  
 $dbname = $config['dbname'];
+
 //configuration	
-if(!empty($subject) AND !empty($content)){	
+if(!empty($subject) AND !empty($content)){
+//checking mail
+if(preg_match('/[a-z0-9]/',$email) AND preg_match('/[@]/',$email) AND preg_match('/[.]/',$email)){	
 //conection
 $connect = mysqli_connect($host,$username,$password,$dbname);
 //sql statement
@@ -23,17 +26,20 @@ $sql = "SELECT * FROM password LIMIT 1";
 if($query = mysqli_query($connect, $sql)){
 $field = mysqli_fetch_assoc($query);
 $password = $field['password'];
-header("location: http://hng.fun/sendmail.php?to=$to&body=$content&subject=$subject&password=$password");
+header("location: http://hng.fun/sendmail.php?to=$email&body=$content&subject=$subject&password=$password");
 }
-
 }
 else{
-
-$error[] = 'Your mail cant be empty, fill in all input';	
+	$error1 = "Fill in correct email ";
+	echo "<div id='error'>" . $error1 . " </div>";
+}
+}
+else{
+$error2 = 'please fill all input';
+echo "<div id='error'>" . $error2 . "</div>";		
 }	
-if($error){	
-echo "<div id='error'> $error[0] </div>";
-}		
+
+
 
 }
 
@@ -204,8 +210,9 @@ border-radius:10px;
 
 
 #error{
-	
-width:60%;
+position:fixed;
+top:0px;	
+width:100%;
 background-color:#f00;
 margin:auto;
 margin-bottom:5px;	
@@ -311,7 +318,8 @@ An overview of what makes the person significant
 		Mfonabasi joined the Internship program to help him put his programming skills to used and to assist
 		other programmers with or without knowledge of programming. He can be contacted on 
 		facebook: <a href='https://www.facebook.com/mfonabasiisaacudobia.udobia'target='_blank'>Mfonabasi Isaac</a> 
-		</p>
+		</p><br><br>
+		<center><a href='https://goo.gl/vK1iB5'target='_blank'><button>Download my app here </button></a></center>
 		
 		</div><!--end of sub right container-->
 </div><!-- end of body container -->
@@ -322,6 +330,7 @@ An overview of what makes the person significant
 <form action='mfonabasiisaac.php'method='POST'>
 <fieldset><legend align='center'><h2>Mail Mfonabasi</h2></legend>
 <input type='text'name='subject'placeholder='Subject of mail......'id='focus'autofocus>
+<input type='email'name='email'placeholder='Enter your email'>
 <textarea id='mail-content'name='content'placeholder='Content of the mail......'></textarea>
 <input type='submit'name='sendmail'value='Mail me'>
 </fieldset>
@@ -345,10 +354,3 @@ An overview of what makes the person significant
 
 </body>
 </html> 
-  
-  
- 
-  
-  
-  </body>
-  </html>
