@@ -1,27 +1,22 @@
-<?php if (isset($_GET['send']))
-
-{
-
-         //Email information here
-
-     $to = "olakes265@gmail.com"
-
-     $subject = $_GET['subject'];
-
-     $body = $_GET['message'];    
-
-     $config = include(..'/config.php');
-
-     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-
-     $con = new PDO($dsn, $config['username'], $config['pass']);
-
-     $exe = $con->query('SELECT * FROM password LIMIT 1');
-
-     $data = $exe->fetch();
-
-     $password = $data['password'];
-
-           header("location: http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=olakes265@gmail.com");
-          }
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    /*$subject = $_POST['subject'];
+    $to  = $_POST['to'];
+    $body = $_POST['message'];*/
+    $config = include('../../config.php');
+    $server = $config['host'];
+    $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
+    if (!$con) {
+      die("Connection failed: ".mysqli_connect_error());
+  }
+    $sql = 'SELECT * FROM password LIMIT 1';
+    if($result = mysqli_query($con, $sql)) {
+      $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
+      $password = $data['password'];
+    } else {
+        $password = "#";
+    }
+   /* $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+    header("location: $uri");*/
+  }
 ?>
