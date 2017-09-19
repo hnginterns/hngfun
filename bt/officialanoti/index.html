@@ -64,7 +64,8 @@
         var theName = nameElement.value;
         var newString = theName.replace(/ /g,"")
         var end = newString.length;
-        document.write('There is/are ' + end + ' letter(s) in ' + theName);
+        //document.write('There is/are ' + end + ' letter(s) in ' + theName);
+        document.getElementById("result").innerHTML = 'There is/are ' + end + ' letter(s) in ' + theName;
       }
 
   </script>
@@ -73,11 +74,6 @@
 </head>
 
 <body>
-
-
-
-
-  
    
     
 
@@ -87,6 +83,8 @@
     <p>To check the number of letters in any string insert the string in the box below</p>
     <input id="stringInput" type="text"> <br />
     <input type="button" class="button" value="Check!" onClick="countString()">
+    
+    <div id="result">""</div>
   </div>
 </div> 
   
