@@ -11,14 +11,13 @@ img {
 }
 .left {
 	float: left;
-	//background-color: #ffdab9;
+	
 	height: 100%;
 	width: 50%;
 }
 .right {height: 100%;
 	width: 50%;
 	float: right;
-	//background-color: yellow;
 }
 h1 {
 	text-align: center;
