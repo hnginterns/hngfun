@@ -1,6 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<!DOCTYPE html>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
 <!DOCTYPE php>
 <html lang="en">
 
@@ -99,8 +106,15 @@
     </body>
 <!--=== End Body ===-->
 =======
+<<<<<<< HEAD
 >>>>>>> 10102c15c7b9faeed00255e89bbe69c6a2502ca7
 <!DOCTYPE php>
+=======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+<!DOCTYPE php>
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
 <html lang="en">
 
 <head>  
@@ -131,9 +145,22 @@
                         </div>
                     </div>
 
+<<<<<<< HEAD
                 <div class="col-md-8 bio col-md-offset-1 my-bio" style="height: 600px;">                    
                     <div class="headline">                  
                         <h1><i class="fa fa-user fa-icon1x"></i> 
+=======
+<<<<<<< HEAD
+                <div class="col-md-8 bio col-md-offset-1 my-bio">                    
+                    <div class="headline">                  
+                        <h1><i class="fa fa-user fa-icon1x"></i> 
+
+=======
+                <div class="col-md-8 bio col-md-offset-1 my-bio" style="height: 600px;">                    
+                    <div class="headline">                  
+                        <h1><i class="fa fa-user fa-icon1x"></i> 
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
                             <strong>Contact Info</strong>
                         </h1>
                     </div>
@@ -175,10 +202,23 @@
                         <!-- Social Links -->
                         <div class="col-md-12">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                            <ul class="footer-links list-inline">
+                                <li>
+                                
+                                    <a href="index.php"></i>Basic Info</a>
+=======
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
                             <ul class="footer-socials list-inline">
                                 <li>
                                 
                                     <a href="index.php"></i>Home</a>
+<<<<<<< HEAD
+=======
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
                                 </li>
                                 <li>
                                     <a href="contact.php"></i>Contact</a>
@@ -186,7 +226,18 @@
 
                                 <li>
                                     <a href="social.php"></i>Social</a>
+<<<<<<< HEAD
                                 </li>                                
+=======
+<<<<<<< HEAD
+                                </li>
+                                <li>
+                                    <a href="message.php"></i>Message Box</a>
+                                </li>                               
+=======
+                                </li>                                
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
                             </ul>
                         </div>
                         <!-- End Social Links -->
@@ -195,6 +246,7 @@
         </section>
 <!--=== End Footer ===-->
 
+<<<<<<< HEAD
     </body>
 <!--=== End Body ===-->
 <<<<<<< HEAD
@@ -202,3 +254,22 @@
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 >>>>>>> 10102c15c7b9faeed00255e89bbe69c6a2502ca7
 </html>
+=======
+<<<<<<< HEAD
+<!-- Javascripts
+===================================== -->
+        <script src="js/jquery.min.js" type="text/javascript"></script>        
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+<!--=== End Body ===-->
+</html>
+=======
+    </body>
+<!--=== End Body ===-->
+<<<<<<< HEAD
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+</html>
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6

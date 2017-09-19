@@ -47,7 +47,7 @@ body {
 .profile {
      width: 360px;
 	 height: 90%;
-     min-width: 30%;
+     min-width: 25%;
 	 min-height: 90%;
 	 text-align: center;
 	 border: 2px solid #20b2aa;
@@ -99,7 +99,7 @@ p {
 	float: right;
 	width: 360px; 
 	height: 550px;
-    min-width: 30%;
+    min-width: 20%;
 	min-height:	90%;
 	margin: 7% 5%;
 	background-color: #48d1cc;
