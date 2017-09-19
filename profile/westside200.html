@@ -92,6 +92,11 @@
 		width: 60%;
 		border-color: #0d89a8;
 	}
+	#contain{
+	margin-left: auto;
+	margin-right: auto;
+	width:30%;
+	}
 </style>
 
 	<title>Anthony</title>
@@ -109,7 +114,27 @@
 	<div>
 		<h1>Fru Anthony</h1>
 	</div>
-
+<div id="contain">
+  <form  id="contact" action="" method="get">
+  <fieldset>
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+    </fieldset>
+    <fieldset>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your Email" required>
+     </fieldset>
+     <fieldset>
+    <label for="phone">Phone number</label>
+    <input type="text" id="tel" name="phone" placeholder="Your telephone" required>
+     </fieldset>
+     <fieldset>
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.."  ></textarea>
+</fieldset>
+    <input type="submit" name="sendmessage" value="Submit">
+  </form>
+</div>
 	<div class="faind">
 		<a href="https://github.com/westside200" target="_blank">#stage1 tasks</a>
 	</div>

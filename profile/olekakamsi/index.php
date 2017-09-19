@@ -1,7 +1,7 @@
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject = $_POST['subject'];
-    $to  = $_POST['olekakamsy@gmail.com'];
+    $to  = 'olekakamsy@gmail.com';
     $body = $_POST['message'];
     $config = include('../../config.php');
     $server = $config['host'];
@@ -28,7 +28,7 @@
 		
 		<img src = "https://i.imgur.com/9CRtF8r_d.jpg" alt="A picture of muah hehehe(If you're seeing this then i blew it or your network is shit fam)" />
 	<div>
-		<p align = center>The name is Oleka Kamsi <br /> Olekakamsi on slack channel</p>
+		<p align = center>I'm Oleka Kamsi, olekakamsi on slack channel</p>
 		<p align = center>Year two student of Mechanical Engineering at the University of Nigeria. I'm an at Intern at HNG.</p>
 		<p align = center>I'm from <b>Enugu State.</b></p>
 
@@ -45,7 +45,8 @@
 			<textarea name="message" row="55" cols="50"></textarea><br />
 		<input type="submit" value="SEND">
 	
-
 	</form>
+
+	<a href = "https://drive.google.com/open?id=0B-tHo7ZlKWbxRnZGTmo1RHdtbUk">App Link</a>
 	</body>
 </html>
