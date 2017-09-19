@@ -6,20 +6,29 @@
 font-family:ds;
 src: url("../font/DancingScript-Regular.ttf"); 
 }
+@keyframes load{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
+html{
+	height:100%;
+	min-height:690px;
+}
 body{
 	margin:0px;
+	height:100%;
 	background-color: #009999;
 }
 .con{
 	width:100%;
-	height:690px;
+	height:100%;
 	background-color: #009999;
 	position: relative;
 	z-index: 1;
 	min-width: 1320px;
 }
 .con::after{
-	width:100px;
+	width:800px;
 	height:690px;
 	background-color: #f9f9f9;
 	position: absolute;
@@ -33,6 +42,7 @@ body{
 	width:1320px;
 	height: 600px;
 	margin: 0 auto;
+	position: relative;
 }
 .con .main .lft{
 	width:650px;
@@ -105,7 +115,38 @@ body{
 	background-color: #f9f9f9;
 	float:left;
 	position: relative;
+	display:none;
 
+}
+.con .main .overlay{
+	width:670px;
+	height: 600px;
+	background-color:transparent;
+	position: absolute;
+	z-index: 50;
+	right:0;
+	display: none;
+}
+.con .main .overlay .spinner{
+	width:50px;
+	height: 50px;
+	margin: 275px auto auto 400px;
+	position: relative;
+	animation-name:load;
+	animation-duration:2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	color:#009999;
+}
+.con .main .overlay .spinner::before{
+	width:50px;
+	height: 50px;
+	position: absolute;
+	content:"\e988";
+	font-family:"vicon";
+	text-align: center;
+	line-height: 50px;
+	font-size: 38px;
 }
 .con .main .rgt .infoCon{
 	width:510px;
@@ -162,6 +203,8 @@ body{
 	border-left:1px solid white;
 	color:white;
 	padding-left:10px;
+	cursor:pointer;
+	transition: all 0.40s linear;
 }
 .con .ft .lCon .mainCon a:hover{
 
@@ -180,11 +223,21 @@ body{
 .con .main .rgt .infoCon  table tr td:first-of-type{
 	width: 130px;
 	text-align: right;
-	padding-left: 0px;
+	padding-right: 5px;
 	color: #07ADAD;
-	font-size: 16px;
+	font-size: 18px;
 	font-family: arial;
 	font-weight: 300;
+}
+.con .main .rgt .infoCon  table tr td{
+	color:rgba(212,12,16,1.00);
+}
+.con .main .rgt .infoCon  table tr td a{
+	text-decoration: none;
+	color:rgba(49,173,30,1.00);
+}
+.con .main .rgt .infoCon  table tr td a:hover{
+	text-decoration:underline;
 }
 .con .main .rgt .infoCon .tCon table tr td{
 	padding-left:5px;
@@ -216,9 +269,10 @@ body{
 	width: 450px;
 	height:43px;
 	margin: 15px auto 0 auto;
+	position: relative;
 	
 }
-.con .main .rgt .infoCon .fmCon .bt input{
+.con .main .rgt .infoCon .fmCon .bt button{
 	width: 450px;
 	height:43px;
 	background-image: linear-gradient(to top, #f5f5f5 0%, #fff 100%);
@@ -228,15 +282,47 @@ body{
 	box-shadow:0 0 4px 1 #ccc;
 	cursor:pointer;
 	font-size:18px;
-	color:#009999;
+	transition: all 0.2s linear;
 	
 }
-.con .main .rgt .infoCon .fmCon .bt input:hover{
+.con .main .rgt .infoCon .fmCon .bt .loader{
+	width: 450px;
+	height:43px;
+	margin:0 auto;
+	position: absolute;
+	z-index:20;
+	border-radius: 5px;
+	cursor: not-allowed;
+	display:none;
+}
+.con .main .rgt .infoCon .fmCon .bt .loader .mloader{
+	width: 43px;
+	height:43px;
+	margin: 0 auto;
+	position: relative;
+	animation-name:load;
+	animation-duration:2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.con .main .rgt .infoCon .fmCon .bt .loader .mloader::before{
+	width: 43px;
+	height:43px;
+	position: absolute;
+	top:0px;
+	content:"\e986";
+	font-family:"vicon";
+	font-size:24px;
+	line-height: 43px;
+	text-align: center;
+	color:#009999;
+}
+.con .main .rgt .infoCon .fmCon .bt button:hover{
 	background-image: -webkit-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
 	background-image: -moz-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
 	background-image: -o-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
 	background-image: linear-gradient(0deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	border: 1px solid #ccc;
+	border: 1px solid #009999;
 	color: white;
 	box-shadow: 0 0 6px 1px #009999;
 	
@@ -258,6 +344,8 @@ body{
 	max-height: 227px;
 	min-height: 173px;
 	color:#009999;
+	border-radius:3px;
+	transition: all 0.2s linear;
 }
 .con .main .rgt .infoCon .fmCon table tr td input{
 	width: 300px;
@@ -267,6 +355,7 @@ body{
 	box-shadow:0 0 4px 0 #fff;
 	padding:0 5px 0 5px;
 	color:#009999;
+	transition: all 0.2s linear;
 }
 .con .main .rgt .infoCon .fmCon table tr:nth-child(4){
 	text-align: right;
@@ -316,6 +405,24 @@ body{
 	float:left;
 	font-family: Arial;
 	font-size: 14px;
+<<<<<<< HEAD
+}
+.selected{
+	color: #005151!important;
+	font-size: 24px;
+	text-shadow: 0 0 8px white;
+}
+.selected:hover{
+	text-decoration: none!important;
+}
+.vicon-hng-compass::before{
+	margin-right:10px!important;
+}
+.vicon-hng-mail-envelope-closed::before{
+	font-size: 23px!important;
+	line-height: 23px!important;
+	padding-top:3px;
+=======
 =======
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
@@ -639,4 +746,5 @@ body{
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 }
