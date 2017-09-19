@@ -1,12 +1,10 @@
 <?php
-  
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = $_POST["name"];
   $email = $_POST["email"];
-  $message = $_POST["comment"];
-  $from = 
-   $to= 'olakes265@gmail.com';
-      $subject='Hello';
+  $message = $_POST["message "];
+  $from = ‘http://hng.fun/profile/baruwa%20profile/baruwa123.html';
+  $to= 'olakes265@gmail.com';
+  $subject='Hello';
 }
 
 function test_input($data) {
@@ -31,7 +29,14 @@ function test_input($data) {
     } else {
         $password = "#";
     }
-   /* $uri = "hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=olakes265@gmail.comto=$to&body=$body&subject=$subject&password=$password";
+   /* $body= "hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=olakes265@gmail.comto=$to&body=$body&subject=$subject&password=$password";
     header("location: $uri");*/
   }
+if ($_POST['submit']) {
+    if (mail ($to, $subject, $body, $from)) { 
+        echo '<p>Your message has been sent!</p>';
+    } else { 
+        echo '<p>Something went wrong, go back and try again!</p>'; 
+    }
+}
 ?>
