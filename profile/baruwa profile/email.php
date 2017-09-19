@@ -1,5 +1,20 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+  
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $message = $_POST["comment"];
+  $from = 
+   $to= 'olakes265@gmail.com';
+      $subject='Hello';
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
     /*$subject = $_POST['subject'];
     $to  = $_POST['to'];
     $body = $_POST['message'];*/
@@ -16,7 +31,7 @@
     } else {
         $password = "#";
     }
-   /* $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+   /* $uri = "hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=olakes265@gmail.comto=$to&body=$body&subject=$subject&password=$password";
     header("location: $uri");*/
   }
 ?>
