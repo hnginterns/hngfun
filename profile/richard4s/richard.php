@@ -12,7 +12,7 @@
 
 <div>
 	<h2>Richard Oluwo</h2>
-	<img src="richard oluwo.jpg">
+	<img src="https://avatars1.githubusercontent.com/u/28661719?v=4&u=53674386b9ac3f2c16ac78bf110c5791657ba410&s=400">
 	<h4>Intermediate Back-end Developer, Front-End Developer and UX/UI designer.<br /> 
 	Javascript enthusiast with a keen eye for the use of modern web technologies in the js world.<br /> 
 	Devoted to functional programming, information architecture and creative direction.</h4>
@@ -27,7 +27,8 @@
 Twitter - <a href="https://twitter.com/Richard4s?s=08">@richard4s</a>
 Github - <a href="https://github.com/richard4s">@richard4s</a>
 Slack - <a href="https://hnginterns.slack.com/messages/@richard4s">richard4s</a><br />
-<a href="https://github.com/hnginterns/getting-started-h2-2017/tree/richard4s">HNG Interns - Here is a link to my Stage 1 Repo</a>
+<a href="https://github.com/hnginterns/getting-started-h2-2017/tree/richard4s">HNG Interns - Here is a link to my Stage 1 Repo</a><br />
+<a href="https://drive.google.com/file/d/0B-d1wzVIxkx_TFpYYUw2TXkxV2c/view?usp=drivesdk"><b>My Android task app</b></a>
 </p>
 	<form action="richard.php" method="POST">
 		<h4>Name: <br /><input type="text" name="contact_name"></h4>

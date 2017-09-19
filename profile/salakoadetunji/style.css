@@ -1,7 +1,7 @@
 body{
-	background: #fdf6dc;
-	text-align: center;
-	padding: 20px;
+    background: #fdf6dc;
+    text-align: center;
+    padding: 20px;
 }
 
 img {
@@ -16,17 +16,17 @@ img {
 }
 
 footer{
-	position: relative;
+    position: relative;
 }
 
 h4 {
-	font-size: 30px;
-	font-style: italic;
+    font-size: 30px;
+    font-style: italic;
 }
 
 p {
-	font-size: 25px;
-	font-family: sans-serif;
+    font-size: 25px;
+    font-family: sans-serif;
 }
 
 input[type=text], select, textarea {

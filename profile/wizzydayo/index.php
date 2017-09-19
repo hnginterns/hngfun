@@ -71,6 +71,12 @@
   <hr>
       <div> 
   <h1>Contact Me</h1>
+	      <h3> 
+You can download my android app <a href = " https://github.com/wizzydayo/hello-world/raw/master/wizzydayo.apk "> here </a> 
+<h3>
+<hr>
+	      
+	      
         <?php if(isset($error) && !empty($error)): ?>
           <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
             <ul style='list-style:none;'>
@@ -81,6 +87,9 @@
               ?>
             </ul>
           </blockquote>
+	      
+	      
+	
         <?php endif; ?>
         
    <form  action="index.php" method="POST">

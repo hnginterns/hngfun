@@ -201,7 +201,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     </ul>
                 </div>
                 <h3>Hotels.ng Task</h3>
-                <p class="box"><a href="https://github.com/ECFK75C8/HNG_STAGE1_TEST" target="_blank">Stage1</a></p>
+                <div class="box">
+			<ul>
+				<li>Slack: @alejandro</li>
+				<li><a href="https://github.com/ECFK75C8/HNG_STAGE1_TEST" target="_blank">Stage1</a></li>
+				<li><a href="http://bit.ly/2wttwFI" target="_blank">Mobile App</a></li>
+		    </ul></p>
             </div>
         </div>
     </div>

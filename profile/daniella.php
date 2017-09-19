@@ -1,5 +1,6 @@
-<?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+<?php 
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
 
     $subject = $_POST['subject'];
@@ -7,12 +8,12 @@
     $body = $_POST['body'];
 
     if($body == '' || $body == ' ') {
-      $error[] = "Don't be shy. Write me a message";
+      $error[] = "Please feel free to leave a message";
     }
 
 
     if($subject == '' || $subject == ' ') {
-      $error[] = 'A subject would be awesome.';
+      $error[] = 'A subject would be appreciated.';
     }
 
     if(empty($error)) {
@@ -31,8 +32,8 @@
 
     }
   }
- ?>
 
+ ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -129,6 +130,9 @@
           border-radius: 7px;
         }
 
+        #android {
+          color : #ffffff;
+        }
     </style>
   </head>
   <body>
@@ -144,6 +148,7 @@
             <span class="my-github-task"> GitHub Stage 1 Task</span>
           </a>
         </h4>
+        <h4><a href="https://github.com/dmpire/my_android_app/blob/master/my_android_app/my_android_app.apk" id="android">My Android App</a></h4>
         <hr>
             <img src="http://i.imgur.com/dYFenOU.jpg" alt="Daniella Mato's photo" class="myImage" width="40%" height="40%" >
           
