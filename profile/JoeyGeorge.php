@@ -1,4 +1,4 @@
-
+<?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
    $subject = $_POST['subject'];
@@ -18,7 +18,7 @@
       $data = $exe->fetch();
       $password = $data['password'];
      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-    
+    ?>
 <!DOCTYPE html>
 <html>
 <head>
