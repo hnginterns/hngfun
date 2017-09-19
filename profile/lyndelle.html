@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+	<title>Wilson Mmasifon Profile</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<style>
+	
+	#img {
+		border-radius: 100%;
+		width: 250px;
+		height: 250px;
+		border: 3px solid white;
+	}
+        
+        
+    .section{
+    background: #FFFFFF     ; 
+	padding:15px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	text-align: center;
+	}
+        form {
+	text-align: center;
+	margin-top:0;
+	}
+	.submit{
+	background-color: #3fb6b2;
+	padding:10px 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	margin:0;
+	font-weight:bold;
+	}
+	.submit:hover{
+	background-color: #43a09d;
+	
+	}
+	textarea{
+	height:100px;
+	}
+	input, textarea{
+	margin-bottom: 10px;
+	font-size:20px;
+	padding: 15px 10px 10px;
+	border: 1px solid #cecece;
+	background-color: #efefef;
+	color: #CFD8DC;
+	border-radius: 20px;
+	width: 80%;
+	outline: none;
+	}
+	.body {
+		text-align: center;
+		background-color: powderblue;
+		color: white;
+	}
+	#bio{
+		font-size: 20px;
+		color: #000;
+		font-family: "Time Romans", serif;
+	}
+	
+	}
+	a {
+		color: #000;
+		text-decoration: none;
+		font-size: 20px;
+		color: #fff;
+	}
+	a:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
+p{
+	background-color: powderblue;
+	border-color: black;
+}
+	
+	
+        
+	</style>
+</head>
+<body class="body">
+
+		<div>
+			<img src="http://res.cloudinary.com/lyndelle/image/upload/v1504884449/lynw_wq2bgo.jpg" id="img" >
+		</div>
+		<div>
+			<h1><span>Wilson Mmasifon</span></h1>
+
+            <h3><span>Slack Username: @lyndelle</span></h3>
+			<a href="https://github.com/lyndellewilson">Github-stage1</a>
+		</div>
+		<div>
+			<p id="bio">My name is Wilson Mmasifon. Studying Geology at University Of Calabar. Am a tech enthusiast.</p>
+		</div>
+    
+    <div class="section">
+          <form action= "lyndelle.php" method="post" >
+			<h1 style="color: #000"> <span> Contact me </span></h1>
+			<input name="subject" placeholder="subject" type="text" required /> <br/>
+			<input name="email" placeholder="Type your email..." type="email" required /> <br/>
+			<textarea name="message" placeholder="Message" required > </textarea>
+			<input type="submit" value="SEND" class="submit" />
+			</form>
+        </div>
+
+
+		
+
+</body>
+</html>
