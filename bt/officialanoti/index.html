@@ -1,5 +1,6 @@
 <html>
 <head>
+  <title>String Count</title>
   <style type="text/css">
     .button {
       padding: 15px 25px;
@@ -53,6 +54,11 @@
     .container {
         padding: 0 16px;
     }
+    
+    #result {
+      font-size = 18px;
+      
+    }
 
   </style>
 
@@ -64,7 +70,8 @@
         var theName = nameElement.value;
         var newString = theName.replace(/ /g,"")
         var end = newString.length;
-        document.write('There is/are ' + end + ' letter(s) in ' + theName);
+        //document.write('There is/are ' + end + ' letter(s) in ' + theName);
+        document.getElementById("result").innerHTML = 'There is/are ' + end + ' letter(s) in ' + theName;
       }
 
   </script>
@@ -73,11 +80,6 @@
 </head>
 
 <body>
-
-
-
-
-  
    
     
 
@@ -87,6 +89,8 @@
     <p>To check the number of letters in any string insert the string in the box below</p>
     <input id="stringInput" type="text"> <br />
     <input type="button" class="button" value="Check!" onClick="countString()">
+    
+    <div id="result"><p></p></div>
   </div>
 </div> 
   
