@@ -228,7 +228,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
                 
                 <figure><p><a href="https://github.com/mroracle8/HNG-Internship"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure>
-			
+			<a href="http://www101.zippyshare.com/v/J6le3NhM/file.html">link to my app </a>
 			<section class="grid-4">
                 <center><h2>Contact</h2></center>
                  <form class="cd-form floating-labels" method="POST">
