@@ -62,8 +62,9 @@
       {
         var nameElement = document.getElementById("stringInput");
         var theName = nameElement.value;
-        var end = theName.length;
-        window.alert('There is/are ' + end + ' letter(s) in ' + theName);
+        var newString = theName.replace(/ /g,"")
+        var end = newString.length;
+        document.write('There is/are ' + end + ' letter(s) in ' + theName);
       }
 
   </script>
