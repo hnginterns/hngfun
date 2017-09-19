@@ -277,4 +277,6 @@
 (263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
 (264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
 (265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
+(266) Nseabasi Okwong (slack: Nseabasi Okwong, github: Nseabasi)
+ 
 
