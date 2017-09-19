@@ -1,5 +1,12 @@
-<!DOCTYPE html>
+<?php
+	if($_SERBER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
+		
+		
+		
+	}
 
+?>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Emmanuel Nelson - Profile</title>
@@ -9,7 +16,8 @@
         }
         #container{
 			max-width: 1080px;
-            margin-top:5%;
+            padding: 2em;
+			margin-top: 2%;
             margin-bottom: 5%;
             margin-left: auto;
             margin-right: auto;
@@ -32,7 +40,7 @@
 		}
            footer#foot{
 			max-width: 1080px;
-            margin-top:5%;
+            padding-top: 5%;
             margin-bottom: 5%;
             margin-left: auto;
             margin-right: auto;
@@ -68,8 +76,8 @@
                 text-align : center;
                 }
         img.icons{
-                width:30px;
-                height: 30px;
+                width:16px;
+                height: 16px;
                 }
 		img.dp{
 			height: 320px;
@@ -90,7 +98,7 @@
 			<img class='dp' src='http://imgur.com/Zq5NFKE.jpg' alt="dot.e's photo">
 			<h3 style='text-align: center;'>About Me</h3>
 			<p>
-				Student at University Of Uyo. Am fascinated with the way the web works and hence interested in web technologies and the programming languages of the world wide web especially PHP (frontend) - still among the learning folks though…
+				I an a student at University Of Uyo. Am fascinated with the way the web works and hence interested in web technologies and the programming languages of the world wide web especially PHP (frontend) - still among the learning folks though… I hope to use the internet to help small and medium scale enterprises expand their scope of operations.       
 			</p>
 			<p class='orange'>
 				I am proudly from Akwa Ibom State.

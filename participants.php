@@ -53391,7 +53391,7 @@ include('header.php');
                    <div class="v-center">
                        <div class="p-card-photo" style="background-image: url(https://image.ibb.co/e0giMk/prolifichands.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
                        <div class="p-card-info">
-                           <a href="http://hng.fun/profile/dote.html">
+                           <a href="http://hng.fun/profile/dote.php">
                                <!--Profile Link-->
                                <h3 class="p-card-title">Emmanuel Nelson</h3>
                                <!--Profile Name-->
