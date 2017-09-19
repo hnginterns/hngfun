@@ -108,7 +108,7 @@
 
 		let displayArray = box.value.toString().split("");
 
-		if(box.value.length === 10){
+		if(box.value.length === 14){
 			box.value +='';
 		}
 		else if(x ==='c'){
@@ -136,8 +136,8 @@
 		try {
 			y = eval(x);
 			let resultArray = y.toString().length;
-			if(resultArray >= 10){
-				y = y.toPrecision(10);
+			if(resultArray >= 14){
+				y = y.toPrecision(14);
 				box.value = y;
 			}
 			else{
