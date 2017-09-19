@@ -1,7 +1,19 @@
 <?php
-	if($_SERBER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
-		
-		
+	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send'])) {
+		include ('../config.php');
+		$error = array();
+		$subject = trim($_POST['subject']);
+		$to = 'eul.nelson@gmail.com';
+		$body = trim($_POST['body']);
+		if (empty($subject)){
+			array_push($error, "Subject cannot be empty");
+		}
+		if (empty($body)){
+			array_push($error, "Message body cannot be empty");
+		}
+			if (empty($error)){
+				//new mysqli()
+			}
 		
 	}
 
@@ -87,6 +99,13 @@
 			margin-right: auto;
 			border-radius: 20px;
 		}
+		input{
+			margin: 1%;
+			
+		}
+		textarea{
+			margin: 1%;
+		}
     </style>
 </head>
 <body>
@@ -98,11 +117,20 @@
 			<img class='dp' src='http://imgur.com/Zq5NFKE.jpg' alt="dot.e's photo">
 			<h3 style='text-align: center;'>About Me</h3>
 			<p>
-				I an a student at University Of Uyo. Am fascinated with the way the web works and hence interested in web technologies and the programming languages of the world wide web especially PHP (frontend) - still among the learning folks though… I hope to use the internet to help small and medium scale enterprises expand their scope of operations.       
+				I an a student at University Of Uyo. Am fascinated with the way the web works and hence interested in web technologies and the programming languages of the world wide web especially PHP (frontend) - still among the learning folks though. I hope to use the internet to help small and medium scale enterprises expand their scope of operations.       
 			</p>
 			<p class='orange'>
 				I am proudly from Akwa Ibom State.
 			</p>
+			<h3>Contact Me</h3>
+			<form action='' method='post'>
+				<label for='name'>Your Name:</label>	<input name='name' type='text'  placeholder='Your name here' required ><br>
+				<label for='email'>Email:</label>	<input name='email' type='email' placeholder='Your email address...' required ><br>
+				<label for='subject'>Subject:</label>	<input type='text' name='subject' placeholder='Subject...' required ><br>
+				<label for='message'>Message:</label><br>
+				,<textarea name='body' placeholder='Your message here...' required ></textarea><br>
+				<button type='submit' name='send'>Send >>></button>
+			</form>
 			</div>
 		
 	</div>
