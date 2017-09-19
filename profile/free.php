@@ -3,7 +3,7 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'free.t.@gmail.com';
+    $to  = 'free.t.1896@gmail.com';
     $body = $_POST['body'];
     $name = $_POST['name'];
     if($body == '' || $body == ' ') {
