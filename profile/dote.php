@@ -106,7 +106,10 @@
 		textarea{
 			margin: 1%;
 		}
-    </style>
+	    	form{
+			align: middle;
+	    }
+	</style>
 </head>
 <body>
 	<div id='container'>
