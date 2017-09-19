@@ -1,2 +1,104 @@
 <html>
+<head>
+  <title>String Count</title>
+  <style type="text/css">
+    .button {
+      padding: 15px 25px;
+      font-size: 24px;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #999;
+      margin-bottom: 10px;
+      margin-top: 25px
+    }
+
+    .button:hover {background-color: #3e8e41}
+
+    .button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+        width: 100%;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+    
+    #result {
+      margin-top: 10px;
+      font-size = 18px;
+      fontifamily = cursive;
+      
+    }
+
+  </style>
+
+  <script>
+
+      function countString()
+      {
+        var nameElement = document.getElementById("stringInput");
+        var theName = nameElement.value;
+        var newString = theName.replace(/ /g,"")
+        var end = newString.length;
+        //document.write('There is/are ' + end + ' letter(s) in ' + theName);
+        document.getElementById("result").innerHTML = 'There is/are ' + end + ' letter(s) in ' + theName;
+      }
+
+  </script>
+
+  
+</head>
+
+<body>
+   
+    
+
+  <div class="card">
+  <div class="container">
+    <h1>Learning Team String Count</h1>
+    <p>To check the number of letters in any string insert the string in the box below</p>
+    <input id="stringInput" type="text"> <br />
+    <input type="button" class="button" value="Check!" onClick="countString()">
+    
+    <div id="result"><p></p></div>
+  </div>
+</div> 
+  
+
+  </body>    
+
+
+
 </html>
