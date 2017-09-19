@@ -1,101 +1,231 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Headache!</title>
 <script>
+/*this is gonna be awesome
+ *javascript function to acess time prop.
+ */
+window.onload = setInterval(
 
-	function clock() {
-	var time = new Date(),
-    
-    // Accessing the "getHours" method on the Date object
-    hours = time.getHours(),
-    minutes = time.getMinutes(),
-    seconds = time.getSeconds();
+function DisplayTime() {
+    if (!document.all && !document.getElementById) return;
 
-    //time format
-    var suffix = "AM";
+    var CurrentDate = new Date();
+    var hours = CurrentDate.getHours();
+    var minutes = CurrentDate.getMinutes();
+    var seconds = CurrentDate.getSeconds();
+    var DayNight = "PM";
+    if (hours < 12) DayNight = "AM";
+    if (hours > 12) hours = hours - 12;
+    if (hours === 0) hours = 12;
+    if (minutes <= 9) minutes = "0" + minutes;
+    if (seconds <= 9) seconds = "0" + seconds;
+    var currentTime = hours + ":" + minutes + ":" + seconds + " " + DayNight;
 
-    if (hours >=12){
-    	suffix = "PM";
-    	hours = hours - 12;
-    	
-    	
+    document.getElementById("cero").innerHTML = hours;
+    document.getElementById("uno").innerHTML = minutes;
+    document.getElementById("dos").innerHTML = seconds;
+    document.getElementById("tres").innerHTML = DayNight;
+}, 1000);
+
+    var hours = new Date().getHours();
+    var themessage;
+    var morning = ('Hello, Good morning');
+    var afternoon = ('Hello, Good afternoon');
+    var evening = ('Hello, Good evening');
+    /*
+    if (hours >= 0 && hours < 12) {
+        themessage = morning; 
+
+    } else if (hours >= 12 && thehours < 17) {
+        themessage = afternoon;
+
+    } else if (thehours >= 17 && hours < 24) {
+        themessage = evening;
     }
-    if (hours == 0){
-    	hours = 12;
-    }
-	
 
-    
-    //a function to help interate
-document.querySelectorAll('.clock')[0].innerHTML = s(hours) + ":" + s(minutes) + ":" + s(seconds) + " " + suffix;
-  
-  function s(standIn) {
-    if (standIn < 10) {
-      standIn = '0' + standIn
-    }
-    return standIn;
-  }
-}
-setInterval(clock, 2);
-
-
-	
-	</script>
+    $('.greeting').append(themessage); */
+</script>
 <style>
 
 
-#grad{
-	background-image: url(http://www.akhordzproductions.com/wp-content/uploads/2017/02/lderpRW.jpg);
-	background-repeat: no-repeat;
+html, body { min-height: 100%; }
+
+
+body {
+  background-image: url(http://www.akhordzproductions.com/wp-content/uploads/2017/02/lderpRW.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
-
-	
-}
-#box1 {
-    width: 650px;
-    height: 100px;
-    
-}
-
-#box {
-    width: 600px;
-    height: 100px;    
-    padding: 100px;
-    
-}
-#box3{
-	
-    width: 650px;
-    height: 150px;
-    
-	
+    background-position: center;
 }
 
 .clock {
-  font-size: 5em;
+  margin: 60px auto;
+  text-align: left;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.clock-block {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 100px;
+  height: 98px;
+  margin: 0 8px;
+  padding-top: 16px;
+  line-height: 1;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+  background: #e5e7eb;
+  border: 1px solid #9fa2ad;
+  border-radius: 3px 3px 2px 2px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: -moz-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: -o-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  background-image: linear-gradient(to bottom, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.clock-block:before, .clock-block:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: -1px;
+  right: -1px;
+  z-index: -1;
+  height: 4px;
+  background: #cacfd9;
+  border: 1px solid #9fa2ad;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+*
+.clock-block:before { bottom: -7px; }
+
+.clock-val {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 64px;
+  font-weight: bold;
+  color: #4f5258;
+}
+
+.clock-val:before, .clock-val:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.clock-val:before {
+  z-index: -1;
+  top: -16px;
+  bottom: 50%;
+  border-radius: 2px 2px 0 0;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.clock-val:after {
+  top: 50%;
+  bottom: -16px;
+  border-top: 1px solid rgba(60, 62, 68, 0.4);
+  border-radius: 0 0 2px 2px;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.clock-unit {
+  display: block;
+  margin-top: -2px;
+  font-size: 13px;
+  font-weight: 200;
+  color: #6b707a;
+  text-transform: capitalize;
+}
+
+.clock-unit:after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  top: 100%;
+  left: -1px;
+  right: -1px;
+  height: 30px;
+  margin-top: 6px;
+  border-radius: 0 0 3px 3px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
+  
+  .texto{text-align: center; width=100%;}
+  #box1 {
+    width: 50px;
+    height: 100px;
+    
 }
 #ap{
-	color:red;
+    color:red;
+}
+body {
+  font-family: sans-serif;
+  background: white;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+
 }
 </style>
-</head><title>Back to Future
-</title>
-
-<body id = "grad">
-<!-- Making the body simple and presentable  -->
-<div id = "box1"><br>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition.<br>&emsp;<span id = "ap">---Steve Jobs </span> 
-</div> 
-<!-- Time -->
-<div id = "box"> <center>&quot;Time is an illusion.&quot;<span id = "ap"> --- Albert Einstein <div class = "clock"></span></div></span></center></div>
-<!-- ends here -->
-
-<div id = "box3">
-Learn to enjoy every minute of your life. Be happy now. Don't wait for something outside of yourself to make you happy in the future. Think how really precious is the time you have to spend, whether it's at work or with your family. Every minute should be enjoyed and savored.<br> <span id = "ap">&emsp;---Earl Nightingale</span>
+</head><title>Back to Future</title>
+<body>
+<!-- special word from Einstein -->
+&quot;Time is an illusion.&quot;<span id = "ap"> --- Albert Einstein
+   <p class="clock" onclick="open_win();"> <span class="clock-block">
+        <span class="clock-val" id="cero" ></span>
+        <span class="clock-unit">hours</span>
+        </span> <span class="clock-block">
+        <span class="clock-val" id="uno" ></span>
+        <span class="clock-unit">minutes</span>
+        </span> <span class="clock-block">
+        <span class="clock-val" id="dos"></span>
+        <span class="clock-unit">seconds</span>
+        </span> <span class="clock-block">
+        <span class="clock-val" id="tres"></span>
+        <span class="clock-unit"></span>
+        </span> 
+    </p>
+    <div class="greeting"></div>
+    <div id = "box1"><br>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma<br>-which is living with the results of other people's thinking. Don't let the noise of others' opinions drown<br> out your own inner voice. And most important, have the courage to follow your heart and intuition.<br>&emsp;<span id = "ap">---Steve Jobs </span> <br><br>
+    <div id = "box3">
+    Learn to enjoy every minute of your life. Be happy now. Don't wait for something outside of yourself to<br>make you happy in the future. Think how really precious is the time you have to spend, whether it's at<br>work or with your family. Every minute should be enjoyed and savored.<br> <span id = "ap">&emsp;---Earl Nightingale</span>
 <br><br>
-
+</div> 
 <br>
-There's never a wasted time only time spent doing the wrong thing<br> .<span id = "ap">---Aspn</span>
-</div>
+There's never a wasted time only time spent doing the wrong thing<br> .---Aspn 
+<!-- body ends here -->
+      
+      
+
+                   
 </body>
 </html>
