@@ -1,4 +1,14 @@
 <<<<<<< HEAD
+body{
+background:#e6e6e6;
+}
+div{ 
+	border:#808080;
+	background: #9a9292;
+	margin: 0 3px;
+	background-color:#cccccc ;
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 body{
 
@@ -82,11 +92,15 @@ div{
 	background: #cccccc;
 	margin: 0 30px;
 	background-color: #e6e6e6;
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 	
  }
 .an{
  margin: auto;
+<<<<<<< HEAD
+=======
  
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 }
 .mage{
 	display:block;
@@ -94,9 +108,14 @@ div{
 	margin:0px;
 	}
 .image{
+<<<<<<< HEAD
+	border-radius:120px;
+	padding:0px;
+=======
 	border-radius:135px;
 	padding:0px;
 	text-align:center;
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 	box-shadow:2px 2px 2px 2px rgb(80,80,80);
 }
 .image:hover{
@@ -106,15 +125,27 @@ box-shadow:0px 0px 0px ;
 .an li{
 color:light-grey;
 	max-width:4000px;
+<<<<<<< HEAD
+	
+    display: block;
+    padding: 6px;
+    border:1px solid #8d95a5;
+    margin-left:138px;
+=======
     display: block;
     padding: 9px;
     border:1px solid #8d95a5;
     margin-bottom: 0px;
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
     border-radius: 30px;
 	box-shadow:0px 0px 0px 0px rgb(80,80,80);
 	}
 .an li:hover{
+<<<<<<< HEAD
+	box-shadow:1px 1px 2px 2px rgb(80,80,80);
+=======
 	box-shadow:2px 2px 2px 2px rgb(80,80,80);
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 	}
 p{
 	text-shadow:1px;
@@ -126,14 +157,24 @@ p{
 	}
 .de{
 	max-width:100px;
+<<<<<<< HEAD
+	
+=======
 	margin-left:45%;
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 	}
 .de a{
 	text-decoration:none;
 	}
 .pr{
+<<<<<<< HEAD
+	float:left;
+	margin-left:165%;
+	background: #2471FF;
+=======
 	
 	 background: #2471FF;
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
     border: none;
     padding: 10px 20px 10px 20px;
     border-bottom: 3px solid #5994FF;
@@ -143,10 +184,62 @@ p{
 	background: #6B9FFF;
     color:#fff;
 	}
+<<<<<<< HEAD
+.formus{
+border-radius:20px;
+background:#7e7ead;
+margin-top:5%;
+margin-left:400%;
+height:190px;
+width:400px;
+border:1px solid grey;
+size:auto;
+	}
+	.formus:active{
+	background:#ababab;
+	}
+textarea{
+background:white;
+margin:4px;
+margin-left:0px;
+width: 372px;
+height:100px;
+border-radius:10px;
+}
+input{
+float:left;
+margin-left:14px;
+}	
+.submit{
+float:right;
+margin-right:3%;
+    background-color: #4CAF50; 
+    border: 1px solid grey;
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius:10px;
+	
+}
+.submit:active{
+transform: translateY(2px);
+}
+h3{
+color:blue;
+margin:0px;
+padding:0px;
+border:0px;
+
+}
+=======
 	
 	
 <<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 	

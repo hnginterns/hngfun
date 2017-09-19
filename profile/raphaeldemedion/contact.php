@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<!DOCTYPE html>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <!DOCTYPE php>
 <html lang="en">
@@ -101,6 +104,7 @@
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <!DOCTYPE php>
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 <html lang="en">
 
 <head>  
@@ -131,9 +135,16 @@
                         </div>
                     </div>
 
+<<<<<<< HEAD
+                <div class="col-md-8 bio col-md-offset-1 my-bio">                    
+                    <div class="headline">                  
+                        <h1><i class="fa fa-user fa-icon1x"></i> 
+
+=======
                 <div class="col-md-8 bio col-md-offset-1 my-bio" style="height: 600px;">                    
                     <div class="headline">                  
                         <h1><i class="fa fa-user fa-icon1x"></i> 
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
                             <strong>Contact Info</strong>
                         </h1>
                     </div>
@@ -175,10 +186,17 @@
                         <!-- Social Links -->
                         <div class="col-md-12">
 
+<<<<<<< HEAD
+                            <ul class="footer-links list-inline">
+                                <li>
+                                
+                                    <a href="index.php"></i>Basic Info</a>
+=======
                             <ul class="footer-socials list-inline">
                                 <li>
                                 
                                     <a href="index.php"></i>Home</a>
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
                                 </li>
                                 <li>
                                     <a href="contact.php"></i>Contact</a>
@@ -186,7 +204,14 @@
 
                                 <li>
                                     <a href="social.php"></i>Social</a>
+<<<<<<< HEAD
+                                </li>
+                                <li>
+                                    <a href="message.php"></i>Message Box</a>
+                                </li>                               
+=======
                                 </li>                                
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
                             </ul>
                         </div>
                         <!-- End Social Links -->
@@ -195,6 +220,15 @@
         </section>
 <!--=== End Footer ===-->
 
+<<<<<<< HEAD
+<!-- Javascripts
+===================================== -->
+        <script src="js/jquery.min.js" type="text/javascript"></script>        
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+<!--=== End Body ===-->
+</html>
+=======
     </body>
 <!--=== End Body ===-->
 <<<<<<< HEAD
@@ -202,3 +236,4 @@
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 </html>
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793

@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 .disabled{
     display:none!important;
@@ -621,6 +623,7 @@
 =======
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 .disabled{
     display:none!important;
 }
@@ -1239,8 +1242,11 @@
     80%{transform:translateX(50px) rotate(45deg); opacity:1;}    
     90%{transform:translateX(0); opacity:0.3;}
     100%{transform:translateX(0px); opacity:0.3;}
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 }

@@ -11,7 +11,7 @@
       $error[] = 'Subject cannot be empty.';
     }
     if(empty($error)) {
-      $config = include...'/config.php');
+      $config = include('../config.php');
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
       $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -38,7 +38,7 @@
    }
 
     header{
-    background-color: 48bcea;
+    background-color: #5ACDE6;
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
@@ -122,15 +122,14 @@ footer{
        <!-- Contacts section starts -->
       <div align="center" class="section">
             <h1><span>Contact Me</span></h1>
-           <form action = "AniekanEdet.php" id = "contact-form" method = "POST" >
+           <form action = "aniekanedet.php" id = "contact-form" method = "POST" >
                 <input type = "text" name = "subject" placeholder= "Enter subject for Name" required><br><br>
                 <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
                 <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
                 <br><input type ="submit" name="submit" value ="Send Message">
             </form>
         </div>
-        
-           
+         <!-- Contacts section end
      </td>
 
  <td><br/>
