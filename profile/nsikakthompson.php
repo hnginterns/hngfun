@@ -134,8 +134,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
             <div class="row">
                 <div class="col-sm-12">
                     <div class="text-center">
-                        <!-- <a class="btn btn-primary btn-lg" href="https://github.com/Nsikaktopdown/HNG--internship-test" role="button"> Stage 1</a>
-                     -->
+                        <a class="profile-body" href="https://drive.google.com/file/d/0BwIE5i7L1hZFMldWNEtJVGMyVkU/view?usp=sharing" role="button">Link to Android App</a>
+                    
                     </div>
                 </div>
             </div>

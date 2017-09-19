@@ -1,0 +1,59 @@
+<style type="text/css">
+   html{
+   	background-color:grey;
+   	 margin: 0;
+    padding: 0;
+    border-radius: 5px;
+   }
+
+	header{
+	background-color: 48bcea;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+body {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
+h1 {
+    font-size: 15pt;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+    letter-spacing: 5
+
+}
+h1 span {
+    border: 4px dashed #20bcd5;
+    padding: 10px;
+}
+h2{
+ font-family:monospace;
+ font-size: 20pt;
+
+}
+p {
+    padding: 0;
+    margin: 0;
+    text-align:center; ;
+}
+img{
+	border: solid white 5px;
+	border-radius: 7px;
+}
+footer{
+	 text-align:center;
+ }
+ section{
+ 	 text-align:center;
+ }
+ aside{
+ 	text-align:center;
+ } 
+</style>

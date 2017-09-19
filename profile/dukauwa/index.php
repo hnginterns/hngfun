@@ -101,7 +101,7 @@
                    left: 50% ;
                    transform: translate(-50%,-50%);
                    width: 300px;
-                   height:500px;
+                   height:650px;
                    background: #fff;
                    box-sizing: border-box;
                    border-radius: 10px;
@@ -113,8 +113,10 @@
                      max-height: 200px;
                    }
                    .card-header img{
+                     height: 200px;
                      width: 100%;
                      object-fit: cover;
+                     /*overflow: hidden;*/
                    }
                .details
                {
@@ -255,6 +257,13 @@
                  color: #fff;
                  text-decoration:none;
                }
+               .app a{
+                 color:#fff;
+                 text-decoration:none;
+               }
+               .app i{
+                 color:#03bb85;
+               }
         </style>
         <!-- end of style-->
         <!-- TITLE -->
@@ -282,6 +291,12 @@
                   <li><a href="https://twitter.com/ukauwa_david" class="social-icons"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 
               </ul>
+
+              <div class = "app">
+                <h3><a href= "https://drive.google.com/open?id=0B-gckKlhoCHxbWpCWjZORVhIS2s" ><i class="fa fa-android" aria-hidden="true"></i>  App Link</a>
+                </h3></div>
+
+
                   <form class="form" action="../../sendmail.php" method="GET">
 
                     <h4>CONTACT ME</h4>

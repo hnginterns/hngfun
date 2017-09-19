@@ -1,0 +1,75 @@
+*{
+
+  padding:0px;
+  margin:0px;
+}
+
+body,section,article,header,nav,footer{
+    
+    display:block;
+}
+
+h1{
+    
+    font:bold 20px tahoma;
+}
+.logo{
+    
+    width:30px;
+    height: 30px;
+}
+body{
+    
+    background-color: blue;
+    text-align: center;
+}
+
+nav li{
+    
+    display:inline-block;
+}
+
+#main_wrapper{
+    
+    background-color: skyblue;
+    width:1000px;
+    margin:50px auto;
+    height:auto;
+    text-align: left;
+    padding: 20px;
+   
+}
+
+#main_header{
+    
+    border:1px soild black;
+    background-color: white;
+    padding:20px;
+}
+
+#top_nav{
+    
+    background:darkblue;
+    list-style: none;
+    padding:5px;
+    font:bold 14px tahoma;
+    color:white;
+}
+
+#main_section{
+    
+    width:700px;
+    margin-bottom: 20px;
+}
+#pp{
+    
+    width:250px;
+    height: 250px;
+}
+
+#the_footer{
+    
+    text-align: center;
+    padding:10px;
+    border-top:1px solid black;
+}

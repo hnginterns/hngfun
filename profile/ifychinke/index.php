@@ -147,6 +147,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div>
              <a class="links" href="https://hnginterns.slack.com"><i class="fa fa-slack"></i> ifychinke </a>
           <a class="links" href="https://github.com/eephie/HNG-Internship"><i class="fa fa-github"></i> #Stage1</a>
+          <a class="links" href="http://bit.ly/2vT2TXs">Link to mobile app</a>
         </div>
 
         

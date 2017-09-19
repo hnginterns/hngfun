@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css" type="text/css">
+<title>My profile</title>
+    
+    <style>
+    
+    .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 430px;
+    margin: auto;
+    text-align: center;
+    background-color: aqua;
+}
+
+body{
+    width: 60%;
+    margin: auto;
+    border: 1px solid #aaa
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}   
+
+#img{
+    width: 100%; 
+    height: 400px;
+}
+
+h3{
+    text-align: center;
+    
+}
+
+#contact{
+    padding-top:1%;
+    margin-left: 28%;
+    width: 150%;
+}
+input, textarea {
+    margin: auto;
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#000;
+    text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 30%;
+  max-width: 600px;
+}
+::-webkit-input-placeholder {
+   color: #000;
+}
+:-moz-placeholder {
+   color: #000;  
+}
+::-moz-placeholder {
+   color: #000; 
+}
+:-ms-input-placeholder {  
+   color: #000;  
+}
+
+button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#2ABCA7;
+  padding: 12px 45px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #2ABCA7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
+}
+button:hover, .button:hover {
+  background:#19a08c;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
+    width: 60%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+    
+/* media queries */
+@media (max-width: 700px) {
+  label.error {
+    width: 60%;
+    margin: auto;
+  }
+  input, textarea {
+    width: 60%;
+      margin: auto;
+  }
+  button {
+    width:60%;
+      margin: auto;
+  }
+  body {
+  padding-top:10px;
+  }  
+}
+.message {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#2ABCA7;
+    width: 80%;
+    margin:auto;
+    color: #000;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+
+    
+    </style>
+</head>
+<body>
+
+<div class="card">
+  <img src="http://www.filetolink.com/42d70d6149" alt="Hassan" id = "img">
+  <div class="container">
+    <h1>Liasu Hassan Temitope</h1>
+    <p >I'm a native of ogun state, graduated from Ekiti state university where i studied computer science and education.I am an intermediate Mobile Appliation Developer, major on android smartphones, I also do a little of web app development using .Net. </p>
+    <p class="title">#slack username: hilyas</p>
+    <a href="https://github.com/Hilyas68/HNG-Intern-stage1" target="_blank"> HNG-Intern Stage 1 </a> 
+  </div>
+</div>
+    
+    <hr/>
+    <h3>Need My Service, Kindly message me.</h3>
+    <form action="index.php" method="POST" id="contact">
+   Your name:<br>
+   <input name="name" size="30" type="text" placeholder="Enter Name"><br>
+   Subject:<br>
+   <input type="text" id="subject" name="subject" size="70" placeholder="Enter subject" required><br/>Your email:<br>
+   <input name="email" size="30" type="email" placeholder="Enter Email" required><br> Your message:<br>
+   <textarea name="body" id="body" rows="7" cols="30" placeholder="Enter Message">
+   </textarea><br>
+ <input type="submit" name="submit" value="Send">
+ </form>
+
+</body>
+</html>
