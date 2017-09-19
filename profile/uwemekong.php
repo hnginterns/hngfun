@@ -3,7 +3,7 @@
     $error = [];
    $subject = $_POST['subject'];
     $to  = 'uwemekong11@gmail.com';
-    $body = $_POST['message'];
+    $body = $_POST['body'];
    if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
@@ -11,7 +11,7 @@
       $error[] = 'Subject cannot be empty.';
     }
    if(empty($error)) {
-     $config = include( __DIR__ . "/../config.php");
+     $config = include __DIR__ . "/../config.php";
       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
       $con = new PDO($dsn, $config['username'], $config['pass']);
      $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -94,8 +94,7 @@ back success to my life<br> by giving me the best solution to solve my problems.
 <h2> Follow me on </h2>
 <p><strong>slack:</strong> </p> @uwemekong11
 </div>
-  <form action = "uwemekong1.php" id = "contact-form" method = "POST" >
-        <input type = "text" name = "subject" placeholder= "Enter subject for Name" required><br><br>
+  <form action = "uwemekong.php" id = "contact-form" method = "POST" >
         <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
         <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
         <br><input type ="submit" name="submit" value ="Send Message">
