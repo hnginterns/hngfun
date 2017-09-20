@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <title>REDwave-robotics</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+        <style>
+            body{
+                width: auto;
+                height: auto;
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+            }
+            header{
+                height: 80px;
+            }
+            header h1{
+                color: #0f222f;
+                position: relative;
+                top: 20%;
+                left: 7%;
+            }
+            header span{
+                color: darkred;
+                font-size: 40px;
+            }
+            main{
+                height: 500px;
+                text-align: center;
+                background: url('https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+                background-attachment: fixed; 
+            }  
+            #greet{
+                color:white;
+                font-size: 20px bold;
+                margin: auto;
+                padding-top:150px;
+                letter-spacing:2px;
+            }
+            #date{
+                color: white;
+                margin: auto;
+                letter-spacing:2px;
+            }
+            pre{
+                color: turquoise;
+                font-size: 16px;
+                font-style:italic;
+                letter-spacing:0px;
+            }
+            main span{
+                color: white;
+            }
+            #userName{
+                margin: auto;
+                margin-top: 30px;
+                width: 350px;
+                height: 20px;
+                background: white;
+                border: 1px solid red;
+                border-radius: 3px;
+                padding:8px;
+                font-size: 15px;
+                color: red;
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+            }
+            #userName:focus{
+                border:1px solid white;
+            }
+            #btn{
+                width:127px;
+                height: 38px;
+                margin: auto;
+                background-color: transparent;
+                color: red;
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+                border: 1px solid #fff;
+                border-radius:3px;
+            }
+            #exit{
+                width:127px;
+                height: 38px;
+                margin: auto;
+                background-color: orange;
+                color: greenyellow;
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+                border: 1px solid #fff;
+                border-radius:3px;
+            }
+            #btn:hover{
+                background: #fff;
+                color: #0f222f;
+                -webkit-transition: width 1s;
+                transition: 1s;
+            }
+            footer{
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+                background: sienna;
+                font-size:18px;
+                color:#0a222a;
+                padding: 5px;
+                border-top: 1px solid #0f222f;
+                font-weight: bold;
+                text-align:center;
+            }
+            @keyframes fadeIn{
+                to{ opacity: 1;}
+            }
+            .fade-in{
+                opacity: 0;
+                animation: fadeIn 3s ease-in 1 forwards;
+            }
+            .is-paused {
+                animation-play-state: paused;
+            }
+            @keyframes fadeIn2 {
+                to{ opacity: 1;}
+            }
+            .fade-in2{
+                opacity: 0;
+                animation: fadeIn2 6s ease-in 1 forwards;
+            }
+            .is-paused2 {
+                animation-play-state: paused;
+            }
+            @keyframes fadeIn3 {
+                to{opacity:1;}
+            }
+            .fade-in3{
+                opacity: 0;
+                animation: fadeIn 6s ease-in 1 forwards;
+            }
+            .is-paused3 {
+                animation-play-state: paused;
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body onload="animate()">
+        <header>
+            <a href="index.html"><h1><span>RED</span>waver-robotics</h1></a>
+        </header>
+
+        <main>
+
+            <p id="greet" class='js-fade fade-in is-paused'>WELCOME to the RED-waver analytics lab with tommy;<span></span> </p>
+            <p id="date"></p>
+            <pre id="quote"></pre>
+
+            <input type="text" name="userName" id="userName" placeholder="all we need is your nomenclature" class='js2-fade fade-in2 is-paused2' required>
+            <br><br><br>
+            <input type="submit" id="btn" value="CLICK HERE" onclick="hailu()" class='js3-fade fade-in3 is-paused3' >
+
+            <script type="text/javascript">
+                
+                function animate(){
+                    let el = document.querySelector('.js-fade');
+                    if (el.classList.contains('is-paused')){
+                        el.classList.remove('is-paused');
+                    }
+                    let al = document.querySelector('.js2-fade');
+                    if (al.classList.contains('is-paused2')){
+                        al.classList.remove('is-paused2');
+                    }
+                    let bl = document.querySelector('.js3-fade');
+                    if (bl.classList.contains('is-paused3')){
+                        bl.classList.remove('is-paused3');
+                    }
+                }
+                function hailu(){
+                    let hide = document.getElementById("userName");
+                    hide.style.display = 'none';
+                    let hide1 = document.getElementById("btn");
+                    hide1.style.display = 'none';
+                    let hailu;
+                    let userName = document.getElementById('userName').value;
+                    let d = new Date();
+                    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                    let today = days[d.getDay()];
+                    let month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+                    let thisMonth = month[d.getMonth()];
+                    let date = d.getDate();
+                    let year = d.getFullYear();
+                    let oge = d.getHours();
+                    if (oge.toString().length == 1){
+                        oge = '0'+ oge;
+                    }else{
+                        oge;
+                    }
+                    let minute = d.getMinutes();
+                    if (minute.toString().length == 1){
+                        minute = '0'+ minute;
+                    }else{
+                        minute;
+                    }
+                    let seconds = d.getSeconds();
+                    if (seconds.toString().length == 1){
+                        seconds = '0'+ seconds;
+                    }else{
+                        seconds;
+                    }
+                    let properGreeting;
+                    let tellDate;
+                    let quotes = ["All men are born equal, here in REDwave, we do not believe some are more equal than others. The difference is preparation and opportunity",
+                                  "The theory of functional uses of computer states that uses of computer is directly proportional to the application of the end user",
+                                  "Do you know that hotels.ng is the biggest online hotel booking portal in Nigeria? Kudos to MARK & JENNIE ESSIEN",
+                                  "If you think programming is easy, try using MS ACCESS to create database for your staff in the office, then you will thank me for this nobel app",
+                                  "James Gosling invented java, Brendan Eich invented JavaScript, Cleve Moler invented MatLab. I'm learning how to use them daily! What kind of brain is in their head? ",
+                                  "when God said the works i do shall ye do, and greater works shall ye do, I think he meant ye shall also program",
+                                  "Before I program here's my style; i talk, i jot, i stop and sketch. When i start to code, i know what to ask from mr Google",
+                                  "I'm not a genius, i only stake beyond my fate to raise my faith",
+                                  "I dont read your book to speak like you, i read your book to seal my claim",
+                                  "God bless you, for stopping by the REDwave analytic lab. REDwaver-robotic is our 2nd app. The first was call lucrative. Search for it at google play store"]
+                    if (userName!= ""){
+                        if (oge < 12 ){properGreeting = "Good Morning";}if (oge >= 12 && oge < 16 ){properGreeting = "Good Afternoon";}if (oge >= 16 && oge < 21){properGreeting = "Good Evening";}else{properGreeting = "Good Night"};
+                        hailurobotics = properGreeting + " " + userName + ". Thanks for trusting our analyses.";
+                        tellDate = "Today's date is " + today + ", " + date + 'th' + " " + thisMonth + " " + year + ". The time is " + oge + ":" + minute + ":" + seconds + " " + 'hours, local time.';
+                        document.getElementById("greet").innerHTML = hailurobotics;
+                        document.getElementById("date").innerHTML = tellDate;
+                        let q = Math.floor(Math.random() * 10);
+                        let display = quotes[q];
+                        document.getElementById("quote").innerHTML = '"'+ display + '"';
+                    }else{
+                        document.getElementById("greet").innerHTML = "Kindly follow the instructions above by putting your name, thank you.";
+                        let count = 2;
+                        setInterval(function(){
+                        count--;
+                        if (count == 0){
+                        window.location = 'index.html'; }
+                        },1000);
+                    }
+                    }
+            </script>
+        
+        </main>
+
+        <footer>
+            <p>&copy 2017 RED-waver by TOMMY IMMANUEL</p> 
+        </footer>
+    </body>
+</html>
