@@ -5,9 +5,10 @@
 	<style type="text/css">
 
 		body {
-			background-color: #8b0850;
+			background: url("http://res.cloudinary.com/dannygirl/image/upload/v1505865820/deskBackground2_qfb8uz.jpg") center center;
+			background-repeat: no-repeat;
+			background-size: cover;
 			text-align: center;
-
 		}
 
 		h1 {
@@ -18,7 +19,7 @@
 
 		#calculator {
 			background-color: gray;
-			width: 250px;
+			width: 350px;
 			height: 350px;
 			border: 1px solid black;
 			border-radius: 10px;
@@ -30,7 +31,7 @@
 			margin-top: 2em;
 			margin-bottom: 20px;
 			height: 30px;
-			width: 10em;
+			width: 12em;
 			border-radius: 5px;
 			border: 1px solid gray;
 			box-shadow: 0 0 1px 1px black;
@@ -41,7 +42,6 @@
 		}
 
 		#keys {
-			padding: 10px 15px;
 			margin: 4px;
 			font-weight: bold;
 			border-radius: 5px;
@@ -52,11 +52,10 @@
 		}
 
 		#equal {
-			padding: 5px 10px;
 			margin: 4px;
 			font-weight: bold;
 			border-radius: 5px;
-			width:92px;
+			width:96px;
 			height:35px;
 			outline: none;
 			box-shadow: 0 0 2px 1px black;
@@ -69,30 +68,35 @@
 		<form>
 			<input type='text' name='' id='display' maxlength="10" disabled>
 			<br>
+				<input type='button' value='Cos' id='keys' onclick='cos()'>
 				<input type='button' value='C' id='keys' onclick='toScreen("c")'>
 				<input type='button' value='CE' id='keys' onclick='backspace()'>
 				<input type='button' value='SQ' id='keys' onclick='power()'>
 				<input type='button' value='+' id='keys' onclick='toScreen("+")'>
 				<br>
 
+				<input type='button' value='Sin' id='keys' onclick='sin()'>
 				<input type='button' value='7' id='keys' onclick='toScreen("7")'>
 				<input type='button' value='8' id='keys' onclick='toScreen("8")'>
 				<input type='button' value='9' id='keys' onclick='toScreen("9")'>
 				<input type='button' value='-' id='keys' onclick='toScreen("-")'>
 				<br>
 
+				<input type='button' value='Tan' id='keys' onclick='tan()'>
 				<input type='button' value='4' id='keys' onclick='toScreen("4")'>
 				<input type='button' value='5' id='keys' onclick='toScreen("5")'>
 				<input type='button' value='6' id='keys' onclick='toScreen("6")'>
 				<input type='button' value='*' id='keys' onclick='toScreen("*")'>
 				<br>
 
+				<input type='button' value='sqrt' id='keys' onclick='sqrt()'>
 				<input type='button' value='1' id='keys' onclick='toScreen("1")'>
 				<input type='button' value='2' id='keys' onclick='toScreen("2")'>
 				<input type='button' value='3' id='keys' onclick='toScreen("3")'>
 				<input type='button' value='/' id='keys' onclick='toScreen("/")'>
 				<br>
 
+				<input type='button' value='x^y' id='keys' onclick='exponential()'>
 				<input type='button' value='0' id='keys' onclick='toScreen("0")'>
 				<input type='button' value='.' id='keys' onclick='toScreen(".")'>
 				<input type='button' value='=' id='equal' onclick='answer()'>
@@ -122,6 +126,12 @@
 		else{
 			box.value += x;
 		}
+	}
+
+	function exponential(a,b){
+		x = box.value;
+		x = Math.pow(a,b);
+		box.value = x;
 	}
 
 	function power(){
@@ -158,11 +168,30 @@
 		box.value = newNum;
 	}
 
-	// function squareroot(){
-	// 	x = box.value;
-	// 	x = Math.sqrt(x);
-	// 	box.value = x;
-	// }
+	function sqrt(){
+		x = box.value;
+		x = Math.sqrt(x);
+		box.value = x;
+	}
+
+	function cos(){
+		x = box.value;
+		x = Math.cos(x);
+		box.value = x;
+	}
+
+	function sin(){
+		x = box.value;
+		x = Math.sin(x);
+		box.value = x;
+	}
+
+	function tan(){
+		x = box.value;
+		x = Math.tan(x);
+		box.value = x;
+	}
+
 	</script>
 </body>
 </html>
