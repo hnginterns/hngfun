@@ -1,522 +1,116 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 body {
-	font-family: 'Noto Sans', sans-serif;
-	margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
 }
 
 h1 {
-	color: white;
-	font-size: 50px;
-	font-weight: normal;
-	margin-bottom: 0;
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 0;
 }
 
 h2 {
-	color: white;
-	font-size: 18px;
-	margin-top: 0;
+  color: white;
+  font-size: 18px;
+  margin-top: 0;
 }
 
 h3 {
-	text-align: center;
-	font-size: 28px;
-	font-weight: normal;
-	margin-top: 100px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  margin-top: 100px;
 }
 
 h4 {
-	text-align: center;
-	font-size: 24px;
+  text-align: center;
+  font-size: 24px;
 }
 
-p{
-	text-align: center;
+p {
+  text-align: center;
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
-
 .bio {
-	color:black;
-	font-size: 14px;
+  color: black;
+  font-size: 14px;
 }
 
 .me {
-	height: 200px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: white;
-	margin-top: 40px;
+  height: 200px;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+  margin-top: 40px;
 }
 
 .about {
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .grey {
-	background-color: #919191;
-	height: 3px;
-	border: none;
-	width: 50px;
+  background-color: #919191;
+  height: 3px;
+  border: none;
+  width: 50px;
 }
-
 
 .clear {
-	clear: both;
+  clear: both;
 }
-
 
 .contact-headline {
   color: white;
 }
 
-
-
-
 #contactMe {
-    position: relative;
-    padding: 20px; 
-    z-index: 0;;
-    width: 100%;
-    height: 550px;
-    background-color: #3EB1F1;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #fff;
+  position: relative;
+  padding: 20px;
+  z-index: 0;
+  ;
+  width: 100%;
+  height: 550px;
+  background-color: #3EB1F1;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #fff;
 }
 
 #contactcont {
-    width: 650px;
+  width: 650px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    padding: 10px;
-    border: 1px solid #222;
-    display: block;
-    width: 50%;
-    font-size: 1.2rem;
-    font-family:Monaco, monospace;
-    margin: 0 0 20px;
+  padding: 10px;
+  border: 1px solid #222;
+  display: block;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: Monaco, monospace;
+  margin: 0 0 20px;
 }
 
 fieldset {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
-
-
-input[type="submit"]{
-    height: 40px;
-    padding:0 40px;
-    border: none;
-    margin-top: 10px;
-}
-
-textarea {
-    resize: none;
-=======
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
->>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
-body {
-	font-family: 'Noto Sans', sans-serif;
-	margin: 0;
-}
-
-h1 {
-	color: white;
-	font-size: 50px;
-	font-weight: normal;
-	margin-bottom: 0;
-}
-
-h2 {
-	color: white;
-	font-size: 18px;
-	margin-top: 0;
-}
-
-h3 {
-	text-align: center;
-	font-size: 28px;
-	font-weight: normal;
-	margin-top: 100px;
-}
-
-h4 {
-	text-align: center;
-	font-size: 24px;
-}
-
-p{
-	text-align: center;
-}
-
-ul {
-	list-style-type: none;
-}
-
-
-.bio {
-	color:black;
-	font-size: 14px;
-}
-
-.me {
-	height: 200px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: white;
-	margin-top: 40px;
-}
-
-.about {
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-.grey {
-	background-color: #919191;
-	height: 3px;
-	border: none;
-	width: 50px;
-}
-
-
-.clear {
-	clear: both;
-}
-
-
-.contact-headline {
-  color: white;
-}
-
-
-
-
-#contactMe {
-    position: relative;
-    padding: 20px; 
-    z-index: 0;;
-    width: 100%;
-    height: 550px;
-    background-color: #3EB1F1;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #fff;
-}
-
-#contactcont {
-    width: 650px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    border: 1px solid #222;
-    display: block;
-    width: 50%;
-    font-size: 1.2rem;
-    font-family:Monaco, monospace;
-    margin: 0 0 20px;
-}
-
-fieldset {
-    padding-left: 40px;
-}
-
-
-
-input[type="submit"]{
-    height: 40px;
-    padding:0 40px;
-    border: none;
-    margin-top: 10px;
+input[type="submit"] {
+  height: 40px;
+  padding: 0 40px;
+  border: none;
+  margin-top: 10px;
 }
 
 textarea {
-    resize: none;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
->>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-body {
-	font-family: 'Noto Sans', sans-serif;
-	margin: 0;
-}
-
-h1 {
-	color: white;
-	font-size: 50px;
-	font-weight: normal;
-	margin-bottom: 0;
-}
-
-h2 {
-	color: white;
-	font-size: 18px;
-	margin-top: 0;
-}
-
-h3 {
-	text-align: center;
-	font-size: 28px;
-	font-weight: normal;
-	margin-top: 100px;
-}
-
-h4 {
-	text-align: center;
-	font-size: 24px;
-}
-
-p{
-	text-align: center;
-}
-
-ul {
-	list-style-type: none;
-}
-
-
-.bio {
-	color:black;
-	font-size: 14px;
-}
-
-.me {
-	height: 200px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: white;
-	margin-top: 40px;
-}
-
-.about {
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-.grey {
-	background-color: #919191;
-	height: 3px;
-	border: none;
-	width: 50px;
-}
-
-
-.clear {
-	clear: both;
-}
-
-
-.contact-headline {
-  color: white;
-}
-
-
-
-
-#contactMe {
-    position: relative;
-    padding: 20px; 
-    z-index: 0;;
-    width: 100%;
-    height: 550px;
-    background-color: #3EB1F1;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #fff;
-}
-
-#contactcont {
-    width: 650px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    border: 1px solid #222;
-    display: block;
-    width: 50%;
-    font-size: 1.2rem;
-    font-family:Monaco, monospace;
-    margin: 0 0 20px;
-}
-
-fieldset {
-    padding-left: 40px;
-}
-
-
-
-input[type="submit"]{
-    height: 40px;
-    padding:0 40px;
-    border: none;
-    margin-top: 10px;
-}
-
-textarea {
-    resize: none;
-=======
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
->>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
-body {
-	font-family: 'Noto Sans', sans-serif;
-	margin: 0;
-}
-
-h1 {
-	color: white;
-	font-size: 50px;
-	font-weight: normal;
-	margin-bottom: 0;
-}
-
-h2 {
-	color: white;
-	font-size: 18px;
-	margin-top: 0;
-}
-
-h3 {
-	text-align: center;
-	font-size: 28px;
-	font-weight: normal;
-	margin-top: 100px;
-}
-
-h4 {
-	text-align: center;
-	font-size: 24px;
-}
-
-p{
-	text-align: center;
-}
-
-ul {
-	list-style-type: none;
-}
-
-
-.bio {
-	color:black;
-	font-size: 14px;
-}
-
-.me {
-	height: 200px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: white;
-	margin-top: 40px;
-}
-
-.about {
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
-.grey {
-	background-color: #919191;
-	height: 3px;
-	border: none;
-	width: 50px;
-}
-
-
-.clear {
-	clear: both;
-}
-
-
-.contact-headline {
-  color: white;
-}
-
-
-
-
-#contactMe {
-    position: relative;
-    padding: 20px; 
-    z-index: 0;;
-    width: 100%;
-    height: 550px;
-    background-color: #3EB1F1;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: #fff;
-}
-
-#contactcont {
-    width: 650px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 10px;
-    border: 1px solid #222;
-    display: block;
-    width: 50%;
-    font-size: 1.2rem;
-    font-family:Monaco, monospace;
-    margin: 0 0 20px;
-}
-
-fieldset {
-    padding-left: 40px;
-}
-
-
-
-input[type="submit"]{
-    height: 40px;
-    padding:0 40px;
-    border: none;
-    margin-top: 10px;
-}
-
-textarea {
-    resize: none;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
->>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
->>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
+  resize: none;
 }
