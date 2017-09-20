@@ -206,7 +206,6 @@ input[type=submit]{
                			 			#Stage 1
              				 </a>
 				<button style="background-color: lightgreen" id="myContact">Contact Me</button>
-				<a href="https://drive.google.com/file/d/0B09bJZyqJKyAa09GVTlxb2ladXc/view?usp=sharing" target="_blank" class="stage">Android Contact</a>
 			</div>
 			
 			<div  class="link-container">
