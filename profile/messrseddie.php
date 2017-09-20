@@ -1,4 +1,3 @@
-
 <?php
     if(isset($_POST['subject'])){
         $config = [
@@ -14,9 +13,9 @@
         $password = $data['password'];
         $subject = $_POST['subject'];
         $body = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=kylexcorcize@gmail.com");
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=messrseddie@gmail.com");
     
-    }else{
-        header("location: princekayc.html");
+  }else{
+        header("location: messrsedddie.html");
     }
 ?>
