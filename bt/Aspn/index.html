@@ -1,231 +1,309 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Headache!</title>
 <script>
-/*this is gonna be awesome
- *javascript function to acess time prop.
+/* I call this my "Analigital" clock.
+ * Creating script 1.
+ * this script will mainly be used as an appeal
+ * It also shows the date. 
  */
-window.onload = setInterval(
 
-function DisplayTime() {
-    if (!document.all && !document.getElementById) return;
+function padZero(number) {
+  return number < 10 ? "0" + number : number;
+}
 
-    var CurrentDate = new Date();
-    var hours = CurrentDate.getHours();
-    var minutes = CurrentDate.getMinutes();
-    var seconds = CurrentDate.getSeconds();
-    var DayNight = "PM";
-    if (hours < 12) DayNight = "AM";
-    if (hours > 12) hours = hours - 12;
-    if (hours === 0) hours = 12;
-    if (minutes <= 9) minutes = "0" + minutes;
-    if (seconds <= 9) seconds = "0" + seconds;
-    var currentTime = hours + ":" + minutes + ":" + seconds + " " + DayNight;
-
-    document.getElementById("cero").innerHTML = hours;
-    document.getElementById("uno").innerHTML = minutes;
-    document.getElementById("dos").innerHTML = seconds;
-    document.getElementById("tres").innerHTML = DayNight;
-}, 1000);
-
-    var hours = new Date().getHours();
-    var themessage;
-    var morning = ('Hello, Good morning');
-    var afternoon = ('Hello, Good afternoon');
-    var evening = ('Hello, Good evening');
-    /*
-    if (hours >= 0 && hours < 12) {
-        themessage = morning; 
-
-    } else if (hours >= 12 && thehours < 17) {
-        themessage = afternoon;
-
-    } else if (thehours >= 17 && hours < 24) {
-        themessage = evening;
+function updateClock(current, tmax, idPrefix) {
+  if (current === 0) {
+    for (var i = 0; i <= tmax; i++) {
+      var tick = document.getElementById(idPrefix + padZero(i));
+      tick.classList.remove('tick');
     }
+  }  
+  var tick = document.getElementById(idPrefix + padZero(current));
+  tick.classList.add('tick');
+}
 
-    $('.greeting').append(themessage); */
+function updateDate(today) { /* This is where it gets interesting
+                              * this function returns the day of the week
+                              */
+  var weekDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var dateTemp = weekDay[today.getDay()] + '<br>' + 
+  today.getFullYear() + '-' + padZero(today.getMonth()+1) + '-' + padZero(today.getDate());
+  var dack = document.getElementById('todayDate');
+  dack.innerHTML = dateTemp;
+}
+
+function startClock() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  updateClock(s, 59, "s");
+  if (s === 0) {
+    updateClock(m, 59, "m");
+    if (m === 0) {
+      updateClock(h, 23, "h");
+      if (h === 0) {
+        updateDate(today);
+      }
+    }
+  }
+}
+
+function initClock() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var i = 0;
+  var secondsEl = document.getElementById("seconds");
+  var minutesEl = document.getElementById("minutes");
+  var hoursEl = document.getElementById("hours");
+
+  updateDate(today);
+
+  /*This is where i died*/
+
+  for (i = 0; i <= 59; i++) { 
+    var tock = document.createElement("span");
+    tock.id = "s" + padZero(i);
+    tock.style.webkitTransform = "rotate(" + i*6 + "deg)";
+    tock.style.MozTransform = "rotate(" + i*6 + "deg)";
+    tock.style.msTransform = "rotate(" + i*6 + "deg)";
+    if (i <= s) {
+      tock.classList.add("tick");
+    }
+    secondsEl.insertBefore(tock, null);
+  }
+  for (i = 0; i <= 59; i++) {
+    var tock = document.createElement("span");
+    tock.id = "m" + padZero(i);
+    tock.style.webkitTransform = "rotate(" + i*6 + "deg)";
+    tock.style.MozTransform = "rotate(" + i*6 + "deg)";
+    tock.style.msTransform = "rotate(" + i*6 + "deg)";
+    if (i <= m) {
+      tock.classList.add("tick");
+    }
+    minutesEl.insertBefore(tock, null);    
+  }      
+  for (i = 0; i <= 23; i++) {
+    var tock = document.createElement("span");
+    tock.id = "h"+ padZero(i);
+    tock.style.webkitTransform = "rotate(" + i*15 + "deg)";
+    tock.style.MozTransform = "rotate(" + i*15 + "deg)";
+    tock.style.msTransform = "rotate(" + i*15 + "deg)";
+    if (i <= h) {
+      tock.classList.add("tick");
+    }
+    hoursEl.insertBefore(tock, null);
+  }      
+
+  setInterval(startClock, 100);
+}  
+
+window.onload = initClock;
+
+
+/* 
+ * This function displays the Digital time
+ * The time will be placed under the "analigital" clock
+ * 
+ */
+function clock(){
+
+var today = new Date();
+
+var hours = today.getHours();
+var minutes = today.getMinutes();
+var seconds = today.getSeconds();
+
+if (hours >= 12){
+  meridiem = " PM";
+}
+else {
+  meridiem = " AM";
+}
+
+
+if (hours>12){
+    hours = hours - 12;
+}
+else if (hours===0){
+    hours = 12; 
+}
+
+if (minutes<10){
+    minutes = "0" + minutes;
+}
+else {
+    minutes = minutes;
+}
+
+if (seconds<10){
+    seconds = "0" + seconds;
+}
+else {
+    seconds = seconds;
+}
+
+
+document.getElementById("clock").innerHTML = (hours + ":" + minutes + ":" + seconds + meridiem);
+
+}
+
+/* In order to make the code more fancy, i will include a greeting message according to the time of the day
+ * This will depend on what xylz says about this
+ * if approved
+ *
+ *
+ */
+
+
+
+setInterval('clock()', 1);
+
+
 </script>
+
+
 <style>
-
-
-html, body { min-height: 100%; }
-
-
+header, footer {
+    padding: 1em;
+    color: green;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
 body {
-  background-image: url(http://www.akhordzproductions.com/wp-content/uploads/2017/02/lderpRW.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+ background: #333;
+  color: white;
 }
 
-.clock {
-  margin: 60px auto;
-  text-align: left;
-  cursor: default;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+#clock {
+   text-align: center;
+   margin-top: 10%;
+   font-size: 90px;
+   font-family: Baskerville, Georgia;
 }
 
-.clock-block {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 100px;
-  height: 98px;
-  margin: 0 8px;
-  padding-top: 16px;
-  line-height: 1;
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.3);
-  background: #e5e7eb;
-  border: 1px solid #9fa2ad;
-  border-radius: 3px 3px 2px 2px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background-image: -webkit-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
-  background-image: -moz-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
-  background-image: -o-linear-gradient(top, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
-  background-image: linear-gradient(to bottom, #f1f2f5, #e5e7eb 20%, #c2c5d1 50%, #e5e7eb 80%, #e4e5eb);
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-
-.clock-block:before, .clock-block:after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: -1px;
-  right: -1px;
-  z-index: -1;
-  height: 4px;
-  background: #cacfd9;
-  border: 1px solid #9fa2ad;
-  border-radius: 2px;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-*
-.clock-block:before { bottom: -7px; }
-
-.clock-val {
-  display: block;
-  position: relative;
-  z-index: 1;
-  font-size: 64px;
-  font-weight: bold;
-  color: #4f5258;
-}
-
-.clock-val:before, .clock-val:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.clock-val:before {
-  z-index: -1;
-  top: -16px;
-  bottom: 50%;
-  border-radius: 2px 2px 0 0;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-}
-
-.clock-val:after {
-  top: 50%;
-  bottom: -16px;
-  border-top: 1px solid rgba(60, 62, 68, 0.4);
-  border-radius: 0 0 2px 2px;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 50%);
-  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-}
-
-.clock-unit {
-  display: block;
-  margin-top: -2px;
-  font-size: 13px;
-  font-weight: 200;
-  color: #6b707a;
-  text-transform: capitalize;
-}
-
-.clock-unit:after {
-  content: '';
-  position: absolute;
-  z-index: -2;
-  top: 100%;
-  left: -1px;
-  right: -1px;
-  height: 30px;
-  margin-top: 6px;
-  border-radius: 0 0 3px 3px;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0));
-  
-  .texto{text-align: center; width=100%;}
-  #box1 {
-    width: 50px;
-    height: 100px;
-    
-}
-#ap{
-    color:red;
-}
+html {
+  font-family: 'Source Code Pro', Consolas, monospace;
+  font-size: 62.5%;
+}/*
 body {
-  font-family: sans-serif;
-  background: white;
-  font-size: 2.5rem;
-  color: #333;
+  background: hsl(210, 15%, 15%);
+  margin-top: 20px;
+}*/
+.tclock {
+  position: relative;
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+}
+#hours, #minutes, #seconds {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  /* background-color: hsla(20, 75%, 25%, 0.025); */
+  /* border-radius: 50%; */
+}
+#seconds {
+  transform: scale(1.0);
+}
+#minutes {
+  transform: scale(0.85);
+}
+#hours {
+  transform: scale(0.70);
+}
+.date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 2rem;
+  text-align: center;
+  color: hsla(80, 100%, 25%, 0.85);
+  width: 50%;
+}
+span {
+  position: absolute;
+  width: 2%;
+  height: 5%;
+  top: 0; left: 50%;
+  background-color: hsla(80, 100%, 25%, 0.15);
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
+  transform-origin: 0% 1000%;
+  transition: all linear 0.5s;
+}
+.tick {
+  background-color: hsla(80, 100%, 25%, 0.85);
+}
+.effects{
+    position: left;
+    height:100px;
+    width:100px;
+
 }
 
-
+p{
+  color: white; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
 }
+
+p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
 </style>
-</head><title>Back to Future</title>
+</head>
+<title>Op. Task Dance</title>
 <body>
-<!-- special word from Einstein -->
-&quot;Time is an illusion.&quot;<span id = "ap"> --- Albert Einstein
-   <p class="clock" onclick="open_win();"> <span class="clock-block">
-        <span class="clock-val" id="cero" ></span>
-        <span class="clock-unit">hours</span>
-        </span> <span class="clock-block">
-        <span class="clock-val" id="uno" ></span>
-        <span class="clock-unit">minutes</span>
-        </span> <span class="clock-block">
-        <span class="clock-val" id="dos"></span>
-        <span class="clock-unit">seconds</span>
-        </span> <span class="clock-block">
-        <span class="clock-val" id="tres"></span>
-        <span class="clock-unit"></span>
-        </span> 
-    </p>
-    <div class="greeting"></div>
-    <div id = "box1"><br>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma<br>-which is living with the results of other people's thinking. Don't let the noise of others' opinions drown<br> out your own inner voice. And most important, have the courage to follow your heart and intuition.<br>&emsp;<span id = "ap">---Steve Jobs </span> <br><br>
-    <div id = "box3">
-    Learn to enjoy every minute of your life. Be happy now. Don't wait for something outside of yourself to<br>make you happy in the future. Think how really precious is the time you have to spend, whether it's at<br>work or with your family. Every minute should be enjoyed and savored.<br> <span id = "ap">&emsp;---Earl Nightingale</span>
-<br><br>
-</div> 
-<br>
-There's never a wasted time only time spent doing the wrong thing<br> .---Aspn 
-<!-- body ends here -->
-      
-      
+<header>
+   <h1>A &quot;Simple&quot; Digital Time with Date</h1>
+</header>
 
-                   
+<br><br>
+<div class="tclock">
+  <div id="seconds"></div>
+  <div id="minutes"></div>
+  <div id="hours"></div>
+  <div id="todayDate" class="date"></div>
+</div>
+
+<div id = "effects">
+<!-- A typewritter effect -->
+<p>Time is an Illusion ---Albert Einstein <br>
+</div>
+<div id="clock">
+  
+</div>
+<footer><b>---&copy;Aspn<b></footer>
+<!-- end -->
+
 </body>
 </html>

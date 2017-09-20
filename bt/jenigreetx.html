@@ -136,7 +136,7 @@
     </head>
     <body onload="animate()">
         <header>
-            <a href="index.html"><h1>GREET<span>X</span></h1></a>
+            <a href="jenigreetx.html"><h1>GREET<span>X</span></h1></a>
         </header>
 
         <main>
@@ -204,7 +204,7 @@
                                   "When the root of a tree begins to decay, it spreads death to the branches",
                                   "If your only tool is a hammer, you will see every problem as a nail",
                                   "It is often said that anyone who swallows a mango whole has great faith in his anus"]
-                    if (userName!= ""){
+                    if (/^[A-Za-z\s]+$/.test(userName) && !!userName.trim()){
                         if (oge < 12 ){properGreeting = "Good Morning";}if (oge >= 12 && oge < 16 ){properGreeting = "Good Afternoon";}if (oge >= 16){properGreeting = "Good Evening";};
                         greetx = properGreeting + " " + userName + "! How are you?";
                         tellDate = "Today's date is " + today + ", " + thisMonth + " " + date + " " + year + ". The time is " + oge + ":" + minute;
@@ -214,12 +214,12 @@
                         let display = quotes[q];
                         document.getElementById("quote").innerHTML = '"'+ display + '"';
                     }else{
-                        document.getElementById("greet").innerHTML = "Please input your name, I'm sure it's awesome!";
-                        let count = 2;
+                        document.getElementById("greet").innerHTML = "Lol, I'm pretty sure that's not your name.<br>Please input your name, I know it's awesome!";
+                        let count = 3;
                         setInterval(function(){
                         count--;
                         if (count == 0){
-                        window.location = 'index.html'; }
+                        window.location = 'jenigreetx.html'; }
                         },1000);
                     }
 
