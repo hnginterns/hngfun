@@ -16,8 +16,9 @@
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=yuteenightxi@gmail.com");
 	
     }else{
-
+        header("location: Yutee.html");
         header("location: iwa_temmy/iwa_temmy.html");
-
+        header("location: iwa_temmy.html");
+        header("location: iwa_temmy.html");
     }
 ?>
