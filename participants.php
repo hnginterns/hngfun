@@ -174,6 +174,7 @@ include('header.php');
             </div>
         </div>
         <!--  Each Participants ends here  -->
+
 <div class="p-card">
     <div class="v-center">
         <div class="p-card-photo" style="background-image: url(http://i.imgur.com/M2buGfY.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -26638,6 +26639,32 @@ include('header.php');
     </div>
 </div>
   <!-- Each participant ends here -->
+  <!--  Each Participant starts here  -->
+
+<div class="p-card">
+            <div class="v-center">
+                <div class="p-card-photo" style="background-image: url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/21730820_375540992864284_3701375902095186628_n.jpg?oh=ce868d37cc7f48b25e346522ecd95804&oe=5A150A19); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
+                <div class="p-card-info">
+
+
+                    <a href="http://hng.fun/profile/hogan26.html">
+                        <!--Profile Link-->
+                        <h3 class="p-card-title">Essien Hogan</h3>
+                        <!--Profile Name-->
+                    </a>
+                    <p class="p-card-description">bssjone26@gmail.com</p>
+                    <!--Email-->
+                </div>
+
+                <div class="p-team">
+                    <a href="#">
+                        <h3 class="p-card-title"> None </h3>
+                        <!--Team-->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  Each Participants ends here  -->
 <<<<<<< HEAD
 =======
 >>>>>>> dd163ac63ed550361935045fa6800e5063e242de
@@ -26648,6 +26675,7 @@ include('header.php');
 >>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
 =======
 <<<<<<< HEAD
+
 
 <?php
 //=======
@@ -80076,34 +80104,3 @@ include('header.php');
 
 
 
-<!--  Each Participant starts here  -->
-                <div class="p-card">
-    <div class="v-center">
-        <div class="p-card-photo" style="background-image: url(https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/21730820_375540992864284_3701375902095186628_n.jpg?oh=ce868d37cc7f48b25e346522ecd95804&oe=5A150A19); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
-        <div class="p-card-info">
-            <a href="http://hng.fun/profile/hogan26.html">
-                <!--Profile Link-->
-                <h3 class="p-card-title">Essien Hogan</h3>
-                <!--Profile Name-->
-            </a>
-            <p class="p-card-description">bssjone26@gmail.com</p>
-            <!--Email-->
-        </div>
-        <div class="p-team">
-            <a href="#">
-                <h3 class="p-card-title"> Team </h3>
-                <!--Team-->
-            </a>
-        </div>
-    </div>
-</div>
-  <!-- Each participant ends here -->
->>>>>>> dd163ac63ed550361935045fa6800e5063e242de
-<?php include "footer.php"?>
-
-=======
->>>>>>> a38d1b80c1d02eaab334b1b0bcb53ec01c711d1c
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
->>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
-=======
->>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
