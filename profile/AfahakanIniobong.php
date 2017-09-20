@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 3e700aa04932485532bea076220823f8563012b6
 <?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $subject = $_POST['subject'];
