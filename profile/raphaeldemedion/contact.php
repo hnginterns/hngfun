@@ -1,8 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 <!DOCTYPE html>
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 <!DOCTYPE php>
 <html lang="en">
 
@@ -100,11 +111,23 @@
 
     </body>
 <!--=== End Body ===-->
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 10102c15c7b9faeed00255e89bbe69c6a2502ca7
+<!DOCTYPE php>
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 =======
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <!DOCTYPE php>
+<<<<<<< HEAD
 >>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+=======
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 <html lang="en">
 
 <head>  
@@ -136,6 +159,14 @@
                     </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                <div class="col-md-8 bio col-md-offset-1 my-bio" style="height: 600px;">                    
+                    <div class="headline">                  
+                        <h1><i class="fa fa-user fa-icon1x"></i> 
+=======
+<<<<<<< HEAD
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
                 <div class="col-md-8 bio col-md-offset-1 my-bio">                    
                     <div class="headline">                  
                         <h1><i class="fa fa-user fa-icon1x"></i> 
@@ -144,7 +175,12 @@
                 <div class="col-md-8 bio col-md-offset-1 my-bio" style="height: 600px;">                    
                     <div class="headline">                  
                         <h1><i class="fa fa-user fa-icon1x"></i> 
+<<<<<<< HEAD
 >>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+=======
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
                             <strong>Contact Info</strong>
                         </h1>
                     </div>
@@ -187,16 +223,32 @@
                         <div class="col-md-12">
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
                             <ul class="footer-links list-inline">
                                 <li>
                                 
                                     <a href="index.php"></i>Basic Info</a>
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
                             <ul class="footer-socials list-inline">
                                 <li>
                                 
                                     <a href="index.php"></i>Home</a>
+<<<<<<< HEAD
 >>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
                                 </li>
                                 <li>
                                     <a href="contact.php"></i>Contact</a>
@@ -205,13 +257,24 @@
                                 <li>
                                     <a href="social.php"></i>Social</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                                </li>                                
+=======
+<<<<<<< HEAD
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
                                 </li>
                                 <li>
                                     <a href="message.php"></i>Message Box</a>
                                 </li>                               
 =======
                                 </li>                                
+<<<<<<< HEAD
 >>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+=======
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
                             </ul>
                         </div>
                         <!-- End Social Links -->
@@ -221,6 +284,18 @@
 <!--=== End Footer ===-->
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    </body>
+<!--=== End Body ===-->
+<<<<<<< HEAD
+=======
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+>>>>>>> 10102c15c7b9faeed00255e89bbe69c6a2502ca7
+</html>
+=======
+<<<<<<< HEAD
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 <!-- Javascripts
 ===================================== -->
         <script src="js/jquery.min.js" type="text/javascript"></script>        
@@ -236,4 +311,9 @@
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 </html>
+<<<<<<< HEAD
 >>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+=======
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
