@@ -87,10 +87,11 @@
             $password = $data['password'];
             $subject = $_POST['subject'];
             $body = $_POST['message'];
-            header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=anigottashine@gmail.com");
+            header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=okonalbert@yahoo.com");
+        echo "Message sent!"
         }
         else{
-            header("location: aniekanetim.html");
+            header("location: okonalbert.html");
         }
      ?>-->
     <div id="prof" class="circle">
@@ -112,12 +113,12 @@ id="pix" alt="profile image" />
         <br/><i><small>(the largest online booking site in Nigeria)</small></i>
     </h3>
 
-<form action="http://hng.fun/profile/okonalbert.php" method="GET">
+<form action="okonalbert.php" method="POST">
     <fieldset>
         <legend> <b>Contact Form</b> </legend>
         <label>Name</label><br/><input type="text" name="name" placeholder="Full Name"/><br/>
         <label>Email Address</label><br/><input type="email" name="Email" placeholder="Email" required/><br/>
-        <label>Your Message</label><br/><textarea name="comment" cols="22" rows="10" placeholder="Message"></textarea><br/>
+        <label>Subject</label><br/><input type="text" name="subject" placeholder="Subject"/><br/><label>Your Message</label><br/><textarea name="message" cols="22" rows="10" placeholder="Message"></textarea><br/>
         <button type="submit">Send</button>&nbsp;<button type="reset">Reset</button>
     </fieldset>
 </form>

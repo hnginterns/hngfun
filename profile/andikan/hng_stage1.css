@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -8,6 +9,10 @@
 >>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 body{
 
+=======
+body{
+background:#e6e6e6;
+>>>>>>> 1dcebd2b9a05356f715d2483f53995f8133ccc8a
 }
 div{ 
 	border:#aaa;
@@ -75,6 +80,7 @@ p{
 	background: #6B9FFF;
     color:#fff;
 	}
+<<<<<<< HEAD
 	
 	
 =======
@@ -172,3 +178,56 @@ p{
 >>>>>>> 3e700aa04932485532bea076220823f8563012b6
 >>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 	
+=======
+
+.formus{
+border-radius:20px;
+background:#7e7ead;
+margin-top:5%;
+float:right;
+height:190px;
+width:400px;
+border:1px solid grey;
+size:auto;
+	}
+	.formus:active{
+	background:#9191c3;
+	}
+textarea{
+background:white;
+margin:4px;
+margin-left:0px;
+width: 372px;
+height:100px;
+border-radius:14px;
+}
+.sp{
+float:right;
+margin-right:8px;
+color:#2a2a3a;
+}	
+.submit{
+float:right;
+margin-right:3%;
+    background-color: #4CAF50; 
+    border: 1px solid grey;
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius:10px;
+	
+}
+.submit:active{
+transform: translateY(2px);
+}
+h3{
+color:blue;
+margin:0px;
+padding:0px;
+border:0px;
+
+}
+>>>>>>> 1dcebd2b9a05356f715d2483f53995f8133ccc8a
