@@ -6824,6 +6824,17 @@ include('header.php');
         </div>
         <!-- Thadeus' profile -->
 
+
+
+
+
+
+
+
+
+
+
+
         <div class="p-card">
             <div class="v-center">
                 <div class="p-card-photo" style="background-image: url(http://hng.fun/profile/thadeus/files/profile.jpg); background-size: cover; background-repeat: no-repeat; background-position: center center; "></div>
@@ -8916,9 +8927,6 @@ include('header.php');
 </div>
 <!--  Each Participants ends here  -->
 
-
-<<<<<<< HEAD
-=======
 <!--  Each Participant starts here  -->
 <div class="p-card">
     <div class="v-center">
