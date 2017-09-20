@@ -1,4 +1,3 @@
-
 <?php
 
  if(isset($_POST['send_email'])){
@@ -295,6 +294,8 @@ text-align: center;
 
 </body>
 </html>
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 =======
@@ -606,3 +607,4 @@ text-align: center;
 
 </body>
 </html>
+>>>>>>> 2f3b113119f9338530d13ac74c82cd2477f5aba9

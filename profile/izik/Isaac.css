@@ -1,5 +1,62 @@
+<<<<<<< HEAD
+body{
+	padding: 0px;
+	color: #fff;
+	font-size: 16px;
+	margin: 0px;
+	text-align: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Isaac.jpg');
+}
+a{
+	color: #fff;
+}
+a:hover{
+	font-style: italic;
+}
+img{
+	margin-top: 50px;
+	height:280px;
+	width:200px;
+	border-radius: 20%;
+}
+h1{
+	font-size: 35px;
+	font-family: Tahoma;
+	margin: 15px;
+	padding: 20px;
+}
+h2{
+	font-size: 12px
+}
+article{
+	width: 60%;
+	margin-left: 20%;
+	overflow-x: hidden;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	text-align: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+#id1{
+	width: 40%;
+	margin: 15px;
+	float: left;
+}
+#id2{
+	border-left: 1px solid #ccc;
+	width: 40%;
+	margin: 15px;
+	padding: 15px;
+	float: left;
+}
+.fadeIn-left{
+  left: 20%;
+}
+.main-title{
+=======
 body {
   padding: 0px;
+>>>>>>> ae09fd48de761bbc01e25b5bba55619f73d5e5c7
   color: #fff;
   font-size: 16px;
   margin: 0px;

@@ -1,54 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Starlyvil's Profile | Basic info</title>
-<script type="text/javascript" src="js/jquery/jquery.js"></script>
-<script type="text/javascript" src="js/jquery/jqueryUI.js"></script>
-<link rel="stylesheet"  type="text/css" href="font/vicon/config.css"/>
-<script type="text/javascript" src="js/gen.js"></script>
-<link rel="stylesheet"  type="text/css" href="styles/gen.css"/>
-</head>
 
-<body>
-<div class="con">
-	<div class="cv"></div>
-	<div class="main">
-		<div class="lft">
-			<div class="tp">
-				<div class="pic">
-				</div>
-			</div>
-			<div class="bt">
-				<span>Starlyvil</span>
-			</div>
-		</div>
-		<div class="overlay">
-			<div class="spinner"></div>
-		</div>
-		<div class="rgt">
-			
-			
-		</div>
-	</div>
-	<div class="ft">
-		<div class="lCon">
-			<div class="mainCon">
-				<a id="Bi" data-target="binfo">Basic Info</a>
-				<a id="Ci" data-target="cinfo">Contact Info</a>
-				<a id="Sh" data-target="shandler">Social handler</a>
-				<a id="Cf" data-target="cform">Contact form</a>
-			</div>
-		</div>
-	</div>
-</div>
-</body>
-</html>
-=======
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 <!doctype html>
 <html>
 <head>
@@ -105,7 +55,3 @@
 <!--<span onClick="lSet('social')">test</span>-->
 </body>
 </html>
-<<<<<<< HEAD
->>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
