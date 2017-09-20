@@ -16,18 +16,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .calculator {
   background-color: #FDC3B5;
   width: 256px;
   height: 389px;
-  margin: auto auto;
+  /*margin: auto auto;*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  transition: ease 0.5s;
 }
 
 .main {
@@ -78,18 +79,24 @@ body {
   top: 3px;
 }
 
-.cls {
-  width: 100%;
+.ctrl {
+  width: 45%;
+}
+
+.expr {
+  width: 256px;
+  height: 100px;
+  margin-bottom: 1%;
+  color: #E53F66;
+  background-color: #FDC3B5;
+  line-height: initial;
+  font-size: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer {
-  color: #000000;
-  font-size: 1.8em;
-  font-style: italic;
-  text-align: center;
-  padding-top: 40px;
-}
-
-.footer img {
-  color: pink;
+  position: absolute;
+  bottom: 0px;
 }
