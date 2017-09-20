@@ -112,7 +112,5 @@ input[type="submit"] {
 }
 
 textarea {
-  <<<<<<< HEAD resize: none;
-  =======resize: none;
-  >>>>>>>merge-conflict-resolution
+  resize: none;
 }
