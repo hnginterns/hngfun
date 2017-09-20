@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -67,6 +70,7 @@
             </div>
         </div>
     </body>
+<<<<<<< HEAD
     </html>
 =======
 =======
@@ -282,3 +286,6 @@
     </body>
     </html>
 
+=======
+    </html>
+>>>>>>> origin/master
