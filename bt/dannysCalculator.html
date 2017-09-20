@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 	<style type="text/css">
 
 		body {
@@ -12,13 +13,15 @@
  			-o-background-size: cover;
 			background-size: cover;
 			text-align: center;
+			font-family: 'Raleway', sans-serif;
+			font-weight: normal;
 		}
 
 		h1 {
 			color: #ffffff;
 			font-weight: bold;
 			font-size: 3em;
-			margin-top: 1.5em;
+			margin-top: 2em;
 		}
 
 		#calculator {
@@ -64,6 +67,18 @@
 			outline: none;
 			box-shadow: 0 0 2px 1px black;
 		}
+
+		h3 {
+			color: green;
+		}
+		#twitter a{
+			color: green;
+			text-decoration: none;
+		}
+		#twitter a:hover{
+			color: #ffffff;
+			text-decoration: underline;
+		}
 	</style>
 </head>
 <body>
@@ -75,7 +90,7 @@
 				<input type='button' value='Cos' id='keys' onclick='cos()'>
 				<input type='button' value='C' id='keys' onclick='toScreen("c")'>
 				<input type='button' value='CE' id='keys' onclick='backspace()'>
-				<input type='button' value='SQ' id='keys' onclick='power()'>
+				<input type='button' value='x^2' id='keys' onclick='power()'>
 				<input type='button' value='+' id='keys' onclick='toScreen("+")'>
 				<br>
 
@@ -100,12 +115,16 @@
 				<input type='button' value='/' id='keys' onclick='toScreen("/")'>
 				<br>
 
-				<input type='button' value='x^y' id='keys' onclick='exponential()'>
+				<input type='button' value='x^y' id='keys' onclick='toScreen("**")'>
 				<input type='button' value='0' id='keys' onclick='toScreen("0")'>
 				<input type='button' value='.' id='keys' onclick='toScreen(".")'>
 				<input type='button' value='=' id='equal' onclick='answer()'>
 		</form>
+		
+	</div>
 
+	<div id="twitter">
+		<h3>By : <a href="http://twitter.com/daniella_mato" target="_blank"> Daniella Mato</a></h3>
 	</div>
 
 	<script type="text/javascript">
@@ -118,24 +137,11 @@
 
 		if(box.value.length === 14){
 			box.value +='';
-		}
-		else if(x ==='c'){
+		} else if(x ==='c'){
 			box.value = '';
-		 }// else 
-		// //Bug fix going on here. Trying to find how to put the logic into code.
-		// if (displayArray[0] === "0"){
-		// 	box.value += x;
-		// 	let a = displayArray.slice(1).join("");
-		// }
-		else{
+		 } else{
 			box.value += x;
 		}
-	}
-
-	function exponential(a,b){
-		x = box.value;
-		x = Math.pow(a,b);
-		box.value = x;
 	}
 
 	function power(){
@@ -148,7 +154,8 @@
 		x = box.value;
 		let y;
 		try {
-			y = eval(x);
+			// y = eval(x);
+			y = eval(x.replace(/\b0*((\d+\.\d+|\d+))\b/g, "$1"))
 			let resultArray = y.toString().length;
 			if(resultArray >= 14){
 				y = y.toPrecision(14);
@@ -160,7 +167,7 @@
 		}
 		catch (e) {
     		if (e instanceof SyntaxError) {
-    		box.value = "NaN";
+    		box.value = "Syntax Error";
     		}
 		}
 	}
