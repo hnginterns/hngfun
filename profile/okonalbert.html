@@ -5,8 +5,14 @@
 <title> Albert Okon </title>
 <style type="text/css">
     .text{
-        font-size: 40px; text-align: center;           }
-    .text span{text-align: center; font-size: medium;}
+        font-size: 40px; 
+        text-align: center; 
+        margin-left: auto; 
+        margin-right: auto;
+          }
+    .text span{
+        text-align: center; 
+        font-size: medium;}
     div h3{
         font-size: 20px; text-align: center; margin-top: 5px;
           }
@@ -72,32 +78,9 @@
 
 </head>
 <body id="body">
-<!--        <?php
-        if(isset($_POST['subject'])){
-            $config = [
-                'dbname' => 'hng',
-                'pass' => '@hng.intern1',
-                'username' => 'intern',
-                'host' => 'localhost'
-            ];
-            $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-            $con = new PDO($dsn, $config['username'], $config['pass']);
-            $result = $con->query('SELECT * FROM password LIMIT 1');
-            $data = $result->fetch();
-            $password = $data['password'];
-            $subject = $_POST['subject'];
-            $body = $_POST['message'];
-            header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=okonalbert@yahoo.com");
-        echo "Message sent!"
-        }
-        else{
-            header("location: okonalbert.html");
-        }
-     ?>-->
     <div id="prof" class="circle">
 <img src="https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg" 
 id="pix" alt="profile image" />
-    </div>
 <div class="text">
 <b>ALBERT OKON</b><br/>
 <span>Email: okonalbert@yahoo.com | Slack: okonalbert | Facebook: okonalbert </span>
