@@ -1,4 +1,78 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+html{
+    background: #ffffff;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)), url("");
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: tahoma;
+}
+p{
+    font-size: 13.5px;
+    line-height: 25px;
+}
+h1{
+    font-size: 100px;
+}
+#pixa{
+    padding: 15px;
+    opacity: 20%;
+    float: left;
+    height: 60%;
+    width: 40%;
+    text-align: center;
+}
+hr{
+    width: 70%;
+    margin-top: 40px;
+    font-size: 10px;
+}
+button{
+    background: #090;
+    width: 30%;
+    margin-top: 20px;
+    border: thin solid #090;
+    border-radius: 10px;
+}
+
+#links img{
+    margin-top: 10px;
+}
+#img1{
+    margin-top: 180;
+    border-radius: 40%;
+    border: 1px groove #ffffff;
+}
+.Ubyjude{
+    width: 55%;
+    float: right;
+    height: 100%;
+    color: #ffffff;
+    border-left: thin solid #000;
+}
+#main{
+    height: 80%;
+    margin: 10px;
+    text-align: center;
+}
+#main h1{
+    text-shadow: 3px 3px 14px #6a7;
+}
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -69,6 +143,14 @@ button{
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 >>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+=======
+>>>>>>> 10102c15c7b9faeed00255e89bbe69c6a2502ca7
+=======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 html{
     background: #ffffff;
 }
@@ -132,10 +214,22 @@ button{
 #main h1{
     text-shadow: 3px 3px 14px #6a7;
 }
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+>>>>>>> 10102c15c7b9faeed00255e89bbe69c6a2502ca7
+=======
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
+<<<<<<< HEAD
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+<<<<<<< HEAD
 >>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+=======
+>>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
