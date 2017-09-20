@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style>
+body {
+    background: #FFFFFF url("https://cdn.pixabay.com/photo/2017/07/29/13/17/abstract-2551464__340.jpg") repeat fixed left top;
+	margin:0px;
+	padding:0px;
+	font-family: candara, verdana, tahoma;
+	font-size:calc(1px + 0.8vw);
+}
+.container{
+	width: 820px;
+	background-color: #F8F9F9;
+        box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
+	margin: auto;
+	margin-top:10px;
+	margin-bottom:10px;
+
+}
+.content {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+table, th, td {
+    border: 0px solid #000000;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+td.content {
+	width: 20%;
+	text-transform: italic;
+}
+form{
+    border-radius: 30px;
+    background-color: lightgrey;
+    padding: 20px;
+}
+label.form-header {
+	font: bold 15px candara, verdana, tahoma; color:#FFFFFF;
+}
+input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+input[type=text], input[type=email], select {
+    border-left: solid 4px #866861;
+} 
+textarea{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+	resize: none;
+    overflow: auto;
+}
+textarea{
+    border-left: solid 4px #866861;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #866861;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+::-webkit-input-placeholder {
+	font-style:italic;
+}
+:-moz-placeholder { /* older Firefox*/
+	font-style:italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-style:italic;
+}
+:-ms-input-placeholder {
+	font-style:italic;
+}
+
+.center {
+	text-align: center;
+}
+.headings{
+    color: #1F618D;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+p {
+    font-family: verdana;
+	margin-bottom: 40px;
+}
+.profile-img {
+        align: center;
+	display: block;
+        margin: auto;
+	padding: 20px;
+        border-radius: 50%;
+}
+header,footer {
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 2px 2px 5px #EBEDEF;
+	line-height: 60px;
+	background-color: #866861;
+	width: 100%;
+	height: 80px;
+	margin:0px;
+	padding:0px;
+	clear: left;
+}
+footer{
+	font-size: 12px;
+	right:auto;
+	height:30px;
+	line-height:30px;
+}
+.clear {
+	clear:both;
+}
+</style>
+<title>HNG Intern Profile</title>
+</head>
+<body>
+
+<div class="container">
+	<header>MY HNG-INTERN PROFILE PAGE</header>
+	<div class="content">
+		<img class="profile-img" src="https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/20799092_1115183515281657_4571421948861754493_n.jpg?_nc_eui2=v1%3AAeEo2asShojHZ2YnKwg7Q_e7Hk6gfp2r1l92p_s632BzafjvZ6z7_hkNo7xrDkcD2XiefOPW3ulZ-J21G9J-TQ6O2r3hd-QsDJ1FVC1anJD67g&oh=937f2e925fb8ab43deb5a0b902c6e482&oe=5A5B26D1" width="350" height="350" alt="Pato Profile Picture">
+		<table style="width:100%" class="center">
+			<tr>
+				<td><img src="http://i.imgur.com/cBSjzt4.png" width="35" height="35" alt="Name Icon">&nbsp;Idungafa, Patrick John</td>
+				<td><img src="http://i.imgur.com/DPgggYR.png" width="35" height="35" alt="Slack Icon">&nbsp;Maguar2</td>
+				<td><img src="http://i.imgur.com/ccgmwBe.png" width="35" height="35" alt="Github Icon"><a href="http://bit.ly/2wDjrqX">&nbsp;Stage1 Repo</a></td>
+			</tr>
+			<tr>
+				<td><img src="http://i.imgur.com/FgWTvYq.jpg" width="150" height="30" alt="Bio Icon">
+					<p><i>My name remains Patrick John Idungafa.Am currently schooling at Caritas University,Enugu State.
+	  My philosophy in life remains the fact that,if any one wants to be very good in an aspect,that can
+	  only be acheved through hardwork,dedication and prayer.Am a beginner in programming,but i believe one day,
+	  i will get there.
+	  <bold>Finally</bold>,am a gadget lover,a fashionista and i love to explore and query how things work.</i></p>
+				</td>
+				<td colspan="2">
+					<form action="Maguar-form-action.php" method="POST" name="contact-form">
+						<label class="form-header">CONTACT FORM</label>
+						<input name="subject" size="30" type="text" placeholder="Subject..">
+						<input name="email" size="30" type="email" placeholder="E-mail..">
+						<textarea name="body" rows="6" cols="40" placeholder="Message.."></textarea>
+						<input name="process" value="SUBMIT" type="submit">
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="headings center">&nbsp;</div>
+	<footer>&copy; Copyright Maguar 2017 - HNG Intern Stage 2</footer>
+</div>
+</body>
+</html>

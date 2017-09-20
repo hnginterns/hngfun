@@ -1,5 +1,5 @@
 body{
-
+background:#e6e6e6;
 }
 div{ 
 	border:#aaa;
@@ -67,6 +67,54 @@ p{
 	background: #6B9FFF;
     color:#fff;
 	}
+
+.formus{
+border-radius:20px;
+background:#7e7ead;
+margin-top:5%;
+float:right;
+height:190px;
+width:400px;
+border:1px solid grey;
+size:auto;
+	}
+	.formus:active{
+	background:#9191c3;
+	}
+textarea{
+background:white;
+margin:4px;
+margin-left:0px;
+width: 372px;
+height:100px;
+border-radius:14px;
+}
+.sp{
+float:right;
+margin-right:8px;
+color:#2a2a3a;
+}	
+.submit{
+float:right;
+margin-right:3%;
+    background-color: #4CAF50; 
+    border: 1px solid grey;
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius:10px;
 	
-	
-	
+}
+.submit:active{
+transform: translateY(2px);
+}
+h3{
+color:blue;
+margin:0px;
+padding:0px;
+border:0px;
+
+}

@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 <?php
    if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -34,3 +36,4 @@
       }
     }
  ?>
+>>>>>>> 4763fdf1ff8014cc1571c658f3f46f0356a922f7

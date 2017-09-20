@@ -58,11 +58,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
      <fieldset>
      	<legend>CONTACT ME</legend>
      	
-     	<input type="text" name="fullname" size="30" placeholder="Type your full name" required></p>
+     	<input type="text" name="fullname" size="30" placeholder="Type your full name" required><br>
      	
-     	<input type="text" name="customer_mail" size="30" placeholder="Your e-mail address" required></p>
+     	<input type="text" name="customer_mail" size="30" placeholder="Your e-mail address" required><br>
      	
-     	<input type="text" name="subject" size="30" placeholder="What is the Subject of your message" required></p>
+     	<input type="text" name="subject" size="30" placeholder="What is the Subject of your message" required><br>
      
      	<p><textarea rows="10" cols="30" name="message" placeholder="Type your message here, please feel free to pour out your heart"></textarea></p>
      	
