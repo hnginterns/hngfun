@@ -15,8 +15,8 @@
         $data = $result->fetch();
         $password = $data['password'];
         $subject = $_POST['subject'];
-        $message = $_POST['message'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&message=".$message."&to=bssjone26@gmail.com");
+        $body = $_POST['body'];
+        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=bssjone26@gmail.com");
 
     }else{
         header("location: hogan26.html");
