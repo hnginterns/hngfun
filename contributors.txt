@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿(1) Nwanze Franklin, franko4don, @franko4don
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
-﻿<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
+﻿
 (1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -15777,5 +15765,4 @@ adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
 (294) Aboderin Micheal (Slack : Mroracle Githun :Mroracle8)
 (302) Enobong Victor (Slack: Enobong, Github: Enobong100)
->>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
->>>>>>> 301863138bb4c9e1bd81b6c72b5e16aa04244d5a
+
