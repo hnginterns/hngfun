@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 >>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 <div class="infoCon">
 	<h1>Contact form</h1>
 	<p>Please use the form below to send me a short mail</p>
@@ -71,9 +74,14 @@
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+=======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 >>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 <div class="infoCon">
 	<h1>Contact form</h1>
 	<p>Please use the form below to send me a short mail</p>
@@ -143,8 +151,12 @@
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 =======
 <<<<<<< HEAD
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+=======
+<<<<<<< HEAD
 >>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 >>>>>>> 3e700aa04932485532bea076220823f8563012b6
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 ?>

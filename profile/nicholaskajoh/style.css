@@ -1,4 +1,175 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* Styles */
+
+body {
+  font-family: Georgia, Arial;
+  margin: 0;
+}
+
+/* header */
+header {
+  height: 80px;
+  background-color: #e2e2e2;
+}
+
+#siteTitle {
+  margin-top: inherit;
+  padding-top: 25px;
+  padding-left: 50px;
+  font-family: Tahoma, Arial;
+}
+
+/* page */
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+img#dp {
+  border-radius: 50%;
+}
+
+@media only screen 
+  and (min-width: 1200px) {
+    img#dp {
+      width: 250px;
+      height: 250px;
+    }
+}
+
+.form-input {
+  padding: 10px;
+}
+
+input[type="text"], textarea {
+  border-radius: 3px;
+  border: 1px solid #555;
+  width: 100%;
+}
+
+input[type="text"] {
+  height: 25px;
+}
+
+button, input[type="submit"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  font-family: Tahoma;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+footer ul {
+  text-align: right;
+}
+
+footer ul li {
+  display: inline;
+=======
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+/* Styles */
+
+body {
+  font-family: Georgia, Arial;
+  margin: 0;
+}
+
+/* header */
+header {
+  height: 80px;
+  background-color: #e2e2e2;
+}
+
+#siteTitle {
+  margin-top: inherit;
+  padding-top: 25px;
+  padding-left: 50px;
+  font-family: Tahoma, Arial;
+}
+
+/* page */
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+img#dp {
+  border-radius: 50%;
+}
+
+@media only screen 
+  and (min-width: 1200px) {
+    img#dp {
+      width: 250px;
+      height: 250px;
+    }
+}
+
+.form-input {
+  padding: 10px;
+}
+
+input[type="text"], textarea {
+  border-radius: 3px;
+  border: 1px solid #555;
+  width: 100%;
+}
+
+input[type="text"] {
+  height: 25px;
+}
+
+button, input[type="submit"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  font-family: Tahoma;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+footer ul {
+  text-align: right;
+}
+
+footer ul li {
+  display: inline;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
+=======
+>>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+>>>>>>> 602f84c91267292aee7924db9b175efaa7ac8daa
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -167,4 +338,5 @@ footer ul li {
 =======
 >>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
 >>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
+>>>>>>> 82a0e638c53e8e58b5cad31287f57a7f04ecc26c
 }
