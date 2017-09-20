@@ -17,8 +17,5 @@
 	
     }else{
         header("location: Yutee.html");
-        header("location: iwa_temmy/iwa_temmy.html");
-        header("location: iwa_temmy.html");
-        header("location: iwa_temmy.html");
     }
 ?>
