@@ -205,7 +205,7 @@
                                   "If your only tool is a hammer, you will see every problem as a nail",
                                   "It is often said that anyone who swallows a mango whole has great faith in his anus"]
                     if (userName!= ""){
-                        if (oge < 12 ){properGreeting = "Good Morning";}if (oge >= 12 || oge < 16 ){properGreeting = "Good Afternoon";}if (oge >= 16){properGreeting = "Good Evening";};
+                        if (oge < 12 ){properGreeting = "Good Morning";}if (oge >= 12 && oge < 16 ){properGreeting = "Good Afternoon";}if (oge >= 16){properGreeting = "Good Evening";};
                         greetx = properGreeting + " " + userName + "! How are you?";
                         tellDate = "Today's date is " + today + ", " + thisMonth + " " + date + " " + year + ". The time is " + oge + ":" + minute;
                         document.getElementById("greet").innerHTML = greetx;
