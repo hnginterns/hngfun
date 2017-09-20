@@ -1,21 +1,28 @@
+<<<<<<< HEAD
 
 body
 {
 	background-color: #54ff9f;
+=======
+body {
+  background-color: #54ff9f;
+>>>>>>> origin/master
 }
+
 img {
-	width: 300px;
-	height: auto;
-	position: relative;
-	left: 250px;
-	top: 15%;
+  width: 300px;
+  height: auto;
+  position: relative;
+  left: 250px;
+  top: 15%;
 }
+
 .left {
-	float: left;
-	
-	height: 100%;
-	width: 50%;
+  float: left;
+  height: 100%;
+  width: 50%;
 }
+<<<<<<< HEAD
 .right {height: 100%;
 	width: 50%;
 	float: right;
@@ -64,3 +71,23 @@ h1 {
 	text-align: center;
 
 
+=======
+
+.right {
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
+h1 {
+  text-align: center;
+}
+
+.slack {
+  text-align: center;
+}
+
+.github {
+  text-align: center;
+}
+>>>>>>> origin/master
