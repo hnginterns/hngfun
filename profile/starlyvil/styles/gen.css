@@ -1,1180 +1,473 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* CSS Document */
+  /* CSS Document */
 
 @font-face {
-font-family:ds;
-src: url("../font/DancingScript-Regular.ttf"); 
-}
-@keyframes load{
-	from{transform:rotate(0deg);}
-	to{transform:rotate(360deg);}
-}
-html{
-	height:100%;
-	min-height:690px;
-}
-body{
-	margin:0px;
-	height:100%;
-	background-color: #009999;
-}
-.con{
-	width:100%;
-	height:100%;
-	background-color: #009999;
-	position: relative;
-	z-index: 1;
-	min-width: 1320px;
-}
-.con::after{
-	width:800px;
-	height:690px;
-	background-color: #f9f9f9;
-	position: absolute;
-	content:"";
-	z-index:-1;
-	right:0;
-	top:0;
+  font-family: ds;
+  src: url("../font/DancingScript-Regular.ttf");
 }
 
-.con .main{
-	width:1320px;
-	height: 600px;
-	margin: 0 auto;
-	position: relative;
-}
-.con .main .lft{
-	width:650px;
-	height: 600px;
-	float:left;
-	position: relative;
-	z-index: 2;
-	background-color: #009999;
-}
-.con .main .lft .tp{
-	width:650px;
-	height: 200px;
-	float:left;
-	background-color: inherit;
-	margin-top: 140px;
-}
-.con .main .lft .tp .pic{
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-	background-color: white;
-	overflow: hidden;
-	background-image: url("../img/10406867_775387362491921_753031628252739146_n.jpg");
-	background-size: 150%;
-	background-position: -98px -80px;
-	background-repeat: no-repeat;
-	border-radius: 100px;
-	border: 3px solid white;
-	box-shadow: 1px 2px 3px 1px rgba(53,53,53,.20);
-	-webkit-box-shadow: 1px 2px 3px 1px rgba(53,53,53,.20);
-}
-.con .main .lft .bt{
-	width:650px;
-	height: 50px;
-	float:left;
-	margin-top: 45px;
-}
-.con .main .lft .bt span{
-	width:auto;
-	height: 50px;
-	margin: 0 auto;
-	display: block;
-	line-height: 50px;
-	text-align: center;
-	font-family:"ds";
-	font-size: 60px;
-	font-weight:100;
-	color:white;
-	text-shadow:  1px 2px 3px rgba(53,53,53,.70);
-	
-}
-.con .main .lft::after{
-	width:650px;
-	height: 600px;
-	transform: skewX(15deg);
-	transform-origin: top left;
-	position: absolute;
-	left: 0;
-	right:0;
-	bottom: 0;
-	top:0;
-	content:" ";
-	z-index:-1;
-	background-color: #009999;
-	
-}
-.con .main .rgt{
-	width:670px;
-	height: 600px;
-	background-color: #f9f9f9;
-	float:left;
-	position: relative;
-	display:none;
-
-}
-.con .main .overlay{
-	width:670px;
-	height: 600px;
-	background-color:transparent;
-	position: absolute;
-	z-index: 50;
-	right:0;
-	display: none;
-}
-.con .main .overlay .spinner{
-	width:50px;
-	height: 50px;
-	margin: 275px auto auto 400px;
-	position: relative;
-	animation-name:load;
-	animation-duration:2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	color:#009999;
-}
-.con .main .overlay .spinner::before{
-	width:50px;
-	height: 50px;
-	position: absolute;
-	content:"\e988";
-	font-family:"vicon";
-	text-align: center;
-	line-height: 50px;
-	font-size: 38px;
-}
-.con .main .rgt .infoCon{
-	width:510px;
-	height: 550px;
-	background-color:#f9f9f9;
-	float:right;
-	margin-top: 50px;
-
-}
-.con .main .rgt .infoCon h1{
-	width: 510px;
-	height: 30px;
-	float: left;
-	font-family: "Arial";
-	color: #005C5C;
-	font-weight: 100;
-	border-bottom:1px solid #ccc;
-	padding-bottom:10px;
-}
-.con .main .rgt .infoCon p{
-	color:rgba(88,88,88,1.00);
-	font-family:"Times New Roman", "serif";
-	text-align: justify;
-	font-size:21px;
-}
-.con .ft{
-	width:100%;
-	height: 90px;
-	background-color: #009999;
-	float:left;
-	position: relative;
-	z-index:30;
-
-}
-.con .ft .lCon{
-	width:532px;
-	height: 90px;
-	float:right;
-
-}
-.con .ft .lCon .mainCon{
-	width:532px;
-	height: 40px;
-	margin-top: 25px;
-}
-.con .ft .lCon .mainCon a{
-	width:auto;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	float:left;
-	margin-left:10px;
-	text-decoration: none;
-	border-left:1px solid white;
-	color:white;
-	padding-left:10px;
-	cursor:pointer;
-	transition: all 0.40s linear;
-}
-.con .ft .lCon .mainCon a:hover{
-
-	text-decoration:underline;
-
-}
-.con .ft .lCon .mainCon a:first-of-type{
-	margin-left:0px;
-	border-left:0px solid white;
-	padding-left:0px;
-}
-.con .main .rgt .infoCon  table{
-	width: 510px;
-	height: 70px;
-}
-.con .main .rgt .infoCon  table tr td:first-of-type{
-	width: 130px;
-	text-align: right;
-	padding-right: 5px;
-	color: #07ADAD;
-	font-size: 18px;
-	font-family: arial;
-	font-weight: 300;
-}
-.con .main .rgt .infoCon  table tr td{
-	color:rgba(212,12,16,1.00);
-}
-.con .main .rgt .infoCon  table tr td a{
-	text-decoration: none;
-	color:rgba(49,173,30,1.00);
-}
-.con .main .rgt .infoCon  table tr td a:hover{
-	text-decoration:underline;
-}
-.con .main .rgt .infoCon .tCon table tr td{
-	padding-left:5px;
-	color: rgba(83,83,83,1.00);
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-}
-.con .main .rgt .infoCon .fmCon{
-	width: 510px;
-	height: auto;
-}
-.con .main .rgt .infoCon .fmCon .tCon{
-	width: 450px;
-	height: 320px;
-	background-color: #EBEBEB;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-	box-shadow: 1px 2px 4px 1px #ccc;
-	margin:0 auto;
-}
-.con .main .rgt .infoCon .fmCon .tCon table, .con .main .rgt .infoCon .fmCon .tCon table{
-	width: 94%;
-	height: 320px;
-	margin: 0 auto;
-	
-	
-
-}
-.con .main .rgt .infoCon .fmCon .bt{
-	width: 450px;
-	height:43px;
-	margin: 15px auto 0 auto;
-	position: relative;
-	
-}
-.con .main .rgt .infoCon .fmCon .bt button{
-	width: 450px;
-	height:43px;
-	background-image: linear-gradient(to top, #f5f5f5 0%, #fff 100%);
-	border:1px solid #ccc;
-	border-radius:5px;
-	color:#009999;
-	box-shadow:0 0 4px 1 #ccc;
-	cursor:pointer;
-	font-size:18px;
-	transition: all 0.2s linear;
-	
-}
-.con .main .rgt .infoCon .fmCon .bt .loader{
-	width: 450px;
-	height:43px;
-	margin:0 auto;
-	position: absolute;
-	z-index:20;
-	border-radius: 5px;
-	cursor: not-allowed;
-	display:none;
-}
-.con .main .rgt .infoCon .fmCon .bt .loader .mloader{
-	width: 43px;
-	height:43px;
-	margin: 0 auto;
-	position: relative;
-	animation-name:load;
-	animation-duration:2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
-.con .main .rgt .infoCon .fmCon .bt .loader .mloader::before{
-	width: 43px;
-	height:43px;
-	position: absolute;
-	top:0px;
-	content:"\e986";
-	font-family:"vicon";
-	font-size:24px;
-	line-height: 43px;
-	text-align: center;
-	color:#009999;
-}
-.con .main .rgt .infoCon .fmCon .bt button:hover{
-	background-image: -webkit-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: -moz-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: -o-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: linear-gradient(0deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	border: 1px solid #009999;
-	color: white;
-	box-shadow: 0 0 6px 1px #009999;
-	
-}
-.con .main .rgt .infoCon .fmCon .tCon table tr td{
-	font-family:Times, "Times New Roman", "serif";
-	font-size: 14px;
-	font-weight: 100;
-	
-
-}
-.con .main .rgt .infoCon .fmCon .tCon table tr td textarea{
-	width: 310px;
-	height: 173px;
-	resize: vertical;
-	border:1px solid #ddd;
-	box-shadow:0 0 4px 0 #fff;
-	float: left;
-	max-height: 227px;
-	min-height: 173px;
-	color:#009999;
-	border-radius:3px;
-	transition: all 0.2s linear;
-}
-.con .main .rgt .infoCon .fmCon table tr td input{
-	width: 300px;
-	height:22px;
-	border:1px solid #ddd;
-	border-radius:3px;
-	box-shadow:0 0 4px 0 #fff;
-	padding:0 5px 0 5px;
-	color:#009999;
-	transition: all 0.2s linear;
-}
-.con .main .rgt .infoCon .fmCon table tr:nth-child(4){
-	text-align: right;
-	vertical-align: top;
-}
-.con .main .rgt .suc{
-	width:400px;
-	height: 400px;
-	margin:80px 50px 0 0;
-	float:right;
-
-}
-.con .main .rgt .suc .sucGid{
-	width:400px;
-	height: 100px;
-	float:left;
-	margin-top:60px;
-
-}
-.con .main .rgt .suc .sucGid .GID{
-	width:200px;
-	height: 100px;
-	margin:0 auto;
-	background-image: url(../img/success.png);
-
-}
-.con .main .rgt .suc p{
-	color:rgba(29,181,65,1.00);
-	width:400px;
-	height: 30px;
-	padding:0;
-	margin: 0;
-	text-align: center;
-	line-height: 30px;
-	float:left;
-	font-family: Arial;
-	font-size: 17px;
-}
-.con .main .rgt .suc p:last-child{
-	color:#313131;
-	width:400px;
-	height: 30px;
-	padding:0;
-	margin: 0;
-	text-align: center;
-	line-height: 30px;
-	float:left;
-	font-family: Arial;
-	font-size: 14px;
-<<<<<<< HEAD
-}
-.selected{
-	color: #005151!important;
-	font-size: 24px;
-	text-shadow: 0 0 8px white;
-}
-.selected:hover{
-	text-decoration: none!important;
-}
-.vicon-hng-compass::before{
-	margin-right:10px!important;
-}
-.vicon-hng-mail-envelope-closed::before{
-	font-size: 23px!important;
-	line-height: 23px!important;
-	padding-top:3px;
-=======
-=======
-<<<<<<< HEAD
-/* CSS Document */
-
-@font-face {
-font-family:ds;
-src: url("../font/DancingScript-Regular.ttf"); 
-}
-@keyframes load{
-	from{transform:rotate(0deg);}
-	to{transform:rotate(360deg);}
-}
-html{
-	height:100%;
-	min-height:690px;
-}
-body{
-	margin:0px;
-	height:100%;
-	background-color: #009999;
-}
-.con{
-	width:100%;
-	height:100%;
-	background-color: #009999;
-	position: relative;
-	z-index: 1;
-	min-width: 1320px;
-}
-.con::after{
-	width:800px;
-	height:690px;
-	background-color: #f9f9f9;
-	position: absolute;
-	content:"";
-	z-index:-1;
-	right:0;
-	top:0;
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.con .main{
-	width:1320px;
-	height: 600px;
-	margin: 0 auto;
-	position: relative;
-}
-.con .main .lft{
-	width:650px;
-	height: 600px;
-	float:left;
-	position: relative;
-	z-index: 2;
-	background-color: #009999;
-}
-.con .main .lft .tp{
-	width:650px;
-	height: 200px;
-	float:left;
-	background-color: inherit;
-	margin-top: 140px;
-}
-.con .main .lft .tp .pic{
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-	background-color: white;
-	overflow: hidden;
-	background-image: url("../img/10406867_775387362491921_753031628252739146_n.jpg");
-	background-size: 150%;
-	background-position: -98px -80px;
-	background-repeat: no-repeat;
-	border-radius: 100px;
-	border: 3px solid white;
-	box-shadow: 1px 2px 3px 1px rgba(53,53,53,.20);
-	-webkit-box-shadow: 1px 2px 3px 1px rgba(53,53,53,.20);
-}
-.con .main .lft .bt{
-	width:650px;
-	height: 50px;
-	float:left;
-	margin-top: 45px;
-}
-.con .main .lft .bt span{
-	width:auto;
-	height: 50px;
-	margin: 0 auto;
-	display: block;
-	line-height: 50px;
-	text-align: center;
-	font-family:"ds";
-	font-size: 60px;
-	font-weight:100;
-	color:white;
-	text-shadow:  1px 2px 3px rgba(53,53,53,.70);
-	
-}
-.con .main .lft::after{
-	width:650px;
-	height: 600px;
-	transform: skewX(15deg);
-	transform-origin: top left;
-	position: absolute;
-	left: 0;
-	right:0;
-	bottom: 0;
-	top:0;
-	content:" ";
-	z-index:-1;
-	background-color: #009999;
-	
-}
-.con .main .rgt{
-	width:670px;
-	height: 600px;
-	background-color: #f9f9f9;
-	float:left;
-	position: relative;
-	display:none;
-
-}
-.con .main .overlay{
-	width:670px;
-	height: 600px;
-	background-color:transparent;
-	position: absolute;
-	z-index: 50;
-	right:0;
-	display: none;
-}
-.con .main .overlay .spinner{
-	width:50px;
-	height: 50px;
-	margin: 275px auto auto 400px;
-	position: relative;
-	animation-name:load;
-	animation-duration:2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-	color:#009999;
-}
-.con .main .overlay .spinner::before{
-	width:50px;
-	height: 50px;
-	position: absolute;
-	content:"\e988";
-	font-family:"vicon";
-	text-align: center;
-	line-height: 50px;
-	font-size: 38px;
-}
-.con .main .rgt .infoCon{
-	width:510px;
-	height: 550px;
-	background-color:#f9f9f9;
-	float:right;
-	margin-top: 50px;
-
-}
-.con .main .rgt .infoCon h1{
-	width: 510px;
-	height: 30px;
-	float: left;
-	font-family: "Arial";
-	color: #005C5C;
-	font-weight: 100;
-	border-bottom:1px solid #ccc;
-	padding-bottom:10px;
-}
-.con .main .rgt .infoCon p{
-	color:rgba(88,88,88,1.00);
-	font-family:"Times New Roman", "serif";
-	text-align: justify;
-	font-size:21px;
-}
-.con .ft{
-	width:100%;
-	height: 90px;
-	background-color: #009999;
-	float:left;
-	position: relative;
-	z-index:30;
-
-}
-.con .ft .lCon{
-	width:532px;
-	height: 90px;
-	float:right;
-
-}
-.con .ft .lCon .mainCon{
-	width:532px;
-	height: 40px;
-	margin-top: 25px;
-}
-.con .ft .lCon .mainCon a{
-	width:auto;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	float:left;
-	margin-left:10px;
-	text-decoration: none;
-	border-left:1px solid white;
-	color:white;
-	padding-left:10px;
-	cursor:pointer;
-	transition: all 0.40s linear;
-}
-.con .ft .lCon .mainCon a:hover{
-
-	text-decoration:underline;
-
-}
-.con .ft .lCon .mainCon a:first-of-type{
-	margin-left:0px;
-	border-left:0px solid white;
-	padding-left:0px;
-}
-.con .main .rgt .infoCon  table{
-	width: 510px;
-	height: 70px;
-}
-.con .main .rgt .infoCon  table tr td:first-of-type{
-	width: 130px;
-	text-align: right;
-	padding-right: 5px;
-	color: #07ADAD;
-	font-size: 18px;
-	font-family: arial;
-	font-weight: 300;
-}
-.con .main .rgt .infoCon  table tr td{
-	color:rgba(212,12,16,1.00);
-}
-.con .main .rgt .infoCon  table tr td a{
-	text-decoration: none;
-	color:rgba(49,173,30,1.00);
-}
-.con .main .rgt .infoCon  table tr td a:hover{
-	text-decoration:underline;
-}
-.con .main .rgt .infoCon .tCon table tr td{
-	padding-left:5px;
-	color: rgba(83,83,83,1.00);
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-}
-.con .main .rgt .infoCon .fmCon{
-	width: 510px;
-	height: auto;
-}
-.con .main .rgt .infoCon .fmCon .tCon{
-	width: 450px;
-	height: 320px;
-	background-color: #EBEBEB;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-	box-shadow: 1px 2px 4px 1px #ccc;
-	margin:0 auto;
-}
-.con .main .rgt .infoCon .fmCon .tCon table, .con .main .rgt .infoCon .fmCon .tCon table{
-	width: 94%;
-	height: 320px;
-	margin: 0 auto;
-	
-	
-
-}
-.con .main .rgt .infoCon .fmCon .bt{
-	width: 450px;
-	height:43px;
-	margin: 15px auto 0 auto;
-	position: relative;
-	
-}
-.con .main .rgt .infoCon .fmCon .bt button{
-	width: 450px;
-	height:43px;
-	background-image: linear-gradient(to top, #f5f5f5 0%, #fff 100%);
-	border:1px solid #ccc;
-	border-radius:5px;
-	color:#009999;
-	box-shadow:0 0 4px 1 #ccc;
-	cursor:pointer;
-	font-size:18px;
-	transition: all 0.2s linear;
-	
-}
-.con .main .rgt .infoCon .fmCon .bt .loader{
-	width: 450px;
-	height:43px;
-	margin:0 auto;
-	position: absolute;
-	z-index:20;
-	border-radius: 5px;
-	cursor: not-allowed;
-	display:none;
-}
-.con .main .rgt .infoCon .fmCon .bt .loader .mloader{
-	width: 43px;
-	height:43px;
-	margin: 0 auto;
-	position: relative;
-	animation-name:load;
-	animation-duration:2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
-}
-.con .main .rgt .infoCon .fmCon .bt .loader .mloader::before{
-	width: 43px;
-	height:43px;
-	position: absolute;
-	top:0px;
-	content:"\e986";
-	font-family:"vicon";
-	font-size:24px;
-	line-height: 43px;
-	text-align: center;
-	color:#009999;
-}
-.con .main .rgt .infoCon .fmCon .bt button:hover{
-	background-image: -webkit-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: -moz-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: -o-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: linear-gradient(0deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	border: 1px solid #009999;
-	color: white;
-	box-shadow: 0 0 6px 1px #009999;
-	
-}
-.con .main .rgt .infoCon .fmCon .tCon table tr td{
-	font-family:Times, "Times New Roman", "serif";
-	font-size: 14px;
-	font-weight: 100;
-	
-
-}
-.con .main .rgt .infoCon .fmCon .tCon table tr td textarea{
-	width: 310px;
-	height: 173px;
-	resize: vertical;
-	border:1px solid #ddd;
-	box-shadow:0 0 4px 0 #fff;
-	float: left;
-	max-height: 227px;
-	min-height: 173px;
-	color:#009999;
-	border-radius:3px;
-	transition: all 0.2s linear;
-}
-.con .main .rgt .infoCon .fmCon table tr td input{
-	width: 300px;
-	height:22px;
-	border:1px solid #ddd;
-	border-radius:3px;
-	box-shadow:0 0 4px 0 #fff;
-	padding:0 5px 0 5px;
-	color:#009999;
-	transition: all 0.2s linear;
-}
-.con .main .rgt .infoCon .fmCon table tr:nth-child(4){
-	text-align: right;
-	vertical-align: top;
-}
-.con .main .rgt .suc{
-	width:400px;
-	height: 400px;
-	margin:80px 50px 0 0;
-	float:right;
-
-}
-.con .main .rgt .suc .sucGid{
-	width:400px;
-	height: 100px;
-	float:left;
-	margin-top:60px;
-
-}
-.con .main .rgt .suc .sucGid .GID{
-	width:200px;
-	height: 100px;
-	margin:0 auto;
-	background-image: url(../img/success.png);
-
-}
-.con .main .rgt .suc p{
-	color:rgba(29,181,65,1.00);
-	width:400px;
-	height: 30px;
-	padding:0;
-	margin: 0;
-	text-align: center;
-	line-height: 30px;
-	float:left;
-	font-family: Arial;
-	font-size: 17px;
-}
-.con .main .rgt .suc p:last-child{
-	color:#313131;
-	width:400px;
-	height: 30px;
-	padding:0;
-	margin: 0;
-	text-align: center;
-	line-height: 30px;
-	float:left;
-	font-family: Arial;
-	font-size: 14px;
-<<<<<<< HEAD
-}
-.selected{
-	color: #005151!important;
-	font-size: 24px;
-	text-shadow: 0 0 8px white;
-}
-.selected:hover{
-	text-decoration: none!important;
-}
-.vicon-hng-compass::before{
-	margin-right:10px!important;
-}
-.vicon-hng-mail-envelope-closed::before{
-	font-size: 23px!important;
-	line-height: 23px!important;
-	padding-top:3px;
-=======
-=======
->>>>>>> 3e700aa04932485532bea076220823f8563012b6
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
-/* CSS Document */
-
-@font-face {
-font-family:ds;
-src: url("../font/DancingScript-Regular.ttf"); 
-}
-body{
-	margin:0px;
-	background-color: #009999;
-}
-.con{
-	width:100%;
-	height:690px;
-	background-color: #009999;
-	position: relative;
-	z-index: 1;
-	min-width: 1320px;
-}
-.con::after{
-	width:100px;
-	height:690px;
-	background-color: #f9f9f9;
-	position: absolute;
-	content:"";
-	z-index:-1;
-	right:0;
-	top:0;
+html {
+  height: 100%;
+  min-height: 690px;
 }
 
-.con .main{
-	width:1320px;
-	height: 600px;
-	margin: 0 auto;
+body {
+  margin: 0px;
+  height: 100%;
+  background-color: #009999;
 }
-.con .main .lft{
-	width:650px;
-	height: 600px;
-	float:left;
-	position: relative;
-	z-index: 2;
-	background-color: #009999;
-}
-.con .main .lft .tp{
-	width:650px;
-	height: 200px;
-	float:left;
-	background-color: inherit;
-	margin-top: 140px;
-}
-.con .main .lft .tp .pic{
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-	background-color: white;
-	overflow: hidden;
-	background-image: url("../img/10406867_775387362491921_753031628252739146_n.jpg");
-	background-size: 150%;
-	background-position: -98px -80px;
-	background-repeat: no-repeat;
-	border-radius: 100px;
-	border: 3px solid white;
-	box-shadow: 1px 2px 3px 1px rgba(53,53,53,.20);
-	-webkit-box-shadow: 1px 2px 3px 1px rgba(53,53,53,.20);
-}
-.con .main .lft .bt{
-	width:650px;
-	height: 50px;
-	float:left;
-	margin-top: 45px;
-}
-.con .main .lft .bt span{
-	width:auto;
-	height: 50px;
-	margin: 0 auto;
-	display: block;
-	line-height: 50px;
-	text-align: center;
-	font-family:"ds";
-	font-size: 60px;
-	font-weight:100;
-	color:white;
-	text-shadow:  1px 2px 3px rgba(53,53,53,.70);
-	
-}
-.con .main .lft::after{
-	width:650px;
-	height: 600px;
-	transform: skewX(15deg);
-	transform-origin: top left;
-	position: absolute;
-	left: 0;
-	right:0;
-	bottom: 0;
-	top:0;
-	content:" ";
-	z-index:-1;
-	background-color: #009999;
-	
-}
-.con .main .rgt{
-	width:670px;
-	height: 600px;
-	background-color: #f9f9f9;
-	float:left;
-	position: relative;
 
+.con {
+  width: 100%;
+  height: 100%;
+  background-color: #009999;
+  position: relative;
+  z-index: 1;
+  min-width: 1320px;
 }
-.con .main .rgt .infoCon{
-	width:510px;
-	height: 550px;
-	background-color:#f9f9f9;
-	float:right;
-	margin-top: 50px;
 
+.con::after {
+  width: 800px;
+  height: 690px;
+  background-color: #f9f9f9;
+  position: absolute;
+  content: "";
+  z-index: -1;
+  right: 0;
+  top: 0;
 }
-.con .main .rgt .infoCon h1{
-	width: 510px;
-	height: 30px;
-	float: left;
-	font-family: "Arial";
-	color: #005C5C;
-	font-weight: 100;
-	border-bottom:1px solid #ccc;
-	padding-bottom:10px;
-}
-.con .main .rgt .infoCon p{
-	color:rgba(88,88,88,1.00);
-	font-family:"Times New Roman", "serif";
-	text-align: justify;
-	font-size:21px;
-}
-.con .ft{
-	width:100%;
-	height: 90px;
-	background-color: #009999;
-	float:left;
-	position: relative;
-	z-index:30;
 
+.con .main {
+  width: 1320px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
 }
-.con .ft .lCon{
-	width:532px;
-	height: 90px;
-	float:right;
 
+.con .main .lft {
+  width: 650px;
+  height: 600px;
+  float: left;
+  position: relative;
+  z-index: 2;
+  background-color: #009999;
 }
-.con .ft .lCon .mainCon{
-	width:532px;
-	height: 40px;
-	margin-top: 25px;
-}
-.con .ft .lCon .mainCon a{
-	width:auto;
-	height: 40px;
-	text-align: center;
-	line-height: 40px;
-	float:left;
-	margin-left:10px;
-	text-decoration: none;
-	border-left:1px solid white;
-	color:white;
-	padding-left:10px;
-}
-.con .ft .lCon .mainCon a:hover{
 
-	text-decoration:underline;
+.con .main .lft .tp {
+  width: 650px;
+  height: 200px;
+  float: left;
+  background-color: inherit;
+  margin-top: 140px;
+}
 
+.con .main .lft .tp .pic {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+  background-image: url("../img/10406867_775387362491921_753031628252739146_n.jpg");
+  background-size: 150%;
+  background-position: -98px -80px;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  border: 3px solid white;
+  box-shadow: 1px 2px 3px 1px rgba(53, 53, 53, .20);
+  -webkit-box-shadow: 1px 2px 3px 1px rgba(53, 53, 53, .20);
 }
-.con .ft .lCon .mainCon a:first-of-type{
-	margin-left:0px;
-	border-left:0px solid white;
-	padding-left:0px;
-}
-.con .main .rgt .infoCon  table{
-	width: 510px;
-	height: 70px;
-}
-.con .main .rgt .infoCon  table tr td:first-of-type{
-	width: 130px;
-	text-align: right;
-	padding-left: 0px;
-	color: #07ADAD;
-	font-size: 16px;
-	font-family: arial;
-	font-weight: 300;
-}
-.con .main .rgt .infoCon .tCon table tr td{
-	padding-left:5px;
-	color: rgba(83,83,83,1.00);
-	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-}
-.con .main .rgt .infoCon .fmCon{
-	width: 510px;
-	height: auto;
-}
-.con .main .rgt .infoCon .fmCon .tCon{
-	width: 450px;
-	height: 320px;
-	background-color: #EBEBEB;
-	border-radius: 5px;
-	border: 1px solid #ddd;
-	box-shadow: 1px 2px 4px 1px #ccc;
-	margin:0 auto;
-}
-.con .main .rgt .infoCon .fmCon .tCon table, .con .main .rgt .infoCon .fmCon .tCon table{
-	width: 94%;
-	height: 320px;
-	margin: 0 auto;
-	
-	
 
+.con .main .lft .bt {
+  width: 650px;
+  height: 50px;
+  float: left;
+  margin-top: 45px;
 }
-.con .main .rgt .infoCon .fmCon .bt{
-	width: 450px;
-	height:43px;
-	margin: 15px auto 0 auto;
-	
-}
-.con .main .rgt .infoCon .fmCon .bt input{
-	width: 450px;
-	height:43px;
-	background-image: linear-gradient(to top, #f5f5f5 0%, #fff 100%);
-	border:1px solid #ccc;
-	border-radius:5px;
-	color:#009999;
-	box-shadow:0 0 4px 1 #ccc;
-	cursor:pointer;
-	font-size:18px;
-	color:#009999;
-	
-}
-.con .main .rgt .infoCon .fmCon .bt input:hover{
-	background-image: -webkit-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: -moz-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: -o-linear-gradient(90deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	background-image: linear-gradient(0deg,rgba(0,184,184,1.00) 0%,rgba(0,153,153,1.00) 100%);
-	border: 1px solid #ccc;
-	color: white;
-	box-shadow: 0 0 6px 1px #009999;
-	
-}
-.con .main .rgt .infoCon .fmCon .tCon table tr td{
-	font-family:Times, "Times New Roman", "serif";
-	font-size: 14px;
-	font-weight: 100;
-	
 
+.con .main .lft .bt span {
+  width: auto;
+  height: 50px;
+  margin: 0 auto;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  font-family: "ds";
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(53, 53, 53, .70);
 }
-.con .main .rgt .infoCon .fmCon .tCon table tr td textarea{
-	width: 310px;
-	height: 173px;
-	resize: vertical;
-	border:1px solid #ddd;
-	box-shadow:0 0 4px 0 #fff;
-	float: left;
-	max-height: 227px;
-	min-height: 173px;
-	color:#009999;
-}
-.con .main .rgt .infoCon .fmCon table tr td input{
-	width: 300px;
-	height:22px;
-	border:1px solid #ddd;
-	border-radius:3px;
-	box-shadow:0 0 4px 0 #fff;
-	padding:0 5px 0 5px;
-	color:#009999;
-}
-.con .main .rgt .infoCon .fmCon table tr:nth-child(4){
-	text-align: right;
-	vertical-align: top;
-}
-.con .main .rgt .suc{
-	width:400px;
-	height: 400px;
-	margin:80px 50px 0 0;
-	float:right;
 
+.con .main .lft::after {
+  width: 650px;
+  height: 600px;
+  transform: skewX(15deg);
+  transform-origin: top left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  content: " ";
+  z-index: -1;
+  background-color: #009999;
 }
-.con .main .rgt .suc .sucGid{
-	width:400px;
-	height: 100px;
-	float:left;
-	margin-top:60px;
 
+.con .main .rgt {
+  width: 670px;
+  height: 600px;
+  background-color: #f9f9f9;
+  float: left;
+  position: relative;
+  display: none;
 }
-.con .main .rgt .suc .sucGid .GID{
-	width:200px;
-	height: 100px;
-	margin:0 auto;
-	background-image: url(../img/success.png);
 
+.con .main .overlay {
+  width: 670px;
+  height: 600px;
+  background-color: transparent;
+  position: absolute;
+  z-index: 50;
+  right: 0;
+  display: none;
 }
-.con .main .rgt .suc p{
-	color:rgba(29,181,65,1.00);
-	width:400px;
-	height: 30px;
-	padding:0;
-	margin: 0;
-	text-align: center;
-	line-height: 30px;
-	float:left;
-	font-family: Arial;
-	font-size: 17px;
+
+.con .main .overlay .spinner {
+  width: 50px;
+  height: 50px;
+  margin: 275px auto auto 400px;
+  position: relative;
+  animation-name: load;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  color: #009999;
 }
-.con .main .rgt .suc p:last-child{
-	color:#313131;
-	width:400px;
-	height: 30px;
-	padding:0;
-	margin: 0;
-	text-align: center;
-	line-height: 30px;
-	float:left;
-	font-family: Arial;
-	font-size: 14px;
-<<<<<<< HEAD
->>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
-<<<<<<< HEAD
->>>>>>> 10102c15c7b9faeed00255e89bbe69c6a2502ca7
-=======
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
->>>>>>> 60fcd6351455171d1c9c607fe5bb61c4be3bb793
->>>>>>> 3e700aa04932485532bea076220823f8563012b6
+
+.con .main .overlay .spinner::before {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  content: "\e988";
+  font-family: "vicon";
+  text-align: center;
+  line-height: 50px;
+  font-size: 38px;
 }
+
+.con .main .rgt .infoCon {
+  width: 510px;
+  height: 550px;
+  background-color: #f9f9f9;
+  float: right;
+  margin-top: 50px;
+}
+
+.con .main .rgt .infoCon h1 {
+  width: 510px;
+  height: 30px;
+  float: left;
+  font-family: "Arial";
+  color: #005C5C;
+  font-weight: 100;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.con .main .rgt .infoCon p {
+  color: rgba(88, 88, 88, 1.00);
+  font-family: "Times New Roman", "serif";
+  text-align: justify;
+  font-size: 21px;
+}
+
+.con .ft {
+  width: 100%;
+  height: 90px;
+  background-color: #009999;
+  float: left;
+  position: relative;
+  z-index: 30;
+}
+
+.con .ft .lCon {
+  width: 532px;
+  height: 90px;
+  float: right;
+}
+
+.con .ft .lCon .mainCon {
+  width: 532px;
+  height: 40px;
+  margin-top: 25px;
+}
+
+.con .ft .lCon .mainCon a {
+  width: auto;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  margin-left: 10px;
+  text-decoration: none;
+  border-left: 1px solid white;
+  color: white;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: all 0.40s linear;
+}
+
+.con .ft .lCon .mainCon a:hover {
+  text-decoration: underline;
+}
+
+.con .ft .lCon .mainCon a:first-of-type {
+  margin-left: 0px;
+  border-left: 0px solid white;
+  padding-left: 0px;
+}
+
+.con .main .rgt .infoCon table {
+  width: 510px;
+  height: 70px;
+}
+
+.con .main .rgt .infoCon table tr td:first-of-type {
+  width: 130px;
+  text-align: right;
+  padding-right: 5px;
+  color: #07ADAD;
+  font-size: 18px;
+  font-family: arial;
+  font-weight: 300;
+}
+
+.con .main .rgt .infoCon table tr td {
+  color: rgba(212, 12, 16, 1.00);
+}
+
+.con .main .rgt .infoCon table tr td a {
+  text-decoration: none;
+  color: rgba(49, 173, 30, 1.00);
+}
+
+.con .main .rgt .infoCon table tr td a:hover {
+  text-decoration: underline;
+}
+
+.con .main .rgt .infoCon .tCon table tr td {
+  padding-left: 5px;
+  color: rgba(83, 83, 83, 1.00);
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.con .main .rgt .infoCon .fmCon {
+  width: 510px;
+  height: auto;
+}
+
+.con .main .rgt .infoCon .fmCon .tCon {
+  width: 450px;
+  height: 320px;
+  background-color: #EBEBEB;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 1px 2px 4px 1px #ccc;
+  margin: 0 auto;
+}
+
+.con .main .rgt .infoCon .fmCon .tCon table,
+.con .main .rgt .infoCon .fmCon .tCon table {
+  width: 94%;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.con .main .rgt .infoCon .fmCon .bt {
+  width: 450px;
+  height: 43px;
+  margin: 15px auto 0 auto;
+  position: relative;
+}
+
+.con .main .rgt .infoCon .fmCon .bt button {
+  width: 450px;
+  height: 43px;
+  background-image: linear-gradient(to top, #f5f5f5 0%, #fff 100%);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #009999;
+  box-shadow: 0 0 4px 1 #ccc;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s linear;
+}
+
+.con .main .rgt .infoCon .fmCon .bt .loader {
+  width: 450px;
+  height: 43px;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 20;
+  border-radius: 5px;
+  cursor: not-allowed;
+  display: none;
+}
+
+.con .main .rgt .infoCon .fmCon .bt .loader .mloader {
+  width: 43px;
+  height: 43px;
+  margin: 0 auto;
+  position: relative;
+  animation-name: load;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.con .main .rgt .infoCon .fmCon .bt .loader .mloader::before {
+  width: 43px;
+  height: 43px;
+  position: absolute;
+  top: 0px;
+  content: "\e986";
+  font-family: "vicon";
+  font-size: 24px;
+  line-height: 43px;
+  text-align: center;
+  color: #009999;
+}
+
+.con .main .rgt .infoCon .fmCon .bt button:hover {
+  background-image: -webkit-linear-gradient(90deg, rgba(0, 184, 184, 1.00) 0%, rgba(0, 153, 153, 1.00) 100%);
+  background-image: -moz-linear-gradient(90deg, rgba(0, 184, 184, 1.00) 0%, rgba(0, 153, 153, 1.00) 100%);
+  background-image: -o-linear-gradient(90deg, rgba(0, 184, 184, 1.00) 0%, rgba(0, 153, 153, 1.00) 100%);
+  background-image: linear-gradient(0deg, rgba(0, 184, 184, 1.00) 0%, rgba(0, 153, 153, 1.00) 100%);
+  border: 1px solid #009999;
+  color: white;
+  box-shadow: 0 0 6px 1px #009999;
+}
+
+.con .main .rgt .infoCon .fmCon .tCon table tr td {
+  font-family: Times, "Times New Roman", "serif";
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.con .main .rgt .infoCon .fmCon .tCon table tr td textarea {
+  width: 310px;
+  height: 173px;
+  resize: vertical;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 4px 0 #fff;
+  float: left;
+  max-height: 227px;
+  min-height: 173px;
+  color: #009999;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+}
+
+.con .main .rgt .infoCon .fmCon table tr td input {
+  width: 300px;
+  height: 22px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 #fff;
+  padding: 0 5px 0 5px;
+  color: #009999;
+  transition: all 0.2s linear;
+}
+
+.con .main .rgt .infoCon .fmCon table tr:nth-child(4) {
+  text-align: right;
+  vertical-align: top;
+}
+
+.con .main .rgt .suc {
+  width: 400px;
+  height: 400px;
+  margin: 80px 50px 0 0;
+  float: right;
+}
+
+.con .main .rgt .suc .sucGid {
+  width: 400px;
+  height: 100px;
+  float: left;
+  margin-top: 60px;
+}
+
+.con .main .rgt .suc .sucGid .GID {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url(../img/success.png);
+}
+
+.con .main .rgt .suc p {
+  color: rgba(29, 181, 65, 1.00);
+  width: 400px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.con .main .rgt .suc p:last-child {
+  color: #313131;
+  width: 400px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  font-family: Arial;
+  font-size: 14px;
+  <<<<<<< HEAD
+}
+
+.selected {
+  color: #005151!important;
+  font-size: 24px;
+  text-shadow: 0 0 8px white;
+}
+
+.selected:hover {
+  text-decoration: none!important;
+}
+
+.vicon-hng-compass::before {
+  margin-right: 10px!important;
+}
+
+<<<<<<< HEAD .con .main .rgt .suc p:last-child {
+  color: #313131;
+  width: 400px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  font-family: Arial;
+  font-size: 14px;
+  =======.vicon-hng-mail-envelope-closed::before {
+    font-size: 23px!important;
+    line-height: 23px!important;
+    padding-top: 3px;
+    >>>>>>>merge-conflict-resolution
+  }

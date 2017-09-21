@@ -50,12 +50,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   	</h3>
     </div>
     <div align="center">
-<<<<<<< HEAD
       <a href="https://github.com/NedyUdombat/Nedy" id="stageone"><em><strong>Stage one</strong></em>
-=======
       <a href="https://github.com/NedyUdombat/Nedy" id="stageone"><em><strong>Stage one</strong></em><br>
       <a href="https://drive.google.com/open?id=0B3D_p5iFO95_eE0zSGdZSlhGUzg" id="DownloadContactAppHere"><em><strong>Download Contact App Here</strong></em>
->>>>>>> 0bc0105f163d8b924706c8d32af10d8053d7299a
       <h4><strong>Handlers</strong></h4>
       <a href="https://hnginterns.slack.com/team/nedyudombat"></a><img src="https://github.com/NedyUdombat/Nedy/blob/master/slack.jpg?raw=true" width="25" height="25"> @nedyudombat
       <img src="https://github.com/NedyUdombat/Nedy/blob/master/github.jpg?raw=true" width="25" height="25"> @nedyudombat
