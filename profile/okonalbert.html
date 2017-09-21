@@ -5,19 +5,17 @@
 <title> Albert Okon </title>
 <style type="text/css">
     .text{
-        font-size: 40px; text-align: center;           }
-    .text span{text-align: center; font-size: medium;}
+        font-size: 40px; 
+        text-align: center; 
+        margin-left: auto; 
+        margin-right: auto;
+          }
+    .text span{
+        text-align: center; 
+        font-size: medium;}
     div h3{
         font-size: 20px; text-align: center; margin-top: 5px;
           }
-    button{
-        padding:10px;
-        background-color: #2e8b57;
-        text-align: center; margin-left: auto; margin-right: auto;
-          }
-    footer{
-        text-align: center;
-    }
     #pix{
         display: block;
         width: 300px;
@@ -63,6 +61,14 @@
     textarea{
         width: 300px;
     }
+    button{
+        padding:10px;
+        background-color: #2e8b57;
+        text-align: center; margin-left: auto; margin-right: auto;
+          }
+    footer{
+        text-align: center;
+    }
     footer img {
         width: 25px; 
         height: 25px;
@@ -72,15 +78,14 @@
 
 </head>
 <body id="body">
-<div id="prof" class="circle">
-<img src="https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg" 
-id="pix" alt="profile image" />
-
-<div class="text">
-<b>ALBERT OKON</b><br/>
-<span>Email: okonalbert@yahoo.com | Slack: okonalbert | Facebook: okonalbert </span>
-</div>
-</div>
+  <div id="prof" class="circle">
+    <img src="https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg" 
+    id="pix" alt="profile image" />
+    <div class="text">
+     <b>ALBERT OKON</b><br/>
+     <span>Email: okonalbert@yahoo.com | Slack: okonalbert | Facebook: okonalbert </span>
+    </div>
+  </div>
 <hr/>
 <div id="text">
     <h3>A Chemical Engineer with a Master's degree in Engineering Management
@@ -91,12 +96,12 @@ id="pix" alt="profile image" />
         <br/><i><small>(the largest online booking site in Nigeria)</small></i>
     </h3>
 
-<form action="http://hng.fun/profile/okonalbert.php" method="GET">
+<form action="okonalbert.php" method="POST">
     <fieldset>
         <legend> <b>Contact Form</b> </legend>
         <label>Name</label><br/><input type="text" name="name" placeholder="Full Name"/><br/>
-        <label>Email Address</label><br/><input type="text" name="Email" placeholder="Email"/><br/>
-        <label>Your Message</label><br/><textarea name="comment" cols="22" rows="10" placeholder="Message"></textarea><br/>
+        <label>Email Address</label><br/><input type="email" name="Email" placeholder="Email" required/><br/>
+        <label>Subject</label><br/><input type="text" name="subject" placeholder="Subject"/><br/><label>Your Message</label><br/><textarea name="message" cols="22" rows="10" placeholder="Message"></textarea><br/>
         <button type="submit">Send</button>&nbsp;<button type="reset">Reset</button>
     </fieldset>
 </form>
