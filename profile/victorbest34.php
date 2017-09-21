@@ -17,5 +17,7 @@
   
     }else{
         header("location: victorbest34.html");
+        header("location: iwa_temmy/iwa_temmy.html");
+        header("location: victorbest34.html");
     }
 ?>
