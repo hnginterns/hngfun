@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <html>
 <head>
     <title>Javascript Calculator</title>
@@ -11,9 +12,18 @@
             width:300px;
             height:250px;
             margin: 50px auto;
+            background-color: silver;
+            border-radius: 5px;
         }
 
         #btn {
+            width:100%;
+            height:40px;
+            font-size:20px;
+            background-color: lightgray;
+        }
+
+        #display{
             width:100%;
             height:40px;
             font-size:20px;
@@ -37,7 +47,7 @@
             width:100%;
             height:40px;
             font-size:20px;
-            background-color: red;
+            background-color: orangered;
         }
 
         .mt {
@@ -80,6 +90,13 @@
             background-color: sandybrown;
         }
 
+        .ce{
+            width:100%;
+            height:40px;
+            font-size:20px;
+            background-color: orangered;
+        }
+
     </style>
 </head>
 <body>
@@ -88,40 +105,40 @@
 
 <form Name="calc">
 <table class="calc" border=2>
+    <tr>
+    <td colspan=5><input id="display" name="display" maxlength="10" disabled></td>
+    <td style="display:none"><input name="M" type="number"></td>
+    </tr>
 <tr>
-<td colspan=5><input id="btn" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"></td>
-<td style="display:none"><input name="M" type="number"></td>
-</tr>
-<tr>
-<td><input class="mc" type=button value="MC" OnClick="calc.M.value=''"></td>
-<td><input id="btn" type=button value="0" OnClick="calc.display.value+='0'"></td>
-<td><input id="btn" type=button value="1" OnClick="calc.display.value+='1'"></td>
-<td><input id="btn" type=button value="2" OnClick="calc.display.value+='2'"></td>
-<td><input class="btn" type=button value="+" OnClick="calc.display.value+='+'"></td>
+<td><input class="mc" type=button value="MC" OnClick="calc.M.value='0'"></td>
+<td><input id="btn" type=button value="0" onclick="toScreen('0')"></td>
+<td><input id="btn" type=button value="1" onclick="toScreen('1')"></td>
+<td><input id="btn" type=button value="2"  onclick="toScreen('2')"></td>
+<td><input class="btn" type=button value="+"  onclick="toScreen('+')"></td>
 </tr>
 <tr>
 <td><input class="ms" type=button value="MS" OnClick="calc.M.value=calc.display.value"></td>
-<td><input id="btn" type=button value="3" OnClick="calc.display.value+='3'"></td>
-<td><input id="btn" type=button value="4" OnClick="calc.display.value+='4'"></td>
-<td><input id="btn" type=button value="5" OnClick="calc.display.value+='5'"></td>
-<td><input class="btn" type=button value="-" OnClick="calc.display.value+='-'"></td>
+<td><input id="btn" type=button value="3" onclick="toScreen('3')"></td>
+<td><input id="btn" type=button value="4"  onclick="toScreen('4')"></td>
+<td><input id="btn" type=button value="5" onclick="toScreen('5')"></td>
+<td><input class="btn" type=button value="-"  onclick="toScreen('-')"></td>
 </tr>
 <tr>
 <td><input class="mr" type=button value="MR" OnClick="calc.display.value=calc.M.value"></td>
-<td><input id="btn" type=button value="6" OnClick="calc.display.value+='6'"></td>
-<td><input id="btn" type=button value="7" OnClick="calc.display.value+='7'"></td>
-<td><input id="btn" type=button value="8" OnClick="calc.display.value+='8'"></td>
-<td><input class="btn" type=button value="x" OnClick="calc.display.value+='*'"></td>
+<td><input id="btn" type=button value="6"  onclick="toScreen('6')"></td>
+<td><input id="btn" type=button value="7"  onclick="toScreen('7')"></td>
+<td><input id="btn" type=button value="8" onclick="toScreen('8')"></td>
+<td><input class="btn" type=button value="x"  onclick="toScreen('*')"></td>
 </tr>
 <tr>
 <td><input class="mt" type=button value="M+" OnClick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))"></td>
-<td><input id="btn" type=button value="9" OnClick="calc.display.value+='9'"></td>
+<td><input id="btn" type=button value="9"  onclick="toScreen('9')"></td>
 <td><input id="btn" type=button value="+/-" 
 
 OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))">
 
 </td>
-<td><input id="btn" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)"></td>
+<td><input class="ce" type=button value="CE" onclick="backspace()"></td>
 <td><input class="btn" type=button value="/" OnClick="calc.display.value+='/'"></td>
 </tr>
 <tr>
@@ -131,7 +148,48 @@ OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(
 <td><input class="sq" type=button value="sqrt" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
 <td><input class="clear" type=button value="C" OnClick="calc.display.value=''"></td>
 </tr>
+<tr>
+    <td colspan="3"><input id="btn" type=button value="=" onclick="equalsTo()"></td>
+</tr>
 </table>
 </form>
+<script type="text/javascript">
+
+    let box = document.getElementById('display');
+
+    function backspace() {
+        let num = box.value;
+        let length = num.length-1;
+        let newNum = num.substring(0, length);
+        box.value = newNum;
+    }
+
+    function toScreen(x){
+       box.value += x;
+
+    }
+
+    function equalsTo(){
+        x = box.value;
+        let y;
+        try {
+            y = eval(x.replace(/\b0*((\d+\.\d+|\d+))\b/g, "$1"))
+            let resultArray = y.toString().length;
+            if(resultArray >= 14){
+                y = y.toPrecision(14);
+                box.value = y;
+            }
+            else{
+                box.value = y;
+            }
+        }
+        catch (e) {
+            if (e instanceof SyntaxError) {
+                box.value = "Syntax Error";
+            }
+        }
+
+    }
+</script>
 </body>
 </html>
