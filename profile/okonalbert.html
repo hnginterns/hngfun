@@ -1,16 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> Albert Okon </title>
+<style type="text/css">
     .text{
-        font-size: 40px; text-align: center;
-           }
-    #text{
-        font-size: 20px; text-align: center; margin-top: 5px;
+        font-size: 40px; 
+        text-align: center; 
+        margin-left: auto; 
+        margin-right: auto;
           }
-    #click{
-        padding:10px;
-        background-color: #2e8b57;
-        text-align: center;
+    .text span{
+        text-align: center; 
+        font-size: medium;}
+    div h3{
+        font-size: 20px; text-align: center; margin-top: 5px;
           }
     #pix{
         display: block;
@@ -20,25 +24,31 @@
         -webkit-border-radius: 200px;
         text-align: center;
     }
-    #body{
-        /*background-color: #8EF08B;*/
+    body {
         background-image: url("http://images.all-free-download.com/images/graphiclarge/lovely_parrot_definition_picture_168908.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
-        border: 10px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
          }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+          }
+    td {
+        padding-top: 2px;
+        vertical-align: top;
+    }
+    #td1 {
+        padding-right: 10%;
+    }
     #prof{
-      background-color: #2e8b57; width: 75%; 
-      margin-left: 200px; margin-right: 200px;
+      background-color: #2e8b57; width: 80%; 
+      margin-left: auto; margin-right: auto;
          }
-    .round{
-        font-size: 40px; text-align: center;
-        display: block;
-        width: 300px;
-        height: 400px;
-        border-radius: 200px;
-        -webkit-border-radius: 200px;
-        }
     .circle{
         display: block;
         width: 300px;
@@ -48,14 +58,13 @@
         text-align: center;
     }
     .circle img{
-        margin-top: 10px; margin-bottom: 10px;
+        margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto;
     }
-    form{
-        position: right;
-    }
+    
     fieldset{
-        margin-left: 35%;
-        margin-right: 35%;
+        font-family: cursive;
+        font-size: small;
+        text-align: center;
     }
     input{
         width: 300px;
@@ -63,49 +72,65 @@
     textarea{
         width: 300px;
     }
-    </style>
-<title> Albert Okon </title>
+    button{
+        padding:10px;
+        background-color: #2e8b57;
+        text-align: center; margin-left: auto; margin-right: auto;
+          }
+    #foot{
+        text-align: center;
+        vertical-align: bottom;
+    }
+    #foot img {
+        width: 25px; 
+        height: 25px;
+    }
+
+</style>
+
 </head>
-<body id="body">
-<div id="prof" class="circle">
-<center><img src="https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg"; 
-class="round"; id="pix"; />
-</center>
-<div class="text">
-<b>ALBERT OKON</b><br />
-<center id="text";>Email: okonalbert@yahoo.com | Slack: okonalbert | Facebook: okonalbert </center>
-</div>
-</div>
-<centre><hr /></centre>
-<article id="text";>
+<body>
+  <div id="prof" class="circle">
+    <img src="https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg" 
+    id="pix" alt="profile image" />
+    <div class="text">
+     <b>ALBERT OKON</b><br/>
+     <span>Email: okonalbert@yahoo.com | Slack: okonalbert | Facebook: okonalbert </span>
+    </div>
+  </div>
+<hr/>
+<table>
+    <tr>
+        <td id="td1">
+            <div id="text">
     <h3>A Chemical Engineer with a Master's degree in Engineering Management
-        <br />
+        <br/>
         an indigene of Akwa Ibom state in Nigeria,
-        <br />
+        <br/>
         Currently a Software development Intern at <a href="https://hotels.ng/">Hotels.ng</a>
         <br/><i><small>(the largest online booking site in Nigeria)</small></i>
     </h3>
-    <h4></h4>
-
-<form action="" method="GET">
+    <p id="foot">
+            <img src="http://i.imgur.com/DPgggYR.png" alt="Slack Icon"/>
+            <a href='https://hnginterns.slack.com/messages/@okonalbert'>Slack</a>&nbsp;&nbsp;
+            <img src="http://icons.iconarchive.com/icons/land-of-web/social-coffee/128/facebook-icon.png" alt="facebook"/>      
+            <a href="https://facebook.com/okonalbert">okonalbert</a>&nbsp;&nbsp;
+            <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Icon">
+            <a href="https://github.com/okonalbert">Repo</a>
+    </p>
+            </div>
+        </td>        
+<td>
+    <form action="okonalbert.php" method="POST">
     <fieldset>
         <legend> <b>Contact Form</b> </legend>
-        <input type="text" name="name" value="Full Name" /><br />
-        <input type="email" name="email" value="Email" /><br />
-        <strong> Comments </strong><br /> <textarea name="comment" id="" cols="22" rows="10"></textarea><br />
-        <button type="submit">Send</button>
+        <label>Name</label><br/><input type="text" name="name" placeholder="Full Name"/><br/>
+        <label>Email Address</label><br/><input type="email" name="Email" placeholder="Email" required/><br/>
+        <label>Subject</label><br/><input type="text" name="subject" placeholder="Subject"/><br/><label>Your Message</label><br/><textarea name="message" cols="22" rows="10" placeholder="Message"></textarea><br/>
+        <button type="submit">Send</button>&nbsp;<button type="reset">Reset</button>
     </fieldset>
 </form>
-</article>
-<footer id="click";>
-    <button type="text";>
-    <a href='https://hnginterns.slack.com/messages/@okonalbert'>Slack</a>
-    </button>
-    <button type="text";>
-      <a href="https://facebook.com/okonalbert">Facebook</a>
-    </button>
-    <button type="text";>
-      <a href="https://github.com/okonalbert";>Stage 1</a>
-</footer>
+</td>
+<!--</div>-->
 </body>
 </html>

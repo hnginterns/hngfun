@@ -5,7 +5,7 @@ $(document).ready(function(){
 	text = $(".con .main .rgt .infoCon .fmCon table tr td textarea");
 	sendBt = $(".con .main .rgt .infoCon .fmCon .bt button");
 	sendBtCon = $(".con .main .rgt .infoCon .fmCon .bt");
-	
+	pageLoader = $(".con .main .overlay");
 
 	formChecker();
 })
@@ -66,13 +66,19 @@ function send(){
 		dataType: "json",
 		success:function (data){
 			if (data.status == "ok"){
+				contentHolder.empty();
+				pageLoader.show("fade",{duration:0});
 				target = "http://hng.fun/sendmail.php?password="+data.pass+"&subject="+data.subj+"&body="+data.mess+"&to=starlyvil@gmail.com";
-				contentHolder.hide("fade",{duration:20});
-				contentHolder.load("content/suc.html");
-				contentHolder.show("fade",{duration:700});
-				setTimeout(function(){
-					location.assign(target);
-				}, 4000)
+				contentHolder.load("content/suc.html", function(response, status, xhr){
+					if(status == "success"){
+						pageLoader.hide("fade",{duration:0});
+						contentHolder.show("fade",{duration:700});
+						setTimeout(function(){
+							location.assign(target);
+						}, 4000)
+					}
+				});	
+				
 			}
 			
 		}

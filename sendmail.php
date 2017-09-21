@@ -28,7 +28,8 @@
       $error[] = 'You have sent an empty data, email cannot be sent like that.';
     } else {
       /**
-       * Everything we need to send the email is ready, but we need to do some verification
+
+	  * Everything we need to send the email is ready, but we need to do some verification
        * We need to makke sure the email is valid.
        */
 
