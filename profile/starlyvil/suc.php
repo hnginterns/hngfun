@@ -1,3 +1,4 @@
+
 <div hidden= "hidden" class="urlC" data-sub="<?php echo $_SESSION['sub']?>" data-mess="<?php echo $_SESSION['mess']?>" data-pass="<?php echo $_SESSION['pass']?>" id="full"></div>
 <script type="text/javascript">
 	
@@ -24,4 +25,5 @@
 	</div>
 	<p> Mail sent succefuly sent to <b><i>starlyvil@gmail.com</i></b></p>
 	<p>Now Sending to Admin in 3 Seconds</p>
+
 </div>

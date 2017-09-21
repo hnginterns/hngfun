@@ -1,4 +1,3 @@
-
 window.onload = function(){
     let content = document.querySelector('.content');
     let openContactFormButton = document.querySelector('.contact__button');
@@ -30,3 +29,4 @@ window.onload = function(){
         content.classList.remove('contact--open');
     }
 }
+
