@@ -1,3 +1,25 @@
+<?php
+ if($_SERVER['REQUEST_METHOD'] == 'POST') {
+   $subject = $_POST['subject'];
+   $to  = $_POST['to'];
+   $body = $_POST['message'];
+   $config = include('../../config.php');
+   $server = $config['host'];
+   $con = mysqli_connect($server,$config['username'],$config['pass'],$config['dbname']);
+   if (!$con) {
+     die("Connection failed: ".mysqli_connect_error());
+ }
+   $sql = 'SELECT * FROM password LIMIT 1';
+   if($result = mysqli_query($con, $sql)) {
+     $data = mysqli_fetch_array($result, MYSQLI_ASSOC);
+     $password = $data['password'];
+   } else {
+       $password = "#";
+   }
+   $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+   header("location: $uri");
+ }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,11 +65,26 @@
 		
 			<div id="button">
 				<button type="submit"> <a href ="https://github.com/mercyikpe/hello-world">View my Stage 1 Project </a></button>
-			</div>
+		
+</div>
 			
 			
     </div>
-    
+<fieldset2>
+    <p><h3>Send a message</h3>
+                            <div class="form">
+                       <form action=" " method="POST">
+                           <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+                
+                           <input type="hidden" name="to" value="ikpemercy1@gmail.com">
+                
+                           <input type="text" name="subject" placeholder="Subject " class="form-input" required="text"><p>
+                           <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
+                
+                           <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea><p>
+                           <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+                            </form>
+	   </fieldset2>
       
 	<div class="main">
 	
@@ -61,38 +98,7 @@
 				<div id="twitter"><a href="https://www.instagram.com/mercyikpe/"><img src="http://res.cloudinary.com/mercyikpe/image/upload/v1504169560/instagram.jpg" width="30px" height="30px" alt="instagram"> </a></div>
 			
 		</fieldset>
-	
-		
-		<form action="/mercyikpe.html" method="post">
-			<h2>Send me a mail:</h2>
-			
-			<div>
-				<label for="name"> Full Name: </label>
-				<input type="text" id="name" name="user_name">
-			</div>
-			
-			<div>
-				<label for="mail"> E-mail: </label>
-				<input type="email" id="mail" name="user_mail">
-			</div>
-			
-			<div>
-				<label for="message"> Message: </label>
-				<textarea id="message" name="user_message"></textarea>
-			</div>
-			
-			<div class="button">
-				<button type="submit"> Send your message </button>
-			</div>			
-
-		</form>
-
-		
-		
-		
-		
-		
-		
+				
 	<div id="clear1"> </div>
 
 	
