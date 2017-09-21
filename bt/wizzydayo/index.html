@@ -1,95 +1,77 @@
 <html>
 <head>
-    <title>Digital Clock using JavaScript</title>
-    <link href="http://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
+<script>
+function Time(){
+ myTimer = setInterval(setClock,1000);
+function setClock(){	
+	  h=new Date().getHours();
+	   m=new Date().getMinutes();
+	    s=new Date().getSeconds();
+		if (s<10){
+			s = '0'+s;
+			  document.getElementById("clock").innerHTML=s
+		}
+		  document.getElementById("clock").innerHTML=h+':'+m+':'+s;
+		 document.getElementById("clocks").innerHTML=new Date().toLocaleTimeString();}
 
-    <style>
-        .tabBlock
-        {
-            background-color:#57574f;
-            border:solid 0px #FFA54F;
-            border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
-            max-width:200px;
-            width:100%;
-            overflow:hidden;
-            display:block;
-        }
-        .clock
-        {
-            vertical-align:middle;
-            font-family:Orbitron;
-            font-size:40px;
-            font-weight:normal;
-            color:#FFF;
-            padding:0 10px;
-        }
-        .clocklg 
-        {
-            vertical-align:middle; 
-            font-family:Orbitron;
-            font-size:20px;
-            font-weight:normal;
-            color:#FFF;
-        }
-    </style>
+}
+</script>
+
+<style>
+body{
+	background-color:#bcc8d1;   
+    
+	
+}
+.desc {
+font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    line-height: 25px;
+    color: white;
+    font-weight: 500;
+  margin:auto;
+  font-size:14px;
+}
+
+
+ #container{
+	margin-left:400px;
+	margin-top:20px ;
+	text-align:center;
+	width:30%;
+	height:400px;
+ }
+ #clock{
+	width:80%;
+		background-color:#000;
+	color:fff;
+	margin:0 2%;
+	padding:30px 0px;
+	border:30px solid #888;
+	font-size:40px;
+ }
+ #clocks{
+	width:80%;
+	background-color:#000;
+	color:fff;
+	margin:0 2%;
+	padding:20px 0px;
+	border:30px solid #efefef;
+	font-size:40px;
+ }
+</style>
 </head>
+<body onload = "Time()">
+<div id ="container">
+<h1>Dynamic Digital Clock</h1>
 
-<!-- ON LOAD OF THE PAGE, THE CLOCK WILL START TICKING. -->
-<body>
-    <script type="text/javascript">
-    window.onload = digitized();
-</script>
-    <div style="background-color:#F3F3F3;
-        max-width:220px;width:100%;margin:0 auto;padding:20px;">
+<p id="clock">00:00:00</p>
+<p id="clocks">00:00:00</p>
+ 
+<br>
+  <pclass="desc">Clock design by <a href="#">wizzydayo</a> on <a href=#>HNGinternship</a></p>
 
-        <table class="tabBlock" align="center" cellspacing="0" cellpadding="0" border="0">
-            <tr><td class="clock" id="dc"></td>  <!-- THE DIGITAL CLOCK. -->
-                <td>
-                    <table cellpadding="0" cellspacing="0" border="0">
-                    
-                        <!-- HOUR IN 'AM' AND 'PM'. -->
-                        <tr><td class="clocklg" id="dc_hour"></td></tr>
 
-                        <!-- SHOWING SECONDS. -->
-                        <tr><td class="clocklg" id="dc_second"></td></tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </div>
+</div>
 </body>
-    <script>
-    // OUR FUNCTION WHICH IS EXECUTED ON LOAD OF THE PAGE.
-    function digitized() {
-        var dt = new Date();    // DATE() CONSTRUCTOR FOR CURRENT SYSTEM DATE AND TIME.
-        var hrs = dt.getHours();
-        var min = dt.getMinutes();
-        var sec = dt.getSeconds();
-
-        min = Ticking(min);
-        sec = Ticking(sec);
-
-        document.getElementById('dc').innerHTML = hrs + ":" + min;
-        document.getElementById('dc_second').innerHTML = sec;
-
-        if (hrs > 12) { 
-            document.getElementById('dc_hour').innerHTML = 'PM'; 
-        }
-        else { 
-            document.getElementById('dc_hour').innerHTML = 'AM'; 
-        }
-
-        // CALL THE FUNCTION EVERY 1 SECOND (RECURSION).
-        var time
-        time = setInterval('digitized()', 1000);
-    }
-
-    function Ticking(ticVal) {
-        if (ticVal < 10) {
-            ticVal = "0" + ticVal;
-        }
-        return ticVal;
-    }
-</script>
 </html>
-
