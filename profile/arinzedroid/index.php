@@ -1,4 +1,3 @@
-
 <?php
   $config = include('../../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -78,3 +77,4 @@
     <script src="script.js" async></script>
 </body>
 </html>
+
