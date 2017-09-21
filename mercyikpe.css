@@ -1,0 +1,130 @@
+	body {
+		  background-color:#ffe6f0;
+		  color: #6C7A89;
+		  font-family:Verdana, Geneva, sans-serif;
+	}
+	
+	.container{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		border:2px solid #ff99c2;
+		border-radius: 10px;
+		padding: 20px;
+		color: #003;
+	}
+
+	.top{
+		border: 2px solid #fff;
+		padding: 20px;
+		border-radius: 5px;
+		
+		}
+		
+		#biography {
+			float: left;
+			width: 70%;
+			text-align: justify;
+		}
+		
+		#img {
+			float: right;
+			width: 30%;
+			margin-right: -40px;
+		}
+		
+		
+		div {
+			clear: right;
+		}
+		
+		
+		
+		.main{
+			border: ;
+		}
+		
+		fieldset {
+			width: 30%;
+			float: right;
+		}
+		
+		#slack, #gmail, #twitter, #facebook, #instagram {
+			margin-top: 10px;
+			margin-left: 100px;
+		}
+		
+		#button{
+			padding-top: 15px;
+		}
+		
+		#button a{
+			text-decoration: none;
+			
+		}
+		
+		#button a:hover{
+			text-decoration: none;
+			background-color: #e6005c;
+		}
+		
+		h3{
+			text-align: left;
+		}
+		
+		
+		.form{
+			width: 50%;
+			float: left;
+		}
+		
+		label {
+			display: inline-block;
+			width: 90px;
+			text-align: right;
+		}
+		
+		
+		input, textarea {
+			margin-top: 5px;
+			font: 1em sans-serif;
+			width: 350px;
+			box-sizing: border-box;
+
+		
+		}
+		
+		input:focus, textarea:focus {
+			border-color: #000;
+		} 
+		
+		textarea {
+			vertical-align: top;
+			height: 7em;
+		}
+		
+		.button {
+			padding-left: 200px;
+		}
+		
+		
+		clear1 {
+			clear: both;
+		}
+		
+		
+		#footer{
+			padding: 10px;
+			margin-top: 40px;
+			background-color: #ff0066;
+			color: #fff;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
