@@ -9,7 +9,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -99,6 +99,13 @@ p#answer {
   background: #27ae60;
 
 }
+#mode_text{
+    color:white;
+    background: #858585;
+}
+#mode_text:hover{
+    background: #858585;
+}
 </style>
 
 <body>
@@ -108,28 +115,40 @@ p#answer {
                     <input id="stringField" type="text" placeholder="Enter your string here">
                     <div class = 'some'>
                     <input type="button"  value="Count" id="count" onClick="stringCounter()"> 
+                    <input type="button"  value="mode" id="mode" onClick="modeSelect()"> 
+                    <input type ='button' value="counting spaces ="id ="mode_text">
                     </div> 
                     <p id="answer"></p>
+                    
             </div>
     </div>
 </body>
 <script type = "text/javascript">
-document.getElementById("stringField")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    document.getElementById("count").click();
-    
-});
 
+    counter_mode = true;
     let stringCounter = () =>{
         let count = 0;
         let user_string = document.getElementById('stringField').value;
         //beautiful regex
         for (char in user_string){
-            if ( !/\s/g.test(user_string[char])){count ++;}
+            if (counter_mode === true){
+            if (!/\s/g.test(user_string[char])){count ++;}}
+            else{count = user_string.length}
         }
         document.getElementById("answer").innerHTML = 'Count = '+count;
     }
+    
+    let modeSelect = () =>{
+        counter_mode =  !counter_mode;
+        document.getElementById("mode_text").value = 'counting spaces = '+ !counter_mode;
+        document.getElementById("count").click();
+  }
+
+    document.getElementById("stringField").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    document.getElementById("count").click();
+});
+
 
 </script>
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">

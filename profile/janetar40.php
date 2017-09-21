@@ -1,4 +1,27 @@
-
+  <?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'anietiecares@gmail.com';
+    $body = $_POST['body'];
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+    if(empty($error)) {
+      $config = include('../config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+    }
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +53,7 @@ body {
 }
 h1 {
     font-size: 15pt;
-    color: #20bcd5;
+    color: black;
     text-align: center;
     padding: 18px 0 18px 0;
     margin: 0 0 10px 0;
@@ -89,20 +112,20 @@ div{
              <div>
                        <h1><span>About Me</span></h1>
             <p>
-     Am Unyime michael, from akwa ibom state. I love programming, sport is my hobby.
+     Am Unyime michael, from akwa ibom state. I love programming, sport is my hobby.colour me orange.
             </p>
              </div>
              <!-- About me section end -->
   
-       <!-- Contacts section starts
+       <!-- Contacts section starts-->
       <div align="center" class="section">
             
-           <form action = "aniekanedet.php" id = "contact-form" method = "POST" >
+           <form action = "janemike.php" id = "contact-form" method = "POST" >
                 <input type = "text" name = "subject" placeholder= "Enter subject for Name" required><br><br>
                 <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
                 <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
                 <br><input type ="submit" name="submit" value ="Send Message">
-            </form> -->
+            </form> 
         </div>
    
             <h1><span>Follow Me</span></h1>
