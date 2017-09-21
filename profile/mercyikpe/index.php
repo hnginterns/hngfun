@@ -71,7 +71,7 @@
 			
     </div>
 <fieldset2>
-    <h3>Send a message</h3>
+    <p><h3>Send a message</h3>
                             <div class="form">
                        <form action=" " method="POST">
                            <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
