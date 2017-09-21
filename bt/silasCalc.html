@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>SILAS CALCULATOR PROJECT</title>
+     
+<Style>
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+}
+ul {
+    list-style: none;
+}
+
+
+
+body {
+    width: 500px;
+}
+form {
+    background-color: gray;
+    text-align: center;
+    padding: 7px;
+    
+}
+
+#display {
+    width: 98%;
+    height: 30px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+.digit {
+    font-size: 2rem;
+    background-color: red;
+    height: 55px;
+    width: 20%;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+.oper {
+    font-size: 2rem;
+    background-color: blue;
+    height: 55px;
+    width: 20%;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+}
+#clearMem {
+    background-color: #aaa;
+}
+#equal {
+    background-color: #ccc ;
+}
+</Style>
+</head>
+<body>
+<form name="case">
+  <input name="display" id="display" placeholder="0.">
+    <input type="button" class="digit" value="1" onclick="run1()">
+    <input type="button" class="digit" value="2" onclick="run2()">
+    <input type="button" class="digit" value="3" onclick="run3()">
+    <input type="button" id="plus" 	class="oper" 	value="+"  onclick="runPlus()">
+    <input type="button" class="digit" value="4" onclick="run4()">
+    <input type="button" class="digit" value="5" onclick="run5()">
+    <input type="button" class="digit" value="6" onclick="run6()">
+    <input type="button" id="minus" 	class="oper" 	value="-" onclick="runMinus()" >
+    <input type="button" class="digit" value="7" onclick="run7()">
+    <input type="button" class="digit" value="8" onclick="run8()">
+    <input type="button" class="digit" value="9" onclick="run9()">
+    <input type="button" id="divide" 	class="oper" 	value="/" onclick="runDivide()" >
+     <input type="button" id="clearMem" class="oper" value="C" onclick="runC()">  
+    <input type="button" class="digit" value="0" onclick="run0()">
+	<input type="button" id="equal" 	class="oper"	value="=" onclick="runEquals()">
+    <input type="button" id="multiply" 	class="oper" 	value="*" onclick="runMultiply()">
+
+  </div>  
+</div>
+
+</body>
+
