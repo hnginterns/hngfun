@@ -65,6 +65,7 @@ const buttonClickHandler = event => {
       //debugger;
       del = false;
       secondVal = tempExpr !== "" ? Number(tempExpr) : 0;
+      val = tempExpr !== "" ? val : "+";
       tempExpr = "";
       firstVal = doOp();
       display(firstVal);
