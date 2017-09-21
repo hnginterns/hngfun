@@ -75,22 +75,34 @@ form {
 <body>
 <form name="case">
   <input name="display" id="display" placeholder="0.">
-    <input type="button" class="digit" value="1" onclick="run1()">
-    <input type="button" class="digit" value="2" onclick="run2()">
-    <input type="button" class="digit" value="3" onclick="run3()">
-    <input type="button" id="plus" 	class="oper" 	value="+"  onclick="runPlus()">
-    <input type="button" class="digit" value="4" onclick="run4()">
-    <input type="button" class="digit" value="5" onclick="run5()">
-    <input type="button" class="digit" value="6" onclick="run6()">
-    <input type="button" id="minus" 	class="oper" 	value="-" onclick="runMinus()" >
-    <input type="button" class="digit" value="7" onclick="run7()">
-    <input type="button" class="digit" value="8" onclick="run8()">
-    <input type="button" class="digit" value="9" onclick="run9()">
-    <input type="button" id="divide" 	class="oper" 	value="/" onclick="runDivide()" >
-     <input type="button" id="clearMem" class="oper" value="C" onclick="runC()">  
-    <input type="button" class="digit" value="0" onclick="run0()">
-	<input type="button" id="equal" 	class="oper"	value="=" onclick="runEquals()">
-    <input type="button" id="multiply" 	class="oper" 	value="*" onclick="runMultiply()">
+    <input type="button" class="digit" value="1" onclick="calculator.screen.value += '1' ">
+
+    <input type="button" class="digit" value="2" onclick="calculator.screen.value += '2' ">
+
+    <input type="button" class="digit" value="3" onclick="calculator.screen.value += '3' ">
+
+    <input type="button" id="plus" 	class="oper" 	value="+"  onclick="calculator.screen.value += '+' "/>
+
+    <input type="button" class="digit" value="4" onclick="calculator.screen.value += '4' ">
+
+    <input type="button" class="digit" value="5" onclick="calculator.screen.value += '5' ">
+
+    <input type="button" class="digit" value="6" onclick="calculator.screen.value += '6' ">
+
+    <input type="button" id="minus" 	class="oper" 	value="-"  onclick="calculator.screen.value += '-' ">
+
+    <input type="button" class="digit" value="7" onclick="calculator.screen.value += '7' ">
+
+    <input type="button" class="digit" value="8" onclick="calculator.screen.value += '8' ">
+
+    <input type="button" class="digit" value="9" onclick="calculator.screen.value += '9' ">
+
+    <input type="button" id="divide" 	class="oper" 	value="/" onclick="calculator.screen.value += '/' ">
+    
+    <input type="button" id="clearMem" class="oper" value="C" onclick="calculator.screen.value = '' ">  
+    <input type="button" class="digit" value="0" onclick="calculator.screen.value += '0' ">
+	<input type="button" id="equal" 	class="oper"	value="=" onclick="calculator.screen.value = eval(calculator.screen.value)">
+    <input type="button" id="multiply" 	class="oper" 	value="*" onclick="calculator.screen.value += '*' "/>
 
   </div>  
 </div>
