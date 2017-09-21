@@ -45,7 +45,7 @@
 		}
 		
 		fieldset {
-			width: 25%;
+			width: 30%;
 			float: right;
 		}
 		fieldset2 {
@@ -69,7 +69,7 @@
 		}
 		
 		form{
-			width: 20%;
+			width: 80%;
 			float: left;
 		}
 		
@@ -83,7 +83,7 @@
 		input, textarea {
 			margin-top: 5px;
 			font: 1em sans-serif;
-			width: 70px;
+			width: 80px;
 			box-sizing: border-box;
 
 		
