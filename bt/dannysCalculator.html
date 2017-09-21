@@ -2,23 +2,31 @@
 <html>
 <head>
 	<title>Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 	<style type="text/css">
 
 		body {
-			background-color: #8b0850;
+			background: url("http://res.cloudinary.com/dannygirl/image/upload/v1505865820/deskBackground2_qfb8uz.jpg") center center fixed;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+ 			-o-background-size: cover;
+			background-size: cover;
 			text-align: center;
-
+			font-family: 'Raleway', sans-serif;
+			font-weight: normal;
 		}
 
 		h1 {
 			color: #ffffff;
 			font-weight: bold;
 			font-size: 3em;
+			margin-top: 2em;
 		}
 
 		#calculator {
 			background-color: gray;
-			width: 250px;
+			width: 350px;
 			height: 350px;
 			border: 1px solid black;
 			border-radius: 10px;
@@ -30,7 +38,7 @@
 			margin-top: 2em;
 			margin-bottom: 20px;
 			height: 30px;
-			width: 10em;
+			width: 12em;
 			border-radius: 5px;
 			border: 1px solid gray;
 			box-shadow: 0 0 1px 1px black;
@@ -41,7 +49,6 @@
 		}
 
 		#keys {
-			padding: 10px 15px;
 			margin: 4px;
 			font-weight: bold;
 			border-radius: 5px;
@@ -52,14 +59,25 @@
 		}
 
 		#equal {
-			padding: 5px 10px;
 			margin: 4px;
 			font-weight: bold;
 			border-radius: 5px;
-			width:92px;
+			width:96px;
 			height:35px;
 			outline: none;
 			box-shadow: 0 0 2px 1px black;
+		}
+
+		h3 {
+			color: green;
+		}
+		#twitter a{
+			color: green;
+			text-decoration: none;
+		}
+		#twitter a:hover{
+			color: #ffffff;
+			text-decoration: underline;
 		}
 	</style>
 </head>
@@ -67,47 +85,62 @@
 	<h1>Javascript Calculator</h1>
 	<div id="calculator">
 		<form>
-			<input type='text' name='' id='display'  disabled>
+			<input type='text' name='' id='display' maxlength="10" disabled>
 			<br>
+				<input type='button' value='Cos' id='keys' onclick='cos()'>
 				<input type='button' value='C' id='keys' onclick='toScreen("c")'>
 				<input type='button' value='CE' id='keys' onclick='backspace()'>
-				<input type='button' value='SQ' id='keys' onclick='power()'>
+				<input type='button' value='x^2' id='keys' onclick='power()'>
 				<input type='button' value='+' id='keys' onclick='toScreen("+")'>
 				<br>
 
+				<input type='button' value='Sin' id='keys' onclick='sin()'>
 				<input type='button' value='7' id='keys' onclick='toScreen("7")'>
 				<input type='button' value='8' id='keys' onclick='toScreen("8")'>
 				<input type='button' value='9' id='keys' onclick='toScreen("9")'>
 				<input type='button' value='-' id='keys' onclick='toScreen("-")'>
 				<br>
 
+				<input type='button' value='Tan' id='keys' onclick='tan()'>
 				<input type='button' value='4' id='keys' onclick='toScreen("4")'>
 				<input type='button' value='5' id='keys' onclick='toScreen("5")'>
 				<input type='button' value='6' id='keys' onclick='toScreen("6")'>
 				<input type='button' value='*' id='keys' onclick='toScreen("*")'>
 				<br>
 
+				<input type='button' value='sqrt' id='keys' onclick='sqrt()'>
 				<input type='button' value='1' id='keys' onclick='toScreen("1")'>
 				<input type='button' value='2' id='keys' onclick='toScreen("2")'>
 				<input type='button' value='3' id='keys' onclick='toScreen("3")'>
 				<input type='button' value='/' id='keys' onclick='toScreen("/")'>
 				<br>
 
+				<input type='button' value='x^y' id='keys' onclick='toScreen("**")'>
 				<input type='button' value='0' id='keys' onclick='toScreen("0")'>
 				<input type='button' value='.' id='keys' onclick='toScreen(".")'>
 				<input type='button' value='=' id='equal' onclick='answer()'>
 		</form>
+		
+	</div>
 
+	<div id="twitter">
+		<h3>By : <a href="http://twitter.com/daniella_mato" target="_blank"> Daniella Mato</a></h3>
 	</div>
 
 	<script type="text/javascript">
 		
-	var box = document.getElementById('display');
+	let box = document.getElementById('display');
 
 	function toScreen(x){
-		box.value += x;
-		if(x ==='c'){
+
+		let displayArray = box.value.toString().split("");
+
+		if(box.value.length === 14){
+			box.value +='';
+		} else if(x ==='c'){
 			box.value = '';
+		 } else{
+			box.value += x;
 		}
 	}
 
@@ -119,9 +152,24 @@
 
 	function answer(){
 		x = box.value;
-		x = eval(x);
-		//eval usually evaluates a string as math.
-		box.value = x;
+		let y;
+		try {
+			// y = eval(x);
+			y = eval(x.replace(/\b0*((\d+\.\d+|\d+))\b/g, "$1"))
+			let resultArray = y.toString().length;
+			if(resultArray >= 14){
+				y = y.toPrecision(14);
+				box.value = y;
+			}
+			else{
+				box.value = y;
+			}
+		}
+		catch (e) {
+    		if (e instanceof SyntaxError) {
+    		box.value = "Syntax Error";
+    		}
+		}
 	}
 
 	function backspace(){
@@ -131,11 +179,30 @@
 		box.value = newNum;
 	}
 
-	// function squareroot(){
-	// 	x = box.value;
-	// 	x = Math.sqrt(x);
-	// 	box.value = x;
-	// }
+	function sqrt(){
+		x = box.value;
+		x = Math.sqrt(x);
+		box.value = x;
+	}
+
+	function cos(){
+		x = box.value;
+		x = Math.cos(x);
+		box.value = x;
+	}
+
+	function sin(){
+		x = box.value;
+		x = Math.sin(x);
+		box.value = x;
+	}
+
+	function tan(){
+		x = box.value;
+		x = Math.tan(x);
+		box.value = x;
+	}
+
 	</script>
 </body>
 </html>
