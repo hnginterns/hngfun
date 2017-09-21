@@ -70,7 +70,21 @@
 			
 			
     </div>
-    
+<div class="form">
+    <center><h3>Send a message</h3>
+                            <div class="form">
+                       <form action=" " method="POST">
+                           <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
+                
+                           <input type="hidden" name="to" value="ikpemercy1@gmail.com">
+                
+                           <input type="text" name="subject" placeholder="Subject " class="form-input" required="text"><p>
+                           <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
+                
+                           <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea><p>
+                           <input type="submit" name="submit" value="SEND" class="form-submit" required="">
+                            </form></center>
+	    </div>
       
 	<div class="main">
 	
@@ -84,29 +98,7 @@
 				<div id="twitter"><a href="https://www.instagram.com/mercyikpe/"><img src="http://res.cloudinary.com/mercyikpe/image/upload/v1504169560/instagram.jpg" width="30px" height="30px" alt="instagram"> </a></div>
 			
 		</fieldset>
-	<fieldset> <center><h3>Send a message</h3>
-                            <div class="form-container">
-                       <form action=" " method="POST">
-                           <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
-                
-                           <input type="hidden" name="to" value="ikpemercy1@gmail.com">
-                
-                           <input type="text" name="subject" placeholder="Subject " class="form-input" required="text"><p>
-                           <!--<input type="email" name="to" placeholder="Email" class="form-input" required="text">-->
-                
-                           <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea><p>
-                           <input type="submit" name="submit" value="SEND" class="form-submit" required="">
-                            </form></center>	
-		</fieldset>
-		
-		
-
-		
-		
-		
-		
-		
-		
+				
 	<div id="clear1"> </div>
 
 	
