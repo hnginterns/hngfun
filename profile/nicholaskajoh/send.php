@@ -1,3 +1,4 @@
+
 <?php
   $config = include('../../config.php');
   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -10,4 +11,6 @@
   $body = htmlentities(strip_tags(trim($_GET['body'])));
   $to = "kajohterna@gmail.com";
   $end_point = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+  $end_point = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
   header("Location: " . $end_point);
+  ?>

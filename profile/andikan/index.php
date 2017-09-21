@@ -33,10 +33,10 @@
 		<div>
 		<h1>My profile</h1>
 				<form class="mage">
+							<img class="image" src="enact.jpg" alt="pic@andikan" title="Andikan Affiah" max-width="168px" height="280px" ></img>
 					<table style="width:100%" border="0px">
 					  <tr>
 						<td>
-							<img class="image" src="enact.jpg" alt="pic@andikan" title="Andikan Affiah" max-width="168px" height="280px" style="float:left;"></img>
 									<div class="an">
 								
 									<ul>
@@ -58,7 +58,9 @@
 					  </tr>
 					</table>		
 			</form>
-			<?php if(isset($error) && !empty($error)): ?>
+			
+						
+						<?php if(isset($error) && !empty($error)): ?>
 					<blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
 						<ul style='list-style:none;'>
 						<?php
@@ -75,15 +77,16 @@
 			<a href="https://github.com/Enactor/HNG_Interns">
 			<p class="pr">hng_stage1</p>
 			</a>
-			<form class="formus" action ="index.php" method = "POST" > 
+			<form class="formus" align="center" action = "index.php" method = "POST"> 
 			<h3>Send me a mail</h3>
 			<input type="text" name ="subject" placeholder="Subject">
-			<input type="text" name ="to" placeholder="email" value="kyrioxlamda@gmail.com" disabled>
+			<span class="sp">To :<input type="text" name ="to" placeholder="email" value="kyrioxlamda@gmail.com" disabled></span>
 			<textarea placeholder="input text here" name ="body"></textarea>
 			<input class="submit" type="submit" value="submit">
 			
 			</form>
 			</div>
+		</div>
 		</div>
 			
 					</body>
