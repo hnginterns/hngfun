@@ -101,6 +101,10 @@ p#answer {
 }
 #mode_text{
     color:white;
+    background: #858585;
+}
+#mode_text:hover{
+    background: #858585;
 }
 </style>
 
@@ -136,7 +140,7 @@ p#answer {
     
     let modeSelect = () =>{
         counter_mode =  !counter_mode;
-        document.getElementById("mode_text").value = 'counting spaces = '+counter_mode;
+        document.getElementById("mode_text").value = 'counting spaces = '+ !counter_mode;
         document.getElementById("count").click();
   }
 
