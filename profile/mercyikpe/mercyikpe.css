@@ -48,6 +48,10 @@
 			width: 25%;
 			float: right;
 		}
+		fieldset2 {
+			width: 25%;
+			float: left;
+		}
 		
 		#slack, #gmail, #twitter, #facebook, #instagram {
 			margin-top: 10px;
