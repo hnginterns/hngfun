@@ -79,7 +79,7 @@
 		input, textarea {
 			margin-top: 5px;
 			font: 1em sans-serif;
-			width: 200px;
+			width: 150px;
 			box-sizing: border-box;
 
 		
@@ -95,7 +95,7 @@
 		}
 		
 		.button {
-			padding-left: 200px;
+			padding-left: 50px;
 		}
 		
 		
