@@ -69,13 +69,13 @@
 		}
 		
 		form{
-			width: 30%;
+			width: 20%;
 			float: left;
 		}
 		
 		label {
 			display: inline-block;
-			width: 90px;
+			width: 80px;
 			text-align: right;
 		}
 		
@@ -83,7 +83,7 @@
 		input, textarea {
 			margin-top: 5px;
 			font: 1em sans-serif;
-			width: 150px;
+			width: 100px;
 			box-sizing: border-box;
 
 		
