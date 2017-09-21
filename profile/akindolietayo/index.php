@@ -186,18 +186,9 @@ ul, li{
                         </li>
                     </ul>
                     <div class="form-container">
-<<<<<<< HEAD
-                        <form action=" " method="POST">
-                            <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
-=======
                         <form action="process.php" method="POST">
                             <!--<input type="hidden" name="password" class="form-input" value="">-->
-<<<<<<< HEAD
->>>>>>> 2e5afe0f0bb8eae5e16c655689d05659cb6d96cc
-=======
->>>>>>> 9c5c8c605414b1d056eb1dcf618da202bba3bbfc
->>>>>>> 406b5a78b205e7c5c0339b4248e3a822a6381038
-                            <input type="hidden" name="to" value="akindolietayo@gmail.com">
+             <input type="hidden" name="to" value="akindolietayo@gmail.com">
                             <input type="text" name="subject" placeholder="Subject " class="form-input" required="">
                             <!--<input type="email" name="to" placeholder="Email" class="form-input" required="">-->
                             <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea>

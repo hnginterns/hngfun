@@ -1,6 +1,6 @@
 <?php
 
-   $config = include('../config.php');
+   $config = include('../../config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     $con = new PDO($dsn, $config['username'], $config['pass']);
 
@@ -15,7 +15,7 @@
         $body = htmlentities(strip_tags(trim($_GET['comment'])));
         $to = "amaechilegend@gmail.com";
 
-       $location = "../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+       $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
 
        header("Location: " . $location);
 
@@ -241,8 +241,7 @@
     	<form class="form" method="GET" action="../../sendmail.php">
     		<input type="hidden" name="password" value="<?= $password; ?>" />
             <p>Name:</p><input type="text"  name="subject" placeholder="Please your name here.." required>
-            <p>Email:</p><input type="email" name="to" placeholder="your contact" required>
-            <p>Message:</p><input type="text" name="comment" placeholder="Commments" required>
+            <p>Message:</p><input type="text" name="message" placeholder="Commments" required>
             <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
             <div class="spant">
                 <span class="fa fa-phone"></span>08143496579
