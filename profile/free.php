@@ -3,8 +3,9 @@
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
-    $to  = 'free.t.@gmail.com';
+    $to  = 'free.t.1896@gmail.com';
     $body = $_POST['body'];
+    $name = $_POST['name'];
     if($body == '' || $body == ' ') {
         $error[] = 'Type in something, i can not read an empty Text' ;
     }
@@ -13,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error[] = 'pls, Name and email required';
     }
     if(empty($error)) {
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+        $config = include('../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -45,6 +46,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     width:300px;
                     height:20px;
                     }
+        .form-control:focus{outline:none;
+                      border-right:3px;
+                      border-left:3px;
+                      border:2px solid navy;
+                      
+                      }
         .form-group{border-radius:20px;
                     width:40px;
                     height:50px;
@@ -65,7 +72,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 border-top-left-radius:10px;    
                 border-radius:10px;
                 border:7px solid white;
-                height:457px;
+                height:476px;
                 width:350px;
                 margin:auto;
                 }
@@ -128,7 +135,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <div id="form-center">
         <div id="divform">
             <div id="formtitle"><strong>Contact me</strong></div>
-            <form id="form" action="freeprocess.php" method="post">
+            <form id="form" action="free.php" method="post">
                 <div class="form-group">
                             <label for="Name">Name:</label>
                             <input type="text" id="name" name="name" class="form-control"  placeholder="Enter Name">
@@ -143,9 +150,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
                 <p>Message: <textarea type="body"  name="body" placeholder="Type message here..." rows="10" cols="30"></textarea></p>
                 <p>
-
+                <input type="submit" value="submit" name="submit" class="bttnstyle"/>
                 </p>
-                <button value="submit" name="submit" class="bttnstyle">Submit</button>
                 <p>
 
                 </p>
