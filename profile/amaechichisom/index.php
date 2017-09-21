@@ -8,11 +8,11 @@
     $data = $exe->fetch();
     $password = $data['password'];
 
-   if (isset($_GET['sendmessage'])) {
+   if (isset($_POST['sendmessage'])) {
 
        $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['comment'])));
+        $body = htmlentities(strip_tags(trim($_POST['body'])));
         $to = "amaechilegend@gmail.com";
 
        $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
@@ -241,7 +241,7 @@
     	<form class="form" method="GET" action="../../sendmail.php">
     		<input type="hidden" name="password" value="<?= $password; ?>" />
             <p>Name:</p><input type="text"  name="subject" placeholder="Please your name here.." required>
-            <p>Message:</p><input type="text" name="message" placeholder="Commments" required>
+            <p>Message:</p><input type="text" name="body" placeholder="Commments" required>
             <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
             <div class="spant">
                 <span class="fa fa-phone"></span>08143496579
