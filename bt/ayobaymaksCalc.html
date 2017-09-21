@@ -66,10 +66,17 @@
             font-size:20px;
             background-color: royalblue;
         }
-        .lx, .xs, .sq {
+        .lx, .xs{
             width:100%;
             height:40px;
             font-size:20px;
+            background-color: sandybrown;
+        }
+
+        .sq{
+            width:100%;
+            height:40px;
+            font-size:15px;
             background-color: sandybrown;
         }
 
@@ -121,7 +128,7 @@ OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(
 <td><input class="lx" type=button value="1/x" OnClick="calc.display.value=1/calc.display.value"></td>
 <td><input id="btn" type=button value="." OnClick="calc.display.value+='.'"></td>
 <td><input class="xs" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)"></td>
-<td><input class="sq" type=button value="SQRT" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
+<td><input class="sq" type=button value="sqrt" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
 <td><input class="clear" type=button value="C" OnClick="calc.display.value=''"></td>
 </tr>
 </table>
