@@ -1,3 +1,4 @@
+
 .idea
 .DS_Store
 config.php
@@ -6,4 +7,3 @@ auto-deploy.php
 footer.php
 header.php
 PHPMailerAutoload.php
-profile/hammed01/Thumbs.db

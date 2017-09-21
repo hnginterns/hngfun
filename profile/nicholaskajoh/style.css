@@ -1,11 +1,13 @@
-/* Styles */
+  /* Styles */
 
 body {
   font-family: Georgia, Arial;
   margin: 0;
 }
 
+
 /* header */
+
 header {
   height: 80px;
   background-color: #e2e2e2;
@@ -18,7 +20,9 @@ header {
   font-family: Tahoma, Arial;
 }
 
+
 /* page */
+
 main {
   padding-left: 15%;
   padding-right: 15%;
@@ -33,19 +37,19 @@ img#dp {
   border-radius: 50%;
 }
 
-@media only screen 
-  and (min-width: 1200px) {
-    img#dp {
-      width: 250px;
-      height: 250px;
-    }
+@media only screen and (min-width: 1200px) {
+  img#dp {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .form-input {
   padding: 10px;
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   border-radius: 3px;
   border: 1px solid #555;
   width: 100%;
@@ -55,14 +59,17 @@ input[type="text"] {
   height: 25px;
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
   padding: 5px;
   border-radius: 3px;
   border: 1px solid #555;
   cursor: pointer;
 }
 
+
 /* footer */
+
 footer {
   font-family: Tahoma;
   padding-left: 25px;
@@ -75,4 +82,3 @@ footer ul {
 
 footer ul li {
   display: inline;
-}
