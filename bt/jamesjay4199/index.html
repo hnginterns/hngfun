@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title>Word Count</title>
+    <style>
+        *{
+           margin:0px;
+           padding:0px; 
+        }
+        body{
+            margin:20px auto;
+            width:90%;
+        }
+        #container{
+            margin:100px 300px;
+            padding:20px 50px;
+            height: 200px;
+            background-color: #3d9ee3;
+            width:300px;
+            border-radius: 20px;
+            border:solid 2px #2092e3;
+        }
+		h1{
+			text-shadow:2px 2px 2px #ccc;
+			text-align:center;
+		}
+		h1 span{
+			color:#fff;
+			text-shadow:2px 2px 2px #333;
+		}
+        input{
+            width:300px;
+            height:40px;
+            margin-top: 20px;
+            opacity: 1;
+            background-color:#3d9ee3;
+            outline:none;
+            font-size: 16px;
+            color:#fff;
+            padding-left: 20px;
+        }
+		input::placeholder{
+			color:#cfcfcf;
+		}
+        input:hover{
+            outline:none;
+            
+        }
+        div.answer{
+            display : block;
+            margin-top: 30px;
+            text-align: center;
+        }
+		#resultPane{
+			background-color:#f98202;
+			width:200px;
+			padding:10px;
+			font-size:20px;
+		}
+		#result{
+			border:1.3px solid black;
+			margin-left:20px;
+			padding:5px 10px;
+			font-size:25px;
+			color:#fff;
+			font-weight:bold;
+			width:30px;
+		}
+		hr{
+			margin-top:25px;
+		}
+		footer{
+			text-align:center;
+			margin-top:10px;
+			color:#aaa;
+		}
+    </style>
+    
+</head>
+<body>
+    <div id ="container">
+        <h1>WORD <span>COUNT</span></h1>
+        <input type="text" name = "Screen" id = "screen" placeholder="Enter String To Be Counted" >
+        <div class ="answer">
+            <span id ="resultPane">Number of letters </span> 
+            <span id = "result">0</span>
+            </p>
+        </div>
+        <script>
+                document.getElementById('screen').addEventListener("keyup", myFunction);
+           function myFunction(){
+               word = document.getElementById('screen').value.replace(/\s/g,'');  
+               document.getElementById('result').innerHTML = word.length;
+           }
+       </script>
+			<hr color ="#2092e3">
+       <footer>
+			Copyright &copy; James John James 2017
+	   </footer>
+    </div>
+</body>
+</html>

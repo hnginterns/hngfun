@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>GreetX</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+        <style>
+            body{
+                width: auto;
+                height: auto;
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+            }
+            header{
+                height: 80px;
+            }
+            header h1{
+                color: #0f222f;
+                position: relative;
+                top: 20%;
+                left: 7%;
+            }
+            header span{
+                color: magenta;
+                font-size: 40px;
+            }
+            main{
+                height: 500px;
+                text-align: center;
+                background: url('https://imgur.com/0z7Tmek.jpg');
+                background-attachment: fixed; 
+            }  
+            #greet{
+                color: #fff;
+                margin: auto;
+                padding-top:150px;
+                letter-spacing:2px;
+            }
+            #date{
+                color: #fff;
+                margin: auto;
+                letter-spacing:2px;
+            }
+            pre{
+                color:aqua;
+                font-style:italic;
+                letter-spacing:2px;
+            }
+            main span{
+                color: gold;
+            }
+            #userName{
+                margin: auto;
+                margin-top: 30px;
+                width: 350px;
+                height: 20px;
+                background: #fff;
+                border: 1px solid #0f222f;
+                border-radius: 3px;
+                padding:8px;
+                font-size: 15px;
+                color: #0f222f;
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+            }
+            #userName:focus{
+                border:1px solid gold;
+            }
+            #btn{
+                width:127px;
+                height: 38px;
+                margin: auto;
+                background-color: transparent;
+                color: #fff;
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+                border: 1px solid #fff;
+                border-radius:3px;
+            }
+            #exit{
+                width:127px;
+                height: 38px;
+                margin: auto;
+                background-color: transparent;
+                color: #fff;
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+                border: 1px solid #fff;
+                border-radius:3px;
+            }
+            #btn:hover{
+                background: #fff;
+                color: #0f222f;
+                -webkit-transition: width 1s;
+                transition: 1s;
+            }
+            footer{
+                font-family: 'Handlee', cursive, Arial, Helvetica, sans-serif;
+                font-size:12px;
+                color:#0f222f;
+                padding: 5px;
+                border-top: 1px solid #0f222f;
+                font-weight: bold;
+                text-align:center;
+            }
+            @keyframes fadeIn{
+                to{ opacity: 1;}
+            }
+            .fade-in{
+                opacity: 0;
+                animation: fadeIn 3s ease-in 1 forwards;
+            }
+            .is-paused {
+                animation-play-state: paused;
+            }
+            @keyframes fadeIn2 {
+                to{ opacity: 1;}
+            }
+            .fade-in2{
+                opacity: 0;
+                animation: fadeIn2 6s ease-in 1 forwards;
+            }
+            .is-paused2 {
+                animation-play-state: paused;
+            }
+            @keyframes fadeIn3 {
+                to{opacity:1;}
+            }
+            .fade-in3{
+                opacity: 0;
+                animation: fadeIn 6s ease-in 1 forwards;
+            }
+            .is-paused3 {
+                animation-play-state: paused;
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body onload="animate()">
+        <header>
+            <a href="jenigreetx.html"><h1>GREET<span>X</span></h1></a>
+        </header>
+
+        <main>
+
+            <p id="greet" class='js-fade fade-in is-paused'>HELLO <span>;)</span> </p>
+            <p id="date"></p>
+            <pre id="quote"></pre>
+
+           <input type="text" name="userName" id="userName" placeholder="Please Tell Me Your Name" class='js2-fade fade-in2 is-paused2' required>
+            <br><br><br>
+            <input type="submit" id="btn" value="&raquo;PROCEED&laquo;" onclick="greetx()" class='js3-fade fade-in3 is-paused3' >
+
+            <script type="text/javascript">
+                
+                function animate(){
+                    let el = document.querySelector('.js-fade');
+                    if (el.classList.contains('is-paused')){
+                        el.classList.remove('is-paused');
+                    }
+                    let al = document.querySelector('.js2-fade');
+                    if (al.classList.contains('is-paused2')){
+                        al.classList.remove('is-paused2');
+                    }
+                    let bl = document.querySelector('.js3-fade');
+                    if (bl.classList.contains('is-paused3')){
+                        bl.classList.remove('is-paused3');
+                    }
+                }
+
+                function greetx(){
+                    let hide = document.getElementById("userName");
+                    hide.style.display = 'none';
+                    let hide1 = document.getElementById("btn");
+                    hide1.style.display = 'none';
+                    let greetx;
+                    let userName = document.getElementById('userName').value;
+                    let d = new Date();
+                    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                    let today = days[d.getDay()];
+                    let month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+                    let thisMonth = month[d.getMonth()];
+                    let date = d.getDate();
+                    let year = d.getFullYear();
+                    let oge = d.getHours();
+                    if (oge.toString().length == 1){
+                        oge = '0'+ oge;
+                    }else{
+                        oge;
+                    }
+                    let minute = d.getMinutes();
+                    if (minute.toString().length == 1){
+                        minute = '0'+ minute;
+                    }else{
+                        minute;
+                    }
+                    let properGreeting;
+                    let tellDate;
+                    let quotes = ["A butterfly that fancies itself a bird, will be blown away by the wind",
+                                  "If you speak a proverb to a child and explain the same to him, the money\n that was used to marry the child's mother has been wasted",
+                                  "Because all lizards crawl on their bellies, one can't say which one is purging",
+                                  "He whose house is on fire, does not go about hunting rats",
+                                  "A bird that flies off the earth and lands on an anthill is still on the ground",
+                                  "He that beats the drum for the mad man to dance is no better than the mad man himself",
+                                  "No matter how beautiful and well crafted a coffin may look, it will not make anyone wish for death",
+                                  "When the root of a tree begins to decay, it spreads death to the branches",
+                                  "If your only tool is a hammer, you will see every problem as a nail",
+                                  "It is often said that anyone who swallows a mango whole has great faith in his anus"]
+                    if (/^[A-Za-z\s]+$/.test(userName) && !!userName.trim()){
+                        if (oge < 12 ){properGreeting = "Good Morning";}if (oge >= 12 && oge < 16 ){properGreeting = "Good Afternoon";}if (oge >= 16){properGreeting = "Good Evening";};
+                        greetx = properGreeting + " " + userName + "! How are you?";
+                        tellDate = "Today's date is " + today + ", " + thisMonth + " " + date + " " + year + ". The time is " + oge + ":" + minute;
+                        document.getElementById("greet").innerHTML = greetx;
+                        document.getElementById("date").innerHTML = tellDate;
+                        let q = Math.floor(Math.random() * 9);
+                        let display = quotes[q];
+                        document.getElementById("quote").innerHTML = '"'+ display + '"';
+                    }else{
+                        document.getElementById("greet").innerHTML = "Lol, I'm pretty sure that's not your name.<br>Please input your name, I know it's awesome!";
+                        let count = 3;
+                        setInterval(function(){
+                        count--;
+                        if (count == 0){
+                        window.location = 'jenigreetx.html'; }
+                        },1000);
+                    }
+
+                    }
+
+            </script>
+        
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2017 GREETX.   A PRODUCT BY OLIBIE JENNIFER CHIDERA</p> 
+        </footer>
+    </body>
+</html>
