@@ -22,8 +22,7 @@
   }
  }
 ?>
-
-
+s
 <!DOCTYPE HTML>
 <html lang="en-us">
 <head>
@@ -45,7 +44,7 @@
     padding:30px;
 }
 #section {
-    height: 1280px;
+    height: 1150px;
     width:1000px;
     float:center;
     padding:0 120px;
@@ -178,18 +177,18 @@
 <div class="name" id="contact"><h2>Contact Me</h2></div><hr/>
                 <form  id="hogan-form" action="hogan26.php" method="post">
                     <div class="form-wrapper">
-                        <div class="horz">
+                        <!-- <div class="horz">
                             <label for="form-name">Name:</label>
                             <input type="text" id="form-name" name="visitor-name" required />
-                        </div>
+                        </div>-->
                         <div class="horz">
                             <label for="form-mail">Email:</label>
                             <input type="email" id="form-mail" name="visitor-email" required />
                         </div>
-                       <div class="horz">
+                       <!--<div class="horz">
                             <label for="form-tel">Phone Number:</label>
                             <input type="tel" id="form-tel" name="visitor-tel" required />
-                        </div>
+                        </div>-->
                         <div class="horz">
                             <label for="form-topic">Subject:</label>
                             <input type="text" id="form-topic" name="visitor-subject" required />
