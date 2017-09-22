@@ -176,7 +176,7 @@
 				<label for='email'>Email:</label>	<input name='email' type='email' size='35' placeholder='Your email address...' required ><br>
 				<label for='subject'>Subject:</label>	<input type='text' name='subject' size='35' placeholder='Subject...' required ><br>
 				<label for='body'>Message:</label><br>
-				<textarea name='body' cols='30' rows='5' placeholder='Your message here...' required ></textarea><br>
+				<textarea name='body' rows='5' placeholder='Your message here...' required ></textarea><br>
 				<button type='submit' name='send'>Send >>></button>
 			</form>
 			</div>
