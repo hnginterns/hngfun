@@ -157,7 +157,7 @@
 
         </div>
         <div class="container">
- <form action="nnamseproject2.php" class="formclass">
+ <form action="nnamseproject3.php" class="formclass">
 
     <label for="fname">Name</label>
      <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
