@@ -112,7 +112,8 @@
 		input{
 			margin: 1%;
 			border: none;
-			border-bottom: 0.1em solid #424242
+			border-bottom: 0.1em solid #424242;
+			width: 100%;
 		}
 		textarea{
 			border:  none;
@@ -120,7 +121,8 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 1%;
-			margin-bottom: 1%';
+			margin-bottom: 1%;
+			width: 400px;
 			
 		}
 		form {
@@ -174,7 +176,7 @@
 				<label for='email'>Email:</label>	<input name='email' type='email' size='35' placeholder='Your email address...' required ><br>
 				<label for='subject'>Subject:</label>	<input type='text' name='subject' size='35' placeholder='Subject...' required ><br>
 				<label for='body'>Message:</label><br>
-				<textarea name='body' size='35' rows='5' placeholder='Your message here...' required ></textarea><br>
+				<textarea name='body' cols='30' rows='5' placeholder='Your message here...' required ></textarea><br>
 				<button type='submit' name='send'>Send >>></button>
 			</form>
 			</div>
