@@ -1,0 +1,77 @@
+<html>
+<head>
+<script>
+function Time(){
+ myTimer = setInterval(setClock,1000);
+function setClock(){	
+	  h=new Date().getHours();
+	   m=new Date().getMinutes();
+	    s=new Date().getSeconds();
+		if (s<10){
+			s = '0'+s;
+			  document.getElementById("clock").innerHTML=s
+		}
+		  document.getElementById("clock").innerHTML=h+':'+m+':'+s;
+		 document.getElementById("clocks").innerHTML=new Date().toLocaleTimeString();}
+
+}
+</script>
+
+<style>
+body{
+	background-color:#bcc8d1;   
+    
+	
+}
+.desc {
+font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    line-height: 25px;
+    color: white;
+    font-weight: 500;
+  margin:auto;
+  font-size:14px;
+}
+
+
+ #container{
+	margin-left:400px;
+	margin-top:20px ;
+	text-align:center;
+	width:30%;
+	height:400px;
+ }
+ #clock{
+	width:80%;
+		background-color:#000;
+	color:fff;
+	margin:0 2%;
+	padding:30px 0px;
+	border:30px solid #888;
+	font-size:40px;
+ }
+ #clocks{
+	width:80%;
+	background-color:#000;
+	color:fff;
+	margin:0 2%;
+	padding:20px 0px;
+	border:30px solid #efefef;
+	font-size:40px;
+ }
+</style>
+</head>
+<body onload = "Time()">
+<div id ="container">
+<h1>Dynamic Digital Clock</h1>
+
+<p id="clock">00:00:00</p>
+<p id="clocks">00:00:00</p>
+ 
+<br>
+  <pclass="desc">Clock design by <a href="#">wizzydayo</a> on <a href=#>HNGinternship</a></p>
+
+
+</div>
+</body>
+</html>
