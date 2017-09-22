@@ -43,7 +43,6 @@
             echo "enter mail, subject and message to send mail";
         }
     }
-?>
 
 if ($_POST['submit']) {
     if (mail ($to, $subject, $body, $from)) { 
@@ -52,4 +51,4 @@ if ($_POST['submit']) {
         echo '<p>Something went wrong, go back and try again!</p>'; 
     }
 }
-?>
+?>.
