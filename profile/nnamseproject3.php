@@ -156,9 +156,8 @@
             </p>
 
         </div>
-        <div class="container">
- <form action="nnamseproject3.php" class="formclass">
-
+        <div class="contact">
+ <form action="nnamseproject3.php" id = "contact-form" method = "POST" >
     <label for="fname">Name</label>
      <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
     <label for="email">email</label>
