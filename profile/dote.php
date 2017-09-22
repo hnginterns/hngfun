@@ -12,16 +12,26 @@
 			array_push($error, "Message body cannot be empty");
 		}
 			if (empty($error)){
-				//new mysqli()
+					$config = include('../config.php');
+				   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+				   $con = new PDO($dsn, $config['username'], $config['pass']);
+				   $exe = $con->query('SELECT * FROM password LIMIT 1');
+				   $data = $exe->fetch();
+				   $password = $data['password'];
+				   $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+				   header("location: $uri");
+				}
+				die();
 			}
 		
-	}
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Emmanuel Nelson - Profile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
             background-color: #fafafa;
@@ -101,14 +111,48 @@
 		}
 		input{
 			margin: 1%;
-			
+			border: none;
+			border-bottom: 0.1em solid #424242;
+			width: 100%;
 		}
 		textarea{
-			margin: 1%;
+			border:  none;
+			border-bottom:  0.1em solid #424242;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1%;
+			margin-bottom: 1%;
+			width: 400px;
+			
 		}
-	    	form{
-			align: middle;
-	    }
+		form {
+			display:  inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
+		#form{
+			display: block;
+			text-align:  center;
+			
+		}
+		#form label {
+			display: block;
+			text-align: center;
+		}
+		#form button {
+			border: 0.1em solid #424242;
+			padding: 0.5em;
+			display: block;
+			margin: 0.3em;
+			-webkit-transition-duration 0.5s;
+			transition-duration: 0.5s;
+			
+		}
+		#form button:hover {
+				background-color: #424242;
+				color: #fafafa;
+			}
 	</style>
 </head>
 <body>
@@ -125,26 +169,31 @@
 			<p class='orange'>
 				I am proudly from Akwa Ibom State.
 			</p>
+			<div id='form'>
 			<h3>Contact Me</h3>
 			<form action='' method='post'>
-				<label for='name'>Your Name:</label>	<input name='name' type='text'  placeholder='Your name here' required ><br>
-				<label for='email'>Email:</label>	<input name='email' type='email' placeholder='Your email address...' required ><br>
-				<label for='subject'>Subject:</label>	<input type='text' name='subject' placeholder='Subject...' required ><br>
-				<label for='message'>Message:</label><br>
-				<textarea name='body' placeholder='Your message here...' required ></textarea><br>
+				<label for='name'>Your Name:</label>	<input name='name' type='text'  size='35' placeholder='Your name here' required ><br>
+				<label for='email'>Email:</label>	<input name='email' type='email' size='35' placeholder='Your email address...' required ><br>
+				<label for='subject'>Subject:</label>	<input type='text' name='subject' size='35' placeholder='Subject...' required ><br>
+				<label for='body'>Message:</label><br>
+				<textarea name='body' rows='5' placeholder='Your message here...' required ></textarea><br>
 				<button type='submit' name='send'>Send >>></button>
 			</form>
+			</div>
 			</div>
 		
 	</div>
 		<footer id='foot'>
 			<table class='links'>
 				<thead>
+				<tr>
 					<td colspan='3'><h5>Find Me on:</h5>
+					</td>
+				</tr>
 					</thead>
 				<tr>
 					<td>
-						<img class='icons' src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" >  <a class='links' href="https://hnginterns.slack.com/team/dot.e" target="_blank">dot.e</a></td>...
+						<img class='icons' src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" >  <a class='links' href="https://hnginterns.slack.com/team/dot.e" target="_blank">dot.e</a></td>
 								<td><img class='icons' src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="github" >  <a href="https://github.com/dot-e" target="_blank">dot-e</a></td>
 								<td>
 									<img class='icons' src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-128.png' alt='twitter' > <a class='links' href='http://twitter.com/NLIrve' target='_blank' >NLIrve</a>
