@@ -1,7 +1,19 @@
 <html>
 <head>
-  <title>String Count</title>
+  <title>Beginners Submission</title>
   <style type="text/css">
+    
+    body {
+      font-size: 30px;
+      font-family: "Arial";
+    }
+    
+    p {
+      font-size: 30px;
+      font-family: "Cursive", "Orbitron", serif;
+      
+    }
+   
     .button {
       padding: 15px 25px;
       font-size: 24px;
@@ -12,19 +24,16 @@
       background-color: #4CAF50;
       border: none;
       border-radius: 15px;
-      box-shadow: 0 9px #999;
+      box-shadow: 0 3px #999;
       margin-bottom: 10px;
       margin-top: 25px
     }
-
     .button:hover {background-color: #3e8e41}
-
     .button:active {
       background-color: #3e8e41;
       box-shadow: 0 5px #666;
       transform: translateY(4px);
     }
-
     input[type=text] {
         width: 130px;
         box-sizing: border-box;
@@ -39,91 +48,138 @@
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
     }
-
     input[type=text]:focus {
         width: 100%;
     }
-
     .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        max-width: 600px;
+        max-width: 650px;
         margin: auto;
         text-align: center;
+        padding: 20px;
     }
-
     .container {
         padding: 0 16px;
+        border: 1px dotted white;
+        background-color: #000;
+        color: #fff;
     }
-    
-    #result {
-      margin-top: 10px;
-      font-size = 18px;
-      fontifamily = cursive;
-      
+    .clock{
+      top: 50%;
+      left: 50%;
+      color: #fff;
+      font-size: 80px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 0px 5px 0px 5px;
+      font-family: "Orbitron"
     }
-
+    .h1 {
+      border: 2px solid white;
+      margin-top: 20px;
+      background-color: #3e8e41;
+    }
   </style>
 
   <script>
-
       function countString()
       {
         var nameElement = document.getElementById("stringInput");
         var theName = nameElement.value;
-        var newString = theName.replace(/ /g,"")
-        var end = newString.length;
-        //document.write('There is/are ' + end + ' letter(s) in ' + theName);
-        document.getElementById("result").innerHTML = 'There is/are ' + end + ' letter(s) in ' + theName;
+        var newstring = theName.replace(/ /g,"")
+        var end = newstring.length;
+        if (newstring.length === 0){
+          document.getElementById("result").innerHTML = 'Baba insert string';
+        } else if (newstring.length === 1) {
+          document.getElementById("result").innerHTML = 'There is only one letter in ' + theName;
+        } else{
+          document.getElementById("result").innerHTML = 'There are ' + end + ' letters in ' + theName;
+
+        }
       }
 
+
   </script>
+
+  <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+
+        if(h == 0){
+          h = 12;
+        }
+
+        if(h > 12){
+          h = h - 12;
+          session = "PM";
+        }
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000);
+      }
+
+      showTime();
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&effect=neon" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100&effect=neon">
 
   
 </head>
 
-<body>
-  
-  
-  Hello! World, 
-  
-<script> 
-var myDate = new Date();
-
-if ( myDate.getHours() < 12 )  
-{ 
-    document.write("Good Morning!"); 
-} 
-else if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) 
-{ 
-    document.write("Good Afternoon!"); 
-} 
-else if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) 
-{ 
-    document.write("Good Evening!"); 
-} 
-else { 
-    document.write("I'm not sure what time it is!"); 
-} 
-document.write("<br /><br /> The time is: ") 
-document.write( myDate.toLocaleTimeString() ); 
-  
-</script>  
-    
+<body onload="showTime()">
 
   <div class="card">
   <div class="container">
-    <h1>Learning Team String Count</h1>
-    <p>To check the number of letters in any string insert the string in the box below</p>
-    <input id="stringInput" type="text"> <br />
-    <input type="button" class="button" value="Check!" onClick="countString()">
-    
+    <h1 class="h1">Learning Team</h1>
+
+
+    <script language="JavaScript"> 
+      var myDate = new Date(); 
+  
+      if ( myDate.getHours() < 12 )  { 
+        document.write("Good Morning!"); 
+      } else if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) { 
+        document.write("Good Afternoon!"); 
+      } else if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) { 
+        document.write("Good Evening!"); 
+      } 
+      else { 
+        document.write("I'm not sure what time it is!"); 
+      }
+      document.write("<br /><br /> The time is: ") 
+      document.write( myDate.toLocaleTimeString() ); 
+    </script> 
+
+      <br />
+      <br />
+      <br />
+
+      <div id="MyClockDisplay" class="clock font-effect-neon"></div> <br />
+
+
+
+    <div class='box'>
+      <p>Input string below!</p>
+      <input id="stringInput" type="text" onkeydown = "if (event.keyCode == 13)
+                          document.getElementById('coun').click()"> <br />
+      <input type="button" class="button" id="coun" value="Check!" onClick="countString()">
+    </div>
     <div id="result"><p></p></div>
   </div>
 </div> 
   
 
-  </body>    
-
-
-
+  </body>   
 </html>

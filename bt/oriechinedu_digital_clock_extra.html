@@ -82,7 +82,7 @@
 	 		</tr>
 	 	</table>
 	 </div>
-	
+	 <input type="text" name="word"  id="word" onchange="countWord">
  <script type="text/javascript">
  	const clock = ()=>{
  		const hourHolder = document.querySelector('#hour');
@@ -92,6 +92,7 @@
  	
  		let date = new Date();
  		let hour = date.getHours();
+ 		hour = hour>12? hour-12: hour;
  		let mins = date.getMinutes();
  		let sec = date.getSeconds();
  		 mins = checkDigit(mins);
@@ -100,7 +101,7 @@
         hourHolder.innerHTML = hour;
         minHolder.innerHTML = mins;
         secHolder.innerHTML = sec;
-        if (hour < 12){
+        if (date.getHours() < 12){
         	amOrPmHolder.innerHTML = 'AM';
         }
         else{

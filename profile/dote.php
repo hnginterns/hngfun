@@ -31,6 +31,7 @@
 <html>
 <head>
     <title>Emmanuel Nelson - Profile</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body{
             background-color: #fafafa;
