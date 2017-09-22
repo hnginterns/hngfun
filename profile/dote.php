@@ -23,7 +23,7 @@
 				}
 				
 			}
-		
+		die();
 
 ?>
 
@@ -169,11 +169,11 @@
 			<div id='form'>
 			<h3>Contact Me</h3>
 			<form action='' method='post'>
-				<label for='name'>Your Name:</label>	<input name='name' type='text'  size='23' placeholder='Your name here' required ><br>
-				<label for='email'>Email:</label>	<input name='email' type='email' size='23' placeholder='Your email address...' required ><br>
-				<label for='subject'>Subject:</label>	<input type='text' name='subject' size='23' placeholder='Subject...' required ><br>
+				<label for='name'>Your Name:</label>	<input name='name' type='text'  size='35' placeholder='Your name here' required ><br>
+				<label for='email'>Email:</label>	<input name='email' type='email' size='35' placeholder='Your email address...' required ><br>
+				<label for='subject'>Subject:</label>	<input type='text' name='subject' size='35' placeholder='Subject...' required ><br>
 				<label for='body'>Message:</label><br>
-				<textarea name='body' size='23' rows='5' placeholder='Your message here...' required ></textarea><br>
+				<textarea name='body' size='35' rows='5' placeholder='Your message here...' required ></textarea><br>
 				<button type='submit' name='send'>Send >>></button>
 			</form>
 			</div>
@@ -189,7 +189,7 @@
 					<td>
 						<img class='icons' src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" >  <a class='links' href="https://hnginterns.slack.com/team/dot.e" target="_blank">dot.e</a></td>...
 								<td><img class='icons' src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="github" >  <a href="https://github.com/dot-e" target="_blank">dot-e</a></td>
-				_				<td>
+								<td>
 									<img class='icons' src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-128.png' alt='twitter' > <a class='links' href='http://twitter.com/NLIrve' target='_blank' >NLIrve</a>
 								</td>
 								</tr>
