@@ -21,7 +21,7 @@
 				   $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 				   header("location: $uri");
 				}
-				
+				die();
 			}
 		
 
