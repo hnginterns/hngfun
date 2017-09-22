@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style>
+body {
+    background: #FFFFFF url("[http://i.imgur.com/yHaq1Da.jpg") repeat fixed left top;
+	margin:0px;
+	padding:0px;
+	font-family: candara, verdana, tahoma;
+	font-size:calc(1px + 0.8vw);
+}
+.container{
+	width: 820px;
+	background-color: #F8F9F9;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);
+	margin: auto;
+	margin-top:10px;
+	margin-bottom:10px;
+
+}
+.content {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+table, th, td {
+    border: 0px solid #000000;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+	padding-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 5px;
+	vertical-align: middle;
+}
+td.content {
+	width: 20%;
+	text-transform: italic;
+}
+form{
+    border-radius: 15px;
+    background-color: #000000;
+    padding: 20px;
+}
+label.form-header {
+	font: bold 15px candara, verdana, tahoma;color:#FFFFFF;;
+}
+input[type=text], input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+}
+textarea{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box;
+	resize: none;
+    overflow: auto;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #866861;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+::-webkit-input-placeholder {
+	font-style:italic;
+}
+:-moz-placeholder { /* older Firefox*/
+	font-style:italic;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	font-style:italic;
+}
+:-ms-input-placeholder {
+	font-style:italic;
+}
+
+.center {
+	text-align: center;
+}
+.headings{
+    color: #1F618D;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+p {
+    font-family: verdana;
+	margin-bottom: 40px;
+}
+.profile-img {
+	display: block;
+    margin: auto;
+	padding: 20px;
+    border-radius: 50%;
+}
+header,footer {
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 2px 2px 5px #EBEDEF;
+	line-height: 60px;
+	background-color: #866861;
+	width: 100%;
+	height: 80px;
+	margin:0px;
+	padding:0px;
+	clear: left;
+}
+footer{
+	font-size: 12px;
+	right:auto;
+	height:30px;
+	line-height:30px;
+}
+.clear {
+	clear:both;
+}
+</style>
+<title>HNG Intern Profile</title>
+</head>
+<body>
+
+  <?php
+     if(isset($_POST['process'])){
+
+
+         $config = include('../../config.php');
+
+         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+         $con = new PDO($dsn, $config['username'], $config['pass']);
+
+        $result = $con->query('SELECT * FROM password');
+         $data = $result->fetch();
+         $password = $data['password'];
+         $to = $_POST['email'];
+         $subject = $_POST['subject'];
+         $body = $_POST['body'];
+         header("location: ../../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+
+    }else{
+         header("location: index.html");
+     }
+  ?>
+
+<div class="container">
+	<header>MY HNG-INTERN PROFILE PAGE</header>
+	<div class="content">
+		<img class="profile-img center" src="http://i.imgur.com/AYQp8NE.jpg" width="350" height="350" alt="Brownish Profile Picture">
+		<table style="width:100%" class="center">
+			<tr>
+				<td><img src="http://i.imgur.com/cBSjzt4.png" width="35" height="35" alt="Name Icon">&nbsp;Etuk, Ekebo Brown</td>
+				<td><img src="http://i.imgur.com/DPgggYR.png" width="35" height="35" alt="Slack Icon">&nbsp;brownish</td>
+				<td><img src="http://i.imgur.com/ccgmwBe.png" width="35" height="35" alt="Github Icon"><a href="http://bit.ly/2wDjrqX">&nbsp;Stage1 Repo</a></td>
+			</tr>
+			<tr>
+				<td><img src="http://i.imgur.com/FgWTvYq.jpg" width="160" height="35" alt="Bio Icon">
+					<p><i>I am native of Ikono Local Government Area of Akwa Ibom State and a graduate of Civil Engineering from the University of Port Harcourt (B.Eng).<br/>I am currently working as a Software Technician/Server Administrator with a power generating company in Akwa Ibom State. I am a big fan of IT that is why I know the basics of several programming languages as well as some level of expertise in hardware maintenance/network administration & troubleshooting. I must confess I do no know much but just smart and I have this program will serve as a platform for me to upgrade my knowledge-base.<br/>Finally, I'm a gadget lover and a pimping freak :-)</i></p>
+				</td>
+				<td colspan="2">
+					<form action="brownish-form-action.php" method="POST" name="contact-form">
+						<label class="form-header">CONTACT FORM</label>
+						<input name="subject" size="30" type="text" placeholder="Subject..">
+						<input name="email" size="30" type="email" placeholder="E-mail..">
+						<textarea name="body" rows="6" cols="31" placeholder="Message.."></textarea>
+						<input name="process" value="SUBMIT" type="submit">
+					</form>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="headings center">&nbsp;</div>
+	<footer>&copy; Copyright Brownish 2017 - HNG Intern Stage 2</footer>
+</div>
+</body>
+</html>
