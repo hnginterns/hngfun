@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
       <div class="content">
       <div class="photo">
-          <center><img src="http://hng.fun/profile/enoch_mbaebie/image/img.jpg" alt="Try_Refreshing_page"/></center>
+          <center><img src="https://i.imgur.com/nqu8ZYm.jpg" alt="image"/></center>
       </div> 
       <div class= "text"><center>
         <p>I'm a software engineer in training based in Lagos,passionate about technologies,<br>a contributor to the open source communities and mentee to Mark Essien.</p></center>
@@ -54,7 +54,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 			
                 
-    <center><figure><p><a href="https://github.com/EnochMbaebie/HNG-Internship"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure></center>
+    <center><figure><p><a href="http://hng.fun/profile/enoch_mbaebie/index.html"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure></center>
 			
 			<section class="grid-4">
                 <center><h2>Contact</h2></center>
