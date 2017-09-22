@@ -1,10 +1,6 @@
-<?p>
+<?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-<<<<<<< HEAD
     $error = array();
-=======
-    $error = [];
->>>>>>> 8fa514c0dc472e15c7a184b182b372f48951f46c
     $subject = $_POST['subject'];
     $to  = 'nseabasiokwong@yahoo.com';
     $body = $_POST['commentbox'];
@@ -16,11 +12,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error[] = 'Your name and email are important to me, TYPE them in';
     }
     if(empty($error)) {
-<<<<<<< HEAD
         $config = include('../../config.php');
-=======
-        $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
->>>>>>> 8fa514c0dc472e15c7a184b182b372f48951f46c
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
