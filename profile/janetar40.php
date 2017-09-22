@@ -120,7 +120,7 @@ div{
        <!-- Contacts section starts-->
       <div align="center" class="section">
             
-           <form action = "janemike.php" id = "contact-form" method = "POST" >
+           <form action = "janetar40.php" id = "contact-form" method = "POST" >
                 <input type = "text" name = "subject" placeholder= "Enter subject for Name" required><br><br>
                 <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
                 <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
