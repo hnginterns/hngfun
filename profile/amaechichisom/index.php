@@ -1,28 +1,28 @@
 <?php
 
-   $config = include('../../config.php');
+    $config = include('../../config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
     $con = new PDO($dsn, $config['username'], $config['pass']);
 
-   $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
     $data = $exe->fetch();
     $password = $data['password'];
 
-   if (isset($_GET['sendmessage'])) {
+    if (isset($_GET['sendmessage'])) {
 
-       $subject = "Hello";
+        $subject = "Hello";
         $password = htmlentities(strip_tags(trim($password)));
-        $body = htmlentities(strip_tags(trim($_GET['comment'])));
+        $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "amaechilegend@gmail.com";
 
-       $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+        $location = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
 
-       header("Location: " . $location);
+        header("Location: " . $location);
 
    }
 
 ?>
-<DOCTYPE html>
+<!doctype html>
 <html>
 <head>
     <meta charset = "utf-8"/>
@@ -68,7 +68,8 @@
 			padding :0px;
 			margin-top:5px;
 			font: bold 20px 'Montserrat',sans-serif;
-			color: #776472;		}
+			color: #776472;		
+        }
 		.about h5{
 			padding-top:5px;
 			margin: 0px;
@@ -114,7 +115,7 @@
         .fa-slack:hover {
             color:#322f30;
             background-color: #03bb85;
-            border-radius: 50%;
+            border-radius: 10%;
         }
         .fa-github {
             padding:10px 12px;
@@ -129,7 +130,7 @@
         .fa-github:hover {
             color:#322f30;
             background-color: #c161ce;
-            border-radius: 50%;
+            border-radius: 10%;
         }
         .fa-facebook {
             padding:10px 12px;
@@ -145,11 +146,14 @@
         .fa-facebook:hover {
             color:#322F30;
             background-color: #00aced;
-            border-radius: 50%;
+            border-radius: 10%;
         }
         .repo a{
                  color: #80ab82;
-                 text-decoration:none;
+                 text-decoration:underline;
+        }
+        .repo a:hover{
+            color:#000;
         }
         h3{
         	background:#bac7be;
@@ -165,6 +169,9 @@
 
 
         }
+		.contact h2{
+			border-bottom: 2px solid white;
+		}
         .form div
                {
                margin:60px;
@@ -200,7 +207,7 @@
                resize:none;
                border:0;
                font-family:'Montserrat',sans-serif;
-               border-bottom:2px solid #
+               border-bottom:2px solid #e3e3e3;
         }
         .fa-android:hover{
             color:#00aced;
@@ -240,8 +247,9 @@
         <h2>CONTACT ME</h2>
     	<form class="form" method="GET" action="../../sendmail.php">
     		<input type="hidden" name="password" value="<?= $password; ?>" />
-            <p>Name:</p><input type="text"  name="subject" placeholder="Please your name here.." required>
-            <p>Message:</p><input type="text" name="message" placeholder="Commments" required>
+            <p>Name:</p><input type="text"  name="subject" placeholder="Please your name here.." required/>
+			<p>Email:</p><input type="email" name="to" placeholder="Let me know how to contact you back.." required/>
+            <p>Message:</p><input type="text" name="body" placeholder="Commments" required/>
             <button type="submit" name="sendmessage" class="sendmessage">Send Message</button>
             <div class="spant">
                 <span class="fa fa-phone"></span>08143496579
