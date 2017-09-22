@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my calculator</title>
+	<style type="text/css">
+		body {
+			background-image: url(images.jpg);
+			background-size: cover;
+
+			background-repeat: repeat-x;
+		}
+		.body{
+			width: 400px;
+			height: 600px;
+			background-color: grey;
+			margin-right: auto;
+			margin-left: auto;
+			border-top-right-radius: 20px;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		#display{
+			width: 392px;
+			height: 100px;
+			background-color: ;
+			margin-top: 38px;
+			border-radius: 5px;
+			font-size: 30px;
+			text-indent: 20px;
+		}
+		#keys{
+			width: 65px;
+			height: 70px;
+			font-weight: bold;
+			font-size: 30px;
+			border-radius: 5px;
+			margin:0.5px;
+		}
+		.btn{
+			margin-left: 20px;
+			margin-top: 110px;
+
+		}
+		.scientific{
+			wi
+		}
+		.logo{
+			font-family: cursive;
+			color: cyan;
+			margin-left: 195px;
+
+		}
+		body{background-image:}
+	</style>
+
+</head>
+<body>
+<div class="body">
+<div class="logo">
+	designed by Daviditon
+</div>
+		<div class="">
+			<input type="text" name="" id="display">
+		</div>
+			
+			<div class="scientific">
+			
+
+				
+			</div>
+			<br>
+			<div class="btn">
+					<div class="numbers rw 1">
+						<input type="button" value='9' id='keys' onclick='show("9")'>&nbsp;
+						<input type="button" value='8' id='keys' onclick='show("8")'>&nbsp;
+						<input type="button" value='7' id='keys' onclick='show("7")'>&nbsp;
+						<input type='button' value='C' id='keys' onclick='show("s")'>&nbsp;
+
+					</div>
+					<div class="numbers rw 2">
+						<input type="button" value='6' id='keys' onclick='show("6")'>&nbsp;
+						<input type="button" value='5' id='keys' onclick='show("5")'>&nbsp;
+						<input type="button" value='4' id='keys' onclick='show("4")'>&nbsp;
+						<input type='button' value='-' id='keys' onclick='show("-")'>
+						<input type='button' value='Sq' id='keys' onclick='pow()'>
+					</div>
+					<div class="numbers rw 3">
+						<input type="button" value='3' id='keys' onclick='show("3")'>&nbsp;
+
+						<input type="button" value='2' id='keys' onclick='show("2")'>&nbsp;
+						<input type="button" value='1' id='keys' onclick='show("1")'>&nbsp;
+						<input type='button' value='*' id='keys' onclick='show("*")'>&nbsp;
+						<input type='button' value='/' id='keys' onclick='show("/")'>
+						
+
+					</div>
+					<div class="numbers rw 4">
+						<input type="button" value='0' id='keys' onclick='show("0")'>&nbsp;
+						<input type="button" value='.' id='keys' onclick='show(".")'>&nbsp;
+						<input type="button" value='1/x' id='keys' onclick='show("1/")'>&nbsp;
+						<input type='button' value='+' id='keys' onclick='show("+")'>&nbsp;
+						<input type='button' value='=' id='keys' onclick='answer()'>
+
+					</div>
+
+
+
+			</div>
+
+
+
+
+	
+</div>
+ <script>
+	  function show(x){
+	  	if (x === 's'){
+	  		document.getElementById('display').value = '';
+	  	}else{
+	  	document.getElementById('display').value+=x;
+	  }
+	  }
+	  function answer(){
+	  	let soln = document.getElementById('display').value;
+	  	ans = eval(soln);
+	  	document.getElementById('display').value = ans;
+	  }
+	  function pow(){
+	  	document.getElementById('display').value *= document.getElementById('display').value;
+	  }
+ 	</script>
+  <!-- end of javascript-->
+
+
+</body>
+</html>
