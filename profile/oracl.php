@@ -231,25 +231,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
 			<section class="grid-4">
                 <center><h2>Contact</h2></center>
-                         <form class="cd-form floating-labels" method="POST">
-              		<fieldset>
-
-
-              			<div class="icon">
-              				<label class="cd-label" for="cd-name">Subject</label>
-              				<input class="user" type="text" name="subject" id="cd-name" required>
-              		  </div>
-
-              			<div class="icon">
-              				<label class="cd-label" for="cd-textarea">Message</label>
-                    	<textarea class="message" name="message" id="cd-textarea" required></textarea>
-              			</div>
-
-              			<div>
-              		   <input type="submit" value="Send Message">
-              		  </div>
-              		</fieldset>
-              	</form>
+                         <ul class="social-icons">
+                   
+                    <li><a href="mailto:mroracle8@gmail.com" class="social-icon"> <i class="fa fa-envelope"></i>Email Me Now</a></li>
+                   
+                </ul>
                 </section>
 		</div>
 				
