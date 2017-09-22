@@ -1,0 +1,196 @@
+
+<!Doctype html>  
+<html>  
+    <head>  
+        <title>Daniel's Calculator</title>  
+
+<!-- CSS Code -->  
+<style>  
+body {  
+    background-color:darkcyan;  
+    margin: 0px auto;  
+  
+}  
+
+.dan1{  
+ background: #097C9B;  
+ border: 6px solid black;  
+ padding: 10px;  
+ margin-left: 450px;  
+ min-width: 14em;  
+ max-width: 25em;
+ margin-top: 35px;  
+   
+}  
+
+h1{  
+ text-align: center;
+padding-right: 150px;
+ font-size: 40px;  
+ color: #003652;  
+   
+}  
+  
+#lcd{  
+ text-align: right;  
+ width: 23em;  
+ height: 40px;  
+ font-size: 18px;  
+   
+}  
+  
+#lcdu{  
+ color: grey;  
+ text-align: right;  
+ width: 27.6em;  
+ height: 45px;  
+ font-size: 15px;  
+   
+}  
+  
+button{  
+ background-color: #fff;  
+ width: 80px;  
+ height: 60px;  
+ font-size: 20px;  
+ border: 1px solid #097C9B;  
+   
+  
+}  
+  
+button:hover{  
+  background-color: #509CA9;   
+    
+ }  
+  #calc
+    {
+        width:400px;height:300px;
+    }
+#btn
+    {
+        width:100%;height:40px;font-size:20px;
+    }
+
+#dan{
+    width: 100%;
+    height: 95px;
+    background-color: black;
+    overflow: hidden;
+}
+h1{
+    color: white
+}
+
+#pp{
+    margin-left: 280px;
+    font-weight: bold;
+    color: brown;
+    font-size: 18px;
+}
+.special{
+            width:100%;
+            height:40px;
+            font-size:15px;
+            background-color: sandybrown;
+        }
+
+.special1{
+            width:100%;
+            height:40px;
+            font-size:15px;
+            background-color: brown;
+        }
+
+        p{
+            margin-left: 400px;
+            color: white;
+        }
+#note{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+
+}
+
+h2{
+    color: orange;
+    margin-left: 400px;
+}
+    
+</style>  
+</head>  
+<body>
+<div id="dan">  
+<h1>stage5 task (Basic Calculator - My Choice)</h1>
+</div>  
+<div class="dan1">  
+<form name="calc">
+<table id="calc" border=4>
+<tr>
+<td colspan=5><input id="btn" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"></td>
+<td style="display:none"><input name="M" type="number"></td>
+</tr>
+<tr>
+<td><input class="special" type=button value="MC" OnClick="calc.M.value=''"></td>
+<td><input id="btn" type=button value="7" OnClick="calc.display.value+='7'"></td>
+<td><input id="btn" type=button value="8" OnClick="calc.display.value+='8'"></td>
+<td><input id="btn" type=button value="9" OnClick="calc.display.value+='9'"></td>
+<td><input class="special" type=button value="+" OnClick="calc.display.value+='+'"></td>
+</tr>
+<tr>
+<td><input class="special" type=button value="MS" OnClick="calc.M.value=calc.display.value"></td>
+<td><input id="btn" type=button value="4" OnClick="calc.display.value+='4'"></td>
+<td><input id="btn" type=button value="5" OnClick="calc.display.value+='5'"></td>
+<td><input id="btn" type=button value="6" OnClick="calc.display.value+='6'"></td>
+<td><input class="special" type=button value="-" OnClick="calc.display.value+='-'"></td>
+</tr>
+<tr>
+<td><input class="special" type=button value="MR" OnClick="calc.display.value=calc.M.value"></td>
+<td><input id="btn" type=button value="1" OnClick="calc.display.value+='1'"></td>
+<td><input id="btn" type=button value="2" OnClick="calc.display.value+='2'"></td>
+<td><input id="btn" type=button value="3" OnClick="calc.display.value+='3'"></td>
+<td><input class="special" type=button value="x" OnClick="calc.display.value+='*'"></td>
+</tr>
+<tr>
+<td><input class="special" type=button value="M+" OnClick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))"></td>
+<td><input id="btn" type=button value="0" OnClick="calc.display.value+='0'"></td>
+<td><input id="btn" type=button value="+/-" 
+
+OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))">
+
+</td>
+<td><input id="btn" type=button value="sqrt" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
+<td><input class="special" type=button value="/" OnClick="calc.display.value+='/'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="1/x" OnClick="calc.display.value=1/calc.display.value"></td>
+<td><input id="btn" type=button value="." OnClick="calc.display.value+='.'"></td>
+<td><input id="btn" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)"></td>
+<td><input class="special1" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)"></td>
+<td><input class="special" type=button value="C" OnClick="calc.display.value=''"></td>
+</tr>
+</table>
+</form>
+
+        
+</div> 
+<p id="pp">This is a basic calculator designed by @archibongdaniel13 as a stage5 task during internship with hotels.ng</p>
+
+<div id="note">
+    <h2>Note:</h2>
+
+    <p><b>MC:</b> clears the memory from the calculator</p>
+    <p><b>M+:</b> Add numbers saved from previous calculation(s) to the current result</p>
+    <p><b>MS:</b> Saves result into calculator memory</p>
+    <p><b>MR:</b> Recall results added to M+</p>
+    <p><b>sqrt:</b> Normal square root</p>
+    <p><b>1/x:</b> Simply means 1 divided by any value say 'x' e. g 1/3 = 0.333333333 etc</p>
+    <p><b>x2:</b> This is the same as 2 race to power 2 which is equal to 2x2 = 4 etc</p>
+
+
+</div>
+    
+    
+  
+</body>  
+</html>  
