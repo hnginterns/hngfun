@@ -13,7 +13,8 @@
 		}
 			if (empty($error)){
 				$details = include_once('../config.php');
-				$db = new mysqli ($details['host'], $details['username'], $details['password'], $details['dbname']);
+				 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+				$db = new PDO($dsn, $config['username'], $config['pass']);
 				if ($db->connect_error){
 					die('DB CONNECTION ERROR');
 				}else{
@@ -30,6 +31,7 @@
 	}
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
