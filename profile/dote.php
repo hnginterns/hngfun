@@ -186,11 +186,14 @@
 		<footer id='foot'>
 			<table class='links'>
 				<thead>
+				<tr>
 					<td colspan='3'><h5>Find Me on:</h5>
+					</td>
+				</tr>
 					</thead>
 				<tr>
 					<td>
-						<img class='icons' src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" >  <a class='links' href="https://hnginterns.slack.com/team/dot.e" target="_blank">dot.e</a></td>...
+						<img class='icons' src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" >  <a class='links' href="https://hnginterns.slack.com/team/dot.e" target="_blank">dot.e</a></td>
 								<td><img class='icons' src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="github" >  <a href="https://github.com/dot-e" target="_blank">dot-e</a></td>
 								<td>
 									<img class='icons' src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-128.png' alt='twitter' > <a class='links' href='http://twitter.com/NLIrve' target='_blank' >NLIrve</a>
