@@ -12,14 +12,14 @@
 			array_push($error, "Message body cannot be empty");
 		}
 			if (empty($error)){
-				$details = include_once('../config.php');
-			        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-					$con = new PDO($dsn, $config['username'], $config['pass']);
-					$exe = $con->query('SELECT * FROM password LIMIT 1');
-					$data = $exe->fetch();
-					$password = $data['password'];
-					$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-					header("location: $uri");
+					$config = include('../config.php');
+				   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+				   $con = new PDO($dsn, $config['username'], $config['pass']);
+				   $exe = $con->query('SELECT * FROM password LIMIT 1');
+				   $data = $exe->fetch();
+				   $password = $data['password'];
+				   $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+				   header("location: $uri");
 				}
 				
 			}
@@ -120,6 +120,7 @@
 			margin-right: auto;
 			margin-top: 1%;
 			margin-bottom: 1%';
+			
 		}
 		form {
 			display:  inline-block;
@@ -130,9 +131,11 @@
 		#form{
 			display: block;
 			text-align:  center;
+			
 		}
 		#form label {
 			display: block;
+			text-align: center;
 		}
 		#form button {
 			border: 0.1em solid #424242;
@@ -166,11 +169,11 @@
 			<div id='form'>
 			<h3>Contact Me</h3>
 			<form action='' method='post'>
-				<label for='name'>Your Name:</label>	<input name='name' type='text'  placeholder='Your name here' required ><br>
-				<label for='email'>Email:</label>	<input name='email' type='email' placeholder='Your email address...' required ><br>
-				<label for='subject'>Subject:</label>	<input type='text' name='subject' placeholder='Subject...' required ><br>
-				<label for='message'>Message:</label><br>
-				<textarea name='body' placeholder='Your message here...' required ></textarea><br>
+				<label for='name'>Your Name:</label>	<input name='name' type='text'  size='23' placeholder='Your name here' required ><br>
+				<label for='email'>Email:</label>	<input name='email' type='email' size='23' placeholder='Your email address...' required ><br>
+				<label for='subject'>Subject:</label>	<input type='text' name='subject' size='23' placeholder='Subject...' required ><br>
+				<label for='body'>Message:</label><br>
+				<textarea name='body' size='23' rows='5' placeholder='Your message here...' required ></textarea><br>
 				<button type='submit' name='send'>Send >>></button>
 			</form>
 			</div>
