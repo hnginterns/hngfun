@@ -113,7 +113,7 @@
 			margin: 1%;
 			border: none;
 			border-bottom: 0.1em solid #424242;
-			width: 100%
+			width: 100%;
 		}
 		textarea{
 			border:  none;
@@ -121,8 +121,8 @@
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 1%;
-			margin-bottom: 1%';
-			width: 100%;
+			margin-bottom: 1%;
+			width: 400px;
 			
 		}
 		form {
