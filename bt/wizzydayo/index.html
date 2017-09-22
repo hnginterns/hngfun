@@ -1,77 +1,117 @@
 <html>
 <head>
-<script>
-function Time(){
- myTimer = setInterval(setClock,1000);
-function setClock(){	
-	  h=new Date().getHours();
-	   m=new Date().getMinutes();
-	    s=new Date().getSeconds();
-		if (s<10){
-			s = '0'+s;
-			  document.getElementById("clock").innerHTML=s
-		}
-		  document.getElementById("clock").innerHTML=h+':'+m+':'+s;
-		 document.getElementById("clocks").innerHTML=new Date().toLocaleTimeString();}
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<title>DIGITAL CLOCK</title>
+<style type="text/css">
+body{
+background-color:#121212;
+font-size:20px;}
+table.clock {
+ text-align: center;
+ border: thick solid blue;
+  width:350px;
+  padding: 5px;
+  margin: auto;
+}
 
+td, input.clock2 {
+  text-align: center;
+  border: 1px solid gray;
+  font: .9em verdana, helvetica, arial, sans-serif;
+  padding-bottom: .5em;
+  color:blue;
+  
+}
+
+.clock3 {
+  text-align: center;
+  font: .7em verdana, arial, helvetica, ms sans serif;
+  border: none;
+}
+  .inp{
+  text-transform:bold;
+  background-color:gray;
+  color: black;
+  padding:20px auto;
+  margin:auto;
+  }
+
+</style>
+
+  <script language="javascript">
+// Created by: Sandeep Gangadharan :: http://www.sivamdesign.com/scripts/
+
+function formatTime() {
+  now = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+
+  if (document.clock.sivamtime[0].checked) {
+    if (min <= 9) {
+      min = "0" + min;
+    }
+    if (sec <= 9) {
+      sec = "0" + sec;
+    }
+    if (hour > 12) {
+      hour = hour - 12;
+      add = " p.m.";
+    } else {
+      hour = hour;
+      add = " a.m.";
+    }
+    if (hour == 12) {
+      add = " p.m.";
+    }
+    if (hour == 00) {
+      hour = "12";
+    }
+
+    document.clock.sivam.value = ((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add;
+  }
+
+  if (document.clock.sivamtime[1].checked) {
+    if (min <= 9) {
+      min = "0" + min; }
+    if (sec <= 9) {
+      sec = "0" + sec; }
+    if (hour < 10) {
+      hour = "0" + hour; }
+    document.clock.sivam.value = hour + ':' + min + ':' + sec;
+  }
+
+  setTimeout("formatTime()", 1000);
 }
 </script>
+	<!--
+    	This script downloaded from www.JavaScriptBank.com
+    	Come to view and download over 2000+ free javascript at www.JavaScriptBank.com
+	-->
 
-<style>
-body{
-	background-color:#bcc8d1;   
-    
-	
-}
-.desc {
-font-family: 'Orbitron', sans-serif;
-    font-size: 35px;
-    line-height: 25px;
-    color: white;
-    font-weight: 500;
-  margin:auto;
-  font-size:14px;
-}
-
-
- #container{
-	margin-left:400px;
-	margin-top:20px ;
-	text-align:center;
-	width:30%;
-	height:400px;
- }
- #clock{
-	width:80%;
-		background-color:#000;
-	color:fff;
-	margin:0 2%;
-	padding:30px 0px;
-	border:30px solid #888;
-	font-size:40px;
- }
- #clocks{
-	width:80%;
-	background-color:#000;
-	color:fff;
-	margin:0 2%;
-	padding:20px 0px;
-	border:30px solid #efefef;
-	font-size:40px;
- }
-</style>
 </head>
-<body onload = "Time()">
-<div id ="container">
-<h1>Dynamic Digital Clock</h1>
+<body onload=formatTime()><form name="clock">
+<table class="clock" bgcolor="orange" width="200" height="150">
+ <tr>
+  <td class="clock2">
+  <h2>  Digital Time 12/24 Format</h2>
+  </td>
+ </tr>
+ <tr>
 
-<p id="clock">00:00:00</p>
-<p id="clocks">00:00:00</p>
- 
-<br>
-  <pclass="desc">Clock design by <a href="#">wizzydayo</a> on <a href=#>HNGinternship</a></p>
+  <td>
+    <input class="clock2 inp" type="text" name="sivam" size="12"><br>
+  </td>
+ </tr>
+ <tr>
+  <td>
+    <label class="clock3" for="1"><input type="radio" id="1" name="sivamtime" checked>12 
+	Hour Format</label><br>
+    <label class="clock3" for="2"><input type="radio" id="2" name="sivamtime">24 
+	Hour Format</label>
 
-
-</div>
-</body>
-</html>
+  </td>
+ </tr>
+</table>
+</form>
+	</body>
