@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+  <head>
+    <title>iCalculator</title>
+  </head>
+<body bgcolor="#2ABCA7">
+ 	<center><br>
+ 	<h1><B><font color = "white" style = "font-size = 70"> Javascript calculator </font> </h1></B>
+ 	<hr size = 20 color = "black">
+ 	<div style = "width:261px "; background: "FF4081">
+ 	<form name="Calculator">
+ 		<input name="display" placeholder="0" style="width: 254px; height:60px; text-align:right; font-size:30; border-radius:8px: margin :3px"/>
+ 		<br>
+ 		 <br>
+ 		<input type="Button" value="7" onclick="document.Calculator.display.value += '7'" style = "width: 60px; height:60px; font-size:30; border-radius:8px;margin:3px" />
+ 		<input type="Button" value="8" onclick="document.Calculator.display.value += '8'" style = "width: 60px; height:60px; font-size:30; border-radius:8px"/>
+ 		<input type="Button" value="9" onclick="document.Calculator.display.value += '9'" style = "width: 60px; height:60px; font-size:30; border-radius:8px" />
+ 		<input type="Button" value="+" onclick="btnplus()" style = "width: 60px; height:60px; font-size:30; border-radius:8px" />
+ 		
+
+ 		
+ 		<input type="Button" value="4" onclick="document.Calculator.display.value += '4'" style = "width: 60px; height:60px;font-size:30; border-radius:8px; margin:3px" />
+ 		<input type="Button" value="5" onclick="document.Calculator.display.value += '5'" style = "width: 60px; height:60px;font-size:30; border-radius:8px"/>
+ 		<input type="Button" value="6" onclick="document.Calculator.display.value += '6'" style = "width: 60px; height:60px;font-size:30; border-radius:8px"/>
+ 		<input type="Button" value="-" onclick="btnsub()" style = "width: 60px; height:60px;font-size:30; border-radius:8px" />
+ 		
+
+ 		
+ 		<input type="Button" value="1" onclick="document.Calculator.display.value += '1'" style = "width: 60px; height:60px;font-size:30; border-radius:8px; margin:3px" />
+ 		<input type="Button" value="2" onclick="document.Calculator.display.value += '2'" style = "width:60px; height: 60px;font-size:30; border-radius:8px" />
+ 		<input type="Button" value="3" onclick="document.Calculator.display.value += '3'" style = "width: 60px;height: 60px;font-size:30; border-radius:8px"/>
+ 		<input type="Button" value="*" onclick="btnresult()" style = "width:60px; height: 60px; font-size:30; border-radius:8px" />
+ 	
+ 		<input type="Button" value="0" onclick="document.Calculator.display.value += '0'" style = "width: 60px; height:60px;font-size:30; border-radius:8px;margin:3px" />
+ 		<input type="Button" value="%" onclick="btnmod()" style = "width: 60px; height:60px;font-size:30; border-radius:8px" />
+
+ 		<input type="Button" value="." onclick="btndot()" style = "width: 60px; height:60px;font-size:30; border-radius:8px"  />
+
+ 		<input type="Button" value="/" onclick="btndiv()" style = "width: 60px; height:60px;font-size:30; border-radius:8px"/>
+ 		<input type="Button" value="=" onclick="document.Calculator.display.value = eval(document.Calculator.display.value)" style = "width: 124px; height:60px; font-size:30; border-radius:8px; margin :3px"/>
+ 		<input type="Button" value="C" onclick="btnclear()" style = "width: 124px; height:60px; font-size:30; border-radius:8px" />
+ 	</form></div>
+ 	<br>
+ 	<hr size = 20 color = "black">
+
+ 	<script>
+ 	function btnplus()
+ 	{  document.Calculator.display.value += "+";
+ 		document.Calculator.display.style.textAlign="right";} 
+    function btnsub()
+ 	{  document.Calculator.display.value += "-";
+ 		document.Calculator.display.style.textAlign="right";}
+ 	function btnresult()
+ 	{  document.Calculator.display.value += "*";
+ 		document.Calculator.display.style.text_align="right";}
+ 	function btnmod()
+ 	{  document.Calculator.display.value += "%";
+ 		document.Calculator.display.style.textAlign="right";}
+ 	function btndot()
+ 	{  document.Calculator.display.value += ".";
+ 		document.Calculator.display.style.textAlign="right";}
+ 	function btndiv()
+ 	{  document.Calculator.display.value += "/";
+ 		document.Calculator.display.style.textAlign="right";} 
+ 	function btnclear()
+ 	{  document.Calculator.display.value = "";
+ 		document.Calculator.display.style.textAlign="right";} 
+ 		
+ 	</script>
+</center>
+</BODY>
+</HTML>
