@@ -23,8 +23,7 @@
   }
  ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <style>
         body {
@@ -32,7 +31,7 @@
             margin:0;
             padding:0;
         }
-        .container {
+        .contact {
             width: 60%;
             margin:0 auto;
             text-align:center;
@@ -89,7 +88,7 @@
 
     <style type="text/css">
     
-    .container{
+    .contact{
         background-color: white;
         padding: 10px;
     } 
@@ -124,7 +123,7 @@
     <title> hng.fun/profile/controltam </title>
 
     <body>
-        <div class="container">
+        <div class="contact">
             <header>
                 <h1>
                     Nnamse Richard Akwa
@@ -173,9 +172,5 @@
  </form>
 </div>
 
-
-
-
-    </body>
-
+  </body>
 </html>
