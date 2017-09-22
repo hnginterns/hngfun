@@ -70,8 +70,8 @@
 			
 			
     </div>
-<fieldset2>
-    <p><h3>Send a message</h3>
+
+    <h3>Send a message</h3>
                             <div class="form">
                        <form action=" " method="POST">
                            <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
@@ -84,7 +84,7 @@
                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea><p>
                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
                             </form>
-	   </fieldset2>
+</div>
       
 	<div class="main">
 	
