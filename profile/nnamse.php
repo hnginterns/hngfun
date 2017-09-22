@@ -99,29 +99,11 @@ body {
             <p style="background-color:blue;
                text-align: center;
                 <a href="">Link to task one</a>
-            </p>
-
-        </div>
-        <div class="contact">
- <form action="nnamse.php" d = "contact-form" method = "POST" >
-    <label for="fname">Name</label>
-     <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
-    <label for="email">email</label>
-     <input type="text" id="email" class="put" name="email" placeholder="Your email address is..."><br>
-    <label for="subject">subject</label>
-     <input type="text" id="subject" class="put" name="subject" placeholder="Subject of email..."><br>
-    <textarea id="" classs="commentbox" placeholder="Type your message here" rows="15" cols="90"></textarea><br>
-  <p>
-    
-  </p>
-      <input type="submit" value="Submit">
-
- </form>
-</div>
-
-
-
-
-    </body>
-
+            
+  <form action = "nnamse.php" id = "contact-form" method = "POST" >
+        <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
+        <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
+        <br><input type ="submit" name="submit" value ="Send Message">
+      </form>
+</body>
 </html>
