@@ -268,7 +268,11 @@
                         }        
                     } else if (oge1 == 0){
                         oge1 = 12;
+<<<<<<< HEAD
+                        minute1 += ' AM';
+=======
                         seconds1 += ' AM';
+>>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
                     }
                     else{
                         if (oge1.toString().length == 1){
@@ -287,10 +291,34 @@
                         document.getElementById("greet").innerHTML = greetx;
                         document.getElementById("date").innerHTML = tellDate;
                         document.getElementById("date1").innerHTML = tellDate1;
+<<<<<<< HEAD
+                        document.getElementById("count").innerHTML = countx;
+                        let q = Math.floor(Math.random() * 9);
+                        let display = quotes[q];
+                        document.getElementById("quote").innerHTML = '"'+ display + '"';
+                    }else{
+                        document.getElementById("greet").innerHTML = "Lol, I'm pretty sure thats not your name.<br>Please input your name, I know it's awesome!";
+                        let count = 3;
+                        setInterval(function(){
+                        count--;
+                        if (count == 0){
+                        window.location = 'jenigreetx.html'; }
+                        },1000);
+                    }
+
+                    }
+                function keydown(x){
+                    if (x.keyCode == 13){
+                        greetx();
+                    }
+                }
+                
+=======
                     
                 }
                 
                 
+>>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
             </script>
         
         </main>
