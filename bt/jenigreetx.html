@@ -40,6 +40,16 @@
                 margin: auto;
                 letter-spacing:2px;
             }
+            #date1{
+                color: #fff;
+                margin: auto;
+                letter-spacing:2px;
+            }
+            #count{
+                color: red;
+                margin: auto;
+                letter-spacing:2px;
+            }
             pre{
                 color:aqua;
                 font-style:italic;
@@ -136,16 +146,18 @@
     </head>
     <body onload="animate()">
         <header>
-            <a href="index.html"><h1>GREET<span>X</span></h1></a>
+            <a href="jenigreetx.html"><h1>GREET<span>X</span></h1></a>
         </header>
 
         <main>
 
             <p id="greet" class='js-fade fade-in is-paused'>HELLO <span>;)</span> </p>
             <p id="date"></p>
-            <pre id="quote"></pre>
+            <p id="date1"></p>
+            <p id ="count"></p>
+            <pre id="quote"></pre>           
 
-           <input type="text" name="userName" id="userName" placeholder="Please Tell Me Your Name" class='js2-fade fade-in2 is-paused2' required>
+            <input type="text" name="userName" id="userName" placeholder="Please Tell Us Your Name" class='js2-fade fade-in2 is-paused2' required>
             <br><br><br>
             <input type="submit" id="btn" value="&raquo;PROCEED&laquo;" onclick="greetx()" class='js3-fade fade-in3 is-paused3' >
 
@@ -173,6 +185,7 @@
                     hide1.style.display = 'none';
                     let greetx;
                     let userName = document.getElementById('userName').value;
+                    let count = userName.replace(/\s/g, "").length;
                     let d = new Date();
                     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
                     let today = days[d.getDay()];
@@ -181,19 +194,41 @@
                     let date = d.getDate();
                     let year = d.getFullYear();
                     let oge = d.getHours();
+                    let oge1 = d.getHours();
                     if (oge.toString().length == 1){
                         oge = '0'+ oge;
-                    }else{
-                        oge;
-                    }
+                        }else{
+                            oge;
+                        }
                     let minute = d.getMinutes();
+                    let minute1 = d.getMinutes();
                     if (minute.toString().length == 1){
                         minute = '0'+ minute;
                     }else{
                         minute;
                     }
+                    if (minute1.toString().length == 1){
+                        minute1 = '0'+ minute1;
+                    }else{
+                        minute1;
+                    }
+                    if (oge1 > 12){
+                        oge1 -= 12;
+                        if (oge1.toString().length == 1){
+                        oge1 = '0'+ oge1;
+                        minute1 += ' PM';
+                        }else{
+                            oge1;
+                            minute1 += ' PM';
+                        }        
+                    }else{
+                        oge1;
+                        minute1 += ' AM';
+                    }                  
+                    
                     let properGreeting;
                     let tellDate;
+                    let tellDate1;
                     let quotes = ["A butterfly that fancies itself a bird, will be blown away by the wind",
                                   "If you speak a proverb to a child and explain the same to him, the money\n that was used to marry the child's mother has been wasted",
                                   "Because all lizards crawl on their bellies, one can't say which one is purging",
@@ -204,22 +239,26 @@
                                   "When the root of a tree begins to decay, it spreads death to the branches",
                                   "If your only tool is a hammer, you will see every problem as a nail",
                                   "It is often said that anyone who swallows a mango whole has great faith in his anus"]
-                    if (userName!= ""){
+                    if (/^[A-Za-z\s]+$/.test(userName) && !!userName.trim()){
                         if (oge < 12 ){properGreeting = "Good Morning";}if (oge >= 12 && oge < 16 ){properGreeting = "Good Afternoon";}if (oge >= 16){properGreeting = "Good Evening";};
                         greetx = properGreeting + " " + userName + "! How are you?";
-                        tellDate = "Today's date is " + today + ", " + thisMonth + " " + date + " " + year + ". The time is " + oge + ":" + minute;
+                        tellDate = "Today's date is " + today + ", " + thisMonth + " " + date + " " + year + ".";
+                        tellDate1 = "The time is " + oge + ":" + minute + " or rather " + oge1 + ":" + minute1;
+                        countx = "Did you know that the name you entered has " + count +" characters?";
                         document.getElementById("greet").innerHTML = greetx;
                         document.getElementById("date").innerHTML = tellDate;
+                        document.getElementById("date1").innerHTML = tellDate1;
+                        document.getElementById("count").innerHTML = countx;
                         let q = Math.floor(Math.random() * 9);
                         let display = quotes[q];
                         document.getElementById("quote").innerHTML = '"'+ display + '"';
                     }else{
-                        document.getElementById("greet").innerHTML = "Please input your name, I'm sure it's awesome!";
-                        let count = 2;
+                        document.getElementById("greet").innerHTML = "Lol, I'm pretty sure thats not your name.<br>Please input your name, I know it's awesome!";
+                        let count = 3;
                         setInterval(function(){
                         count--;
                         if (count == 0){
-                        window.location = 'index.html'; }
+                        window.location = 'jenigreetx.html'; }
                         },1000);
                     }
 
