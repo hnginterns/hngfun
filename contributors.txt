@@ -7387,5 +7387,6 @@ adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (394) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
 (395) Aboderin Micheal (Slack : Mroracle Githun :Mroracle8)
 (396) Enobong Victor (Slack: Enobong, Github: Enobong100)
+(397) Anthony Godwin (slack: @TONY GODWIN, github: @anthonyekpog)
 
 >>>>>>> 85559fdd09a9de7badf0525da9e7211b16ee5481
