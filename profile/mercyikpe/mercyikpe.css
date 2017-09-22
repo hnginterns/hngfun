@@ -45,7 +45,7 @@
 		}
 		
 		fieldset {
-			width: 50%;
+			width: 30%;
 			float: right;
 		}
 		fieldset2 {
@@ -75,7 +75,7 @@
 		
 		label {
 			display: inline-block;
-			width: 200px;
+			width: 150px;
 			text-align: right;
 		}
 		
@@ -83,7 +83,7 @@
 		input, textarea {
 			margin-top: 5px;
 			font: 1em sans-serif;
-			width: 200px;
+			width: 250px;
 			box-sizing: border-box;
 
 		
