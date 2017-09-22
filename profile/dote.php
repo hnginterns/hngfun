@@ -120,6 +120,7 @@
 			margin-right: auto;
 			margin-top: 1%;
 			margin-bottom: 1%';
+			
 		}
 		form {
 			display:  inline-block;
@@ -130,6 +131,7 @@
 		#form{
 			display: block;
 			text-align:  center;
+			
 		}
 		#form label {
 			display: block;
