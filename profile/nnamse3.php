@@ -84,10 +84,6 @@ body {
 <div>
                 <img src= "https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/21728033_1594144067302303_2987783540613644003_n.jpg?_nc_eui2=v1%3AAeEPGcTHlnEQ7CdEXGROBcWOQr-XnY-VNVSyoN_lF2Z_2kgQ6peB10gSXmvtJZ4yrCE1L2VgctycopegFRU-9Fpgu_aH4H5j8btbvi4aOGsCng&oh=48579c932800a453606d2045bfbd8162&oe=5A15D0D9" width="200" height="210" alt="">
             </div>
-            <p style="background-color: blue;
-                      text-align:center;
-                <P>email:nnamseakwa@yahoo.com<br> <a href="https://www."nnamseakwa@yahoo.com/"></a><br> slack:@richtech</P>
-            </div> 
 
             <div class="me">
                 <p>
@@ -98,8 +94,7 @@ body {
                  <h2> Follow me on </h2>
                  <p><strong>slack:</strong> </p> @richteck
                  </div>
-            
-  <form action = "nnamse2.php" id = "contact-form" method = "POST" >
+        <form action = "nnamse3.php" id = "contact-form" method = "POST" >
         <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
         <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
         <br><input type ="submit" name="submit" value ="Send Message">
