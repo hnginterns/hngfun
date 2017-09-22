@@ -54,7 +54,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 			
                 
-    <center><figure><p><a href="https://github.com/EnochMbaebie/HNG-Internship"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure></center>
+    <center><figure><p><a href="http://hng.fun/profile/enoch_mbaebie/index.html"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure></center>
 			
 			<section class="grid-4">
                 <center><h2>Contact</h2></center>
