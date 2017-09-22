@@ -12,14 +12,14 @@
 			array_push($error, "Message body cannot be empty");
 		}
 			if (empty($error)){
-				$details = include_once('../config.php');
-			        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-					$con = new PDO($dsn, $config['username'], $config['pass']);
-					$exe = $con->query('SELECT * FROM password LIMIT 1');
-					$data = $exe->fetch();
-					$password = $data['password'];
-					$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-					header("location: $uri");
+					$config = include('../config.php');
+				   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+				   $con = new PDO($dsn, $config['username'], $config['pass']);
+				   $exe = $con->query('SELECT * FROM password LIMIT 1');
+				   $data = $exe->fetch();
+				   $password = $data['password'];
+				   $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+				   header("location: $uri");
 				}
 				
 			}
