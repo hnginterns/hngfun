@@ -40,7 +40,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
       <div class="content">
       <div class="photo">
-          <center><img src="http://hng.fun/profile/enoch_mbaebie/image/img.jpg" alt="Try_Refreshing_page"/></center>
+          <center><img src="https://i.imgur.com/nqu8ZYm.jpg" alt="image"/></center>
       </div> 
       <div class= "text"><center>
         <p>I'm a software engineer in training based in Lagos,passionate about technologies,<br>a contributor to the open source communities and mentee to Mark Essien.</p></center>
