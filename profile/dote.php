@@ -13,22 +13,17 @@
 		}
 			if (empty($error)){
 				$details = include_once('../config.php');
-				 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-				$db = new PDO($dsn, $config['username'], $config['pass']);
-				if ($db->connect_error){
-					die('DB CONNECTION ERROR');
-				}else{
-					$exe = $db->query('SELECT * FROM password LIMIT 1');
+			        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+					$con = new PDO($dsn, $config['username'], $config['pass']);
+					$exe = $con->query('SELECT * FROM password LIMIT 1');
 					$data = $exe->fetch();
 					$password = $data['password'];
 					$uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 					header("location: $uri");
-    
 				}
 				
 			}
 		
-	}
 
 ?>
 
