@@ -23,8 +23,7 @@
   }
  ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <style>
         body {
@@ -32,7 +31,7 @@
             margin:0;
             padding:0;
         }
-        .container {
+        .contact {
             width: 60%;
             margin:0 auto;
             text-align:center;
@@ -89,7 +88,7 @@
 
     <style type="text/css">
     
-    .container{
+    .contact{
         background-color: white;
         padding: 10px;
     } 
@@ -124,7 +123,7 @@
     <title> hng.fun/profile/controltam </title>
 
     <body>
-        <div class="container">
+        <div class="contact">
             <header>
                 <h1>
                     Nnamse Richard Akwa
@@ -156,9 +155,8 @@
             </p>
 
         </div>
-        <div class="container">
- <form action="nnamseproject2.php" class="formclass">
-
+        <div class="contact">
+ <form action="nnamseproject3.php" id = "contact-form" method = "POST" >
     <label for="fname">Name</label>
      <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
     <label for="email">email</label>
@@ -174,9 +172,5 @@
  </form>
 </div>
 
-
-
-
-    </body>
-
+  </body>
 </html>
