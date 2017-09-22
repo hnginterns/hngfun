@@ -4,7 +4,7 @@
         <title>GreetX</title>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-        <style>
+        <style type="text/css">
             body{
                 width: auto;
                 height: auto;
@@ -157,7 +157,7 @@
             <p id ="count"></p>
             <pre id="quote"></pre>           
 
-            <input type="text" name="userName" id="userName" placeholder="Please Tell Us Your Name" class='js2-fade fade-in2 is-paused2' required>
+            <input type="text" name="userName" id="userName" placeholder="Please Type Your Name and Press Enter/Click Proceed" onkeypress="return keydown(event)" class='js2-fade fade-in2 is-paused2' required>
             <br><br><br>
             <input type="submit" id="btn" value="&raquo;PROCEED&laquo;" onclick="greetx()" class='js3-fade fade-in3 is-paused3' >
 
@@ -211,7 +211,7 @@
                         minute1 = '0'+ minute1;
                     }else{
                         minute1;
-                    }
+                    }                    
                     if (oge1 > 12){
                         oge1 -= 12;
                         if (oge1.toString().length == 1){
@@ -221,7 +221,13 @@
                             oge1;
                             minute1 += ' PM';
                         }        
-                    }else{
+                    } else if (oge1 == 0){
+                        oge1 = 12;
+                        minute1 += ' AM';
+                    }
+                    else{
+                        if (oge1.toString().length == 1){
+                        oge1 = '0'+ oge1;}
                         oge1;
                         minute1 += ' AM';
                     }                  
@@ -263,7 +269,12 @@
                     }
 
                     }
-
+                function keydown(x){
+                    if (x.keyCode == 13){
+                        greetx();
+                    }
+                }
+                
             </script>
         
         </main>
