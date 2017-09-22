@@ -12,12 +12,21 @@
 			array_push($error, "Message body cannot be empty");
 		}
 			if (empty($error)){
-				//new mysqli()
+					$config = include('../config.php');
+				   $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+				   $con = new PDO($dsn, $config['username'], $config['pass']);
+				   $exe = $con->query('SELECT * FROM password LIMIT 1');
+				   $data = $exe->fetch();
+				   $password = $data['password'];
+				   $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+				   header("location: $uri");
+				}
+				
 			}
 		
-	}
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -101,14 +110,46 @@
 		}
 		input{
 			margin: 1%;
-			
+			border: none;
+			border-bottom: 0.1em solid #424242
 		}
 		textarea{
-			margin: 1%;
+			border:  none;
+			border-bottom:  0.1em solid #424242;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 1%;
+			margin-bottom: 1%';
+			
 		}
-	    	form{
-			align: middle;
-	    }
+		form {
+			display:  inline-block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
+		#form{
+			display: block;
+			text-align:  center;
+			
+		}
+		#form label {
+			display: block;
+			text-align: center;
+		}
+		#form button {
+			border: 0.1em solid #424242;
+			padding: 0.5em;
+			display: block;
+			margin: 0.3em;
+			-webkit-transition-duration 0.5s;
+			transition-duration: 0.5s;
+			
+		}
+		#form button:hover {
+				background-color: #424242;
+				color: #fafafa;
+			}
 	</style>
 </head>
 <body>
@@ -125,15 +166,17 @@
 			<p class='orange'>
 				I am proudly from Akwa Ibom State.
 			</p>
+			<div id='form'>
 			<h3>Contact Me</h3>
 			<form action='' method='post'>
-				<label for='name'>Your Name:</label>	<input name='name' type='text'  placeholder='Your name here' required ><br>
-				<label for='email'>Email:</label>	<input name='email' type='email' placeholder='Your email address...' required ><br>
-				<label for='subject'>Subject:</label>	<input type='text' name='subject' placeholder='Subject...' required ><br>
-				<label for='message'>Message:</label><br>
-				<textarea name='body' placeholder='Your message here...' required ></textarea><br>
+				<label for='name'>Your Name:</label>	<input name='name' type='text'  size='35' placeholder='Your name here' required ><br>
+				<label for='email'>Email:</label>	<input name='email' type='email' size='35' placeholder='Your email address...' required ><br>
+				<label for='subject'>Subject:</label>	<input type='text' name='subject' size='35' placeholder='Subject...' required ><br>
+				<label for='body'>Message:</label><br>
+				<textarea name='body' size='35' rows='5' placeholder='Your message here...' required ></textarea><br>
 				<button type='submit' name='send'>Send >>></button>
 			</form>
+			</div>
 			</div>
 		
 	</div>
