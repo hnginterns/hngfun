@@ -2,8 +2,8 @@
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
    $subject = $_POST['subject'];
-    $to  = 'uwemekong11@gmail.com';
-    $body = $_POST['message'];
+    $to  = 'nnamseakwa@yahoo.com';
+    $body = $_POST['body'];
    if($body == '' || $body == ' ') {
       $error[] = 'Message cannot be empty.';
     }
@@ -25,17 +25,17 @@
 <!doctype html>
 <html>
 <head>
-<title>uwem ekong</title>
+<title>nnamse</title>
 <style>
    h3{
-        background-color:pink;
+        background-color:blue;
     
   }
   img {
     display: block;
     margin: auto;
     width:20%;
-    border: solid pink 8px;
+    border: solid blue 8px;
     border-radius: 7px;
 }
 html{
@@ -79,26 +79,25 @@ body {
 </head>
 <body>
 <div>
-<h3 align="center">Emmanuel Ekong <h3>
+        <h3 align="center">NNAMSE <h3>
 </div>
 <div>
-<img src = "https://scontent.flos3-1.fna.fbcdn.net/v/t1.0-9/21077619_1947862742134422_1340597298783231812_n.jpg?_nc_eui2=v1%3AAeGBwCcYbv6SoaAOxl3htBWpp7xjKPoUylEKYxLL-Ttc4wH_sYQHM2yZWs2JehFnEUxIwRAnSjkQK44lEWhMlbjZAz0sf9UyR2ABDNnjiE1kAg&oh=7c960ff9d93c12de7251a580bd6cd2ef&oe=5A4FBEF5" height="200px" width="200px">
-</div>
-<div class="bio">
-<p> ABOUT ME: <p>
-my name is emmanuel ekong  actually SOFTWARE PROGRAMING<br>
-has change my mood of thinking and bring
-back success to my life<br> by giving me the best solution to solve my problems.
-</div>
-<div class="contact">
-<h2> Follow me on </h2>
-<p><strong>slack:</strong> </p> @uwemekong11
-</div>
-  <form action = "uwem11.php" id = "contact-form" method = "POST" >
-        <input type = "text" name = "subject" placeholder= "Enter subject for Name" required><br><br>
+                <img src= "https://scontent.flos2-1.fna.fbcdn.net/v/t1.0-9/21728033_1594144067302303_2987783540613644003_n.jpg?_nc_eui2=v1%3AAeEPGcTHlnEQ7CdEXGROBcWOQr-XnY-VNVSyoN_lF2Z_2kgQ6peB10gSXmvtJZ4yrCE1L2VgctycopegFRU-9Fpgu_aH4H5j8btbvi4aOGsCng&oh=48579c932800a453606d2045bfbd8162&oe=5A15D0D9" width="200" height="210" alt="">
+            </div>
+
+            <div class="me">
+                <p>
+                    My name is nnamse akwa,<br> i studied piloting in south africa leading to a  South African private pilot license and helicopter plioting in united state<br> i am facinated and drawn to technology in particular information technology and look forward to launch a career as both front end and back end programmer<br>application of I.T in engineering and appiled sciences is one of my area of interest as well as e-commerce
+                </p>
+            </div>
+            <div class="contact">
+                 <h2> Follow me on </h2>
+                 <p><strong>slack:</strong> </p> @richteck
+                 </div>
+        <form action = "nnamse3.php" id = "contact-form" method = "POST" >
         <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
         <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
         <br><input type ="submit" name="submit" value ="Send Message">
       </form>
 </body>
-</html
+</html>

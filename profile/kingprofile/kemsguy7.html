@@ -165,16 +165,18 @@ footer{
          <p>  I like the art of coding and hope to be a professional web developer someday.</p>
 	  </i></p>
 				</td>
-				<td colspan="2">
-					 <form action="clarksworld.php" method="POST" name="contact-form">
-						<label class="form-header">CONTACT FORM</label>
-						<input name="subject" size="30" type="text" placeholder="Subject..">
-						<input name="email" size="30" type="email" placeholder="E-mail..">
-						<textarea name="body" rows="6" cols="40" placeholder="Message.."></textarea>
-						<input name="process"  value="SUBMIT" type="submit">
-						 
+				 
+    <div class="contact">
+      <form class="form-vertical" action="doziex.php" method="POST">
+      <h2 class="htext">Contact Form</h2>
+      <input type="text" class="textform" name="full_name" placeholder="Fullname" required><br>
+      <input type="email" class="textform" name="to" placeholder="Email" required><br>
+            <input type="text" class="textform" name="subject" placeholder="subject" required><br>
+      <textarea name="body" cols="10" rows="6" class="textform" required></textarea><br><br>
+      <button class="submit btnform" name="submit" value="submit">Submit</button>
+    </form>
+  </div>
 
-					</form>
 
 					
 				</td>
