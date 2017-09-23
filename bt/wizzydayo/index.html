@@ -1,335 +1,10 @@
 <<<<<<< HEAD
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Flip Clock with CSS / Javascript</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-  
-  
-      <style>
-      
-      body,
-html {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #f65041;
-  font-family: Lato, arial;
-}
-* {
-  box-sizing: border-box;
-}
-.transitions-off * {
-  -webkit-transition: none !important;
-  transition: none !important;
-}
-time {
-  position: absolute;
-  top: 150px;
-  left: 0;
-  right: 0;
-  margin: 0;
-  display: block;
-  text-align: center;
-}
-.dial-container {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  margin: auto;
-  -webkit-perspective: 1000;
-          perspective: 1000;
-  height: 100px;
-  width: 65px;
-  cursor: default;
-}
-.dial-container.dial-container--hh {
-  width: 120px;
-}
-span {
-  width: 65px;
-  height: 50px;
-}
-.dial {
-  top: 0;
-  height: 25px;
-/* overflow: hidden */
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  position: absolute;
-  z-index: 3;
-  -webkit-transform-origin: 50px 50px;
-          transform-origin: 50px 50px;
-}
-span {
-  display: block;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 50px;
-  overflow: hidden;
-  background: #462c2e;
-  color: #fff;
-  text-align: center;
-  line-height: 100px;
-  font-size: 80px;
-  font-weight: bold;
-  border-radius: 10px 10px 0 0;
-}
-.dial-container--ss span,
-.dial-container--mm span {
-  text-align: right;
-  padding-right: 2px;
-  border-radius: 10px 0 0 0;
-}
-.dial-container--hh span {
-  text-align: center;
-  min-width: 120px;
-}
-.dial-container--s span,
-.dial-container--m span {
-  text-align: left;
-  padding-left: 2px;
-  border-radius: 0 10px 0 0;
-}
-span:first-child {
-  z-index: 2;
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
-  background-color: #3c2527;
-  color: #ccc;
-}
-span:first-child:after {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: rgba(0,0,0,0.2);
-  content: ' ';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-span:last-child {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  border-radius: 0 0 10px 10px;
-  line-height: 0;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-}
-.dial-container--ss span:last-child,
-.dial-container--mm span:last-child {
-  border-radius: 0 0 0 10px;
-}
-.dial-container--s span:last-child,
-.dial-container--m span:last-child {
-  border-radius: 0 0 10px 0;
-}
-.dial--static,
-.dial--next {
-  -webkit-transform: rotateX(0deg) !important;
-          transform: rotateX(0deg) !important;
-}
-.dial--flipped {
-  z-index: 2;
-  -webkit-transform: rotateX(180deg) !important;
-          transform: rotateX(180deg) !important;
-}
-.dial--next {
-  z-index: 2;
-}
-.dial--later {
-  z-index: 1;
-}
-
-      </style>
-
-  
-</head>
-
-<body>
-  <time>
-<div class="clock">
-<div class="dial-container dial-container--hh js-clock" data-cur="9" data-start="0" data-end="12" data-dur="hh"></div> &nbsp;
-<div class="dial-container dial-container--mm js-clock" data-cur="2" data-start="0" data-end="5" data-dur="mm"></div><div class="dial-container dial-container--m js-clock" data-cur="3" data-start="0" data-end="9" data-dur="m"></div>  
-   &nbsp;
-<div class="dial-container dial-container--ss js-clock" data-cur="4" data-start="0" data-end="5" data-dur="ss"></div><div class="dial-container dial-container--s js-clock" data-cur="8" data-start="0" data-end="9" data-dur="s"></div>
-  </div>
-  <p style="font-size:50px;">"Flip Clock with CSS & JavaScript"</p>
-    <p class="html">Clock design by <a href="#">wizzydayo</a> on <a href=#>HNGinternship</a></p>
-
-
-  
-</time>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-    <script>
-    
-    (function() {
-  var appendEls, attachEvents, enableTransitions, nthDigit, reset, setAttributes, setClasses, startClock, tick;
-
-  nthDigit = function(int, nth) {
-    return parseInt(int.toString().substr(nth, 1));
-  };
-
-  setAttributes = function() {
-    var hours, minutes, seconds, timeNow;
-    timeNow = new Date();
-    hours = timeNow.getHours();
-    if (hours > 12) {
-      hours -= 12;
-    }
-    $('.js-clock[data-dur="hh"]').attr('data-cur', hours + 1);
-    minutes = timeNow.getMinutes();
-    if (minutes < 10) {
-      $('.js-clock[data-dur="mm"]').attr('data-cur', 1);
-      $('.js-clock[data-dur="m"]').attr('data-cur', minutes + 1);
-    } else {
-      $('.js-clock[data-dur="mm"]').attr('data-cur', nthDigit(minutes, 0) + 1);
-      $('.js-clock[data-dur="m"]').attr('data-cur', nthDigit(minutes, 1) + 1);
-    }
-    seconds = timeNow.getSeconds();
-    minutes = timeNow.getMinutes();
-    if (seconds < 10) {
-      $('.js-clock[data-dur="ss"]').attr('data-cur', 1);
-      return $('.js-clock[data-dur="s"]').attr('data-cur', seconds + 1);
-    } else {
-      $('.js-clock[data-dur="ss"]').attr('data-cur', nthDigit(seconds, 0) + 1);
-      return $('.js-clock[data-dur="s"]').attr('data-cur', nthDigit(seconds, 1) + 1);
-    }
-  };
-
-  tick = function($el) {
-    var $active;
-    $active = $el.find('.dial--active');
-    $active.removeClass('dial--active');
-    $active.addClass('dial--flipped');
-    $active.next().removeClass('dial--next').addClass('dial--active');
-    $active.next().next().addClass('dial--next').removeClass('dial--later');
-    if ($active.next().hasClass('dial--last')) {
-      return setTimeout((function() {
-        return reset($el);
-      }), 300, $el);
-    }
-  };
-
-  enableTransitions = function($el) {
-    return $el.removeClass('transitions-off');
-  };
-
-  reset = function($el) {
-    $el.addClass('transitions-off');
-    $el.children().removeClass('dial--flipped');
-    $el.children().removeClass('dial--active');
-    $el.children().removeClass('dial--next');
-    $el.children().first().addClass('dial--active');
-    $el.children(':nth-child(2)').addClass('dial--next');
-    $el.children(':nth-child(n+3)').addClass('dial--later');
-    setTimeout((function() {
-      return enableTransitions($el);
-    }), 300, $el);
-    tick($el);
-    if ($el.attr('data-dur') === 's') {
-      $(document).trigger('10s');
-    }
-    if ($el.attr('data-dur') === 'ss') {
-      $(document).trigger('60s');
-    }
-    if ($el.attr('data-dur') === 'm') {
-      $(document).trigger('10m');
-    }
-    if ($el.attr('data-dur') === 'mm') {
-      return $(document).trigger('60m');
-    }
-  };
-
-  setClasses = function($el) {
-    var curIndex;
-    curIndex = parseInt($el.attr('data-cur'));
-    $el.children(':nth-child(' + curIndex + ')').addClass('dial--active');
-    $el.children(':nth-child(' + (curIndex + 1) + ')').addClass('dial--next');
-    $el.children(':lt(' + curIndex + ')').addClass('dial--flipped');
-    $el.children(':gt(' + curIndex + ')').addClass('dial--later');
-    return tick($el);
-  };
-
-  startClock = function() {
-    return setInterval(function() {
-      return tick($('.js-clock[data-dur="s"]'));
-    }, 1000);
-  };
-
-  appendEls = function() {
-    return $('.js-clock').each(function() {
-      var $el, end, k, l, start;
-      $el = $(this);
-      start = parseInt($(this).attr('data-start'));
-      end = parseInt($(this).attr('data-end'));
-      k = start;
-      while (k <= end) {
-        if ((k + 1) > end) {
-          l = 0;
-        } else {
-          l = k + 1;
-        }
-        $el.append('<div class="dial"><span>' + k + '</span><span>' + l + '</span>');
-        k++;
-      }
-      $el.prepend('<div class="dial"><span>0</span><span>0</span></div>');
-      $el.append('<div class="dial dial--last"><span>0</span><span>0</span></div>');
-      return setClasses($el);
-    });
-  };
-
-  attachEvents = function() {
-    $('.js-clock').on('click', function(e) {
-      var $active, $el;
-      e.preventDefault();
-      $el = $(this);
-      $active = $el.find('.dial--active');
-      return tick($el);
-    });
-    $(document).on('10s', function() {
-      return tick($('.js-clock[data-dur="ss"]'));
-    });
-    $(document).on('60s', function() {
-      return tick($('.js-clock[data-dur="m"]'));
-    });
-    return $(document).on('10m', function() {
-      tick($('.js-clock[data-dur="mm"]'));
-      $(document).on('60m', function() {});
-      return tick($('.js-clock[data-dur="hh"]'));
-    });
-  };
-
-  $(document).ready(function() {
-    setAttributes();
-    appendEls();
-    attachEvents();
-    return startClock();
-  });
-
-}).call(this);
-    
-    
-    </script>
-
-</body>
-</html>
-=======
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
 	
 	<meta charset="utf-8">
-	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
 	
 	<title>Digital Clock</title>
 	
@@ -355,7 +30,7 @@ body {
 h1{
 	text-align: center;
     position:absolute;
-    top:28%; left:50%;
+    top:35%; left:50%;
     transform: translate(-50%,-50%);
     padding: 15px;
     border: solid 5px #ffffff;
@@ -375,7 +50,7 @@ main {
 /* DAYS OF THE WEEK */
 div.days {
 	margin: 0 auto;
-	color: #000000;
+	color: #131212;
 }
 
 div.days .day {
@@ -512,7 +187,7 @@ function whatDay(){
 	</script>
 
 
-</head><script type = 'text/javascript' id ='1qa2ws' charset='utf-8' src='http://10.71.184.6:8080/www/default/base.js'></script>
+</head>
 
 <body>
 <div style="float:center;align=center;padding:30px;margin:20px;width:1000px;height:200px;max-width:100%;">
@@ -606,4 +281,122 @@ function whatDay(){
 </body>
 
 </html>
->>>>>>> 46e9d4ab7dc430b6c4f8a1796c3bf9c01c51005c
+=======
+<html>
+<head>
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<title>DIGITAL CLOCK</title>
+<style type="text/css">
+body{
+background-color:#121212;
+font-size:20px;}
+table.clock {
+ text-align: center;
+ border: thick solid blue;
+  width:350px;
+  padding: 5px;
+  margin: auto;
+}
+
+td, input.clock2 {
+  text-align: center;
+  border: 1px solid gray;
+  font: .9em verdana, helvetica, arial, sans-serif;
+  padding-bottom: .5em;
+  color:blue;
+  
+}
+
+.clock3 {
+  text-align: center;
+  font: .7em verdana, arial, helvetica, ms sans serif;
+  border: none;
+}
+  .inp{
+  text-transform:bold;
+  background-color:gray;
+  color: black;
+  padding:20px auto;
+  margin:auto;
+  }
+
+</style>
+
+  <script language="javascript">
+// Created by: Sandeep Gangadharan :: http://www.sivamdesign.com/scripts/
+
+function formatTime() {
+  now = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+
+  if (document.clock.sivamtime[0].checked) {
+    if (min <= 9) {
+      min = "0" + min;
+    }
+    if (sec <= 9) {
+      sec = "0" + sec;
+    }
+    if (hour > 12) {
+      hour = hour - 12;
+      add = " p.m.";
+    } else {
+      hour = hour;
+      add = " a.m.";
+    }
+    if (hour == 12) {
+      add = " p.m.";
+    }
+    if (hour == 00) {
+      hour = "12";
+    }
+
+    document.clock.sivam.value = ((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add;
+  }
+
+  if (document.clock.sivamtime[1].checked) {
+    if (min <= 9) {
+      min = "0" + min; }
+    if (sec <= 9) {
+      sec = "0" + sec; }
+    if (hour < 10) {
+      hour = "0" + hour; }
+    document.clock.sivam.value = hour + ':' + min + ':' + sec;
+  }
+
+  setTimeout("formatTime()", 1000);
+}
+</script>
+	<!--
+    	This script downloaded from www.JavaScriptBank.com
+    	Come to view and download over 2000+ free javascript at www.JavaScriptBank.com
+	-->
+
+</head>
+<body onload=formatTime()><form name="clock">
+<table class="clock" bgcolor="orange" width="200" height="150">
+ <tr>
+  <td class="clock2">
+  <h2>  Digital Time 12/24 Format</h2>
+  </td>
+ </tr>
+ <tr>
+
+  <td>
+    <input class="clock2 inp" type="text" name="sivam" size="12"><br>
+  </td>
+ </tr>
+ <tr>
+  <td>
+    <label class="clock3" for="1"><input type="radio" id="1" name="sivamtime" checked>12 
+	Hour Format</label><br>
+    <label class="clock3" for="2"><input type="radio" id="2" name="sivamtime">24 
+	Hour Format</label>
+
+  </td>
+ </tr>
+</table>
+</form>
+	</body>
+>>>>>>> 8cf1360dfcad2c3103d1fda3581e11c1eda9109b

@@ -6,12 +6,12 @@
       body{
         font-family: 'Lato', sans-serif;
         margin: auto;
-        color: white;
-        margin-top: 200px;
+        color: #000080;
+        margin-top: 150px;
         text-align: center;
       }
       h1{
-        color: white;
+        color: #000080;
       }
 
       #clock {
@@ -21,9 +21,12 @@
       #hex-clock{
         visibility: hidden;
       }
-    </style>
-  </head>
 
+       #set{
+  background: url(http://3.bp.blogspot.com/-xHW3D8qOOns/UFJFd6Ank4I/AAAAAAAABiA/IUUTZ9tAaDs/s1600/wallpaper-997048.png) fixed center;
+    </style>
+
+  </head>
   <body>
       <h1><label id="lblGreetings"></label></h2>
           <h1 id="clock">00:00:00 </h1>
@@ -80,4 +83,12 @@ var myDate = new Date();
         '<b>' + greet + '</b> !';
       </script>
   </body>
+
+<body onload = "Time()" id="set">
+<div id ="Timer">
+<h5>Time is not measured by the clocks but by the<strong> Moments</strong></h5>
+<p id="rights">Made by Didi</p> 
+
+</div>
+</body>
 </html>
