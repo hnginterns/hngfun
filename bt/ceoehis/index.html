@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html> 
-<head> 
-<title>Hello App</title> 
-</head> 
-<body>
-  <div class="container">
-    <div id="timer-display" class="time"></div>
-  </div>
+<html>
+<head>
 <script>
-	let clock = () => {
-		let today = new Date();
-		let h = ("0" + today.getHours()).slice(-2);
-		let m = ("0" + today.getMinutes().Slice(-2);
-		let s = ("0" + today.getSeconds()).slice(-2);
-		
-		document.getElementById("timer-display").textContent = `${h} : ${m} : ${s}`;
-		
-		let interval = setTimeout(clock, 500);
-	}
-		clock();
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setInterval(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
 </script>
-</body>
-</html>
+</head>
