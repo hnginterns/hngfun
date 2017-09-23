@@ -3,6 +3,8 @@
 <head>
     <title>MrFojo Character Count</title>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
         body {
             background-color: #212121;
         }
@@ -42,7 +44,7 @@
             margin-right: auto;
             height: 395px;
             color: #4CAF50;
-            font-family: 'Raleway', cursive;
+            font-family: 'Orbitron', cursive;
             text-align: center;
         }
 
@@ -52,40 +54,49 @@
             max-width: 100px;
         }
 
-        .count {
+        .message,
+        time {
             text-align: center;
             display: block;
-            font-family: sans-serif;
+            font-family: 'Raleway', sans-serif;
             padding: 2px;
             font-weight: normal;
-        }
-
-        textarea {
-            padding: 5px;
-            font-family: "Raleway", "sans-serif";
-            font-size: 18px;
-            border: 1px solid #BDBDBD;
-            border-radius: 4px;
         }
     </style>
 </head>
 
-<body>
+<body onload="getTime()">
     <div id="container">
         <div id="content">
-            <h2 class="count">Enter string below</h2>
-
-            <textarea type="text" id="text" onkeydown="countChar()" cols="42" rows="8"></textarea>
-            <br>
-            <div id="count" class="count">
+            <div id="time" class="time"></div>
+            <div id="message" class="message">
             </div>
         </div>
     </div>
     <script>
-        function countChar() {
-            var text = document.getElementById('text');
-            var count = document.getElementById('count');
-            count.innerHTML = text.value.length + ' characters.';
+        function getTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var time = document.getElementById("time");
+            time.innerHTML = formatValue(h) + ':' + formatValue(m);
+            var message = document.getElementById("message");
+            if (h >= 18) {
+                message.innerHTML = "Good Evening, Stranger";
+            }
+            else if (h >= 12) {
+                message.innerHTML = "Good Afternoon, Stranger";
+
+            } else {
+                message.innerHTML = "Good Morning, Stranger";
+
+            }
+            setTimeout(getTime, 1000);
+
+        }
+        function formatValue(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
         }
     </script>
 </body>
