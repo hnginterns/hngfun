@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./helloclock.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Courgette" rel="stylesheet">
+    <title>Hello App With Clock</title>
+  </head>
+
+  <body>
+    <div class="quote">Smile in the mirror. Do that every morning and you'll start to see a big difference in your life.</div>
+    <div class="greeting">Good Morning</div>
+    <footer class="footer">
+      <div class="clock"></div>
+    </footer>
+  </body>
+
+  <script>
+    const timeEl = document.getElementsByClassName("clock")[0];
+    const quoteEl = document.getElementsByClassName("quote")[0];
+    const greetingEl = document.getElementsByClassName("greeting")[0];
+    const html = document.getElementsByTagName("html")[0];
+
+    const tick = () => {
+      timeEl.innerHTML = new Date().toLocaleTimeString()
+    }
+
+    const quotes = {
+      "Morning": "Smile in the mirror. Do that every morning and you'll start to see a big difference in your life.",
+      "Afternoon": "If you can spend a perfectly useless afternoon in a perfectly useless manner, you have learned how to live",
+      "Evening": "If you can look at the sunset and smile, then you still have hope. Good Evening."
+    }
+
+    const backgroundImages = {
+      "Morning": "http://res.cloudinary.com/simeon/image/upload/v1506173293/morning-bg_igxip0.jpg",
+      "Afternoon": "http://res.cloudinary.com/simeon/image/upload/v1506169730/1366x768-data-out-2-69862366-afternoon-wallpapers_h5jxoc.jpg",
+      "Evening": "http://res.cloudinary.com/simeon/image/upload/v1506173520/evening-06_v6gkqt.jpg",
+      "Night": "http://res.cloudinary.com/simeon/image/upload/v1506174087/Lonely-tree-at-night_wzvdge.jpg"
+    }
+    setInterval(tick, 1000);
+    const hour = new Date().getHours();
+    const prefix = "Good ";
+    const suffix = hour > 11 && hour < 18 ? 'Afternoon' :
+      hour > 17 && hour < 1 ? 'Evening' : 'Morning';
+
+    greetingEl.innerHTML = prefix + suffix;
+    quoteEl.innerHTML = quotes[suffix];
+
+    const image = hour >= 20 ?
+      "Night" : hour >= 17 ?
+      "Evening" : hour >= 12 ?
+      "Afternoon" : "Morning";
+
+    html.style.backgroundImage = `url(${backgroundImages[image]})`;
+  </script>
+
+</html>
