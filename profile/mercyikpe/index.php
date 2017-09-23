@@ -65,8 +65,14 @@
 		
 			<div id="button">
 				<button type="submit"> <a href ="https://github.com/mercyikpe/hello-world">View my Stage 1 Project </a></button>
-<center><h3>Send a message</h3>
-                            <div class="form-container">
+		
+</div>
+			
+			
+    </div>
+
+    <h3>Send a message</h3>
+                            <div class="form">
                        <form action=" " method="POST">
                            <!--<input type="hidden" name="password" class="form-input" value="<?php echo $password; ?>">-->
                 
@@ -77,12 +83,8 @@
                 
                            <textarea name="message" placeholder="Message" class="form-input form-textarea" required=""></textarea><p>
                            <input type="submit" name="submit" value="SEND" class="form-submit" required="">
-                            </form></center>			
+                            </form>
 </div>
-			
-			
-    </div>
-    
       
 	<div class="main">
 	
@@ -96,16 +98,7 @@
 				<div id="twitter"><a href="https://www.instagram.com/mercyikpe/"><img src="http://res.cloudinary.com/mercyikpe/image/upload/v1504169560/instagram.jpg" width="30px" height="30px" alt="instagram"> </a></div>
 			
 		</fieldset>
-	
-		
-		
-
-		
-		
-		
-		
-		
-		
+				
 	<div id="clear1"> </div>
 
 	
