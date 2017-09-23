@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
 		 	 $db_config['pass']
 		 	);
 		 $query = "SELECT * FROM password LIMIT 1";
-		 $result = $pdo->fetch($query);
+		 $result = $query->fetch();
 		 $password = $result['password'];
 
 		 $send = "../../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
