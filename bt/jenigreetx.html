@@ -4,7 +4,7 @@
         <title>GreetX</title>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
-        <style>
+        <style type="text/css">
             body{
                 width: auto;
                 height: auto;
@@ -157,7 +157,7 @@
             <p id ="count"></p>
             <pre id="quote"></pre>           
 
-            <input type="text" name="userName" id="userName" placeholder="Please Tell Us Your Name" class='js2-fade fade-in2 is-paused2' required>
+            <input type="text" name="userName" id="userName" placeholder="Please Type Your Name and Press Enter/Click Proceed" onkeypress="return keydown(event)" class='js2-fade fade-in2 is-paused2' required>
             <br><br><br>
             <input type="submit" id="btn" value="&raquo;PROCEED&laquo;" onclick="greetx()" class='js3-fade fade-in3 is-paused3' >
 
@@ -186,6 +186,43 @@
                     let greetx;
                     let userName = document.getElementById('userName').value;
                     let count = userName.replace(/\s/g, "").length;
+                    
+                    let quotes = ["A butterfly that fancies itself a bird, will be blown away by the wind",
+                                  "If you speak a proverb to a child and explain the same to him, the money\n that was used to marry the child's mother has been wasted",
+                                  "Because all lizards crawl on their bellies, one can't say which one is purging",
+                                  "He whose house is on fire, does not go about hunting rats",
+                                  "A bird that flies off the earth and lands on an anthill is still on the ground",
+                                  "He that beats the drum for the mad man to dance is no better than the mad man himself",
+                                  "No matter how beautiful and well crafted a coffin may look, it will not make anyone wish for death",
+                                  "When the root of a tree begins to decay, it spreads death to the branches",
+                                  "If your only tool is a hammer, you will see every problem as a nail",
+                                  "It is often said that anyone who swallows a mango whole has great faith in his anus"]
+                    if (/^[A-Za-z\s]+$/.test(userName) && !!userName.trim()){
+                        setInterval('date()',1);
+                        countx = "Did you know that the name you entered has " + count +" characters?";
+                        document.getElementById("count").innerHTML = countx;
+                        let q = Math.floor(Math.random() * 9);
+                        let display = quotes[q];
+                        document.getElementById("quote").innerHTML = '"'+ display + '"';
+                    }else{
+                        document.getElementById("greet").innerHTML = "Lol, I'm pretty sure thats not your name.<br>Please input your name, I know it's awesome!";
+                        let count = 3;
+                        setInterval(function(){
+                        count--;
+                        if (count == 0){
+                        window.location = 'jenigreetx.html'; }
+                        },1000);
+                    }
+
+                    }
+                function keydown(x){
+                    if (x.keyCode == 13){
+                        greetx();
+                    }
+                }
+                function date(){
+                    let greetx;
+                    let userName = document.getElementById('userName').value;
                     let d = new Date();
                     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
                     let today = days[d.getDay()];
@@ -195,6 +232,14 @@
                     let year = d.getFullYear();
                     let oge = d.getHours();
                     let oge1 = d.getHours();
+                    let seconds = d.getSeconds();
+                    if (seconds.toString().length == 1){
+                        seconds = '0' + seconds;
+                    }
+                    let seconds1 = d.getSeconds();
+                    if (seconds1.toString().length == 1){
+                        seconds1 = '0' + seconds1;
+                    }                          
                     if (oge.toString().length == 1){
                         oge = '0'+ oge;
                         }else{
@@ -211,43 +256,42 @@
                         minute1 = '0'+ minute1;
                     }else{
                         minute1;
-                    }
+                    }                    
                     if (oge1 > 12){
                         oge1 -= 12;
                         if (oge1.toString().length == 1){
                         oge1 = '0'+ oge1;
-                        minute1 += ' PM';
+                        seconds1 += ' PM';
                         }else{
                             oge1;
-                            minute1 += ' PM';
+                            seconds1 += ' PM';
                         }        
-                    }else{
-                        oge1;
+                    } else if (oge1 == 0){
+                        oge1 = 12;
+<<<<<<< HEAD
                         minute1 += ' AM';
-                    }                  
-                    
+=======
+                        seconds1 += ' AM';
+>>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
+                    }
+                    else{
+                        if (oge1.toString().length == 1){
+                        oge1 = '0'+ oge1;}
+                        oge1;
+                        seconds1 += ' AM';
+                    }
+                                       
                     let properGreeting;
                     let tellDate;
                     let tellDate1;
-                    let quotes = ["A butterfly that fancies itself a bird, will be blown away by the wind",
-                                  "If you speak a proverb to a child and explain the same to him, the money\n that was used to marry the child's mother has been wasted",
-                                  "Because all lizards crawl on their bellies, one can't say which one is purging",
-                                  "He whose house is on fire, does not go about hunting rats",
-                                  "A bird that flies off the earth and lands on an anthill is still on the ground",
-                                  "He that beats the drum for the mad man to dance is no better than the mad man himself",
-                                  "No matter how beautiful and well crafted a coffin may look, it will not make anyone wish for death",
-                                  "When the root of a tree begins to decay, it spreads death to the branches",
-                                  "If your only tool is a hammer, you will see every problem as a nail",
-                                  "It is often said that anyone who swallows a mango whole has great faith in his anus"]
-                    if (/^[A-Za-z\s]+$/.test(userName) && !!userName.trim()){
-                        if (oge < 12 ){properGreeting = "Good Morning";}if (oge >= 12 && oge < 16 ){properGreeting = "Good Afternoon";}if (oge >= 16){properGreeting = "Good Evening";};
+                    if (oge < 12 ){properGreeting = "Good Morning";}if (oge >= 12 && oge < 16 ){properGreeting = "Good Afternoon";}if (oge >= 16){properGreeting = "Good Evening";};
                         greetx = properGreeting + " " + userName + "! How are you?";
                         tellDate = "Today's date is " + today + ", " + thisMonth + " " + date + " " + year + ".";
-                        tellDate1 = "The time is " + oge + ":" + minute + " or rather " + oge1 + ":" + minute1;
-                        countx = "Did you know that the name you entered has " + count +" characters?";
+                        tellDate1 = "The time is " + oge + ":" + minute + ":"+ seconds + " or rather " + oge1 + ":" + minute1 + ":"+seconds1;
                         document.getElementById("greet").innerHTML = greetx;
                         document.getElementById("date").innerHTML = tellDate;
                         document.getElementById("date1").innerHTML = tellDate1;
+<<<<<<< HEAD
                         document.getElementById("count").innerHTML = countx;
                         let q = Math.floor(Math.random() * 9);
                         let display = quotes[q];
@@ -263,7 +307,18 @@
                     }
 
                     }
-
+                function keydown(x){
+                    if (x.keyCode == 13){
+                        greetx();
+                    }
+                }
+                
+=======
+                    
+                }
+                
+                
+>>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
             </script>
         
         </main>

@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -135,4 +137,148 @@ p{
   <!-- end of javascript-->
 
 </body>
+=======
+=======
+>>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LET'S SOLVE BASIC MATHS </title>
+	<style type="text/css">
+		body {
+	text-align: center;
+	background-color: #6cf;
+	color: #33f;
+	font-family: Georgia;
+	opacity: 0.89;
+}
+#calc{
+    background: linear-gradient(to left, #33ccff 15%, #000099 85%);
+	width: 335px;
+	height: 450px;
+	border: 2px, solid black;
+	border-radius: 6px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 38%;
+	margin-right: 55%; 
+	box-shadow: 0 0 2px 4px #3cf;
+	opacity: transparent;
+	font-family: Georgia;
+}
+#display{
+	height: 35px;
+	width: 300px;
+	margin-top: 3em;
+	margin-bottom: 15px;
+	border: 3px solid black;
+	border-radius: 6px;
+	box-shadow: 2px 2px #000000;
+	text-align: left;
+}
+#keys{
+	width: 50px;
+	height: 50px;
+	padding: 6px 12px;
+	font-weight: bold;
+	border-radius: 4px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	box-shadow: 2px 2px #000000;
+	margin-bottom: 4px;
+}
+#butt{
+	width: 50px;
+	height: 50px;
+	padding: 6px 12px;
+	font-weight: bold	border-radius: 50%;
+	text-shadow: -1px 0 #FFFFFF, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+	box-shadow: 2px 2px #000000;
+	background-color: black;
+    border-radius: 50%;
+}
+#eq{
+	width: 107px;
+	height: 50px;
+	padding: 6px 12px;
+	font-weight: bold;
+	border-radius: 4px;
+	text-shadow: -1px 0 #FFFFFF, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+	box-shadow: 2px 2px #000000;
+	background-color: red;
+}
+p{
+	text-shadow: -1px 0 #ffffff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+	color: #000000;
+	border-top: solid #ffffff;
+	width: 335px;
+
+
+	</style>
+<!-- end of css styling-->
+<!-- beginning of html-->
+
+<body>
+  <h1>NEDY'S CALCULATOR</h1>
+  <div id = calc >
+    <form>
+      <input type="text" name=" " id="display" > 
+      <br>
+      <br>
+                <input type='button' value='7' id='keys' onclick='show("7")'>&nbsp;	  
+                <input type='button' value='8' id='keys' onclick='show("8")'>&nbsp;
+				<input type='button' value='9' id='keys' onclick='show("9")'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='button' value='+' id='butt' onclick='show("+")'>&nbsp;
+				<input type='button' value='-' id='butt' onclick='show("-")'>
+				<br>
+
+				<input type='button' value='4' id='keys' onclick='show("4")'>&nbsp;
+				<input type='button' value='5' id='keys' onclick='show("5")'>&nbsp;
+				<input type='button' value='6' id='keys' onclick='show("6")'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='button' value='*' id='butt' onclick='show("*")'>&nbsp;
+				<input type='button' value='/' id='butt' onclick='show("/")'>
+				<br>
+
+				<input type='button' value='1' id='keys' onclick='show("1")'>&nbsp;
+				<input type='button' value='2' id='keys' onclick='show("2")'>&nbsp;
+				<input type='button' value='3' id='keys' onclick='show("3")'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='button' value='C' id='butt' onclick='show("s")'>&nbsp;
+				<input type='button' value='Sq' id='butt' onclick='pow()'>
+				<br>
+
+				<input type='button' value='0' id='keys' onclick='show("0")'>&nbsp;
+				<input type='button' value='00' id='keys' onclick='show("00")'>&nbsp;
+				<input type='button' value='.' id='keys' onclick='show(".")'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='button' value='=' id='eq' onclick='answer()'>
+			<br><br><br><br><br>
+			<p><strong><em>made by &copy nedyudombat</em> 2017</strong></p>
+	</form>
+  </div>
+  <!--end of html-->
+  <!-- beginning of the javascript-->
+	  <script>
+	  function show(x){
+	  	if (x === 's'){
+	  		document.getElementById('display').value = '';
+	  	}else{
+	  	document.getElementById('display').value+=x;
+	  }
+	  }
+	  function answer(){
+	  	let soln = document.getElementById('display').value;
+	  	ans = eval(soln);
+	  	document.getElementById('display').value = ans;
+	  }
+	  function pow(){
+	  	document.getElementById('display').value *= document.getElementById('display').value;
+	  }
+ 	</script>
+  <!-- end of javascript-->
+
+</body>
+<<<<<<< HEAD
+>>>>>>> c76ed2fb4f3bc033ed01f06d748e425415984ff2
+=======
+>>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
 </html>
