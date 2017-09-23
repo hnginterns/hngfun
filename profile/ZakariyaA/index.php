@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 <?php
     if(isset($_POST['process'])){
 
@@ -27,7 +23,3 @@
         header("location: /index.html");
     }
 ?>
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master

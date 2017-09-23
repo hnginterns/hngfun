@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 body {
 	font-family: 'Noto Sans', sans-serif;
@@ -10,7 +10,7 @@ h1 {
 	font-size: 50px;
 	font-weight: normal;
 	margin-bottom: 0;
-=======
+
 body {
   font-family: 'Noto Sans', sans-serif;
   margin: 0;
@@ -42,139 +42,4 @@ h2 {
     font-size: 1.2rem;
     font-weight: 300;
     color: #fff;
-}
-
-#contactcont {
-    width: 650px;
-=======
-  font-size: 18px;
-  margin-top: 0;
-}
-
-h3 {
-  text-align: center;
-  font-size: 28px;
-  font-weight: normal;
-  margin-top: 100px;
-}
-
-h4 {
-  text-align: center;
-  font-size: 24px;
-}
-
-p {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.bio {
-  color: black;
-  font-size: 14px;
-}
-
-.me {
-  height: 200px;
-  border-radius: 100%;
-  border-style: solid;
-  border-color: white;
-  margin-top: 40px;
-}
-
-.about {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.grey {
-  background-color: #919191;
-  height: 3px;
-  border: none;
-  width: 50px;
-}
-
-.clear {
-  clear: both;
-}
-
-.contact-headline {
-  color: white;
-}
-
-#contactMe {
-  position: relative;
-  padding: 20px;
-  z-index: 0;
-  ;
-  width: 100%;
-  height: 550px;
-  background-color: #3EB1F1;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #fff;
-}
-
-#contactcont {
-  width: 650px;
->>>>>>> origin/master
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-<<<<<<< HEAD
-    padding: 10px;
-    border: 1px solid #222;
-    display: block;
-    width: 50%;
-    font-size: 1.2rem;
-    font-family:Monaco, monospace;
-    margin: 0 0 20px;
-}
-
-fieldset {
-    padding-left: 40px;
-}
-
-
-
-input[type="submit"]{
-    height: 40px;
-    padding:0 40px;
-    border: none;
-    margin-top: 10px;
-}
-
-textarea {
-    resize: none;
-
-=======
-  padding: 10px;
-  border: 1px solid #222;
-  display: block;
-  width: 50%;
-  font-size: 1.2rem;
-  font-family: Monaco, monospace;
-  margin: 0 0 20px;
-}
-
-fieldset {
-  padding-left: 40px;
-}
-
-input[type="submit"] {
-  height: 40px;
-  padding: 0 40px;
-  border: none;
-  margin-top: 10px;
-}
-
-textarea {
-  resize: none;
->>>>>>> origin/master
 }
