@@ -1,110 +1,112 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>SILAS CALCULATOR PROJECT</title>
-     
-<Style>
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 16px;
-    vertical-align: baseline;
-    background: transparent;
-}
-body {
-    line-height: 1;
-}
-ul {
-    list-style: none;
+    <title>
+        SILAS CALCULATOR
+    </title>
+    <style type="text/css">
+        body {
+  margin: 0;
+  padding: 0;
 }
 
+#calculator {
+  margin: 5vh auto;
+  padding: 10vh 5vh;
+  background-color: #808080;
+  width: 250px;
+  font-family: "Valera Round", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  border: 10px solid #2E294E;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#screen {
+  font-size: 30px;
+  width: 90%;
+  margin: 0 0 5vh 0;
+  border: 5px solid #aaa;
+  border-radius: 4px;
+   background-color: #fff;
+  color: #2E294E;
+  font-weight: bold;
+  height:70px;
+}
+#color{
+  background-color: green;
+}
+#color1{
+  background-color: #0ff;
+}
+#color1:hover{
+  background-color: #eee;
+  cursor: pointer;
+}
+.link{
+  background-color: #999999;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: -40px;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 18px;
+  text-align: center;
+  border: 2px dotted #2E294E;
+  border-radius: 4px;
+  background-color: red;
+  color: #000;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
 
 
-body {
-    width: 500px;
-}
-form {
-    background-color: gray;
-    text-align: center;
-    padding: 7px;
-    
+form input {
+  padding: 10px;
+  margin: 2px;
 }
 
-#display {
-    width: 98%;
-    height: 30px;
-    text-align: right;
-    font-size: 1.5rem;
+#field{
+  margin-bottom: 20px;
 }
-.digit {
-    font-size: 2rem;
-    background-color: red;
-    height: 55px;
-    width: 20%;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 5px;
-}
-.oper {
-    font-size: 2rem;
-    background-color: blue;
-    height: 55px;
-    width: 20%;
-    border-radius: 5px;
-    display: inline-block;
-    padding: 5px;
-}
-#clearMem {
-    background-color: #aaa;
-}
-#equal {
-    background-color: #ccc ;
-}
-</Style>
+    </style>
 </head>
 <body>
-<form name="case">
+<div id="calc-body">
+  <form id="calculator">
+   <fieldset disabled="disabled" id="field">
+      <input id="screen" value="" type="text" readonly placeholder="0"><br/>     
+   </fieldset>
+     
+    <input type="button" class="number button" value = " 1 " onclick="calculator.screen.value += '1' "/>
+    <input type="button" class="number button" value = " 2 " onclick="calculator.screen.value += '2' "/>
+    <input type="button" class="number button" value = " 3 " onclick="calculator.screen.value += '3' "/>
+    <input type="button" class="operator button" value = " + " id="color" onclick="calculator.screen.value += '+' "/>
+    <br>
+    <input type="button" class="number button" value = " 4 " onclick="calculator.screen.value += '4' "/>
+    <input type="button" class="number button" value = " 5 " onclick="calculator.screen.value += '5' "/>
+    <input type="button" class="number button" value = " 6 " onclick="calculator.screen.value += '6' "/>
+    <input type="button" class="operator button" value = " - " id="color" onclick="calculator.screen.value += '-' "/>
+    <br>
+    <input type="button" class="number button" value = " 7 " onclick="calculator.screen.value += '7' "/>
+    <input type="button" class="number button" value = " 8 " onclick="calculator.screen.value += '8' "/>
+    <input type="button" class="number button" value = " 9 " onclick="calculator.screen.value += '9' "/>
+    <input type="button" class="operator button" value = " x " id="color" onclick="calculator.screen.value += '*' "/>
+    <br>
+    <input type="button" class="operator button" value = " C " id="color1" onclick="calculator.screen.value = '' "/>
+    <input type="button" class="number button" value = " 0 " onclick="calculator.screen.value += '0' "/>
+    <input type="button" class="operator button" value = " = " id="color1" onclick="calculator.screen.value = eval(calculator.screen.value)"/>
+    <input type="button" class="operator button" value = " &divide; " id="color" onclick="calculator.screen.value += '/' "/>
+    <button class="link" ><a href="index1.html"> Temperature converter<br>click here</a></button>
+     </form>
 
-  <input name="display" id="display" placeholder="0.">
-    <input type="button" class="digit" value="1" onclick="calculator.screen.value += '1' ">
-
-    <input type="button" class="digit" value="2" onclick="calculator.screen.value += '2' ">
-
-    <input type="button" class="digit" value="3" onclick="calculator.screen.value += '3' ">
-
-    <input type="button" id="plus" 	class="oper" 	value="+"  onclick="calculator.screen.value += '+' "/>
-
-    <input type="button" class="digit" value="4" onclick="calculator.screen.value += '4' ">
-
-    <input type="button" class="digit" value="5" onclick="calculator.screen.value += '5' ">
-
-    <input type="button" class="digit" value="6" onclick="calculator.screen.value += '6' ">
-
-    <input type="button" id="minus" 	class="oper" 	value="-"  onclick="calculator.screen.value += '-' ">
-
-    <input type="button" class="digit" value="7" onclick="calculator.screen.value += '7' ">
-
-    <input type="button" class="digit" value="8" onclick="calculator.screen.value += '8' ">
-
-    <input type="button" class="digit" value="9" onclick="calculator.screen.value += '9' ">
-
-    <input type="button" id="divide" 	class="oper" 	value="/" onclick="calculator.screen.value += '/' ">
-    
-    <input type="button" id="clearMem" class="oper" value="C" onclick="calculator.screen.value = '' ">  
-    <input type="button" class="digit" value="0" onclick="calculator.screen.value += '0' ">
-	<input type="button" id="equal" 	class="oper"	value="=" onclick="calculator.screen.value = eval(calculator.screen.value)">
-    <input type="button" id="multiply" 	class="oper" 	value="*" onclick="calculator.screen.value += '*' "/>
- 
-  </div>  
+       
+</div>  
 </body>
 </html>
