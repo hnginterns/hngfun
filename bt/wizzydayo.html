@@ -56,10 +56,27 @@ h1{
   margin:auto;
   display: inline;
   }
+  
+  #demo { 
+  border-color: #ememem ;
+  background-color:#FF9800;
+  border-radius: 5px;
+  border-width:5px;
+  font-size: 20px ;
+  font-style: oblique;
+  font-weight: strong ;
+  padding: 20px auto;
+  margin: auto;
+  bottom: 20px;
+  
+  }
 
 </style>
 
   <script language="javascript">
+  
+
+
 
 function formatTime() {
   now = new Date();
@@ -102,11 +119,17 @@ function formatTime() {
   }
 
   setTimeout("formatTime()", 1000);
+ document.getElementById("demo").innerHTML = now.toDateString();
 }
+    
+
 </script>
 
 </head>
-<body onload=formatTime()><form name="clock">
+<body onload=formatTime()>
+
+
+<form name="clock">
 <table class="clock" bgcolor="#03A9F4" width="135">
  <tr>
   <td class="clock2">
@@ -116,8 +139,15 @@ function formatTime() {
  <tr>
 
   <td>
+ <p id="demo" class="clock2 inp"></p>
+    
+<br><br>
+    
     <input class="clock2 inp" type="text" name="sivam" size="12"><br>
+    
+    
   </td>
+   
  </tr>
  <tr>
   <td>
