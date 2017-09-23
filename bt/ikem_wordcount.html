@@ -7,7 +7,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<style type="text/css">
 		body {
-			/*background-color: #EEE;*/
 			font-family: Raleway;
 			font-size: 20px;
 			font-style: normal;
@@ -18,16 +17,13 @@
 			background-color: #EEE;
 			margin: 0 15%; 
 			padding: 10px 15px;
-			/*padding-right: 15px;*/
 			border-radius: 10px;
 		}
 		h1 {
 			font-family: Raleway;
 			font-size: 28px;
 			font-style: bold;
-			font-variant: normal;
-			/*font-weight: 500;*/
-			/*line-height: 26.4px;*/
+			font-variant: normal;			
 			text-align: center;
 		}
 		input {
@@ -54,13 +50,7 @@
 		}
 
 	</style>
-	<!-- <script type="text/javascript">
-		function wordCount() {
-			document.getElementById('word').onkeyup = function () {
-			document.getElementById('result').innerHTML = "Characters: " +  this.value.length;
-			};
-		}
-	</script> -->
+
 </head>
 <body onload="wordCount()">
 
@@ -69,9 +59,8 @@
 		<p>Please insert word here</p>
 		
 		<input type="text" name="word" id="word"/>
-		<!-- <button type="submit" name="submit" id="submit" onclick="wordCount();"/></button> -->
 		<p id="result" onkeyup="wordCount();"></p>
-		<!-- <input type="submit" name="Submit" class="btn" id="submit" value="submit" onclick="wordCount();" /> -->
+		
 		
 	</div>
 
