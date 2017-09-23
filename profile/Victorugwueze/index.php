@@ -1,7 +1,3 @@
-<?php
-	require_once'mail.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

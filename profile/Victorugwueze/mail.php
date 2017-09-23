@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
 		
 	
 		 // $db_config = require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
-		 $db_config = require_once('../../config.php');
+		 $db_config = include('../../config.php');
 
 		 $pdo = new PDO(
 		 	"mysql:host=".$db_config['host'].";
@@ -28,13 +28,11 @@ if(isset($_POST['submit'])){
 		 	 $db_config['pass']
 		 	);
 		 $query = "SELECT * FROM password LIMIT 1";
-		 $result = $query->fetch();
+		 $stm = $pdo->query($query);
+		 $result = $stm->fetch(PDO::FETCH_ASSOC);
 		 $password = $result['password'];
-
 		 $send = "../../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 		 header("location:".$send);
-
-
 		 echo $to."<br>";
 		 echo $subject."<br>";
 		 echo $body;
