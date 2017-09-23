@@ -1,0 +1,182 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<html>
+<head>
+<title>LET'S TELL TIME </title>
+
+<!-- Css styling starts -->
+
+<style>
+body{
+	background-color:#bcc8d1;  
+	text-align: center; 
+}
+h1{
+	color: #000;
+font-family: 'Georgia', sans-serif;
+
+}
+#Timer{
+	margin-left:400px;
+	margin-top:20px ;
+	text-align:center;
+	width:600px;
+    font-family: 'Georgia', sans-serif;
+	height:400px;
+ }
+ #Time{
+	width:100%;
+	color:#fff;
+	font-size:100px;
+	margin-bottom: 0em;
+ }
+ #Date{
+	width:100%;
+	color:#fff;
+	font-size:100px;
+	margin-top: 0em;
+ }
+ #rights{
+ 	width: 100%;
+ 	color: #000;
+ 	font-size: 15px;
+ 	text-align: right;
+ 	margin-top: 15em;
+ }
+ #set{
+	background: url(https://thumbs.dreamstime.com/z/time-concept-blue-clock-digital-background-d-render-40646280.jpg)  ;
+ }
+</style>
+<!-- CSS Styling ends-->
+</head>
+
+<!--HTML starts-->
+
+<body onload = "Time()" id="set">
+<div id ="Timer">
+<h1>NEDY'S DIGITAL TIME</h1>
+
+<p id="Time">. . .</p>
+<p id="Date">. . .</p> 
+<p id="rights">made by &copy nedyudombat, 2017</p> 
+
+</div>
+</body>
+
+<!-- HTML ends-->
+<!-- Javascript starts-->
+
+<script>
+function Time(){
+ Timer = setInterval(setClock,100);
+function setClock(){	
+	   document.getElementById("Time").innerHTML=new Date().toLocaleTimeString();
+	}
+
+function Time2(){
+	Timer2 = setInterval(setClock2,100);
+	function setClock2(){
+		document.getElementById("Date").innerHTML = new Date().toLocaleDateString();
+
+	}
+
+}
+Time2();
+}
+</script>
+
+<!-- end of Javascript-->
+</html>
+=======
+=======
+>>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
+<html>
+<head>
+<title>LET'S TELL TIME </title>
+
+<!-- Css styling starts -->
+
+<style>
+body{
+	background-color:#bcc8d1;   
+}
+h1{
+	color: #000;
+font-family: 'Georgia', sans-serif;
+
+}
+#Timer{
+	margin-left:400px;
+	margin-top:20px ;
+	text-align:center;
+	width:600px;
+    font-family: 'Georgia', sans-serif;
+	height:400px;
+ }
+ #Time{
+	width:100%;
+	color:#fff;
+	font-size:100px;
+	margin-bottom: 0em;
+ }
+ #Date{
+	width:100%;
+	color:#fff;
+	font-size:100px;
+	margin-top: 0em;
+ }
+ #rights{
+ 	width: 100%;
+ 	color: #000;
+ 	font-size: 15px;
+ 	text-align: right;
+ 	margin-top: 15em;
+ }
+ #set{
+	background: url(https://thumbs.dreamstime.com/z/time-concept-blue-clock-digital-background-d-render-40646280.jpg) fixed center;
+ }
+</style>
+<!-- CSS Styling ends-->
+</head>
+
+<!--HTML starts-->
+
+<body onload = "Time()" id="set">
+<div id ="Timer">
+<h1>NEDY'S DIGITAL TIME</h1>
+
+<p id="Time">. . .</p>
+<p id="Date">. . .</p> 
+<p id="rights">made by &copy nedyudombat, 2017</p> 
+
+</div>
+</body>
+
+<!-- HTML ends-->
+<!-- Javascript starts-->
+
+<script>
+function Time(){
+ Timer = setInterval(setClock,100);
+function setClock(){	
+	   document.getElementById("Time").innerHTML=new Date().toLocaleTimeString();
+	}
+
+function Time2(){
+	Timer2 = setInterval(setClock2,100);
+	function setClock2(){
+		document.getElementById("Date").innerHTML = new Date().toLocaleDateString();
+
+	}
+
+}
+Time2();
+}
+</script>
+
+<!-- end of Javascript-->
+</html>
+<<<<<<< HEAD
+>>>>>>> c76ed2fb4f3bc033ed01f06d748e425415984ff2
+=======
+>>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
