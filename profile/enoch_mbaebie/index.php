@@ -47,9 +47,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
 
       <div class="main">
-           <a class="Slack" href="https://hnginterns.slack.com/team/U6UAY9VMG"><i class="fa fa-slack icons fa-lg"></i></a>
+            <center><a class="Slack" href="https://hnginterns.slack.com/team/U6UAY9VMG"><i class="fa fa-slack icons fa-lg"></i></a>
            
-           <a href="https://github.com/EnochMbaebie/"><i class="fa fa-github icons fa-lg"></i></a>
+           <a href="https://github.com/EnochMbaebie/"><i class="fa fa-github icons fa-lg"></i></a></center>
       </div>   
       </div>
 			
