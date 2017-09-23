@@ -1,9 +1,26 @@
 <html>
 <head>
+<<<<<<< HEAD
   <title>Learning Team Project</title>
   <style type="text/css">
     
 
+=======
+  <title>Beginners Submission</title>
+  <style type="text/css">
+    
+    body {
+      font-size: 20px;
+      font-family: "Arial";
+    }
+    
+    #result {
+      font-size: 30px;
+      font-family: "Cursive", "Orbitron", serif;
+      
+    }
+   
+>>>>>>> 8cf1360dfcad2c3103d1fda3581e11c1eda9109b
     .button {
       padding: 15px 25px;
       font-size: 24px;
@@ -86,6 +103,7 @@
           document.getElementById("result").innerHTML = 'There are ' + end + ' letters in ' + theName;
 
         }
+<<<<<<< HEAD
       }
 
 
@@ -123,11 +141,55 @@
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Orbitron&effect=neon" rel="stylesheet">
+=======
+      }
+
+
+  </script>
+
+  <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+        var session = "AM";
+
+        if(h == 0){
+          h = 12;
+        }
+
+        if(h > 12){
+          h = h - 12;
+          session = "PM";
+        }
+
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000);
+      }
+
+      showTime();
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&effect=neon" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100&effect=neon">
+>>>>>>> 8cf1360dfcad2c3103d1fda3581e11c1eda9109b
 
   
 </head>
 
+<<<<<<< HEAD
 <body onload="showTime()">   
+=======
+<body onload="showTime()">
+>>>>>>> 8cf1360dfcad2c3103d1fda3581e11c1eda9109b
 
   <div class="card">
   <div class="container">
@@ -136,6 +198,41 @@
 
     <script language="JavaScript"> 
       var myDate = new Date(); 
+<<<<<<< HEAD
+  
+      if ( myDate.getHours() < 12 )  { 
+        document.write("Good Morning!"); 
+      } else if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) { 
+        document.write("Good Afternoon!"); 
+      } else if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) { 
+        document.write("Good Evening!"); 
+      } 
+      else { 
+        document.write("I'm not sure what time it is!"); 
+      }
+      document.write("<br /><br /> The time is: ") 
+      document.write( myDate.toLocaleTimeString() ); 
+    </script> 
+
+      <br />
+      <br />
+      <br />
+
+      <div id="MyClockDisplay" class="clock font-effect-neon"></div> <br />
+
+
+
+    <div class='box'>
+      <p>Input string below!</p>
+      <input id="stringInput" type="text" onkeydown = "if (event.keyCode == 13)
+                          document.getElementById('coun').click()"> <br />
+      <input type="button" class="button" id="coun" value="Check!" onClick="countString()">
+    </div>
+    <div id="result"><p></p></div>
+  </div>
+</div> 
+=======
+>>>>>>> 8cf1360dfcad2c3103d1fda3581e11c1eda9109b
   
       if ( myDate.getHours() < 12 )  { 
         document.write("Good Morning!"); 
@@ -170,8 +267,5 @@
 </div> 
   
 
-  </body>    
-
-
-
+  </body>   
 </html>

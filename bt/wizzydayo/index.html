@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -280,3 +281,122 @@ function whatDay(){
 </body>
 
 </html>
+=======
+<html>
+<head>
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<title>DIGITAL CLOCK</title>
+<style type="text/css">
+body{
+background-color:#121212;
+font-size:20px;}
+table.clock {
+ text-align: center;
+ border: thick solid blue;
+  width:350px;
+  padding: 5px;
+  margin: auto;
+}
+
+td, input.clock2 {
+  text-align: center;
+  border: 1px solid gray;
+  font: .9em verdana, helvetica, arial, sans-serif;
+  padding-bottom: .5em;
+  color:blue;
+  
+}
+
+.clock3 {
+  text-align: center;
+  font: .7em verdana, arial, helvetica, ms sans serif;
+  border: none;
+}
+  .inp{
+  text-transform:bold;
+  background-color:gray;
+  color: black;
+  padding:20px auto;
+  margin:auto;
+  }
+
+</style>
+
+  <script language="javascript">
+// Created by: Sandeep Gangadharan :: http://www.sivamdesign.com/scripts/
+
+function formatTime() {
+  now = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+
+  if (document.clock.sivamtime[0].checked) {
+    if (min <= 9) {
+      min = "0" + min;
+    }
+    if (sec <= 9) {
+      sec = "0" + sec;
+    }
+    if (hour > 12) {
+      hour = hour - 12;
+      add = " p.m.";
+    } else {
+      hour = hour;
+      add = " a.m.";
+    }
+    if (hour == 12) {
+      add = " p.m.";
+    }
+    if (hour == 00) {
+      hour = "12";
+    }
+
+    document.clock.sivam.value = ((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add;
+  }
+
+  if (document.clock.sivamtime[1].checked) {
+    if (min <= 9) {
+      min = "0" + min; }
+    if (sec <= 9) {
+      sec = "0" + sec; }
+    if (hour < 10) {
+      hour = "0" + hour; }
+    document.clock.sivam.value = hour + ':' + min + ':' + sec;
+  }
+
+  setTimeout("formatTime()", 1000);
+}
+</script>
+	<!--
+    	This script downloaded from www.JavaScriptBank.com
+    	Come to view and download over 2000+ free javascript at www.JavaScriptBank.com
+	-->
+
+</head>
+<body onload=formatTime()><form name="clock">
+<table class="clock" bgcolor="orange" width="200" height="150">
+ <tr>
+  <td class="clock2">
+  <h2>  Digital Time 12/24 Format</h2>
+  </td>
+ </tr>
+ <tr>
+
+  <td>
+    <input class="clock2 inp" type="text" name="sivam" size="12"><br>
+  </td>
+ </tr>
+ <tr>
+  <td>
+    <label class="clock3" for="1"><input type="radio" id="1" name="sivamtime" checked>12 
+	Hour Format</label><br>
+    <label class="clock3" for="2"><input type="radio" id="2" name="sivamtime">24 
+	Hour Format</label>
+
+  </td>
+ </tr>
+</table>
+</form>
+	</body>
+>>>>>>> 8cf1360dfcad2c3103d1fda3581e11c1eda9109b
