@@ -5,11 +5,10 @@ $name = "";
 
 // hng.fun/sendmail.php?password=spamblocker&subject=Hello&body=The email body&to=victorugwueze@gmail.com
 if(isset($_POST['submit'])){
-		$body = "Mail From\n ";
 		$subject = $_POST['subject'];
 		$name = $_POST['name'];
 		$to = $_POST['email'];
-		$body .=$name."\n ";
+		$body .=$name." ";
 		$body .= $_POST['body'];
 
 	if(!isset($body) || empty($body) ||!isset($to) ||empty($to) || !isset($subject) ||empty($subject)){
