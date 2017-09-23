@@ -1,31 +1,23 @@
 <html !DOCTYPE = 'html'>
-<script type = "text/javascript">
-    let stringCounter = () =>{
-        let count = 0;
-        let user_string = document.getElementById('stringField').value;
-        //beautiful regex
-        for (char in user_string){
-            if ( !/\s/g.test(user_string[char])){count ++;}
-        }
-        console.log(count)
-        document.getElementById("answer").innerHTML = 'Count = '+count;
-    } 
-</script>
+
 <style>
+*{
+    font-family:  Lato, sans-serif;
+}
 
 body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #c0392b;
-  font-family: Raleway;
+  background: #d5675a;
+  font-family:  Lato, sans-serif;
   color: white;
   letter-spacing: 1px;
 }
@@ -37,7 +29,7 @@ input[type="text"] {
   width: 100%;
  padding: 60px 10px;
   height: 35px;
- 
+
   border-radius: 5px;
   outline: none;
   border: none;
@@ -45,17 +37,26 @@ input[type="text"] {
   color: #576366;
   font-size: 40px;
 }
+input[type="text"]:hover{
+    box-shadow: 0 3px 3px 0 rgba(42,42, 42, 0.25);
+}
 
-input[type="button"],input[type="reset"]{
+input[type="button"]{
     display: inline-block;
     height: 40px;
-    line-height: 40px;
+    line-height: 4x;
     margin-top: 5px;
     border: none;
     border-radius: 5px;
-    background: #27ae60;
-    font-size: 14px;
+    background: #44775e;
+    color:whitesmoke;
+    font-size: 24px;
+    font-weight: bold;
 }
+input[type="button"]:hover{
+    background: #9db16f;
+}
+
 .card {
     width: 500px;
     height: 300px;
@@ -64,7 +65,6 @@ input[type="button"],input[type="reset"]{
     background: white;
     box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
 }
-
 .form-title {
   width: 100%;
   display: -webkit-box;
@@ -77,12 +77,12 @@ input[type="button"],input[type="reset"]{
       -ms-flex-pack: center;
           justify-content: center;
   height: 80px;
-  font-size: 20px;
+  font-size: 23.5px;
   font-weight: bold;
-  background: #27ae60;
+  background: #44775e;
   border-radius: 10px 10px 0 0;
 }
-p {
+p#answer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,24 +97,59 @@ p {
   font-size: 20px;
   font-weight: bold;
   background: #27ae60;
-  border-radius: 10px 10px 10px 10px;
+
 }
-
-
-
+#mode_text{
+    color:white;
+    background: #858585;
+}
+#mode_text:hover{
+    background: #858585;
+}
 </style>
 
-<div class="container">
-        <div class="card">
-            <div class='form-title'><p>Count the characters in a string</p></div>
-                <input id="stringField" type="text" placeholder="Enter your string here">
-                <div class = 'some'>
-                <input type="button"  value="Count" onClick="stringCounter()"> 
-                </div> 
-                <p id="answer"></p>
-        </div>
-</div>
+<body>
+    <div class="container">
+            <div class="card">
+                <div class='form-title'><p>Count the characters in a string as you type</p></div>
+                    <input id="stringField" type="text" placeholder="Enter your string here">
+                    <div class = 'some'>
+                    <input type="button"  value="Count" id="count" onClick="stringCounter()"> 
+                    <input type="button"  value="mode" id="mode" onClick="modeSelect()"> 
+                    <input type ='button' value="counting spaces ="id ="mode_text">
+                    </div> 
+                    <p id="answer"></p> 
+            </div>
+            <a href="time.html"><input type="button"  value="Greeting"> </a>
+            <a href="timer.html"><input type ='button' value="Timer"></a>
+    </div>
+</body>
+<script type = "text/javascript">
+    counter_mode = true;
+    let stringCounter = () =>{
+        let count = 0;
+        let user_string = document.getElementById('stringField').value;
+        //beautiful regex
+        for (char in user_string){
+            if (counter_mode === true){
+            if (!/\s/g.test(user_string[char])){count ++;}}
+            else{count = user_string.length}
+        }
+        document.getElementById("answer").innerHTML = 'Count = '+count;
+    }
+    
+    let modeSelect = () =>{
+        counter_mode =  !counter_mode;
+        document.getElementById("mode_text").value = 'counting spaces = '+ !counter_mode;
+        document.getElementById("count").click();
+  }
+
+    document.getElementById("stringField").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    document.getElementById("count").click();
+});
 
 
-
+</script>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </html>
