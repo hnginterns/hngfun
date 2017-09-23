@@ -9292,7 +9292,7 @@ include('header.php');
                        <div class="p-card-info">
                            <a href="http://hng.fun/profile/mattidungafa/profile.html">
                                <!--Profile Link-->
-                               <h3 class="p-card-title">Matthew Idugafa</h3>
+                               <h3 class="p-card-title">None</h3>
                                <!--Profile Name-->
                            </a>
                            <p class="p-card-description">mattidungafa@gmail.com</p>
