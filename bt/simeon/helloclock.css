@@ -20,6 +20,11 @@ body {
   margin-top: 2%;
 }
 
+.author {
+  font-family: Courgette, sans-serif;
+  font-size: 20px;
+}
+
 .greeting {
   font-size: 36px;
   margin-top: 10%;
@@ -45,6 +50,9 @@ body {
     width: 80%;
     margin-top: 5%;
   }
+  .author {
+    font-size: 30px;
+  }
   .greeting {
     font-size: 48px;
     margin-top: 5%;
@@ -59,6 +67,9 @@ body {
     font-size: 48px;
     width: 80%;
     margin-top: 5%;
+  }
+  .author {
+    font-size: 36px;
   }
   .greeting {
     font-size: 56px;
