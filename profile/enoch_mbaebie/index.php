@@ -45,17 +45,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       <div class= "text"><center>
         <p>I'm a software engineer in training based in Lagos,passionate about technologies,<br>a contributor to the open source communities and mentee to Mark Essien.</p></center>
       </div>
-
-      <div class="main">
-            <center><a class="Slack" href="https://hnginterns.slack.com/team/U6UAY9VMG"><i class="fa fa-slack icons fa-lg"></i></a>
+      <div class="main">               
+        <center>
+          <a class="Slack" href="https://hnginterns.slack.com/team/U6UAY9VMG"><i class="fa fa-slack icons fa-lg"></i></a>
            
-           <a href="https://github.com/EnochMbaebie/"><i class="fa fa-github icons fa-lg"></i></a></center>
-      </div>   
-      </div>
-			
-                
-    <center><figure><p><a href="http://hng.fun/profile/enoch_mbaebie/index.html"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure></center>
-			
+          <a href="https://github.com/EnochMbaebie/"><i class="fa fa-github icons fa-lg"></i></a>
+
+          <figure><p><a href="http://hng.fun/profile/enoch_mbaebie/index.html"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure>
+        </center>
+			</div>   
 			<section class="grid-4">
                 <center><h2>Contact</h2></center>
                  <form class="cd-form floating-labels" method="POST">
