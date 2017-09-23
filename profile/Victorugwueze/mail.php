@@ -24,10 +24,9 @@ if(isset($_POST['submit'])){
 		 $pdo = new PDO(
 		 	"mysql:host=".$db_config['host'].";
 		 	dbname=".$db_config['dbname'],
-		 	 $config['username'],
-		 	 $config['pass']
+		 	 $db_config['username'],
+		 	 $db_config['pass']
 		 	);
-
 		 $query = "SELECT * FROM password LIMIT 1";
 		 $result = $pdo->fetch($query);
 		 $password = $result['password'];
