@@ -1,5 +1,52 @@
 <<<<<<< HEAD
 
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+	margin: 0;
+}
+
+h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: normal;
+	margin-bottom: 0;
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 0;
+>>>>>>> origin/master
+}
+
+h2 {
+  color: white;
+<<<<<<< HEAD
+}
+
+
+
+
+#contactMe {
+    position: relative;
+    padding: 20px; 
+    z-index: 0;;
+    width: 100%;
+    height: 550px;
+    background-color: #3EB1F1;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+}
+=======
+<<<<<<< HEAD
+
 body {
 	font-family: 'Noto Sans', sans-serif;
 	margin: 0;
@@ -178,3 +225,4 @@ textarea {
   resize: none;
 >>>>>>> origin/master
 }
+>>>>>>> 8cf1360dfcad2c3103d1fda3581e11c1eda9109b
