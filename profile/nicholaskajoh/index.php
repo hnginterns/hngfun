@@ -1,3 +1,19 @@
+<?php
+  if(isset($_GET['sendmail'])) {
+    $config = include('../../config.php');
+    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+    $con = new PDO($dsn, $config['username'], $config['pass']);
+    $exe = $con->query('SELECT * FROM password LIMIT 1');
+    $data = $exe->fetch();
+    $password = $data['password'];
+    $subject = htmlentities(strip_tags(trim($_GET['subject'])));
+    $password = htmlentities(strip_tags(trim($password)));
+    $body = htmlentities(strip_tags(trim($_GET['body'])));
+    $to = "kajohterna@gmail.com";
+    $end_point = "../../sendmail.php?to=$to&subject=$subject&password=$password&body=$body";
+    header("Location: " . $end_point);
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +70,7 @@
       <div class="row">
         <div class="col-md-2 col-lg-2"></div>
         <div class="col-sm-12 col-md-8 col-lg-8">
-          <form method="get" action="send.php">
+          <form method="get" action="">
             <div class="form-group">
               <input class="form-control" type="text" name="subject" placeholder="Subject" required>
             </div>
@@ -64,7 +80,7 @@
             </div>
 
             <div>
-              <button class="btn btn-success" type="submit">Send</button>
+              <button class="btn btn-success" type="submit" name="sendmail">Send</button>
             </div>
           </form>
         </div>
