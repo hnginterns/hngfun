@@ -1,0 +1,70 @@
+html {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  font-family: Courgette, sans-serif;
+  font-size: 30px;
+  width: 90%;
+  margin-top: 2%;
+}
+
+.greeting {
+  font-size: 36px;
+  margin-top: 10%;
+  font-family: Comfortaa, sans-serif;
+}
+
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  bottom: 0px;
+}
+
+.clock {
+  font-size: 48px;
+  font-family: Comfortaa, sans-serif;
+  color: #f2f2f2;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    font-size: 40px;
+    width: 80%;
+    margin-top: 5%;
+  }
+  .greeting {
+    font-size: 48px;
+    margin-top: 5%;
+  }
+  .clock {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .quote {
+    font-size: 48px;
+    width: 80%;
+    margin-top: 5%;
+  }
+  .greeting {
+    font-size: 56px;
+    margin-top: 5%;
+  }
+  .clock {
+    font-size: 64px;
+  }
+}

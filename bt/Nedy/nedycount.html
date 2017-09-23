@@ -45,24 +45,27 @@
 		#sc{
 			 background: linear-gradient(to bottom, #6f6 25%, #060 95%);
 	         width: 700px;
-	         height: 580px;
+	         height: 533px;
 	         border: 2px, solid black;
 	         border-radius: 6px;
 	         text-align: center;
 	         margin-top: auto;
 	         margin-bottom: 50px;
-	         margin-left: 25%;
+	         margin-left: 20%;
 	         margin-right: 55%; 
 	         box-shadow: 0 0 2px 2px #000;
 	         opacity: transparent; 
 		}
-		 .submit:hover {background-color: #ff0;
+		.submit:hover {background-color: #3c3;
 		 }
 	    h1{
 	    	color: #000;
 	    	font-family: Georgia;
 	    }
-
+	    #rights{
+	       color: #000;
+	       margin-top: 0em;
+	    }
 		
 		
 	</style>
@@ -70,16 +73,14 @@
 
 <body>
 <div id="sc">
-    <h1>STRING COUNTER</h1>
+    <h1> NEDY'S STRING COUNTER</h1>
 	<input id="input" type="text" placeholder="Enter string here !!!"><br/>
 	<br><br>
   	<input class="submit" type="button" value="Let's count" onclick="counts()">
 	
 	<p id="totalCount"><br> Answer here!!</p>
-	<p id="rights"> made by &copy nedyudombat, 2017</p>
-	
-		
 </div>
+    <p id="rights"> made by &copy nedyudombat, 2017</p>
 </body>
 
 <script>
