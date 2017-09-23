@@ -60,8 +60,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <center><h2>Contact</h2></center>
                  <form class="cd-form floating-labels" method="POST">
               		<fieldset>
-
-
               			<div class="icon">
               				<center><label class="cd-label" for="cd-name">Subject</label>
                                 <input class="user" type="text" name="subject" id="cd-name" required></center>
@@ -94,14 +92,20 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	
 </body>
     <style>
-   body{
+  body{
     background-color: darkred;
     color: black;
+    height: 750px;
+    margin: 2px;
+    padding: 2px;
     
   }
 .container{
+    text-align: center;
+    margin: 0 auto;
     width:400px;
-    height:1000px;
+    align-self: center;
+    height:100px;
     background-color: #999;
   }
 .header{
@@ -120,7 +124,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 .text{
     color:#239;
     font:none 15px sans-serif;
-    text-align:center;
     margin:10px;
     padding:00px;
   }
@@ -131,5 +134,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     padding:00px;
 }
 .contact-headline {
+  color: white;
+}
+
     </style>
 </html>
