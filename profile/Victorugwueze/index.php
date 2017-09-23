@@ -73,7 +73,7 @@
 					<input class="input" type="text" name="name"  placeholder="Name">
 					<input class="input" type="text" name="email"  placeholder="email">
 					<input class="input" type="text" name="subject"  placeholder="subject"><br>
-					<textarea class="input" type="" name="body"  placeholder="message"></textarea>
+					<textarea class="input" name="body"  placeholder="message"></textarea>
 					<input type="submit" name="submit" id="submit">
 				</form>
 			</div>
