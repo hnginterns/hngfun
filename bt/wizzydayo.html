@@ -71,9 +71,11 @@ h1{
   padding: 20px auto;
   margin: auto;
   bottom: 20px;
-  
-  }
-
+  i{ animation: type2 8s steps(60, end);}
+@keyframes type{ from { width: 0; } } 
+@keyframes type2{ 0%{width: 0;} 50%{width: 0;} 100%{ width: 100;
+ } 
+    } 
 </style>
 
   <script language="javascript">
@@ -87,7 +89,8 @@ function formatTime() {
   min = now.getMinutes();
   sec = now.getSeconds();
 
-  
+    
+      
    
 
  
@@ -131,7 +134,14 @@ function formatTime() {
       
 var time = now.getHours(); 
  var greeting; 
-  switch(time) { case 0: case 1: case 2: case 3: case 4: greeting = 'It\'s midnight, you should be asleep'; break; case 5: case 6: case 7: case 8: case 9: case 10: case 11: greeting = 'Good Morning'; break; case 12: case 13: case 14: case 15: case 16: case 17: greeting = 'Good Afternoon'; break; case 18: case 19: case 20: case 21: case 22: case 23: greeting = 'Good Evening'; break; default: greeting = 'Hi'; } document.getElementById('greeting').innerHTML = greeting; 
+  switch(time) { 
+case 0: case 1: case 2: case 3: case 4: greeting = 'It\'s midnight, you should be asleep'; break; 
+case 5: case 6: case 7: case 8: case 9: case 10: case 11: greeting = 'Good Morning'; break;
+ case 12: case 13: case 14: case 15: case 16: case 17: greeting = 'Good Afternoon'; break; 
+case 18: case 19: case 20: case 21: case 22: case 23: greeting = 'Good Evening'; break; 
+default: greeting = 'Hi';
+ } 
+document.getElementById('greeting').innerHTML = greeting  ; 
     
 var greet;
  switch(time) { 
@@ -140,7 +150,7 @@ var greet;
    greet= 'Get the day started, time waits for no man.';
    break;
    case 12: case 13: case 14: case 15: case 16: case 17:
-    greet= 'Sure your day is being productive';
+    greet= 'Hope your day is being productive';
      break; 
     case 18: case 19: case 20: case 21: case 22: case 23: 
     greet = 'Today,was great indeed.'; 
@@ -162,7 +172,7 @@ var greet;
   <td class="clock2">
   <h1> <span style="color:black;"> Digital</span> <span>Time</span></h1>
  <h3 id="greeting"> <h3>
- <i id="side"> </i>
+ <marquee style=" typing 3.5s steps(40, end), blink-caret .75s step-end infinite;" id="side"> </marquee>
   </td>
  </tr>
  <tr>
