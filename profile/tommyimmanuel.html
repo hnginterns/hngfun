@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 <head>
 	<title>MY INTERNSHIP</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		#body {
 
-			font-family: Arial;
+			font-family: Verdana;
 			font-size: 15px;
 			margin : auto;
 			height: 400px;
@@ -14,12 +16,36 @@
 
 		.text-center {
 			text-align: center;
+
 		}
+
 
 		.img {
 			width: 300px;
 			height: 300px;
 		}
+
+		button {
+			margin-top: 0px;
+			border: 0;
+			border-radius: 2px;
+			color: white;
+			padding: 10px;
+			text-transform: uppercase;
+			font-weight: 400;
+			font-size: 0.7em;
+			letter-spacing: 1px;
+			background-color: #006666;
+			cursor:pointer;
+			outline: none;
+		}
+
+		.form_container {
+			margin: 0;
+			
+		}
+
+
 	</style>
 </head>
 
@@ -33,10 +59,37 @@
 			<p>GITHUBUSERNAME: superetist</p>
 			<p>TOMMY IMMANUEL is youthful, dynamic, enterprising and resourceful. I believe in actions, I believe thinkers
 				must govern toilers. I cannot begin what i cannot end. I am a pragmatist. Even in this internship,
-				I won't end untill it has ended. So here I come, teach me coding.</p>
-			<p><a href="https://hnginterns.slack.com/team/brownpinkwater">SLACK</a></p>
+                I won't end untill it has ended. So here I come, teach me coding.</p>
+                
+                <div><a href="link to apk">Download my android profile</a></div>
 		</div>
-	</div>
+	
+<br><br>
+
+<div class="form_container">
+	<form action="tommyimmanuel.php" method="POST">
+		<fieldset>
+			<h2 style="text-align:center">Contact Me</h2>
+			Name<br>
+			<input type="text" name="name" size="50" placeholder="" ><br><br>
+
+			Email<br>
+			<input type="email" name="email" size="50" placeholder="you@gmail.com" ><br><br>
+
+			Subject<br>
+			<input type="text" name="subject" size="50"><br><br>
+
+			<input type="hidden"  id="password" name="password" value="<?php echo $password; ?>">
+
+			Message<br>
+			<textarea rows="10" cols="50" name="body" placeholder="Type your message here..."></textarea><br><br>
+
+			<button type="submit" name="submit">Send</button>	
+
+		</fieldset>
+	</form>
+</div>
+
+</div>
 </body>
 </html>
-

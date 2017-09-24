@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<style type="text/css">
+
+		body {
+			background: url("http://res.cloudinary.com/dannygirl/image/upload/v1505865820/deskBackground2_qfb8uz.jpg") center center fixed;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+ 			-moz-background-size: cover;
+ 			-o-background-size: cover;
+			background-size: cover;
+			text-align: center;
+			font-family: 'Raleway', sans-serif;
+			font-weight: normal;
+		}
+
+		h1 {
+			color: #ffffff;
+			font-weight: bold;
+			font-size: 3em;
+			margin-top: 2em;
+		}
+
+		#calculator {
+			background-color: gray;
+			width: 300px;
+			height: 350px;
+			border: 1px solid black;
+			border-radius: 10px;
+			box-shadow: 0 0 3px 6px #ccc;
+			margin: 50px auto;
+		}
+
+		#display {
+			margin-top: 2em;
+			margin-bottom: 20px;
+			height: 30px;
+			width: 12em;
+			border-radius: 5px;
+			border: 1px solid gray;
+			box-shadow: 0 0 1px 1px black;
+			text-align: right;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 5px 5px 0 0;
+		}
+
+		#keys {
+			margin: 4px;
+			font-weight: bold;
+			border-radius: 5px;
+			width:41px;
+			height:35px;
+			box-shadow: 0 0 2px 1px black;
+			outline: none;
+		}
+
+		#equal {
+			margin: 4px;
+			font-weight: bold;
+			border-radius: 5px;
+			width:96px;
+			height:35px;
+			outline: none;
+			box-shadow: 0 0 2px 1px black;
+		}
+
+		#twitter a:hover{
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<h1>Javascript Calculator</h1>
+	<div id="calculator">
+		<form>
+			<input type='text' name='' id='display' maxlength="10" disabled>
+			<br>
+				<input type='button' value='Cos' id='keys' onclick='cos()'>
+				<input type='button' value='C' id='keys' onclick='toScreen("c")'>
+				<input type='button' value='CE' id='keys' onclick='backspace()'>
+				<input type='button' value='x^2' id='keys' onclick='power()'>
+				<input type='button' value='+' id='keys' onclick='toScreen("+")'>
+				<br>
+
+				<input type='button' value='Sin' id='keys' onclick='sin()'>
+				<input type='button' value='7' id='keys' onclick='toScreen("7")'>
+				<input type='button' value='8' id='keys' onclick='toScreen("8")'>
+				<input type='button' value='9' id='keys' onclick='toScreen("9")'>
+				<input type='button' value='-' id='keys' onclick='toScreen("-")'>
+				<br>
+
+				<input type='button' value='Tan' id='keys' onclick='tan()'>
+				<input type='button' value='4' id='keys' onclick='toScreen("4")'>
+				<input type='button' value='5' id='keys' onclick='toScreen("5")'>
+				<input type='button' value='6' id='keys' onclick='toScreen("6")'>
+				<input type='button' value='*' id='keys' onclick='toScreen("*")'>
+				<br>
+
+				<input type='button' value='sqrt' id='keys' onclick='sqrt()'>
+				<input type='button' value='1' id='keys' onclick='toScreen("1")'>
+				<input type='button' value='2' id='keys' onclick='toScreen("2")'>
+				<input type='button' value='3' id='keys' onclick='toScreen("3")'>
+				<input type='button' value='/' id='keys' onclick='toScreen("/")'>
+				<br>
+
+				<input type='button' value='x^y' id='keys' onclick='toScreen("**")'>
+				<input type='button' value='0' id='keys' onclick='toScreen("0")'>
+				<input type='button' value='.' id='keys' onclick='toScreen(".")'>
+				<input type='button' value='=' id='equal' onclick='answer()'>
+		</form>
+		
+	</div>
+
+	<div id="twitter">
+		<p style="color:#ffffff;">&copy; September 2017.  Love, <a href="http://twitter.com/daniella_mato" target="_blank" style="color:green;"> Daniella Mato</a></p>
+	</div>
+
+	<script type="text/javascript">
+		
+	let box = document.getElementById('display');
+
+	function toScreen(x){
+
+		let displayArray = box.value.toString().split("");
+
+		if(box.value.length === 14){
+			box.value +='';
+		} else if(x ==='c'){
+			box.value = '';
+		 } else{
+			box.value += x;
+		}
+	}
+
+	function power(){
+		x = box.value;
+		x = eval(x * x);
+		box.value = x;
+	}
+
+	function answer(){
+		x = box.value;
+		let y;
+		try {
+			// y = eval(x);
+			y = eval(x.replace(/\b0*((\d+\.\d+|\d+))\b/g, "$1"))
+			let resultArray = y.toString().length;
+			if(resultArray >= 14){
+				y = y.toPrecision(14);
+				box.value = y;
+			}
+			else{
+				box.value = y;
+			}
+		}
+		catch (e) {
+    		if (e instanceof SyntaxError) {
+    		box.value = "Syntax Error";
+    		}
+		}
+	}
+
+	function backspace(){
+		let num = box.value;
+		let length = num.length-1;
+		let newNum = num.substring(0, length);
+		box.value = newNum;
+	}
+
+	function sqrt(){
+		x = box.value;
+		x = Math.sqrt(x);
+		box.value = x;
+	}
+
+	function cos(){
+		x = box.value;
+		x = Math.cos(x);
+		box.value = x;
+	}
+
+	function sin(){
+		x = box.value;
+		x = Math.sin(x);
+		box.value = x;
+	}
+
+	function tan(){
+		x = box.value;
+		x = Math.tan(x);
+		box.value = x;
+	}
+
+	</script>
+</body>
+</html>

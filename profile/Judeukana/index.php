@@ -13,7 +13,7 @@
                 if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $error = [];
                 $subject = $_POST['subject'];
-                $to  = 'jamiejay4199@gmail.com';
+                $to  = 'judeukana@gmail.com';
                 $body = $_POST['body'];
                 if($body == '' || $body == ' ') {
                   $error[] = 'Message cannot be empty.';
@@ -41,16 +41,16 @@
 
                 <nav id="top_nav">
                     <ul>
-                        <li><img src="git.png" class="logo">JudeUk</li>
-                        <li><img src="twitter.png" class="logo">@Judee_boi</li>
-                        <li><img src="Slack_Icon.png" class="logo">Judeukana</li>
+                        <li><img src="http://git-scm.com/images/logos/downloads/Git-Icon-Black.png" class="logo">JudeUk</li>
+                        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYgkuZuo-HrVw9YHjPuCMjA1yclglctdY8z5lZg247a50rVIPj" class="logo">@Judee_boi</li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png" class="logo">Judeukana</li>
 
                     </ul>
                 </nav>
                 
                 <section id=main_section>
                     <article>
-                        <img src="jay.jpg" id="pp">
+                        <img src="https://scontent.flos6-1.fna.fbcdn.net/v/t1.0-9/20525925_191275324743700_8093226816472092893_n.jpg?_nc_eui2=v1%3AAeE6trVeyO3buaoGQ1dhvCSO4FnGFEysg2Fx2Vs2mIzPwqUXMz3PZi_PeJRdvl7o7qNZFRBpMONHslz2Zrry9tv4idPRGDWWcSkPKmvrH-rRrg&oh=3fa5ecb3fd6c61268497c3c3c850bb46&oe=5A45F2FE" id="pp">
                         <br>
                         <br>
                         <h1>Personal Profile</h1>
@@ -67,6 +67,7 @@
                            <p>JAVASCRIPT(intermediate level)</p>
                            <p>JQUERY(intermediate level)</p>
                            <p>PHP(intermediate level)</p>
+                        <p><a href="https://github.com/JudeUk/Androidapp/raw/master/judeukana.app3.apk">download the app here</a></p>
                     </article>
                 </section>
                 

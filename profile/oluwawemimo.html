@@ -2,7 +2,7 @@
 <html lang="en-US">
 	<head>
 		<title>Stage 3 task</title>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
@@ -15,23 +15,26 @@
 				width: 60%; 
 				height: 60%; 
 				margin: 0 auto; 
-				border-radius: 50%;
+				border-radius: 7%;
 			}
 			.form-content { 
 				width: 40%;     
 				margin: 0 auto; 
 			}
 			.social { 
-				width: 15%; 
-				margin: 0 auto; 
+				max-width: 20%; 
+				margin: auto; 
 			}
 			a.soc { 
 				margin: 0 5px 5px 0 
 			}
 			h2 { 
 				font-family: cursive; 
-				color: #BCE451; 
+				color: #EA4335; 
 				text-align: center; 
+			}
+			#pic {
+				max-width: 150px;
 			}
 			img.display { 
 				display: block;
@@ -44,7 +47,7 @@
 			}
 			.user { 
 				font-family: Sans-serif; 
-				color: #FE767E; 
+				color: #FBBC05; 
 				text-align: center; 
 			}
 		
@@ -71,30 +74,64 @@
 				width: 70px; 
 				margin-left: 230px; 
 			}
+			.contact {
+				max-width: 22%;
+				margin: 20px;
+				background-color: #FFFFFF;
+				border-radius: 2px;
+				border: 1px solid #915C83;
+				font-weight: bold;
+				font-size: 12px;
+				text-align: center;
+				color: #007FFF;
+				display: inline-block;
+				
+			}
+			.tel {
+				float: right;
+				margin-right: 20px;
+				
+			}
 		</style>
 	</head>
 	<body>
+	
 		<div class="main">
+		
 			<div class="pro">
 				<p><a id="stage1" href="https://github.com/wemsyz"><i class="fa fa-github"></i>Stage1</a></p>
 			</div>
-			<p><img class="display" src="https://avatars2.githubusercontent.com/u/14195982?v=4&s=460" alt="wemimo_img" width="200"></p>
+			
+			<p><img id="pic" class="display" src="https://avatars2.githubusercontent.com/u/14195982?v=4&s=460" alt="wemimo_img"></p>
 			<h2>Biography</h2>
-			<p id="bio">I am an IT enthusiast who aspires to become a 
-				full stack developer. <br> I enjoy watching football when I am not coding.
+			<p id="bio">Oluwawemimo is an Information Technology enthusiast who aspires to become a full stack developer. <br> 
+				I love to take on challenges and explore new opportunities. <br> 
+				Enjoys watching football when I am not coding.
 			</p>
 			<p class="user">Oluwawemimo Ogunmola</p>
 			<p class="user"><a href="https://hnginterns.slack.com/team/wemsyz"><i class="fa fa-slack"></i>wemsyz</a></p>
-			<h2>Connect</h2>
+			<h2>Connect me</h2>
+			
 			<div class="social">
-			<a class="soc" href="https://facebook.com/wemsyz" target="_blank"><i class="fa fa-facebook"></i></a>
-			<a class="soc" href="https://instagram.com/wemsyz" target="_blank"><i class="fa fa-instagram"></i></a>
-			<a class="soc" href="https://linkedin.com/in/oluwawemimo-ogunmola" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-			<a class="soc" href="https://twitter.com/wemsyz" target="_blank"><i class="fa fa-twitter"></i></a>
-			<a class="soc" href="https://www.pinterest.com/ogunmolaoluwawemimo" target="_blank"><i class="fa fa-pinterest"></i></a>
+			
+				<a class="soc" href="https://facebook.com/wemsyz" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a class="soc" href="https://instagram.com/wemsyz" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a class="soc" href="https://linkedin.com/in/oluwawemimo-ogunmola" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+				<a class="soc" href="https://twitter.com/wemsyz" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a class="soc" href="https://drive.google.com/open?id=0B8FUaqY8NtN2MHZ5U2UwQTNWNHc" target="_blank"><i class="fa fa-android"></i></a>
+				<a class="soc" href="https://plus.google.com/+OgunmolaOluwawemimo" target="_blank"><i class="fa fa-google-plus"></i></a>
 			</div>
+			
+			<div class="contact">
+				<a href="mailto:wemimo.ogunmola@gmail.com?subject=hng internship" "email me">EMAIL</a>
+			</div>
+	
+			<div class="contact tel">
+				<a href="tel:+2348060825972">CALL</a>
+			</div>
+			
+
 		</div>
-		
 		
 		<div class="form-content">
 			<h2>Contact Form</h2>
@@ -111,6 +148,7 @@
 			
 		</form>
 		</div>
+		
 	</body>
 		
 		

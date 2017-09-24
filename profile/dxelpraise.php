@@ -1,4 +1,3 @@
-
 <?php
 
     $config = include('../config.php');
@@ -153,4 +152,3 @@ padding: 20px;
  </div>
 </body>
 </html>
-
