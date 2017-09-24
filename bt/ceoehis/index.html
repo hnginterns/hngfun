@@ -160,11 +160,16 @@ function sideNote() {
   
   function getUser() {
     user = prompt("Hi, I'd like to know your name");
+    user = titleCase(user);
     var stranger = document.getElementById('stranger');
     var question = document.getElementById('question');
     if(user) {
       stranger.innerText = user; 
       question.style.display = "none";
+    }
+    
+    function titleCase(str) {
+      return str.toLowerCase().replace(/(^|\s)\S/g, (L) => L.toUpperCase());
     }
   }
 getUser()
