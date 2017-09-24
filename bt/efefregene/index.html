@@ -180,27 +180,27 @@
             sec = appendZero(sec);
             hour = appendZero(hour);
             if (hour >= 0 && hour <= 5) {
-                greeting = 'Good Morning';
+                greeting = 'Good Morning,';
                 quote = 'Once it is \"A.M.\", it is time to get up and work';
                 document.getElementById("bodyId").className = "early-morning"; 
             }
             else if(hour >= 6 && hour <= 11) {
-                greeting = 'Good day';
+                greeting = 'Good day,';
                 quote = 'Let he that work, work while it is day, for the night comes ...';
                 document.getElementById("bodyId").className = "morning"; 
             }            
             else if(hour >= 12 && hour <= 15) {
-                greeting = 'Good Afternoon';
+                greeting = 'Good Afternoon,';
                 quote = 'Make hay while the sun shines. Or at least earn a pay';
                 document.getElementById("bodyId").className = "afternoon"; 
             }
             else if(hour >= 17 && hour <= 19) {
-                greeting = 'Good Evening';
+                greeting = 'Good Evening,';
                 quote = 'Work ends when work ends, not when the sun sets';
                 document.getElementById("bodyId").className = "evening"; 
             }
             else if(hour >= 20 && hour <= 23) {
-                greeting = 'Good Night';
+                greeting = 'Good Night,';
                 quote = 'Sweet sleep is the exclusive right of those who have laboured. Why do you want to sleep?';
                 document.getElementById("bodyId").className = "night"; 
             }
