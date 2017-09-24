@@ -160,10 +160,13 @@ function sideNote() {
   
   function getUser() {
     user = prompt("Hi, I'd like to know your name");
+    var temp = user.split('');
+    temp[0].toUpperCase()
+    var userName = temp.join('');
     var stranger = document.getElementById('stranger');
     var question = document.getElementById('question');
     if(user) {
-      stranger.innerText = user; 
+      stranger.innerText = userName; 
       question.style.display = "none";
     }
   }
