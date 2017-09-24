@@ -1,28 +1,176 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Hello app</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background: black;
+      background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,1)),
+        url("http://unsplash.it/1920/1080?image=1081");
+      background-size: cover; 
+      background-attachment: fixed; 
+      width: 100%; 
+      background-position: center; 
+      background-repeat: no-repeat;
+    }
+    
+    main {
+      text-shadow: 1px 1px 5px rgba(0,0,0,5);
+      padding: 8rem;
+      color: white;
+      text-align: center;
+      font-family: Helvetica, sans-serif;
+      font-size: 1.5em;
+    }
+    
+    h3 {
+      font-size: 2em;
+    }
+    
+    button {
+      border: none; 
+      color: white; 
+      border-radius: 5px; 
+      padding-left: 20px; 
+      padding-right: 20px; 
+      box-shadow: 1px 1px 5px rgba(0,0,0,5);
+      font-size: 18px; 
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <main>
+      <h1><span id="greeting"></span> <span id="stranger">Stranger</span><span id='side'></span></h1>
+      <p id="question">How about you <button onclick="getUser();">tell</button> me your name?</p>
+      <h3>The time is <span id="txt"></span></h3> 
+      
+  </main
+   
+
+
+
+
 <script>
+  var user; 
 function startTime() {
     var today = new Date();
     var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
+    var timeOfDay = h >= 12 ? 'PM' : 'AM'; 
+    h = h % 12;
+    h = h ? h : 12;
+    var m = ('0' + today.getMinutes()).slice(-2);
+    var s = ('0' + today.getSeconds()).slice(-2);
+    document.getElementById('txt').innerHTML = `${h}:${m}:${s} ${timeOfDay}`;
+    var t = setInterval(startTime, 500);
 }
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
+function greet() {
+    var today = new Date();
+    var time = today.getHours();
+    var greeting;
+    switch(time) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+          greeting = 'It\'s midnight, you should be asleep';
+          break;
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+        case 11:
+          greeting = 'Good Morning';
+          break;
+        case 12:
+        case 13:
+        case 14:
+        case 15:
+        case 16:
+        case 17:
+          greeting = 'Good Afternoon';
+          break;
+        case 18:
+        case 19:
+        case 20:
+        case 21:
+        case 22:
+        case 23:
+          greeting = 'Good Evening';
+          break;
+        default:
+          greeting = 'Hi';
+    } 
+    document.getElementById('greeting').innerHTML = greeting; 
 }
+  
+function sideNote() {
+    var today = new Date();
+    var time = today.getHours()
+    var greeting;
+    switch(time) {
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+          greeting = ', time to get some rest. ';
+          break;
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+        case 11:
+          greeting = ', let\'s get started with today\'s task.';
+          break;
+        case 12:
+        case 13:
+        case 14:
+        case 15:
+        case 16:
+        case 17:
+          greeting = ', I\'m sure today had been productive';
+          break;
+        case 18:
+        case 19:
+        case 20:
+        case 21:
+        case 22:
+        case 23:
+          greeting = ', wow, we sure achieved our goals for the day Huh.';
+          break;
+        default:
+          greeting = 'Hi';
+    } 
+    document.getElementById('side').innerHTML = greeting; 
+}
+  
+  function getUser() {
+    user = prompt("Hi, I'd like to know your name");
+    var stranger = document.getElementById('stranger');
+    var question = document.getElementById('question');
+    if(user) {
+      stranger.innerText = user; 
+      question.style.display = "none";
+    }
+  }
+getUser()
+startTime()
+greet()
+sideNote()
 </script>
-</head>
-
-<body onload="startTime()">
-
-<div id="txt"></div>
-
 </body>
 </html>
