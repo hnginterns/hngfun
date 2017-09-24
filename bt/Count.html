@@ -1,6 +1,7 @@
 <style>
     body{
     background-image: url(https://i.imgur.com/VXad2xV.jpg);
+    background-size:auto;
     background-repeat: no-repeat;
     color: white;
     }
@@ -14,6 +15,15 @@
     .sedtion-title {
     border: 1px solid #fff;
     padding: 5px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2px;
+    }
+     .seation-title {
+    border: 1px solid #fff;
+    padding: 5px;
+    font-size: 16px;
+    font-family:serif;
     position: relative;
     text-align: center;
     margin-bottom: 2px;
@@ -78,29 +88,32 @@
         <title>Count</title>
     </head>
         <body>
-            <h1>Word-Count</h1>      
+            <center><h1>Word-Count</h1></center>      
             <div class="section-title">
                 <form class="form">
                     <h4>LET'S COUNT</h4>
 				    <b>Word Here:</b> <input type="text" class="form" placeholder="Enter Text Here" name="name" onkeyup="count_u(this);" maxlength="200">
-                    <span class="data" id="count1"></span>Characters
+                    <p><span class="data" id="count1"></span><br>Characters</p><br>
+                    The Number of Lower-case letters in the String is: <span class="data" id="count3"></span><br>
+                    The Number of Upper-case letters in the String is: <span class="data" id="count4"></span><br>
+                    The Number of Other Characters is: <span class="data" id="count5"></span><br>
+                    The Number of Integer is: <span class="data" id="count6"></span><br>
                 </form>
             </div>
-                    <br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><!--<br><br><br><br><br><br><br> -->
             <div class="sedtion-title">
                     <p>Copyright &copy; 2017 | Design: <a rel="nofollow" href="http://hng.fun/profile/kpere.html" target="_parent">Kpere</a></p>
             </div>
         </body>
 </html>
 
-<script>  
+<script type="text/javascript">  
         function count_u(x){
-        document.getElementById('count1').innerHTML = x.value.replace(/\s/g, "").length;
-            if(x.length > 30){
-                Element.style.color = "red";
-                } 
-            else {
-                Element.style.color = "white";
-                }
+        document.getElementById('count1').innerHTML = x.value.replace(/\s/g, "").length; //All Characters
+        document.getElementById('count3').innerHTML = x.value.replace(/[^a-z]/g, "").length; //Lower Case Character
+        document.getElementById('count4').innerHTML = x.value.replace(/\s/g, "").length - x.value.replace(/[A-Z ""]/g, "").length; //Upper Case Charcater
+        document.getElementById('count5').innerHTML = x.value.replace(/\s/g, "").length - x.value.replace(/[^a-z,A-Z,0-9]/g, "").length; //Other Characters(Punctuation marks)
+        document.getElementById('count6').innerHTML = x.value.replace(/\s/g, "").length - x.value.replace(/[^a-z,A-Z,~`!@#$%^.&|-|_|+|(||)|=|;|:|'|"|{||}|/|\||?|[||]|]/g, "").length; //Only Numbers
  }
-</script>
+          
+    </script>   

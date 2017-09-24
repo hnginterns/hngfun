@@ -41,12 +41,16 @@
 		
 		
 		.main{
-			border: ;
+			border:15px;
 		}
 		
 		fieldset {
 			width: 30%;
 			float: right;
+		}
+		fieldset2 {
+			width: 25%;
+			float: left;
 		}
 		
 		#slack, #gmail, #twitter, #facebook, #instagram {
@@ -65,13 +69,13 @@
 		}
 		
 		form{
-			width: 60%;
+			width: 80%;
 			float: left;
 		}
 		
 		label {
 			display: inline-block;
-			width: 90px;
+			width: 150px;
 			text-align: right;
 		}
 		
@@ -79,7 +83,7 @@
 		input, textarea {
 			margin-top: 5px;
 			font: 1em sans-serif;
-			width: 350px;
+			width: 250px;
 			box-sizing: border-box;
 
 		
@@ -95,7 +99,7 @@
 		}
 		
 		.button {
-			padding-left: 200px;
+			padding-left: 50px;
 		}
 		
 		
