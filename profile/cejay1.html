@@ -1,78 +1,41 @@
+<html>
 
- <style>
-     card {
-    width: 500px;
-    height: 300px;
-    padding:10px;
-    border-radius: 10px;
-    background: white;
-
-}
-.input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 40%;
- padding: 60px 10px;
-  height: 35px;
-
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  background: #e8eb;
-  color: #576366;
-  font-size: 40px;
-}
-
-
-.inpt{
-    display: inline-block;
-    height: 40px;
-    line-height: 4x;
-    margin-top: 5px;
-    border: none;
-    border-radius: 5px;
-    background: teal;
-    color:whitesmoke;
-    font-size: 24px;
-    font-weight: bold;
-}
-
- </style>
+<body onload="startTime();myFunction()">
  
- <body>
-    <div class="container">
-            <div class="card">
-                <h2>Character Counting</h2>
-                    <input id="char" type="text" placeholder="Enter characters here..." class="input">
-                    <div>
-                    <input type="button" class="inpt" value="Count display"  id="string" onClick="stringCounter()"> 
-                    </div> 
-                    <p id="display"></p> 
-            </div>
-            <a href="java.html"><input type="button" class="inpt" value="Greeting" style="background-color: darkgrey"> </a>
-            <a href="timer.html"><input type ='button' class="inpt" value="Timer" style="background-color:darkgrey"></a>
-    </div>
-</body>
-<script type = "text/javascript">
-    mode = true;
-    let stringCounter = () =>{
-        let counting = 0;
-        let string = document.getElementById('char').value;
-        for (char in string){
-            if (mode === true){
-            if (!/\s/g.test(string[char])){counting ++;}}
-            else{counting = string.length}
-        }
-        document.getElementById("display").innerHTML = 'string count is :   '+counting;
+
+<h1 id="greet"></h1>
+<h1 id="show"></h1>
+<script>
+
+    function startTime() {
+    var now = new Date();
+    var hours = now.getHours();
+    var mins = now.getMinutes();
+   mins = checkTime(mins);
+
+    document.getElementById('greet').innerHTML =
+   hours+ ":" +mins;
+    var time = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i}; 
+    return i;
+}
+   
+function myFunction() {
+    var greeting;
+    var time = new Date().getHours();
+    if (time < 10) {
+        greeting = "Good morning";
+    } else if (time < 20) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
     }
-    
-    
-    document.getElementById("char").addEventListener("keyup", function(event) {
-    event.preventDefault();
-    document.getElementById("string").click();
-});
-
-
+document.getElementById("show").innerHTML = greeting;
+}
+ 
 </script>
-<link hre
+
+</body>
+</html>
