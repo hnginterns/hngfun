@@ -16,7 +16,15 @@
             border-radius: 5px;
         }
 
-        #btn {
+        #btn0 {
+            width:100%;
+            height:40px;
+            font-size:20px;
+            background-color: lightgray;
+        }
+
+        #btn1, #btn2,  #btn3,  #btn4,  #btn5,
+        #btn6,  #btn7,  #btn8,  #btn9,  #btn10,  #btn11, #btn12{
             width:100%;
             height:40px;
             font-size:20px;
@@ -32,10 +40,10 @@
 
         h1{
             font-weight: bold;
-            color: royalblue;
+            color: black;
         }
 
-        .btn{
+        #div, #div1, #div2, #div3{
             width:100%;
             height:40px;
             font-size:20px;
@@ -43,14 +51,14 @@
 
         }
 
-        .clear{
+        #clear{
             width:100%;
             height:40px;
             font-size:20px;
-            background-color: orangered;
+            background-color: lightgrey;
         }
 
-        .mt {
+        #mt {
             width:100%;
             height:40px;
             font-size:20px;
@@ -58,43 +66,50 @@
         }
 
 
-        .mc {
+        #mc {
             width:100%;
             height:40px;
             font-size:20px;
             background-color: royalblue;
         }
-        .mr {
+        #mr {
             width:100%;
             height:40px;
             font-size:20px;
             background-color: royalblue;
         }
-        .ms{
+        #ms{
             width:100%;
             height:40px;
             font-size:20px;
             background-color: royalblue;
         }
-        .lx, .xs{
+        #lx, #xs{
             width:100%;
             height:40px;
             font-size:20px;
-            background-color: sandybrown;
+            background-color: lightgray;
         }
 
-        .sq{
+        #sq{
             width:100%;
             height:40px;
             font-size:15px;
-            background-color: sandybrown;
+            background-color: lightgray;
         }
 
-        .ce{
+        #ce{
             width:100%;
             height:40px;
             font-size:20px;
-            background-color: orangered;
+            background-color: lightgray;
+        }
+
+        .switch{
+            width:100%;
+            height:40px;
+            font-size:20px;
+            background-color: yellowgreen;
         }
 
     </style>
@@ -110,52 +125,55 @@
     <td style="display:none"><input name="M" type="number"></td>
     </tr>
 <tr>
-<td><input class="mc" type=button value="MC" OnClick="calc.M.value='0'"></td>
-<td><input id="btn" type=button value="0" onclick="toScreen('0')"></td>
-<td><input id="btn" type=button value="1" onclick="toScreen('1')"></td>
-<td><input id="btn" type=button value="2"  onclick="toScreen('2')"></td>
-<td><input class="btn" type=button value="+"  onclick="toScreen('+')"></td>
+<td><input id="mc" type=button value="MC" OnClick="calc.M.value='0'"></td>
+<td><input id="btn0" type=button value="0" onclick="toScreen('0')"></td>
+<td><input id="btn1" type=button value="1" onclick="toScreen('1')"></td>
+<td><input id="btn2" type=button value="2"  onclick="toScreen('2')"></td>
+<td><input id="div2" type=button value="+"  onclick="toScreen('+')"></td>
 </tr>
 <tr>
-<td><input class="ms" type=button value="MS" OnClick="calc.M.value=calc.display.value"></td>
-<td><input id="btn" type=button value="3" onclick="toScreen('3')"></td>
-<td><input id="btn" type=button value="4"  onclick="toScreen('4')"></td>
-<td><input id="btn" type=button value="5" onclick="toScreen('5')"></td>
-<td><input class="btn" type=button value="-"  onclick="toScreen('-')"></td>
+<td><input id="ms" type=button value="MS" OnClick="calc.M.value=calc.display.value"></td>
+<td><input id="btn3" type=button value="3" onclick="toScreen('3')"></td>
+<td><input id="btn4" type=button value="4"  onclick="toScreen('4')"></td>
+<td><input id="btn5" type=button value="5" onclick="toScreen('5')"></td>
+<td><input id="div1" type=button value="-"  onclick="toScreen('-')"></td>
 </tr>
 <tr>
-<td><input class="mr" type=button value="MR" OnClick="calc.display.value=calc.M.value"></td>
-<td><input id="btn" type=button value="6"  onclick="toScreen('6')"></td>
-<td><input id="btn" type=button value="7"  onclick="toScreen('7')"></td>
-<td><input id="btn" type=button value="8" onclick="toScreen('8')"></td>
-<td><input class="btn" type=button value="x"  onclick="toScreen('*')"></td>
+<td><input id="mr" type=button value="MR" OnClick="calc.display.value=calc.M.value"></td>
+<td><input id="btn6" type=button value="6"  onclick="toScreen('6')"></td>
+<td><input id="btn7" type=button value="7"  onclick="toScreen('7')"></td>
+<td><input id="btn8" type=button value="8" onclick="toScreen('8')"></td>
+<td><input id="div3" type=button value="x"  onclick="toScreen('*')"></td>
 </tr>
 <tr>
-<td><input class="mt" type=button value="M+" OnClick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))"></td>
-<td><input id="btn" type=button value="9"  onclick="toScreen('9')"></td>
-<td><input id="btn" type=button value="+/-" 
+<td><input id="mt" type=button value="M+" OnClick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))"></td>
+<td><input id="btn9" type=button value="9"  onclick="toScreen('9')"></td>
+<td><input id="btn10" type=button value="+/-"
 
 OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))">
 
 </td>
-<td><input class="ce" type=button value="CE" onclick="backspace()"></td>
-<td><input class="btn" type=button value="/" OnClick="calc.display.value+='/'"></td>
+<td><input id="ce" type=button value="CE" onclick="backspace()"></td>
+<td><input id="div" type=button value="/" OnClick="calc.display.value+='/'"></td>
 </tr>
 <tr>
-<td><input class="lx" type=button value="1/x" OnClick="calc.display.value=1/calc.display.value"></td>
-<td><input id="btn" type=button value="." OnClick="calc.display.value+='.'"></td>
-<td><input class="xs" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)"></td>
-<td><input class="sq" type=button value="sqrt" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
-<td><input class="clear" type=button value="C" OnClick="calc.display.value=''"></td>
+<td><input id="lx" type=button value="1/x" OnClick="calc.display.value=1/calc.display.value"></td>
+<td><input id="btn11" type=button value="." OnClick="calc.display.value+='.'"></td>
+<td><input id="xs" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)"></td>
+<td><input id="sq" type=button value="sqrt" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
+<td><input id="clear" type=button value="C" OnClick="calc.display.value=''"></td>
 </tr>
 <tr>
-    <td colspan="3"><input id="btn" type=button value="=" onclick="equalsTo()"></td>
+    <td><input class="switch" type="button" value="On" onclick="on()"></td>
+    <td><input class="switch" type="button" value="Off" onclick="off()"></td>
+    <td colspan="3"><input id="btn12" type=button value="=" onclick="equalsTo()"></td>
 </tr>
 </table>
 </form>
 <script type="text/javascript">
 
     let box = document.getElementById('display');
+
 
     function backspace() {
         let num = box.value;
@@ -190,6 +208,66 @@ OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(
         }
 
     }
+
+    function on(){
+        document.getElementById('btn0').disabled = false;
+        document.getElementById('btn1').disabled = false;
+        document.getElementById('btn2').disabled = false;
+        document.getElementById('btn3').disabled = false;
+        document.getElementById('btn4').disabled = false;
+        document.getElementById('btn5').disabled = false;
+        document.getElementById('btn6').disabled = false;
+        document.getElementById('btn7').disabled = false;
+        document.getElementById('btn8').disabled = false;
+        document.getElementById('btn9').disabled = false;
+        document.getElementById('btn10').disabled = false;
+        document.getElementById('btn11').disabled = false;
+        document.getElementById('btn12').disabled = false;
+        document.getElementById('mt').disabled = false;
+        document.getElementById('mc').disabled = false;
+        document.getElementById('mr').disabled = false;
+        document.getElementById('ms').disabled = false;
+        document.getElementById('div').disabled = false;
+        document.getElementById('div1').disabled = false;
+        document.getElementById('div2').disabled = false;
+        document.getElementById('div3').disabled = false;
+        document.getElementById('clear').disabled = false;
+        document.getElementById('ce').disabled = false;
+        document.getElementById('lx').disabled = false;
+        document.getElementById('xs').disabled = false;
+        document.getElementById('sq').disabled = false;
+    }
+
+    function off() {
+        document.getElementById('btn0').disabled = true;
+        document.getElementById('btn1').disabled = true;
+        document.getElementById('btn2').disabled = true;
+        document.getElementById('btn3').disabled = true;
+        document.getElementById('btn4').disabled = true;
+        document.getElementById('btn5').disabled = true;
+        document.getElementById('btn6').disabled = true;
+        document.getElementById('btn7').disabled = true;
+        document.getElementById('btn8').disabled = true;
+        document.getElementById('btn9').disabled = true;
+        document.getElementById('btn10').disabled = true;
+        document.getElementById('btn11').disabled = true;
+        document.getElementById('btn12').disabled = true;
+        document.getElementById('mt').disabled = true;
+        document.getElementById('mc').disabled = true;
+        document.getElementById('mr').disabled = true;
+        document.getElementById('ms').disabled = true;
+        document.getElementById('div').disabled = true;
+        document.getElementById('div1').disabled = true;
+        document.getElementById('div2').disabled = true;
+        document.getElementById('div3').disabled = true;
+        document.getElementById('clear').disabled = true;
+        document.getElementById('ce').disabled = true;
+        document.getElementById('lx').disabled = true;
+        document.getElementById('xs').disabled = true;
+        document.getElementById('sq').disabled = true;
+        box.value = "";
+    }
+
 </script>
 </body>
 </html>

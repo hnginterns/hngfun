@@ -5,8 +5,7 @@
 
        <script language="javascript">
 
-window.alert("Hello! welcome to my Javascript Calculator");
-
+ 
        function addChar(input, character) {
        if(input.value == null || input.value == "0")
         input.value = character
@@ -14,24 +13,18 @@ window.alert("Hello! welcome to my Javascript Calculator");
         input.value += character
 }
 
-function cos(form) {
-    form.display.value = Math.cos(form.display.value);
-}
-
-function sin(form) {
-    form.display.value = Math.sin(form.display.value);
-}
-
-function tan(form) {
-    form.display.value = Math.tan(form.display.value);
-}
-
 function sqrt(form) {
+  if (Number(form.display.value) >0)
     form.display.value = Math.sqrt(form.display.value);
+     else
+      form.display.value = "cannot find root of negative number";
 }
 
 function ln(form) {
+  if (Number(form.display.value) >0)
     form.display.value = Math.log(form.display.value);
+    else
+      form.display.value = "cannot find log of negative number";
 }
 
 function exp(form) {
@@ -44,7 +37,7 @@ function deleteChar(input) {
 var val = 0.0;
 function percent(input) {
   val = input.value;
-  input.value = input.value + "%";
+  input.value = input.value / 100;
 }
 
 function changeSign(input) {
@@ -55,10 +48,9 @@ function changeSign(input) {
 }
 
 function compute(form) {
- 
-    form.display.value = eval(form.display.value);
-  }
 
+    form.display.value = eval(form.display.value);
+}
 
 function square(form) {
     form.display.value = eval(form.display.value) * eval(form.display.value)
@@ -70,7 +62,7 @@ function checkNum(str) {
         if (ch < "0" || ch > "9") {
             if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "."
                 && ch != "(" && ch!= ")" && ch != "%") {
-                alert("invalid entry!")
+                ("invalid entry!")
                 return false
                 }
             }
@@ -80,8 +72,15 @@ function checkNum(str) {
              </script>
 
             <style>
+
+
  .mytext{
  color: white;
+ 
+}
+.mytext2{
+ color: white;
+ 
  
 }
 
@@ -92,7 +91,12 @@ function checkNum(str) {
 }
 body {
   background-image: url("http://res.cloudinary.com/dbsp74gfz/image/upload/v1506104445/math3_kscwus.jpg");
-  
+  background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      text-align: center;
 }
 .calculator {
   width: 400px;
@@ -102,7 +106,15 @@ body {
   border: 5px solid black;
   border-radius: 10px;
 }
+
+
+
+
+
+
 #display {
+  margin-top: 2em;
+      margin-bottom: 20px;
   width: 320px;
   height: 40px;
   text-align: center;
@@ -112,53 +124,70 @@ body {
   left: 2px;
   top: 2px;
   color: #7fff00;
+  padding: 5px 5px 0 0;
 }
-.btnTop{
-  color: white;
-  background-color: #6f6f6f;
-  font-size: 20px;
-  margin: auto;
-  width: 50px;
-  height: 30px;
-}
-.btnNum {
-  color: white;
+#btn {
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+      width:55px;
+      height:35px;
+      box-shadow: 0 0 2px 1px black;
+      outline: none;
+    }
+
+    #btnnumber {
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+      width:55px;
+      color: white;
   background-color: black;
-  font-size: 20px;
-  margin: auto;
-  width: 60px;
-  height: 40px;
-}
-.btnMath {
-  color: white;
-  background-color: #607D8B;
-  font-size: 20px;
-  margin: auto;
-  width: 60px;
-  height: 40px;
-}
-.btnOpps {
-  color: white;
-  background-color: #4A148C;
-  font-size: 20px;
-  margin: auto;
-  width: 80px;
-  height: 40px;
-}
-.btnAlone{
-  color: black;
-  background-color: #FFFFFF;
-   font-size: 30px;
-    margin: auto;
-     width: 80px;
-  height: 40px;
-}
+      height:35px;
+      box-shadow: 0 0 2px 1px black;
+      outline: none;
+    }
 
 
+    #oprbtn {
+      color: white;
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+      background-color: #4A148C;
+      width:55px;
+      height:35px;
+      box-shadow: 0 0 2px 1px black;
+      outline: none;
+    }
+#equal {
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+      width:122px;
+      height:35px;
+      outline: none;
+      color: white;
+      background-color: #4A148C;
+      box-shadow: 0 0 2px 1px black;
+    }
+
+    #calculator {
+      background-color: gray;
+      width: 300px;
+      height: 350px;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 0 0 3px 6px #ccc;
+      margin: 50px auto;
+    }
 form { 
 margin: 0 auto; 
 width:350px;
 padding-top: 100px;
+}
+#switch{
+  margin-top: 0px;
 }
 
 
@@ -167,60 +196,131 @@ padding-top: 100px;
 </head>
 <body>
 
-  <h1 class = "mytext">JavaScript Calculator</h1>
+  <h1 class = "mytext"> JavaScript Calculator</h1>
   <br>
-  <h2 class = "mytext">by EMIQUEENA</h2>
+  <h2 class = "mytext"> by EMEM JONAH</h2>
 
-<form name="calc">
- <center><table class="calculator" cellspacing="0" cellpadding="1">
-   <tr>
-      <center><td colspan="20"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
-   </tr>
+ <form name="calc">
 
-   <tr>
-     <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=  0 "></td>
-     <td><input type="button" class="btnTop" name="btnTop" value="<--" onclick="deleteChar(this.form.display)"></td>
+ <table class="calculator" cellspacing="1" cellpadding="0">
+         
+      <td colspan="20"><input id="display" name="display" value="0" size="28" maxlength="25">
+
+       
+<br>
+      
+     <input type="button" id="btn"  value="C"      onclick="this.form.display.value=  0 ">
+     <input type="button" id="btn"  value="CE"    onclick="deleteChar(this.form.display)">
+     <input type="button" id="btn"  value="x^y" onclick='toScreen("**")'>
+     <input type="button" id="btn" value="%"      onclick=" percent(this.form.display)">
+     <input type="button" id="oprbtn" value="/"      onclick="addChar(this.form.display, '/')">
      
-     <td><input type="button" class="btnTop" name="btnTop" value="&#960;" onclick="addChar(this.form.display,'3.14159265359')"></td>
-     <td><input type="button" class="btnOpps" name="btnOpps" value="%" onclick=" percent(this.form.display)">
-       <td><input type="button" class="btnMath" name="btnMath" value="/" onclick="addChar(this.form.display, '/')">
-     </td>
-   </tr>
-
-   <tr>
-     <td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')"></td>
-     <td><input type="button" class="btnNum" name="btnNum" value="8" onclick="addChar(this.form.display, '8')"></td>
-     <td><input type="button" class="btnNum" name="btnNum" value="9" onclick="addChar(this.form.display, '9')"></td>
-      <td><input type="button" class="btnOpps" name="btnOpps" value="ln" onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
-      <td><input type="button" class="btnMath" name="btnMath" value="*" onclick="addChar(this.form.display, '*')"></td>
-     </td>
-
-   <tr>
-     <td><input type="button" class="btnNum" name="btnNum" value="4" onclick="addChar(this.form.display, '4')"></td>
-     <td><input type="button" class="btnNum" name="btnNum" value="5" onclick="addChar(this.form.display, '5')"></td>
-     <td><input type="button" class="btnNum" name="btnNum" value="6" onclick="addChar(this.form.display, '6')"></td>
-     <td><input type="button" class="btnOpps" name="btnOpps" value="&radic;" onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
-      <td><input type="button" class="btnMath" name="btnMath" value="-" onclick="addChar(this.form.display, '-')"></td>
-   </tr>
-
-   <tr>
-     <td><input type="button" class="btnNum" name="btnNum" value="1" onclick="addChar(this.form.display, '1')"></td>
-     <td><input type="button" class="btnNum" name="btnNum" value="2" onclick="addChar(this.form.display, '2')"></td>
-     <td><input type="button" class="btnNum" name="btnNum" value="3" onclick="addChar(this.form.display, '3')"></td>
-    <td><input type="button" class="btnOpps" name="btnOpps" value="x&#50;" onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
-      <td><input type="button" class="btnMath" name="btnMath" value="+" onclick="addChar(this.form.display, '+')"></td>
-   </tr>
-
-   <tr>
-     <td><input type="button" class="btnMath" name="btnMath" value="&#177" onclick="changeSign(this.form.display)"></td>
-     <td><input type="button" class="btnNum" name="btnNum" value="0" onclick="addChar(this.form.display, '0')"></td>
-     <td><input type="button" class="btnMath" name="btnMath" value="&#46;" onclick="addChar(this.form.display, '&#46;')"></td>
-     <td><input type="button" class="btnAlone" name="btnAlone" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
-    
-   </tr>
+<br>
+   
+     <input type="button" id="btnnumber"  value="7"    onclick="addChar(this.form.display, '7')">
+     <input type="button" id="btnnumber"  value="8"    onclick="addChar(this.form.display, '8')">
+     <input type="button" id="btnnumber"  value="9"    onclick="addChar(this.form.display, '9')">
+     <input type="button" id="btn" value="ln"   onclick="if(checkNum(this.form.display.value)) { ln(this.form) }">
+     <input type="button" id="oprbtn" value="*"    onclick="addChar(this.form.display, '*')">
+     
+<br>
+     <input type="button" id="btnnumber"  value="4"         onclick="addChar(this.form.display, '4')">
+     <input type="button" id="btnnumber"  value="5"         onclick="addChar(this.form.display, '5')">
+     <input type="button" id="btnnumber"  value="6"         onclick="addChar(this.form.display, '6')">
+     <input type="button" id="btn" value="&radic;"   onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }">
+     <input type="button" id="oprbtn" value="-"         onclick="addChar(this.form.display, '-')">
+   <br>
+     <input type="button" id="btnnumber"  value="1"   onclick="addChar(this.form.display, '1')">
+     <input type="button" id="btnnumber"  value="2"   onclick="addChar(this.form.display, '2')">
+     <input type="button" id="btnnumber"  value="3"   onclick="addChar(this.form.display, '3')">
+     <input type="button" id="btn" value="x^2" onclick="if(checkNum(this.form.display.value)) { square(this.form) }">
+     <input type="button" id="oprbtn" value="+"   onclick="addChar(this.form.display, '+')">
+   
+<br>
+     <input type="button" id="btn" value="&#177"  onclick="changeSign(this.form.display)">
+     <input type="button" id="btnnumber"  value="0"      onclick='toScreen("0")'>
+     <input type="button" id="btn" value="&#46;"  onclick="addChar(this.form.display, '&#46;')">
+     <input type="button" id="equal"   value="="      onclick="if(checkNum(this.form.display.value)) { compute(this.form) }">
 
    
- </tabel>
+ </table>
 </form>
+<br>
+<hr>
+<script type="text/javascript">
+    
+  let box = document.getElementById('display');
+
+  function toScreen(x){
+
+    let displayArray = box.value.toString().split("");
+
+    if(box.value.length === 14){
+      box.value +='';
+    } else if(x ==='c'){
+      box.value = '';
+     } else{
+      box.value += x;
+    }
+  } 
+  function power(){
+    x = box.value;
+    x = eval(x * x);
+    box.value = x;
+  }
+
+  </script>
+   <aside class = "mytext2" align="left">
+        <h2 >Calculator Operations</h2>
+        <p>This basic online calculator is similar to a small handheld calculator and has the standard four functions for addition, subtraction, division and multiplication. Like most 4-function calculators it also includes keys for percent, square and square root . This basic calculator has decimal precision up to 10 digits and offers these functions:</p>
+        <ul>
+            
+            <li><strong>CE = Clear Entry:</strong> clears all current display value</li>
+            <li><strong>C = Clear Entry :</strong> clears one digit backward display value</li>
+            <li><strong>Ln = LOGARITHM:</strong> takes the log of the displayed value</li>
+            <li><strong>X^Y = POWER OF A NUMBER:</strong> number raised to the power of the displayed value</li>
+            <li><strong>&radic;x = Square Root:</strong> take the square root of the displayed value and display it</li>
+            <li><strong>+/- = Plus/Minus</strong>: change the sign of the displayed value from positive to negative or
+                vice versa
+            </li>
+            
+            <li><strong>x&sup2; = Square:</strong> square the displayed value and display it</li>
+            
+            <li><strong>% = Percent:</strong> use displayed value to calculate a percentage</li>
+        </ul>
+        <h3>Calculating Percentages</h3>
+        <ul>
+            <li>Multiplication and Division will convert the displayed value to a percent in decimal form and complete
+                the operation when you press [=]
+                <ul>
+                    <li>Example: find 20% of 25</li>
+                    <li>Enter 25 x 20 % and the display changes 20% to 0.2</li>
+                    <li>Enter = to complete the calculation 25 x 0.2 = 5. The answer 5 shows in the display.</li>
+                </ul>
+            </li>
+            <li>Addition and Subtraction will add or subtract the percentage of a value
+                <ul>
+                    <li>Example: add 20% to 25</li>
+                    <li>Enter 25 + 20 % and the display changes to 5. (5 is 20% of 25)</li>
+                    <li>Enter = to complete the calculation 25 + 5 = 30. The answer 30 shows in the display.</li>
+                </ul>
+            </li>
+            <li>Tax Calculation
+                <ul>
+                    <li>Example: add 6% tax to a purchase of $851</li>
+                    <li>Enter 851 + 6 % and the display changes to 51.06. (51.06 is 6% of 851)</li>
+                    <li>Enter = to complete the calculation 851 + 51.06 = 902.06. The answer 902.06 shows in the display.</li>
+                    <li>Note: for other problems you might get an answer with more than 2 decimal places. Use the R2 key to
+                        round off to dollars and cents. Use R0 to round off to only dollars.
+
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+
+        
+    </aside>
 </body>
 </html>
