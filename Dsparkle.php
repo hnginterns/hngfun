@@ -252,7 +252,7 @@
 </div>
 <div>
     <h2 style="font-size: 23px">To Download my android App <a href="https://drive.google.com/open?id=0B8tXne5pAOB6aEM1VVdidTc1VjA">Click Here</a></h2>
-    <h2 style="font-size: 23px">
+    <h2>
         To contact me please drop your message(s) below
     </h2>
     <form id="contact-form">
