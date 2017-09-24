@@ -1,0 +1,194 @@
+  <!Doctype html>
+<html>
+  <head>
+    <title>Calculator | </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<script>
+function displayNum(val){
+  let display =  document.getElementById('display');
+
+     //check display lenght
+     if(display.value.length == 14){
+        display.value = " ";
+     } else {
+        display.value += val;
+     }
+}
+function ce(){
+  document.getElementById('display').value = '';
+}
+function backSpace(){
+    document.getElementById('display').value = document.getElementById('display').value.slice(0,document.getElementById('display').value.length - 1);
+}
+function evalu(){
+  var evalo = eval(document.getElementById('display').value);
+  document.getElementById('display').value = evalo;
+}
+
+function power(){
+    let display = document.getElementById('display');
+    display.value = eval(x * x);
+}
+function sqrt(){
+    let display = document.getElementById('display');
+    display.value = Math.sqrt(x);
+  }
+function cos(){
+   let display = document.getElementById('display');
+    display.value = Math.cos(x);
+  }
+function sin(){
+   let display = document.getElementById('display');
+     display.value = Math.sin(x);
+  }
+
+function tan(){
+   let display = document.getElementById('display');   
+    display.value = Math.tan(x);
+    
+  }
+function on()
+{
+    let display = document.getElementById('display');
+    display.style.background = "#D4FFFF";
+    display.value = "";
+    if(displayNum(val)){
+      display.value += displayNum(val);
+    }
+}
+
+function off(){
+    let display = document.getElementById('display');
+        display.value = "Off";
+        display.style.background = "#FFFFFF";
+        display.style.transform = "ease-out .6s"
+}
+</script>
+    <style>
+    *{
+    }
+    body{
+      margin: auto;
+      padding:auto;
+      background-color: #24C4CB;
+      background: red; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(-90deg, #24C4CB, #37E7B9); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(-90deg, #24C4CB, #37E7B9); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(-90deg, #24C4CB, #37E7B9); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(-90deg, #24C4CB, #37E7B9); /* Standard syntax */
+      font-family: 'Lato', sans-serif;
+    }
+      .box{
+        width: 350px;
+        height: 500px;
+        border-radius: 8px;
+        border: 1px solid black;
+        position: relative;
+        padding-top: 15px;
+        font-weight: bold;
+        background-color: #C6C6C6E6;
+        margin: 30px auto;
+        box-shadow: 0px 5px 15px ;
+      }
+        #display {
+          text-align: right;
+          margin-bottom: 20px;
+          margin-left:10px;
+          width: 320px;
+          height: 60px;
+          border: 1px solid #243143;
+          border-radius: 5px;
+          font-size: 35px;
+          background: #D4FFFF;
+        }
+        .keys{
+          margin-top: 20px;
+        }
+        #power{
+          height: 40px;
+          width: 90px;
+          font-size: 22px;
+          margin-left:10px;
+          background: #24C4CB;
+          border: 1px solid #24C4CB;
+          border-radius: 10px; 
+          color: #FFFFFF;
+          box-shadow: 1px 2px #24C4CB;
+        }
+        #cos,#sin,#tan,#sqrt,#btnxy{
+          margin-left: 15px;
+        }
+      
+          .btn{
+          margin-right: 10px;
+          margin-bottom: 10px;
+          width: 50px;
+          height: 50px;
+          border-radius: 100px;
+          font-size: 20px;
+        }
+        
+        .btn:hover{
+          color: #557FFF;
+        }
+        #btnxy{
+          visibility: hidden;
+        }
+    </style>
+  </head>
+
+  <body>
+          <h2 style="text-align: center;color:white;">A Simple Calculator</h2>
+      <div class="box">
+          <div class="display">
+              <input type="text" style="" name="displayer"  id="display" readonly>
+          </div>
+          <div class="power">
+                <input type="button" name="power" id="power" value="on/off" onclick="on()" ondblclick="off()">
+          </div>
+          <div class="keys">
+              <form name="calculator">
+                <input type="button" class="btn" id="cos" name="cos" value="cos" onclick="">
+                <input type="button" class="btn" id="c" name="c" value="C" onclick="ce()">
+                <input type="button" class="btn" id="btncancel" name="btncancel" value="<-" onclick="backSpace()">
+                <input type="button" class="btn" id="btnx" name="btnx" value="x^y" onclick="power()">
+                <input type="button" class="btn" id="btnplus" name="btnplus" value="+" onclick="displayNum(btnplus.value)">
+              </br>
+                <input type="button" class="btn" id="sin" name="sin" value="sin" onclick="sin()">
+                <input type="button" class="btn" id="btn7" name="btn7" value="7" onclick="displayNum(btn7.value)">
+                <input type="button" class="btn" id="btn8" name="btn8" value="8" onclick="displayNum(btn8.value)">
+                <input type="button" class="btn" id="btn9" name="btn9" value="9" onclick="displayNum(btn9.value)">
+                <input type="button" class="btn" id="btnmin" name="btnmin" value="-" onclick="">
+              </br>
+                <input type="button" class="btn" id="tan" name="tan" value="tan" onclick="tan()">
+                <input type="button" class="btn" id="btn4" name="btn4" value="4" onclick="displayNum(btn4.value)">
+                <input type="button" class="btn" id="btn5" name="btn5" value="5" onclick="displayNum(btn5.value)">
+                <input type="button" class="btn" id="btn6" name="btn6" value="6" onclick="displayNum(btn6.value)">
+                <input type="button" class="btn" id="btndiv" name="btndiv" value="/" onclick="displayNum(btndiv.value)">
+              </br>
+                <input type="button" class="btn" id="sqrt" name="sqrt" value="sqrt" onclick="sqrt()">                
+                <input type="button" class="btn" id="btn1" name="btn1" value="1" onclick="displayNum(btn1.value)">
+                <input type="button" class="btn" id="btn2" name="btn2" value="2" onclick="displayNum(btn2.value)">
+                <input type="button" class="btn" id="btn3" name="btn3" value="3" onclick="displayNum(btn3.value)">
+                <input type="button" class="btn" id="btnmul" name="btnmul" value="*" onclick="displayNum(btnmul.value)">
+              </br>
+                <!-- <input type="button" class="btn" id="btnmodulo" name="btnmodulo" value="%" onclick="displayNum(btnmodulo.value)"> -->
+                <input type="button" class="btn" id="btnxy" name="btnxy" value="x~y" onclick="">
+                <input type="button" class="btn" id="btn0" name="btn0" value="0" onclick="displayNum(btn0.value)">
+                <input type="button" class="btn" id="btnpoint" name="btnpoint" value="." onclick="displayNum(btnpoint.value)">
+                <input type="button" class="btn" id="btnbrac" name="btnbrac" value="( " onclick="displayNum(btnbrac.value)">
+                <input type="button" class="btn" id="btneq" name="btneq" value="=" onclick="evalu()">
+              </br>
+            </form>
+          </div>
+      </div>
+          <footer>
+      
+          <p style="color:#ffffff;text-align: center;" >Copyright &copy; 2017. 
+            <a href="https://github.com/pepps01" target="_blank" style="color:white;text-decoration: none"> Sunny Pepple</a></p>
+            
+          </footer>
+
+  </body>
+</html>

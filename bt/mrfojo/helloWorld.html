@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>MrFojo Character Count</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+        body {
+            background-color: #212121;
+        }
+
+        .time {
+            display: inline;
+        }
+
+        .column {
+            width: 2px;
+        }
+
+        .date {
+            color: #bdbdbd;
+            font-size: 36px;
+            text-align: center;
+            display: block;
+        }
+
+
+        #time {
+            text-align: center;
+            font-size: 80px;
+        }
+
+        #container {
+            position: absolute;
+            top: 50%;
+            margin-top: -200px;
+            left: 0;
+            width: 100%;
+        }
+
+        #content {
+            width: 624px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 395px;
+            color: #4CAF50;
+            font-family: 'Orbitron', cursive;
+            text-align: center;
+        }
+
+        .oo {
+            display: inline-table;
+            width: 100px;
+            max-width: 100px;
+        }
+
+        .message,
+        time {
+            text-align: center;
+            display: block;
+            font-family: 'Raleway', sans-serif;
+            padding: 2px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body onload="getTime()">
+    <div id="container">
+        <div id="content">
+            <div id="time" class="time"></div>
+            <div id="message" class="message">
+            </div>
+        </div>
+    </div>
+    <script>
+        function getTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var time = document.getElementById("time");
+            time.innerHTML = formatValue(h) + ':' + formatValue(m);
+            var message = document.getElementById("message");
+            if (h >= 18) {
+                message.innerHTML = "Good Evening, Stranger";
+            }
+            else if (h >= 12) {
+                message.innerHTML = "Good Afternoon, Stranger";
+
+            } else {
+                message.innerHTML = "Good Morning, Stranger";
+
+            }
+            setTimeout(getTime, 1000);
+
+        }
+        function formatValue(i) {
+            if (i < 10) { i = "0" + i };
+            return i;
+        }
+    </script>
+</body>
+
+</html>

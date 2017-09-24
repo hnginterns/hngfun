@@ -25,7 +25,6 @@ body {
 
 h1{  
  text-align: center;
-padding-right: 150px;
  font-size: 40px;  
  color: #003652;  
    
@@ -42,7 +41,7 @@ padding-right: 150px;
 #lcdu{  
  color: grey;  
  text-align: right;  
- width: 27.6em;  
+ width: 23em;  
  height: 45px;  
  font-size: 15px;  
    
@@ -82,7 +81,7 @@ h1{
 }
 
 #pp{
-    margin-left: 280px;
+    text-align: center;
     font-weight: bold;
     color: brown;
     font-size: 18px;
@@ -102,7 +101,7 @@ h1{
         }
 
         p{
-            margin-left: 400px;
+            text-align: center;
             color: white;
         }
 #note{
@@ -114,11 +113,12 @@ h1{
 
 h2{
     color: orange;
-    margin-left: 400px;
+    text-align: center;
 }
     
 </style>  
-</head>  
+</head>
+
 <body>
 <div id="dan">  
 <h1>stage5 task (Basic Calculator - My Choice)</h1>
@@ -154,6 +154,7 @@ h2{
 <tr>
 <td><input class="special" type=button value="M+" OnClick="calc.M.value=(Number(calc.M.value))+(Number(calc.display.value))"></td>
 <td><input id="btn" type=button value="0" OnClick="calc.display.value+='0'"></td>
+
 <td><input id="btn" type=button value="+/-" 
 
 OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))">
@@ -166,7 +167,7 @@ OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(
 <td><input id="btn" type=button value="1/x" OnClick="calc.display.value=1/calc.display.value"></td>
 <td><input id="btn" type=button value="." OnClick="calc.display.value+='.'"></td>
 <td><input id="btn" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)"></td>
-<td><input class="special1" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)"></td>
+<td><input class="special1" type=button value="=" OnClick="calc.display.value = eval(calc.display.value.replace(/^0+(?!\.|$)/,''))"></td>
 <td><input class="special" type=button value="C" OnClick="calc.display.value=''"></td>
 </tr>
 </table>
@@ -185,7 +186,7 @@ OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(
     <p><b>MR:</b> Recall results added to M+</p>
     <p><b>sqrt:</b> Normal square root</p>
     <p><b>1/x:</b> Simply means 1 divided by any value say 'x' e. g 1/3 = 0.333333333 etc</p>
-    <p><b>x2:</b> This is the same as 2 race to power 2 which is equal to 2x2 = 4 etc</p>
+    <p><b>x2:</b> This is the same (the sqaure of any number) 0r 2 raised to power 2 which is equal to 2x2 = 4 etc</p>
 
 
 </div>
