@@ -212,7 +212,7 @@ button:hover, a:hover {
     <a href="www.twitter.com"><i class="fa fa-twitter"></i></a> 
     <a href="#"><i class="fa fa-linkedin"></i></a> 
     <a href="www.facebook.com"><i class="fa fa-facebook"></i></a>
-    <p><button onclick= href="https://drive.google.com/open?id=0B7rB7LYcNvbmaG9ZTk8zRUtTRDQ">Android App Link</button></p> <br/>
+    <p><a href="https://drive.google.com/open?id=0B7rB7LYcNvbmaG9ZTk8zRUtTRDQ">Android App Link</a></p> <br/>
     <p><button onclick="myFunction()">Contact Info</button></p>
   </div>
     <div class = "white" id="myDIV">
