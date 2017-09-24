@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Digital Time</title>
+		<meta charset="utf-8">
+		<style>
+		@import url(="https://fonts.googleapis.com/css?family=Handlee");
+		 @import url('https://fonts.googleapis.com/css?family=Orbitron');
+		body{text-align: center;
+		 justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    background-image: url(https://i.imgur.com/EJd18r9.jpg);
+		}
+		#greeting, #result {
+
+			font-family: 'Helveteca', cursive;
+			border:black 2px;
+			color: white;
+		}
+		 #home {
+		 	height:100%;
+                    width: 100%;
+                   padding-top: 10%;
+                    margin:auto;
+                      }
+                     
+                      .string{
+                      	display: none;
+                      }
+                      input, h5{
+                      	color: #b71c1c;
+                      	border: ;
+                      }input{
+                      	width: 50%;
+                      	height: 30px;
+                      	font-size: 1em;
+                      }
+                      button{
+                      	width: 5%;
+                      	height: 44px;
+                      	font-size: 1em;
+                      }
+                       input, button{
+                    border:1px solid #CCC;
+                   padding: 20px;
+                    margin:auto;
+                    padding:6px;
+
+                     }
+			#time{
+				height:100%;
+				width:60%;color: gray;
+				font-size: 100px;
+				margin: auto;
+            font-family: 'Orbitron', cursive;
+            text-align: center
+			}
+			#divide {
+    animation: toggle 1s infinite;
+}
+@keyframes toggle {
+    0% { opacity: 0; }
+    49% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+
+		</style>
+	</head>
+	<body id='body' onload="setTime()">
+	<div id="home">
+		<h3 id="greeting"></h3>
+		<h3 id="result"></h3>
+		<div id ="time">
+			<span id="hours"></span>
+			<span id="divide"></span>
+			<span id="minutes"></span>
+			<span id="ampm"></span>
+		</div>
+			<div >
+		        <input type="text" name="name" placeholder="Your Name" required="" id="name-input" class ="name">
+				<button name="submit" id="name" class ="name" value="submit" onclick ="nameCount()">Click</button>
+			</div>
+			<div class ="text">
+				<input type="text" name="name" placeholder="Let me have your text..." required="" id="text-input" class ="string">
+				<button name="submit" id="text" class ="string" value="submit" onclick ="wordCount()">Click</button>
+			</div>
+	</div>
+	<script>
+	
+	var time = new Date();
+    			  var h= time.getHours();
+    			  var m= time.getMinutes();
+    			 
+    			  var hideText = document.getElementById('text');
+    			  var hideTextButton =document.getElementById('text-input');
+    			  var hideNameButton =document.getElementById('name');
+    			  var hideName = document.getElementById('name-input');
+    			  function hide(){
+    			  	
+		            
+    			  }
+    			  function nameCount(){
+    			  	 var words = hideName.value;
+		          var count = words.replace(/ /g, '').split('').length;
+		          var counter = 'Do you know your name has ' + count + ' letters? <br/> Try our word counter, give us an input, and we will be sure to tell you just how many Characters you have in it.';
+
+		          if(h >= 12 && h<16&& (words !=''||words.trim() !='' )){
+		          	document.body.style.backgroundImage = "url('https://i.imgur.com/jMGq6cD.jpg')";
+		          	document.getElementById("greeting").innerHTML = "Good Afternoon, " + words + '. ' +counter;
+		          }else if(h>=0 && h < 12 && !(words ==''||words.trim() =='' )){
+		          	document.body.style.backgroundImage = "url('https://i.imgur.com/s0LUtHS.jpg')";
+		          	document.getElementById("greeting").innerHTML = "Good Morning, " + words + '. ' +counter;
+		          }else if (h>=16 && h < 20&& !(words ==''||words.trim() =='' )){
+		          	document.body.style.backgroundImage = "url('https://i.imgur.com/jyZOFYn.jpg')";
+		          	document.getElementById("greeting").innerHTML = "Good Evening, " + words + '. ' +counter;
+		          }else if (h >= 20&& !(words ==''||words.trim() =='' )){
+		          	document.body.style.backgroundImage = "url('https://i.imgur.com/AfTe2Q6.jpg')";
+		          	document.getElementById("greeting").innerHTML = "What a beautiful Night, " + words + '. ' +counter;
+		          }else if (words ==''||words.trim() =='' ){
+		          		document.getElementById("greeting").innerHTML = "Please enter your name";
+		          		
+		          }
+
+		          if (words ==''||words.trim() =='' ){
+		          	 hideText.style.display = "none";
+		             hideTextButton.style.display = "none";
+		             hideNameButton.style.display ="inline"
+                     hideName.style.display = "";
+		          }else{
+		          	hideText.style.display = "inline";
+		             hideTextButton.style.display = "inline";
+		             hideNameButton.style.display ="none"
+                     hideName.style.display = "none";
+                      document.getElementById('time').style.display = "none";
+		          }
+		           
+		          }
+		         
+				function wordCount(){	 
+		          let letters = hideTextButton.value.replace(/ /g, '').split('');
+		          console.log(letters.length);
+		          count = letters.length;
+		          document.getElementById('result').innerHTML= "Your text has " + count + " letters";
+		           document.getElementById('greeting').style.display = "none";
+		         
+		        }
+				function setTime(){
+					var time = new Date();
+    			  var h= time.getHours();
+    			  var m= time.getMinutes();
+    			  m.toString().length == 1?m= '0'+m: m;
+    			   h.toString().length == 1?h= '0'+h: h;
+			      document.getElementById("hours").innerHTML = h;
+				  document.getElementById("divide").innerHTML = ':';
+				  document.getElementById("minutes").innerHTML = m;
+
+				  
+				}
+
+			setInterval('setTime()', 1000);
+			
+
+
+
+	</script>
+	</body>
+</html>
