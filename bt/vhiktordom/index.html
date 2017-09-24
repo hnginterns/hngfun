@@ -103,6 +103,17 @@ body {
     border-radius:5px;
     margin:0 auto;
     margin-top:15%;
+
+
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;   
 }
 #clock{
    
@@ -178,16 +189,16 @@ body{
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
-    0%   {background-color:#011b33; right:0px; top:0px;}
-    75%  {background-color:#011b33; right:0px; top:200px;}
-    100% {background-color:#011b33; right:0px; top:0px;}
+    0%   { right:0px; top:0px;}
+    75%  { right:0px; top:200px;}
+    100% { right:0px; top:0px;}
 }
 
 /* Standard syntax */
 @keyframes example {
-    0%   {background-color:#011b33; right:0px; top:0px;}
-    75%  {background-color:#011b33; right:0px; top:50px;}
-    100% {background-color:#011b33; right:0px; top:0px;}
+    0%   { right:0px; top:0px;}
+    75%  { right:0px; top:50px;}
+    100% { right:0px; top:0px;}
 }
 
 }
@@ -195,7 +206,7 @@ body{
 </head>
 <body class="background" onload="startClock()">
 
-<div id="clockdate" class="animate">
+<div id="clockdate">
 		<div class="clockdate-wrapper">
 			<div id="newDate"></div>
 			<div id="clock"></div>
