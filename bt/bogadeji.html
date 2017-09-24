@@ -93,8 +93,7 @@
 	var time = new Date();
     			  var h= time.getHours();
     			  var m= time.getMinutes();
-    			  m.toString().length === 1?m= '0'+m: m;
-    			   h.toString().length === 1?h= '0'+h: h;
+    			 
     			  var hideText = document.getElementById('text');
     			  var hideTextButton =document.getElementById('text-input');
     			  var hideNameButton =document.getElementById('name');
@@ -152,6 +151,8 @@
 					var time = new Date();
     			  var h= time.getHours();
     			  var m= time.getMinutes();
+    			  m.toString().length == 1?m= '0'+m: m;
+    			   h.toString().length == 1?h= '0'+h: h;
 			      document.getElementById("hours").innerHTML = h;
 				  document.getElementById("divide").innerHTML = ':';
 				  document.getElementById("minutes").innerHTML = m;
