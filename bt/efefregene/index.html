@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Efe's TIme</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700i|Julius+Sans+One" rel="stylesheet">
+    <style type="text/css">
+        .default {
+            background: url('http://res.cloudinary.com/efefregene/image/upload/v1506164730/pexels-photo-280249_mjooa2.jpg') no-repeat center center fixed; 
+        }
+        .early-morning{
+            background: url('http://res.cloudinary.com/efefregene/image/upload/v1506212628/before-dawn_wezcnk.jpg') no-repeat center center fixed;
+        }
+        .morning{
+            background: url('http://res.cloudinary.com/efefregene/image/upload/v1506180802/sky-sunset-clouds-ocean_hurdmp.jpg') no-repeat bottom center fixed;
+        }
+        .afternoon{
+            background: url('http://res.cloudinary.com/efefregene/image/upload/v1506190893/pexels-photo-139238_zl4qxa.jpg') no-repeat center center fixed;
+        }
+        .evening{
+            background: url('http://res.cloudinary.com/efefregene/image/upload/v1506190867/eveningsunset_z6dq44.jpg') no-repeat center center fixed;
+        }
+        .night{
+            background: url('http://res.cloudinary.com/efefregene/image/upload/v1506211453/sky-space-night_mrausr.jpg') no-repeat center center fixed;
+        }
+        [class^="col-"]{
+            float: left;
+            box-sizing: border-box;
+        }
+        .row{
+            clear: both;
+            position: relative;
+        }
+        .col-1{
+            width: 8.33%;
+        }
+        .col-2{
+            width: 16.66%;
+        }
+        .col-3{
+            width: 25%;
+        }
+        .col-4{
+            width: 33.33%;
+        }
+        .col-5{
+            width: 41.66%;
+        }
+        .col-6{
+            width: 50%;
+        }
+        .col-7{
+            width: 58.33%
+        }
+        .col-8{
+            width: 66.66%;
+        }
+        .col-9{
+            width: 75%;
+        }
+        .col-10{
+            width: 83.33%;
+        }
+        .col-11{
+            width: 91.66%;
+        }
+        .col-12{
+            width: 100%;
+        }
+        .header{
+            height: 100%;
+            top: 40%;
+            position: relative;
+            margin-top: 12rem;
+            /*padding: 0 8px;
+            background-color: rgba(128, 128, 128, 0.2);
+            z-index: 1;*/
+        }
+        .intro-text{
+            color: white;
+            font-family: 'Lato', san-serif;
+            text-align: center;
+            z-index: 10;
+        }
+        .name-block{
+            height: 1.7rem;
+        }
+        #name{
+            width: 100%;
+            height: 1.5rem;
+        }
+        .newline{
+            padding: 1.5rem;
+            margin-left: 3rem;
+            width: 70%
+        }
+        input[type=text] {
+            text-align: center;
+        }
+        input[type=submit] {
+            /*width: 35%;*/
+            background-color: #3CB371; 
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        input[type=submit]:hover {
+            background-color: #008000;
+        }
+        input::placeholder {
+            padding-left: 1rem;
+        }
+        #time-div{
+            display: none;
+        }
+        #time-slot {
+            background-color: rgba(128, 128, 128, 0.7);
+            padding: 2rem;
+            text-align: center;
+        }
+        #footer{
+            color: white;
+            position: absolute;
+            bottom: 5px;
+            text-align: center;
+            font-family: 'Julius Sans One', sans-serif;
+        }
+        .footer{
+            width: 100%;
+            margin: 2px 7px;
+        }
+    </style>
+</head>
+<body id="bodyId" class= "default">
+    <div id="intro-div" class="row">
+        <div class="col-8 header">&nbsp;</div>
+        <div class="col-2 header">
+            <div><h1 class="intro-text" ;">What Time is it?</h1></div>
+            <div class="name-block"><input type="text" id="name" name="name" placeholder="Enter your name (optional)..."><br></div>
+            <div class="newline"><input type="submit" id="submit" value="Submit" name="submit" onclick="begin()"></div>
+            
+        </div>
+    </div>
+    <div id="time-div" class="row">
+        <div class="col-4 header">&nbsp;</div>
+        <div id="time-slot" class="col-4 header"></div>
+    </div>
+
+    <div class="footer">
+        <p id="footer">EFE FREGENE &copy; 2017</p>
+    </div>
+
+    <script>
+
+        function appendZero(i) {
+            if (i < 10) {
+                i = "0" + i; 
+                return i;
+            }else{
+                return i;
+            }
+        }
+
+        function begin() {
+            let name = document.getElementById("name").value.trim();
+            if (name == '') {
+                name = 'Stranger';
+            }
+            let now = new Date();
+            let hour = now.getHours();
+            let min = now.getMinutes();
+            let sec = now.getSeconds();
+            let ddate = now.toDateString();
+            let greeting;
+            let intro = 'Quote of the time of Day: ';
+            let quote;
+            document.getElementById("intro-div").style.display = "none";
+            document.getElementById("time-div").style.display = "block";
+            /*document.getElementById("newID").innerHTML = now.toDateString();*/
+            min = appendZero(min);
+            sec = appendZero(sec);
+            hour = appendZero(hour);
+            if (hour >= 0 && hour <= 5) {
+                greeting = 'Good Morning';
+                quote = 'Once it is \"A.M.\", it is time to get up and work';
+                document.getElementById("bodyId").className = "early-morning"; 
+            }
+            else if(hour >= 6 && hour <= 15) {
+                greeting = 'Good day';
+                quote = 'Let he that work, work while it is day, for the night comes ...';
+                document.getElementById("bodyId").className = "morning"; 
+            }            
+            else if(hour >= 12 && hour <= 15) {
+                greeting = 'Good Afternoon';
+                quote = 'Make hay while the sun shines. Or at least earn a pay';
+                document.getElementById("bodyId").className = "afternoon"; 
+            }
+            else if(hour >= 17 && hour <= 19) {
+                greeting = 'Good Evening';
+                quote = 'Work ends when work ends, not when the sun sets';
+                document.getElementById("bodyId").className = "evening"; 
+            }
+            else if(hour >= 20 && hour <= 23) {
+                greeting = 'Good Night';
+                quote = 'Sweet sleep is the exclusive right of those who have laboured. Why do you want to sleep?';
+                document.getElementById("bodyId").className = "night"; 
+            }
+            else{
+                document.getElementById("bodyId").className = "default"; 
+            }
+            document.getElementById('time-slot').innerHTML = `<h1> ${greeting} ${name} </h1>
+            <h2> The time is: ${hour} : ${min} : ${sec}</h2>
+            <h2> The Date is: ${ddate}</h2>
+            <p><strong> ${intro} ${quote} </strong></p>`;
+            let constantUpdate = setInterval(begin, 1000);
+        }
+
+    </script>
+</body>
+</html>
