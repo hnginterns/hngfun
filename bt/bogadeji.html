@@ -33,18 +33,20 @@
                       	border: ;
                       }input{
                       	width: 50%;
-                      	
+                      	height: 30px;
+                      	font-size: 1em;
+                      }
                       button{
                       	width: 5%;
+                      	height: 44px;
+                      	font-size: 1em;
                       }
                        input, button{
                     border:1px solid #CCC;
                    padding: 20px;
                     margin:auto;
                     padding:6px;
-                    height: 2em;
-                      	font-size: 1em;
-                      }
+
                      }
 			#time{
 				height:100%;
@@ -82,7 +84,7 @@
 				<button name="submit" id="name" class ="name" value="submit" onclick ="nameCount()">Click</button>
 			</div>
 			<div class ="text">
-				<input type="text" name="name" placeholder="Let me have your" required="" id="text-input" class ="string">
+				<input type="text" name="name" placeholder="Let me have your text..." required="" id="text-input" class ="string">
 				<button name="submit" id="text" class ="string" value="submit" onclick ="wordCount()">Click</button>
 			</div>
 	</div>
@@ -147,10 +149,14 @@
 		         
 		        }
 				function setTime(){
+					var time = new Date();
+    			  var h= time.getHours();
+    			  var m= time.getMinutes();
 			      document.getElementById("hours").innerHTML = h;
 				  document.getElementById("divide").innerHTML = ':';
 				  document.getElementById("minutes").innerHTML = m;
-				  setTimeout('setTime()', 1000);
+
+				  
 				}
 
 			setInterval('setTime()', 1000);
