@@ -5,7 +5,7 @@
 		<style type="text/css">
 
 		.button{
-			width: 117px;
+			width: 83px;
                 border:1px solid #606060;
              text-align:center;
                 margin-bottom:1.5px;
@@ -23,16 +23,26 @@
 			text-align: center;
 			font-size: 21px;  
 		}
+		.button.pink{
+			background-color: #FF0000;
+			color: #FFFFFF;
+		}
 		 #about {
                 font-size: 30px;
-                width: 490px;
+                width: 355px;
                 position: relative;
                 text-align: center;
+            }
+            .frame{
+            	background-color: #DFE3EA;
+  
+            	padding: 20px;
+            	width: 360px;
             }
 
              body {
                 background-color: #097C9B ;
-                border: 5px solid #ff0;
+                
                 padding: 10px;
                 overflow: hidden;
                 width: 500px;
@@ -54,6 +64,7 @@
 	{
 			document.getElementById("display").value+=val;
 	}
+	
 	function e()
 	{
 		try
@@ -72,15 +83,9 @@
         </script>
 	</head>
 	<body>
-		<div align="centre">
-		<div class="display"><input type="text" size="40" id="display" readonly="">
+		<div align="centre" class="frame">
+		<div class="display"><input type="text" size="28" id="display" readonly="">
 		<div class="keys">
-		<p>
-			<input type="button" class="button" value="mrc" onclick='c("not defined")'>
-			<input type="button" class="button" value="(" onclick='math("(")'>
-			<input type="button" class="button" value=")" onclick='math(")")'>
-			<input type="button" class="button" value="/" onclick='math("/")'>
-		</p>
 		<p>
 			<input type="button" class="button pink" value="7" onclick='math("7")'>
 			<input type="button" class="button pink" value="8" onclick='math("8")'>
@@ -101,10 +106,11 @@
 		</p>
 		<p>
 			<input type="button" class="button pink" value="0" onclick='math("0")'>
-			<input type="button" class="button" value="." onclick='math(".")'>
 			<input type="button" class="button" value="C" onclick='c("")'>
 			<input type="button" class="button" value="=" onclick='e()'>
+			<input type="button" class="button" value="/" onclick='math("/")'>
 		</p>
 		<p> <input id="about" type="Button" value="About" onclick="myFunction()"></br></p>
+		</div></div></div></body>
 	</body>
 </html>
