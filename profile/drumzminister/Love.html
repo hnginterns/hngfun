@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scripter</title>
+    
+</head>
+<body>
+    <div class="header"></div>
+    <h1>I LOVE YOU <br>SAPPHIRE</h1>
+    <div class="quotes">
+    <h3 id = "demo"></h3>
+    <p id = "quote"></p>
+    </div>
+    <div class="butt">
+    <button onclick="myFunction()" class="button" >Click to Generate a Quote</button>
+    <div class = "footer">
+        <hr>
+    <p>Created with Love From <strong> Pearl</strong><br> Copyright 2017</p>
+    <div>
+
+    </div>
+    <script>
+            function myFunction(){
+                var one = "From the first day we met i knew that all the happiness we ever wanted can always be ours",
+                
+                two = "Oh, you Precious Sapphire, you stole my heart. To make it even, I will steal a kiss from you. \
+                Open Your Arms and embrace me into the comfort of your lips, My darling Sapphire",
+                
+                three = "True love is a glimpse of heaven. It is inspiring and uplifting just like your love, though most\
+                times you drive me crazy but i still end up loving you anyways, My Sapphire",
+                
+                four = "You are the inspiration behind all that I do, and the source of all that is good in my life. Giving \
+                commercial value to that which you saw that i haven't yet, You still remain my Sapphire",
+                
+                five = "My life is magical, wonderful and fantastical because you’re in it. Let’s work on making this a forever thing between <br>SAPPHIRE & PEARL.",
+                six = "My gratitude for having met you is surpassed only by my amazement at the joy you bring to my life.",
+                seven = "You are, and always have been, my dream girl. Even before I met you, your vision was in my mind just as you are.",
+                eight = "Your love never fails. When I am overwhelmed with stress and dark clouds threaten my very being, you walk in, and blast\
+                 it all away. I don’t know how you do it, but you do it well, my Sapphire.",
+                nine = "I smile every time I see you. When you return that smile to me, my heart overflows with joy.",
+                ten = "My Love is for You and Yours for me, Ill love you with all my heart!"
+                
+
+                var r = (Math.random()*10);
+                    r = Math.ceil(r)
+                document.getElementById("demo").innerHTML = "Your Generated Quote!";
+              if (r == 1) {
+                document.getElementById("quote").innerHTML = one;
+              } else  
+                if (r == 2) {
+                document.getElementById("quote").innerHTML = two;
+               
+              } else  
+                if (r == 3) {
+                document.getElementById("quote").innerHTML = three;
+               
+              } else  if (r == 4) {
+                document.getElementById("quote").innerHTML = four;
+               
+              } else  if (r == 5) {
+                document.getElementById("quote").innerHTML = five;
+              
+              } else  if (r == 6) {
+                document.getElementById("quote").innerHTML = six;
+               
+              } else  if (r == 7) {
+                document.getElementById("quote").innerHTML = seven;
+               
+              } else  if (r == 8) {
+                document.getElementById("quote").innerHTML = eight;
+               
+              } else  if (r == 9) {
+                document.getElementById("quote").innerHTML = nine;
+              } 
+              
+              else {
+                document.getElementById("quote").innerHTML = ten;
+              }
+
+            }
+    </script>
+</body>
+<style>
+    body{
+        background-color: blue;
+        color: white;
+        margin: 20px;
+        font-family: 'Nunito-Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .header{
+        position: relative;
+        border-radius: 10px;
+        margin:auto;
+        width: 600px;
+        height: 800px;
+        background-image:url(you.jpg);
+        background-size: 600px 800px;
+        opacity: 0.6;
+    }
+    h1{
+        position: relative;
+        margin: auto;
+        margin-top: -750px;
+        width: 600px;
+        text-align: center;
+        padding: 60px 0;
+        background-color: cornflowerblue;
+        font-size: 40px;
+        opacity: 0.8;
+    }
+    .butt{
+        width: 400px;
+        height: 30px;
+        margin:auto;
+    }
+    .button {
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    
+  }
+  .quotes{
+      position: relative;
+      z-index: 1;
+      width:450px;
+      opacity: 0.8;
+      border-radius: 4px;
+      height: 300px;
+      margin:auto;
+      margin-top:70px;
+      padding: 5px 20px;
+      text-align: center;
+      margin-bottom:50px;
+      color: black;
+      background-color: cornflowerblue;
+  }
+  .quotes p {
+      font-size: 25px;
+    font-weight: 300;
+  }
+  .quotes h3 {
+      font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+  }
+  .footer{
+    position: relative;
+    z-index: 1;
+    width:350px;
+    height: 300px;
+    margin:auto;
+    margin-top:30px;
+    padding: 20px 20px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+</style>
+</html>
+
