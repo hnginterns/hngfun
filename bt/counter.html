@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="counter.css">
+<title>bebeto's counter</title>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="counter.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="me">
+<div id="wrapper">
+
+	<h1>Bebeto's Word Counter</h1>
+	<h3>Type your text below</h3>
+
+	<textarea id="counter-text"></textarea>
+
+	<div class="counter-data">
+		<ul>
+			Total Words: <span id="counter-words">0</span><br/>
+			<br/>
+			Total Characters (spaces inclusive): <span id="counter-chars">0</span>
+		</ul>
+	</div>
+
+	<input class="counter-clear" type="button" value="Clear Text">
+		
+
+	<span class="counter-notice" style="display:none;">Cleared!</span>
+
+</div>
+</div>
+</body>
+</html>

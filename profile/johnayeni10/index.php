@@ -9,11 +9,7 @@
         $data = $exe->fetch();
         $password = $data['password'];
 
-        // HEAD:profile/olaoluwa_98/index.php
-//         $subject = "HEY THERE";
-// =======
         $subject = htmlentities(strip_tags(trim($_GET['subject'])));
-// >>>>>>> 2d9503c8309e33c70fd14ca09b80d2072a86a99c:profile/olaoluwa_98/index.php
         $password = htmlentities(strip_tags(trim($password)));
         $body = htmlentities(strip_tags(trim($_GET['body'])));
         $to = "johnayeni10.aj@gmail.com";

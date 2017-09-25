@@ -50,7 +50,7 @@ img {
         <div id='profile'>
             <div id=name>NAME: Gbolahan Oladeji</div>
             <div id='slack name'>SLACK USERNAME: mogbolahan</div>
-            <div id=biography>ABOUT ME: I am a student in the University of Ilorin, i'm studing Electrical Engineering.<br>
+            <div id=biography>ABOUT ME: I am a student in the University of Ilorin studing Electrical Engineering.<br>
                                         I find programming fun.I like chess,movies and food<br>
             I'm a beginner in front-End web design.I'm looking forward to meeting tutors </div>
             <div id=link>Click<a href="https://github.com/mo-gbolahan/realStage1" ><b>	HERE</b> </a>for stage 1 repo</div>
@@ -60,29 +60,31 @@ img {
 	  <form action='../../sendmail.php' method='get'>
 				<label for='name'>Name:</label>
 						<br>
-							<input name='name' type='text' value='<?php echo $name;?>' >
-					<span class= error><?php echo $nameErr;?></span>
-						<br><br><br>
+							<input placeholder='subject' name='subject' type='text' value='<?php echo $name;?>' >
+					
+						<br><br>
+				<label for='body'>Body:</label>
+						<br>
+							<input rows='5' cols='50' placeholder='body' name='body' type='text' value='<?php echo $body;?>' >
+					
+						<br><br>
+					<!-- <label for='password'>Password:</label>
+						<br> -->
+							<input name='password' type='hidden' value='<?php echo $password;?>' >
+					
+						<br><br> 
 				<label for='email' >Email:</label>
 						<br>
-							<input name='email' type='text' value='<?php echo $email;?>' >
-					<span class=error><?php echo $emailErr;?></span>
-						<br><br><br>
-				<label for='gender'>Gender:</label>
-							<input type='radio' name='gender' <?php if (isset($gender) && $gender=="male") echo "checked";  ?> value='Male'>Male 
-					<span class=error><?php echo $genderErr;?></span>
-						<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<input type='radio' name='gender'<?php if ( isset($gender) && $gender =='female') echo 'checked';  ?> value='Female'>Female
+							<input name='to' type='text' value='<?php echo $to;?>' >
+					
 						<br><br>
-			
 						
-				<label for='comment' >Comment</label>:
+			<!--	<label for='comment' >Comment</label>:
 						<br>
-							<textarea rows='5' cols='50' placeholder='Tell me about yourself'></textarea>
+							 <textarea rows='5' cols='50' placeholder='Tell me about yourself'></textarea>
 						<br><br>
-				
-						<input type="hidden" name="to" value="hormorgborlahan@yahoo.com">
+				-->
+						
 						<input type='submit' name='submit' value='submit' id='submit' >
 			</form>
 	  </div>
