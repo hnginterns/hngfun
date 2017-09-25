@@ -1,3 +1,27 @@
+<?php
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+   $subject = $_POST['subject'];
+    $to  = 'abdulhafeez.ola@gmail.com';
+    $body = $_POST['message'];
+   if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
+    }
+   if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
+    }
+   if(empty($error)) {
+     $config = include __DIR__ . "/../config.php";
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+     $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+     $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+     header("location: $uri");
+   }
+  }
+ ?>
 <!DOCTYPE html>
 <html>
 <html lang="en">
@@ -47,112 +71,24 @@ I believe learning is a continous process. And yea, I just completed my undergra
 		</div>
 	</div>
 <br>
-<a href="http://github.com" class="button">Stage 1 project</a>
-</div>
-<div class="contact-section" id="contact">
-
- 
-<div class="form-area">
-<form action="mail-hand.php" method="post">
-  <fieldset>
-    <legend><span>Contact Me</span></legend>
-	<br>
-    Email Address:<br>
-    <input type="text" name="to" placeholder="Your Email Address" value="" required>
-    <br>
-    Subject:<br>
-    <input type="text2" name="subject" placeholder="Subject" value="" required>
-    <br>
-    Message:<br>
-    <input type="message-box" name="message" placeholder="Your Message" value="" required>
-
-    <br><br>
-    <input type="submit" value="Send Me a Mail!">
-  </fieldset>
-</form>
-</div>
-<a href="https://github.com/mistaOba/hnginterns" class="button">Stage 1 project</a>
-</div>
-
-<div class="contact-section" id="contact">
-<div class="form-area">
-<form name="contactform" action="mail-hand.php" method="post">
-  <fieldset>
-    <legend><span>Contact Me</span></legend>
-	<br>
-    Name:<br>
-    <input type="text" name="name" placeholder="Name">
-    <br>
-    Email Address:<br>
-    <input type="text2" name="email" placeholder="Email Address">
-    <br>
-    Message:<br>
-    <input type="message-box" name="message" placeholder="Your Message">
-
-    <br><br>
-    <input type="submit" value="Send Me a Mail!">
-  </fieldset>
-</form>
-</div>
-</div>
-</div>
-</body>
-<footer>Copyright © 2017 Mista Oba</footer>
-</html>
-<br>
 <a href="https://github.com/mistaOba/hnginterns" class="button">Stage 1 project</a>
 </div>
 <div class="contact-section" id="contact">
-<form name="contactform" method="post" action="send_mail.php">
-<table width="450px">
-<tr>
- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Message *</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">
- </td>
-</tr>
-</table>
-</form>
-</div>
+	<form autocomplete="off" class="modal-content animate" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+                <div class="container">
+                    
+                    <input type="text" class="input" name="fullname" placeholder="YourName" >                
+                   
+                    <input type="text" class="input" name="subject" placeholder="Subject*" required>
+                    
+                    <textarea name="message" placeholder="Type your message here*" id="message" cols="30" rows="10" style="height:100px" required></textarea>
+
+                    <button type="submit" name="send">Send</button> 
+
+                </div>
+
+            </form>
+	</div>
 </body>
 <footer>Copyright © 2017 Mista Oba</footer>
 </html>
