@@ -78,6 +78,11 @@ function checkNum(str) {
  color: white;
  
 }
+.mytext2{
+ color: white;
+ 
+ 
+}
 
 * {
   padding: 0;
@@ -86,7 +91,12 @@ function checkNum(str) {
 }
 body {
   background-image: url("http://res.cloudinary.com/dbsp74gfz/image/upload/v1506104445/math3_kscwus.jpg");
-  
+  background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      text-align: center;
 }
 .calculator {
   width: 400px;
@@ -98,19 +108,7 @@ body {
 }
 
 
-#display {
-      margin-top: 2em;
-      margin-bottom: 20px;
-      height: 30px;
-      width: 12em;
-      border-radius: 5px;
-      border: 1px solid gray;
-      box-shadow: 0 0 1px 1px black;
-      text-align: right;
-      font-size: 20px;
-      font-weight: bold;
-      padding: 5px 5px 0 0;
-    }
+
 
 
 
@@ -188,6 +186,9 @@ margin: 0 auto;
 width:350px;
 padding-top: 100px;
 }
+#switch{
+  margin-top: 0px;
+}
 
 
 </style>
@@ -195,19 +196,19 @@ padding-top: 100px;
 </head>
 <body>
 
-  <h1 class = "mytext">JavaScript Calculator</h1>
+  <h1 class = "mytext"> JavaScript Calculator</h1>
   <br>
-  <h2 class = "mytext">by EMIQUEENA</h2>
+  <h2 class = "mytext"> by EMEM JONAH</h2>
 
- 
-<form name="calc">
- <center><table class="calculator" cellspacing="0" cellpadding="1">
-   
-      <center><td colspan="20"><input id="display" name="display" value="0" size="28" maxlength="25">
+ <form name="calc">
+
+ <table class="calculator" cellspacing="1" cellpadding="0">
+         
+      <td colspan="20"><input id="display" name="display" value="0" size="28" maxlength="25">
+
        
 <br>
-   
-
+      
      <input type="button" id="btn"  value="C"      onclick="this.form.display.value=  0 ">
      <input type="button" id="btn"  value="CE"    onclick="deleteChar(this.form.display)">
      <input type="button" id="btn"  value="x^y" onclick='toScreen("**")'>
@@ -240,13 +241,12 @@ padding-top: 100px;
      <input type="button" id="btnnumber"  value="0"      onclick='toScreen("0")'>
      <input type="button" id="btn" value="&#46;"  onclick="addChar(this.form.display, '&#46;')">
      <input type="button" id="equal"   value="="      onclick="if(checkNum(this.form.display.value)) { compute(this.form) }">
-    
-   
- 
 
    
  </table>
 </form>
+<br>
+<hr>
 <script type="text/javascript">
     
   let box = document.getElementById('display');
@@ -270,5 +270,37 @@ padding-top: 100px;
   }
 
   </script>
+   <aside class = "mytext2" align="left">
+        <h2 >Calculator Operations</h2>
+        <p>This basic online calculator is similar to a small handheld calculator and has the standard four functions for addition, subtraction, division and multiplication. Like most 4-function calculators it also includes keys for percent, square and square root . This basic calculator has decimal precision up to 10 digits and offers these functions:</p>
+        <ul>
+            
+            <li><strong>CE = Clear Entry:</strong> clears all current display value</li>
+            <li><strong>C = Clear Entry :</strong> clears one digit backward display value</li>
+            <li><strong>Ln = LOGARITHM:</strong> takes the log of the displayed value</li>
+            <li><strong>X^Y = POWER OF A NUMBER:</strong> number raised to the power of the displayed value</li>
+            <li><strong>&radic;x = Square Root:</strong> take the square root of the displayed value and display it</li>
+            <li><strong>+/- = Plus/Minus</strong>: change the sign of the displayed value from positive to negative or
+                vice versa
+            </li>
+            
+            <li><strong>x&sup2; = Square:</strong> square the displayed value and display it</li>
+            
+            <li><strong>% = Percent:</strong> use displayed value to calculate a percentage</li>
+        </ul>
+        <h3>Calculating Percentages</h3>
+        <ul>
+            <li>Multiplication and Division will convert the displayed value to a percent in decimal form and complete
+                the operation when you press [=]
+                <ul>
+                    <li>Example: find 20% of 25</li>
+                    <li>Enter 25 x 20 % and the display changes 20% to 0.2 which gives 25 x 0.2 = 5.</li>
+                
+                </ul>
+            </li>
+           
+
+        
+    </aside>
 </body>
 </html>

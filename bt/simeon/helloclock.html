@@ -12,6 +12,7 @@
 
   <body>
     <div class="quote"></div>
+    <div class="author"></div>
     <div class="greeting"></div>
     <footer class="footer">
       <div class="clock"></div>
@@ -22,6 +23,7 @@
     const timeEl = document.getElementsByClassName("clock")[0];
     const quoteEl = document.getElementsByClassName("quote")[0];
     const greetingEl = document.getElementsByClassName("greeting")[0];
+    const authorEl = document.getElementsByClassName("author")[0];
     const html = document.getElementsByTagName("html")[0];
 
     const tick = () => {
@@ -31,7 +33,8 @@
     const quotes = {
       "Morning": "Smile in the mirror. Do that every morning and you'll start to see a big difference in your life.",
       "Afternoon": "If you can spend a perfectly useless afternoon in a perfectly useless manner, you have learned how to live",
-      "Evening": "If you can look at the sunset and smile, then you still have hope. Good Evening."
+      "Evening": "If you can look at the sunset and smile, then you still have hope. Good Evening.",
+      "Night": "Each night, when I go to sleep, I die. And the next morning, when I wake up, I am reborn"
     }
 
     const backgroundImages = {
@@ -40,21 +43,33 @@
       "Evening": "http://res.cloudinary.com/simeon/image/upload/v1506173520/evening-06_v6gkqt.jpg",
       "Night": "http://res.cloudinary.com/simeon/image/upload/v1506174087/Lonely-tree-at-night_wzvdge.jpg"
     }
+
+    const author = {
+      "Morning": "- Yoko Ono",
+      "Afternoon": "- Lin Yutang",
+      "Evening": "- Anonymous",
+      "Night": "- Mahatma Gandhi",
+    }
     setInterval(tick, 1000);
     const hour = new Date().getHours();
     const prefix = "Good ";
-    const suffix = hour > 11 && hour < 18 ? 'Afternoon' :
-      hour > 17 && hour < 1 ? 'Evening' : 'Morning';
 
-    greetingEl.innerHTML = prefix + suffix;
-    quoteEl.innerHTML = quotes[suffix];
-
-    const image = hour >= 20 ?
+    const condition = hour >= 22 || hour <= 2 ?
       "Night" : hour >= 17 ?
       "Evening" : hour >= 12 ?
       "Afternoon" : "Morning";
 
-    html.style.backgroundImage = `url(${backgroundImages[image]})`;
+    greetingEl.innerHTML = prefix + condition;
+    quoteEl.innerHTML = quotes[condition];
+    authorEl.innerHTML = author[condition];
+
+
+    html.style.backgroundImage = `url(${backgroundImages[condition]})`;
+    if (condition === "Night") {
+      greetingEl.style.color = "#ffffff";
+      quoteEl.style.color = "#ffffff";
+      authorEl.style.color = "#ffffff";
+    }
   </script>
 
 </html>

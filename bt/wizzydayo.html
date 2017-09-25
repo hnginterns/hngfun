@@ -4,13 +4,16 @@
 <style type="text/css">
 body{
 background-color:#f3f3f3;
-   font-size:20px;}
+   font-size:20px;
+	margin: auto;
+	margin-top:10%;
+	}
 
 table.clock {
-  outline: 10px solid #616161 ;
+  
  text-align: center;
- border: 10px solid #FF9800 ;
- border-radius : 5px ;
+ border: 20px solid #FF9800 ;
+ border-radius : 50px ;
   width:600px ;
   max-width:500px;
   height: 150px
@@ -20,7 +23,7 @@ table.clock {
 
 td, input.clock2 {
   text-align: center;
-  border: 3px solid #455A64;
+  border:none
   font: .9em verdana, helvetica, arial, sans-serif;
   padding: .5em;
   margin : auto ;
@@ -60,17 +63,20 @@ h1{
   #demo { 
   border-color: #ememem ;
   background-color:#FF9800;
-  border-radius: 5px;
-  border-width:5px;
+
+  border-width:1px;
   font-size: 20px ;
   font-style: oblique;
   font-weight: strong ;
-  padding: 20px auto;
+  padding: 5px
   margin: auto;
+	  width: 50px ;
   bottom: 20px;
-  
-  }
-
+  i{ animation: type2 8s steps(60, end);}
+@keyframes type{ from { width: 0; } } 
+@keyframes type2{ 0%{width: 0;} 50%{width: 0;} 100%{ width: 100;
+ } 
+    } 
 </style>
 
   <script language="javascript">
@@ -84,6 +90,12 @@ function formatTime() {
   min = now.getMinutes();
   sec = now.getSeconds();
 
+    
+      
+   
+
+ 
+  
   if (document.clock.sivamtime[0].checked) {
     if (min <= 9) {
       min = "0" + min;
@@ -120,9 +132,35 @@ function formatTime() {
 
   setTimeout("formatTime()", 1000);
  document.getElementById("demo").innerHTML = now.toDateString();
-}
+      
+var time = now.getHours(); 
+ var greeting; 
+  switch(time) { 
+case 0: case 1: case 2: case 3: case 4: greeting = 'It\'s midnight, you should be asleep'; break; 
+case 5: case 6: case 7: case 8: case 9: case 10: case 11: greeting = 'Good Morning'; break;
+ case 12: case 13: case 14: case 15: case 16: case 17: greeting = 'Good Afternoon'; break; 
+case 18: case 19: case 20: case 21: case 22: case 23: greeting = 'Good Evening'; break; 
+default: greeting = 'Hi';
+ } 
+document.getElementById('greeting').innerHTML = greeting  ; 
     
+var greet;
+ switch(time) { 
+ case 0: case 1: case 2: case 3: case 4: greet = 'Time to get some rest. '; break;
+  case 5: case 6: case 7: case 8: case 9: case 10: case 11:
+   greet= 'Get the day started, time waits for no man.';
+   break;
+   case 12: case 13: case 14: case 15: case 16: case 17:
+    greet= 'Hope your day is being productive';
+     break; 
+    case 18: case 19: case 20: case 21: case 22: case 23: 
+    greet = 'Today,was great indeed.'; 
+     break;
+      default: greet = 'Hi';
+      } document.getElementById('side').innerHTML = greet; 
+  
 
+   }
 </script>
 
 </head>
@@ -134,6 +172,8 @@ function formatTime() {
  <tr>
   <td class="clock2">
   <h1> <span style="color:black;"> Digital</span> <span>Time</span></h1>
+ <h3 id="greeting"> <h3>
+ <marquee style=" typing 3.5s steps(40, end), blink-caret .75s step-end infinite;" id="side"> </marquee>
   </td>
  </tr>
  <tr>
@@ -143,7 +183,7 @@ function formatTime() {
     
 <br><br>
     
-    <input class="clock2 inp" type="text" name="sivam" size="12"><br>
+    <input class="clock2 inp" type="button" name="sivam" size="12"><br>
     
     
   </td>
