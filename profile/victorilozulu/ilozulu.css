@@ -1,5 +1,44 @@
 <<<<<<< HEAD
+
+body
+{
+	background-color: #54ff9f;
+=======
+body {
+  background-color: #54ff9f;
+>>>>>>> origin/master
+}
+
+img {
+  width: 300px;
+  height: auto;
+  position: relative;
+  left: 250px;
+  top: 15%;
+}
+
+.left {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
 <<<<<<< HEAD
+.right {height: 100%;
+	width: 50%;
+	float: right;
+
+}
+h1 {
+	text-align: center;
+}
+.slack {
+	text-align: center;
+}
+.github {
+	text-align: center;
+
+}
+
 body
 {
 	background-color: #54ff9f;
@@ -30,41 +69,25 @@ h1 {
 }
 .github {
 	text-align: center;
+
+
 =======
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
-body
-{
-	background-color: #54ff9f;
+
+.right {
+  height: 100%;
+  width: 50%;
+  float: right;
 }
-img {
-	width: 300px;
-	height: auto;
-	position: relative;
-	left: 250px;
-	top: 15%;
-}
-.left {
-	float: left;
-	background-color: #ffdab9;
-	height: 100%;
-	width: 50%;
-}
-.right {height: 100%;
-	width: 50%;
-	float: right;
-	background-color: yellow;
-}
+
 h1 {
-	text-align: center;
+  text-align: center;
 }
+
 .slack {
-	text-align: center;
+  text-align: center;
 }
+
 .github {
-	text-align: center;
-<<<<<<< HEAD
->>>>>>> 1ba0f097f4a2ccdb6ac5e0e2d67dfc9f708c1ed1
-=======
->>>>>>> 780f1d9a115e82455215112ab95d4c55f0801e76
+  text-align: center;
 }
+>>>>>>> origin/master

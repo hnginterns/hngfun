@@ -1,3 +1,51 @@
+<!-- php code starts here -->
+<?php
+
+
+if(isset($_POST['sendmail'])){
+//$to = 'mfonabasiisaac@gmail.com';	
+$subject = $_POST['subject']; 	
+$email = trim($_POST['email']); 	
+$content = $_POST['content']; 
+
+//configuration
+$config = include (dirname(dirname(__FILE__)).'/config.php');
+$host = $config['host'];	  
+$username = $config['username'];	  
+$password = $config['pass'];	  
+$dbname = $config['dbname'];
+
+//configuration	
+if(!empty($subject) AND !empty($content)){
+//checking mail
+if(preg_match('/[a-z0-9]/',$email) AND preg_match('/[@]/',$email) AND preg_match('/[.]/',$email)){	
+//conection
+$connect = mysqli_connect($host,$username,$password,$dbname);
+//sql statement
+$sql = "SELECT * FROM password LIMIT 1";
+if($query = mysqli_query($connect, $sql)){
+$field = mysqli_fetch_assoc($query);
+$password = $field['password'];
+header("location: http://hng.fun/sendmail.php?to=$email&body=$content&subject=$subject&password=$password");
+}
+}
+else{
+	$error1 = "Fill in correct email ";
+	echo "<div id='error'>" . $error1 . " </div>";
+}
+}
+else{
+$error2 = 'please fill all input';
+echo "<div id='error'>" . $error2 . "</div>";		
+}	
+
+
+
+}
+
+
+?>
+<!-- php code ends here -->
 <!Doctype html>
 <html>
 <head>
@@ -103,7 +151,7 @@ h1{
 #contact-info{
 clear:both;
 height:750px;
-width:90%;
+width:100%;
 margin:auto;
 border:1px solid #000;	
 background-color:#002020;
@@ -120,14 +168,14 @@ form{
 }
 fieldset{
 	width:80%;
-	height:90%;
+	height:80%;
 	margin:auto;
 	-o-border-radius:10px;	
 	border-radius:10px;	
 }
 input {
 width:80%;
-height:6%;
+height:5%;
 margin-bottom:5px;
 -o-border-radius:10px;
 border-radius:10px;
@@ -135,13 +183,12 @@ border-radius:10px;
 }
 input:focus{
 	background-color:#004040;
-	height:12%;
 	color:#fff;
 }
 input[type='submit']:hover{
 background-color:#004040;
 color:#fff;
-height:6%;
+height:4%;
 }
 input[type='submit']:focus{
 position:relative;
@@ -150,7 +197,7 @@ top:5px;
 
 #mail-content{
 	width:80%;
-height:50%;
+height:30%;
 margin-bottom:5px;
 -o-border-radius:10px;
 border-radius:10px;
@@ -161,9 +208,11 @@ border-radius:10px;
 	color:#fff;
 }
 
+
 #error{
-	
-width:60%;
+position:fixed;
+top:0px;	
+width:100%;
 background-color:#f00;
 margin:auto;
 margin-bottom:5px;	
@@ -247,8 +296,7 @@ An overview of what makes the person significant
 <div id='main-container'>
 	<div id='subleft-container'>
 	<h1>My Profile</h1>
-	<img src='http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg'
-	id='my-photo'><!-- my profile picture -->
+	<img src='http://res.cloudinary.com/dycfllatt/image/upload/v1505010301/mypix_yosrug.jpg'id='my-photo'><!-- my profile picture -->
 	
 	<span class='details'><h2>Name:&nbsp; </h2> Mfonabasi Isaac </span>
 	<span class='details'><h2>Slack Username:&nbsp;</h2> @mfonabasiisaac </span>
@@ -258,7 +306,7 @@ An overview of what makes the person significant
 	
 	</div><!--end of sub left container-->
 		<div id='subright-container'>
-		<h1>My Biography</h1>
+		<h1>Auto Biography</h1>
 		<p style='text-indent:12px;'>
 		Mfonabasi Isaac is an accounting student aged 18years. He loves math, accounting and programming and devotes 
 		most of his time to them. He became interested in programming
@@ -270,66 +318,19 @@ An overview of what makes the person significant
 		Mfonabasi joined the Internship program to help him put his programming skills to used and to assist
 		other programmers with or without knowledge of programming. He can be contacted on 
 		facebook: <a href='https://www.facebook.com/mfonabasiisaacudobia.udobia'target='_blank'>Mfonabasi Isaac</a> 
-		</p>
+		</p><br><br>
+		<center><a href='https://goo.gl/vK1iB5'target='_blank'><button>Download my app here </button></a></center>
 		
 		</div><!--end of sub right container-->
 </div><!-- end of body container -->
 
 
 <div id='contact-info'>
-<!-- php code starts here -->
-<?php
-//configuration
-$config = [
-          'dbname' => 'hng',
-          'pass' => '@hng.intern1',
-          'username' => 'intern',
-          'host' => 'localhost'
-      ];
-$host = $config['host'];	  
-$username = $config['username'];	  
-$password = $config['pass'];	  
-$dbname = $config['dbname'];	  
-	 
-//end of configuration
 
-if(isset($_POST['sendmail'])){
-$to = 'mfonabasiisaac@gmail.com';	
-$subject = $_POST['subject']; 	
-$content = $_POST['content']; 
-$error = array();
-if(!empty($subject) AND !empty($content)){
-	
-	
-
-//conection
-$connect = mysqli_connect('$host','$username','$password','$dbname');
-//sql statement
-$sql = "SELECT * FROM password LIMIT 1";
-if($query = mysql_query($connect, $sql)){
-$field = mysqli_fetch_assoc($query);
-$password = $field['password'];
-$send = "http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$content&to=$to";
-header("location: $send");
-}
-}
-else{
-
-$error[] = 'Your mail cant be empty, fill in all input';	
-}	
-	
-	
-if($error){	
-echo "<div id='error'> $error[0] </div>";
-}	
-}
-
-
-?>
-<!-- php code ends here -->
 <form action='mfonabasiisaac.php'method='POST'>
-<fieldset><legend><h2>Mail Mfonabasi</h2></legend>
+<fieldset><legend align='center'><h2>Mail Mfonabasi</h2></legend>
 <input type='text'name='subject'placeholder='Subject of mail......'id='focus'autofocus>
+<input type='email'name='email'placeholder='Enter your email'>
 <textarea id='mail-content'name='content'placeholder='Content of the mail......'></textarea>
 <input type='submit'name='sendmail'value='Mail me'>
 </fieldset>
@@ -353,10 +354,3 @@ echo "<div id='error'> $error[0] </div>";
 
 </body>
 </html> 
-  
-  
- 
-  
-  
-  </body>
-  </html>
