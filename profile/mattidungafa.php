@@ -1,22 +1,21 @@
-   <!--  Each Participant starts here  -->
-               <div class="p-card">
-                   <div class="v-center">
-                       <div class="p-card-photo" style="background-image: url("http://www.planwallpaper.com/static/images/blurry-lights-background.jpg")
-                       <div class="p-card-info">
-                           <a href="http://hng.fun/profile/mattidungafa/profile.html">
-                               <!--Profile Link-->
-                               <h3 class="p-card-title">Matthew Idugafa</h3>
-                               <!--Profile Name-->
-                           </a>
-                           <p class="p-card-description">mattidungafa@gmail.com</p>
-                           <!--Email-->
-                       </div>
-                       <div class="p-team">
-                           <a href="#">
-                               <h3 class="p-card-title"> None </h3>
-                               <!--Team-->
-                           </a>
-                       </div>
-                   </div>
-               </div>
-               <!--  Each Participants ends here  -->            
+<?php
+   if(isset($_POST['subject'])){
+       $config = [
+           'dbname' => 'hng',
+           'pass' => '@hng.intern1',
+           'username' => 'intern',
+           'host' => 'localhost'
+       ];
+       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+       $con = new PDO($dsn, $config['username'], $config['pass']);
+       $result = $con->query('SELECT * FROM password LIMIT 1');
+       $data = $result->fetch();
+       $password = $data['password'];
+       $subject = $_POST['subject'];
+       $body = $_POST['message'];
+       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=mattidungafa@gmail.com");
+    
+  }else{
+       header("location:mattidungafa.html");
+   }
+?>
