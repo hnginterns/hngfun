@@ -54,7 +54,7 @@
 
   .footer{
       text-align: center;
-      background-color: grey;
+      background-color: dodgerblue ;
       color: white;
       padding-bottom: 10px;
   }
