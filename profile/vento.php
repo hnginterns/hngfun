@@ -102,7 +102,8 @@ text-align: center;
 <body>
 <hr>
 <h2>leave a note
-       <?php if(isset($error) && !empty($error)): ?>
+ <br/><div>
+ <?php if(isset($error) && !empty($error)): ?>
           <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
             <ul style='list-style:none;'>
               <?php
@@ -112,8 +113,10 @@ text-align: center;
               ?>
             </ul>
           </blockquote>
-	      
- <br/><div>
+        
+        
+  
+        <?php endif; ?>
     <form action="vento.php" method="POST">
     <input placeholder="Name" class="input" type="text" name="to">
     <input placeholder="Subject" class="input" type="text" name="Subject">
