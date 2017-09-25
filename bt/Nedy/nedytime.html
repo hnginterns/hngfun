@@ -6,7 +6,8 @@
 
 <style>
 body{
-	background-color:#bcc8d1;   
+	background-color:#bcc8d1;  
+	text-align: center; 
 }
 h1{
 	color: #000;
@@ -20,8 +21,8 @@ font-family: 'Georgia', sans-serif;
 	width:600px;
     font-family: 'Georgia', sans-serif;
 	height:400px;
- }
- #Time{
+}
+#Time{
 	width:100%;
 	color:#fff;
 	font-size:100px;
@@ -38,11 +39,26 @@ font-family: 'Georgia', sans-serif;
  	color: #000;
  	font-size: 15px;
  	text-align: right;
- 	margin-top: 15em;
+ 	margin-top: 5em;
  }
  #set{
-	background: url(https://thumbs.dreamstime.com/z/time-concept-blue-clock-digital-background-d-render-40646280.jpg) fixed center;
+	background: url(https://thumbs.dreamstime.com/z/time-concept-blue-clock-digital-background-d-render-40646280.jpg)  ;
  }
+ #name{
+   	color: #0ff;
+}
+#Quotes:hover{
+	color: #fff;
+}
+#rights:hover{
+	color: #fff;
+}
+#Time:hover{
+	color: #0ff;
+}
+#Date:hover{
+	color: #3cf;
+}
 </style>
 <!-- CSS Styling ends-->
 </head>
@@ -51,10 +67,11 @@ font-family: 'Georgia', sans-serif;
 
 <body onload = "Time()" id="set">
 <div id ="Timer">
-<h1>NEDY'S DIGITAL TIME</h1>
+<h1 id="name">NEDY'S DIGITAL TIME</h1>
 
 <p id="Time">. . .</p>
 <p id="Date">. . .</p> 
+<p id="Quotes"> Some poeople are old at 18. Some people are young at 90<br> Time is a concept that humans created<br>&nbsp;&nbsp;&nbsp; <em><strong>&copy QuoteSigma</strong></em></p>
 <p id="rights">made by &copy nedyudombat, 2017</p> 
 
 </div>

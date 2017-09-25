@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<script>
+function startTime() {
+    var now = new Date();
+    var hours = now.getHours();
+    var mins = now.getMinutes();
+    var sec = now.getSeconds();
+   mins = checkTime(mins);
+    s = checkTime(sec);
+    document.getElementById('time').innerHTML =
+   hours+ ":" +mins+ ":" + sec;
+    var time = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+
+<div style=" border:2px solid; padding:15px; width:50px; height:2px; border-radius: 6px;" id="time"> </div>
+
+
+</body>
+</html>
