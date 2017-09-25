@@ -93,11 +93,12 @@ back success to my life<br> by giving me the best solution to solve my problems.
 <div class="contact">
 <h2> Follow me on </h2>
 <p><strong>slack:</strong> </p> @uwemekong11
-   <a class="button" href="https://github.com/emmanuel1995/hngintern-1">Github</a>
+   <a class="button" href="https://github.com/emmanuel1995">Github</a>
    <a class="button" href="https://drive.google.com/open?id=0B-SiESDyF5oKM0tBQWZ6cl93UzA" style="margin-left: 20px;">My App</a>
 </div>
   <form action = "uwemekong.php" id = "contact-form" method = "POST" >
         <input type = "text" name = "subject" placeholder= "Enter subject for email" required><br><br>
+        <input type="email"  name="email"    placeholder="Your email.." required>
         <textarea name = "body" placeholder = "Type your message here"  required></textarea><br>
         <br><input type ="submit" name="submit" value ="Send Message">
       </form>
