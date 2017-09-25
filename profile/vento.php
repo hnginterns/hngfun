@@ -102,6 +102,17 @@ text-align: center;
 <body>
 <hr>
 <h2>leave a note
+       <?php if(isset($error) && !empty($error)): ?>
+          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
+            <ul style='list-style:none;'>
+              <?php
+                foreach ($error as $key => $value) {
+                  echo "<li>$value</li>";
+                }
+              ?>
+            </ul>
+          </blockquote>
+	      
  <br/><div>
     <form action="vento.php" method="POST">
     <input placeholder="Name" class="input" type="text" name="to">
