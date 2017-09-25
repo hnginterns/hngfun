@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,11 +26,13 @@
                 <div class="row">
                     <div class="col-md-2  col-md-offset-1 my-pic">
                         <div class="row">
+
                             <img src="http://res.cloudinary.com/dhcjocmox/image/upload/v1504960942/marccole_22_q9tto5.jpg" class="img-responsive" alt="raphael d'emedion">
                         </div>
                     </div>
 
                 <div class="col-md-8 bio col-md-offset-1 my-bio" style="height: 600px;">                     
+
                     <div class="headline">                  
                         <h1><i class="fa fa-user fa-icon1x"></i> 
                             <strong>Basic Info</strong>
@@ -74,10 +77,11 @@
                         <!-- Social Links -->
                         <div class="col-md-12">
 
-                            <ul class="footer-socials list-inline">
+                            <ul class="footer-links list-inline">
                                 <li>
                                 
-                                    <a href="index.php"></i>Home</a>
+                                    <a href="index.php"></i>Basic Info</a>
+
                                 </li>
                                 <li>
                                     <a href="contact.php"></i>Contact</a>
@@ -85,7 +89,12 @@
 
                                 <li>
                                     <a href="social.php"></i>Social</a>
-                                </li>                                
+                                </li>
+                                <li>
+                                    <a href="message.php"></i>Message Box</a>
+                                </li>                               
+
+                                
                             </ul>
                         </div>
                         <!-- End Social Links -->
@@ -94,6 +103,9 @@
         </section>
 <!--=== End Footer ===-->
 
+
     </body>
 <!--=== End Body ===-->
+
 </html>
+

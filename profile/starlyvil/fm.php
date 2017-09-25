@@ -1,3 +1,4 @@
+
 <div class="infoCon">
 	<h1>Contact form</h1>
 	<p>Please use the form below to send me a short mail</p>
@@ -63,4 +64,3 @@
 
 		
 	}
-?>

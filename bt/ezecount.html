@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>profile picture</title>
+	<style type="text/css">
+		body{
+			background-color: darkgrey;
+			font-family: Verdana,sans-serif;
+font-size: 15px;
+line-height: 1.5;
+
+ 
+		}
+	
+		.center{text-align: center;
+			
+		}
+		
+		.cc{
+			border-radius: 50%;
+
+		}
+		
+
+
+
+.container {
+    padding: 0.01em 16px; 
+    background-color: white;
+  
+}
+.w3-animate-zoom {
+    animation: animatezoom 0.6s;
+}
+.card{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+#center {
+    text-align: center !important;
+}
+
+
+
+.margin-top {
+    margin-top: 16px !important;
+}
+
+.margin_bottom {
+    margin-bottom: 16px !important;
+}
+.border {
+    border: 1px solid #ccc !important;
+}
+
+
+
+.input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 40%;
+ padding: 60px 10px;
+  height: 35px;
+
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: #e8eb;
+  color: #576366;
+  font-size: 40px;
+}
+
+
+.inpt{
+    display: inline-block;
+    height: 40px;
+    line-height: 4x;
+    margin-top: 5px;
+     margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    background: teal;
+    color:whitesmoke;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.margin1 {
+    margin: 16px !important;
+}
+.round {
+    border-radius: 4px;
+}
+.gray1{
+    color: #000 !important;
+    background-color: #bbb !important;
+
+}
+ 
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.butt:hover{color: gray;
+
+	background-color: gray 
+}
+
+
+	</style>
+
+</head>
+
+
+<body>
+<div class="bg" >
+
+  
+<div class="middle  center" style="width: 500px; padding-top: 25px;">
+
+<body>
+    <div class="container">
+            <div class="card">
+                <h2>Character Counting</h2>
+                    <input id="char" type="text" placeholder="Enter characters here..." class="input">
+                    <div>
+                    <input type="button" class="inpt butt:hover" value="Count display"  id="string" onClick="stringCounter()"> 
+                    </div> 
+                    <p id="display"></p> 
+            </div>
+           
+</body>
+<script type = "text/javascript">
+    mode = true;
+    let stringCounter = () =>{
+        let counting = 0;
+        let string = document.getElementById('char').value;
+        for (char in string){
+            if (mode === true){
+            if (!/\s/g.test(string[char])){counting ++;}}
+            else{counting = string.length}
+        }
+        document.getElementById("display").innerHTML = 'string count is :   '+counting;
+    }
+    
+    
+    document.getElementById("char").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    document.getElementById("string").click();
+});
+
+
+</script>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>

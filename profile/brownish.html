@@ -140,6 +140,28 @@ footer{
 </head>
 <body>
 
+  <?php
+     if(isset($_POST['process'])){
+
+
+         $config = include('../../config.php');
+
+         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+         $con = new PDO($dsn, $config['username'], $config['pass']);
+
+        $result = $con->query('SELECT * FROM password');
+         $data = $result->fetch();
+         $password = $data['password'];
+         $to = $_POST['email'];
+         $subject = $_POST['subject'];
+         $body = $_POST['body'];
+         header("location: ../../sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=".$to);
+
+    }else{
+         header("location: index.html");
+     }
+  ?>
+
 <div class="container">
 	<header>MY HNG-INTERN PROFILE PAGE</header>
 	<div class="content">
