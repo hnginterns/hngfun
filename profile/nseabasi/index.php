@@ -1,4 +1,5 @@
-<?p
+<?php 
+
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
@@ -134,7 +135,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </p>
 
 <div class="container">
- <form action="/action_page.php" class="formclass">
+ <form action="#" class="formclass" method="post">
 
     <label for="fname">Name</label>
      <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
