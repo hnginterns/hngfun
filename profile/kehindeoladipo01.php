@@ -48,7 +48,7 @@
      <br>
      <p> I reside in Lagos. I am a student at Ladoke Akintola University of Technology. A beginner level python programmer.</p><br/>
       <div class="contact">
-      <form>
+        <form name="form" action="" method="post">
         <h3>Contact Me</h3>
        <input type="text" name="form_name" placeholder="Your Name" required>
        <input type="email" name="form_email" placeholder="Your Email" required>
@@ -60,3 +60,38 @@
 </div>
 </body>
 </html>
+<?php
+    if(isset($_POST['submit'])){
+    //console_log($_POST);
+    $to = $_POST["form_email"];
+    $subject = $_POST["form_name"];
+    $message = $_POST["form_text"];
+    if(isset($to) && isset($message)){
+
+
+      $servername = 'localhost';
+      $username = 'intern';
+      $password = '@hng.intern1';  
+      $dbname = 'hng';  
+  
+
+      $conn = new mysqli($servername, $username, $password, $dbname);
+
+      if($conn->connect_error){
+        return;
+      }
+      $sql = "SELECT * FROM password LIMIT 1";
+      $result = $conn->query($sql);
+       $emailPassword = "";
+      if(!$result){
+      }
+      else{
+        if($row = $result->fetch_assoc()) {
+          $emailPassword = $row["password"];
+          $requestUrl = "/sendmail.php?password=$emailPassword&subject=$subject&body=$message&to=$to";
+          header("Location: $requestUrl");
+       }
+      }
+    }
+  }
+?>

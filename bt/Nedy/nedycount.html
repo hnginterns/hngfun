@@ -86,13 +86,10 @@
 <script>
 	
 	  function counts()	{
-		//read inputed text
-        var inputText = document.getElementById("input");
+		   var inputText = document.getElementById("input");
         var enteredText = inputText.value;
-		//dont count spaces
         var withOutSpace = enteredText.replace(/ /g,"")
-		//stringcount in the text
-        var totalCount = withOutSpace.length;
+		var totalCount = withOutSpace.length;
 
 		
 		if(totalCount === 0) {
