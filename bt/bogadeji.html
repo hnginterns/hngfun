@@ -11,6 +11,9 @@
                     align-items: center;
                     text-align: center;
                     background-image: url(https://i.imgur.com/EJd18r9.jpg);
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+    background-position: center;
 		}
 		#greeting, #result {
 
@@ -108,7 +111,7 @@
 		          var counter = 'Do you know your name has ' + count + ' letters? <br/> Try our word counter, give us an input, and we will be sure to tell you just how many Characters you have in it.';
 
 		          if(h >= 12 && h<16&& (words !=''||words.trim() !='' )){
-		          	document.body.style.backgroundImage = "url('https://i.imgur.com/jMGq6cD.jpg')";
+		          	document.body.style.backgroundImage = "url('https://i.imgur.com/wa5FhAM.jpg')";
 		          	document.getElementById("greeting").innerHTML = "Good Afternoon, " + words + '. ' +counter;
 		          }else if(h>=0 && h < 12 && !(words ==''||words.trim() =='' )){
 		          	document.body.style.backgroundImage = "url('https://i.imgur.com/s0LUtHS.jpg')";
