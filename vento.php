@@ -122,6 +122,7 @@ text-align: center;
     <input placeholder="subject" class="input" type="text" name="subject">
     
     <textarea placeholder="message" class="input" name="message" rows="5" cols="30"></textarea>
+      </form>
     <p>
     <button class="col-btnSL" type="submit" name="processMail" value="Submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> send</button>
        <div style="text-align: center; margin-top: 20px; width: 15%; margin-left: auto; margin-right: auto; padding: 2px; display:inline;">
