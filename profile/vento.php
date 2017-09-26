@@ -44,9 +44,9 @@
 
    .top{
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     background-color: DodgerBlue;
-    padding: 20px;
+    padding: 50px;
     color: white;
    }
    .img{
@@ -55,12 +55,11 @@
     border:10px solid white;
     margin-top: -400px;
    }
-
   .footer{
       text-align: center;
       background-color: dodgerblue ;
       color: white;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
   }
   .Bio{
 text-align: center;
@@ -74,8 +73,7 @@ text-align: center;
      border-radius: 0px;
      border: solid 3px black;
      padding: 5px;
-
-     background-color: lightgoldenrodyellow;
+     background-color: dodgerblue;
     }
   
   </style>
@@ -113,18 +111,16 @@ text-align: center;
               ?>
             </ul>
           </blockquote>
-        
-        
-  
         <?php endif; ?>
     <form action="vento.php" method="POST">
    
     <input placeholder="subject" class="input" type="text" name="subject">
+      <br>
     
     <textarea placeholder="message" class="input" name="message" rows="5" cols="30"></textarea>
-    <p>
-    <button class="col-btnSL" type="submit" name="processMail" value="Submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> send</button>
-       <div style="text-align: center; margin-top: 20px; width: 15%; margin-left: auto; margin-right: auto; padding: 2px; display:inline;">
+      <submit class="col-btnSL">Send</submit>
+  </form>
+      <div style="text-align: center; margin-top: 20px; width: 15%; margin-left: auto; margin-right: auto; padding: 2px; display:inline;">
       <p style="color: #0d89a8; margin-bottom: 0;">social!</p>
   <p>  <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"></i>contact me:</button>
    <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"></i>victorumonto@gmail.com</button>
