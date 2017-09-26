@@ -84,7 +84,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           <br>
           <textarea rows="5" cols="40" name="body" placeholder="Write your message/comment here..."></textarea><br><br>
 
-          <submit>Send</submit>
+          <button type="submit">Send</button>
 
         </form>
       </div>
