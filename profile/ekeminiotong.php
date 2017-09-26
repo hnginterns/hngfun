@@ -4,7 +4,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = array();
     $subject = $_POST['subject'];
     $to  = 'ekemini.otong@gmail.com';
-    $body = $_POST['commentbox'];
+    $body = $_POST['body'];
     if($body == '') {
         $error[] = 'You have to TYPE in something to tell me something';
     }
@@ -67,15 +67,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
           <h2 style="text-align:center;" "margin-right:500px;">Contact Me</h2>
           Name<br>
-          <input type="text" name="name" size="40" placeholder="e.g surname, initial middlename" ><br><br> Email
+          <input type="text" name="name" size="40" placeholder="e.g surname, initial middlename" >
 
-          <br>
-          <input type="email" name="email" size="40" placeholder="example@gmail.com"><br><br> Subject
+         <br> Subject
 
           <br>
           <input type="text" name="subject" size="40" height="20"><br><br> 
 
-          <text type="hidden" id="password" name="password" value="<?php echo $password; ?>"> Message
+           Message
 
           <br>
           <textarea rows="5" cols="40" name="body" placeholder="Write your message/comment here..."></textarea><br><br>
