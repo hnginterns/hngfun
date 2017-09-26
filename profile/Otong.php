@@ -1,45 +1,33 @@
-
 <?php
-
-   if(isset($_POST['submit'])){
-
-       $config = [
-
-           'dbname' => 'hng',
-
-           'pass' => '@hng.intern1',
-
-           'username' => 'intern',
-
-           'host' => 'localhost'
-
-       ];
-
-       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-
-       $con = new PDO($dsn, $config['username'], $config['pass']);
-
-       $result = $con->query('SELECT * FROM password');
-
-       $data = $result->fetch();
-
-       $password = $data['password'];
-
-       $subject = $_POST['subject'];
-
-       $body = $_POST['body'];
-
-       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=ekemini.otong@gmail.com");
-
-   
-
-   }else{
-
-       header("location: ekemini.otong html.html");
-
-   }
-
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'ekemini.otong@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+        $error[] = 'You have to TYPE in something to tell me something';
+    }
+    if($subject == '' || $subject == ' ') {
+        $error[] = 'Your name and email are very important, TYPE them in';
+    }
+    if(empty($error)) {
+        $config = include('../config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
+    }
+}
 ?>
+
+<!-- after php summon-->
+
+
+
+
 <!DOCTYPE html>
  <html>
    <head>
@@ -88,15 +76,15 @@
           <input type="text" name="name" size="40" placeholder="e.g surname, initial middlename" ><br><br> Email
 
           <br>
-          <input type="email" name="email" size="40" placeholder="example@gmail.com"><br><br> Subject
+         >subject
 
           <br>
           <input type="text" name="subject" size="40" height="20"><br><br> 
 
-          <text type="hidden" id="password" name="password" value="<?php echo $password; ?>"> Message
+          Message
 
           <br>
-          <textarea rows="5" cols="40" name="body" placeholder="Write your message/comment here..."></textarea><br><br>
+          <textarea rows="5" cols="40" name="message" placeholder="Write your message/comment here..."></textarea><br><br>
 
           <button type="submit" name="submit">Send</button>
 
