@@ -5,9 +5,7 @@
 		<style type="text/css">
 
 		.button{
-			width: 100px;
-			height: 35px;
-			 background-color:#606060;
+			width: 83px;
                 border:1px solid #606060;
              text-align:center;
                 margin-bottom:1.5px;
@@ -25,15 +23,27 @@
 			text-align: center;
 			font-size: 21px;  
 		}
+		.button.pink{
+			background-color: #FF0000;
+			color: #FFFFFF;
+		}
 		 #about {
                 font-size: 30px;
-                width: 420px;
+                width: 355px;
                 position: relative;
                 text-align: center;
             }
+            .frame{
+            	background-color: #DFE3EA;
+  
+            	padding: 20px;
+            	width: 360px;
+            }
 
              body {
-                background-color: #080808 ;
+              background-image:url(https://drive.google.com/open?id=0B17__D8maVgcU3pnQ01rMWNZV1E);
+                
+                padding: 10px;
                 overflow: hidden;
                 width: 500px;
                 position: fixed;
@@ -54,6 +64,7 @@
 	{
 			document.getElementById("display").value+=val;
 	}
+	
 	function e()
 	{
 		try
@@ -72,39 +83,34 @@
         </script>
 	</head>
 	<body>
-		<div align="centre">
-		<div class="display"><input type="text" size="34" id="display" readonly="">
+		<div align="centre" class="frame">
+		<div class="display"><input type="text" size="28" id="display" readonly="">
 		<div class="keys">
 		<p>
-			<input type="button" class="button" value="mrc" onclick='c("not defined")'>
-			<input type="button" class="button" value="(" onclick='math("(")'>
-			<input type="button" class="button" value=")" onclick='math(")")'>
-			<input type="button" class="button" value="/" onclick='math("/")'>
-		</p>
-		<p>
-			<input type="button" class="button" value="7" onclick='math("7")'>
-			<input type="button" class="button" value="8" onclick='math("8")'>
-			<input type="button" class="button" value="9" onclick='math("9")'>
+			<input type="button" class="button pink" value="7" onclick='math("7")'>
+			<input type="button" class="button pink" value="8" onclick='math("8")'>
+			<input type="button" class="button pink" value="9" onclick='math("9")'>
 			<input type="button" class="button" value="*" onclick='math("*")'>
 		</p>
 		<p>
-			<input type="button" class="button" value="4" onclick='math("4")'>
-			<input type="button" class="button" value="5" onclick='math("5")'>
-			<input type="button" class="button" value="6" onclick='math("6")'>
+			<input type="button" class="button pink" value="4" onclick='math("4")'>
+			<input type="button" class="button pink" value="5" onclick='math("5")'>
+			<input type="button" class="button pink" value="6" onclick='math("6")'>
 			<input type="button" class="button" value="-" onclick='math("-")'>
 		</p>
 		<p>
-			<input type="button" class="button" value="1" onclick='math("1")'>
-			<input type="button" class="button" value="2" onclick='math("2")'>
-			<input type="button" class="button" value="3" onclick='math("3")'>
+			<input type="button" class="button pink" value="1" onclick='math("1")'>
+			<input type="button" class="button pink" value="2" onclick='math("2")'>
+			<input type="button" class="button pink" value="3" onclick='math("3")'>
 			<input type="button" class="button" value="+" onclick='math("+")'>
 		</p>
 		<p>
-			<input type="button" class="button" value="0" onclick='math("0")'>
-			<input type="button" class="button" value="." onclick='math(".")'>
+			<input type="button" class="button pink" value="0" onclick='math("0")'>
 			<input type="button" class="button" value="C" onclick='c("")'>
 			<input type="button" class="button" value="=" onclick='e()'>
+			<input type="button" class="button" value="/" onclick='math("/")'>
 		</p>
 		<p> <input id="about" type="Button" value="About" onclick="myFunction()"></br></p>
+		</div></div></div></body>
 	</body>
 </html>
