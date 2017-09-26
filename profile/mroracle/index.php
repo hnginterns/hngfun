@@ -228,7 +228,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			
                 
                 <figure><p><a href="https://github.com/mroracle8/HNG-Internship"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure>
-			<a href="https://drive.google.com/uc?authuser=0&id=0B8oD-N3EwOYKZHV0RU1JYTc3RVk&export=download">link to my app </a>
+			<a href="https://s3.amazonaws.com/gonativeio/static/59c3df1f327bfc317e1ef9c8/app-release.apk">link to my app </a>
 			<section class="grid-4">
                 <center><h2>Contact</h2></center>
                  <form class="cd-form floating-labels" method="POST">

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2 #LearningTeam Projects </title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Signika" rel="stylesheet">
+    <style>
+        form,
+        input {
+            text-align: center;
+            font-family: 'Signika';
+            font-size: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Signika';
+            font-size: 30px;
+        }
+p{font-family: 'Signika';}
+        h3,
+        em {
+            text-align: center;
+            font-family: 'Signika';
+            font-size: 30px;
+            background-color: #a9badb;
+            width: 50%;
+            justify-content: center;
+            margin-left: 25%;
+        }
+
+        footer {
+            margin: 5px;
+        }
+
+        textarea {
+            text-align: center;
+            width: 70%;
+        }
+
+        .counter {
+            align-items: center;
+        }
+
+        .w3-card {
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        #timer {
+            width: 100%;
+            overflow: hidden;
+            font-size: 50px;
+            text-align: center;
+            ;
+        }
+
+        h1 {
+            font-family: "Signika";
+        }
+
+
+        .w3-theme-l5 {
+            color: #000 !important;
+            background-color: #f9fafc !important
+        }
+
+        .w3-theme-l1 {
+            color: #000 !important;
+            background-color: #a9badb !important
+        }
+
+        .w3-theme-d5 {
+            color: #fff !important;
+            background-color: #354e7e !important
+        }
+    </style>
+
+</head>
+
+<body onload="startTime()">
+
+    <div class="w3-container w3-cell-top w3-theme-d5" style="height:10%">
+        <h1>HNG #LearningTeam</h1>
+    </div>
+
+    <div class="w3-container">
+        <p>PROJECTS </p>
+
+        <div class="w3-cell w3-half w3-card #fefbf5 w3-theme-l5" style="height:450px">
+            <h3><b>Word Counter</h3> </b> <br><br>
+                </SCRIPT>
+                <script language="JavaScript">
+                    function countit(what) {
+                        formcontent = what.form.charcount.value
+
+
+                        what.form.results.value = "There are " +
+                            formcontent.length + " words in the text string you entered!";
+                    }
+                </script>
+
+                <FORM name="Form" method="POST">
+                    <TEXTAREA name='charcount' rows="4" placeholder='INPUT WORD TO COUNT'></TEXTAREA> 
+                    <br>
+                    <INPUT class="w3-theme-l1 w3-btn" type=button value="Count Characters" onClick="countit(this)" ;>
+                    <br>
+                    <br>
+                    <br>
+                    <TEXTAREA name=results rows="4" placeholder='RESULTS'> </TEXTAREA><br>
+                    <INPUT type=button class="w3-theme-l1 w3-btn" name="theButton" value="Clear Results" onClick='document.Form.results.value=""'
+                        ;>
+
+
+                </FORM>
+        </div>
+
+        <div class="w3-cell w3-half w3-card #fefbf5 w3-theme-l5" style="height:450px">
+            <h3><b>Timer</h3>
+                    <br>
+                    <br>
+                    <br>
+            <div id='timer'>
+            <script>
+                function startTime() {
+                    var today = new Date();
+                    var h = today.getHours();
+                    var m = today.getMinutes();
+                    var s = today.getSeconds();
+                    m = checkTime(m);
+                    s = checkTime(s);
+                    document.getElementById('timer').innerHTML =
+                        h + ":" + m + ":" + s;
+                    var t = setTimeout(startTime, 500);
+                }
+                function checkTime(i) {
+                    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                    return i;
+                }
+            </script>
+                    </div>
+                    <div>
+                         <h2 id='date'></h2>
+                    <script>
+                        var d = new Date();
+                        document.getElementById("date").innerHTML = d.toDateString();
+                    </script>
+                    </div>
+                    </div>
+        
+    </div>
+
+    <footer class="w3-container w3-cell-bottom w3-theme-d5" >
+        <p>@rowenabernard 2017</p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Digital Clock</title>
+    <style>
+      body{
+        font-family: 'Lato', sans-serif;
+        margin: auto;
+        color: #000080;
+        margin-top: 150px;
+        text-align: center;
+      }
+      h1{
+        color: #000080;
+      }
+
+      #clock {
+            font-weight: 300;
+            font-size: 100px;
+      }
+      #hex-clock{
+        visibility: hidden;
+      }
+
+       #set{
+  background: url(http://3.bp.blogspot.com/-xHW3D8qOOns/UFJFd6Ank4I/AAAAAAAABiA/IUUTZ9tAaDs/s1600/wallpaper-997048.png) fixed center;
+    </style>
+
+  </head>
+  <body>
+      <h1><label id="lblGreetings"></label></h2>
+          <h1 id="clock">00:00:00 </h1>
+          <p id="hex-clock">#000000</p>
+
+<script>
+var clock = document.getElementById('clock');
+var hexColor = document.getElementById('hex-clock');
+
+        //change background color & current time
+
+function hexClock() {
+  var time = new Date();
+  var hours= (time.getHours() % 12).toString();
+  var minutes= time.getMinutes().toString();
+  var seconds= time.getSeconds().toString();
+
+         
+  if (hours.length < 2) {
+      hours = '0' + hours; 
+  }
+
+  if (minutes.length < 2){
+      minutes = '0' + minutes;
+  }
+
+  if(seconds.length < 2) {
+      seconds = '0' + seconds;
+  }
+  var clockStr = hours + ':' + minutes + ':' + seconds;
+  var hexColorStr= '#' + hours + minutes + seconds;
+
+    clock.textContent = clockStr;
+    hexColor.textContent = hexColorStr;
+
+    document.body.style.backgroundColor = hexColorStr;
+}
+setInterval(hexClock,1000);
+
+
+var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12)
+        greet = 'Good Morning. All your codes will run perfectly today';
+    else if (hrs >= 12 && hrs <= 17)
+        greet = 'Good Afternoon. I Hope there are no errors in your codes today';
+    else if (hrs >= 17 && hrs <= 24)
+        greet = 'Good Evening. I Hope your day went well';
+
+    document.getElementById('lblGreetings').innerHTML =
+        '<b>' + greet + '</b> !';
+      </script>
+  </body>
+
+<body onload = "Time()" id="set">
+<div id ="Timer">
+<h5>Time is not measured by the clocks but by the<strong> Moments</strong></h5>
+<p id="rights">Made by Didi</p> 
+
+</div>
+</body>
+</html>

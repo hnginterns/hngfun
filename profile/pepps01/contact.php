@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 <?php
    if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -36,4 +35,56 @@
       }
     }
  ?>
->>>>>>> 4763fdf1ff8014cc1571c658f3f46f0356a922f7
+function greetings(){
+   //onscreen variabes
+   let enter_name = document.getElementById('name').style.display ="none";
+   let submit_name = document.getElementById('btn').style.display ="none";
+
+   let show_greet = document.getElementById('greet');
+   let show_date = document.getElementById('date');
+
+   let recieve_name = document.getElementById('name').value;
+
+    //get Months ,date, hour , day , minutes , time
+    let greet_me =['Good Morning!','Good Afternoon!','Good Night!'];
+
+    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let months =  ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    let time = new Date();
+    let get_year  = time.getYear();
+    let get_month = months[time.getMonth()];
+    let get_day   = days[time.getDay()];
+    let date      =   time.getDate();
+    let hours     =  time.getHours().toString();
+
+    if (hours.length < 2) {
+        hours = '0' + hours;
+    }
+    if (minutes.length < 2){
+        minutes = '0' + minutes;
+    }
+
+    //Get greetings
+    let recieve_greetings;
+
+    if(hours < 12){
+      recieve_greetings =  greet_me[0] + " " + recieve_name +"  How are you doing?" ;
+    } 
+    if(hours >= 12 && hours<= 17){
+      recieve_greetings =  greet_me[1] + " " + recieve_name +"  How are you doing?" ;
+    }
+    if(hours >= 17){
+      recieve_greetings =  greet_me[2] + " " + recieve_name +"  How are you doing?" ;
+    }
+
+    //GET CURRENT TIME
+    let tell_time;
+    tell_time = "Today's date is " + get_day + "; " + get_month + "(" + date + ") (" + hours ")";
+
+    //display greetings
+
+    show_date.textContent = tell_time;
+    show_greet.textContent = recieve_greetings;
+
+}
