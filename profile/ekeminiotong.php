@@ -1,19 +1,18 @@
-<?php
 
+<?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = array();
+    $error = [];
     $subject = $_POST['subject'];
     $to  = 'ekemini.otong@gmail.com';
     $body = $_POST['body'];
-    if($body == '') {
+    if($body == '' || $body == ' ') {
         $error[] = 'You have to TYPE in something to tell me something';
     }
-
     if($subject == '' || $subject == ' ') {
         $error[] = 'Your name and email are very important, TYPE them in';
     }
     if(empty($error)) {
-        $config = include('../../config.php');
+        $config = include('../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -24,6 +23,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
+
+<!-- after php summon-->
+
+
+
+
  <html>
    <head>
    <title> MY PROFILE </title>
