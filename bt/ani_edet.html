@@ -61,7 +61,32 @@ body{
        </center>
        <!--Word Count Ends here -->
 
-       <!--Calculator Starts here -->
+ <!--Time Starts here -->
+<center>
+<div class="time">
+    <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
+<div id="txt"></div>
+</div>
+</center>
+<!--Time Ends here -->
+      <!--Calculator Starts here -->
        <center>
  <b><font color="white" style="font-size: 40">Calculator</font></b></h1>
 <FORM NAME="Calc">
@@ -100,34 +125,7 @@ body{
 </FORM>
 </center>
 <!--Calculator Ends here -->
-
-
-<!--Time Starts here -->
-<center>
-<div class="time">
-    <script>
-function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-</script>
-
-<div id="txt"></div>
-</div>
-</center>
-<!--Time Ends here -->
-
+	
   <footer class="copyright" >
       &copy; 2017 Aniekan Edet. All rights reserved.
 </footer>
