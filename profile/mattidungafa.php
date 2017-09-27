@@ -188,11 +188,11 @@ footer{
 	  </p>
 				</td>
 				<td colspan="2">
-					 <form action="mattidungafa" method="POST" name="contact-form">
+					 <form action="mattidungafa.php" method="POST" name="contact-form">
 						<label class="form-header">CONTACT FORM</label>
 						<input name="subject" size="30" type="text" placeholder="Subject..">
-						<input name="email" size="30" type="email" placeholder="E-mail..">
-						<textarea name="body" rows="6" cols="40" placeholder="Message.."></textarea>
+						<input name="Email" size="30" type="email" placeholder="E-mail..">
+						<textarea name="message" rows="6" cols="40" placeholder="Message.."></textarea>
 						<input name="process"  value="SUBMIT" type="submit">
 						 
 
