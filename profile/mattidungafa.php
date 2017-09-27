@@ -144,6 +144,7 @@ footer{
 </style>
 <title>HNG Intern Profile</title>
 </head>
+
 <body>
 <?php
    if(isset($_POST['subject'])){
@@ -165,7 +166,7 @@ footer{
   }else{
        header("location:mattidungafa.html");
    }
-?>s
+?>
 
 <div class="container">
 	<header>MY HNG-INTERN PROFILE PAGE</header>
