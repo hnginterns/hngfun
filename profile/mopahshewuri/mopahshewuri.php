@@ -34,7 +34,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile Page</title>
-    <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" type="text/css" href="mopahshewuri.css">
 </head>
 <body>
 	<div id="container">
@@ -43,9 +43,7 @@
         <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png"> mopahshewuri
 
         <p>Am Mopah Emmanuel Shewuri by name, a graduate that is interested in technology. am current learning web programming with hotels.ng </p>
-	</div>
-    <!-- BEGIN CONTENT PAGE -->
-
+	
 <div class="contact">
     <h1>Contact Me</h1>
         <form class="form" action="#" method="POST">
@@ -63,6 +61,8 @@
     </div>
                         
 </div>
+</div>
+
 
 
 </body>
