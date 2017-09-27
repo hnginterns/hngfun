@@ -2,15 +2,35 @@ body
 {
 background-color: white;
 } 
+
+.space{
+	background-color: gray;
+	margin-left: 300px;
+	height: 470px;
+	margin-right: 300px;
+	margin-top: 20px;
+}
+
+.me{
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 30px;
+}
+
+
+
+
+
+
 .box
 {
 background-color:#2196F3;
-height:300px;
+height:360px;
 width:260px;
 border-radius:10px;
 position:relative;
-top:80px;
-left:40%;
+top:50px;
+left:33%;
 } 
 .display
 {
@@ -75,6 +95,9 @@ color:black;
 background-color:FF9933;
 border-bottom:black 2px solid;
 border-top:2px FF9933 solid;
+margin-right:10px;
+height:70px;
+margin-bottom:5px;
 }
 .gray:active
 {
@@ -100,3 +123,19 @@ p
 {
 line-height:10px;
 }
+
+.bk{
+	color: #000000;
+	padding-left: 90px;
+	padding-bottom: 10px;
+	padding-top:10px;
+	padding-right: 2px;
+	margin-top:15px;
+	margin-left:19px;
+	text-align: center;
+	
+
+
+}
+
+

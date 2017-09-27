@@ -6,8 +6,14 @@
 </head>
 
 <body>
-<h3>Bebeto's calculator</h3>
+
 <script src="shout.js"></script>
+
+
+
+<div class="space">
+<h3 class="me">Bebeto's calculator</h3>
+
 <div class="box">
 <div class="display"><input type="text" readonly size="18" id="d"></div>
 <div class="keys">
@@ -18,7 +24,7 @@
 
     value="m-" onclick='c("...............by............")'>
     <input type="button" class="button gray" value="
-    m+" onclick='c("..............Bebeto")'>
+    m+" onclick='c("...........Bebeto")'>
     <input type="button" class="button pink" 
 
     value="/" onclick='v("/")'></p>
@@ -59,9 +65,16 @@
     class="button black" value="." onclick='v(".")'>
     <input type="button" class="button black" value="C" 
 
-    onclick='c("")'><input type="button" 
+    onclick='c("")'><input type="button" value="back space"
+
+    class="bk" oneclick='(backspace)'><input type="button"
 
     class="button orange" value="=" onclick='e()'></p>
+
+
+
+</div>
+
 </div>
 </div>
 </body>
