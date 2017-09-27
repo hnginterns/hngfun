@@ -1,0 +1,177 @@
+
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Word Count System</title>
+            <script>
+                function counts()	{
+		   var inputText = document.getElementById("input");
+            var enteredText = inputText.value;
+            var withOutSpace = enteredText.replace(/ /g,"")
+            var totalCount = withOutSpace.length;
+
+		
+		if(totalCount === 0) {
+			document.getElementById("totalCount").innerHTML = 'Did you really enter a text into the box?';
+		}else if(totalCount === 1) {
+			document.getElementById("totalCount").innerHTML = 'The entered string  contains ' + totalCount + ' Characters';
+		}else if (totalCount > 0) {
+			document.getElementById("totalCount").innerHTML = 'The entered string  contains ' + totalCount + ' Characters';
+		}else {
+			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
+		}
+        
+	  }   
+                </script>
+        </head>
+        <body>
+            <div class="bodye">
+            <h1>WORD COUNT SYSTEM</h1>
+        
+    <div class="list">
+            <ul>
+                <li> <a href="home.html">Home</a></li>
+                <li> <a href="wordcount.html">Word Count</a></li>
+                <li><a href="passwordgenerator.html">Password Generator</a></li>
+                <li><a href="timedate.html">Time and Date</a></li>
+        
+            </ul>
+        </div>
+        <div class="lighter">
+        <h2>WELCOME TO OUR PORTAL</h2>
+        <p> We are glad that you have decided to use our portal. <br> Type/Paste your Document below, and we will count it for you.<br> <br><strong>NOTE:</strong> We dont keep a copy of your counted documents!</p>
+        
+        <form name="randform">
+        <textarea type="text" id ="input" class="int" placeholder="Type Your Document" ></textarea>
+        <h4   id="totalCount"></h4>
+        <input type="button" class="sub" value="Count Document" onClick="counts();">&nbsp;
+    </form>
+
+    <div class = "footer">
+            <hr>
+        <p>Created by <strong>Drumzminister </strong> <br>Copyright 2017</p>
+        <div>
+        </div>
+        </div>
+        </body>
+        <style>
+            body{
+                background-color: #f6bb49;
+                color: white; 
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .bodye{
+                width: 60%;
+                height: 70%;
+                margin: auto;
+            }
+            h1{
+                font-size: 55px;
+                margin:auto;
+                margin-bottom: 80px;
+                text-align:center;
+                color:black;
+                text-shadow: 0 0 3px black; 
+            }
+            .lighter{
+                width: 700px;
+                height: 500px;
+                background-color: white;
+                color: #f6bb42;
+                border-radius: 10px;
+                border-left: 60px solid #FFCE54;
+                box-shadow: 5px 5px 15px black;
+                
+            }
+            .lighter h2{
+                font-size:40px;
+                text-align:center;
+                padding-top:30px;
+                color:black;
+                text-shadow: 0 0 3px black;
+            }
+            .lighter p{
+                margin-top: -10px;
+                position: relative;
+                font-size:20px;
+                text-align:center;
+                padding: 0 90px;
+                color:black;
+            }
+            h4{
+                margin-left:180px;
+                margin-top:0px;
+                width: 310px;
+                text-align:center;
+                height:30px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                border: 1px solid grey;
+                color: white;
+                background-color: #f6bb42;
+                border-radius: 10px;
+            }
+            .int{
+                margin-left:95px;
+                width: 500px;
+                height: 150px;
+                text-align:center;
+                font-weight: 700;
+                margin-bottom: 10px;
+                border: 1px solid grey;
+                color: white;
+                background-color: #f6bb42;
+                border-radius: 10px;
+            }
+            .sub{
+                margin-left:210px;
+                font-size: 15px;
+                width: 250px;
+                background-color: #f6bb42;
+                color: black;
+                text-align:center;
+                height: 30px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+            .footer{
+                margin-top: 20px;
+                margin:auto;
+                margin-top:50px;
+                padding: 20px 20px;
+                text-align: center;
+                font-size: 20px;
+}
+ul{
+            font-size: 20px;
+            font-weight: 500px;
+            list-style-type: none;
+            margin-top:-50px;
+        }
+        li{
+            display: inline-block;
+            padding: 10px 15px;
+         
+            margin-bottom:20px;
+            margin-right:20px;
+            background-color: black;
+            border-radius: 15px;
+            color: #f6bb49;
+        }
+        a{
+            text-decoration: none;
+            color:#f6bb49
+        }
+         li a:hover{
+            padding: 5px 15px;
+            color: white;
+            border-radius: 15px;
+            
+        }
+         
+        </style>
+        
+        </html>
+
