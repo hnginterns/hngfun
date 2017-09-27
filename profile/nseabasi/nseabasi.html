@@ -1,32 +1,3 @@
-<?php
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = array();
-    $subject = $_POST['subject'];
-    $to  = 'nseabasiokwong@yahoo.com';
-    $body = $_POST['commentbox'];
-    if($body == '' || $body == ' ') {
-        $error[] = 'Please type something';
-    }
-
-    if($subject == '' || $subject == ' ') {
-        $error[] = 'Your name and email are important to me, TYPE them in';
-    }
-    if(empty($error)) {
-        $config = include('../../config.php');
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $exe = $con->query('SELECT * FROM password LIMIT 1');
-        $data = $exe->fetch();
-        $password = $data['password'];
-        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-        header("location: $uri");
-    }
-}
-?>
-
-<!-- after php summon -->
-
-
 <!DOCTYPE html>
 <html lang= "en">
 <head>
@@ -132,32 +103,3 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <p>
 	
 </p>
-
-<div class="container">
- <form action="<?= $_SERVER['PHP_SELF']; ?> class="formclass">
-
-    <label for="fname">Name</label>
-     <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
-    <label for="email">email</label>
-     <input type="text" id="email" class="put" name="email" placeholder="Your email address is..."><br>
-    <label for="subject">subject</label>
-     <input type="text" id="subject" class="put" name="subject" placeholder="Subject of email..."><br>
-    <textarea id="" classs="sub" placeholder="Type your message here" rows="15" cols="110"></textarea><br>
-  <p>
-  	
-  </p>
-      <input type="submit" value="Submit">
-
- </form>
-</div>
-
-</body>
-</html>
-
-
-
-
-
-
-
-

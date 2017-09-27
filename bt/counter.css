@@ -44,3 +44,11 @@ input.counter-clear {
 	font-size: 25px;
 	text-align: center;
 }
+
+.me{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left: 50px;
+    
+}
+
