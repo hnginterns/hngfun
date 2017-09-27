@@ -1,30 +1,4 @@
 <?php
-  // allow cors requests
-  function cors() {
-    // Allow from any origin
-    if (isset($_SERVER['HTTP_ORIGIN'])) {
-      // Decide if the origin in $_SERVER['HTTP_ORIGIN'] is one
-      // you want to allow, and if so:
-      header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
-      header('Access-Control-Allow-Credentials: true');
-      header('Access-Control-Max-Age: 86400'); // cache for 1 day
-    }
-
-    // Access-Control headers are received during OPTIONS requests
-    if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
-      if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']))
-        // may also be using PUT, PATCH, HEAD etc
-        header("Access-Control-Allow-Methods: GET, POST, OPTIONS");         
-
-      if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']))
-        header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");
-
-      exit(0);
-    }
-  }
-
-  cors();
-
   if(isset($_GET['sendmail'])) {
     $config = include('../../config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -46,7 +20,7 @@
   <title>Nicholas Kajoh | Hotels.ng Internship</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--<link rel="stylesheet" type="text/css" href="style.css">-->
 </head>
 <body>
   <!-- navbar -->
@@ -88,6 +62,7 @@
         I contribute a healthy dose to Open Source every now and then and experiment all too often (<a href="http://greymatterbay.com" target="_blank">GreyMatterBay.com</a>, loading...). I write too.</p>
 
         <p>Find stage #1 repo: <a href="https://github.com/nicholaskajoh/hng-test">nicholaskajoh/hng-test</a>.</p>
+        <p><a class="btn btn-primary" href="https://www.google.com/url?q=https://drive.google.com/file/d/0B6wATzp_MDZ-d29TSjVvVXRhTU0/view?usp%3Dsharing&sa=D&ust=1506486184254000&usg=AFQjCNE-MZoga-mtPGFfWbev5ISxxd4Rig">Download mobile app</a></p>
       </div>
     </div>
 
