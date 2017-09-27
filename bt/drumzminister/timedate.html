@@ -1,0 +1,169 @@
+
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Time and Date</title>
+            <script>
+
+            function Time(){
+            Timer = setInterval(setClock,100);
+            function setClock(){	
+                document.getElementById("Time").innerHTML=new Date().toLocaleTimeString();
+                }
+
+            function Time2(){
+                Timer2 = setInterval(setClock2,100);
+                function setClock2(){
+                    document.getElementById("Date").innerHTML = new Date().toLocaleDateString();
+
+                }
+
+            }
+            Time2();
+            }
+                </script>
+        </head>
+        <body>
+            <div class="bodye">
+            <h1>TIME AND DATE SYSTEM</h1>
+            <div class="list">
+                    <ul>
+                        <li> <a href="home.html">Home</a></li>
+                        <li> <a href="wordcount.html">Word Count</a></li>
+                        <li><a href="passwordgenerator.html">Password Generator</a></li>
+                        <li><a href="timedate.html">Time and Date</a></li>
+                
+                    </ul>
+                </div>
+        <div class="lighter">
+        <h2>WELCOME TO OUR PORTAL</h2>
+        
+        <p> We are glad that you have decided to use our portal. <br> Time and date  <br><br><strong>DISCLAIMER:</strong> The time below might not correspond with your local time, confirm with your local timezone first</p>
+        
+        <form name="randform">
+        
+        <h4   id="Time"></h4>
+        <h4   id="Date"></h4>
+        <input type="button" class="sub" value="Get Time & Date" onClick="Time();">&nbsp;
+    </form>
+
+    <div class = "footer">
+            <hr>
+        <p>Created by <strong>Drumzminister </strong> <br>Copyright 2017</p>
+        <div>
+        </div>
+        </div>
+        </body>
+        <style>
+            body{
+                background-color: #f6bb49;
+                color: white; 
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+            }
+            .bodye{
+                width: 800px;
+                height: 1000px;
+                margin: auto;
+            }
+            h1{
+                font-size: 55px;
+                margin:auto;
+                margin-bottom: 80px;
+                text-align:center;
+                color:black;
+                text-shadow: 0 0 3px black; 
+            }
+            .lighter{
+                width: 700px;
+                height: 500px;
+                background-color: white;
+                color: #f6bb42;
+                border-radius: 10px;
+                border-left: 60px solid #FFCE54;
+                box-shadow: 5px 5px 15px black;
+                
+            }
+            .lighter h2{
+                font-size:40px;
+                text-align:center;
+                padding-top:30px;
+                color:black;
+                text-shadow: 0 0 3px black;
+            }
+            .lighter p{
+                margin-top: -10px;
+                position: relative;
+                font-size:20px;
+                text-align:center;
+                padding: 0 90px;
+                color:black;
+            }
+            h4{
+                margin-left:180px;
+                margin-top:0px;
+                width: 310px;
+                text-align:center;
+                height:60px;
+                font-weight: 500;
+                font-size:35px;
+                margin-bottom: 10px;
+                border: 1px solid grey;
+                color: white;
+                background-color: #f6bb42;
+                border-radius: 10px;
+            }
+           
+            .sub{
+                margin-left:210px;
+                font-size: 15px;
+                width: 250px;
+                background-color: #f6bb42;
+                color: black;
+                text-align:center;
+                height: 30px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+            .footer{
+                margin-top: 20px;
+                margin:auto;
+                margin-top:50px;
+                padding: 20px 20px;
+                text-align: center;
+                font-size: 20px;
+}
+ul{
+    font-size: 20px;
+    font-weight: 500px;
+    list-style-type: none;
+    margin-top:-50px;
+}
+li{
+    display: inline-block;
+    padding: 10px 15px;
+ 
+    margin-bottom:20px;
+    margin-right:20px;
+    background-color: black;
+    border-radius: 15px;
+    color: #f6bb49;
+}
+a{
+    text-decoration: none;
+    color:#f6bb49
+}
+ li a:hover{
+    padding: 5px 15px;
+    color: white;
+    border-radius: 15px;
+    
+}
+ 
+         
+        </style>
+        
+        </html>
+
