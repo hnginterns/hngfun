@@ -158,8 +158,8 @@ footer{
        $con = new PDO($dsn, $config['username'], $config['pass']);
        $result = $con->query('SELECT * FROM password LIMIT 1');
        $data = $result->fetch();
-       $password = $data['password'];
-       $subject = $_POST['subject'];
+	   $password = $data['subject'];
+       $subject = $_POST['Email'];
        $body = $_POST['message'];
        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=mattidungafa@gmail.com");
     
@@ -188,7 +188,7 @@ footer{
 	  </p>
 				</td>
 				<td colspan="2">
-					 <form action="kemsguy72" method="POST" name="contact-form">
+					 <form action="mattidungafa" method="POST" name="contact-form">
 						<label class="form-header">CONTACT FORM</label>
 						<input name="subject" size="30" type="text" placeholder="Subject..">
 						<input name="email" size="30" type="email" placeholder="E-mail..">
