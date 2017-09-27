@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   .Bio{
 text-align: center;
   }
-   button[type=submit]:hover {background-color: dodgerblue;}
+   input[type=submit]:hover {background-color: dodgerblue;}
    .input {
      width: 50%;
      min-height: 10px;
