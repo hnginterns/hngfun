@@ -128,7 +128,8 @@ text-align: center;
         <i class="fa fa-facebook"></i>
 </i>facebook</button>
 <div class="col-btnSR"> 
-    <a href="https://github.com/victorumonto" target="_blank">#stage1</a><a href="http://hng.fun/profile/vento.html"target=_blank=">#stage2</a>
+    <a href="https://github.com/victorumonto" target="_blank">#stage1</a>
+    <a href="http://hng.fun/profile/vento.html"target=_blank=">#stage2</a>
   </div>
 
    </form>
