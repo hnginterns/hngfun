@@ -62,7 +62,7 @@
         I contribute a healthy dose to Open Source every now and then and experiment all too often (<a href="http://greymatterbay.com" target="_blank">GreyMatterBay.com</a>, loading...). I write too.</p>
 
         <p>Find stage #1 repo: <a href="https://github.com/nicholaskajoh/hng-test">nicholaskajoh/hng-test</a>.</p>
-        <p><a class="btn btn-success" href="https://www.google.com/url?q=https://drive.google.com/file/d/0B6wATzp_MDZ-d29TSjVvVXRhTU0/view?usp%3Dsharing&sa=D&ust=1506486184254000&usg=AFQjCNE-MZoga-mtPGFfWbev5ISxxd4Rig">Download mobile app</a></p>
+        <p><a class="btn btn-primary" href="https://www.google.com/url?q=https://drive.google.com/file/d/0B6wATzp_MDZ-d29TSjVvVXRhTU0/view?usp%3Dsharing&sa=D&ust=1506486184254000&usg=AFQjCNE-MZoga-mtPGFfWbev5ISxxd4Rig">Download mobile app</a></p>
       </div>
     </div>
 
