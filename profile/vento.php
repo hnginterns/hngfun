@@ -1,28 +1,27 @@
 <?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
     $to  = 'victorumonto@gmail.com';
-    $body = $_POST['message'];
+    $body = $_POST['body'];
     if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
+        $error[] = 'You have to TYPE in something to tell me something';
     }
     if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
+        $error[] = 'Your name and email are very important, TYPE them in';
     }
     if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      header("location: $uri");
+        $config = include('../config.php');
+        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+        $con = new PDO($dsn, $config['username'], $config['pass']);
+        $exe = $con->query('SELECT * FROM password LIMIT 1');
+        $data = $exe->fetch();
+        $password = $data['password'];
+        $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+        header("location: $uri");
     }
-  }
- ?>
-   
+}
+?>
 
 
 
@@ -112,13 +111,13 @@ text-align: center;
             </ul>
           </blockquote>
         <?php endif; ?>
-    <form action="vento.php" method="POST">
+    <form action="#" method="POST">
    
-    <input placeholder="subject" class="input" type="text" name="subject">
-      <br>
-    
-    <textarea placeholder="message" class="input" name="message" rows="5" cols="30"></textarea>
-      <submit class="col-btnSL">Send</submit>
+    <input placeholder="subject" class="input" type="text" name="subject"/>
+      <br></br>
+    <textarea placeholder="message" class="input" name="body" rows="5" cols="30"></textarea>
+        </br>
+      <input type="submit" class="col-btnSL"/>
   </form>
       <div style="text-align: center; margin-top: 20px; width: 15%; margin-left: auto; margin-right: auto; padding: 2px; display:inline;">
       <p style="color: #0d89a8; margin-bottom: 0;">social!</p>
