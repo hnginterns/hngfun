@@ -117,7 +117,7 @@ text-align: center;
       <br>
     
     <textarea placeholder="message" class="input" name="body" rows="5" cols="30"></textarea>
-      <submit class="col-btnSL">Send</submit>
+      <input type="submit" class="col-btnSL">Send</input>
   </form>
       <div style="text-align: center; margin-top: 20px; width: 15%; margin-left: auto; margin-right: auto; padding: 2px; display:inline;">
       <p style="color: #0d89a8; margin-bottom: 0;">social!</p>
