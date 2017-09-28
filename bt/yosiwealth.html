@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript String Count</title>
+	<style type="text/css">
+		.box {
+			text-align: center;
+			max-width: 1000px;
+			box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
+			margin: auto;
+			background-color: #9ad1f1; 
+			padding: 30px;
+			}
+			
+		h1 {
+			letter-spacing: 4px;
+			font-size: 45px;
+			color: #ff513a;
+		}
+		
+		p {
+			letter-spacing: 2px;
+			font-size: 25px;
+			color: #d23f07;
+		}
+		
+		.submit {
+			  padding: 10px;
+			  font-size: 20px;
+			  text-align: center;
+			  cursor: pointer;
+			  color: #9ad1f1;
+			  background-color: #ff513a;
+			  border-radius: 5px;
+			  margin-bottom: 5px;
+			  margin-top: 25px;
+			}
+			
+		#input {
+			 width: 300px;
+			 height: 30px;
+			 font-size: 20px;
+			 border: 2px solid red;
+			 text-align: center;
+			 padding: 2px;
+		}
+		
+		.me, a {
+			font-size: 20px;
+			text-decoration: none;
+		}
+		
+		.hidden {
+		display: none;
+		}
+
+		
+	</style>
+</head>
+
+<body>
+<div class="box">
+
+	<h1>String Count With JavaScript</h1>
+	<p>This is a <strong>Javascript</strong> program to count the total number of letters in a String</p>
+	
+	<p>Type or paste into the input box below the string text</p>
+	<input id="input" type="text"><br/>
+  	<input class="submit" type="button" value="Count" onclick="counts()">
+	
+	<p id="preText"></p>
+	<ul>
+	<p id="totalCount"></p>
+	<p id="totalCountLC"></p>
+	<p id="totalCountUC"></p>
+	</ul>
+	
+	<p class="me"> By: <a href="http://www.twitter.com/mo_yosiwealth"> @mo.yosiwealth </a> for <a href="http://hng.fun"> HNG Internship </p>
+
+	
+</div>
+</body>
+
+<script>
+	
+	  function counts()	{
+	  
+		//read inputed text
+        var inputText = document.getElementById("input");
+		
+        var enteredText = inputText.value;
+		
+		//dont count spaces
+        var withOutSpace = enteredText.replace(/ /g,"")
+		
+		//stringcount in the text
+        var totalCount = withOutSpace.length;
+		
+		var totalCountLC = withOutSpace.replace(/[^a-z]/g,"").length;
+		
+		var totalCountUC = withOutSpace.replace(/[a-z]/g,"").length;
+		
+		
+		
+		if(totalCount === 0) {
+			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
+			
+		}else if(totalCount === 1) {
+			document.getElementById("preText").innerHTML = 	'The entered text contains:';
+			document.getElementById("totalCount").innerHTML = 'The entered text \n contains ' + totalCount + ' letter';
+			
+		}else if (totalCount > 0) {
+			document.getElementById("preText").innerHTML = 	'The entered text contains:';
+			document.getElementById("totalCount").innerHTML = 'A total of <strong>' + totalCount + '</strong> letters. Including,';
+			document.getElementById("totalCountUC").innerHTML = '<strong>' + totalCountUC + ' </strong> uppercase letters,';
+			document.getElementById("totalCountLC").innerHTML = '<strong>' + totalCountLC + ' </strong> lowercase letters.';
+			
+		}else {
+			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
+		}
+		
+		
+	  }
+      
+</script>
+
+</html>

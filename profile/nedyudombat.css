@@ -1,0 +1,24 @@
+h1{
+	color: black;
+}
+h3{
+	border: 5px  solid #ff0000 blue;
+	border-width: 30%;
+}
+h3{
+	border-style: solid;
+}
+body {
+    background: #00ff00 url("https://github.com/NedyUdombat/Nedy/blob/master/back.jpg?raw=true") no-repeat fixed center;
+    background-size: 100% 100%;
+}
+h1 {
+    background-color: rgb(255,165,0);
+}
+
+p {
+    background-color: rgb(255,0,255);
+}
+h3{
+background-color: rgb(255,165,0);
+}
