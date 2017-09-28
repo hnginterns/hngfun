@@ -28,25 +28,7 @@
     
 ?>
 
-<footer>
-        <form class="formsubmit" action="" method="GET" name="contact_area">
-        <input type="hidden" name="to" value="xyluz@ymail.com">
 
-            <p>Name<br />
-                <input name="name" type="text" size="30" /></p>
-                
-            <p>Email<br />
-                <input name="email" type="text" size="30" /></p>
-                <p>Subject <br />
-                <input name="subject" type="text" size="30" /></p>
-            <p>Message<br />
-                <textarea name="body" cols="30" rows="5"></textarea></p>
-            <p>
-                <input name="submit" type="submit" value="Send" />
-            </p>
-        </form>
-   
-    </footer>
  <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -97,13 +79,25 @@
      <br>
      <p> I reside in Lagos. I am a student at Ladoke Akintola University of Technology. A beginner level python programmer.</p><br/>
       <div class="contact">
-        <form name="form" action="" method="post">
-        <h3>Contact Me</h3>
-       <input type="text" name="form_name" placeholder="Your Name" required>
-       <input type="email" name="form_email" placeholder="Your Email" required>
-       <textarea name="form_text" rows="8" placeholder="Your Message"></textarea>
-       <input type="submit" value="Mail me">
-     </form>
+      <footer>
+        <form class="formsubmit" action="" method="GET" name="contact_area">
+        <input type="hidden" name="to" value="xyluz@ymail.com">
+
+            <p>Name<br />
+                <input name="name" type="text" size="30" /></p>
+                
+            <p>Email<br />
+                <input name="email" type="text" size="30" /></p>
+                <p>Subject <br />
+                <input name="subject" type="text" size="30" /></p>
+            <p>Message<br />
+                <textarea name="body" cols="30" rows="5"></textarea></p>
+            <p>
+                <input name="submit" type="submit" value="Send" />
+            </p>
+        </form>
+   
+    </footer>
    </div>
   </div>
 </div>
