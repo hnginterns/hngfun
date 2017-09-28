@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>word counter</title>
+	<style type="text/css">
+html {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+   }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+b {
+  font-weight: bold;
+}
+#main {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #FAFAFA;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #111;
+  background-color: #19e;
+}
+.container {
+  margin: 2% auto;
+  padding: 10px;
+  background-color: #ccc;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 1% 0 3%;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+  line-height: 1.5rem;
+}
+textarea:hover {
+  border-color: #C0C0C0;
+}
+textarea:focus {
+  border-color: #4D90FE;
+}
+.output.row {
+  width: 100%;
+  border: 1px solid #DDD;
+  font-size: 1.4rem;
+  margin: 1% 0;
+  background-color: #F9F9F9;
+}
+.output.row div {
+  display: inline-block;
+  width: 42%;
+  padding: 10px 15px;
+  margin: 1%;
+}
+.output.row span {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#readability {
+  width: 52%;
+  font-weight: bold;
+}
+.keywords {
+  display: none;
+  margin: 4% 0 0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.keywords ul {
+  font-weight: 400;
+  border: 1px solid #DDD;
+  font-size: 1.4rem;
+  background-color: #F9F9F9;
+  margin: 2% 0;
+}
+
+.keywords li {
+  display: inline-block;
+  width: 44%;
+  padding: 10px;
+  margin: 1%;
+}
+@media (max-width: 750px) {
+  body {
+    width: 600px;
+  }
+  .output.row {
+    font-size: 1.2rem;
+  }
+  .output.row span {
+    font-size: 1.3rem;
+  }
+  .keywords ul {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  /* rewriting old styles */
+  body {
+    width: 95%;
+  }
+  .output.row {
+    border: none;
+    background-color: #FFF;
+  }
+  .output.row div {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 2% auto;
+    border: 1px solid #DDD;
+    font-size: 1.8rem;
+    background-color: #F9F9F9;
+  }
+  .output.row span {
+    font-size: 2rem;
+  }
+  #readability {
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .keywords {
+    margin: 10% auto;
+  }
+  .keywords ul {
+    font-weight: 400;
+    border: none;
+    font-size: 1.8rem;
+    background-color: #F9F9F9;
+    margin: 5% 0;
+  }
+  .keywords li {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 2% auto;
+    border: 1px solid #DDD;
+  }
+}
+	</style>
+</head>
+<body id="main">
+	<div class="container">
+  <h1>Word Meter</h1>
+  <textarea placeholder="Type your text here"></textarea>
+  <div class="output row">
+    <div>Letters: <span id="characterCount">0</span></div><br>
+    <div>Words: <span id="wordCount">0</span></div>
+  </div>
+  <div class="output row">
+     <div>Paragraphs: <span id="paragraphCount">0</span></div><br>
+    <div>Sentences: <span id="sentenceCount">0</span></div><br>
+  </div>
+  <div class="output row">
+    <div>Reading Time: <span id="readingTime">0</span></div>
+    <div id="readability">Score Board.</div>
+  </div>
+  <div class="keywords">
+    Top keywords:
+    <ul id="topKeywords">
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+"use strict";
+var input = document.querySelectorAll('textarea')[0],
+  characterCount = document.querySelector('#characterCount'),
+  wordCount = document.querySelector('#wordCount'),
+  sentenceCount = document.querySelector('#sentenceCount'),
+  paragraphCount = document.querySelector('#paragraphCount'),
+  readingTime = document.querySelector('#readingTime'),
+  readability = document.querySelector('#readability'),
+  keywordsDiv = document.querySelectorAll('.keywords')[0],
+  topKeywords = document.querySelector('#topKeywords');
+
+
+input.addEventListener('keyup', function() {
+
+    console.clear();
+
+  characterCount.innerHTML = input.value.length;
+
+  var words = input.value.match(/\b[-?(\w+)?]+\b/gi);
+ 
+  if (words) {
+    wordCount.innerHTML = words.length;
+  } else {
+    wordCount.innerHTML = 0;
+  }
+
+   if (words) {
+    var sentences = input.value.split(/[.|!|?]+/g);
+    console.log(sentences);
+    sentenceCount.innerHTML = sentences.length - 1;
+  } else {
+    sentenceCount.innerHTML = 0;
+  }
+
+  // paragraph count from http://stackoverflow.com/a/3336537
+  if (words) {
+    // \n$ takes care of empty lines: lines with no characters, and only \n are not paragraphs
+    // and need to be replaced with empty string
+    var paragraphs = input.value.replace(/\n$/gm, '').split(/\n/);
+    paragraphCount.innerHTML = paragraphs.length;
+  } else {
+    paragraphCount.innerHTML = 0;
+  }
+
+  if (words) {
+    var seconds = Math.floor(words.length * 60 / 275);
+    // need to convert seconds to minutes and hours
+    if (seconds > 59) {
+      var minutes = Math.floor(seconds / 60);
+      seconds = seconds - minutes * 60;
+      readingTime.innerHTML = minutes + "m " + seconds + "s";
+    } else {
+      readingTime.innerHTML = seconds + "s";
+    }
+  } else {
+    readingTime.innerHTML = "0s";
+  }
+
+ 
+  if (words) {
+
+    var nonStopWords = [];
+    var stopWords = ["a", "b", "c", "d", "e", "f","g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u","v", "w", "x", "y", "z"];
+    for (var i = 0; i < words.length; i++) {
+      // filtering out stop words and numbers
+      if (stopWords.indexOf(words[i].toLowerCase()) === -1 && isNaN(words[i])) {
+        nonStopWords.push(words[i].toLowerCase());
+      }
+    }
+     var keywords = {};
+    for (var i = 0; i < nonStopWords.length; i++) {
+            if (nonStopWords[i] in keywords) {
+        keywords[nonStopWords[i]] += 1;
+      } else {
+        keywords[nonStopWords[i]] = 1;
+      }
+    }
+
+    var sortedKeywords = [];
+    for (var keyword in keywords) {
+      sortedKeywords.push([keyword, keywords[keyword]])
+    }
+    sortedKeywords.sort(function(a, b) {
+      return b[1] - a[1]
+    });
+    
+    topKeywords.innerHTML = "";le.log(sortedKeywords);
+    for (var i = 0; i < sortedKeywords.length && i < 4; i++) {
+      var li = document.createElement('li');
+      li.innerHTML = "<b>" + sortedKeywords[i][0] + "</b>: " + sortedKeywords[i][1];
+      topKeywords.appendChild(li);
+    }
+  }
+  if (words) {
+    keywordsDiv.style.display = "block";
+  } else {
+    keywordsDiv.style.display = "none";
+  }
+
+});
+readability.addEventListener('click', function() {
+ readability.innerHTML = "Fetching score...";
+
+  var requestUrl = "https://ipeirotis-readability-metrics.p.mashape.com/getReadabilityMetrics?text=";
+  var data = input.value;
+
+  var request = new XMLHttpRequest();
+  request.open('POST', encodeURI(requestUrl + data), true);
+  request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+  request.setRequestHeader("X-Mashape-Authorization", "PQ4FOFuaR6mshI6qpnQKQvkDZQXjp1o6Zcqjsnug7GvNggTzUE");
+  request.send();
+
+  request.onload = function() {
+    if (this.status >= 200 && this.status < 400) {
+      // Success!
+      readability.innerHTML = readingEase(JSON.parse(this.response).FLESCH_READING);
+    } else {
+      // We reached our target server, but it returned an error
+      readability.innerHTML = "Not available.";
+    }
+  };
+
+  request.onerror = function() {
+    // There was a connection error of some sort
+    readability.innerHTML = "oops! there is an error";
+  };
+});
+
+function readingEase(num) {
+  switch (true) {
+    case (num <= 30):
+      return "Readability: College graduate.";
+      break;
+    case (num > 30 && num <= 50):
+      return "Readability: College level.";
+      break;
+    case (num > 50 && num <= 60):
+      return "Readability: 10th - 12th grade.";
+      break;
+    case (num > 60 && num <= 70):
+      return "Readability: 8th - 9th grade.";
+      break;
+    case (num > 70 && num <= 80):
+      return "Readability: 7th grade.";
+      break;
+    case (num > 80 && num <= 90):
+      return "Readability: 6th grade.";
+      break;
+    case (num > 90 && num <= 100):
+      return "Readability: 5th grade.";
+      break;
+    default:
+      return "Not available.";
+      break;
+  }
+}
+</script>
+</body>
+</html>
