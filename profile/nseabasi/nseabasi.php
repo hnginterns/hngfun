@@ -1,9 +1,5 @@
-<<<<<<< HEAD:profile/nseabasi/index.php
-<?p
-=======
 <?php 
 
->>>>>>> f135ce16d340b5d4783a5be25afc40fdee4d20ef:profile/nseabasi/index.php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
@@ -139,11 +135,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </p>
 
 <div class="container">
-<<<<<<< HEAD:profile/nseabasi/index.php
- <form action="/action_page.php" class="formclass">
-=======
+
+ 
+
  <form action="#" class="formclass" method="post">
->>>>>>> f135ce16d340b5d4783a5be25afc40fdee4d20ef:profile/nseabasi/index.php
 
     <label for="fname">Name</label>
      <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
