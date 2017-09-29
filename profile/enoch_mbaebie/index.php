@@ -52,6 +52,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
           <a href="https://github.com/EnochMbaebie/"><i class="fa fa-github icons fa-lg"></i></a>
 
           <figure><p><a href="http://hng.fun/profile/enoch_mbaebie/index.html"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure>
+
+          <figure><p><a href="https://goo.gl/iD8DKQ"><img src="https://developer.android.com/wear/images/features/apps.png" width="100px"><figcaption>Link to my APP Project</figcaption></a><p></figure>
+
         </center>
 			</div>   
 			<section class="grid-4">
@@ -91,7 +94,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </body>
     <style>
   body{
-    background-color: darkred;
+    background-color: #BFC0C0;
     color: black;
     height: 750px;
     margin: 2px;
@@ -104,7 +107,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     width:400px;
     align-self: center;
     height:100px;
-    background-color: #999;
+    background-color: #BFC0C0;
   }
 .header{
     margin:0px 0px 0px 0px;
