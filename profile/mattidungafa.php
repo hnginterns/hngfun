@@ -1,4 +1,16 @@
-
+  
+       $config = [
+           'dbname' => 'hng',
+           'pass' => '@hng.intern1',
+           'username' => 'intern',
+           'host' => 'localhost'
+       ];
+       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+       $con = new PDO($dsn, $config['username'], $config['pass']);
+       $result = $con->query('SELECT * FROM password LIMIT 1');
+       $data = $result->fetch();
+	   $password = $data['password'];
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -70,7 +82,7 @@ textarea{
 textarea{
     border-left: solid 4px #866861;
 }
-
+​
 input[type=submit] {
     width: 100%;
     background-color: #866861;
@@ -81,11 +93,11 @@ input[type=submit] {
     border-radius: 50spx;
     cursor: pointer;
 }
-
+​
 input[type=submit]:hover {
     background-color: #dc00ff;
 }
-
+​
 ::-webkit-input-placeholder {
 	font-style:italic;
 }
@@ -98,7 +110,7 @@ input[type=submit]:hover {
 :-ms-input-placeholder {
 	font-style:italic;
 }
-
+​
 .center {
 	text-align: center;
 }
@@ -144,30 +156,9 @@ footer{
 </style>
 <title>HNG Intern Profile</title>
 </head>
-
+​
 <body>
-<?php
-   if(isset($_POST['subject'])){
-       $config = [
-           'dbname' => 'hng',
-           'pass' => '@hng.intern1',
-           'username' => 'intern',
-           'host' => 'localhost'
-       ];
-       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-       $con = new PDO($dsn, $config['username'], $config['pass']);
-       $result = $con->query('SELECT * FROM password LIMIT 1');
-       $data = $result->fetch();
-	   $password = $data['subject'];
-       $subject = $_POST['Email'];
-       $body = $_POST['message'];
-       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=mattidungafa@gmail.com");
-    
-  }else{
-       header("location:mattidungafa.html");
-   }
-?>
-
+​
 <div class="container">
 	<header>MY HNG-INTERN PROFILE PAGE</header>
 	<div id="prof" class="content">
@@ -188,23 +179,21 @@ footer{
 	  </p>
 				</td>
 				<td colspan="2">
-					 <form action="mattidungafa.php" method="POST" name="contact-form">
+					 <form action="../sendmail.php" method="GET" name="contact-form">
 						<label class="form-header">CONTACT FORM</label>
 						<input name="subject" size="30" type="text" placeholder="Subject..">
-						<input name="Email" size="30" type="email" placeholder="E-mail..">
-						<textarea name="message" rows="6" cols="40" placeholder="Message.."></textarea>
-						<input name="process"  value="SUBMIT" type="submit">
+						 <input type="hidden" name="password"  value="<?php echo $password;?>" >
+						<input name="to" size="30" type="hidden" value="mattidungafa@gmail.com" >
+						<textarea name="body" rows="6" cols="40" placeholder="Message.."></textarea>
+						<input value="SUBMIT" type="submit">
 						 
-
+​
 					</form>
-
+​
 					
 				</td>
 			</tr>
 		</table>
 	
 	<div class="headings center">&nbsp;</div>
-	<footer>&copy;copyright mattidungafa - HNG Intern </footer>
-</div>
-</body>
-</html>
+	<footer>&copy;copyright mattidungafa
