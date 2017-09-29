@@ -107,7 +107,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     width:400px;
     align-self: center;
     height:100px;
-    background-color: #999;
+    background-color: #BFC0C0;
   }
 .header{
     margin:0px 0px 0px 0px;
