@@ -82,7 +82,7 @@ textarea{
 textarea{
     border-left: solid 4px #866861;
 }
-​
+
 input[type=submit] {
     width: 100%;
     background-color: #866861;
@@ -93,11 +93,11 @@ input[type=submit] {
     border-radius: 50spx;
     cursor: pointer;
 }
-​
+
 input[type=submit]:hover {
     background-color: #dc00ff;
 }
-​
+
 ::-webkit-input-placeholder {
 	font-style:italic;
 }
@@ -110,7 +110,7 @@ input[type=submit]:hover {
 :-ms-input-placeholder {
 	font-style:italic;
 }
-​
+
 .center {
 	text-align: center;
 }
@@ -156,13 +156,12 @@ footer{
 </style>
 <title>HNG Intern Profile</title>
 </head>
-​
 <body>
-​
-<div class="container">
+
+
 	<header>MY HNG-INTERN PROFILE PAGE</header>
 	<div id="prof" class="content">
-		<img src class="profile picture">
+		
 		<img  src="https://pp.userapi.com/c639528/v639528043/44d84/2kI6O9JifPc.jpg" width="350" height="350" alt="Mattidungafa profile picture">
 		<table style="width:100%" class="center">
 			<tr>
@@ -172,28 +171,30 @@ footer{
 			</tr>
 			<tr>
 				<td><img src="http://i.imgur.com/FgWTvYq.jpg" width="150" height="30" alt="Bio Icon">
-					<p> I am Matthew Idungafa by Name, An indigene of Akwa Ibom State, Nigeria.
-         Am a university of uyo student and currently a 300level Anatomist. An intern web developer at <a href="https://hotels.ng"><strong></strong>hotels.ng.</strong></a></p>
+					 I am Matthew Idungafa by Name, An indigene of Akwa Ibom State, Nigeria.
+         Am a university of uyo student and currently a 300level Anatomist. An intern web developer at <a href="https://hotels.ng"><strong>hotels.ng.</strong></a>
            I love solving problems and helping the society.
            I like the art of coding and hope to be a professional web developer someday.
-	  </p>
+	  
 				</td>
 				<td colspan="2">
-					 <form action="../sendmail.php" method="GET" name="contact-form">
+					 <form action="mattidungafa.php" method="POST" name="contact-form">
 						<label class="form-header">CONTACT FORM</label>
 						<input name="subject" size="30" type="text" placeholder="Subject..">
-						 <input type="hidden" name="password"  value="<?php echo $password;?>" >
-						<input name="to" size="30" type="hidden" value="mattidungafa@gmail.com" >
-						<textarea name="body" rows="6" cols="40" placeholder="Message.."></textarea>
-						<input value="SUBMIT" type="submit">
+						<input name="Email" size="30" type="email" placeholder="mattidungafa@gmail.com">
+					    <textarea name="message" rows="6" cols="40" placeholder="Message.."></textarea>
+						<input name="process"  value="SUBMIT" type="submit">
 						 
-​
+					 
 					</form>
-​
+
 					
 				</td>
 			</tr>
 		</table>
 	
 	<div class="headings center">&nbsp;</div>
-	<footer>&copy;copyright mattidungafa
+	<footer>&copy;copyright mattidungafa - HNG Intern </footer>
+</div>
+</body>
+</html>
