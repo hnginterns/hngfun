@@ -1,4 +1,16 @@
-
+  
+       $config = [
+           'dbname' => 'hng',
+           'pass' => '@hng.intern1',
+           'username' => 'intern',
+           'host' => 'localhost'
+       ];
+       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+       $con = new PDO($dsn, $config['username'], $config['pass']);
+       $result = $con->query('SELECT * FROM password LIMIT 1');
+       $data = $result->fetch();
+	   $password = $data['password'];
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -144,34 +156,12 @@ footer{
 </style>
 <title>HNG Intern Profile</title>
 </head>
-
 <body>
-<?php
-   if(isset($_POST['subject'])){
-       $config = [
-           'dbname' => 'hng',
-           'pass' => '@hng.intern1',
-           'username' => 'intern',
-           'host' => 'localhost'
-       ];
-       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-       $con = new PDO($dsn, $config['username'], $config['pass']);
-       $result = $con->query('SELECT * FROM password LIMIT 1');
-       $data = $result->fetch();
-	   $password = $data['subject'];
-       $subject = $_POST['Email'];
-       $body = $_POST['message'];
-       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=mattidungafa@gmail.com");
-    
-  }else{
-       header("location:mattidungafa.html");
-   }
-?>
 
-<div class="container">
+
 	<header>MY HNG-INTERN PROFILE PAGE</header>
 	<div id="prof" class="content">
-		<img src class="profile picture">
+		
 		<img  src="https://pp.userapi.com/c639528/v639528043/44d84/2kI6O9JifPc.jpg" width="350" height="350" alt="Mattidungafa profile picture">
 		<table style="width:100%" class="center">
 			<tr>
@@ -181,21 +171,21 @@ footer{
 			</tr>
 			<tr>
 				<td><img src="http://i.imgur.com/FgWTvYq.jpg" width="150" height="30" alt="Bio Icon">
-					<p> I am Matthew Idungafa by Name, An indigene of Akwa Ibom State, Nigeria.
-         Am a university of uyo student and currently a 300level Anatomist. An intern web developer at <a href="https://hotels.ng"><strong></strong>hotels.ng.</strong></a></p>
+					 I am Matthew Idungafa by Name, An indigene of Akwa Ibom State, Nigeria.
+         Am a university of uyo student and currently a 300level Anatomist. An intern web developer at <a href="https://hotels.ng"><strong>hotels.ng.</strong></a>
            I love solving problems and helping the society.
            I like the art of coding and hope to be a professional web developer someday.
-	  </p>
+	  
 				</td>
 				<td colspan="2">
 					 <form action="mattidungafa.php" method="POST" name="contact-form">
 						<label class="form-header">CONTACT FORM</label>
 						<input name="subject" size="30" type="text" placeholder="Subject..">
 						<input name="Email" size="30" type="email" placeholder="mattidungafa@gmail.com">
-						<textarea name="message" rows="6" cols="40" placeholder="Message.."></textarea>
+					    <textarea name="message" rows="6" cols="40" placeholder="Message.."></textarea>
 						<input name="process"  value="SUBMIT" type="submit">
 						 
-
+					 
 					</form>
 
 					
