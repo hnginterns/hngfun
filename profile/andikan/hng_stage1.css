@@ -2,14 +2,15 @@ body{
 background:#e6e6e6;
 }
 div{ 
-	border:#808080;
-	background: #9a9292;
-	margin: 0 3px;
-	background-color:#cccccc ;
+	border:#aaa;
+	background: #cccccc;
+	margin: 0 30px;
+	background-color: #e6e6e6;
 	
  }
 .an{
  margin: auto;
+ 
 }
 .mage{
 	display:block;
@@ -17,8 +18,9 @@ div{
 	margin:0px;
 	}
 .image{
-	border-radius:70px;
+	border-radius:135px;
 	padding:0px;
+	text-align:center;
 	box-shadow:2px 2px 2px 2px rgb(80,80,80);
 }
 .image:hover{
@@ -29,14 +31,14 @@ box-shadow:0px 0px 0px ;
 color:light-grey;
 	max-width:4000px;
     display: block;
-    padding: 6px;
+    padding: 9px;
     border:1px solid #8d95a5;
-    margin-right:30px;
+    margin-bottom: 0px;
     border-radius: 30px;
 	box-shadow:0px 0px 0px 0px rgb(80,80,80);
 	}
 .an li:hover{
-	box-shadow:1px 1px 2px 2px rgb(80,80,80);
+	box-shadow:2px 2px 2px 2px rgb(80,80,80);
 	}
 p{
 	text-shadow:1px;
@@ -47,16 +49,15 @@ p{
 	color:green;
 	}
 .de{
-	max-width:10000px;
-	background:#cc22cc;
+	max-width:100px;
+	margin-left:45%;
 	}
 .de a{
 	text-decoration:none;
 	}
 .pr{
-	float:left;
-	margin-left:10%;
-	background: #2471FF;
+	
+	 background: #2471FF;
     border: none;
     padding: 10px 20px 10px 20px;
     border-bottom: 3px solid #5994FF;
@@ -116,4 +117,3 @@ padding:0px;
 border:0px;
 
 }
-	

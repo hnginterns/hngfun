@@ -175,6 +175,6 @@ input[type=submit]:hover {
     padding: 30px;
 }
 
-/*input[type=textarea]:focus {
+input[type=textarea]:focus {
     border: 2px solid #555;
 }

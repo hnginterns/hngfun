@@ -1,3 +1,4 @@
+﻿<<<<<<< HEAD
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -318,12 +319,10 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUSEYI, (Slack: @emma_osinaike, GitHub: Emmanuel-Osinaike)
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
+
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
+
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
-(257) Emem Brownson, (Slack: @brownjee, Github: @brownjee)
-(258) Ezenwaka Callis, @callezenwaka, @callezenwaka
-(259) Nsikak Thompson (Slack: nsikaktom, Github: Nsikaktopdown)
-(25) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
@@ -366,6 +365,7 @@
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (291) Chejieh Chigbogwu, @freestyllar, @ceejey01
+
 (292) Uwah Mfon, @uwahsheedo, @funkylala
 (293) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
 (294) Bnjamin Anwana, (slack:Benn Anwana; Github:Benny Flux)
@@ -377,15 +377,8 @@
 (300) David Daniels,(Slack:daviddaniels3000,github:DavidDaniels3000)
 (301) Edidiong Asikpo,(Slack:Edidiong,github:EdyAsikpo) 
 (302) adnan adetunji, (slack:haddyadnan; github:haddyadnan)
+
 (294) Albert Christopher Okon (Slack: okonalbert, Github: okonalbert)
-(258) kazeem Victoria (slack: @kelzvictoria, github:kelzvictoria )
-(259) Anazodo william (slack: @williamzodos, github: williamzodos )
-(260) Louis Eyoma, louiseyoma, louiseyoma
-(261) Fagbayi Mayowa Micheal (slack: Major2big, github: Major2big)
-(262) Andikan Gabriel (Slack: @andikangabriel, github: @andikangabriel)
-(263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
-(264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
-(265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
 (266) Ubong Udotai, (slack: @donpaloez, github: donpaloez)
 (267) Wisdom Esset, (Slack: @eaesset, github: Wisdom-Esset)
 (268) Aniekan Edet, (slack:@ani-edet, github:@aniblazer)
@@ -408,7 +401,9 @@
 (279) abasiakara akpanekpo (Slack: @abas, Github:@ Paragon-AE)
 (280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
 (281) Jude Ukana (slack:@judeukana, github:@JudeUk)
+
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
+
 (266) Ubong Udotai, (slack: @donpaloez, github: donpaloez)
 (267) Wisdom Esset, (Slack: @eaesset, github: Wisdom-Esset)
 (268) Aniekan Edet, (slack:@ani-edet, github:@aniblazer)
@@ -417,46 +412,19 @@
 (271) David Daniels, (slack:@daviddaniels3000, github:DavidDaniels3000)
 (272) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (273) Wilson Mmasifon  (slack: @lyndelle, github: @lyndellewilson)
-(274) Efremfon Adiakpan(slack: @efrembietie, github:@efrembietie)
 (274) Emmanuel John (slack:@emmastasho, github: @emmastasho)
 (275) Nsikak Akpan (slack:@free, github:@freet96)
 (272) David Iton,(slack:@daviditon21,github:daviditon21)
+<<<<<<< HEAD
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (277) Precious Akpan  (Slack: @preciousakpan119, Github: @preciousak)
 (278) Saade Udoka, @saade, @hasaade
 (278) kingsley Ogechukwu (Slack: @kingsley, Github: @ogekingsley
 (279) abasiakara akpanekpo (Slack: @abas, Github:@ Paragon-AE)
-(280) som-anya valentina (slack: @nina, Github:@som-anya valentina)
 (280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
 (281) Jude Ukana (slack:@judeukana, github:@JudeUk)
-(282) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak) 
-(283) Patrick Idungafa (Slack:Maguar2, Github:Maguar2)
-(283) Inoh gordian (slack:@inohgordian, Github: @inohgordian)
-(284) Azeezah Abdulwahab (Slack:@azeezah, Github:zee-geek)
-(285) Etuk Godwin(slack:@tourist2017, Github:tourist2017)
-(286) Gift Udowo (Slack:@giftwhite, Github:@giftwhite)
-(287) Nsikak Nyong (Slack:@, Github:@)
-(288) Ubong Silas (Slack:@ubsilo, Github:@ubsilo)
-(289) Ubokho Akpan, (Slack: @affilgain10, Github: affilgain10)
-(290) Amara Odunze (Slack: @vanessa17, github: @amydiva)
-(291) Sekanam Akpabio (Slack: @sekaiz5, Github: sekaiz5)
-(292) Mfonabasi Isaac (Slack: @mfonabasiisaac, Github: breezyhub)
-(293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
-(294) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
-(295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva
-(296) Nkereuwem, Nseobong Ndarake (Slack:@winsome, Github:@NseGod)
-(295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva)
-(296) Nkereuwem, Nseobong Ndarake (github:NseGod) (slack:winsome)
-(279) Antai Mfonobong (slack: @flynxx, GitHub: @fonexie)
-(297) Ntep Okon Robert (slack:@ntep,github:@NtepRobert)
-(298) okpongette idio (slack:@infinitepixel,github:paidio)
-(299) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
-(300) adnan adetunji, (slack:haddyadnan; github:haddyadnan)
-(301) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
-(302) Adiakpan Efremfon (Slack:efrembietie, Github:@efrembietie)
-(280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
-(281) Jude Ukana (slack:@judeukana, github:@JudeUk)
+
 (248) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
 (249) Salako Teslim Akolade, tessal, tescoint
 (250) Aniekan Edet Umana (slack: @aniekan_u Github @anelkan) 
@@ -483,7 +451,9 @@
 (263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
 (264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
 (265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
+
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
+
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
@@ -503,10 +473,21 @@
 (267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 (269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 (270) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
 (271) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
+>>>>>>> 447ff934a53f063bc3fd1c81bee1d1264bb31656
+
+=======
 (270) Itoro Simple Ekpenyong (Slack : @itorosimple, github : @itorosimple)
+<<<<<<< HEAD
+>>>>>>> 43a5d376d37281e3fc7d5b0879c92cec8b6347a0
+
+=======
 (271) lawrence lawrence (slack: @lawrencelawrence, githup: @lawrencebrothers)
+>>>>>>> 48bfb6a7e86b9722465f1a1d2042417b380719f3
 (272) Florence Essien ( Slack :@creamyprincess, Github:@creamyprincess )
 (273) Anietie Essien (Slack :@anietiejessien , Github:anietiejessien )
 (274) Mfonabasi Essien (Slack: mfonessien2 github:mfonessien)
@@ -515,7 +496,8 @@
 (277) Uduak-abasi Samuel (Slack: Cherubin Github: Cherubin12)
 (278) Okon Albert, @okonalbert, okonalbert
 (279) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
-(1) Nwanze Franklin, franko4don, @franko4don
+=======
+﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -1083,10 +1065,16 @@
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (291) Chejieh Chigbogwu, @freestyllar, @ceejey01
+
+>>>>>>> 0446d80582e813a9ab37c8b67450fc7ab82e7f27
 (292) Uwah Mfon, @uwahsheedo, @funkylala
-(1) Nwanze Franklin, franko4don, @franko4don
+=======
+﻿<<<<<<< HEAD
+﻿<<<<<<< HEAD
+﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
+
 (4) Fregene Efe-Uririn, efefregene, efefregene
 (5) Joe-smith Essang (slack: @jsmyth,  github: joesmithessang)
 (6) Chinke Ifeyinwa Ruth (github: eephie) (slack: ifychinke)
@@ -1569,6 +1557,7 @@
 (225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
 (226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
 (227) Erisan Olasheni (Slack: @olasheni, Github: software202)
+
 (228) Oladipo kehinde (Slack: @kehindeoladipo01), Github: kehindeoladipo)
 (228) Uche Madu (Slack: @dreemer6, Github: dreemer6)
 (229) Nwaizuzu Anthony Chukwudi (Slack: @tonychuks7, Github: naccuddi)
@@ -1608,29 +1597,67 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
+=======
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+>>>>>>> origin
+=======
+=======
+
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+<<<<<<< HEAD
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
 (258) Ubong Nsekpong, @yubee, @ubnsekpong
 (259) Aniekan Anthony, Slack: @enrickyangel, Github: @bybykillians
 (260) Popoola Dotun Samuel, (slack: @bcooldotman), (Github: @bcooldotman)
 (261) Edohoeket Isaiah Maurice (Slack: @edohoeket), (Github: @edohoeket)
+>>>>>>> 6660b3693e28cc17c79d7093c360d1d661cb4f00
 (261) Temitope Dada, (Slack: @jotdada, GitHub: @iYoung90)
 (262) Imo Ime Udo, (Slack: @udohimo, Githib: @udohimo)
+<<<<<<< HEAD
+
+>>>>>>> 634d3eff7c9222b54b4d8515a5dba9b3a71423bd
+=======
+<<<<<<< HEAD
 (263) Nde Theresa Raymond, (Slack: @utheraniskande, Github: @TheresaNde)
+=======
+>>>>>>> 899390d2e3e051e2afdf7daba05823d6a858fbe8
 (264)clarkson Emmanuel(slack: @clarksworld, github: @clarksworld)
+>>>>>>> 1e199546d092c63e685aee343b73e4ac9dfe3b8c
 (265) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
 (266) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 739c6b0607b2da7565694e166fbbf7c3e0c34875
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 (269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 (270) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
 (271) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
+>>>>>>> 447ff934a53f063bc3fd1c81bee1d1264bb31656
+
+=======
 (270) Itoro Simple Ekpenyong (Slack : @itorosimple, github : @itorosimple)
+<<<<<<< HEAD
+>>>>>>> 43a5d376d37281e3fc7d5b0879c92cec8b6347a0
+
+=======
 (271) lawrence lawrence (slack: @lawrencelawrence, githup: @lawrencebrothers)
+>>>>>>> 48bfb6a7e86b9722465f1a1d2042417b380719f3
 (272) Florence Essien ( Slack :@creamyprincess, Github:@creamyprincess )
 (273) Anietie Essien (Slack :@anietiejessien , Github:anietiejessien )
 (274) Mfonabasi Essien (Slack: mfonessien2 github:mfonessien)
@@ -1639,6 +1666,7 @@
 (277) Uduak-abasi Samuel (Slack: Cherubin Github: Cherubin12)
 (278) Okon Albert, @okonalbert, okonalbert
 (279) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
+=======
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -2208,7 +2236,10 @@
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (291) Chejieh Chigbogwu, @freestyllar, @ceejey01
 (292) Ogunmodede Oladunni, @lizdunnes, lizdunnes
-(1) Nwanze Franklin, franko4don, @franko4don
+
+=======
+<<<<<<< HEAD
+﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -2776,6 +2807,7 @@
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
+
 (4) Fregene Efe-Uririn, efefregene, efefregene
 (5) Joe-smith Essang (slack: @jsmyth,  github: joesmithessang)
 (6) Chinke Ifeyinwa Ruth (github: eephie) (slack: ifychinke)
@@ -3258,6 +3290,7 @@
 (225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
 (226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
 (227) Erisan Olasheni (Slack: @olasheni, Github: software202)
+
 (228) Oladipo kehinde (Slack: @kehindeoladipo01), Github: kehindeoladipo)
 (228) Uche Madu (Slack: @dreemer6, Github: dreemer6)
 (229) Nwaizuzu Anthony Chukwudi (Slack: @tonychuks7, Github: naccuddi)
@@ -3297,29 +3330,67 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
+=======
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+>>>>>>> origin
+=======
+=======
+
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+<<<<<<< HEAD
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
 (258) Ubong Nsekpong, @yubee, @ubnsekpong
 (259) Aniekan Anthony, Slack: @enrickyangel, Github: @bybykillians
 (260) Popoola Dotun Samuel, (slack: @bcooldotman), (Github: @bcooldotman)
 (261) Edohoeket Isaiah Maurice (Slack: @edohoeket), (Github: @edohoeket)
+>>>>>>> 6660b3693e28cc17c79d7093c360d1d661cb4f00
 (261) Temitope Dada, (Slack: @jotdada, GitHub: @iYoung90)
 (262) Imo Ime Udo, (Slack: @udohimo, Githib: @udohimo)
+<<<<<<< HEAD
+
+>>>>>>> 634d3eff7c9222b54b4d8515a5dba9b3a71423bd
+=======
+<<<<<<< HEAD
 (263) Nde Theresa Raymond, (Slack: @utheraniskande, Github: @TheresaNde)
+=======
+>>>>>>> 899390d2e3e051e2afdf7daba05823d6a858fbe8
 (264)clarkson Emmanuel(slack: @clarksworld, github: @clarksworld)
+>>>>>>> 1e199546d092c63e685aee343b73e4ac9dfe3b8c
 (265) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
 (266) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 739c6b0607b2da7565694e166fbbf7c3e0c34875
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 (269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 (270) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
 (271) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
+>>>>>>> 447ff934a53f063bc3fd1c81bee1d1264bb31656
+
+=======
 (270) Itoro Simple Ekpenyong (Slack : @itorosimple, github : @itorosimple)
+<<<<<<< HEAD
+>>>>>>> 43a5d376d37281e3fc7d5b0879c92cec8b6347a0
+
+=======
 (271) lawrence lawrence (slack: @lawrencelawrence, githup: @lawrencebrothers)
+>>>>>>> 48bfb6a7e86b9722465f1a1d2042417b380719f3
 (272) Florence Essien ( Slack :@creamyprincess, Github:@creamyprincess )
 (273) Anietie Essien (Slack :@anietiejessien , Github:anietiejessien )
 (274) Mfonabasi Essien (Slack: mfonessien2 github:mfonessien)
@@ -3328,6 +3399,7 @@
 (277) Uduak-abasi Samuel (Slack: Cherubin Github: Cherubin12)
 (278) Okon Albert, @okonalbert, okonalbert
 (279) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
+=======
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -3896,11 +3968,20 @@
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (291) Chejieh Chigbogwu, @freestyllar, @ceejey01
+
+>>>>>>> 0446d80582e813a9ab37c8b67450fc7ab82e7f27
+>>>>>>> 7dd3da097e120c2d9c74c3b603595c08e3c39326 (292)Ogunmodede Oladunni, @lizdunnes, lizdunnes
 (292) Iniobong Benson (Slack: @linibensonjr, Github: @linibensonjr)
+>>>>>>> 0c3633f672e23690e56375589729edecae7f38c9
 (293) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
+
+=======
+﻿<<<<<<< HEAD
+﻿<<<<<<< HEAD
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
+
 (4) Fregene Efe-Uririn, efefregene, efefregene
 (5) Joe-smith Essang (slack: @jsmyth,  github: joesmithessang)
 (6) Chinke Ifeyinwa Ruth (github: eephie) (slack: ifychinke)
@@ -4383,6 +4464,7 @@
 (225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
 (226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
 (227) Erisan Olasheni (Slack: @olasheni, Github: software202)
+
 (228) Oladipo kehinde (Slack: @kehindeoladipo01), Github: kehindeoladipo)
 (228) Uche Madu (Slack: @dreemer6, Github: dreemer6)
 (229) Nwaizuzu Anthony Chukwudi (Slack: @tonychuks7, Github: naccuddi)
@@ -4422,29 +4504,67 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
+=======
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+>>>>>>> origin
+=======
+=======
+
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+<<<<<<< HEAD
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
 (258) Ubong Nsekpong, @yubee, @ubnsekpong
 (259) Aniekan Anthony, Slack: @enrickyangel, Github: @bybykillians
 (260) Popoola Dotun Samuel, (slack: @bcooldotman), (Github: @bcooldotman)
 (261) Edohoeket Isaiah Maurice (Slack: @edohoeket), (Github: @edohoeket)
+>>>>>>> 6660b3693e28cc17c79d7093c360d1d661cb4f00
 (261) Temitope Dada, (Slack: @jotdada, GitHub: @iYoung90)
 (262) Imo Ime Udo, (Slack: @udohimo, Githib: @udohimo)
+<<<<<<< HEAD
+
+>>>>>>> 634d3eff7c9222b54b4d8515a5dba9b3a71423bd
+=======
+<<<<<<< HEAD
 (263) Nde Theresa Raymond, (Slack: @utheraniskande, Github: @TheresaNde)
+=======
+>>>>>>> 899390d2e3e051e2afdf7daba05823d6a858fbe8
 (264)clarkson Emmanuel(slack: @clarksworld, github: @clarksworld)
+>>>>>>> 1e199546d092c63e685aee343b73e4ac9dfe3b8c
 (265) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
 (266) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 739c6b0607b2da7565694e166fbbf7c3e0c34875
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 (269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 (270) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
 (271) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
+>>>>>>> 447ff934a53f063bc3fd1c81bee1d1264bb31656
+
+=======
 (270) Itoro Simple Ekpenyong (Slack : @itorosimple, github : @itorosimple)
+<<<<<<< HEAD
+>>>>>>> 43a5d376d37281e3fc7d5b0879c92cec8b6347a0
+
+=======
 (271) lawrence lawrence (slack: @lawrencelawrence, githup: @lawrencebrothers)
+>>>>>>> 48bfb6a7e86b9722465f1a1d2042417b380719f3
 (272) Florence Essien ( Slack :@creamyprincess, Github:@creamyprincess )
 (273) Anietie Essien (Slack :@anietiejessien , Github:anietiejessien )
 (274) Mfonabasi Essien (Slack: mfonessien2 github:mfonessien)
@@ -4453,6 +4573,7 @@
 (277) Uduak-abasi Samuel (Slack: Cherubin Github: Cherubin12)
 (278) Okon Albert, @okonalbert, okonalbert
 (279) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
+=======
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -5022,7 +5143,10 @@
 (290) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
 (291) Chejieh Chigbogwu, @freestyllar, @ceejey01
 (292) Ogunmodede Oladunni, @lizdunnes, lizdunnes
-(1) Nwanze Franklin, franko4don, @franko4don
+
+=======
+<<<<<<< HEAD
+﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
 (4) Fregene Efe-Uririn, efefregene, efefregene
@@ -5590,6 +5714,7 @@
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
+
 (4) Fregene Efe-Uririn, efefregene, efefregene
 (5) Joe-smith Essang (slack: @jsmyth,  github: joesmithessang)
 (6) Chinke Ifeyinwa Ruth (github: eephie) (slack: ifychinke)
@@ -6072,6 +6197,7 @@
 (225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
 (226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
 (227) Erisan Olasheni (Slack: @olasheni, Github: software202)
+
 (228) Oladipo kehinde (Slack: @kehindeoladipo01), Github: kehindeoladipo)
 (228) Uche Madu (Slack: @dreemer6, Github: dreemer6)
 (229) Nwaizuzu Anthony Chukwudi (Slack: @tonychuks7, Github: naccuddi)
@@ -6111,29 +6237,67 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
+=======
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+>>>>>>> origin
+=======
+=======
+
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+<<<<<<< HEAD
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+=======
 (258) Ubong Nsekpong, @yubee, @ubnsekpong
 (259) Aniekan Anthony, Slack: @enrickyangel, Github: @bybykillians
 (260) Popoola Dotun Samuel, (slack: @bcooldotman), (Github: @bcooldotman)
 (261) Edohoeket Isaiah Maurice (Slack: @edohoeket), (Github: @edohoeket)
+>>>>>>> 6660b3693e28cc17c79d7093c360d1d661cb4f00
 (261) Temitope Dada, (Slack: @jotdada, GitHub: @iYoung90)
 (262) Imo Ime Udo, (Slack: @udohimo, Githib: @udohimo)
+<<<<<<< HEAD
+
+>>>>>>> 634d3eff7c9222b54b4d8515a5dba9b3a71423bd
+=======
+<<<<<<< HEAD
 (263) Nde Theresa Raymond, (Slack: @utheraniskande, Github: @TheresaNde)
+=======
+>>>>>>> 899390d2e3e051e2afdf7daba05823d6a858fbe8
 (264)clarkson Emmanuel(slack: @clarksworld, github: @clarksworld)
+>>>>>>> 1e199546d092c63e685aee343b73e4ac9dfe3b8c
 (265) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
 (266) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+>>>>>>> 739c6b0607b2da7565694e166fbbf7c3e0c34875
+>>>>>>> 3e1fbd0cd019e6775f8688a4d5a8029f47ed13a0
 (267)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
 (268)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
 (269) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 (270) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
 (271) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
+>>>>>>> 447ff934a53f063bc3fd1c81bee1d1264bb31656
+
+=======
 (270) Itoro Simple Ekpenyong (Slack : @itorosimple, github : @itorosimple)
+<<<<<<< HEAD
+>>>>>>> 43a5d376d37281e3fc7d5b0879c92cec8b6347a0
+
+=======
 (271) lawrence lawrence (slack: @lawrencelawrence, githup: @lawrencebrothers)
+>>>>>>> 48bfb6a7e86b9722465f1a1d2042417b380719f3
 (272) Florence Essien ( Slack :@creamyprincess, Github:@creamyprincess )
 (273) Anietie Essien (Slack :@anietiejessien , Github:anietiejessien )
 (274) Mfonabasi Essien (Slack: mfonessien2 github:mfonessien)
@@ -6142,6 +6306,7 @@
 (277) Uduak-abasi Samuel (Slack: Cherubin Github: Cherubin12)
 (278) Okon Albert, @okonalbert, okonalbert
 (279) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
+=======
 ﻿(1) Nwanze Franklin, franko4don, @franko4don
 (2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
 (3) Richard Umoffia (github: hackafro) (slack: richyafro)
@@ -6666,6 +6831,7 @@
 (254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
 (255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
 (256) Samuel Oyewole, @samueloyewole, @SamuelOye
+<<<<<<< HEAD
 (257) Emmanuel Antiamah (slack: yungfabulous, github: yungfabulouz)
 (258) PRECIOUS ESHIET (SLACK; PRESENTCIOUS, GITHUB;PRESENTCIOUS)
 (259) WISDOM ENOBONG HEPHZIBAH (SLACK: URCHINWIZZY, GITHUB: URCHINWIZZY)
@@ -6674,13 +6840,16 @@
 (258) kazeem Victoria (slack: @kelzvictoria, github:kelzvictoria )
 (259) Anazodo william (slack: @williamzodos, github: williamzodos )
 (260) Louis Eyoma, louiseyoma, louiseyoma
+<<<<<<< HEAD
 (261) Olusola Victor  (slack:Victoryman,  github:Vicroj)
+=======
 (261) Fagbayi Mayowa Micheal (slack: Major2big, github: Major2big)
 (262) Andikan Gabriel (Slack: @andikangabriel, github: @andikangabriel)
 (263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
 (264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
 (265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
 (266) Nseabasi Okwong (slack: Nseabasi Okwong, github: Nseabasi) 
+=======
 (258) Ezenwaka Callis, @callezenwaka, @callezenwaka
 (258) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
 (257) Emem Okon, (Slack: @currentboy, Github: @currentboy)
@@ -6728,7 +6897,11 @@
 (292) Wisdom Eno Abasibom, (slack: Wisdom Abasibom; Github: ifiokabasibom)
 (293) Ogunmodede Oladunni, @lizdunnes, lizdunnes
 (294) Matthew Idungafa (slack: mattidungafa, Github: kemsguy7)
+=======
+=======
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
+
+=======
 (266) Ubong Udotai, (slack: @donpaloez, github: donpaloez)
 (267) Wisdom Esset, (Slack: @eaesset, github: Wisdom-Esset)
 (268) Aniekan Edet, (slack:@ani-edet, github:@aniblazer)
@@ -6743,20 +6916,30 @@
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (272) David Iton,(slack:@daviditon21,github:daviditon21)
-(266) emmanuel ekong (slack: @uwemekong11(, github: @emmanuel1995
+(266) emmanuel ekong (slack: @uwemekong11(, github: @emmanuel1995)
+
 (266) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
 (276) EssienIbok Kufre (slack:@Kessien, github: @Kessien
 (277) Precious Akpan  (Slack: @preciousakpan119, Github: @preciousak)
+
 (278) Saade Udoka, @saade, @hasaade
+
+
 (278) kingsley Ogechukwu (Slack: @kingsley, Github: @ogekingsley
+
 (279) abasiakara akpanekpo (Slack: @abas, Github:@ Paragon-AE)
+
 (280) som-anya valentina (slack: @nina, Github:@som-anya valentina)
+
 (280) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
 (281) Jude Ukana (slack:@judeukana, github:@JudeUk)
 (282) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak) 
 (283) Patrick Idungafa (Slack:Maguar2, Github:Maguar2)
 (283) Inoh gordian (slack:@inohgordian, Github: @inohgordian)
 (284) Azeezah Abdulwahab (Slack:@azeezah, Github:zee-geek)
+<<<<<<< HEAD
+(285) Nnamse Richard Akwa (slack:@richtech, Github:nnamseakwa)
+=======
 (285) Etuk Godwin(slack:@tourist2017, Github:tourist2017)
 (286) Gift Udowo (Slack:@giftwhite, Github:@giftwhite)
 (287) Nsikak Nyong (Slack:@, Github:@)
@@ -6767,40 +6950,446 @@
 (292) Mfonabasi Isaac (Slack: @mfonabasiisaac, Github: breezyhub)
 (293) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
 (294) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
+
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva
 (296) Nkereuwem, Nseobong Ndarake (Slack:@winsome, Github:@NseGod)
+
 (295) Joel Akpan (Slack: @joelzriva, Github: @joelzriva)
 (296) Nkereuwem, Nseobong Ndarake (github:NseGod) (slack:winsome)
+
 (279) Antai Mfonobong (slack: @flynxx, GitHub: @fonexie)
 (297) Ntep Okon Robert (slack:@ntep,github:@NtepRobert)
+>>>>>>> b60bcb12db0d6c001ceabf9919d5f89a46f613d1
+
 (298) okpongette idio (slack:@infinitepixel,github:paidio)
 (299)Divine Ebitu (slack:@divineebitu2367,github:Divine-Ebitu)
 (299) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
-(300)adnan adetunji, (slack:haddyadnan; github:haddyadnan)
-(301) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
-(302) Abraham Edet (slack:@miztaabee; github:miztaabee)
-(303) Kingsley Bestor (slack:@bestorw; github:bestorw01)
-(304) Obafunmiso olufemi (slack:@olufemiobafunmiso ; github:@olufemiobafunmiso)
-(305) Udofia Enwongo (slack:@enwong_o, github:@enwong01)
-(306) Samuel Ebreso (slack:@sambreso, github:@sambreso)
-(307) nnamse richard akwa (slack:@richtech, github:@nnamseakwa)
-(308) otong ekemini edet (slack:@ekeminiotong, github:@ekeminiotong)
+
+
+adnan adetunji, (slack:haddyadnan; github:haddyadnan)
 (300) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
 (301) Abraham Edet (slack:@miztaabee; github:miztaabee)
+<<<<<<< HEAD
 (302) Kingsley Bestor (slack:@bestorw; github:bestorw01)
+=======
 (302) Obafunmiso olufemi (slack:@olufemiobafunmiso ; github:@olufemiobafunmiso)
 (303) Udofia Enwongo (slack:@enwong_o, github:@enwong01)
-(304) Samuel Ebreso (slack:@sambreso, github:@sambreso)
-(305) nnamse richard akwa (slack:@richtech, github:@nnamseakwa)
-(305) Utibe Ekom Okon (slack:@yutee_okon, github:@yutee)
-(306)  adnan adetunji, (slack:haddyadnan; github:haddyadnan)
-(307) Victor Umonto (slack: @victorumonto; github:@github)
-(308) Essien Hogan (slack:@hogan26;github:@blueseedhub)
-(309) Ubong Ekong (slack:@Yubril;github:@yubril)
-(309) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
-(310) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
-(309) Ubong Ekong (slack:@Yubril;github:@yubril)
-(310) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
-(311) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
-(312) Samuel Essien (slack: @samuelessien; github:@samuelessien)
-(313) Noriode Raphael Brume @oghenebrume oghenebrume
+(304) Yutee Okon (slack:@yutee_okon, github:@yutee)
+
+>>>>>>> adccdf6bced45d9c9433ba0c784f4504cf66570d
+>>>>>>> b6c77af0aefd3af8da22577c59e04a0b319da767
+=======
+﻿(1) Nwanze Franklin, franko4don, @franko4don
+(2) Dare Sunday (github: thenameisdrey) (slack: thedrey)
+(3) Richard Umoffia (github: hackafro) (slack: richyafro)
+(4) Fregene Efe-Uririn, efefregene, efefregene
+(5) Joe-smith Essang (slack: @jsmyth,  github: joesmithessang)
+(6) Chinke Ifeyinwa Ruth (github: eephie) (slack: ifychinke)
+(7) Sam Esidem (Slack : @samesidem, github: @esidem)
+(8) Toluwalope Yussuff, tody, to-dy
+(9) Damilola Shofoluwe (github: ddamox) (slack: dspencer)
+(10) Emmanuel Promise Ozibo
+(11) John Otu, johnotu, johnotu
+(12) Alaba Mustapha (github: alabamustapha, slack: alabamustapha)
+(13) Adeshina Ibrahim
+(14) Ogunbadejo Lateef, lateefogunbadejo, Lateef-OG
+(15) Adegbola Simeon
+(16) Michael Okoh, @trojan, ichtrojan
+(17) David Ukauwa
+(18) Andrew Ugbechie, (slack: @andrewugbechie) (github: @DREW-certified)
+(19) Ijaware Tiwaloluwa (slack: tiwaloluu) (github: tiwalolu)
+(20) Emmanuel Awotunde, @olaoluwa_98, @olaoluwa-98
+(21) Usheninte Dangana, @ninte, Usheninte
+(22) Daniella Mato, @daniella, dmpire
+(23) Enyi-Christopher Joshua, christofajosh, christofajosh
+(24) Ademola Abisayo Paul, @sayopaul , sayopaul2
+(25) Akinlolu Gbemisola John, (slack: @akinlolugbemisola) (github: G-oracle)
+(26) Akunne Obinna, (slack : obinna_akunne), (github: thirdwrist)
+(27) Ojo Oreoluwa Victor, (slack: @ogbeniore) (github: @OreoluwaOjo)
+(28) Okunniga Samson Tosin, (github: Teegold007) (slack:teegoldz)
+(29) Olatunbosun Gabriel, @bosunski, bosunski
+(30) Alexandrix Ikechukwu, cornevan, SpaghettiThots
+(31) Okwu Joscelyn Kinikachi, slack: joscelyn56, github: joscelyn56
+(32) Prosper Nweze, @prosperoking ,@prosperoking
+(33) Donald Mezie slack:@snowweb , Github:Nobsmoke123
+(34) Ukeje Kingsley Ugochukwu (github: swissking009, slack: rogue.kvng)
+(35) Chike Ononye, @chykeofficial, kosychike
+(36) Damilola Omoyiwola, @princessdee, damomos
+(37) Dike Thelma, @dikethelmak, matilbella
+(38) Hogan Damilola Jerry, <slack:@hdaarme> <github: hdjerry>
+(39) James James John, @jamesjay4199, @jamesjay4199
+(40) Osideinde Oluwadara, @holumiede, holumiede
+(41) Ayodeji Bayo-Makinde, ayobaymak, ayobaymak
+(42) Agunloye Oluwatobiloba, (GitHub: @TobiLight, Slack: tobilight)
+(43) Ani Kenechi (Git-hub : @kay-cee, Slack @princekayc)
+(44) Andy Eshiet, <slack:@mathemandy, github: @matheandy>
+(45) Okeke Abuchi, (Slack: @7thmind, Github: Buchiexplores)
+(46) Joseph Michael Basssey, (Slack Name: @jonesky, github: @Joseph-MB)
+(47) Hameed Abdul-lateef Ayomide, devayo, hamdal
+(48) Atauba Prince (slack: @achowba, github: @achowba)
+(49) Rex Orioko (Slack: @rexorioko, Github: @KingJavaJava)
+(50) Nicholas Kajoh, nicholaskajoh, nicholaskajoh
+(51) Adesina Adeola (Slack: @rx_deyholar, Github: @Adeolaadesina
+(52) Arinze George Nnenwa, arinzedroid,Arinze39
+(53) Nkwocha Chidi Callistus <Slack: @profchydon, Github: @profchydon>
+(54) Fredrick Uchechukwu Mgbeoma (github: @fuchodeveloper) (slack: @fred)
+(55) Usman Sakirat Kehinde, @shakirah, oyinkan
+(56) Egbuna Chukwudi, (slack egbunachukwudi49, github egbuna)
+(57) Kayode Micheal Olukunle, komsic, komsic
+(58) Mfoniso Umana slack @aspn
+(59) Qudus Yekeen Github: udus97 || Slack:qudusdev
+(60) David favour umoren(github:@davidumoren, slack: @dxelpraise)
+(61) Etim, Nse-Abasi Joseph <Slack: @etimnseabasi, github: @nseetim>
+(62) Akindolie Oluwatayo A Slack: @akindolietayo Github: its-tayo
+(63) Francis Benson (Slack: @alejandro Github: @ECFK75C8)
+(64) Adetunji William (Slack: @willade Github: @willade)
+(65) Okoh Ify   (slack: @ify, github: @Ifyokoh)
+(66) Orie Chinedu Emmanuel (Slack: @oriechinedu Github: @oriechinedu)
+(67) Trust Akpobome (Slack: @controltam Github: @controltam)
+(68) Rachael Iwelunmor (github: rachaeliwelunmor) (slack: rachael_iwelunmor)
+(69) Suleiman Abdulmajeed (slack: @suleimanmajiyd) github: @majiyd
+(70) Ukor Jidechi Ekundayo (Slack: @ukorjidechi, github: ukor)
+(71) Adeboga Abigail, Slack:@bogadeji Github:bogadeji
+(72) Ikhuohon-Eboreime Caleb , GitHub:calebikhuohon , slack:@calebikhuohon
+(73) Adigun Hammed Olalekan, Github:adigunhammedolalekan, slack:@adigunhammedolalekan
+(74) Mfonobong Umondia David, (Github: MfonobongD) (Slack: @mfonobong)
+(75) Adekanmbi Yosola, mo.yosiwealth, Yosiwealth
+(76) Eniwoke Cornelius (Slack: eniwokep, Github: cornzyblack)
+(77) Somto Promise (Slack: @keswardpromise Github:Promxyl)
+(78) Orobosa Cornelius (Slack: Orobosa, Github: OrobosaV)
+(79) Godfred Ekpenyong Akpan (Slack: godfredakpan, Github: godfredakpan)
+(80) Essien Saviour Aniefiok (Slack: @essien, Github: iamessien)
+(81) Adekanmbi Yosola, mo.yosiwealth, Yosiwealth
+(82) Eniwoke Cornelius (Slack: eniwokep, Github: cornzyblack)
+(83) Orobosa Cornelius (Slack: Orobosa, Github: OrobosaV)
+(84) Essien Saviour Aniefiok (Slack: @essien, Github: iamessien)
+(85) Israel Akpan Github:tagximum slack:@israelakpan296
+(86) Adekanmbi Yosola, mo.yosiwealth, Yosiwealth
+(87) Eniwoke Cornelius (Slack: eniwokep, Github: cornzyblack)
+(88) Orobosa Cornelius (Slack: Orobosa, Github: OrobosaV)
+(89) Essien Saviour Aniefiok (Slack: @essien, Github: iamessien
+(90) Gabriel Umoh (Slack: @gmaumoh, Github: @gabumoh)
+(91) Grace Essien (Slack: graceessien Github: AniekanE)
+(92) Ekpoto Liberty (Slack: ekpoto, Github: delino12)
+(93) Peter Peregbakumo (Slack: peterperez, Github: peterperez)
+(95) SOMTOO OKAFOR (Slack:okaforsomtoo, Github: okaforsomtoo)
+(97) Idorenyin Obong (Slack:idee, Github: KingIdee)
+(98) Opeyemi Olawale,(@tanthum,@waleHg)
+(99) Okafor ECHE (Slack: bluecard1992, Github: alactic)
+(100) ISRAEL AKPAN (Slack:israelakpan296, github:tagximum)
+(101) Shalom Prince John,shalomjohn,otuekongjohn
+(102) Nwonah Vincent (Slack: vnwonah, Github: vnwonah)
+(103) Okike Stanley Uchenna (Slack: stanleyokike, Github: Stankovich96)
+(104) Paul Ayuk (Slack: Paul Ayuk, Github: Paulayuk)
+(105) Adeojo Emmanuel (Slack: adeojo emmanuel, Github: adeojoemmanuel)
+(106) Okanlawon Emmanuel (Slack: solar, Github: okanlawonema)
+(107) Emmanuel Popoola (Slack: hemmayo, GitHub, hemmayo)
+(108) Agbola Iseoluwatobi samuel (Slack:tobiagbola ,Github: agbolatobi)
+(109) Okoko Michaels (Slack: pangolin, Github: idoqo)
+(110) Emmanuel Joseph,jekayode, jekayode
+(111) Gabriel Uzowulu (GitHUb: @emyguz) (Slack: @gabrieluzowulu)
+(112) Edung Divinefavour(slack:lawrene , github:thriller16)
+(113) Keresifon Ekpo(slack:@handsome9ice, github: handsome9ice)
+(114) Agbola Iseoluwatobi samuel (Slack:tobiagbola ,Github: agbolatobi)
+(115) Osaji Gabriel(Slack:@gabby4hi, Github:gabby4hi)
+(116) EMEM JONAH (slack: @emiqueena, Github: @emiqueena
+(117) Wisdom Anthony Alphonsus, slack:@wizzydayo, github:@wizzydayo
+(118) Aniekwe Joshua Chigozie (slack: @josh, Github: sir-josh)
+(119) Kay Sagoe (Slack: kay_s, Github: kaysagoe)
+(120) Kayode Emmanuel (Slack: kayode, Github: tobi007)
+(121) ELIZABETH AKPAN (Slack: ibethakpan, Github:ElizabethAkpan)
+(122) ALIYU YISA (Slack: aligorithm, Github: aligorithm)
+(123) PEPPLE SUNNY LYSIAS (slack: pepps01, Github: pepps01)
+(124) Adebowale Glory, slack: adeglo, github: mystery1999
+(125) Jordan Irabor (slack: castillo_ github: Jordanirabor)
+(126) Nwaoduh Ezinna (slack: ezinna7, github: ezinna7)
+(127) Abdulsamad Aliyu (slack: abdulsamadaliyu17, github: abdulsamad234)
+(128) Timothy Olaleke, @timtech4u , timtech4u
+(129) Victor Bala (slack: savicsly, github: savicsly)
+(128) Fiyin Adeyera (slack:Fiyin, github:Fiyin)
+(129) Ray Okaah, (Slack:raypex, github:raypex)
+(130) Babatunde Adedolapo Github:@dolapobabs Slack:@dolapobabs
+(131) Chukwuma David (slack:lilbrizzeey, github:lilbrizzeey)
+(132) Kebe Eyong (slack:kebeeyong, github:kebeeyong)
+(133) Nwokorobia Ugochukwu,uhexos,uhexos
+(134) Ememobong Akpanekpo (slack:ememobong_akpanekpo, github:emayoung, email:emayoung95@gmail.com)
+(135) Onyemenam Ndubuisi, @prondubuisi, NdubuisiO
+(136) Tolu Faith (slack: imani, github: ToluImani)
+(137) Andikan Usenmfon Affiah, slack:@andikan, github:@enactor
+(138) Lasisi Tosin (slack: ridwan, github: ridwan099)
+(139) John Ayeni, slack:@johnayeni10, github:JohnAyeni
+(140) Okoro Ogechi (slack: @ogechiokoro, github:ogechiokoro)
+(141) Okokon Christopher Ntuk (slack: @chrix95, github: @chrix95)
+(142) Daniel Archibong (slack: @archibongdaniel13, github: @danielcomputer)
+(143) Ajayi Thadeus (Slack: @ainoije, github: @ThadeusAjayi)
+(144) Nnaemeka Ukpa (Slack: @emekaprosper, github:@emekaProsper)
+(145) Okwara Ebuka (slack: @okwaraebuka, github:fletcherin)
+(146) Ayotunde Doherty (Slack: the_tunde_doherty, github: thetundedoherty)
+(147) Okwara Ebuka (slack: @okwaraebuka, github:fletcherin )
+(148) SOMTOO OKAFOR (Slack:okaforsomtoo, Github: okaforsomtoo)
+(149) Warrie Usenobong(slack: @warrie, github: @warrienelly)
+(150) Gabriel Stephen (slack:@cyberdroidmann, github:cyberdroidmann)
+(151) Aderinto Sadiq (slack:@sadiq, github:@aderintosadiq)
+(152) Oluchi Onyekpa (slack: @am-oluchii, Github: @oluchii)
+(153) Abu-Ekpeshie Peter (slack: @peteabu, Github: @peteabu)
+(154) Nsenam Udoh (slack: nsenam, github: nse4real)
+(155) Olivia Chisom (slack: seraphlivia, github: Seraphic95)
+(156) Mfonobong Umondia (Slack: mfonobong, Github: MfonobongD)
+(157) Tejumola David Timmy,timicodes,timi-codes;
+(158) Alimi Kehinde Morufudeen (Slack: @marusoft, Github: @marusoft)
+(159) Iniobong Daniel (Slack: @opinerdan, github: @opiner)
+(160) Ohue John (Slack: @itoohue, github:  @JohnItoo)
+(161) Chinanu Okereke, @chiqokereke, chiqokereke
+(162) Nwauwa Victor Ifeanyi(Slack:@vicklight93, Github:@vicklight)
+(163) Raymond Emmanuel (Slack: @peorayy, Github: @peoray)
+(164) Duduyemi Mobayo (Slack: @bayoduduyemi, Github: @blaqnificent)
+(166) Oguazu Stanley (Slack: @greywhite, Github: @dearests)
+(167) Ojosipe-Isaac Mofopefoluwa, Slack: @mofope_ojosh, github: @mofopeojosh
+(168) Olagunju Babatunde Yunus,Slack:@thundex001,github @tundeOlagunju
+(169) Afolayan Favour Fikayo, (Slack:@favourafolayan, github:@favourafolayan)
+(170) Onyiuke Timothy, (Slack: timolin, github: fabrobocom)
+(171) Okorie Augustine Ugochukwu (slack: auztin, github: auztincodes)
+(172) Ikechukwu Nwakanma (Slack: markowitz, Github: icnwakanma)
+(173) Olibie Jennifer Chidera (Slack: jeni, Github: je-ni)
+(174) Maduabuchi Chinaechetam (Slack: lord_cheta, Github: LordCheta)
+(175) Daada Oluwatobiloba (Slack: tobi_d, Github: tobialbert)
+(176) Kevin Afoma Onwuagbanusi,  ( slack:@kevkentalogues github:kentalogues)
+(177) Nwose Lotanna Victor (slack: @viclotana, github:viclotana)
+(178) Mmakwe Onyeka Blessing (slack:mmakwe_onyeka, github:Makwe-O)
+(179) Aidi K. Adeyemi (slack:adeyemi.aidi, github: aidicrownsworth)
+(180) Shalom Izebhor(slack:shalom_1, github:Shalom101)
+(181) Femi Odejide (Slack:itz_jf, github:itzjf)
+(182) eze chijioke(slack:@ezecejay1, github:eze chijioke)
+(183) Ifunanya Ukachukwu,iyfe,iyfe
+(184) Omojola Samson, (Slack: caesar, github: omojolasamson)
+(185) king solomon, (Slack: king solomon, github: KINGDEREL)
+(186) Ajayi Seyi, iamseyiajayi, seyishemba
+(187) Sanni Sheriff, sheriff, SheriffSanni
+(188) Obinna Walker, (Slack: obiwalker, github: ObieWalker)
+(189) Chidi Ugwu, (Slack: Chidi, github: Kwekuceejay)
+(190) Obe Dolapo, (slack: Obe, github:adedolz)
+(191) Philip Akpeki, (slack: philippy, github: philippyy)
+(192) Liasu Hassan Temitope, (slack: hilyas, github: Hilyas68)
+(193) Imo Joseph Okon, (slack: rhodimosokon, github: Rhodinet)
+(194) Shotola Hammed Oluwole, (slack: Shotolahammed01, github: Hammed01)
+(195) Osuji Chukwuamaka Benjamin, (slack: osujichukwuamaka, github: Chukwuamaka)
+(196) Chuks N Festus, (slack: chuksfestus, github: chuksFestus)
+(197) Ogwuru Johnson Onyekachi, (slack: ogwurujohnson , github: ogwurujohnson )
+(198) Ibanga Jude, (slack: judis , github: judeibanga)
+(199) Ogbor Margaret Eneh, (slack: peggylicious, github: peggylicious
+(197) Jacob Okoro (slack:jaycobokoro4, github:rheinchester)
+(198) Ogwuru Johnson Onyekachi, (slack: ogwurujohnson , github: ogwurujohnson )
+(199) Ibanga Jude, (slack: judis , github: judeibanga)
+(200) Ogbor Margaret Eneh, (slack: peggylicious, github: peggylicious)
+(201) Ukachukwu Dalu, (Slack: daluu, github: ghost147)
+(202) Ogwuru Johnson Onyekachi, (slack: ogwurujohnson , github: ogwurujohnson )
+(203) Ibanga Jude, (slack: judis , github: judeibanga)
+(204) Ogbor Margaret Eneh, (slack: peggylicious, github: peggylicious)
+(205) Ukachukwu Dalu, (Slack: daluu, github: ghost147)
+(206) Nwafor Maxwell Chukwuebuka, (slack: maxwell444, github: maxwell4reel)
+(207) Francis Jude, (Slack: jhude16, Github: jhude16)
+(208) James Cyril Christopher, (slack: fluxy17, github: flexyfluxy)
+(209) Jude Ubon Joshua, (slack: ubyjude, github: ubyjude54)
+(210) Isaac Abasifreke Elijah, (slack: izikelijah, github: ElijahAIsaac)
+(211)Tobechukwu Obitube, tobechukwuobitube, tobechukwuobitube
+(212) Nwaizuzu Anthony Chukwudi (slack:@tonychuks7, github:naccuddi)
+(213) OPARA PROSPER ( slack: @opara_prosper, github: opara-prosper)
+(214) Alexander Ikelia (slack:@alex, github: @alexikelia)
+(215) Ifeanyi Okoye (slack:@ifeanyi0, github: @NoRestrictions)
+(216) Silas Silas (Slack@silassilas  Github:@silassilasm)
+(217) Emem Okpon (slack:ememtony, github:EmemTony)
+(218) Otuekong Shield, @shield, @otu02
+(219) Gafar Azeez Oluwafemi (Slack: @zee, Github: ZeeUnltd)
+(220) Olushi Luqman Opemipo, codeshifu, codeshifu
+(221) Richard Oluwo(slack: @richard4s, github: richard4s)
+(219) Olayiwola Emmanuel(slack: @emma, github: olaasz)
+(220) Gafar Azeez Oluwafemi (Slack: @zee, Github: ZeeUnltd)
+(222) Olushi Luqman Opemipo, codeshifu, codeshifu
+(223) Nnwankwo Wisdom , slack: nwankwowisdom96, github: widomd
+(224) Iroleh Vincent Nwachukwu (Slack: @irolehvincent, github: vincentiroleh)
+(225) Victor Dominic Ekong (Slack: @vhiktordom,  GitHub: Vhiktordom)
+(226) Gbolahan Oladeji (Slack: @mogbolahan, Github: mo-gbolahan)
+(227) Erisan Olasheni (Slack: @olasheni, Github: software202)
+(228) Uche Madu (Slack: @dreemer6, Github: dreemer6)
+(229) Nwaizuzu Anthony Chukwudi (Slack: @tonychuks7, Github: naccuddi)
+(230) Erisan Olasheni (Slack: @olasheni, Github: software202)
+(231) Mopah Emmanuel Shewuri (Slack: @mopahshewuri, Github: mopilo)
+(232) Ukah Bethel , ukahbethel , bethel-u
+(233) Idorenyin Akaninyene Etim, Slack: @akanidorenyin, Github: dorenyin1
+(234) Samfield Hawb Bassey, Slack:@samfield4sure, Github: psalmfill
+(235) Abulhafeez Babatunde, Slack: mista-oba, Github:
+(236) Iwaloye Samuel Olawale (slack: @iwa_temmy ,Github:iwa-temmy)
+(237) Okedusi Olumide, @olumideokedusi, @Lumie31
+(238) Ozokolo Sandra, @sandieozokolo, @ozokolosandra
+(239) Abdulrahman Abdulkarim Ayoola, @abdul, lanre01
+(240) Akande Gbolahan, @gbolahan_akande, gboigwe
+(241) Emmanuel Jacobson, writeprovidence, writeprovidence
+(242) Stephen Ojo, @ripplz, Ripplz
+(243) Grace Ebong, @graceebong, graceebong25
+(244) Elisha Nseobong Ukpong (Slack:@Drumzminister, Guthub:Drumzminister)
+(244) Emem Okon, currentboy, currentboy
+(245) Olunloye Akinkunmi (Slack: @roqak, Github: roqak)
+(246) David Ofiare , artofofiare , artofofiare
+(248) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
+(249) Salako Teslim Akolade, tessal, tescoint
+(250) Aniekan Edet Umana (slack: @aniekan_u Github @anelkan) 
+(247) Fru Anthony, @antonyfru,  @westside200
+(248) Etukudoh, Nsikan Aniefiok. (slack: @flekumxzy github: @flekumxzy)
+(249) Enomfon Archibong(Slack: @enarchibong, Github: enarchibong)
+(250) Salako Teslim Akolade, tessal, tescoint
+(251) Ibanga Kpereobong, Slack:@kpere, Github:@Kpere
+(252) Ikemefuna Obioha, Slack: legend5463, Github: ikem-legend
+(253) TOMMY IMMANUEL,(slack: @brownpinkwater), (github: superetist)
+(254) OKAFOR VICTOR CHIMOBI, (slack: @Victorbest34), (github: Victorbest34)
+(255) OSINAIKE EMMANUEL OLUESYI, @emmaosinaike, Emmanuel-Osinaike
+(256) Samuel Oyewole, @samueloyewole, @SamuelOye
+(257) Emmanuel Antiamah (slack: yungfabulous, github: yungfabulouz)
+(258) PRECIOUS ESHIET (SLACK; PRESENTCIOUS, GITHUB;PRESENTCIOUS)
+(259) WISDOM ENOBONG HEPHZIBAH (SLACK: URCHINWIZZY, GITHUB: URCHINWIZZY)
+(257) Clarkson Emmanuel(slack:@clarksworld, github:@clarksworld)
+(279) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
+(258) kazeem Victoria (slack: @kelzvictoria, github:kelzvictoria )
+(259) Anazodo william (slack: @williamzodos, github: williamzodos )
+(260) Louis Eyoma, louiseyoma, louiseyoma
+(261) Fagbayi Mayowa Micheal (slack: Major2big, github: Major2big)
+(262) Andikan Gabriel (Slack: @andikangabriel, github: @andikangabriel)
+(263) Ihebuzor Daberechi (slack: daaby, github: daaby4)
+(264) Christopher Akpan (Slack: @krisbest4life, github: @christopherakpan)
+(265) Sifon Joseph Ekong (Slack: @sifonekong, github: @sifonekong)
+(266) Nseabasi Okwong (slack: Nseabasi Okwong, github: Nseabasi)
+(267) emmanuel ekong (slack: @uwemekong11, github: @emmanuel1995)
+(268) Ubong Udotai, (slack: @donpaloez, github: donpaloez)
+(269) Wisdom Esset, (Slack: @eaesset, github: Wisdom-Esset)
+(270) Aniekan Edet, (slack:@ani-edet, github:@aniblazer)
+(271) Akpan Prevailer, (slack:akpanprevailer, github:yngprev)
+(272) Edidiong Asikpo, (slack: @edidiong, github: edyasikpo)
+(273) David Daniels, (slack:@daviddaniels3000, github:DavidDaniels3000)
+(274) Wilson Mmasifon  (slack: @lyndelle, github: @lyndellewilson)
+(275) Emmanuel John (slack:@emmastasho, github: @emmastasho)
+(276) Nsikak Akpan (slack:@free, github:@freet96)
+(277) David Iton,(slack:@daviditon21,github:daviditon2)
+(278) Essien Ibok Kufre (slack:@Kessien, github: @Kessien
+(277) Precious Akpan  (Slack: @preciousakpan119, Github: @preciousak)
+(279) Saade Udoka, @saade, @hasaade
+(280) kingsley Ogechukwu (Slack: @kingsley, Github: @ogekingsley
+(281) abasiakara akpanekpo (Slack: @abas, Github:@ Paragon-AE)
+(282) Raphael D'Emedion (Slack: @raphaeldemedion, Github:@ @raphaeldemedion)
+(283) Jude Ukana (slack:@judeukana, github:@JudeUk)
+(284) Nsikak Isaac (Slack: @Nzikak, Github: Nzikak)
+(285) Kingsley Bestor (Slack:bestorw, Github:bestorw01)
+(286) Ezenwaka Callis, @callezenwaka, @callezenwaka
+(287) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+(288) Emem Brownson, (Slack: @brownjee, Github: @brownjee)
+(289) Ezenwaka Callis, @callezenwaka, @callezenwaka
+(290) Nsikak Thompson (Slack: nsikaktom, Github: Nsikaktopdown)
+(291) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+(292) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+(293) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+(294) Emem Okon, (Slack: @currentboy, Github: @currentboy)
+(295) Akintola Moronfoluwa (Slack: @foluwa, Github: @Moronfoluwa)
+(296) Ubong Nsekpong, @yubee, @ubnsekpong
+(297) Aniekan Anthony, Slack: @enrickyangel, Github: @bybykillians
+(298) Popoola Dotun Samuel, (slack: @bcooldotman), (Github: @bcooldotman)
+(300) Edohoeket Isaiah Maurice (Slack: @edohoeket), (Github: @edohoeket)
+(301) Temitope Dada, (Slack: @jotdada, GitHub: @iYoung90)
+(302) Imo Ime Udo, (Slack: @udohimo, Githib: @udohimo)
+(303) Nde Theresa Raymond, (Slack: @utheraniskande, Github: @TheresaNde)
+(304)clarkson Emmanuel(slack: @clarksworld, github: @clarksworld)
+(305) Abayomi Adeoye (Slack: @otaibayomi, github: @abamait)
+(306) Idongesit Albert Sunday (Slack : @iddyalbert, github @iddyalbert)
+(307)Jude Ukana, (Slacl: @Judeukana, Github:@JudeUk)
+(308)Alexander Olaseni Abiola (Slack : @retro, github: @retrodbb)
+(309) Lazarus Edet Alfred (Slack : @stonywonder199, github : @Stonywonder199)
+(310) Elisha Sunday Ekanemn (Slack :@elishaekanem, Github:@elishaekanem)
+(311) Olatunde Olusola (Slack :@shollynoob, Github:@shollynoob)
+(312) Itoro Simple Ekpenyong (Slack : @itorosimple, github : @itorosimple)
+(313) lawrence lawrence (slack: @lawrencelawrence, githup: @lawrencebrothers)
+(314) Florence Essien ( Slack :@creamyprincess, Github:@creamyprincess )
+(315) Anietie Essien (Slack :@anietiejessien , Github:anietiejessien )
+(316) Mfonabasi Essien (Slack: mfonessien2 github:mfonessien)
+(317) Unwanaobong Usen Ekwere (Slack: Unwanapearl github: unwanapearl)
+(318) Umana Enobong George (Slack: Enoumana66 Github: enoumana)
+(319) Uduak-abasi Samuel (Slack: Cherubin Github: Cherubin12)
+(320) Okon Albert, @okonalbert, okonalbert
+(321) Aminu Abdulrahman, @aaminu, aaminu
+(322) Okon Albert, @okonalbert, okonalbert
+(323) Unwanaobong Usen Ekwere (Slack: Unwanapearl github: unwanapearl)
+(324) Umana Enobong George (Slack: Enoumana66 Github: enoumana)
+(325) Uduak-abasi Samuel (Slack: Cherubin Github: Cherubin12)
+(326) Okon Albert, @okonalbert, okonalbert
+(327) Aminu Abdulrahman, @aaminu, aaminu
+(328) Solomon Okon Equan (Slack: @slowbz: github:@slowbz)
+(329) Ilozulu Chuka Victor, victorilozulu, veekthor
+(330) Ndifreke Matthew Essien (slack: @Starlyvil), (github: Starlyvil)
+(331) Unyime Edet (slack: @izi2brauz, github: @izi2brauz)
+(332) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
+(333) Chidozie Akakuru (Slack: doziex; Github: zeusdaman)
+(334) Chejieh Chigbogwu, @freestyllar, @ceejey01
+(335) Uwah Mfon, @uwahsheedo, @funkylala
+(336) Uwah Mfon (slack: @uwahsheedo, github: @funkylala)
+(337) Bnjamin Anwana, (slack:Benn Anwana; Github:Benny Flux)
+(338) Akaneno Godwin, (slack:kannyekong; github:kannyekong)
+(339) Aniekan Edet, (slack:ani-edet, github:aniblazer)
+(340) Akpan Prevailer, (slack:akpanprevailer, github:yngprev)
+(341) Wisdom Esset, (slack:eaesset, github:Wisdom-Esset)
+(342) David iton,(Slack:@daviditon21,github:daviditon21)
+(343) David Daniels,(Slack:daviddaniels3000,github:DavidDaniels3000)
+(344) Edidiong Asikpo,(Slack:Edidiong,github:EdyAsikpo) 
+(345) adnan adetunji, (slack:haddyadnan; github:haddyadnan)
+(346) Albert Christopher Okon (Slack: okonalbert, Github: okonalbert)
+(347) Patrick Idungafa (Slack:Maguar2, Github:Maguar2)
+(348) Inoh gordian (slack:@inohgordian, Github: @inohgordian)
+(349) Azeezah Abdulwahab (Slack:@azeezah, Github:zee-geek)
+(350) Etuk Godwin(slack:@tourist2017, Github:tourist2017)
+(351) Gift Udowo (Slack:@giftwhite, Github:@giftwhite)
+(352) Nsikak Nyong (Slack:@, Github:@)
+(353) Ubong Silas (Slack:@ubsilo, Github:@ubsilo)
+(354) Ubokho Akpan, (Slack: @affilgain10, Github: affilgain10)
+(355) Amara Odunze (Slack: @vanessa17, github: @amydiva)
+(356) Sekanam Akpabio (Slack: @sekaiz5, Github: sekaiz5)
+(357) Mfonabasi Isaac (Slack: @mfonabasiisaac, Github: breezyhub)
+(358) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
+(359) Akinbode Akinlolu (Slack: weezykon,  Github:weezykon)
+(360) Joel Akpan (Slack: @joelzriva, Github: @joelzriva
+(361) Nkereuwem, Nseobong Ndarake (Slack:@winsome, Github:@NseGod)
+(362) Joel Akpan (Slack: @joelzriva, Github: @joelzriva)
+(363) Nkereuwem, Nseobong Ndarake (github:NseGod) (slack:winsome)
+(364) Antai Mfonobong (slack: @flynxx, GitHub: @fonexie)
+(365) Ntep Okon Robert (slack:@ntep,github:@NtepRobert)
+(366) okpongette idio (slack:@infinitepixel,github:paidio)
+(367)Divine Ebitu (slack:@divineebitu2367,github:Divine-Ebitu)
+(368) Trust Akam (slack:@trust.effy, GitHub: TrustEffy)
+(369) Babajide Tomoshegbo (Slack:@babajide234, Github:@babajide234)
+(370) Yutee Okon (slack:@yutee_okon, github:@yutee)
+(371) Samuel Ebreso (slack:@sambreso, github:@sambreso)
+(372) nnamse richard akwa (slack:@richtech, github:@nnamseakwa)
+(373) Utibe Ekom Okon (slack:@yutee_okon, github:@yutee)
+(374) Victor Umonto (slack: @victorumonto; github:@github)
+(375) Essien Hogan (slack:@hogan26;github:@blueseedhub)
+(376) Ubong Ekong (slack:@Yubril;github:@yubril)
+(377) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
+(378) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
+(379) Ubong Ekong (slack:@Yubril;github:@yubril)
+(380) Emmanuel Nelson (slack:@dot.e; github:@dot-e}
+(381) Enoch Mbaebie (slack:@chukwuemekambaebie; github:@EnochMbaebie)
+(382) Samuel Essien (slack: @samuelessien; github:@samuelessien)
+(383) Noriode Raphael Brume (slack: @oghenebrume oghenebrume)
+(384) Micheal Aboderin (slack: @mroracle; github:@mroracle8)
+(385) Ubongabasi Cookey (slack: @zeus; github:@cookey)
+(386) Unyime michael (slack:@umike, github:@janemike)
+(387) Uboho Dickson (slack:@ubohodickson, github:ubohodickson)
+(388) Aniekan Etim (slack:@codeislife, github:onlycodeislife)
+(389) Otuoniyo Harny (slack:@harnee4real, github:harneeblayze)
+(390) Utibe Nkereuwem, (Slack: @utibendarake5, Github: @utibendarake5)
+(391) Noriode Raphael Brume @oghenebrume oghenebrume
+(392) Aboderin Michael (slack : mroracle, Github:mroracle8)
+(393) Mfonabasi Isaac (Slack: @breezyhub, Github: breezyhub)
+(394) Wisdom Akpabio (Slack: WisdomRay,  Github:WisdomRay)
+(395) Aboderin Micheal (Slack : Mroracle Githun :Mroracle8)
+(396) Enobong Victor (Slack: Enobong, Github: Enobong100)
+(397) Anthony Godwin (slack: @TONY GODWIN, github: @anthonyekpog)
+(398) Daniel Bassey Udoanwan (Slack: @Dan-August, Github: Dan-August)
+(399) Victor Umoh (Slack: esmeraldoes, Github: @esmeraldoes
+(400) NDUBISI CHRISTIAN, ucinho, @ucinho
+
+>>>>>>> 85559fdd09a9de7badf0525da9e7211b16ee5481

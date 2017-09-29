@@ -1,0 +1,192 @@
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,3)),url(https://res.cloudinary.com/dkkn9xzk7/image/upload/v1506064228/home_background_nuk6ub.jpg);
+	background-position: center;
+	opacity: 1;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+
+
+body{
+	background: #fff;
+	color: #555;
+	font-family: 'lato', 'Arial', 'sans-serif';
+	font-weight: 300;
+	font-size: 18px;
+	text-rendering:optimizeLegibility; 
+}
+
+h1,h2,p{
+	font-weight: 500;
+	line-height: 2;
+}
+
+h2:after{
+display:block;
+height:2px;
+background-color:#e67e22;
+content: " ";
+width:50px;
+margin: 0 auto;
+margin-top:5px;	
+	
+}
+
+.contact{
+	margin-top: 20px;
+}
+nav{
+	display: block;
+}
+.nav {
+	display: block;
+	text-align: center;
+}
+.nav .nav-link{
+	display: inline-block;
+	padding: 20px;
+	margin: 0 auto%;
+}
+.nav-link a{
+	color: #ffffff;
+	font-size: 120%;
+	text-decoration: none;
+}
+
+.nav-link a:hover{
+	border-bottom: 2px solid #ff8000;
+	*/padding-bottom: 8px;
+}
+
+#container{
+	width: 88%;
+	margin: 0 auto;
+}
+
+.home-text{
+	position: absolute;
+	top: 40%;
+	left:20%;
+}
+
+.home-text h1{
+	text-align: center;
+	
+	/*font-size: 40px;*/
+	font-style: bold;
+	font-family: fantasy;
+	font-stretch: ultra-expanded;
+	color: #ffffff;
+}
+.home-btn{
+	margin-top: 40px;
+	margin-left: 8%;
+}
+.btn:link,
+.btn:visited{
+	
+	display: inline-block;
+	padding:10px 30px;
+	font-weight: 300%;
+	text-decoration: none;
+	border-radius: 200px;	
+	transition: background-color 0.4s, color 0.4s, border 0.4s;
+
+}
+
+.btn-see:link,
+.btn-see:visited{
+	background-color: #e67e22;	
+	border:1px solid #e67e22;	
+	color: #fff;
+}
+
+.btn-contact:link,
+.btn-contact:visited{
+	
+	border:1px solid #e67e22;
+		color: #fff;
+}
+
+.btn:hover,
+.btn:active{
+	background-color: #cf6d17;
+	
+}
+.btn-contact:hover,
+.btn:active{
+	background-color: #cf6d17;
+	color: #fff;
+	
+}
+
+.row-about,.row-contact{
+	margin-top: 20px;
+
+}
+.row-about{
+		background-color: #fcfcfd;
+		padding-left: 2em;
+		border-bottom: 1px solid gray;
+		padding-bottom: 20px;
+}
+
+#contact{
+	padding-bottom: 30px;
+}
+
+.row-about .about-img{
+	 width: 50%; display: inline-block;
+}
+
+.row-about .about-text{
+	 width: 50%; display: block;
+	 float: right; padding-top: 30px;"
+}
+
+.contact-links, .contact-forms{
+	width: 40%;
+	display: inline-block;
+}
+.contact-forms{
+	width: 40%;
+	float: right;
+}
+
+.clear{
+	display: table;
+	content: none;
+	clear: both;
+}
+.contact-forms input[type="submit"]{
+	background:#00b7ff;
+	color: white;
+	border-radius: 15%;
+	padding: 8px 20px;
+}
+.contact-forms .input{
+		display: block;
+		margin-top:10px;
+		padding: 5px 0;
+}
+
+.contact-forms textarea{
+	height: 10px;
+}
+#footer{
+	padding-top:100px;
+	background: gray;
+	width: 100vw;
+}
+
+
+#footer p{
+	color: white;
+	text-align: center;
+}
+
+
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Vhiktor's Digital Clock</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript">
+		function startClock(){
+
+			var day = new Date();
+			var hour = day.getHours();
+			var minutes = day.getMinutes();
+			var seconds = day.getSeconds();
+			am = (hour < 12) ? "<span>AM</span>" : "<span>PM</span>"; //Ternay Operator to check if it's morning or Noon
+			hour = (hour == 0) ? 12 : hour;
+			hour = (hour > 12) ? hour - 12 : hour;
+
+
+			hour = checkTime(hour);
+			minutes = checkTime(minutes);
+			seconds = checkTime(seconds);
+			document.getElementById("clock").innerHTML = hour + ":" + minutes + ":" + seconds + " " + am;
+
+			//Defining the month
+
+			var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];  //Array  storing the months in a year
+			var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+			var currentWeekDay = days[day.getDay()];
+			var currentDay = day.getDate();
+			var currentMonth = months[day.getMonth()];
+			var currentYear = day.getFullYear();
+			var date = currentWeekDay + ", " + currentDay + ", " + currentMonth + ", " + currentYear;
+			document.getElementById("date").innerHTML = date;
+
+			var greet;
+
+			var newHour = day.getHours();
+
+			if(newHour < 12){
+				greet = "Good morning and Welcome,<br> It's a new day, Make the most of it....";
+					console.log(greet);
+					document.getElementById("newDate").innerHTML = greet;
+			}
+				else if(newHour >= 12 && hour<= 17){
+					greet = "<h3>Good Evening and Welcome</h3>";
+					console.log(greet);
+					document.getElementById("newDate").innerHTML = greet;
+
+				}
+
+				else if(newHour >= 17 && hour<= 24){
+					greet = "Good Afternoon and Welcome";
+					console.log(greet);
+					document.getElementById("newDate").innerHTML = greet;
+
+				}
+
+
+
+			var time = setTimeout(function(){
+
+				startClock()
+
+			}, 500);
+		}
+
+		function checkTime(v){
+			if (v < 10) {
+				v = "0" + v;
+			}
+			return v;
+		}
+	</script>
+    
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main{
+		width: 100%;
+		float: left;
+		padding: 15px;
+	}
+	h3{
+		color: #ffffff;
+		font-family: oswald;
+	}
+
+
+	.clockdate-wrapper {
+    background-color: #3bb75e;
+    padding:25px;
+    max-width:350px;
+    width:100%;
+
+    text-align:center;
+    border-radius:5px;
+    margin:0 auto;
+    margin-top:15%;
+
+
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;   
+}
+#clock{
+   
+    font-family: sans-serif;
+    font-size:60px;
+    text-shadow:0px 0px 1px #fff;
+    color: rgb(1,27,51);
+}
+
+#clock span {
+    color:#888;
+    text-shadow:0px 0px 1px #333;
+    font-size:30px;
+    position:relative;
+    top:-27px;
+    left:-10px;
+}
+
+
+#date {
+    letter-spacing:10px;
+    font-size:14px;
+    font-family:arial,sans-serif;
+    color:#fff;
+}
+
+#newDate{
+	color:#888;
+    text-shadow:0px 0px 1px #333;
+    font-size:20px;
+    position:relative;
+    left:-10px;
+}
+
+#endTime{
+	color:rgb(1,27,51);;
+    text-shadow:0px 0px 1px #333;
+    font-size:30px;
+    font-family:roboto;
+    position:relative;
+    top:7px;
+    left:-10px;
+}
+
+.background{
+	background-color: #011b33;
+}
+
+/* Style the content */
+.content {
+    background-color: #ddd;
+    padding: 10px;
+    height: 500px;
+}
+
+body{
+	text-align: center;
+}
+
+.animate {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: reverse; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;    
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   { right:0px; top:0px;}
+    75%  { right:0px; top:200px;}
+    100% { right:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   { right:0px; top:0px;}
+    75%  { right:0px; top:50px;}
+    100% { right:0px; top:0px;}
+}
+
+}
+</style>
+</head>
+<body class="background" onload="startClock()">
+
+<div id="clockdate">
+		<div class="clockdate-wrapper">
+			<div id="newDate"></div>
+			<div id="clock"></div>
+			<br />
+			<div id="date"></div>
+			<h3 style="font-size: 20px;font-family:oswald;color: #ffffff;">Count Down to Christmas</h3>
+			<div id="endTime"></div>
+		</div>
+	</div>
+		
+	<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("endTime").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("endTime").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
