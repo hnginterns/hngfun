@@ -1,6 +1,0 @@
-
-body {
-font-size: 80%;
-font-family: "arial", Courier;
-letter-spacing: 0.15em;
-background-color: #efefef;}

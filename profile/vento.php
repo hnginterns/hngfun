@@ -63,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   .Bio{
 text-align: center;
   }
-   button[type=submit]:hover {background-color: dodgerblue;}
+   input[type=submit]:hover {background-color: dodgerblue;}
    .input {
      width: 50%;
      min-height: 10px;
@@ -127,8 +127,9 @@ text-align: center;
    <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"> <a style="margin-right: 20px;" href="https://github.com/victorumonto">github</button><button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true">  <a style="margin-right: 20px;" href="https://www.facebook.com/victor.umonto">    
         <i class="fa fa-facebook"></i>
 </i>facebook</button>
-<div class="col-btnSR">
+<div class="col-btnSR"> 
     <a href="https://github.com/victorumonto" target="_blank">#stage1</a>
+    <a href="http://hng.fun/profile/vento.html"target=_blank=">#stage2</a>
   </div>
 
    </form>
