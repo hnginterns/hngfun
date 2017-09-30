@@ -32,11 +32,49 @@
   }
  ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
+<title>SLACK PROFILE</title>
 <style>
+body {
+     background-image: url("https://imgur.com/DriKUe4.jpg"), url("https://imgur.com/DriKUe4.jpg");
+      border-style: solid;
+    border-width: 10px 100px 10px 100px;
+    color: brown;
+}
+    .img-circle {
+        border-radius: 50%;
+        height: 195px;
+        width: 25%;
+        display: block;
+      margin: auto;
+      margin-top: 30px;
+      border-style: solid;
+     border-width: 5px 5px 5px 5px;
+     color: brown;
+    }
+   
+.center {
+    text-align: center;
+    font-size: 30px;
+    color: #F5C869;
+    font-weight: bold;
+    background-color: brown;
+    font-style: helvetica, sans-serif;
+    padding: 8px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+.bio{
+    text-align: center;
+    font-size: 20px;
+}
+h1 {
+    background-color: green;
+}
+
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -67,8 +105,19 @@ input[type=submit]:hover {
     padding: 20px;
 }
 </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<img class="img-circle" src="https://imgur.com/JrxaFXZ.jpg" alt="ESMERALDOES">
+<h1 class="center">VICTOR UMOH</h1>
+<p class="bio">A Computer Engineering Student at University of Uyo.<br> 
+I like reading and learning new things.<br>
+I love coding, coding is life.<br>
+I can also rap and play football.<br>
+I like using python.<br>
+Slack username: esmeraldoes<br> 
+Github ID: esmeraldoes</p>
+<a href="https://github.com/esmeraldoes/Esmeraldoes.git">STAGE 1 TASK <a>
 
 <h3>PLEASE CONTACT ME!!</h3>
 
@@ -93,6 +142,5 @@ input[type=submit]:hover {
     <input type="submit" value="Submit">
   </form>
 </div>
-
 </body>
 </html>
