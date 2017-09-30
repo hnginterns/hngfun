@@ -1,12 +1,14 @@
-*{
-	margin: 0;
-	padding: 0;
-/*	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;*/
-	-webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,3)),url(https://res.cloudinary.com/dkkn9xzk7/image/upload/v1506064228/home_background_nuk6ub.jpg);
+	background-position: center;
+	opacity: 1;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
 }
+
+
 
 body{
 	background: #fff;
@@ -16,7 +18,8 @@ body{
 	font-size: 18px;
 	text-rendering:optimizeLegibility; 
 }
-h1,h2,h3,p{
+
+h1,h2,p{
 	font-weight: 500;
 	line-height: 2;
 }
@@ -30,6 +33,10 @@ width:50px;
 margin: 0 auto;
 margin-top:5px;	
 	
+}
+
+.contact{
+	margin-top: 20px;
 }
 nav{
 	display: block;
@@ -51,32 +58,24 @@ nav{
 
 .nav-link a:hover{
 	border-bottom: 2px solid #ff8000;
-	padding-bottom: 8px;
-}
-header{
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,3)),url(https://res.cloudinary.com/dkkn9xzk7/image/upload/v1506064228/home_background_nuk6ub.jpg);
-	background-position: center;
-	opacity: 1;
-	background-size: cover;
-	height: 100vh;
-	width: 100vw;
-	position: relative;
+	*/padding-bottom: 8px;
 }
 
 #container{
-	width: 1140px;
+	width: 88%;
 	margin: 0 auto;
 }
 
 .home-text{
 	position: absolute;
 	top: 40%;
-	left:30%;
+	left:20%;
 }
 
 .home-text h1{
-	/*text-align: center;*/
-	font-size: 40px;
+	text-align: center;
+	
+	/*font-size: 40px;*/
 	font-style: bold;
 	font-family: fantasy;
 	font-stretch: ultra-expanded;
@@ -126,15 +125,17 @@ header{
 
 .row-about,.row-contact{
 	margin-top: 20px;
+
 }
 .row-about{
 		background-color: #fcfcfd;
 		padding-left: 2em;
 		border-bottom: 1px solid gray;
+		padding-bottom: 20px;
 }
 
-.row-contact{
-	padding-bottom: 20px;
+#contact{
+	padding-bottom: 30px;
 }
 
 .row-about .about-img{
@@ -173,7 +174,7 @@ header{
 }
 
 .contact-forms textarea{
-	height: 100px;
+	height: 10px;
 }
 #footer{
 	padding-top:100px;
@@ -186,28 +187,6 @@ header{
 	color: white;
 	text-align: center;
 }
-@media screen and (max-width: 980px) {
-	header{
-		width: 100vw;
-	}
-    .home-text h1{
-        font-size: 30px;
-        font-weight: 300;
-    }
-    .container{
-    	width: 30px;
-    }
-    .row-about .about-img{
-	 	display:block;
-	}
 
-     .row-about .about-text{
-	 display: block;
-	 float: none; padding-top: 40px;
-	 margin-right: auto;
-	 margin-left: auto;
-	 padding-bottom: 0 auto;
-	}
-}
 
 

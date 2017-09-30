@@ -5,12 +5,12 @@
 	<style type="text/css">
 	body {
 	text-align: center;
-	background-color: #009;
+	background-color: #ffc107;
 	color: #000;
 	font-family: Georgia;
 }
 #calc{
-    background: linear-gradient(to left, #33ccff 15%, #000099 85%);
+    background-color: #ffe082;
 	width: 335px;
 	height: 500px;
 	border-radius: 6px;
@@ -24,10 +24,10 @@
 	font-family: Georgia;
 }
 #display{
-	height: 35px;
+	height: 55px;
 	width: 300px;
 	margin-top: 3em;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	border: 3px solid black;
 	border-radius: 6px;
 	box-shadow: 2px 2px #000000;
@@ -38,19 +38,18 @@
 	height: 50px;
 	padding: 6px 12px;
 	font-weight: bold;
-	border-radius: 4px;
+	border-radius: 0px;
 	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	box-shadow: 2px 2px #000000;
+	background-color: #ffc107;
+	box-shadow: 2px 2px #ffc107;
 	margin-bottom: 4px;
 }
 #butt{
 	width: 50px;
 	height: 50px;
 	padding: 6px 12px;
-	font-weight: bold	border-radius: 50%;
-	text-shadow: -1px 0 #FFFFFF, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
-	box-shadow: 2px 2px #000000;
+	font-weight: bold;
+    color: white;
 	background-color: black;
     border-radius: 50%;
 }
@@ -62,7 +61,7 @@
 	border-radius: 4px;
 	text-shadow: -1px 0 #FFFFFF, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
 	box-shadow: 2px 2px #000000;
-	background-color: red;
+	background-color:  #ffc107;
 }
 p{
 	text-shadow: -1px 0 #ffffff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
@@ -75,7 +74,7 @@ p{
 	height: 50px;
 	padding: 6px 12px;
 	font-weight: bold	border-radius: 50%;
-	text-shadow: -1px 0 #FFFFFF, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+	color: white;
 	box-shadow: 2px 2px #000000;
 	background-color: black;
     border-radius: 50%;
@@ -85,16 +84,16 @@ p{
 	color: #3cf;
 }
 #butt:hover{
-	background-color: #009;
+	color: #ffc107;
 }
 #keys:hover{
-	background-color: #3cf;
+	color: #000000;
 }
 #spe:hover{
-	background-color: #3cf;
+	color: #ffc107;
 }
 #eq:hover{
-	background-color: #fff;
+	background-color:  white;
 }
 p:hover{
 	color: #3cf;
@@ -105,7 +104,7 @@ p:hover{
 <!-- beginning of html-->
 
 <body>
-  <h1 id="name">NEDY'S CALCULATOR</h1>
+  <h1 id="name">CALCULATOR</h1>
   <div id = 'calc' >
     <form>
       <input type="text" name=" " id="display" > 
@@ -113,9 +112,12 @@ p:hover{
                 <input type='button' value='sin' id='spe' onclick='sin()'>&nbsp;	 
                 <input type='button' value='cos' id='spe' onclick='cos()'>&nbsp;
                 <input type='button' value='tan' id='spe' onclick='tan()'>&nbsp;&nbsp;&nbsp;&nbsp;
+               
                 <input type='button' value='c' id='butt' onclick='show("s")'>&nbsp;
                 <input type='button' value='dl' id='butt' onclick='dl()'>
                 <br>
+               
+               
 
                 <input type='button' value='7' id='keys' onclick='show("7")'>&nbsp;	  
                 <input type='button' value='8' id='keys' onclick='show("8")'>&nbsp;
@@ -143,7 +145,7 @@ p:hover{
 				<input type='button' value='.' id='keys' onclick='show(".")'>&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type='button' value='=' id='eq' onclick='answer()'>
 			<br><br><br><br><br>
-			<p><strong><em>made by &copy nedyudombat</em> 2017</strong></p>
+			
 	</form>
   </div>
   <!--end of html-->
