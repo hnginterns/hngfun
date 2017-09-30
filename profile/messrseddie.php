@@ -32,7 +32,6 @@
 <title>HNG INTERNSHIP 2017</title>
 
 <style type ="text/css">
-
 .image{
     margin: auto;
     height: 350px;
@@ -41,7 +40,6 @@
     border-radius: 10px;
 }
 	
-
 p{  
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 25px;
@@ -65,17 +63,13 @@ h2{ font-style: bold;
 	font-weight: 28px;
 	
 }
-
 h3{ color:black;
 	background-color: lightyellow;
     font-family: comic  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
 }
-
 .tag{ margin-top: 200px;
 	text-align: "center";
 }
-
 </style>
 
 </head>
@@ -110,7 +104,7 @@ My name is Edidiong Samuel alias Eddie Baba. I'm an intern on the<a href= "http:
 	<div id="form">
 
       <h2 class="tag">Contact Me</h2>
-    <form action="../../sendmail.php" method="get">
+    <form action="#" method="POST">
           <fieldset>
               <input placeholder="Your Full Name" type="text" tabindex="1" required="" autofocus="">
           </fieldset>
@@ -129,8 +123,8 @@ My name is Edidiong Samuel alias Eddie Baba. I'm an intern on the<a href= "http:
           <fieldset>
            <textarea placeholder="Type your Message Here...." tabindex="5" id="body" name="body" required=""></textarea>
           </fieldset>  
-          
-        <!-- <input type="hidden" name="password" value="<?= $password; ?>" />   --> 
+
+                  
           <fieldset>
             <button type="submit" value="Submit">Submit </button>
           </fieldset>
@@ -141,8 +135,6 @@ My name is Edidiong Samuel alias Eddie Baba. I'm an intern on the<a href= "http:
 </div>
 </body>
 </html>
-
-
      
            
 
