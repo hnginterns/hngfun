@@ -72,12 +72,14 @@
 				<img src = "https://github.com/Jamesjay4199/James_test/blob/master/newPicC.jpg?raw=true" width = "200px" height = "200px" id = "my-pic">
 				<p> JAMES <br>JAMES JOHN </p>
 				<hr align = "left" width = "200px" color = "green"><br>
-				<p id = "job">Web <br> Developer</p>
+				
+				<br><p id = "job">Web <br> Developer</p>
 				<p id = "slack">SLACK @jamesjay4199</p><br>
-				<a href = "https://github.com/Jamesjay4199/HNG_Internship"><span id = "stage1">STAGE1</span></a><br><br>
+				<a href = "https://github.com/Jamesjay4199/HNG_Internship" id = "stage1" color ="green">STAGE1</a><br><br>
 				<br><hr align = "left" width = "200px" color = "green">
 				
 			</aside>
+			<a href = "https://github.com/Jamesjay4199/hello-world/raw/master/JamesContactApp.apk" id = "my-app">My Contact App</a><br>
 			<footer id ="footer">
 				Made by JAMES JOHN JAMES. <br> All rights reserved. 2017.
 			</footer>

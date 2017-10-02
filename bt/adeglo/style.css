@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+#body{
+    margin: 8px;
+}
+
+#quote{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 700px;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    position: relative;
+    bottom:20px;
+}
+form{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+fieldset {
+    
+    color: #545454;
+    width: max-content;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightgrey;
+    position: relative;
+  
+}
+
+#hello{
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 15% auto;
+    font-size: 50px;
+    
+}
+.morning{
+    color: #fff;
+    background-image: url("https://i.imgur.com/YFNcQN3.jpg");
+    background-position: center;
+    background-size: fit;
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.afternoon{
+    color: #191970;
+    background-image: url("https://i.imgur.com/jj7cdR6.jpg");
+    background-position: center;
+    background-size: fit;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    
+}
+.evening{
+    color: #fff;
+    background-image: url("https://i.imgur.com/9mFY8dk.jpg");
+    background-position: center;
+    background-size: fit;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    height: auto;
+}
+.night{
+    color: #fff;
+    background-image: url("https://i.imgur.com/kYTGUhK.jpg");
+    background-position: center;
+    background-size: fit;
+    background-repeat: no-repeat;
+}

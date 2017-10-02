@@ -28,7 +28,8 @@
       $error[] = 'You have sent an empty data, email cannot be sent like that.';
     } else {
       /**
-       * Everything we need to send the email is ready, but we need to do some verification
+
+	  * Everything we need to send the email is ready, but we need to do some verification
        * We need to makke sure the email is valid.
        */
 
@@ -71,22 +72,24 @@
 
         $mail = new PHPMailer();
 
-        $mail->isSMTP();
+        //$mail->isSMTP();
 
-        $mail->SMTPAuth = true;
+        //$mail->SMTPAuth = true;
         //$mail->SMTPDebug =  2;
 
-        $mail->SMTPSecure = 'ssl';
-        $mail->Host = 'mail.jointhands.net';
-        $mail->Port = '465';
-        $mail->isHTML();
-        $mail->Username = "hng@jointhands.net";
-        $mail->Password = 'QwertyUiop10/';
+        //$mail->SMTPSecure = 'ssl';
+        //$mail->Host = 'mail.jointhands.net';
+        //$mail->Port = '465';
+        //$mail->isHTML();
+        //$mail->Username = "hng@jointhands.net";
+        //$mail->Password = 'QwertyUiop10/';
+        $mail->FromName = 'HNGInterns';
         $mail->Subject = $subject;
         $mail->Body = $message;
-        $mail->SetFrom('hng@jointhands.net');
+        $mail->SetFrom('support@hng.fun');
         $mail->AddAddress($to);
         $mail->AddCc($admin_email);
+        $mail->isHTML(true);
 
          if(!$mail->send()) {
            $error[] = 'Message sending failed <br/>'.$mail->ErrorInfo;

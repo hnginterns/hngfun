@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital Clock using JavaScript</title>
+        <link href="http://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css"/>
+    
+        <style>
+            .tabBlock
+            {
+                background-color:#57574f;
+                border:solid 0px #FFA54F;
+                border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;
+               /* max-width:200px; */
+                width:100%;
+                height: 100%;
+                overflow:hidden;
+                display:block;
+            }
+            .clock
+            {
+                vertical-align:middle;
+                font-family:Orbitron;
+                font-size:80px;
+                font-weight:normal;
+                color:#FFF;
+                padding:10% 15px;
+            }
+            .clocklg 
+            {
+                vertical-align:middle; 
+                font-family:Orbitron;
+                font-size:40px;
+                font-weight:normal;
+                color:#FFF;
+            }
+        </style>
+    </head>
+    
+    <!-- ON LOAD OF THE PAGE, THE CLOCK WILL START TICKING. -->
+    <body onload="digitized();">
+        <div style="background-color:#F3F3F3;
+            width:400px;height:200px;margin:124px auto;padding:20px;">
+    
+            <table class="tabBlock" align="center" cellspacing="0" cellpadding="0" border="0">
+                <tr><td class="clock" id="dc"></td>  <!-- THE DIGITAL CLOCK. -->
+                    <td>
+                        <table cellpadding="0" cellspacing="0" border="0">
+                        
+                            <!-- HOUR IN 'AM' AND 'PM'. -->
+                            <tr><td class="clocklg" id="dc_hour"></td></tr>
+    
+                            <!-- SHOWING SECONDS. -->
+                            <tr><td class="clocklg" id="dc_second"></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    <script>
+        // OUR FUNCTION WHICH IS EXECUTED ON LOAD OF THE PAGE.
+
+
+var colors = ['#760CE8', '#4782B1', '#E8890C',"silver", "#BAF3C3", "#c3baf3"];
+
+        document.body.style.background = colors[Math.floor(Math.random()*colors.length)]
+
+
+        function digitized() {
+            var dt = new Date();    // DATE() CONSTRUCTOR FOR CURRENT SYSTEM DATE AND TIME.
+            var hrs = dt.getHours();
+            var min = dt.getMinutes();
+            var sec = dt.getSeconds();
+    
+            min = Ticking(min);
+            sec = Ticking(sec);
+    
+            document.getElementById('dc').innerHTML = hrs + ":" + min;
+            document.getElementById('dc_second').innerHTML = sec;
+    
+            if (hrs > 12) { 
+                document.getElementById('dc_hour').innerHTML = 'PM'; 
+            }
+            else { 
+                document.getElementById('dc_hour').innerHTML = 'AM'; 
+            }
+    
+            // CALL THE FUNCTION EVERY 1 SECOND (RECURSION).
+            var time
+            time = setInterval('digitized()', 1000);
+        }
+    
+        function Ticking(ticVal) {
+            if (ticVal < 10) {
+                ticVal = "0" + ticVal;
+            }
+            return ticVal;
+        }
+    </script>
+    </html>

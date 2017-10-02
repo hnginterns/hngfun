@@ -1,3 +1,4 @@
+
 <?php
       if (isset($_GET['send']))  {
           //Email information here
@@ -133,8 +134,6 @@
          			 <a class="links" href="https://twitter.com/kvng_b3rd"><i class="fa fa-twitter"></i> Twitter</a>&nbsp;
          			
          			 <a class="links" href="https://www.instagram.com/kvng.b3rd"><i class="fa fa-instagram"></i> Instagram</a>&nbsp;
-						
-				 <a class="links" href="https://drive.google.com/file/d/0B07iD5LdywvBYjVVdlZmS3pvV2s/view"><i class="fa fa-android"></i> Android App</a>&nbsp;
           			
           			 <a class="links"> <i class="fa fa-phone-square"></i> 07031356201</a>&nbsp;
           			 </p>

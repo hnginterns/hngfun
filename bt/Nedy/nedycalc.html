@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LET'S SOLVE BASIC MATHS </title>
+	<style type="text/css">
+	body {
+	text-align: center;
+	background-color: #009;
+	color: #000;
+	font-family: Georgia;
+}
+#calc{
+    background: linear-gradient(to left, #33ccff 15%, #000099 85%);
+	width: 335px;
+	height: 500px;
+	border-radius: 6px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 35%;
+	margin-right: 55%; 
+
+	opacity: transparent;
+	font-family: Georgia;
+}
+#display{
+	height: 35px;
+	width: 300px;
+	margin-top: 3em;
+	margin-bottom: 15px;
+	border: 3px solid black;
+	border-radius: 6px;
+	box-shadow: 2px 2px #000000;
+	text-align: left;
+}
+#keys{
+	width: 50px;
+	height: 50px;
+	padding: 6px 12px;
+	font-weight: bold;
+	border-radius: 4px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	box-shadow: 2px 2px #000000;
+	margin-bottom: 4px;
+}
+#butt{
+	width: 50px;
+	height: 50px;
+	padding: 6px 12px;
+	font-weight: bold	border-radius: 50%;
+	text-shadow: -1px 0 #FFFFFF, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+	box-shadow: 2px 2px #000000;
+	background-color: black;
+    border-radius: 50%;
+}
+#eq{
+	width: 107px;
+	height: 50px;
+	padding: 6px 12px;
+	font-weight: bold;
+	border-radius: 4px;
+	text-shadow: -1px 0 #FFFFFF, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+	box-shadow: 2px 2px #000000;
+	background-color: red;
+}
+p{
+	text-shadow: -1px 0 #ffffff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+	color: #000000;
+	border-top: solid #ffffff;
+	width: 335px;
+}
+#spe{
+	width: 50px;
+	height: 50px;
+	padding: 6px 12px;
+	font-weight: bold	border-radius: 50%;
+	text-shadow: -1px 0 #FFFFFF, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+	box-shadow: 2px 2px #000000;
+	background-color: black;
+    border-radius: 50%;
+    outline-style: none;
+}
+#name:hover{
+	color: #3cf;
+}
+#butt:hover{
+	background-color: #009;
+}
+#keys:hover{
+	background-color: #3cf;
+}
+#spe:hover{
+	background-color: #3cf;
+}
+#eq:hover{
+	background-color: #fff;
+}
+p:hover{
+	color: #3cf;
+}
+
+</style>
+<!-- end of css styling-->
+<!-- beginning of html-->
+
+<body>
+  <h1 id="name">NEDY'S CALCULATOR</h1>
+  <div id = 'calc' >
+    <form>
+      <input type="text" name=" " id="display" > 
+      <br><br>
+                <input type='button' value='sin' id='spe' onclick='sin()'>&nbsp;	 
+                <input type='button' value='cos' id='spe' onclick='cos()'>&nbsp;
+                <input type='button' value='tan' id='spe' onclick='tan()'>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type='button' value='c' id='butt' onclick='show("s")'>&nbsp;
+                <input type='button' value='dl' id='butt' onclick='dl()'>
+                <br>
+
+                <input type='button' value='7' id='keys' onclick='show("7")'>&nbsp;	  
+                <input type='button' value='8' id='keys' onclick='show("8")'>&nbsp;
+				<input type='button' value='9' id='keys' onclick='show("9")'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='button' value='+' id='butt' onclick='show("+")'>&nbsp;
+				<input type='button' value='-' id='butt' onclick='show("-")'>
+				<br>
+
+				<input type='button' value='4' id='keys' onclick='show("4")'>&nbsp;
+				<input type='button' value='5' id='keys' onclick='show("5")'>&nbsp;
+				<input type='button' value='6' id='keys' onclick='show("6")'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='button' value='*' id='butt' onclick='show("*")'>&nbsp;
+				<input type='button' value='/' id='butt' onclick='show("/")'>
+				<br>
+
+				<input type='button' value='1' id='keys' onclick='show("1")'>&nbsp;
+				<input type='button' value='2' id='keys' onclick='show("2")'>&nbsp;
+				<input type='button' value='3' id='keys' onclick='show("3")'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='button' value='sqrt' id='butt' onclick='sqrt()'>&nbsp;
+				<input type='button' value='Sq' id='butt' onclick='pow()'>
+				<br>
+
+				<input type='button' value='0' id='keys' onclick='show("0")'>&nbsp;
+				<input type='button' value='00' id='keys' onclick='show("00")'>&nbsp;
+				<input type='button' value='.' id='keys' onclick='show(".")'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type='button' value='=' id='eq' onclick='answer()'>
+			<br><br><br><br><br>
+			<p><strong><em>made by &copy nedyudombat</em> 2017</strong></p>
+	</form>
+  </div>
+  <!--end of html-->
+  <!-- beginning of the javascript-->
+	  <script>
+	  function show(x){
+	  	if (x === 's'){
+	  		document.getElementById('display').value = '';
+	  	}else{
+	  	document.getElementById('display').value+=x;
+	  }
+	  }
+	  function answer(){
+	  	let soln = document.getElementById('display').value;
+	  	ans = eval(soln);
+	  	document.getElementById('display').value = ans;
+	  }
+	  function pow(){
+	  	document.getElementById('display').value *= document.getElementById('display').value;
+	  }
+	  function sin(){
+        x = document.getElementById('display').value;
+        x = Math.sin(x);
+        document.getElementById('display').value = x;
+      }
+      function cos(){
+        x = document.getElementById('display').value;
+        x = Math.cos(x);
+        document.getElementById('display').value = x;
+      } 
+      function tan(){
+        x = document.getElementById('display').value;
+        x = Math.tan(x);
+        document.getElementById('display').value = x;
+     }
+      function sqrt(){
+      	x = document.getElementById('display').value;
+      	x = Math.sqrt(x);
+      	document.getElementById('display').value = x;
+     }
+      function dl(){
+      	x = document.getElementById('display').value;
+      	y = x.substr(0, x.length-1);
+      	document.getElementById('display').value = y;
+    }
+     
+ 	</script>
+  <!-- end of javascript-->
+
+</body>
