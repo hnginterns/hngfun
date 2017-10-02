@@ -1,9 +1,20 @@
 function wordCount() {
 	document.getElementById('word').onkeyup = function () {
-	document.getElementById('result').innerHTML = "Characters: " +  this.value.length;
+	var typedWord = document.getElementById('word').value;
+	var abets = typedWord.match(/[a-z,A-Z]/g);
+	var nums = typedWord.match(/[0-9]/g);
+	var spec = typedWord.match(/[`~!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g);
+	document.getElementById('total').innerHTML = "Total Characters: " +  this.value.length;
+	document.getElementById('alphabets').innerHTML = "Alphabet Characters: " +  abets.length;
+	document.getElementById('numbers').innerHTML = "Integer Characters: " +  nums.length;
+	document.getElementById('special').innerHTML = "Special Characters: " +  spec.length;
 	};
 
 }
+
+var hi = "g66ghy7ACB";
+var res = hi.match(/[0-9, a-z]/g);
+// alert(res.length);
 
 // function wordCount() {
 // 	var count = "";

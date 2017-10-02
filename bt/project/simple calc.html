@@ -4,14 +4,14 @@
 	<title>my calculator</title>
 	<style type="text/css">
 		body {
-			background-image: url(images.jpg);
+			background-color:cyan;
 			background-size: cover;
 
 			background-repeat: repeat-x;
 		}
 		.body{
-			width: 400px;
-			height: 600px;
+			width: 275px;
+			height: 430px;
 			background-color: grey;
 			margin-right: auto;
 			margin-left: auto;
@@ -21,25 +21,25 @@
 			border-bottom-right-radius: 10px;
 		}
 		#display{
-			width: 392px;
-			height: 100px;
+			width: 270px;
+			height: 60px;
 			background-color: ;
-			margin-top: 38px;
+			margin-top: 1px;
 			border-radius: 5px;
 			font-size: 30px;
 			text-indent: 20px;
 		}
 		#keys{
-			width: 65px;
-			height: 70px;
+			width: 40px;
+			height: 35px;
 			font-weight: bold;
-			font-size: 30px;
+			font-size: 20px;
 			border-radius: 5px;
-			margin:0.5px;
+			margin:2px 0.9px;
 		}
 		.btn{
 			margin-left: 20px;
-			margin-top: 110px;
+			margin-top: 20px;
 
 		}
 		.scientific{
@@ -51,7 +51,41 @@
 			margin-left: 195px;
 
 		}
-		body{background-image:}
+		#pwr{
+			width:55px;
+			height:30px;
+			font-weight:bold;
+			background-color:red;
+			margin-left:186px;
+		}
+		#sci{
+			width:40px;
+			height:30px;
+			border-radius:5px;
+			margin-left:20px;
+			background-color:blue;
+			font-weight:bold;
+			font-size:18px;
+		}
+		#spc{
+			width: 40px;
+			height: 35px;
+			font-weight: bold;
+			font-size: 20px;
+			border-radius: 5px;
+			margin:0.5px;
+			background-color:red;
+
+		}
+		.caption{
+			font-weight:bold;
+			font-size:30px;
+		}
+		body {
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR10pUB-ftFGPPna37fxeHzMf6otK9iXzyWxKXbBVJTzwwhKpOq")
+    background-repeat:no repeat;
+    background-size:cover;
+}
 	</style>
 
 </head>
@@ -63,9 +97,14 @@
 		<div class="">
 			<input type="text" name="" id="display">
 		</div>
+			<div class="power btn">
+			<input type="button" value='on/off' id='pwr' onclick='show("s")'>&nbsp;
+			</div>
 			
 			<div class="scientific">
-			
+						  <input type='button' value='sin' id='sci' onclick='sin()'>&nbsp;	 
+                <input type='button' value='cos' id='sci' onclick='cos()'>&nbsp;
+                <input type='button' value='tan' id='sci' onclick='tan()'>&nbsp;
 
 				
 			</div>
@@ -75,14 +114,15 @@
 						<input type="button" value='9' id='keys' onclick='show("9")'>&nbsp;
 						<input type="button" value='8' id='keys' onclick='show("8")'>&nbsp;
 						<input type="button" value='7' id='keys' onclick='show("7")'>&nbsp;
-						<input type='button' value='C' id='keys' onclick='show("s")'>&nbsp;
+						<input type="button" value='DEL' id='spc' onclick='dl()'>&nbsp;
+						<input type="button" value='C' id='keys' onclick='show("s")'>&nbsp;
 
 					</div>
 					<div class="numbers rw 2">
 						<input type="button" value='6' id='keys' onclick='show("6")'>&nbsp;
 						<input type="button" value='5' id='keys' onclick='show("5")'>&nbsp;
 						<input type="button" value='4' id='keys' onclick='show("4")'>&nbsp;
-						<input type='button' value='-' id='keys' onclick='show("-")'>
+						<input type='button' value='-' id='keys' onclick='show("-")'>&nbsp;
 						<input type='button' value='Sq' id='keys' onclick='pow()'>
 					</div>
 					<div class="numbers rw 3">
@@ -98,9 +138,9 @@
 					<div class="numbers rw 4">
 						<input type="button" value='0' id='keys' onclick='show("0")'>&nbsp;
 						<input type="button" value='.' id='keys' onclick='show(".")'>&nbsp;
-						<input type="button" value='1/x' id='keys' onclick='show("1/")'>&nbsp;
-						<input type='button' value='+' id='keys' onclick='show("+")'>&nbsp;
-						<input type='button' value='=' id='keys' onclick='answer()'>
+						<input type="button" value='sqrt' id='keys' onclick='sqrt()'>&nbsp;
+						<input type="button" value='+' id='keys' onclick='show("+")'>&nbsp;
+						<input type="button" value='=' id='keys' onclick='answer()'>
 
 					</div>
 
@@ -113,6 +153,9 @@
 
 	
 </div>
+	<div class="caption">
+		A Simple Calculator
+	</div>
  <script>
 	  function show(x){
 	  	if (x === 's'){
@@ -129,6 +172,32 @@
 	  function pow(){
 	  	document.getElementById('display').value *= document.getElementById('display').value;
 	  }
+	  function sqrt(){
+      	x = document.getElementById('display').value;
+      	x = Math.sqrt(x);
+      	document.getElementById('display').value = x;
+     }
+
+	  function sin(){
+        x = document.getElementById('display').value;
+        x = Math.sin(x);
+        document.getElementById('display').value = x;
+      }
+      function cos(){
+        x = document.getElementById('display').value;
+        x = Math.cos(x);
+        document.getElementById('display').value = x;
+      } 
+      function tan(){
+        x = document.getElementById('display').value;
+        x = Math.tan(x);
+        document.getElementById('display').value = x;
+  	}
+  	function dl(){
+      	x = document.getElementById('display').value;
+      	y = x.substr(0, x.length-1);
+      	document.getElementById('display').value = y;
+    }
  	</script>
   <!-- end of javascript-->
 
