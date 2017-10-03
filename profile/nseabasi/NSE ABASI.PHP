@@ -1,9 +1,21 @@
+<<<<<<< HEAD:profile/nseabasi/NSE ABASI.PHP
 <?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['ftopic'];
     $to  = 'nseabasiokwong@yahoo.com';
     $body = $_POST['fmsg'];
+=======
+<?php 
+
+if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+	$name =$_POST['name'];
+	$email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $to  = 'nseabasiokwong@yahoo.com';
+    $body = $_POST['message']." by ".$name. " email ".$email;
+>>>>>>> e2327281775272f590abea0f0c9509e7d6410c15:profile/nseabasi/nseabasi.php
     if($body == '' || $body == ' ') {
         $error[] = 'You have to TYPE in something to tell me something';
     }
@@ -125,6 +137,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <p>
 	
 </p>
+<<<<<<< HEAD:profile/nseabasi/NSE ABASI.PHP
 			<!-- contact form -->
 			<div class="contact-form">
 				<form action="#" method="post">
@@ -166,5 +179,29 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			</ul>			
 		</footer>
 	</div>
+=======
+
+<div class="container">
+
+ 
+
+ <form action="<?php echo $_SERVER['PHP_SELF'];?>" class="formclass" method="post">
+
+    <label for="fname">Name</label>
+     <input type="text" id="fname" class="put" name="name" placeholder="your Name is..."><br>
+    <label for="email">email</label>
+     <input type="text" id="email" class="put" name="email" placeholder="Your email address is..."><br>
+    <label for="subject">subject</label>
+     <input type="text" id="subject" class="put" name="subject" placeholder="Subject of email..."><br>
+    <textarea id="" class="sub" placeholder="Type your message here" rows="15" cols="110" name="message" o></textarea><br>
+  <p>
+  	
+  </p>
+      <input type="submit" value="Submit">
+
+ </form>
+</div>
+
+>>>>>>> e2327281775272f590abea0f0c9509e7d6410c15:profile/nseabasi/nseabasi.php
 </body>
 </html>

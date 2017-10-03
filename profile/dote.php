@@ -66,6 +66,51 @@
 </head>
 <body>
 	<div id='container'>
+<<<<<<< HEAD
+			<header id='head'>
+				<h2 class='deep' style='text-align: center;'>Emmanuel Nelson</h2>
+			</header>
+			<div class='content'>
+			<img class='dp' src='http://imgur.com/Zq5NFKE.jpg' alt="dot.e's photo">
+			<h3 style='text-align: center;'>About Me</h3>
+			<p>
+				I an a student at University Of Uyo. Am fascinated with the way the web works and hence interested in web technologies and the programming languages of the world wide web especially PHP (frontend) - still among the learning folks though. I hope to use the internet to help small and medium scale enterprises expand their scope of operations.       
+			</p>
+			<p class='orange'>
+				I am proudly from Akwa Ibom State.
+			</p>
+			<div id='form'>
+			<h3>Contact Me</h3>
+			<form action='' method='post'>
+				<label for='name'>Your Name:</label>	<input name='name' type='text'  size='35' placeholder='Your name here' required ><br>
+				<label for='email'>Email:</label>	<input name='email' type='email' size='35' placeholder='Your email address...' required ><br>
+				<label for='subject'>Subject:</label>	<input type='text' name='subject' size='35' placeholder='Subject...' required ><br>
+				<label for='body'>Message:</label><br>
+				<textarea name='body' rows='5' placeholder='Your message here...' required ></textarea><br>
+				<button type='submit' name='send'>Send >>></button>
+			</form>
+			</div>
+			</div>
+		
+	</div>
+		<footer id='foot'>
+			<table class='links'>
+				<thead>
+				<tr>
+					<td colspan='3'><h5>Find Me on:</h5>
+					</td>
+				</tr>
+					</thead>
+				<tr>
+					<td>
+						<img class='icons' src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" >  <a class='links' href="https://hnginterns.slack.com/team/dot.e" target="_blank">dot.e</a></td>
+								<td><img class='icons' src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="github" >  <a href="https://github.com/dot-e" target="_blank">dot-e</a></td>
+								<td>
+									<img class='icons' src='https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-128.png' alt='twitter' > <a class='links' href='http://twitter.com/NLIrve' target='_blank' >NLIrve</a>
+								</td>
+								</tr>
+								</table>
+=======
 			<div class='w3-container'>
 				<div class='w3-card-4' style='padding: 1.5em;'>
 					<header class='w3-container w3-teal w3-round'>
@@ -105,6 +150,7 @@
 						<button class='w3-btn w3-teal' type='submit' name='send'>Send >>></button>
 					</form>
 					</div>
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 				
 			</div>
 			<footer id='foot'>

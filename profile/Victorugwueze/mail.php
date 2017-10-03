@@ -32,9 +32,15 @@ if(isset($_POST['submit'])){
 		 $password = $result['password'];
 		 $send = "../../sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
 		 header("location:".$send);
+<<<<<<< HEAD
 		 echo $to."<br>";
 		 echo $subject."<br>";
 		 echo $body;
+=======
+		 // echo $to."<br>";
+		 // echo $subject."<br>";
+		 // echo $body;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 	}
 
 }
