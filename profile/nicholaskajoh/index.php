@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
   // allow cors requests
   function cors() {
     // Allow from any origin
@@ -25,6 +26,8 @@
 
   cors();
 
+=======
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
   if(isset($_GET['sendmail'])) {
     $config = include('../../config.php');
     $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
@@ -46,7 +49,11 @@
   <title>Nicholas Kajoh | Hotels.ng Internship</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<<<<<<< HEAD
   <link rel="stylesheet" type="text/css" href="style.css">
+=======
+  <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 </head>
 <body>
   <!-- navbar -->
@@ -88,6 +95,10 @@
         I contribute a healthy dose to Open Source every now and then and experiment all too often (<a href="http://greymatterbay.com" target="_blank">GreyMatterBay.com</a>, loading...). I write too.</p>
 
         <p>Find stage #1 repo: <a href="https://github.com/nicholaskajoh/hng-test">nicholaskajoh/hng-test</a>.</p>
+<<<<<<< HEAD
+=======
+        <p><a class="btn btn-primary" href="https://www.google.com/url?q=https://drive.google.com/file/d/0B6wATzp_MDZ-d29TSjVvVXRhTU0/view?usp%3Dsharing&sa=D&ust=1506486184254000&usg=AFQjCNE-MZoga-mtPGFfWbev5ISxxd4Rig">Download mobile app</a></p>
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
       </div>
     </div>
 
