@@ -1,18 +1,12 @@
-<<<<<<< HEAD:profile/nseabasi/index.php
-<?p
-=======
-<?php 
-
->>>>>>> f135ce16d340b5d4783a5be25afc40fdee4d20ef:profile/nseabasi/index.php
+<?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
-    $subject = $_POST['subject'];
+    $subject = $_POST['ftopic'];
     $to  = 'nseabasiokwong@yahoo.com';
-    $body = $_POST['commentbox'];
+    $body = $_POST['fmsg'];
     if($body == '' || $body == ' ') {
         $error[] = 'You have to TYPE in something to tell me something';
     }
-
     if($subject == '' || $subject == ' ') {
         $error[] = 'Your name and email are very important, TYPE them in';
     }
@@ -28,9 +22,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
-
-<!-- after php summon -->
-
 
 <!DOCTYPE html>
 <html lang= "en">
@@ -105,13 +96,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		resize: none;
 
 	}
-	
-	
-	
-
-	.formclass{
-		padding:15px;
-		background-color:#e57373;
+			
+			.formclass{
+				padding:15px;
+				background-color:#e57373;
 	
 	}
 </style>
@@ -137,36 +125,46 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <p>
 	
 </p>
-
-<div class="container">
-<<<<<<< HEAD:profile/nseabasi/index.php
- <form action="/action_page.php" class="formclass">
-=======
- <form action="#" class="formclass" method="post">
->>>>>>> f135ce16d340b5d4783a5be25afc40fdee4d20ef:profile/nseabasi/index.php
-
-    <label for="fname">Name</label>
-     <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
-    <label for="email">email</label>
-     <input type="text" id="email" class="put" name="email" placeholder="Your email address is..."><br>
-    <label for="subject">subject</label>
-     <input type="text" id="subject" class="put" name="subject" placeholder="Subject of email..."><br>
-    <textarea id="" classs="sub" placeholder="Type your message here" rows="15" cols="110"></textarea><br>
-  <p>
-  	
-  </p>
-      <input type="submit" value="Submit">
-
- </form>
-</div>
-
+			<!-- contact form -->
+			<div class="contact-form">
+				<form action="#" method="post">
+					<div class="form-input">
+						<div class="label"><label for="fname">Name</label></div>
+						<div class="bin">
+							<input type="text" name="fname" id="fname" placeholder="Your Full Name" />
+						</div>
+					</div>
+					<div class="form-input">
+						<div class="label"><label for="fmail">Email</label></div>
+						<div class="bin">
+							<input type="email" name="fmail" id="fmal" placeholder="Your Email Address" />
+						</div>
+					</div>
+					<div class="form-input">
+						<div class="label"><label for="ftopic">Subject</label></div>
+						<div class="bin subject">
+							<input type="text" name="ftopic" id="ftopic" placeholder="Topic" />
+						</div>
+					</div>
+					<div class="form-input txtaea">
+						<div class="label"><label for="fmsg">Message</label></div>
+						<div class="bin">
+							<textarea name="fmsg" id="fmsg" placeholder="Your Message"></textarea>
+						</div>
+					</div>
+					<div class="form-input">
+						<input type="submit" value="Send Message" />
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer>
+			<ul>
+				<li><span><img src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" /></span><a href="https://hnginterns.slack.com/team/nseabasiokwong" target="_blank">@nseabasiokwong</a></li>
+				<li><span><img src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/whatsapp-512.png" alt="whatsapp" /></span><a href="tel:09056517499">09056517499</a></li>
+			</ul>			
+		</footer>
+	</div>
 </body>
 </html>
-
-
-
-
-
-
-
-
