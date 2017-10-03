@@ -4,7 +4,7 @@
 <meta charset='utf-8'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
 <title>Simple Digital Time</title>
-<!-- <link rel="shortcut icon" href="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-0/p526x296/21740404_375541216197595_8975238026865032447_n.jpg?oh=51d64b5b0c3cf62726fc34573c7ebd15&oe=5A5B44C3">-->
+<link rel="shortcut icon" href="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-0/p526x296/21740404_375541216197595_8975238026865032447_n.jpg?oh=51d64b5b0c3cf62726fc34573c7ebd15&oe=5A5B44C3">
 <script type="text/javascript">
   function startTime() {
     var today = new Date();
@@ -45,16 +45,40 @@ function checkTime(i) {
     padding: 0;
     font-family: sans-serif;
     min-width: 300px;
-    max-width: 100px;
+    max-width: 1000px;
 }
 #header {
     background-color:teal;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:16px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: transperant;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: transparent;
+    color: white;
 }
 #section {
-    height: 400px;
+    height: 406px;
     width:1200px;
     float:center;
     padding:0 120px;
@@ -71,7 +95,7 @@ function checkTime(i) {
 
 .clockdate-wrapper {
     background-color: #transparent;
-    padding:5px;
+    padding:0px;
     max-width:350px;
     width:100%;
     text-align:center;
@@ -106,6 +130,12 @@ function checkTime(i) {
     
 <div id="header">
 <h1> A Simple Digital Time With Date</h1>
+<div class="topnav">
+  <a href="passwordgen.html">Passwor Generator</a>
+  <a href="word.html">Word Count</a>
+  <a href="calculator.html">Calculator</a>
+  <a class="active" href="hogan26.html">Home</a>
+</div>
 </div>
 
 <div id="section">  
