@@ -1,21 +1,18 @@
-<?php 
-
+<?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-	$name =$_POST['name'];
-	$email = $_POST['email'];
+    $error = array();
     $subject = $_POST['subject'];
     $to  = 'nseabasiokwong@yahoo.com';
-    $body = $_POST['message']." by ".$name. " email ".$email;
+    $body = $_POST['commentbox'];
     if($body == '' || $body == ' ') {
-        $error[] = 'You have to TYPE in something to tell me something';
+        $error[] = 'Please type something';
     }
 
     if($subject == '' || $subject == ' ') {
-        $error[] = 'Your name and email are very important, TYPE them in';
+        $error[] = 'Your name and email are important to me, TYPE them in';
     }
     if(empty($error)) {
-        $config = include('../config.php');
+        $config = include('../../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -137,18 +134,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </p>
 
 <div class="container">
-
- 
-
- <form action="<?php echo $_SERVER['PHP_SELF'];?>" class="formclass" method="post">
+ <form action="<?= $_SERVER['PHP_SELF']; ?> class="formclass">
 
     <label for="fname">Name</label>
-     <input type="text" id="fname" class="put" name="name" placeholder="your Name is..."><br>
+     <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>
     <label for="email">email</label>
      <input type="text" id="email" class="put" name="email" placeholder="Your email address is..."><br>
     <label for="subject">subject</label>
      <input type="text" id="subject" class="put" name="subject" placeholder="Subject of email..."><br>
-    <textarea id="" class="sub" placeholder="Type your message here" rows="15" cols="110" name="message" o></textarea><br>
+    <textarea id="" classs="sub" placeholder="Type your message here" rows="15" cols="110"></textarea><br>
   <p>
   	
   </p>
