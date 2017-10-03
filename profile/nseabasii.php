@@ -1,23 +1,18 @@
-<<<<<<< HEAD:profile/nseabasi/index.php
-<?p
-=======
-<?php 
-
->>>>>>> f135ce16d340b5d4783a5be25afc40fdee4d20ef:profile/nseabasi/index.php
+<?php
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
+    $error = array();
     $subject = $_POST['subject'];
     $to  = 'nseabasiokwong@yahoo.com';
     $body = $_POST['commentbox'];
     if($body == '' || $body == ' ') {
-        $error[] = 'You have to TYPE in something to tell me something';
+        $error[] = 'Please type something';
     }
 
     if($subject == '' || $subject == ' ') {
-        $error[] = 'Your name and email are very important, TYPE them in';
+        $error[] = 'Your name and email are important to me, TYPE them in';
     }
     if(empty($error)) {
-        $config = include('../config.php');
+        $config = include('../../config.php');
         $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
         $con = new PDO($dsn, $config['username'], $config['pass']);
         $exe = $con->query('SELECT * FROM password LIMIT 1');
@@ -139,11 +134,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 </p>
 
 <div class="container">
-<<<<<<< HEAD:profile/nseabasi/index.php
- <form action="/action_page.php" class="formclass">
-=======
- <form action="#" class="formclass" method="post">
->>>>>>> f135ce16d340b5d4783a5be25afc40fdee4d20ef:profile/nseabasi/index.php
+ <form action="<?= $_SERVER['PHP_SELF']; ?> class="formclass">
 
     <label for="fname">Name</label>
      <input type="text" id="fname" class="put" name="Name" placeholder="your Name is..."><br>

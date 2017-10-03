@@ -1,0 +1,247 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+<title>Rhodinet</title>
+
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+
+body {
+  padding-top:25px;
+  background: #FFFFFF;
+  margin-left:10px;
+  margin-right:10px;
+}
+.container {
+  max-width:700px;
+  margin:0 auto;
+  text-align:center;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+  background-color:#00868B;
+}
+.head {
+  -webkit-border-radius:2px 2px 0px 0px;
+  -moz-border-radius:2px 2px 0px 0px;
+  border-radius:2px26px 0px 0px;
+  background-color:#00868B;
+  color:#00868B;
+}
+
+
+h2 {
+  text-align:center;
+  padding:5px 0 5px 0;
+  font-size: 1.4em;
+}
+input {
+  margin-bottom:10px;
+}
+textarea {
+  height:80px;
+  margin-bottom:10px;
+}
+input:first-of-type
+{
+  margin-top:5px;
+}
+input, textarea {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#00868B;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 700px;
+}
+::-webkit-input-placeholder {
+   color: #000;
+}
+:-moz-placeholder {
+   color: #000;  
+}
+::-moz-placeholder {
+   color: #000; 
+}
+:-ms-input-placeholder {  
+   color: #000;  
+}
+
+hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#2ABCA7;
+  padding: 12px 45px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #2ABCA7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
+}
+button:hover, .button:hover {
+  background:#8B3626;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#d89c9c;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+/* media queries */
+@media (max-width: 700px) {
+  label.error {
+    width: 90%;
+  }
+  input, textarea {
+    width: 90%;
+  }
+  button {
+    width:90%;
+  }
+  body {
+  padding-top:10px;
+  }  
+}
+.message {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#8B3626;
+    width: 50%;
+    margin:auto;
+    color: #000;
+    color: #8B3626;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+
+
+    
+    .profile {
+        /*background: #8B3626;*/
+        margin-bottom: 100px;
+    }
+    
+    .profile-top {
+        min-height: 150px;
+        /*background: #999;*/
+        background: #8B3626;
+    }
+    
+    .profile-image {
+        margin-top: -100px;
+        height: 300px;
+        width: 300px;
+        border-radius: 50px;
+        border: 4px solid #FFB90F;
+    }
+    
+    .profile-body {
+        padding: 20px;
+        text-align: center;
+        color: #8B3626;
+    }
+    .text-color{
+        color: #104E8B;
+    }
+    </style>
+<body>
+<div class="profile">
+	<div class="profile-top"></div>
+	<div class="text-center">
+	<center><img  src="https://image.ibb.co/cjXCcQ/Rhodinet.jpg" class="profile-image"></center>
+	</div>
+	<div class="profile-body">
+            <h3>Imo Okon 
+                   <br>
+                   <small>Web Developer</small>
+                   <br>
+                   <small>Event Pro Manager</small><br>
+  <br> <small class="text-color"><b>Rhodinet Stage 3 Repo</b></small></h3>
+
+                             <h8> I am a Laxury Consultant in GWTcorp a POSH, FERI and FERIMOSH designers company that deals with Men and Women wears.
+    a graduate of Physics, University of Uyo, an indigene of Akwa Ibom State, Nigeria. I love Korean martial arts (Taekwondo). 
+     My career as a computer programmer in HTML, CSS, MYSQL, JAVA, PYTHON, JAVASCRIPT, PHP and ANDROID is a self determination in my life. 
+        I have passion to work with Web and Android developers. </h8>
+           </div>
+           <br> <br>         
+        <div class="container"><h2>Contact Rhodinet</h2>
+             <div class="row">
+             <div class="col-sm-10">
+             <div class="text-center">
+    <a class="btn btn-primary btn-lg" href="https://hnginterns.slack.com/messages/C3QLSPBNK/team/rhodinett" role="button"> Slack</a>
+ <a class="btn btn-primary btn-lg"href="https://github.com/rhodinet" target="_blank">Github</a>
+ <a class="btn btn-primary btn-lg" href="https://twitter.com/rhodinethub" target="_blank">Twitter</a>
+ <a class="btn btn-primary btn-lg" href="https://web.facebook.com/rhodinet" target="_blank">Facebook</a>
+			    <br> <br> 
+			    <a class="btn btn-primary btn-lg" href="https://globalwealthtrade.com/rhodimos/opportunity.html" target="_blank">GWT Designers Company</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<hr/>
+              
+
+       <form  id="contact" action="rhodinet.php" method="post">
+  <div class="container">
+    <div class="head">
+      <h2>Contact Rhodinet</h2>
+    </div>
+ <input type="text" name="name" placeholder="Full Name" required/><br />
+ <input  type="email" name="email" placeholder="E-mail" required/><br />
+ <input type="text" placeholder="Subject" name="subject" required/><br>
+ <textarea type="text" name="message" placeholder="Write message here..."></textarea><br />
+     <button id="submit" type="submit"> Submit
+    </button>
+  </div>
+</form>
+              
+
+</body>
+
+</html>
