@@ -76,6 +76,7 @@
        <a href="https://github.com/nseetim/hotels.ng/blob/master/script.php" class="fa fa-github" aria-hidden="true">Stage 1 repo</a>
        <a href="http://hnginterns.slack.com/etimnseabasi" class="fa fa-slack" aria-hidden="true">slack</a>
        <a href="https://facebook.com/nse.etim" class="fa fa-facebook-square" aria-hidden="true">Facebook</a>
+       <a href="https://www.dropbox.com/s/7iox5faibx8q2hz/nse.apk?dl=0" class="fa fa-dropbox" aria-hidden="true">Get my app here</a>
 
    </div>
 </div>

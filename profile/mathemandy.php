@@ -112,6 +112,15 @@
                </div>
             </div>
          </div>
+            <div class="row">
+            <div class="col-1">
+               <div >
+                  <h2>
+                     <a class="title" href="http://bit.ly/2iGUBke"><i class="fa fa-github"></i> Android App</a>
+                  </h2>
+               </div>
+            </div>
+         </div>
       </div>
       <div class="container">
          <form action="#" method="get">

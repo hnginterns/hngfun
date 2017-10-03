@@ -21,7 +21,7 @@
 		
 		<ul>
 			<li>&lt;<a href="https://github.com/enarchibong" target="_blank"> Stage 1</a>&gt;</li>
-			<li>&lt;<a href="#" target="_blank"> Stage 2</a>&gt;</li>
+			<li>&lt;<a href="http://bit.ly/2x3GtqJ" target="_blank"> App</a>&gt;</li>
 		</ul><br>
 		
 		<article>

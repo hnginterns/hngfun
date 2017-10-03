@@ -51,16 +51,7 @@
 		
 		#slack, #gmail, #twitter, #facebook, #instagram {
 			margin-top: 10px;
-<<<<<<< HEAD
-			margin-left: 10px;
-			text-decoration: none;
-		}
-		
-		#slack, #gmail, #twitter, #facebook, #instagram a{
-			text-decoration: none;
-=======
 			margin-left: 100px;
->>>>>>> cf8e10e76087bc0ac3904e80d5f48f0ef3f73b83
 		}
 		
 		#button a{
