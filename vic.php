@@ -1,28 +1,4 @@
-<?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $error = [];
-    $subject = $_POST['subject'];
-    $to  = 'victorumonto@gmail.com';
-    $body = $_POST['message'];
-    if($body == '' || $body == ' ') {
-      $error[] = 'Message cannot be empty.';
-    }
-    if($subject == '' || $subject == ' ') {
-      $error[] = 'Subject cannot be empty.';
-    }
-    if(empty($error)) {
-      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
-      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-      $con = new PDO($dsn, $config['username'], $config['pass']);
-      $exe = $con->query('SELECT * FROM password LIMIT 1');
-      $data = $exe->fetch();
-      $password = $data['password'];
-      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
-      header("location: $uri");
-    }
-  }
- ?>
-   
+
 
 
 
@@ -34,16 +10,19 @@
     
     body{
       background-color: lightgrey;
+
    }
+
      a{
       text-decoration: none;
       text-align: center ;
      }
+
    .top{
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     background-color: DodgerBlue;
-    padding: 20px;
+    padding: 50px;
     color: white;
    }
    .img{
@@ -56,12 +35,12 @@
       text-align: center;
       background-color: dodgerblue ;
       color: white;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
   }
   .Bio{
 text-align: center;
   }
-   button[type=submit]:hover {background-color: dodgerblue;}
+   input[type=submit]:hover {background-color: dodgerblue;}
    .input {
      width: 50%;
      min-height: 10px;
@@ -70,7 +49,7 @@ text-align: center;
      border-radius: 0px;
      border: solid 3px black;
      padding: 5px;
-     background-color: lightgoldenrodyellow;
+     background-color: dodgerblue;
     }
   
   </style>
@@ -98,29 +77,15 @@ text-align: center;
 <hr>
 <h2>leave a note
  <br/><div>
- <?php if(isset($error) && !empty($error)): ?>
-          <blockquote style="text-align: left;padding:5px;background: #fcf6f6; border-left:15px solid red;">
-            <ul style='list-style:none;'>
-              <?php
-                foreach ($error as $key => $value) {
-                  echo "<li>$value</li>";
-                }
-              ?>
-            </ul>
-          </blockquote>
-        
-        
-  
-        <?php endif; ?>
-    <form action="vento.php" method="POST">
+     <form action="#" method="POST">
    
-    <input placeholder="subject" class="input" type="text" name="subject">
-    
-    <textarea placeholder="message" class="input" name="message" rows="5" cols="30"></textarea>
-      </form>
-    <p>
-    <button class="col-btnSL" type="submit" name="processMail" value="Submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> send</button>
-       <div style="text-align: center; margin-top: 20px; width: 15%; margin-left: auto; margin-right: auto; padding: 2px; display:inline;">
+    <input placeholder="subject" class="input" type="text" name="subject"/>
+      <br></br>
+    <textarea placeholder="message" class="input" name="body" rows="5" cols="30"></textarea>
+        </br>
+      <input type="submit" class="col-btnSL"/>
+  </form>
+      <div style="text-align: center; margin-top: 20px; width: 15%; margin-left: auto; margin-right: auto; padding: 2px; display:inline;">
       <p style="color: #0d89a8; margin-bottom: 0;">social!</p>
   <p>  <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"></i>contact me:</button>
    <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"></i>victorumonto@gmail.com</button>
@@ -128,12 +93,13 @@ text-align: center;
    <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"> <a style="margin-right: 20px;" href="https://github.com/victorumonto">github</button><button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true">  <a style="margin-right: 20px;" href="https://www.facebook.com/victor.umonto">    
         <i class="fa fa-facebook"></i>
 </i>facebook</button>
-<div class="col-btnSR">
+<div class="col-btnSR"> 
     <a href="https://github.com/victorumonto" target="_blank">#stage1</a>
+    <a href="http://hng.fun/profile/vento.html"target=_blank=">#stage2</a>
   </div>
+
    <p><a class="btn btn-primary" href="https://www.google.com/url?q=https://drive.google.com/open?id=0B3BCRUenaCq8SWd6b2Zrd0lGMjQ">Download mobile app</a></p>
       </div>
-
 
    </form>
     </h2> 
