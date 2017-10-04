@@ -1,0 +1,390 @@
+<style type="text/css">
+  #calculator {
+			background-color: #F76126;
+			width: 300px;
+			height: 350px;
+			border: 0px solid black;
+			box-shadow: 0 0 0px 0px #F76126;
+			margin: -16px auto;
+		}
+
+		#display {
+			margin-top: 0em;
+			margin-bottom: 20px;
+			height: 30px;
+			width: 12em;
+			border-radius: 5px;
+			border: 1px solid #F76126;
+			box-shadow: 0 0 0px 0px black;
+			text-align: right;
+			font-size: 20px;
+			font-weight: bold;
+			padding: 5px 5px 0 0;
+		}
+
+		#keys {
+			margin: 4px;
+			font-weight: bold;
+			border-radius: 5px;
+			width:41px;
+			height:35px;
+			box-shadow: 0 0 2px 1px black;
+			outline: none;
+		}
+
+		#equal {
+			margin: 4px;
+			font-weight: bold;
+			border-radius: 5px;
+			width:96px;
+			height:35px;
+			outline: none;
+			box-shadow: 0 0 2px 1px black;
+		}
+
+		#twitter a{
+			text-decoration: none;
+		}
+		#twitter a:hover{
+			text-decoration: underline;
+		}
+    
+    .seation {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    background: white;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 35%;
+    }
+      .seption {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    background: white;
+    text-align: left;
+    font-size: 15px;
+    margin-top: -110px;
+    margin-left: 420px;
+    margin-bottom: 2px;
+    width: 35%;
+    }
+    .section-title {
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 25px;
+    position: relative;
+    background: #F76126;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    width: 60%;
+    }
+    .sedtion-title {
+    padding: 20px;
+    position: relative;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 90px;
+    width: 90%;
+    }
+    .drop{
+        border-radius: 20px;
+        height: 35px;
+        text-align: center;
+        width: 70%;
+        margin-top: 5px 10px;
+    }
+    .drop2{
+        border-radius: 20px;
+        height: 35px;
+        text-align: center;
+        width: 70%;
+        margin:0px 0px 20px 0px;
+    }
+     .form{
+    display:grid;
+    width: 80%;
+    height: 60%;
+    border: 2px solid transparent;
+    padding: 2px;
+    margin: 0px 10px 10px 35px;
+    text-align: left;
+    white-space: normal;
+    word-spacing: normal;
+    }
+    p{
+        font-family: cursive;
+        font-weight: bold;
+        color: grey;
+    }
+    html{
+        height: 70%;
+        width: 90%;
+    }
+    body{
+        font-size: 13px;
+        line-height: 15px;
+        margin: 0px;
+        height: 70%;
+        padding: 0px;
+        border: 10px;
+        width: 100%;
+        font-family: sans-serif;
+        background: grey;
+        background-repeat: no-repeat;
+    }
+    img{
+        border: none;
+        height: 80px;
+        width: 70px;
+        border-radius: 40%;
+        display:block;
+    }
+    h3{
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-left: 210px;
+    }
+    table,tr,td{
+        border-collapse: collapse;
+        vertical-align: top;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    a{
+        color: orange;
+    }
+    #header{
+        height: 70px;
+        background: #202A35;
+        text-align: left;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        display:contents;
+    }
+    #header h1{
+        padding: 1.5em;
+        margin: 0px;
+    }
+    /*Main and Copyright*/
+    #main{
+        margin: 0px;
+        padding: 0px;
+        height: 90%;
+        width: 100%;
+        border: 20px;
+        background: white;
+    }
+    #structure{
+        height: 600px;
+        width: 100%;
+    }
+    .heed{
+        font-size: 18px;
+    }
+    #footer{
+        margin-left: 80px;
+        height: 3em;
+        padding: 1em;
+        color: black;
+    }
+    /*Navigation Bar*/
+    #navigation{
+        width: 150px;
+        padding: 1em 2em;
+        background: white;
+        border-width: 5px;
+        border-color: white #202A35 black;
+        border-style: solid;
+    }
+     /*Navigation Bar 2*/
+    #navigation a{
+        color: #F76126;
+        list-style: square;
+        margin-top: 10px 10px 10px 10px;
+        display: inline-block;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    ul.pages{
+        padding-left: 2em;
+        list-style: square;
+    }
+    ul.subjects{
+        padding-left: 0px;
+        list-style: circle;
+    }
+    .selected{
+        font-weight: bold;
+    }
+    #page{
+        padding-left: 2em;
+        vertical-align: top;
+        border: 3px;
+        background: white;
+    }
+    #page h2{
+        color: black;
+        margin-top: 1em;
+    }
+    button{
+        color: black;
+        height: 30px;
+        width: 80px;
+        margin-top: -77px;
+        margin-left: 10px;
+        border-radius: 15px;
+    }
+</style>
+<html>
+    <head>
+        <title>Phone Top Up</title>
+    </head>
+    <body>
+        <div class="sedtion-title">
+        <div id="header">
+            <br>
+            <h3><strong>TransferRules</strong></h3>
+        
+        </div>
+        <div id="main">
+        <table id="structure">
+            <tr>
+                <td id="navigation">
+                    <ul>
+                    <li><a href=""><strong>Dashboard</strong></a></li>
+                    <br>
+                    <li><a href=""><strong>Transactions</strong></a></li><br>
+                    <li><a href=""><strong>Beneficiaries</strong></a></li><br>
+                    <li><a href=""><strong>Users</strong></a></li><br>
+                    <li><a href=""><strong>Phone TopUp</strong></a></li>
+                </ul>
+                </td>
+            <td id="page">
+                <br>
+                <!--<center><h2>Administrator</h2></center>-->
+                <form>
+                   <h4 class="heed">Balance</h4>
+                   <div class="seation">
+                       <form>
+                           <p>Available balance <br>in Wallet</p>
+                           <span name="wallet"><em>#1,000,000</em></span>
+                       </form>
+                    </div>
+                <br><br>
+                     <div class="section-title">
+                <form class="form">
+                    <center>
+                    <h4>Top Up Prepaid Mobile Phone</h4>
+				    <select phone="optionDrop" onclick="getDropdown()" class="drop">
+                        <option value="">Select Mobile Number</option>
+                    </select><br><br>
+                     <select operator="optionDrop" onclick="getOperator()" class="drop2">
+                        <option value="">Mobile Network Operator</option>
+                         <option value="">MTN</option>
+                          <option value="">Airtel</option>
+                          <option value="">GLO</option>
+                         <option value="">Etisalat</option>
+                         <option value="">9Mobile</option></select>
+                      <input type="number" name="amount" placeholder="Maximum Top of #5000" class="drop2">   
+                        <h4>Enter PIN</h4>
+                    <div id="calculator">  
+                <form>
+			<input type='text' name='' id='display' maxlength="10" disabled>
+			<br>
+				<input type='button' value='7' id='keys' onclick='toScreen("7")'>
+				<input type='button' value='8' id='keys' onclick='toScreen("8")'>
+				<input type='button' value='9' id='keys' onclick='toScreen("9")'>
+				<br>
+
+				<input type='button' value='4' id='keys' onclick='toScreen("4")'>
+				<input type='button' value='5' id='keys' onclick='toScreen("5")'>
+				<input type='button' value='6' id='keys' onclick='toScreen("6")'>
+				<br>
+
+				
+				<input type='button' value='1' id='keys' onclick='toScreen("1")'>
+				<input type='button' value='2' id='keys' onclick='toScreen("2")'>
+				<input type='button' value='3' id='keys' onclick='toScreen("3")'>
+				<br>
+            
+				<input type='button' value='0' id='keys' onclick='toScreen("0")'>
+                <input type='button' value='X' id='keys' onclick='backspace()'>
+                    </form>
+	           </div>
+
+                    <button type="submit" name="pay" value="Pay">SEND</button>
+                        </center>
+                </form>
+            </div>
+                </form>
+                </td>
+            </tr>
+        </table>
+        </div>
+        </div>
+    </body>
+</html>
+
+<script type="text/javascript">
+    
+
+	<script type="text/javascript">
+		
+	let box = document.getElementById('display');
+
+	function toScreen(x){
+
+		let displayArray = box.value.toString().split("");
+
+		if(box.value.length === 14){
+			box.value +='';
+		} else if(x ==='c'){
+			box.value = '';
+		 } else{
+			box.value += x;
+		}
+	}
+
+	function answer(){
+		x = box.value;
+		let y;
+		try {
+			// y = eval(x);
+			y = eval(x.replace(/\b0*((\d+\.\d+|\d+))\b/g, "$1"))
+			let resultArray = y.toString().length;
+			if(resultArray >= 14){
+				y = y.toPrecision(14);
+				box.value = y;
+			}
+			else{
+				box.value = y;
+			}
+		}
+		catch (e) {
+    		if (e instanceof SyntaxError) {
+    		box.value = "Syntax Error";
+    		}
+		}
+	}
+
+	function backspace(){
+		let num = box.value;
+		let length = num.length-1;
+		let newNum = num.substring(0, length);
+		box.value = newNum;
+	}
+</script>
+
+        

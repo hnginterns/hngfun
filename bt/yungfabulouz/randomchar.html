@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>Random Char Gen</title>
+
+	 <style type="text/css">
+		.in{
+          padding: 15px;
+          height: 15px;
+          width: 400px;
+          padding-top: 35px;
+          padding-bottom: 25px;
+          background-color: white;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 15px;
+          display: block;
+
+       
+
+        }
+
+        .general{
+        	height: auto;
+        	width: 600px;
+        	background-color: #ff6f00;
+        	border-radius: 15px;
+        	text-align: center;
+        	margin-left: auto;
+        	margin-right: auto;
+        }
+
+        .cover{
+          background-color: #ff6f00;
+          margin-left: auto;
+          margin-right: auto;
+          height: 500px;
+          width: 600px;
+
+
+
+          
+        }
+
+        .body{
+          background-color: #ffc107;
+          resize: 1em;
+
+
+        }
+
+        .sub{
+          background-color: #ffc107;
+          margin-left: 225px;
+          margin-right: auto;
+
+        }
+
+
+
+
+		}
+	 </style>
+
+
+ </head>
+  <body>
+  <div class="body">
+<script>
+    function randomString() {
+        var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+        var string_length = 10;
+        var randomstring = '';
+        for (var i=0; i<string_length; i++) {
+            var rnum = Math.floor(Math.random() * chars.length);
+            randomstring += chars.substring(rnum,rnum+1);
+        }
+        document.randform.randomfield.value = randomstring;
+    }
+</script>
+
+  
+   <h1 class="general">RANDOM CHARACTER GENERATOR</h1>
+    <form name="randform" class="cover">
+    &nbsp;&nbsp;
+    <input type="text" class="in" placeholder="Enter Your Full Name" required><br>&nbsp;
+    <input type="text"  class="in" name="randomfield" value="" placeholder="Your Random Characters Will Display Here"><br>&nbsp;
+    <input type="button" class="sub" value="Generate Password" onClick="randomString();">&nbsp;
+</form>
+
+
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>E Calculator</title>
+ <link href="./E Calculator_files/css" rel="stylesheet">
+</head>
+<body bgcolor="black" text="gold"><center>
+<h2 style="color: yellow;">Emmanuel calcutor</h2>	
+
+<style type="text/css">
+    .button {
+          color: red;
+          background: gold-white;
+          width: 40px;
+          height: 46px;
+          font-family: font-family: 'Mukta', sans-serif;
+    }
+      .c   {
+    	color:black;
+    	background: red;
+    	width: 40px;
+    	height: 40px;
+    	font-family: font-family: 'Mukta', sans-serif;
+
+    }
+     .box {
+          width: 163px; height: 40px;  
+     }
+      .ox{
+           display: block;
+           margin: auto;
+           width:13%;
+           border: solid pink 8px;
+           border-radius: 9px;
+}
+  
+</style>
+<form name="calculator" class="ox">
+      <br>
+      <input type="textfield" name="ans" value=" " class="box">
+      <br>
+      <br>
+      <input type="button" value="1" onclick="                                                      
+       document.calculator.ans.value+='1'" class="button">                                 
+      <input type="button" value="2" onclick="                                                    
+       document.calculator.ans.value+='2'" class="button">
+      <input type="button" value="3" onclick="                                                           
+       document.calculator.ans.value+='3'" class="button">
+      <input type="button" value="+" onclick="                                                        
+      document.calculator.ans.value+='+'" class="button">
+       <br>      
+       <input type="button" value="4" onclick="                                                     
+       document.calculator.ans.value+='4'" class="button"> 
+       <input type="button" value="5" onclick="                                                    
+       document.calculator.ans.value+='5'" class="button">
+       <input type="button" value="6" onclick="                                                            document.calculator.ans.value+='6'" class="button">
+       <input type="button" value="-" onclick="
+       document.calculator.ans.value+='-'" class="button">
+       <br>       
+        <input type="button" value="7" onclick="
+       document.calculator.ans.value+='7'" class="button">
+       <input type="button" value="8" onclick="
+       document.calculator.ans.value+='8'" class="button">
+       <input type="button" value="9" onclick="
+       document.calculator.ans.value+='9'" class="button">
+       <input type="button" value="*" onclick="
+       document.calculator.ans.value+='*'" class="button">
+       <br>
+        <input type="button" value="/" onclick="
+        document.calculator.ans.value+='/'" class="button">
+        <input type="button" value="0" onclick="
+        document.calculator.ans.value+='0'" class="button">
+        <input type="reset" value="C" class="c">
+        <input type="button" value="=" onClick="
+        document.calculator.ans.value=eval(
+        document.calculator.ans.value)" class="button">
+ </form>
+</center>
+</body>
+</html>
+
+<title>EMMANUEL EKONG</title>
+</head>
+<style type="text/css"> 
+div{
+    border:19px hidden # white;
+    border-style: hidden;
+    border-color: black;
+    font-size: 40pt;
+    color:red;
+    letter-spacing: 5;
+
+         }
+</style>
+<body bgcolor="black" onload="startTime()">
+<hr size="10" color="pink" >
+<center>
+<hr size="10" color="pink" >
+<div>
+<h4><b><font color="white" style="font-size: 40">Digital Time</font></b></h4>
+    <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+}
+</script>
+</div>
+<div id="txt"></div>
+</center>
+<!--Time Ends here -->
+<br>
+<footer class="copyright" align="center" font-size="30">
+      &copy; 2017 Emmanuel Ekong. All rights reserved.
+</footer>
+</form>
+</center>
+</body>
+</html>

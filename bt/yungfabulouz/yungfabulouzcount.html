@@ -5,22 +5,15 @@
 <title> LET'S COUNT WORDS</title>
 	<style type="text/css">
 	    body{
-	    	background: url(https://previews.123rf.com/images/kgtoh/kgtoh1505/kgtoh150500966/40188002-Background-concept-wordcloud-illustration-of-counter-terrorism-Stock-Illustration.jpg);
-	    	opacity: 0.89;
+	    	text-align: center;
+	    	background-color: #ffc107;
+	    	font-family: Georgia;
 	    }
-		.box {
-			text-align: center;
-			max-width: 1000px;
-			box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.5);
-			margin: auto;
-			background-color: #9ad1f1; 
-			padding: 30px;
-			}
-				
+	    
 		p {
 			letter-spacing: 2px;
 			font-size: 25px;
-			color: #000;
+			color: #000000;
 			margin-top: 4em;
 		}
 		
@@ -29,20 +22,21 @@
 			  font-size: 20px;
 			  text-align: center;
 			  cursor: pointer;
-			  color: #9ad1f1;
-			  background-color: #ff513a;
+			  color: #000;
+			  background-color: #ffc107;
 			  border-radius: 5px;
 			  margin-bottom: 5px;
 			  margin-top: 25px;
 			  border-radius: 40%;
 			  box-shadow: 0 0 3px 6px #000;
+			  outline-style: hidden;
 			}
 			
 		#input {
 			 width: 500px;
 			 height: 130px;
 			 font-size: 20px;
-			 border: 2px solid red;
+			 border: 2px solid #000;
 			 text-align: center;
 			 padding: 2px;
 			 margin-top: 1em;
@@ -50,26 +44,29 @@
 			 box-shadow: -2px 2px #000;
 		}
 		#sc{
-			 background: linear-gradient(to bottom, #f30 25%, #ff9 95%);
+			 background-color: #ffe082;
 	         width: 700px;
-	         height: 585px;
+	         height: 533px;
 	         border: 2px, solid black;
 	         border-radius: 6px;
 	         text-align: center;
 	         margin-top: auto;
 	         margin-bottom: 50px;
-	         margin-left: 25%;
+	         margin-left: 20%;
 	         margin-right: 55%; 
-	         box-shadow: 0 0 2px 4px #ff9;
+	         box-shadow: 0 0 2px 2px #000;
 	         opacity: transparent; 
 		}
-		 .submit:hover {background-color: #ff0;
+		.submit:hover {background-color: #fff;
 		 }
 	    h1{
-	    	color: #9ad1f1;
+	    	color: #000;
 	    	font-family: Georgia;
 	    }
-
+	    #rights{
+	       color: #000;
+	       margin-top: 0em;
+	    }
 		
 		
 	</style>
@@ -77,27 +74,23 @@
 
 <body>
 <div id="sc">
-    <h1>STRING COUNTER</h1>
-	<input id="input" type="text" placeholder="Enter string here !!!"><br/>
+    <h1>CHARACTER COUNTER</h1>
+	<input id="input" type="text" placeholder="Enter any character here !!!"><br/>
 	<br><br>
   	<input class="submit" type="button" value="Let's count" onclick="counts()">
 	
-	<p id="totalCount"><br> Answer here!!</p>
-	
-		
+	<p id="totalCount"><br> Answer </p>
 </div>
+   
 </body>
 
 <script>
 	
 	  function counts()	{
-		//read inputed text
-        var inputText = document.getElementById("input");
+		   var inputText = document.getElementById("input");
         var enteredText = inputText.value;
-		//dont count spaces
         var withOutSpace = enteredText.replace(/ /g,"")
-		//stringcount in the text
-        var totalCount = withOutSpace.length;
+		var totalCount = withOutSpace.length;
 
 		
 		if(totalCount === 0) {
@@ -107,7 +100,7 @@
 		}else if (totalCount > 0) {
 			document.getElementById("totalCount").innerHTML = 'The entered string \n"' +  enteredText +'" contains ' + totalCount + ' letters';
 		}else {
-			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
+			document.getElementById("totalCount").innerHTML = 'Please enter any character into the box above.';
 		}
         
 	  }

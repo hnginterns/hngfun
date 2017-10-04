@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>Word Counting</title>
+<link rel="shortcut icon" href="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-0/p526x296/21740404_375541216197595_8975238026865032447_n.jpg?oh=51d64b5b0c3cf62726fc34573c7ebd15&oe=5A5B44C3">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  //********************************************************
+// function call for word count
+//********************************************************
+
+counter = function() {
+    var value = $('textarea#counter-text').val();
+    if (value.length === 0) {
+        $('span#counter-words').html(0);
+        $('span#counter-chars').html(0);
+    return;
+}
+    
+var regex = /\s+/gi;
+var wordCount = value.trim().replace(regex, ' ').split(' ').length;
+var totalChars = value.length;
+    
+    $('span#counter-words').html(wordCount);
+    $('span#counter-chars').html(totalChars);
+};
+
+
+jQuery(document).ready(function($) {
+
+//********************************************************
+// loading word count function on user input
+//********************************************************
+
+    $('textarea#counter-text').val('');
+
+    $('textarea#counter-text').change(counter);
+    $('textarea#counter-text').keydown(counter);
+    $('textarea#counter-text').keypress(counter);
+    $('textarea#counter-text').keyup(counter);
+    $('textarea#counter-text').blur(counter);
+    $('textarea#counter-text').focus(counter);
+
+//********************************************************
+// clear count on button
+//********************************************************
+
+    $('input.counter-clear').click( function() {
+        $('textarea#counter-text').val('');
+        $('span#counter-words').html(0);
+        $('span#counter-chars').html(0);
+        // display notification
+        $('span.counter-notice').fadeIn(1200).delay(500).fadeOut(1200);
+    });
+
+});
+</script>
+
+<style>
+#body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-width: 300px;
+    max-width: 1000px;
+}
+#header {
+    background-color:teal;
+    color:white;
+    text-align:center;
+    padding:16px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: transperant;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: transparent;
+    color: white;
+}
+#section {
+    height: 457px;
+    width:1200px;
+    float:center;
+    padding:0 120px;
+    font-size: 20px;
+    background-color:transparent;
+}
+#wrapper {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#counter-text {
+    font-family: sans-serif;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+input.counter-clear {
+    background: none repeat scroll 0 0 #333333;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    font-size: 0.875em;
+    font-weight: 300;
+    padding: 5px 7px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+span.counter-notice {
+    background: none repeat scroll 0 0 #FFC8C8;
+    border: 1px solid #FF3232;
+    border-radius: 3px 3px 3px 3px;
+    color: #FF0000;
+    font-size: 0.875em;
+    font-weight: 300;
+    padding: 5px 7px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    width: 150px;
+    text-align: center; 
+}
+
+#footer {
+    background-color:teal;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+    
+<div id="header">
+<h1> Word Counting</h1>
+<div class="topnav">
+  <a href="passwordgen.html">Passwor Generator</a>
+  <a href="word.html">Word Count</a>
+  <a href="calculator.html">Calculator</a>
+  <a class="active" href="hogan26.html">Home</a>
+</div>
+</div>
+
+<div id="section">  
+<!-- Word Counting--> 
+<div id="wrapper">
+
+    <textarea id="counter-text"></textarea>
+
+    <div class="counter-data">
+        <ul>
+            <li>Total Words: <span id="counter-words">0</span></li>
+            <li>Total Characters: <span id="counter-chars">0</span></li>
+        </ul>
+    </div>
+
+    <input class="counter-clear" type="button" value="Clear Text">
+        
+
+    <span class="counter-notice" style="display:none;">Cleared!</span>
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">   
+&copy; Copyright 2017 HNG Internship
+</div>
+
+</body>
+</html>

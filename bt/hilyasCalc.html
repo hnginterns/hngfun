@@ -8,6 +8,9 @@
 body {  
     background-color:#fff;  
     margin: 0px auto;  
+    background-image: url("http://www.filetolink.com/f41aaeaa7e");
+    background-repeat: repeat;
+    background-attachment: fixed;
   
 }  
 
@@ -25,7 +28,7 @@ h1{
  text-align: center;
     padding-right: 150px;
  font-size: 40px;  
- color: #003652;  
+ color: chocolate;  
    
 }  
   
@@ -46,6 +49,7 @@ h1{
    
 }  
   
+/*
 button{  
  background-color: #fff;  
  width: 80px;  
@@ -56,6 +60,7 @@ button{
   
 }  
   
+*/
 button:hover{  
   background-color: #509CA9;   
     
@@ -67,6 +72,10 @@ button:hover{
 #btn
     {
         width:100%;height:40px;font-size:20px;
+        background-color: #aaa;  
+        height: 60px;  
+        font-size: 20px;  
+        border: 1px solid #097C9B;
     }
     
 </style>  
@@ -78,7 +87,7 @@ Basic Calculator</h1>
 <form name="calc">
 <table id="calc" border=2>
 <tr>
-<td colspan=5><input id="btn" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" readonly></td>
+<td colspan=5><input id="btn" style="background-color: #fff; float:right" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" readonly></td>
 <td style="display:none"><input name="M" type="number" ></td>
 </tr>
 <tr>
