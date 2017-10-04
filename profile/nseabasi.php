@@ -18,8 +18,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $data = $exe->fetch(); 
                     $password = $data['password']; 
                     $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password"; header("location: $uri"); } 
-                    } ?>
-}
+					} 
+					
 ?>
 
 
