@@ -1,6 +1,6 @@
 <?php 
 if($_SERVER['REQUEST_METHOD'] == 'POST') { 
-    $error = []; 
+    $error = array(); 
     $subject = $_POST['subject']; 
     $to = 'nseabasiokwong@yahoo.com'; 
     $body = $_POST['message']; 
@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $error[] = 'Subject cannot be empty.'; 
             } 
             if(empty($error)) { 
-                $config = include(dirname(dirname(dirname(__FILE__))).'/config.php'); 
+                $config = include('../../config.php'); 
                 $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname']; 
                 $con = new PDO($dsn, $config['username'], $config['pass']); 
                 $exe =$con->query('SELECT * FROM password LIMIT 1'); 
