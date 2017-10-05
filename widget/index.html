@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>widget</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		@font-face{
+		font-family: lato;
+		}
+        body{
+			margin:0px;
+			padding:0px;
+        	font-family: Georgia;
+        }
+		#container{
+			width: 239.8px;
+			height: 277px;
+			text-align: center;
+			border: 1px solid #BDBDBD;
+			border-radius: 8px;
+			background-color: #fff;
+			padding:0px;
+		}
+		#container ul{
+			margin:0px;
+			padding:0px;
+		}
+		#hotels{
+			display: inline-block;
+			font-weight: bolder;
+			color: #fff;
+			width: 117.91px;
+			height: 20px;
+			text-decoration: none;
+			padding: 5px 0px;
+			border-top-left-radius: 8px;
+			margin:0px;
+		}
+		#hotels a{
+			color:#2F80ED;
+			line-height:14px;
+			font-weight:bold;
+			font-family:lato;
+			text-decoration:none;
+		}
+		#flights{
+			display: inline-block;
+			font-weight: bold;
+			color: #fff;
+			background-color: #2F80ED;
+			width: 117.91px;
+			height: 20px;
+			text-decoration: none;
+			padding: 5px 0px;
+			border-top-right-radius: 8px;
+			margin:0px;
+			text-underline-position: none;
+		}
+		#flights a {
+			color:#fff;
+			line-height:14px;
+			font-weight:bold;
+			font-family:lato;
+			text-decoration:none;
+		}
+		p{
+			margin-top:5px;
+			margin-bottom:5px;
+			text-align:center;
+			line-height:16px;
+			font-family:lato;
+			font-weight:bold;
+			font-size: 13px;
+			color: #5a5a5a;
+		}
+        h2{
+        	font-size: 20px;
+        }
+		#checkin{
+			width: 103px;
+			height: 33px;
+			font-size: 15px;
+			border: 1px solid #BDBDBD;
+            text-align: center;
+			border-radius: 5px;			
+			margin-top: 1em;
+		}
+		#checkout{
+			width: 103px;
+			height: 33px;
+			font-size: 15px;
+			border: 1px solid #BDBDBD;
+            text-align: center;
+			border-radius: 5px;			
+			margin-top: 1em;
+		}
+		input[type="text"]::placeholder{
+			color:#BDBDBD;
+		}
+		#search{
+			width: 216px;
+			height: 33px;
+			font-size: 15px;
+			border: 1px solid #BDBDBD;
+			text-align: center;
+			border-radius: 5px;
+		}
+		#find{
+			width: 166px;
+			height: 40px;
+			font-size: 12px;
+			line-height:14px;
+			background-color: #2f80ed;
+			text-align: center;
+			border-radius: 5px;
+			margin-top: 1em;
+			border: 0px solid #fff;
+			color: #fff;
+		}
+		#foot{
+			font-size:12px;
+			line-height:14px;
+		}
+	img{
+		display:inline-block;
+		
+	}
+		
+	</style>
+</head>
+<body>
+	<center>
+    <div id="container">
+	<div id = "hot">
+      <ul>
+      	<li id="hotels"><a href = "#hot">HOTELS</a></li>
+      	<li id="flights"><a href="#fly">FLIGHTS</a></li>
+      </ul>
+      <p> Search for Hotels in Nigeria</p>
+      <input id="search" type="text" placeholder="Search for city or hotels"><br>
+      <input id="checkin" type="text" name="" placeholder="Check-In">&nbsp;&nbsp;
+      <input id="checkout" type="text" name="" placeholder="Check-Out"><br>
+      <button id="find"><strong>FIND HOTELS</strong></button>
+      <p id = "foot">Powered by</p>
+	  <img src="hnglogo.png">
+    </div>	
+    </div>
+	<center>
+
+   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript">
+   	   $(document).ready(function(){
+				$('#find').click(function(){
+                    if ($('#search').val()== '' || $('#search').val()== null || $('#search').val()== undefined){
+                        
+                    }else{
+                        top.location ="https://hotels.ng/hotels/search?query="+$('#search').val();
+					}
+					});
+               	});
+   </script>
+
+</body>
+</html>
