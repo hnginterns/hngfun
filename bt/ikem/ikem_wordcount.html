@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Word Count Task</title>
-	<script type="text/javascript" src="wordcount.js"></script>
+	<!-- <script type="text/javascript" src="wordcount.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
 	<style type="text/css">
 		html {
@@ -95,6 +95,22 @@
 		
 	</div>
 	<footer>@legend5463</footer>
+
+	<script type="text/javascript">
+		function wordCount() {
+			document.getElementById('word').onkeydown = function () {
+			var typedWord = document.getElementById('word').value;
+			var abets = typedWord.match(/[a-z,A-Z]/g);
+			var nums = typedWord.match(/[0-9]/g);
+			var spec = typedWord.match(/[`~!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g);
+			document.getElementById('total').innerHTML = "Total Characters: " +  this.value.length;
+			document.getElementById('alphabets').innerHTML = "Alphabet Characters: " +  abets.length;
+			document.getElementById('numbers').innerHTML = "Integer Characters: " +  nums.length;
+			document.getElementById('special').innerHTML = "Special Characters: " +  spec.length;
+			};
+
+		}
+	</script>
 
 </body>
 </html>
