@@ -11,7 +11,7 @@
                         <p>email: reservations@hotels.ng</p>
                         <p>Website: <a href="https://hotels.ng">hotels.ng</a></p>
                     </div>
-                    <iframe src = "hng.fun/widget"></iframe>
+                    <iframe src = "http://hng.fun/widget"></iframe>
                     <div class="grid__col grid__col--6">
                         <form method="">
                             <div class="grid">
