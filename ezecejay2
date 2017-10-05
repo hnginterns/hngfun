@@ -33,10 +33,10 @@
              <form action="javascript:void()">
          	<div class="w3-row">
          	 <div class="w3-col s10 w3-blue"  style="height: 50px">
-                <input type="text" class="w3-input" id="un" placeholder=" Search by participant name or slack username..." style="height:100%" >
+                <input type="text" class="w3-input"  placeholder=" Search by participant name or slack username..." style="height:100%" >
          	 </div>
          	 <div class="w3-col s2 w3-xlarge " style="height: 50px">
-               <button class="w3-button  w3-yellow w3-text-white" id="lg" style="width: 60%; height: 100%">Search</button> 
+               <button class="w3-button  w3-red w3-text-white" id="lg" style="width: 60%; height: 100%">Search</button> 
          	 </div>
          	</div>
 
@@ -44,16 +44,16 @@
       </div>
     
       <div class="w3-row w3-padding-32 w3-margin-left w3-margin-bottom">Sort By:
-          <button class="w3-button w3-round w3-w3-text-black  w3-gray" id="lg"> Latest input<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
-          <button class="w3-button w3-round w3-text-black  w3-gray" id="lg">Descending<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
-          <button class="w3-button  w3-round w3-text-black   w3-gray" id="lg">Display Grid<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
+          <button class="w3-button w3-round w3-w3-text-black  w3-white" id="lg"> Latest input<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
+          <button class="w3-button w3-round w3-text-black  w3-white" id="lg">Descending<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
+          <button class="w3-button  w3-round w3-text-black   w3-white" id="lg">Display Grid<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
       </div>
        <table class="w3-table w3-striped w3-margin-top">
          
         <tbody>
             <tr>  
                      <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -65,7 +65,7 @@
 
                       
                      <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px;">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px;font-size: 10px;box-shadow: 2px 2px 2px 2px gray;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -77,7 +77,7 @@
                      
                     
                      <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px;">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px; box-shadow: 2px 2px 2px 2px gray; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -89,7 +89,7 @@
 
                      
                      <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px;">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px; box-shadow: 2px 2px 2px 2px gray; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -101,7 +101,7 @@
                      </tr>
             <tr> 
               <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -111,7 +111,7 @@
                      </button>
                      </td>
  <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -121,7 +121,7 @@
                      </button>
                      </td>
 < <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -131,7 +131,7 @@
                      </button>
                      </td>
  <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -142,7 +142,7 @@
                      </td>
 </tr>
             <tr> <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -152,7 +152,7 @@
                      </button>
                      </td>
  <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -162,7 +162,7 @@
                      </button>
                      </td>
  <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -172,7 +172,7 @@
                      </button>
                      </td>
  <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -184,7 +184,7 @@
 </tr>
             <tr> 
                 <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -194,7 +194,7 @@
                      </button>
                      </td>
 <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -204,7 +204,7 @@
                      </button>
                      </td>
                    <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
@@ -214,7 +214,7 @@
                      </button>
                      </td>
              <td> 
-                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                         <button class="w3-button w3-white w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 2px 2px 2px 2px gray; border-width: 3px; font-size: 10px;">
                         <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
                        <div>participant  name</div>
                          <div class=" w3-center  ">location</div>
