@@ -1,32 +1,162 @@
 <!DOCTYPE html>
 <html>
-<title> Emmanuel Osinaike </title>
-<body>
-<h1> Emmanuel Osinaike's HNG Profile </h1>
-<img style="width:30%;height:50%;" alt="emmanuel's picture" src="https://www.facebook.com/photo.php?fbid=1654805521209716&set=picfp.100000408511606.1220329887990617&type=3&theater">
-<h3> Osinaike Emmanuel Oluseyi </h3>
-<br>
-<p> Slack: <a href="https://hnginterns.slack.com/messages/@emma_osinaike/"> Emmanuel Osinaike </a> </p>
-<p> GitHub: <a href="https://github.com/Emmanuel-Osinaike/"> Emmanuel-Osinaike </a> </p>
-<p> Emmanuel Osinaike is an e-Health entrepreneur, a Physiotherapist, Digital Marketer and aspiring Developer. He is currently interning with <a href="https://www.hotels.ng"> HotelsNG</a> </p>
-<p>
-   Stage 1: 
-   <a href="https://github.com/hnginterns/hngfun/blob/master/contributors.txt/"> Check Number 256 </a>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+</head>
+<body class="bodystyle">
+ <div>
+     <h1 class="firstheading"> Emmanuel Osinaike's HNG Profile </h1>
+ </div>   
+<img class="profile-image" alt="emmanuel's picture" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAuJAAAAJGRhOTVhYmU3LTFhNDctNGU0OC1hNjJiLWZmMjk5NTc3NDgyNA.jpg">
+<h2 class="secondheading">
+<a class="linktext" href="https://hnginterns.slack.com/messages/@emma_osinaike/">#Slack</a> <a class="linktext" href="https://github.com/Emmanuel-Osinaike/">#GitHub</a> 
+<p> Emmanuel Osinaike is an e-Health entrepreneur, a Physiotherapist, Digital Marketer and aspiring Developer. He is currently interning with <a class="linktext" href="https://www.hotels.ng"> HotelsNG</a>
 </p>
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-	<div class="row">
-		<label for="name">Osinaike Emmanuel Oluseyi:</label><br />
-		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="email">emmydoc7@gmail.com:</label><br />
-		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="message">Hi, I would like to hear from you:</label><br />
-		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-	</div>
-	<input id="submit_button" type="submit" value="Send email" />
-</form>		
+</h2>
+<div>
+    <section class="contact">
+    
+      <section class="contact-form" >
+        <div class = "card-form">
+          <form  action="emmaosinaike.php" method="post" >
+            <p class = "title" >CONTACT ME:</p>
+          
+                    <input type="email" id="to" name="to" placeholder="Your email address here">
+                    <br>
+                    
+                    <input type="text" id="subject" name="subject" placeholder="Your subject here">
+                    <br>
+                   
+                    <textarea id="body" name="body" placeholder="write your message here" style="height:120px"></textarea>
+                    <br><br>
+                    <input type="submit" name="process" value="Submit">
+          </form>
+        </div>
+      </section>
+   </section>
+  </div>  
 </body>
+<style>
+.profile-image 
+  {
+    width: 300px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+  }
+  .firstheading
+  {
+    font-size: 35pt;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #3f51b5;
+  }
+.contact 
+  {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-bottom: 10%;
+    text-align:center;
+    position: relative;
+    left: 30%;
+  }
+ .bodystyle
+  {
+    padding: 0pt;
+    background: #ffffff;
+    margin: 0pt;
+    margin-top: 0;
+  } 
+  .secondheading
+  {
+    text-align: center;
+    text-decoration: none;    
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  .linktext
+  {
+    text-decoration: none;
+  }
+  .contact section 
+  {
+    width: 50%;
+  }
+  .title 
+  {
+    font-size: 24px;
+  }
+  .subheading-text{
+    padding:10px;
+  }
+  .contact-form input,
+  .contact-form textarea 
+  {
+    width: 80%;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: .5px solid #ccc;
+    border-radius: 5px;
+    background-color: #eaeaea;
+  }
+  input[type=submit] 
+  {
+    background-color: #26acd9;
+  }
+  input[type=submit]:hover 
+  {
+    background: white;
+    border: .5px solid #ccc;
+    cursor: pointer;
+  }
+  textarea 
+  {
+    font-family: inherit;
+    resize: none;
+  }
+  .social-links span 
+  {
+    margin-right: 30px;
+  }
+  .map 
+  {
+    margin-top: 15px;
+  }
+  p > span 
+  {
+    margin-right: 10px;
+  }
+  .map iframe 
+  {
+    width: 100%;
+    height: 100%:
+  }
+  @media only screen and (max-width:1024px) 
+  {
+  .contact 
+  {
+    width: 90%;
+  }
+  .contact section 
+  {
+    width: 45%;
+  }
+  }
+  @media only screen and (max-width:768px) 
+  {
+    .contact section 
+    {
+      width: 95%;
+    }
+  } 
+</style>
 </html>

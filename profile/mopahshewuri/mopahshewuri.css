@@ -5,8 +5,33 @@ body{
     width: 80%;
 	margin: 20px auto;
 }
+
+input
+{
+	text-align: center;
+	border: 1.5px solid grey;
+	height: 30px;
+	width: 70%;
+}
+
+textarea
+{
+ width: 70%;
+
+	border: 1.5px solid grey; }
+.btn
+{
+	margin-left: 100px;
+	font-size: 18px;
+	background: blue;
+	color: white;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+
+}
 h1, h2{
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 	text-align: center;
 	color: #2c3e50;
 }
@@ -33,5 +58,10 @@ p{
 	color: #000000;
 }
 form{
-	margin-left: 150px;
+	margin-left: 100px;
+}
+.icon
+{
+	width: 10px;
+	height: 10px
 }
