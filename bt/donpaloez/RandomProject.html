@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ranchagen</title>
+  <style type="text/css">
+    h1 {
+      color: black;
+      font-size: 80px;
+      font-weight: 600;
+      text-align: center;
+    }
+  	#banner {
+	  background-image: url("https://pbs.twimg.com/media/DK5qBLYWAAEtANN.jpg");
+  	  background-size: cover;
+      background-position: bottom center;
+      width: 100%; height: 200px;
+    }
+    .content h1 {
+      position: relative;
+      top: 2px;
+      bottom: 2px;
+      width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color:#FAFAFA;
+      background-color:#2ABCA7;
+      text-align:center;
+      padding:8px 0 8px 0;
+      font-size: 1.4em;
+    }
+     body {
+      background-color: pink;
+    }
+	
+    .container {
+      max-width:400px;
+      max-height: 4950px;
+      margin:0 auto;
+      text-align:center;
+      -webkit-border-radius:6px;
+      -moz-border-radius:6px;
+      border-radius:6px;
+      background-color:#FAFAFA;
+    }
+    .sub {
+      margin-top:15px;
+      margin-bottom:25px;
+      background-color:#2ABCA7;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      border: 1px solid #2ABCA7;
+      -webkit-transition: .5s;
+      transition: .5s;
+      display: inline-block;
+      cursor: pointer;
+      width:20%;
+      color: white;
+    }
+    .button:hover, .button:hover {
+      background:#19a08c;
+    }
+  	input {
+      margin-bottom:10px;
+    }
+    input:first-of-type{
+      margin-top:15px;
+    }
+    input, textarea {
+        font-size: 1em;
+        padding: 5px 5px 5px;
+        font-family: 'Source Sans Pro',arial,sans-serif;
+        border: 1px solid #cecece;
+        background: #d7d7d7;
+        color:#000;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 90%;
+        max-width: 350px;
+      }
+
+  </style>
+</head>
+<body>
+  <div id="banner">
+  <div class="content">
+    <h1>Random Character Generator</h1>
+  </div>
+  <h2>
+    <center>
+      Generate random characters below
+    </center>
+  </h2>
+    <div class="body">
+      <script>
+      function randomString() {
+        var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+        var string_length = 10;
+        var randomstring = '';
+        for (var i=0; i<string_length; i++) {
+        var rnum = Math.floor(Math.random() * chars.length);
+        randomstring += chars.substring(rnum,rnum+1);
+        }
+      document.randform.randomfield.value = randomstring;
+    }
+      </script>
+    </div>
+    <form name="randform">
+      <div class="container">
+      <input type="text" placeholder="Enter Your Name" required><br>
+      <input type="text" name="randomfield" placeholder="View Your Random Characters Here"><br>
+      <input type="button" class="sub" value="Generate Password" onClick="randomString();">&nbsp;
+    </form>
+</body>
+</html>

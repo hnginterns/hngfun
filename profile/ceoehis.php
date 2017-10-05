@@ -188,6 +188,4 @@ input:focus, textarea:focus {
             </form>
         </section>
     </main>
-</body>
-
-</html>
+<?php include('footer.php'); ?>

@@ -1,4 +1,4 @@
- <?php
+<?php
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $error = [];
     $subject = $_POST['subject'];
@@ -25,15 +25,17 @@
 
  <!-- after php summon -->
 
-
-<!DOCTYPE html> 
-     <html>
+<!DOCTYPE> 
+<html>  
 <head>
      <meta charset ="Utf-8">
 <title>HNG INTERNSHIP 2017</title>
 
 <style type ="text/css">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 .image{
     margin: auto;
     height: 350px;
@@ -42,7 +44,10 @@
     border-radius: 10px;
 }
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 p{  
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 25px;
@@ -66,6 +71,7 @@ h2{ font-style: bold;
 	font-weight: 28px;
 	
 }
+<<<<<<< HEAD
 
 h3{ color:black;
 	background-color: lightyellow;
@@ -77,6 +83,15 @@ h3{ color:black;
 	text-align: "center";
 }
 
+=======
+h3{ color:black;
+	background-color: lightyellow;
+    font-family: comic  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.tag{ margin-top: 200px;
+	text-align: "center";
+}
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 </style>
 
 </head>
@@ -106,39 +121,66 @@ h3{ color:black;
 My name is Edidiong Samuel alias Eddie Baba. I'm an intern on the<a href= "http://www.hotels.ng">Hotels.ng</a>platform.As a tech geek,this internship program would afford me opportunity to experience first hand  the little details that make the technological world thick.<b>"HELLO MY WORLD!"</b>
 </p>
 
-
-
-
 <!-- Begin contact form --> 
 
-     <div class="form_container">
-            <form action="Messrsedddie.php" method="POST">
+	<div id="form">
+
+      <h2 class="tag">Contact Me</h2>
+<<<<<<< HEAD
+    <form action="../../sendmail.php" method="get">
+=======
+    <form action="#" method="POST">
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+          <fieldset>
+              <input placeholder="Your Full Name" type="text" tabindex="1" required="" autofocus="">
+          </fieldset>
+          <fieldset>
+           <input placeholder="Your Phone Number" type="tel"  required="">
+          </fieldset>
+        
+          <fieldset>
+            <input type="email" id="to" name="to" placeholder="Your Email Address Here">
+          </fieldset>
+
+          <fieldset>
+            <input type="text" id="subject" name="subject" placeholder="Your Subject Here">
+         </fieldset>
+
+          <fieldset>
+           <textarea placeholder="Type your Message Here...." tabindex="5" id="body" name="body" required=""></textarea>
+          </fieldset>  
+
+<<<<<<< HEAD
+          <input type="hidden" name="password" value="<?= $password; ?>" />          
+        
+=======
+                  
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+          <fieldset>
+            <button type="submit" value="Submit">Submit </button>
+          </fieldset>
+        </form>
+ 	</div>    
+ 	   	
+</div>
+</div>
+</body>
+</html>
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+     
+           
 
         
-            <h2 class="tag">Contact Me</h2>
-            Name<br>
-            <input type="text" name="name" size="30" placeholder="Your name goes here" ><br><br>
+            
+          
+ 
 
-            Email<br>
-            <input type="email" name="email" size="30" placeholder="example@gmail.com" ><br><br>
-
-            Subject<br>
-            <input type="text" name="subject" size="30" placeholder="Your Subject"><br><br>
-
-            <input type="hidden"  id="password" name="password" value="<?php echo $password; ?>">
-
-            Message<br>
-            <textarea rows="10" cols="30" name="body" placeholder="Write your message here..."></textarea><br><br>
-
-            <button type="submit" name="submit">Send</button>    
-
-    </form>
-</div>                 
-                    
-
-    </body>
-
-</html>  
+                   
+                      
             
            
        

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link href="https://www.w3schools.com/lib/w3.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../TaquaLB/Loader/Loader.js" loadtype="Premium;../Script/main.js" onComplete="" ></script>
+</head>
+<body class=" w3-animate-zoom">
+<div class="w3-bar w3-margin-left">
+    <div class="w3-bar-item w3-button w3-padding-16"><img src="images/capt.png" alt="hngfun"></div>
+    <div class="w3-bar-item w3-button w3-padding-16">Home</div>
+      <div class="w3-bar-item w3-button w3-padding-16">Projects</div>
+        <div class="w3-bar-item w3-button w3-padding-16">Participants</div>
+         <div class="w3-bar-item w3-button w3-padding-16">Past Internship</div>
+      <div class="w3-bar-item w3-button w3-padding-16">Blogs</div>
+        <div class="w3-bar-item w3-button w3-padding-16">Library</div>
+         <div class="w3-bar-item w3-button  w3-padding-16">Supporters</div>
+      <div class="w3-bar-item w3-button w3-padding-16">About us</div>
+        <div class="w3-bar-item w3-padding-16 w3-button">Contacts</div>
+         <i class="w3-bar-item fa fa-facebook w3-padding-16 w3-button"></i>
+      <i class="w3-bar-item fa fa-google-plus w3-padding-16 w3-button"></i>
+        <div class="w3-bar-item fa fa-twitter w3-padding-16 w3-button"></div>
+</div>
+
+      <div class="w3-blue w3-padding" >
+          <h2 class="w3-center">HNG INTERNSHIP PARTICIPANTS</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+             <form action="javascript:void()">
+         	<div class="w3-row">
+         	 <div class="w3-col s10 w3-blue"  style="height: 50px">
+                <input type="text" class="w3-input" id="un" placeholder=" Search by participant name or slack username..." style="height:100%" >
+         	 </div>
+         	 <div class="w3-col s2 w3-xlarge " style="height: 50px">
+               <button class="w3-button  w3-yellow w3-text-white" id="lg" style="width: 60%; height: 100%">Search</button> 
+         	 </div>
+         	</div>
+
+         </form>
+      </div>
+    
+      <div class="w3-row w3-padding-32 w3-margin-left w3-margin-bottom">Sort By:
+          <button class="w3-button w3-round w3-w3-text-black  w3-gray" id="lg"> Latest input<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
+          <button class="w3-button w3-round w3-text-black  w3-gray" id="lg">Descending<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
+          <button class="w3-button  w3-round w3-text-black   w3-gray" id="lg">Display Grid<i class="fa fa-caret-down w3-text-black w3-padding"></i></button> 
+      </div>
+       <table class="w3-table w3-striped w3-margin-top">
+         
+        <tbody>
+            <tr>  
+                     <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+
+                      
+                     <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px;">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+                     
+                    
+                     <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px;">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+
+                     
+                     <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border w3-round" style="margin: 0px;">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+                     </tr>
+            <tr> 
+              <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+ <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+< <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+ <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+</tr>
+            <tr> <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+ <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+ <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+ <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+</tr>
+            <tr> 
+                <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+<td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+                   <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+             <td> 
+                         <button class="w3-button w3-gray w3-block  w3-border-bottom w3-row-padding w3-border-top w3-round w3-shadow" style="margin: 0px;box-shadow: 3px; border-width: 3px">
+                        <img style="width: 100%; max-width: 30px" class=" w3-row w3-center w3-circle w3-margin-top" src="../images/passp.png" id="ghdhv" />
+                       <div>participant  name</div>
+                         <div class=" w3-center  ">location</div>
+                        <div class="  m4 l3 w3-margin" style="float: left">@ slack Id</div>
+                     <i class="fa fa-envelope-o w3-margin-right w3-margin  w3-text-blue" style="float: right"></i>
+                     <i class="fa fa-user w3-margin-right w3-margin w3-text-blue" style="float: right"></i>
+                     </button>
+                     </td>
+                     </tr>
+         </tbody>
+       </table>
+      </div>
+   </div>
+  <div class="w3-content w3-display-container w3-margin w3-padding w3-center">
+  <a href="#">&#10094;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&#10095;</a>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+<div class=" w3-margin-top" style="width: 100%; height: 100%;">
+   
+</div>
+
+<div class="w3-bar  w3-blue ">
+    <div class="w3-container w3-animate-zoom pagee"  id="addelec">
+      <div class="w3-blue w3-padding" >
+          <h2 class="w3-center">HNG INTERNSHIP PARTICIPANTS</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+           dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+             
+      </div>
+      </div>
+</div>
+</body>
+</html>
