@@ -9,22 +9,23 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <style>
   body {
-  background-color: #6FF76F;
+  background-color: #93F193;
   font-family: 'Raleway', sans-serif;
 }
 .nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  box-shadow: 0px 0px 40px black;
+  box-shadow: 0px 0px 20px black;
   width: 100%;
-  zndex: 9;
+  background-color: rgba(255, 255, 255, 0.66);
 }
 .nav li {
-  font-weight: 100;
+  font-weight: 800;
   letter-spacing: 2px;
   padding: 10px;
   display: inline-block;
+  color: #DA0000
 }
 
 .nav  li.logo {
@@ -56,9 +57,9 @@ h2 {
   text-align: center;
   letter-spacing: 0.2em;
   font-size: 15px;
-  top: 50px;
+  top: 70px;
   padding-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .firstapp h1{
   color: red;
@@ -96,14 +97,14 @@ textarea{
 
         <nav class="nav">
                 <ul>
-                  <li>COUNTER</li>
-                  <li class="logo"> - LEARNING TEAM -</li>
-                  <li>TIMER</li>
                   
+                  <li class="logo"><i class="fa fa-twitter"></i> <span class="indent">anneacan</span></p></li>
+                  
+                  <li class="logo"><i class="fa fa-slack"></i> <strong class="indent">codeislife</strong></li>
                 </ul>
         </nav>
 
-        <h2><strong>Welcome! We Are Happy You Choosed To Count Your Words And Check Time With Us</strong></h2>
+        <h2><strong>Welcome! We Are Happy You Choosed To Count Your Words, Check Time And Generate Password With Us</strong></h2>
 
         <div class= 'border'>
 
@@ -129,15 +130,39 @@ textarea{
                             }
                           </script>
                         </div>
-                          <div>
-                                     <h1 id='date'></h1>
+                        <div>
+                                <h1 id='date'></h1>
                                 <script>
                                     var d = new Date();
                                     document.getElementById("date").innerHTML = d.toDateString();
                                 </script>
-                          </div>
+                        </div>
           </div>
 
+          <div class=thirdapp>
+          <script>
+              function randomString() {
+                var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+                var string_length = 8;
+                var randomstring = '';
+                for (var i=0; i<string_length; i++) {
+                    var rnum = Math.floor(Math.random() * chars.length);
+                    randomstring += chars.substring(rnum,rnum+1);
+                }
+                document.randform.randomfield.value = randomstring;
+                
+            }
+          </script>
+          
+          <form name="randform">
+                
+          <input type="text" name="randomfield" value="" id="field" style="text-align: center ; background-color: rgba(219, 219, 214, 0.67); font-size: 18px; border: dashed 3px black">
+                
+              
+          </form>
+          
+          
+          </div>
           <div class="secondapp">
   
                   <script>
@@ -159,14 +184,18 @@ textarea{
                   
                 }   
                   </script>
+
+                
                   
   
                   <form name= "result">
                           <textarea type="text" id ="input" class="int" placeholder="          To Count Letters, Type Here" ></textarea>
                           <h4   id="totalCount"></h4>
                           <input type="button" class="man" value="Count Letters" onClick="counts();">
+                          <input type="button" value="Gen Random" onClick="randomString();" id="button" class="man">
                   </form>
   
+
           </div>
 
         </div>
