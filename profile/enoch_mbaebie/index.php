@@ -45,23 +45,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
       <div class= "text"><center>
         <p>I'm a software engineer in training based in Lagos,passionate about technologies,<br>a contributor to the open source communities and mentee to Mark Essien.</p></center>
       </div>
-
-      <div class="main">
-           <a class="Slack" href="https://hnginterns.slack.com/team/U6UAY9VMG"><i class="fa fa-slack icons fa-lg"></i></a>
+      <div class="main">               
+        <center>
+          <a class="Slack" href="https://hnginterns.slack.com/team/U6UAY9VMG"><i class="fa fa-slack icons fa-lg"></i></a>
            
-           <a href="https://github.com/EnochMbaebie/"><i class="fa fa-github icons fa-lg"></i></a>
-      </div>   
-      </div>
-			
-                
-    <center><figure><p><a href="http://hng.fun/profile/enoch_mbaebie/index.html"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure></center>
-			
+          <a href="https://github.com/EnochMbaebie/"><i class="fa fa-github icons fa-lg"></i></a>
+
+          <figure><p><a href="http://hng.fun/profile/enoch_mbaebie/index.html"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="100px"><figcaption>Link to my Stage 1 Project</figcaption></a><p></figure>
+<<<<<<< HEAD
+=======
+
+          <figure><p><a href="https://goo.gl/iD8DKQ"><img src="https://developer.android.com/wear/images/features/apps.png" width="100px"><figcaption>Link to my APP Project</figcaption></a><p></figure>
+
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+        </center>
+			</div>   
 			<section class="grid-4">
                 <center><h2>Contact</h2></center>
                  <form class="cd-form floating-labels" method="POST">
               		<fieldset>
-
-
               			<div class="icon">
               				<center><label class="cd-label" for="cd-name">Subject</label>
                                 <input class="user" type="text" name="subject" id="cd-name" required></center>
@@ -94,15 +96,29 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	
 </body>
     <style>
-   body{
+  body{
+<<<<<<< HEAD
     background-color: darkred;
+=======
+    background-color: #BFC0C0;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
     color: black;
+    height: 750px;
+    margin: 2px;
+    padding: 2px;
     
   }
 .container{
+    text-align: center;
+    margin: 0 auto;
     width:400px;
-    height:1000px;
+    align-self: center;
+    height:100px;
+<<<<<<< HEAD
     background-color: #999;
+=======
+    background-color: #BFC0C0;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
   }
 .header{
     margin:0px 0px 0px 0px;
@@ -120,7 +136,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 .text{
     color:#239;
     font:none 15px sans-serif;
-    text-align:center;
     margin:10px;
     padding:00px;
   }
@@ -131,5 +146,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     padding:00px;
 }
 .contact-headline {
+  color: white;
+}
+
     </style>
 </html>

@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Random Character Generator</title>
+
+     <style type="text/css">
+        .in{
+          padding: 15px;
+          height: 15px;
+          width: 400px;
+          padding-top: 35px;
+          padding-bottom: 25px;
+          background-color: #CDFFFF ;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10px;
+          display: block;
+
+      
+
+       }
+
+       .general{
+            height: auto;
+            width: 500px;
+            background-color:#CDFFFF
+            border-radius: 20px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1{
+            color:blue
+        }
+
+       .cover{
+          background-color: #6e9F16;
+          margin-left: auto;
+          margin-right: auto;
+          height: 600px;
+          width: 500px;
+          border: solid 5px;
+
+
+
+
+         
+       }
+
+       .body{
+          background-color: fuchsia;
+          resize: 2em;
+          text-align: center;
+              }
+
+       .sub{
+          background-color: fuchsia
+          margin-left: 225px;
+          margin-right: auto;
+
+       }
+
+      .button li {
+          display: inline-block;
+          margin-left: 200px;
+
+       }
+
+
+
+
+
+
+
+        
+     </style>
+
+
+</head>
+  <body>
+  <div class="body">
+   <h1 class="general">RANDOM CHARACTER GENERATOR</h1>
+    <form name="randform" class="cover">
+    &nbsp;&nbsp;
+    <input type="text" class="in" placeholder="Your Name" required><br>&nbsp;
+    <input type="text"  class="in" name="randomfield" value="" placeholder="Enter your name above then click the button below"><br>&nbsp;
+    <input type="button" class="sub" value="Generate Password" onClick="randomString();">&nbsp;
+    </form>
+  </div>
+  <div class=button>
+<ul>
+    <li><button><a href="http://hng.fun/profile/mattidungafa.html">My profile page</a></button></li>
+    <li><button><a href="mattcalculator.html">My simple Calculator</a><button></li>
+    <li><button><a href= "mattclock.html"> Date And Time</a></button></li>
+    </ul>
+   </div>
+    <script>
+        function randomString() {
+            var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+            var string_length = 10;
+            var randomstring = '';
+               for (var i=0; i<string_length; i++) {
+                  var rnum = Math.floor(Math.random() * chars.length);
+                 randomstring += chars.substring(rnum,rnum+1);
+                }
+                document.randform.randomfield.value = randomstring;
+            }
+    </script>
+    
+        
+ </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+
+<body onload="startTime();myFunction()">
+ 
+
+<h1 id="greet"></h1>
+<h1 id="show"></h1>
+<script>
+
+    function startTime() {
+    var now = new Date();
+    var hours = now.getHours();
+    var mins = now.getMinutes();
+   mins = checkTime(mins);
+
+    document.getElementById('greet').innerHTML =
+   hours+ ":" +mins;
+    var time = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i}; 
+    return i;
+}
+   
+function myFunction() {
+    var greeting;
+    var time = new Date().getHours();
+    if (time < 10) {
+        greeting = "Good morning";
+    } else if (time < 20) {
+        greeting = "Good day";
+    } else {
+        greeting = "Good evening";
+    }
+document.getElementById("show").innerHTML = greeting;
+}
+ 
+</script>
+
+</body>
+</html>

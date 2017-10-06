@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -8,7 +6,11 @@
 	<style type="text/css">
 	    body{
 	    	text-align: center;
+<<<<<<< HEAD
 	    	background: linear-gradient(to bottom, #060 25%, #6f6 95%);
+=======
+	    	background: linear-gradient(to bottom, #620 25%, #f80 95%);
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 	    	font-family: Georgia;
 	    }
 	    
@@ -31,201 +33,93 @@
 			  margin-top: 25px;
 			  border-radius: 40%;
 			  box-shadow: 0 0 3px 6px #000;
-			}
-			
-		#input {
-			 width: 500px;
-			 height: 130px;
-			 font-size: 20px;
-			 border: 2px solid #000;
-			 text-align: center;
-			 padding: 2px;
-			 margin-top: 1em;
-			 border-radius: 10px;
-			 box-shadow: -2px 2px #000;
-		}
-		#sc{
-			 background: linear-gradient(to bottom, #6f6 25%, #060 95%);
-	         width: 700px;
-	         height: 580px;
-	         border: 2px, solid black;
-	         border-radius: 6px;
-	         text-align: center;
-	         margin-top: auto;
-	         margin-bottom: 50px;
-	         margin-left: 25%;
-	         margin-right: 55%; 
-	         box-shadow: 0 0 2px 2px #000;
-	         opacity: transparent; 
-		}
-		 .submit:hover {background-color: #ff0;
-		 }
-	    h1{
-	    	color: #000;
-	    	font-family: Georgia;
-	    }
-
-		
-		
-	</style>
-</head>
-
-<body>
-<div id="sc">
-    <h1>STRING COUNTER</h1>
-	<input id="input" type="text" placeholder="Enter string here !!!"><br/>
-	<br><br>
-  	<input class="submit" type="button" value="Let's count" onclick="counts()">
-	
-	<p id="totalCount"><br> Answer here!!</p>
-	<p id="rights"> made by &copy nedyudombat, 2017</p>
-	
-		
-</div>
-</body>
-
-<script>
-	
-	  function counts()	{
-		//read inputed text
-        var inputText = document.getElementById("input");
-        var enteredText = inputText.value;
-		//dont count spaces
-        var withOutSpace = enteredText.replace(/ /g,"")
-		//stringcount in the text
-        var totalCount = withOutSpace.length;
-
-		
-		if(totalCount === 0) {
-			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
-		}else if(totalCount === 1) {
-			document.getElementById("totalCount").innerHTML = 'The entered string \n "' +  enteredText +'" contains ' + totalCount + ' letter';
-		}else if (totalCount > 0) {
-			document.getElementById("totalCount").innerHTML = 'The entered string \n"' +  enteredText +'" contains ' + totalCount + ' letters';
-		}else {
-			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
-		}
-        
-	  }
-      
-</script>
-
-</html>
-=======
-=======
->>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title> LET'S COUNT WORDS</title>
-	<style type="text/css">
-	    body{
-	    	text-align: center;
-	    	background: linear-gradient(to bottom, #060 25%, #6f6 95%);
-	    	font-family: Georgia;
-	    }
-	    
-		p {
-			letter-spacing: 2px;
-			font-size: 25px;
-			color: #000;
-			margin-top: 4em;
-		}
-		
-		.submit {
-			  padding: 10px;
-			  font-size: 20px;
-			  text-align: center;
-			  cursor: pointer;
-			  color: #000;
-			  background-color: #fff;
-			  border-radius: 5px;
-			  margin-bottom: 5px;
-			  margin-top: 25px;
-			  border-radius: 40%;
-			  box-shadow: 0 0 3px 6px #000;
-			}
-			
-		#input {
-			 width: 500px;
-			 height: 130px;
-			 font-size: 20px;
-			 border: 2px solid #000;
-			 text-align: center;
-			 padding: 2px;
-			 margin-top: 1em;
-			 border-radius: 10px;
-			 box-shadow: -2px 2px #000;
-		}
-		#sc{
-			 background: linear-gradient(to bottom, #6f6 25%, #060 95%);
-	         width: 700px;
-	         height: 580px;
-	         border: 2px, solid black;
-	         border-radius: 6px;
-	         text-align: center;
-	         margin-top: auto;
-	         margin-bottom: 50px;
-	         margin-left: 25%;
-	         margin-right: 55%; 
-	         box-shadow: 0 0 2px 2px #000;
-	         opacity: transparent; 
-		}
-		 .submit:hover {background-color: #ff0;
-		 }
-	    h1{
-	    	color: #000;
-	    	font-family: Georgia;
-	    }
-
-		
-		
-	</style>
-</head>
-
-<body>
-<div id="sc">
-    <h1>STRING COUNTER</h1>
-	<input id="input" type="text" placeholder="Enter string here !!!"><br/>
-	<br><br>
-  	<input class="submit" type="button" value="Let's count" onclick="counts()">
-	
-	<p id="totalCount"><br> Answer here!!</p>
-	<p id="rights"> made by &copy nedyudombat, 2017</p>
-	
-		
-</div>
-</body>
-
-<script>
-	
-	  function counts()	{
-		//read inputed text
-        var inputText = document.getElementById("input");
-        var enteredText = inputText.value;
-		//dont count spaces
-        var withOutSpace = enteredText.replace(/ /g,"")
-		//stringcount in the text
-        var totalCount = withOutSpace.length;
-
-		
-		if(totalCount === 0) {
-			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
-		}else if(totalCount === 1) {
-			document.getElementById("totalCount").innerHTML = 'The entered string \n "' +  enteredText +'" contains ' + totalCount + ' letter';
-		}else if (totalCount > 0) {
-			document.getElementById("totalCount").innerHTML = 'The entered string \n"' +  enteredText +'" contains ' + totalCount + ' letters';
-		}else {
-			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
-		}
-        
-	  }
-      
-</script>
-
-</html>
 <<<<<<< HEAD
->>>>>>> c76ed2fb4f3bc033ed01f06d748e425415984ff2
 =======
->>>>>>> 340b45dd31cc39aebba5b654e5ddc9a4b2b3105b
+			  outline-style: hidden;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+			}
+			
+		#input {
+			 width: 500px;
+			 height: 130px;
+			 font-size: 20px;
+			 border: 2px solid #000;
+			 text-align: center;
+			 padding: 2px;
+			 margin-top: 1em;
+			 border-radius: 10px;
+			 box-shadow: -2px 2px #000;
+		}
+		#sc{
+<<<<<<< HEAD
+			 background: linear-gradient(to bottom, #6f6 25%, #060 95%);
+=======
+			 background: linear-gradient(to bottom, #f80 25%, #620 95%);
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+	         width: 700px;
+	         height: 533px;
+	         border: 2px, solid black;
+	         border-radius: 6px;
+	         text-align: center;
+	         margin-top: auto;
+	         margin-bottom: 50px;
+	         margin-left: 20%;
+	         margin-right: 55%; 
+	         box-shadow: 0 0 2px 2px #000;
+	         opacity: transparent; 
+		}
+<<<<<<< HEAD
+		.submit:hover {background-color: #3c3;
+=======
+		.submit:hover {background-color: #620;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+		 }
+	    h1{
+	    	color: #000;
+	    	font-family: Georgia;
+	    }
+	    #rights{
+	       color: #000;
+	       margin-top: 0em;
+	    }
+		
+		
+	</style>
+</head>
+
+<body>
+<div id="sc">
+    <h1> NEDY'S STRING COUNTER</h1>
+	<input id="input" type="text" placeholder="Enter string here !!!"><br/>
+	<br><br>
+  	<input class="submit" type="button" value="Let's count" onclick="counts()">
+	
+	<p id="totalCount"><br> Answer here!!</p>
+</div>
+    <p id="rights"> made by &copy nedyudombat, 2017</p>
+</body>
+
+<script>
+	
+	  function counts()	{
+		   var inputText = document.getElementById("input");
+        var enteredText = inputText.value;
+        var withOutSpace = enteredText.replace(/ /g,"")
+		var totalCount = withOutSpace.length;
+
+		
+		if(totalCount === 0) {
+			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
+		}else if(totalCount === 1) {
+			document.getElementById("totalCount").innerHTML = 'The entered string \n "' +  enteredText +'" contains ' + totalCount + ' letter';
+		}else if (totalCount > 0) {
+			document.getElementById("totalCount").innerHTML = 'The entered string \n"' +  enteredText +'" contains ' + totalCount + ' letters';
+		}else {
+			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
+		}
+        
+	  }
+      
+</script>
+
+</html>

@@ -1,24 +1,41 @@
 <?php
-//Connect to database
-  $config = include('../../config.php');
-  $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-  $con = new PDO($dsn, $config['username'], $config['pass']);
-  $exe = $con->query('SELECT * FROM password LIMIT 1');
-  $data = $exe->fetch();
-  $password = $data['password'];
-?>
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'messrseddie@gmail.com';
+    $body = $_POST['body'];
+    if($body == '' || $body == ' ') {
+      $error[] = "Don't be shy. Write me a message";
+    }
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'A subject would be awesome.';
+    }
+    if(empty($error)) {
+      $config = include __DIR__ . "/../config.php";
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $url = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $url");
+    }
+  }
+ ?>
 
  <!-- after php summon -->
 
-
-<!DOCTYPE html> 
-     <html>
+<!DOCTYPE> 
+<html>  
 <head>
      <meta charset ="Utf-8">
 <title>HNG INTERNSHIP 2017</title>
 
 <style type ="text/css">
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 .image{
     margin: auto;
     height: 350px;
@@ -27,7 +44,10 @@
     border-radius: 10px;
 }
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 p{  
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 25px;
@@ -51,6 +71,7 @@ h2{ font-style: bold;
 	font-weight: 28px;
 	
 }
+<<<<<<< HEAD
 
 h3{ color:black;
 	background-color: lightyellow;
@@ -62,6 +83,15 @@ h3{ color:black;
 	text-align: "center";
 }
 
+=======
+h3{ color:black;
+	background-color: lightyellow;
+    font-family: comic  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.tag{ margin-top: 200px;
+	text-align: "center";
+}
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 </style>
 
 </head>
@@ -96,7 +126,11 @@ My name is Edidiong Samuel alias Eddie Baba. I'm an intern on the<a href= "http:
 	<div id="form">
 
       <h2 class="tag">Contact Me</h2>
+<<<<<<< HEAD
     <form action="../../sendmail.php" method="get">
+=======
+    <form action="#" method="POST">
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
           <fieldset>
               <input placeholder="Your Full Name" type="text" tabindex="1" required="" autofocus="">
           </fieldset>
@@ -116,8 +150,12 @@ My name is Edidiong Samuel alias Eddie Baba. I'm an intern on the<a href= "http:
            <textarea placeholder="Type your Message Here...." tabindex="5" id="body" name="body" required=""></textarea>
           </fieldset>  
 
+<<<<<<< HEAD
           <input type="hidden" name="password" value="<?= $password; ?>" />          
         
+=======
+                  
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
           <fieldset>
             <button type="submit" value="Submit">Submit </button>
           </fieldset>
@@ -128,8 +166,11 @@ My name is Edidiong Samuel alias Eddie Baba. I'm an intern on the<a href= "http:
 </div>
 </body>
 </html>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
      
            
 
