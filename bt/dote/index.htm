@@ -1,0 +1,119 @@
+<!doctype html>
+    <html lang='en-GB'>
+        <head>
+            <title>
+                @dot.e's BT Task
+            </title>
+            <style>
+                body{
+                    background-color: gray;
+                }
+                .item-centre{
+                    text-align: center;
+                }
+                .box-shadow{
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important;
+                background-color: white;
+                margin: 3em;
+                }
+                .item-box{
+                    margin: 100px;
+                    padding: 100px, 10%, 100px, 10%;
+                }
+                .form-control{
+                    text-align: center;
+                }
+                nav{
+                    margin: auto;
+                    width: 100%;
+                }
+                
+                nav ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+     
+                }
+                
+                nav li {
+                    float: left;
+                }
+                
+                nav li a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+                
+                nav li a:hover:not(.active) {
+                    background-color: #111;                
+                }
+                
+                section, footer{
+            
+                }
+                section{
+                    height: 500px;
+                    padding: 10px;
+                }
+                form{
+                    display: block;
+                    
+                    margin: auto;
+                }
+                
+            </style>          
+            
+            <script src="https://use.fontawesome.com/47ab589449.js"></script>
+            
+        </head>
+        <body>
+            <div class='box-shadow' style='max-width: 1080px; margin: auto'>
+                <nav>
+                    <ul>
+                        <li><a href='index.htm'>Index</a></li>
+                        <li><a href='timer.htm'>Timer</a></li>
+                        <li><a href='rand-str.htm'>Random String Generator</a></li>
+                        <li><a href='char-count.htm'>Character Counter</a></li>
+                    </ul>
+                </nav>
+                
+                <section>
+                    <div class='item-box'>
+                        <div class='form-control'>
+                            <form id='form'>
+                                <input type='text' id='charCount' placeholder='Type your word/charactrs here'>
+                            </form>
+                           <h3 class='item-centre'>Total character count:</h3>
+                           <b></b><span id="charCount"></span></br>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    
+               
+                    
+                </footer>
+
+            </div>
+                    <script>
+                        function counter(){
+                        message=document.getElementById("charCount");
+                        text=message.value;
+                        document.getElementById("characterCount").innerHTML=text.length;
+                        
+                
+                        let length = (text.replace(/ /g,"")).length;
+                        document.getElementById("letter").innerHTML=length;
+                        
+                        
+                        let spaceCount = text.split(" ").length-1;
+                        document.getElementById("spaces").innerHTML=spaceCount;
+                        }
+                    </script>
+        </body>
+    </html>
