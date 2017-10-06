@@ -55,7 +55,7 @@
 }
 h2 {
   text-align: center;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
   font-size: 15px;
   top: 70px;
   padding-bottom: 10px;
@@ -104,7 +104,7 @@ textarea{
                 </ul>
         </nav>
 
-        <h2><strong>Welcome! We Are Happy You Choosed To Count Your Words And Check Time With Us</strong></h2>
+        <h2><strong>Welcome! We Are Happy You Choosed To Count Your Words, Check Time And Generate Password With Us</strong></h2>
 
         <div class= 'border'>
 
@@ -139,6 +139,30 @@ textarea{
                           </div>
           </div>
 
+          <div class=thirdapp>
+          <script>
+              function randomString() {
+                var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+                var string_length = 5;
+                var randomstring = '';
+                for (var i=0; i<string_length; i++) {
+                    var rnum = Math.floor(Math.random() * chars.length);
+                    randomstring += chars.substring(rnum,rnum+1);
+                }
+                document.randform.randomfield.value = randomstring;
+                
+            }
+          </script>
+          
+          <form name="randform">
+                
+                <input type="text" name="randomfield" value="" id="field" style="text-align: center ; background-color: rgba(219, 219, 214, 0.67); font-size: 18px; border: dashed 3px black">
+                
+              
+          </form>
+          
+          
+          </div>
           <div class="secondapp">
   
                   <script>
@@ -160,14 +184,18 @@ textarea{
                   
                 }   
                   </script>
+
+                
                   
   
                   <form name= "result">
                           <textarea type="text" id ="input" class="int" placeholder="          To Count Letters, Type Here" ></textarea>
                           <h4   id="totalCount"></h4>
                           <input type="button" class="man" value="Count Letters" onClick="counts();">
+                          <input type="button" value="Gen Random" onClick="randomString();" id="button" class="man">
                   </form>
   
+
           </div>
 
         </div>
