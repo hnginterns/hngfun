@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Terminal - Your Source for Fact-Based News</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+  body {
+  background-color: #6FF76F;
+  font-family: 'Raleway', sans-serif;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0px 0px 40px black;
+  width: 100%;
+  zndex: 9;
+}
+.nav li {
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.nav  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+.border {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: center;
+  border: 8px solid #000;
+  padding: 90px;
+  background-color: rgba(255, 255, 255, .7); 
+}
+.man{
+    background: red;
+    border: 2px solid red;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 6px;
+    text-decoration: none;
+}
+h2 {
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  top: 50px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.firstapp h1{
+  color: red;
+}
+hr { 
+  height: 6px;
+  width: 90%;
+  color: black;
+  background-color: black;
+}
+#timer{
+  font-size: 80px;
+}
+.application .sub a:hover {
+  background: white;
+  border: 1px solid red;
+  color: red;
+}
+textarea{
+  border-style: solid;
+  border-color: black;
+  border-radius: 0px;
+  width: 90%;
+  min-height: 5px;
+  margin: 8px;
+  border: dashed 3px black;
+  padding: 4px;
+  background-color: rgba(219, 219, 214, 0.67);
+}
+
+</style>
+</head>
+
+<body onload="startTime()">
+
+        <nav class="nav">
+                <ul>
+                  <li>COUNTER</li>
+                  <li class="logo"> - LEARNING TEAM -</li>
+                  <li>TIMER</li>
+                  
+                </ul>
+        </nav>
+
+        <h2><strong>Welcome! We Are Happy You Choosed To Count Your Words And Check Time With Us</strong></h2>
+
+        <div class= 'border'>
+
+          <div class="firstapp">
+                        <h1><b>THE TIME IS</h1>
+                          <hr>
+                        <div id='timer'>
+                          <script>
+                            function startTime() {
+                                var today = new Date();
+                                var h = today.getHours();
+                                var m = today.getMinutes();
+                                var s = today.getSeconds();
+                                m = checkTime(m);
+                                s = checkTime(s);
+                                document.getElementById('timer').innerHTML =
+                                    h + ":" + m + ":" + s;
+                                var t = setTimeout(startTime, 500);
+                            }
+                            function checkTime(i) {
+                                if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                                return i;
+                            }
+                          </script>
+                        </div>
+                          <div>
+                                     <h1 id='date'></h1>
+                                <script>
+                                    var d = new Date();
+                                    document.getElementById("date").innerHTML = d.toDateString();
+                                </script>
+                          </div>
+          </div>
+
+          <div class="secondapp">
+  
+                  <script>
+                          function counts()	{
+                      var inputText = document.getElementById("input");
+                      var enteredText = inputText.value;
+                      var withOutSpace = enteredText.replace(/ /g,"")
+                      var totalCount = withOutSpace.length;
+                  
+                  if(totalCount === 0) {
+                      document.getElementById("totalCount").innerHTML = 'You forgot to type a text in the box';
+                  }else if(totalCount === 1) {
+                      document.getElementById("totalCount").innerHTML = 'There are only ' + totalCount + ' letters in that box';
+                  }else if (totalCount > 0) {
+                      document.getElementById("totalCount").innerHTML = 'There are only ' + totalCount + ' letters in that box';
+                  }else {
+                      document.getElementById("totalCount").innerHTML = 'Type a text into the box above.';
+                  }
+                  
+                }   
+                  </script>
+                  
+  
+                  <form name= "result">
+                          <textarea type="text" id ="input" class="int" placeholder="          To Count Letters, Type Here" ></textarea>
+                          <h4   id="totalCount"></h4>
+                          <input type="button" class="man" value="Count Letters" onClick="counts();">
+                  </form>
+  
+          </div>
+
+        </div>
+
+
+        
+       
+</body>
+</Html>

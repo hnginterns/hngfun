@@ -117,7 +117,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 <H1>Name: <span class="bo">Okpongette Idio</span></H1>
 </div>
 <div>
-<p><strong>BIO:</strong><p><strong>BIO:</strong></br>My name is okpongette sunday idio. I am a native of Uruk Ata Ikot Otok, Etim Ekpo Local Government Area, Akwa Ibom State, Nigeria. I attended Qua Ibeo church Nursery/primary School Uruk  Ata Ikot Otok, Etim Ekpo Local Government Area, Akwa Ibom State, Holy family college, Oku Abak, Abak Local Government Area, Akwa Ibom State. Presently, I am studying computer engineering in Sure Foundation Polytechnic, Ikot Akai, Ukanafun Local Government Area, Akwa Ibom State. I'm learning wed design and software development.  </p>
+<p><strong>BIO:</strong></br>My name is okpongette sunday idio. I am a native of Uruk Ata Ikot Otok, Etim Ekpo Local Government Area, Akwa Ibom State, Nigeria. I attended Qua Ibeo church Nursery/primary School Uruk  Ata Ikot Otok, Etim Ekpo Local Government Area, Akwa Ibom State, Holy family college, Oku Abak, Abak Local Government Area, Akwa Ibom State. Presently, I am studying computer engineering in Sure Foundation Polytechnic, Ikot Akai, Ukanafun Local Government Area, Akwa Ibom State. I'm learning wed design and software development.  </p>
 </H2>
 </div>
 <div>

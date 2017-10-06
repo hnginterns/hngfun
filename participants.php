@@ -25632,6 +25632,10 @@ include('header.php');
                    </div>
                </div>
                <!--  Each Participants ends here  -->
+<<<<<<< HEAD
+
+<?php include "footer.php"?>
+=======
 <!--  Each Participant starts here  -->
 <div class="p-card">
                    <div class="v-center">
@@ -25657,3 +25661,4 @@ include('header.php');
 
 
 <?php include "footer.php"?>
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b

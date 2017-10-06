@@ -131,7 +131,9 @@ text-align: center;
     <a href="https://github.com/victorumonto" target="_blank">#stage1</a>
     <a href="http://hng.fun/profile/vento.html"target=_blank=">#stage2</a>
   </div>
-
+                                                              
+<p><a class="btn btn-primary" href="https://www.google.com/url?q=https://drive.google.com/open?id=0B3BCRUenaCq8SWd6b2Zrd0lGMjQ">Download mobile app</a></p>
+                                                                                                                               
    </form>
     </h2> 
     <hr> <p>POWERED BY <a href= "http://www.hotels.ng">hotels.ng</a><div class="footer">

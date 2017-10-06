@@ -2,6 +2,17 @@ body
 {
 background-color: white;
 } 
+<<<<<<< HEAD
+.box
+{
+background-color:#2196F3;
+height:300px;
+width:260px;
+border-radius:10px;
+position:relative;
+top:80px;
+left:40%;
+=======
 
 .space{
 	background-color: gray;
@@ -31,6 +42,7 @@ border-radius:10px;
 position:relative;
 top:50px;
 left:33%;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 } 
 .display
 {
@@ -95,9 +107,12 @@ color:black;
 background-color:FF9933;
 border-bottom:black 2px solid;
 border-top:2px FF9933 solid;
+<<<<<<< HEAD
+=======
 margin-right:10px;
 height:70px;
 margin-bottom:5px;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 }
 .gray:active
 {
@@ -123,6 +138,8 @@ p
 {
 line-height:10px;
 }
+<<<<<<< HEAD
+=======
 
 .bk{
 	color: #000000;
@@ -139,3 +156,4 @@ line-height:10px;
 }
 
 
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b

@@ -15,7 +15,7 @@
     margin-bottom: 20px;
     margin-left: 20px;
     position: relative;
-    bottom:100px;
+    bottom:20px;
 }
 form{
     font-size: 30px;
@@ -31,7 +31,6 @@ fieldset {
     margin-right: auto;
     background-color: lightgrey;
     position: relative;
-    bottom: 80px;
   
 }
 

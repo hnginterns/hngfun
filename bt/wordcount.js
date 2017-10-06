@@ -1,5 +1,10 @@
 function wordCount() {
 	document.getElementById('word').onkeyup = function () {
+<<<<<<< HEAD
+	document.getElementById('result').innerHTML = "Characters: " +  this.value.length;
+	};
+}
+=======
 	var typedWord = document.getElementById('word').value;
 	var abets = typedWord.match(/[a-z,A-Z]/g);
 	var nums = typedWord.match(/[0-9]/g);
@@ -25,3 +30,4 @@ var res = hi.match(/[0-9, a-z]/g);
 // }
 
 // wordCount(count);
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
