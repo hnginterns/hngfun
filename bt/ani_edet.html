@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 <DOCTYPE html>
 <html>
 <head>
@@ -6,6 +9,23 @@
 </head>
 <style type="text/css">
 footer{
+<<<<<<< HEAD
+	font-size: 15pt;
+    color: #20bcd5;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+    letter-spacing: 5
+}	
+div{
+	
+    border: 10px hidden #f7f8f9;
+    border-style: hidden;
+    font-size: 80pt;
+    color: #20bcd5;
+    letter-spacing: 5;
+         }
+=======
 	font-size: 15px;
     color: black;
     text-align: center;
@@ -16,10 +36,40 @@ div{
     color: white;
 }
 
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
     #resultPane{
       width:200px;
       padding:10px;
       font-size:20px;
+<<<<<<< HEAD
+    }
+    #result{
+      border:1.3px;
+      padding:5px 10px;
+      font-size:20px;
+}
+header{
+	
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+   font-family:monospace;
+   font-size: 30pt;
+
+}
+</style>
+<body bgcolor="#353D4A" onload="startTime()">
+<font color="white" style="font-size: 40">Aniekan Edet</font>
+
+<center><br>
+ <hr size="10" color="black" >
+ <!--Word Count stars here -->
+<h1><b><font color="white" style="font-size: 40">Word Count</font></b></h1>
+ <nav id ="container">
+  <input type="text" name = "Screen" id = "screen" placeholder="begin Counting!" style="width: 250px; height: 40px; font-size: 30; border-radius: 8px" >
+        <div class ="answer">
+            <font id ="resultPane" color="white" style="font-size: 30" > Result </font> 
+=======
 }
 	
     #result{
@@ -48,6 +98,7 @@ body{
   <input type="text" name = "Screen" id = "screen" placeholder="" style="width: 250px; height: 30px; font-size: 10; border-radius: 4px" >
         <div class ="answer">
             <font id ="resultPane" color="black" style="font-size: 30" > Result </font> 
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
             <font id = "result" style="font-size: 30">0</font>
             </p>
         </nav>
@@ -60,10 +111,59 @@ body{
        </script>
        </center>
        <!--Word Count Ends here -->
+<<<<<<< HEAD
+<hr size="10" color="black" >
+       <!--Calculator Starts here -->
+       <center>
+ <h1><b><font color="white" style="font-size: 40">Calculator</font></b></h1><FORM NAME="Calc">
+<TABLE bgcolor="">
+<TR>
+<TD>
+<INPUT TYPE="text"   NAME="Input"  style="width: 250px; height: 40px; font-size: 30; border-radius: 8px">
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'"  style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'"  style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'"  style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<br>
+<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<br>
+<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<br>
+<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '" style="width: 60px; height: 60px; font-size: 30; border-radius: 8px"/>
+<br>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+</center>
+<!--Calculator Ends here -->
+
+
+<!--Time Starts here -->
+<center>
+<hr size="10" color="black" >
+<div>
+<h1><b><font color="white" style="font-size: 40">Digital Time</font></b></h1>
+=======
 
  <!--Time Starts here -->
 <center>
 <div class="time">
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
     <script>
 function startTime() {
     var today = new Date();
@@ -81,6 +181,22 @@ function checkTime(i) {
     return i;
 }
 </script>
+<<<<<<< HEAD
+</div>
+<div id="txt"></div>
+</center>
+<!--Time Ends here -->
+
+<br>
+<br>
+<br>
+<br>
+  <footer class="copyright" align="center" font-size="30">
+      &copy; 2017 Aniekan Edet. All rights reserved.
+</footer>
+</body>
+</html>
+=======
 
 <div id="txt"></div>
 </div>
@@ -131,3 +247,4 @@ function checkTime(i) {
 </footer>
 </body>
 </html>
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b

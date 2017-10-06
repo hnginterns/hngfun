@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>popUP</title>
+    <style>
+            body{
+                margin: 5px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+            .container{
+                width:600px;
+                margin: 0 auto;
+                padding: 10px;
+                border: 1px solid grey;
+            }
+            h3,h4,h5,p, ul{
+                margin: 0 0 0.5px 0;
+            }
+            .head{
+                background: #F76126;
+                padding:5px;
+                color:white;
+            }
+            .this_week{
+                color:#F76126;
+                border-bottom:1px solid black;
+            
+            }
+            ul,li{
+               list-style: none;
+               display: inline-block; 
+               padding:3px;
+            }
+            
+            img{
+                width:15px;
+                height: 15px
+            }
+            .previous_week{
+                color:#F76126;
+                border-bottom:1px solid black;
+                text-align: left;
+            }
+           table{
+                margin-left:10px;
+                width:100%;
+                font-size: 15px;
+                font-weight:600
+            }
+            input:hover,tr:hover{
+                color:#F76126;
+            }
+            tr{
+                margin-right:20px;
+                width:50px;
+            }
+            .butt{
+                text-align:center;
+                margin-top:15px;
+            }
+            .butt input{
+                height:30px;
+                width:100px;
+                color:white;  
+                background:#F76126;  
+                border-radius: 5px;
+                outline: none;
+            }
+            td input{
+                color:white;
+                font-weight: 600;
+                background: white;
+                border: 0;
+                width:30px;
+      
+            }
+          
+            </style>
+</head>
+<body>
+    <!-- body container-->
+    <div class="container">
+            <!-- header container-->
+            <div class="head">
+                <h3>TopUp Details Page</h3>
+            </div>
+            <!-- Top up details retrival-->
+            <div class="thisweektable">
+                <div class="this_week">
+                    <ul>
+                    <li><h4>This Week - September, 2017</h4> </li>
+                    <li><h5 style="margin-left:100px; ">Number Approved by: <span style="color:black; ">Admin</h5></li>
+                    </ul>
+                </div>
+                <!-- current week tables div container-->
+                <div class="tables1">
+                    <table>
+                        <tr class="tree">
+                            <td>Thursday</td>
+                            <td>9:39pm</td>
+                            <td><img src="images/call.png" alt="call"></td>
+                            <td>Phone Topup (N2000)</td>
+                            <td><input type="button" value="X"></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10:05pm</td>
+                            <td><img src="images/mtn.png" alt="mtn"></td>
+                            <td>Data Topup (1.5GB - N1000) 30days</td>
+                            <td><input type="button" value="X"></td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>9:39am</td>
+                            <td><img src="images/call.png" alt="call"></td>
+                            <td>Phone Topup (N1000)</td>
+                            <td><input type="button" value="X"></td>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+    <!-- previous week tables div container-->
+    <div class="previousweektable">
+            <div class="previous_week">
+                    <h4 style="margin-top:10px">Previous Weeks - September, 2017</h4> 
+
+            </div>
+            <div class="tables2">
+                    <table>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9:39pm</td>
+                                <td><img src="images/call.png" alt="call"></td>
+                                <td>Phone Topup (N2000)</td>
+                                <td><input type="button" value="X"></td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>10:05pm</td>
+                                <td><img src="images/mtn.png" alt="mtn"></td>
+                                <td>Data Topup (1.5GB - N1000) 30days</td>
+                                <td><input type="button" value="X"></td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9:39am</td>
+                                <td><img src="images/call.png" alt="call"></td>
+                                <td>Phone Topup (N1000)</td>
+                                <td><input type="button" value="X"></td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9:39pm</td>
+                                <td><img src="images/call.png" alt="call"></td>
+                                <td>Phone Topup (N1000)</td>
+                                <td><input type="button" value="X"></td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>10:05pm</td>
+                                <td><img src="images/mtn.png" alt="mtn"></td>
+                                <td>Data Topup (1.5GB - N1000) 30days</td>
+                                <td><input type="button" value="X"></td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>10:05am</td>
+                                <td><img src="images/call.png" alt="call"></td>
+                                <td>Phone Topup (N2000)</td>
+                                <td><input type="button" value="X"></td>
+                            </tr>
+                        </table>
+                </div>
+                <div class="butt"> 
+                    <input  type="button" value="OK">
+                </div>
+       
+    </div>
+    </div>
+</body>
+
+
+</html>

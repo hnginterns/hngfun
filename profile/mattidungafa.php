@@ -144,28 +144,32 @@ footer{
 </style>
 <title>HNG Intern Profile</title>
 </head>
+
 <body>
 <?php
-   if(isset($_POST['subject'])){
-       $config = [
-           'dbname' => 'hng',
-           'pass' => '@hng.intern1',
-           'username' => 'intern',
-           'host' => 'localhost'
-       ];
-       $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-       $con = new PDO($dsn, $config['username'], $config['pass']);
-       $result = $con->query('SELECT * FROM password LIMIT 1');
-       $data = $result->fetch();
-       $password = $data['password'];
-       $subject = $_POST['subject'];
-       $body = $_POST['message'];
-       header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=mattidungafa@gmail.com");
-    
-  }else{
-       header("location:mattidungafa.html");
-   }
-?>s
+  
+  if(isset($_POST['subject'])){
+	$config = [
+		'dbname' => 'hng',
+		'pass' => '@hng.intern1',
+		'username' => 'intern',
+		'host' => 'localhost'
+	];
+	$dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+	$con = new PDO($dsn, $config['username'], $config['pass']);
+	$result = $con->query('SELECT * FROM password LIMIT 1');
+	$data = $result->fetch();
+	$password = $data['password'];
+	$subject = $_POST['subject'];
+	$body = $_POST['message'];
+	header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=mattidungafa@gmail.com");
+	/*echo "Message sent!"*/
+	}
+	else{
+		header("location: mattidungafa.html");
+	   /* echo "Message sending failed!"*/
+	}
+?> 
 
 <div class="container">
 	<header>MY HNG-INTERN PROFILE PAGE</header>
@@ -187,11 +191,11 @@ footer{
 	  </p>
 				</td>
 				<td colspan="2">
-					 <form action="kemsguy72" method="POST" name="contact-form">
+					 <form action="http://hng.fun/profile/mattidungafa.php" method="POST" name="contact-form">
 						<label class="form-header">CONTACT FORM</label>
 						<input name="subject" size="30" type="text" placeholder="Subject..">
-						<input name="email" size="30" type="email" placeholder="E-mail..">
-						<textarea name="body" rows="6" cols="40" placeholder="Message.."></textarea>
+						<input name="Email" size="30" type="email" placeholder="mattidungafa@gmail.com">
+						<textarea name="message" rows="6" cols="40" placeholder="Message.."></textarea>
 						<input name="process"  value="SUBMIT" type="submit">
 						 
 
