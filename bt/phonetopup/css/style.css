@@ -1,0 +1,366 @@
+/* =======beginning of css by Elisha ======= */
+body{
+    width:100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+    padding:0;
+}
+/* ======= full content div ======= */
+.content{
+    width:1340px;
+    padding:0;
+    margin: 10px auto;;
+}
+/* =======head bar======= */
+.header{
+    position: relative;
+    background:#202A35;
+    width:100%;
+    height: 70px;
+    margin:0 auto;
+    padding:0;
+    border-top-right-radius: 15px;
+    
+}
+/* =======hamburger image in header ======= */
+.header img{
+    position: absolute;
+    margin:0px auto;
+    left:70px;
+    top:25px;
+    display: block;
+}
+/* =======Phone Top Up text ======= */
+.header h5{
+    position: relative;
+    margin:0px auto;
+    margin-left:170px;
+    top:20px;
+    display: block;
+    font-weight: lighter;
+    color:white;
+}
+/* =======header search======= */
+.header input{
+    position:relative;
+    margin:0px auto;
+    left:390;
+    border-radius: 10px;
+    top:-10px;
+    width:300px;
+    height: 40px;
+    display: block;
+    font-weight: lighter;
+
+}
+/* ========Second Container======= */
+.content_two{
+    position:relative;
+    width:100%;
+    height: 300px;
+}
+ /* =======Balance Section======= */
+.balance{
+    position: relative;
+    width:50%;
+    display: block;
+    height:300px;
+    border-right: 1px solid grey;
+}
+
+.balance h5{
+    position:relative;
+    margin:0px auto;
+    left:70px;
+    top:40px;
+    font-size:100%;
+    display: block;
+    color:grey;
+}
+/* =======available wallet div ======= */
+.box{
+    text-align:center;   
+}
+ .box p{
+    width:300px;
+    position: relative;
+    top: 100px;
+    left:120px;
+    line-height: 1.5em;
+    font-size: 90%;
+    padding:10px;
+    color:black;
+    font-weight:bolder;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+.box strong{
+    line-height: 2em;
+    color:#F76126;
+}  
+
+ /* ========Wallet Div Section======= */
+.wallet{
+    position: relative;
+    z-index: 2;
+    width:50%;
+    display: block;
+    margin-left:600px;
+    margin-top:-300px;
+    height:300px;
+}
+.wallet h5{
+    margin:0px auto;
+    margin-left:130px;
+    margin-top:40px;
+    font-size:100%;
+    display: block;
+    color:grey;
+
+}
+.wallet p{
+    position: relative;
+    top:40px;
+    text-align:center;
+    line-height: 1.5em;
+    font-size: 90%;
+    color:#F76126;
+}
+/* =======Wallet Buttons ======= */
+.button{
+    position: relative;
+    text-align: center;
+    width:450px;
+    margin: 0 auto;
+    margin-top:50px;
+}
+.button input{
+    border-radius: 10px;
+    width:100px;
+    padding:5px 10px;
+    margin:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    box-shadow: 0 2px  #424040;
+    background: white;
+}
+/* =======orange background div ======= */
+
+.thirdblock{
+    position: relative;
+    width:100%;
+    height: 600px;
+    background:#F76126;
+}
+/* ======= Topup prepaid text======= */
+.thirdblock h5{
+    position: absolute;
+    top:20px;
+    left: 150px;
+    color:white;
+    padding: 0;
+    margin:0;
+}
+/* ========select numbers section ======= */
+.details{
+    position: absolute;
+    z-index: 1;
+    top:70px;
+    left:30px;
+    width:55%;
+    height:500px;
+    background:white;
+    position: relative;
+}
+.details h6{
+    position: absolute;
+    color:#F76126;
+    top:5px;
+}
+.details img{
+    position: absolute;
+    top:12px;
+    right: 30px;
+}
+.details p{
+    position:absolute;
+    top: 120px;
+    left:20px;
+    color:#F76126;
+}
+/* =======history button div ======= */
+.details .history{
+    position: absolute;
+    top:170px;
+    left:25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70%;
+    width:200px;
+    height:40px;
+    border-radius: 10px;
+    padding:5px 10px;
+    margin:10px;
+    font-weight: 700;
+    box-shadow: 4px 4px 3px #424040;
+    background:#F76126;
+    color:white;
+}
+/* ======= Select amount box======= */
+.selectamount{
+    width:280px;
+    height: 180px;
+    position: absolute;
+    right: 50px;
+    top:90px;
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+.selecttopup{
+    position: absolute;
+    top:-2px;
+    left: -2px;
+    border: 2px solid grey;
+    width: 280px;
+    height:50px;
+    border-radius:20px;
+    margin: 0 auto;
+}
+.selecttopup h6{
+    margin: 0 auto;
+    font-size:100%;
+    top:15px;
+    left:10px;
+}
+.selecttopup img{
+    margin: 0 auto;
+    top:14px;
+    right:20px;
+}
+/* ======= Select amount box button======= */
+.reach{
+    padding:0;
+    margin: 0;
+    position: absolute;
+    left: 20px;
+    top:60px;
+}
+.reach button{
+    margin:8px;
+    margin-top:15px;
+    background: white;
+    border-radius: 9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    height: 35px;
+    width:65px;
+    box-shadow: 0 2px  #424040;
+}
+.reach input{
+    margin:8px;
+    margin-top:15px;
+    background: white;
+    border-radius: 9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    height: 35px;
+    width:65px;
+    box-shadow: 0 2px  #424040;
+}
+.numbers{
+    position: absolute;
+    width:100%;
+    top:300px;
+}
+.numbers h6{
+    color:black;
+     left:10px;
+}
+.numbers hr{
+    width:104.5%;
+    margin:0;
+   margin-left:-16px;
+   padding:0;
+}
+.numbers ul{
+    list-style: none;
+    color:#3E3C3C;
+}
+.numbers li{
+   margin:7px;
+   padding:0;
+}
+/* ======= Top up data plan box======= */
+.details2{
+    position: absolute;
+    z-index: 1;
+    top:70px;
+    right:50px;
+    width:30%;
+    height:400px;
+    background:white;
+}
+.details2 h6{
+    text-align: center;
+    color:#F76126;
+}
+.details2 ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    margin-top:15px;
+    margin-bottom: 25px;
+}
+.details2 li{
+    position:absoute;
+    display:inline;
+    padding:0;
+    background-color: white;
+    margin-left:15px;
+}
+.details2 li button{
+    margin-left:7px;
+    background-color: white;
+    width: 55px;
+}
+.details2 li:hover{
+    border-bottom: 3px solid #F76126;
+}
+/* ======= Top All button======= */
+.thirdblock>input{
+    position: absolute;
+    bottom:30px;
+    right:40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    width:400px;
+    height:50px;
+    border-radius: 10px;
+    padding:5px 10px;
+    margin:10px;
+    font-weight: 700;
+    box-shadow: 0 3px  #424040;
+    color:#F76126;
+}
+
+.data button{
+    border-radius: 10px;
+    margin-left:30px;
+    margin-top: 20px;
+    height: 80px;
+    width: 80px;
+    font-weight:500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:70%;
+    line-height: 1.2em;
+    box-shadow: 0 2px  #424040;
+    background: white;
+}
+
+
+.data strong{
+    color:#F76126;
+}
+.details strong{
+    color:black;
+    font-size:80%;
+}
