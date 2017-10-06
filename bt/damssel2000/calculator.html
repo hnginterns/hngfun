@@ -1,0 +1,276 @@
+<!Doctype html>  
+<html>  
+<head>
+    <title>Calculator</title>
+
+</head>
+<body>
+<style>
+
+p{
+  color: yellow; 
+  font-size: 50px;
+  text-align:center;
+  font-weight: bold;
+  font-family: courier;
+}
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+ul{
+    font-size: 25px;
+    font-weight: solid;
+      
+}
+li{
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right:20px;
+    background-color: yellow;
+    border-radius: 15px;
+         
+  }
+.calculator {
+  width: 400px;
+  height: 350px;
+  background-color: yellow;
+  border: 5px white;
+  border-radius: 80px;
+}
+
+#display {
+  margin-top: 2em;
+      margin-bottom: 20px;
+  width: 320px;
+  height: 40px;
+  text-align: center;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 18px;
+  left: 2px;
+  top: 2px;
+  color: #7fff00;
+  padding: 5px 5px 0 0;
+}
+#btn {
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+      width:55px;
+      height:35px;
+      box-shadow: 0 0 2px 1px black;
+      outline: none;
+    }
+
+#btnnumber {
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+      width:55px;
+      color: white;
+      background-color: black;
+      height:35px;
+      box-shadow: 0 0 2px 1px black;
+      outline: none;
+    }
+#oprbtn {
+      color: white;
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+      background-color: blue;
+      width:55px;
+      height:35px;
+      box-shadow: 0 0 2px 1px black;
+      outline: none;
+    }
+#equal {
+      margin: 4px;
+      font-weight: bold;
+      border-radius: 5px;
+      width:122px;
+      height:35px;
+      outline: none;
+      color: white;
+      background-color: blue;
+      box-shadow: 0 0 2px 1px black;
+    }
+
+#calculator {
+      background-color: gray;
+      width: 300px;
+      height: 350px;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 0 0 3px 6px #ccc;
+      margin: 50px auto;
+    }
+form { 
+margin: 0 auto; 
+width:350px;
+padding-top: 100px;
+}
+#switch{
+  margin-top: 0px;
+}
+
+
+</style>
+  <p> CALCULATOR </p>
+
+  <div>
+        <ul>
+            <li> <a href="home.html">Home</a></li>
+            <li> <a href="calculator.html">Calculator</a></li>
+            <li> <a href="clock.html">Clock</a></li>
+            <li> <a href="counter.html">Counter</a></li>
+    
+        </ul>
+</div>
+
+
+ <form name="calc">
+
+ <table class="calculator" cellspacing="1" cellpadding="0">
+         
+      <td colspan="20"><input id="display" name="display" value="0" size="28" maxlength="25">
+
+       
+<br>
+      
+     <input type="button" id="btn"  value="C"      onclick="this.form.display.value=  0 ">
+     <input type="button" id="btn"  value="CE"    onclick="deleteChar(this.form.display)">
+     <input type="button" id="btn"  value="x^y" onclick='toScreen("**")'>
+     <input type="button" id="btn" value="%"      onclick=" percent(this.form.display)">
+     <input type="button" id="oprbtn" value="/"      onclick="addChar(this.form.display, '/')">
+     
+<br>
+   
+     <input type="button" id="btnnumber"  value="7"    onclick="addChar(this.form.display, '7')">
+     <input type="button" id="btnnumber"  value="8"    onclick="addChar(this.form.display, '8')">
+     <input type="button" id="btnnumber"  value="9"    onclick="addChar(this.form.display, '9')">
+     <input type="button" id="btn" value="ln"   onclick="if(checkNum(this.form.display.value)) { ln(this.form) }">
+     <input type="button" id="oprbtn" value="*"    onclick="addChar(this.form.display, '*')">
+     
+<br>
+     <input type="button" id="btnnumber"  value="4"         onclick="addChar(this.form.display, '4')">
+     <input type="button" id="btnnumber"  value="5"         onclick="addChar(this.form.display, '5')">
+     <input type="button" id="btnnumber"  value="6"         onclick="addChar(this.form.display, '6')">
+     <input type="button" id="btn" value="&radic;"   onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }">
+     <input type="button" id="oprbtn" value="-"         onclick="addChar(this.form.display, '-')">
+<br>
+     <input type="button" id="btnnumber"  value="1"   onclick="addChar(this.form.display, '1')">
+     <input type="button" id="btnnumber"  value="2"   onclick="addChar(this.form.display, '2')">
+     <input type="button" id="btnnumber"  value="3"   onclick="addChar(this.form.display, '3')">
+     <input type="button" id="btn" value="x^2" onclick="if(checkNum(this.form.display.value)) { square(this.form) }">
+     <input type="button" id="oprbtn" value="+"   onclick="addChar(this.form.display, '+')">
+   
+<br>
+     <input type="button" id="btn" value="&#177"  onclick="changeSign(this.form.display)">
+     <input type="button" id="btnnumber"  value="0"      onclick='toScreen("0")'>
+     <input type="button" id="btn" value="&#46;"  onclick="addChar(this.form.display, '&#46;')">
+     <input type="button" id="equal"   value="="      onclick="if(checkNum(this.form.display.value)) { compute(this.form) }">
+
+   
+ </table>
+</form>
+<br>
+<hr>
+<script type="text/javascript">
+    
+  let box = document.getElementById('display');
+
+  function toScreen(x){
+
+    let displayArray = box.value.toString().split("");
+
+    if(box.value.length === 14){
+      box.value +='';
+    } else if(x ==='c'){
+      box.value = '';
+     } else{
+      box.value += x;
+    }
+  } 
+  function power(){
+    x = box.value;
+    x = eval(x * x);
+    box.value = x;
+  }
+
+  </script>
+
+</body>
+ <script language="javascript">
+
+ 
+       function addChar(input, character) {
+       if(input.value == null || input.value == "0")
+        input.value = character
+       else
+        input.value += character
+}
+
+function sqrt(form) {
+  if (Number(form.display.value) >0)
+    form.display.value = Math.sqrt(form.display.value);
+     else
+      form.display.value = "cannot find root of negative number";
+}
+
+function ln(form) {
+  if (Number(form.display.value) >0)
+    form.display.value = Math.log(form.display.value);
+    else
+      form.display.value = "cannot find log of negative number";
+}
+
+function exp(form) {
+    form.display.value = Math.exp(form.display.value);
+}
+
+function deleteChar(input) {
+    input.value = input.value.substring(0, input.value.length - 1)
+}
+var val = 0.0;
+function percent(input) {
+  val = input.value;
+  input.value = input.value / 100;
+}
+
+function changeSign(input) {
+    if(input.value.substring(0, 1) == "-")
+        input.value = input.value.substring(1, input.value.length)
+    else
+        input.value = "-" + input.value
+}
+
+function compute(form) {
+
+    form.display.value = eval(form.display.value);
+}
+
+function square(form) {
+    form.display.value = eval(form.display.value) * eval(form.display.value)
+}
+
+function checkNum(str) {
+    for (var i = 0; i < str.length; i++) {
+        var ch = str.charAt(i);
+        if (ch < "0" || ch > "9") {
+            if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "."
+                && ch != "(" && ch!= ")" && ch != "%") {
+                ("invalid entry!")
+                return false
+                }
+            }
+        }
+        return true
+}
+             </script>
+</html>
