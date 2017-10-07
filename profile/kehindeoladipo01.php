@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+ <?php 
+        $dbname   = 'hng';
+        $hostname = 'localhost';
+        $username = 'intern';
+        $pass = '@hng.intern1';
+        $connection = new mysqli($hostname, $username, $pass, $dbname);  
+
+     $sql = "select * from password LIMIT 1";
+     $returned_password = $connection->query($sql)->fetch_assoc();
+     $password = $returned_password['password'];
+
+
+ ?>
+ 
+ 
+=======
+>>>>>>> b027c2b3c865d29bbe55c6e9827c275316d7f110
  <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -10,12 +28,10 @@
       margin-left: auto;
       margin-right: auto;
     }
-
     .image{
       width: 400px;
       height: 400px;
     }
-
     .content {
       margin-left: auto;
       padding: 20px;
@@ -29,7 +45,6 @@
       width: 100%;
       border: 0;
     }
-
     h3 {
       font-size: 1.6em;
       text-align: center;
@@ -48,11 +63,20 @@
      <br>
      <p> I reside in Lagos. I am a student at Ladoke Akintola University of Technology. A beginner level python programmer.</p><br/>
       <div class="contact">
+<<<<<<< HEAD
+      <form action="../sendmail.php" method="get">
+        <h3>Contact Me</h3>
+       <input type="text" name="subject" placeholder="Subject" required>
+       <input type="hidden" name="password"  value="<?php echo $password;?>" >
+       <input type="hidden" name="to"  value="kehindeoladipo01@gmail.com" >
+       <textarea name="body" rows="8" placeholder="Your Message"></textarea>
+=======
         <form name="form" action="" method="post">
         <h3>Contact Me</h3>
        <input type="text" name="form_name" placeholder="Your Name" required>
        <input type="email" name="form_email" placeholder="Your Email" required>
        <textarea name="form_text" rows="8" placeholder="Your Message"></textarea>
+>>>>>>> b027c2b3c865d29bbe55c6e9827c275316d7f110
        <input type="submit" value="Mail me">
      </form>
    </div>
