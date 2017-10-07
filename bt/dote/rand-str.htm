@@ -1,0 +1,58 @@
+<!doctype html>
+    <html lang='en-GB'>
+        <head>
+            <title>
+                @dot.e's BT Task
+            </title>
+            <link rel='stylesheet' href='css.css'>
+        </head>
+        <body>
+            <div class='box-shadow' style='max-width: 1080px; margin: auto'>
+                <nav>
+                    <ul>
+                        <li><a href='index.htm'>Index</a></li>
+                        <li><a href='timer.htm'>Timer</a></li>
+                        <li><a href='rand-str.htm'>Random String Generator</a></li>
+                        <li><a href='char-count.htm'>Character Counter</a></li>
+                    </ul>
+                </nav>
+                
+                <section>
+                    <div class='item-box'>
+						<h3 class='item-centre'>Click the button below to refresh the characters.</h3>
+                        <div class='form-control'>
+                            <form name='myform'>
+								<label>Generated String</label> <br>
+								<input type='text' name='myfield' >
+								<button type='button' onclick='rStr();'>Randomise!</button>
+							</form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div class='fme'>
+                 <table>
+                    <tr>
+                        <td>
+                       <img class='icons' src='https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png' alt='slack'> <a href='https://hnginterns.slack.com/team/U72E21XTJ' target='_blank'>dot.e</a>
+                        </td>
+                    </tr>
+                  </table>
+                </div>
+                </footer>
+                    <script>
+						function rStr() {
+							var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+							var string_length = 10;
+							var mystr = '';
+							for (var i=0; i<string_length; i++) {
+								var rnum = Math.floor(Math.random() * chars.length);
+								mystr += chars.substring(rnum,rnum+1);
+							}
+							document.myform.myfield.value = mystr;
+						}
+						
+                    </script>
+        </body>
+    </html>

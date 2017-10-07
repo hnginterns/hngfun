@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Word Counter | Andikan Gabriel</title>
+	<meta name="subject" content="Andikan @HNG Intern" />
+	<meta name="language" content="EN" />
+	<link rel="shortcut icon" href="https://i.imgur.com/D24GBWQ.jpg" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="http://hng.fun/bt/andikangabriel/all.css" />
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	</head>
+<body>
+	<div class="basin">
+		<header>
+			<div id="header-bar">
+				<b><a href="http://hng.fun/profile/andikangabriel.html" target="blank">@andikangabriel</a> Mini Projects</b>
+			</div>
+		</header>
+		<div class="content">
+			<div class="btn-wrapper">
+				<a href="http://hng.fun/bt/andikangabriel/index.html"><div class="btn">home</div></a>
+				<a href="http://hng.fun/bt/andikangabriel/clock.html"><div class="btn">digital clock</div></a>
+				<a href="http://hng.fun/bt/andikangabriel/rand.html"><div class="btn">random string generator</div></a>
+				<a href="http://hng.fun/bt/andikangabriel/word.html"><div class="btn">word counter</div></a>
+			</div>
+			<!-- word count -->
+			<div id="wcount">
+				<p style="text-align:center;margin-bottom:30px;font-size:20px;">Word(s) Counter</p>
+				<textarea id="text"></textarea>
+				<div id="result"></div>
+			</div>
+			<div class="btn-wrapper">
+				<a href="http://hng.fun/bt/andikangabriel/index.html"><div class="btn">home</div></a>
+				<a href="http://hng.fun/bt/andikangabriel/clock.html"><div class="btn">digital clock</div></a>
+				<a href="http://hng.fun/bt/andikangabriel/rand.html"><div class="btn">random string generator</div></a>
+				<a href="http://hng.fun/bt/andikangabriel/word.html"><div class="btn">word counter</div></a>
+			</div>
+			<div id="author"><a href="http://hng.fun/profile/andikangabriel.html" target="blank">meet andikan gabriel</a></div>
+		</div>
+		<footer>
+			Copyright &copy; 2017 - Andikan Gabriel Initiative
+		</footer>
+	</div>
+	<script>
+		function wordCount( val ){
+			var wom = val.match(/\S+/g);
+			return {
+				charactersNoSpaces : val.replace(/\s+/g, '').length,
+				characters         : val.length,
+				words              : wom ? wom.length : 0,
+				lines              : val.split(/\r*\n/).length
+			};
+		}
+
+
+		var textarea = document.getElementById("text");
+		var result   = document.getElementById("result");
+
+		textarea.addEventListener("input", function(){
+		  var v = wordCount( this.value );
+		  result.innerHTML = (
+			  "Characters:  "+ v.charactersNoSpaces +
+			  "&nbsp;&nbsp;|&nbsp;&nbsp;Words: "+ v.words
+		  );
+		}, false);
+
+	</script>
+</body>
+</html>

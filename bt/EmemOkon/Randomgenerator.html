@@ -4,30 +4,42 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>DIGITAL PROJECTS</title>
+      <title>DIGITAL DATE AND TIME</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
 
-    <body>
+    <body onload="randomString()">
       <header>
-            <h1>PROJECTS</h1>
+            <h1>CHARACTERS IN RANDOM</h1>
       </header>
-
-    <main>
-    
-    <div class="list">
+      <main>
+      <p id="randchar"></p>
+       <div class="list">
         <ul>
             <li><a href="mytime.html">DIGITAL CLOCK</a></li>
             <li><a href="Randomgenerator.html">RANDOM GENERATOR</a></li>
             <li><a href="MyCalc.html">SIMPLE CALCULATOR</a></li>
     
         </ul>
-    </div>
-    </main>
+      </div>
 
- 
-     
-    <style>
+   
+   <script>
+                    function randomString() {
+                        let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+                        let string_length = 15;
+                        let randomstring = '';
+                        for (let i=0; i<string_length; i++) {
+                            let rnum = Math.floor(Math.random() * chars.length);
+                            randomstring += chars.substring(rnum,rnum+1);
+                        }
+                        document.getElementById("randchar").innerHTML = randomstring;
+                        
+                    }
+                </script>
+    </main>
+      <style>
       body{
         font-family: Georgia, 'Times New Roman', Times, serif;
         width: auto;
@@ -48,16 +60,18 @@
         }
      
       main{
-        height: 300px;
+        height: 400px;
         text-align: center;
         margin: auto;
-        padding-top:100px;
+        padding-top:2px;
         background-color: #F010C9; 
-        background-attachment: fixed; 
+        background-attachment: fixed;
+        width: 1000px; 
         }  
 
       form { 
-        margin: 0 auto; 
+        margin: 0px auto; 
+        margin-top: 0px;
         width:350px;
         padding-top: 5px;
         }
@@ -67,6 +81,7 @@
         font-size: 100px;
         font-family: Arial;
         color: white;
+
         }
      
       footer p{     
@@ -77,10 +92,38 @@
         text-align:center;
         border-top: 5px;
         font-style: italic;
-        flood-color: #F010C9;
+
+        }
+
+         ul{
+            margin-top: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top:20px;
+            margin-bottom:20px;
+            margin-right:20px;
+            background-color: white;
+            color: #F010C9;
+        }
+        a{
+            text-decoration: none;
+            color:#F010C9;
+        }
+         li a:hover{
+            padding: 2px 5px;
+            color: blue;
+            
+            
         }
 
       .calculator {
+        margin: auto;
+        margin-top: 5px;
         width: 260px;
         height: 300px;
         background-color: #d9e1f9;
@@ -91,7 +134,7 @@
       #display {
         margin-top: 1em;
         margin-bottom: 20px;
-        width: 230;
+        width: 230px;
         height: 40px;
         text-align: right;
         border: 2px ridge;
@@ -141,44 +184,22 @@
         }
 
       #Date{
-        font-size:100px;
-        }
+        font-size:50px;
 
-      ul{
-            margin-top: 50px;
-            font-size: 20px;
-            font-weight: bold;
-            list-style-type: none;
-        }
-        li{
-            display: inline-block;
-            padding: 10px 15px;
-            margin-top:50px;
-            margin-bottom:20px;
-            margin-right:20px;
-            background-color: white;
-            color: #F010C9;
-
-        }
-        a{
-            text-decoration: none;
-            color:#F010C9;
-        }
-         li a:hover{
-            padding: 2px 5px;
-            color: blue;
-            
-            
         }
      
     </style>
 
 
-    <footer>
-        <p>designed by: Emem Okon<br> Copyright &copy; 2017</p> 
+    		
+ 		 <!-- <form name="randform">
+        
+        <h4   id="Time"></h4>
+        <h4   id="Date"></h4>
+        <input type="button" class="sub" value="Get Time & Date" onClick="Time();">&nbsp;
+    </form> -->
+ 	<footer>
+        <p>Designed by: Emem Okon<br> Copyright &copy; 2017</p> 
     </footer>
-    
-
- 	</body>
-  
+    </body>
 </html>
