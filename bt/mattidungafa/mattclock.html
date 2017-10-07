@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <meta-charset: UTF-8>
+
+        <head>
+            <title>A Simple Digital Clock</title>
+            <style>
+                                
+             body{
+                    background-color: #D5B1D8;
+
+                }
+                h1
+                {
+                   
+                    font-style: italic;
+                    text-align: center;
+                    margin:0px;
+                    margin-top:40px;
+                    color:#8181F7;
+                    font-size:45px;
+                }
+                #date
+                {
+                    margin-top:70px;
+                    color:#FF00E2;
+                    font-size:40px;
+                    border:3px dashed #2E9AFE;
+                    padding:10px;
+                    width:500px;
+                    margin-left:250px;
+                }
+                #time
+                {
+                    margin-top:20px;
+                    font-size:100px;
+                    color:#8181F7;
+                    border:3px dashed #FF00E2;
+                    padding:10px;
+                    width:700px;
+                    height:100px;
+                    margin-left:250px;
+                
+          
+
+                   
+                 
+                    }
+                    .button li{ 
+                        display: inline-block;
+                       background-color:#FF00E2;
+                       border-radius:100px;
+                       margin-left: 120px;
+                    
+
+
+                    }
+                    .footer{
+                        text-align:center;
+                        font-size: 20px;
+                         border:3px solid #3F4F6A
+
+                    }
+
+                
+                    </style>
+                    </head>
+
+
+                    <body>
+                     
+                        <h1>Hello And Welcome</h1>
+                        <div>
+                        <div class=button>
+                            <h2>
+                        <ul>
+                            <li><button><a href= "mattcalculator.html">My simple calculator</a></button></li>
+                            <li><button><a href= "random character generator.html">Random string Generator</a></button></li>
+                            <li><button><a href= "http://hng.fun/profile/mattidungafa.html"> My profile page</a></button></li>
+                        </ul>
+                        
+                   
+                           <p id="date"></p> 
+                            <p id="time"></p>
+                    </div>
+                           
+                           <script>
+          
+            window.onload = setInterval(clock,1000);
+        
+            function clock()
+            {
+              var d = new Date();
+              
+              var date = d.getDate();
+              
+              var month = d.getMonth();
+              var montharr =["Jan","Feb","Mar","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+              month=montharr[month];
+              
+              var year = d.getFullYear();
+              
+              var day = d.getDay();
+              var dayarr =["Sun","Mon","Tues","Wed","Thurs","Fri","Sat"];
+              day=dayarr[day];
+              
+              var hour =d.getHours();
+              var min = d.getMinutes();
+              var sec = d.getSeconds();
+            
+              document.getElementById("date").innerHTML=day+" "+date+" "+month+" "+year;
+              document.getElementById("time").innerHTML=hour+":"+min+":"+sec;
+            }
+          </script>
+          <div>
+          <div class=footer>
+              
+          <footer> &copy;Copyright mattidungafa </footer>
+            
+          </div>
+           </body>
+           </html>
+           
+          

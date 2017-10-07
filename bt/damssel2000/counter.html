@@ -1,0 +1,112 @@
+
+<DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+</head>
+<style>
+p{
+  color: yellow; 
+  font-size: 50px;
+  text-align:center;
+  font-weight: bold;
+  font-family: courier;
+}
+
+body {
+  background-color: black;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+ul{
+    font-size: 25px;
+    font-weight: solid;
+      
+}
+li{
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-right:20px;
+    background-color: yellow;
+    border-radius: 15px;	
+
+}
+h1{
+color: white;
+
+}
+div{
+    font-size: 90pt;
+    color: white;
+    }
+    #resultPane{
+      width:200px;
+      padding:10px;
+      font-size:20px;
+}
+	
+    #result{
+      font-size:15px;
+}
+</style>
+ <p> Counter </p>
+
+  <div>
+        <ul>
+            <li> <a href="Home.html">Home</a></li>
+            <li> <a href="calculator.html">Calculator</a></li>
+            <li> <a href="clock.html">Clock</a></li>
+            <li> <a href="counter.html">Counter</a></li>
+    
+        </ul>
+</div>
+
+<body   onload="startTime()">
+<center>
+
+<h1><b>Please Type Below</b></h1>
+ <nav id ="container">
+  <input type="text" name = "Screen" id = "screen" placeholder="" style="width: 250px; height: 30px; font-size: 14; border-radius: 4px" >
+        <div class ="answer">
+            <font id ="resultPane" color="white" style="font-size: 30" > Result </font> 
+            <font id = "result" style="font-size: 30">0</font>
+           </div>
+            </p>
+        </nav>
+        <script>
+                document.getElementById('screen').addEventListener("keyup", myFunction);
+           function myFunction(){
+               word = document.getElementById('screen').value.replace(/\s/g,'');  
+               document.getElementById('result').innerHTML = word.length;
+           }
+       </script>
+       </center>
+      <!--random generator-->
+       <div class=thirdapp>
+          <script>
+              function randomString() {
+                var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+                var string_length = 8;
+                var randomstring = '';
+                for (var i=0; i<string_length; i++) {
+                    var rnum = Math.floor(Math.random() * chars.length);
+                    randomstring += chars.substring(rnum,rnum+1);
+                }
+                document.randform.randomfield.value = randomstring;
+                
+            }
+          </script>
+          
+          <form name="randform">
+                
+          <input type="text" name="randomfield" value="" id="field" style="text-align: center ; background-color: white; font-size: 20px;">
+           
+                        
+                          <input type="button" value="Generate Characters" onClick="randomString();" id="button" class="man">  
+              
+          </form>
+          </div>
+</body>
+</html>
