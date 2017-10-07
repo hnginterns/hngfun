@@ -125,10 +125,6 @@
                     <input type="button" value="TOP ALL">
             </div>
 
-            <footer>
-                <hr>
-                <p>Copyright &copy; 2017 - <a href="Phone.php" id="footer-link">Phone Top-Up</a>. All rights reserved.</p>
-            </footer>
     </div>
      <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
