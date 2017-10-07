@@ -7,10 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         loadData('2000');
     } 
      else if (isset($_POST['data3000'])) {
-        loadData('2000');
+        loadData('3000');
     } 
      else if (isset($_POST['data4000'])) {
-        loadData('3000');
+        loadData('4000');
     }
      else if (isset($_POST['data5000'])) {
         loadData('5000');
