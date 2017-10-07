@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gideon's Timer</title>
+
+<style type="text/css">
+body{
+   background-color:#f3f3f3;
+   font-size:20px;
+   padding: 20px;
+	}
+
+table.clock {
+  
+ text-align: center;
+ border: 2px solid blue;
+ border-radius : 50px ;
+  width:600px ;
+  max-width:500px;
+  height: 150px
+  padding: 5px;
+  margin: auto;
+}
+
+td, input.clock2 {
+  text-align: center;
+  border:none
+  font: .9em verdana, helvetica, arial, sans-serif;
+  padding: .5em;
+  margin : auto ;
+  color:White;
+  
+}
+  input { 
+    display: inline;
+    border: 2px solid;
+    border-radius: 2px;
+     }
+h1{ 
+ word-spacing: 5px ;
+ text-shadow: 3px 2px #616161
+}
+
+.clock3 {
+  text-align: center;
+  font: .7em verdana, arial, helvetica, ms sans serif;
+  border: none;
+   overflow : auto;
+  
+}
+  .inp{
+  text-transform:bold;
+  border: 2px solid #1976D2 ;
+  background-color:#455A64 ;
+  font-family: sanserif;
+  font-weight: bold;
+  font-size: 20px ;
+  color: black;
+  padding:auto;
+  margin:auto;
+  display: inline;
+  }
+  
+  #demo { 
+  border-color: #ememem ;
+  background-color:#FF9800;
+
+  border-width:1px;
+  font-size: 20px ;
+  font-style: oblique;
+  font-weight: strong ;
+  padding: 5px
+  margin: auto;
+	  width: 50px ;
+  bottom: 20px;
+  i{ animation: type2 8s steps(60, end);}
+@keyframes type{ from { width: 0; } } 
+@keyframes type2{ 0%{width: 0;} 50%{width: 0;} 100%{ width: 100;
+ } 
+    } 
+
+
+</style>
+
+
+</head>
+<body>
+
+ 
+<div>
+<script language="javascript">
+  
+function formatTime() {
+  now = new Date();
+  hour = now.getHours();
+  min = now.getMinutes();
+  sec = now.getSeconds();
+
+    
+      
+   
+
+ 
+  
+  if (document.clock.sivamtime[0].checked) {
+    if (min <= 9) {
+      min = "0" + min;
+    }
+    if (sec <= 9) {
+      sec = "0" + sec;
+    }
+    if (hour > 12) {
+      hour = hour - 12;
+      add = " p.m.";
+    } else {
+      hour = hour;
+      add = " a.m.";
+    }
+    if (hour == 12) {
+      add = " p.m.";
+    }
+    if (hour == 00) {
+      hour = "12";
+    }
+
+    document.clock.sivam.value = ((hour<=9) ? "0" + hour : hour) + ":" + min + ":" + sec + add;
+  }
+
+  if (document.clock.sivamtime[1].checked) {
+    if (min <= 9) {
+      min = "0" + min; }
+    if (sec <= 9) {
+      sec = "0" + sec; }
+    if (hour < 10) {
+      hour = "0" + hour; }
+    document.clock.sivam.value = hour + ':' + min + ':' + sec;
+  }
+
+  setTimeout("formatTime()", 1000);
+ document.getElementById("demo").innerHTML = now.toDateString();
+      
+var time = now.getHours(); 
+ var greeting; 
+  switch(time) { 
+case 0: case 1: case 2: case 3: case 4: greeting = 'It\'s midnight, you should be asleep'; break; 
+case 5: case 6: case 7: case 8: case 9: case 10: case 11: greeting = 'Good Morning'; break;
+ case 12: case 13: case 14: case 15: case 16: case 17: greeting = 'Good Afternoon'; break; 
+case 18: case 19: case 20: case 21: case 22: case 23: greeting = 'Good Evening'; break; 
+default: greeting = 'Hi';
+ } 
+document.getElementById('greeting').innerHTML = greeting  ; 
+    
+
+   }
+</script>
+</div>
+</head>
+<body onload=formatTime()>
+
+
+<form name="clock">
+<table class="clock" bgcolor="#03A9F4" width="135">
+ <tr>
+  <td class="clock2">
+  <h1> <span style="color:black; font-family: cursive;"> Gideon's World Time</span></h1>
+ <h3 id="greeting"> <h3>
+ <marquee style=" typing 3.5s steps(40, end), blink-caret .75s step-end infinite;" id="side"> </marquee>
+  </td>
+ </tr>
+ <tr>
+
+  <td>
+ <p id="demo" class="clock2 inp"></p>
+    
+<br><br>
+    
+    <input class="clock2 inp" type="button" name="sivam" size="12"><br>
+    
+    
+  </td>
+   
+ </tr>
+ <tr>
+  <td>
+    <label class="clock3" for="1"><input type="radio" id="1" name="sivamtime" checked>12 
+	Hour Format</label><br>
+    <label class="clock3" for="2"><input type="radio" id="2" name="sivamtime">24 
+	Hour Format</label>
+ <p>copyright by Gideon's World</p>
+  </td>
+
+ </tr>
+</table>
+</form>
+</body>
+</html>

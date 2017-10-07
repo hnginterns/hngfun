@@ -133,6 +133,7 @@ body{
     width:450px;
     margin: 0 auto;
     margin-top:50px;
+    outline: none;
 }
 .button input{
     border-radius: 10px;
@@ -143,6 +144,10 @@ body{
     font-weight: bolder;
     box-shadow: 0 2px  #424040;
     background: white;
+    outline: none;
+}
+button, input{
+    outline: none;
 }
 /* =======orange background div ======= */
 

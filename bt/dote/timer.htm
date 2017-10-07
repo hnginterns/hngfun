@@ -1,0 +1,102 @@
+<!doctype html>
+    <html lang='en-GB'>
+        <head>
+            <title>
+                @dot.e's BT Task
+            </title>
+            <link rel='stylesheet' href='css.css'>
+			<script>
+				function date_time(id)
+				{
+						date = new Date;
+						year = date.getFullYear();
+						month = date.getMonth();
+						months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+						d = date.getDate();
+						day = date.getDay();
+						days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+						h = date.getHours();
+						if(h<10)
+						{
+								h = "0"+h;
+						}
+						m = date.getMinutes();
+						if(m<10)
+						{
+								m = "0"+m;
+						}
+						s = date.getSeconds();
+						if(s<10)
+						{
+								s = "0"+s;
+						}
+						if (h>12)
+						{
+							//hr = ''
+						}
+						result = "I'll tell you the date and time, it is "+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+						document.getElementById(id).innerHTML = result;
+						setTimeout('date_time("'+id+'");','1000');
+						return true;
+				}
+				function hourss ()
+					{
+						var welcome;
+						var date = new Date();
+						var hour = date.getHours();
+
+						if (hour < 12) {
+							welcome = "good morning";
+						}
+						else if (hour < 17) {
+							welcome = "good afternoon";
+						}
+						else {
+							welcome = "good evening";
+						}
+						document.open();
+						document.write("<h2>" + "<font color='teal'>Welcome Lurker, " + welcome + "</font>" + "<br>");
+						document.close();
+					}
+			</script>
+			</script>
+        </head>
+        <body onload='timer();'>
+            <div class='box-shadow' style='max-width: 1080px; margin: auto'>
+                <nav>
+                    <ul>
+                        <li><a href='index.htm'>Index</a></li>
+                        <li><a href='timer.htm'>Timer</a></li>
+                        <li><a href='rand-str.htm'>Random String Generator</a></li>
+                        <li><a href='char-count.htm'>Character Counter</a></li>
+                    </ul>
+                </nav>
+                
+                <section>
+                    <div class='item-box'>
+						<div class='item-center'>
+							<div class='form-control'>
+							<span id='greet'>
+							<script>window.onload = hourss(); </script>
+							<span id="date_time"></span>
+								<script>window.onload = date_time('date_time');</script>
+								<div>Enjoy!</div>
+								</div>
+						</div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div class='fme'>
+                 <table>
+                    <tr>
+                        <td>
+                       <img class='icons' src='https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png' alt='slack'> <a href='https://hnginterns.slack.com/team/U72E21XTJ' target='_blank'>dot.e</a>
+                        </td>
+                    </tr>
+                  </table>
+                </div>
+			</footer>
+
+        </body>
+    </html>
