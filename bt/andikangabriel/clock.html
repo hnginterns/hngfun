@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Digital Clock | Andikan Gabriel</title>
+	<meta name="subject" content="Andikan @HNG Intern" />
+	<meta name="language" content="EN" />
+	<link rel="shortcut icon" href="https://i.imgur.com/D24GBWQ.jpg" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/all.css" />
+	<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script>
+	function _displayDate() {
+		d = new Date();
+
+		var weekday = new Array(7);
+		weekday[0] =  "Sunday";
+		weekday[1] = "Monday";
+		weekday[2] = "Tuesday";
+		weekday[3] = "Wednesday";
+		weekday[4] = "Thursday";
+		weekday[5] = "Friday";
+		weekday[6] = "Saturday";
+		
+		var mth = new Array (11);
+		mth[0] = "January";
+		mth[1] = "February";
+		mth[2] = "March";
+		mth[3] = "April";
+		mth[4] = "May";
+		mth[5] = "June";
+		mth[6] = "July";
+		mth[7] = "August";
+		mth[8] = "September";
+		mth[9] = "October";
+		mth[10] = "November";
+		mth[11] = "December";
+
+		function nth(d) {
+		  if(d>3 && d<21) return 'th'; // thanks kennebec
+		  switch (d % 10) {
+				case 1:  return "st";
+				case 2:  return "nd";
+				case 3:  return "rd";
+				default: return "th";
+			}
+		}
+
+		document.getElementById("dy").innerHTML = weekday[d.getDay()];
+		document.getElementById("dte").innerHTML = d.getUTCDate()+nth(d.getUTCDate());
+		document.getElementById("mth").innerHTML = mth[d.getUTCMonth()];
+		document.getElementById("yr").innerHTML = d.getUTCFullYear();
+		
+		var no = Math.floor(Math.log(d.getHours()) / Math.LN10 + 1);
+		if (d.getHours() > 12 ) {
+			h = d.getHours() - 12;
+			if (no == 1) {
+				document.getElementById("hr").innerHTML = h;
+			}else {
+				document.getElementById("hr").innerHTML = "0"+h;
+			}
+		}else {
+			if (no == 1) {
+				document.getElementById("hr").innerHTML = "0"+d.getHours();
+			}else {
+				document.getElementById("hr").innerHTML = d.getHours();
+			}
+		}
+		var no = Math.floor(Math.log(d.getMinutes()) / Math.LN10 + 1);
+		if (no == 1) {
+			document.getElementById("min").innerHTML = "0"+d.getMinutes();
+		}else {
+			document.getElementById("min").innerHTML = d.getMinutes();
+		}
+		var no = Math.floor(Math.log(d.getSeconds()) / Math.LN10 + 1);
+		if (no != 2) {
+			document.getElementById("secs").innerHTML = "0"+d.getSeconds();
+		}else {
+			document.getElementById("secs").innerHTML = d.getSeconds();
+		}
+		if (d.getHours() >= 12) {
+			document.getElementById("mode").innerHTML = "PM";
+		}else {
+			document.getElementById("mode").innerHTML = "AM";
+		}
+	}
+	setInterval(_displayDate, 1000);
+	</script>
+	</head>
+<body onload="_displayDate()">
+	<div class="basin">
+		<header>
+			<div id="header-bar">
+				<b><a href="http://hng.fun/profile/andikangabriel.html" target="blank">@andikangabriel</a> Mini Projects</b>
+			</div>
+		</header>
+		<div class="content">
+			<div class="btn-wrapper">
+				<a href="/index.html"><div class="btn">home</div></a>
+				<a href="/clock.html"><div class="btn">digital clock</div></a>
+				<a href="/rand.html"><div class="btn">random string generator</div></a>
+				<a href="/word.html"><div class="btn">word counter</div></a>
+			</div>
+			<div class="clock">
+				<div class="date">
+					<span id="dy"></span>&nbsp;<span id="dte"></span>&nbsp;<span id="mth"></span>,&nbsp;<span id="yr"></span>
+				</div>
+				<div class="time">
+					<div id="hr"></div>&nbsp;&nbsp;:&nbsp;&nbsp;<div id="min"></div>&nbsp;&nbsp;:&nbsp;&nbsp;<div id="secs"></div>&nbsp;&nbsp;:&nbsp;&nbsp;<div id="mode"></div>
+				</div>
+			</div>
+			<div class="btn-wrapper">
+				<a href="/index.html"><div class="btn">home</div></a>
+				<a href="/clock.html"><div class="btn">digital clock</div></a>
+				<a href="/rand.html"><div class="btn">random string generator</div></a>
+				<a href="/word.html"><div class="btn">word counter</div></a>
+			</div>
+			<div id="author"><a href="http://hng.fun/profile/andikangabriel.html" target="blank">meet andikan gabriel</a></div>
+		</div>
+		<footer>
+			Copyright &copy; 2017 - Andikan Gabriel Initiative
+		</footer>
+	</div>
+</body>
+</html>
