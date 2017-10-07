@@ -1,34 +1,18 @@
-<?php
-   //if "email" variable is filled out then send email
-   if(isset($_GET['submit'])){
-       //Email information
-       $to = "xyluz@ymail.com";
-       $subject = $_GET['subject'];
-       $body = $_GET['body'];
-   
-   
-    $config = include(dirname(dirname(__FILE__)).'/config.php');
-    
-    $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-    
-    $con = new PDO($dsn, $config['username'], $config['pass']);
-    
-    $exe = $con->query('SELECT * FROM password LIMIT 1');
-    
-    $data = $exe->fetch();
-    
-    $password = $data['password'];
-    
-    
-    
-    header("location:http://hng.fun/sendmail.php?password=$password&subject=$subject&body=$body&to=$to");
-    
-    
-   }
-    
-?>
+ <?php 
+        $dbname   = 'hng';
+        $hostname = 'localhost';
+        $username = 'intern';
+        $pass = '@hng.intern1';
+        $connection = new mysqli($hostname, $username, $pass, $dbname);  
+
+     $sql = "select * from password LIMIT 1";
+     $returned_password = $connection->query($sql)->fetch_assoc();
+     $password = $returned_password['password'];
 
 
+ ?>
+ 
+ 
  <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -41,12 +25,10 @@
       margin-left: auto;
       margin-right: auto;
     }
-
     .image{
       width: 400px;
       height: 400px;
     }
-
     .content {
       margin-left: auto;
       padding: 20px;
@@ -60,7 +42,6 @@
       width: 100%;
       border: 0;
     }
-
     h3 {
       font-size: 1.6em;
       text-align: center;
@@ -79,25 +60,14 @@
      <br>
      <p> I reside in Lagos. I am a student at Ladoke Akintola University of Technology. A beginner level python programmer.</p><br/>
       <div class="contact">
-      <footer>
-        <form class="formsubmit" action="" method="GET" name="contact_area">
-        <input type="hidden" name="to" value="xyluz@ymail.com">
-
-            <p>Name<br />
-                <input name="name" type="text" size="30" /></p>
-                
-            <p>Email<br />
-                <input name="email" type="text" size="30" /></p>
-                <p>Subject <br />
-                <input name="subject" type="text" size="30" /></p>
-            <p>Message<br />
-                <textarea name="body" cols="30" rows="5"></textarea></p>
-            <p>
-                <input name="submit" type="submit" value="Send" />
-            </p>
-        </form>
-   
-    </footer>
+      <form action="../sendmail.php" method="get">
+        <h3>Contact Me</h3>
+       <input type="text" name="subject" placeholder="Subject" required>
+       <input type="hidden" name="password"  value="<?php echo $password;?>" >
+       <input type="hidden" name="to"  value="kehindeoladipo01@gmail.com" >
+       <textarea name="body" rows="8" placeholder="Your Message"></textarea>
+       <input type="submit" value="Mail me">
+     </form>
    </div>
   </div>
 </div>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple JS Calculator</title>
+	<style>
+		.wrapper {
+			margin: auto;
+			max-width: 900px;
+		}
+		.calc {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-column-gap: 9px;
+			padding: 10px;
+			border: 1px solid black;
+			width: 600px;
+		}
+
+		.calc > div {
+			display: grid;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="text-center">Simple calculator</h1>
+			<div class="calc">
+				<div class="operands">
+					<!-- using html5 number helps us with validation -->
+					<input type="number" placeholder="Enter first operand">
+					<input type="number" placeholder="Enter second operand">
+				</div>
+				<div class="operators">
+					<button id="addbtn">&plus;</button>
+					<button id="subbtn">&minus;</button>
+					<button id="mulbtn">&times;</button>
+					<button id="divbtn">&divide;</button>
+				</div>
+				<div class="result"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		let first = document.querySelectorAll("input")[0];
+		let second = document.querySelectorAll("input")[1];
+
+		let dis = document.querySelector("div.result");
+		document.onload = init();
+		function init(){
+			// assign onclick vbents
+			document.querySelector("button#addbtn").onclick = addnumbers;
+			document.querySelector("button#subbtn").onclick = subtractnumbers;
+
+			document.querySelector("button#mulbtn").onclick = multiplynumbers;
+			document.querySelector("button#divbtn").onclick = dividenumbers;
+		}
+
+		function addnumbers(){
+			addtodisplay(parseInt(first.value) + parseInt(second.value));
+		 }  
+
+		function subtractnumbers(){
+			addtodisplay(parseInt(first.value) - parseInt(second.value));
+		 }
+
+		function multiplynumbers(){
+			addtodisplay(parseInt(first.value) * parseInt(second.value));
+		 } 
+
+		function dividenumbers(){
+			addtodisplay(parseInt(first.value) / parseInt(second.value));
+		 }
+
+		function addtodisplay(value){
+			dis.innerHTML = "<strong>" + value +"</strong>";
+		 }
+	</script>
+</body>
+</html>
