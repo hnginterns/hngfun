@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Word Counter</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+		}
+
+		body {
+			background: #000;	
+		}
+
+		.wrapper {
+			margin: auto;
+			max-width: 900px;
+			color: #ccc;
+		}
+
+		.container {
+			background: #ffffff;
+			margin-top: 30px ;
+			padding: 20px;
+		}
+
+
+		.text-center {
+			text-align: center;
+		}
+
+		div#form, div#results {
+			display: block;
+			margin: auto;
+			width: 500px;
+		}
+
+		input,button {
+			display: block;
+			float: left;
+			width: 100%;
+			clear: both;
+		}
+
+		div#form:after {
+			content: ' ';
+			display: block;
+			clear: both;
+			height: 0;
+			margin-bottom: 5px;
+		}
+
+		button {
+			border: 0;
+		}
+
+		button:hover {
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<!-- word counter -->
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="text-center">My showcase</h1>
+			<div>
+				<p class="text-center">Ok enter a word below to count the individual characters in it.</p>
+				<div id="form">
+					<input type="text" placeholder="Enter Word Here" value="surulere" required>
+					<button id="wc">Count</button>
+				</div>
+				<div id="results"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+		let word = document.querySelector("input");
+		let button = document.querySelector("button");
+		let resultspane = document.querySelector("div#results")
+		let decompose = [];
+
+		window.onload = () => {
+			button.onclick = countword;
+		}
+
+		display = function(){
+			decompose.forEach(function(value){
+				addresult(value);
+			})
+		}
+
+		countword = function(){
+			resultspane.innerHTML = "";
+			decompose = actualcount(word.value);
+			display();
+		}
+
+		function actualcount(value){
+			let temp = [];
+			let registerfound = []
+			for(var i = 0; i < value.length; i++){
+				let countObj = {
+					character: '',
+					count: 1
+				}
+				if(registerfound.includes(value[i])){
+					// found before
+					countObj.character = value[i];
+					temp[registerfound.indexOf(value[i])].count++;
+				}else {
+					countObj.character = value[i];
+					registerfound.push(value[i]);
+					temp.push(countObj);
+				}	
+			}	
+
+			return temp;
+		}
+
+		function addresult(val){
+			resultspane.innerHTML += "<p>Character " + val.character + " appears " + val.count  + " " +  pluralize(val.count) + "</p>"
+		}
+
+		function pluralize(value){
+			let result = value > 1 ? 'times' : 'time'; 
+			return result;
+		}
+
+	</script>
+</body>
+</html>

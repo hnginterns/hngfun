@@ -5,8 +5,6 @@
                 @dot.e's BT Task
             </title>
             <link rel='stylesheet' href='css.css'>
-            <script src="https://use.fontawesome.com/47ab589449.js"></script>
-            
         </head>
         <body>
             <div class='box-shadow' style='max-width: 1080px; margin: auto'>
@@ -21,12 +19,17 @@
                 
                 <section>
                     <div class='item-box'>
+						<h3 class='item-centre'>Click the button below to refresh the characters.</h3>
                         <div class='form-control'>
-                            <p><h4>Please use the navigation above to access the tasks.</h4></p>
+                            <form name='myform'>
+								<label>Generated String</label> <br>
+								<input type='text' name='myfield' >
+								<button type='button' onclick='rStr();'>Randomise!</button>
+							</form>
                         </div>
                     </div>
                 </section>
-                </div>
+            </div>
             <footer>
                 <div class='fme'>
                  <table>
@@ -37,8 +40,19 @@
                     </tr>
                   </table>
                 </div>
-			</footer>
-
-
+                </footer>
+                    <script>
+						function rStr() {
+							var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+							var string_length = 10;
+							var mystr = '';
+							for (var i=0; i<string_length; i++) {
+								var rnum = Math.floor(Math.random() * chars.length);
+								mystr += chars.substring(rnum,rnum+1);
+							}
+							document.myform.myfield.value = mystr;
+						}
+						
+                    </script>
         </body>
     </html>
