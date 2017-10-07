@@ -1,0 +1,170 @@
+
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Time and Date</title>
+            <script>
+
+            function Time(){
+            Timer = setInterval(setClock,100);
+            function setClock(){	
+                document.getElementById("Time").innerHTML=new Date().toLocaleTimeString();
+                }
+
+            function Time2(){
+                Timer2 = setInterval(setClock2,100);
+                function setClock2(){
+                    document.getElementById("Date").innerHTML = new Date().toLocaleDateString();
+
+                }
+
+            }
+            Time2();
+            }
+                </script>
+        </head>
+        <body>
+            <div class="bodye">
+            <h1>Time and Date </h1>
+            <div class="list">
+                    <ul>
+                        <li> <a href="home.html">Home</a></li>
+                        <li> <a href="wordcount.html">Word Count</a></li>
+                        <li><a href="passwordgenerator.html">Password Generator</a></li>
+                        <li><a href="timedate.html">Time and Date</a></li>
+                
+                    </ul>
+                </div>
+        <div class="lighter">
+                
+        <p><br> Time and Date  <br><br>
+        
+        <form name="randform">
+        
+        <h4   id="Time"></h4>
+        <h4   id="Date"></h4>
+        <input type="button" class="sub" value="Get Time/Date" onClick="Time();">&nbsp;
+    </form>
+
+    <div class = "footer">
+            <hr>
+        <div>
+        </div>
+        </div>
+        </body>
+        <style>
+            body{
+                background-color: #E6E6E3;
+                color: #504F4F;
+                font-family: 'Roboto', Geneva, Lato, sans-serif;
+            
+            }
+            .bodye{
+                width: 800px;
+                height: 1000px;
+                margin: auto;
+            }
+            h1{
+                font-size: 36px;
+                font-weight: 400;
+                margin:auto;
+                margin-bottom: 40px;
+                text-align:center;
+                color:#A7A5A5;
+                text-shadow: 0 0 1px #504F4F; 
+            }
+            .lighter{
+              
+                background-color: white;
+                color: #5A5958;
+                border-radius: 10px;
+                border-left: 60px solid #5A5958;
+                box-shadow: 5px 5px 15px black;
+                
+            }
+            .lighter h2{
+                font-size:40px;
+                text-align:center;
+                padding-top:30px;
+                color:black;
+                text-shadow: 0 0 1px black;
+            }
+            .lighter p{
+                margin-top: -10px;
+                position: relative;
+                font-size:20px;
+                text-align:center;
+                padding: 0 90px;
+                color:black;
+            }
+            h4{
+                margin-left:180px;
+                margin-top:0px;
+                width: 310px;
+                text-align:center;
+                height:60px;
+                font-weight: 500;
+                font-size:35px;
+                margin-bottom: 10px;
+                border: 1px solid grey;
+                color: white;
+                background-color: #5A5958;
+                border-radius: 10px;
+            }
+           
+            .sub{
+                margin-left:210px;
+                font-size: 16px;
+                font-weight: 700;
+                width: 250px;
+                background-color: #E6E6E3;
+                color: #504F4F;
+                text-align:center;
+                height: 30px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+            }
+            .footer{
+                margin-top: 20px;
+                margin:auto;
+                margin-top:50px;
+                padding: 20px 20px;
+                text-align: center;
+                font-size: 20px;
+}
+.list{
+    margin: auto;
+}
+ul{
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500px;
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom:20px;
+    margin-left:30px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    color:#5A5958;
+}
+a{
+    text-decoration: none;
+    color:#5A5958;
+}
+ li a:hover{
+    padding: 5px 15px;
+    color: #6167BD;
+    border-radius: 15px;
+    
+}
+ 
+         
+        </style>
+        
+        </html>
+
