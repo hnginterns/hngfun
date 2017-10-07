@@ -1,0 +1,66 @@
+<!doctype html>
+    <html lang='en-US'>
+        <head>
+            <title>winsome random string generator</title>
+        </head>
+        <body>
+            <style>
+                .calc a{
+                    font-family:cursive;
+                    color:red;
+                    text-align:center;
+                }
+                body{
+                    background-color: #281428;
+                }
+                .heading{
+                    text-align:center;
+                    color:royalblue;
+                }
+                .label{
+                    text-align:center;
+                    color:#350544;
+                    text-transform:uppercase;
+
+                }
+                form{
+                    text-align:center;
+                    background-color: tomato;
+                    height: 100px;
+                }
+            </style>
+            <div class='box-shadow' style='width: 600px; margin: auto'>
+                <nav>
+                    <ul>
+                        <li class="calc"><a href="winsomecalc.html">Winsome Calculator</a></li>
+                    </ul>
+                </nav>
+                
+                <section>
+                    <div class='item-box'>
+						<h3 class='heading'>Randomise your characters Below.</h3>
+                        <div class='form-control'>
+                            <form name='myform'>
+								<label class="label">String Generator</label> <br>
+								<input type='text' name='myfield' >
+								<button type='button' onclick='rStr();'>Randomise!</button>
+							</form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+                    <script>
+						function rStr() {
+							var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+							var string_length = 10;
+							var mystr = '';
+							for (var i=0; i<string_length; i++) {
+								var rnum = Math.floor(Math.random() * chars.length);
+								mystr += chars.substring(rnum,rnum+1);
+							}
+							document.myform.myfield.value = mystr;
+						}
+						
+                    </script>
+        </body>
+    </html>

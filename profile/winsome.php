@@ -15,7 +15,7 @@ alt="https://web.facebook.com/photo.php?fbid=830806640405023&set=a.3337385834451
 <p id="para1">NAME:NKEREUWEM,NSEOBONG NDARAKE
     </p></center>
 <center><p2>BIO:</p2>
-<p3>I'm a 300level student of Uniuyo,
+<p class="biography">I'm a 300level student of Uniuyo,
 currently studying Physiology in the 
 faculty of Basic Medical Science.<br>
 i'm optimistic,sociable,industrious guy,
@@ -26,19 +26,49 @@ Hobby:listening to RnBs Music,cooking
 and reading motivational books.<br>
 <b><em>Life Nuggett:God First....Believe You Can.</em></b></p3></center>
 <center>
- <form action="/action_page.php" method="post"><pre>
+ <form action="/winsome.php" method="post">
+ <?php $name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+$formcontent="From: $name \n email: $email \n subject: $subject \n message: $message";
+$recipient = "hng.fun/sendmail.php?";
+$subject = "contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die ("Error");
+echo "Thank You!";
+?>
         <fieldset>
-    <legend>Contact Me:</legend><b><pre>
-   Name:<input type="text" id="fname" name="fullname" placeholder="Your Name...">
-  Email:<input type="text" name="email" placeholder="Your email address...">
+    <legend>Contact Me:</legend><pre><b>
+   Name:<input type="text" id="fname" name="fullname" placeholder="First & last Name...">
+  Email:<input type="text" name="email" placeholder="example@gmail.com...">
 Subject:<input type="text" name="subject" placeholder="Subject here...">
 Message:<textarea row="40" cols="40" name="body" placeholder="Comment Here..."></textarea>
 <input type="submit">
             </b></pre>
         </fieldset>
     </pre></form></center>
+    <center>
+        <div id="icons"><!--icon links-->
+          <p>
+            <a href="https://github.com/NseGod/hello-world" target="_blank">#Stage1 Repo</a>
+            <a href="http://hnginterns.slack.com/team/winsome" target="_blank">
+            <img src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" class="icons">winsome</a> 
+            <a href="https://github.com/NseGod" target="_blank">
+            <img class="icons" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="github">NseGod</a>
+          </p>
+        </div>
+    </center>
+   
 </body>
 <style type="text/css">
+*{
+    box-sizing: border-box;
+}
+.icons{
+    width:30px;
+    height:30px;
+}
     input[type=text]{ 
         text-align:initial;
         width: 300px;
@@ -46,7 +76,7 @@ Message:<textarea row="40" cols="40" name="body" placeholder="Comment Here..."><
     margin: 2px 0;
     display: inline-block;
     border: 21px solid #ccc;
-    border-radius: 4px;
+    border-radius: 9px;
     box-sizing: border-box;
     }
     legend{
@@ -79,13 +109,14 @@ Message:<textarea row="40" cols="40" name="body" placeholder="Comment Here..."><
             text-align:center
         }
         p {
-            height:10px;
-            width:400px; 
-            font-weight:lighter; 
-            color:bisque; 
+            
+            height: 10px;
+            width: 400px; 
+            font-weight: lighter; 
+            color: #41292C; 
             text-shadow:1px 5px 3px orangered;
              font-size:18px;
-             font-family:Georgia, 'Times New Roman', Times, serif; 
+             font-family: Georgia, 'Times New Roman', Times, serif; 
              align-self: auto;            
              
         }
@@ -125,19 +156,27 @@ Message:<textarea row="40" cols="40" name="body" placeholder="Comment Here..."><
             font-size:18px; font-family:Georgia, 'Times New Roman', Times, serif;
             box-shadow:10px,10px,5px;
         }
-        p3 {
-            height:20px;
-            width:20px; 
+        .biography {
+            max-height:400px;
+            min-height:100px;
+            max-width: 400px;
+            min-width: 600px;
+            margin: 5px 20px;
+            border: 1px solid normal;
+            padding: 30px 20px;
+            text-align: center;
+            height: 250px;
+            width: 250px;
+            background-color:rgba(55,8,81,0.1); 
             font-weight:lighter; 
             color:bisque; 
             text-shadow:1px 5px 9px black; 
             font-size:20px; 
             font-family:Georgia, 'Times New Roman', Times, serif;
             }
-            img1,img2[class="icons"]{
-                width:16px; height:16px;
-            }
-            img1,img2{
+        class{
+                width:16px;
+                height:16px;
                 border:0px;
                 max-width:100%;
                 font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
@@ -146,10 +185,5 @@ Message:<textarea row="40" cols="40" name="body" placeholder="Comment Here..."><
                 color:aqua;
             }
             </style>
-       <center><a href="https://github.com/NseGod/hello-world" target="_blank">#Stage1 Repo</a><br>
-        <img1 src="https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png" alt="slack" class="icons">Slack:
-            <a href="http://hnginterns.slack.com/team/winsome" target="_blank">winsome</a> 
-        <img2 class="icons" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="github">Github:
-            <a href="https://github.com/NseGod" target="_blank">NseGod</a>
-            </center>
+       
 </html>

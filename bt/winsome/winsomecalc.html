@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+</head>
+<style>
+	body{
+    background-color: #281428;
+}
+h1{
+    color:aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#btn{
+	width: 90px;
+	height: 50px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: tomato;
+
+}
+h3{
+	text-align: center;
+}
+#calc{
+
+    border-color: normal;
+}   
+#dsp{
+	height: 50px;
+    width: 300px;
+    color:#040457;
+    background-color:aquamarine;
+}
+
+
+</style>
+
+
+
+<body>
+<h1>Winsome Calculator</h1>
+<form Name="calc">
+<table id="calc" border=1>
+<tr>
+<td colspan=5><input id="dsp" name="display" onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text"></td>
+<td style="display:none"><input name="N"  type="number"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="7" OnClick="calc.display.value+='7'"></td>
+<td><input id="btn" type=button value="8" OnClick="calc.display.value+='8'"></td>
+<td><input id="btn" type=button value="9" OnClick="calc.display.value+='9'"></td>
+<td><input id="btn" type=button value="+" OnClick="calc.display.value+='+'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="4" OnClick="calc.display.value+='4'"></td>
+<td><input id="btn" type=button value="5" OnClick="calc.display.value+='5'"></td>
+<td><input id="btn" type=button value="6" OnClick="calc.display.value+='6'"></td>
+<td><input id="btn" type=button value="-" OnClick="calc.display.value+='-'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="1" OnClick="calc.display.value+='1'"></td>
+<td><input id="btn" type=button value="2" OnClick="calc.display.value+='2'"></td>
+<td><input id="btn" type=button value="3" OnClick="calc.display.value+='3'"></td>
+<td><input id="btn" type=button value="x" OnClick="calc.display.value+='*'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="0" OnClick="calc.display.value+='0'"></td>
+<td><input id="btn" type=button value="±" 
+
+OnClick="calc.display.value=(calc.display.value==Math.abs(calc.display.value)?-(calc.display.value):Math.abs(calc.display.value))">
+
+</td>
+<td><input id="btn" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)"></td>
+<td><input id="btn" type=button value="/" OnClick="calc.display.value+='/'"></td>
+</tr>
+<tr>
+<td><input id="btn" type=button value="." OnClick="calc.display.value+='.'"></td>
+<td><input id="btn" type=button value="x2" OnClick="calc.display.value=Math.pow(calc.display.value,2)"></td>
+<td><input id="btn" type=button value="√" OnClick="calc.display.value=Math.sqrt(calc.display.value)"></td>
+<td><input id="btn" type=button value="C" OnClick="calc.display.value=''"></td>
+
+
+</tr>
+</table>
+</form>
+
+</body>
+
+</html>
