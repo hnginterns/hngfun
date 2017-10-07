@@ -369,3 +369,23 @@ button, input{
     color:black;
     font-size:80%;
 }
+
+/*======= FOOTER ========*/
+footer{
+    text-align: center;
+    color:#202A35;
+    padding:5px;
+}
+
+footer hr{
+    margin-top: 2em;
+    border-top: 1px solid #202A35;
+}
+
+#footer-link{
+    color:#F76126;
+    text-decoration: none;
+}
+#footer-link:hover{
+    text-decoration: underline;
+}
