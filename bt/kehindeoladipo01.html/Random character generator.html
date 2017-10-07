@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random Word Generator</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+	<!-- word counter -->
+	<div class="wrapper">
+		<div class="container">
+			<h1 class="text-center">My showcase</h1>
+			<p id="results"></p>
+			<button id="genran">Press here to generate a random word</button>
+		</div>
+	</div>
+	<script>
+		
+		let words = [
+			"Me3dDFCGHJNX6",
+            "DSH6RC7NX9",
+            "TE7EKX9MC9",
+            "Q4QW57UK9J",
+            "7XKMMIU8E9L",
+			"HJZ6X2883X",
+			"I788349NXNXM9",
+			"XJ7843X798J."
+		];
+
+		let display = document.getElementById("results");
+		document.getElementById("genran").onclick = function(){
+			display.innerHTML = words[Math.floor(Math.random() * words.length)]
+		}
+	</script>
+</body>
+</html>
