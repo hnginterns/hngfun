@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>Random Char Generation Task</title>
-	<!-- <script type="text/javascript" src="wordcount.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
 	<style type="text/css">
 		html {
@@ -79,27 +78,26 @@
 	</style>
 
 </head>
-<body>
+<body onload="randomString(len_value, char_value)">
 
 	<div>
 		<h1>Random Char Generation Application</h1>
-		<p>Please insert character limit here here</p>
+		<!-- <p>Please insert character limit here here</p> -->
 		
-		<input type="number" name="len" id="len"/>
-		<!-- <button type="submit" name="submit" id="submit" onclick="wordCount();"/></button> -->
+		<!-- <input type="number" name="len" id="len"/> -->
 		<p id="result" ></p>
-		<input type="submit" name="Submit" class="btn" id="submit" value="submit" onclick="randomString(document.getElementById('len').value, char_value);" />
+		<!-- <input type="submit" name="Submit" class="btn" id="submit" value="submit" onclick="randomString(document.getElementById('len').value, char_value);" /> -->
 		
 	</div>
 	<footer>@legend5463</footer>
 
 	<script type="text/javascript">
-		var len_value = document.getElementById('len').value;
+		var len_value = Math.round(Math.random() * 20);
 		var char_value = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 		function randomString(lengt, chars) {
 		    var result = '';
 		    for (var i = lengt; i > 0; i--) result += chars[Math.round(Math.random() * (chars.length - 1))];
-		    console.log(result) ;
+		    // alert(result) ;
 		    document.getElementById('result').innerHTML = result;
 		}
 			
