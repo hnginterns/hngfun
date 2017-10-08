@@ -2,31 +2,54 @@
 <html>
 <head>
 	<title>Word Count Task</title>
-	<script type="text/javascript" src="wordcount.js"></script>
+	<!-- <script type="text/javascript" src="wordcount.js"></script> -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<style type="text/css">
+		html {
+			position: relative;
+			min-height: 100%;
+		}
 		body {
-			/*background-color: #EEE;*/
 			font-family: Raleway;
 			font-size: 20px;
 			font-style: normal;
 			font-variant: normal;
-			overflow: auto;
+			margin: 0;
+			overflow: auto; 
+			background: url(http://res.cloudinary.com/ikem-legend/image/upload/v1506362342/Abstract-tech-background_lbjgvw.jpg); 
+		}
+		header {
+			background-color: #5bb4e2;
+			text-align: center;
+			line-height: 3em;
+		}
+		footer {
+			background-color: #5bb4e2;
+			text-align: center;
+			line-height: 3em;
+			clear: both;
+		    position: absolute;
+		    /*height: 3em;*/ 
+		    vertical-align: bottom;
+		    margin-top: 10em; 
+		    /*left: 0;*/
+    		bottom: 0;
+   			width: 100%;
+
 		}
 		div {
-			background-color: #EEE;
-			margin: 0 15%; 
+			background-color: rgba(158, 158, 158, 0.9);
+			margin: 10px 15%; 
+			margin-top: 10px;
 			padding: 10px 15px;
 			border-radius: 10px;
+			box-shadow: 2px 2px 3px rgba(0,0,0,.5);
 		}
 		h1 {
 			font-family: Raleway;
 			font-size: 28px;
 			font-style: bold;
-			font-variant: normal;
-			/*font-weight: 500;*/
-			/*line-height: 26.4px;*/
+			font-variant: normal;			
 			text-align: center;
 		}
 		input {
@@ -34,6 +57,7 @@
 			border: 1px solid #04699d;
 			border-radius: 4px;
 			padding: 2px;
+			width: 50%;
 		}
 		.btn {
 			margin: 0 auto;
@@ -46,33 +70,47 @@
 			border-radius: 4px;
 			box-shadow: 2px 2px 3px rgba(0,0,0,.5);
 		}
-		#result {
-			background-color: #5bb4e2;
+		/*#result {
+			background-color: #5bb4e2; 
 			border-radius: 4px;
 			padding: 0 5px;
-		}
+		}*/
 
 	</style>
-	<!-- <script type="text/javascript">
-		function wordCount() {
-			document.getElementById('word').onkeyup = function () {
-			document.getElementById('result').innerHTML = "Characters: " +  this.value.length;
-			};
-		}
-	</script> -->
+
 </head>
 <body onload="wordCount()">
 
+	<header>HNG Stage 4 task</header>
 	<div>
 		<h1>Word Count Application</h1>
 		<p>Please insert word here</p>
 		
 		<input type="text" name="word" id="word"/>
-		<!-- <button type="submit" name="submit" id="submit" onclick="wordCount();"/></button> -->
-		<p id="result" onkeyup="wordCount();"></p>
+		<p id="total" onkeydown="wordCount();"></p>
+		<p id="alphabets"></p>
+		<p id="numbers"></p>
+		<p id="special"></p>
 		<!-- <input type="submit" name="Submit" class="btn" id="submit" value="submit" onclick="wordCount();" /> -->
 		
 	</div>
+	<footer>@legend5463</footer>
+
+	<script type="text/javascript">
+		function wordCount() {
+			document.getElementById('word').onkeydown = function () {
+			var typedWord = document.getElementById('word').value;
+			var abets = typedWord.match(/[a-z,A-Z]/g);
+			var nums = typedWord.match(/[0-9]/g);
+			var spec = typedWord.match(/[`~!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g);
+			document.getElementById('total').innerHTML = "Total Characters: " +  this.value.length;
+			document.getElementById('alphabets').innerHTML = "Alphabet Characters: " +  abets.length;
+			document.getElementById('numbers').innerHTML = "Integer Characters: " +  nums.length;
+			document.getElementById('special').innerHTML = "Special Characters: " +  spec.length;
+			};
+
+		}
+	</script>
 
 </body>
 </html>
