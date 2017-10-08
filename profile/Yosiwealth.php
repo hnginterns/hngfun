@@ -237,37 +237,37 @@ padding-bottom: 30px;
 				 </p>
 
 
-		 <p><Strong>Twitter: </Strong>
+		 <p><Strong>
 
 
-			 <a href="http://www.twitter.com/mo_yosiwealth"><i>@mo.yosiwealth</i></a>
-
-
-				</p>
-				
-				
-		 <p><Strong>Github: </Strong>
-
-
-			 <a href="http://www.github.com/yosiwealth"><i>@yosiwealth</i></a>
+			 <a href="http://www.twitter.com/mo_yosiwealth"><i>Tweet me</i></a></Strong>
 
 
 				</p>
 				
-					
-		 <p><Strong>Slack: </Strong>
+				
+		 <p><Strong>
 
 
-			 <a href="http://www.slack.com/mo.yosiwealth"><i>@mo.yosiwealth</i></a>
+			 <a href="http://www.github.com/yosiwealth"><i>Github Profile</i></a></Strong>
 
 
 				</p>
 				
 					
-		 <p><Strong>My Android ContactApp: </Strong>
+		 <p><Strong>
 
 
-			 <a href="http://https://drive.google.com/file/d/0B9U6S9S7spmUMzA5djh2OHhGMm8/view?usp=drivesdk"><i>Click Here To Download</i></a>
+			 <a href="http://www.slack.com/mo.yosiwealth"><i>Slack</i></a></Strong>
+
+
+				</p>
+				
+					
+		 <p><Strong>
+
+
+			 <a href="https://drive.google.com/file/d/0B9U6S9S7spmUMzA5djh2OHhGMm8/view"><i>Download my contactApp</i></a></Strong>
 
 
 				</p>

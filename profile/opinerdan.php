@@ -99,14 +99,17 @@ a {
 <div class="profile">
   <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/12311078_773418296103283_4840860035991890602_n.jpg?oh=e7d3ae2a11bc29d5f95e3d23af8049a3&oe=5A13C470" alt="Daniel" style="width:100%">
   <div class="container">
-    <h1>Iniobong Daniel Isang </h1>
+	  
+	  <h1>Iniobong Daniel Isang </h1>
     <p class="about"><blockquote>I am a Web Developer ,An indigine of Akwa Abasi Ibom State, Currently residing in Calabar,Cross River State </blockquote></p>
         <p><i class="fa fa-slack"></i>@opinerdan </p>
-	<p><i class="fa fa-slack"></i>https://files.slack.com/files-pri/T3QLSP8HM-F6XNECY6R/download/opinerdan.apk </p>
+	<a href="https://files.slack.com/files-pri/T3QLSP8HM-F6XNECY6R/download/opinerdan.apk"></a>Android link</p>
+	
         
  
     <p class="stage"><a  target="_blank" href="https://github.com/opiner/test">Stage-3</a></p>
   </div>
+    
   
   
   

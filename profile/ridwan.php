@@ -1,45 +1,32 @@
-<<<<<<< HEAD
+
 <?php
-    if(isset($_POST['process'])){
-        $config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-        ];
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $result = $con->query('SELECT * FROM password');
-        $data = $result->fetch();
-        $password = $data['password'];
-        $subject = $_POST['subject'];
-        $body = $_POST['body'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=thosynlasisi@gmail.com");
-    }else{
-        header("location: lasisi.html");
+  if($_SERVER['REQUEST_METHOD'] == 'POST') {
+    
+    $error = [];
+    $subject = $_POST['subject'];
+    $to  = 'thosynlasisi@gmail.com';
+    $body = $_POST['message'];
+    if($body == '' || $body == ' ') {
+      $error[] = 'Message cannot be empty.';
     }
-?>
-=======
-<?php
-    if(isset($_POST['process'])){
-        $config = [
-            'dbname' => 'hng',
-            'pass' => '@hng.intern1',
-            'username' => 'intern',
-            'host' => 'localhost'
-        ];
-        $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
-        $con = new PDO($dsn, $config['username'], $config['pass']);
-        $result = $con->query('SELECT * FROM password');
-        $data = $result->fetch();
-        $password = $data['password'];
-        $subject = $_POST['subject'];
-        $body = $_POST['body'];
-        header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=thosynlasisi@gmail.com");
-    }else{
-      //  header("location: lasisi.html");
+    if($subject == '' || $subject == ' ') {
+      $error[] = 'Subject cannot be empty.';
     }
-?>
+    if(empty($error)) {
+      $config = include(dirname(dirname(dirname(__FILE__))).'/config.php');
+      $dsn = 'mysql:host='.$config['host'].';dbname='.$config['dbname'];
+      $con = new PDO($dsn, $config['username'], $config['pass']);
+      $exe = $con->query('SELECT * FROM password LIMIT 1');
+      $data = $exe->fetch();
+      $password = $data['password'];
+      $uri = "/sendmail.php?to=$to&body=$body&subject=$subject&password=$password";
+      header("location: $uri");
+    }
+  }
+ ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,6 +34,7 @@
     <style>
         * {
             box-sizing: border-box;
+            overflow: none;
         }
         
         body {
@@ -58,23 +46,26 @@
         }
         
         section {
-            color: black;
+            color: #fff;
             text-align: center;
         }
         
         div {
             height: 100%;
         }
-        article.about {
-            left: 50%;
-            width: 100%;
+        
+        article {
+            position: absolute;
             top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
+            width: 100%;
             padding: 15px;
         }
+        
         h1 {
             font-size: 2.2em;
-            margin: 30px 0px 0.75rem 0;
+            margin: 0 60 0.75rem 0;
             color: rgba(12, 8, 8, 0.72);
             cursor: pointer;
         }
@@ -82,6 +73,7 @@
             color: #9B9C95;
             transition: color 2s;
         }
+        /* Pattern styles */
         
         .container {
             display: table;
@@ -89,7 +81,9 @@
         }
         
         .left-half {
+/*            background-color: #cfdbeb;*/
             position: absolute;
+/*            left: 0px;*/
             width: 50%;
             background-repeat:no-repeat;
             background-size:cover;
@@ -107,16 +101,16 @@
             right: 0px;
             width: 50%;
            overflow-y: scroll;
-           }
-        /*.about{*/
-            /*color: rgba(12, 8, 8, 0.72);*/
-            /*line-height: 1.46;*/
-        /*}*/
+        }
+        .about{
+            color: rgba(12, 8, 8, 0.72);
+        }
+        
         @media (max-width: 700px) {
             body {
                 overflow-y: scroll;
                 overflow-x: hidden;
-                background-color: #DDDDDD;
+                background-color: #dddddd;
             }
             .right-half {
                 width: 100%;
@@ -143,12 +137,14 @@
                 max-height: 100% !important;
             }
         }
+
         @media (max-width: 500px) {
             .left-half>img {
                 max-width: 100%;
                 height: auto !important;
             }
         }
+        
         
         .icons {
             margin-top: 10px;
@@ -199,11 +195,6 @@
             color: rgba(63, 37, 64, 0.84);
             padding-bottom: -30px;
         }
-        .imani {
-            padding: 10px;
-            color: rgb(0, 0, 0);
-            line-height: 29px;
-        }
         .regInput {
             position: relative;
             z-index: 0;
@@ -224,39 +215,22 @@
             transition: background-color 1s;
             left: 100px;
         }
+
+
+
+
         input:focus{
             background-color: transparent;
             color: black;
             border-color: white;
             outline: none;
         }
-        input, textarea {
-    width:439px;
-    height:27px;
-    background:#efefef;
-    border:1px solid #dedede;
-    padding:10px;
-    margin-top:3px;
-    font-size:0.9em;
-    color:#3a3a3a;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    border-radius:5px;
-}
-        
-        textarea {
-    height:213px;
-}
-input[type="submit"] {
-    width: 127px;
-    height: 38px;
-    text-indent: 5px;
-    border: 50px;
-    margin-top: 20px;
-    cursor: pointer;
-    opacity: .8;
-    background-color: rgba(179, 160, 160, 0.32);
-}
+        textarea:focus{
+            background-color: transparent;
+            color: black !important;
+            border-color: #ffffff;
+            outline: none;
+            resize: none;
         }
         .regInput-3 {
             position: relative;
@@ -280,7 +254,7 @@ input[type="submit"] {
             text-decoration: none !important;
         }
         .regInput-3:hover{
-            background-color: #423636;
+            background-color: #DDDDDD;
             color: #ffffff;
             text-decoration: none !important;
         }
@@ -305,30 +279,28 @@ input[type="submit"] {
             transition: background-color 2s;
             left: 100px;
         }
+
         #form-div{
             margin-left: 20px;
         }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tosin Lasisi | 'purry</title>
+    <title>Lasisi Tosin | Ridwan</title>
     <script src="https://use.fontawesome.com/1dbde377a5.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 </head>
 
 <body>
     <section class="container">
-
         <div class="left-half">
-             <img src="http://res.cloudinary.com/imani/image/upload/v1503327986/IMG_20170421_091759_317_lkbxl1.jpg" alt="purri's image">
-
+            <img src="http://res.cloudinary.com/imani/image/upload/v1503327986/IMG_20170421_091759_317_lkbxl1.jpg" alt="purri's image">
         </div>
-
         <div class="right-half">
             <article>
-                <!--<img class="img-circle" src="http://res.cloudinary.com/imani/image/upload/v1503333886/Hm02qoRY_n9k714.jpg">-->
                 <div class="name">
-                     <h1>Lasisi Tosin Ridwan</h1>
+                    <h1>Lasisi Tosin Ridwan</h1>
 
                 </div>
                 <p class="slack">Slack handle:@ridwan</p>
@@ -347,29 +319,40 @@ input[type="submit"] {
                         <br>I am really passionate about technology and I hope to be an outstanding UI designer someday :).
                     </p>
                     
-
+                    
+                    
                     <p class="slack contact">Contact me</p>
-        <form  action="lasisi.php" method="post" >   
-        
-    <p><label>Email:</label>
-        <input type="email" id="to" name="to" placeholder="Type Here"></p>
 
-    <p><label>Subject:</label>
-        <input type="text" id="subject" name="subject" placeholder="Type Here"></p>
-            
-    <p><label>Message:</label>
-        <textarea id="body" name="body" placeholder="Type Here""></textarea></p>
-            
-            <p><input type="submit" name="process" value="Submit"></p>
-        
-</form>
+                    <div id="form-main">
+                        <div id="form-div">
+                            <form class="form" id="form1" action="" method= "POST" >
+
+                                <p class="name">
+                                    <input type="subject" title="" class="regInput" placeholder="your subject  " >
+                                </p>
+
+                                <p class="email">
+                                    <input type="email" title="" class="regInput" placeholder="email address  " >
+                                </p>
+
+                                <p class="text">
+                                    <textarea class="regInput-1" placeholder=" Write that message...."></textarea>
+                                </p>
+
+                                <div class="submit">
+                 
+                                  <input type="submit" value="SEND" class="regInput-3 text-center" name="submit" required="" />
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </div>
                     
+                    
+                </div>
             </article>
         </div>
     </section>
+
 </body>
+
 </html>
->>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e

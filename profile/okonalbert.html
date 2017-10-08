@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> Albert Okon </title>
+<style type="text/css">
+    body {
+        background-image: url("http://images.all-free-download.com/images/graphiclarge/lovely_parrot_definition_picture_168908.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+         }
+    table {
+        margin-left: 10px;
+        width: 90%;
+          }
+    .td-left {
+        padding-right: 20px;
+        vertical-align: middle;
+        margin-left: 10px;
+        width: 50%;
+        }
+    .td-left form {
+        vertical-align: top;
+        }
+    .td-right {
+        padding-left: 10px;
+        vertical-align: middle;
+        width: 50%;
+        }
+    #pix{
+        display: block;
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+        -webkit-border-radius: 200px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    span {
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        font-weight: bold;
+    }
+    ul {
+        display: block;
+        text-align: center;
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    ul li img {
+        width: 30px;
+        height: 30px;
+    }
+    .text{
+        font-size: 15px; 
+        text-align: center; 
+        margin-top: 5px;
+          }
+    h4 img {
+        width: 30px;
+        height: 30px;
+    }
+    th input{
+        height: 20px;
+        border-radius: 10px;
+        width: 90%;
+
+    }
+    .Calculator {
+        border: solid;
+        background-color: grey;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        }
+    .Calculator td input {
+        font-weight: bold;
+    }
+    #jav {
+        width: 80%;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    #calus {
+        background-color: #AFAFAF;
+    }
+    #act {
+        background-color: #AFAFAF;
+    }
+    #keys {
+        border-radius: 50%;
+        background-color:#FF0052;
+    }
+    #eqn {
+        text-align: center;
+        width: 90%;
+        border-radius: 10px;
+    }
+    fieldset{
+        font-family: cursive;
+        font-size: small;
+        text-align: center;
+    }
+    fieldset input{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+    button{
+        padding:10px;
+        background-color: #2e8b57;
+        text-align: center; margin-left: auto; margin-right: auto;
+        font-weight: bold;
+        border-radius: 30%;
+        border-style: inset;
+          }
+    #wordcount {
+        width: 100px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .countword {
+        text-align: center;
+    }
+    
+</style>
+</head>
+<body>
+  <header>
+      <table>
+          <tr>
+             <!-- Profile picture column -->
+             <td class="td-left">
+                  <div >
+    <img src="https://pp.userapi.com/c639724/v639724358/41069/SXbO-SeY82E.jpg" 
+    id="pix" alt="profile image" /></div>
+     <span>ALBERT OKON</span>
+    <nav>
+        <ul>
+        <li><a href='https://hnginterns.slack.com/messages/@okonalbert'><img src="http://i.imgur.com/DPgggYR.png" alt="Slack Icon"/></a></li>
+        <li><a href="https://facebook.com/okonalbert"><img src="http://icons.iconarchive.com/icons/land-of-web/social-coffee/128/facebook-icon.png" alt="facebook"/></a></li>
+        <li><a href="https://github.com/okonalbert"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github Icon"></a></li>
+     </ul>
+    </nav>
+    </td>
+    <!-- Profile description column -->
+    <td class="td-right">
+        <div class="text">
+            <h3>A Chemical Engineer with a Master's degree in Engineering Management<br/>
+                an indigene of Akwa Ibom state in Nigeria,<br/>
+                Currently a Software development Intern at <a href="https://hotels.ng/">Hotels.ng</a>
+                <br/><i><small>(the largest online booking site in Nigeria)</small></i>
+            </h3>
+            <h4><img src="https://freeiconshop.com/wp-content/uploads/edd/email-solid.png" alt="email" />okonalbert@yahoo.com</h4>
+            <a href="okon.html"><button name="rand" value="RandChar">Random Character</button></a>
+            <a href="hngfun.html"><button name="rand" value="RandChar">Hngfun homepage</button></a>
+        </div><br>
+        <div class="countword">
+            <textarea id="inputString" cols="30" rows="3" placeholder="Text to count"></textarea>
+        <br>
+        <button id="Convert" value="Count Words" oninput="countWords();">Count Words</button> 
+        <input id="wordcount" name="wordcount" type="text" value="" size="6" onsubmit="showCount(numC)"><br/>
+        </div>
+    </td>
+        </tr>
+      </table>
+  </header>
+<hr/>
+<footer>
+<div>
+</div>
+<table>
+    <tr>
+        <!-- Calculator column -->
+        <td class="td-left">
+          <form name="myCalc">
+              <div class="Calculator">
+                <input type="text" name="entry" placeholder="Javascript Calculator" id="jav"/>
+                <br/><br/>
+                <table>
+                    <tr>
+                      <td><input type='button' value='sin' id='calus' onclick='sin()'></td>
+                      <td><input type='button' value='cos' id='calus' onclick='cos()'></td>
+                      <td><input type='button' value='tan' id='calus' onclick='tan()'></td>
+                      <td><input type='button' value='c' id='act' onclick='show("s")'></td>
+                      <td><input type='button' value='del' id='act' onclick='del()'></td>
+                    </tr>
+                  <tr>
+                      <td><input type='button' value='7' id='keys' onclick='show("7")'></td>
+                      <td><input type='button' value='8' id='keys' onclick='show("8")'></td>
+                      <td><input type='button' value='9' id='keys' onclick='show("9")'></td>
+                      <td><input type='button' value='+' id='act' onclick='show("+")'></td>
+                      <td><input type='button' value='-' id='act' onclick='show("-")'></td>
+                    </tr>
+                  <tr>
+                      <td><input type='button' value='4' id='keys' onclick='show("4")'></td>
+                      <td><input type='button' value='5' id='keys' onclick='show("5")'></td>
+                      <td><input type='button' value='6' id='keys' onclick='show("6")'></td>
+                      <td><input type='button' value='*' id='act' onclick='show("*")'></td>
+                      <td><input type='button' value='/' id='act' onclick='show("/")'></td>
+                    </tr>
+                  <tr>
+                      <td><input type='button' value='1' id='keys' onclick='show("1")'></td>
+                      <td><input type='button' value='2' id='keys' onclick='show("2")'></td>
+                      <td><input type='button' value='3' id='keys' onclick='show("3")'></td>
+                      <td><input type='button' value='sqrt' id='act' onclick='sqrt()'></td>
+                      <td><input type='button' value='Sq' id='act' onclick='pow()'></td>
+                    </tr>
+                  <tr>
+                      <td><input type='button' value='0' id='keys' onclick='show("0")'></td>
+                      <td><input type='button' value='00' id='keys' onclick='show("00")'></td>
+                      <td><input type='button' value='.' id='keys' onclick='show(".")'></td>
+                      <td colspan="2"><input type='button' value='=' id='eqn' onclick='answer()'></td>
+                      <td></td>
+                      </tr>
+                </table>
+              </div>
+          </form>
+        </td>        
+<!-- Email form column -->
+<td class="td-right">
+    <form action="okonalbert.php" method="POST">
+    <fieldset>
+        <legend> <b>Contact Form</b> </legend>
+        <label>Name</label><br/><input type="text" name="name" placeholder="Full Name"/><br/>
+        <label>Email Address</label><br/><input type="email" name="Email" placeholder="Email" /><br/>
+        <label>Subject</label><br/><input type="text" name="subject" placeholder="Subject"/><br/>
+        <label>Your Message</label><br/><textarea name="message" cols="22" rows="8" placeholder="Message"></textarea><br/>
+        <button type="submit">Send</button>&nbsp;<button type="reset">Reset</button>
+    </fieldset>
+</form>
+</td>
+    </tr>
+</table>
+</footer>
+<script>
+ function show(x){
+	  	if (x === 's'){
+	  		document.getElementById('jav').value = '';
+	  	}else{
+	  	document.getElementById('jav').value+=x;
+	  }
+	  }
+	  function answer(){
+	  	let soln = document.getElementById('jav').value;
+	  	ans = eval(soln);
+	  	document.getElementById('jav').value = ans;
+	  }
+	  function pow(){
+	  	document.getElementById('jav').value *= document.getElementById('jav').value;
+	  }
+	  function sin(){
+        x = document.getElementById('jav').value;
+        x = Math.sin(x);
+        document.getElementById('jav').value = x;
+      }
+      function cos(){
+        x = document.getElementById('jav').value;
+        x = Math.cos(x);
+        document.getElementById('jav').value = x;
+      } 
+      function tan(){
+        x = document.getElementById('jav').value;
+        x = Math.tan(x);
+        document.getElementById('jav').value = x;
+     }
+      function sqrt(){
+      	x = document.getElementById('jav').value;
+      	x = Math.sqrt(x);
+      	document.getElementById('jav').value = x;
+     }
+      function del(){
+      	x = document.getElementById('jav').value;
+      	y = x.substr(0, x.length-1);
+      	document.getElementById('jav').value = y;
+    }
+</script>
+<script>
+    function countWords(){
+	s = document.getElementById("inputString").value;
+	s = s.replace(/(^\s*)|(\s*$)/gi,"");
+	s = s.replace(/[ ]{2,}/gi," ");
+	s = s.replace(/\n /,"\n");
+    document.getElementById("wordcount").value = s.split(' ').length;
+    }
+    let numC = s.split(' ').length
+    function showCount(numC){
+        log(`You have typed in ${numC} characters`);
+        document.getElementById("Convert") = showCount(numC);
+    }
+    
+</script>
+</body>
+</html>

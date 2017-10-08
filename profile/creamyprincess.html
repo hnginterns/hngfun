@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <title>Florence Essien Profile</title>
+  <script src="https://use.fontawesome.com/de1f216bfa.js"></script>
+  <style>
+    body {
+        margin: 20px;
+        padding: 0;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrHWS8Z_2eY8iLFTUVKHcbV4I6NavdJMmKJ7b-RtCX_0lntW1aCA");
+        background-color: lightgray;
+    }
+
+    h1 , p span{
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    div img {
+        border-radius: 25%;
+        width: 300px;
+        height: 300px;
+        margin-left: 500px; margin-right: 500px; 
+    }  
+    p {
+      text-align: justify;
+      font-size: 20px;
+      text-align: center;
+      margin: 0px;
+      }
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    ul li {
+        display: block;
+        margin: 1px;
+        font-size: 30px;
+        list-style: none;
+    }
+    ul li a {
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        margin: 5px;
+    }
+    form {
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .project {
+        text-align: center;
+    }
+    h1 , h3 {text-align: center;
+    text-shadow: 0px 1px 0px black;
+    color: black;
+    letter-spacing: 0.5em;
+    }
+    hr { height: 5px;
+    color: black;
+    background-color: black;
+    }
+    .col-btnSR {border-radius: 5px;
+    background-color: darkgoldenrod;
+    color: white;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    position: relative;
+    clear: right;
+    float: center;
+    margin-right: 0px;
+    margin-top: 5px;
+    }
+    .col-btnSL { border-radius: 5px;
+    background-color: darkslategrey;
+    color: white;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    position: relative;
+    clear: right;
+    float: center;
+    margin-right: 0px;
+    margin-top: 5px;
+    }
+    .input {
+     width: 90%;
+     min-height: 10px;
+     font-family: 'Montserrat', sans-serif;
+     margin: 5px;
+     border-radius: 0px;
+     border: solid 3px black;
+     padding: 5px;
+     background-color: lightgoldenrodyellow;
+    }
+    button[type=submit]:hover {background-color: red;
+    }
+    button[type=reset]:hover {background-color: red;
+    }
+    footer {color: #FFFFFF;
+    font-size: 19px;
+    text-align: center;
+    line-height: 150px;
+    width: 100%;
+    height: 70px;
+    margin-left: auto; margin-right: auto;
+    padding:0px;
+    clear: left;
+    }
+</style>
+</head>
+   <body>
+       <div>
+      <img src="https://pp.userapi.com/c639517/v639517153/433b5/KqUVaQ28lzI.jpg" alt="profile pic"/>
+      <h1>Florence Essien</h1>
+      <p><span id="text"><strong>Email:</strong> creamyprincess93@gmail.com <strong>|</strong> <strong>Slack:</strong> creamyprincess <strong>|</strong> <strong>Facebook:</strong> CreamyFlorence </span></p>
+       </div>
+       <hr>  
+       <div>      
+     <p><strong>BIO:</strong>
+             I'm a computer Scientist and currently an intern web developer at <a href="https://hotels.ng"><strong>hotels.ng.</strong></a>
+                I love solving problems and I'm a fast Learner, always ready to Learn new Technologies on Web Development. 
+                In my spare time, I love listening to Music,or Watching Soccer.
+                </p>
+       </div>   
+    <footer>
+           <a href='https://hnginterns.slack.com/messages/@creamyprincess'><i class="fa fa-slack" aria-hidden="true"></i></a>
+            &nbsp;<a href="https://github.com/creamyprincess"><i class="fa fa-github" aria-hidden="true"></i></a>
+            &nbsp;<a href="https://facebook.com/creamyflorence"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            &nbsp;<a href="https://twitter.com/creamyprincess"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </footer>  
+
+    <br/><div>
+    <form action="creamyflorence.php" method="POST">
+    <input placeholder="Subject" class="input" type="text" name="subject">
+    <input placeholder="Email" class="input" type="text" name="to">
+    <input placeholder="Name" class="input" type="text" name="to">
+    <textarea placeholder="Message" class="input" name="message" rows="3" cols="30"></textarea>
+    <button class="col-btnSL" type="submit" name="processMail" value="Submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> send</button>
+    <button class="col-btnSR" type="reset" name="button"><i class="fa fa-refresh" aria-hidden="true"></i> Reset</button>
+   
+    </form>           
+   </div><!--end of the main div-->  
+
+  </body>
+</html>

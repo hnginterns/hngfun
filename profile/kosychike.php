@@ -97,15 +97,9 @@
             <a id="twitter" href="https://twitter.com/chykeofficial">
                 <i class="fa fa-twitter"></i> twitter
 
-            </a>
-<<<<<<< HEAD
-=======
+           </a>
             
-            <a id="email" href="https://mail.google.com/mail/u/0/#inbox?compose=new">
-                <i class="fa fa-twitter"></i> kosyononye@gmail.com
-
-            </a>
->>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
+            <a href="https://drive.google.com/file/d/0BzOtc_sZyUCVamVXSHFtQVQ4VjA/view">DOWNLOAD APP</a>
 
 
 

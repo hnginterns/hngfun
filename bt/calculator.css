@@ -1,0 +1,159 @@
+body
+{
+background-color: white;
+} 
+<<<<<<< HEAD
+.box
+{
+background-color:#2196F3;
+height:300px;
+width:260px;
+border-radius:10px;
+position:relative;
+top:80px;
+left:40%;
+=======
+
+.space{
+	background-color: gray;
+	margin-left: 300px;
+	height: 470px;
+	margin-right: 300px;
+	margin-top: 20px;
+}
+
+.me{
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 30px;
+}
+
+
+
+
+
+
+.box
+{
+background-color:#2196F3;
+height:360px;
+width:260px;
+border-radius:10px;
+position:relative;
+top:50px;
+left:33%;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+} 
+.display
+{
+background-color:#222;
+width:230px;
+position:relative;
+left:15px;
+top:20px;
+height:40px;
+}
+.display input
+{
+position:relative;
+left:2px;
+top:2px;
+height:35px;
+width:222px;
+color:black;
+background-color:#bccd95;
+font-size:21px;
+text-align:right;
+} 
+.keys
+{
+position:relative;
+top:15px;
+}
+.button
+{
+width:40px;
+height:30px;
+border:none;
+border-radius:8px;
+margin-left:19px;
+cursor:pointer;
+border-top:2px solid transparent;
+}
+.button.gray
+{
+color:white;
+background-color:#000000;
+border-bottom:black 2px solid;
+border-top:2px #6f6f6f solid;
+padding-left: 3px;
+}
+.button.pink
+{
+color:black;
+background-color:#4CAF50;
+border-bottom:black 2px solid;
+}
+.button.black
+{
+color:white;
+background-color:orange;
+border-bottom:black 2px solid;
+border-top:2px 303030 solid;
+}
+.button.orange
+{
+color:black;
+background-color:FF9933;
+border-bottom:black 2px solid;
+border-top:2px FF9933 solid;
+<<<<<<< HEAD
+=======
+margin-right:10px;
+height:70px;
+margin-bottom:5px;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
+}
+.gray:active
+{
+border-top:black 2px solid;
+border-bottom:2px #6f6f6f solid;
+}
+.pink:active
+{
+border-top:black 2px solid;
+border-bottom:#ff4561 2px solid;
+}
+.black:active
+{
+border-top:black 2px solid;
+border-bottom:#303030 2px solid;
+}
+.orange:active
+{
+border-top:black 2px solid;
+border-bottom:FF9933 2px solid;
+}
+p
+{
+line-height:10px;
+}
+<<<<<<< HEAD
+=======
+
+.bk{
+	color: #000000;
+	padding-left: 90px;
+	padding-bottom: 10px;
+	padding-top:10px;
+	padding-right: 2px;
+	margin-top:15px;
+	margin-left:19px;
+	text-align: center;
+	
+
+
+}
+
+
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b

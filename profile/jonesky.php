@@ -426,21 +426,13 @@ h1 {
                         <h2>About Me</h2>
                         <h6><p>
                          From Akwa Ibom State, Nigeria, I reside in Calabar, and I'm pursuing my first Degree In Computer Science at Cross River University Of Technology. Calabar. <br>
-<<<<<<< HEAD
                          <h6>I can Code (HTML, CSS, JavaScript PHP, MYSQL) </h6>
-=======
-                         <h6>I code (HTML, CSS, JavaScript PHP, MYSQL) </h6>
->>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
 
                         </p> </h6> 
                     </div> 
                 </div> 
                 <div class="agileits-inforight"> 
                     <p><img src="http://res.cloudinary.com/dygbn2svl/image/upload/v1503521670/icons/slack.png" alt=""> @jonesky</p>
-<<<<<<< HEAD
-=======
-					 <p><img src="http://res.cloudinary.com/dygbn2svl/image/upload/c_scale,h_15/v1504394435/android-icon_v4aopr.png" alt=""> <a href="https://drive.google.com/file/d/0B3KzJpaEx9AwdUMyVkJsMko4NTNVdjhQM2FoQ3Nna1lTb3Mw/view"> Android App</a></p>
->>>>>>> 7cfc710181d955134ae091eff698c950bb85f93e
                     <p><img src="http://res.cloudinary.com/dygbn2svl/image/upload/v1503521647/icons/git.png" alt=""> <a href="https://github.com/Joseph-MB/HNG-intern-test"> Stage1-Result</a></p>
                 </div>  
                 <div class="clear"> </div>

@@ -1,0 +1,176 @@
+<html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Word Count</title>
+           
+
+		   <script>
+                function counts()	{
+		   var inputText = document.getElementById("input");
+            var enteredText = inputText.value;
+            var withOutSpace = enteredText.replace(/ /g,"")
+            var totalCount = withOutSpace.length;
+		
+		if(totalCount === 0) {
+			document.getElementById("totalCount").innerHTML = 'Did you really enter a text into the box?';
+		}else if(totalCount === 1) {
+			document.getElementById("totalCount").innerHTML = 'The entered string  contains ' + totalCount + ' letters';
+		}else if (totalCount > 0) {
+			document.getElementById("totalCount").innerHTML = 'The entered string  contains ' + totalCount + ' letters';
+		}else {
+			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
+		}
+        
+	  }   
+                </script>
+        
+		
+		</head>
+        <body>
+		
+            <div class="main">
+            <h1>WORD COUNTING SYSTEM</h1>
+        
+    
+        <div class="mainBox">
+        <p> Calculate every word </br> save yourself the energy of counting how many words you got by using our system</p> 
+		
+        <form name="randform">
+        
+		<textarea type="text" id ="input" class="int" placeholder="Type Your Document" ></textarea>
+		
+        <h4   id="totalCount"></h4>
+        
+		<input type="button" class="sub" value="Count Document" onClick="counts();">&nbsp;
+    </form>
+
+    <div class = "footer">
+            <hr>
+        <p> design by <a href="hng.fun/profile/mercyikpe"> MercyIkpe</p>
+        <div>
+        </div>
+        </div>
+        </body>
+        
+		
+		<style>
+            body{
+                background-color: #607D8B;
+                color: white; 
+                font-family: Geneva, sans-serif;
+            }
+            .main{
+                width: 80%;
+                margin: auto;
+            }
+			
+            h1{
+                font-size: 30px;
+                margin:auto;
+                text-align:	center;
+                color:#ffffff;
+            }
+			
+            .mainBox{
+				background-color: #ffffff;
+                color: #000000;
+				font-size: 18px;
+                border-radius: 30px;
+                
+            }
+			
+            .lighter h2{
+                font-size:40px;
+                text-align:center;
+                padding-top:30px;
+                color:black;
+                text-shadow: 0 0 3px black;
+            }
+            .lighter p{
+                margin-top: -10px;
+                position: relative;
+                font-size:20px;
+                text-align:center;
+                padding: 0 90px;
+                color:#ffffff;
+            }
+			
+			h1{
+				margin-bottom: 50px;
+				font-size: 50px;
+
+			}
+			
+			
+			p {
+				margin-left: 50px;
+				padding-top: 50px;
+				text-align: center;
+				font-size: 25px;
+			}
+			
+			
+            h4{
+                margin-left:250px;
+                width: 600px;
+                height:60px;
+				text-align:center;
+                font-size: 25px;
+                margin-bottom: 10px;
+                border: 1px solid #90A4AE;
+                color: #ffffff;
+                background-color: #263238;
+                border-radius: 10px;
+				padding-top: 10px;
+            }
+			
+            .int{
+                margin-left: 150px;
+                width: 70%;
+                height: 200px;
+                text-align:center;
+                font-weight: 700;
+                margin-bottom: 10px;
+                border: 1px solid #90A4AE;
+                color: #ffffff;
+                background-color: #263238;
+                border-radius: 20px;
+				padding-top: 10px;
+            }
+            
+			.sub{
+                margin-left:450px;
+                font-size: 15px;
+                height: 50px;
+				width: 200px;
+                background-color: #263238;
+                color: #ffffff;
+                text-align:center;
+                margin-bottom: 10px;
+                border-radius: 10px;
+				padding-top: 10px;
+            }
+			
+            .footer{
+                margin-top:10px;
+				border-top: 4px solid #FFC107;
+				padding: 20px 20px;
+                text-align: center;
+                font-size: 16px;
+			}
+        
+        a	{
+            text-decoration: none;
+            color:#f6bb49
+        }
+		
+         a:hover{
+            padding: 5px 15px;
+            color: #00E5FF;     
+        }
+         
+        </style>
+        
+        </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WORD COUNT</title>
+	<style type="text/css">
+	main{
+			width:500px;
+			background-color: grey;
+			height: 100px;
+            text-align: center;     
+  			border-width: 100px;
+			font-size: 50px;
+			margin: auto;
+			
+
+		}
+		input{
+			width:280px;
+			height:40px;
+			border-radius:80px;
+			border-color: blue;
+			margin-left:100px;
+			margin-bottom: 100px;
+
+		}
+		.drip{
+			margin-left:160px;
+			color: red;
+			
+		}
+		#grip {
+			text-align:center; 
+			border-radius: 4px;
+			padding: 5px;
+			font-weight:bold;
+			
+
+		}
+	</style>
+	<main>
+</head>
+
+<body onload="wordCount()">
+
+	<div class="body">
+		
+				<h1 class="body">WORD COUNT</h1>
+			<input type="text"  id="word" name="word" placeholder="TYPE SOMETHING">
+			<p id="grip" onkeyup="wordCount();"></p>			
+		</div>
+	</div>
+			
+		<script>
+		function wordCount() {
+		document.getElementById('word').onkeyup = function () {
+		document.getElementById('grip').innerHTML = "Characters are: " +  this.value.length;
+		};
+}
+	</script>
+</main>
+</body>
+</html>
