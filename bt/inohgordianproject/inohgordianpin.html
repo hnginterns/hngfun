@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>Pin Generator</title>
+
+	 <style type="text/css">
+     body{
+    		width:100%;
+    		height:100%;
+    		background: gray;
+    		color: white;
+    		font-family: 'georgia';
+  			font-weight: bold;}
+		.display{
+          padding: 15px;
+          height: 15px;
+          width: 400px;
+          padding-top: 5px;
+          padding-bottom: 10px;
+          background-color: white;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+
+       
+
+        }
+
+        .general{
+       		 width: 335px;
+			border-radius: 6px;
+			text-align: center;
+			margin-left: 20%; 
+			opacity: transparent;
+			font-family:'Lato sans-serif';
+			color:black ;
+            font-size: 30px;}
+        .cover{
+    		width:90%;
+    		height:250px;
+    		border: 2px solid gray;
+    		background-color:#b30000;
+    		box-shadow:2px 3px 5px 8px #b30000;
+    		text-align: center;
+    		position: absolute;
+    		top:0;
+    		bottom: 0;
+    		left: 0;
+    		right: 0;
+    		margin: auto;}
+        .body{
+          background-color: white;
+          resize: 1em;
+          }
+        .sub{
+          background-color: white;
+          margin-right: auto;
+         
+		}
+	 </style>
+
+
+ </head>
+  <body>
+  <div class="body">
+<script>
+    function randomString() {
+        var chars = "0123456789";
+        var string_length = 4;
+        var randomstring = '';
+        for (var i=0; i<string_length; i++) {
+            var rnum = Math.floor(Math.random() * chars.length);
+            randomstring += chars.substring(rnum,rnum+1);
+        }
+        document.randform.randomfield.value = randomstring;
+    }
+</script>
+
+  
+   <h1 class="general">Generate Your Pin Here</h1>
+    <form name="randform" class="cover">
+    &nbsp;&nbsp;
+    <input type="text" class="display" placeholder="Enter Your Account Number" required><br>&nbsp;
+    <input type="text"  class="display" name="randomfield" value="" placeholder="your pin"><br>&nbsp;
+    <input type="button" class="sub" value="Generate Pin" onClick="randomString();">&nbsp;
+</form>
+
+
+
+
+
+    </div>
+  </body>
+</html>

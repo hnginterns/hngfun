@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>Simple Digital Time</title>
+<script type="text/javascript">
+  function startTime() {
+    var today = new Date();
+    var hr = today.getHours();
+    var min = today.getMinutes();
+    var sec = today.getSeconds();
+    ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+    hr = (hr == 0) ? 12 : hr;
+    hr = (hr > 12) ? hr - 12 : hr;
+    //Add a zero in front of numbers<10
+    hr = checkTime(hr);
+    min = checkTime(min);
+    sec = checkTime(sec);
+    document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+    
+    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    var curWeekDay = days[today.getDay()];
+    var curDay = today.getDate();
+    var curMonth = months[today.getMonth()];
+    var curYear = today.getFullYear();
+    var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+    document.getElementById("date").innerHTML = date;
+    
+    var time = setTimeout(function(){ startTime() }, 500);
+}
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+</script>
+
+<style>
+#body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-width: 300px;
+    max-width: 600px;
+}
+#header {
+    background-color:#4db8ff;
+    color:white;
+    text-align:center;
+    padding:16px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: transperant;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: transparent;
+    color: white;
+}
+#section {
+    height: 406px;
+    width:1110px;
+    float:center;
+    padding:0 120px;
+    font-size: 20px;
+    background-color:#4db8ff;
+}
+#footer {
+    background-color:#4db8ff;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:20px;
+}
+
+.clockdate-wrapper {
+    background-color: #transparent;
+    padding:0px;
+    max-width:350px;
+    width:100%;
+    text-align:center;
+    border-radius:5px;
+    margin:0 auto;
+    margin-top:5%;
+}
+#clock{
+    background-color:#transparent;
+    font-family: sans-serif;
+    font-size:70px;
+    text-shadow:0px 0px 1px #fff;
+    color:#fff;
+}
+#clock span {
+    color:#fff;
+    text-shadow:0px 0px 1px #transparent;
+    font-size:30px;
+    position:relative;
+    top:-27px;
+    left:-10px;
+}
+#date {
+    letter-spacing:0px;
+    font-size:30px;
+    font-family:arial,sans-serif;
+    color:#fff;
+}
+</style>
+</head>
+<body onload="startTime()">
+    
+<div id="header">
+<h1> A Simple Digital Time With Date</h1>
+<div class="topnav">
+ <a class="active" href="vanessa.html">Time</a>
+  <a href="passwordgens.html">Passwor Generator</a>
+  <a href="words.html">Word Count</a>
+</div>
+</div>
+
+<div id="section">  
+<!-- clock and date--> 
+<div id="clockdate">
+  <div class="clockdate-wrapper">
+    <div id="clock"></div>
+    <div id="date"></div>
+  </div>
+</div>
+<center>
+<script language="JavaScript"> 
+var myDate = new Date(); 
+  
+  
+/* hour is before noon */
+if ( myDate.getHours() < 12 )  
+{ 
+    document.write("Good Morning User!"); 
+} 
+else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 ) 
+{ 
+    document.write("Good Afternoon User!"); 
+} 
+else  /* the hour is after 5pm, so it is between 6pm and midnight */
+if ( myDate.getHours() > 17 && myDate.getHours() <= 24 ) 
+{ 
+    document.write("Good Evening User!"); 
+} 
+else  /* the hour is not between 0 and 24, so something is wrong */
+{ 
+    document.write("I'm not sure what time it is!"); 
+} 
+
+</script> 
+  
+</center>
+</div>
+
+<div id="footer">   
+&copy; Copyright 2017 Vanessa
+</div>
+
+</body>
+</html>

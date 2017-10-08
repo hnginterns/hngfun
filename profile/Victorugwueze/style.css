@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+*{
+	margin: 0;
+	padding: 0;
+/*	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;*/
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+=======
 header{
 	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,3)),url(https://res.cloudinary.com/dkkn9xzk7/image/upload/v1506064228/home_background_nuk6ub.jpg);
 	background-position: center;
@@ -10,6 +22,7 @@ header{
 
 
 
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 body{
 	background: #fff;
 	color: #555;
@@ -18,8 +31,12 @@ body{
 	font-size: 18px;
 	text-rendering:optimizeLegibility; 
 }
+<<<<<<< HEAD
+h1,h2,h3,p{
+=======
 
 h1,h2,p{
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 	font-weight: 500;
 	line-height: 2;
 }
@@ -34,10 +51,13 @@ margin: 0 auto;
 margin-top:5px;	
 	
 }
+<<<<<<< HEAD
+=======
 
 .contact{
 	margin-top: 20px;
 }
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 nav{
 	display: block;
 }
@@ -58,17 +78,42 @@ nav{
 
 .nav-link a:hover{
 	border-bottom: 2px solid #ff8000;
+<<<<<<< HEAD
+	padding-bottom: 8px;
+}
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,3)),url(https://res.cloudinary.com/dkkn9xzk7/image/upload/v1506064228/home_background_nuk6ub.jpg);
+	background-position: center;
+	opacity: 1;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+}
+
+#container{
+	width: 1140px;
+=======
 	*/padding-bottom: 8px;
 }
 
 #container{
 	width: 88%;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 	margin: 0 auto;
 }
 
 .home-text{
 	position: absolute;
 	top: 40%;
+<<<<<<< HEAD
+	left:30%;
+}
+
+.home-text h1{
+	/*text-align: center;*/
+	font-size: 40px;
+=======
 	left:20%;
 }
 
@@ -76,6 +121,7 @@ nav{
 	text-align: center;
 	
 	/*font-size: 40px;*/
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 	font-style: bold;
 	font-family: fantasy;
 	font-stretch: ultra-expanded;
@@ -125,17 +171,27 @@ nav{
 
 .row-about,.row-contact{
 	margin-top: 20px;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 }
 .row-about{
 		background-color: #fcfcfd;
 		padding-left: 2em;
 		border-bottom: 1px solid gray;
+<<<<<<< HEAD
+}
+
+.row-contact{
+	padding-bottom: 20px;
+=======
 		padding-bottom: 20px;
 }
 
 #contact{
 	padding-bottom: 30px;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 }
 
 .row-about .about-img{
@@ -174,7 +230,11 @@ nav{
 }
 
 .contact-forms textarea{
+<<<<<<< HEAD
+	height: 100px;
+=======
 	height: 10px;
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 }
 #footer{
 	padding-top:100px;
@@ -187,6 +247,32 @@ nav{
 	color: white;
 	text-align: center;
 }
+<<<<<<< HEAD
+@media screen and (max-width: 980px) {
+	header{
+		width: 100vw;
+	}
+    .home-text h1{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .container{
+    	width: 30px;
+    }
+    .row-about .about-img{
+	 	display:block;
+	}
 
+     .row-about .about-text{
+	 display: block;
+	 float: none; padding-top: 40px;
+	 margin-right: auto;
+	 margin-left: auto;
+	 padding-bottom: 0 auto;
+	}
+}
+=======
+
+>>>>>>> 4ac23af177372fe5641bb52e28bc5fe61cb14c7b
 
 

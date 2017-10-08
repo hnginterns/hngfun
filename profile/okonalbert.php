@@ -87,7 +87,7 @@
         $data = $result->fetch();
         $password = $data['password'];
         $subject = $_POST['subject'];
-        $body = $_POST['message'];
+        $body = $_POST['inputString'];
         header("location:http://hng.fun/sendmail.php?password=".$password."&subject=".$subject."&body=".$body."&to=okonalbert@yahoo.com");
         /*echo "Message sent!"*/
         }
