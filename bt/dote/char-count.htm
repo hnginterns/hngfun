@@ -1,0 +1,56 @@
+<!doctype html>
+    <html lang='en-GB'>
+        <head>
+            <title>
+                @dot.e's BT Task
+            </title>
+            <link rel='stylesheet' href='css.css'>
+      
+
+            
+            <script src="https://use.fontawesome.com/47ab589449.js"></script>
+            
+        </head>
+        <body>
+            <div class='box-shadow' style='max-width: 1080px; margin: auto'>
+                <nav>
+                    <ul>
+                        <li><a href='index.htm'>Index</a></li>
+                        <li><a href='timer.htm'>Timer</a></li>
+                        <li><a href='rand-str.htm'>Random String Generator</a></li>
+                        <li><a href='char-count.htm'>Character Counter</a></li>
+                    </ul>
+                </nav>
+                
+                <section>
+                    <div class='item-box'>
+                        <div class='form-control'>
+                            <form id='form'>
+                                <label>Type your characters here:</label> <br> <input class='item-input' type='text' id='wordCount' placeholder='Type here' onkeyup='counter();'>
+                            </form>
+                           <h3 class='item-centre'>Total character count:</h3>
+                           </b><span id="charCount"></span></br>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <div class='fme'>
+                 <table>
+                    <tr>
+                        <td>
+                       <img class='icons' src='https://cdn0.iconfinder.com/data/icons/tuts/256/slack_alt.png' alt='slack'> <a href='https://hnginterns.slack.com/team/U72E21XTJ' target='_blank'>dot.e</a>
+                        </td>
+                    </tr>
+                  </table>
+                </div>
+                </footer>
+                    <script>
+                        function counter(){
+                        message=document.getElementById("wordCount");
+                        text=message.value;
+                        document.getElementById("charCount").innerHTML=text.length;
+                        }
+                    </script>
+        </body>
+    </html>

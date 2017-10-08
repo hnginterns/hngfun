@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> WORDS COUNTER</title>
+	<style type="text/css">
+	    body{
+	    	text-align: center;
+	    	background-color:green;
+	    	font-family: monospace;
+	    }
+	    
+		p {
+			letter-spacing: 2px;
+			font-size: 25px;
+			color: #000000;
+			margin-top: 4em;
+		}
+		
+		.submit {
+			  padding: 10px;
+			  font-size: 20px;
+			  text-align: center;
+			  cursor: pointer;
+			  color: #000;
+			  background-color:lime
+			  border-radius: 5px;
+			  margin-bottom: 5px;
+			  margin-top: 25px;
+			  border-radius: 40%;
+			  box-shadow: 0 0 3px 6px #000;
+			  outline-style: hidden;
+			}
+			
+		#input {
+			 width: 500px;
+			 height: 130px;
+			 font-size: 20px;
+			 border: 2px solid #000;
+			 text-align: center;
+			 padding: 2px;
+			 margin-top: 1em;
+			 border-radius: 10px;
+			 box-shadow: -2px 2px #000;
+		}
+		#sc{
+			 background-color:greenyellow;
+	         width: 700px;
+	         height: 533px;
+	         border: 2px, solid black;
+	         border-radius: 6px;
+	         text-align: center;
+	         margin-top: auto;
+	         margin-bottom: 50px;
+	         margin-left: 20%;
+	         margin-right: 55%; 
+	         box-shadow: 0 0 2px 2px #000;
+	         opacity: transparent; 
+		}
+		.submit:hover {background-color: #fff;
+		 }
+	    h1{
+	    	color: #000;
+	    	font-family: Georgia;
+	    }
+	    #rights{
+	       color: #000;
+	       margin-top: 0em;
+	    }
+		
+		
+	</style>
+</head>
+
+<body>
+<div id="sc">
+    <h1> A SIMPLE CHARACTER COUNTER</h1>
+	<input id="input" type="text" placeholder="Enter any character here !!!"><br/>
+	<br><br>
+  	<input class="submit" type="button" value="Counting Begins!" onclick="counts()">
+	
+	<p id="totalCount"><br> Answer </p>
+</div>
+   
+</body>
+
+<script>
+	
+	  function counts()	{
+		   var inputText = document.getElementById("input");
+        var enteredText = inputText.value;
+        var withOutSpace = enteredText.replace(/ /g,"")
+		var totalCount = withOutSpace.length;
+		
+		if(totalCount === 0) {
+			document.getElementById("totalCount").innerHTML = 'Please enter a text into the box above.';
+		}else if(totalCount === 1) {
+			document.getElementById("totalCount").innerHTML = 'The entered string \n "' +  enteredText +'" contains ' + totalCount + ' letter';
+		}else if (totalCount > 0) {
+			document.getElementById("totalCount").innerHTML = 'The entered string \n"' +  enteredText +'" contains ' + totalCount + ' letters';
+		}else {
+			document.getElementById("totalCount").innerHTML = 'Please enter any character into the box above.';
+		}
+        
+	  }
+      
+</script>
+
+</html>
