@@ -133,7 +133,6 @@ body{
     width:450px;
     margin: 0 auto;
     margin-top:50px;
-    outline: none;
 }
 .button input{
     border-radius: 10px;
@@ -144,10 +143,6 @@ body{
     font-weight: bolder;
     box-shadow: 0 2px  #424040;
     background: white;
-    outline: none;
-}
-button, input{
-    outline: none;
 }
 /* =======orange background div ======= */
 
@@ -260,17 +255,6 @@ button, input{
     width:65px;
     box-shadow: 0 2px  #424040;
 }
-.reach input{
-    margin:8px;
-    margin-top:15px;
-    background: white;
-    border-radius: 9px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bolder;
-    height: 35px;
-    width:65px;
-    box-shadow: 0 2px  #424040;
-}
 .numbers{
     position: absolute;
     width:100%;
@@ -331,7 +315,7 @@ button, input{
     border-bottom: 3px solid #F76126;
 }
 /* ======= Top All button======= */
-.thirdblock>input{
+.thirdblock input{
     position: absolute;
     bottom:30px;
     right:40px;
@@ -368,4 +352,59 @@ button, input{
 .details strong{
     color:black;
     font-size:80%;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 6s0%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: none;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 600px; /* Full width */
+    height: 500px; /* Full height */
+    overflow: none; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>counter and timer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+}
+.nav li {
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 10px;
+  display: inline-block;
+  color: dodgerblue;
+}
+
+.nav  li.logo {
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+.border {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: center;
+  border: 8px solid;
+  padding: 90px;
+  background-color: dodgerblue; 
+}
+.man{
+    text-decoration: none;
+    background: green;
+    border: 2px;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 6px;
+   
+}
+h2 {
+  text-align: center;
+  letter-spacing: 0.5em;
+  font-size: 15px;
+  top: 70px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.firstapp h1{
+  color: white;
+}
+hr { 
+  background-color: grey;
+  height: 4px;
+  width: 100%;
+  
+}
+#timer{
+  font-size: 50px;
+}
+.application .sub a:hover {
+  background: white;
+  
+}
+textarea{
+  border-radius: 0px;
+  width: 100%;
+  min-height: 5px;
+  margin: 8px;
+  border: 3px grey;
+  padding: 4px;
+  background-color: white;
+}
+ body {
+  background-color: #dodgerblue;
+  font-family: 'Raleway', sans-serif;
+}
+
+</style>
+</head>
+
+<body onload="startTime()">
+<div class= 'border'>
+
+          <div class="firstapp">
+                        <h1><b>Time/Counter </h1>
+                          <hr>
+                        <div id='timer'>
+                          <script>
+                            function startTime() {
+                                var today = new Date();
+                                var h = today.getHours();
+                                var m = today.getMinutes();
+                                var s = today.getSeconds();
+                                m = checkTime(m);
+                                s = checkTime(s);
+                                document.getElementById('timer').innerHTML =
+                                    h + ":" + m + ":" + s;
+                                var t = setTimeout(startTime, 500);
+                            }
+                            function checkTime(i) {
+                                if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                                return i;
+                            }
+                          </script>
+                        </div>
+                          <div>
+   <h1 id='date'></h1>
+ <script>
+   var d = new Date();
+ document.getElementById("date").innerHTML = d.toDateString()
+</script>
+ </div>
+ <div class="secondapp">
+  
+                  <script>
+                          function counts() {
+                      var inputText = document.getElementById("input");
+                      var enteredText = inputText.value;
+                      var withOutSpace = enteredText.replace(/ /g,"")
+                      var totalCount = withOutSpace.length;
+                  
+                  if(totalCount === 0) {
+                      document.getElementById("totalCount").innerHTML = 'You forgot to type a text in the box';
+                  }else if(totalCount === 1) {
+                      document.getElementById("totalCount").innerHTML = 'There are only ' + totalCount + ' letters in that box';
+                  }else if (totalCount > 0) {
+                      document.getElementById("totalCount").innerHTML = 'There are only ' + totalCount + ' letters in that box';
+                  }else {
+                      document.getElementById("totalCount").innerHTML = 'Type a text into the box above.';
+                      }
+                    }   
+                  </script>
+                  <form name= "result">
+                          <textarea type="text" id ="input" class="int" placeholder=" Count Your Words" ></textarea>
+                          <h4   id="totalCount"></h4>
+                          <input type="button" class="man" value="Count Letters" onClick="counts();">
+                  </form>
+        </div>    
+   <footer>
+     <hr><h3>Vento!</h3>
+      <h4>&copy2017 hng Internship</h4></div>
+   </footer>
+
+</body>
+</Html>

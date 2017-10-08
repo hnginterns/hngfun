@@ -1,0 +1,143 @@
+﻿		*, *:after, *:before {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			 -o-transition: all .3s ease;
+			 -ms-transition: all .3s ease;
+			 -moz-transition: all .3s ease;
+			 -webkit-transition: all .3s ease;
+			transition: all .3s ease;
+		}
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html, body {
+			height: 100%;
+		}
+		img {
+			width: 100%;
+			max-width: 100%;
+		}
+		fieldset, img {
+			border: 0;
+		}
+		body {
+			background-color: #FFF;
+			font: 16px 'Open Sans', sans-serif;
+		}
+		a {
+			outline: 0;
+			text-decoration: none;
+			color: blue;
+		}
+		.basin {
+			min-height: 100%;
+			position: relative;
+		}
+		header {
+			background-color: #2B6591;
+			text-align: center;
+			padding: 25px;
+		}
+		header #header-bar, header a {
+			font-family: 'Raleway', sans-serif;
+			letter-spacing: 0.06em;
+			color: #FFF;
+			font-size: 18px;
+		}
+		.content {
+			padding: 10px;
+			padding-bottom: 60px;
+			height: 100%;
+		}
+		.message {
+			padding: 20px 0;
+			text-align: justify;
+		}
+		.message p {
+			font-size: 17px;
+			line-height: 30px;
+			margin-top: 10px;
+			text-indent: 50px;
+		}
+		.message a:hover {
+			text-decoration: underline;
+		}
+		#author {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 60px;
+		}
+		#author a {
+			color: #222;
+			text-transform: uppercase;
+			font-family: 'Raleway', sans-serif;
+			border: 1px solid #333;
+			padding: 6px 15px;
+		}
+		#author a:hover {
+			background-color: #333;
+			color: #FFF;
+		}
+		.btn {
+			background-color: #04243C;
+			color: #FFF;
+			border-radius: 5px;
+			padding: 4px 12px;
+			display: inline-table;
+			text-transform: capitalize;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.btn-wrapper {
+			text-align: center;
+			margin: 20px 0 -20px 0;
+		}
+		footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 80px;
+			background-color: #2B6591;
+			line-height: 30px;
+			text-align: center;
+			font-family: 'Raleway', sans-serif;
+			color: #FFF;
+			padding: 20px 0 0 0;
+		}
+		.clock {
+			text-align: center;
+			margin: 30px 0;
+			text-transform: uppercase;
+		}
+		.date {
+			word-spacing: 1px;
+			letter-spacing: .05em;
+			font-size: 18px;
+		}
+		.time {
+			margin-top: 25px;
+			font-size: 20px;
+		}
+		.time div {
+			line-height: 30px;
+			margin-bottom: 10px;
+			display: inline-table;
+			background-color: #333;
+			color: #FFF;
+			padding: 10px;
+			font-weight: bold;
+			border-radius: 5px;
+		}
+		#wcount {
+			text-align: center;
+			margin: 30px 0;
+		}
+		#wcount textarea {
+			width: 50%;
+			height: 200px;
+			font-family: sans-serif;
+			padding: 10px;
+			margin-bottom: 15px;
+		}
