@@ -11,15 +11,15 @@
 
     <body onload="randomString()">
       <header>
-            <h1>CHARACTERS IN RANDOM</h1>
+            <h1>RANDOMLY</h1>
       </header>
       <main>
       <p id="randchar"></p>
        <div class="list">
         <ul>
-            <li><a href="mytime.html">DIGITAL CLOCK</a></li>
-            <li><a href="Randomgenerator.html">RANDOM GENERATOR</a></li>
-            <li><a href="MyCalc.html">SIMPLE CALCULATOR</a></li>
+            
+            <li><a href="Randomgenerator.html">Random Generator</a></li>
+            
     
         </ul>
       </div>
@@ -28,7 +28,7 @@
    <script>
                     function randomString() {
                         let chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
-                        let string_length = 15;
+                        let string_length = 10;
                         let randomstring = '';
                         for (let i=0; i<string_length; i++) {
                             let rnum = Math.floor(Math.random() * chars.length);
@@ -49,12 +49,12 @@
       
       header{
          height: 50px;
-         background-color: white;
+         background-color: black;
          top: auto;
         }
     
       header h1{
-        color: #F010C9;
+        color: white;
         text-align: center;
         top: 25px;
         }
@@ -64,9 +64,9 @@
         text-align: center;
         margin: auto;
         padding-top:2px;
-        background-color: #F010C9; 
+        background-color: black; 
         background-attachment: fixed;
-        width: 1000px; 
+        width: 700px; 
         }  
 
       form { 
@@ -102,7 +102,7 @@
             list-style-type: none;
         }
         li{
-            display: inline-block;
+            display: wrap;
             padding: 10px 15px;
             margin-top:20px;
             margin-bottom:20px;
@@ -112,11 +112,12 @@
         }
         a{
             text-decoration: none;
-            color:#F010C9;
+            color:black;
         }
          li a:hover{
             padding: 2px 5px;
-            color: blue;
+            color: black;
+
             
             
         }
@@ -185,9 +186,13 @@
 
       #Date{
         font-size:50px;
+      }
 
+      #Math.floor{
+        font-size:50px;
+        color: red;
         }
-     
+    
     </style>
 
 
