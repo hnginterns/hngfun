@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>MY CALCULATOR</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+      <header>
+            <h1>CALCULATOR</h1>
+      </header>
+    <main>
+
+      <form name="calc">
+
+        <table class="calculator" cellspacing="1" cellpadding="0">
+          <tr>
+            <td colspan="20"><input id="display" name="display" value="0" size="28" maxlength="25">
+          </tr>
+
+          <tr>
+            <td><input type="button" id="btn"  value="&#8592;" onclick = "deleteChar(this.form.display)"></td>
+            <td> <input type="button" id="btn"  value="CE" onclick = "deleteChar(this.form.display)"></td>
+            <td><input type="button" id="btn"  value="C" onclick = "this.form.display.value=  0"></td>
+            <td><input type="button" id="btn" value="&#177;" onclick = "changeSign(this.form.display)"></td>
+            <td><input type="button" id="btn" value="&#8730;" onclick = "if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+          </tr>
+  
+          <tr>
+            <td><input type="button" id="btn"  value="7" onclick = "addVal(this.form.display, '7')"></td>
+            <td> <input type="button" id="btn"  value="8" onclick = "addVal(this.form.display, '8')"></td>
+            <td><input type="button" id="btn"  value="9" onclick = "addVal(this.form.display, '9')"></td>
+            <td><input type="button" id="btn" value="/" onclick = "addVal(this.form.display, '/')"></td>
+            <td><input type="button" id="btn" value="%" onclick = "findPercent(this.form.display)"></td>
+          </tr>
+  
+          <tr>
+            <td><input type="button" id="btn"  value="4" onclick = "addVal(this.form.display,'4')"></td>
+            <td> <input type="button" id="btn"  value="5" onclick = "addVal(this.form.display, '5')"></td>
+            <td><input type="button" id="btn"  value="6" onclick = "addVal(this.form.display, '6')"></td>
+            <td><input type="button" id="btn" value="*"  onclick = "addVal(this.form.display, '*')"></td>
+            <td><input type="button" id="btn" value="1/x" onclick="findInverse(this.form.display)"></td> 
+          </tr>
+  
+          <tr>
+            <td><input type="button" id="btn"  value="1" onclick = "addVal(this.form.display, '1')"></td>
+            <td> <input type="button" id="btn"  value="2" onclick = "addVal(this.form.display,'2')"></td>
+            <td><input type="button" id="btn"  value="3" onclick = "addVal(this.form.display,'3')"></td>
+            <td><input type="button" id="btn" value="-"  onclick = "addVal(this.form.display,'-')"></td>
+            <td rowspan="2"><input type="button" id="btn1" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+          </tr>
+  
+          <tr>
+            <td colspan="2"><input type="button" id="btn2"  value="0" onclick = "addVal(this.form.display, '0')"></td>
+            <td> <input type="button" id="btn"  value="."  onclick = "addVal(this.form.display, '.')"></td>
+            <td><input type="button" id="btn"  value="+" onclick = "addVal(this.form.display, '+')"></td>
+          </tr>
+        </table>
+      </form>
+
+      <div class="list">
+        
+      </div>
+
+    </main>
+
+  <script>
+
+ 
+    function addVal(input, val) {
+      if(input.value == null || input.value == "0")
+        input.value = val;
+      else
+        input.value += val;
+      }
+
+    function sqrt(form) {
+      if (Number(form.display.value) >0)
+        form.display.value = Math.sqrt(form.display.value);
+      else
+        form.display.value = "Invalid Input!";
+      }
+
+    function ln(form) {
+      if (Number(form.display.value) >0)
+        form.display.value = Math.log(form.display.value);
+      else
+        form.display.value = "Invalid Input!";
+      }
+
+    function deleteChar(input) {
+        input.value = input.value.substring(0, input.value.length - 1)
+      }
+
+    let val = 0.0;
+    function findPercent(input) {
+      val = input.value;
+      input.value = input.value / 100;
+      }
+
+    let newVal = 0.0;
+    function findInverse(input) {
+      newVal = input.value;
+      input.value = (1/input.value);
+      }
+
+    function changeSign(input) {
+      if(input.value.substring(0, 1) == "-")
+        input.value = input.value.substring(1, input.value.length)
+      else
+        input.value = "-" + input.value
+      }
+
+    function compute(form) {
+      form.display.value = eval(form.display.value);
+      }
+
+    function checkNum(str) {
+      for (var i = 0; i < str.length; i++) {
+        var ch = str.charAt(i);
+        if (ch < "0" || ch > "9") {
+            if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "."
+                && ch != "(" && ch!= ")" && ch != "%") {
+                ("invalid entry!")
+                return false
+                }
+              }
+          }
+        return true
+        }
+
+    </script>
+     
+    <style>
+      body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: auto;
+        height: auto;
+        margin: auto;       
+        }
+      
+      header{
+         height: 50px;
+         background-color: black;
+         top: auto;
+        }
+    
+      header h1{
+        color: white;
+        text-align: center;
+        top: 25px;
+        }
+  
+      main{
+        height: 400px;
+        text-align: center;
+        margin: auto;
+        padding-top:20px;
+        background-color: white; 
+        background-attachment: fixed; 
+        width: 1000px;
+        }  
+
+      form { 
+        margin: 0px auto; 
+        margin-top: 0px;
+        width:350px;
+        padding-top: 5px;
+        }
+    
+      p{
+        font-weight: bold;
+        font-size: 100px;
+        font-family: Arial;
+        color: white;
+        }
+     
+      footer p{     
+        font-size:20px;
+        color:#0f222f;
+        padding: 5px;
+        font-weight: bold;
+        text-align:center;
+        border-top: 5px;
+        font-style: italic;
+        }
+
+         ul{
+            margin-top: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            list-style-type: none;
+        }
+        li{
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top:20px;
+            margin-bottom:20px;
+            margin-right:20px;
+            background-color: white;
+            color: blue;
+        }
+        a{
+            text-decoration: none;
+            color:#F010C9;
+        }
+         li a:hover{
+            padding: 2px 5px;
+            color: #F010C9;
+            
+            
+        }
+
+      .calculator {
+        margin: auto;
+        margin-top: 50px;
+        width: 260px;
+        height: 300px;
+        background-color: black;
+        box-shadow: 0px 0px 0px 10px white;
+        border: 1px;
+        }
+
+      #display {
+        margin-top: 1em;
+        margin-bottom: 20px;
+        width: 230px;
+        height: 40px;
+        text-align: right;
+        border: 2px ridge;
+        font-size: 18px;
+        left: 2px;
+        top: 2px;
+        padding: 5px 5px 0 0;
+        }
+
+      #btn {
+        margin: 4px;
+        font-weight: bold;
+        width:40px;
+        height:35px;
+        transition-duration: 0.4s;
+        color: #1a2a5a;
+        }
+
+      #btn:hover {
+        background-color: #d9e1f9;
+        }
+    
+      #btn1 {
+        margin: 4px;
+        font-weight: bold;
+        width:40px;
+        height:78px;
+        transition-duration: 0.4s;
+        color: #1a2a5a;
+        }
+
+      #btn1:hover {
+        background-color: #d9e1f9;
+        }
+    
+      #btn2 {
+        margin: 4px;
+        font-weight: bold;
+        width:88px;
+        height:35px;
+        transition-duration: 0.4s;
+        color: #1a2a5a;
+        }
+
+      #btn2:hover {
+        background-color: #d9e1f9;
+        }
+
+      #Date{
+        font-size:50px;
+        }
+     
+    </style>
+
+
+    <footer>
+        <p>Designed by: Emem Okon<br> Copyright &copy; 2017</p> 
+    </footer>
+    
+
+ 	</body>
+
+</html>

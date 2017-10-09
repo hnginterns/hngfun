@@ -1,0 +1,28 @@
+
+.socials a {
+	behavior: url(js/PIE.htc);
+	position: relative;
+}
+
+
+.clear.height1 {
+	height: 33px !important;
+}
+
+.socials a {
+	margin-right: 9px;
+}
+
+
+#form .invalid .error-message, #form .empty .empty-message {
+	display: block;
+}
+
+#form .error-message, #form .empty-message {
+	display: none;
+}
+
+a.gal:hover img { 
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+
+}

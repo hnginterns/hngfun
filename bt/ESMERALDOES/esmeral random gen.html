@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>ESMERALDOES Character Generator</title>
+
+	 <style type="text/css">
+		.cap{
+          padding: 15px;
+          height: 15px;
+          width: 400px;
+          padding-top: 26px;
+          padding-bottom: 25px;
+          background-color: white;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 15px;
+          display: block;
+        }
+
+        .drop{
+        	height: auto;
+        	width: 600px;
+          	border-radius: 15px;
+        	text-align: center;
+        	margin-left: auto;
+        	margin-right: auto;
+			margin-top: 100px;
+        }              
+       
+        .buttun{
+          background-color: grey;
+          margin-left: 200px;
+          margin-right: auto;
+		  border-radius: 70px;
+		  border-color: blue;
+
+  
+		}
+	 </style>
+
+
+ </head>
+  <body>
+  <div class="drop">
+<script>
+    function randomString() {
+        var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+        var string_length = 30;
+        var randomstring = '';
+        for (var i=0; i<string_length; i++) {
+            var rnum = Math.floor(Math.random() * chars.length);
+            randomstring += chars.substring(rnum,rnum+1);
+        }
+        document.randform.randomfield.value = randomstring;
+    }
+</script> 
+   <h1 class="drop">RANDOM CHARACTER GENERATOR</h1>
+    <form name="randform" class="drop"> &nbsp;&nbsp;
+    
+    <input type="text"  class="cap" name="randomfield" value="" placeholder="CLICK ON GENERATE"><br>&nbsp;
+    <input type="button" class="buttun" value="GENERATE " onClick="randomString();">&nbsp;
+</form>
+    </div>
+	<footer class="drop"><h1>ESMERALDOES<h1></footer>
+  </body>
+  
+</html>

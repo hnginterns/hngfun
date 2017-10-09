@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title> Albert Okon </title>
+<style>
+    body {
+        background-image: url("http://images.all-free-download.com/images/graphiclarge/lovely_parrot_definition_picture_168908.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        border-style: inset;
+        text-align: center;
+        vertical-align: middle;
+        padding-bottom: 30px;
+         }
+    div{
+        width: 300px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    input {
+        text-align: center; 
+        width: 80%;
+        height: 40px;
+        border-style: solid;
+        border-color: #2e8b57;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    button {
+        padding:10px;
+        background-color: #2e8b57;
+        text-align: center; margin-left: auto; margin-right: auto;
+        font-weight: bold;
+        border-style: inset;
+        }
+
+</style>
+</head>
+<body>
+   <h1>RANDOM CHARACTER GENERATOR</h1>
+<div>
+    <form name="randform">
+    <input type="text" placeholder="Enter Your Full Name" required><br><br>
+    <input type="text" name="randfield" value="" placeholder="Your Random Characters Here"><br><br>
+    <button value="Generate Password" onClick="randomStr();">Generate Password</button>
+</form>
+</div>
+
+<script>
+        function randomStr() {
+            const chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+            let str_length = 10;
+            let randomstr = '';
+            for (let i=0; i<str_length; i++) {
+                let ranum = Math.floor(Math.random() * chars.length);
+                randomstr += chars.substring(ranum,ranum+1);
+            }
+            document.randform.randfield.value = randomstr;
+        }
+</script>
+</body>
+</html>

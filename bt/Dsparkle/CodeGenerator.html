@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2{
+            color: #ffffff;
+        }
+        body{
+            background-image: url("binary_code.jpg");
+        }
+        #shape{
+            text-align: center;
+           margin-top: 250px;
+        }
+         #button{
+             height:30px;
+             width:120px;
+             background-color: black;
+             color: #ffffff;
+         }
+        #button:hover{
+            background-color:lightblue;
+        }
+        #field{
+            width:540px;
+            height:20px;
+            margin-bottom: 4px;
+            font-style: italic;
+            word-spacing: 4px;
+            font-family: "Lato Black";
+        }
+        .button {
+            width: 50px;
+            padding: 10px;
+           border-radius: 50px;
+            text-align: center;
+        }
+        .button:hover {
+            -webkit-animation: shake 0.4s ease-in-out 0.4s infinite alternate;
+        }
+
+        @-webkit-keyframes shake {
+            from {
+                -webkit-transform: rotate(20deg);
+            }
+            to {
+                -webkit-transform-origin:center center;
+                -webkit-transform: rotate(-20deg);
+            }
+
+        }
+        body {
+            padding: 40px;
+        }
+
+        /* Animation */
+
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0,40px,0)
+            }
+
+            to {
+                transform: translate3d(0,0,0);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes fadeInUp {
+            from {
+                transform: translate3d(0,40px,0)
+            }
+
+            to {
+                transform: translate3d(0,0,0);
+                opacity: 1
+            }
+        }
+
+        .animated {
+            animation-duration: 2s;
+            animation-fill-mode: both;
+            -webkit-animation-duration: 2s;
+            -webkit-animation-fill-mode: both
+        }
+
+        .animatedFadeInUp {
+            opacity: 0
+        }
+
+        .fadeInUp {
+            opacity: 0;
+            animation-name: fadeInUp;
+            -webkit-animation-name: fadeInUp;
+        }
+
+
+    </style>
+</head>
+<body>
+<h2 style="text-align: center" class="animated animatedFadeInUp fadeInUp">
+    Wow Welcome to Code Generator.
+</h2>
+<h2 style="text-align: center" class="animated animatedFadeInUp fadeInUp">Click To Get Ur Unique Code</h2>
+<h2 style="text-align: center" class="animated animatedFadeInUp fadeInUp">
+    Task 3
+</h2>
+<form name="randform" id="shape" class="animated animatedFadeInUp fadeInUp">
+
+
+    <input type="text" name="randomfield" value="" id="field"><br>
+    <input type="button" value="Create Random" onClick="randomString();" id="button" class="button">&nbsp;
+</form>
+<a href="@dsparkleTimer.html" style="text-decoration: none; font-size: large; margin-left: 6px; font-family: 'Lato Black';"><p style="text-align: center; color: white;">Click Here To Go Back</p></a>
+<script>
+    function randomString() {
+        var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+        var string_length = 8;
+        var randomstring = '';
+        for (var i=0; i<string_length; i++) {
+            var rnum = Math.floor(Math.random() * chars.length);
+            randomstring += chars.substring(rnum,rnum+1);
+        }
+        document.randform.randomfield.value = randomstring;
+    }
+</script>
+</body>
+</html>

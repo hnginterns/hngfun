@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Nsikak - Learner's Team Task</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='content="width=device-width, initial-scale=1.0'>
+<style>
+* {
+margin: 0;
+padinng: 0;
+box-sizing; border-box;
+}
+
+body {
+background-color: MediumTurquoise;
+}
+header {
+width: 100%;
+height: 60px;
+text-align: center;
+font-size: 32px;
+font-weight: bold;
+background-color: #20b2aa;
+}
+
+#wrapper {
+min-height: 100vh;
+}
+
+#passgenerator, #textcount, #calculator {
+float: left;
+width: 380px;
+height: 500px;
+border: 3px solid #20b2aa;
+margin-left: 5%;
+margin-top: 4%;
+text-align: center;
+overflow: hidden;
+background-color: rgba(64, 224, 208, 0.7);
+border-radius: 10px;
+box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#count, #userinput {
+width: 100%;
+height: 35px;
+background-color: #ADD8E6;
+border: none;
+padding: 5px;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+
+#count:focus, #userinput:focus {
+background-color: #20b2aa;
+height: 45px;
+}
+
+.cgenerate {
+width: 50%;
+textalign: center;
+height: 40px;
+border: none;
+border-radius: 5px;
+background-color: #20b2aa;
+font-weight: bold;
+margin-top: 5px;
+}
+
+.cgenerate:hover {
+color: #fff;
+position: relative;
+top: 5px;
+bottom:5px;
+}
+
+
+.innercontent {
+padding: 5%;
+padding-top: 25%;
+}
+
+.output {
+background-color: MediumSeaGreen;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+overflow-x: hidden;
+margin-bottom: 5px;
+border-radius: 5px;
+}
+
+input[type=checkbox] {
+transform: scale(1.2);
+}
+
+h2 {
+text-align: center;
+background-color: #20b2aa;
+}
+
+#display {
+width: 98%;
+height: 40px;
+background-color: #ADD8E6;
+border: none;
+border-radius: 4px;
+padding: 2px;
+font-weight: bold;
+}
+
+table {
+border: 4px solid #20b2aa;
+width: 100%;
+height: 300px;
+padding: 5px;
+border-radius: 4px;
+background-color: #20b2aa;
+}
+
+.num{
+width: 100%;
+height: 60px;
+background-color: #ddd;
+border-radius: 4px;
+border: none;
+font-weight: bold;
+}
+
+#back, #reset {
+background-color: brown;
+}
+.num:hover {
+background-color: rgba(64, 224, 208, 0.5);
+}
+
+footer {
+width: 100%;
+height: 40%;
+text-align: center;
+font-size: 28px;
+font-weight: bold;
+background-color: #20b2aa;
+clear: both;
+margin-top: 20px;
+margin-bottom: 0;
+}
+
+@media only screen and (max-width: 499px) {
+#passgenerator, #textcount, #calculator {
+max-width: 90%;
+max-height: 90%;
+}
+
+}
+</style>
+</head>
+<body>
+<header>
+<p>Hng Internship Task</p>
+</header>
+
+<div id='wrapper'>
+<div id='textcount'>
+<h2>String Counter</h2>
+<div class='innercontent'>
+<p id='counter'></p>
+<form>
+<input type='text' id='count' onkeyup='counter()' placeholder='Enter a value' />
+<input type='checkbox' id='checked'/>
+<label>Include blank spaces.</label>
+</form>
+<button class='cgenerate' onclick='counter()'>Count!</button>
+</div>
+</div>
+
+<div id='calculator'>
+<h2>Basic Calculator</h2>
+<div class='innercontent'>
+<table>
+<tr>
+<td colspan='5'><input type='text' value='' id='display' readonly /></td>
+</tr>
+
+<tr>
+<td><button class='num' onclick="calc('7')">7</button></td>
+<td><button class='num' onclick="calc('8')">8</button></td>
+<td><button class='num' onclick="calc('9')">9</button></td>
+<td><button class='num' id='back' onclick="back()">DEL</button></td>
+<td><button class='num' id='reset' onclick="reset()">AC</button></td>
+</tr>
+
+<tr>
+<td><button class='num' onclick="calc('4')">4</button></td>
+<td><button class='num' onclick="calc('5')">5</button></td>
+<td><button class='num' onclick="calc('6')">6</button></td>
+<td><button class='num' onclick="calc('*')">x</button></td>
+<td><button class='num' onclick="calc('/')">/</button></td>
+</tr>
+
+<tr>
+<td><button class='num' onclick="calc('1')">1</button></td>
+<td><button class='num' onclick="calc('2')">2</button></td>
+<td><button class='num' onclick="calc('3')">3</button></td>
+<td><button class='num' onclick="calc('+')">+</button></td>
+<td><button class='num' onclick="calc('-')">-</button></td>
+</tr>
+
+<tr>
+<td><button class='num' onclick="calc('0')">0</button></td>
+<td><button class='num' onclick="calc('.')">.</button></td>
+<td colspan="3"><button class='num' onclick="calculate()">=</button></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id='passgenerator'>
+<h2>String Generator</h2>
+<div class='innercontent'>
+<p id='chardisplay'></p>
+<form>
+<input type='text' id='userinput' placeholder='Enter a value'/>
+</form>
+<button class='cgenerate' onclick='generate()'>Generate</button>
+</div>
+</div>
+</div>
+<footer><p>&copy; Nsikak Isaac</p></footer>
+
+<script>
+
+function generate() {
+let randDisplay = document.getElementById('chardisplay');
+let userInput = document.getElementById('userinput');
+let trimmedInput = trim(userInput.value);
+let characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let randChar = '';
+
+
+if (trimmedInput.length > 0) {
+for (let n = 0; n < trimmedInput.length; n++) { 
+	 randChar += trimmedInput[Math.floor(Math.random() * (trimmedInput.length))];
+	 }
+randDisplay.innerHTML = "<div class='output'>" + randChar + "</div>"; 
+}
+else {
+for (let n = 0; n < 10; n++) { 
+	 randChar += characters[Math.floor(Math.random() * (characters.length))];
+	 }
+randDisplay.innerHTML = "<div class='output'>" + randChar + "</div>"; 
+}
+function trim(value) {
+    return value.replace(/\s/g, '');
+}
+}
+
+function counter() {
+let input = document.getElementById('count');
+let counterDisplay = document.getElementById('counter');
+let checkBox = document.getElementById('checked');
+let inputString = trimmed(input.value);
+let numCount = 0;
+let alpCount = 0;
+
+function trimmed(valued) {
+return valued.replace(/\s/g, '');
+}
+
+if(checkBox.checked) {
+inputString = input.value;
+}
+
+numCount = inputString.split(/[0-9]/g).length -1;
+alpCount = inputString.split(/[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]/g).length -1;
+
+if(inputString.length > 0) {
+counterDisplay.innerHTML = "<div class='output'>" + inputString + ' contains ' + numCount + ((numCount == 1)? ' number ': ' numbers ') + ', ' 
++ alpCount + ((alpCount == 1)? ' letter ': ' letters ') + 'and a total of ' + inputString.length + 
+((inputString.length == 1)? ' character' : ' characters') + '.' + "</div>";
+}
+else {
+counterDisplay.innerHTML = "<div class='output'>Did you enter a value?</div>";
+}
+}
+
+let calcDisplay = document.getElementById('display');
+function calc(val) {
+let lastChar = calcDisplay.value.slice(-1);
+if((lastChar.match(/[+\*\-\/]/) && val.match(/[+\*\-\/]/))) {
+calcDisplay.value = calcDisplay.value.replace(lastChar, val);
+}
+else if(calcDisplay.value.match(/[.]/) == val) {
+calcDisplay.value += '';
+}
+else {
+calcDisplay.value += val;
+}
+}
+
+function calculate () {
+if(calcDisplay.value) {
+calcDisplay.value = eval(calcDisplay.value);
+}
+else {
+calcDisplay.value = '';
+}
+}
+
+function reset () {
+calcDisplay.value = '';
+}
+
+function back () {
+calcDisplay.value = calcDisplay.value.substring(0, calcDisplay.value.length -1);
+}
+</script>
+</body>
+</html>

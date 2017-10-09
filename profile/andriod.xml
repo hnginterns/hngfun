@@ -1,0 +1,7 @@
+<Textview
+   andriod:text = "happy birthday"
+   andriod:background = "@andriod:color/lightblue"
+   andriod:textColor = "yellow"
+   andriod:layout_width = "wrap_content"
+   andriod:layout_height = "wrap_content"
+   andriod:textSize = "45sp" />
